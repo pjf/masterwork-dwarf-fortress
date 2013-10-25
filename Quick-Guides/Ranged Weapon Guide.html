@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #000
+}
+body, td, th {
+	color: #FFF;
+	font-size: 18px;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #CCC;
+}
+.Rot {color: #F00;
+}
+.Rot {color: #F00;
+}
+</style>
+</head>
+
+<body>
+<div align="center">
+  <p><img src="../MasterworkDwarfFortress/repository/Logo.JPG" alt="logo" width="768" height="225" align="absmiddle" /></p>
+</div>
+<table width="846" border="0" align="center">
+  <tr>
+    <td width="840"><h1 align="center"><u><strong>Masterwork DF Ranged Weapon Table</strong></u></h1>
+    <p>In here you can find all ranged weapons of the mod, with all infos. They are sorted alphabetically.</p>
+    <p>At this point a big thanks to maklak for the script to read these out directly from the raws. You can search this table with Ctrl+F.</p>
+    <hr />
+
+    <p><b>Explanation of the table:</b> </p>
+    <p><b>Name: </b>Is the items ingame name. </p>
+    <p><strong>Ranged Skill</strong>: Lists two skills, first one is the ranged skill (shooting a weapon), second one is the melee skill (hitting with a weapon)</p>
+<p><b>Ammo: </b>The available ammo type for this weapon. For example bolts in crossbows.</p>
+<p><b>Shoot force</b> is the amount of force used when firing projectiles - actual velocity and kinetic energy are determined by the projectile's mass.<br />
+      <br />
+      <b>Max velocity</b> is the cap on projectile velocity when fired from this weapon. For small or otherwise light projectiles, this is the value that matters.    </p>
+    <p><b>Size:</b> is in cubic centimeters.  Larger size means more mass for blunt attacks. </p>
+    <p><b>Bar: </b> The needed number of bars to forge the weapon.</p>
+    <p><b>2H / 1H</b> show the required creature size for wielding a weapon one-handed or two-handed. </p>
+    <p><b>Attack:</b> lists all the attacks that can be made with this weapon. The attack is always chosen at random, with edged attacks being 100 times more likely. The format is name, type (edged or blunt), contact area, penetration, velocity multiplier.<br />
+      Blunt attacks are better at penetrating armour and breaking bones, while edged attacks can cause bleeding, pierce internal organs or even sever entire limbs. Edged attacks become piercing attacks when their contact area is less than 25% of the targeted body part or cutting attacks otherwise. So edged attacks with large contact area are primarily cutting, while those with 10 or 20 contact area are primarily piercing. Piercing attacks are better at penetrating armour and damaging internal organs (such as brain), but Cutting attacks can cut off entire limbs. The problem with cutting attacks is that there needs to be enough force behind them and enemy armour can convert them to blunt attacks, which tend to be much less effective.<br />
+      The higher the penetration is, the better, especially against bigger enemies. My best guess is that 10000 penetration is 1m.  Velocity multipler greatly increases effectiveness of an attack, multiplying the force behind it.<br />
+      Rating and comparing attacks isn't trivial to do. Good luck interpreting the numbers.<br />
+    </p>
+    <p><font size=5><b>Table of ranged weapons:</b></font> (count: 58)<br />
+</p>
+    <table width="936" border="1"><center>
+  <tr> <td width="137"><b>Name</b></td> <td width="141"><b>Ranged</b><br /><b>Skill</b></td> <td width="45"><b>Force</b><br /><b>Max Vel.</b></td> <td width="126"><b>Ammo</b></td> <td width="36"><b>Size</b><br />
+    <b>Bars</b></td> <td width="55"><b>2H</b><br /><b>1H</b></td> <td width="350"><b>Attacks</b></td></tr>
+  <tr> <td><b>advanced crossbow</b></td> <td>CROSSBOW<br />HAMMER</td> <td>5000<br />5000</td> <td>BOLT</td> <td>1000<br />10</td> <td>50000<br />77500</td> <td>bash: blunt C:60000 P:4000 V:1.25</td></tr>
+  <tr> <td><b>assassin society arms</b></td> <td>BOW<br />DAGGER</td> <td>6000<br />6000</td> <td>ARROW</td> <td>1200<br />6</td> <td>50000<br />200000</td> <td>dagger slash: edge C:1000 P:800 V:1.25<br />dagger stab: edge C:5 P:1000 V:1<br />dagger pommel strike: blunt C:20 P:600 V:1<br />dagger sidestep and slash: edge C:1000 P:800 V:2.5<br />dagger tip catch opponent off balance and run through: edge C:50 P:6000 V:4.1<br />bow and blade fires at close range and follows with a quick cut: edge C:1000 P:4000 V:4.1</td></tr>
+  <tr> <td><b>atlatl</b></td> <td>THROW<br />HAMMER</td> <td>1000<br />650</td> <td>JAVELIN</td> <td>600<br />3</td> <td>20000<br />35000</td> <td>shaft club: blunt C:10000 P:4000 V:1.15<br />end poke: blunt C:4000 P:3000 V:1<br />shaft bludgeon: blunt C:10000 P:5000 V:1.3</td></tr>
+  <tr> <td><b>bayonetted flint lock pistol</b></td> <td>BLOWGUN<br />DAGGER</td> <td>25000<br />20000</td> <td>BULLET_L</td> <td>450<br />1</td> <td>52500<br />2500</font></td> <td>bayonet stab: edge C:5 P:1000 V:1<br />bayonet perforate: edge C:5 P:1000 V:1.1<br />bayonet run through: edge C:5 P:2000 V:1.1<br />slash: edge C:5000 P:2000 V:1.1</td></tr>
+  <tr> <td><b>bayonetted musket</b></td> <td>BLOWGUN<br />SPEAR</td> <td>25000<br />25000</td> <td>BULLET_L</td> <td>450<br />2</td> <td>52500<br />77500</td> <td>bayonet stab: edge C:5 P:1000 V:1<br />menacing point impale: edge C:5 P:1000 V:2<br />bayonet perforate: edge C:5 P:1000 V:1.1<br />bayonet run through: edge C:5 P:2000 V:1.1</td></tr>
+  <tr> <td><b>bladed bow</b></td> <td>BOW<br />SPEAR</td> <td>1000<br />1000</td> <td>ARROW</td> <td>300<br />3</td> <td>35000<br />0</font></td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet stab: edge C:500 P:4000 V:1<br />bayonet slash: edge C:800 P:2000 V:1</td></tr>
+  <tr> <td><b>bladed composite bow</b></td> <td>BOW<br />SPEAR</td> <td>4000<br />4000</td> <td>ARROW</td> <td>500<br />4</td> <td>35000<br />25000</font></td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet stab: edge C:500 P:4000 V:1<br />bayonet slash: edge C:800 P:2000 V:1</td></tr>
+  <tr> <td><b>bladed crossbow</b></td> <td>CROSSBOW<br />SPEAR</td> <td>1000<br />1000</td> <td>BOLT</td> <td>500<br />4</td> <td>35000<br />40000</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet stab: edge C:500 P:4000 V:1<br />bayonet slash: edge C:800 P:2000 V:1</td></tr>
+  <tr> <td><b>bladed firecannon</b></td> <td>BLOWGUN<br />SPEAR</td> <td>75000<br />20000</td> <td>CANNON</td> <td>800<br />6</td> <td>52500<br />57500</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet stab: edge C:500 P:4000 V:1<br />bayonet slash: edge C:800 P:2000 V:1</td></tr>
+  <tr> <td><b>bladed hand cannon</b></td> <td>BLOWGUN<br />SPEAR</td> <td>75000<br />20000</td> <td>CANNON</td> <td>850<br />6</td> <td>52500<br />57500</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet stab: edge C:500 P:4000 V:1<br />bayonet slash: edge C:800 P:2000 V:1</td></tr>
+  <tr> <td><b>bladed javelin thrower</b></td> <td>CROSSBOW<br />SPEAR</td> <td>15000<br />10000</td> <td>JAVELIN</td> <td>2000<br />3</td> <td>50000<br />77500</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet stab: edge C:500 P:4000 V:1<br />bayonet slash: edge C:800 P:2000 V:1</td></tr>
+  <tr> <td><b>bladed repeating crossbow</b></td> <td>CROSSBOW<br />SPEAR</td> <td>10000<br />10000</td> <td>BOLT</td> <td>500<br />5</td> <td>35000<br />40000</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet stab: edge C:500 P:4000 V:1<br />bayonet slash: edge C:800 P:2000 V:1</td></tr>
+  <tr> <td><b>bladed repeating javelin thrower</b></td> <td>CROSSBOW<br />SPEAR</td> <td>35000<br />35000</td> <td>JAVELIN</td> <td>2000<br />3</td> <td>50000<br />77500</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet stab: edge C:500 P:4000 V:1<br />bayonet slash: edge C:800 P:2000 V:1</td></tr>
+  <tr> <td><b>blowgun</b></td> <td>BLOWGUN<br />SWORD</td> <td>100<br />1000</td> <td>BLOWDART</td> <td>150<br />3</td> <td>5000<br />0</font></td> <td>strike: blunt C:10000 P:4000 V:1.25</td></tr>
+  <tr> <td><b>bola thrower</b></td> <td>THROW<br />WHIP</td> <td>2400<br />1350</td> <td>WHIP</td> <td>100<br />3</td> <td>22500<br />27500</td> <td>whip: edge C:20 P:12000 V:1<br />wire cut: edge C:20 P:12000 V:3<br />long wire entangle: edge C:20 P:12000 V:3</td></tr>
+  <tr> <td><b>bold-bola thrower</b></td> <td>HAMMER<br />HAMMER</td> <td>2400<br />1350</td> <td>WHIP</td> <td>100<br />3</td> <td>15000<br />27500</td> <td>whip: edge C:20 P:12000 V:1<br />wire cut: edge C:20 P:12000 V:3<br />long wire entangle: edge C:20 P:12000 V:3</td></tr>
+  <tr> <td><b>booby-trap</b></td> <td>CROSSBOW<br />CROSSBOW</td> <td>15000<br />15000</td> <td>TOTEM</td> <td>500<br />5</td> <td>cant be wielded</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet stab: edge C:500 P:4000 V:1<br />bayonet slash: edge C:800 P:2000 V:1</td></tr>
+  <tr> <td><b>bow</b></td> <td>BOW<br />HAMMER</td> <td>1000<br />1000</td> <td>ARROW</td> <td>300<br />3</td> <td>35000<br />0</font></td> <td>stock club: blunt C:10000 P:4000 V:1.25<br />end poke: blunt C:10000 P:3000 V:1.25<br />stock bludgeon: blunt C:10000 P:5000 V:1.3<br />shaft slap: blunt C:10000 P:2000 V:1.25</td></tr>
+  <tr> <td><b>ceremonial sacred kris</b></td> <td>MAGIC_NATURE<br />DAGGER</td> <td>4000<br />4000</td> <td>SPELLWRAITH</td> <td>700<br />3</td> <td>12500<br />35000</td> <td>stab: edge C:20 P:6000 V:1<br />flat slap: blunt C:4000 P:4000 V:1.25<br />pommel strike: blunt C:100 P:1000 V:1<br />wavy blade slash: edge C:3000 P:4000 V:2.5<br />reverse edge slash: edge C:3000 P:4000 V:2.5<br />wavy blade sidestep and slash: edge C:3000 P:4000 V:2.5<br />reverse edge sidestep and slash: edge C:3000 P:4000 V:2.5<br />tip rush forward eerily fast and run through: edge C:20 P:6000 V:4.5<br />wavy blade fade from view and slash from a strange angle: edge C:3000 P:4000 V:4.5<br />prophetic vision of doom pierce: edge C:10 P:22000 V:4.5</td></tr>
+  <tr> <td><b>composite bow</b></td> <td>BOW<br />HAMMER</td> <td>10000<br />10000</td> <td>ARROW</td> <td>500<br />4</td> <td>35000<br />25000</font></td> <td>bash: blunt C:10000 P:4000 V:1.25</td></tr>
+  <tr> <td><b>crossbow</b></td> <td>CROSSBOW<br />HAMMER</td> <td>1000<br />1000</td> <td>BOLT</td> <td>400<br />6</td> <td>35000<br />0</font></td> <td>bash: blunt C:10000 P:4000 V:1.25<br />shaft club: blunt C:10000 P:4000 V:1.25<br />end poke: blunt C:10000 P:3000 V:1.25<br />bludgeon: blunt C:10000 P:5000 V:1.3<br />shaft slap: blunt C:10000 P:2000 V:1.25</td></tr>
+  <tr> <td><b>dakkadakka gun</b></td> <td>BLOWGUN<br />HAMMER</td> <td>5000<br />35000</td> <td>BLOWDART</td> <td>450<br />4</td> <td>52500<br />67500</td> <td>stock club: blunt C:10000 P:4000 V:1.25<br />end poke: blunt C:10000 P:3000 V:1.25<br />stock bludgeon: blunt C:10000 P:5000 V:1.3<br />shaft slap: blunt C:10000 P:2000 V:1.25</td></tr>
+  <tr> <td><b>dragon samurai arms</b></td> <td>BOW<br />SWORD</td> <td>4000<br />4000</td> <td>ARROW</td> <td>700<br />9</td> <td>52500<br />80000</td> <td>katana blade cut with a lightning fast strike: edge C:20000 P:6000 V:2.5<br />katana blade slash: edge C:20000 P:6000 V:1.25<br />katana blade feint and slash: edge C:20000 P:6000 V:1.25<br />katana blade attack with an exquisite form: edge C:30000 P:9000 V:4.25<br />katana blade riposte with a piercing blow: edge C:100 P:9000 V:2.5<br />bow and blade fires at close range and follows with a quick cut: edge C:1000 P:4000 V:1.25<br />katana flat slap: blunt C:2000 P:6000 V:1.25</td></tr>
+  <tr> <td><b>falcon knight arms</b></td> <td>THROW<br />SPEAR</td> <td>2400<br />1350</td> <td>WHIP</td> <td>600<br />6</td> <td>32500<br />60000</td> <td>bladed spear edge slash: edge C:20000 P:4000 V:2.25<br />toothed spear edge rake: edge C:30000 P:2000 V:1.25<br />spear point stab: edge C:20 P:5000 V:1<br />spear point impale: edge C:20 P:10000 V:2<br />bola and spear entangle and lance: edge C:10 P:10000 V:4<br />spear shaft strike: blunt C:10000 P:6000 V:1</td></tr>
+  <tr> <td><b>fighting tomahawk</b></td> <td>THROW<br />AXE</td> <td>1000<br />650</td> <td>AXE</td> <td>600<br />6</td> <td>20000<br />35000</td> <td>blade hack: edge C:5000 P:3000 V:1.25<br />blade slash: edge C:5000 P:1500 V:1<br />awlspike drill: edge C:100 P:3000 V:1.25<br /><b></font></b></td></tr>
+  <tr> <td><b>firecannon</b></td> <td>BLOWGUN<br />HAMMER</td> <td>75000<br />20000</td> <td>CANNON</td> <td>800<br />6</td> <td>52500<br />57500</td> <td>smash: blunt C:10000 P:4000 V:1.25<br />head hammer: blunt C:7000 P:10000 V:3<br />head viciously hammer: blunt C:8000 P:3000 V:2<br />stock bludgeon: blunt C:10000 P:5000 V:1.3</td></tr>
+  <tr> <td><b>flachette gun</b></td> <td>BLOWGUN<br />HAMMER</td> <td>3000<br />15000</td> <td>BLOWDART</td> <td>450<br />2</td> <td>52500<br />57500</td> <td>stock club: blunt C:10000 P:4000 V:1.25<br />end poke: blunt C:10000 P:3000 V:1.25<br />stock bludgeon: blunt C:10000 P:5000 V:1.3<br />shaft slap: blunt C:10000 P:2000 V:1.25</td></tr>
+  <tr> <td><b>flint lock pistol</b></td> <td>BLOWGUN<br />HAMMER</td> <td>25000<br />25000</td> <td>BULLET_L</td> <td>450<br />1</td> <td>52500<br />2500</font></td> <td>stock club: blunt C:10000 P:4000 V:1.25<br />end poke: blunt C:10000 P:3000 V:1.25<br />stock bludgeon: blunt C:10000 P:5000 V:1.3<br />shaft slap: blunt C:10000 P:2000 V:1.25</td></tr>
+  <tr> <td><b>gastraphetes</b></td> <td>CROSSBOW<br />HAMMER</td> <td>5000<br />5000</td> <td>ARROW</td> <td>1000<br />10</td> <td>50000<br />77500</td> <td>bash: blunt C:60000 P:4000 V:1.25</td></tr>
+  <tr> <td><b>great bow</b></td> <td>BOW<br />SPEAR</td> <td>6000<br />6000</td> <td>ARROW</td> <td>1000<br />6</td> <td>25000<br />87500</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />end prod: blunt C:100 P:100 V:1</td></tr>
+  <tr> <td><b>hammer legion kit</b></td> <td>CROSSBOW<br />HAMMER</td> <td>8000<br />6000</td> <td>JAVELIN</td> <td>2000<br />9</td> <td>50000<br />77500</td> <td>warhammer bash: blunt C:10 P:200 V:2<br />warhammer hammer: blunt C:70 P:10000 V:3<br />warhammer bludgeon: blunt C:70 P:10000 V:3.3<br />warhammer viciously beat: blunt C:12 P:8000 V:3<br />warhammer throw a haymaker at: blunt C:50 P:3000 V:3<br />warhammer make an undercut swing at: blunt C:20 P:200 V:2</td></tr>
+  <tr> <td><b>hammer sling</b></td> <td>THROW<br />HAMMER</td> <td>5400<br />650</td> <td>HAMMER</td> <td>400<br />6</td> <td>40000<br />55000</td> <td>bash: blunt C:10 P:200 V:2<br />beat: blunt C:8000 P:3000 V:1.2<br />weight bludgeon: blunt C:8000 P:3000 V:1.3<br />massive weight powerfully strike: blunt C:100 P:5000 V:1.5</td></tr>
+  <tr> <td><b>hand cannon</b></td> <td>BLOWGUN<br />HAMMER</td> <td>75000<br />20000</td> <td>CANNON</td> <td>850<br />6</td> <td>52500<br />87500</td> <td>smash: blunt C:10000 P:4000 V:1.25<br />head hammer: blunt C:7000 P:10000 V:3<br />head viciously hammer: blunt C:8000 P:3000 V:2<br />stock bludgeon: blunt C:10000 P:5000 V:1.3</td></tr>
+  <tr> <td><b>ivy whip</b></td> <td>MAGIC_NATURE<br />WHIP</td> <td>4000<br />4000</td> <td>SPELLDRUID</td> <td>150<br />6</td> <td>33000<br />57500</td> <td>ivy tangles lash: edge C:100 P:50 V:2<br />ivy tangles flail: edge C:100 P:50 V:2<br />ivy stem whip: edge C:100 P:50 V:2<br />ivy stem cut: edge C:100 P:50 V:2<br />hit: edge C:100 P:50 V:2<br />enchanted thorns strike: edge C:10 P:500 V:2<br />wave of deadly summoned hornets curse: edge C:10 P:500 V:6<br />handle strike: blunt C:500 P:50 V:2</td></tr>
+  <tr> <td><b>javelin thrower</b></td> <td>CROSSBOW<br />HAMMER</td> <td>10000<br />10000</td> <td>JAVELIN</td> <td>2000<br />9</td> <td>50000<br />77500</td> <td>stock club: blunt C:10000 P:4000 V:1.25<br />end poke: blunt C:10000 P:3000 V:1.25<br />stock bludgeon: blunt C:10000 P:5000 V:1.3<br />shaft slap: blunt C:10000 P:2000 V:1.25</td></tr>
+  <tr> <td><b>lifeguard arms</b></td> <td>BLOWGUN<br />SPEAR</td> <td>50000<br />50000</td> <td>BULLET_L</td> <td>1200<br />9</td> <td>50000<br />200000</td> <td>polehammer hook puncture: blunt C:10 P:200 V:5<br />polehammer hammer: blunt C:100 P:5000 V:5<br />polehammer tip drill: blunt C:10 P:3000 V:1.2<br />musket butt strike: blunt C:200 P:2000 V:2.25<br />polehammer unleash a perfectly timed blow: blunt C:100 P:10000 V:6<br />musket fire the chambered round point blank: blunt C:10 P:10000 V:9</td></tr>
+  <tr> <td><b>magestaff</b></td> <td>MAGIC_NATURE<br />HAMMER</td> <td>4000<br />4000</td> <td>SPELLDRUID</td> <td>700<br />9</td> <td>33000<br />57500</td> <td>strike: blunt C:100 P:4000 V:2<br />tip jab: blunt C:40 P:1000 V:1.8<br />takes a balanced stance and strike: blunt C:100 P:4000 V:3<br />fend off: blunt C:100 P:4000 V:1<br />poke: blunt C:40 P:1000 V:1.2<br />runic focus crystal rend: blunt C:10 P:500 V:6<br />rush of elemental power blast: blunt C:100 P:500 V:6</td></tr>
+  <tr> <td><b>makeshift bow</b></td> <td>BOW<br />SWORD</td> <td>800<br />350</td> <td>ARROW</td> <td>300<br />3</td> <td>15000<br />0</font></td> <td>bash: blunt C:1000 P:40 V:1.25</td></tr>
+  <tr> <td><b>makeshift crossbow</b></td> <td>CROSSBOW<br />HAMMER</td> <td>1250<br />350</td> <td>BOLT</td> <td>400<br />3</td> <td>35000<br />0</font></td> <td>bash: blunt C:2000 P:40 V:1.25</td></tr>
+  <tr> <td><b>mechanized axe thrower</b></td> <td>THROW<br />AXE</td> <td>5400<br />650</td> <td>AXE</td> <td>300<br />6</td> <td>20000<br />32000</td> <td>hack: edge C:5000 P:1500 V:1.25<br />flat slap: blunt C:6000 P:200 V:1.25<br />pommel strike: blunt C:100 P:200 V:1</td></tr>
+  <tr> <td><b>mechanized crossbow</b></td> <td>CROSSBOW<br />HAMMER</td> <td>10000<br />10000</td> <td>BOLT</td> <td>400<br />3</td> <td>45000<br />47000</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />bayonet impale: edge C:1000 P:4000 V:1.1</td></tr>
+  <tr> <td><b>musket</b></td> <td>BLOWGUN<br />HAMMER</td> <td>25000<br />25000</td> <td>BULLET_L</td> <td>450<br />2</td> <td>52500<br />77500</td> <td>stock club: blunt C:10000 P:4000 V:1.25<br />end poke: blunt C:10000 P:3000 V:1.25<br />stock bludgeon: blunt C:10000 P:5000 V:1.3<br />shaft slap: blunt C:10000 P:2000 V:1.25</td></tr>
+  <tr> <td><b>razor bow</b></td> <td>BOW<br />SWORD</td> <td>1100<br />400</td> <td>ARROW</td> <td>450<br />3</td> <td>15000<br />0</font></td> <td>slash: edge C:5000 P:400 V:1.5</td></tr>
+  <tr> <td><b>recurve bow</b></td> <td>BOW<br />MACE</td> <td>2000<br />2000</td> <td>ARROW</td> <td>300<br />3</td> <td>15000<br />25000</td> <td>bash: blunt C:10000 P:4000 V:1.25</td></tr>
+  <tr> <td><b>recurve crossbow</b></td> <td>CROSSBOW<br />HAMMER</td> <td>1200<br />1200</td> <td>BOLT</td> <td>400<br />3</td> <td>45000<br />17000</font></td> <td>bash: blunt C:10000 P:4000 V:1.25</td></tr>
+  <tr> <td><b>repeating crossbow</b></td> <td>CROSSBOW<br />HAMMER</td> <td>1000<br />1000</td> <td>BOLT</td> <td>400<br />3</td> <td>45000<br />47000</td> <td>bash: blunt C:10000 P:4000 V:1.25</td></tr>
+  <tr> <td><b>repeating crossbow</b></td> <td>CROSSBOW<br />HAMMER</td> <td>10000<br />10000</td> <td>BOLT</td> <td>500<br />5</td> <td>35000<br />40000</td> <td>bash: blunt C:10000 P:4000 V:1.25<br />shaft club: blunt C:10000 P:4000 V:1.25<br />end poke: blunt C:10000 P:3000 V:1.25<br />bludgeon: blunt C:10000 P:5000 V:1.3<br />shaft slap: blunt C:10000 P:2000 V:1.25</td></tr>
+  <tr> <td><b>repeating javelin thrower</b></td> <td>CROSSBOW<br />HAMMER</td> <td>35000<br />35000</td> <td>JAVELIN</td> <td>2000<br />3</td> <td>50000<br />77500</td> <td>stock club: blunt C:10000 P:4000 V:1.25<br />end poke: blunt C:10000 P:3000 V:1.25<br />stock bludgeon: blunt C:10000 P:5000 V:1.3<br />shaft slap: blunt C:10000 P:2000 V:1.25</td></tr>
+  <tr> <td><b>sapper flamethrower</b></td> <td>BLOWGUN<br />HAMMER</td> <td>75000<br />20000</td> <td>CANNON</td> <td>850<br />6</td> <td>52500<br />77500</td> <td>smash: blunt C:10000 P:4000 V:1.25<br />head hammer: blunt C:7000 P:10000 V:3<br />head viciously hammer: blunt C:8000 P:3000 V:2<br />stock bludgeon: blunt C:10000 P:5000 V:1.3</td></tr>
+  <tr> <td><b>seawolf buccaneer arms</b></td> <td>BLOWGUN<br />SWORD</td> <td>25000<br />20000</td> <td>BULLET_L</td> <td>600<br />9</td> <td>32500<br />60000</td> <td>scimitar stab: edge C:50 P:2000 V:1<br />pistol butt whip: blunt C:200 P:2000 V:1.25<br />scimitar slash: edge C:30000 P:4000 V:2.5<br />scimitar blade sidestep and slash: edge C:30000 P:4000 V:2.5<br />scimitar blade whirl around with outstretched arms and slash: edge C:20000 P:22000 V:3<br />pistol and blade blast with a point blank volley then runs through: edge C:10 P:10000 V:6</td></tr>
+  <tr> <td><b>short bow</b></td> <td>BOW<br />SWORD</td> <td>800<br />350</td> <td>ARROW</td> <td>300<br />3</td> <td>15000<br />10000</font></td> <td>bash: blunt C:1000 P:40 V:1.25</td></tr>
+  <tr> <td><b>sling</b></td> <td>PIKE<br />PIKE</td> <td>1000<br />100</td> <td>SLING</td> <td>100<br />1</td> <td>5000<br />10000</td> <td>lash: edge C:10 P:50 V:2</td></tr>
+  <tr> <td><b>spear auxilla kit</b></td> <td>CROSSBOW<br />SPEAR</td> <td>1000<br />1000</td> <td>BOLT</td> <td>500<br />6</td> <td>32500<br />47500</td> <td>spear stab: edge C:20 P:10000 V:1<br />shaft bash: blunt C:10000 P:6000 V:1.25<br />spear furiously stab: edge C:20 P:12000 V:1<br />speartip impale: edge C:10 P:12000 V:2</td></tr>
+  <tr> <td><b>spear thrower</b></td> <td>THROW<br />SPEAR</td> <td>2400<br />1350</td> <td>SPEAR</td> <td>400<br />3</td> <td>5000<br />47500</td> <td>stab: edge C:20 P:10000 V:1<br />savage point pierce: edge C:25 P:10000 V:1.3<br />savage point mercilessly pierce: edge C:10 P:10000 V:1.8<br />run through: edge C:50 P:10000 V:1.1</td></tr>
+  <tr> <td><b>spring-loaded knife</b></td> <td>THROW<br />DAGGER</td> <td>2400<br />3350</td> <td>DAGGER</td> <td>50<br />3</td> <td>5000<br />27500</td> <td>stab: edge C:5 P:1000 V:1<br />pommel strike: blunt C:20 P:60 V:1<br />spike drill: edge C:10 P:1000 V:1.2<br />impale: edge C:10 P:1200 V:1.5<br />gore: edge C:10 P:1500 V:2</td></tr>
+  <tr> <td><b>staff</b></td> <td>MAGIC_NATURE<br />MAGIC_NATURE</td> <td>2000<br />2000</td> <td>MAGIC_SPELL</td> <td>50<br />9</td> <td>49999<br />49999</td> <td>strike: blunt C:1000 P:4000 V:1.25</td></tr>
+  <tr> <td><b>totem-bomb sling</b></td> <td>CROSSBOW<br />CROSSBOW</td> <td>1000<br />100</td> <td>CROSSBOW</td> <td>300<br />10</td> <td>5000<br />40000</td> <td>lash: edge C:100 P:500 V:2</td></tr>
+  <tr> <td><b>wraithblade</b></td> <td>MAGIC_NATURE<br />SWORD</td> <td>4000<br />4000</td> <td>SPELLWRAITH</td> <td>700<br />9</td> <td>52500<br />57500</td> <td>stab: edge C:50 P:3000 V:1<br />flat slap: blunt C:60000 P:6000 V:1.25<br />pommel strike: blunt C:100 P:1000 V:1<br />forward edge slash: edge C:60000 P:6000 V:2.5<br />reverse edge slash: edge C:60000 P:6000 V:2.5<br />forward edge sidestep and slash: edge C:60000 P:6000 V:2.5<br />reverse edge sidestep and slash: edge C:60000 P:6000 V:2.5<br />partial edge quickly slash: edge C:60000 P:6000 V:2.5<br />blade slash: edge C:60000 P:6000 V:2.5<br />tip run through: edge C:50 P:10000 V:4.1<br />preternaturally honed blade eviscerate: edge C:20000 P:22000 V:4.5<br />manifest vision of terror pierce: edge C:10 P:22000 V:4.5</td></tr>
+</center></table></td>
+    
+    <content-type: text/html>
+
+</body>
+</html>

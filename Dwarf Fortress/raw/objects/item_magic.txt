@@ -1,0 +1,70 @@
+item_magic
+
+[OBJECT:ITEM]
+
+//I had auras on foreign civs, because aura was the first shield in the raws alphabetically. thats why I moved this on top.
+[ITEM_SHIELD:ITEM_SHIELD_SHIELD]
+[NAME:round shield:round shields]
+[ARMORLEVEL:2]
+[BLOCKCHANCE:20]
+[UPSTEP:2]
+[MATERIAL_SIZE:6]YES
+
+//items tools - special reagents 
+[ITEM_TOOL:ITEM_TOOL_PHYLACTERY]
+[NAME:phylactery:phylacteries]
+[VALUE:5][SIZE:10][MATERIAL_SIZE:1][UNIMPROVABLE]
+[TILE:230]
+
+[ITEM_TOOL:ITEM_TOOL_CATALYST_GEM]
+[NAME:catalyst gem:catalyst gems]
+[VALUE:15][SIZE:10][MATERIAL_SIZE:1][UNIMPROVABLE]
+[TILE:172]
+
+[ITEM_TOOL:ITEM_TOOL_CATALYST_ROD]
+[NAME:catalyst rod:catalyst rods]
+[VALUE:15][SIZE:10][MATERIAL_SIZE:1][UNIMPROVABLE]
+[TILE:182]
+
+[ITEM_TOOL:ITEM_TOOL_TOME]
+[NAME:spelltome:spelltomes]
+[VALUE:10][SIZE:10][MATERIAL_SIZE:1][UNIMPROVABLE]
+[TILE:235]
+
+[ITEM_TOOL:ITEM_TOOL_FOCUSING_CIRCLE]
+[NAME:focusing circle:focusing circles]
+[VALUE:10][SIZE:10][MATERIAL_SIZE:1][UNIMPROVABLE]
+[TILE:157]
+
+
+//item weapon
+(made of 7 different materials that give a special interaction to the 7 mages)
+(maybe link magic missile to the wand, that would make perfect sense)
+[ITEM_WEAPON:ITEM_WEAPON_MAGIC_WAND]
+[NAME:staff:staves]
+[SIZE:50]
+[SKILL:MAGIC_NATURE]
+[RANGED:MAGIC_NATURE:MAGIC_SPELL]
+[SHOOT_FORCE:2000]
+[SHOOT_MAXVEL:2000]
+[TWO_HANDED:49999]
+[MINIMUM_SIZE:49999]
+[MATERIAL_SIZE:9]
+[ATTACK:BLUNT:1000:4000:strike:strikes:NO_SUB:1250]
+
+
+//item ammo
+(make spells of 7 different materials, using projectile expansion. Maybe use magic missile as ammo, weil also make sense)
+[ITEM_AMMO:ITEM_AMMO_MAGIC_SPELL]
+	[NAME:missile:missiles]
+	[CLASS:MAGIC_SPELL]
+	[SIZE:3]
+	[ATTACK:EDGE:10:2500:strike:strikes:NO_SUB:2800]
+
+//magic aura, adds another spell, AoE, close range.
+[ITEM_SHIELD:ITEM_SHIELD_AURA]
+[NAME:aura:auras]
+[ARMORLEVEL:1]
+[BLOCKCHANCE:25]
+[UPSTEP:3]
+[MATERIAL_SIZE:3]

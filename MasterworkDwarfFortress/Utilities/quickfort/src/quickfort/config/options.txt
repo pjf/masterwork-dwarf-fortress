@@ -1,0 +1,91 @@
+#------------------------------------------------------------------
+# QUICKFORT USER OPTIONS
+#------------------------------------------------------------------
+
+# You can use Shift+Alt+R while QF is running to restart QF, which
+# will reload options.txt.
+
+
+#----------------------------
+# Playback
+#----------------------------
+
+# Set this to 'macro' to use DF 0.31.x's macro ability (very fast).
+# Set this to 'key' to send keystrokes to the DF game window (slower).
+# The visualize command (Alt+V) always sends keystrokes.
+# This can be persistently toggled using QF's Alt+K hotkey.
+PlaybackMode = macro
+
+# The following keybinds are used to get Dwarf Fortress to do stuff.
+# Syntax: http://www.autohotkey.com/docs/commands/Send.htm
+KeyMacroLoad = ^l
+KeyMacroHighlightLastMacro = {Up}
+KeyMacroSelectMacro = {Enter}
+KeyMacroPlay = ^p
+KeyMacroRecord = ^r
+KeyMacroSave = ^s
+KeyEnter = {Enter}
+KeySelectAll = +{Enter}
+KeyNextMenuItem = {+}
+KeyPrevMenuPage = {/}
+
+#----------------------------
+# Quickfort GUI options
+#----------------------------
+
+# Set this to 0 to disable the startup balloon traytip.
+ShowStartupTrayTip = 1
+
+# Set to 0 to disable the mouse tooltip entirely.
+ShowMouseTooltip = 1
+
+# Try increasing this value if you have trouble with a flickering
+# mouse tooltip.
+MouseTooltipUpdateMs = 3
+
+#----------------------------
+# Manual material selection
+#----------------------------
+
+# How long to wait during manual material selection for the
+# materials menu to appear after QF sends Enter to show it
+WaitForMatMenuMaxMS = 15000
+
+# Max # of times Quickfort should step through the materials
+# menu looking for a memorized material before giving up
+MaxMatSearchChecks = 200
+
+# How many MS to wait between each check while searching
+# through the materials list for a memorized mat; if this
+# is too small it can check before DF has a chance to
+# update its display
+MatMenuSearchDelay = 50
+
+#----------------------------
+# Key-sending
+#----------------------------
+
+# The following options only apply when PlaybackMode = key,
+# when using Alt+V 'visualize', and when using manual material
+# selection e.g. #dig Cw:granite
+
+# Determines key-sending method, one of:
+#   Send SendEvent SendInput SendPlay ControlSend
+# Details: http://www.autohotkey.com/docs/commands/Send.htm
+SendMode = Send
+
+# Controls how long QF waits between sending keystrokes.
+# Increase this value if things go too quickly for your computer
+# when digging/building; decrease to build faster. Slower computers,
+# larger resolutions and bigger DF maps may need a larger delay.
+DelayMultiplier = 1
+
+# How long to pause after building doors, picking from materials
+# lists, etc. If QF seems to go off the rails in these
+# circumstances, try increasing this value.
+EmbeddedDelayDuration = 250
+
+# Increase this to make QF hold down the keys longer when sending
+# them to DF.
+# Details: http://www.autohotkey.com/docs/commands/SetKeyDelay.htm
+KeyPressDuration = -1

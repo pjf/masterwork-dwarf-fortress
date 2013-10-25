@@ -1,0 +1,27 @@
+[FilterSettings]
+Weather:true:0,51,255,255
+Migration:true:153,51,0,255
+DeadMissing:true:255,0,255,255
+Mandates:true:51,102,255,255
+Mining:true:255,255,255,255
+Births:true:255,255,255,255
+Masterpieces:true:0,255,255,255
+Professions:true:153,153,153,255
+Kidnappings:true:255,255,255,255
+Transformations:true:255,255,255,255
+TaskCompletions:true:0,102,0,255
+Moods:true:204,0,255,255
+Fishing:true:102,51,0,255
+Seasons:true:0,255,0,255
+Invaders:true:255,0,0,255
+JobCancellations:false:255,0,0,255
+Combat:false:255,255,255,255
+Caravan:true:255,255,0,255
+
+[Plugins]
+log-region:true
+
+[CustomFilters]
+
+[DFPath]
+..\..\..\Dwarf Fortress 0.34.11

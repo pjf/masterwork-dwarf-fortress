@@ -1,0 +1,106 @@
+// Keycode translation file.
+//
+// From here, you can customize how QF-side keycodes are translated into keystrokes or macro-codes.
+//
+// Format:
+// {
+//     "output-type": {
+//         "qf-keycode": "output-code", 
+//         ...
+//     }, 
+//     ...
+// }
+//
+// For macro output, the output-codes correspond to [KEY:xxx] or [SYM:xxx] values in config/interface.txt.
+// This interface.txt file can be copied directly from any DF installation's data/init folder.
+// Specifying "^" as a macro output-code causes QF to output the "LEAVESCREEN" DF macro-code (== Esc key).
+//
+// For key output, the output-codes correspond to keystrokes in AutoHotKey's Send syntax:
+//      http://www.autohotkey.com/docs/commands/Send.htm
+// QFAHK additionally understands some {Key} style key output-codes which affect QFAHK's key sending:
+//      {Wait} briefly pauses playback
+//
+// Internally QF represents cursor movements through use of square-bracketed keycodes.
+// Codes like [n] move one step in a direction; codes like [+n] move 10 steps in a direction.
+//
+// The following additional QF keycodes are utilized in code:
+//      {heighten} {widen} {exitmenu} {menudown} {menuup} & @ ^ %
+
+{
+    "macro": {
+        "&": "0:Enter",
+        "@": "1:Enter",
+        "^": "^",
+        "%": "",
+        "%>": "",
+        "{wait}": "",
+        "{esc}": "^",
+        "{enter}": "0:Enter",
+        "+{enter}": "1:Enter",
+        "{exitmenu}": "^",
+        "{menudown}": "+",
+        "{menuup}": "-",
+        "{/}": "/",
+        "{*}": "*",
+        "{+}": "+",
+        "{-}": "-",
+        "{heighten}": "u",
+        "{widen}": "k",
+        "[n]": "0:8",
+        "[s]": "0:2",
+        "[e]": "0:6",
+        "[w]": "0:4",
+        "[ne]": "0:9",
+        "[nw]": "0:7",
+        "[se]": "0:3",
+        "[sw]": "0:1",
+        "[+n]": "1:8",
+        "[+s]": "1:2",
+        "[+e]": "1:6",
+        "[+w]": "1:4",
+        "[+ne]": "1:9",
+        "[+nw]": "1:7",
+        "[+se]": "1:3",
+        "[+sw]": "1:1",
+        "{right}": "0:6",
+        "+{right}": "1:6",
+        "{left}": "0:4",
+        "+{left}": "1:4",
+        "{up}": "0:8",
+        "+{up}": "1:8",
+        "{down}": "0:2",
+        "+{down}": "1:2",
+        "<": "<",
+        ">": ">"
+    },
+    "key": {
+        "&": "{Enter}",
+        "@": "+{Enter}",
+        "^": "{Esc}",
+        "%": "{Wait}",
+        "%>": "{WaitAfterNext}",
+        "{exitmenu}": "{Wait}{Esc}",
+        "{menudown}": "{NumpadAdd}",
+        "{menuup}": "{NumpadSub}",
+        "{heighten}": "u",
+        "{widen}": "k",
+        "[n]": "8",
+        "[s]": "2",
+        "[e]": "6",
+        "[w]": "4",
+        "[ne]": "9",
+        "[nw]": "7",
+        "[se]": "3",
+        "[sw]": "1",
+        "[+n]": "+8",
+        "[+s]": "+2",
+        "[+e]": "+6",
+        "[+w]": "+4",
+        "[+ne]": "+9",
+        "[+nw]": "+7",
+        "[+se]": "+3",
+        "[+sw]": "+1",
+        ">": "^5",
+        "<": "+5"
+    }
+}

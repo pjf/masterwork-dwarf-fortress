@@ -1,0 +1,8 @@
+I rescue lost children and bring them back to [CONTEXT:PLACE:TRANS_NAME].
+I bring children to [CONTEXT:PLACE:TRANS_NAME] where they can be brought up properly.
+I help children reach their full potential in [CONTEXT:PLACE:TRANS_NAME].
+When parents abandon their children, I bring them back to [CONTEXT:PLACE:TRANS_NAME].
+I bring children to [CONTEXT:PLACE:TRANS_NAME] and help teach them our ways.
+I take neglected children to [CONTEXT:PLACE:TRANS_NAME] that they may flourish.
+I help lost children find their way back to their true home.
+It is my duty to save children from unworthy caretakers.

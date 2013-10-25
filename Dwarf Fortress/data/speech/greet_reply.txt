@@ -1,0 +1,26 @@
+Ah, hello.  I'm [SPEAKER:TRANS_NAME].
+Ah, hello.  My name is [SPEAKER:TRANS_NAME].
+Ah, greetings.  I'm [SPEAKER:TRANS_NAME].
+Ah, greetings.  My name is [SPEAKER:TRANS_NAME].
+Ah, welcome.  My name is [SPEAKER:TRANS_NAME].
+Ah, welcome.  I'm [SPEAKER:TRANS_NAME].
+Ah, well met.  My name is [SPEAKER:TRANS_NAME].
+Ah, well met.  I'm [SPEAKER:TRANS_NAME].
+Good day.  My name is [SPEAKER:TRANS_NAME].
+Good day.  I'm [SPEAKER:TRANS_NAME].
+Greetings.  My name is [SPEAKER:TRANS_NAME].
+Greetings.  I'm [SPEAKER:TRANS_NAME].
+Hello.  My name is [SPEAKER:TRANS_NAME].
+Hello.  I'm [SPEAKER:TRANS_NAME].
+Pleased to meet you.  My name is [SPEAKER:TRANS_NAME].
+Pleased to meet you.  I'm [SPEAKER:TRANS_NAME].
+Hail, friend.  My name is [SPEAKER:TRANS_NAME].
+Hail, friend.  I'm [SPEAKER:TRANS_NAME].
+Pleased to meet you, friend.  My name is [SPEAKER:TRANS_NAME].
+Pleased to meet you, friend.  I'm [SPEAKER:TRANS_NAME].
+Welcome, friend.  My name is [SPEAKER:TRANS_NAME].
+Welcome, friend.  I'm [SPEAKER:TRANS_NAME].
+Well met, friend.  My name is [SPEAKER:TRANS_NAME].
+Well met, friend.  I'm [SPEAKER:TRANS_NAME].
+My name is [SPEAKER:TRANS_NAME].
+I'm [SPEAKER:TRANS_NAME].

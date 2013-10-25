@@ -1,0 +1,163 @@
+[NAME]
+A Humble Offering to [NAME]
+After [NAME]
+At One With [NAME]
+Before [NAME]
+Better [NO_ART_NAME]
+Beyond [NAME]
+Choose [NAME]
+Common Sense [NO_ART_NAME]
+Errors In [NAME]
+Give Me [NAME]
+It Is [NAME]
+More [NO_ART_NAME]
+Musings on [NAME]
+My Thoughts on [NAME]
+Never Underestimate [NAME]
+Pathways to [NAME]
+Start Your Day With [NAME]
+The Art of [NAME]
+The Future of [NAME]
+The History of [NAME]
+The Nuanced [NO_ART_NAME]
+The Secret of [NAME]
+The Truth About [NAME]
+The Unabridged [NO_ART_NAME]
+The Wizard's Guide to [NAME]
+The World Without [NAME]
+Traditional [NO_ART_NAME]
+Uncanny [NO_ART_NAME]
+Victory By [NAME]
+[NAME] After The End
+[NAME] and Other Travesties
+[NAME] and The Coming Troubles
+[NAME] and The Universe
+[NAME] Comes Full Circle
+[NAME] Explained
+[NAME] Exposed
+[NAME] For Everyone
+[NAME] For The Beginning Practicioner
+[NAME] In [ANY_AGE]
+[NAME] In The Modern Era
+[NAME] In The Time of My Ancestors
+[NAME] Is My Life
+[NAME] Is The Way
+[NAME] Questioned
+[NAME] The Easy Way
+[NAME] When It Counts
+[NAME] Without Limits
+[NAME], Abridged
+[NAME], My Love
+[NAME]: A Brief History
+[NAME]: A New Approach
+[NAME]: Before and After
+[NAME]: Common Practice
+[NAME]: Fact or Fiction?
+[NAME]: Further Musings
+[NAME]: My Only Mistake
+[NAME]: Natural or Supernatural?
+[NAME]: Principles and Practice
+[NAME]: Problems And Solutions
+[NAME]: The Definitive Guide
+[NAME]: The Truth
+Can [NAME] Save The World?
+Could It Be [NAME]?
+Did [NAME] Falter?
+First [NAME], Then The World!
+To [NAME] and Glory!
+Faith and [NAME]
+When [ANY_PRONOUN] Met [NAME]
+And [NAME] Came Down
+The Book of [NAME]
+The [NOUN] of [NAME]
+The [ADJ] [NAME]
+[NO_ART_NAME]
+Sweet [NAME]
+Mastering [NAME]
+The [ADJ] News of [NAME]
+The [ADJ] [NOUN]
+[NOUN] in the [NOUN] of [NAME]
+A [NOUN] named [NAME]
+[NAME] and [NO_ART_NAME]
+Exploring [NAME]
+[NOUN] and [NAME]
+[NAME] the [NOUN]
+[ANY_PRONOUN] Shall Know [NAME]
+[NAME] the [ADJ][NOUN]
+[ADJ] [NAME]
+[NAME] and the [ADJ] [NOUN]
+[NAME]: [ADJ] and [ADJ]
+[NAME]: [PHRASE]
+[PHRASE]: A Review of [NO_ART_NAME]
+[NAME] [NOUN]
+[NAME] Forever
+[PHRASE], [ADJ] [NO_ART_NAME]
+The [ADJ] [NOUN] of [NAME]
+[NOUN] of a [NO_ART_NAME] [NOUN]
+[ADJ] Thoughts on [NAME]
+Communion With [NAME]
+[NOUN] of [NAME]
+Submission to [NO_ART_NAME]
+The Secrets of [NAME]
+Let There Be [NO_ART_NAME]
+[NAME] and [ANY_PRONOUN]
+Rituals of [NO_ART_NAME]
+Studies in [NAME]
+Understanding [NAME]
+The [ADJ] Story of [NAME]
+No More [NAME]
+Essays on [NAME]
+Philosophies on [NAME]
+Elementary [NAME]
+The Path to [NAME]
+Exercises in [NAME]
+The [NO_ART_NAME]
+The Ancient [NAME]
+Recordings of [NAME]
+The Definitive [NO_ART_NAME]
+Miracles of [NAME]
+Making Peace With [NAME]
+[NO_ART_NAME]
+The Sorcerer's Guide to [NAME]
+The World of [NAME]
+[ADJ] [NOUN]
+[NAME] [ADJ] 
+[NO_ART_NAME] Stories
+Speading the [NOUN] OF [NAME]
+[NO_ART_NAME] and Related Practices
+[NAME] and The [NO_ART_NAME] of [NO_ART_NAME]
+[ADJ] [NAME] and [NOUN]
+[NAME] and [NOUN]
+[NAME] for Laymen
+[NAME] for Children
+[NAME] for Experts
+[NAME] Until [NAME]
+[NAME] In The [ADJ] [NOUN]
+[NAME] Knows That [PHRASE]
+[NAME] Is The [NOUN]
+[NAME] Is [NO_ART_NAME]
+[NAME] Is [NAME]
+[NAME] and Ethics
+[NAME] and Society
+[NAME] and the Gods
+[NAME], I Wait for Thee
+[NAME], [PHRASE]
+[NAME]: A [ADJ] [NOUN]
+[NAME]: Now and Then
+[NAME]: [PHRASE]
+[NAME]: [NOUN] or [NOUN]?
+[NAME]: [ADJ] Thoughts
+[NAME]: My [NOUN]
+[NAME]: [ADJ] or [ADJ]?
+[NAME]: [NOUN] and [ADJ] Solutions
+[NAME]: Building the [NO_ART_NAME]
+[NAME]: The [ADJ] Guide
+[NAME]: Finding the [ADJ] [NOUN]
+[NAME] in the [ADJ] World
+Do you know [NAME]?
+Remembering [NAME]
+[NAME] and Warfare
+The [ADJ] [NOUN] of [NAME]
+Seeking [NO_ART_NAME]
+A [NOUN] for [NAME]
+The History of [NAME]

@@ -1,0 +1,8 @@
+reaction_potted_tree
+
+[REACTION]
+
+[REACTION:DECO_TREE]
+[NAME:*Stand in the shade of the tree*]
+[BUILDING:POTTED_TREE:CUSTOM_A]
+

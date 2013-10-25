@@ -1,0 +1,11 @@
+I have hunted great beasts in [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] of my years.
+For the last [CONTEXT:NUMBER] years, I have traveled [CONTEXT:PLACE:TRANS_NAME] in search of game.
+For almost [CONTEXT:NUMBER] years, I have stalked the land in search of game.
+I have been a hunter for [CONTEXT:NUMBER] years.
+For [CONTEXT:NUMBER] years, I have hunted the animals of [CONTEXT:PLACE:TRANS_NAME].
+I have spent [CONTEXT:NUMBER] years hunting game in [CONTEXT:PLACE:TRANS_NAME]
+I have lived the life of a hunter for [CONTEXT:NUMBER] years.
+I have hunted the animals in [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] of my years.
+I go where my heart drives me, as I have done for [CONTEXT:NUMBER] years as a hunter.
+I have lived off the land for [CONTEXT:NUMBER] years as a hunter.
+For [CONTEXT:NUMBER] years, I have sought great beasts in the name of the hunt.

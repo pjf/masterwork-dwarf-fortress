@@ -1,0 +1,521 @@
+FirstCall()
+Initized HOOKS!
+Identifying DF version.
+Loading hack\symbols.xml ... OK
+Dummy symbol table entry: timed_events
+Dummy symbol table entry: cur_season
+Dummy symbol table entry: cur_season_tick
+Dummy symbol table entry: cur_season
+Dummy symbol table entry: cur_season_tick
+Dummy symbol table entry: cur_season
+Dummy symbol table entry: cur_season_tick
+Dummy symbol table entry: cur_season
+Dummy symbol table entry: cur_season_tick
+Dummy symbol table entry: cur_season
+Dummy symbol table entry: cur_season_tick
+Dummy symbol table entry: cur_season
+Dummy symbol table entry: cur_season_tick
+Dummy symbol table entry: ui_menu_width
+Dummy symbol table entry: ui_area_map_width
+Dummy symbol table entry: cursor_unit_list
+Dummy symbol table entry: d_init
+Dummy symbol table entry: enabler
+Dummy symbol table entry: init
+Dummy symbol table entry: timed_events
+Dummy symbol table entry: ui_advmode
+Dummy symbol table entry: ui_build_selector
+Dummy symbol table entry: ui_building_assign_type
+Dummy symbol table entry: ui_building_assign_is_marked
+Dummy symbol table entry: ui_building_assign_units
+Dummy symbol table entry: ui_building_assign_items
+Dummy symbol table entry: ui_look_list
+Dummy symbol table entry: ui_sidebar_menus
+Dummy symbol table entry: cur_season
+Dummy symbol table entry: cur_season_tick
+Dummy symbol table entry: current_weather
+Dummy symbol table entry: pause_state
+Dummy symbol table entry: process_dig
+Dummy symbol table entry: process_jobs
+Dummy symbol table entry: ui_building_in_assign
+Dummy symbol table entry: ui_building_in_resize
+Dummy symbol table entry: ui_building_item_cursor
+Dummy symbol table entry: ui_look_cursor
+Dummy symbol table entry: ui_selected_unit
+Dummy symbol table entry: ui_unit_view_mode
+Dummy symbol table entry: ui_workshop_in_add
+Dummy symbol table entry: ui_workshop_job_cursor
+Dummy symbol table entry: window_x
+Dummy symbol table entry: window_y
+Dummy symbol table entry: window_z
+Dummy symbol table entry: building_next_id
+Dummy symbol table entry: job_next_id
+Dummy symbol table entry: cur_season
+Dummy symbol table entry: cur_season_tick
+Loaded 10 DF symbol tables.
+Version: v0.34.11 SDL
+Initializing Console.
+Console is running.
+Initializing Plugins.
+d_init: 232
+world: 1670492 ui: 31024 b_stock: 1632
+Starting IO thread.
+Starting DF input capture thread.
+Starting the TCP listener.
+Invoking: keybinding add Ctrl-F1 hotkeys
+Invoking: keybinding add Ctrl-H hotkeys
+Invoking: diggingInvaders edgesPerTick 10
+Invoking: diggingInvaders add FROST_GIANT
+Invoking: diggingInvaders setCost FROST_GIANT destroyBuilding 1
+Invoking: diggingInvaders setCost FROST_GIANT dig -1
+Invoking: diggingInvaders setCost FROST_GIANT walk 0
+Invoking: diggingInvaders setCost FROST_GIANT destroyRoughConstruction 1
+Invoking: diggingInvaders setCost FROST_GIANT destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay FROST_GIANT destroyBuilding 50
+Invoking: diggingInvaders setDelay FROST_GIANT dig -1
+Invoking: diggingInvaders setDelay FROST_GIANT destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay FROST_GIANT destroySmoothConstruction 50
+Invoking: diggingInvaders add ANT_MAN
+Invoking: diggingInvaders setCost ANT_MAN destroyBuilding -1
+Invoking: diggingInvaders setCost ANT_MAN dig 5
+Invoking: diggingInvaders setCost ANT_MAN walk 0
+Invoking: diggingInvaders setCost ANT_MAN destroyRoughConstruction -1
+Invoking: diggingInvaders setCost ANT_MAN destroySmoothConstruction -1
+DFHack is running.
+Invoking: diggingInvaders setDelay ANT_MAN destroyBuilding -1
+Invoking: diggingInvaders setDelay ANT_MAN dig 5
+Invoking: diggingInvaders setDelay ANT_MAN destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay ANT_MAN destroySmoothConstruction -1
+Invoking: diggingInvaders add ORC
+Invoking: diggingInvaders setCost ORC destroyBuilding 1
+Invoking: diggingInvaders setCost ORC dig -1
+Invoking: diggingInvaders setCost ORC walk 0
+Invoking: diggingInvaders setCost ORC destroyRoughConstruction 1
+Invoking: diggingInvaders setCost ORC destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay ORC destroyBuilding 50
+Invoking: diggingInvaders setDelay ORC dig -1
+Invoking: diggingInvaders setDelay ORC destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay ORC destroySmoothConstruction 50
+Invoking: diggingInvaders add FORGOTTEN_BEAST_1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_1 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_1 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_1 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_1 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_2
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_2 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_2 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_2 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_2 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_2 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_2 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_2 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_2 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_2 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_3
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_3 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_3 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_3 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_3 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_3 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_3 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_3 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_3 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_3 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_4
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_4 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_4 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_4 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_4 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_4 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_4 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_4 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_4 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_4 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_5 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_5 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_5 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_5 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_5 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_5 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_5 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_5 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_5 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_6
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_6 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_6 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_6 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_6 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_6 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_6 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_6 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_6 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_6 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_7
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_7 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_7 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_7 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_7 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_7 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_7 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_7 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_7 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_7 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_8
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_8 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_8 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_8 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_8 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_8 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_8 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_8 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_8 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_8 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_9
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_9 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_9 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_9 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_9 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_9 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_9 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_9 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_9 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_9 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_10
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_10 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_10 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_10 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_10 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_10 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_10 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_10 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_10 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_10 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_11
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_11 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_11 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_11 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_11 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_11 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_11 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_11 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_11 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_11 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_12
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_12 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_12 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_12 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_12 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_12 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_12 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_12 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_12 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_12 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_13
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_13 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_13 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_13 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_13 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_13 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_13 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_13 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_13 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_13 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_14
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_14 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_14 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_14 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_14 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_14 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_14 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_14 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_14 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_14 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_15
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_15 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_15 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_15 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_15 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_15 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_15 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_15 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_15 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_15 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_16
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_16 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_16 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_16 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_16 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_16 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_16 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_16 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_16 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_16 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_17
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_17 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_17 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_17 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_17 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_17 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_17 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_17 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_17 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_17 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_18
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_18 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_18 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_18 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_18 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_18 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_18 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_18 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_18 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_18 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_19
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_19 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_19 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_19 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_19 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_19 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_19 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_19 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_19 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_19 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_20
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_20 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_20 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_20 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_20 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_20 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_20 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_20 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_20 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_20 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_21
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_21 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_21 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_21 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_21 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_21 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_21 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_21 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_21 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_21 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_22
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_22 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_22 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_22 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_22 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_22 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_22 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_22 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_22 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_22 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_23
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_23 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_23 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_23 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_23 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_23 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_23 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_23 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_23 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_23 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_24
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_24 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_24 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_24 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_24 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_24 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_24 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_24 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_24 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_24 destroySmoothConstruction -1
+Invoking: diggingInvaders add FORGOTTEN_BEAST_25
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_25 destroyBuilding -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_25 dig 5
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_25 walk 0
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_25 destroyRoughConstruction -1
+Invoking: diggingInvaders setCost FORGOTTEN_BEAST_25 destroySmoothConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_25 destroyBuilding -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_25 dig 5
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_25 destroyRoughConstruction -1
+Invoking: diggingInvaders setDelay FORGOTTEN_BEAST_25 destroySmoothConstruction -1
+Invoking: diggingInvaders add TITAN_1
+Invoking: diggingInvaders setCost TITAN_1 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_1 dig -1
+Invoking: diggingInvaders setCost TITAN_1 walk 0
+Invoking: diggingInvaders setCost TITAN_1 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_1 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_1 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_1 dig -1
+Invoking: diggingInvaders setDelay TITAN_1 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_1 destroySmoothConstruction 50
+Invoking: diggingInvaders add TITAN_2
+Invoking: diggingInvaders setCost TITAN_2 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_2 dig -1
+Invoking: diggingInvaders setCost TITAN_2 walk 0
+Invoking: diggingInvaders setCost TITAN_2 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_2 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_2 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_2 dig -1
+Invoking: diggingInvaders setDelay TITAN_2 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_2 destroySmoothConstruction 50
+Invoking: diggingInvaders add TITAN_3
+Invoking: diggingInvaders setCost TITAN_3 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_3 dig -1
+Invoking: diggingInvaders setCost TITAN_3 walk 0
+Invoking: diggingInvaders setCost TITAN_3 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_3 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_3 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_3 dig -1
+Invoking: diggingInvaders setDelay TITAN_3 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_3 destroySmoothConstruction 50
+Invoking: diggingInvaders add TITAN_4
+Invoking: diggingInvaders setCost TITAN_4 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_4 dig -1
+Invoking: diggingInvaders setCost TITAN_4 walk 0
+Invoking: diggingInvaders setCost TITAN_4 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_4 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_4 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_4 dig -1
+Invoking: diggingInvaders setDelay TITAN_4 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_4 destroySmoothConstruction 50
+Invoking: diggingInvaders add TITAN_5
+Invoking: diggingInvaders setCost TITAN_5 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_5 dig -1
+Invoking: diggingInvaders setCost TITAN_5 walk 0
+Invoking: diggingInvaders setCost TITAN_5 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_5 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_5 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_5 dig -1
+Invoking: diggingInvaders setDelay TITAN_5 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_5 destroySmoothConstruction 50
+Invoking: diggingInvaders add TITAN_6
+Invoking: diggingInvaders setCost TITAN_6 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_6 dig -1
+Invoking: diggingInvaders setCost TITAN_6 walk 0
+Invoking: diggingInvaders setCost TITAN_6 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_6 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_6 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_6 dig -1
+Invoking: diggingInvaders setDelay TITAN_6 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_6 destroySmoothConstruction 50
+Invoking: diggingInvaders add TITAN_7
+Invoking: diggingInvaders setCost TITAN_7 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_7 dig -1
+Invoking: diggingInvaders setCost TITAN_7 walk 0
+Invoking: diggingInvaders setCost TITAN_7 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_7 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_7 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_7 dig -1
+Invoking: diggingInvaders setDelay TITAN_7 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_7 destroySmoothConstruction 50
+Invoking: diggingInvaders add TITAN_8
+Invoking: diggingInvaders setCost TITAN_8 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_8 dig -1
+Invoking: diggingInvaders setCost TITAN_8 walk 0
+Invoking: diggingInvaders setCost TITAN_8 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_8 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_8 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_8 dig -1
+Invoking: diggingInvaders setDelay TITAN_8 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_8 destroySmoothConstruction 50
+Invoking: diggingInvaders add TITAN_9
+Invoking: diggingInvaders setCost TITAN_9 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_9 dig -1
+Invoking: diggingInvaders setCost TITAN_9 walk 0
+Invoking: diggingInvaders setCost TITAN_9 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_9 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_9 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_9 dig -1
+Invoking: diggingInvaders setDelay TITAN_9 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_9 destroySmoothConstruction 50
+Invoking: diggingInvaders add TITAN_10
+Invoking: diggingInvaders setCost TITAN_10 destroyBuilding 1
+Invoking: diggingInvaders setCost TITAN_10 dig -1
+Invoking: diggingInvaders setCost TITAN_10 walk 0
+Invoking: diggingInvaders setCost TITAN_10 destroyRoughConstruction 1
+Invoking: diggingInvaders setCost TITAN_10 destroySmoothConstruction 1
+Invoking: diggingInvaders setDelay TITAN_10 destroyBuilding 50
+Invoking: diggingInvaders setDelay TITAN_10 dig -1
+Invoking: diggingInvaders setDelay TITAN_10 destroyRoughConstruction 50
+Invoking: diggingInvaders setDelay TITAN_10 destroySmoothConstruction 50
+Invoking: load autoSyndrome			
+Invoking: load trueTransformation			
+Invoking: autofixhandedness start
+Invoking: projectileExpansion
+Invoking: projectileExpansion enable
+Invoking: keybinding add Alt-Shift-S@dwarfmode/Default "stocks show"
+Invoking: keybinding add Alt-Shift-I@dwarfmode/Zones "zone set"
+Invoking: keybinding add Alt-M@dwarfmode/Default "dwarfmonitor prefs"
+Invoking:    keybinding add Shift-B@pet/List/Unit "gui/autobutcher"
+Invoking: keybinding add Ctrl-W twaterlvl
+Invoking: keybinding add Ctrl-E "startdwarf 14"
+Invoking: keybinding add Ctrl-Shift-E "startdwarf 21"
+Invoking: keybinding add Ctrl-Alt-E "startdwarf 28"
+Invoking: keybinding add Ctrl-Q@dwarfmode/Default quicksave
+Invoking: keybinding add Ctrl-Shift-P forumdwarves
+Invoking: keybinding add Ctrl-M@dwarfmode/QueryBuilding/Some gui/mechanisms
+Invoking: keybinding add Ctrl-O@dwarfmode/QueryBuilding/Some gui/room-list
+Invoking: dwarfmonitor enable all
+Invoking: keybinding add Ctrl-F "dwarfmonitor stats"
+Invoking: keybinding add Ctrl-V digv
+Invoking: keybinding add Ctrl-Shift-V "digv x"
+Invoking: keybinding add Ctrl-C spotclean
+Invoking: keybinding add Ctrl-Shift-K autodump-destroy-here
+Invoking: keybinding add Ctrl-K autodump-destroy-item
+Invoking: keybinding add Ctrl-Shift-N gui/rename
+Invoking: keybinding add Ctrl-Shift-T "gui/rename unit-profession"
+Invoking: keybinding add Ctrl-B adv-bodyswap
+Invoking: keybinding add Ctrl-Shift-B "adv-bodyswap force"
+Invoking: keybinding add Ctrl-T gui/advfort -i
+Invoking: claimsite
+Invoking: keybinding add Alt-A@dwarfmode/QueryBuilding/Some/SiegeEngine gui/siege-engine
+Invoking: keybinding add Alt-A@dwarfmode/QueryBuilding/Some/SiegeEngine "gui/siege-engine"
+Invoking: keybinding add Alt-P copystock
+Invoking: keybinding add Ctrl-D job-duplicate
+Invoking: keybinding add Alt-Shift-N "sort-units name" "sort-items description"
+Invoking: keybinding add Alt-Shift-R "sort-units arrival"
+Invoking: keybinding add Alt-Shift-T "sort-units profession" "sort-items type material"
+Invoking: keybinding add Alt-Shift-Q "sort-units squad_position" "sort-items quality"
+Invoking: keybinding add Alt-L@dwarfmode/LookAround gui/liquids
+Invoking: keybinding add Ctrl-Shift-M@dwarfmode/Build/Position/Trap gui/power-meter
+Invoking: keybinding add Ctrl-W@layer_military/Equip/Customize/View gui/choose-weapons
+Invoking: keybinding add Alt-P@dwarfmode/Hauling/DefineStop/Cond/Guide gui/guide-path
+Invoking: keybinding add Alt-A@dwarfmode/QueryBuilding/Some/Workshop/Job gui/workshop-job
+Invoking: keybinding add Alt-W@dwarfmode/QueryBuilding/Some/Workshop/Job gui/workflow
+Invoking: keybinding add Alt-W@overallstatus "gui/workflow status"
+Invoking: keybinding add Ctrl-U unit-info-viewer
+Invoking: keybinding add Ctrl-W@dwarfmode/QueryBuilding/Some "gui/workflow"
+Invoking: keybinding add Ctrl-I "gui/workflow status"
+Invoking: keybinding add P@dwarfmode/QueryBuilding/Some/Weaponrack gui/assign-rack
+Invoking: tweak stable-cursor
+Invoking: tweak patrol-duty
+Invoking: tweak readable-build-plate
+Invoking: tweak stable-temp
+Invoking: tweak fast-heat 500
+Invoking: tweak fix-dimensions
+Invoking: tweak advmode-contained
+Invoking: tweak fast-trade
+Invoking: tweak military-stable-assign
+Invoking: tweak military-color-assigned
+Invoking: tweak military-training
+Invoking: itemsyndrome contaminantsOn enable
+Invoking: soundsense-season
+Invoking: fix/cloth-stockpile enable
+Invoking: binpatch apply deconstruct-teleport
+Invoking: binpatch apply deconstruct-heapfall
+Invoking: binpatch apply hospital-overstocking
+Invoking: binpatch apply custom-reagent-size
+Invoking: binpatch apply training-ammo
+Invoking: binpatch apply weaponrack-unassign
+Invoking: binpatch apply armorstand-capacity
+Invoking: fix/growthbug enable
+Invoking: cls
+Invoking: fastdwarf 1
+Invoking: die

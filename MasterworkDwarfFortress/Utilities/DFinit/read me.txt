@@ -1,0 +1,52 @@
+DF Init was written by Zack Foote [xnrad].
+
+Extract archive into your DF folder and banish the thought of ever editing the init by hand again.
+
+Load default values will load ini and d_ini values default to v0.31.16.
+If it finds init.txt and/or d_init.txt in the root DF directory, however, it will use those instead.
+
+
+Changes in 1.53
+Fixed Spatter options
+Added 'current DF directory' label
+Added 'open current DF directory' button
+
+
+Changes in 1.52
+Added Spatter options
+
+
+Changes in 1.51
+Added missing dependency
+
+
+Changes in 1.5
+Added sane directory handling
+Added Truetype value
+
+
+Changes in 1.41 [never got released]
+Added empty init file handling
+
+
+Changes in 1.4
+Added 'load default values'
+Modified file handling to be 'future proof' [hopefully]
+Added hidden secret button
+Added pretty dwarf icon
+Fixed a typo or two
+
+
+Changes in 1.3:
+Added support for v0.31.08
+Added helpful [mostly] help messages
+Added PILLAR_TILE
+Fixed KEY_REPEAT_ACCEL_LIMIT and KEY_REPEAT_ACCEL_START not working properly
+
+
+Changes in 1.2:
+Added d_init support
+
+
+Changes in 1.1:
+Made font selection boxes dropdown menus instead of text boxes

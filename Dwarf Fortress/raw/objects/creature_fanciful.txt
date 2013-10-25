@@ -1,0 +1,18 @@
+creature_fanciful
+
+[OBJECT:CREATURE]
+
+
+[CREATURE:CHIMERA]
+	[NAME:chimera:chimeras:chimeric]
+	[CREATURE_TILE:'C'][COLOR:2:0:1]
+	[FANCIFUL]
+	[DOES_NOT_EXIST]
+	
+	[PREFSTRING:immortal make]
+	[PREFSTRING:embodiments of the forces of nature]
+	[PREFSTRING:maned heads]
+	[PREFSTRING:dragon-scaled bodies]
+	[PREFSTRING:snakish tails]
+	[ALL_ACTIVE]
+

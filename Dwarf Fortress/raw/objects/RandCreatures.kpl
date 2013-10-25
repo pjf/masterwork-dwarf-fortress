@@ -1,0 +1,4346 @@
+
+Program RANDCREATURE
+	Define bplist As StringList 
+	Define adjlist As StringList 
+	Define asdf As TextOutputFile 
+	Define skinlist As StringList 
+	Define hairlist As Stringlist
+	Define eyelist As StringList 
+	Define colorlist As StringList
+	Define slimecolor As StringList 
+	Define dumblist As StringList
+	Define featherlist As StringList 
+	Define scalelist As StringList 
+	Define scalecolor As StringList 
+	Define sizeavgx2 As Integer = 150000
+	Define allmobnamelist As StringList 
+	Define tagdata As StringList 
+	Define entitydata As stringlist 
+	Define alldata As StringList 
+	//FOR THE NAME
+	Define nameCS As String[] = split("t,w,bl,c,gr,rw bl,p,p,p,f,p,g,k,cr,r,c,k,sn,sp,st,wh,l,b,p,k,p,gr,p,sw,l,wr,c,l,p,m,k,gr,h,l,m,b,d,m,gr,b,m,t,l,thr,sl,m,sp,j,t,m,sp,br,sn,g,l,d,g,d,c,m,d,h,c,sh,p,g,ch,c,d,w,r,g,y,ll,g,p,t,r,ch,c,gr,fly,r,b,b,f,dr,h,b,g,m,gn,gn,w,l,gr,fr,sp,w,wh,b,n,m,m,t,b,r,r,bl,h,sk,r,st,c,st,c,m,c,gr,bl,s,sw,m,h,b,t,n,h,g,c,t,p,pl,b,b,d,f,r,m,c,w,gr,b,p,p,c,b,m,r,w,l,l,j,ch,g,m,ch,b,g,g,g,g,g,g,g,g,g,g,c,cr,v,rh,g,h,g,g,m,b,m,w,ch,fl,dr,cr,v,bl,c,m,cr,h,fl,h,gr,r,cr,dr,bl,b,m,m,j,p,bl,c,r,g,c,pl,c,cr,l,c,sp,h,sp,h,n,f,m,r,w,l,w,sp,fly ,gn,l,r,s,sn,b,l,m,p,sc,t,h,h,squ,fly,r,squ,squ,ch,m,s,cl,h,l,r,r,r,h,sh,tr,h,s,gl,p,s,fl,m,j,squ,g,l,l,b,b,b,kn,ch,tr,m,g,p,dw,h,g,k,gr,tr,dr,s,c,g,cycl,m,y,s,bl,w,f,p,b,gr,bl,str,n,h,hydr,m,s,s,r,cr,b,r,m,tr,m,sp,c,c,l,sn,m,sw,c,r,s,r,w,c,k,k,p,k,gr,b,sk,gr,h,r,w,c,w,d,c,m,hy,m,k,j,c,sl,sp,p,bl,b,sl,b,pyth,t,l,st,lynx",",",True)
+	Define nameCM As String[] = split("j,rd,n,ckl,r,l,ckb,ng,ng,n l,ttl,ng,n ,mp,r,lc,n p,r,gr,n,r,gr,n, f,lc,nt p,r,gr,n, f,lc,w,str,v,ss,w,wl sn,wy ,rr,rk wh,t,t, st,wl b,rn ,r,k,k,p,rr,t gr, p,rr,ff,r,k,spr,m,ck,t,v,b,rd p,ch,f,c,ch,f,c,d l,v,b,gp,str,lb,tr,wl gr,t h,rn,t h,rn,d ,gl,rnb,v,b,rd m,sk,sk,d l,v,b,sht,ms,ssh,pp,rk sc,rp,nt,s,squ,t,d,r j,mp,mp,ng sp,d,rm,t,n sn,d,r br,wn r,cl,s,wn r,cl,s, sp,d,ck, l,p,p,rd g,ck,s,rt t,rt,s,l, m,nst,l,nk,rs,ck,t,r b,ff,l,nd,s,m,lp,c,n,f,f,wl bl,rk,bb,qu,pm,nt w,g,m,r,nt,ff,ch l,rg,tl,tt,rfly m,n,r,g,n, b,mbl,b,t m,nt,rm,t h,m, m,nt,m, d,lr,mpr, s,t wh,t,ny d,gf,bb,g,ng sp,tt,l,sk,rs,k, sh,rtf,k, l,ngf,g,f bl,ckt,f wh,t,t,mm,rh,ng,t, c,mm, m,nt,ngr,l,c,rg,ng,r ,lkf,p,p,f,nf,sh ,c,rdf,rl,l,b,rr,c,d, gr,n, bl,f,rwh,pp,r l,ngn,s,g,rf,k,typ,r gr,r bl,cc,c,qu, rh,s,g,ndh,ll,g,t,zz,nd,nd, g,g,nt,pyb,r,dg,s,d p,nd,l,ph,rth,p,g,t,z,ll,ndr,mp,nz,n,b,r,ll,r,ng,t,bb,n s,m,bb,n wh,t, h,nd,bb,n bl,ck h,nd,bb,n gr,bb,n s,lv,bb,n p,l,t,bb,n b,l,bb,n wh,t, br,w,bb,n bl,ck cr,st,m,l  h,c,d,l, s,ltw,t,lt,r,n,c,r,r,ff,n, b,dg,nt t,rt,s,g,nt,c t,rt,s,rm,d,ll,sk,r p,l,lv,r,n,nch,ll,t,ng g,n,p,ng ,r,c,s c,v, cr,wl,nd c,v, ,gr,p h,pp,gm, cr,ndl,ngry h,sh b,lk b,lm,t sn,k,n d,v,r,th,r,py cr,wl,lth,rthw,gb,n,r,l,m,r,bb,r,nd gr,bb,nd c,v, b,v, dr,g,ch,l,m,ntm,n g,bbr,rl,v, fl,t,mp h,lm,v, bl,l,m,ntm,n ,m,ct,p,p,rd s,ttl,f,rc,ng,rs,sh, cr,rm wh,l,l,ph,nt s,rp s,t,l,xsqu,rr,gh,pp,t d,m,mbl,r fl,z,rd rh,n, tw, l,gg,rm kn,ckl,d,r ph,nt,c,t bl,z,v,r ,tt, ,tt,tt,pp,ng t,rtl,ll,g,t,r sn,pp,ng t,rtl,v,x,l,nd t,rtl,rp,n d,s,g,rm,mst,dg,h,rr,l fly,ng squ,rr,rr,l gr,rr,l r,pm,ss,st,lm,wnf,gf,mpr, br, b, th,rnb,tf,sh sp,tt,rr,nch,t st,lh,k,h,rs,ss,ff,r wh,t, sp,tt,l,nd,ck,r,llyf,sh s, n,ttl,g,nt,c squ,ngf,ch cl,llh,d br,llh,d y,ll,llh,d bl,f,f,sh b,nd,t r,nb,lly s,lf,m,bl,b,ml,gr,n,c,g,l,ss,s br,nz,tt,n,t,t,squ,zz,lf ,c,x,k d,m,l,nd,c f,ngl,ghtw,rp,rs, s,rp, m,nst,c,d,l, c,v,t l,rg,l, d,g n,k,gl,dyt,l,mp f,r,d,r c,v,v,v, f,bst,r c,v,k, f,r,gg,t p,rr,l,m,ntm,n f,r,l,m,ntm,n m,gm,l,m,ntm,n ,r,l,m,ntm,n m,ll,w c,v,v, sw,ll,mph,b,pt,l,rp,d,ld b,t,ng,r,l,dd,ch,dn,rc,p,n,ngsn,k, l,ng,bc,n tr, fr,r,ttl,sn,k,s,pp,rh,d sn,k,b,mb,ng,t,p,ss,ng,s,n,n,c,nd,n,t,r l,z,ng c,br,c,l,ck,p,ch,d,r m,nk,ng,l,ck m,mb,r sl,th b,shm,st,p,mp,l,rdv,n t,m,r",",",True)
+	Define nameCE As String[] = split("d,rm,l,rd,n,r,n,n,ch,w,n,ry,wy,wl,w,rk,n,rn,wl,t,t,n,n,t,n,l,d,rd,l,ss,d,wl,ll,d,rd,t,lfly,th,r,n,s,ck,ps,g,ng,r,l,r,l,rd,r,g,t,w,p,g,t,n,vy,ck,r,k,wl,t,n,r,n,nt,rch,fly,nfly,n,ry,n,rk,s,ll,sh,d,ng,n,n,r,ll,p,p,d,l,n,nth,n,l,sh,d,h,r,sh,n,sh,n,t,t,n,l,rp,sh,s,zzly,ck,r,x,n,s,r,lf,g,r,rd,c,r,nt,g,n,rd,r,h,ll,n,ng,d,d,ry,d,d,d,mp,r,s,r,x,lk,r,ch,ts,n,r,r,b,d,ll,rd,r,r,r,rm,d,t,n,r,r,r,n,r,k,r,t,b,thyst,s,b,l,sh,b,l,l,s,l,r,n,ffy,d,m,rn,d,rd,r,r,r,r,ch,tl,nk,rt,n,r,g,ng,l,t,d,nk,l,r,n,sh,sh,k,t,ck,d,ng,d,vy,d,d,r,l,d,d,sh,wn,wn,w,ck,d,r,w,n,ppy,rch,rf,n,lf,n,ld,n,ll,rn,n,tyr,nt,ps,n,r,tch,rd,ry,g,ng,l,r,ng,rpy,n,nt,r,c,lm,t,d,sh,ng,n,d,w,n,nt,nt,r,r,r,t,nk,g,l,x,t,m,rd,t,l,n,th,n,th,r,r,n,r,rk,n,t",",",True) 
+	Define nameVS As String[] = split("o,o,o,o,o,e,a,o,ea,a,e,a,a,o,a,e,o,a,e,e,ea,e,e,o,o,e,o,a,a,oy,a,e,o,u,e,o,i,e,e,e,e,a,a,e,i,o,a,o,i,aa",",",True)
+	Define nameVM As String[] = split("oa,o,ue,a,i,a,a,io,a,i,e,ui,e,ui,i,e,ui,e,e,o,a,o,e,e,i,e,e,i,e,a,o,ia,e,e,i,e,a,o,i,i,o,a,e,a,o,a,o,o,o,a,o,o,i,i,e,o,oo,a,a,o,a,a,ee,a,a,a,o,ey,a,o,u,i,a,o,i,ee,e,o,a,ie,o,e,i,ea,-,a,e,ea,-,a,e,o,e,i,a,e,e,a,o,ea,o,e,ea,o,e,o,o,i,o,e,i,a,e,a,e,o,e,i,u,i,a,e,o,a,o,e,a,o,io,a,i,i,ou,i,u,o,ui,i,e,u,i,u,i,i,e,e,i,oo,ai,i,e,o,e,u,o,e,u,e,i,e,ai,e,o,eo,a,eo,a,e,e,e,o,oi,i,a,o,e,o,a,u,o,o,o,ee,i,oa,i,e,a,u,a,e,u,a,ei,ee,oo,a,a,a,ui,ea,o,ea,o,u,a,i,ui,e,a,o,i,e,e,au,i,o,oa,a,ee,u,e,o,a,i,e,a,o,o,ey,u,e,oa,ou,ai,a,o,oa,o,e,ou,ai,o,e,a,a,u,a,ey,ea,i,i,i,o,i,o,e,o,o,e,a,a,i,u,a,o,o,i,a,o,o,i,i,e,u,ee,a,i,ee,i,e,i,a,e,ea,e,a,e,o,o,ay,a,i,oe,a,a,u,eo,o,e,ee,i,i,o,a,ou,e,ue,i,u,i,o,ea,o,i,a,i,a,i,u,a,a,u,a,ea,u,a,ue,i,a,a,i,a,o,o,a,i,e,i,i,a,u,ea,i,ea,a,ee,o,a,oo,a,a,ue,e,u,ou,a,o,ou,o,i,a,o,u,a,a,a,a,i,a,i,a,a,a,e,oo,e,a,e,a,a,o,io,eo,a,a,ua,ee,a,a,e,a,i,i,a,o,o,o,i,a,u,a,i,o,ia,a,i,o,i,e,a,e,i,o,a,a,e,i,o,i,o,i,e,i,o,i,ea,e,i,o,i,i,o,i,e,o,e,i,o,a,e,e,a,e,u,o,o,i,e,a,a,e,u,u,i,o,e,o,i,a,o,ey,a,e,ia,o,oi,i,a,i,o,oi,a,i,u,o,ea,o,a,e,o,e,i,i,i,oa,i,u,u,ia,ee,i,o,a,iou,a,e,a,e,i,a,e,o,a,o,e,a,a,a,u,u,ea,e,a,i,e,e,a,ee,e,ou,e,u,e,e,ee,a,e,a,o,oo,u,a,a,e,o,e,a,ia,a,e,e,o,a,e,i,a,e,ea,a,e,a,o,ea,e,e,e,a,a,o,a,a,e,oa,e,u,e,e,a,e,o,e,e,a,a,e,o,u,a,eo,a,ea,u,e,i,o,o,e,oe,a,e,a,e,a,ea,a,ea,au,i,u,o,ui,e,o,o,e,a,e,o,a,e,u,i,a,i,o,o,e,e,o,u,i,e,a,o,a,o,a,oo,i,a,i,e,o,e,ea,o,e,e,a,i,u,i,a,o,a,i,u,ea,e,ee,o,o,i,o,u,o,io,e,e,i,e,a,a,e,e,e,o,ui,e,i,i,ui,e,a,ui,e,ui,e,e,i,u,u,e,e,a,o,o,i,a,i,a,ey,oo,ay,a,ay,o,a,a,i,o,e,e,i,a,o,ou,ee,ea,a,ea,o,a,u,e,i,e,o,e,o,ou,e,a,e,e,e,i,ea,e,ui,i,a,i,ui,u,i,oa,o,u,ea,o,u,ea,e,o,u,ea,a,i,e,i,a,e,a,ou,ai,o,o,ai,i,u,e,a,u,a,o,i,o,o,e,i,o,i,o,a,o,a,o,o,u,o,ia,o,i,i,o,au,e,a,ua,i,a,o,i,ai,i,ea,o,i,e,i,e,e,ou,a,e,i,i,a,e,e,o,ea,e,e,ea,o,e,o,o,o,i,e,a,a,a,a,o,e,o,a,e,o,o,o,i,i,e,a,a,a,e,i,o,e,a,a,e,i,a,o,u,i,e,e,a,i,e,e,a,a,e,e,a,i,o,e,e,a,u,a,o,a,a,e,a,o,i,ia,e,i,e,e,o,e,i,oa,oyo,a,a,oa,e,i,o,u,i,i,a,ay,a,u,o,a,u,ee,ee,o,a,a,e,a,ea,e,o,e,ea,a,e,o,a,i,oa,o,u,o,oo,e,a,o,o,i,o,i,a,i,o,e,o,a,a,a,u,i,o,i,e,o,a,o,i,a,a,ea,o,o,ea,u,a,e,o,a,i,a,a,io,a,a,i,oa",",",True)
+	Define nameVE As String[] = split("ay,e,e,e,e,i,ea,e,o,ey,ey,u,ie,e,e,o,e,e,o,e,e,ey,e,o,e,a,a,ue,ey,a,e,e,ee,ee,ea,e,e,e,ue,a,ay,o,e,e,a,a,e,a,e,ee,o,a,ay,ou,e,e,e,e,o,e,a,eye,e,e,e,a,a,o,a,e,e,e,e,e,e,ay,e,e,eye,e,e,e,e,i,e,ie,a,e,e,e,e,e,e,e,e,e,e,a,e,e,e,oo,a,a,e,e,e,e,e,o,i,e,a,a,a,ey,a,a,",",",True)
+
+	
+	Define ncs As StringList 
+	Define ncm As StringList
+	Define nce As StringList 
+	Define nvs As StringList 
+	Define nvm As StringList 
+	Define nve As stringlist 
+	
+	//FOR THE DESCRIPTION
+	Define dscSize As StringList 
+	Define dscAdj As StringList 
+	Define dscNoun As StringList 
+	Define dscDesc As StringList 
+	Define dscVerb As StringList 
+	Define flies As Boolean 
+	//Define //fname As stringlist //Obsolete
+	//Define //lname As stringlist
+	Define bloodcolor As stringlist
+	
+	Define ttl As StringList /*So that the program can go back and change lines as needed.
+	Old idea, but still love it.*/
+	
+	//THIS IS THE ENTITY STUFF.
+	Define qwas As TextOutputFile = createtextfile("entity_random_rc.txt")
+	Define entweapon As StringList 
+	Define entarmor As StringList 
+	Define enthelm As StringList 
+	Define entgloves As StringList 
+	Define entpants As StringList 
+	Define entshoes As StringList 
+	Define entshield As StringList 
+	Define entinstrument As StringList 
+	Define enttool As StringList 
+	Define enttoy As StringList 
+	Define enttrapcomp As StringList 
+	Define entsymbol As StringList 
+	Define entsphere As StringList 
+	Define enttop80 As StringList 
+	Define enttop60 As StringList 
+	Define enttop40 As StringList 
+	Define enttop20 As StringList 
+	Define entland As StringList 
+	Define entconstruct As StringList 
+	Define entlow60 As StringList 
+	Define entlow40 As StringList 
+	Define entlow20 As StringList 
+	Define entprof80 As StringList 
+	Define entprof60 As StringList 
+	Define entprof40 As StringList 
+	Define entprof20 As StringList 
+	Define entethics1 As StringList 
+	Define entethics2 As StringList 
+	Define itemimp As StringList 
+	Define entcommon As StringList 
+	Define sitetype As StringList 
+	Define art_facet As StringList 
+	Define art_image As StringList 
+	Define clothes As Boolean
+	Define entitycount As Integer 
+	
+	//THIS IS THE LANGUAGE STUFFS
+	Define DFLC As TextOutputFile = createtextfile("language_RANDOM.txt")
+	Define Symbols As StringList 
+	Define Words As StringList 
+	Define friendlywords As StringList //cheap and simple
+	Define secondwords As StringList 
+	Define Prefix As IntegerList //if false, then suffix
+	Define FixString As StringList[2]
+	Define FixCV As stringlist
+	Define lang As String
+	Define totalfails As Integer 
+	Define Wordlength As IntegerList 
+	Define fixes As StringList 
+	Define allprint As Stringlist
+	Define wordsym As IntegerList[4096]
+	Define cs As StringList 
+	Define cm As StringList
+	Define ce As StringList 
+	Define vs As StringList 
+	Define vm As StringList 
+	Define ve As stringlist 
+	Define addedlist As StringList 
+	Define avglength As Decimal
+	Define avgparts As Decimal 
+	Define reglength As Decimal 
+	Define regparts As Decimal 
+	Define ct As Decimal 
+	Define vowellist As StringList
+	Define consolist As StringList
+	Define swaplist As StringList 
+	Define repeat As Boolean = True
+	Define fails As Integer 
+	Define uberfails As Integer 
+	Define lengthadd As Integer
+	//consovowel list for randomly generated source words
+	Define Cb1 As String[] = split("b,bl,br,c,ch,cl,cr,d,dr,dw,f,fl,fr,g,gh,gl,gn,gr,h,j,k,kn,l,m,n,p,ph,phl,phr,pl,qu,r,rh,s,sc,sch,scr,sh,shr,sk,sl,sm,sn,sp,spl,spr,squ,st,str,sw,t,th,thr,tr,tw,v,w,wh,wr,z",",")
+	Define Cb2 As String[] = split("b,bb,bbl,bl,bm,br,bs,bsc,bst,btl,c,cc,ch,chl,chr,chs,ck,ckl,ckn,cl,cr,ct,ctr,d,ddl,dg,dl,dm,dn,dr,dv,f,-f,ff,ffl,ffr,fl,ft,g,gg,ggl,ght,ghtm,ghtn,gl,gm,gn,gr,h,k,kf,l,lb,lc,lch,ld,lg,lk,ll,lm,ls,lt,ltr,lv,lw,m,mb,mbl,mbr,mm,mp,mpk,mpl,mpr,mpt,ms,mst,n,nbr,nc,nch,ncl,nct,nd,ndl,ndn,ndr,nf,nfl,ng,ngd,ngl,ngr,nh,nj,nk,nkl,nn,nqu,nr,ns,nsl,nsp,nst,nstr,nsw,nt,nth,ntr,nv,nw,nz,p,ph,pl,pp,ppl,pr,pt,qu,r,rb,rbl,rc,rch,rcl,rd,rdl,rf,rfl,rg,rgl,rk,rkl,rl,rm,rn,rp,rpl,rpr,rqu,rr,rs,rsh,rt,rth,rthl,rtn,rtr,rv,s,sc,scl,sg,sh,shr,sk,sl,sm,sn,sp,ss,st,stl,stn,str,stw,t,tch,tchf,th,thf,thl,tl,tr,tt,ttl,v,w,wn,wsh,x,xc,xtr,ycl,yl,ym,ymm,yph,yr,ysm,yst,yw,z,zz,zzl",",")
+	Define Cb3 As String[] = split("b,c,ch,ck,ct,d,f,ff,ft,g,gg,gh,ght,gm,gn,h,k,l,lb,lch,ld,lf,lk,ll,lm,lp,lpt,ls,lt,lth,m,mb,mn,mp,mpt,n,nch,nct,nd,ng,ngs,ngth,nk,nn,ns,nt,nth,nts,p,pt,pth,r,rb,rch,rd,rk,rl,rld,rm,rn,rp,rsh,rst,rt,rth,s,sh,sk,sm,sp,ss,st,t,tch,th,w,wd,wk,wl,wn,ws,wt,wth,ypt,yr,yss,yst,yth,ythm",",")
+	Define Vb1 As String[] = split("a,ai,au,e,ea,ee,eu,i,o,oa,oi,oo,ou,u,ya,ye,yea,yo,you",",")
+	Define Vb2 As String[] = split("a,ai,ao,au,e,ea,eau,ee,eei,ei,eo,eou,eu,i,-i,ia,ie,io,iou,iu,o,oa,oe,oi,oo,ou,u,ua,ue,uee,ui,uie,uoi,uou,ya,ye,yo",",")
+	Define Vb3 As String[] = split("a,e,ea,ee,eo,i,ia,ie,io,o,oe,oo,u,y,ye",",")
+	Define c1 As StringList
+	Define c2 As StringList
+	Define c3 As StringList
+	Define v1 As StringList
+	Define v2 As StringList
+	Define v3 As stringlist
+	
+	Define Loopx As Int
+	
+	Method Main()
+		Define guideloopnum As Integer 
+		shell.HideToolbar()
+		Randomdata()//Reads from files.
+		stuffinit()//initializes the entity stuff
+		wordcrafterstart()
+		shell.SetWindowTitle("Talvieno's RandCreatures                                                                                                                                                                      ")
+		qwas.WriteLine ("entity_random_rc")
+		qwas.WriteLine ("")
+		qwas.WriteLine ("[OBJECT:ENTITY]")
+		qwas.WriteLine ("")
+		asdf = createtextfile("creature_random_rc.txt")
+		dflc.WriteLine ("language_RANDOM")
+		dflc.WriteLine ("")
+		dflc.WriteLine ("[OBJECT:LANGUAGE]")
+		dflc.WriteLine ("")
+		FullBP()//count:0 - 19
+		asdf.WriteLine ("creature_random_rc")
+		asdf.WriteLine ("")
+		asdf.WriteLine ("[OBJECT:CREATURE]")
+		asdf.WriteLine ("")
+		guideloopnum = max(10,min(1000,console.ReadInt ("How many creatures would you like to gen? (10 - 1000)")))
+		console.Hide()
+		delay(1)
+		Define peny As Integer = 0
+		pen(False)
+		setfont(fonts.ComicSansMS,10,False,False,False)//set the friendly fonts. Personally, I hate it, but meh.
+		For loopx = 1 To guideloopnum
+			status ("Creature " + loopx)
+			//a tiny bit of reset stuff
+			dscSize.Clear ()
+			dscAdj.Clear ()
+			dscNoun.Clear ()
+			dscDesc.clear ()
+			dscVerb.Clear ()
+			////fname.Clear ()
+			////lname.Clear ()
+			ttl.clear()
+			
+			flies = False
+			
+			Define ishunter As Boolean 
+			Define isroamer As Boolean
+			Define isgrazer As Boolean 
+			Define issolitary As Boolean 
+			Define ingroups As Boolean 
+			Define preflist As Stringlist
+			Define foodword As String = "food"
+			Define tile As String = randomletter()
+			Define ina As String = "1" + strings.touppercase(tile + randomletter() + randomletter() + randomletter() + randomletter() + randomletter() + randomletter() + randomletter())
+			ttl.add ("[CREATURE:CREATURE_" + ina + "_RC]")//ITEM 1
+			ttl.add ("	[NAME:" + ina + ":" + ina + "s:" + ina + "]")//ITEM 2
+			ttl.Add ("	[DESCRIPTION:") //ITEM 3
+			ttl.Add ("	[COLOR:") //ITEM 4
+			ttl.add ("	[CASTE_NAME:" + ina + ":" + ina + "s:" + ina + "]")//ITEM 5
+			ttl.add ("	[CREATURE_TILE:'" + tile + "']")//ITEM 6
+			ttl.Add ("	[PREFSTRING:")//ITEM 7
+			ttl.add ("	[NATURAL][LARGE_ROAMING]")
+			ttl.add ("	[PETVALUE:" + (random(1,100) * 10) + "]")
+			
+			//660 VANILLA CREATURES TOTAL
+			//Technically, about 406, if you don't count man/giant creature variations
+			//Using 278 as a control. It's the number that have LARGE_ROAMING.
+		
+			
+			//semimegabeasts and megabeasts got scooped up and put here. what lucky beasts, eh?
+			Define cantcivtype As Integer 
+			Define canciv As Boolean = True	
+			Define semi As Boolean 
+			Define intelligent As Boolean 
+			Define canopendoors As Boolean 
+			Define equips As Boolean
+			Define isfirebreather As Boolean 
+			Define isbronze As Boolean 
+			//look at all their happy variables up thar.
+			
+			If random(1,33) = 1 Then//1-in-100 possible free civ
+				ttl.Add("	[CANOPENDOORS][EQUIPS][INTELLIGENT]")
+				canopendoors = True
+				equips = True
+				intelligent = True
+			Else If random(1,100) = 1 Then//1 in 100 semimegabeast
+				canciv = False
+				semi = True
+				ttl.Add ("	[SEMIMEGABEAST][DIFFICULTY:5]")
+				ttl.Add ("		[ATTACK_TRIGGER:50:5000:50000]")
+				ttl.Add ("	[CAN_LEARN][CAN_SPEAK][CANOPENDOORS][EQUIPS][FANCIFUL]")
+				ttl.Add ("	[BUILDINGDESTROYER:2]")
+				Define loopsies As Integer = random(2,6)
+				Define it As Integer 
+				For it = 1 To loopsies
+					ttl.add("	[SPHERE:" + entsphere.Item(random(1,entsphere.Count)) + "]")
+				Next
+				If random(1,4) <> 1 Then//you're just a little nothing.
+					ttl.Add ("	[LAIR:SIMPLE_BURROW:100]")
+				Else //YAUR A MINOTAUR-like
+					ttl.Add ("	[NATURAL_SKILL:WRESTLING:6]")
+					ttl.Add ("	[NATURAL_SKILL:BITE:3]")
+					ttl.Add ("	[NATURAL_SKILL:GRASP_STRIKE:6]")
+					ttl.Add ("	[NATURAL_SKILL:STANCE_STRIKE:6]")
+					ttl.Add ("	[NATURAL_SKILL:MELEE_COMBAT:8]")
+					ttl.Add ("	[NATURAL_SKILL:DODGING:6]")
+					ttl.Add ("	[NATURAL_SKILL:AXE:8]")
+					ttl.Add ("	[NATURAL_SKILL:SWORD:8]")
+					ttl.Add ("	[NATURAL_SKILL:DAGGER:8]")
+					ttl.Add ("	[NATURAL_SKILL:PIKE:8]")
+					ttl.Add ("	[NATURAL_SKILL:MACE:8]")
+					ttl.Add ("	[NATURAL_SKILL:HAMMER:8]")
+					ttl.Add ("	[NATURAL_SKILL:WHIP:8]")
+					ttl.Add ("	[NATURAL_SKILL:SPEAR:8]")
+					ttl.Add ("	[NATURAL_SKILL:SITUATIONAL_AWARENESS:12]")
+					ttl.Add ("	[PHYS_ATT_RANGE:STRENGTH:1000:1100:1150:1250:1350:1550:2250]")
+					ttl.Add ("	[PHYS_ATT_RANGE:TOUGHNESS:1000:1100:1150:1250:1350:1550:2250]")
+					ttl.Add ("	[PHYS_ATT_RANGE:AGILITY:1000:1100:1150:1250:1350:1550:2250]")
+					ttl.Add ("	[PHYS_ATT_RANGE:ENDURANCE:1000:1100:1150:1250:1350:1550:2250]")
+					ttl.Add ("	[PHYS_ATT_RANGE:RECUPERATION:1000:1100:1150:1250:1350:1550:2250]")
+					ttl.Add ("	[PHYS_ATT_RANGE:DISEASE_RESISTANCE:1000:1100:1150:1250:1350:1550:2250]")
+					ttl.Add ("	[MENT_ATT_RANGE:FOCUS:1000:1100:1150:1250:1350:1550:2250]")
+					ttl.Add ("	[MENT_ATT_RANGE:WILLPOWER:1000:1100:1150:1250:1350:1550:2250]")
+					ttl.Add ("	[MENT_ATT_RANGE:MEMORY:2000:2100:2150:2250:2350:2550:3250]")
+					ttl.Add ("	[MENT_ATT_RANGE:SPATIAL_SENSE:2000:2100:2150:2250:2350:2550:3250]")
+					ttl.Add ("	[MENT_ATT_RANGE:KINESTHETIC_SENSE:1000:1100:1150:1250:1350:1550:2250]")
+					ttl.Add ("	[LAIR:LABYRINTH:100]")
+					ttl.Add ("	[LAIR_HUNTER]")
+					ttl.Add ("	[LAIR_HUNTER_SPEECH:lair_hunter_minotaur.txt]")
+					ttl.Add ("	[HABIT_NUM:TEST_ALL]")
+					ttl.Add ("	[HABIT:GRIND_BONE_MEAL:100]")
+					ttl.Add ("	[HABIT:EAT_BONE_PORRIDGE:100]")
+					ttl.Add ("	[HABIT:USE_ANY_MELEE_WEAPON:100]")
+				End If//Yes, I arranged that last if-then just for the comments. :(
+				
+			Else If random(1,100) = 1 Then//1 in 100 megabeast   
+				//Greetings, this is your captain speaking. You are all screwed. Thank you for choosing Talvieno airlines, and I bid you all a good day.
+				canciv = False//just to keep the big ol' morons from making their own civs.
+				If random (0,3) = 1 Then
+					ttl.Add("	[MEGABEAST][DIFFICULTY:15] 11 Or higher does Not Get assigned As adv mode quests")
+				Else
+					ttl.Add("	[MEGABEAST][DIFFICULTY:10] 11 Or higher does Not Get assigned As adv mode quests")
+				End If
+				ttl.Add("		[ATTACK_TRIGGER:80:10000:100000]")
+				ttl.Add ("	[FANCIFUL][LARGE_PREDATOR][LIKES_FIGHTING][NOFEAR][NOEXERT]")
+				ttl.Add ("	[FREQUENCY:5]")
+				ttl.Add ("	[GRASSTRAMPLE:50]")
+				ttl.Add ("	[PETVALUE:10000]")
+				ttl.Add ("	[PET_EXOTIC][TRAINABLE][MOUNT_EXOTIC]")
+				Define loopsies As Integer = random(2,3)
+				Define it As Integer 
+				For it = 1 To loopsies
+					ttl.add("	[SPHERE:" + entsphere.Item(random(1,entsphere.Count)) + "]")
+				Next
+				If random (0,1) = 1 Then
+					ttl.Add ("	[NOSTUN][NOPAIN]")
+				End If
+				Define loveme As Integer = random(1,4)//score weaver
+				If loveme = 1 Then
+					ttl.Add ("	[LAIR:WILDERNESS_LOCATION:100]")
+				Else If loveme = 2 Then
+					ttl.Add ("	[LAIR:SHRINE:100]")
+				Else
+					ttl.Add ("	[LAIR:SIMPLE_BURROW:100]")
+				End If
+				loveme = random(1,4)//add megabeast-specific bits  
+				If loveme = 1 Then //First, a dash of dragon
+					ttl.Add ("	[MENT_ATT_RANGE:WILLPOWER:3000:3500:3750:4000:4250:4500:5000]")
+					ttl.Add ("	[HABIT_NUM:TEST_ALL]")
+					ttl.Add ("	[HABIT:COLLECT_WEALTH:100]")
+					ttl.Add ("	[NATURAL_SKILL:BITE:6]")
+					ttl.Add ("	[NATURAL_SKILL:GRASP_STRIKE:6]")
+					ttl.Add ("	[NATURAL_SKILL:RANGED_COMBAT:6]")
+					ttl.Add ("	[NATURAL_SKILL:MELEE_COMBAT:6]")
+					ttl.Add ("	[NATURAL_SKILL:DODGING:6]")
+					ttl.Add ("	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]")
+				Else If loveme = 2 Then // next, a case of colossus
+					//dooooo NOTHING!!!! //christmas demolition
+				Else If loveme = 3 Then //then, a hint of hydra
+					ttl.Add ("	[LAIR_HUNTER]")
+					ttl.Add ("	[NATURAL_SKILL:BITE:6]")
+					ttl.Add ("	[NATURAL_SKILL:GRASP_STRIKE:6]")
+					ttl.Add ("	[NATURAL_SKILL:MELEE_COMBAT:6]")
+					ttl.Add ("	[NATURAL_SKILL:DODGING:6]")
+					ttl.Add ("	[NATURAL_SKILL:SITUATIONAL_AWARENESS:14]")
+				Else//and finally, a ray of roc.
+					ttl.Add ("	[HABIT_NUM:TEST_ALL]")
+					ttl.Add ("	[HABIT:GIANT_NEST:100]")
+					ttl.Add ("	[NATURAL_SKILL:BITE:6]")
+					ttl.Add ("	[NATURAL_SKILL:STANCE_STRIKE:6]")
+					ttl.Add ("	[NATURAL_SKILL:MELEE_COMBAT:6]")
+					ttl.Add ("	[NATURAL_SKILL:DODGING:6]")
+					ttl.Add ("	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]")
+				End If
+				Define r As Integer = random(1,4)
+				If r = 4 Then//Cue Skyrim dragon theme
+					isfirebreather = True
+					ttl.Add ("	[CAN_DO_INTERACTION:MATERIAL_EMISSION]")
+					ttl.Add ("		[CDI:ADV_NAME:Breath fire]")
+					ttl.Add ("		[CDI:USAGE_HINT:ATTACK]")
+					ttl.Add ("		[CDI:BP_REQUIRED:BY_CATEGORY:MOUTH]")
+					ttl.Add ("		[CDI:FLOW:DRAGONFIRE]")
+					ttl.Add ("		[CDI:TARGET:C:LINE_OF_SIGHT]")
+					ttl.Add ("		[CDI:TARGET_RANGE:C:15]")
+					ttl.Add ("		[CDI:MAX_TARGET_NUMBER:C:1]")
+					ttl.Add ("		[CDI:WAIT_PERIOD:50]")
+					ttl.Add ("	[FIREIMMUNE_SUPER]")
+				Else If r = 3 Then //it's made of bronze
+					isbronze = True
+					ttl.Add ("	[NOT_BUTCHERABLE]")
+				End If
+			End If
+			If canciv = False Then
+				If random(0,277) < 61 Then
+					ttl.add ("	[PET]")
+				Else If random(0,277) < 303 Then
+					ttl.add ("	[PET_EXOTIC]")
+				End If
+				If random(0,277) < 150 Then
+					ttl.add ("	[MOUNT_EXOTIC]")
+					dscVerb.Add ("can be ridden")
+				End If
+				If random(0,277) < 4 Then
+					ttl.add ("	[GLOWTILE:9][GLOWCOLOR:" + random(1,7) + ":0:1]")
+				End If
+				If random(0,277) < 28 Then
+					ttl.add ("	[TRAINABLE]")
+					dscVerb.Add ("can be trained for war")
+				End If
+			End If
+			//This part keeps getting moved higher and higher all the time. Stupid definitions.
+			Define hashorn As Boolean
+			Define hastusk As Boolean
+			Define hashoof As Boolean
+			Define hasbone As Boolean = True
+			Define hascartilage As Boolean = True
+			Define hashair As Boolean = True
+			Define hasfeather As Boolean
+			Define hasribcage As Boolean
+			Define hasspine As Boolean
+			Define hasteeth As Boolean = False
+			Define hasjoints As Boolean 
+			Define hasfingers As Boolean 
+			Define hastoes As Boolean 
+			Define hasgizzard As Boolean 
+			Define hasheart As Boolean 
+			Define hasthroat As Boolean 
+			Define hasfoot As Boolean 
+			Define hashand As Boolean 
+			Define hasleather As Boolean = True
+			Define hasbrain As Boolean 
+			Define haseyes As Boolean 
+			Define hasskull As Boolean 
+			Define handtoe As Boolean
+			Define eyecount As Integer
+			Define addhair As Boolean 
+			Define thistype As String 
+			Define hasnose As Boolean
+			Define hasears As Boolean 
+			Define chitinbone As Boolean 
+			Define hasneck As Boolean 
+			
+			Define nobreathe As Boolean 
+			Define amphibious As Boolean 
+			Define likesfighting As Boolean 
+			
+			//attack oriented
+			Define hasbeak As Boolean 
+			Define hastalon As Boolean 
+			Define hashead As Boolean 
+			Define hasmouth As Boolean 
+			Define hasclaws As Boolean 
+			Define hasnails As Boolean 
+			Define hasupperbodypincers As Boolean 
+			Define hasproboscis As Boolean 
+			
+			Define hasfingerclaws As Boolean 
+			Define hasfingernails As Boolean 
+			Define hastoenails As Boolean 
+			Define hastoeclaws As Boolean 
+			Define hasmandibles As Boolean 
+			Define sentient As Boolean
+			Define ongoing As Boolean 
+			Define curiouscount As Integer 
+			Define typecur As String 
+			Define plusup As Boolean 
+			Define pluslist As StringList 
+			
+			//and now we start adding teh awesomeness. #LolmodReference
+			Define u As Integer 
+			For u = 1 To tagdata.Count
+				Define lread As String = tagdata.Item(u)
+				If strings.StartsWith(lread,"!") Or strings.StartsWith (lread,"?") Then//add technical stuff
+					Define okay As Boolean = False
+					Define l3 As String[] = split(lread,";")
+					If strings.StartsWith (lread,"?") Then//if a secondary entry
+						If ongoing = False Then
+							ongoing = True
+							okay = True
+						End If
+					Else
+						okay = True
+					End If
+					If arraylength(l3) > 2 Then//DISABLE MEGABEAST TAGS FOR MEGABEASTS
+						If strings.IndexOf (l3[3],"M",1) <> -1 Then
+							If canciv = False Then
+								okay = False
+							End If
+						End If
+					End If
+					If okay = True Then
+						ongoing = True
+						lread = strings.Remove(lread,1,1)
+						Define l2 As String[] = split(lread,";")
+						If random(1,1000) <= converttointeger(l2[2]) Then
+							ttl.Add ("	" + l2[1])
+							If l2[1] = "[AMPHIBIOUS]" Then
+								amphibious = True
+							Else If l2[1] = "[INTELLIGENT]" Then
+								intelligent = True
+							Else If l2[1] = "[CANOPENDOORS]" Then
+								canopendoors = True
+							Else If l2[1] = "[CURIOUSBEAST_EATER]" Then
+								curiouscount = curiouscount + 1
+								typecur = "eating the provisions of outposts"
+							Else If l2[1] = "[CURIOUSBEAST_GUZZLER]" Then
+								curiouscount = curiouscount + 1
+								typecur = "drinking the provisions of outposts"
+							Else If l2[1] = "[CURIOUSBEAST_ITEM]" Then
+								curiouscount = curiouscount + 1
+								typecur = "stealing items from outposts"
+							Else If l2[1] = "[EXTRAVISION]" Then
+								haseyes = True
+							Else If l2[1] = "[FLIER]" Then
+								flies = True
+							Else If l2[1] = "[GRAZER]" Then
+								isgrazer = True
+							Else If l2[1] = "[LARGE_PREDATOR]" Then
+								ishunter = True
+							Else If l2[1] = "[LIKES_FIGHTING]" Then
+								likesfighting = True
+							Else If l2[1] = "[MEANDERER]" Then
+								isroamer = True
+							Else If l2[1] = "[NO_THOUGHT_CENTER_FOR_MOVEMENT]" Then
+								hasbrain = True
+							Else If l2[1] = "[NOBREATHE]" Then
+								nobreathe=True
+							End If
+						Else
+							ongoing = False
+						End If
+					End If
+				Else If strings.StartsWith(lread,"//") Or lread = "" Or strings.StartsWith (lread," ") Then//hooray for comments and whitespaces
+					//DO NOTHING BECUZ THERE AIN'T NOTHING TO DO
+					//Actually, this line should never happen. This is a warning to me that something is wrong.
+					u = u
+				Else If ongoing = True Then//add flavor stuff
+					lread = strings.Replace(lread,"	","")
+					If strings.StartsWith(lread,"+") Then
+						plusup = True
+						pluslist.Add (lread)
+					Else If plusup = True Then
+						plusup = False
+						Define d As Integer = random(1,pluslist.Count)
+						Define l2 As String[] = split(pluslist.Item(d),":")
+						Define i As Integer
+						Define temp As String
+						If l2[1] = "adj" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								adjlist.Add (temp)
+							End If
+						Else If l2[1] = "noun" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								dscnoun.add (temp)
+							End If
+						Else If l2[1] = "verb" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								dscverb.add (temp)
+							End If
+						Else If l2[1] = "pref" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								preflist.add (temp)
+							End If
+						Else If l2[1] = "desc" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								dscdesc.add (temp)
+							End If
+						End If
+					Else 
+						Define l2 As String[] = split(lread,":")
+						Define temp As String
+						If l2[1] = "adj" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								adjlist.Add (temp)
+							End If
+						Else If l2[1] = "noun" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								dscnoun.add (temp)
+							End If
+						Else If l2[1] = "verb" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								dscverb.add (temp)
+							End If
+						Else If l2[1] = "pref" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								preflist.add (temp)
+							End If
+						Else If l2[1] = "desc" Then
+							temp = (l2[random(2,arraylength(l2))])
+							If temp <> "X" Then
+								dscdesc.add (temp)
+							End If
+						End If
+					End If
+					
+				End If
+			Next
+			//[CAN_DO_INTERACTION: - 16 //for my future reference
+			
+			If curiouscount > 1 Then
+				dscVerb.Add ("is fond of raiding the supplies of outposts")
+				dscVerb.Add ("is a very curious creature")
+			Else If curiouscount = 1 Then
+				dscVerb.Add ("is a very curious creature")
+				dscVerb.Add ("is fond of " + typecur)
+			End If
+			If intelligent = True And canopendoors = True And equips = True Then
+				sentient = True
+			End If
+			
+			//_____________BIG SPLIT HERE_____________
+			
+			
+			
+			If ishunter = True Then
+				If flies = True Then
+					dscVerb.Add ("hunts its prey through flight")
+				End If
+				If likesfighting = True Then
+					dscVerb.Add ("likes to kill passing creatures")
+				End If
+			Else
+				If flies = True Then
+					dscVerb.Add ("flies to escape enemies")
+				End If
+				If likesfighting = True Then
+					dscVerb.Add ("likes to fight passing creatures")
+				End If
+			End If
+			
+			If isgrazer Then
+				foodword = "plants"
+				//lname.Add ("herbivore")
+			End If
+			If ishunter Then
+				foodword = "prey"
+				//lname.Add ("carnivore")
+			End If
+			
+			Define rnd As Integer 
+			//If sentient = False Then
+			If canciv = False Then
+				Define cn2 As Decimal = random(1,10)
+				Define cn As Decimal = max(round(cn / randomdecimal(1,5)),1)
+				If cn = 1 Then
+					issolitary = True
+				End If
+				Define pn As Decimal = random(3,50)
+				ttl.add ("	[POPULATION_NUMBER:" + round(pn / randomdecimal(1.5,2.5)) + ":" + (pn) + "]")
+				ttl.add ("	[CLUSTER_NUMBER:" + cn + ":" + cn2 + "]")
+				If cn > 7 Then
+					If random(0,1) = 1 Then
+						dscVerb.Add ("is dangerous when encountered in large numbers")
+					Else
+						dscVerb.Add ("travels in large groups")
+					End If
+					//fname.Add ("loud")
+					//lname.add ("socialist")
+				Else If cn < 4 And cn > 1 Then
+					If random(0,1) = 1 Then
+						dscVerb.Add ("tends to keep largely to itself")
+					Else
+						dscVerb.Add ("forms small, close-knit groups")
+					End If
+					//lname.Add ("loner")
+					//fname.Add ("quiet")
+					//fname.Add ("familial")
+					//lname.Add ("walker")
+				End If
+				If cn2 > 1 Then
+					ingroups = True
+				Else
+					//fname.Add ("solitary")
+					FORL("calling","caller")
+				End If
+			End If
+				//_____________BIG SPLIT HERE;BIOME INFO_____________
+				Define ttlct As Integer = ttl.Count 
+				If random(0,277) < 17 Then
+					ttl.add ("	[BIOME:SUBTERRANEAN_CHASM]")
+					Define minD As Integer = random(1,3)
+					ttl.Add ("	[UNDERGROUND_DEPTH:" + minD + ":" + (minD + random(0,2)) + "]")
+				Else//I suppose the following could be extracted into a data file. It's weighted, so I would have to be creative about it.
+					If random(0,277) < 2 Then
+						ttl.add ("	[BIOME:ALL_MAIN]")
+					End If
+					If random(0,277) < 9 Then
+						ttl.add ("	[BIOME:ANY_LAND]")
+					End If
+					If random(0,277) < 18 Then
+						ttl.add ("	[BIOME:ANY_OCEAN]")
+						//fname.Add ("ocean")
+					End If
+					If random(0,277) < 6 Then
+						ttl.add ("	[BIOME:ANY_LAKE]")
+						//fname.Add ("lake")
+					End If
+					If random(0,277) < 4 Then
+						ttl.add ("	[BIOME:ANY_TEMPERATE_LAKE]")
+						//fname.Add ("lake")
+					End If
+					If random(0,277) < 5 Then
+						ttl.add ("	[BIOME:ANY_RIVER]")
+						//fname.Add ("river")
+					End If
+					If random(0,277) < 2 Then
+						ttl.add ("	[BIOME:ANY_TEMPERATE_RIVER]")
+						//fname.Add ("river")
+					End If
+					If random(0,277) < 11 Then
+						ttl.add ("	[BIOME:ANY_POOL]")
+					End If
+					If random(0,277) < 28 Then
+						ttl.add ("	[BIOME:NOT_FREEZING]")
+					End If
+					If random(0,277) < 53 Then
+						ttl.add ("	[BIOME:ANY_TEMPERATE]")
+					End If
+					If random(0,277) < 31 Then
+						ttl.add ("	[BIOME:ANY_TROPICAL]")
+						//fname.Add ("tropical")
+					End If
+					If random(0,277) < 6 Then
+						ttl.add ("	[BIOME:ANY_FOREST]")
+						//fname.Add ("forest")
+					End If
+					If random(0,277) < 9 Then
+						ttl.add ("	[BIOME:ANY_SHRUBLAND]")
+					End If
+					If random(0,277) < 11 Then
+						ttl.add ("	[BIOME:ANY_GRASSLAND]")
+					End If
+					If random(0,277) < 9 Then
+						ttl.add ("	[BIOME:ANY_SAVANNA]")
+						//fname.Add ("savanna")
+					End If
+					If random(0,277) < 38 Then
+						ttl.add ("	[BIOME:ANY_TEMPERATE_FOREST]")
+						//fname.Add ("forest")
+					End If
+					If random(0,277) < 22 Then
+						ttl.add ("	[BIOME:ANY_TROPICAL_FOREST]")
+						//fname.Add ("forest")
+					End If
+					If random(0,277) < 9 Then
+						ttl.add ("	[BIOME:ANY_WETLAND]")
+					End If
+					If random(0,277) < 4 Then
+						ttl.add ("	[BIOME:ANY_TEMPERATE_WETLAND]")
+					End If
+					If random(0,277) < 3 Then
+						ttl.add ("	[BIOME:ANY_TROPICAL_WETLAND]")
+						//fname.Add ("wetland")
+					End If
+					If random(0,277) < 2 Then
+						ttl.add ("	[BIOME:ANY_TEMPERATE_MARSH]")
+					End If
+					If random(0,277) < 1 Then
+						ttl.add ("	[BIOME:ANY_TROPICAL_SWAMP]")
+						//fname.Add ("swamp")
+					End If
+					If random(0,277) < 2 Then
+						ttl.add ("	[BIOME:ANY_TEMPERATE_SWAMP]")
+						//fname.Add ("swamp")
+					End If
+					If random(0,277) < 27 Then
+						ttl.add ("	[BIOME:ANY_DESERT]")
+						//fname.Add ("desert")
+					End If
+					If random(0,277) < 17 Then
+						ttl.add ("	[BIOME:MOUNTAIN]")
+						//fname.Add ("mountain")
+					End If
+					If random(0,277) < 4 Then
+						ttl.add ("	[BIOME:GLACIER]")
+						//fname.Add ("glacier")
+					End If
+					If random(0,277) < 17 Then
+						ttl.add ("	[BIOME:TUNDRA]")
+						//fname.Add ("snowy")
+					End If
+					If random(0,277) < 4 Then
+						ttl.add ("	[BIOME:SWAMP_TEMPERATE_FRESHWATER]")
+					End If
+					If random(0,277) < 17 Then
+						ttl.add ("	[BIOME:SWAMP_TEMPERATE_SALTWATER]")
+					End If
+					If random(0,277) < 9 Then
+						ttl.add ("	[BIOME:MARSH_TEMPERATE_FRESHWATER]")
+					End If
+					If random(0,277) < 7 Then
+						ttl.add ("	[BIOME:MARSH_TEMPERATE_SALTWATER]")
+					End If
+					If random(0,277) < 8 Then
+						ttl.add ("	[BIOME:SWAMP_TROPICAL_FRESHWATER]")
+					End If
+					If random(0,277) < 7 Then
+						ttl.add ("	[BIOME:SWAMP_TROPICAL_SALTWATER]")
+					End If
+					If random(0,277) < 11 Then
+						ttl.add ("	[BIOME:SWAMP_MANGROVE]")
+					End If
+					If random(0,277) < 7 Then
+						ttl.add ("	[BIOME:MARSH_TROPICAL_FRESHWATER]")
+					End If
+					If random(0,277) < 6 Then
+						ttl.add ("	[BIOME:MARSH_TROPICAL_SALTWATER]")
+					End If
+					If random(0,277) < 20 Then
+						ttl.add ("	[BIOME:FOREST_TAIGA]")//or "taiga"
+						//fname.Add ("snowy")
+					End If
+					If random(0,277) < 3 Then
+						ttl.add ("	[BIOME:FOREST_TEMPERATE_CONIFER]")
+					End If
+					If random(0,277) < 9 Then
+						ttl.add ("	[BIOME:FOREST_TEMPERATE_BROADLEAF]")
+					End If
+					If random(0,277) < 5 Then
+						ttl.add ("	[BIOME:FOREST_TROPICAL_CONIFER]")
+					End If
+					If random(0,277) < 7 Then
+						ttl.add ("	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]")
+					End If
+					If random(0,277) < 25 Then
+						ttl.add ("	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]")
+					End If
+					If random(0,277) < 27 Then
+						ttl.add ("	[BIOME:GRASSLAND_TEMPERATE]")
+					End If
+					If random(0,277) < 25 Then
+						ttl.add ("	[BIOME:SAVANNA_TEMPERATE]")
+					End If
+					If random(0,277) < 30 Then
+						ttl.add ("	[BIOME:SHRUBLAND_TEMPERATE]")
+					End If
+					If random(0,277) < 23 Then
+						ttl.add ("	[BIOME:GRASSLAND_TROPICAL]")
+					End If
+					If random(0,277) < 27 Then
+						ttl.add ("	[BIOME:SAVANNA_TROPICAL]")
+					End If
+					If random(0,277) < 30 Then
+						ttl.add ("	[BIOME:SHRUBLAND_TROPICAL]")
+					End If
+					If random(0,277) < 5 Then
+						ttl.add ("	[BIOME:DESERT_BADLAND]")
+					End If
+					If random(0,277) < 5 Then
+						ttl.add ("	[BIOME:DESERT_ROCK]")
+					End If
+					If random(0,277) < 5 Then
+						ttl.add ("	[BIOME:DESERT_SAND]")
+					End If
+					If random(0,277) < 31 Then
+						ttl.add ("	[BIOME:OCEAN_TROPICAL]")
+					End If
+					If random(0,277) < 39 Then
+						ttl.add ("	[BIOME:OCEAN_TEMPERATE]")
+					End If
+					If random(0,277) < 22 Then
+						ttl.add ("	[BIOME:OCEAN_ARCTIC]")
+					End If
+					If random(0,277) < 3 Then
+						ttl.add ("	[BIOME:POOL_TEMPERATE_FRESHWATER]")
+					End If
+					If random(0,277) < 2 Then
+						ttl.add ("	[BIOME:POOL_TEMPERATE_BRACKISHWATER]")
+					End If
+					If random(0,277) < 1 Then
+						ttl.add ("	[BIOME:POOL_TROPICAL_FRESHWATER]")
+					End If
+					If random(0,277) < 1 Then
+						ttl.add ("	[BIOME:POOL_TROPICAL_BRACKISHWATER]")
+					End If
+					If random(0,277) < 1 Then
+						ttl.add ("	[BIOME:POOL_TROPICAL_SALTWATER]")
+					End If
+					If random(0,277) < 15 Then
+						ttl.add ("	[BIOME:LAKE_TEMPERATE_FRESHWATER]")
+					End If
+					If random(0,277) < 10 Then
+						ttl.add ("	[BIOME:LAKE_TEMPERATE_BRACKISHWATER]")
+					End If
+					If random(0,277) < 3 Then
+						ttl.add ("	[BIOME:LAKE_TEMPERATE_SALTWATER]")
+					End If
+					If random(0,277) < 10 Then
+						ttl.add ("	[BIOME:LAKE_TROPICAL_FRESHWATER]")
+					End If
+					If random(0,277) < 6 Then
+						ttl.add ("	[BIOME:LAKE_TROPICAL_BRACKISHWATER]")
+					End If
+					If random(0,277) < 6 Then
+						ttl.add ("	[BIOME:LAKE_TROPICAL_SALTWATER]")
+					End If
+					If random(0,277) < 16 Then
+						ttl.add ("	[BIOME:RIVER_TEMPERATE_FRESHWATER]")
+					End If
+					If random(0,277) < 12 Then
+						ttl.add ("	[BIOME:RIVER_TEMPERATE_BRACKISHWATER]")
+					End If
+					If random(0,277) < 7 Then
+						ttl.add ("	[BIOME:RIVER_TEMPERATE_SALTWATER]")
+					End If
+					If random(0,277) < 11 Then
+						ttl.add ("	[BIOME:RIVER_TROPICAL_FRESHWATER]")
+					End If
+					If random(0,277) < 7 Then
+						ttl.add ("	[BIOME:RIVER_TROPICAL_BRACKISHWATER]")
+					End If
+					If random(0,277) < 6 Then
+						ttl.add ("	[BIOME:RIVER_TROPICAL_SALTWATER]")
+					End If
+				
+				End If
+				If ttl.Count = ttlct Then
+					ttl.add ("	[BIOME:ANY_TEMPERATE]")
+				End If
+			//End If
+			If canciv = False Then
+				If random(0,277) < 8 Then
+					ttl.add ("	[GOOD]")
+					dscVerb.Add ("good")
+				Else If random(0,269) < 24 Then
+					ttl.add ("	[EVIL]")
+					dscVerb.Add ("evil")
+				End If
+				If random(0,277) < 181 Then
+					ttl.add ("	[BENIGN]")
+				Else If random(0,96) < 15 Then
+					ttl.add ("	[SAVAGE]")
+				End If
+			End If
+			//good 8
+			//evil 24
+			//benign 181
+			//savage 15
+			
+			If sentient = True Then
+				ttl.Remove ("	[PET]")
+				ttl.Remove ("	[PET_EXOTIC]")
+				ttl.Remove ("	[MOUNT_EXOTIC]")
+				ttl.remove ("	[TRAINABLE]")
+			End If
+			
+			
+			
+			
+			//_______________ANOTHER SPLIT;BODY INFO______________
+			
+			
+			Define cantfinger As Boolean //doesn't have built-in hands
+			Define canthead As Boolean //doesn't have a built-in head
+			Define canttoe As Boolean //doesn't have built-in feet
+			Define canthumanoid As Boolean//not a real humanoid creature, can't use humanoid joints
+			Define canttentacle As Boolean //doesn't have tentacles - not used here?
+			Define cantextrahead As Boolean //can't have an extra head
+			Define cantguts As Boolean //can't have guts - doesn't have a lower body.
+			Define cantupperbody As Boolean //can't have anything that requires an upperbody.
+			Define truehead As Boolean //creature has a true head. Not some stupid cephalothorax thing.
+			Define noub As Boolean //creature doesn't have "UB" in its bodypart names.
+			Define nolb As Boolean //creature doesn't have "LB" in its bodypart names.
+			Define prebrain As Boolean 
+			dscNoun.Add ("monster")
+			
+			rnd = random(1,36)
+			
+			While 1 = 1//not a real "While", just utilizing "Break"
+				rnd = rnd - 2
+				If rnd < 1 Then
+					ttl.add ("	[BODY:BASIC_1PARTBODY")
+					cantfinger = True
+					canthead = True
+					canttoe = True
+					canthumanoid = True
+					cantupperbody = True
+					nolb = True
+					dscAdj.Add ("snake-like")
+					dscNoun.Add ("creature")
+					//fname.Add ("writhing")
+					//lname.Add ("snake")
+					//lname.Add ("worm")
+					Break
+				End If
+				rnd = rnd - 4
+				If rnd < 1 Then
+					ttl.add ("	[BODY:QUADRUPED")
+					cantfinger = True
+					hasfoot = True
+					dscAdj.Add ("long-bodied")
+					dscNoun.Add ("quadruped")
+					dscVerb.Add ("runs on four legs")
+					truehead = True
+					//fname.Add ("galloping")
+					//fname.Add ("stalking")
+					//lname.Add ("cat")
+					Break
+				End If
+				rnd = rnd - 3
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HUMANOID")
+					hashead = True
+					hashand = True
+					hasfoot = True
+					dscNoun.Add ("humanoid")
+					dscVerb.Add ("walks on two legs")
+					dscVerb.Add ("uses its long arms strangle its prey")
+					truehead = True
+					//lname.Add ("bear")
+					//lname.Add ("ogre")
+					//lname.Add ("troll")
+					Break
+				End If
+				rnd = rnd - 2
+				If rnd < 1 Then
+					ttl.add ("	[BODY:BODY_WITH_HEAD_FLAG")
+					cantfinger = True
+					canttoe = True
+					canthumanoid = True
+					cantextrahead = True
+					hashead = True
+					truehead = True
+					noub = True 
+					dscNoun.Add ("creature")
+					dscVerb.Add ("is made of a mass of appendages resembling human fingers")
+					dscVerb.Add ("creeps along the ground like a starfish")
+					FORL("wriggling","wriggler")
+					FORL("creeping","creeper")
+					//lname.Add ("mass")
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:BODY_HEAD")
+					cantfinger=True
+					canttoe=True
+					cantextrahead = True
+					canthumanoid = True
+					hashead = True
+					dscAdj.Add ("fearsome")
+					dscNoun.Add ("creature")
+					truehead = True
+					nolb = True
+					noub = True
+					//lname.Add ("head")
+					Break
+				End If
+				rnd = rnd - 3
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HUMANOID_ARMLESS")
+					cantfinger=True
+					hasfoot = True
+					dscNoun.Add ("creature")
+					dscVerb.Add ("walks with two clawed legs")
+					//fname.Add ("armless")
+					//lname.Add ("bird")
+					truehead = True
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HUMANOID_FLIER")
+					hashead = True
+					hasfoot = True
+					hashand = True
+					dscAdj.Add ("bat-like")
+					dscNoun.Add ("creature")
+					//fname.Add ("winged")
+					//lname.Add ("bat")
+					//lname.Add ("bird")
+					truehead = True
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HAND_FOOT_CENTAUR")
+					hashead = True
+					hasfoot = True
+					canttoe = True
+					hashand = True
+					dscAdj.Add ("hideous")
+					truehead = True
+					//lname.Add ("centaur")
+					Break
+				End If
+				rnd = rnd - 2
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HUMANOID_SIMPLE")
+					hashead = True
+					hasfoot = True
+					hashand = True
+					dscAdj.Add ("man-shaped")
+					truehead = True
+					preflist.Add ("simplicity")
+					//fname.Add ("simple")
+					//lname.Add ("beast")
+					Break
+				End If
+				//THE NEW STUFF
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:BASIC_1PARTBODY_THOUGHT")
+					cantfinger = True
+					canttoe = True
+					canthumanoid = True
+					hasbrain = True
+					prebrain = True
+					canthead = True
+					cantupperbody = True
+					nolb = True
+					//fname.Add ("bloblike")
+					//lname.Add ("thing")
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:BASIC_1PARTBODY_FLYING_HEAD_FLAG_THOUGHT")
+					cantfinger = True
+					canttoe = True
+					canthumanoid = True
+					cantextrahead = True
+					prebrain = True
+					hasbrain = True
+					cantupperbody = True
+					nolb = True
+					FORL("complex","complex")
+					Break
+				End If
+				rnd = rnd - 3
+				If rnd < 1 Then
+					ttl.add ("	[BODY:BASIC_2PARTBODY")
+					cantfinger = True
+					canthead = True
+					canttoe = True
+					canthumanoid = True
+					cantupperbody = True
+					//fname.Add ("wild")
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HUMANOID_HOOF")
+					canttoe = True
+					hashoof = True
+					hasfoot = True
+					hashand = True
+					truehead = True
+					//fname.Add ("hooved")
+					//lname.Add ("satyr")
+					//fname.Add ("foul")
+					//lname.Add ("monstrosity")
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HUMANOID_LEGLESS")
+					cantfinger = False
+					canttoe = True
+					hashand = True
+					dscNoun.Add ("creature")
+					//fname.Add ("legless")
+					//lname.Add ("fish")
+					truehead = True
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HUMANOID_4ARMS")
+					canthumanoid = False
+					hashand = True
+					hasfoot = True
+					dscAdj.Add ("four-armed")
+					dscAdj.Add ("four-armed ape")
+					dscNoun.Add ("creature")
+					preflist.Add ("graceful leaps")
+					//fname.Add ("bizarre")
+					//lname.Add ("terrifying")
+					truehead = True
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HUMANOID_2HEAD")
+					canthumanoid = False
+					hashand = True
+					hasfoot = True
+					truehead = True
+					//fname.Add ("two-headed")
+					//lname.Add ("troll")
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:QUADRUPED_NECK")
+					cantfinger = True
+					hasfoot = True
+					canthumanoid = False
+					truehead = True
+					//fname.Add ("long-necked")
+					//lname.Add ("quadruped")
+					//lname.Add ("giraffe")
+					Break
+				End If
+				rnd = rnd - 2
+				If rnd < 1 Then
+					ttl.add ("	[BODY:INSECT")
+					cantfinger = True
+					canthumanoid = True
+					hasfoot = True
+					preflist.add ("high-pitched buzz")
+					dscNoun.Add ("insect")
+					//fname.Add ("buzzing")
+					//lname.Add ("beetle")
+					//lname.Add ("grub")
+					//lname.Add ("crawler")
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:INSECT_4LEGS_2ARMS")
+					cantfinger = True
+					hasfoot = True
+					canthumanoid = True
+					truehead = True
+					FORL("praying","mantis")
+					preflist.Add ("mystical feel")
+					preflist.Add ("mysticism")
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:CRAB_BODY")
+					cantfinger = True
+					canthumanoid = True
+					hasfoot = True
+					cantguts = True
+					cantupperbody = True
+					nolb = True
+					//lname.Add ("crab")
+					//lname.Add ("crustacean")
+					//lname.Add ("lobster")
+					Break
+				End If
+				rnd = rnd - 2
+				If rnd < 1 Then
+					ttl.add ("	[BODY:SPIDER")
+					cantfinger = True
+					hasfoot = True
+					canthumanoid = True
+					cantupperbody = True
+					dscAdj.Add ("spider-like")
+					dscDesc.Add ("has long, spindly legs")
+					dscVerb.Add ("climbs and stalks creatures from above")
+					//lname.Add ("spider")
+					Break
+				End If
+				rnd = rnd - 1
+				If rnd < 1 Then
+					ttl.add ("	[BODY:HUMANOID_ARMLESS_NECK")
+					cantfinger = True
+					canthumanoid = False
+					hasfoot = True
+					dscDesc.Add ("has a long neck")
+					dscDesc.Add ("has long legs")
+					preflist.Add ("long necks")
+					dscAdj.Add ("bird-like")
+					truehead = True
+					Break
+				End If
+				alert("not good, error","talvieno")
+			End While
+			
+			
+			Define i As Integer 
+			Define mcount As Integer = random(5,20)
+			
+			Define bpstuff2 As String 
+			If canthead = False Then
+				bpstuff2 = ":MOUTH"
+				hasmouth = True
+			End If
+			For i = 0 To mcount
+				Define okay As Boolean = True
+				Define thisitem As Integer = random(1,bplist.Count)
+				While Not strings.IndexOf(bpstuff2,strings.Remove(bplist.Item(thisitem),1,1),1,True) = -1
+					thisitem = random(1,bplist.Count)
+				End While
+				If strings.IndexOf(bplist.Item(thisitem),"7HEADNECK",1,True) <> -1 Then
+					If noub = True Then
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"HORN",1,True) <> -1 Then
+					If canthead = False Then
+						hashorn = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"3TOES_FQ_REG",1,True) <> -1 Then
+					If hashand = False Then//don't allow fingers without/before hands
+						okay = False
+					Else
+						hastoes = True
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"TAIL_STANCE",1,True) <> -1 Then
+					If nolb = True Then//don't allow fingers without/before hands
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"REAR_BODY_FLIPPERS",1,True) <> -1 Or strings.IndexOf(bplist.Item(thisitem),"GUTS",1,True) <> -1 Or strings.IndexOf(bplist.Item(thisitem),"TAIL",1,True) <> -1 Then
+					If cantguts = True Then
+						okay = False
+					End If
+				End If
+				//If strings.IndexOf(bplist.Item(thisitem),"NECK_SPINE",1,True) <> -1 Then   //Removing neck_spine permanently
+				//	If hasneck = False Then
+				//		okay = False
+				//	End If
+				//End If
+				If strings.IndexOf(bplist.Item(thisitem),"TRUNK",1,True) <> -1 Or strings.IndexOf(bplist.Item(thisitem),"TONGUE",1,True) <> -1 Or strings.IndexOf(bplist.Item(thisitem),"FACIAL_FEATURES",1,True) <> -1 Or strings.IndexOf(bplist.Item(thisitem),"CASQUE",1,True) <> -1 Or strings.IndexOf(bplist.Item(thisitem),"LARGE_MANDIBLES",1,True) <> -1  Or strings.IndexOf(bplist.Item(thisitem),"PROBOSCIS",1,True) <> -1 Then
+					If canthead = True Then
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"8_SIMPLE_HEAD_ARMS",1,True) <> -1 Then
+					If cantupperbody = True Then
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"TUSK",1,True) <> -1 Then
+					If canthead = False Then//no tusks without heads, for those idiots that need heads with their tusks, and whatever. ...dumb as saying you can't have teeth without mouths. you can.
+						hastusk = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"NECK",1,True) <> -1 And strings.IndexOf(bplist.Item(thisitem),"SPINE",1,True) = -1 Then
+					If canthead = False Then
+						hasneck = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"HOOF",1,True) <> -1 Or strings.IndexOf(bplist.Item(thisitem),"HOOV",1,True) <> -1 Then
+					hashoof = True
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"UPPERBODY_PINCERS",1,True) <> -1 Then
+					hasupperbodypincers = True
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"RIBCAGE",1,True) <> -1 Then
+					hasribcage = True
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"SPINE",1,True) <> -1 Then
+					If canthead = False Then
+						hasspine = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"JOINT",1,True) <> -1 Then
+					hasjoints = True
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"TEETH",1,True) <> -1 And strings.IndexOf(bplist.Item(thisitem),"TENTACLE",1,True) = -1 Then
+					If canthead = False Then
+						hasteeth = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"FINGER",1,True) <> -1 And strings.IndexOf(bplist.Item(thisitem),"TOE",1,True) = -1 Then
+					If cantfinger = True Then
+						okay = False
+					Else
+						hasfingers = True
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"TOE",1,True) <> -1 And strings.IndexOf(bplist.Item(thisitem),"5TOES_FQ_FING",1,True) = -1 And strings.IndexOf(bplist.Item(thisitem),"5TOES_FQ_REG",1,True) = -1 And strings.IndexOf(bplist.Item(thisitem),"3TOES_FQ_REG",1,True) = -1 Then
+					
+					If canttoe = False Then
+						hastoes = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"NOSE",1,True) <> -1 Then
+					If canthead = False Then
+						hasnose = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"GIZZARD",1,True) <> -1 Then
+					hasgizzard = True
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"HEART",1,True) <> -1 Then
+					hasheart = True
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"THROAT",1,True) <> -1 Then
+					hasthroat = True
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"EYES",1,True) <> -1 Or (strings.IndexOf(bplist.Item(thisitem),"BODY_EYE",1,True) <> -1 And Not strings.IndexOf(bplist.Item(thisitem),"BODY_EYELID",1,True) <> -1) Then
+					
+					If strings.IndexOf(bplist.Item(thisitem),"BODY_EYE",1,True) <> -1 Then
+						eyecount = eyecount + 1
+						haseyes = True
+					Else
+						If canthead = False Then
+							haseyes = True
+							eyecount = eyecount + 2
+						Else
+							okay = False
+						End If
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"BRAIN",1,True) <> -1 Then
+					If canthead = False Then
+						hasbrain = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"MOUTH",1,True) <> -1 Then
+					If canthead = False Then
+						hasmouth = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"BEAK",1,True) <> -1 Then
+					If canthead = False Then
+						hasbeak = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"SKULL",1,True) <> -1 Then
+					If canthead = False Then
+						hasskull = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"EARS",1,True) <> -1 Then
+					If canthead = False Then
+						hasears = True
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf (bplist.Item(thisitem),"5TOES_FQ_REG",1,True) <> -1 Then
+					handtoe = True
+				End If
+				If strings.IndexOf (bplist.Item(thisitem),"PROBOSCIS",1,True) <> -1 Then
+					If canthead = True Then
+						okay = False
+					Else
+						hasproboscis = True
+					End If
+				End If
+				
+				
+				
+				
+				//re-enable stuff!!! MAKE SURE THIS IS AN OBVIOUS BREAK, SO AS TO BE EASIER TO FIND!
+				If strings.IndexOf(bplist.Item(thisitem),"BASIC_HEAD",1,True) <> -1 Then
+					If cantextrahead = False Then
+						canthead = False
+					Else
+						okay = False
+					End If
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"4ARMS_STANCE",1,True) <> -1 Then
+					cantfinger = False
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"BASIC_3PARTARMS",1,True) <> -1 Then
+					cantfinger = False
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"BASIC_FRONTLEGS",1,True) <> -1 Then
+					canttoe = False
+				End If
+				If strings.IndexOf(bplist.Item(thisitem),"BASIC_3PARTLEGS",1,True) <> -1  Or strings.IndexOf(bplist.Item(thisitem),"BASIC_REARLEGS",1,True) <> -1Then
+					If cantguts = False Then
+						canttoe = False
+					Else
+						okay = False
+					End If
+				End If
+				//stupid tentacles.
+				If strings.IndexOf(bplist.Item(thisitem),"TENTACLE",1,True) <> -1 Then
+					If strings.IndexOf(bpstuff2,"TWO_NO_CLAW_TENTACLES",1,True) = -1 Then
+						okay = False
+					End If
+				End If
+				If okay = True Then
+					bpstuff2 = bpstuff2 + bplist.Item(thisitem)
+				Else
+					i = i - 1
+				End If
+			Next
+			
+			//FIX THE LUNGS ISSUE
+			If strings.IndexOf(bpstuff2,"2LUNGS",1,True) <> -1 Then
+				If strings.IndexOf(bpstuff2,"SPINE",1,True) = -1 Then
+					bpstuff2 = bpstuff2 + ":SPINE"
+				End If
+				If strings.IndexOf(bpstuff2,"THROAT",1,True) = -1 And canthead = False Then
+					bpstuff2 = bpstuff2 + ":THROAT"
+				End If
+				If strings.IndexOf(bpstuff2,"MOUTH",1,True) = -1 And strings.IndexOf(bpstuff2,"BEAK",1,True) = -1 And canthead = False Then
+					bpstuff2 = bpstuff2 + ":MOUTH"
+				End If
+			End If
+			
+			
+			//AND NOW WE TAKE OUT THE GARBAGE
+			If strings.IndexOf(bpstuff2,"TWO_NO_CLAW_TENTACLES",1,True) = -1 Then
+				canttentacle = True
+			End If
+			If cantguts = True Then
+				bpstuff2 = strings.Replace (bpstuff2,":GUTS:",":")
+				bpstuff2 = strings.Replace (bpstuff2,":TAIL:",":")
+				bpstuff2 = strings.Replace (bpstuff2,":BASIC_3PARTLEGS:",":")
+				bpstuff2 = strings.Replace (bpstuff2,":GUTS]","]")
+				bpstuff2 = strings.Replace (bpstuff2,":TAIL]","]")
+				bpstuff2 = strings.Replace (bpstuff2,":BASIC_3PARTLEGS]","]")
+			End If
+			If cantfinger = True Then
+				bpstuff2 = strings.Replace (bpstuff2,":3TOES_FQ_REG","")
+				bpstuff2 = strings.Replace (bpstuff2,":4FINGERS","")
+				bpstuff2 = strings.Replace (bpstuff2,":2FINGERS","")
+				bpstuff2 = strings.Replace (bpstuff2,":3FINGERS","")
+				bpstuff2 = strings.Replace (bpstuff2,":5FINGERS","")
+				handtoe = False
+				hasfingers = False
+				hashand = False
+			End If
+			If canthead = True Then
+				bpstuff2 = strings.Replace (bpstuff2,":GENERIC_TEETH_WITH_LARGE_EYE_TEETH","")
+				bpstuff2 = strings.Replace (bpstuff2,":GENERIC_TEETH_WITH_FANGS","")
+				bpstuff2 = strings.Replace (bpstuff2,":GENERIC_TEETH","")
+				bpstuff2 = strings.Replace (bpstuff2,":RODENT_TEETH","")
+				bpstuff2 = strings.Replace (bpstuff2,":TEETH","")
+				bpstuff2 = strings.Replace (bpstuff2,":2EARS","")
+				bpstuff2 = strings.Replace (bpstuff2,":BRAIN","")
+				bpstuff2 = strings.Replace (bpstuff2,":NOSE","")
+				bpstuff2 = strings.Replace (bpstuff2,":FACIAL_FEATURES","")
+				bpstuff2 = strings.Replace (bpstuff2,":MOUTH","")
+				bpstuff2 = strings.Replace (bpstuff2,":TONGUE","")
+				bpstuff2 = strings.Replace (bpstuff2,":2TUSKS","")
+				bpstuff2 = strings.Replace (bpstuff2,":SKULL","")
+				bpstuff2 = strings.Replace (bpstuff2,":BEAK","")
+				bpstuff2 = strings.Replace (bpstuff2,":CASQUE","")
+				bpstuff2 = strings.Replace (bpstuff2,":2HEAD_HORN","")
+				bpstuff2 = strings.Replace (bpstuff2,":2EYESTALKS","")
+				bpstuff2 = strings.Replace (bpstuff2,":2EYES","")
+				bpstuff2 = strings.Replace (bpstuff2,":SKULL","")
+				bpstuff2 = strings.Replace (bpstuff2,":FORKED_TONGUE","")
+				bpstuff2 = strings.Replace (bpstuff2,":LARGE_MANDIBLES","")
+				bpstuff2 = strings.Replace (bpstuff2,":TRUNK","")
+				bpstuff2 = strings.Replace (bpstuff2,":PROBOSCIS","")
+				hasskull = False
+				hasbeak = False
+				hashorn = False
+				hasteeth = False
+				hastusk = False
+				If prebrain = False Then
+					hasbrain = False
+				End If
+				haseyes = False
+				hasmouth = False
+				hasears = False
+				hasmandibles = False
+				hasnose = False
+				hasproboscis = False
+				If eyecount > 1 Then
+					eyecount = eyecount - 2
+				End If
+			End If
+			If canttoe = True Then
+				bpstuff2 = strings.Replace (bpstuff2,":4TOES:",":")
+				bpstuff2 = strings.Replace (bpstuff2,":2TOES:",":")
+				bpstuff2 = strings.Replace (bpstuff2,":5TOES_RQ_ANON","")
+				bpstuff2 = strings.Replace (bpstuff2,":3TOES_RQ_REG","")
+				bpstuff2 = strings.Replace (bpstuff2,":5TOES:",":")
+				bpstuff2 = strings.Replace (bpstuff2,":3TOES:",":")
+				hastoes = False
+				hasfoot = False
+			End If
+			If canthumanoid = True Then
+				bpstuff2 = strings.Replace (bpstuff2,":HUMANOID_JOINTS","")
+				bpstuff2 = strings.Replace (bpstuff2,":THROAT","")
+				bpstuff2 = strings.Replace (bpstuff2,":NECK:",":")
+				bpstuff2 = strings.Replace (bpstuff2,":NECK]","]")
+				If strings.IndexOf (bpstuff2,"3TOES_RQ_REG",1) <> -1 Or strings.IndexOf (bpstuff2,"5TOES_RQ_ANON",1) <> -1 Then
+					hastoes = False
+				End If
+				bpstuff2 = strings.Replace (bpstuff2,":3TOES_RQ_REG","")	
+				bpstuff2 = strings.Replace (bpstuff2,":5TOES_RQ_ANON","")	
+				
+				hasjoints = False
+			End If
+			If cantextrahead = True Then	
+				bpstuff2 = strings.Replace (bpstuff2,":BASIC_HEAD","")
+			End If
+			If cantupperbody = True Then
+				bpstuff2 = strings.Replace (bpstuff2,":8_SIMPLE_HEAD_ARMS","")
+			End If
+			If canttentacle = True Then
+				bpstuff2 = strings.Replace (bpstuff2,":TENTACLE_MOUTH","")
+				bpstuff2 = strings.Replace (bpstuff2,":TENTACLE_TEETH","")
+			End If
+			prefadd(bpstuff2,preflist)
+			ttl.setItem(ttl.Count,ttl.Item(ttl.Count) + bpstuff2)
+			ttl.setItem(ttl.Count,ttl.Item(ttl.Count) + "]")
+			If hasbrain = False Then
+				ttl.add(	"	[NO_THOUGHT_CENTER_FOR_MOVEMENT]")
+			Else If strings.IndexOf(bpstuff2,"BRAIN",1) = -1 And strings.IndexOf (ttl.Item(ttl.Count),"THOUGHT",1) = -1 Then
+				//ttl.add(	"	[NO_THOUGHT_CENTER_FOR_MOVEMENT]")  //I don't think I need this anymore - I think I fixed it.
+			End If
+			If haseyes = False Then
+				ttl.add(	"	[EXTRAVISION]")
+			End If
+			
+			
+			//THIS IS WHERE THE BP STUFF BEGINS
+			Define bpstuff As StringList 
+			Define skintype As String = "SKIN"
+			rnd = random(1,4)
+			If rnd = 1 Then
+				skintype = "SCALE"
+				hashair = False
+			End If
+			
+			rnd = random(1,25)
+			If isbronze = True Then//if said creature is a bronze-type megabeast
+				ttl.Add ("	[TISSUE:BRONZE]")
+				ttl.Add ("		[TISSUE_NAME:bronze:bronze]")
+				ttl.Add ("		[TISSUE_MATERIAL:INORGANIC:BRONZE]")
+				ttl.Add ("		[MUSCULAR]")
+				ttl.Add ("		[FUNCTIONAL]")
+				ttl.Add ("		[STRUCTURAL]")
+				ttl.Add ("		[RELATIVE_THICKNESS:1]")
+				ttl.Add ("		[CONNECTS]")
+				ttl.Add ("		[TISSUE_SHAPE:LAYER]")
+				ttl.Add ("	[TISSUE_LAYER:BY_CATEGORY:ALL:BRONZE]")
+				ttl.Add ("	[ITEMCORPSE:STATUE:NO_SUBTYPE:INORGANIC:BRONZE]")
+				ttl.Add ("	[ITEMCORPSE_QUALITY:5]")
+			Else If rnd < 21 Then
+				ttl.add ("	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]")
+				If skintype = "SKIN" Then
+					If random(0,1) = 1 Then
+						ttl.add ("		[REMOVE_MATERIAL:HAIR]")
+						hashair = False
+					End If
+				End If
+				If random(1,4) = 1 And hasribcage = False And hasspine = False And hasteeth = False And hasjoints = False And hasskull = False Then
+					ttl.add ("		[REMOVE_MATERIAL:BONE]")
+					hasbone = False
+				End If
+				If random(1,8) = 1 Then
+					ttl.add ("		[REMOVE_MATERIAL:CARTILAGE]")
+					hascartilage = False
+				End If
+				If random(1,3) = 1 And hascartilage = False And hasbone = True Then
+					chitinbone = True
+					ttl.add ("		[REMOVE_MATERIAL:BONE]")
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:CHITIN:CHITIN_TEMPLATE]")
+				End If
+			
+				If skintype = "SCALE" Then
+					ttl.add ("		[REMOVE_MATERIAL:HAIR]")
+					hashair = False
+					ttl.add ("		[REMOVE_MATERIAL:SKIN]")
+					If random(0,1) = 1 Then
+						ttl.add ("		[REMOVE_MATERIAL:LEATHER]")
+						hasleather = False
+					End If
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:SCALE:SCALE_TEMPLATE]")
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:TOOTH:CHITIN_TEMPLATE]")
+				End If
+				If hashorn = True Then
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:HORN:HORN_TEMPLATE]")
+				End If
+				If hashoof = True Then
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:HOOF:HOOF_TEMPLATE]")
+				End If
+				If hastusk = True Then
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]")
+				End If
+				If random(1,15) = 1 And skintype = "SKIN" Then
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:FEATHER:FEATHER_TEMPLATE]")
+					hasfeather = True
+				End If
+				
+				//DIVIDING LINE BETWEEN TISSUE AND MATERIAL
+				
+				ttl.add ("	[BODY_DETAIL_PLAN:STANDARD_TISSUES]")
+				If skintype = "SKIN" Then
+					If hashair = False Then
+						ttl.add ("		[REMOVE_TISSUE:HAIR]")
+						dscAdj.Add ("hairless")
+					End If
+				End If
+				If hasbone = False Then
+					ttl.add ("		[REMOVE_TISSUE:BONE]")
+				End If
+				If hascartilage = False Then
+					ttl.add ("		[REMOVE_TISSUE:CARTILAGE]")
+				End If
+				If skintype = "SCALE" Then
+					ttl.add ("		[REMOVE_TISSUE:HAIR]")
+					ttl.add ("		[REMOVE_TISSUE:SKIN]")
+					//Mistakenly added, not needed
+					//If hasleather = False Then
+					//	ttl.add ("		[REMOVE_TISSUE:LEATHER]")
+					//End If
+					ttl.add ("		[USE_TISSUE_TEMPLATE:SCALE:SCALE_TEMPLATE]")
+					ttl.add ("		[USE_TISSUE_TEMPLATE:TOOTH:CHITIN_TEMPLATE]")
+				End If
+				If hashorn = True Then
+					ttl.add ("		[USE_TISSUE_TEMPLATE:HORN:HORN_TEMPLATE]")
+				End If
+				If hashoof = True Then
+					ttl.add ("		[USE_TISSUE_TEMPLATE:HOOF:HOOF_TEMPLATE]")
+				End If
+				If hastusk = True Then
+					ttl.add ("		[USE_TISSUE_TEMPLATE:IVORY:IVORY_TEMPLATE]")
+				End If
+				If hasfeather = True Then
+					ttl.add ("		[USE_TISSUE_TEMPLATE:FEATHER:FEATHER_TEMPLATE]")
+				End If
+				If chitinbone = True Then
+					ttl.add ("		[REMOVE_TISSUE:BONE]")
+					ttl.add ("		[USE_TISSUE_TEMPLATE:CHITIN:CHITIN_TEMPLATE]")
+				End If
+			
+				If hashair = False And hasbone = False Then
+					dscAdj.Add ("slimy")
+					dscAdj.Add ("boneless")
+					ttl.add ("	[BODY_DETAIL_PLAN:EXOSKELETON_TISSUE_LAYERS:" + skintype + ":FAT:MUSCLE]")
+				Else
+					ttl.add ("	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:" + skintype + ":FAT:MUSCLE:")
+					If chitinbone = True Then
+						ttl.setItem(ttl.Count,ttl.Item(ttl.Count) + "CHITIN:")
+					Else If hasbone = True Then
+						ttl.setItem(ttl.Count,ttl.Item(ttl.Count) + "BONE:")
+					Else 
+						ttl.setItem(ttl.Count,ttl.Item(ttl.Count) + "NONE:")
+					End If
+					If hascartilage = True Then
+						ttl.setItem(ttl.Count,ttl.Item(ttl.Count) + "CARTILAGE]")
+					Else If chitinbone = True Then
+						ttl.setItem(ttl.Count,ttl.Item(ttl.Count) + "CHITIN]")
+					Else
+						ttl.setItem(ttl.Count,ttl.Item(ttl.Count) + "NONE]")
+					End If
+				End If
+			
+				If random(1,6) = 6 And hashair = True Then
+					ttl.add ("	[BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]")
+					preflist.Add("manes")
+					addhair = True
+					dscDesc.Add ("a thick mane")
+					dscVerb.Add ("is covered in thick fur")
+					If eyecount = 2 And hasmouth = True And hasnose = True And hasears = True Then
+						dscDesc.Add ("a mane circling its manlike face")
+					End If
+				End If
+				ttl.add ("	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]")
+				If random(0,2) = 1 Then
+					ttl.add ("	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]")
+				End If
+				If hasribcage = True Then
+					ttl.add ("	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]")
+				End If
+				If random(0,2) = 1 Then
+					ttl.add ("	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]")
+				End If
+				If hasfeather = True Then
+					ttl.add ("	[BODY_DETAIL_PLAN:BODY_FEATHER_TISSUE_LAYERS:FEATHER]")
+					dscAdj.Add ("feathered")
+					dscDesc.Add ("feathers covering its body")
+				End If
+			
+				//OTHERWISE
+			Else If rnd = 21 Then
+				preflist.Add ("chittering")
+				skintype = "CHITIN"
+				ttl.add ("	[BODY_DETAIL_PLAN:CHITIN_MATERIALS]")
+				ttl.add ("		[USE_MATERIAL_TEMPLATE:TOOTH:CHITIN_TEMPLATE]")
+				If hashorn = True Then
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:HORN:HORN_TEMPLATE]")
+				End If
+				If hashoof = True Then
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:HOOF:HOOF_TEMPLATE]")
+				End If
+				If hastusk = True Then
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]")
+				End If
+				If hasfeather = True Then
+					ttl.add ("		[USE_MATERIAL_TEMPLATE:FEATHER:FEATHER_TEMPLATE]")
+				End If
+				ttl.add ("	[BODY_DETAIL_PLAN:CHITIN_TISSUES]")
+				ttl.add ("		[USE_TISSUE_TEMPLATE:TOOTH:CHITIN_TEMPLATE]")
+				If hashorn = True Then
+					ttl.add ("		[USE_TISSUE_TEMPLATE:HORN:HORN_TEMPLATE]")
+				End If
+				If hashoof = True Then
+					ttl.add ("		[USE_TISSUE_TEMPLATE:HOOF:HOOF_TEMPLATE]")
+				End If
+				If hastusk = True Then
+					ttl.add ("		[USE_TISSUE_TEMPLATE:IVORY:IVORY_TEMPLATE]")
+				End If
+				If hasfeather = True Then
+					ttl.add ("		[USE_TISSUE_TEMPLATE:FEATHER:FEATHER_TEMPLATE]")
+				End If
+				ttl.add ("	[BODY_DETAIL_PLAN:EXOSKELETON_TISSUE_LAYERS:CHITIN:FAT:MUSCLE]")
+				ttl.add ("	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]")
+			Else If rnd = 22 Then
+				skintype = "FLESH"
+				preflist.Add ("warmth")
+				ttl.add ("	[USE_MATERIAL_TEMPLATE:FLESH:MUSCLE_TEMPLATE]")
+				ttl.add ("	[USE_TISSUE_TEMPLATE:FLESH:MUSCLE_TEMPLATE]")
+				ttl.add ("	[TISSUE_LAYER:BY_CATEGORY:ALL:FLESH]")
+				If strings.IndexOf(bpstuff2,"BASIC_1PARTBODY",1,True) <> -1 Then
+					dscNoun.Add ("ball of skin")
+				End If
+			Else If rnd = 23 Then
+				skintype = "STONE"
+				preflist.Add ("rockiness")
+				dscVerb.Add ("is made entirely of stone")
+				ttl.add ("	[TISSUE:ROCK]")
+				ttl.add ("		[TISSUE_NAME:gabbro:NP]")
+				ttl.add ("		[TISSUE_MATERIAL:INORGANIC:GABBRO]")
+				ttl.add ("		[MUSCULAR]")
+				ttl.add ("		[FUNCTIONAL]")
+				ttl.add ("		[STRUCTURAL]")
+				ttl.add ("		[RELATIVE_THICKNESS:1]")
+				ttl.add ("		[CONNECTS]")
+				ttl.add ("		[TISSUE_SHAPE:LAYER]")
+				ttl.add ("	[TISSUE_LAYER:BY_CATEGORY:ALL:ROCK]")
+			Else
+				skintype = "WET"
+				Define typelist As StringList 
+				dscNoun.Add ("abomination")
+				typelist.Add ("blood")
+				typelist.Add ("goo")
+				typelist.Add ("slime")
+				typelist.Add ("mucus")
+				typelist.Add ("filth")
+				typelist.Add ("bile")
+				typelist.Add ("ooze")
+				thistype = typelist.Item(random(1,typelist.Count))
+				preflist.Add (thistype)
+				//lname.Add (thistype)
+				dscVerb.Add ("is made entirely of " + thistype)
+				ttl.add ("	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]")
+				ttl.add ("	[TISSUE:BLOOD]")
+				ttl.add ("		[TISSUE_NAME:" + thistype + ":NP]")
+				ttl.add ("		[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:BLOOD]")
+				ttl.add ("		[TISSUE_MAT_STATE:LIQUID]")
+				ttl.add ("		[MUSCULAR]")
+				ttl.add ("		[FUNCTIONAL]")
+				ttl.add ("		[STRUCTURAL]")
+				ttl.add ("		[RELATIVE_THICKNESS:1]")
+				ttl.add ("		[CONNECTS]")
+				ttl.add ("		[TISSUE_SHAPE:LAYER]")
+				ttl.add ("	[TISSUE_LAYER:BY_CATEGORY:ALL:BLOOD]")
+			End If
+		
+			//NOW FOR THE NEXT PART
+		
+			
+			If random(0,20) = 10 Then
+				ttl.add ("	[BODYGLOSS:PAW]")
+			End If
+			If random(0,30) = 10 Then
+				ttl.add ("	[BODYGLOSS:MAW]")
+			End If
+			
+			If random (0,1) = 1 Then
+				If hasheart = True Then
+					ttl.add ("	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]")
+					If hasthroat = True Then
+						ttl.add ("	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]")
+					End If
+					ttl.add ("		[TL_MAJOR_ARTERIES]")
+				End If
+			End If
+			
+			If hastoes = True Then
+				rnd = random(1,4)
+				If rnd = 1 Then
+					If hastoes = True Then
+						ttl.add ("	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]")
+						ttl.add ("	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]")
+						ttl.add ("	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]")
+						hasnails = True
+						hastoenails = True
+					End If
+				Else If rnd = 2 Then
+					If hastoes = True Then
+						ttl.add ("	[USE_MATERIAL_TEMPLATE:TALON:NAIL_TEMPLATE]")
+						ttl.add ("	[USE_TISSUE_TEMPLATE:TALON:TALON_TEMPLATE]")
+						ttl.add ("	[TISSUE_LAYER:BY_CATEGORY:TOE:TALON:FRONT]")
+						hastalon = True
+						dscDesc.Add ("taloned feet")
+					End If
+				Else If rnd = 3 Then
+					If hastoes = True Then
+						ttl.add ("	[USE_MATERIAL_TEMPLATE:CLAW:NAIL_TEMPLATE]")
+						ttl.add ("	[USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]")
+						ttl.add ("	[TISSUE_LAYER:BY_CATEGORY:TOE:CLAW:FRONT]")
+						dscDesc.Add ("clawed toes")
+						hasclaws = True
+						hastoeclaws = True
+					End If
+				End If
+			End If
+			
+			
+			If hasfingers = True Then
+				rnd = random(1,3)
+				If rnd = 1 Then
+					If hasnails = False Then
+						ttl.add ("	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]")
+						ttl.add ("	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]")
+						hasfingernails = True
+					End If
+					ttl.add ("	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]")
+				Else If rnd = 2 Then
+					If hasclaws = False Then
+						ttl.add ("	[USE_MATERIAL_TEMPLATE:CLAW:NAIL_TEMPLATE]")
+						ttl.add ("	[USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]")
+						hasfingerclaws = True
+					End If
+					ttl.add ("	[TISSUE_LAYER:BY_CATEGORY:FINGER:CLAW:FRONT]")
+					dscDesc.Add ("clawed fingers")
+				End If
+			End If
+			
+			If Not random(0,2) = 0 Then
+				ttl.add ("	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]")
+				ttl.add ("	[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]")
+				ttl.add ("	[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]")
+			End If
+			ttl.add ("	[HAS_NERVES]")
+			If random(0,1) = 1 Then
+				ttl.add ("	[SPEED:" + (random(5,20) * 100) + "]")
+			End If
+		
+			
+			If random(0,7) = 1 Then
+				ttl.add ("	[USE_MATERIAL_TEMPLATE:ICHOR:ICHOR_TEMPLATE]")
+				ttl.add ("	[BLOOD:LOCAL_CREATURE_MAT:ICHOR:LIQUID]")
+				ttl.add ("	[CREATURE_CLASS:GENERAL_POISON]")
+				ttl.add ("	[GETS_WOUND_INFECTIONS]")
+				ttl.add ("	[GETS_INFECTIONS_FROM_ROT]")
+				ttl.add ("	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]")
+				ttl.add ("	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]")
+			Else
+				ttl.add ("	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]")
+				If random(0,25) = 1 Then
+					ttl.add ("		[STATE_COLOR:ALL:" + bloodcolor.Item(random(1,bloodcolor.Count )) + "]")
+				End If
+				ttl.add ("	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]")
+				ttl.add ("	[CREATURE_CLASS:GENERAL_POISON]")
+				ttl.add ("	[GETS_WOUND_INFECTIONS]")
+				ttl.add ("	[GETS_INFECTIONS_FROM_ROT]")
+				ttl.add ("	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]")
+				ttl.add ("	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]")
+			End If
+		
+		
+			Define maxage As Decimal = random(10,100)
+			Define maxage2 As Decimal = round((maxage * randomdecimal(1.4,2)))
+			Define bodysize2 As Decimal
+			If canciv = True Then //if creature isn't a megabeast then
+				bodysize2 = round (randomdecimal(1,2) * randomdecimal(1,2) * randomdecimal(1,2) * randomdecimal(1,2) * randomdecimal(1,2) * randomdecimal(1,2) * randomdecimal(1,2) * randomdecimal(1,5) * randomdecimal(1,5) * randomdecimal(1,5) * randomdecimal(1,5) * randomdecimal(1,5) * randomdecimal(1,5) * randomdecimal(1,5))
+				//now we slope it up. Average body size starts out at about 37500. 
+				bodysize2 = sqrt(bodysize2) * 1.4142//square root * square root of 2
+				bodysize2 = round(bodysize2 * bodysize2)/*and now we square. small creatures stay small,
+				big creatures get bigger. easy As math. Average body size is now 75000, 
+				right where I wanted it to be. A larger size (x2) starts out about 75000 and 
+				ends up being around 150000. A x2 normal increase becomes a x4 increase.
+				The above is all subject to change. I want to make sure I get the occasional 
+				"gigantic" creature.*/
+				sizeavgx2 = 150000
+			Else If semi = False Then //if not a semimegabeast
+				bodysize2 = random(8000000,25000000)
+			Else If semi = True Then//if a semimegabeast (megabeasts are bigger)
+				bodysize2 = random(220000,9000000)
+			End If
+			Define bodysize1 As Decimal = round(bodysize2 / random(2,25))
+			Define bodysize0 As Decimal = round(bodysize1 / random(10,50))
+			If maxage > 100 Then
+				dscVerb.Add ("lives to an old age")
+			End If
+			/*	[BODY_SIZE:0:0:6000]
+				[BODY_SIZE:1:0:25000000]
+			
+				[BODY_SIZE:0:0:200000]
+				[BODY_SIZE:2:0:8000000]
+			
+				[BODY_SIZE:0:0:200000]
+				[BODY_SIZE:1:0:5000000]
+				[BODY_SIZE:0:0:20000000]
+			
+				[BODY_SIZE:0:0:20000000]
+			*/
+			Define bodyage As Decimal = round(max(2,maxage / random(1,10)))
+			ttl.add ("	[BODY_SIZE:0:0:" + bodysize0 + "]")
+			ttl.add ("	[BODY_SIZE:1:0:" + bodysize1 + "]")
+			ttl.add ("	[BODY_SIZE:" + bodyage + ":0:" + bodysize2 + "]")
+			ttl.add ("	[MAXAGE:"+ maxage + ":" + maxage2 + "]")
+			Define thisit As Decimal = randomdecimal(1,3)
+			If thisit < 1.25 Then
+				dscVerb.Add ("matures at an old age")
+			Else If thisit > 2.75 Then
+				dscVerb.Add ("matures at an young age")
+			End If
+			Define Nextage As Integer = bodyage / thisit
+			ttl.add ("	[CHILD:" + nextage + "]")
+			
+			ttl.add ("	[ALL_ACTIVE]")
+			
+			//SIZE STUFF
+			If bodysize2 > 0 And bodysize2 < 10000 Then
+				dscSize.Add ("tiny")
+			End If
+			If bodysize2 > 1000 And bodysize2 < 59000 Then
+				dscSize.Add ("small")
+			End If
+			If bodysize2 > 3000 And bodysize2 < 137000 Then
+				dscSize.Add ("medium-sized")
+			End If
+			If bodysize2 > 92000 And bodysize2 < 4608000 Then
+				dscSize.Add ("huge")
+			End If
+			If bodysize2 > 138000 And bodysize2 < 6912000 Then
+				dscSize.Add ("large")
+			End If
+			If bodysize2 > 588000 Then
+				dscSize.Add ("gigantic")
+				If strings.IndexOf(bpstuff2,"BEAK",1,True) <> -1 Then
+					dscDesc.Add ("uses its beak to pluck up unsuspecting intruders")
+				End If
+			End If
+			
+			
+			//MORE STUFF
+			rnd = random(1,4)
+			If rnd = 1 Then
+			
+			Else If rnd = 2 Then
+				ttl.add ("	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]")
+				ttl.add ("	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]")
+				ttl.add ("	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]")
+			Else If rnd = 3 Then
+				ttl.add ("	[BODY_APPEARANCE_MODIFIER:LENGTH:80:95:98:100:102:105:120]")
+				dscVerb.Add ("tunnels through the rocks")
+				If strings.IndexOf(bpstuff2,"BASIC_1PARTBODY",1,True) <> -1 Then
+					dscDesc.Add ("hundreds of feet moving along the bottom of its body")
+				End If
+			Else If rnd = 4 Then
+				ttl.add ("	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]")
+				ttl.add ("	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]")
+			End If
+		
+			//ATTACK INFO
+			If hasbeak = True Then
+				ttl.add ("	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]")
+				ttl.add ("		[ATTACK_SKILL:BITE]")
+				ttl.add ("		[ATTACK_VERB:bite:bites]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+				ttl.add ("		[ATTACK_FLAG_CANLATCH]")
+			End If
+			If hastalon = True Then
+				If handtoe = False Then
+					ttl.add ("	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]")
+				Else
+					ttl.add ("	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:ALL:TALON]")
+				End If
+				If random(0,1) = 1 Then
+					ttl.add ("		[ATTACK_SKILL:GRASP_STRIKE]")
+				Else 
+					ttl.add ("		[ATTACK_SKILL:STANCE_STRIKE]")
+				End If
+				ttl.add ("		[ATTACK_VERB:snatch at:snatches at]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				ttl.add ("		[ATTACK_PRIORITY:SECOND]")
+				ttl.add ("		[ATTACK_FLAG_WITH]")
+			End If
+			If hasfoot = True Then
+				ttl.add ("	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]")
+				ttl.add ("		[ATTACK_SKILL:STANCE_STRIKE]")
+				ttl.add ("		[ATTACK_VERB:kick:kicks]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+				ttl.add ("		[ATTACK_FLAG_WITH]")
+			End If
+			If hasteeth = True And truehead = True Then
+				If hashead = True Then
+					ttl.add ("	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]")
+					ttl.add ("		[ATTACK_SKILL:BITE]")
+					ttl.add ("		[ATTACK_VERB:bite:bites]")
+					ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+					ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+					ttl.add ("		[ATTACK_FLAG_EDGE]")
+					ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+					ttl.add ("		[ATTACK_FLAG_CANLATCH]")
+				End If
+			End If
+			If hasteeth = False And hasmouth = True Then
+				ttl.add ("	[ATTACK:BITE:BODYPART:BY_CATEGORY:MOUTH]")
+				ttl.add ("		[ATTACK_SKILL:BITE]")
+				ttl.add ("		[ATTACK_VERB:bite:bites]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+				ttl.add ("		[ATTACK_FLAG_CANLATCH]")
+			End If
+			If hasfingerclaws = True Then
+				ttl.add ("	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:CLAW]")
+				ttl.add ("		[ATTACK_SKILL:GRASP_STRIKE]")
+				ttl.add ("		[ATTACK_VERB:scratch:scratches]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				If random(0,1) = 1 Then
+					ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+				Else
+					ttl.add ("		[ATTACK_PRIORITY:SECOND]")
+				End If
+			End If
+			If hashand = True Then
+				ttl.add ("	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]")
+				ttl.add ("		[ATTACK_SKILL:GRASP_STRIKE]")
+				ttl.add ("		[ATTACK_VERB:punch:punches]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_WITH]")
+				ttl.add ("		[ATTACK_PRIORITY:SECOND]")
+			End If
+			If canttentacle = False Then
+				ttl.add ("	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:TENTACLE:BY_CATEGORY:TOOTH]")
+				ttl.add ("		[ATTACK_SKILL:BITE]")
+				ttl.add ("		[ATTACK_VERB:bite:bites]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+				ttl.add ("		[ATTACK_FLAG_CANLATCH]")
+			End If
+			If hasmandibles = True Then
+				ttl.add ("	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:MANDIBLE]")
+				ttl.add ("		[ATTACK_SKILL:BITE]")
+				ttl.add ("		[ATTACK_VERB:bite:bites]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+				ttl.add ("		[ATTACK_FLAG_CANLATCH]")
+			End If
+			If hasfingernails = True Then
+				ttl.add ("	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]")
+				ttl.add ("		[ATTACK_SKILL:GRASP_STRIKE]")
+				ttl.add ("		[ATTACK_VERB:scratch:scratches]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				ttl.add ("		[ATTACK_PRIORITY:SECOND]")
+			End If
+			If hastoenails = True Then
+				ttl.add ("	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:TOE:NAIL]")
+				ttl.add ("		[ATTACK_SKILL:GRASP_STRIKE]")
+				ttl.add ("		[ATTACK_VERB:scratch:scratches]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				ttl.add ("		[ATTACK_PRIORITY:SECOND]")
+			End If
+			If hastoeclaws = True Then
+				ttl.add ("	[ATTACK:CLAW:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]")
+				ttl.add ("		[ATTACK_SKILL:GRASP_STRIKE]")
+				ttl.add ("		[ATTACK_VERB:claw:claws]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+			End If
+			If hastusk = True And truehead = True Then
+				ttl.add ("	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TUSK]")
+				If random(0,1) = 0 Then
+					ttl.add ("		[ATTACK_SKILL:BITE]")
+					ttl.add ("		[ATTACK_VERB:bite:bites]")
+					ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+					ttl.add ("		[ATTACK_FLAG_EDGE]")
+					ttl.add ("		[ATTACK_FLAG_CANLATCH]")
+				Else
+					ttl.add ("		[ATTACK_FLAG_WITH]")
+					ttl.add ("		[ATTACK_SKILL:BITE]")
+					ttl.add ("		[ATTACK_VERB:gore:gores]")
+				End If
+				ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+			End If
+			If hasupperbodypincers = True Then
+				ttl.add ("	[ATTACK:SLAP:BODYPART:BY_CATEGORY:PINCER]")
+				ttl.add ("		[ATTACK_SKILL:GRASP_STRIKE]")
+				ttl.add ("		[ATTACK_VERB:snatch:snatches]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_PENETRATION_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+				ttl.add ("		[ATTACK_FLAG_CANLATCH]")
+			End If
+			If hasproboscis = True Then
+				ttl.add ("	[ATTACK:BITE:BODYPART:BY_CATEGORY:PROBOSCIS]")
+				ttl.add ("		[ATTACK_SKILL:BITE]")
+				ttl.add ("		[ATTACK_VERB:bite:bites]")
+				ttl.add ("		[ATTACK_CONTACT_PERC:100]")
+				ttl.add ("		[ATTACK_FLAG_EDGE]")
+				ttl.add ("		[ATTACK_PRIORITY:MAIN]")
+				ttl.add ("		[ATTACK_FLAG_CANLATCH]")
+				ttl.add ("		[SPECIALATTACK_SUCK_BLOOD:25:50]")
+			End If
+			//other stuff
+			If random(0,1) = 1 Then
+				ttl.add ("	[HOMEOTHERM:100" + random(10,67)+ "]")
+			End If
+			If random(0,1) = 1 Then
+				ttl.add ("	[SWIMS_INNATE][SWIM_SPEED:" + random (500,4500) + "]")
+				If skintype = "SKIN" And amphibious = True Then
+					dscNoun.Add ("amphibian")
+				End If
+			End If
+			
+			//final description info
+			If issolitary = True Then
+				If ishunter = True Then
+					dscVerb.Add ("prefers to hunt alone")
+				End If
+				If isroamer = True Then
+					dscVerb.Add ("patrols its territory by itself")
+				End If
+				If isgrazer = True Then
+					dscVerb.Add ("needs lots of room to graze")
+				End If
+				ElseIf ingroups = True Then
+				If ishunter = True Then
+					dscVerb.Add ("hunts in packs")
+				End If
+				If isroamer = True Then
+					dscVerb.Add ("roams from place to place with others")
+				End If
+				If isgrazer = True Then
+					dscVerb.Add ("is found grazing in groups")
+				End If
+			End If
+			If strings.IndexOf(bpstuff2,"TRUNK",1,True) <> -1 Then
+				dscVerb.Add ("lifts " + foodword + " up with its long trunk to eat")
+			End If
+			
+			
+			
+			
+			//GENDER BENDING
+			Define xxx As Integer = random(0,1)
+			If xxx = 0 Then
+				ttl.add ("	[CASTE:FEMALE]")
+				ttl.add ("		[FEMALE]")
+				If random(0,1) = 1 Then
+					ttl.add ("		[MULTIPLE_LITTER_RARE]")
+				End If
+				ttl.add ("	[CASTE:MALE]")
+				ttl.add ("		[MALE]")
+			Else
+				If random(0,1) = 1 Then
+					ttl.add ("	[BODY_DETAIL_PLAN:LEATHERY_EGG_MATERIALS]")
+				Else
+					ttl.add ("	[BODY_DETAIL_PLAN:EGG_MATERIALS]")
+				End If
+				ttl.add ("	[CASTE:FEMALE]")
+				ttl.add ("		[FEMALE]")
+				ttl.add ("		[LAYS_EGGS]")
+				ttl.add ("		[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]")
+				ttl.add ("		[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]")
+				ttl.add ("		[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]")
+				ttl.add ("		[EGG_SIZE:" + (bodysize0 * 1.1) + "]")
+				Define cs As Integer = random(1,10)
+				Define cs2 As Integer = cs * random(1,5)
+				ttl.add ("		[CLUTCH_SIZE:" + cs + ":" + cs2 + "]")
+				ttl.add ("	[CASTE:MALE]")
+				ttl.add ("		[MALE]")
+			End If
+			
+			ttl.add ("	[SELECT_CASTE:ALL]")
+			//now we be teh awesome. Or... rather... we just give dragons their stuff. Bronze collossus stuff is up with the body detail info.
+			If isfirebreather = True Then
+				ttl.add ("[SELECT_MATERIAL:ALL]")
+				ttl.add ("		[MULTIPLY_VALUE:15]")
+				ttl.add ("		[COLDDAM_POINT:NONE]")
+				ttl.add ("		[HEATDAM_POINT:NONE]")
+				ttl.add ("		[IGNITE_POINT:NONE]")
+				ttl.add ("		[IF_EXISTS_SET_MELTING_POINT:55000]")
+				ttl.add ("		[IF_EXISTS_SET_BOILING_POINT:57000]")
+				ttl.add ("		[SPEC_HEAT:30000]")
+				ttl.add ("	[SELECT_MATERIAL:BLOOD]")
+				ttl.add ("	 [PLUS_MATERIAL:PUS]")
+				ttl.add ("		[MELTING_POINT:10000]")
+			End If
+			
+			//Now for coloration.
+			If Not skintype = "STONE" Then
+				//AWESOME INFO
+				If skintype = "SKIN" Then
+					Define skinnum As Integer = random(1,skinlist.Count)
+					ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]")
+					ttl.add ("			[TL_COLOR_MODIFIER:" + skinlist.Item(skinnum) + "]")
+					ttl.add ("				[TLCM_NOUN:skin:SINGULAR]")
+					ttl.setitem(4,"	[COLOR:" + colorlist.Item(skinnum) + "]")
+					dscAdj.Add (colortostring(skinlist.Item(skinnum)))
+					//Commented because of redundancy
+					//Define temp1b As String[] = split(skinlist.Item(skinnum),":",False)
+					//outercolor = strings.Replace(strings.ToLowerCase(temp1b[1]),"_"," ",False)
+					////dscDesc.Add (outercolor + " skin")
+				Else If skintype = "CHITIN" Then
+					ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]")
+					ttl.add ("			[TL_COLOR_MODIFIER:BLACK:1]")
+					ttl.add ("				[TLCM_NOUN:exterior:SINGULAR]")
+					ttl.setitem(4,"	[COLOR:0:0:1]")
+					dscAdj.Add ("black")
+				Else If skintype = "SCALE" Then
+					Define skinnum As Integer = random(1,scalelist.Count)
+					ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]")
+					ttl.add ("			[TL_COLOR_MODIFIER:" + scalelist.Item(skinnum) + ":1")
+					ttl.add ("				[TLCM_NOUN:scales:PLURAL]")
+					ttl.setitem(4,"	[COLOR:" + scalecolor.Item(skinnum) + "]")
+					dscAdj.Add (colortostring(scalelist.Item(skinnum)))
+					//Define temp1b As String[] = split(scalelist.Item(skinnum),":",False)
+					//outercolor = strings.Replace(strings.ToLowerCase(temp1b[1]),"_"," ",False)
+					//dscDesc.Add (outercolor + " skin")
+				Else If skintype = "FLESH" Then
+					Define skinnum As Integer = random(1,skinlist.Count)
+					ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:ALL:FLESH]")
+					ttl.add ("			[TL_COLOR_MODIFIER:" + skinlist.Item(skinnum) + "]")
+					ttl.add ("				[TLCM_NOUN:flesh:SINGULAR]")
+					ttl.setitem(4,"	[COLOR:" + colorlist.Item(skinnum) + "]")
+					dscAdj.Add (colortostring(skinlist.Item(skinnum)))
+				Else If skintype = "WET" Then
+					Define skinnum As Integer = random(1,slimecolor.Count)
+					ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:ALL:BLOOD]")
+					ttl.add ("			[TL_COLOR_MODIFIER:" + slimecolor.Item(skinnum) + "]")
+					ttl.add ("				[TLCM_NOUN:" + thistype + ":SINGULAR]")//"thistype" is the type of goo that the creature is made of
+					ttl.setitem(4,"	[COLOR:" + dumblist.Item(skinnum) + "]")
+					dscAdj.Add (colortostring(slimecolor.Item(skinnum)))
+					//Define temp1b As String[] = split(slimecolor.Item(skinnum),":",False)
+					//outercolor = strings.Replace(strings.ToLowerCase(temp1b[1]),"_"," ",False)
+					//dscVerb.Add (outercolor + " " + thistype)
+				End If
+				If addhair = True Then
+					Define hairint As Integer = random(1,hairlist.Count)
+					ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]")
+					ttl.add ("			[TL_COLOR_MODIFIER:" + hairlist.Item(hairint) + "]")
+					ttl.add ("				[TLCM_NOUN:hair:SINGULAR]")
+					If R01() = True Then
+						dscAdj.SetItem (dscAdj.Count,colortostring(hairlist.Item(hairint)))
+					End If
+				End If
+				If hasfeather = True Then
+					Define featherint As Integer = random(1,featherlist.Count)
+					ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]")
+					ttl.add ("			[TL_COLOR_MODIFIER:" + featherlist.Item(featherint) + "]")
+					ttl.add ("				[TLCM_NOUN:feathers:PLURAL]")
+					If R01() = True Then
+						dscAdj.SetItem (dscAdj.Count,colortostring(featherlist.Item(featherint)))
+					End If
+				End If
+				If eyecount > 0 Then
+					Define eyecolornum As Integer = random(1,eyelist.Count)
+					Define temp0 As String = colortostring(eyelist.Item(eyecolornum))
+					If strings.IndexOf (temp0," ",1) = -1 And temp0 <> "black" Then
+						preflist.Add (temp0 + " eyes")
+						If r01() = True Then
+							dscAdj.Add (temp0 + "-eyed")
+						Else
+							dscDesc.Add (temp0 + " eyes")
+							//fname.Add (temp0 + "-eyed")
+						End If
+					End If
+					If skintype <> "FLESH" And skintype <> "WET" And skintype <> "STONE" Then
+						If eyecount > 1 And strings.IndexOf (bpstuff2,"BODY_EYE",1) = -1 Then
+							ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]")
+							ttl.add ("			[TL_COLOR_MODIFIER:" + eyelist.Item(eyecolornum) + "]")
+							ttl.add ("				[TLCM_NOUN:eyes:PLURAL]")
+						Else If eyecount = 1 Then
+							ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:ALL:EYE]")
+							ttl.add ("			[TL_COLOR_MODIFIER:" + eyelist.Item(eyecolornum) + "]")
+							ttl.add ("				[TLCM_NOUN:eye:SINGULAR]")
+						End If
+					End If
+				End If
+			Else
+				ttl.add ("		[SET_TL_GROUP:BY_CATEGORY:ALL:ROCK]")
+				ttl.add ("			[TL_COLOR_MODIFIER:GRAY]")
+				ttl.add ("				[TLCM_NOUN:stone:SINGULAR]")
+				ttl.setitem(4,"	[COLOR:0:0:1]")
+			End If
+			If random (0,277) < 77 Then
+				ttl.add ("	[SELECT_MATERIAL:ALL]")
+				ttl.add ("		[MULTIPLY_VALUE:" + random(2,4) + "]")
+				dscVerb.Add ("is valuable for trade")
+			End If
+			
+			
+			If dscSize.Count < 1 Then
+				alert ("error! Creature has no size descriptor","Talvieno")
+			End If
+			
+			
+			If dscDesc.Count > 1 And dscVerb.Count > 1 Then
+				Define Desc1 As Integer = random(1,dscDesc.Count)
+				Define Verb1 As Integer = random (1,dscVerb.Count)
+				Define Desc2 As Integer = random(1,dscDesc.Count)
+				Define Verb2 As Integer = random (1,dscVerb.Count)
+				While desc1 = desc2 Or verb1 = verb2
+					desc2 = random (1,dscDesc.Count)
+					verb2 = random (1,dscVerb.Count)
+				End While
+				If dscAdj.Count = 0 Then
+				
+					ttl.setitem(3,"	[DESCRIPTION:A " + dscSize.Item(random(1,dscSize.Count)) + " " + dscNoun.Item(random(1,dscNoun.Count)) + " with " + dscDesc.Item(Desc1) + " and " + dscDesc.Item(Desc2) + ". It " + dscVerb.Item(Verb1) + " and " + dscVerb.Item(Verb2) + ".]")
+				Else
+					ttl.setitem(3,"	[DESCRIPTION:A " + dscSize.Item(random(1,dscSize.Count)) + ", " + dscAdj.Item(random(1,dscAdj.Count)) + " " + dscNoun.Item(random(1,dscNoun.Count)) + " with " + dscDesc.Item(Desc1) + " and " + dscDesc.Item(Desc2) + ". It " + dscVerb.Item(Verb1) + " and " + dscVerb.Item(Verb2) + ".]")
+				End If
+			Else
+				ttl.setitem(3,"	[DESCRIPTION:An unrecognized, randomly-generated creature.]")
+			End If
+			
+			Define awesomename As String = wordcrafter()
+			tile = strings.SubString (awesomename,1,1)
+			ttl.SetItem (5,"	[CASTE_NAME:" + awesomename + ":" + Pluralize(awesomename) + ":" + awesomename + "]")
+			ttl.SetItem (2,"	[NAME:" + awesomename + ":" + Pluralize(awesomename) + ":" + awesomename + "]")
+			If bodysize2 < sizeavgx2 Then
+				ttl.SetItem (6,"	[CREATURE_TILE:'" + tile + "']")
+			Else
+				ttl.SetItem (6,"	[CREATURE_TILE:'" + strings.ToUpperCase(tile) + "']")
+			End If
+			If allmobnamelist.IndexOf (awesomename) <> -1 Then
+				//just a warning to me. it means I'm not being creative enough. Hopefully you won't ever encounter it ingame.
+				ttl.setitem(7,"	[PREFSTRING:duplicate name]")
+			Else
+				//Final Prefstring stuff. Keeps getting moved farther down.
+				If preflist.Count = 0 Then
+					preflist.Add ("randomly generated faults")
+				End If
+				ttl.setitem(7,"	[PREFSTRING:" + preflist.Item(random(1,preflist.Count)) + "]")
+			End If
+			
+			allmobnamelist.Add (awesomename)
+			ttl.add ("")
+			ttl.add ("")
+			ttl.add ("*****************************")//I feel like commenting things today, so here's a comment.
+			ttl.add ("")
+			ttl.add ("")
+			delay(1)
+			
+			For i = 1 To ttl.Count 
+				asdf.WriteLine(ttl.Item(i))
+			Next
+			If canciv = False Then
+				If semi = True Then
+					print("Semimegabeast: " + awesomename)
+					peny = peny + 12
+					moveto(0,peny)
+				Else
+					print("Megabeast: " + awesomename)
+					peny = peny + 12
+					moveto(0,peny)
+				End If
+			End If
+			If sentient = True And hashand = True And canciv = True Then
+				print("Civilization: " + awesomename)
+				peny = peny + 12
+				moveto(0,peny)
+				addentity(ina,awesomename)
+			Else If ttl.Contains("	[CANOPENDOORS][EQUIPS][INTELLIGENT]") Then//cancel free civs if they're handless so we don't have ridiculous numbers of intelligent creatures
+				ttl.Remove ("	[CANOPENDOORS][EQUIPS][INTELLIGENT]")
+			End If
+			
+		Next
+		dflc.Close()
+		qwas.Close()
+		asdf.Close()
+		While 1 = 1
+			delay(1)
+		End While
+		loopx = loopx
+	End Method
+	
+	Method RandomData()//New method. Used so I only need one txt file to draw from, and so I only have to draw from it once.
+		Define lulz As TextInputFile = opentextfile("Randomdat.txt")
+		Define deposit As Integer = 0
+		While lulz.EndOfFile = False//Why "lulz"? I have no idea.		Lulz.
+			Define thisin As String = lulz.ReadLine ()
+			If strings.StartsWith(thisin,"//") Or thisin = "" Or strings.StartsWith (thisin," ") Then
+				//nothing
+			Else If strings.StartsWith(thisin,"((") And strings.EndsWith (thisin,"))") Then
+				deposit = deposit + 1
+			Else If deposit = 1 Then
+				tagdata.Add (thisin)
+			Else If deposit = 2 Then
+				entitydata.Add (thisin)
+			End If
+		End While
+		lulz.Close ()//Teh end of lulz.
+	End Method//Oh, so beautifully short. I love short methods that accomplish loads of stuff.
+
+	Function randomletter() As String
+		Define ast As String 
+		Define str As StringList
+		str.Add ("a")
+		str.Add ("b")
+		str.Add ("c")
+		str.Add ("d")
+		str.Add ("e")
+		str.Add ("f")
+		str.Add ("g")
+		str.Add ("h")
+		str.Add ("i")
+		str.Add ("j")
+		str.Add ("k")
+		str.Add ("l")
+		str.Add ("m")
+		str.Add ("n")
+		str.Add ("o")
+		str.Add ("p")
+		str.Add ("q")
+		str.Add ("r")
+		str.Add ("s")
+		str.Add ("t")
+		str.Add ("u")
+		str.Add ("v")
+		str.Add ("w")
+		str.Add ("x")
+		str.Add ("y")
+		str.Add ("z")
+		str.Add ("a")
+		str.Add ("e")
+		str.Add ("i")
+		str.Add ("o")
+		str.Add ("u")
+		
+		ast = str.Item(random(1,str.Count))
+		
+		Return ast
+	End Function
+	
+	
+	
+	//SPAAAAAAACCCEEEEEEE
+	
+	
+	
+	Method FullBP()
+		Define bpstr As String[] = split(":HEART,:GUTS,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:5FINGERS,:5TOES_RQ_ANON,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:FACIAL_FEATURES,:4ARMS_STANCE,:HEART,:GUTS,:4FINGERS,:BODY_EYE,:BODY_EYELID,:BASIC_HEAD,:TAIL,:HEART,:GUTS,:BRAIN,:MOUTH,:GENERIC_TEETH,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:2FINGERS,:2TOES,:MOUTH,:TONGUE,:FACIAL_FEATURES,:TEETH,:RIBCAGE,:BRAIN,:MOUTH,:2WINGS,:TAIL,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4FINGERS,:4TOES,:MOUTH,:TONGUE,:2HEAD_HORN,:2WINGS,:2LUNGS,:HEART,:GUTS,:ORGANS,:BRAIN,:SKULL,:MOUTH,:TONGUE,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:2EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:GIZZARD,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4TOES,:BEAK,:TONGUE,:RIBCAGE,:2HEAD_HORN,:BASIC_HEAD,:TAIL,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:FORKED_TONGUE,:GENERIC_TEETH_WITH_FANGS,:RIBCAGE,:TWO_NO_CLAW_TENTACLES,:TENTACLE_MOUTH,:TENTACLE_TEETH,:HEART,:GUTS,:BRAIN,:TAIL,:2EYES,:2EARS,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:GENERIC_TEETH,:RIBCAGE,:TAIL,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:RIBCAGE,:2EYES,:2EARS,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:GENERIC_TEETH,:RIBCAGE,:TAIL,:2EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4FINGERS,:4TOES,:MOUTH,:LARGE_MANDIBLES,:RIBCAGE,:4ARMS_STANCE,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:5FINGERS,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:FACIAL_FEATURES,:TAIL,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4FINGERS,:4TOES,:MOUTH,:TONGUE,:RODENT_TEETH,:RIBCAGE,:2EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:GIZZARD,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4TOES,:BEAK,:TONGUE,:RIBCAGE,:FOUR_TENTACLES,:BRAIN,:HEART,:GUTS,:ORGANS,:BEAK,:TAIL,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:5TOES,:MOUTH,:TONGUE,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:TAIL,:2WINGS,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:5TOES,:MOUTH,:TONGUE,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:5FINGERS,:5TOES,:MOUTH,:TONGUE,:FACIAL_FEATURES,:TEETH,:RIBCAGE,:BASIC_3PARTARMS,:BASIC_3PARTLEGS,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4FINGERS,:3TOES,:MOUTH,:TONGUE,:FACIAL_FEATURES,:TEETH,:2TUSKS,:RIBCAGE,:2EYESTALKS,:7HEADNECKS,:BASIC_FRONTLEGS,:BASIC_REARLEGS,:TAIL,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:SPINE,:BRAIN,:SKULL,:3TOES_FQ_REG,:3TOES_RQ_REG,:MOUTH,:TONGUE,:GENERIC_TEETH_WITH_FANGS,:RIBCAGE,:TAIL_STANCE,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:5FINGERS,:MOUTH,:TONGUE,:FACIAL_FEATURES,:TEETH,:RIBCAGE,:3EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:5FINGERS,:5TOES,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:FACIAL_FEATURES,:BASIC_HEAD,:UPPERBODY_PINCERS,:REAR_BODY_FLIPPERS,:TAIL,:SIX_TENTACLES,:2EYESTALKS,:4EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:MOUTH,:2EYES,:HEART,:GUTS,:BRAIN,:PROBOSCIS,:2WINGS,:BASIC_HEAD,:2EYES,:BEAK,:8_SIMPLE_HEAD_ARMS,:BRAIN,:TAIL,:2EYES,:2EARS,:TRUNK,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:2TUSKS,:GENERIC_TEETH,:RIBCAGE,:2WINGS,:2EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:GIZZARD,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:2TOES,:BEAK,:CASQUE,:TONGUE,:RIBCAGE",",",False)
+		//Define bpstr As String[] = split(":HEART,:GUTS,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:5TOES_FQ_FINGERS,:5TOES_RQ_ANON,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:FACIAL_FEATURES,:4ARMS_STANCE,:HEART,:GUTS,:4FINGERS,:BODY_EYE,:BODY_EYELID,:BASIC_HEAD,:TAIL,:HEART,:GUTS,:BRAIN,:MOUTH,:GENERIC_TEETH,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:2FINGERS,:2TOES,:MOUTH,:TONGUE,:FACIAL_FEATURES,:TEETH,:RIBCAGE,:BRAIN,:MOUTH,:2WINGS,:TAIL,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4FINGERS,:4TOES,:MOUTH,:TONGUE,:2HEAD_HORN,:2WINGS,:2LUNGS,:HEART,:GUTS,:ORGANS,:BRAIN,:SKULL,:MOUTH,:TONGUE,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:2EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:GIZZARD,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4TOES,:BEAK,:TONGUE,:RIBCAGE,:2HEAD_HORN,:BASIC_HEAD,:TAIL,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:FORKED_TONGUE,:GENERIC_TEETH_WITH_FANGS,:RIBCAGE,:TWO_NO_CLAW_TENTACLES,:TENTACLE_MOUTH,:TENTACLE_TEETH,:HEART,:GUTS,:BRAIN,:TAIL,:2EYES,:2EARS,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:GENERIC_TEETH,:RIBCAGE,:TAIL,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:RIBCAGE,:2EYES,:2EARS,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:GENERIC_TEETH,:RIBCAGE,:TAIL,:2EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4FINGERS,:4TOES,:MOUTH,:LARGE_MANDIBLES,:RIBCAGE,:4ARMS_STANCE,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:5FINGERS,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:FACIAL_FEATURES,:TAIL,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4FINGERS,:4TOES,:MOUTH,:TONGUE,:RODENT_TEETH,:RIBCAGE,:2EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:GIZZARD,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4TOES,:BEAK,:TONGUE,:RIBCAGE,:FOUR_TENTACLES,:BRAIN,:HEART,:GUTS,:ORGANS,:BEAK,:TAIL,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:5TOES,:MOUTH,:TONGUE,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:TAIL,:2WINGS,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:5TOES,:MOUTH,:TONGUE,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:5FINGERS,:5TOES,:MOUTH,:TONGUE,:FACIAL_FEATURES,:TEETH,:RIBCAGE,:BASIC_3PARTARMS,:BASIC_3PARTLEGS,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:4FINGERS,:3TOES,:MOUTH,:TONGUE,:FACIAL_FEATURES,:TEETH,:2TUSKS,:RIBCAGE,:2EYESTALKS,:7HEADNECKS,:BASIC_FRONTLEGS,:BASIC_REARLEGS,:TAIL,:2EYES,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:SPINE,:BRAIN,:SKULL,:3TOES_FQ_REG,:3TOES_RQ_REG,:MOUTH,:TONGUE,:GENERIC_TEETH_WITH_FANGS,:RIBCAGE,:TAIL_STANCE,:2EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:HUMANOID_JOINTS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:5FINGERS,:MOUTH,:TONGUE,:FACIAL_FEATURES,:TEETH,:RIBCAGE,:3EYES,:2EARS,:NOSE,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:5FINGERS,:5TOES,:GENERIC_TEETH_WITH_LARGE_EYE_TEETH,:RIBCAGE,:FACIAL_FEATURES,:BASIC_HEAD,:UPPERBODY_PINCERS,:REAR_BODY_FLIPPERS,:TAIL,:SIX_TENTACLES,:2EYESTALKS,:4EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:MOUTH,:2EYES,:HEART,:GUTS,:BRAIN,:PROBOSCIS,:2WINGS,:BASIC_HEAD,:2EYES,:BEAK,:8_SIMPLE_HEAD_ARMS,:BRAIN,:TAIL,:2EYES,:2EARS,:TRUNK,:2LUNGS,:HEART,:GUTS,:ORGANS,:THROAT,:NECK,:SPINE,:BRAIN,:SKULL,:MOUTH,:TONGUE,:2TUSKS,:GENERIC_TEETH,:RIBCAGE,:2WINGS,:2EYES,:2LUNGS,:HEART,:GUTS,:ORGANS,:GIZZARD,:HUMANOID_JOINTS,:THROAT,:NECK,:NECK_SPINE,:SPINE,:BRAIN,:SKULL,:2TOES,:BEAK,:CASQUE,:TONGUE,:RIBCAGE",",",False)
+		
+		Define i As Integer
+		For i = 1 To arraylength(bpstr)
+			bplist.Add (bpstr[i])
+		Next
+		i = i
+		Define adjstr As String[] = split("freakish,scary,terrifying,calming,elegant,impressive,bizarre,enormous,awesome,unnerving,freakish,long,lustrous,frightening,drooping,impressive,sinister,graceful,gruesome",",",False)	
+		For i = 1 To arraylength(adjstr)
+			adjlist.Add (adjstr[i])
+		Next
+		
+		
+		bloodcolor.Add ("BLACK")
+		bloodcolor.Add ("BLUE")
+		bloodcolor.Add ("GREEN")
+		bloodcolor.Add ("AQUA")
+		bloodcolor.Add ("RED")
+		bloodcolor.Add ("VIOLET")
+		bloodcolor.Add ("BROWN")	
+		bloodcolor.Add ("ASH_GRAY")
+		bloodcolor.Add ("GRAY")
+		bloodcolor.Add ("DARK_BLUE")
+		bloodcolor.Add ("TURQUOISE")
+		bloodcolor.Add ("DARK_VIOLET")
+		bloodcolor.Add ("YELLOW")
+		bloodcolor.Add ("WHITE")
+		
+		i = i
+		skinlist.Add ("CLEAR:1")
+		skinlist.Add ("MIDNIGHT_BLUE:1")
+		skinlist.Add ("WHITE:1")
+		skinlist.Add ("BLACK:1")
+		skinlist.Add ("GREEN:1")
+		skinlist.Add ("BLUE:1")
+		skinlist.Add ("ECRU:1")
+		skinlist.Add ("GRAY:1")
+		skinlist.Add ("TAUPE_PALE:1")
+		skinlist.Add ("PINK:1")
+		skinlist.Add ("GOLDENROD:1")
+
+		colorlist.add ("7:0:0")
+		colorlist.add ("1:0:0")
+		colorlist.add ("7:0:1")
+		colorlist.add ("0:0:1")
+		colorlist.add ("2:0:0")
+		colorlist.add ("1:0:1")
+		colorlist.add ("7:0:0")
+		colorlist.add ("0:0:1")
+		colorlist.add ("7:0:1")
+		colorlist.add ("5:0:1")
+		colorlist.add ("6:0:1")
+		scalelist.add ("GOLD:1")
+		scalelist.add ("RED:1")
+		scalelist.add ("WHITE:1")
+		scalelist.add ("CRIMSON:1")
+		scalelist.add ("BLACK:1")
+		scalecolor.add ("5:0:0")
+		scalecolor.add ("4:0:1")
+		scalecolor.add ("7:0:1")
+		scalecolor.add ("4:0:0")
+		scalecolor.add ("0:0:1")
+		eyelist.Add ("IRIS_EYE_PURPLE:1")
+		eyelist.Add ("IRIS_EYE_RED:1")
+		eyelist.Add ("BLACK:1")
+		eyelist.Add ("BLACK:1")
+		eyelist.Add ("BLACK:1")
+		eyelist.Add ("IRIS_EYE_GREEN:1")
+		eyelist.Add ("IRIS_EYE_BROWN:1")
+		eyelist.Add ("BLACK:1")
+		eyelist.Add ("BLACK:1")
+		eyelist.Add ("IRIS_EYE_GREEN:1")
+		eyelist.Add ("BLACK:1")
+		eyelist.Add ("IRIS_EYE_RED:1")
+		eyelist.Add ("BLACK:1")
+		eyelist.Add ("BLACK:1")
+		eyelist.Add ("GREEN:1")
+		eyelist.Add ("IRIS_EYE_BROWN:1")
+		eyelist.Add ("IRIS_EYE_GOLD:1")
+		eyelist.Add ("IRIS_EYE_YELLOW:1")
+		slimecolor.add ("BROWN:1")
+		slimecolor.add ("GREEN:1")
+		slimecolor.add ("CRIMSON:1")
+		slimecolor.add ("YELLOW:1")
+		slimecolor.add ("WHITE:1")
+		slimecolor.add ("GRAY:1")
+		slimecolor.add ("BLACK:1")
+		slimecolor.add ("DARK_VIOLET:1")
+		slimecolor.add ("DARK_GREEN:1")
+		dumblist.Add ("6:0:0")
+		dumblist.Add ("2:0:1")
+		dumblist.Add ("4:0:0")
+		dumblist.Add ("6:0:1")
+		dumblist.Add ("7:0:1")
+		dumblist.Add ("7:0:0")
+		dumblist.Add ("0:0:1")
+		dumblist.Add ("5:0:0")
+		dumblist.Add ("2:0:0")
+		hairlist.Add ("GRAY:1")
+		hairlist.Add ("BLACK:1")
+		hairlist.Add ("YELLOW:1")
+		hairlist.Add ("DARK_VIOLET:1")
+		hairlist.Add ("BROWN:1")
+		hairlist.Add ("WHITE:1")
+		hairlist.Add ("BLACK:1")
+		featherlist.Add ("BROWN:1")
+		featherlist.Add ("PURPLE:1")
+		featherlist.Add ("GRAY:1")
+		featherlist.Add ("BLACK:1")
+	End Method
+	
+	//Now with 20% more descriptions!
+	Method prefadd (nowthis As String, preflist As stringlist)
+		Define g As Integer 
+		If strings.IndexOf(nowthis,"SKULL",1,True) <> -1 Then
+			preflist.Add("skulls")
+			g = random(0,3)
+			If g = 0 Then
+				dscDesc.Add ("a large skull")
+			Else If g = 1 Then
+				dscDesc.Add ("a strong skull")
+			Else If g = 2 Then
+				dscDesc.Add ("a small skull")
+			Else If g = 3 Then
+				dscDesc.Add ("a soft skull")
+			End If
+		End If
+		If strings.IndexOf(nowthis,"HORN",1,True) <> -1 Then
+			preflist.Add("horns")
+			//fname.Add ("horned")
+		End If
+		If strings.IndexOf(nowthis,"FLIPPER",1,True) <> -1 Then
+			preflist.Add("flippers")
+			dscDesc.Add ("large flippers")
+		End If
+		If strings.IndexOf(nowthis,"NECK",1,True) <> -1 And strings.IndexOf(nowthis,"NECKS",1,True) = -1Then
+			preflist.Add("necks")
+			dscDesc.Add ("a long neck")
+		End If
+		If strings.IndexOf(nowthis,"8_SIMPLE_HEAD_ARMS",1,True) <> -1 Then
+			preflist.Add("many arms")
+		End If
+		If strings.IndexOf(nowthis,"8_SIMPLE_HEAD_ARMS",1,True) <> -1 Then
+			preflist.Add("intelligence")
+			dscVerb.Add ("is the most clever of its kind")
+		End If
+		If strings.IndexOf(nowthis,"PROBOSCIS",1,True) <> -1 Then
+			//fname.Add ("bloodsucking")
+			preflist.Add("ability to feast on blood")
+			dscVerb.Add ("sucks blood from its host with its long nose")
+		End If
+		If strings.IndexOf(nowthis,"UPPERBODY_PINCERS",1,True) <> -1 Then
+			preflist.Add("horrifying freakish appearance")
+			preflist.Add ("pincers")
+			dscDesc.Add ("pincers")
+		End If
+		If strings.IndexOf(nowthis,"BASIC_HEAD",1,True) <> -1 And strings.IndexOf(nowthis,"MOUTH",1,True) <> -1 And strings.IndexOf(nowthis,"TEETH",1,True) <> -1 Then
+			dscDesc.Add ("an enormous toothy maw instead of a head")
+		End If
+		If strings.IndexOf(nowthis,"TUSK",1,True) <> -1 Then
+			preflist.Add("tusks")
+			//fname.Add ("tusked")
+			dscVerb.Add ("attacks with its long tusks when angered")
+		End If
+		If strings.IndexOf(nowthis,"SIX_TENTACLES",1,True) <> -1 Then
+			preflist.Add("horrifying freakish appearance")
+			dscVerb.Add ("terrifies the land through which it roams")
+			//fname.Add ("tentacled")
+			Define r As Integer = random(0,4)
+			If r = 0 Then
+				dscDesc.Add ("many tentacle-like arms")
+			Else If r = 1 Then
+				dscDesc.Add ("many waving tentacles")
+			Else If r = 2 Then
+				dscDesc.Add ("many long tentacles")
+			Else If r = 3 Then
+				dscDesc.Add ("many sinewy tentacles")
+			Else If r = 4 Then
+				dscDesc.Add ("many suckered tentacles")
+			End If
+		End If
+		If strings.IndexOf(nowthis,"TEETH",1,True) <> -1 Then
+			preflist.Add ("teeth")
+			If strings.IndexOf(nowthis,"TENTACLE_TEETH",1,True) <> -1 Then
+				dscDesc.Add ("rows of razor-like teeth")
+			End If
+			If strings.IndexOf(nowthis,"GENERIC_TEETH_WITH_LARGE_EYE_TEETH",1,True) <> -1 And strings.IndexOf(nowthis,"MOUTH",1,True) <> -1 Then
+				dscAdj.Add ("long-toothed")
+				dscAdj.Add ("fanged")
+				//lname.Add ("gnasher")
+				//lname.Add ("ripper")
+				//lname.Add ("destroyer")
+				preflist.Add ("toothy maw")
+				Define r As Integer = random(0,2)
+				If r = 0 Then
+					dscDesc.Add ("a mouth full of shark teeth")
+				Else If r = 1 Then
+					dscDesc.Add ("a face full of incredibly long teeth")
+				Else If r = 2 Then
+					dscDesc.Add ("razor-sharp teeth")
+				End If
+			End If
+		End If
+		If strings.IndexOf(nowthis,":TEETH:",1,True) <> -1 Or strings.IndexOf(nowthis,":TEETH]",1,True) <> -1 Then
+			dscDesc.Add ("many sharp teeth")
+		End If
+		If (strings.IndexOf(nowthis,"EYES",1,True) <> -1 Or strings.IndexOf(nowthis,"BODY_EYE:",1,True) <> -1) Then
+			preflist.Add ("eyes")
+			Define eyect As Integer 
+			If strings.IndexOf(nowthis,"EYESTALK",1,True) <> -1 Then
+				eyect = eyect + 2
+			End If
+			If strings.IndexOf(nowthis,"4EYES",1,True) <> -1 Then
+				eyect = eyect + 4
+			End If
+			If strings.IndexOf(nowthis,"3EYES",1,True) <> -1 Then
+				eyect = eyect + 3
+			End If
+			If strings.IndexOf(nowthis,"2EYES:",1,True) <> -1 Or strings.IndexOf(nowthis,"2EYES]",1,True) <> -1 Then
+				eyect = eyect + 2
+			End If
+			If eyect = 0 Then
+				eyect = eyect + 1
+			End If
+			If eyect = 2 Then
+				dscDesc.Add ("large eyes to penetrate the darkness")
+			Else If eyect = 1 Then
+				dscDesc.Add ("a single large eye")
+			Else If eyect = 3 Then
+				dscDesc.Add ("three eyes")
+				preflist.Add ("three eyes")
+			Else If eyect = 4 Then
+				dscDesc.Add ("four eyes")
+				preflist.Add ("four eyes")
+			Else If eyect = 5 Then
+				dscDesc.Add ("five eyes")
+				preflist.Add ("five eyes")
+				preflist.Add ("freakish appearance")
+			Else If eyect = 6 Then
+				dscDesc.Add ("six eyes")
+				preflist.Add ("six eyes")
+				preflist.Add ("horrifying freakish appearance")
+			Else If eyect = 7 Then
+				dscDesc.Add ("seven eyes")
+				preflist.Add ("seven eyes")
+				preflist.Add ("horrifying appearance")
+			Else If eyect = 8 Then
+				If random(0,1) = 0 Then
+					dscDesc.Add ("eight eyes")
+				Else
+					dscDesc.Add ("spider-like eyes")
+				End If
+				preflist.Add ("eight eyes")
+				preflist.Add ("spider-like eyes")
+			Else If eyect > 8 Then
+				//lname.Add ("guardian")
+				dscDesc.Add ("many eyes")
+				preflist.Add ("bizarre appearance")
+			End If
+			
+		Else
+			dscDesc.Add ("no eyes")
+		End If
+		If strings.IndexOf(nowthis,"MOUTH",1,True) <> -1 Then
+			preflist.Add("mouths")
+			If Not strings.IndexOf(nowthis,"TENTACLE_MOUTH",1,True) <> -1 Then
+				dscDesc.Add ("a gaping mouth")
+			End If
+		Else
+			If strings.IndexOf(nowthis,"PROBOSCIS",1,True) = -1 Then
+				Define r As Integer = random(0,3)
+				dscDesc.Add ("no mouth")
+				If r = 0 Then
+					dscVerb.Add ("is said to feed on evil alone")
+				Else If r = 1 Then
+					dscVerb.Add ("absorbs nutrients through its skin")
+				Else If r = 2 Then
+					dscVerb.Add ("feeds on fear")
+				Else If r = 3 Then
+					dscVerb.Add ("is a very mysterious creature")
+				End If
+			End If
+		End If
+		If strings.IndexOf(nowthis,"BEAK",1,True) <> -1 Then
+			preflist.Add ("beaks")
+			//fname.Add ("beaked")
+			If random(0,1) = 1 Then
+				dscDesc.Add ("a sharp beak")
+			Else
+				dscDesc.Add ("a wide beak")
+			End If
+		End If
+		If strings.IndexOf(nowthis,"FOUR_TENTACLE",1,True) <> -1 Then
+			dscDesc.Add ("four tentacles")
+			//fname.Add ("tentacled")
+		End If
+		If strings.IndexOf(nowthis,"BODY_HEAD",1,True) <> -1 And strings.IndexOf(nowthis,"MOUTH",1,True) <> -1 Then
+			dscNoun.Add ("mouth")
+		End If
+		If strings.IndexOf(nowthis,"BODY_HEAD",1,True) <> -1 And strings.IndexOf(nowthis,"2TUSKS",1,True) <> -1 And strings.IndexOf(nowthis,"MOUTH",1,True) <> -1 Then
+			dscDesc.Add ("a body mostly taken up by its tusked mouth")
+		End If
+		If strings.IndexOf(nowthis,"EARS",1,True) <> -1 Then
+			preflist.Add ("ears")
+			If r01() = True Then
+				dscDesc.Add ("large ears")
+			Else
+				dscDesc.Add ("pointed ears")
+			End If
+		End If
+		If strings.IndexOf(nowthis,"FACIAL_FEATURES",1,True) <> -1 Then
+			preflist.Add ("resounding hoots")
+			//fname.Add ("hooting")
+		End If
+		If strings.IndexOf(nowthis,"BODY_HEAD",1,True) <> -1 And strings.IndexOf(nowthis,"EARS",1,True) <> -1 And strings.IndexOf(nowthis,"NOSE",1,True) <> -1 And strings.IndexOf(nowthis,"MOUTH",1,True) <> -1 And strings.IndexOf(nowthis,"EYES",1,True) <> -1 Then
+			dscDesc.Add ("a body shaped as the head of a man")
+		End If
+		If strings.IndexOf(nowthis,"LARGE_MANDIBLES",1,True) <> -1 And strings.IndexOf(nowthis,"MOUTH",1,True) <> -1 And strings.IndexOf(nowthis,"EYES",1,True) <> -1 Then
+			dscDesc.Add ("the head of an insect")
+		End If
+		If strings.IndexOf(nowthis,"7HEADNECKS",1,True) <> -1 Then
+			dscDesc.Add ("seven biting heads")
+			preflist.Add ("seven heads")
+		End If
+		If strings.IndexOf(nowthis,"TAIL_STANCE",1,True) <> -1 Then
+			dscDesc.Add ("the tail of a fish instead of legs")
+			preflist.Add ("tails")
+		End If
+		If strings.IndexOf(nowthis,"LARGE_MANDIBLES",1,True) <> -1 Then
+			dscDesc.Add ("large mandibles")
+			FORL("biting","biter")
+		End If
+		If strings.IndexOf(nowthis,"TAIL",1,True) <> -1 Then
+			If random(0,1) = 1 Then
+				If random(0,1) = 1 Then
+					dscDesc.Add ("a long prehensile tail")
+				Else
+					dscDesc.Add ("an enormous tail")
+				End If
+			End If
+		End If
+		If strings.IndexOf(nowthis,"2HEAD_HORN",1,True) <> -1 Then
+			If random(0,1) = 1 Then
+				dscDesc.Add ("horns")
+			Else
+				dscDesc.Add ("the horns of a great elk")
+			End If
+		End If
+		If strings.IndexOf(nowthis,"STALK",1,True) <> -1 Then
+			If random(0,1) = 1 Then
+				dscDesc.Add ("two long eyestalks")
+			Else
+				dscDesc.Add ("two short eyestalks")
+			End If
+		End If
+		If strings.IndexOf(nowthis,"TENTACLE_MOUTH",1,True) <> -1 Then
+			dscDesc.Add ("two mouths at the end of a pair of tentacles")
+		End If
+		If strings.IndexOf(nowthis,"WINGS",1,True) <> -1 Then
+			If flies = False Then
+				If r01() = True Then
+					dscDesc.Add ("wings that fall limp at its side")
+				Else
+					If r01() = True Then
+						dscDesc.Add ("heavy, useless wings")
+					Else
+						dscDesc.Add ("tiny, worthless wings")
+					End If
+				End If
+				dscAdj.Add ("flightless")
+			Else 
+				If r01() = True Then
+					dscVerb.Add ("flies with bat wings")
+				Else
+					dscDesc.Add ("great, majestic wings")
+				End If
+			End If
+			//fname.Add ("winged")
+		End If
+		If strings.IndexOf(nowthis,"4ARMS_STANCE",1,True) <> -1 And strings.IndexOf(nowthis,"BASIC_1PARTBODY",1,True) <> -1 Then
+			dscVerb.Add ("crawls along the ground with its four clawed hands")
+		Else If strings.IndexOf(nowthis,"4ARMS_STANCE",1,True) <> -1 And strings.IndexOf(nowthis,"BODY_HEAD",1,True) <> -1 Then
+			dscVerb.Add ("crawls along with four long arms")
+		Else If strings.IndexOf(nowthis,"4ARMS_STANCE",1,True) <> -1 Then
+			dscVerb.Add ("crawls along the ground")
+		End If
+		If strings.IndexOf(nowthis,"BODY_WITH_HEAD_FLAG",1,True) <> -1 And strings.IndexOf(nowthis,"MOUTH",1,True) <> -1 Then
+			dscVerb.Add ("eats with a mouth on the bottom of its body")
+		End If
+		If strings.IndexOf(nowthis,"RQ",1,True) = -1 And strings.IndexOf(nowthis,"FQ",1,True) = -1 And strings.IndexOf(nowthis,"REG",1,True) = -1 Then
+			Define fingerct As Integer 
+			Define toect As Integer 
+			If strings.IndexOf(nowthis,"2FINGERS",1,True) <> -1 Then
+				fingerct = fingerct + 2
+			End If
+			If strings.IndexOf(nowthis,"3FINGERS",1,True) <> -1 Then
+				fingerct = fingerct + 3
+			End If
+			If strings.IndexOf(nowthis,"4FINGERS",1,True) <> -1 Then
+				fingerct = fingerct + 4
+			End If
+			If strings.IndexOf(nowthis,"5FINGERS",1,True) <> -1 Then
+				fingerct = fingerct + 5
+			End If
+			If fingerct > 0 Then
+				dscDesc.Add (fingerct + " fingers on each hand")
+			End If
+			If strings.IndexOf(nowthis,"2TOES",1,True) <> -1 Then
+				toect = toect + 2
+			End If
+			If strings.IndexOf(nowthis,"3TOES",1,True) <> -1 Then
+				toect = toect + 3
+			End If
+			If strings.IndexOf(nowthis,"4TOES",1,True) <> -1 Then
+				toect = toect + 4
+			End If
+			If strings.IndexOf(nowthis,"5TOES",1,True) <> -1 Then
+				toect = toect + 5
+			End If
+			If toect > 0 Then
+				dscDesc.Add (toect + " toes on each foot")
+			End If
+		Else If strings.IndexOf(nowthis,"5TOES_RQ_ANON",1,True) <> -1 And strings.IndexOf(nowthis,"QUADRUPED",1,True) <> -1 Then
+			dscDesc.Add ("hands at the end of its forelimbs")
+		End If
+		
+	End Method
+		
+	Function R01() As Boolean 
+		Define rand As Boolean 
+		If random(0,1) = 1 Then
+			rand = True
+		End If
+		Return rand
+	End Function
+		
+	Method FORL(f As String,l As String)//F or L
+		If R01() = True Then
+			//fname.Add (f)
+		Else
+			//lname.Add (l)
+		End If
+	End Method
+	
+	Function ColorToString(c1 As String) As String
+		Return strings.Replace(strings.Replace(strings.Replace(strings.ToLowerCase(c1),"_"," ",False),"iris eye ",""),":1","")
+	End Function
+	
+	Method wordcrafterstart()
+		Define i As Integer 
+		Define j As Integer 
+		
+		For i = 1 To arraylength(nameCS)
+			ncs.Add (nameCS[i])
+		Next
+		For i = 1 To arraylength(nameCM)
+			ncm.Add (nameCM[i])
+		Next
+		For i = 1 To arraylength(nameCE)
+			nce.Add (nameCE[i])
+		Next
+		For i = 1 To arraylength(nameVS)
+			nvs.Add (nameVS[i])
+		Next
+		For i = 1 To arraylength(nameVM)
+			nvm.Add (nameVM[i])
+		Next
+		For i = 1 To arraylength(nameVE)
+			nve.Add (nameVE[i])
+		Next
+		
+		For i = 1 To arraylength(cb1)
+			c1.Add (cb1[i])
+		Next
+		For i = 1 To arraylength(cb2)
+			c2.Add (cb2[i])
+		Next
+		For i = 1 To arraylength(cb3)
+			c3.Add (cb3[i])
+		Next
+		For i = 1 To arraylength(vb1)
+			v1.Add (vb1[i])
+		Next
+		For i = 1 To arraylength(vb2)
+			v2.Add (vb2[i])
+		Next
+		For i = 1 To arraylength(vb3)
+			v3.Add (vb3[i])
+		Next
+	End Method
+	
+	Function WordCrafter() As String
+		Define okay As Boolean 
+		While okay = False
+			Define thisname As String 
+			Define howlong As Integer 
+			Define cv As String 
+			
+			If random(0,2) = 1 Then
+				cv = "c"
+				thisname = nvs.Item(random(1,nvs.Count))
+			Else
+				cv = "v"
+				thisname = ncs.Item(random(1,ncs.Count))
+			End If
+			
+			howlong = random(4,10)
+			
+			While strings.Length (thisname) < howlong - 2
+				If cv = "c" Then
+					cv = "v"
+					thisname = thisname + ncm.Item(random(1,ncm.Count))
+				Else
+					cv = "c"
+					thisname = thisname + nvm.Item(random(1,nvm.Count))
+				End If
+			End While
+			If cv = "c" Then
+				thisname = thisname + nce.Item(random(1,nce.Count))
+			Else
+				thisname = thisname + nve.Item(random(1,nve.Count))
+			End If
+			
+			Define lasttest As String[] = split(thisname," ",True)
+			Define badword As Boolean 
+			Define q As Integer
+			For q = 1 To arraylength(lasttest)
+				If strings.Length (lasttest[q]) < 5 Then
+					badword = True
+				End If
+			Next
+			If badword = False Then
+				Return (thisname)
+			End If
+		End While
+		Return "error"
+	End Function
+	
+	Function WordCrafterB(vowel As Bool,howlong As Integer) As String
+		Define okay As Boolean 
+		While okay = False
+			Define thisname As String 
+			Define cv As String 
+			
+			If vowel = True Then
+				cv = "c"
+				thisname = v1.Item(random(1,v1.Count))
+			Else
+				cv = "v"
+				thisname = c1.Item(random(1,c1.Count))
+			End If
+			
+			While strings.Length (thisname) < howlong - 2
+				If cv = "c" Then
+					cv = "v"
+					thisname = thisname + c2.Item(random(1,c2.Count))
+				Else
+					cv = "c"
+					thisname = thisname + v2.Item(random(1,v2.Count))
+				End If
+			End While
+			If cv = "c" Then
+				thisname = thisname + c3.Item(random(1,c3.Count))
+			Else
+				thisname = thisname + v3.Item(random(1,v3.Count))
+			End If
+			
+			Define lasttest As String[] = split(thisname," ",True)
+			Define badword As Boolean 
+			Define q As Integer
+			For q = 1 To arraylength(lasttest)
+				If strings.Length (lasttest[q]) < 3 Then
+					badword = True
+				End If
+			Next
+			If badword = False Then
+				Return (thisname)
+			End If
+		End While
+		Return "error"
+	End Function
+	
+	Function Pluralize(xx As String) As String
+		Define consolist As StringList
+		consolist.Add ("b")
+		consolist.Add ("c")
+		consolist.Add ("d")
+		consolist.Add ("f")
+		consolist.Add ("g")
+		consolist.Add ("h")
+		consolist.Add ("j")
+		consolist.Add ("k")
+		consolist.Add ("l")
+		consolist.Add ("m")
+		consolist.Add ("n")
+		consolist.Add ("p")
+		consolist.Add ("q")
+		consolist.Add ("r")
+		consolist.Add ("s")
+		consolist.Add ("t")
+		consolist.Add ("v")
+		consolist.Add ("w")
+		consolist.Add ("x")
+		consolist.Add ("y")
+		consolist.Add ("z")
+		If strings.EndsWith (xx,"us",True) And consolist.Contains (strings.SubString(xx,strings.Length (xx) - 2,1)) Then
+			xx = strings.Remove (xx,strings.Length (xx) - 1,2)
+			xx = xx + "i"
+		Else If strings.EndsWith (xx,"y",True) And consolist.Contains (strings.SubString(xx,strings.Length (xx) - 1,1)) Then
+			xx = strings.Remove (xx,strings.Length (xx),1)
+			xx = xx + "ies"
+		Else
+			xx = xx + "s"
+		End If
+		Return xx
+	End Function
+	
+	Method stuffinit()
+		Define enta As String[] = split(entitydata.Item(1),",",False)
+		Define entb As String[] = split(entitydata.Item(2),",",False)
+		Define entc As String[] = split(entitydata.Item(3),",",False)
+		Define entd As String[] = split(entitydata.Item(4),",",False)
+		Define ente As String[] = split(entitydata.Item(5),",",False)
+		Define entf As String[] = split(entitydata.Item(6),",",False)
+		Define entg As String[] = split(entitydata.Item(7),",",False)
+		Define enth As String[] = split(entitydata.Item(8),",",False)
+		Define enti As String[] = split(entitydata.Item(9),",",False)
+		Define entj As String[] = split(entitydata.Item(10),",",False)
+		Define entk As String[] = split(entitydata.Item(11),",",False)
+		Define entl As String[] = split(entitydata.Item(12),",",False)
+		Define entm As String[] = split(entitydata.Item(13),",",False)
+		Define entn As String[] = split(entitydata.Item(14),",",False)
+		Define ento As String[] = split(entitydata.Item(15),",",False)
+		Define entp As String[] = split(entitydata.Item(16),",",False)
+		Define entq As String[] = split(entitydata.Item(17),",",False)
+		Define entr As String[] = split(entitydata.Item(18),",",False)
+		Define ents As String[] = split(entitydata.Item(19),",",False)
+		Define entt As String[] = split(entitydata.Item(20),",",False)
+		Define entu As String[] = split(entitydata.Item(21),",",False)
+		Define entv As String[] = split(entitydata.Item(22),",",False)
+		Define entw As String[] = split(entitydata.Item(23),",",False)
+		Define entx As String[] = split(entitydata.Item(24),",",False)
+		Define enty As String[] = split(entitydata.Item(25),",",False)
+		Define entz As String[] = split(entitydata.Item(26),",",False)
+		Define enta2 As String[] = split(entitydata.Item(27),",",False)
+		Define entb2 As String[] = split(entitydata.Item(28),",",False)
+		Define entc2 As String[] = split(entitydata.Item(29),",",False)
+		Define thisread As String = tolowercase(entitydata.Item(30))
+		If thisread = "clothes=false" Or thisread = "clothes=0" Or thisread = "clothing=false" Or thisread="clothing=0" Then
+			clothes = False
+		Else If thisread = "clothes=?" Or thisread = "clothing=?" Then
+			While 1 = 1
+				Define temp As Integer = console.ConsoleReadInt("Do you want the generated civs to have clothing? Removing clothing provides a faster framerate, while including clothing provides extra gameplay. This message will only appear the first time you gen. Press '1' for clothing, or '0' to remove clothing.",True)
+				If temp = 1 Then
+					clothes = True
+					alldata.SetItem(alldata.IndexOf("Clothing=?"),"Clothing=1")
+					entitydata.SetItem(30,"Clothing=1")
+				Else If temp = 0 Then
+					clothes = False
+					alldata.SetItem(alldata.IndexOf("Clothing=?"),"Clothing=0")
+					entitydata.SetItem(30,"Clothing=0")
+				End If
+				console.Clear ()
+				If temp = 0 Or temp = 1 Then
+					Define thisnew As TextOutputFile = createtextfile("Randomdat.txt")
+					Define i As Integer 
+					For i = 1 To alldata.Count
+						thisnew.WriteLine(alldata.Item(i))
+					Next
+					thisnew.Close ()
+					console.Hide ()
+					Break
+				End If
+				alert("Please type a 0 or a 1.","Talvieno")
+			End While
+			clothes = True
+		End If
+		Define i As Integer 
+		For i = 1 To arraylength(enta)
+			entweapon.Add (enta[i])
+		Next
+		For i = 1 To arraylength(entb)
+			entarmor.Add (entb[i])
+		Next
+		For i = 1 To arraylength(entc)
+			enthelm.Add (entc[i])
+		Next
+		For i = 1 To arraylength(entd)
+			entgloves.Add (entd[i])
+		Next
+		For i = 1 To arraylength(ente)
+			entpants.Add (ente[i])
+		Next
+		For i = 1 To arraylength(entf)
+			entshoes.Add (entf[i])
+		Next
+		For i = 1 To arraylength(entg)
+			entshield.Add (entg[i])
+		Next
+		For i = 1 To arraylength(enth)
+			entinstrument.Add (enth[i])
+		Next
+		For i = 1 To arraylength(enti)
+			enttool.Add (enti[i])
+		Next
+		For i = 1 To arraylength(entj)
+			enttoy.Add (entj[i])
+		Next
+		For i = 1 To arraylength(entk)
+			enttrapcomp.Add (entk[i])
+		Next
+		For i = 1 To arraylength(entl)
+			entsymbol.Add (entl[i])
+		Next
+		For i = 1 To arraylength(entm)
+			entsphere.Add (entm[i])
+		Next
+		For i = 1 To arraylength(entn)
+			enttop80.Add (entn[i])
+		Next
+		For i = 1 To arraylength(ento)
+			enttop60.Add (ento[i])
+		Next
+		For i = 1 To arraylength(entp)
+			enttop40.Add (entp[i])
+		Next
+		For i = 1 To arraylength(entq)
+			enttop20.Add (entq[i])
+		Next
+		For i = 1 To arraylength(entr)
+			entland.Add (entr[i])
+		Next
+		For i = 1 To arraylength(ents)
+			entconstruct.Add (ents[i])
+		Next
+		For i = 1 To arraylength(entt)
+			entlow60.Add (entt[i])
+		Next
+		For i = 1 To arraylength(entu)
+			entlow40.Add (entu[i])
+		Next
+		For i = 1 To arraylength(entv)
+			entlow20.Add (entv[i])
+		Next
+		For i = 1 To arraylength(entw)
+			entprof80.Add (entw[i])
+		Next
+		For i = 1 To arraylength(entx)
+			entprof60.Add (entx[i])
+		Next
+		For i = 1 To arraylength(enty)
+			entprof40.Add (enty[i])
+		Next
+		For i = 1 To arraylength(entz)
+			entprof20.Add (entz[i])
+		Next
+		For i = 1 To arraylength(enta2)
+			entethics1.Add (enta2[i])
+		Next
+		For i = 1 To arraylength(entb2)
+			entethics2.Add (entb2[i])
+		Next
+		For i = 1 To arraylength(entc2)
+			itemimp.Add (entc2[i])
+		Next
+		For i = 1 To 85
+			entcommon.Add (":COMMON]")
+		Next
+		For i = 1 To 13
+			entcommon.Add (":UNCOMMON]")
+		Next
+		For i = 1 To 2
+			entcommon.Add (":RARE]")
+		Next
+		sitetype.Add ("DARK_FORTRESS]")
+		sitetype.Add ("CAVE]")
+		sitetype.Add ("CAVE_DETAILED]")
+		sitetype.Add ("TREE_CITY]")
+		sitetype.Add ("CITY]")
+		
+		art_facet.Add ("OWN_RACE")
+		art_facet.Add ("FANCIFUL")
+		art_facet.Add ("EVIL")
+		art_facet.Add ("GOOD")
+		
+		art_image.Add ("CREATURE")
+		art_image.Add ("PLANT")
+		art_image.Add ("TREE")
+		art_image.Add ("SHAPE")
+		art_image.Add ("ITEM")
+		
+	End Method
+	
+	//crafts the new entity. short and sweet.
+	Method AddEntity(name As String,name2 As String)
+		entitycount = entitycount + 1
+		status ("Civilization " + entitycount)
+		LangCreate(name2,entitycount)
+		qwas.writeline("[ENTITY:" + name2 + "]")
+		qwas.writeline("	[CREATURE:CREATURE_" + name + "_RC]")
+		qwas.writeline("	[TRANSLATION:" + name2 + "]")//AS OF 1.2, IT IS AWESOMENESS
+		qwas.writeline("	[DIGGER:ITEM_WEAPON_PICK]")
+		
+		Define i As Integer 
+		Define thislist As StringList
+		//weapons
+		
+		For i = 1 To entweapon.count
+			If random(0,99) < 40 Then
+				qwas.WriteLine ("	" + entweapon.Item(i))
+			End If
+		Next
+		For i = 1 To entarmor.Count
+			If random(0,99) < 67 Then
+				qwas.WriteLINE ("	" + entarmor.Item(i) + entcommon.Item(random(1,entcommon.Count)))
+			End If
+		Next
+		For i = 1 To enthelm.Count
+			If random(0,99) < 50 Then
+				qwas.WriteLine ("	" + enthelm.Item(i) + entcommon.Item(random(1,entcommon.Count)))
+			End If
+		Next
+		For i = 1 To entgloves.Count
+			If random(0,99) < 67 Then
+				qwas.WriteLine ("	" + entgloves.Item(i) + entcommon.Item(random(1,entcommon.Count)))
+			End If
+		Next
+		For i = 1 To entpants.Count
+			If random(0,99) < 56 Then
+				qwas.WriteLine ("	" + entpants.Item(i) + entcommon.Item(random(1,entcommon.Count)))
+			End If
+		Next
+		For i = 1 To entshoes.Count
+			If random(0,99) < 67 Then
+				qwas.WriteLine ("	" + entshoes.Item(i) + entcommon.Item(random(1,entcommon.Count)))
+			End If
+		Next
+		For i = 1 To entshield.count
+			If random(0,99) < 80 Then
+				qwas.WriteLine ("	" + entshield.Item(i))
+			End If
+		Next
+		For i = 1 To entinstrument.count
+			If random(0,99) < 60 Then
+				qwas.WriteLine ("	" + entinstrument.Item(i))
+			End If
+		Next
+		If random(0,99) < 60 Then
+			qwas.WriteLine ("	[SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA]")
+		End If
+		For i = 1 To enttool.count
+			If random(0,99) < 24 Then
+				qwas.WriteLine ("	" + enttool.Item(i))
+			End If
+		Next
+		For i = 1 To enttoy.count
+			If random(0,99) < 40 Then
+				qwas.WriteLine ("	" + enttoy.Item(i))
+			End If
+		Next
+		For i = 1 To enttrapcomp.count
+			If random(0,99) < 60 Then
+				qwas.WriteLine ("	" + enttrapcomp.Item(i))
+			End If
+		Next
+		qwas.WriteLine ("	[SELECT_SYMBOL:WAR:NAME_WAR]")
+		qwas.WriteLine ("	[SUBSELECT_SYMBOL:WAR:VIOLENT]")
+		qwas.WriteLine ("	[SELECT_SYMBOL:BATTLE:NAME_BATTLE]")
+		qwas.WriteLine ("	[SUBSELECT_SYMBOL:BATTLE:VIOLENT]")
+		qwas.WriteLine ("	[SELECT_SYMBOL:SIEGE:NAME_SIEGE]")
+		qwas.WriteLine ("	[SUBSELECT_SYMBOL:SIEGE:VIOLENT]")
+		qwas.WriteLine ("	[SELECT_SYMBOL:ROAD:NAME_ROAD]")
+		qwas.WriteLine ("	[SELECT_SYMBOL:TUNNEL:NAME_TUNNEL]")
+		qwas.WriteLine ("	[SELECT_SYMBOL:BRIDGE:NAME_BRIDGE]")
+		qwas.WriteLine ("	[SELECT_SYMBOL:WALL:NAME_WALL]")
+		For i = 1 To 4
+			qwas.WriteLine ("	[SELECT_SYMBOL:REMAINING:" + entsymbol.item(random(1,entsymbol.Count)) + "]")
+		Next
+		For i = 1 To 6
+			qwas.WriteLine ("	[CULL_SYMBOL:ALL:" + entsymbol.item(random(1,entsymbol.Count)) + "]")
+		Next
+		If random(1,5) = 1 Then
+			qwas.WriteLine ("	[SELECT_SYMBOL:CIV:NAME_ENTITY_KINGDOM]")
+			qwas.WriteLine ("	[SELECT_SYMBOL:SITE:NAME_ENTITY_TOWN_FOUNDER]")
+		End If
+		If random(0,4) < 3 Then
+			qwas.WriteLine ("	[ADVENTURE_TIER:4]")
+		End If
+		qwas.WriteLine ("	[FRIENDLY_COLOR:7:0:1]")
+		If clothes = True Then
+			qwas.WriteLine ("	[CLOTHING]")
+		End If
+		For i = 1 To enttop80.count
+			If random(0,99) < 80 Then
+				qwas.WriteLine ("	" + enttop80.Item(i))
+			End If
+		Next
+		For i = 1 To enttop60.count
+			If random(0,99) < 60 Then
+				qwas.WriteLine ("	" + enttop60.Item(i))
+			End If
+		Next
+		For i = 1 To enttop40.count
+			If random(0,99) < 40 Then
+				qwas.WriteLine ("	" + enttop40.Item(i))
+			End If
+		Next
+		For i = 1 To enttop20.count
+			If random(0,99) < 20 Then
+				qwas.WriteLine ("	" + enttop20.Item(i))
+			End If
+		Next
+		Define int1 As Integer = random(1,sitetype.Count)
+		qwas.WriteLine ("	[DEFAULT_SITE_TYPE:" + sitetype.Item(int1))
+		qwas.WriteLine ("	[LIKES_SITE:" + sitetype.Item(int1))
+		qwas.WriteLine ("	[TOLERATES_SITE:" + sitetype.Item(int1))
+		Define cta As Integer = random(1,2)
+		For i = 1 To cta
+			qwas.WriteLine ("	[TOLERATES_SITE:" + sitetype.Item(random(1,sitetype.Count)))
+		Next
+		cta = random(1,2)
+		For i = 1 To cta
+			Define qx As Integer = random(1,entland.Count)
+			qwas.WriteLine ("	[START_BIOME:" + entland.Item(qx) + "]")
+			qwas.WriteLine("	[BIOME_SUPPORT:" + entland.Item(qx) + ":3]")
+		Next
+		For i = 1 To 5
+			qwas.WriteLine("	[BIOME_SUPPORT:" + entland.Item(random(1,entland.Count)) + ":1]")
+		Next
+		For i = 1 To entconstruct.count
+			If random(0,99) < 40 Then
+				qwas.WriteLine ("	" + entconstruct.Item(i))
+			End If
+		Next
+		qwas.WriteLine("	[MAX_STARTING_CIV_NUMBER:100]")
+		qwas.WriteLine("	[MAX_POP_NUMBER:10000]")
+		qwas.WriteLine("	[MAX_SITE_POP_NUMBER:120]")
+		qwas.WriteLine("	[RELIGION:PANTHEON]")
+		Define season As StringList 
+		season.Add ("	[ACTIVE_SEASON:SPRING]")
+		season.Add ("	[ACTIVE_SEASON:SUMMER]")
+		season.Add ("	[ACTIVE_SEASON:AUTUMN]")
+		season.Add ("	[ACTIVE_SEASON:WINTER]")
+		For i = 1 To 6
+			qwas.WriteLine("	[RELIGION_SPHERE:" + entsphere.Item(random(1,entsphere.Count)) + "]")
+		Next
+		For i = 1 To 3
+			qwas.WriteLine("	[SPHERE_ALIGNMENT:" + entsphere.Item(random(1,entsphere.Count)) + ":" + random(0,512) + "]")
+		Next
+		qwas.WriteLine("	[CURRENCY_BY_YEAR]")
+		qwas.WriteLine("	[CURRENCY:COPPER:1]")
+		qwas.WriteLine("	[CURRENCY:SILVER:5]")
+		qwas.WriteLine("	[CURRENCY:GOLD:15]")
+		For i = 1 To 2
+			qwas.WriteLine("	[ART_FACET_MODIFIER:" + art_facet.Item(random(1,art_facet.count)) + ":" + random(0,512) + "]")
+			qwas.WriteLine("	[ART_IMAGE_ELEMENT_MODIFIER:" + art_image.Item(random(1,art_image.count)) + ":" + random(0,512) + "]")
+			qwas.WriteLine("	[ITEM_IMPROVEMENT_MODIFIER:" + itemimp.Item(random(1,itemimp.count)) + ":" + random(0,512) + "]")
+		Next
+		qwas.WriteLine("	[SCOUT]")
+		For i = 1 To entlow60.Count
+			If random(0,99) < 60 Then
+				If i <> 3 Then
+					qwas.WriteLine ("	" + entlow60.Item(i))
+				Else
+					qwas.WriteLine("	[BANDITRY:" + random(0,50) + "]")
+				End If
+			End If
+		Next
+		For i = 1 To entlow40.Count
+			If random(0,99) < 40 Then
+				qwas.WriteLine ("	" + entlow40.Item(i))
+			End If
+		Next
+		For i = 1 To entlow20.Count
+			If random(0,99) < 20 Then
+				qwas.WriteLine ("	" + entlow20.Item(i))
+			End If
+		Next
+		For i = 1 To entprof80.Count
+			If random(0,99) < 80 Then
+				qwas.WriteLine ("	" + entprof80.Item(i))
+			End If
+		Next
+		For i = 1 To entprof60.Count
+			If random(0,99) < 60 Then
+				qwas.WriteLine ("	" + entprof60.Item(i))
+			End If
+		Next
+		For i = 1 To entprof40.Count
+			If random(0,99) < 40 Then
+				qwas.WriteLine ("	" + entprof40.Item(i))
+			End If
+		Next
+		For i = 1 To entprof20.Count
+			If random(0,99) < 20 Then
+				qwas.WriteLine ("	" + entprof20.Item(i))
+			End If
+		Next
+		For i = 1 To entprof80.Count
+			If random(0,99) < 80 Then
+				qwas.WriteLine ("	" + entprof80.Item(i))
+			End If
+		Next
+		For i = 1 To entethics1.Count
+			qwas.WriteLine ("	[ETHIC:" + entethics1.Item(i) + entethics2.Item(random(1,entethics2.Count)))
+		Next
+		qwas.WriteLine("	[VARIABLE_POSITIONS:ALL]")
+		qwas.WriteLine("")
+	End Method
+	
+	
+	//FOLLOWING: A NEW ADDITION
+	//Custom Entity Languages using DFLangCreate
+	Method LangCreate(lang As String,lc As Integer)
+		//reset everything ahead of time
+		symbols.clear()
+		words.clear()
+		friendlywords.clear()
+		secondwords.clear()
+		prefix.clear()
+		Define l As Integer 
+		For l = 1 To 2
+			fixstring[l].clear()
+		Next
+		fixcv.clear()
+		totalfails = 0
+		wordlength.clear()
+		fixes.clear()
+		allprint.clear()
+		For l = 1 To 4096
+		    wordsym[l].clear()
+		Next
+		cs.clear()
+		cm.clear()
+		ce.clear()
+		vs.clear()
+		vm.clear()
+		ce.clear()
+		addedlist.clear()
+		avglength = 0
+		avgparts = 0
+		reglength = 0
+		regparts = 0
+		ct = 0
+		vowellist.clear()
+		consolist.clear()
+		swaplist.clear()
+		repeat = True
+		fails = 0
+		uberfails = 0
+		lengthadd = 0
+		
+		CorV()
+		shell.SetWindowTitle("Talvieno's RandCreatures (with LangCreate)                                                                                                                                                                      ")
+		Define asdf As TextInputFile 
+		asdf = opentextfile ("language_DWARF.txt")
+		asdf.ReadLine()
+		asdf.ReadLine()
+		asdf.ReadLine()
+		asdf.ReadLine()
+		asdf.ReadLine()
+		While asdf.EndOfFile = False
+			Define temp1 As String[] = split(asdf.ReadLine(),":",True)
+			Define friendly As String = temp1[2]
+			If strings.IndexOf (temp1[2],"_",1) <> -1 Then
+				Define tempnow As String[] = split(temp1[2],"_",False)
+				friendly = tempnow[1]
+			Else If strings.IndexOf (temp1[2]," ",1) <> -1 Then
+				Define tempnow As String[] = split(temp1[2]," ",False)
+				friendly = tempnow[1]
+			Else If strings.IndexOf (temp1[2],"VERB",1) <> -1 Then
+				friendly = strings.Replace (temp1[2],"VERB","",True)
+			Else If strings.IndexOf (temp1[2],"ADJ",1) <> -1 Then
+				friendly = strings.Replace (temp1[2],"ADJ","",True)
+			End If
+			words.Add (temp1[2])
+			secondwords.Add (temp1[3])
+			friendlywords.Add (friendly)
+			wordlength.Add (strings.Length (friendly))//get the correct length of the word
+		End While
+		asdf.Close ()
+		
+		Define i As Integer 
+		For i = 1 To words.Count 
+			avglength = avglength + strings.Length (secondwords.Item(i))
+			avgparts = avgparts + findparts(secondwords.Item(i))
+		Next
+		friendlywords.Clear ()//we don't need it anymore, so clear it
+		reglength = avglength / words.Count
+		regparts = avgparts / words.Count 
+		avglength = 0
+		avgparts = 0
+		Define symnum As Integer 
+		Define p1 As String
+		Define p2 As String
+		Define p3 As String 
+		
+		asdf = opentextfile ("language_SYM.txt")
+		asdf.ReadLine()
+		asdf.ReadLine()
+		asdf.ReadLine()
+		asdf.ReadLine()
+		
+		
+		//THIS CODE IS NOT THROWING THE BUG; IT IS FLAWLESS
+		While asdf.EndOfFile = False//start at the beginning of SYMfile, go to the end
+			Define read As String = asdf.ReadLine ()//read the next line
+			If strings.IndexOf (read,":",1) <> -1 Then//if the line contains ":" then
+				Define temp1 As String[] = split(read,":",False)//then split this line at ":"
+				If temp1[1] = "[SYMBOL" Then//if it's a [SYMBOL line
+					symbols.Add (strings.Replace (temp1[2],"]","",False))//then add this symbol definition
+					symnum = symnum + 1//and increase the count to set it the same as the [SYMBOL number
+				Else If temp1[1] = "	[S_WORD" Then//otherwise, if it's a [WORD line
+					wordsym[words.IndexOf (strings.Replace (temp1[2],"]","",False))].add (symnum)//add the appropriate word definition.
+				End If
+			End If
+		End While
+		asdf.Close ()
+		
+		Define oldpart As Decimal = avgparts
+		Define oldleng As Decimal = avglength
+		Define okay2 As Boolean = False
+		Define failmax As Integer = 10000 //normally 10000, extracted for testing purposes
+		//THIS IS WHAT IS THROWING THE BUG - THE PROGRAM ISN'T FINDING ENOUGH COMBOS WITH PREFIXES
+		While okay2 = False//uncovered a bug - this is to keep problems from destroying stuff
+			okay2 = True
+			prefix.Clear()
+			fixcv.Clear ()
+			p1 = ""
+			p2 = ""
+			p3 = ""
+			fixstring[1].Clear ()
+			fixstring[2].Clear ()
+			fixes.Clear ()
+			i = 0
+			fails = 0
+			avgparts = oldpart
+			avglength = oldleng
+			
+			Define sourcecount As Integer = 16
+			//to avoid issues
+			Define newword As String = wordcrafterB(True,5)
+			dflc.Write(newword + ",")
+			SplitWord(newword)
+			avgparts = avgparts + findparts(newword)
+			newword = wordcrafterB(False,5)
+			dflc.Write(newword + ",")
+			SplitWord(newword)
+			avgparts = avgparts + findparts(newword)
+			//so that they can say their own name (bahaha, they couldn't before the second release)
+			newword = lang
+			dflc.Write(newword + ",")
+			SplitWord(newword)
+			avgparts = avgparts + findparts(newword)
+			For i = 1 To sourcecount - 3//generate a modestly variable language with X source words - unique to RandCreatures
+				newword = wordcrafterB(converttoboolean(random(0,1)),random(2,8))
+				dflc.Write(newword + ",")
+				SplitWord(newword)
+				avgparts = avgparts + findparts(newword)
+			Next
+			dflc.WriteLine("")
+		
+			avglength = (avglength / sourcecount) / reglength
+			avgparts = (avgparts / sourcecount) / regparts
+			
+			
+			
+			//prefix/suffix nonsense. Ought to have its own method, but enh. Perhaps I'm lazy.
+			Define okay As Boolean 
+			For i = 1 To symbols.Count 
+				status ("Language " + lc + ", symbol " + i)
+				If random(1,cs.count + vs.Count + ce.Count + ve.Count) < cs.Count + vs.Count Then//carefully weighted
+					prefix.add(1)
+				Else
+					prefix.Add(0)
+				End If
+				okay = False
+				//for examples: VS = A,VM = I,VE = E,CS=C,CM=M,CE=S
+				If (prefix.Item(i) = 1 And random(1,cs.Count + vs.Count) <= cs.Count) Or (prefix.Item(i) = 0 And random(1,ce.Count + ve.Count) < ce.Count) Then//carefully weighted
+					FixCV.Add ("c")//vc,cvc
+					If prefix.Item(i) = 1 Then
+						p1 = cs.item(random(1,cs.Count))
+						p2 = vm.Item(random(1,vm.Count))
+						p3 = cm.Item(random(1,cm.Count))
+						If fixes.IndexOf (p1+p2+p3) = -1 And strings.Length(p1) < 3 And strings.Length(p2) < 3 And strings.Length(p3) < 3 Then
+							fixstring[1].Add (p1 + p2)//AM-
+							fixstring[2].Add (p1 + p2 + p3)//AMI-
+							fixes.Add (p1+p2+p3)
+						Else
+							i = i - 1
+							fails = fails + 1
+							fixCV.RemoveAt (fixCV.Count)
+							prefix.RemoveAt (prefix.Count )
+							If fails > failmax Then
+								okay2 = False
+								Break
+							End If
+						End If
+					Else//for examples: VS = A,VM = I,VE = E,CS=C,CM=M,CE=S
+						p1 = ce.item(random(1,ce.Count))
+						p2 = vm.Item(random(1,vm.Count))
+						p3 = cm.Item(random(1,cm.Count))
+						If fixes.IndexOf (p3+p2+p1) = -1 And strings.Length(p1) < 3 And strings.Length(p2) < 3 And strings.Length(p3) < 3 Then
+							fixstring[1].Add (p2+p1)//-ME
+							fixstring[2].Add (p3+p2+p1)//-IME
+							fixes.Add (p3+p2+p1)
+						Else
+							i = i - 1
+							fails = fails + 1
+							fixCV.RemoveAt (fixCV.Count)
+							prefix.RemoveAt (prefix.Count )
+							If fails > failmax Then
+								okay2 = False
+								Break
+							End If
+						End If
+					End If
+				Else//for examples: VS = A,VM = I,VE = E,CS=K,CM=M,CE=S
+					FixCV.Add ("v")
+					If prefix.Item(i) = 1 Then
+						p1 = vs.item(random(1,vs.Count))
+						p2 = cm.Item(random(1,cm.Count))
+						p3 = vm.Item(random(1,vm.Count))
+						If fixes.IndexOf (p1+p2+p3) = -1 And strings.Length(p1) < 3 And strings.Length(p2) < 3 And strings.Length(p3) < 3 Then
+							fixstring[1].Add (p1 + p2)//KI
+							fixstring[2].Add (p1 + p2 + p3)//KIM
+							fixes.Add (p1+p2+p3)
+						Else
+							i = i - 1
+							fails = fails + 1
+							fixCV.RemoveAt (fixCV.Count)
+							prefix.RemoveAt (prefix.Count )
+							If fails > failmax Then
+								okay2 = False
+								Break
+							End If
+						End If
+					Else//for examples: VS = A,VM = I,VE = E,CS=K,CM=M,CE=S
+						p1 = ve.item(random(1,ve.Count))
+						p2 = cm.Item(random(1,cm.Count))
+						p3 = vm.Item(random(1,vm.Count))
+						If fixes.IndexOf (p3+p2+p1) = -1 And strings.Length(p1) < 3 And strings.Length(p2) < 3 And strings.Length(p3) < 3 Then
+							fixstring[1].Add (p2+p1)//IS
+							fixstring[2].Add (p3+p2+p1)//MIS
+							fixes.Add (p3+p2+p1)
+						Else
+							i = i - 1
+							fails = fails + 1
+							fixCV.RemoveAt (fixCV.Count)
+							prefix.RemoveAt (prefix.Count )
+							If fails > failmax Then
+								okay2 = False
+								Break
+							End If
+						End If
+					End If
+				End If
+			Next
+			If okay2 = False Then
+				status("Resetting Language Generator")
+				delay(500)
+			End If
+		End While
+		Define timer1 As Timer 
+		timer1.Start ()
+		
+		Define wordsdone As Integer 
+		//Unique to RandCreatures - program doesn't bother including source word list
+		dflc.WriteLine ("[TRANSLATION:" + touppercase(lang) + "]")
+		Define j As Integer 
+		For j = 1 To 50 //ridiculously long, but just in case.
+			//slightly redone in version 1.1 so that it gens shorter words first.
+			For i = 1 To words.Count
+				If wordlength.Item(i) = j Then
+					wordsdone = wordsdone + 1
+					If timer1.Elapsed > 1 Then
+						status ("Creature " + loopx + ", language " + lc + ", word " + wordsdone)
+						timer1.Reset ()
+					End If
+					AllPrint.Add("	[T_WORD:" + words.Item(i) + ":" + WordCrafter(words.Item(i),i) + "]")
+				End If
+			Next
+		Next
+		
+		//Alphabetize
+		allprint.Sort()
+		//print all
+		For i = 1 To AllPrint.Count
+			dflc.WriteLine (AllPrint.Item(i))
+		Next
+		//Add a space
+		dflc.WriteLine ("")
+		//now we're done. I'm not bothering with symbols, but they'll be in there, too.
+		
+		shell.SetWindowTitle("Talvieno's RandCreatures                                                                                                                                                                      ")
+		
+	End Method
+	
+	Method CorV()
+		vowellist.Add ("a")
+		vowellist.add ("e")
+		vowellist.Add ("i")
+		vowellist.Add ("o")
+		vowellist.Add ("u")
+		vowellist.Add ("'")
+		
+		swaplist.Add (" ")
+		swaplist.Add ("-")
+		swaplist.Add ("'")
+		swaplist.Add ("y")
+		
+		consolist.Add ("b")
+		consolist.Add ("c")
+		consolist.Add ("d")
+		consolist.Add ("f")
+		consolist.Add ("g")
+		consolist.Add ("h")
+		consolist.Add ("j")
+		consolist.Add ("k")
+		consolist.Add ("l")
+		consolist.Add ("m")
+		consolist.Add ("n")
+		consolist.Add ("p")
+		consolist.Add ("q")
+		consolist.Add ("r")
+		consolist.Add ("s")
+		consolist.Add ("t")
+		consolist.Add ("v")
+		consolist.Add ("w")
+		consolist.Add ("x")
+		consolist.Add ("z")
+	End Method
+	
+	Method Splitword(word As String)
+		word = tolowercase(word)
+		avglength = avglength + strings.Length (word)
+		Define okay As Boolean = True
+		If strings.Length (word) < 3 Then
+			okay = False
+		End If
+		If okay = True Then
+			Define consonow As Boolean 
+			Define current As String 
+			Define i As Integer 
+			Define lastpoint As Integer 
+		
+			current = strings.SubString (word,1,1)
+			If consolist.Contains (current) Then
+				For i = 2 To strings.Length (word) + 1
+					If consolist.Contains (strings.SubString(word,i,1)) Then
+						current = current + strings.SubString (word,i,1)
+					Else
+						If CS.Contains (current) = False Or repeat = True Then
+							If swaplist.Contains (strings.SubString (word,i - 1,1)) Then
+								current = current + "%"
+							End If
+							CS.Add (current)
+						End If
+						lastpoint = i
+						current = ""
+						Break
+					End If
+				Next
+			Else
+				For i = 2 To strings.Length (word) + 1
+					If vowellist.Contains (strings.SubString(word,i,1)) Then
+						current = current + strings.SubString (word,i,1)
+					Else
+						If VS.Contains (current) = False Or repeat = True Then
+							If swaplist.Contains (strings.SubString (word,i - 1,1)) Then
+								current = current + "%"
+							End If
+							VS.Add (current)
+						End If
+						lastpoint = i
+						current = ""
+						Break
+					End If
+				Next
+				consonow = True
+			End If
+		
+			Define startpoint As Integer = lastpoint 
+			Define j As Integer 
+			For i = startpoint To strings.Length(word) + 1
+				If consonow = True Then
+					For i = lastpoint To strings.Length (word)
+						If consolist.Contains (strings.SubString(word,i,1)) Then
+							current = current + strings.SubString (word,i,1)
+						Else
+							If i = lastpoint Then
+								If swaplist.Contains (strings.SubString(word,i,1)) Then
+									current = current + strings.SubString (word,i,1)
+									lastpoint = i + 1
+								End If
+								consonow = False
+								Break
+							End If
+							If CM.Contains (current) = False Or repeat = True Then
+								If swaplist.Contains (strings.SubString (word,i - 1,1)) Then
+									current = current + "%"
+								End If
+								CM.Add (current)
+							End If
+							consonow = False
+							lastpoint = i
+							current = ""
+							Break
+						End If
+					Next
+				Else
+					For i = lastpoint To strings.Length (word)
+						If vowellist.Contains (strings.SubString(word,i,1)) Then
+							current = current + strings.SubString (word,i,1)
+						Else
+							If i = lastpoint Then
+								If swaplist.Contains (strings.SubString(word,i,1)) Then
+									current = current + strings.SubString (word,i,1)
+									lastpoint = i + 1
+								End If
+								consonow = True
+								Break
+							End If
+							If VM.Contains (current) = False Or repeat = True Then
+								If swaplist.Contains (strings.SubString (word,i - 1,1)) Then
+									current = current + "%"
+								End If
+								VM.Add (current)
+							End If
+							consonow = True
+							lastpoint = i
+							current = ""
+							Break
+						End If
+					Next
+				End If
+			Next
+			If consonow = True Then
+				If CE.Contains (current) = False Or repeat = True Then
+					CE.Add (current)
+				End If
+			Else
+				If VE.Contains (current) = False Or repeat = True Then
+					VE.Add (current)
+				End If
+			End If
+		End If
+		status(ct)
+	End Method
+	
+	Function Findparts(word As String) As Integer 
+		word = tolowercase(word)
+		Define parts As Integer 
+		Define okay As Boolean = True
+		If word = "giant emu" Then
+			word = word
+		End If
+		If okay = True Then
+			Define consonow As Boolean 
+			Define current As String 
+			Define i As Integer 
+			Define lastpoint As Integer 
+		
+			current = strings.SubString (word,1,1)
+			If consolist.Contains (current) Then
+				For i = 2 To strings.Length (word) + 1
+					If Not consolist.Contains (strings.SubString(word,i,1)) And Not vowellist.Contains(strings.SubString(word,i,1)) And Not swaplist.Contains (strings.SubString(word,i,1)) Then
+						vowellist.Add (strings.SubString(word,i,1))
+					End If
+					If consolist.Contains (strings.SubString(word,i,1)) Then
+						current = current + strings.SubString (word,i,1)
+					Else
+						parts = parts + 1
+						lastpoint = i
+						current = ""
+						Break
+					End If
+				Next
+			Else
+				For i = 2 To strings.Length (word) + 1
+					If Not consolist.Contains (strings.SubString(word,i,1)) And Not vowellist.Contains(strings.SubString(word,i,1)) And Not swaplist.Contains (strings.SubString(word,i,1)) Then
+						vowellist.Add (strings.SubString(word,i,1))
+					End If
+					If vowellist.Contains (strings.SubString(word,i,1)) Then
+						current = current + strings.SubString (word,i,1)
+					Else
+						parts = parts + 1
+						lastpoint = i
+						current = ""
+						Break
+					End If
+				Next
+				consonow = True
+			End If
+		
+			Define startpoint As Integer = lastpoint 
+			Define j As Integer 
+			For i = startpoint To strings.Length(word) + 1
+				If consonow = True Then
+					For i = lastpoint To strings.Length (word)
+						If Not consolist.Contains (strings.SubString(word,i,1)) And Not vowellist.Contains(strings.SubString(word,i,1)) And Not swaplist.Contains (strings.SubString(word,i,1)) Then
+							vowellist.Add (strings.SubString(word,i,1))
+						End If
+						If consolist.Contains (strings.SubString(word,i,1)) Then
+							current = current + strings.SubString (word,i,1)
+						Else
+							If i = lastpoint Then
+								If swaplist.Contains (strings.SubString(word,i,1)) Then
+									current = current + strings.SubString (word,i,1)
+									lastpoint = i + 1
+								End If
+								consonow = False
+								Break
+							End If
+							parts = parts + 1
+							consonow = False
+							lastpoint = i
+							current = ""
+							Break
+						End If
+					Next
+				Else
+					For i = lastpoint To strings.Length (word)
+						If Not consolist.Contains (strings.SubString(word,i,1)) And Not vowellist.Contains(strings.SubString(word,i,1)) And Not swaplist.Contains (strings.SubString(word,i,1)) Then
+							vowellist.Add (strings.SubString(word,i,1))
+						End If
+						If vowellist.Contains (strings.SubString(word,i,1)) Then
+							current = current + strings.SubString (word,i,1)
+						Else
+							If i = lastpoint Then
+								If swaplist.Contains (strings.SubString(word,i,1)) Then
+									current = current + strings.SubString (word,i,1)
+									lastpoint = i + 1
+								End If
+								consonow = True
+								Break
+							End If
+							parts = parts + 1
+							consonow = True
+							lastpoint = i
+							current = ""
+							Break
+						End If
+					Next
+				End If
+			Next
+			If consonow = True Then
+				parts = parts + 1
+			Else
+				parts = parts + 1
+			End If
+		End If
+		Return parts
+	End Function
+	
+	Function WordCrafter(w As String,e As Integer) As String
+		If strings.IndexOf (w,"_",1) <> -1 Then
+			Define tempnow As String[] = split(w,"_",False)
+			w = tempnow[1]
+		Else If strings.IndexOf (w," ",1) <> -1 Then
+			Define tempnow As String[] = split(w," ",False)
+			w = tempnow[1]
+		Else If strings.IndexOf (w,"VERB",1) <> -1 Then
+			w = strings.Replace (w,"VERB","",True)
+		Else If strings.IndexOf (w,"ADJ",1) <> -1 Then
+			w = strings.Replace (w,"ADJ","",True)
+		End If
+		
+		Define thisname As String 
+		
+		Define okay As Boolean 
+		While okay = False
+			thisname = ""//avglength and avgparts are multiplicand values. Longer words in the wordlist = longer words in the language.
+			Define minl As Decimal = max(2,(strings.Length (w) * avglength) * 0.8)
+			Define maxl As Decimal = max(5 + lengthadd,(strings.Length (w) * avglength) * 1.25)
+			Define lthis As Decimal = (Findparts(w) * avgparts) * randomdecimal(0.8,1.25)
+			Define cv As String
+			Define prefixy As Boolean
+			Define suffixy As Boolean 
+			Define thissym As Integer
+			If wordsym[e].Count > 0 And random(1,100) <> 1 Then
+				thissym = wordsym[e].Item(random(1,wordsym[e].Count))
+				If thissym > prefix.Count Then//debugging purposes
+					Define test As integerlist
+					Define l As Integer 
+					For l = 1 To wordsym[e].Count
+						test.Add (wordsym[e].Item(l))
+					Next
+					alert ("error, symcount and prefix count have dissimilar values","Talvieno")
+					break
+				End If
+				If prefix.Item(thissym) = 1 Then
+					prefixy = True
+				Else
+					suffixy = True
+				End If
+			End If
+			
+			If random(1,cs.Count + vs.Count) <= cs.Count Then//carefully weighted
+				cv = "c"
+			Else
+				cv = "v"
+			End If
+				
+			If prefixy = True Then
+				If cv = "c" Then//c[1] = v,c[2] = c,v[1] = c,v[2] = v
+					If FixCV.Item(thissym) = "c" Then
+						thisname = fixstring[2].Item(thissym)
+					Else
+						thisname = fixstring[1].Item(thissym)
+					End If
+					cv = "v"
+				Else
+					If FixCV.Item(thissym) = "c" Then
+						thisname = fixstring[1].Item(thissym)
+					Else
+						thisname = fixstring[2].Item(thissym)
+					End If
+					cv = "c"
+				End If
+			Else
+				If cv = "c" Then
+					thisname = cs.Item(random(1,cs.Count))
+					cv = "v"
+				Else
+					thisname = vs.Item(random(1,vs.Count))
+					cv = "c"
+				End If
+			End If
+			
+			
+			
+			Define i As Integer 
+			Define lastresort As Integer = random(0,2)//changes
+			If lastresort < lthis Then 
+				For i = 1 To lthis - lastresort
+					If cv = "c" Then
+						cv = "v"
+						thisname =thisname + cm.Item(random(1,cm.Count))
+					Else
+						cv = "c"
+						thisname = thisname + vm.Item(random(1,vm.Count))
+						If strings.IndexOf(thisname,"%",1) <> -1 Then
+							i = i
+						End If
+					End If
+					If strings.IndexOf(thisname,"%",1) <> -1 Then
+						thisname = strings.Replace (thisname,"%","")
+						If random(1,cs.Count + vs.Count) <= cs.Count Then//carefully weighted
+							cv = "c"
+							While 1 = 1
+								Define addit As String = vs.Item(random(1,vs.Count))
+								Define j As Integer 
+								For j = 1 To swaplist.Count 
+									If strings.IndexOf (addit,swaplist.Item(j),1) <> -1 Then
+										addit = ""
+									End If
+								Next
+								If addit <> "" Then
+									thisname = thisname + addit
+									Break
+								End If
+							End While
+							i = i + 1
+						Else
+							cv = "v"
+							While 1 = 1
+								Define addit As String = cs.Item(random(1,cs.Count))
+								Define j As Integer 
+								For j = 1 To swaplist.Count 
+									If strings.IndexOf (addit,swaplist.Item(j),1) <> -1 Then
+										addit = ""
+									End If
+								Next
+								If addit <> "" Then
+									thisname = thisname + addit
+									Break
+								End If
+							End While
+							i = i + 1
+						End If
+					End If
+				Next
+			End If
+			
+			If suffixy = True Then
+				If cv = "v" Then
+					If FixCV.Item(thissym) = "c" Then
+						thisname = thisname + fixstring[1].Item(thissym)
+					Else
+						thisname = thisname + fixstring[2].Item(thissym)
+					End If
+				Else
+					If FixCV.Item(thissym) = "c" Then
+						thisname = thisname + fixstring[2].Item(thissym)
+					Else
+						thisname = thisname + fixstring[1].Item(thissym)
+					End If
+				End If
+			Else
+				If random(1,ce.Count + ve.Count) <= ce.Count Then//more careful weighting
+					If cv = "c" Then
+						thisname = thisname + ce.Item(random(1,ce.Count))
+					Else
+						thisname =thisname + vm.Item(random(1,vm.Count))
+						If strings.IndexOf(thisname,"%",1) <> -1 Then
+							thisname = strings.Replace (thisname,"%","")
+							If random(1,cs.Count + vs.Count) <= cs.Count Then//carefully weighted
+								cv = "c"
+								While 1 = 1
+									Define addit As String = vs.Item(random(1,vs.Count))
+									Define j As Integer 
+									For j = 1 To swaplist.Count 
+										If strings.IndexOf (addit,swaplist.Item(j),1) <> -1 Then
+											addit = ""
+										End If
+									Next
+									If addit <> "" Then
+										thisname = thisname + addit
+										Break
+									End If
+								End While
+								i = i + 1
+							Else
+								cv = "v"
+								While 1 = 1
+									Define addit As String = cs.Item(random(1,cs.Count))
+									Define j As Integer 
+									For j = 1 To swaplist.Count 
+										If strings.IndexOf (addit,swaplist.Item(j),1) <> -1 Then
+											addit = ""
+										End If
+									Next
+									If addit <> "" Then
+										thisname = thisname + addit
+										Break
+									End If
+								End While
+								i = i + 1
+							End If
+						End If
+						thisname = thisname + ce.Item(random(1,ce.Count))
+					End If
+				Else
+					If cv = "c" Then
+						thisname = thisname + cm.Item(random(1,cm.Count))
+						If strings.IndexOf(thisname,"%",1) <> -1 Then
+							thisname = strings.Replace (thisname,"%","")
+							If random(1,cs.Count + vs.Count) <= cs.Count Then//carefully weighted
+								cv = "c"
+								While 1 = 1
+									Define addit As String = vs.Item(random(1,vs.Count))
+									Define j As Integer 
+									For j = 1 To swaplist.Count 
+										If strings.IndexOf (addit,swaplist.Item(j),1) <> -1 Then
+											addit = ""
+										End If
+									Next
+									If addit <> "" Then
+										thisname = thisname + addit
+										Break
+									End If
+								End While
+								i = i + 1
+							Else
+								cv = "v"
+								While 1 = 1
+									Define addit As String = cs.Item(random(1,cs.Count))
+									Define j As Integer 
+									For j = 1 To swaplist.Count 
+										If strings.IndexOf (addit,swaplist.Item(j),1) <> -1 Then
+											addit = ""
+										End If
+									Next
+									If addit <> "" Then
+										thisname = thisname + addit
+										Break
+									End If
+								End While
+								i = i + 1
+							End If
+						End If
+						thisname = thisname + ve.Item(random(1,ve.Count))
+					Else
+						thisname = thisname + ve.Item(random(1,ve.Count))
+					End If
+				End If
+				
+			End If
+			If strings.Length (thisname) > 1 And strings.Length (thisname) >= minl And strings.Length (thisname) <= maxl And addedlist.Contains (thisname) = False Then
+				okay = True
+				addedlist.Add (thisname)
+				totalfails = totalfails + fails
+				fails = 0
+			Else
+				fails = fails + 1
+				If fails > 10000 Then
+					totalfails = totalfails + fails
+					fails = 0
+					uberfails = uberfails + 1
+					lengthadd = lengthadd + 1
+				End If
+				If uberfails > 10 Then
+					status ("Experiencing language difficulties")
+					Break
+				End If
+			End If
+		End While
+		Return (thisname)
+	End Function
+End Program

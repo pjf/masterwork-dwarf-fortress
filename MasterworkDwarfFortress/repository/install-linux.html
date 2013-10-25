@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body,td,th {
+	color: #FFF;
+	font-size: 18px;
+}
+body {
+	background-color: #000;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #CCC;
+}
+.Rot {	color: #F00;
+}
+.Rot {	color: #F00;
+}
+</style>
+</head>
+
+<body>
+<h2 align="center"><img src="icons/install.JPG" width="316" height="34" /><br />
+</h2>
+<div align="center">
+  <p><strong class="Rot">Installation on Linux</strong></p>
+  <table width="658" border="0">
+    <tr>
+      <td width="665"><p>The Linux version is prepared and supported by <a href="http://www.bay12forums.com/smf/index.php?action=profile;u=42895" target="_blank">arclance</a>. If you have any linux related questions, please leave him a message. If you have a mod related question, please post it in the mod thread.
+      </p>
+      <hr align="center" /></td>
+    </tr>
+  </table>
+</div>
+<p align="center"><strong class="Rot">Included  Utilities</strong><br />
+</p>
+<div align="center">
+  <table width="658" border="0">
+    <tr>
+      <td width="665"><p align="center"><strong>Binary patch</strong></p>
+        <p align="left">Fixes following bugs:</p>
+        <p> - Destroying a wall empties the wood stockpile.</p>
+        <p> - Marksdwarves won't use training bolts unless combat bolts all used up.</p>
+        <p>- Weapon Racks do nothing - The fix-armory plugin and assign-rack script that go with this patch are in the included dfhack.</p>
+        <p>- &quot;Long patrol duty&quot; thoughts accumulate from all squad orders, including training.</p>
+        <p>- Hospital zone does not respect cloth maximums.</p>
+        <hr />
+        <p align="center"><strong>dfhack with dfusion, stonesense, and  falconne's plugins:</strong>        </p>
+        <p><a href="http://www.bay12forums.com/smf/index.php?topic=119369" target="_blank">Construction Helper (automaterial) v0.6</a>	    </p>
+        <p><a href="http://www.bay12forums.com/smf/index.php?topic=119575.0" target="_blank">Pasture/Pit Assignment Filters (zone) v0.1</a>	    </p>
+        <p><a href="http://www.bay12forums.com/smf/index.php?topic=119575.0" target="_blank">Mouse Query Tool (mousequery) v0.2</a>	    </p>
+        <p><a href="http://www.bay12forums.com/smf/index.php?topic=118872.0" target="_blank">Extended Workflow (workflow) v0.4</a>	    </p>
+        <p><a href="http://www.bay12forums.com/smf/index.php?topic=118001.0" target="_blank">Search Plugin (search) v0.6</a>          </p>
+        <p>Stonesense may not work on all systems, go to the <a href="http://www.bay12forums.com/smf/index.php?topic=106497.new#new" target="_blank">stonesense thread</a> or the <a href="http://www.bay12forums.com/smf/index.php?topic=91166.new#new" target="_blank">dfhack thread</a> for help if you have problems.&nbsp;</p>
+<hr />
+<p align="center"><strong>Dwarf Therapist</strong></p>
+<p>A experimental build of Dwarf Therapist is included. 	I built the included version of Dwarf Therapist myself, it is untested on systems other than my own, please contact me (arclance) on the DF Forums if you have any  problems with it. 	I have only tested this build on Debian (Testing, Unstable), xubuntu (11.10), and Fedora (14) please let us know if it works or not for you on other Distros. 	</p>
+<p>This is a 32bit build, you may need some 32bit libraries to run it on a 64bit system. 	Because it is a 32 bit build it seems to be unable to detect the users QT theme (possibly GTK+ only) on 64bit systems. 	 	</p>
+<p>To start Dwarf Therapist run the &quot;DwarfTherapist&quot; script in the &quot;Dwarf Fortress&quot; directory. 	 	Depending on your kernel version and build settings you may need to enable Dwarf Therapist to use ptrace on other processes. 	</p>
+<p>You may get a error like this 	 		ptrace attach:<strong> Operation not permitted</strong> or this 	 		ptrace: <strong>Permission denied</strong> in your terminal when you run Dwarf Therapist.  	 	If your kernel does not have an extra LSM enabled or are running the Yama LSM (Ubuntu and others) you can enable ptrace by running this command as root in the  &quot;MasterworkDwarfFortress/Utilities/Dwarf_Therapist&quot; directory:</p>
+<p>sudo setcap cap_sys_ptrace=ep DwarfTherapist 		 	</p>
+<p>This will allow the DwarfTheraist executable to ptrace other processes but will not turn off ptrace protection for the rest of your system. 		 	If your kernel is running SELinux (Fedora and others) you can enable ptrace by running this command as root:</p>
+<p>setsebool deny_ptrace 0 		 	</p>
+<p>This turns off all ptrace protection, ptrace protection will be reactivated if you reboot or run &quot;setsebool deny_ptrace 1&quot; as root.</p>
+<hr />
+<p align="center"><strong>Soundsense</strong></p>
+<p>Soundsense is included and can be found in "MasterworkDwarfFortress/Utilities/soundSense".
+	Soundsense will work on Linux but may require more setup than in Windows.
+	There are directions on running soundsense in Linux <a href="http://dwarffortresswiki.org/index.php/Utility:SoundSense" target="_blank">here.</a> 
+	Please go to the <a href="http://www.bay12forums.com/smf/index.php?topic=60287.0" target="_blank">soundsense thread</a> for help if you have problems with soundsense.&nbsp;</p>
+<hr />
+<p align="center"><strong>Masterwork Dwarf Fortress Settings.exe</strong></p>
+<p>The Masterwork Settings GUI (Masterwork Settings.exe) can work in Wine.
+	It likely requries a recent version of <a href="http://www.winehq.org/download/" target="_blank">Wine </a> as well as a recent version of <a href="http://www.go-mono.com/mono-
+
+downloads/download.html" target="_blank">Mono</a>  being installed in your wine prefix.
+	PhoebusTilesetAssembler.exe may also work in Wine with the same setup requirements.&nbsp;</p>
+<hr />
+<p align="center"><strong>All other utilities</strong></p>
+<p>All other utilities (perfectworld, legendsviewer, and embark everywhere) have been removed until their functionality in Linux has been determined. 	If they are found to function acceptably in Linux they may be put back in the future.</p>
+<hr /></td>
+    </tr>
+  </table>
+  <p align="center"><strong class="Rot">Running  Dwarf Fortress</strong><br />
+  </p>
+  <div align="center">
+    <table width="658" border="0">
+      <tr>
+        <td width="665"><p align="center"> Some parts of this mod depend on dfhack.</p>
+          <p> Poison coating and the steam engine both need dfhack to be active.</p>
+          <p> Dwarf Fortress is set to Windowed mode by default because Fullscreen is buggy on multiple monitor setups in Linux (uses all monitors without further user setup).</p>
+          <p> Linux users with multiple monitors can use the &quot;export SDL_VIDEO_FULLSCREEN_DISPLAY=0&quot; line in the &quot;dfhack&quot; startup script to set which monitor is used in fullscreen  mode. 	 	</p>
+          <p>Truetype mode is disable due to extreme instability when used with some dfhack plugins (anything that changes menus). 	If you want to try it set [TRUETYPE:YES] in your &quot;Dwarf Fortress/data/init/init.txt&quot; file. 	 	</p>
+          <p>You may need to install some libraries that Dwarf Fortress depends on before it will run. </p>
+          <p>You may need to install the 32bit verison of some of these libraries to run Dwarf Fortress on a 64bit system. 	You can find instructions on how to do that <a href="http://dwarffortresswiki.org/index.php/DF2012:Installation" target="_blank">here</a>.</p>
+<p> To start Dwarf Fortress with dfhack run the &quot;dfhack&quot; script in the &quot;Dwarf Fortress&quot; directory. 	</p>
+<p>To start Dwarf Fortress without dfhack run the &quot;df&quot; script in the &quot;Dwarf Fortress&quot; directory.</p>
+        <hr /></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p align="center"><a href="home.html" title="home">::: Home :::</a></p>
+<div align="center"><a href="home.html"><img src="Logo small.JPG" alt="" width="110" height="151" /></a></div>
+</body>
+</html>

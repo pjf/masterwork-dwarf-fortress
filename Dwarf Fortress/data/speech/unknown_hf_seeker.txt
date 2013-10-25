@@ -1,0 +1,14 @@
+seek out [CONTEXT:HIST_FIG:TRANS_NAME], wherever [CONTEXT:HIST_FIG:PRO_SUB] might be
+Find [CONTEXT:HIST_FIG:TRANS_NAME], wherever [CONTEXT:HIST_FIG:PRO_SUB] is hiding
+You must find [CONTEXT:HIST_FIG:TRANS_NAME] and make sure [CONTEXT:HIST_FIG:PRO_SUB] is vanquished once and for all
+Destroy [CONTEXT:HIST_FIG:TRANS_NAME], and make sure [CONTEXT:HIST_FIG:PRO_SUB] feels our pain before [CONTEXT:HIST_FIG:PRO_SUB] dies
+[CONTEXT:HIST_FIG:TRANS_NAME] must be stopped.  Please, hurry
+I know not where [CONTEXT:HIST_FIG:TRANS_NAME] is hiding, but [CONTEXT:HIST_FIG:PRO_SUB] must be dealt with soon
+[CONTEXT:HIST_FIG:TRANS_NAME] has menaced us for too long.  You must find out where [CONTEXT:HIST_FIG:PRO_SUB] is
+Find and slay [CONTEXT:HIST_FIG:TRANS_NAME], before it is too late
+[CONTEXT:HIST_FIG:PRO_SUB] must be nearby.  Please, stop [CONTEXT:HIST_FIG:TRANS_NAME]
+[CONTEXT:HIST_FIG:TRANS_NAME] is in hiding.  [CONTEXT:HIST_FIG:PRO_SUB] has eluded us so far, but [CONTEXT:HIST_FIG:PRO_SUB] must be close by.
+If you do not find [CONTEXT:HIST_FIG:TRANS_NAME], we will never be safe
+Discover the hideout of [CONTEXT:HIST_FIG:PRO_SUB] and put an end to our suffering
+I beg of you, find [CONTEXT:HIST_FIG:TRANS_NAME]
+[CONTEXT:HIST_FIG:TRANS_NAME] must be found!  We only want to live in peace

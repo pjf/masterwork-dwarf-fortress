@@ -1,0 +1,25 @@
+item_weapon_magic
+
+[OBJECT:ITEM]
+
+
+[ITEM_WEAPON:ITEM_WEAPON_MAGIC]
+German 2-handed sword. Longest two handed sword to ever exist.
+[NAME:slayer:slayers]
+[SIZE:1200]
+[SKILL:MAGIC_NATURE]
+[TWO_HANDED:77500]
+[MINIMUM_SIZE:57500]
+[MATERIAL_SIZE:15] 
+[ATTACK:EDGE:100000:11000:slash:slashes:forward edge:2500]
+[ATTACK:EDGE:100000:11000:slash:slashes:reverse edge:2500]
+[ATTACK:EDGE:100000:11000:sidestep and slash:sidesteps and slashes:forward edge:2500]
+[ATTACK:EDGE:100000:11000:sidestep and slash:sidesteps and slashes:reverse edge:2500]
+[ATTACK:EDGE:100000:11000:quickly slash:quickly slashes:partial edge:2500]
+[ATTACK:EDGE:100000:11000:make an undercut swing at:makes an undercut swing at:NO_SUB:2000]
+[ATTACK:EDGE:100000:11000:slash:slashes:sharp blade:2500]
+[ATTACK:BLUNT:100000:8000:slap:slaps:flat:1250]
+[ATTACK:BLUNT:1000:3000:strike:strikes:pommel:1000]
+[ATTACK:EDGE:50:10000:run through:runs through:tip:4100]
+[ATTACK:EDGE:15000:18000:whirl around and slash:whirls around and slashes:long blade:1500]
+[ATTACK:EDGE:20000:22000:whirl around with outsgtretched arms and slash:whirls around with outstretched arms and slashes:long blade:3000]

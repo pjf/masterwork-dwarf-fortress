@@ -1,0 +1,4 @@
+reaction_adventure_masterwork
+
+[OBJECT:REACTION] #advmode
+

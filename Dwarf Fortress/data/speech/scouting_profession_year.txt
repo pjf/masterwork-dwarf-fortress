@@ -1,0 +1,6 @@
+I have been scouting the area around [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] of my years.
+For [CONTEXT:NUMBER] years, I have scouted the outskirts of [CONTEXT:PLACE:TRANS_NAME].
+I have patrolled [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] years.
+I have scouted [CONTEXT:PLACE:TRANS_NAME] every day for [CONTEXT:NUMBER] years of my life.
+For about [CONTEXT:NUMBER] years, I have scouted [CONTEXT:PLACE:TRANS_NAME].
+I am a scout with [CONTEXT:NUMBER] years of experience.  I spend much time in [CONTEXT:PLACE:TRANS_NAME].

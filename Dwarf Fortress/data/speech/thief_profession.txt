@@ -1,0 +1,15 @@
+I seek treasures and bring them back to [CONTEXT:PLACE:TRANS_NAME].
+I am a treasure hunter.
+I do a little of this, a little of that.
+What I do is not important.
+I seek artifacts of renown and return them back to [CONTEXT:PLACE:TRANS_NAME].
+I retrieve treasures from all over the world.
+Mind your own business, you.
+I am the sort to hide your coinpurse from.
+I take cumbersome objects off the hands of their weary owners.
+I brave the walls of dwarven fortresses to emerge with their wealth.
+I am a magician.  I make things disappear.
+You talk too much.
+I have no wish to discuss it.
+Let us speak of something else.
+I appreciate your curiosity, but my business is mine.

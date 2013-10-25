@@ -1,0 +1,6 @@
+I am a [CONTEXT:UNIT_NAME].
+I have been a [CONTEXT:UNIT_NAME] for some time now.
+I make my living as a [CONTEXT:UNIT_NAME].
+What I do is not that important.
+I would rather not discuss it.
+Is it not obvious?

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><configuration>
+
+	<gamelog encoding="Cp850" path="../gamelog.txt"/>
+ 	<supplementalLogs>
+ 		<item path="${gameBaseDir}/ss_fix.log"/>
+ 	</supplementalLogs> 
+	
+	<soundpacks allowOverride="true" defaultPath="./packs/" noWarnAbsolutePath="false"/>
+	
+	<volume value="0.0"/>
+	
+	<gui value="true"/>
+	
+	<achievements value="true"/>
+	
+	<playbackTheshhold value="4"/>
+	
+	<autoUpdateURLs>
+		<item path="http://df.zweistein.cz/soundsense/soundpack"/>
+		<item path="http://www.armedassault.info/_hosted/soundsense/au"/>
+	</autoUpdateURLs>
+	<autoUpdateReplaceFiles value="true"/>
+	<autoUpdateDeleteFiles value="false"/>
+
+	<disabledSounds />
+
+	<mutedChannels/>
+
+</configuration>

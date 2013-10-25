@@ -1,0 +1,56 @@
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] named [CONTEXT:HIST_FIG:TRANS_NAME]
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], [CONTEXT:HIST_FIG:PRO_SUB] is a wonderful person
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who claims to have visions of the future
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], [CONTEXT:HIST_FIG:PRO_SUB] writes the most excellent poetry
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who wants too much out of life
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who wants nothing but happiness for others
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] with a talent for singing
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who needs to stop sulking
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], we get along well
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], we do not get along
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], [CONTEXT:HIST_FIG:PRO_SUB] and I hate each other
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], we often go for walks together
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] that I absolutely adore
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who only worries about [CONTEXT:HIST_FIG:PRO_POS] own problems
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who used to look down on me, but not anymore
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who once betrayed me, if you can believe it
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who often goes out at night alone, the fool
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who is acting rather strange lately
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who is waiting for something exciting to happen
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] with great and terrible anger
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] for whom I would die
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], I think [CONTEXT:HIST_FIG:PRO_SUB] is losing [CONTEXT:HIST_FIG:PRO_POS] mind
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] that I truly admire
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who sits around at home all day
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] you can trust with any secret
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] I would follow to the end of the world
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who is an insult to our entire family
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], [CONTEXT:HIST_FIG:PRO_SUB] likes to dance
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], [CONTEXT:HIST_FIG:PRO_SUB] has always been jealous of me
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who likes to be alone
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who makes the best cheese you will ever taste
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who teased me when we were younger
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], the smartest person I know
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] with lofty goals and little knowledge
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] with a respectable plot of land
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who finishes my sentences
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who always chooses the right thing to do
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], [CONTEXT:HIST_FIG:PRO_SUB] is a good friend
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who has my deepest respect
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], [CONTEXT:HIST_FIG:PRO_SUB] never listens to a word I say
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], [CONTEXT:HIST_FIG:PRO_SUB] is not speaking to me anymore
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who needs me here
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who would never hurt anyone
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who often tries to make my decisions for me
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who gets in my way all the time
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who would do anything for me
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] who often wanders alone
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], the strongest [CONTEXT:HIST_FIG:RACE] in the land
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], not someone to trust
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP], someone to avoid
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] for whom I would do anything
+I have [CONTEXT:INDEF_FAMILY_RELATIONSHIP] whom I trust with my life
+Sometimes I wish I did not have [CONTEXT:INDEF_FAMILY_RELATIONSHIP]
+Well, [CONTEXT:INDEF_FAMILY_RELATIONSHIP] of mine has great musical gifts
+Since you ask, [CONTEXT:INDEF_FAMILY_RELATIONSHIP] of mine would like to meet someone like you
+If you must know, [CONTEXT:INDEF_FAMILY_RELATIONSHIP] of mine once saved me from a creature of the night

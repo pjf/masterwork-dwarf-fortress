@@ -1,0 +1,53 @@
+item_shield_mood
+
+[OBJECT:ITEM]
+
+
+
+[ITEM_SHIELD:ITEM_SHIELD_ARMOK]
+[NAME:shield of armok:shields of armok]
+[ARMORLEVEL:3]
+[BLOCKCHANCE:50]
+[UPSTEP:3]
+[MATERIAL_SIZE:5]
+
+[ITEM_SHIELD:ITEM_SHIELD_FULL]
+[NAME:full body shield:full body shields]
+[ARMORLEVEL:3]
+[BLOCKCHANCE:60]
+[UPSTEP:3]
+[MATERIAL_SIZE:5]
+
+[ITEM_SHIELD:ITEM_SHIELD_ENORMOUS]
+[NAME:enormous shield:enormous shields]
+[ARMORLEVEL:3]
+[BLOCKCHANCE:70]
+[UPSTEP:3]
+[MATERIAL_SIZE:5]
+
+[ITEM_SHIELD:ITEM_SHIELD_SPIKED]
+[NAME:spiked shield:spiked shields]
+[ARMORLEVEL:3]
+[BLOCKCHANCE:80]
+[UPSTEP:3]
+[MATERIAL_SIZE:5]
+
+[ITEM_SHIELD:ITEM_SHIELD_DRAGON]
+[NAME:dragon shield:dragon shields]
+[ARMORLEVEL:3]
+[BLOCKCHANCE:90]
+[UPSTEP:3]
+[MATERIAL_SIZE:5]
+
+
+##############################################
+###########    FLAVOR SHIELDS   ##############
+##############################################
+
+[ITEM_SHIELD:ITEM_SHIELD_ELF]
+[NAME:root shield:root shields]
+[ARMORLEVEL:3]
+[BLOCKCHANCE:20]
+[UPSTEP:3]
+[MATERIAL_SIZE:1]
+

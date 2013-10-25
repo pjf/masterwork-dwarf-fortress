@@ -1,0 +1,2034 @@
+See readme.txt for general information about the release.
+See release_notes.txt for information on handling saves and a brief writeup on the changes for this version.
+See command_line.txt for information on world generation from command lines.
+
+******************************************************
+
+Auxiliary file changes for 0.34.11:
+
+	armor items
+		mail shirt layering moved from ARMOR to OVER
+
+******************************************************
+
+Auxiliary file changes for 0.34.09:
+
+	inorganic soil
+		fixed white sand density (got rid of the second entry)
+	smelter reactions
+		coke output up to 9 and 5 from 3 and 2
+
+******************************************************
+
+Auxiliary file changes for 0.34.08:
+
+	arena
+		added bottomless chasm tiles (C)
+	changed keys
+		D_HOT_KEYS = capital H
+	new keys
+		DESIGNATE_TRACK
+		D_HAULING
+		D_HAULING_NEW_ROUTE
+		D_HAULING_NEW_STOP
+		D_HAULING_REMOVE
+		D_HAULING_PROMOTE
+		D_HAULING_VEHICLE
+		D_HAULING_NICKNAME
+		BUILDING_TRIGGER_ENABLE_TRACK_CART
+		BUILDING_TRIGGER_MIN_TRACK_CART_DOWN
+		BUILDING_TRIGGER_MIN_TRACK_CART_UP
+		BUILDING_TRIGGER_MAX_TRACK_CART_DOWN
+		BUILDING_TRIGGER_MAX_TRACK_CART_UP
+		HOTKEY_BUILDING_CONSTRUCTION_TRACK
+		HOTKEY_BUILDING_CONSTRUCTION_TRACK_STOP
+		HOTKEY_BUILDING_MACHINE_ROLLERS
+		HOTKEY_TRAP_TRACK_STOP
+		D_LOOK_FOLLOW
+		UNITVIEW_FOLLOW
+		D_HAULING_STOP_NEW_DEPART
+		D_HAULING_STOP_NEW_LINK
+		D_HAULING_STOP_REMOVE
+		D_HAULING_STOP_SL_SELECT_PILE
+		D_HAULING_STOP_SL_TAKE_GIVE
+		D_HAULING_STOP_LC_DIR
+		D_HAULING_STOP_LC_MODE
+		D_HAULING_STOP_LC_TIMER_UP
+		D_HAULING_STOP_LC_TIMER_DOWN
+		D_HAULING_STOP_LC_FULLNESS_UP
+		D_HAULING_STOP_LC_FULLNESS_DOWN
+		D_HAULING_STOP_LC_MORE_LESS
+		D_HAULING_STOP_LC_DESIRED_TOTAL
+		D_HAULING_STOP_LC_CHANGE
+		D_HAULING_STOP_LC_ADVANCED
+		BUILDING_TRACK_STOP_FRICTION_UP
+		BUILDING_TRACK_STOP_FRICTION_DOWN
+		BUILDING_TRACK_STOP_DUMP
+		BUILDJOB_STOCKPILE_LINK_ANYWHERE
+		BUILDJOB_STOCKPILE_GIVE_TO
+		ARENA_CREATURE_STRING
+		BUILDJOB_STOCKPILE_WHEELBARROW
+		BUILDING_ROLLERS_SPEED_UP
+		BUILDING_ROLLERS_SPEED_DOWN
+		UNITVIEW_PRF_NEW_SQUAD
+		UNITVIEW_PRF_REMOVE_FROM_SQUAD
+		UNITVIEW_PRF_NAME_CURRENT_SQUAD
+		UNITVIEW_PRF_NAME_SELECTED_SQUAD
+		D_MILITARY_NAME_SQUAD
+	entity
+		dwarves can build minecart/wheelbarrow tools
+	tools
+		minecart/wheelbarrow
+		new use TRACK_CART
+		new tag WOOD_MAT
+		new tag INVERTED_TILE
+		new tag FURNITURE
+	new announcements
+		[SKIP_ON_LIQUID:A_D:UCR_A]
+		[DODGE_FLYING_OBJECT:A_D:UCR_A]
+	material raws
+		adopted a bunch of densities/colors from topic 80022
+	toys/instruments
+		HARD_MAT on puzzlebox/drum for now
+	creature variation
+		fixed ATTACL typo
+
+******************************************************
+
+Auxiliary file changes for 0.34.07:
+
+	creatures
+		rat gets [CREATURE_CLASS:GENERAL_POISON]
+		sponge man -> [CV_REMOVE_TAG:BODY:BASIC_1PARTBODY_THOUGHT]
+		giant bushtit -> [PREFSTRING:small size] -> [PREFSTRING:somewhat great size]
+		weasel ANY_LAND -> NOT_FREEZING + TUNDRA
+		teeth and teeth attacks for
+			great barracuda
+			longnose gar
+			tigerfish
+			pike
+		reef sharks S->s
+		coelacanth plural gets s and c->C
+		great barracuda B->b
+		deer d->D
+		cougar C->c
+		warthog w->W
+		leopard L->l
+		new seal men got
+			[CV_CONVERT_TAG]
+				[CVCT_MASTER:BODY]
+				[CVCT_TARGET:FRONT_BODY_FLIPPERS:REAR_BODY_FLIPPERS]
+				[CVCT_REPLACEMENT:REAR_BODY_FLIPPERS]
+			[APPLY_CURRENT_CREATURE_VARIATION]
+			and lost their KICK_ATTACK
+		cave swallow man gets new body
+		underground people get attacks
+	creature variations
+		animal people ones get
+			[CV_REMOVE_TAG:SPECIALATTACK_INJECT_EXTRACT]
+			[CV_REMOVE_TAG:SPECIALATTACK_SUCK_BLOOD]
+			[CV_REMOVE_TAG:ATTACL_VELOCITY_MODIFIER]
+			[CV_CONVERT_TAG]
+				[CVCT_MASTER:BODY]
+				[CVCT_TARGET:QUADRUPED_NECK]
+				[CVCT_REPLACEMENT:HUMANOID_NECK:3FINGERS]
+				or
+				[CVCT_REPLACEMENT:HUMANOID_LEGLESS_NECK:3FINGERS]
+	d_init
+		[SET_LABOR_LISTS:SKILLS]
+
+******************************************************
+
+Auxiliary file changes for 0.34.06:
+
+	entity_default.txt
+		removed dungeon master and tax collector from MOUNTAIN
+	creatures
+		jabberer/cave dragon get TRAINABLE
+	new keys
+		ANIMAL_SELECT_TRAINER
+		ANIMAL_WAR_TRAINING
+		ANIMAL_HUNTING_TRAINING
+		CIVZONE_ANIMAL_TRAINING
+	removed keys
+		UNITVIEW_PRF_PET_HUNT
+		UNITVIEW_PRF_PET_WAR
+		HOTKEY_KENNEL_TRAIN_HUNT
+		HOTKEY_KENNEL_TRAIN_WAR
+		HOTKEY_KENNEL_TAME_UNIT
+	announcement
+		[TRAINING_DOWN_TO_SEMI_WILD:A_D:D_D]
+		[TRAINING_FULL_REVERSION:A_D:D_D:P:R]
+		[ANIMAL_TRAINING_KNOWLEDGE:A_D:D_D]
+	items
+		added [SHAPED] to various headwear
+
+
+******************************************************
+
+Auxiliary file changes for 0.34.05:
+
+	body parts
+		new eyelids in rcp body
+	body plans
+		fixed r_eye/l_eye
+	creatures
+		red panda: will -> with
+		giant desert scorp: description typo
+		mules -> gray M, muskox -> brown M and brown color and brown description
+		crab -> [AMPHIBIOUS]
+		horseshoe crab -> [AMPHIBIOUS][UNDERSWIM]
+		added benign to
+			BIRD_FALCON_PEREGRINE,BIRD_CROW,BIRD_RAVEN,BIRD_OWL_SNOWY,
+			SPARROW,BIRD_OWL_BARN,BIRD_PARAKEET,BIRD_PARROT_GREY,
+			BIRD_LORIKEET,BIRD_WREN,BIRD_OSPREY,GIANT_COCKATIEL,
+			BIRD_MAGPIE,GIANT_KESTREL,BIRD_EAGLE,GIANT_HORNBILL,
+			BIRD_BUSHTIT,MOTH,GRASSHOPPER,THRIPS,SLUG,SNAIL,
+			DESERT TORTOISE,GIANT TORTOISE,SPONGE,HORSESHOE_CRAB,
+			POND_TURTLE,HAMSTER,HEDGEHOG,SQUIRREL_FLYING,
+			GREEN_TREE_FROG,CAPUCHIN,SLOTH,SPIDER_MONKEY,AYE-AYE,
+			LION_TAMARIN
+
+******************************************************
+
+Auxiliary file changes for 0.34.03:
+
+	creatures
+		horseshoe crab gets heart/brain, removed NOT_BUTCHERABLE (not sure what the deal is in reality)
+		horseshoe crab man gets working body
+		kea gets LOOSE_CLUSTERS
+	entities
+		changed TOLERATES_SITE for entities, it only controls which cities world gen people will migrate too
+			keep in mind that an elf can be found in a dwarf town if it moves to a human city first, since they'll be in the human entity
+	interaction examples
+		LIKES_FIGHTING:MISCHIEVOUS instead of misspellings
+		added STERILE to mummy interaction examples (zombie don't need the tag since it applies to all animations)
+	material templates
+		removed extra [BUTCHER_SPECIAL:MEAT:NONE] from gizzard
+	d_init
+		SET_LABOR_LISTS:YES
+
+******************************************************
+
+Auxiliary file changes for 0.34.02:
+
+	inorganic
+		added BUILD_COLOR for all metals
+	creatures
+		rodent men given skin and hair properly
+		amphibian man changed
+		missing tapir sponsor information added
+		rodent removed from rabbit description
+		fixed material value in unicorn
+		fixed iron/mud man depths
+		reindeer plural fixed
+		peacock color fixed
+	creature variations
+		removed POPULATION_NUMBER and CLUSTER_NUMBER and COLOR and MOUNT and MOUNT_EXOTIC from GIANT
+	language
+		changed SQUASH from MAGIC to VIOLENT symbol
+	manual files updated
+
+******************************************************
+
+Auxiliary file changes for 0.34.01:
+
+	interactions
+		interaction_standard.txt has some basic processes
+		the examples are in "raw/interaction examples"
+	creatures
+		ability to do the interactions, using [CAN_DO_INTERACTION:<token>] -- this includes cleaning, ink spray, and physical social stuff
+			[CAN_DO_INTERACTION:MATERIAL_EMISSION] taken from fire imp, MATERIAL_EMISSION is defined in interaction_standard.txt
+				[CDI:ADV_NAME:Hurl fireball]
+				[CDI:USAGE_HINT:ATTACK]
+				[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+				[CDI:FLOW:FIREBALL]
+				[CDI:TARGET:C:LINE_OF_SIGHT]
+				[CDI:TARGET_RANGE:C:15]
+				[CDI:MAX_TARGET_NUMBER:C:1]
+				[CDI:WAIT_PERIOD:30]
+			[CAN_DO_INTERACTION:MATERIAL_EMISSION_WITH_HIDE_EFFECT] taken from squid
+				[CDI:ADV_NAME:Squirt ink]
+				[CDI:USAGE_HINT:FLEEING]
+				[CDI:LOCATION_HINT:IN_WATER]
+				[CDI:BP_REQUIRED:BY_TYPE:UPPERBODY]
+				[CDI:MATERIAL:LOCAL_CREATURE_MAT:INK:SPATTER_LIQUID] <-- SPATTER_LIQUID is a new "breath" attack, SPATTER_POWDER too
+				[CDI:VERB:squirt ink:squirts ink:NA]
+				[CDI:TARGET:C:SELF_ONLY] <-- this is basically book-keeping for the two effects in the interaction
+				[CDI:TARGET:D:SELF_ONLY]
+				[CDI:WAIT_PERIOD:200]
+				[CDI:FREE_ACTION] <-- they can spray ink and also move away
+			[CAN_DO_INTERACTION:CLEANING] taken from cat
+				[CDI:ADV_NAME:Clean]
+				[CDI:USAGE_HINT:CLEAN_SELF]
+				[CDI:USAGE_HINT:CLEAN_FRIEND]
+				[CDI:BP_REQUIRED:BY_CATEGORY:TONGUE]
+				[CDI:VERB:lick:licks:lick each other]
+				[CDI:CAN_BE_MUTUAL] <-- not yet implemented
+				[CDI:TARGET:A:SELF_ALLOWED:TOUCHABLE] <-- so the animal can lick themselves or anybody nearby
+				[CDI:TARGET_RANGE:A:1]
+				[CDI:MAX_TARGET_NUMBER:A:1]
+				[CDI:WAIT_PERIOD:10]
+			[CAN_DO_INTERACTION:BP_BUMP] taken from cat
+				[CDI:ADV_NAME:Head bump]
+				[CDI:USAGE_HINT:GREETING]
+				[CDI:BP_REQUIRED:BY_CATEGORY:HEAD]
+				[CDI:VERB:head-bump:head-bumps:bump heads]
+				[CDI:CAN_BE_MUTUAL] <-- not yet implemented
+				[CDI:TARGET:A:SELF_ONLY]
+				[CDI:TARGET:B:TOUCHABLE]
+				[CDI:TARGET_RANGE:B:1]
+				[CDI:MAX_TARGET_NUMBER:B:1]
+				[CDI:WAIT_PERIOD:20]
+		they can retract into bodyparts/roll into balls using RETRACT_INTO_BP
+			[RETRACT_INTO_BP:BY_CATEGORY:BODY_UPPER:roll into a ball:rolls into a ball:unroll:unrolls]
+			they will retract when they are frightened and near to an enemy
+			attacks while retracted will be much more likely to hit the retract part
+		they can root around and stir up vermin using ROOT_AROUND
+			[ROOT_AROUND:BY_CATEGORY:BILL:root around in:roots around in]
+		they can be made to eat vermin using GOBBLE_VERMIN_CREATURE and GOBBLE_VERMIN_CLASS
+			[GOBBLE_VERMIN_CREATURE:<creature>:<caste>] where <caste> can be ALL
+			[GOBBLE_VERMIN_CLASS:<class>] where class is a CREATURE_CLASS like the new EDIBLE_GROUND_BUG
+		they can drop extra objects during butchery with EXTRA_BUTCHER_OBJECT
+			[EXTRA_BUTCHER_OBJECT:BY_CATEGORY:GIZZARD]
+				[EBO_ITEM:SMALLGEM:NONE:ANY_HARD_STONE] <-- ANY_HARD_STONE is special, but you can use the standard material token list too
+				[EBO_SHAPE:GIZZARD_STONE] <-- this is a shape for a gem from descriptor_shape_standard.txt
+		DIVE_HUNTS_VERMIN is a new vermin hunting behavior, although it is limited for fortress pets because of the known flier troubles there
+		removed werewolf and whale and some redundant animal people from the old files
+		a ton of new sponsorship creatures -- the eight that got new tags are in the old files, the 112 that didn't get their own tags are in probationary new files, although I don't promise to give every one of them a special tag over time
+		NOT_LIVING replaces CANNOT_UNDEAD
+		material force multiplier, general material force multiplier
+	syndromes
+		SYN_INGESTED will work now
+		there are new tags here -- see the interaction examples in "raw/interaction examples" for syntax, here are some examples:
+		CE_ADD_TAG -- It's a pretty zombie-centric list (basically whatever came up for us).  Support for other creature tags will be added.
+			EXTRAVISION
+			OPPOSED_TO_LIFE
+			SUPERNATURAL
+			NOT_LIVING
+			NOEXERT
+			CRAZED
+			BLOODSUCKER
+			NOPAIN
+			NOBREATHE
+			HAS_BLOOD
+			NOSTUN
+			NONAUSEA
+			NO_DIZZINESS
+			NO_FEVERS
+			TRANCES
+			NOEMOTION
+			LIKESFIGHTING
+			PARALYZEIMMUNE
+			NOFEAR
+			NO_EAT
+			NO_DRINK
+			NO_SLEEP
+			MISCHIEVOUS
+			NO_PHYS_ATT_GAIN
+			NO_PHYS_ATT_RUST
+			NOTHOUGHT
+			NO_THOUGHT_CENTER_FOR_MOVEMENT
+			NO_CONNECTIONS_FOR_MOVEMENT
+			CAN_SPEAK
+			CAN_LEARN
+			UTTERANCES
+			MORTAL
+			NO_AGING
+			STERILE
+			FIT_FOR_ANIMATION
+			FIT_FOR_RESURRECTION
+		CE_REMOVE_TAG
+		CE_DISPLAY_TILE
+		CE_DISPLAY_NAME
+		CE_FLASH_TILE
+		CE_PHYS_ATT_CHANGE
+		CE_MENT_ATT_CHANGE
+		CE_BODY_APPEARANCE_MODIFIER
+		CE_BP_APPEARANCE_MODIFIER
+		CE_MATERIAL_FORCE_MULTIPLIER
+		CE_SPEED_CHANGE
+		CE_BODY_MAT_INTERACTION -- only works on hist figs, causes that hist figs body material to cause interaction as a syndrome mat.
+		CE_CAN_DO_INTERACTION
+		CE_BODY_TRANSFORMATION
+		CE_SKILL_ROLL_ADJUST
+	xml
+		the legends xml has a lot of new info for historical figures
+	entities
+		PLAINS gets BUILDS_OUTDOOR_TOMBS
+		PLAINS gets all the trap comps
+	world gen params
+		some have been replaced, here are the new ones (might be missing some):
+		NIGHT_TROLL_NUMBER -- all of the following control how many random definitions are created, if set to zero that world won't have any
+		BOGEYMAN_NUMBER
+		VAMPIRE_NUMBER
+		WEREBEAST_NUMBER
+		SECRET_NUMBER
+		REGIONAL_INTERACTION_NUMBER
+		DISTURBANCE_INTERACTION_NUMBER
+		EVIL_CLOUD_NUMBER
+		EVIL_RAIN_NUMBER
+	graphics
+		SKELETON/ZOMBIE -> ANIMATED
+	announcements
+		there are some new ones, mostly or all at the bottom of the file
+	reactions
+		you can make BOOK items in reactions, and add PAGES improvements to them
+			pages are always blank though
+	new keys (this might not be it, but it wasn't many)
+		A_ACTION_ABILITY:A
+		A_ACTION_POWER:P
+	changed keys
+		A_BARTER_CURRENCY_2 -> O
+	removed keys
+		A_BARTER_CURRENCY_3 to 9
+
+******************************************************
+
+Auxiliary file changes for 0.31.25:
+
+	cave dragon stance strike skill removed, given claw attack
+
+******************************************************
+
+Auxiliary file changes for 0.31.24:
+
+	moved clay crafts key over to C (was conflicting with clay statue's s)
+	NECK_SPINE bodypart token correction (had NECK)
+	rodent man bite attack uses teeth now
+	dragon/hydra stance strike skill removed, given claw attack
+	guineachick -> keet
+
+******************************************************
+
+Auxiliary file changes for 0.31.23:
+
+	creature changes
+		added rodent man teeth
+		added ribcages to various underground animal peoples
+		penguins 2WINGS -> SIDE_FLIPPERS
+		platypus get AMPHIBIOUS/UNDERSWIM
+		changed sizes for most giant creatures
+		domestic birds and penguins get MUNDANE
+		reptile men get GENERIC_TEETH
+		prefstrings for some of the new giant creatures
+
+******************************************************
+
+Auxiliary file changes for 0.31.22:
+
+	new creature tag
+		[PRONE_TO_RAGE:<rate>] -- the creature follow its normal behavior, but flip out on occasion, higher rate = more flipping out
+	body detail
+		leathery egg shell
+	new material template
+		leathery egg shell
+	body parts
+		QUADRUPED_NECK, NECK_SPINE
+	various reptiles and others
+		leathery egg shell
+	temperate creatures
+		4134: capybara sound typos
+		capybara tail removed
+		fixed some tokens in panda bp color tags
+		badger and allies
+		moose and allies
+	river/lake creatures
+		platypus and allies
+	tropical creatures
+		honey badger
+		giraffe tweaks
+	tundra creatures
+		some penguins and allies
+	subterranean creatures
+		rodent man
+
+******************************************************
+
+Auxiliary file changes for 0.31.20/21:
+
+	material changes
+		added [DO_NOT_CLEAN_GLOB] to fat, seed and wax materials
+		added [NO_STONE_STOCKPILE] to all inorganic_other entries
+	creature changes
+		deer antlers
+		fixed length text for shearable sheep
+		fixed some biome description issues in fish/cougar, other description issues
+		got rid of left/right on rhino horns
+		added numbing phantom spider bite
+		made reptile man bite attack secondary
+		fixed text for serpent man tail attack
+		closed some brackets
+		bullhead scale color
+		density/text fixes for eggs
+		PET_VALUE_DIVISOR to control bee value
+		changed the hair tissue plan to include wings
+		added EXTRAVISION to some more eyeless critters
+		added tissue layer thickness to alpaca/llama wool
+		honey bee wax gets [STOCKPILE_GLOB_PRESSED]
+		broke up VERMINHUNTER
+			AT_PEACE_WITH_WILDLIFE
+			RETURNS_VERMIN_KILLS_TO_OWNER
+			HUNTS_VERMIN
+			ADOPTS_OWNER
+		[SPECIFIC_FOOD:PLANT:<token>]
+		[SPECIFIC_FOOD:CREATURE:<token>]
+		[SOUND:<type>:<range>:<approximate period/timer>:<VOCALIZATION or NONE>:<verbs/out-of-sight noun>]
+	reaction changes
+		added [FOOD_STORAGE_CONTAINER] for mead reaction
+		changed key for jug glazing
+	language
+		betwitch -> bewitch
+	new announcement
+		CREATURE_SOUND
+
+******************************************************
+
+Auxiliary file changes for 0.31.19:
+
+	new soil - fired clay, added ceramic reaction information to clay and kaolinite
+	new inorganics - earthenware, stoneware, porcelain
+	new material tag
+		[YARN]
+	new creature tags
+		[APP_MOD_DESC_RANGE:<6 range numbers>] -- adjusts the numeric ranges for getting different adjectives in descriptions
+		[SHEARABLE_TISSUE_LAYER:<body part modifier like LENGTH>:<modifier level when ready>]
+		[LAYS_EGGS]
+		[EGG_MATERIAL:<mat tokens>]
+		[LAYS_UNUSUAL_EGGS:<item tokens>]
+		[EGG_SIZE:<size>]
+		[CLUTCH_SIZE:<min>:<max>]
+		[GRAZER:<amount of hunger removed per bite>] -- only grazer animals in your fort need to eat at this point
+		[ARTIFICIAL_HIVEABLE]
+		[HIVE_PRODUCT:<max in hive>:<timer>:<item/mat tags>]
+		[COLONY_EXTERNAL] -- this caste appears around the colony
+		[DIE_WHEN_VERMIN_BITE]
+		[REMAINS_ON_VERMIN_BITE_DEATH]
+		[UBIQUITOUS] -- creature will occur in absolutely every region that is a biome match (does not apply to evil/good)
+	new tool tag
+		[CONTAINER_CAPACITY:<amount>]
+	new reaction tags
+		[NOT_IMPROVED]
+		[DOES_NOT_ABSORB]
+		[PRODUCT_PASTE]
+		[PRODUCT_PRESSED]
+		[NOT_PRESSED]
+		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[CONTAINS:<reagent token>]
+			not respected in adv mode interface, didn't try nesting containers
+			multiple CONTAINS on one reagent supported if they don't overlap
+	new grass raws
+	added CAN_GLAZE reaction glass to STONE_TEMPLATE
+	added egg/plant oil/plant soap material templates
+	added egg tags to creatures all over (no amphibians/fish/insects yet)
+	rocknuts got oil (instead of adding a new plant)
+	new reactions for milling seeds with new paste tag for glob products
+	new reactions for firing and glazing jugs and other ceramics
+	new reactions related to beekeeping
+	new entries in dwarf/human entity entries for new jobs/reactions
+	creature_standard.txt
+		gobs: [NO_DRINK][NO_EAT] (they keep bonecarn)
+	creature_domestic.txt
+		many new entries
+	new unit types
+		SHEARER
+		SPINNER
+		POTTER
+		GLAZER
+		PRESSER
+		BEEKEEPER
+		WAX_WORKER
+	new labor types
+		SHEARER
+		SPINNER
+		POTTERY
+		GLAZING
+		BEEKEEPING
+		WAX_WORKING
+	new skill type
+		SHEARING
+		SPINNING
+		POTTERY
+		GLAZING
+		BEEKEEPING
+		WAX_WORKING
+	new job item flag
+		ANY_STRAND_TISSUE
+		ANY_YARN_MATERIAL
+	new keys
+		[HOTKEY_FARMER_SHEAR_CREATURE:S]
+		[HOTKEY_FARMER_SPIN_THREAD:SHIFT+S]
+		[ORDERS_REFUSE_DUMP_STRAND_TISSUE:H]
+		[HOTKEY_CLOTHES_MAT_YARN:Y]
+		[HOTKEY_LOOM_WEAVE_YARN:Y]
+		[HOTKEY_BUILDING_NEST_BOX:SHIFT+N]
+		[HOTKEY_BUILDING_HIVE:ALT+H]
+		[CIVZONE_PEN:N]
+		[CIVZONE_PEN_OPTIONS:SHIFT+N]
+		[CIVZONE_CLAY_COLLECT:C]
+		[HOTKEY_COLLECT_CLAY:C]
+		[HIVE_INSTALL_COLONY:C]
+		[HIVE_GATHER_PRODUCTS:G]
+		[HOTKEY_CRAFTS_YARN:Y]
+		[HOTKEY_CRAFTS_SEL_WOOD:W]
+		[HOTKEY_CRAFTS_SEL_BONE:B]
+		[HOTKEY_CRAFTS_SEL_SHELL:S]
+		changed goblet keys to ALT+G
+
+******************************************************
+
+Auxiliary file changes for 0.31.18:
+
+	data/index
+
+	creature_standard.txt
+		added elite ranged unit names for dwarves
+	entity_default.txt
+		gave humans METAL/GEM/STONE_PREF
+		gave gobs METAL_PREF and got rid of gem professions
+		gave kobs METAL_PREF/STONE_PREF/FURNACE_OPERATOR for the time being at least, though this will probably change
+	item_weapon.txt
+		changed a few two-handed sizes
+
+******************************************************
+
+Auxiliary file changes for 0.31.17:
+
+	data/index
+
+	announcements.txt
+		[NIGHT_ATTACK_STARTS:A_D:D_D:BOX]
+		[NIGHT_ATTACK_ENDS:A_D:D_D:BOX]
+		[NIGHT_ATTACK_TRAVEL:A_D:D_D]
+		[GHOST_ATTACK:A_D:D_D]
+		[LAIR_HUNTER:A_D:D_D]
+		[TRAVEL_SITE_DISCOVERY:A_D:D_D:BOX]
+		[TRAVEL_SITE_BUMP:A_D:D_D]
+		[ADVENTURE_INTRO:BOX]
+		removed
+			COMBAT_WRESTLE_PINCH
+			COMBAT_WRESTLE_GOUGE
+			COMBAT_WRESTLE_STRANGLE
+			COMBAT_SHAKE
+	world_gen.txt
+		[NIGHT_CREATURE_NUMBER:<number of definitions>]
+	body_default/rcp.txt
+		neck changed over to upper spine (left NECK token), category SPINE
+		neck and lower spine get CONNECTOR
+		upper spine in lower body changed to middle spine
+	creature_large_mountain.txt
+		voice mannerisms neck -> throat
+	creature_standard.txt
+		humans, elves and dwarves get [SPOUSE_CONVERSION_TARGET]
+		added ogress caste name to ogre
+		minotaur gets lair, habit and [NATURAL_SKILL] tags
+		other semis/megas get basic lair stuff
+		dragon/hydra get NOEXERT
+		dragon got willpower boost, skill tags
+		hydra gets skill tags
+		gremlin gets skill tag
+		removed cluster numbers from all semimegabeasts, (unused) pop number from bronze colossus
+		voice mannerisms neck -> throat
+	creature_subterranean.txt
+		voice mannerisms neck -> throat
+	creature_next_underground.txt
+		tweaked DIFFICULTY numbers, which are used for fame rewards now
+		gave blind cave ogre extra vision
+	entity_default.txt
+		BUILDS_OUTDOOR_FORTIFICATIONS added to PLAINS entity
+		banditry tags on humans, goblins and kobolds
+			BANDITRY:<perc>
+			LOCAL_BANDITRY
+	inorganic_stone_soil.txt
+		went over to new SOIL_TEMPLATE
+	xml
+		new historical events: change creature type, hist figure revived
+		added "put to rest", "vanish" and "scared to death" kill causes
+		new site names "hamlet" "town" "fortress" "labyrinth" "lair" "shrine"
+	item_tool.txt
+		new file, used only by adv mode peasants and lair creatures at this point
+	new keys
+		[HOTKEY_BUILDING_SLAB:ALT+S]
+		[HOTKEY_MASON_SLAB:ALT+S]
+		[HOTKEY_CRAFTS_SLAB:ALT+S]
+		[A_TRAVEL_SLEEP:SHIFT+Z]
+		[A_TRAVEL_MAP:M]
+		[A_TRAVEL_HIDE_INSTRUCTIONS:H]
+		[A_SLEEP_SLEEP:S]
+		[A_SLEEP_WAIT:W]
+		[A_SLEEP_DAWN:D]
+		[ORDERS_REFUSE_OUTSIDE_VERMIN:V]
+		[A_COMPANIONS:C]
+		[A_ATTACK_CONFIRM:ALT+Y]
+		renamed
+			A_MOVE_WAIT -> A_MOVE_SAME_SQUARE
+		changed
+			[A_CENTER:V]
+			[A_COMBAT:SHIFT+C]
+	graphics example
+		added GHOST to the list of texture options
+	new bp tag
+		CONNECTOR -- child part with CONNECTOR keeps parent unsevered until receiving severing damage itself
+	new creature tags
+		NIGHT_CREATURE_HUNTER
+		NIGHT_CREATURE_BOGEYMAN
+		SPOUSE_CONVERTER
+		CONVERTED_SPOUSE
+		SPOUSE_CONVERSION_TARGET
+		LAIR_HUNTER
+		LAIR_HUNTER_SPEECH:<speech file>
+		HABIT:<habit token>:<percentage>
+		HABIT_NUM:<TEST_ALL or a number>
+		NATURAL_SKILL:<skill token>:<amount>
+			skill starts here and cannot rust below here
+		CREATURE_SOLDIER_TILE:<tile>
+		SOLDIER_ALTTILE:<tile>
+		CASTE_SOLDIER_TILE:<tile>
+		CASTE_SOLDIER_ALTTILE:<tile>
+		SKILL_LEARN_RATES:<percentage>
+		SKILL_RUST_RATES:<3 rust tags from SKILL_RATES>
+		SKILL_RATE:<skill token>:<4 tags from SKILL_RATES>
+		SKILL_LEARN_RATE:<skill token>:<percentage>
+		SKILL_RUST_RATE:<skill token>:<3 rust tags from SKILL_RATES>
+
+******************************************************
+
+Auxiliary file changes for 0.31.16:
+
+	data/index
+
+	d_init.txt
+		[WALKING_SPREADS_SPATTER_DWF:NO]
+		[WALKING_SPREADS_SPATTER_ADV:YES]
+
+******************************************************
+
+Auxiliary file changes for 0.31.15:
+
+	data/index
+
+	building_custom.txt
+		added blocked tiles to soap maker
+	body_default.txt
+		3EYES added
+	body_rcp.txt
+		RCP_3_EYES has [LEFT] removed from center eye
+	creature_large_temperate.txt
+		gave rhesus tail
+	creature_large_tropical.txt
+		made elephant tusk attack co-MAIN with kicks
+	creature_next_underground.txt
+		added EXTRAVISION to voracious cave crawler
+		added 2HEAD_HORN to crundle BODY and made them grow up faster
+		added LARGE_ROAMING and NOBREATHE to magma crab
+		added LARGE_ROAMING and LARGE_PREDATOR to helmet snake
+		added LARGE_ROAMING to cave dragon
+		added LARGE_ROAMING to giant earthworm
+		made amethyst men die as ROUGH instead of BOULDER
+		fixed blind cave bear rear toes (they were front instead of rear)
+	creature_savage_tropical.txt
+		moved giant desert scorpion over to chitin templates
+		gave tigermen ears and ribcages
+	creature_standard.txt
+		strangler gets 3EYES instead of 2EYES:1EYE and gave them MALE/FEMALE castes
+		added nouns for eye modifiers for cyclops to fix description typos and got rid of their large iris modifier
+			because of some announces with noun/verb agreement there
+		removed humanoid head/ribcage positioning from grimelings
+	creature_subterranean.txt
+		fixed melting point on fire imp blood
+		gave cave swallow man wings in addition to arms
+		stuck tail on olm
+		removed MUNDANE from fire snake
+		made all the ant man castes grow up faster and made them live a little longer
+		made amphibian men grow up faster
+	inorganic_metal.txt
+		put bending values back in sterling silver
+	item_weapon.txt
+		fixed short sword and battle axe pommel attack contact area (1000 -> 100 like other weapons)
+	material_template_default.txt
+		added [ROTS] to STRUCTURAL_PLANT_TEMPLATE and LEAF_TEMPLATE
+	plant_standard.txt
+		fixed quarry bush LEAVES tile/color mix up
+	world_gen.txt
+		stopped doubling up CAVE_MIN_SIZE in the exporter and initial file
+
+******************************************************
+
+Auxiliary file changes for 0.31.14:
+	data/index
+
+	raws
+		new mineral tag for slade -- [UNDIGGABLE] until digging accounts for things properly
+		changed material properties for raw adamantine
+
+	New world gen parameters
+		[SITE_CAP:<number>]
+			Limits overall number of sites to this.
+			Caves and ruins are included in this number, so world gen civ spread stops cold once it is attained the way things currently go.
+
+		[MEGABEAST_CAP:<number>]
+			Attempts to place this many megabeast groups (also effectively capped by total cave number).
+			In vanilla DF, there are no megabeasts that actually occur in groups, but it is possible in mods.
+			Placing more beasts than caves will cause all caves to be filled by megabeasts.  This will leave nothing for races like kobolds.
+			Can be zero if you don't want any megabeasts.
+
+		[SEMIMEGABEAST_CAP:<number>]
+			Attempts to place this many semimegabeast groups (they get the last cave remnants).
+			Because they get the last available caves, setting this to maximum causes all remaining caves to be filled with civs unaffected.
+			Can be zero if you don't want any semimegabeasts.
+
+******************************************************
+
+Auxiliary file changes for 0.31.13:
+	data/index
+	raws
+		entity_default.txt -- START_GROUP NUMBER is gone
+		made horn silver use the stone template
+		moved all native metals off of metal template
+
+******************************************************
+
+Auxiliary file changes for 0.31.12:
+	data/index
+	raws
+		creature_standard.txt -- added an extra NONE to kobold rates
+
+******************************************************
+
+Auxiliary file changes for 0.31.11:
+	data/index
+	data/help -- a few typos in files here
+	raws
+		creature_large_ocean.txt -- removed duplicate cluster number on tuna
+		creature_large_temperate.txt -- buzzard given MUNDANE flag, corrected typo in deer description
+		creature_large_tropical.txt -- vulture given MUNDANE flag
+		creature_large_tundra.txt -- corrected hair name for musk ox (was skin)
+		creature_next_underground.txt -- gave giant earthworm larger size
+		creature_other.txt -- removed duplicate natural tag from a few entries
+		creature_small_mammals.txt -- removed duplicate natural tag from all entries
+		creature_subterranean.txt -- removed duplicate natural tag from a few entries
+
+******************************************************
+
+Auxiliary file changes for 0.31.10:
+	data/index
+	data/help/a_keys -- added the 'x' instructions
+
+******************************************************
+
+Auxiliary file changes for 0.31.09:
+	data/index
+	data/speech
+		several files shortened
+	interface.txt
+		new keys
+			[A_ACTION:X]
+			[A_ACTION_CREATE:C]
+			[A_ACTION_BUTCHER:B]
+	raws
+		various numbers changed for weapons, ammo, materials (esp. metals)
+		rock sharpening reaction in reaction_other
+	new announcement
+		ANNOUNCEMENT_ADV_REACTION_PRODUCTS
+
+******************************************************
+
+Auxiliary file changes for 0.31.07:
+	data/index
+	data/init/init.txt, SDL version
+		mode examples added
+	data/init/d_init.txt
+		[PILLAR_TILE:'O']
+	interface.txt, SDL version
+		new keys
+			[BIND:FPS_UP:REPEAT_SLOW]
+			[SYM:4:Equals]
+			[BIND:FPS_DOWN:REPEAT_SLOW]
+			[SYM:4:Minus]			
+
+******************************************************
+
+Auxiliary file changes for 0.31.06:
+	data/index
+	Non-legacy init.txt is set to 2D mode by default now
+	raw/objects/creature_annelids.txt
+		removed duplicate natural tag from worm
+	raw/objects/creature_domestic.txt
+		removed duplicate child tag from donkey
+		added trade capacity to horse
+	raw/objects/creature_insects.txt
+		removed duplicate color/tile tag from monarch butterfly
+	raw/objects/creature_large_tropical.txt
+		removed common domestic and pack animal from warthog
+	raw/objects/creature_small_ocean.txt
+		removed duplicate no sleep tags from oyster and mussel
+	raw/objects/creature_standard.txt
+		removed duplicate pet value tags from ice wolf, nightwing and werewolf
+		removed extra NECK from hydra body
+	raw/objects/inorganic_stone_layer.txt
+		removed duplicate obsidian melting point
+	raw/objects/language_words.txt
+		firey -> fiery
+	raw/objects/material_template_default.txt
+		updated many of the values so that for instance teeth aren't like skin in many ways
+
+******************************************************
+
+Auxiliary file changes for 0.31.05:
+	data/index
+	Non-legacy init.txt has new options:
+		[KEY_REPEAT_ACCEL_LIMIT:8]
+		[KEY_REPEAT_ACCEL_START:10]
+
+******************************************************
+
+Auxiliary file changes for 0.31.04:
+	data/index
+	init.txt has been broken up into init.txt, d_init.txt and colors.txt
+	For non-legacy versions, interface.txt has a different format and a few extra keys related to zoom and macros.
+
+******************************************************
+
+Auxiliary file changes for 0.31.03:
+	data/index
+
+New keys
+	[ARENA_CREATURE_UNDEAD:U]
+
+Creature raws
+	Fixed some broken apostrophes (mountain gnome, ocean sunfish, hungry head, harpy).
+	Moved [STANCE] to hands for ARMS_STANCE body parts.
+	Remove eye appearance modifiers from minotaurs.
+
+Entity raws
+	Removed the SOLDIER_COLOR] thing -- it corresponded to a note to myself to handle soldier-like entity position colors, but it was confusing people, so it's just in the notes themselves now.
+
+******************************************************
+
+Auxiliary file changes for 0.31.02:
+	data/index
+	readme.txt (added to and alphabetized 2010 tester credits)
+
+Creature raws
+	corrected gorlak display color
+	made blind cave bears eyeless and gave them extravision
+	corrected first line of body_rcp.txt
+	fixed broken eyelid relationships
+	fixed broken child names for goat/unicorn/cave swallow
+	swapped giant caste names
+	fixed giant cave spider bite (was blunt)
+	fixed alligator eye text
+	made soap bars instead of globs
+	fixed horn silver environment
+	added cookability/vermin eating to meat material templates
+	added cookability/vermin eating to plant leaf/seed materials
+
+******************************************************
+
+Auxiliary file changes for 0.31.01:
+	Most everything -- I can't compile a list of all of the changes here, but I've included more help notes in the raws themselves.
+
+******************************************************
+
+Auxiliary file changes for 0.28.181.40d:
+	data/index
+	data/init/init.txt (just the wiki date)
+
+******************************************************
+
+Auxiliary file changes for 0.28.181.40c:
+	data/index
+	data/init/init.txt
+
+Changed init options
+	[PARTIAL_PRINT:NO:2]
+
+******************************************************
+
+Auxiliary file changes for 0.28.181.40b:
+	data/index
+	data/init/init.txt
+
+New init options
+	[FULLGRID:80:25]
+	[PARTIAL_PRINT:NO]
+
+******************************************************
+
+Auxiliary file changes for 0.28.181.40a:
+	data/index
+	data/init/init.txt
+	data/init/interface.txt
+
+New keys
+	[SETUPGAME_SAVE_PROFILE:S]
+	[SETUPGAME_SAVE_PROFILE_ABORT:SHIFT+SPACE]
+	[SETUPGAME_SAVE_PROFILE_GO:ENTER]
+	[SETUPGAME_VIEW_PROFILE_PROBLEMS:P]
+	[ORDERS_AUTOFORBID:SHIFT+F]
+	[ORDERS_FORBID_PROJECTILE:P]
+	[ORDERS_FORBID_YOUR_CORPSE:C]
+	[ORDERS_FORBID_YOUR_ITEMS:I]
+	[ORDERS_FORBID_OTHER_CORPSE:O]
+	[ORDERS_FORBID_OTHER_ITEMS:T]
+	[SETUP_NOTES:N]
+	[SETUP_NOTES_TAKE_NOTES:N]
+	[SETUP_NOTES_DELETE_NOTE:D]
+	[SETUP_NOTES_CHANGE_SYMBOL_SELECTION:C]
+	[SETUP_NOTES_ADOPT_SYMBOL:S]
+
+New init options
+	[STORE_DIST_ITEM_DECREASE:1000]
+	[STORE_DIST_SEED_COMBINE:1000]
+	[STORE_DIST_BUCKET_COMBINE:1000]
+	[STORE_DIST_BARREL_COMBINE:1000]
+	[STORE_DIST_BIN_COMBINE:1000]
+
+******************************************************
+
+Auxiliary file changes for 0.28.181.39d:
+
+New keys
+	[D_NOTE:SHIFT+N]
+	[D_NOTE_PLACE:P]
+	[D_NOTE_DELETE:D]
+	[D_NOTE_ENTER:N]
+	[D_NOTE_ADOPT_SYMBOL:S]
+	[D_NOTE_CHANGE_SELECTION:C]
+	[WORLD_PARAM_REJECT_CONTINUE:C]
+	[WORLD_PARAM_REJECT_ABORT:A]
+	[WORLD_PARAM_REJECT_ALLOW_THIS:T]
+	[WORLD_PARAM_REJECT_ALLOW_ALL:P]
+	[WORLD_GEN_CONTINUE:C]
+	[WORLD_GEN_USE:U]
+	[WORLD_GEN_ABORT:A]
+	[SETUP_FIND:F]
+
+New init options
+	[SHOW_EMBARK_RIVER:FINDER]
+	[SHOW_EMBARK_POOL:FINDER]
+	[SHOW_EMBARK_M_PIPE:FINDER]
+	[SHOW_EMBARK_M_POOL:FINDER]
+	[SHOW_EMBARK_CHASM:FINDER]
+	[SHOW_EMBARK_PIT:FINDER]
+	[SHOW_EMBARK_OTHER:FINDER]
+	[SHOW_EMBARK_TUNNEL:FINDER]
+
+New world gen param
+	[CAVE_MIN_SIZE:<number>]
+	[SHOW_EMBARK_RIVER:<0=NO,1=FINDER,2=ALWAYS>]
+	[SHOW_EMBARK_POOL:<0=NO,1=FINDER,2=ALWAYS>]
+	[SHOW_EMBARK_M_POOL:<0=NO,1=FINDER,2=ALWAYS>]
+	[SHOW_EMBARK_M_PIPE:<0=NO,1=FINDER,2=ALWAYS>]
+	[SHOW_EMBARK_CHASM:<0=NO,1=FINDER,2=ALWAYS>]
+	[SHOW_EMBARK_PIT:<0=NO,1=FINDER,2=ALWAYS>]
+	[SHOW_EMBARK_OTHER:<0=NO,1=FINDER,2=ALWAYS>]
+	[SHOW_EMBARK_TUNNEL:<0=NO,1=FINDER,2=ALWAYS>]
+
+******************************************************
+
+Auxiliary file changes for 0.28.181.39a:
+
+New keys
+	[LEGENDS_TOGGLE_CIVSITE:C]
+	[LEGENDS_STRING_FILTER:F]
+	[WORLD_PARAM_COPY:C]
+	[WORLD_PARAM_SET:E]
+	[WORLD_PARAM_INCREASE:6]
+	[WORLD_PARAM_DECREASE:4]
+	[WORLD_PARAM_ENTER_VALUE:ENTER]
+	[WORLD_PARAM_NULLIFY:N]
+	[WORLD_PARAM_PRESET:P]
+	[SELECT_ALL:SHIFT+ENTER]
+	[DESELECT_ALL:SHIFT+Z]
+	[STORES_HIDE:H]
+	[ITEM_HIDE:H]
+	[D_BITEM_DUMP:H]
+	[D_LOOK_HIDE:H]
+	[DESIGNATE_BITEM:B]
+	[DESIGNATE_MELT:M]
+	[DESIGNATE_NO_MELT:SHIFT+M]
+	[DESIGNATE_DUMP:D]
+	[DESIGNATE_NO_DUMP:SHIFT+D]
+	[DESIGNATE_HIDE:H]
+	[DESIGNATE_NO_HIDE:SHIFT+H]
+	[UNITVIEW_KILLS:K]
+	[A_STATUS_KILLS:K]
+
+Changed keys
+	[DESELECT:Z]
+
+Creature raws
+	[CANNOT_UNDEAD]
+	[CURIOUSBEAST] -> [CURIOUSBEAST_EATER]
+	[SLOW_LEARNER]
+	got rid of [RECKLESS] because it wasn't used
+	[BUTCHERABLE_NONSTANDARD] is gone, replaced by civ ethics
+	[MUNDANE]
+		Marks if the creature is an actual real-life creature.  Only used for age-names at present.
+	added/removed [NATURAL] from a few creatures
+
+Entity raws
+	messed with caps and lowered all biome numbers
+	[WANDERER]
+	[BEAST_HUNTER]
+	[SCOUT]
+	[PERMITTED_JOB:<x>]
+	[WORLD_CONSTRUCTION:<type>]
+	got rid of entity grouping
+	[ETHIC:<action>:<response>]
+	[WILL_ACCEPT_TRIBUTE]
+	got rid of respect animals/trees
+
+"TRACKING" is acceptable for skill token now
+
+Lots of new params for data/init/world_gen.txt
+
+New init options
+	[SHOW_ALL_HISTORY_IN_DWARF_MODE:NO]
+
+New graphics tokens:
+	SLAVE, PRISONER
+
+******************************************************
+
+Auxiliary file changes for 0.27.176.38b:
+
+Entity raws
+	removed *_SETTLEMENTS tags (they haven't done anything since the biome tags went in)
+	in addition to COMMON, UNCOMMON and RARE, armor/clothing types can also have FORCED, which forces the item to appear in all realizations of the entity
+
+New keys
+	[LEAVESCREEN_ALL:SHIFT+SPACE]
+	[MILITARY_ZOOM:C]
+	[STORES_FORBID:F]
+	[WORLD_PARAM_DIM_X_UP:I]
+	[WORLD_PARAM_DIM_X_DOWN:U]
+	[WORLD_PARAM_DIM_Y_UP:P]
+	[WORLD_PARAM_DIM_Y_DOWN:O]
+
+New init options
+	[AUTOSAVE_PAUSE:NO]
+	[EMBARK_WARNING_ALWAYS:NO]
+
+******************************************************
+
+Auxiliary file changes for 0.27.176.38a:
+
+Plant raws
+	[DROWN_LEVEL:<number from 0 to 7>]
+		The fluid level at which the plant dies in any liquid.  Temperature effects from lava are separate.
+		0 means that fluid level does not affect the plant.  Default is 4.
+
+Wood raws
+	[TREE_DROWN_LEVEL:<number from 0 to 7>]
+	[SAPLING_DROWN_LEVEL:<number from 0 to 7>]
+		As above for plants (irrelevant for full-grown trees at this point).
+		Default is 4 for saplings and 7 for trees.
+
+New keys
+	[UNITVIEW_RELATIONSHIPS:R]
+	[UNITVIEW_RELATIONSHIPS_ZOOM:Z]
+	[UNITVIEW_RELATIONSHIPS_VIEW:V]
+	[BUILDINGLIST_ZOOM_T:T]
+	[BUILDINGLIST_ZOOM_Q:Q]
+
+New init options
+	[ZERO_RENT:NO]
+	[BABY_CHILD_CAP:100:1000]
+
+******************************************************
+
+Auxiliary file changes for 0.27.173.38a:
+
+New entity tags
+	[USE_EVIL_WOOD]
+	[USE_GOOD_WOOD]
+	[USE_EVIL_PLANTS]
+	[USE_GOOD_PLANTS]
+	[USE_GOOD_ANIMALS]
+	[USE_ANY_PET_RACE]
+	[USE_MISC_PROCESSED_WOOD_PRODUCTS]
+	[IMPROVED_BOWS]
+	[RESPECT_ANIMALS]
+	[RESPECT_TREES]
+	[LOW_SKILL]
+	[INVADERS_IGNORE_NEUTRALS]
+	[AT_PEACE_WITH_WILDLIFE]
+	[EQUIPMENT_IMPROVEMENTS]
+	[ABUSE_BODIES]
+	[SPHERE_ALIGNMENT:<sphere>:<amount>]
+		<amount> is a multiplicative modifier that runs from 0 to 25600 with 256 being the neutral value
+	[ART_FACET_MODIFIER:<facet>:<amount>]
+		<facet> is one of: OWN_RACE, FANCIFUL, EVIL, GOOD
+		<amount> as above
+	[ART_IMAGE_ELEMENT_MODIFIER:<art image element>:<amount>]
+		<art image element> is one of: CREATURE, PLANT, TREE, SHAPE, ITEM
+		<amount> as above
+	[ITEM_IMPROVEMENT_MODIFIER:<item improvement>:<amount>]
+		<item improvement> is one of:
+			ART_IMAGE
+			COVERED
+			RINGS_HANGING
+			BANDS
+			SPIKES
+			ITEMSPECIFIC
+			THREAD
+			CLOTH
+			SEWN_IMAGE
+		<amount> as above
+	[ADVENTURE_TIER:<placement>]
+		<placement> can run from 0 to 1000.  0 (the default) means the entity's sites won't be listed for adventure mode character creation.
+		Those entities with positive numbers are listed starting at tier 1.  Within a tier, they are ordered by race index.
+	[FRIENDLY_COLOR:<front>:<back>:<brightness>]
+	[DEFAULT_SITE_TYPE:<site>]
+		Used during world gen.
+		<site> is one of:
+			DARK_FORTRESS
+			CAVE
+			CAVE_DETAILED
+			TREE_CITY
+			CITY
+			RUIN
+	[LIKES_SITE:<site>]
+		Used during hist fig sorting after play.
+	[TOLERATES_SITE:<site>]
+		Used by migrants.
+	[LEADER_TYPE:<unit>]
+	[SITE_LEADER_TYPE:<unit>]
+	[CAN_HAVE_MILITARY_LEADER]
+	[CAN_HAVE_MILITARY_SITE_LEADER]
+	[BIOME_SUPPORT:<biome>:<amount>]
+		<amount> ranges from 0 to 10.
+		<biome> can be any of the biome tags used for creatures, including the general groups.  Don't put "BIOME_" in front.
+	[START_BIOME:<biome>]
+	[DIPLOMAT]
+	[MERCHANT_NOBILITY]
+	[TREE_CAP_DIPLOMACY]
+	[DIPLOMAT_BODYGUARDS]
+	[MERCHANT_BODYGUARDS]
+	[ACTIVE_SEASON:<season>]
+	[PROGRESS_TRIGGER_POPULATION:<number>]
+	[PROGRESS_TRIGGER_PRODUCTION:<number>]
+	[PROGRESS_TRIGGER_TRADE:<number>]
+		<number> is from 0 to 5.
+	[ENTITY_GROUPING:<group>]
+		<group> can be one of: FRIENDLY (default), EVIL, NUISANCE
+		Until things become more complicated, this tracks who they side with in fights and during dwarf mode diplomacy/trade.
+	[ITEM_THIEF]
+	[SKULKING]
+		This makes the severity of attacks depend on the extent of item/baby thievery rather than the passage of time.
+	[START_GROUP_NUMBER:<number>]
+		How many mated pairs (or single creatures if forced gender) are created at the beginning of world generation, counting any nobles/diplomats.
+	[MAX_SITE_POP_NUMBER:<number>]
+		How many members the entity can have during world generation in a single site.
+	[MAX_POP_NUMBER:<number]
+		How many members the entity can have during world generation total.
+	[RELIGION:<type>]
+		<type> can be PANTHEON, ANY_APPROPRIATE_POWER or REGIONAL_FORCE.
+		You can have more than one.  It will choose one at random for each entity created using this template.
+	[RELIGION_SPHERE:<sphere>]
+		You can have more than one.  In the case of a pantheon, gods will be created with the goal of covering all of the spheres either a directly or with an umbrella sphere.  In the case of appropriate powers, the spheres are checked against the sphere's of the candidate power's race.  [USE_GOOD_ANIMALS], [USE_GOOD_PLANTS] match with [GOOD] and similarly for [EVIL].  In this case, a sphere match is not required.
+	[MAYOR]
+	[MAX_STARTING_CIV_NUMBER:<number>]
+		How many of this entity it tries to place at the beginning of world generation, cycling through the available races.
+		It will currently place the total of these numbers or 50 civilizations, whichever is lower.
+
+New creature tags
+	[POWER]
+		Lets the creature be picked as a world generation civ leader by entities with [ANY_APPROPRIATE_POWER], provided the race is also immortal and has either matching good/evil tags or matching sphere tags.
+
+New sphere list (old ones included here, only old ones have endgame effects):
+	AGRICULTURE
+	ANIMALS
+	ART
+	BALANCE
+	BEAUTY
+	BIRTH
+	BLIGHT
+	BOUNDARIES
+	CAVERNS
+	CHAOS
+	CHARITY
+	CHILDREN
+	COASTS
+	CONSOLATION
+	COURAGE
+	CRAFTS
+	CREATION
+	DANCE
+	DARKNESS
+	DAWN
+	DAY
+	DEATH
+	DEFORMITY
+	DEPRAVITY
+	DISCIPLINE
+	DISEASE
+	DREAMS
+	DUSK
+	DUTY
+	EARTH
+	FAMILY
+	FAME
+	FATE
+	FERTILITY
+	FESTIVALS
+	FIRE
+	FISH
+	FISHING
+	FOOD
+	FORGIVENESS
+	FORTRESSES
+	FREEDOM
+	GAMBLING
+	GAMES
+	GENEROSITY
+	HAPPINESS
+	HEALING
+	HOSPITALITY
+	HUNTING
+	INSPIRATION
+	JEALOUSY
+	JEWELS
+	JUSTICE
+	LABOR
+	LAKES
+	LAWS
+	LIES
+	LIGHT
+	LIGHTNING
+	LONGEVITY
+	LOVE
+	LOYALTY
+	LUCK
+	LUST
+	MARRIAGE
+	MERCY
+	METALS
+	MINERALS
+	MISERY
+	MIST
+	MOON
+	MOUNTAINS
+	MUCK
+	MURDER
+	MUSIC
+	NATURE
+	NIGHT
+	NIGHTMARES
+	OATHS
+	OCEANS
+	ORDER
+	PAINTING
+	PEACE
+	PERSUASION
+	PLANTS
+	POETRY
+	PREGNANCY
+	RAIN
+	RAINBOWS
+	REBIRTH
+	REVELRY
+	REVENGE
+	RIVERS
+	RULERSHIP
+	RUMORS
+	SACRIFICE
+	SALT
+	SCHOLARSHIP
+	SEASONS
+	SILENCE
+	SKY
+	SONG
+	SPEECH
+	STARS
+	STORMS
+	STRENGTH
+	SUICIDE
+	SUN
+	THEFT
+	THRALLDOM
+	THUNDER
+	TORTURE
+	TRADE
+	TRAVELERS
+	TREACHERY
+	TREES
+	TRICKERY
+	TRUTH
+	TWILIGHT
+	VALOR
+	VICTORY
+	VOLCANOS
+	WAR
+	WATER
+	WEALTH
+	WEATHER
+	WIND
+	WISDOM
+	WRITING
+	YOUTH
+
+New graphics tokens
+	HIGH_PRIEST
+	PRIEST
+	SHOPKEEPER
+
+
+******************************************************
+
+Auxiliary file changes for 0.27.169.33g:
+
+New keys
+	[ASSIGNTRADE_STRING:S]
+	[ASSIGNTRADE_EXCLUDE_PROHIBITED:M]
+	[ASSIGNTRADE_PENDING:P]
+	[ASSIGNTRADE_SORT:D]
+
+New init options
+	[PAUSE_ON_LOAD:NO]
+	[EMBARK_RECTANGLE:6:6]
+
+******************************************************
+
+Auxiliary file changes for 0.27.169.33f:
+
+New graphics tokens
+	"MAYOR"
+	"LEADER"
+	"CAPTAIN_OF_THE_GUARD"
+	"SHERIFF"
+	"MANAGER"
+	"BOOKKEEPER"
+	"BROKER"
+
+In the absence of one of these, it will use their standard creature/profession tile, but you should include all seven of these for a given creature if you want multiple appointments to display properly.  The picture multiple appointments is selected in the order given above, but if a tile doesn't exist for the first appointment, it will jump down to the regular profession tile.
+
+******************************************************
+
+Auxiliary file changes for 0.27.169.33e:
+
+Body raws
+	Allowed use of [SKELETON] to distinguish things like the spine that shouldn't be removed from skeletons.  Temporary fix.
+
+******************************************************
+
+Auxiliary file changes for 0.27.169.33c:
+
+New init options
+	[PRIORITY:NORMAL]
+
+******************************************************
+
+Auxiliary file changes for 0.27.169.33a:
+
+New keys
+	[HOTKEY_CARPENTER_BLOCKS:O]
+
+******************************************************
+
+Auxiliary file changes for 0.27.169.32a:
+
+New init options
+	[VOLUME:255]
+	[TOPMOST:NO]
+	[SHOW_IMP_QUALITY:YES]
+	[SHOW_FLOW_AMOUNTS:NO]
+	[ECONOMY:YES]
+	[INVADERS:YES]
+	[CAVEINS:YES]
+	[ARTIFACTS:YES]
+	[PATH_COST:1:2:5:25]
+	[COFFIN_NO_PETS_DEFAULT:NO]
+	[RECENTER_INTERFACE_SHUTDOWN_MS:0]
+	[SKY:178:3:0:0]
+	[SKY:250:0:0:1]
+	[VSYNC:OFF]
+	[G_FPS_CAP:50]
+	[AUTOSAVE:NONE]
+	[AUTOBACKUP:NO]
+	[INITIAL_SAVE:NO]
+	[ADVENTURER_ALWAYS_CENTER:YES]
+
+New keys
+	[DESELECT:SHIFT+ENTER]
+	[OPTION_EXPORT:E]
+	[SETUPGAME_CUSTOMIZE_UNIT:C]
+	[LEGENDS_EXPORT_DETAILED_MAP:D]
+	[WORLD_PARAM_TITLE:T]
+	[WORLD_PARAM_ADD:A]
+	[WORLD_PARAM_DELETE:D]
+	[WORLD_PARAM_NAME_RANDOM:SHIFT+N]
+	[WORLD_PARAM_NAME_ENTER:N]
+	[WORLD_PARAM_SEED_RANDOM:SHIFT+S]
+	[WORLD_PARAM_SEED_ENTER:S]
+	[WORLD_PARAM_LOAD:F1]
+	[WORLD_PARAM_SAVE:F6]
+	[DESIGNATE_STAIR_UP:U]
+	[DESIGNATE_STAIR_DOWN:J]
+	[DESIGNATE_STAIR_UPDOWN:I]
+	[DESIGNATE_TRAFFIC:O]
+	[DESIGNATE_TRAFFIC_HIGH:H]
+	[DESIGNATE_TRAFFIC_NORMAL:N]
+	[DESIGNATE_TRAFFIC_LOW:L]
+	[DESIGNATE_TRAFFIC_RESTRICTED:R]
+	[DESIGNATE_TRAFFIC_INCREASE_WEIGHT:W]
+	[DESIGNATE_TRAFFIC_DECREASE_WEIGHT:Q]
+	[DESIGNATE_RAMP:R]
+	[DESIGNATE_CHANNEL:H]
+	[D_DEPOT:SHIFT+D]
+	[D_HOT_KEYS:H]
+	[D_HOTKEY1:F1]
+	[D_HOTKEY2:F2]
+	[D_HOTKEY3:F3]
+	[D_HOTKEY4:F4]
+	[D_HOTKEY5:F5]
+	[D_HOTKEY6:F6]
+	[D_HOTKEY7:F7]
+	[D_HOTKEY8:F8]
+	[D_HOTKEY9:SHIFT+F1]
+	[D_HOTKEY10:SHIFT+F2]
+	[D_HOTKEY11:SHIFT+F3]
+	[D_HOTKEY12:SHIFT+F4]
+	[D_HOTKEY13:SHIFT+F5]
+	[D_HOTKEY14:SHIFT+F6]
+	[D_HOTKEY15:SHIFT+F7]
+	[D_HOTKEY16:SHIFT+F8]
+	[BUILDING_ADVANCE_STAGE:D]
+	[BUILDING_EXPAND_CONTRACT:X]
+	[BUILDING_TRIGGER_ENABLE_WATER:W]
+	[BUILDING_TRIGGER_MIN_WATER_UP:S]
+	[BUILDING_TRIGGER_MIN_WATER_DOWN:A]
+	[BUILDING_TRIGGER_MAX_WATER_UP:X]
+	[BUILDING_TRIGGER_MAX_WATER_DOWN:Z]
+	[BUILDING_TRIGGER_ENABLE_MAGMA:M]
+	[BUILDING_TRIGGER_MIN_MAGMA_UP:I]
+	[BUILDING_TRIGGER_MIN_MAGMA_DOWN:U]
+	[BUILDING_TRIGGER_MAX_MAGMA_UP:K]
+	[BUILDING_TRIGGER_MAX_MAGMA_DOWN:J]
+	[BUILDING_TRIGGER_ENABLE_CREATURE:C]
+	[BUILDING_TRIGGER_ENABLE_LOCALS:L]
+	[BUILDING_TRIGGER_MIN_SIZE_UP:R]
+	[BUILDING_TRIGGER_MIN_SIZE_DOWN:E]
+	[BUILDING_TRIGGER_MAX_SIZE_UP:F]
+	[BUILDING_TRIGGER_MAX_SIZE_DOWN:D]
+	[BUILDING_TRIGGER_RESETS:O]
+	[HOTKEY_BUILDING_TRADEDEPOT:SHIFT+D]
+	[HOTKEY_BUILDING_TRAP:SHIFT+T]
+	[HOTKEY_BUILDING_SUPPORT:SHIFT+S]
+	[HOTKEY_BUILDING_ARCHERYTARGET:SHIFT+A]
+	[HOTKEY_BUILDING_MACHINE:SHIFT+M]
+	[HOTKEY_BUILDING_MACHINE_SCREW_PUMP:S]
+	[HOTKEY_BUILDING_MACHINE_WATER_WHEEL:W]
+	[HOTKEY_BUILDING_MACHINE_WINDMILL:M]
+	[HOTKEY_BUILDING_MACHINE_GEAR_ASSEMBLY:G]
+	[HOTKEY_BUILDING_MACHINE_AXLE_HORIZONTAL:H]
+	[HOTKEY_BUILDING_MACHINE_AXLE_VERTICAL:V]
+	[HOTKEY_BUILDING_ROAD_PAVED:O]
+	[HOTKEY_BUILDING_ROAD_DIRT:SHIFT+O]
+	[HOTKEY_BUILDING_HATCH:SHIFT+H]
+	[HOTKEY_BUILDING_GRATE_WALL:SHIFT+W]
+	[HOTKEY_BUILDING_GRATE_FLOOR:SHIFT+G]
+	[HOTKEY_BUILDING_BARS_VERTICAL:SHIFT+B]
+	[HOTKEY_BUILDING_BARS_FLOOR:ALT+B]
+	[HOTKEY_BUILDING_CONSTRUCTION:SHIFT+C]
+	[HOTKEY_BUILDING_CONSTRUCTION_WALL:W]
+	[HOTKEY_BUILDING_CONSTRUCTION_FLOOR:F]
+	[HOTKEY_BUILDING_CONSTRUCTION_RAMP:R]
+	[HOTKEY_BUILDING_CONSTRUCTION_STAIR_UP:U]
+	[HOTKEY_BUILDING_CONSTRUCTION_STAIR_DOWN:D]
+	[HOTKEY_BUILDING_CONSTRUCTION_STAIR_UPDOWN:X]
+	[HOTKEY_BUILDING_CONSTRUCTION_FORTIFICATION:SHIFT+F]
+	[HOTKEY_BUILDING_TRAP_SPIKE:SHIFT+S]
+	[HOTKEY_GLASS_HATCH_COVER:SHIFT+H]
+	[HOTKEY_GLASS_GRATE:SHIFT+G]
+	[HOTKEY_CARPENTER_HATCH_COVER:SHIFT+H]
+	[HOTKEY_CARPENTER_GRATE:SHIFT+G]
+	[HOTKEY_MASON_HATCH_COVER:SHIFT+H]
+	[HOTKEY_MASON_GRATE:SHIFT+G]
+	[HOTKEY_TRAP_HATCH:H]
+	[HOTKEY_TRAP_GRATE_WALL:W]
+	[HOTKEY_TRAP_GRATE_FLOOR:G]
+	[HOTKEY_TRAP_BARS_VERTICAL:SHIFT+B]
+	[HOTKEY_TRAP_BARS_FLOOR:ALT+B]
+	[HOTKEY_TRAP_SPIKE:SHIFT+S]
+	[HOTKEY_TRAP_GEAR_ASSEMBLY:A]
+	[SETUP_NAME_FORT:SHIFT+F]
+	[SETUP_NAME_GROUP:SHIFT+G]
+	[SETUP_RECLAIM:SHIFT+R]
+	[SETUP_LOCAL_Y_UP:SHIFT+U]
+	[SETUP_LOCAL_Y_DOWN:SHIFT+M]
+	[SETUP_LOCAL_X_UP:SHIFT+K]
+	[SETUP_LOCAL_X_DOWN:SHIFT+H]
+	[SETUP_LOCAL_Y_MUP:U]
+	[SETUP_LOCAL_Y_MDOWN:M]
+	[SETUP_LOCAL_X_MUP:K]
+	[SETUP_LOCAL_X_MDOWN:H]
+	[SETUP_BIOME_1:F1]
+	[SETUP_BIOME_2:F2]
+	[SETUP_BIOME_3:F3]
+	[SETUP_BIOME_4:F4]
+	[SETUP_BIOME_5:F5]
+	[SETUP_BIOME_6:F6]
+	[SETUP_BIOME_7:F7]
+	[SETUP_BIOME_8:F8]
+	[SETUP_BIOME_9:F9]
+	[CHOOSE_NAME_RANDOM:R]
+	[CHOOSE_NAME_CLEAR:C]
+	[CHOOSE_NAME_TYPE:T]
+	[D_CIVZONE:I]
+	[CIVZONE_REMOVE:X]
+	[CIVZONE_WATER_SOURCE:W]
+	[CIVZONE_FISH:F]
+	[CIVZONE_DUMP:G]
+	[CIVZONE_DUMP:P]
+	[CIVZONE_SAND_COLLECT:S]
+	[CIVZONE_MEETING:M]
+	[CIVZONE_ACTIVE:A]
+	[CIVZONE_POND_OPTIONS:SHIFT+P]
+	[CIVZONE_POND_WATER:F]
+	[D_BITEM_FORBID:F]
+	[D_BITEM_DUMP:D]
+	[D_BITEM_MELT:M]
+	[D_LOOK_FORBID:F]
+	[D_LOOK_DUMP:D]
+	[D_LOOK_MELT:M]
+	[DESIGNATE_SMOOTH:S]
+	[DESIGNATE_ENGRAVE:E]
+	Various STRING keys
+	[A_MOVE_N:8]
+	[A_MOVE_S:2]
+	[A_MOVE_E:6]
+	[A_MOVE_W:4]
+	[A_MOVE_NW:7]
+	[A_MOVE_NE:9]
+	[A_MOVE_SW:1]
+	[A_MOVE_SE:3]
+	[A_MOVE_WAIT:5]
+	[A_CARE_MOVE_N:ALT+8]
+	[A_CARE_MOVE_S:ALT+2]
+	[A_CARE_MOVE_E:ALT+6]
+	[A_CARE_MOVE_W:ALT+4]
+	[A_CARE_MOVE_NW:ALT+7]
+	[A_CARE_MOVE_NE:ALT+9]
+	[A_CARE_MOVE_SW:ALT+1]
+	[A_CARE_MOVE_SE:ALT+3]
+	[A_CARE_MOVE_UPDOWN:ALT+5]
+	[A_MOVE_N_UP:SHIFT+8]
+	[A_MOVE_S_UP:SHIFT+2]
+	[A_MOVE_E_UP:SHIFT+6]
+	[A_MOVE_W_UP:SHIFT+4]
+	[A_MOVE_NW_UP:SHIFT+7]
+	[A_MOVE_NE_UP:SHIFT+9]
+	[A_MOVE_SW_UP:SHIFT+1]
+	[A_MOVE_SE_UP:SHIFT+3]
+	[A_MOVE_UP:SHIFT+5]
+	[A_MOVE_N_DOWN:CTRL+8]
+	[A_MOVE_S_DOWN:CTRL+2]
+	[A_MOVE_E_DOWN:CTRL+6]
+	[A_MOVE_W_DOWN:CTRL+4]
+	[A_MOVE_NW_DOWN:CTRL+7]
+	[A_MOVE_NE_DOWN:CTRL+9]
+	[A_MOVE_SW_DOWN:CTRL+1]
+	[A_MOVE_SE_DOWN:CTRL+3]
+	[A_MOVE_DOWN:CTRL+5]
+	[A_MOVE_UP_AUX:SHIFT+COMMA]
+	[A_MOVE_DOWN_AUX:SHIFT+PERIOD]
+	[A_MOVEMENT:M]
+	[A_MOVEMENT_SWIM:S]
+	[CURSOR_UP_Z_AUX:SHIFT+5]
+	[CURSOR_DOWN_Z_AUX:CTRL+5]
+	[NOBLELIST_REPLACE:R]
+	[NOBLELIST_SETTINGS:S]
+	[NOBLELIST_VIEW_CANDIDATE:V]
+	[BUILDJOB_DEPOT_REQUEST_TRADER:R]
+	[BUILDJOB_DEPOT_BROKER_ONLY:B]
+	[BUILDJOB_FARM_WINTER:D]
+	[A_CUST_NAME:C]
+	[A_RANDOM_NAME:R]
+	[A_CHANGE_GENDER:G]
+
+Changed keys
+	[DESIGNATE_TOGGLE_ENGRAVING:V]
+	all CHASM keys changed to DUMP
+
+Removed keys
+	All STRING keys except BACKSPACE
+	old adamantine keys
+	[BUILDING_PLACE:P]
+	[HOTKEY_BUILDING_ROAD:O]
+	[HOTKEY_BUILDING_AQUEDUCT:Q]
+	[HOTKEY_BUILDING_CHANNEL:U]
+	[HOTKEY_MASON_MAT_GRAY:G]
+	[HOTKEY_MASON_MAT_LIGHT:O]
+	[HOTKEY_MASON_MAT_DARK:M]
+	[HOTKEY_CRAFTS_MAT_STONE_L:M]
+	[HOTKEY_CRAFTS_MAT_STONE_D:O]
+	[HOTKEY_SMELT_COPPER:C]
+	[HOTKEY_SMELT_TIN:T]
+	[HOTKEY_SMELT_BRONZE:Z]
+	[HOTKEY_SMELT_BRASS:R]
+	[HOTKEY_SMELT_IRON:I]
+	[HOTKEY_SMELT_PIGIRON:P]
+	[HOTKEY_SMELT_STEEL:E]
+	[HOTKEY_SMELT_SILVER:S]
+	[HOTKEY_SMELT_ELECTRUM:M]
+	[HOTKEY_SMELT_GOLD:G]
+	[HOTKEY_SMELT_PLATINUM:A]
+	[HOTKEY_SMELT_COAL:Q]
+	[HOTKEY_TRAP_TRIGGERTEMP:T]
+	[DESIGNATE_DETAIL:S]
+	[D_GATE:G]
+	[D_SET_GATE:SHIFT+G]
+	[A_SAMESQUARE:5]
+	[BUILDJOB_CHANNEL_ASSIGN_OCC:A]
+	[BUILDJOB_CHANNEL_WATER:W]
+
+Material tokens
+	[BLOOD_SPECIFIC:<creature token>]
+	[BLOOD_NONSPECIFIC:<any combination of RGCBMWY0, must have at least one>]
+	[PLANT_ALCOHOL]
+
+Creature raws
+	Allowed any matgloss for itemgloss drops, any standard racegloss permitted, body mat can use matgloss WOOD,STONE,PLANT,GEM, for stone can use USE_LAVA_STONE
+	Things like [LARGE_CHASM] are gone, all replaced by [LARGE_ROAMING] + biome, some vermin types condensed/added
+	Got rid of [ADD_VERSION]
+	[SESSILE_LAND] -> [IMMOBILE_LAND]
+
+Wood raws
+	Now uses frequency
+	[TILE:<symbol>]
+	[COLOR:<front>:<back>:<brightness>]
+	[DEAD_TILE:<symbol>]
+	[DEAD_COLOR:<front>:<back>:<brightness>]
+	[SAPLING_TILE:<symbol>]
+	[SAPLING_COLOR:<front>:<back>:<brightness>]
+	[DEAD_SAPLING_TILE:<symbol>]
+	[DEAD_SAPLING_COLOR:<front>:<back>:<brightness>]
+	
+Plant raws
+	[DEAD_TILE:<symbol>]
+	[DEAD_COLOR:<front>:<back>:<brightness>]
+	[SHRUB_TILE:<symbol>]
+	[SHRUB_COLOR:<front>:<back>:<brightness>]
+	[DEAD_SHRUB_TILE:<symbol>]
+	[DEAD_SHRUB_COLOR:<front>:<back>:<brightness>]
+
+Stone raws
+	got rid of [RIVER], [LIGHT], [DARK]
+	[VALUE]
+	Various layering information
+	Got rid of gem subtypes, folded gems into stone
+	
+Added metal and reaction raws
+
+Trap component raws
+	[IS_SCREW]
+	[WOOD]
+	[METAL]
+
+Misc. Raws	
+	[BIOME_ANY_WETLAND]
+	New biomes for lakes/river/pools/ocean
+	Added density values
+	
+******************************************************
+
+Auxiliary file changes for 0.23.125.23a:
+
+New init options
+	[POPULATION_CAP:200]
+	[FPS_CAP:100]
+
+New keys
+	[BUILDJOB_COFFIN_CIV:C]
+	[BUILDJOB_COFFIN_PET:P]
+	[UNITVIEW_SLAUGHTER:S]
+
+******************************************************
+
+Auxiliary file changes for 0.22.123.23a:
+
+New keys
+	[ORDERS_WORKSHOP:SHIFT+W]
+	[ORDERS_COLLECT_WEB:W]
+	[ORDERS_SLAUGHTER:S]
+	[ORDERS_BUTCHER:B]
+	[ORDERS_TAN:T]
+
+Weapon raws
+	[STICK_CHANCE:0] this modifies the stick-in chance from the default for the damage type
+
+Creature raws
+	[SPECNAME:<type>:<sing>:<plural>:<adj>] the only terms it takes for the type entry are MALE and FEMALE
+	example: [SPECNAME:MALE:bull:bulls:bull]
+
+******************************************************
+
+Auxiliary file changes for 0.22.121.23b:
+
+New init options
+	[TEMPERATURE:YES]
+	[WEATHER:YES]
+
+Creature raws
+	[ALCOHOL_DEPENDENT] for dwarves
+
+******************************************************
+
+Auxiliary file changes for 0.22.120.23b:
+
+New keys
+[CURSOR_UP_FAST:SHIFT+8]
+[CURSOR_DOWN_FAST:SHIFT+2]
+[CURSOR_LEFT_FAST:SHIFT+4]
+[CURSOR_RIGHT_FAST:SHIFT+6]
+[CURSOR_UPLEFT_FAST:SHIFT+7]
+[CURSOR_UPRIGHT_FAST:SHIFT+9]
+[CURSOR_DOWNLEFT_FAST:SHIFT+1]
+[CURSOR_DOWNRIGHT_FAST:SHIFT+3]
+
+Removed keys
+[INTERFACEKEY_SQUAD_CURSOR]
+
+Temperature in the raws:
+
+The temperature scale has freezing of water at 10000, and moves roughly at a fahrenheit scale.  Water boils at 10180, for example.
+This means that temperatures can go well below absolute zero, but fantasy runs that way.
+Water has spec heat 4.181 J/gC, and this is stored as 4181 in the raws.
+Spec heat changes with change of state are not currently supported.
+
+Creature raws
+	[SPEC_HEAT:amount 0-60000 or NONE]/default NONE
+	[HEATDAM_POINT:temp 0-60000 or NONE]/default NONE
+	[COLDDAM_POINT:temp 0-60000 or NONE]/default NONE
+	[IGNITE_POINT:temp 0-60000 or NONE]/default NONE
+	[MELTING_POINT:temp 0-60000 or NONE]/default NONE
+	[BOILING_POINT:temp 0-60000 or NONE]/default NONE
+	[FIXED_TEMP:temp 0-60000 or NONE]/default NONE
+
+	You can also add the words "LEATHER" "BONE" "EXTRACT" "CHEESE" "DRINK" "SILK" in front of these, e.g. [SILK_IGNITE_POINT:10300].
+
+	[STANDARD_FLESH]/sets values above to reasonable numbers for a standard fleshy creature
+	[MATERIAL:mat:matg]/sets values above to the numbers matching the given material
+	[HOMEOTHERM:temp 0-60000 or NONE]/default NONE
+
+Plant raws
+	[SPEC_HEAT:amount 0-60000 or NONE]/default 420
+	[HEATDAM_POINT:temp 0-60000 or NONE]/default 10250
+	[COLDDAM_POINT:temp 0-60000 or NONE]/default 9900
+	[IGNITE_POINT:temp 0-60000 or NONE]/default 10508
+	[MELTING_POINT:temp 0-60000 or NONE]/default NONE
+	[BOILING_POINT:temp 0-60000 or NONE]/default NONE
+	[FIXED_TEMP:temp 0-60000 or NONE]/default NONE
+
+	You can also add the words "CLOTH" "EXTRACT" "CHEESE" "DRINK" in front of these
+	as in [CLOTH_IGNITE_POINT:10300].
+
+Stone raws
+	[SPEC_HEAT:amount 0-60000 or NONE]/default 800
+	[HEATDAM_POINT:temp 0-60000 or NONE]/default NONE
+	[COLDDAM_POINT:temp 0-60000 or NONE]/default NONE
+	[IGNITE_POINT:temp 0-60000 or NONE]/default NONE
+	[MELTING_POINT:temp 0-60000 or NONE]/default 11500
+	[BOILING_POINT:temp 0-60000 or NONE]/default 14000
+	[FIXED_TEMP:temp 0-60000 or NONE]/default NONE
+
+Gem raws
+	[SPEC_HEAT:amount 0-60000 or NONE]/default 1800
+	[HEATDAM_POINT:temp 0-60000 or NONE]/default NONE
+	[COLDDAM_POINT:temp 0-60000 or NONE]/default NONE
+	[IGNITE_POINT:temp 0-60000 or NONE]/default NONE
+	[MELTING_POINT:temp 0-60000 or NONE]/default 12268
+	[BOILING_POINT:temp 0-60000 or NONE]/default 14368
+	[FIXED_TEMP:temp 0-60000 or NONE]/default NONE
+
+Wood raws
+	[SPEC_HEAT:amount 0-60000 or NONE]/default 420
+	[HEATDAM_POINT:temp 0-60000 or NONE]/default 10250
+	[COLDDAM_POINT:temp 0-60000 or NONE]/default 9900
+	[IGNITE_POINT:temp 0-60000 or NONE]/default 10508
+	[MELTING_POINT:temp 0-60000 or NONE]/default NONE
+	[BOILING_POINT:temp 0-60000 or NONE]/default NONE
+	[FIXED_TEMP:temp 0-60000 or NONE]/default NONE
+
+******************************************************
+
+Auxiliary file changes for 0.22.120.23a:
+
+New keys
+[BUILDJOB_STOCKPILE_BARREL_ZERO:SHIFT+E]
+[BUILDJOB_STOCKPILE_BARREL_MAX:SHIFT+R]
+[BUILDJOB_STOCKPILE_BIN_ZERO:SHIFT+C]
+[BUILDJOB_STOCKPILE_BIN_MAX:SHIFT+V]
+
+MATGLOSS Raws
+
+	Added plurals to gem names
+
+There is now a graphics subfolder in the raw folder.  See graphics_example.txt in that folder for a sample.  In order to see your creature tiles, you have to go into the init.txt file and set [GRAPHICS:YES].  You'll find other options there as well.
+
+******************************************************
+
+Auxiliary file changes for 0.22.110.23a:
+
+New init options
+[ADVENTURER_TRAPS:NO]
+
+New keys
+[HOTKEY_BUILDING_WORKSHOP_DYER:D]
+[HOTKEY_DYER_THREAD:T]
+[HOTKEY_DYER_CLOTH:C]
+[HOTKEY_CLOTHES_IMAGE:I]
+[HOTKEY_LEATHER_IMAGE:I]
+[ORDERS_LOOM:L]
+[ORDERS_DYED_CLOTH:D]
+
+DESCRIPTOR Raws
+
+	These are a new class of raws that handle colors and shapes.
+
+	[COLOR:<identifier>]/[COLOR:RED]
+		[NAME:<text you want to see>]/[NAME:red]
+		[WORD:<word token>]/[WORD:RED] -- not currently used but will be handy later
+		[RGB:<r>:<g>:<b>]/[RGB:255:0:0] -- uses the init.txt values and picks nearest as the representation
+	[SHAPE:identifier]/[SHAPE:CRESCENT]
+		[NAME:<text>:<text plural>]/[NAME:crescent:crescents]
+		[WORD:<word token>]/[WORD:CRESCENT] -- not currently used but will be handy later
+		[ADJ:<text>]/[ADJ:narrow][ADJ:thick] -- it will choose one of these at random
+		[TILE:<tile>]/[TILE:'('] or [TILE:40]
+
+MATGLOSS Raws
+
+	[MILL_DYE:<color identifier>]/[COLOR:BLUE]
+
+******************************************************
+
+Auxiliary file changes for 0.22.110.22c:
+
+New keys
+[STOCKPILE_WEAPON:P]
+[STOCKPILE_ARMOR:D]
+[STOCKPILE_CUSTOM:C]
+[STOCKPILE_CUSTOM_SETTINGS:T]
+[BUILDJOB_STOCKPILE_DELETE_CHILD:D]
+[BUILDJOB_STOCKPILE_SETTINGS:S]
+[BUILDJOB_STOCKPILE_BARREL_UP:R]
+[BUILDJOB_STOCKPILE_BARREL_DOWN:E]
+[BUILDJOB_STOCKPILE_BIN_UP:V]
+[BUILDJOB_STOCKPILE_BIN_DOWN:C]
+[STOCKPILE_SETTINGS_ENABLE:E]
+[STOCKPILE_SETTINGS_DISABLE:D]
+[STOCKPILE_SETTINGS_PERMIT_ALL:P]
+[STOCKPILE_SETTINGS_FORBID_ALL:F]
+[STOCKPILE_SETTINGS_PERMIT_SUB:T]
+[STOCKPILE_SETTINGS_FORBID_SUB:G]
+[STOCKPILE_SETTINGS_SPECIFIC1:U]
+[STOCKPILE_SETTINGS_SPECIFIC2:J]
+
+******************************************************
+
+Auxiliary file changes for 0.22.110.22a:
+
+Various changes to the item raws.
+
+******************************************************
+
+Auxiliary file changes for 0.22.107.21a:
+
+New keys
+[A_WAIT:PERIOD]
+
+******************************************************
+
+Auxiliary file changes for 0.21.104.21c:
+
+New keys
+[HOTKEY_ASHERY_POTASH_DIRECT:A]
+
+******************************************************
+
+Auxiliary file changes for 0.21.104.21b:
+
+New keys
+[BUILDJOB_WORKSHOP_PROFILE:SHIFT+P]
+
+******************************************************
+
+Auxiliary file changes for 0.21.104.21a:
+
+New init options
+[MOUSE:YES]
+[MOUSE_PICTURE:NO]
+
+******************************************************
+
+Auxiliary file changes for 0.21.104.19c:
+
+New init options
+[ENGRAVINGS_START_OBSCURED:NO] -- lets you have your engravings look the same if you want
+
+New keys
+[DESIGNATE_TOGGLE_ENGRAVING:E]
+
+******************************************************
+
+Auxiliary file changes for 0.21.104.19a:
+
+New keys
+[STORES_CHASM:C]
+[ORDERS_REFUSE_CHASM_CORPSE:C]
+[ORDERS_REFUSE_CHASM_SKIN:I]
+[ORDERS_REFUSE_CHASM_SKULL:L]
+
+******************************************************
+
+Auxiliary file changes for 0.21.102.19a:
+
+New init options
+[NICKNAME_DWARF:REPLACE_FIRST] -- these say how nicknames are handled
+[NICKNAME_ADVENTURE:REPLACE_FIRST]
+[NICKNAME_LEGENDS:REPLACE_FIRST]
+[WINDOWED:PROMPT] -- set if you want fullscreen/windowed mode
+
+New keys
+[A_STATUS_CUSTOMIZE:Y]
+[UNITVIEW_CUSTOMIZE:Y]
+[CUSTOMIZE_UNIT_NICKNAME:N]
+[CUSTOMIZE_UNIT_PROFNAME:P]
+[TOGGLE_FULLSCREEN:F11] -- toggle fullscreen/windowed mode
+
+Removed a few superfluous entries from interface.txt.
+
+******************************************************
+
+Auxiliary file changes for 0.21.101.19a:
+
+New init options
+[KEY_HELD_MS:150] -- controls how long a key must be held before it sends a repeat message
+
+New keys for alphabetic string entry
+[STRING_<x>:<x>] pretty much
+[A_ENTER_NAME:E]
+
+******************************************************
+
+Auxiliary file changes for 0.21.100.19a:
+
+New init options, and new help inside the file itself
+[SOUND:ON]
+[INTRO:ON]
+
+Added all of the display strings to the interface file.
+
+******************************************************
+
+Auxiliary file changes for 0.21.95.19c:
+
+New keys -- add/adjust these to any interface.txt files you are saving for yourself
+[BUILDJOB_FARM_FERTILIZE:F]
+[BUILDJOB_FARM_SEASFERT:S]
+
+Changed keys
+[CHANGE_BINDINGS:K]

@@ -1,0 +1,33 @@
+hire_guard
+
+[OBJECT:REACTION]
+
+sample reaction
+[REACTION:LUA_HOOK_HIRE_GUARD_DWARVEN] => Needs lua hook hire
+[NAME:Hire dwarven caravan guard] => name doesnt matter
+[BUILDING:TANNER:NONE] => Needs to be changed.
+[REAGENT:A:10000:COIN:NONE:INORGANIC:GOLD] => 10000 = 500x20. Problem with reaction time. 20 times hauling coin stacks.
+[PRODUCT:100:0:BOULDER:NONE:INORGANIC:STEEL] => Product does not matter
+[PRODUCT_DIMENSION:15] => Line-of-sight radius around the workshop to target bodyguards.
+[SKILL:TANNER] => Tanner is used as "Diplomacy/Ambassador" in MasterworkDF
+
+product field must exist, using quantity 0 because it 
+	doesn'tneed to actually produce anything.
+	
+product dimension determines sight radius in a circle with shadow cast visibility.
+
+product probability + effective skill level determines chance to convert 
+	each valid in range target, limit 1.  If the first found target fails, 
+	the second found target has the same chance etc.  If all fail, reagents
+	are consumed as normal (respects PRESERVE_REAGENTS if present)
+	
+if no valid targets in range are found, forces PRESERVE_REAGENTS
+	
+Announcements:
+
+success:    "{guard name} has joined our cause!" in bright green
+
+no targets: "{Worker Name}, {Worker Profession} cancels {reaction name}: No visible targets in range." in yellow
+
+failed:     "{Reaction name} failed." in dark red
+

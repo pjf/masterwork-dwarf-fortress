@@ -1,0 +1,16 @@
+inorganic_stockpile
+
+
+[OBJECT:INORGANIC]
+
+//for stockpiling reagents.
+[INORGANIC:BLANK_ARCANA]
+-USE_MATERIAL_TEMPLATE:STONE_TEMPLATE- <= reverted to "stone" as name with it.
+[STATE_NAME_ADJ:ALL_SOLID:(arcane)][DISPLAY_COLOR:7:3:1][TILE:176]
+[MATERIAL_VALUE:25]
+[STATE_NAME:ALL_SOLID:(arcane)]
+       [STATE_ADJ:ALL_SOLID:(arcane)]
+       [STATE_NAME:LIQUID:(arcane)]
+       [STATE_ADJ:LIQUID:(arcane)]
+	[SOLID_DENSITY:1000]
+	[IS_STONE]

@@ -1,0 +1,8 @@
+reaction_brazier
+
+[REACTION]
+
+[REACTION:DECO_BRAZIER]
+[NAME:*Warm your hands on the brazier*]
+[BUILDING:BRAZIER:CUSTOM_A]
+

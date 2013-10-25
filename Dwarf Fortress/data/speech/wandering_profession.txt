@@ -1,0 +1,13 @@
+I wander [CONTEXT:PLACE:TRANS_NAME].
+I travel [CONTEXT:PLACE:TRANS_NAME].
+I travel far and wide, and have become familiar with [CONTEXT:PLACE:TRANS_NAME].
+I am a traveler.  I know [CONTEXT:PLACE:TRANS_NAME] like the back of my hand.
+I am an explorer.  I spent much time in [CONTEXT:PLACE:TRANS_NAME].
+I have wandered many lands, though none are as beautiful as [CONTEXT:PLACE:TRANS_NAME].
+I recently got lost in [CONTEXT:PLACE:TRANS_NAME], if that counts.
+I live a nomadic life in the lands surrounding [CONTEXT:PLACE:TRANS_NAME].
+I have wandered [CONTEXT:PLACE:TRANS_NAME] for many years.
+I have roamed the land for many long years.
+I go where my heart drives me, as I have done my whole life.
+I have wandered the land for many years.
+I have lived off the land for most of my life.

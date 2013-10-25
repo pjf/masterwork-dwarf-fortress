@@ -1,0 +1,8 @@
+reaction_boogeyman_statue
+
+[REACTION]
+
+[REACTION:BOOGEYMAN_STATUE]
+[NAME:*Make the sign of armok for protection while walking past the statue*]
+[BUILDING:BOOGEYMAN_STATUE:CUSTOM_A]
+

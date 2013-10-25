@@ -1,0 +1,10 @@
+I have wandered [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] of my years.
+I am a nomad. I have roamed [CONTEXT:PLACE:TRANS_NAME] for around [CONTEXT:NUMBER] years.
+I have roamed the land for [CONTEXT:NUMBER] long years.
+I go where my heart drives me, as I have done for [CONTEXT:NUMBER] years.
+I have wandered for [CONTEXT:NUMBER] of my years.  I suppose I have no true home.
+I never settle permanently.  I have wandered the land for [CONTEXT:NUMBER] years.
+I wandered [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] years.  I look forward to settling down soon.
+I have lived off the land for [CONTEXT:NUMBER] years.
+I have wandered for [CONTEXT:NUMBER] years, spending much time in [CONTEXT:PLACE:TRANS_NAME].
+I have roamed the wilds for [CONTEXT:NUMBER] years.  It is almost time I settled down somewhere.

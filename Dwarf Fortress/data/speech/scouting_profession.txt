@@ -1,0 +1,7 @@
+It is my duty to scout the area around [CONTEXT:PLACE:TRANS_NAME].
+I scout the surroundings of [CONTEXT:PLACE:TRANS_NAME].
+I patrol the outskirts of [CONTEXT:PLACE:TRANS_NAME].
+I scout [CONTEXT:PLACE:TRANS_NAME] every day.
+I am a scout of [CONTEXT:PLACE:TRANS_NAME].
+I am a scout.  I spend much time in [CONTEXT:PLACE:TRANS_NAME].
+I am a scout.

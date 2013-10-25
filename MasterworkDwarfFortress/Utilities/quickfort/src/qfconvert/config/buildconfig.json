@@ -1,0 +1,167 @@
+// Build logic configuration file.
+//
+// From here, you can customize what keystroke patterns and build logic is used to carry out
+// cell designations per-build-phase. Within each build-phase, you can also customize these
+// settings using regex pattern-matching against individual cell values.
+//
+// Format:
+// {
+//     "phase-name": {
+//         "key": "value",
+//         ...,
+//         "custom": {
+//             "cell-regex-key": {
+//                 "key":, "value",
+//                 ...
+//             },
+//             ...
+//         }
+//     },
+//     ...
+// }
+//
+// Keys and what they do:
+//  init: keys to send at start of a blueprint playback
+//  completed: keys to send at end of a blueprint playback
+//  designate: keys to send in order to designate each cell, utilizing some special tokens:
+//             'cmd': insertion point for blueprint cell's value during designation
+//             'moveto': replaced with the movement keystrokes needed to position designation cursor
+//             'exitmenu': exits a designation submenu if needed (e.g. the build->workshops submenu)
+//             'menu': sends keystroke to enter a new submenu (not needed if we're in the desired submenu)
+//             'setsize': runs the setsize function (see below) to adjust size of designation
+//             'setmats': runs the setmats function (see below) to select mats for constructions
+//             '&' '%' '@', '%>', '^': abbreviations for {Enter}, {Wait}, {Shift Enter}, {WaitForNext}, {Esc}
+//  samecmd: pattern to use for 'cmd' in 'designate' value when last cell had the same command as this cell
+//  diffcmd: pattern to use for 'cmd' in 'designate' value when last cell had a different command
+//  submenukeys: list of keys that open a DF submenu when pressed (e.g. 'w' opens build->workshops submenu)
+//  sizebounds: sets min and max size limits for area auto-expansion: [minwidth, maxwidth, minheight, maxheight]
+//  setsize: name of Python function which will return keys needed to size a designation appropriately
+//  setmats: name of Python function which will return keys needed to select required mats for constructions
+//  custom: list of key-value pairs that can be used to customize QF's key patterns for specific designations.
+//              key:   regex expression to match blueprint cell-values against
+//                     treated as re.match(), i.e. 'p' is performed as the regex '^p'
+//              value: { "key": value, ... }
+//                     key:value pairs that override parent build-phase's values when key matches a cell
+
+{
+    "dig": { // designate
+        "init": null,
+        "completed": null,
+        "designate": ["moveto", "cmd", "&", "setsize", "&"],
+        "samecmd": null,
+        "diffcmd": ["cmd"],
+        "submenukeys": "",
+        "sizebounds": null,
+        "setsize": "setsize_standard",
+        "custom": null
+     },
+
+    "build": { // build constructions
+        "init": ["^"],
+        "completed": ["O"], // build dirt road to allow cursor repositioning
+        "designate": ["exitmenu", "menu", "%>", "cmd", "moveto", "setsize", "setmats"],
+        "samecmd": ["cmd"],
+        "diffcmd": ["cmd"],
+        "submenukeys": ["i", "w", "e", "C", "T", "M"],
+        "sizebounds": [1, 1, 1, 1],
+        "setmats": "setmats_build",
+        "setsize": "setsize_build",
+        "custom": {
+            // farm plot
+            "p":        { "sizebounds": [1, 10, 1, 10],
+                          "designate": ["exitmenu", "cmd", "moveto", "setsize", "&"]
+                        },
+
+            // all constructions except tracks and track stops
+            "C[^ST]":    { "sizebounds": [1, 10, 1, 10] },
+
+            // track segments
+            "CT":       { "sizebounds": [1, 10, 1, 10],
+                          "designate": ["exitmenu", "menu", "%>", "cmd", "moveto", "setsize", "setmats", "^"] },
+
+            // track stops
+            "CS":       { "designate": ["exitmenu", "menu", "%>", "cmd", "moveto", "setmats"] },
+
+            // paved roads
+            "o":        { "sizebounds": [1, 10, 1, 10],
+                          "setmats": "setmats_bridge"
+                        },
+
+            // unpaved roads
+            "O":        { "sizebounds": [1, 10, 1, 10],
+                          "designate": ["exitmenu", "menu", "cmd", "moveto", "setsize", "&"]
+                        },
+
+            // bridges
+            "g":        { "sizebounds": [1, 10, 1, 10],
+                          "setmats": "setmats_bridge"
+                        },
+
+            // 5x5 siege workshop
+            "ws":       { "sizebounds": [5, 5, 5, 5],
+                          "setsize": "setsize_fixed"
+                        },
+
+            // metalsmith forge, magma forge
+            "w[fv]":    { "designate": ["exitmenu", "menu", "cmd", "moveto", "setsize", "&", "%", "&", "%", "@", "%"],
+                          "sizebounds": [3, 3, 3, 3],
+                          "setsize": "setsize_fixed"
+                        },
+
+            // 3x3 workshops & furnaces other than those already accounted for
+            "w[^sfv]|e.":
+                        { "sizebounds": [3, 3, 3, 3],
+                          "setsize": "setsize_fixed"
+                        },
+
+            // trade depot
+            "D":        { "designate": ["exitmenu", "cmd", "moveto", "setsize", "&", "%", "&", "%", "@", "%"],
+                          "sizebounds": [5, 5, 5, 5],
+                          "setsize": "setsize_fixed"
+                        },
+
+            // screw pump
+            "Ms":       { "designate": ["exitmenu", "menu", "cmd", "moveto", "&", "&", "&", "&", "%"] },
+
+            // horizontal and vertical axles
+            "Mh":       { "sizebounds": [1, 10, 1, 1] },
+            "Mv":       { "sizebounds": [1, 1, 1, 10] },
+
+            // track rollers - horizontal orientation
+            "Mr.*s":    { "sizebounds": [1, 10, 1, 1],
+                          "designate": ["exitmenu", "menu", "cmd", "moveto", "setsize", "setmats", "@"]
+                        },
+
+            // track rollers - vertical orientation
+            "Mr[^s]*(?!s)$":
+                        { "sizebounds": [1, 1, 1, 10],
+                          "designate": ["exitmenu", "menu", "cmd", "moveto", "setsize", "setmats", "@"]
+                        }
+
+            }
+    },
+
+    "place": { // place stockpiles
+        "init": null,
+        "completed": null,
+        "designate": ["moveto", "cmd", "&", "setsize", "&"],
+        "samecmd": null,
+        "diffcmd": ["cmd"],
+        "submenukeys": "",
+        "sizebounds": null,
+        "custom": null,
+        "setsize": "setsize_standard"
+    },
+
+    "query": { // set building/task prefs
+        "init": null,
+        "completed": null,
+        "designate": ["moveto", "cmd", "setsize", "&"],
+        "samecmd": ["cmd"],
+        "diffcmd": ["cmd"],
+        "submenukeys": "",
+        "sizebounds": [1, 1, 1, 1], // #query actions only ever operate on one cell at a time
+        "custom": null,
+        "setsize": "setsize_standard"
+    }
+}

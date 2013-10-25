@@ -1,0 +1,8 @@
+reaction_potted_plant
+
+[REACTION]
+
+[REACTION:DECO_PLANT]
+[NAME:*Water the plants*]
+[BUILDING:POTTED_PLANT:CUSTOM_A]
+

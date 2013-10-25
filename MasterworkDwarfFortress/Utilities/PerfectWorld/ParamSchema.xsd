@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--WARNING! do not change this schema file! It contains certain assumptions made by PerfectWorldDF that
+cannot be changed at run time. If you mess with this, it will likely crash the application. Use for reference
+when adding new world gen tags only.-->
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:element name="worldGen" type="worldGenType"/>
+  
+  <!--Main type for the whole file. Contains worldGenTagTypes-->
+  <xs:complexType name="worldGenType">
+    <xs:sequence maxOccurs="unbounded">
+      <xs:element name="worldGenTag" type="worldGenTagType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!--worldGenTagType contains:-->
+  <!--possible attribute associating the tag with a certain map-->
+  <!--possible attribute specifying that the tag is optional, i.e. the seed tags.-->
+  <!--the tag string-->
+  <!--a description used on the UI-->
+  <!--a category to specify which tab to place controls, and also special case tags.-->
+  <!--a number of argumentTypes-->
+  <xs:complexType name="worldGenTagType">
+    <xs:sequence>
+      <xs:element name="tag" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="category">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="General"/>
+            <xs:enumeration value="Rejection"/>
+            <xs:enumeration value="Generation"/>
+            <xs:enumeration value="Delimiter"/>
+            <xs:enumeration value="Title"/>
+            <xs:enumeration value="Dimension"/>
+            <xs:enumeration value="MapData"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element name="argument" type="argumentType"/>
+      </xs:sequence>
+    </xs:sequence>
+    <xs:attribute name="map">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Elevation"/>
+          <xs:enumeration value="Rainfall"/>
+          <xs:enumeration value="Temperature"/>
+          <xs:enumeration value="Drainage"/>
+          <xs:enumeration value="Savagery"/>
+          <xs:enumeration value="Volcanism"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="optional" type="xs:boolean"/><!--This attribute will force a check box to determine if used-->
+  </xs:complexType>
+
+  <!--argumentType contains:-->
+  <!--a description used for the UI, note that single argument tags should keep this empty so that it can be
+  over ridden by the description on the worldGenTagType.-->
+  <!--tooltip text to give the long version of helpful text to describe exactly what an argument is used for.-->
+  <!--one control type. Numeric, listbox or checkbox-->
+  <xs:complexType name="argumentType">
+    <xs:sequence minOccurs="0">
+      <xs:element name ="description" type="xs:string"/>
+      <xs:element name="tooltip" type="xs:string"/>
+      <xs:choice>
+        <xs:element name="numericControl" type="numericControlType"/>
+        <xs:element name="listBoxControl" type="listBoxControlType"/>
+        <xs:element name="checkBoxControl" type="checkBoxControlType"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!--Contains a minimum and maximum field values.-->
+  <xs:complexType name="numericControlType">
+    <xs:sequence>
+      <xs:element name="min" type="xs:decimal"/>
+      <xs:element name="max" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!--Contains a sequence of listBoxItemTypes-->
+  <xs:complexType name="listBoxControlType">
+    <xs:sequence maxOccurs="unbounded">
+      <xs:element name="listBoxItem" type="listBoxItemType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!--Item type contains:-->
+  <!--a required attribute to specify item text for the UI-->
+  <!--an integer value to associate with the corresponding text.-->
+  <xs:complexType name="listBoxItemType">
+    <xs:simpleContent>
+      <xs:extension base="xs:integer">
+        <xs:attribute name="itemText" type ="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!--Used for simple boolean tags-->
+  <xs:complexType name="checkBoxControlType">
+  </xs:complexType>
+  
+</xs:schema>

@@ -1,0 +1,7 @@
+At one time, I was a scout.
+For [CONTEXT:NUMBER] of my years, I was a scout.
+For [CONTEXT:NUMBER] years, I scouted [CONTEXT:PLACE:TRANS_NAME].
+I once patrolled [CONTEXT:PLACE:TRANS_NAME].
+I scouted [CONTEXT:PLACE:TRANS_NAME] every day for [CONTEXT:NUMBER] years.
+For about [CONTEXT:NUMBER] years, I scouted [CONTEXT:PLACE:TRANS_NAME].
+I am a former scout with [CONTEXT:NUMBER] years of experience.  I spent much time in [CONTEXT:PLACE:TRANS_NAME].

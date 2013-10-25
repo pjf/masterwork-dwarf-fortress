@@ -1,0 +1,11 @@
+reaction_totem
+
+[REACTION]
+
+[REACTION:DECO_TOTEM]
+[NAME:*Stare the totem deep in the eyes*]
+[BUILDING:TOTEM:CUSTOM_A]
+
+
+
+

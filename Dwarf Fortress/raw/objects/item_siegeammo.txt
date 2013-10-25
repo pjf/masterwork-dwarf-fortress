@@ -1,0 +1,11 @@
+item_siegeammo
+
+[OBJECT:ITEM]
+
+[ITEM_SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA]
+[NAME:ballista arrow:ballista arrows]
+[CLASS:BALLISTA]
+
+[ITEM_SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA_KOBOLD]
+[NAME:big pointy stick:big pointy sticks]
+[CLASS:BALLISTA]

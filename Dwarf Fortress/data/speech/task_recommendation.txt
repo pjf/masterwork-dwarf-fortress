@@ -1,0 +1,13 @@
+[CONTEXT:ANY:TRANS_NAME] might have a task for you
+[CONTEXT:ANY:TRANS_NAME] could probably use some help
+[CONTEXT:ANY:TRANS_NAME] was attacked recently
+[CONTEXT:ANY:TRANS_NAME] asked for assistance some time ago
+[CONTEXT:ANY:TRANS_NAME] could probably use some help
+[CONTEXT:ANY:TRANS_NAME], on the other hand, is less fortunate
+Last I heard, [CONTEXT:ANY:TRANS_NAME] was looking for help
+However, [CONTEXT:ANY:TRANS_NAME] is in a sorry state
+No one has heard from [CONTEXT:ANY:TRANS_NAME] in weeks
+I am worried about my friend from [CONTEXT:ANY:TRANS_NAME]
+You might try [CONTEXT:ANY:TRANS_NAME] if you are looking for work
+I think I know a good place for you to go
+All the same, there is talk of trouble in neighboring lands

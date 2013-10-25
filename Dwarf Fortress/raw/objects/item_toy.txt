@@ -1,0 +1,8 @@
+item_toy
+
+[OBJECT:ITEM]
+
+
+[ITEM_TOY:ITEM_TOY_MINIFORGE]
+[NAME:mini-forge:mini-forges]
+[HARD_MAT]

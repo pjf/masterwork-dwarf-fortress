@@ -1,0 +1,8 @@
+reaction_alarm_siren
+
+[OBJECT:REACTION]
+
+
+	[NAME:Sound the alarm]
+	[BUILDING:ALARM:CUSTOM_A]
+	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:SIREN]

@@ -1,0 +1,32 @@
+adamantine value 300
+aluminum value 40
+billon value 6
+bismuth value 2
+bismuth bronze value 6
+black bronze value 11 
+brass value 7
+bronze value 5
+copper value 2
+electrum value 20
+gold value 30
+iron value 10
+lead value 2
+nickel value 2
+nickel-silver value 3
+pewter-fine value 5
+pewter-lay value 3
+pewter-trifle value 4
+pig-iron value 10
+platinum value 40
+rose-gold value 23
+silver value 10
+steel value 30
+sterling-silver value 8
+tin value 2
+zinc value 2 items: hard, metal, barred, scaled
+
+cobalt value
+chrome value
+wolfram value
+titanium value
+mithril value

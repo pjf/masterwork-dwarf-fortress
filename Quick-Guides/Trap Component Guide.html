@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #000
+}
+body, td, th {
+	color: #FFF;
+	font-size: 18px;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #CCC;
+}
+.Rot {color: #F00;
+}
+.Rot {color: #F00;
+}
+</style>
+</head>
+
+<body>
+<div align="center">
+  <p><img src="../MasterworkDwarfFortress/repository/Logo.JPG" alt="logo" width="768" height="225" align="absmiddle" /></p>
+</div>
+<table width="846" border="0" align="center">
+  <tr>
+    <td width="840"><h1 align="center"><u><strong>Masterwork DF Trap Component Table</strong></u></h1>
+    <p>In here you can find all trap components of the mod, with all infos. They are sorted alphabetically.</p>
+    <p>At this point a big thanks to maklak for the script to read these out directly from the raws.  You can search this table with Ctrl+F.</p>
+    <hr />
+    <p><b>Explanation of the table:</b></p>
+    <p><b>Name: </b>Is the items ingame name. <br />
+  <br />
+  <b>Size:</b> is in cubic centimeters.  Larger size means more mass for blunt attacks. </p>
+    <p><b>Bar: </b> The needed number of bars to forge the trap component.<br />
+      <br />
+      <b>Screw:</b> means it may be installed in a screw pump.<br />
+      <br />
+      <b>Spike:</b> means it may be installed in a spike trap.<br />
+      <br />
+      <b>Metal, Wood</b> mean that the trap component may be made out of metal or wood, respectively. If none of them apply, it is probably a product of some custom reaction.<br />
+      <br />
+      <b>Hits:</b> is the number of attacks by this weapon when a trap is triggered. There can be up to 10 weapons in a trap, so this can add up to quite a lot of overkill. Hits also multiply the value of the trap component, which is why serrated discs and spiked balls are so expensive.</p>
+    <p><b>Attack:</b> lists all the attacks that can be made with this weapon. The attack is always chosen at random, with edged attacks being 100 times more likely. The format is name, type (edged or blunt), contact area, penetration, velocity multiplier. <br />
+Blunt attacks are better at penetrating armour and breaking bones, while edged attacks can cause bleeding, pierce internal organs or even sever entire limbs. Edged attacks become piercing attacks when their contact area is less than 25% of the targeted body part or cutting attacks otherwise. So edged attacks with large contact area are primarily cutting, while those with 10 or 20 contact area are primarily piercing. Piercing attacks are better at penetrating armour and damaging internal organs (such as brain), but Cutting attacks can cut off entire limbs. The problem with cutting attacks is that there needs to be enough force behind them and enemy armour can convert them to blunt attacks, which tend to be much less effective.<br />
+The higher the penetration is, the better, especially against bigger enemies. My best guess is that 10000 penetration is 1m.  Velocity multipler greatly increases effectiveness of an attack, multiplying the force behind it.<br />
+Rating and comparing attacks isn't trivial to do. Good luck interpreting the numbers.<br />
+    </p>
+    <p><strong>Notes</strong>: Chance to hit by a weapon trap is affected by the quality of mechanism and possibly the quality of the weapon. In a retracting spike trap, probably just the weapon quality counts.<br />
+      <br />
+      <font size=5><b>Table of trap components:</b></font> (count: 31)<br />
+    </p>
+    <table width="836" border="1">
+      <center>
+  <tr> <td width="191"><b>Name</b></td> <td width="55"><b>Size</b><br />
+    <b>Bars</b></td> <td width="51"><b>Screw</b><br /><b>Spike</b></td> <td width="62"><b>Metal</b><br /><b>Wood</b></td> <td width="38"><b>Hits</b></td> <td width="399"><b>Attack</b></td></tr>
+  <tr> <td><b>axe blade</b></td> <td>600<br />
+    3</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>1</td> <td>hack: edge C:40000 P:6000 V:1.25</td></tr>
+  <tr> <td><b>ball</b></td> <td>500<br />
+    3</td> <td>--<br />--</td> <td>Metal<br />Wood</td> <td>1</td> <td>bash: blunt C:10 P:200 V:2</td></tr>
+  <tr> <td><b>ceremonial totemhammer</b></td> <td>2000<br />
+    3</td> <td>--<br />--</td> <td>--<br />--</td> <td>1</td> <td>bash: blunt C:20 P:3000 V:8<br />ram: blunt C:20 P:4000 V:8<br />hammer: blunt C:20 P:5000 V:8</td></tr>
+  <tr> <td><b>crude spike</b></td> <td>1000<br />
+    1</td> <td>--<br />Yes</td> <td>--<br />--</td> <td>1</td> <td>stab: edge C:1000 P:15000 V:1</td></tr>
+  <tr> <td><b>enormous corkscrew</b></td> <td>500<br />
+    3</td> <td>Yes<br />--</td> <td>Metal<br />Wood</td> <td>1</td> <td>drill: edge C:500 P:100 V:0.5</td></tr>
+  <tr> <td><b>flanged ball</b></td> <td>750<br />
+    3</td> <td>--<br />--</td> <td>Metal<br />Wood</td> <td>1</td> <td>bash: blunt C:100 P:2000 V:2<br />hit: blunt C:100 P:2000 V:2<br />strike: blunt C:100 P:2000 V:2</td></tr>
+  <tr> <td><b>heavily plated ram</b></td> <td>2000<br />
+    3</td> <td>--<br />--</td> <td>--<br />Wood</td> <td>1</td> <td>bash: blunt C:20 P:200 V:4<br />ram: blunt C:20 P:200 V:4<br />hammer: blunt C:20 P:200 V:4</td></tr>
+  <tr> <td><b>heavily plated stake</b></td> <td>2000<br />
+    3</td> <td>--<br />--</td> <td>--<br />Wood</td> <td>1</td> <td>stab: edge C:80 P:10000 V:4<br />impale: edge C:80 P:10000 V:4<br />run through: edge C:80 P:10000 V:4</td></tr>
+  <tr> <td><b>heavy piston</b></td> <td>1800<br />
+    2</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>1</td> <td>bash: blunt C:40 P:200 V:2</td></tr>
+  <tr> <td><b>huge pillar</b></td> <td>2000<br />
+    1</td> <td>--<br />--</td> <td>--<br />Wood</td> <td>1</td> <td>crush: blunt C:120000 P:15000 V:1</td></tr>
+  <tr> <td><b>incredibly sharp whiplash</b></td> <td>400<br />
+    3</td> <td>--<br />--</td> <td>--<br />Wood</td> <td>1</td> <td>stab: edge C:10 P:10000 V:4<br />impale: edge C:10 P:10000 V:4<br />run through: edge C:10 P:10000 V:4</td></tr>
+  <tr> <td><b>knotted whiplash</b></td> <td>400<br />
+    3</td> <td>--<br />--</td> <td>--<br />Wood</td> <td>3</td> <td>stab: edge C:80 P:3000 V:4<br />impale: edge C:80 P:3000 V:4<br />run through: edge C:80 P:3000 V:4</td></tr>
+  <tr> <td><b>large, serrated sawblade</b></td> <td>1500<br />
+    3</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>2</td> <td>saw: edge C:80000 P:8000 V:1.65<br />cut: edge C:80000 P:8000 V:1.65<br />slice: edge C:80000 P:8000 V:1.65</td></tr>
+  <tr> <td><b>mechanized axe blade</b></td> <td>1500<br />
+    3</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>3</td> <td>hack: edge C:40000 P:6000 V:1.65<br />cut: edge C:40000 P:6000 V:1.65<br />slice: edge C:40000 P:6000 V:1.65</td></tr>
+  <tr> <td><b>plated ram</b></td> <td>2000<br />
+    3</td> <td>--<br />--</td> <td>--<br />Wood</td> <td>1</td> <td>bash: blunt C:20 P:200 V:2<br />ram: blunt C:20 P:200 V:2<br />hammer: blunt C:20 P:200 V:2</td></tr>
+  <tr> <td><b>plated stake</b></td> <td>2000<br />
+    3</td> <td>--<br />--</td> <td>--<br />Wood</td> <td>1</td> <td>stab: edge C:80 P:10000 V:2<br />impale: edge C:80 P:10000 V:2<br />run through: edge C:80 P:10000 V:2</td></tr>
+  <tr> <td><b>ram</b></td> <td>1600<br />
+    3</td> <td>--<br />--</td> <td>--<br />Wood</td> <td>1</td> <td>bash: blunt C:20 P:200 V:1</td></tr>
+  <tr> <td><b>roll of barbed wire</b></td> <td>500<br />
+    2</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>1</td> <td>scratches: edge C:20 P:80 V:0.5</td></tr>
+  <tr> <td><b>roll of razorwire</b></td> <td>500<br />
+    2</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>2</td> <td>slice: edge C:30 P:200 V:1<br />cut: edge C:30 P:200 V:1<br />scratch: edge C:30 P:200 V:1</td></tr>
+  <tr> <td><b>roll of swordwire</b></td> <td>600<br />
+    2</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>3</td> <td>slice: edge C:20 P:400 V:1<br />cut: edge C:30 P:400 V:1<br />scratch: edge C:40 P:400 V:1</td></tr>
+  <tr> <td><b>sawblade</b></td> <td>500<br />
+    3</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>1</td> <td>saw: edge C:30000 P:4000 V:1.25</td></tr>
+  <tr> <td><b>serrated sawblade</b></td> <td>1000<br />
+    3</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>1</td> <td>saw: edge C:60000 P:8000 V:1.25<br />grind: edge C:60000 P:8000 V:1.25<br />cut: edge C:60000 P:8000 V:1.25</td></tr>
+  <tr> <td><b>serrated spike</b></td> <td>600<br />
+    2</td> <td>--<br />Yes</td> <td>Metal<br />Wood</td> <td>2</td> <td>stab: edge C:500 P:5000 V:2<br />saw: edge C:500 P:5000 V:2<br />cut: edge C:500 P:5000 V:2</td></tr>
+  <tr> <td><b>sharpened spike</b></td> <td>600<br />
+    2</td> <td>--<br />Yes</td> <td>Metal<br />Wood</td> <td>1</td> <td>stab: edge C:20 P:10000 V:2<br />impale: edge C:20 P:10000 V:2<br />run through: edge C:20 P:10000 V:2</td></tr>
+  <tr> <td><b>shrapnel</b></td> <td>800<br />4</td> <td>--<br />--</td> <td>--<br />--</td> <td>5</td> <td>stab: edge C:500 P:15000 V:1<br />cut: edge C:1200 P:3000 V:1<br />hit: blunt C:600 P:20000 V:1<br />beat: blunt C:1800 P:15000 V:1</td></tr>
+  <tr> <td><b>spike</b></td> <td>600<br />
+    2</td> <td>--<br />Yes</td> <td>Metal<br />Wood</td> <td>1</td> <td>stab: edge C:20 P:5000 V:1</td></tr>
+  <tr> <td><b>spiked ball</b></td> <td>700<br />
+    3</td> <td>--<br />--</td> <td>Metal<br />Wood</td> <td>1</td> <td>impale: edge C:30 P:400 V:2<br />pierce: edge C:40 P:400 V:2<br />cut: edge C:50 P:400 V:2</td></tr>
+  <tr> <td><b>spring-loaded axe blade</b></td> <td>500<br />
+    3</td> <td>--<br />--</td> <td>Metal<br />--</td> <td>2</td> <td>hack: edge C:40000 P:6000 V:1.25<br />cut: edge C:40000 P:6000 V:1.25<br />slice: edge C:40000 P:6000 V:1.25</td></tr>
+  <tr> <td><b>stake</b></td> <td>1600<br />
+    3</td> <td>--<br />--</td> <td>--<br />Wood</td> <td>1</td> <td>stab: edge C:80 P:5000 V:1</td></tr>
+  <tr> <td><b>swinging spiked hammer</b></td> <td>2000<br />
+    2</td> <td>--<br />--</td> <td>--<br />--</td> <td>1</td> <td>slash: edge C:90000 P:16000 V:1</td></tr>
+  <tr> <td><b>trap dart</b></td> <td>250<br />
+    1</td> <td>--<br />--</td> <td>--<br />--</td> <td>2</td> <td>stick: edge C:25 P:1000 V:1</td></tr>
+</center></table>
+<br />
+<br />
+<br />
+&nbsp;
+</p>
+<p align="center">&nbsp;</p></td>
+    
+    <content-type: text/html>
+
+</body>
+</html>

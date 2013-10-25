@@ -1,0 +1,49 @@
+Training Weapons
+Axe, Sword, Mace, Spear, Staff
+
+These weapons can be made from wood in the carpenter and are blunt. Excellent for sparring and training, bad for actual combat. 
+
+EXPLOIT: Wodden training axes can be used to fell trees.
+
+
+
+WEAPON TEMPLATE
+Name - Skill - One/Two-Handed
+Size:
+Metal bars needed: 
+Attack Type:
+Special properties, if any
+
+
+WEAPON EXAMPLE
+Pick - Mining Skill - Onehanded
+Size: 500
+Bars nedded: 1
+Attack Type: Piercing/Slashing
+
+Note: Picks are needed for mining and make a great militia weapon.
+
+Crossbow - Hammer Skill Melee - Onehanded
+Size:400
+Bars needed: 2 or 1 log/bone
+Attack Type: Blunt
+Ammo type: Bolts
+Rate of fire: Average (100%)
+
+Note: Make sure you have proper equipment and ammo settings for your archers.
+
+Bladed Crossbow - Spear Skill Melee - Onehanded
+Size:500
+Attack Type: Slashing/Stabbing
+Ammo Type: Bolts
+Rate of fire: Average (100%)
+
+Note: Can only be produced with the crossbow upgrade in the weaponry.
+
+Mechanized Crossbow - Spear Skill Melee - Onehanded
+Size:500
+Attack Type: Slashing/Stabbing
+Ammo Type: Bolts
+Rate of fire: Very High (1000%)
+
+Note: Very rare sideproduct of the crossbow upgrade in the weaponry.

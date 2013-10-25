@@ -1,0 +1,18 @@
+File Exlcusion
+Put the names of files you don't want showing up in the utility list here, inside square brackets.
+
+
+[Example.exe]
+[autoUpdater.jar]
+[tritonus_share.jar]
+[commons-codec-1.2.jar]
+[jil1.0.jar]
+[mp3spi1.9.4jar]
+[jogg-0.0.7.jar]
+[jorbis-0.0.15.jar]
+[vorbisspi1.0.3.jar]
+[mp3spi1.9.4.jar]
+[jl1.0.jar]
+[commons-codec-1.4.jar]
+[soundSense.jar]
+[jansi-1.8.jar]

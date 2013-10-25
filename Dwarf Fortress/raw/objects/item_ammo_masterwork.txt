@@ -1,0 +1,130 @@
+item_ammo_masterwork
+
+[OBJECT:ITEM]
+
+[ITEM_AMMO:TOTEM]
+[NAME:totem-bomb:totem-bombs] 
+[CLASS:TOTEM]
+[SIZE:250]
+[ATTACK:EDGE:5:5000:strike:strikes:NO_SUB:7500]
+
+
+[ITEM_AMMO:ITEM_AMMO_BULLET_L]
+[NAME:bullet:bullet] 
+[CLASS:BULLET_L]
+[SIZE:25]
+[ATTACK:EDGE:5:5000:pierce:pierces:NO_SUB:7500]
+
+
+[ITEM_AMMO:ITEM_AMMO_CANNON]
+[NAME:cannon ball:cannon balls] 
+[CLASS:CANNON]
+[SIZE:450]
+[ATTACK:EDGE:50:50000:explode upon contact and hit:explodes upon contact and hits:NO_SUB:30000]
+
+
+
+[ITEM_AMMO:ITEM_AMMO_ARROWS_BODKIN]
+[NAME:bodkin arrow:bodkin arrows]
+[CLASS:ARROW]
+[SIZE:100]
+[ATTACK:EDGE:45:1500:stab:stabs:NO_SUB:1000]
+
+[ITEM_AMMO:ITEM_AMMO_BOLTS_BODKIN]
+[NAME:bodkin bolt:bodkin bolts]
+[CLASS:BOLT]
+[SIZE:150]
+[ATTACK:EDGE:45:2000:stab:stabs:NO_SUB:1000]
+
+
+
+[ITEM_AMMO:ITEM_AMMO_ARROWS_ENCHANTED]
+[NAME:singing arrow:singing arrows]
+[CLASS:ARROW]
+[SIZE:80]
+[ATTACK:EDGE:5:12000:stab:stabs:NO_SUB:3000]
+
+
+[ITEM_AMMO:ITEM_AMMO_JAVELINS_ONE]
+[NAME:broadhead javelin:broadhead javelins]
+[CLASS:JAVELIN]
+[SIZE:425]
+[ATTACK:EDGE:100000:100000:strike:strikes:NO_SUB:1500]
+
+[ITEM_AMMO:ITEM_AMMO_JAVELINS_TWO]
+[NAME:piercing javelin:piercing javelins]
+[CLASS:JAVELIN]
+[SIZE:400]
+[ATTACK:EDGE:10:200000:strike:strikes:NO_SUB:1500]
+
+[ITEM_AMMO:ITEM_AMMO_JAVELINS_THREE]
+[NAME:hammerhead javelin:hammerhead javelins]
+[CLASS:JAVELIN]
+[SIZE:450]
+[ATTACK:BLUNT:100000:2000:smash:smashes:NO_SUB:2000]
+
+[ITEM_AMMO:ITEM_AMMO_JAVELINS_FOUR]
+[NAME:crude javelin:crude javelins]
+[CLASS:JAVELIN]
+[SIZE:125]
+[ATTACK:EDGE:100:10:strike:strikes:NO_SUB:1000]
+
+
+[ITEM_AMMO:ITEM_AMMO_JAVELINS_FIVE]
+[NAME:javelin:javelins]
+[CLASS:JAVELIN]
+[SIZE:125]
+[ATTACK:EDGE:20:1000:strike:strikes:NO_SUB:1000]
+
+
+[ITEM_AMMO:ITEM_AMMO_BOLTS_ONE]
+[NAME:broadhead bolt:broadhead bolts]
+[CLASS:BOLT]
+[SIZE:150]
+[ATTACK:EDGE:10000:10000:strike:strikes:NO_SUB:1500]
+
+[ITEM_AMMO:ITEM_AMMO_BOLTS_TWO]
+[NAME:piercing bolt:piercing bolts]
+[CLASS:BOLT]
+[SIZE:150]
+[ATTACK:EDGE:10:8000:strike:strikes:NO_SUB:1500]
+
+[ITEM_AMMO:ITEM_AMMO_BOLTS_THREE]
+[NAME:hammerhead bolt:hammerhead bolts]
+[CLASS:BOLT]
+[SIZE:150]
+[ATTACK:BLUNT:10000:2000:smash:smashes:NO_SUB:2000]
+
+
+[ITEM_AMMO:ITEM_AMMO_ARROWS_ONE]
+[NAME:broadhead arrow:broadhead arrows]
+[CLASS:ARROW]
+[SIZE:150]
+[ATTACK:EDGE:10000:10000:strike:strikes:NO_SUB:1500]
+
+[ITEM_AMMO:ITEM_AMMO_ARROWS_TWO]
+[NAME:piercing arrow:piercing arrows]
+[CLASS:ARROW]
+[SIZE:150]
+[ATTACK:EDGE:10:8000:strike:strikes:NO_SUB:1500]
+
+[ITEM_AMMO:ITEM_AMMO_ARROWS_THREE]
+[NAME:hammerhead arrow:hammerhead arrows]
+[CLASS:ARROW]
+[SIZE:150]
+[ATTACK:BLUNT:10000:2000:smash:smashes:NO_SUB:2000]
+
+############################
+#####   FLAVOR ITEMS #######
+############################
+
+dwarves, elves and humans already have new ammo.
+kobolds, goblins and orcs use bodkin/jagged ammo.
+warlocks, frostgiants, undeads use no ranged weapons
+automatons have bullets.
+
+[ITEM_AMMO:ITEM_AMMO_BULLET_EVIL]
+[NAME:bulletspike:bulletspikes] 
+[CLASS:BULLET_L]
+[SIZE:450]
+[ATTACK:EDGE:50:50000:pierce:pierces:NO_SUB:30000]

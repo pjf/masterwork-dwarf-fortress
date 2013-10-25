@@ -1,0 +1,11 @@
+seek out [CONTEXT:HIST_FIG:TRANS_NAME] here in [CONTEXT:SITE:TRANS_NAME]
+You will find [CONTEXT:HIST_FIG:TRANS_NAME] somewhere here in [CONTEXT:SITE:TRANS_NAME]
+Hunt down [CONTEXT:HIST_FIG:TRANS_NAME] who is hiding here in [CONTEXT:SITE:TRANS_NAME]
+[CONTEXT:HIST_FIG:TRANS_NAME] is here in [CONTEXT:SITE:TRANS_NAME].  Please, do something
+[CONTEXT:HIST_FIG:TRANS_NAME] has bothered us for too long.  Seek him in here [CONTEXT:SITE:TRANS_NAME]
+Find and slay [CONTEXT:HIST_FIG:TRANS_NAME] here in [CONTEXT:SITE:TRANS_NAME], before we suffer further
+[CONTEXT:HIST_FIG:PRO_SUB] must be hiding in [CONTEXT:SITE:TRANS_NAME].  Please, stop [CONTEXT:HIST_FIG:TRANS_NAME]
+[CONTEXT:HIST_FIG:TRANS_NAME] is in [CONTEXT:SITE:TRANS_NAME].  [CONTEXT:HIST_FIG:PRO_SUB] has troubled us for far too long
+Put a stop to [CONTEXT:HIST_FIG:TRANS_NAME] here in [CONTEXT:SITE:TRANS_NAME], once and for all
+Now go, and bring [CONTEXT:HIST_FIG:TRANS_NAME] to justice
+Find [CONTEXT:HIST_FIG:TRANS_NAME] here in [CONTEXT:SITE:TRANS_NAME] and put an end to our troubles

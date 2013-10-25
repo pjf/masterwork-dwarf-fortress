@@ -1,0 +1,30 @@
+Use DwarfFortressConfig.exe to customize your tileset, update your savegames and change unit graphics to your preferences.
+
+==================================================
+To gain some FPS you can try switching [PRINT_MODE:2D] to [PRINT_MODE:STANDARD] in "/data/init/init.txt".
+Warning, the STANDARD print_mode can cause crashes on some computers.
+
+==================================================
+To use a tileset with punctuation, it could help to edit data/init/d_init.txt and change '[VARIED_GROUND_TILES:YES]' to '[VARIED_GROUND_TILES:NO]'. This will make the game only use the period "." tile for ground tiles.
+
+==================================================
+The Phoebus Graphic Pack contains several alternate tilesets:
+
+Default:
+Phoebus_16x16.png   (Standard)
+
+Phoebus_16x16_Diagonal.png   (Classic Diagonal Walls)
+Phoebus_16x16_Meld.png   (Natural rough stone melds together in a single mass)
+Phoebus_16x16_Smooth.png   (Ground/Soil with a dithered pattern)
+
+Phoebus_16x16_TextBackground.png   (The same ground/soil background behind all characters)
+Phoebus_16x16_TextClean.png   (All characters are letters with black background)
+
+
+To change the tileset you will need to:
+
+1. Open the data/init/init.txt file.
+
+2. Edit the four lines with "Phoebus_16x16.png" so they use the alternate tileset's name.
+
+3. STRIKE THE EARTH!

@@ -1,0 +1,9 @@
+Once it was my calling to rescue lost children.
+For [CONTEXT:NUMBER] of my years, I rescued lost children.
+For [CONTEXT:NUMBER] years, I brought children to [CONTEXT:PLACE:TRANS_NAME].
+I once helped children reach their full potential in [CONTEXT:PLACE:TRANS_NAME].
+For [CONTEXT:NUMBER] years, I led abandoned children back to [CONTEXT:PLACE:TRANS_NAME].
+I used to bring children to [CONTEXT:PLACE:TRANS_NAME].
+For [CONTEXT:NUMBER] years, I took neglected children to [CONTEXT:PLACE:TRANS_NAME].
+I once helped lost children find their way back home.
+It was once my calling to save children from unworthy caretakers.

@@ -1,0 +1,14 @@
+I once sought great treasures.
+I sought great treasures for [CONTEXT:NUMBER] of my years.
+I was once a great thief.
+What I used to do is not important.
+For [CONTEXT:NUMBER] years, I sought artifacts of renown.
+For [CONTEXT:NUMBER] years, I retrieved treasures in the name of [CONTEXT:PLACE:TRANS_NAME].
+Mind your own business, you.
+I used to be the sort to make off with your coinpurse.
+I used to take cumbersome objects off the hands of their owners.
+I once braved the halls of dwarven fortresses to emerge with their wealth.
+You talk too much.
+I have no wish to discuss that.
+Let us speak of something else.
+I appreciate your curiosity, but my past is secret.

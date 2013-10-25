@@ -1,0 +1,1 @@
+df.global.world.worldgen.worldgen_parms.embark_points=tonumber(...)

@@ -1,0 +1,28 @@
+The automaton says in a monotome voice: *Target aquired*
+The automaton says in a monotome voice: *Target locked*
+The automaton says in a monotome voice: *Searching...searching...searching*
+The automaton says in a monotome voice: *Target found*
+The automaton says in a monotome voice: *Fire. Fire. Fire*
+The automaton says in a monotome voice: *Attack Now*
+The automaton says in a monotome voice: *Zzzssiissss... I am leaking*
+The automaton says in a monotome voice: *Creature spotted. Class Dwarf. Angry.*
+The automaton says in a monotome voice: *Creature spotted. Class Dwarf. Drunk.*
+The automaton says in a monotome voice: *Creature spotted. Class Dwarf. Mad.*
+The automaton says in a monotome voice: *Creature spotted. Class Dwarf. Very Angry.*
+The automaton says in a monotome voice: *Creature spotted. Class Dwarf. Drunker then usual.*
+The automaton says in a monotome voice: *Target spotted. Class Dwarf. Angry.*
+The automaton says in a monotome voice: *Target spotted. Class Dwarf. Drunk.*
+The automaton says in a monotome voice: *Target spotted. Class Dwarf. Mad.*
+The automaton says in a monotome voice: *Target spotted. Class Dwarf. Very Angry.*
+The automaton says in a monotome voice: *Enemy spotted.*
+The automaton says in a monotome voice: *Enemy locked.*
+The automaton says in a monotome voice: *Engage*
+The automaton says in a monotome voice: *Resistance is futile*
+The automaton says in a monotome voice: *Sharpshooters, engage this target on my mark*
+The automaton says in a monotome voice: *Life is useless*
+The automaton says in a monotome voice: *Death comes to all organics*
+The automaton says in a monotome voice: *We are the harbinger of your destruction*
+The automaton says in a monotome voice: *We transcend your comprehension*
+The automaton says in a monotome voice: *You will die, because we command it*
+The automaton says in a monotome voice: *We are superior*
+The automaton says in a monotome voice: *I'm about to break the first law*

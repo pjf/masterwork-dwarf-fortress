@@ -1,0 +1,4 @@
+creature_a_pet_drowfort
+
+YESDROWRACE[OBJECT:CREATURE]
+

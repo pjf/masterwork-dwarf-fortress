@@ -1,0 +1,473 @@
+RELEASE 0.6.12 (February 18, 2012)
+CHANGES SINCE 0.6.11
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.34.02 (graphics + legacy version)
+ BUG FIXES:
+ * Closes issue 382 - Migration waves are wonky
+ * Closes issue 383 - Ability to set child labor in Dwarf Therapist
+ * Closes issue 368 - Beekeepers, waxworkers always show 0 experience
+ * Closes issue 290 - Bow, not Lasher
+
+RELEASE 0.6.11 (February 15, 2012)
+CHANGES SINCE 0.6.10
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.34.01 (graphics + legacy version)
+KNOWN ISSUES:
+ * Some persistent memory scanning issues
+ * There are going to be bugs
+
+RELEASE 0.6.10 (March 15, 2011)
+CHANGES SINCE 0.6.9
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.20 & 0.31.21
+
+ BUG FIXES:
+ * Closes issue 318 - Support for 0.31.21
+ * Closes issue 319 - 31.21 Windows
+ * Fixed issue 276 - Job Names Incorrect
+ 
+RELEASE 0.6.9 (February 17, 2011)
+CHANGES SINCE 0.6.8
+===============================================================================
+MAJOR CHANGES:
+ * Support for most new job types (with icons!)
+ * Support for automatic downloading of layout files. 
+		(Can be disabled by disabling the version check in preferences)
+ * This is the first version of Dwarf Therapist that reads RAW files, so please 
+		post any issues found
+
+ BUG FIXES:
+ * Fixed issue 313 - Stuck loading squads on older versions of Dwarf Fortress
+
+RELEASE 0.6.8 (February 16, 2011)
+CHANGES SINCE 0.6.7
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.19 (graphics + legacy versions)
+ * Added Skills, Labors, and Professions for Shearing, Spinning, Pottery, Glazing, Pressing, Bee Keeping and Wax Working
+KNOWN ISSUES:
+ * Jobs for new professions are not displayed
+  
+RELEASE 0.6.7 (November 24, 2010)
+CHANGES SINCE 0.6.6
+===============================================================================
+BUG FIXES:
+ * Fixed issue 305 - Fix for undead dwarf flag (Live dwarves not showing up)
+ 
+RELEASE 0.6.6 (November 16, 2010)
+CHANGES SINCE 0.6.5
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.18 (graphics + legacy versions)
+ * Started generating debian packages for Dwarf Therapist.  See wiki for repositories
+ * Implemented Feature 272 - Ability to clear user settings from File menu
+ * Implemented Feature 231 - Option to hide children and babies
+ * Implemented Feature 300 - Group by squad
+  
+BUG FIXES:
+ * Fixed issue 297 - Unable to run DT on Ubuntu 10-10
+ * Fixed issue 298 - Unable to connect DT to DF (ptrace issue)
+ * Fixed issue 263 - Tabs not showing up
+ * Fixed issue 247 - No compiling instructions
+ * Fixed issue 291 - Compilation errors in qt 4.7
+ * Fixed issue 301 - Ghostly Dwarves appear on DT
+ * Fixed issue 273 - Window title for Scanner Dialog
+ * Fixed issue 270 - Cancelling nickname change wipes nickname anyway
+ 
+RELEASE 0.6.5 (November 11, 2010)
+CHANGES SINCE 0.6.4
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.17 (graphics + legacy versions)
+ * Fixed Dwarf Race Index scanning on linux
+ * Added a new Layout Wizard feature for creating new layouts
+	Basically, when you get the version not found message, click ok, connect, then
+	scan memory.  From there, click the Create New Layout, type in the new version and filename, and
+	select the most recent file.  If the dwarf offsets haven't change, it should generate the layout
+	for you automatically.  Follow instructions in GUI.
+ * Fixed issue 295 - Importing asks for incorrect file extension
+
+RELEASE 0.6.4 (October 4, 2010)
+CHANGES SINCE 0.6.3
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.16 (graphics + legacy versions)
+ 
+
+RELEASE 0.6.3 (October 3, 2010)
+CHANGES SINCE 0.6.2
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.15 (graphics + legacy versions)
+ 
+
+RELEASE 0.6.2 (September 13, 2010)
+CHANGES SINCE 0.6.1
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.14 (graphics + legacy versions)
+BUG FIXES:
+ * Fixed problem with scanning functions for determining new layouts.
+
+
+RELEASE 0.6.1 (September 18, 2010)
+CHANGES SINCE 0.6.0
+===============================================================================
+MAJOR CHANGES:
+ * Official Support for 0.31.11 (graphics + legacy versions)
+ * Official Support for 0.31.12 (graphics + legacy versions)
+BUG FIXES:
+ * Fixed backward compatibility with previous versions of Dwarf Fortress
+   (Fixes issue 285)
+
+   
+RELEASE 0.6.0 (September 17, 2010)
+CHANGES SINCE 0.5.7
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.13 (graphics + legacy versions)
+ * NOTE: Release 0.6.0 will only support Dwarf fortress 0.31.13 and above *
+	* Support for previous versions may be added in a future release *
+
+
+RELEASE 0.5.7 (July 13, 2010)
+CHANGES SINCE 0.5.6
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.10 (graphics + legacy versions)
+
+ 
+RELEASE 0.5.6 (June 29, 2010)
+CHANGES SINCE 0.5.5
+===============================================================================
+MAJOR CHANGES:
+ * None (BUGFIX RELEASE)
+MINOR CHANGES:
+ * Added group by nickname or no nickname (Fixes issue 262)
+BUG FIXES:
+ * Fixed incorrect warning about no fort loaded when a fort was actually loaded 
+   (Fixes issue 261)
+ * Fixed invalid UI state when attempting to connect to DF but no fort is loaded
+   (Fixes issue 255)
+  
+RELEASE 0.5.5 (June 26, 2010)
+CHANGES SINCE 0.5.4
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.08 (graphics + legacy versions)
+ * The military view tab is back (read only for now)
+MINOR CHANGES:
+ * Added method to scanner for searching for std::string instances
+ * Removed group by squad since none of the squad reading works yet
+BUG FIXES:
+ * Added job name for job 97 (forge ?? pick) (Fixes issue 257)
+ * get rid of exclusive labor on Mining+Gem Setting (Fixes issue 250)
+ * Fixed 3 unreported bugs in DFInstance::scan_mem():
+   1) When encountering a memory region that was smaller than the step size, 
+      the step size was reduced but never increased again slowing everything 
+      down
+   2) There was no provision for matches that may occur more than once in a 
+      memory segment (it now finds all of them)
+   3) There was no provision for hits that may cross step boundaries. Use of a 
+      back buffer now catches matches across step boundaries.
+
+      
+RELEASE 0.5.4 (June 10, 2010)
+CHANGES SINCE 0.5.3
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.06 (graphics + legacy versions)
+ 
+ 
+RELEASE 0.5.3 (June 5, 2010)
+CHANGES SINCE 0.5.2
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.05 (graphics + legacy versions)
+ * Better support for 0.31.04 graphics version
+ * Added support for 0.31.04 legacy version
+MINOR CHANGES:
+ * Added detection for "On Break" dwarves (Fixed issue 167)
+ * Added "Make Reaction" (Fixed issue 211)
+ * Make sure happiness sorting uses happiness value vs name (fixes order issues)
+ * You can now group dwarves by number of assigned labors (Fixed issue 176)
+BUG FIXES:
+ * Properly set labors that require tools from DT (Fixed issue 207)
+   (You can toggle mining and woodcutting from DT again!)
+ * Fixed issue 222 (crash on adding columns to a gridview with no sets)
+ 
+
+RELEASE 0.5.2 (May 18, 2010)
+CHANGES SINCE 0.5.1
+===============================================================================
+MAJOR CHANGES:
+ * Support for 0.31.04
+ * MemoryLayouts now have a concept of being "complete" or not. DT will not try
+   to load values on startup if the detected layout file is "incomplete" 
+   (complete means the file doesn't contain a "complete = false" line in its 
+   [info] section. This should help for mapping new versions.
+MINOR CHANGES:
+ * Added a "copy address to clipboard" method to dwarf context menu
+ * Added dump to file context menu action for dwarves (Fixes issue 224)
+ * Greatly sped up raw data reads on linux (also uses less ram)
+ * Compiles and runs on Linux again (no memory layouts yet)
+BUG FIXES:
+ * Confirmed fixes migrants not loading (Fixes issue 218)
+ * Sorting fix (fixes issue 220)
+ * Fixed crash on right click in grid views dock (Fixes issue 219)
+
+
+RELEASE 0.5.1 (April 24, 2010)
+CHANGES SINCE 0.5.0
+===============================================================================
+MAJOR CHANGES:
+ * Stable Support for 0.31.03
+ * game_data.ini no longer lists checksum->memory_layout entries anymore 
+   (They are now discovered by reading *.ini in your platform's memory_layout 
+   directory) Any .ini file found with a valid info section will be added to 
+   the memory layout list. This prevents repeating the same data in different 
+   places and enables new layout files to be delivered in the future by just 
+   dropping them in the correct directory.
+ * The "can't talk to this version" warning dialog got a face lift. Since we now
+   read in all memory layouts, the dialog can show which versions of DF can be 
+   talked to. This hopefully gives a bit more actionble information to the user.
+   It also links to the wiki.
+MINOR CHANGES:
+ * New group-by method "Highest Skill" groups dwarves by their highest actual skill level
+ * New group-by method "Total Skill Levels" groups dwarves by their total number of skill ranks
+ * Added a progress bar the Main windows's status bar (dwarf loading uses it now)
+BUG FIXES:
+ * Fix for leatherworking and tanning mixup on the grid
+ * Fixed issue 206. (wrong name for skill level 2)
+ * Fixed crash in Scanner if creature_vector is incorrect
+ * Profession 63 is Diagnoser not Suturer (fixes issue 205)
+ * Applied locale-aware sorting patch from Zhentar (fixes issue 190)
+ * Some translation fixes for setting Dwarf nicknames.
+ * Added new group by "Highest skill" option (Fixes issue 180)
+ * Added method to group by total skill level (Related to issue 180)
+ * Fix sorting for integer based group-by options (such as Highest skill, migration wave etc...)
+ 
+  
+RELEASE 0.5.0 (April 10, 2010)
+CHANGES SINCE 0.4.3
+===============================================================================
+MAJOR CHANGES:
+ * Stable Support for 0.31.01 and 0.31.02
+MINOR CHANGES:
+ * more informative error when connecting to unknown versions of DF
+ * Show the checksum of a DF version that can't be talked to (to assist with adding support for new versions)
+ * MemoryLayout now checks to make sure a file exists before blindly reading crap
+ * added new types of dwarf jobs MEDICAL and FURNACE (furnace still needs an icon)
+BUG FIXES:
+ * Fixed flag validation for dwarfs (merchants, guards, liasons, corpses should no longer show up in the main list)
+ * Fixed skill display for dwarfs 
+ * Fixed trait display for dwarfs
+ * Fixed current-job display for dwarfs
+ * Fixed issue 189. (long/multipart surname reading)
+ * Fixed issue 173. (migration waves sort order)
+ * Fixed issue 157. (add option for hiding dabbling skills)
+ * Made military status names translatable (and made the baby/child search text based instead of using ids)
+ * Removed print button since it was just for playing around with
+ * Fixed issue 193. (some flags are required to be on a dwarf)
+ * Fixed issue 201. (mechanic skill id incorrect)
+ 
+  
+RELEASE 0.4.3 (April 4, 2010)
+CHANGES SINCE 0.4.2
+===============================================================================
+MAJOR CHANGES:
+ * Added preliminary support for DF2010 (0.31.01)
+ * This will not be an advertised release
+ 
+ 
+RELEASE 0.4.2 (October 26, 2009)
+CHANGES SINCE 0.4.1
+===============================================================================
+MAJOR CHANGES:
+ * You can now set a dwarf's weapon count, shield type and armor type
+ * You can now set a dwarf's  main weapon type (Fixed issue 137)
+ * Added new grouping method "Military Status" for helping out when choosing new military. (Fixed issue 134)
+ * Added new grouping method "Squad" which does what it sounds like :)
+ * Added new grouping method "Current Job", and it rules (Fixed issue 9)
+ * GridViews are now either custom or built-in. Built-in gridviews cannot be edited. (Fixed issue 147)
+ * Welcome back Athlon owners! Fixed problem running on non-SSE2 processors (Athlon) (Fixed issue 120)
+MINOR CHANGES: 
+ * You can now have custom professions that have the same name as a default profession, 
+   and trying to delete that custom profession (for instance "Miner") will force you to 
+   change the profession for all dwarfs that have the custom profession set to "Miner", 
+   but not dwarfs whose main default profession is "Miner" (Fixed issue 144)
+ * Added AttributeColumns (Fixes issue 122)
+ * Added a name completer to the filter box (guesses names based on what's been typed) 
+   Searching for characters that don't start a dwarf name still works though. 
+ * Added labor cheating option to main options tab (when checked you can set labors on anything) (Fixed issue 125)
+BUG FIXES:
+ * Fixed Happiness labels (Content has a range of 50 points not 25) (Fixed issue 139)
+ * Professions now all have male and female versions of their title (only used for Baron, Count etc...) (Fixed issue 140)
+ * Fixed invalidation flags in all windows versions for filtering out invaders and the undead
+   This should fix non-site dwarfs showing in the list (Fixed issue 116)
+ * Added more checks for lost connections (for those that turn off the alert) (Fixed issue 129)
+ * Fix Bulk Toggle (Hauling, etc) Does Not Display Changes On Grid (work on issue 135)
+ * Duplicate name defense on ViewColumnSet::add_column(), dupe names now get incremental numbers appended to their name
+ * Added "Set Profession Text" Option on Right-Click Context Menu for dwarfs (Fixes issue 130)
+ * Tabs now properly update after editing gridviews that are currently shown (and not shown)
+ * Fixed bad drawing of happiness cells (no OS highlight anymore)
+ * Attempting to add a Grid view that has been deleted triggers crash (Fixed issue 124)
+ * Fixed broken labor sorting (Fixed issue 117)
+ * Split "Grid Colors" from "Grid options" section of Options screen (Fixed issue 126)
+
+
+RELEASE 0.4.1 (October 6, 2009)
+CHANGES SINCE 0.4.0
+===============================================================================
+MAJOR CHANGES:
+ * Dwarf traits are now shown in the DwarfDetailsDock! (Fixed issue 113)
+ * Improved sorting behavior on names. You can now right-click the top of the names column for sort options (Fixed issue 115)
+ * Fixed the dwarf details handling to now open the dock on double click or "show details..." if it is not already open.
+ * You can now group dwarfs by migration wave (this relies on guesswork and may be very broken)
+MINOR CHANGES:
+ * DwarfDetailsDock now shows a better default screen on load
+BUG FIXES:
+ * Fixed showstopper for folks using custom professions (issues 112 and 114) This was a bug
+   preventing users from being able to toggle labors for some dwarfs with custom professions set.
+ * Allow sorting when grouped by profession again (oversight)
+ 
+
+RELEASE 0.4.0 (October 3, 2009)
+CHANGES SINCE 0.3.2
+===============================================================================
+MAJOR CHANGES:
+ * Full re-write of the sets and views handler. View customization now rules if I may say so myself. (Fixed issue 89)
+ * Custom views can now be imported/exported like custom professions (this should get us sharing views!)
+ * New dwarf details dialog is epic (Fixes issue 95)
+MINOR CHANGES:
+ * Labors can now include an "excludes" list which will make sure only one of the professions in list can be active at a time. (Fixes issue 91)
+ * Column headers now highlight as you move around the main cells (Fixes issue 80)
+ * Views now remember selected dwarfs when switching tabs, sort order, or grouping (Fixes issue 108)
+ * Added new option for alerting when connection is lost to DF (Fixes issue 102)
+ * Added new option for checking for updates on startup
+ * Reworked the about menu to allow manual update checks. 
+ * Options menu is now broken into different tabs with better tooltips for each options (Fixed issue 105)
+ * Added a mechanism for HappinessColumn to update itself independent from DwarfModel redraws (much faster)
+ * HappinessColumn now draws an aggregate cell that shows the lowest happiness in a group for (eye-catching-ness)
+ * Hacked up ColorPickerButton a bit to show the hex code of custom colors
+ * There is now a display for total number of dwarfs next to the big number of pending changes display (Fixed issue 100)
+ * Views can now be copied via their context menus
+ * You can now dump memory for a dwarf to a text dialog (not for general use)
+ * Dwarf detail dock now shows attributes as well as a graph for when the next attribute will be gained
+ * Skill legend dock now allows right click to change the active skill drawing method (Fixes issue 85)
+BUG FIXES:
+ * Fixed color choosers not remembering the last custom color used (Fixed issue 103) 
+ * Removed incorrect entries in the non_labor_professions (Fixed issues 87 & 106)
+ * Fixed a bug where set re-ordering wasn't being persisted after editing.
+ * Fixed a stupid bug where any GridView being changed caused ViewManager to write/read/redraw/write/read/redraw (this took almost 3 seconds in debug builds) Much much faster handling of this now.
+ * Fixed a bug where newly added sets were promptly thrown away after accepting the edit dialog :)
+ * Fixed a bug in the SpacerColumn ctor that did not explicitly set a width (spacers with a width of -8923232 don't look quite right, BTW)
+ * Fixed a bug in the ViewColumn QSettings-based ctor where the column was not being automatically added to the set that was passed in
+ * fixed a stupid thing I was doing with the GridViewDock (allowing context menus anywhere on the widget), also added a "new set" action to the GridViewDock's context menu.
+ * Fixed some bugs with column re-ordering in a set
+ * Added icons to the GridViewDock context menu
+ * Fixed a bug where skill columns weren't being drawn in the editor
+ * Fixed a bug where the user's tab order wasn't being saved on changes
+ * Fixed a bug where DT only recognized 6 happiness levels to support all 7 that actually exist
+ * Additional languages cause dwarf names to be wrong (Fixes issue 101)
+ * Reworked the XP displays that were broken in the 0.3.2 release (Fixes issue 93)
+ * Fixed bug where overridden column background colors weren't being honored (Fixes issue 86)
+ * Reverse sort the special column types so that "Spacer" is the default instead of "Happiness" when editing a column set (Fixed issue 90)
+ * Fixed crash on windows when launched with option read on start set, and no DF version is running (Fixed issues 84, 99)
+
+
+RELEASE 0.3.2 (September 13, 2009)
+CHANGES SINCE 0.3.1
+===============================================================================
+MAJOR CHANGES:
+	* added support for 40d15 & 40d16 on Windows
+	* re-implemented experience display. Tooltips now show experience as: 
+	  "current/nextlevel (%progress)" (issue 67)
+	* Fixed up tooltips for skill and labor columns to nicely show skills with 
+	  true level and experience (issues 75,77)
+	* Fixed the window finding issues on XP and Vista (Thanks to Guhndahb and 
+	  0x517A5D) 
+MINOR CHANGES:
+	* Added non-labor setting professions (child, baby, noble etc...) This 
+	  should keep users from setting illegal labors (issue 60)
+	* tooltips now show the generic translation of a dwarf's name (issues 68, 
+	  70, 76)
+	* fixed a bug where the translation tables were read despite having 0 values
+	  (issues 68, 70, 76)
+	* Labor changes not added if Read Dwarves is pressed before Commit Changes 
+	  (issue 69)
+	* Got rid of both library dependencies on both windows and linux (they are 
+	  statically compiled in making building easier)
+	* Windows now maps memory segments the same way linux does, this prevents 
+	  access violations etc..., making sure we only read known committed 
+	  readable memory segments
+FEATURE REQUESTS:
+ * Added option to show full dwarf names in the options menu (requires 
+   re-reading the dwarfs due to caching) (issue 66)
+ * added new option to always expand all groups (feature request 83)
+ * Enabled labors with no skill in the labor now get a slight boost in sort 
+   order. So if you sort a labor by skill, enabled-but-unskilled dwarfs will 
+   show just after dabbling dwarves. (feature request 78)
+ * Added a new skill drawing method SDM_NUMERIC which draws numbers for the 
+   level on the grid (looks good actually) (issues 75,77)
+ * Re-did the other SKILL_DRAWING_METHODs to differentiate between 0xp and 
+   dabbling. Something is now draw for each of them if skill is over 0exp. 
+   (issues 75,77)
+ * Skill objects now default to a -1 rating instead of 0 (this was causing a 
+   merge between dabbling and 0 experience) (issues 75,77)
+ * reworked the dwarf tooltips (show profession in tooltip) (issues 68, 70, 
+	 76)
+ 
+
+RELEASE 0.3.1 (August 19, 2009)
+CHANGES SINCE 0.3.0
+===============================================================================
+ * HappinessColumn tooltip now shows the english version of the happiness level
+ * Skills now correctly read experience (Fixed issue 1)
+ * fixed issue 58 (can't repro it anymore)
+ * Added ability to toggle an entire set at once for a dwarf or a group of 
+   dwarfs
+ * added support for 40d14
+ * (Fixed issue 5): Show skill-ratings legend somewhere
+ * Moved the dock config around. Views, Sets, and Skill legend docks are now 
+   off by default and can be turned on in a variety of ways. They also default 
+   to floating windows that can be docked.
+ * (Fixed issue 42): Hangs if game saved/continued without reloading
+ * DT now heartbeats every second to DF. It a fort is unloaded or the game 
+   exits, DT will disconnect and allow reconnection.
+ * (Implemented issue 40): Profession mgmt - separate file/export
+ * Fixed a minor drawing bug with selected rows not showing the main grid 
+   underneath
+ * Fixed a bug where the Viewmanager would try to draw tabs with invalid indexes
+ * (Fixed issue 55): Confirm overwrite if View or Set name exists
+	 This dialog only pops up when you aren't editing. To prevent accidental 
+	 clobbering.
+	 Cases where it shows up:
+		 Edit View1, change the name to View2(which already exists)
+		 New view, change the name to View2(which already exists)
+		 Will not show up on edit if the original name was View3 and you save it as 
+		   View3.
+	 Since it doesn't show up in the general case, I've opted to not implement 
+	 the "don't ask me again" checkbox
+ * (Fixed issue 54) Blank name is allowed for set name
+ * (Fixed issue 53) Main window doesn't show changes after changing group by
+ * generic_useless.ini set wasn't correct, so I removed it
+ * StateTableView now remembers which rows were expanded and which weren't
+ * Setting the group by now goes thru ViewManager so the columns don't get 
+   stretched incorrectly 
+ * (Fixed issue 57) Dwarf Name column resets to fixed-width
+ * (Fixed issue 63) Options Window Duplicates Custom Professions
+ * (Fixes issue 61) customizable skill icons
+ * (Fixes issue 62) option to turn of shading
+ * some minor speedups based on a trial of profiler
+ * Dwarf::nice_name() is now cached since it hardly ever changes
+ * GameDataReader now caches skill names and skill level names (and uses them)
+ * UberDelegate now passes adjusted rectangles by reference to the sub-painters
+   for less stack thrashing
+ * Less QString::operator+ usage, since it seems to cause reallocations and is
+   generally slow as fucking hell
+ * Found some spots where build_rows() was being called multiple times and 
+   being slow

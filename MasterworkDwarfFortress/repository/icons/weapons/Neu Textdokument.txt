@@ -1,0 +1,51 @@
+weapons
+AXE_TRAINING
+SWORD_SHORT_TRAINING
+SPEAR_TRAINING
+MACE_TRAINING
+STAFF_TRAINING
+PICK ### runic
+KNUCKLE_DUSTER
+AXE_WOOD ###
+AXE_BATTLE ###
+HAMMER_WAR ### runic
+DAGGER_LARGE ### runic
+SWORD_SHORT ###
+SWORD_LONG###
+SCIMITAR### runic
+SPEAR ### runic
+PIKE
+MACE ### runic
+MORNINGSTAR
+HALBERD ### runic
+SWORD_HANDER_ZWEI###
+MAUL
+AXE_GREAT ### runic
+HAMMER_METEOR
+all runic
+all legendary version
+CROSSBOW
+JAVELIN_THROWER
+bladed versions
+mechanized versions
+BLOWGUN cant be produced
+scourge flail whip 
+musket###
+rifle###
+flintlock### 
+pistol###
+bayonett
+all with bayonett
+handcannon
+	
+
+WEAPON_AXE_THROWING
+	AMMO_DAGGER###
+	WEAPON_DAGGER_THROWING
+	AMMO_AXE
+	WEAPON_HAMMER_THROWING
+	AMMO_HAMMER
+	WEAPON_SPEAR_THROWING
+	AMMO_SPEAR
+	WEAPON_WHIP_THROWING
+	AMMO_WHIP

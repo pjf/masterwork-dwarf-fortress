@@ -1,0 +1,31 @@
+Hello, [AUDIENCE:RACE].  I am [SPEAKER:TRANS_NAME].
+Hello, [AUDIENCE:RACE].  My name is [SPEAKER:TRANS_NAME].
+Greetings, [AUDIENCE:RACE].  I'm [SPEAKER:TRANS_NAME].
+Greetings, [AUDIENCE:RACE].  My name is [SPEAKER:TRANS_NAME].
+Welcome, [AUDIENCE:RACE].  I am [SPEAKER:TRANS_NAME].
+Welcome, [AUDIENCE:RACE].  My name is [SPEAKER:TRANS_NAME].
+Hello, [AUDIENCE:RACE].  What brings you here?
+Hello, [AUDIENCE:RACE].  What do you want?
+Hello, [AUDIENCE:RACE].  What can I do for you?
+Greetings, [AUDIENCE:RACE].  What brings you here?
+Greetings, [AUDIENCE:RACE].  What do you want?
+Greetings, [AUDIENCE:RACE].  What can I do for you?
+Hail, [AUDIENCE:RACE].  What brings you here?
+Hail, [AUDIENCE:RACE].  What do you want?
+Hail, [AUDIENCE:RACE].  What can I do for you?
+Yes, [AUDIENCE:RACE]?  What brings you here?
+Yes, [AUDIENCE:RACE]?  What do you want?
+Well, [AUDIENCE:RACE], what can I do for you?
+Greetings.  My name is [SPEAKER:TRANS_NAME].
+Greetings.  I am [SPEAKER:TRANS_NAME].
+Hello.  My name is [SPEAKER:TRANS_NAME].
+Hello.  I am [SPEAKER:TRANS_NAME].
+Pleased to meet you.  My name is [SPEAKER:TRANS_NAME].
+Pleased to meet you.  I am [SPEAKER:TRANS_NAME].
+My name is [SPEAKER:TRANS_NAME].
+I am [SPEAKER:TRANS_NAME].
+Hello, [AUDIENCE:RACE].
+Greetings, [AUDIENCE:RACE]
+What can I do for you, [AUDIENCE:RACE]?
+[AUDIENCE:RACE].
+What do you want, [AUDIENCE:RACE]?

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>The Elevation Map Tab</title>
+</head>
+<body>
+<h1>The Elevation Map Tab
+</h1>
+This tab is where we decide the elevation of each map tile.
+<br>
+<img style="width: 862px; height: 708px;" alt="Elevation Tab Screenshot"
+ src="Images/Elevation%20Map%20Tab.jpg"><br>
+<br>
+The Zoom Level control will zoom in all maps associated with this tab.
+Zooming in will change the size of the edit brush so that the edit
+reticle cursor always shows the extent of the brushes effect.
+<br>
+<br>
+The &lsquo;Preview Small Oceans Filled&rsquo; check box allows
+you to see what the map will look like once the oceans below a certain
+size are filled. The reason that this feature is usually off is because
+filling the lakes changes the sea level, which can create more lakes
+that need to be filled, which again changes the sea level, which again
+creates&hellip; well, you get the idea. It&rsquo;s better to
+keep it off until the last step where you can have a last look to see
+what the result will be.
+<br>
+<br>
+The &lsquo;Fill In Oceans Smaller Than&rsquo; control sets the
+size at which lakes are filled. The reason why you want to fill small
+lakes is because they are treated as saltwater oceans by the game, and
+any rivers that flow into these small lakes end. It looks very awkward
+to have all the world&rsquo;s major rivers empty into a 1 tile
+itty-bitty ocean, so to avoid that scenario, we fill in the small
+oceans. A setting of 0 will disable this feature and allow any size
+ocean.
+<br>
+<br>
+The &lsquo;Percent Below Sea Level&rsquo; slider allows you to
+set the elevation that below which is underwater and considered ocean
+tiles.
+<br>
+<br>
+The &lsquo;Percent Below Tree Line&rsquo; slider allows you to
+set the elevation that below which are your normal land biomes, and
+above which are considered mountains. The mountains will be eroded in
+game depending on how many erosion cycles you have chosen in the
+world_gen.txt parameters, so here you would set them to a slightly
+higher amount to compensate.
+<br>
+<br>
+The &lsquo;Coast Control&rsquo; buttons allow you to force
+coast or a mountain border on any of the map edges and to create an
+inland sea. In order to
+avoid squarish looking coasts, you might raise the sea level if you use
+these so you can create a natural looking coastline.
+<br>
+<br>
+The elevation map is created by combining two different Perlin noise
+fields. One is called a &lsquo;turbulence&rsquo; field and the
+other can be either normal Perlin noise or also turbulence. Turbulence
+is created from noise by inverting values above the middle range. This
+creates a cusp of high values that can look like spaghetti or a
+mountain range depending on how you look at it. Turbulence has the
+advantage that it can be used to simulate mountain ranges, but because
+all of the highest values run a spaghetti like path, it is not suitable
+to create islands. For a regional map you will often use the turbulence
+map to create mountain ranges, and the second noise field to create
+details. If you desire to create a map of islands or continents upon an
+ocean, you would reverse their roles. You would use the second noise
+map with normal noise to create islands, and then use the turbulence
+map to create details. Have a look at these two screenshots and compare
+the settings on each.<br>
+<img style="width: 618px; height: 895px;" alt="Region Map Screenshot"
+ src="Images/Region%20Map.jpg"><img style="width: 618px; height: 895px;"
+ alt="Island Map Screenshot" src="Images/Island%20Map.jpg"><br>
+<br>
+(Curious Note: If you look at the upper left corners of the two
+turbulence fields in the above examples you might notice that they are
+using the same noise field, but with a different size and smoothness.
+Fun!) <br>
+<br>
+Each noise
+field has it&rsquo;s own set of similar controls.
+<br>
+<br>
+The &lsquo;weight&rsquo; slider governs how much of this noise
+map is added to the final elevation map. Setting both noise maps to
+zero weight will remove them from the final map and cause only any map
+edits you have made to be visible.
+<br>
+<br>
+The &lsquo;Feature Size&rsquo; slider adjusts the size of the
+features in the noise field. The higher the number, the smaller the
+features get. If that seems awkward, the slider is actually controlling
+&lsquo;frequency&rsquo; directly, and size indirectly as a
+result of frequency.
+<br>
+<br>
+The &lsquo;Smoothness&rsquo; slider adjusts the smoothness of
+the noise field.
+<br>
+<br>
+The &lsquo;Generate New&rsquo; buttons scramble the noise
+inputs to create a new noise field.<br>
+<br>
+You may also click and drag on the noise fields to adjust their
+position in case you want a certain feature to appear in a specific
+location.<br>
+<br>
+<span style="color: rgb(255, 0, 0);">New</span> for 1.01:<br>
+<br>
+<img style="width: 261px; height: 133px;" alt="New Controls for 1.01"
+ src="Images/PW101_CoastControl.jpg"><br>
+<br>
+As of version 1.01 the coast buttons create coast and also mountain
+borders. Also, you may import a greyscale bitmap in *.bmp or *.png file
+format for your elevations. The filter is used to smooth your hand
+drawn imported bitmaps. Set the filter to a slightly larger size than
+the brush you used to paint the image. The imported bitmap may be
+blended with the other noise maps as desired using the weight controls
+on the noise maps.
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #000
+}
+body, td, th {
+	color: #FFF;
+	font-size: 18px;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #CCC;
+}
+.Rot {color: #F00;
+}
+.Rot {color: #F00;
+}
+</style>
+</head>
+
+<body>
+<div align="center">
+  <p><img src="../MasterworkDwarfFortress/repository/Logo.JPG" alt="logo" width="768" height="225" align="absmiddle" /></p>
+</div>
+<table width="846" border="0" align="center">
+  <tr>
+    <td width="840"><h1 align="center"><u><strong>Masterwork DF - DFhack Quickguide</strong></u>      </h1>
+      <p>The mod includes many patches done by dfhack, as well as custom plugins. These have gotten so numerous that it warrants its own little readme, because its impossible to memorize all those hotkeys. </p>
+      <p><strong>Important: If you Alt+Tab out of the game, for example the access the dfhack console or Dwarf Therapist, Dwarf Fortress thinks that you are still pressing the Alt key. For all intents and purposes it gets stuck. This means all keypresses will be interpreted as Alt+Something, for example Ctrl+C would be Ctrl+Alt+C. To fix this simply press the Alt key once, it will get un-stuck.</strong></p>
+      <p><strong>Strings:</strong><br>
+      - type &quot;startdwarf #&quot; before you embark to change your embarking 7 to #.      <br />
+- type &quot;fullheal&quot; while looking at a creature to heal it.<br />
+- type &quot;DiggingInvaders help&quot; to test the beta-version of invaders that can mine into your fort.<br />
+- type &quot;rendermax enable&quot; to test the beta-version of a lighting system for DF. Needs OpenGL-supporting GPUs. - - - type brainwash, adds perfect personality traits to a dwarf.<br />
+- type elevate_physical, allows to set physical attributes of a dwarf.<br />
+- type elevate_mental, allows to set mental attributes of a dwarf.<br />
+- type makelegendary, allows to set skill levels of a dwarf.<br />
+- type rejuvenate, allows dwarves to stay young forever.<br />
+- type armoks_blessing, adds all of the above, from brainwash to rejuvenate, making the perfect dwarf.<br />
+- type deathcause, allows to see how a creature died. Target any corpse.<br />
+- type removewear, makes a weared/tattered clothing item brand new. <br />
+- type pref_adjust, allows to meddle with dwarf preferences.<br />
+- type showunitsyndromes, it allows to see all syndromes affecting creatures.</p>
+      <p>Many more strings are available, type &quot;dir&quot; into dfhack to get a full list of all strings you can enter. The four I listed above are custom-written, but the vanilla dfhack already includes many plugins for you. </p>
+      <p><strong>Macros Hotkeys</strong>:</p>
+      <p> Df includes an option to record your keystrokes. This allows to automate designates, save your favourite fortress designs and more. The mod also includes several macros.</p>
+      <p> - Ctrl-P plays a selected macro.<br />
+        - Ctrl-R starts/stops recording your keystrokes.<br />
+        - Ctrl-L loads  macro from a list.<br />
+      - Ctrl-S saves recorded macro.</p>
+      <p> <strong>Dfhack Hotkeys:</strong><br />
+        - P while looking at a weaponrack allows it to be assigned to squads.<br />
+        - Shift-Enter while trading will trade an item/stack and move the cursor one step down, helps to trade faster.<br />
+        - Shift-B while looking at the pet list opens the Autobutcher UI.<br />
+  <br />
+        - Ctrl-W changed view of water, shows either tile or numbers.<br />
+        - Ctrl-Q quicksaves the game.<br />
+        - Ctrl-M while looking with 'q' at a mechanisms shows what it is linked to.<br />
+        - Ctrl-O while looking with 'q' at a room will show roomlist and owners.<strong><br />
+        - Ctrl-F opens the DwarfMonitor UI, showing how effective your dwarves work.</strong><br />
+        - Ctrl-V while looking at a mineral-vein will designate it for digging.<br />
+        - Ctrl-C while looking at a tile with 'k' will clean it.<br />
+        - Ctrl-D wile looking at a workshop duplicates the selected job.<br />
+        - Ctrl-U while looking at a unit shows more details.<br />
+      - Ctrl-W while looking at the military equipment screen allows weapon auto-select.<br />
+        <br />
+        <strong>- Ctrl-Shift-P while looking at text =&gt; Prints text into the forumdwarves.txt in the DF folder.</strong><br />
+        - Ctrl-Shift-V while looking at a mineral-vein will designate it for stairs.<br />
+        - Ctrl-Shift-K will destroy all items designated for dumping on the selected tile.<br />
+        - Ctrl-Shift-N will rename a unit or building.<br />
+        - Ctrl-Shift-T will rename a unit profession.<br />
+        - Ctrl-Shift-M while looking at a pressure plate enables linking it to machine power, waterwheels and windmills.<br />
+        <br />
+        <strong>- Alt-A while looking at a siege engine using 'q' allows manual loading and shooting.</strong><br />
+      - Alt-P while looking at a stockpile copies the stockpile settings.<br />
+        - Alt-L while looking at a tile with 'k' opens the liquid-spawner UI.<br />
+        - Alt-P while defining minecart routes open the GuidePath script.<br />
+        - Alt-A while looking at a workshop job shows job details.<br />
+- Alt-M to see a list of all preferences your dwarves have.<br />
+        <br />
+        - Alt-Shift-N sorts units/items by name in the on-screen list.<br />
+        - Alt-Shift-R sorts units by arrival in the on-screen list.<br />
+        - Alt-Shift-T sorts units by profession/items by material in the on-screen list.<br />
+        - Alt-Shift-Q sorts units by squad/items by quality modifier in the on-screen list.<br />
+		- Alt-Shift-I in dwarf mode shows the dfhack stocks-screen.<br />
+		- Alt-Shift-S in dwarf mode zones shows the dfhack zone-screen.<br />
+        <br />
+        Adventure Mode Hotkeys:<br />
+        - Ctrl-B will run adv-bodyswap.<br />
+        - Ctrl-Shift-B will run adv-bodyswap force.<br />
+        - Ctrl-T will open the AdvFort UI.<br />
+        <br />
+        Workflow Plugin Hotkeys:<br />
+        - Alt-W while looking at a workshop opens the Workflow UI.<br />
+        - Alt-W while in the 'z' status screen opens the Workflow Status UI. <br />
+        - Ctrl-W while looking at a workshop opens Workflow UI.<br />
+      - Ctrl-I opens Workflow Status UI.      </p>
+      <p> -------------------------------------------------------------------------------------<br>
+      (there seems to be some redundancy here with Workflow. I myself never used it, so maybe someone else can help me correct the entries. The dfhack init currently has those:<br />
+        # workflow front-end<br />
+        keybinding add Alt-W@dwarfmode/QueryBuilding/Some/Workshop/Job gui/workflow =&gt; Whats the difference to the next line?<br />
+        keybinding add Ctrl-W@dwarfmode/QueryBuilding/Some &quot;gui/workflow&quot;<br />
+        keybinding add Alt-W@overallstatus &quot;gui/workflow status&quot; =&gt; Isnt this the same as the line below?<br />
+        keybinding add Ctrl-I &quot;gui/workflow status&quot;<br />
+      -------------------------------------------------------------------------------------</p>
+      <p><strong>Default Plugins: All these run automatically in the background and are enabled by default.</strong></p>
+      <p> - dwarfnamesadvanced =&gt; Enables more dwarven names.<br />
+        - autoSyndrome =&gt; Allows reactions to target workers/pets.<br />
+        - trueTransformation =&gt; Allows a creature to be transformed multiple times.<br />
+        - autofixhandedness =&gt; Allows the creation of custom left/right gloves.<br />
+        - projectileExpansion =&gt; Allows the creation of special ammo, like burning/exploding bolts.<br />
+        - autobutcher =&gt; A UI for the butchery process. <br />
+        - tweak military-stable-assign =&gt; Fixes some military UI bugs.<br />
+        - tweak military-color-assigned =&gt; Fixes some colors of military units.<br />
+        - tweak military-training =&gt; Faster military sparring.<br />
+        - itemsyndrome =&gt; Allows items and materials to affect creatures with syndromes. <br />
+        - soundsense-season =&gt; Helps soundsense find the current season when you load a running game.<br />
+        - fix/cloth-stockpile enable =&gt; Fixes cloth stockpiles.<br />
+        - binpatch apply deconstruct-teleport =&gt; Fixes materials  teleporting when deconstructing, a rare vanilla bug.<br />
+        - binpatch apply deconstruct-heapfall =&gt; Fixes materials  teleporting when deconstructing, a rare vanilla bug.<br />
+        - binpatch apply hospital-overstocking =&gt; Fixes overstocking of hospitals.<br />
+        - binpatch apply custom-reagent-size =&gt; Fixes some custom-reaction related bugs.<br />
+        - binpatch apply training-ammo =&gt; Fixes a bug that results in marksdwarves not training if thier quiver is full.<br />
+        - binpatch apply weaponrack-unassign =&gt; Weaponracks can now keep weapons.<br />
+        - binpatch apply armorstand-capacity =&gt; Armorstands can now keep armors.<br />
+        - fix/growthbug =&gt; Fixes bodysize of fortress-born creatures.<br />
+        - tweak stable-cursor =&gt; Fixed erratic mouse cursor behavior.<br />
+        - tweak patrol-duty =&gt; Military doesnt complain about patrol duty while training anymore.<br />
+        - tweak readable-build-plate =&gt; Improves pressure plate UI.<br />
+        - tweak stable-temp =&gt; Improves FPS-loss from temperature.<br />
+        - tweak fast-heat 500 =&gt; Faster temperature transmission helps FPS.<br />
+        - tweak fix-dimensions =&gt; Fixes some stacking bugs for liquids, bars, threads and cloth items.<br />
+        - tweak advmode-contained =&gt; Allows running reactions in AdvMode that otherwise would be impossible.<br />
+        - tweak fast-trade =&gt; Shift-Enter in Trade-Screen helps to trade faster.<br />
+  <br />
+      Credits: Special thanks to the dfhack team, especially expwnent and warmist for their close work with modders. Drayath, KurikAmudnil and UristdaVinci for their scripts that help with or fix many issues, and of course the multitalented Putnam, who combines modding knowledge with dfhack scripts.
+        <content-type: text/html>
+    </p></td>  
+</body>
+</html>

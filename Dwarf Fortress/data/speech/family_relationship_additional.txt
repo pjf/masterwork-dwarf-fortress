@@ -1,0 +1,64 @@
+[CONTEXT:HIST_FIG:PRO_SUB] is also my [CONTEXT:FAMILY_RELATIONSHIP]
+[CONTEXT:HIST_FIG:PRO_SUB] is my [CONTEXT:FAMILY_RELATIONSHIP] as well
+I think [CONTEXT:HIST_FIG:PRO_SUB] is somewhere around here
+[CONTEXT:HIST_FIG:PRO_SUB] claims to have visions of the future
+[CONTEXT:HIST_FIG:PRO_SUB] would enjoy speaking with someone like you
+[CONTEXT:HIST_FIG:PRO_SUB] is a restless soul
+[CONTEXT:HIST_FIG:PRO_SUB] wants too much out of life
+[CONTEXT:HIST_FIG:PRO_SUB] wants nothing but happiness for others
+[CONTEXT:HIST_FIG:PRO_SUB] lives for the approval of others
+[CONTEXT:HIST_FIG:PRO_SUB] needs to stop sulking
+[CONTEXT:HIST_FIG:PRO_SUB] and I get along very well
+[CONTEXT:HIST_FIG:PRO_SUB] and I do not get along very well
+[CONTEXT:HIST_FIG:PRO_SUB] and I hate each other
+[CONTEXT:HIST_FIG:PRO_SUB] and I often go for walks together
+[CONTEXT:HIST_FIG:PRO_SUB] and I often talk into the night
+[CONTEXT:HIST_FIG:PRO_SUB] once saved me from bogeymen
+[CONTEXT:HIST_FIG:PRO_SUB] once fell into a river
+[CONTEXT:HIST_FIG:PRO_SUB] once looked down on me
+[CONTEXT:HIST_FIG:PRO_SUB] once betrayed me
+[CONTEXT:HIST_FIG:PRO_SUB] is a truly good person
+[CONTEXT:HIST_FIG:PRO_SUB] is stuck in the past
+[CONTEXT:HIST_FIG:PRO_SUB] is a rather strange person
+[CONTEXT:HIST_FIG:PRO_SUB] is waiting for something exciting to happen
+[CONTEXT:HIST_FIG:PRO_SUB] is angry with me
+[CONTEXT:HIST_FIG:PRO_SUB] is someone I would die for
+[CONTEXT:HIST_FIG:PRO_SUB] is in love
+[CONTEXT:HIST_FIG:PRO_SUB] is frightening me these days
+[CONTEXT:HIST_FIG:PRO_SUB] is someone I admire
+[CONTEXT:HIST_FIG:PRO_SUB] is quite reasonable
+[CONTEXT:HIST_FIG:PRO_SUB] is someone you can trust
+[CONTEXT:HIST_FIG:PRO_SUB] is a person I would follow to the end of the world
+[CONTEXT:HIST_FIG:PRO_SUB] is completely selfish
+[CONTEXT:HIST_FIG:PRO_SUB] was looking for me earlier
+[CONTEXT:HIST_FIG:PRO_SUB] has always been jealous of me
+[CONTEXT:HIST_FIG:PRO_SUB] has magical powers
+[CONTEXT:HIST_FIG:PRO_SUB] has been going out of town recently
+[CONTEXT:HIST_FIG:PRO_SUB] should not even be alive today
+[CONTEXT:HIST_FIG:PRO_SUB] should not have to suffer like [CONTEXT:HIST_FIG:PRO_SUB] does
+[CONTEXT:HIST_FIG:PRO_SUB] is the smartest person I know
+[CONTEXT:HIST_FIG:PRO_SUB] always sees far ahead
+[CONTEXT:HIST_FIG:PRO_SUB] plays lovely music
+[CONTEXT:HIST_FIG:PRO_SUB] likes to tend the fields when no one is looking
+[CONTEXT:HIST_FIG:PRO_SUB] always finishes my sentences
+[CONTEXT:HIST_FIG:PRO_SUB] always chooses the right thing to do
+[CONTEXT:HIST_FIG:PRO_SUB] always listens to me
+[CONTEXT:HIST_FIG:PRO_SUB] thinks anything is possible
+[CONTEXT:HIST_FIG:PRO_SUB] never listens to me
+[CONTEXT:HIST_FIG:PRO_SUB] will not even talk to me
+[CONTEXT:HIST_FIG:PRO_SUB] needs me here
+[CONTEXT:HIST_FIG:PRO_SUB] would never hurt anyone
+[CONTEXT:HIST_FIG:PRO_SUB] often tries to make my decisions for me
+[CONTEXT:HIST_FIG:PRO_SUB] gets in my way all the time
+[CONTEXT:HIST_FIG:PRO_SUB] would do anything for me
+[CONTEXT:HIST_FIG:PRO_SUB] often wanders alone
+[CONTEXT:HIST_FIG:PRO_SUB] is the strongest [CONTEXT:HIST_FIG:RACE] in the land
+[CONTEXT:HIST_FIG:PRO_SUB] is not a [CONTEXT:HIST_FIG:RACE] to trust
+my [CONTEXT:FAMILY_RELATIONSHIP] [CONTEXT:HIST_FIG:PRO_SUB] is someone to avoid
+I have never met a finer [CONTEXT:HIST_FIG:RACE] than [CONTEXT:HIST_FIG:PRO_SUB]
+[CONTEXT:HIST_FIG:PRO_SUB] is a terrible [CONTEXT:FAMILY_RELATIONSHIP]
+[CONTEXT:HIST_FIG:PRO_SUB] is a great [CONTEXT:FAMILY_RELATIONSHIP]
+[CONTEXT:HIST_FIG:PRO_SUB] is a fine [CONTEXT:FAMILY_RELATIONSHIP]
+[CONTEXT:HIST_FIG:PRO_SUB] is a wonderful [CONTEXT:FAMILY_RELATIONSHIP]
+[CONTEXT:HIST_FIG:PRO_SUB] is a terrific [CONTEXT:FAMILY_RELATIONSHIP]
+[CONTEXT:HIST_FIG:PRO_SUB] is a despicable monster

@@ -1,0 +1,22 @@
+I am [SPEAKER:TRANS_NAME].  Can I be of some help?
+I am [SPEAKER:TRANS_NAME].  How can I be of service?
+Hello!  I am [SPEAKER:TRANS_NAME].  Can I be of some help?
+Hello!  I am [SPEAKER:TRANS_NAME].  How can I be of service?
+Greetings!  I am [SPEAKER:TRANS_NAME].  Can I be of some help?
+Greetings!  I am [SPEAKER:TRANS_NAME].  How can I be of service?
+Welcome!  I am [SPEAKER:TRANS_NAME].  Can I be of some help?
+Welcome!  I am [SPEAKER:TRANS_NAME].  How can I be of service?
+Good day!  I am [SPEAKER:TRANS_NAME].  Can I be of some help?
+Good day!  I am [SPEAKER:TRANS_NAME].  How can I be of service?
+My name is [SPEAKER:TRANS_NAME].  Can I be of some help?
+I'm [SPEAKER:TRANS_NAME].  How can I be of service?
+My name is [SPEAKER:TRANS_NAME].  What can I help you with?
+I'm [SPEAKER:TRANS_NAME].  What can I help you with?
+I am [SPEAKER:TRANS_NAME].  It is an honor to speak with you.
+My name is [SPEAKER:TRANS_NAME].  What can I do for you?
+My name is [SPEAKER:TRANS_NAME].  I am at your service.
+I'm [SPEAKER:TRANS_NAME].  We are glad to have you here.
+If there is anything I can do, I am humbly at your service.
+Please, if there is anything you need, simply ask.
+Let me know if there is anything I can help with.
+If you need to find a place to stay for the night, you need only ask.

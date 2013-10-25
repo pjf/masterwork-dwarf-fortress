@@ -1,0 +1,3814 @@
+creature_mercs
+
+[OBJECT:CREATURE]
+
+
+[CREATURE:DWARF_M]
+	[NAME:legion dwarf:The Mighty Dwarven Legion:legion supply]
+	[CREATURE_TILE:1][COLOR:7:0:1]
+	[CREATURE_SOLDIER_TILE:2]
+	[INTELLIGENT]
+	[VIEWRANGE:20]
+	[CANOPENDOORS]
+	[PREFSTRING:beards]
+
+	[PRONE_TO_RAGE:100]
+[NATURAL_SKILL:AXE:10]
+[NATURAL_SKILL:SWORD:10]
+[NATURAL_SKILL:MACE:10]
+[NATURAL_SKILL:HAMMER:10]
+[NATURAL_SKILL:SPEAR:10]
+[NATURAL_SKILL:PIKE:10]
+[NATURAL_SKILL:CROSSBOW:10]
+
+[NATURAL_SKILL:SHIELD:10]
+[NATURAL_SKILL:ARMOR:10]
+[NATURAL_SKILL:DODGING:10]
+
+[NATURAL_SKILL:MELEE_COMBAT:10]
+[NATURAL_SKILL:RANGED_COMBAT:10]
+
+
+
+
+YESLEARNING[SKILL_RATES:50:50:6:60] 50% xp
+[PHYS_ATT_CAP_PERC:10000]
+[PHYS_ATT_RATES:100:0:0:0]
+
+[BODY:HUMANOID:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:OUTERBRAIN:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
+	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
+	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+
+
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+
+
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+	[RELSIZE:BY_CATEGORY:LIVER:300] Of course!  Standard relative size for humanoids is 200.
+
+	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
+	[TENDONS:CREATURE_MAT:ANIMAL:SINEW:200]
+	[LIGAMENTS:CREATURE_MAT:ANIMAL:SINEW:200]
+
+	This makes the creature susceptible to severed nerves when muscles are torn in limb, grasp and stance parts.
+
+	[HAS_NERVES]
+
+	This controls the bleeding behavior.
+
+	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+	[SYNDROME]
+	[SYN_AFFECTED_CREATURE:DWARF:ALL]
+	[SYN_INGESTED]
+	[CE_REMOVE_TAG:NO_DRINK:START:0]
+	[BLOOD:CREATURE_MAT:DWARF:BLOOD:LIQUID]
+
+	These classes are used by syndromes (such as poison) as well as some restricted entity positions.  You can name them whatever you want.
+
+		[CREATURE_CLASS:GENERAL_POISON]
+		[CREATURE_CLASS:DWARF_INTER]
+		[CREATURE_CLASS:PLAGUE_SUSCEPTIBLE]
+
+
+	Some tags to control the overall infection behavior.
+
+	[GETS_WOUND_INFECTIONS]
+	[GETS_INFECTIONS_FROM_ROT]
+	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
+	[PUS:CREATURE_MAT:ANIMAL:PUS:LIQUID]
+
+	[USE_MATERIAL_TEMPLATE:SILK:SILK_TEMPLATE]
+
+	
+	[PHYS_ATT_RATES:STRENGTH:500:NONE:NONE:NONE] --no decay of attributes
+	[PHYS_ATT_RATES:AGILITY:500:NONE:NONE:NONE]
+	[PHYS_ATT_RATES:ENDURANCE:500:NONE:NONE:NONE]
+	[PHYS_ATT_RATES:TOUGHNESS:500:NONE:NONE:NONE]
+	[PHYS_ATT_RATES:RECUPERATION:500:NONE:NONE:NONE]
+	[PHYS_ATT_RATES:DISEASE_RESISTANCE:500:NONE:NONE:NONE]
+    
+	[MENT_ATT_RATES:ANALYTICAL_ABILITY:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:CREATIVITY:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:EMPATHY:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:FOCUS:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:INTUITION:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:KINESTHETIC_SENSE:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:LINGUISTIC_ABILITY:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:MEMORY:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:MUSICALITY:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:PATIENCE:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:SOCIAL_AWARENESS:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:SPATIAL_SENSE:500:NONE:NONE:NONE]
+	[MENT_ATT_RATES:WILLPOWER:500:NONE:NONE:NONE]
+
+
+	[BENIGN]
+	[CANOPENDOORS]
+	[PREFSTRING:beards]
+	[PREFSTRING:zany behaviour]
+	[PREFSTRING:homicidal fortresses]
+	[PREFSTRING:short stature]
+	[PREFSTRING:unequaled brews]
+	[PREFSTRING:steel]
+	[PREFSTRING:funny accents]
+
+YESCASTE[CASTE_PROFESSION_NAME:MERCHANT:*Quartermaster*:*Quartermasters*]
+
+[PROFESSION_NAME:HAMMERMAN:legion hammerdwarf:legion hammerdwarves]
+[PROFESSION_NAME:SPEARMAN:legion speardwarf:legion speardwarves]
+[PROFESSION_NAME:CROSSBOWMAN:legion crossbowdwarf:legion crossbowdwarves]
+[PROFESSION_NAME:AXEMAN:legion axedwarf:legion axedwarves]
+[PROFESSION_NAME:SWORDSMAN:legion swordsdwarf:legion swordsdwarves]
+[PROFESSION_NAME:MACEMAN:legion macedwarf:legion macedwarves]
+[PROFESSION_NAME:PIKEMAN:legion pikedwarf:legion pikedwarves]
+[PROFESSION_NAME:BOWMAN:legion bowdwarf:legion bowdwarves]
+[PROFESSION_NAME:MASTER_CROSSBOWMAN:legion elite crossbowdwarf:legion elite crossbowdwarves]
+[PROFESSION_NAME:MASTER_BOWMAN:legion elite bowdwarf:legion elite bowdwarves]
+[PROFESSION_NAME:MASTER_HAMMERMAN:legion hammerlord:legion hammerlords]
+[PROFESSION_NAME:MASTER_SPEARMAN:legion spearlord:legion spearlords]
+[PROFESSION_NAME:MASTER_AXEMAN:legion axelord:legion axelords]
+[PROFESSION_NAME:MASTER_SWORDSMAN:legion swordslord:legion swordslords]
+[PROFESSION_NAME:MASTER_MACEMAN:legion macelord:legion macelords]
+[PROFESSION_NAME:MASTER_PIKEMAN:legion pikelord:legion pikelords]
+
+[PROFESSION_NAME:LASHER:legion lasherdwarf:legion lasherdwarves]
+[PROFESSION_NAME:MASTER_LASHER:legion elite lasherdwarf:legion elite lasherdwarves]
+[PROFESSION_NAME:BLOWGUNMAN:legion rifledwarf:legion rifledwarves]
+[PROFESSION_NAME:MASTER_BLOWGUNMAN:legion veteran rifledwarf:legion veteran rifledwarves]
+
+
+[BODY_SIZE:0:0:3000]
+	[BODY_SIZE:1:168:15000]
+	[BODY_SIZE:12:0:60000]
+
+	These body modifiers give individual dwarves different characteristics.  In the case of HEIGHT, BROADNESS and LENGTH, the modifier is also a percentage change to the BODY_SIZE of the individual creature.  The seven numbers afterward give a distribution of ranges.  Each interval has an equal chance of occurring.
+
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]
+		[APP_MOD_IMPORTANCE:500]
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]
+		[APP_MOD_IMPORTANCE:500]
+
+	In order to set properties for body parts, first you select them.  In this case, we select all body parts of category EYE, then we add a few modifiers to them.
+
+	[SET_BP_GROUP:BY_CATEGORY:EYE]
+		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:eyes:PLURAL]
+		[BP_APPEARANCE_MODIFIER:DEEP_SET:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:eyes:PLURAL]
+		[BP_APPEARANCE_MODIFIER:ROUND_VS_NARROW:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:eyes:PLURAL]
+		[BP_APPEARANCE_MODIFIER:LARGE_IRIS:25:70:90:100:110:130:200]
+			[APP_MOD_NOUN:eyes:PLURAL]
+			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
+
+	[SET_BP_GROUP:BY_CATEGORY:LIP]
+		[BP_APPEARANCE_MODIFIER:THICKNESS:50:70:90:100:110:130:200]
+			[APP_MOD_NOUN:lips:PLURAL]
+			[APP_MOD_DESC_RANGE:55:70:90:110:150:190]
+
+	[SET_BP_GROUP:BY_CATEGORY:NOSE]
+		[BP_APPEARANCE_MODIFIER:BROADNESS:25:70:90:100:110:130:200]
+			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
+		[BP_APPEARANCE_MODIFIER:LENGTH:25:70:90:100:110:130:200]
+			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
+		[BP_APPEARANCE_MODIFIER:UPTURNED:0:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:CONVEX:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:nose bridge:SINGULAR]
+
+	[SET_BP_GROUP:BY_CATEGORY:EAR]
+		[BP_APPEARANCE_MODIFIER:SPLAYED_OUT:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:ears:PLURAL]
+		[BP_APPEARANCE_MODIFIER:HANGING_LOBES:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:ears:PLURAL]
+		[BP_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+			[APP_MOD_IMPORTANCE:700]
+			[APP_MOD_NOUN:ears:PLURAL]
+			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
+		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+			[APP_MOD_IMPORTANCE:700]
+			[APP_MOD_NOUN:ears:PLURAL]
+			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
+
+	[SET_BP_GROUP:BY_CATEGORY:TOOTH]
+		[BP_APPEARANCE_MODIFIER:GAPS:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:teeth:PLURAL]
+		[BP_APPEARANCE_MODIFIER:LENGTH:100:100:100:100:100:100:100] for vampires
+			[APP_MOD_IMPORTANCE:1000]
+			[APP_MOD_NOUN:teeth:PLURAL]
+			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
+
+	[SET_BP_GROUP:BY_CATEGORY:SKULL]
+		[BP_APPEARANCE_MODIFIER:HIGH_CHEEKBONES:0:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:BROAD_CHIN:0:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:JUTTING_CHIN:0:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:SQUARE_CHIN:0:70:90:100:110:130:200]
+
+
+
+
+
+	[SET_BP_GROUP:BY_CATEGORY:HEAD]
+		[BP_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+			[APP_MOD_IMPORTANCE:700]
+			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
+		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+			[APP_MOD_IMPORTANCE:700]
+			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
+
+	[MAXAGE:90:110]
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:strike:strikes]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:hit:hits]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:jab:jabs]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:block and punch:blocks and punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:block and strike:blocks and strikes]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:block and hit:blocks and hits]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:block and jab:blocks and jabs]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:dodge and punch:dodges and punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:dodge and strike:dodges and strikes]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:dodge and hit:dodges and hits]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:dodge and jab:dodges and jabs]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:make an undercut swing at:makes an undercut swing at]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:make a face to distract the enemy and then punch:makes a face to distract the enemy and then punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:take the drunken master stance and quickly jab:takes the drunken master stance and quickly jabs]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+
+
+
+	[CAN_DO_INTERACTION:LEGION_BOOST]
+	[CDI:ADV_NAME:flee]
+      -CDI:USAGE_HINT:FLEEING-
+      [CDI:VERB:yell:bellows "Behold, the Legion is here!":NA]
+      <CDI:VERBAL>
+      <CDI:VERBAL_SPEECH:blabla.txt>
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:1000]
+      [CDI:FREE_ACTION]
+
+	[CAN_DO_INTERACTION:FLEE]
+	[CDI:ADV_NAME:flee]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:sprint:runs for his life:NA]
+      <CDI:VERBAL_SPEECH:blabla.txt>
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:1000]
+      [CDI:FREE_ACTION]
+
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_HUMAN]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (human)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_human.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_ELF]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (elf)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_elf.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_DWARF]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (dwarf)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_dwarf.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_GOBLIN]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (goblin)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_goblin.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_ELEPHANT]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (elephant)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_elephant.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_KOBOLD]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (kobold)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_kobold.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_EVIL_ELF]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (elf fanatic)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_evil_elf.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_EVIL_DROW]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (deep drow)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_evil_drow.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_EVIL_DWARF]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (chaos dwarf)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_evil_dwarf.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_EVIL_HUMAN]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (human bandit)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_evil_human.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_GNOME]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (gnome)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_gnomes.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_DROW]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (drow)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_drow.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_SKAVEN]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (skaven)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_skaven.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_TROGLODYTE]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (troglodyte)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_troglodyte.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_BATMAN]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (batman)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_batman.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_ANTMAN]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (antman)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_antman.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_ORC]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (orc)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_orc.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_WARLOCK]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (warlock)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_warlock.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_FROST_GIANT]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (frost giant)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_frost_giant.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_AUTOMATON]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (automaton)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_automaton.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+	YESBATTLECRY[CAN_DO_INTERACTION:BATTLECRY_FD_RACES]
+		YESBATTLECRY[CDI:ADV_NAME:Battlecry (fortress defense)]
+		YESBATTLECRY[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESBATTLECRY[CDI:TARGET_RANGE:A:2]
+		YESBATTLECRY[CDI:USAGE_HINT:ATTACK]
+		YESBATTLECRY[CDI:VERBAL]
+		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_dwarf_FD.txt]
+		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
+		YESBATTLECRY[CDI:WAIT_PERIOD:903]
+
+
+
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:roundhouse kick:roundhouse kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+	This causes all of the nails on the finger's of a given grasp to be used.
+
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PRIORITY:SECOND]
+
+	This causes all of the teeth on a given head to be used.
+
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:growl and bite:growls and bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+
+
+
+	Here, GENERAL_BABY_NAME is at the creature level, and BABYNAME is at the caste level.  These names could be gender-specific but aren't right now.
+
+	[BABY:1]
+	[GENERAL_BABY_NAME:dwarven baby:dwarven babies]
+	[BABYNAME:dwarven baby:dwarven babies]
+	[CHILD:5]
+	[GENERAL_CHILD_NAME:dwarven child:dwarven children]
+	[CHILDNAME:dwarven child:dwarven children]
+	[EQUIPS]
+	[CAVE_ADAPT]
+	[DIURNAL]
+
+	This is the new format for making specific unit names for a creature.  Any unit token can be used.  If you want to add a caste-specific profession name, use CASTE_PROFESSION_NAME instead, once the caste has been declared.
+
+	[PROFESSION_NAME:CRAFTSMAN:craftsdwarf:craftsdwarves]
+	[PROFESSION_NAME:FISHERMAN:fisherdwarf:fisherdwarves]
+	[PROFESSION_NAME:HAMMERMAN:hammerdwarf:hammerdwarves]
+	[PROFESSION_NAME:SPEARMAN:speardwarf:speardwarves]
+	[PROFESSION_NAME:CROSSBOWMAN:marksdwarf:marksdwarves]
+	[PROFESSION_NAME:AXEMAN:axedwarf:axedwarves]
+	[PROFESSION_NAME:SWORDSMAN:swordsdwarf:swordsdwarves]
+	[PROFESSION_NAME:MACEMAN:macedwarf:macedwarves]
+	[PROFESSION_NAME:PIKEMAN:pikedwarf:pikedwarves]
+	[PROFESSION_NAME:BOWMAN:bowdwarf:bowdwarves]
+	[PROFESSION_NAME:MASTER_CROSSBOWMAN:Elite Marksdwarf:Elite Marksdwarves]
+	[PROFESSION_NAME:MASTER_BOWMAN:Elite Bowdwarf:Elite Bowdwarves]
+	[SPEECH:dwarf.txt]
+	[HOMEOTHERM:10067]
+	[ALCOHOL_DEPENDENT]
+	[SWIMS_LEARNED][SWIM_SPEED:2500]
+	[PERSONALITY:IMMODERATION:0:55:100]
+	[PERSONALITY:VULNERABILITY:0:45:100]
+	[PERSONALITY:STRAIGHTFORWARDNESS:0:55:100]
+	[MANNERISM_FINGERS:finger:fingers]
+	[MANNERISM_NOSE:nose]
+	[MANNERISM_EAR:ear]
+	[MANNERISM_HEAD:head]
+	[MANNERISM_EYES:eyes]
+	[MANNERISM_MOUTH:mouth]
+	[MANNERISM_HAIR:hair]
+	[MANNERISM_KNUCKLES:knuckles]
+	[MANNERISM_LIPS:lips]
+	[MANNERISM_CHEEK:cheek]
+	[MANNERISM_NAILS:nails]
+	[MANNERISM_FEET:feet]
+	[MANNERISM_ARMS:arms]
+	[MANNERISM_HANDS:hands]
+	[MANNERISM_TONGUE:tongue]
+	[MANNERISM_LEG:leg]
+	[MANNERISM_LAUGH]
+	[MANNERISM_SMILE]
+	[MANNERISM_WALK]
+	[MANNERISM_SIT]
+	[MANNERISM_BREATH]
+	[MANNERISM_POSTURE]
+	[MANNERISM_STRETCH]
+	[MANNERISM_EYELIDS]
+	[SPOUSE_CONVERSION_TARGET]
+
+
+YESCASTE[CASTE:LEGIONNAIRE_MALE]
+YESCASTE[CASTE_NAME:legionnaire dwarf:legionnaire dwarves:dwarven]
+YESCASTE[DESCRIPTION:*LEGIONNAIRE* Having undergone the garrison training, this dwarf has learned the fundamental rules of war. Legionnaires learn to handle all melee weapons, military tactics, leadership and situational awareness. They are used to pain, have a higher willpower and recuperation then civilians. The legion training also encompasses rigorous fitness exercises, raising their strength.]
+		YESCASTE[MALE]
+YESCASTE[CASTE:LEGIONNAIRE_FEMALE]
+YESCASTE[CASTE_NAME:legionnaire dwarf:legionnaire dwarves:dwarven]
+YESCASTE[DESCRIPTION:*LEGIONNAIRE* Having undergone the garrison training, this dwarf has learned the fundamental rules of war. Legionnaires learn to handle all melee weapons, military tactics, leadership and situational awareness. They are used to pain, have a higher willpower and recuperation then civilians. The legion training also encompasses rigorous fitness exercises, raising their strength.]
+		YESCASTE[FEMALE]
+
+
+
+--------------------------------------------------------------
+fire mages
+
+[CASTE:FIRE_1_M]
+[CASTE_NAME:ashkin:ashkins:dwarven]
+[DESCRIPTION:*ASHKIN - FIRE LVL1* This dwarf bears a spark of magic in him. A fresh member of the school of fire, he has learned to withstand intense heat. He can throw balls of flame at his enemies Being arcane in nature he can still cast his magic conceal spell. He is a novice in the use of the fire staff. If carrying a fire aura, he will cause blisters and pain in all nearby enemies.]
+[MALE]
+[CASTE:FIRE_1_F]
+[CASTE_NAME:ashkin:ashkins:dwarven]
+[DESCRIPTION:*ASHKIN - FIRE LVL1* This dwarf bears a spark of magic in her. A fresh member of the school of fire, she has learned to withstand intense heat. She can throw balls of flame at her enemies. Being arcane in nature she can still cast her magic conceal spell. She is a novice in the use of the fire staff. If carrying a fire aura, she will cause blisters and pain in all nearby enemies.]
+[FEMALE]
+
+[CASTE:FIRE_2_M]
+[CASTE_NAME:flamemancer:flamemancers:dwarven]
+[DESCRIPTION:*FLAMEMANCER - FIRE LVL2* This dwarf bears a spark of magic in him. A member of the elemental school of fire, he has learned to withstand intense heat. He can throw balls of flame and jets of fire at his enemies and convert one nearby sprite into a familiar that will aid him in combat. Being arcane in nature he can still cast his magic conceal spell. He is an adept in the use of the fire staff. If carrying a fire aura, he will cause blisters and pain in all nearby enemies.]
+[MALE]
+[CASTE:FIRE_2_F]
+[CASTE_NAME:flamemancer:flamemancers:dwarven]
+[DESCRIPTION:*FLAMEMANCER - FIRE LVL2* This dwarf bears a spark of magic in her. A member of the elemental school of fire, she has learned to withstand intense heat. She can throw balls of flame and jets of fire at her enemies and convert one nearby sprite into a familiar that will aid her in combat. Being arcane in nature she can still cast her magic conceal spell. She is an adept in the use of the fire staff. If carrying a fire aura, she will cause blisters and pain in all nearby enemies.]
+[FEMALE]
+
+[CASTE:FIRE_3_M]
+[CASTE_NAME:firemage:firemages:dwarven]
+[DESCRIPTION:*FIREMAGE - FIRE LVL3* This dwarf bears a spark of magic in him. A high member of the elemental school of fire, he has learned to withstand intense heat. His body is so hot that all webs that might cover him burn away harmlessly. He can throw balls of flame and jets of fire at his enemies and convert one nearby sprite into a familiar that will aid him in combat. Being arcane in nature he can still cast his magic  conceal spell. He is a master in the use of the fire staff. Having mastered the art of fire conjuration, two more spells are at his command. A Dragonfirebreath that melts most objects instantly and speaking the true name of fire itself. He will immolate everything in a large area around him, killing everything but him instantly. This spell takes a lot of effort and is a last resort, only spoken when spooked or heavily injured. It takes 3 months to use it again. If carrying a fire aura, he will cause blisters and pain in all nearby enemies.]
+[MALE]
+[CASTE:FIRE_3_F]
+[CASTE_NAME:firemage:firemages:dwarven]
+[DESCRIPTION:*FIREMAGE - FIRE LVL3* This dwarf bears a spark of magic in her. A high member of the elemental school of fire, she has learned to withstand intense heat. Her body is so hot that all webs that might cover her burn away harmlessly. She can throw balls of flame and jets of fire at her enemies and convert one nearby sprite into a familiar that will aid her in combat. Being arcane in nature she can still cast her magic conceal spell. She is a master in the use of the fire staff. Having mastered the art of fire conjuration, two more spells are at her command. A Dragonfirebreath that melts most objects instantly and speaking the true name of fire itself. She will immolate everything in a large area around her, killing everything but her instantly. This spell takes a lot of effort and is a last resort, only spoken when spooked or heavily injured. It takes 3 months to use it again. If carrying a fire aura, she will cause blisters and pain in all nearby enemies.]
+[FEMALE]
+
+-----------------------------------------------------------
+water mages
+[CASTE:WATER_1_M]
+[CASTE_NAME:wavekin:wavekins:dwarven]
+[DESCRIPTION:*WAVEKIN - WATER LVL1* This dwarf bears a spark of magic in him. A fresh member of the school of water, he has learned to withstand intense cold. He can summon hailstorms and blast his enemies with freezing cold water. Being arcane in nature he can still cast his magic conceal spell. He is a novice in the use of the water staff. Wavekins can breathe underwater and can hide among the waves. If carrying a water aura, he will slow all nearby enemies down.]
+[MALE]
+[CASTE:WATER_1_F]
+[CASTE_NAME:wavekin:wavekins:dwarven]
+[DESCRIPTION:*WAVEKIN - WATER LVL1* This dwarf bears a spark of magic in her. A fresh member of the school of water, she has learned to withstand intense cold. She can summon hailstorms and blast her enemies with freezing cold water. Being arcane in nature she can still cast her magic conceal spell. She is a novice in the use of the water staff. Wavekins can breathe underwater and can hide among the waves. If carrying a water aura, she will slow all nearby enemies down.]
+[FEMALE]
+
+[CASTE:WATER_2_M]
+[CASTE_NAME:watermancer:watermancers:dwarven]
+[DESCRIPTION:*WATERMANCER - WATER LVL2* This dwarf bears a spark of magic in him. A member of the elemental school of water, he has learned to withstand intense cold. He can summon hailstorms and blast his enemies with freezing cold water, conjuring arctic sea foam to further freeze them. He can also convert one nearby sprite into a familiar that will aid him in combat. Being arcane in nature he can still cast his magic conceal spell. He is an adept in the use of the water staff. Watermancer can breathe underwater and can hide among the waves. If carrying a water aura, he will slow all nearby enemies down.]
+[MALE]
+[CASTE:WATER_2_F]
+[CASTE_NAME:watermancer:watermancers:dwarven]
+[DESCRIPTION:*WATERMANCER - WATER LVL2* This dwarf bears a spark of magic in her. A member of the elemental school of water, she has learned to withstand intense cold. She can summon hailstorms and blast her enemies with freezing cold water, conjuring arctic sea foam to further freeze them. She can also convert one nearby sprite into a familiar that will aid her in combat. Being arcane in nature she can still cast her magic conceal spell. She is an adept in the use of the water staff. Watermancer can breathe underwater and can hide among the waves. If carrying a water aura, she will slow all nearby enemies down.]
+[FEMALE]
+
+[CASTE:WATER_3_M]
+[CASTE_NAME:icemage:icemages:dwarven]
+[DESCRIPTION:*ICEMAGE - ICE LVL3* This dwarf bears a spark of magic in him. A high member of the elemental school of water, he has learned to withstand intense cold. His body is so cold that all water instantly freezes around him. He can summon hailstorms and blast his enemies with freezing cold water, conjuring arctic sea foam to further freeze them. He also converts one nearby sprite into a familiar that will aid him in combat. Being arcane in nature he can still cast his magic conceal spell. He is a master in the use of the water staff. Icemages can breathe underwater and can hide among the waves. Having mastered the school of watermagic, he can speak the cone of cold. A crystalline spray that paralyzes his enemies completely for a short time. If carrying a water aura, he will slow all nearby enemies down.]
+[MALE]
+
+[CASTE:WATER_3_F]
+[CASTE_NAME:icemage:icemages:dwarven]
+[DESCRIPTION:*ICEMAGE - ICE LVL3* This dwarf bears a spark of magic in her. A high member of the elemental school of water, she has learned to withstand intense cold. Her body is so cold that it will freeze all water around her. She can summon hailstorms and blast her enemies with freezing cold water, conjuring arctic sea foam to further freeze them. She also converts one nearby sprite into a familiar that will aid her in combat. Being arcane in nature she can still cast her magic conceal spell. She is a master in the use of the water staff. Icemages can breathe underwater and can hide among the waves. Having mastered the school of watermagic, she can speak the cone of cold. A crystalline spray that paralyzes her enemies completely for a short time. If carrying a water aura, she will slow all nearby enemies down.]
+[FEMALE]
+
+-----------------------------------------------------------
+air mages
+[CASTE:AIR_1_M]
+[CASTE_NAME:windkin:windkins:dwarven]
+[DESCRIPTION:*WINDKIN - AIR LVL1* This dwarf bears a spark of magic in him. A fresh member of the school of air, he has learned to ignore webs. Windkins can shoot webs at a short distance. Being arcane in nature he can still cast his magic conceal spell. He is a novice in the use of the air staff. If carrying an air aura, he will cause nausea and dizzyness in all nearby enemies.]
+[MALE]
+[CASTE:AIR_1_F]
+[CASTE_NAME:windkin:windkins:dwarven]
+[DESCRIPTION:*WINDKIN - AIR LVL1* This dwarf bears a spark of magic in her. A fresh member of the school of air, she has learned to ignore webs. Windkins can shoot webs at a short distance. Being arcane in nature she can still cast her magic conceal spell. She is a novice in the use of the air staff. If carrying an air aura, she will cause nausea and dizzyness in all nearby enemies.]
+[FEMALE]
+
+[CASTE:AIR_2_M]
+[CASTE_NAME:airmancer:airmancers:dwarven]
+[DESCRIPTION:*AIRMANCER - AIR LVL2* This dwarf bears a spark of magic in him. A member of the school of air, he has learned to ignore webs and levitate. Airmancers can shoot webs at a short distance and cause suffocation. Being arcane in nature he can still cast his magic conceal spell. He is an adept in the use of the air staff. If carrying an air aura, he will cause nausea and dizzyness in all nearby enemies.]
+[MALE]
+[CASTE:AIR_2_F]
+[CASTE_NAME:airmancer:airmancers:dwarven]
+[DESCRIPTION:*AIRMANCER - AIR LVL2* This dwarf bears a spark of magic in her. A member of the school of air, she has learned to ignore webs and levitate. Airmancers can shoot webs at a short distance and cause suffocation. Being arcane in nature she can still cast her magic conceal spell. She is an adept in the use of the air staff. If carrying an air aura, she will cause nausea and dizzyness in all nearby enemies.]
+[FEMALE]
+
+[CASTE:AIR_3_M]
+[CASTE_NAME:skymage:skymages:dwarven]
+[DESCRIPTION:*SKYMAGE - AIR LVL3* This dwarf bears a spark of magic in him. A high member of the elemental school of air, he has learned to ignore webs and levitate.Skymages can shoot several webs at a longer distance and cause suffocation, as well as blink across the battlefield. He can convert one nearby sprite into a familiar that will aid her in combat. Being arcane in nature he can still cast his magic conceal spell. He is a master in the use of the air staff.  Having mastered the art of air conjuration, his combined abilities of webs and speed make him a dangerous foe indeed. If carrying an air aura, he will cause nausea and dizzyness in all nearby enemies.]
+[MALE]
+[CASTE:AIR_3_F]
+[CASTE_NAME:skymage:skymages:dwarven]
+[DESCRIPTION:*SKYMAGE - AIR LVL3* This dwarf bears a spark of magic in her. A high member of the elemental school of air, she has learned to ignore webs and levitate.Skymages can shoot several webs at a longer distance and cause suffocation, as well as blink across the battlefield. She can convert one nearby sprite into a familiar that will aid her in combat. Being arcane in nature she can still cast her magic conceal spell. She is a master in the use of the air staff. Having mastered the art of air conjuration, her combined abilities of webs and speed make her a dangerous foe indeed. If carrying an air aura, she will cause nausea and dizzyness in all nearby enemies.]
+[FEMALE]
+
+-----------------------------------------------------------
+earth mages
+
+
+[CASTE:EARTH_1_M]
+[CASTE_NAME:earthkin:earthkins:dwarven]
+[DESCRIPTION:*EARTHKIN - EARTH LVL1* This dwarf bears a spark of magic in him. A fresh member of the school of earth, his skin turned to solid stone. He can caste an additional rock armor to further toughen him up. Being arcane in nature he can still cast his magic conceal spell. He is a novice in the use of the earth staff. Earthkins like to fight and feel less pain thanks to their stone skin. If carrying an earthen aura, he will be able to paralyze any enemy that gets too close for a short while.]
+[MALE]
+[CASTE:EARTH_1_F]
+[CASTE_NAME:earthkin:earthkins:dwarven]
+[DESCRIPTION:*EARTHKIN - EARTH LVL1* This dwarf bears a spark of magic in her. A fresh member of the school of earth, her skin turned to solid stone. She can caste an additional rock armor to further toughen her up. Being arcane in nature she can still cast her magic conceal spell. She is a novice in the use of the earth staff. Earthkins like to fight and feel less pain thanks to their stone skin. If carrying an earthen aura, she will be able to paralyze any enemy that gets too close for a short while.]
+[FEMALE]
+
+[CASTE:EARTH_2_M]
+[CASTE_NAME:stonemancer:stonemancers:dwarven]
+[DESCRIPTION:*STONEMANCER - EARTH LVL2* This dwarf bears a spark of magic in him. A member of the elemental school of earth, his skin has thickened and turned into solid stone. He can caste an additional rock armor to further toughen him up and can convert one nearby sprite into a familiar that will aid him in combat. Being arcane in nature he can still cast his magic conceal spell. He is an adept in the use of the earth staff. Stonemancers like to fight and show no fear. They feel a lot less pain thanks to their thick stone skin. In combat they conjure a cloud of dust to harm their foes. If carrying an earthen aura, he will be able to paralyze any enemy that gets too close for a short while.]
+[MALE]
+[CASTE:EARTH_2_F]
+[CASTE_NAME:stonemancer:stonemancers:dwarven]
+[DESCRIPTION:*STONEMANCER - EARTH LVL2* This dwarf bears a spark of magic in her. A member of the elemental school of earth, her skin has thickened and turned into solid stone. She can caste an additional rock armor to further toughen her up and can convert one nearby sprite into a familiar that will aid her in combat. Being arcane in nature she can still cast her magic conceal spell. She is an adept in the use of the earth staff. Stonemancers like to fight and show no fear. They feel a lot less pain thanks to their thick stone skin. In combat they conjure a cloud of dust to harm their foes. If carrying an earthen aura, she will be able to paralyze any enemy that gets too close for a short while.]
+[FEMALE]
+
+[CASTE:EARTH_3_M]
+[CASTE_NAME:rockmage:rockmages:dwarven]
+[DESCRIPTION:*ROCKMAGE - EARTH LVL3* This dwarf bears a spark of magic in her. A high member of the elemental school of earth, his skin has thickened and turned into solid stone. He can caste an additional rock armor to further toughen him up and can convert one nearby sprite into a familiar that will aid him in combat. Being arcane in nature he can still cast her magic conceal spell. He is a master in the use of the earth staff. Rockmages like to fight, show no fear and enter martial trances. They feel almost no pain thanks to their thick stone skin and have developed strong muscles. Big enough to dual wield great-weapons, they are a force to be reckoned with. In combat they conjure a cloud of dust to harm their foes. Having mastered the art of earth conjuration, this rockmage petrifies his enemies to slow their movement to a crawl. If carrying an earthen aura, he will be able to paralyze any enemy that gets too close for a short while.]
+[MALE]
+[CASTE:EARTH_3_F]
+[CASTE_NAME:rockmage:rockmages:dwarven]
+[DESCRIPTION:*ROCKMAGE - EARTH LVL3* This dwarf bears a spark of magic in her. A high member of the elemental school of earth, her skin has thickened and turned into solid stone. She can caste an additional rock armor to further toughen her up and can convert one nearby sprite into a familiar that will aid her in combat. Being arcane in nature she can still cast her magic conceal spell. She is a master in the use of the earth staff. Rockmages like to fight, show no fear and enter martial trances. They feel almost no pain thanks to their thick stone skin and have developed strong muscles. Big enough to dual wield great-weapons, they are a force to be reckoned with. In combat they conjure a cloud of dust to harm their foes. Having mastered the art of earth conjuration, this rockmage petrifies her enemies to slow their movement to a crawl. If carrying an earthen aura, she will be able to paralyze any enemy that gets too close for a short while.]
+[FEMALE]
+
+-----------------------------------------------------------
+black mages
+[CASTE:BLACK_1_M]
+[CASTE_NAME:vampire mage:vampire mages:dwarven]
+[DESCRIPTION:*VAMPIRE MAGE* This dwarf has embraced immortality for a heavy price. Vampire and sorcerer, he is a powerful being. Devout of all physical needs and weaknesses, his only fail is the thirst for blood. He will drain his fellow dwarves without a second thought. He can use this thirst in combat to instantly kill an enemy, stilling his lust for blood for one month. He can also sap away the strength of surrounding beings. Arcane in nature he can still cast his magic conceal spell and use the black staff. If he has not drunk blood in a while his teeth will grow. If carrying a black aura, he will be able to cause massive bleeding and necrosis to any being that gets close.]
+[MALE]
+[CASTE:BLACK_1_F]
+[CASTE_NAME:vampire mage:vampire mages:dwarven]
+[DESCRIPTION:*VAMPIRE MAGE* This dwarf has embraced immortality for a heavy price. Vampire and sorcerer, she is a powerful being. Devout of all physical needs and weaknesses, her only fail is the thirst for blood. She will drain her fellow dwarves without a second thought. She can use this thirst in combat to instantly kill an enemy, stilling her lust for blood for one month. She can also sap away the strength of surrounding beings. Arcane in nature she can still cast her magic conceal spell and use the black staff. If she has not drunk blood in a while her teeth will grow. If carrying a black aura, she will be able to cause massive bleeding and necrosis to any being that gets close.]
+[FEMALE]
+
+[CASTE:BLACK_2_M]
+[CASTE_NAME:demonbound:demonbounds:dwarven]
+[DESCRIPTION:*DEMONBOUND* This dwarf has sold his soul to a demon. His body is infused with dark power, growing his muscles out of proportion. He can dual wield great-weapons and barely feels anything when injured. Fear is unknown and dark demons whisper knowledge of killing into his being. Every combat skill raises twice as fast as that of normal dwarves. The frightening appearance can shock enemy units and being close to him makes them physically sick. He has the ability to summon a hulking black barghest to his side. Being arcane in nature he can still cast his magic conceal spell and use the black staff. If carrying a black aura, he will be able to cause massive bleeding and necrosis to any being that gets close.]
+[MALE]
+[CASTE:BLACK_2_F]
+[CASTE_NAME:demonbound:demonbounds:dwarven]
+[DESCRIPTION:*DEMONBOUND* This dwarf has sold her soul to a demon. Her body is infused with dark power, growing her muscles out of proportion. She can dual wield great-weapons and barely feels anything when injured. Fear is unknown and dark demons whisper knowledge of killing into her being. Every combat skill raises twice as fast as that of normal dwarves. The frightening appearance can shock enemy units and being close to her makes them physically sick. She has the ability to summon a hulking black barghest to her side. Being arcane in nature she can still cast her magic conceal spell and use the black staff. If carrying a black aura, she will be able to cause massive bleeding and necrosis to any being that gets close.]
+[FEMALE]
+
+[CASTE:BLACK_3_M]
+[CASTE_NAME:lich:liches:dwarven]
+[DESCRIPTION:*LICH* This dwarf gave up his life to start a new plane of existance. Unlife. As a powerful Lich he loses all emotions, all physical needs like hunger or sleep, his blood is drained from his body. Nothing can stun or exert him, and he does not age. The magical abilities of Liches are focused on the raising of an undead army. He can create a singular gargantuan bone golem from a sprite and raise bone golems almost weekly from corpses. These fearsome constructs have a bonespear as arm and can be wartrained. A Lich followed by a massive army is not uncommon. He can also throw spikes of bone and hold his own in close combat. Being arcane in nature he can still cast his magic conceal spell and use the black staff. If carrying a black aura, he will be able to cause massive bleeding and necrosis to any being that gets close.]
+[MALE]
+[CASTE:BLACK_3_F]
+[CASTE_NAME:lich:liches:dwarven]
+[DESCRIPTION:*LICH* This dwarf gave up her life to start a new plane of existance. Unlife. As a powerful Lich she loses all emotions, all physical needs like hunger or sleep, her blood is drained from her body. Nothing can stun or exert her, and she does not age. The magical abilities of Liches are focused on the raising of an undead army. She can create a singular gargantuan bone golem from a sprite and raise bone golems almost weekly from corpses. These fearsome constructs have a bonespear as arm and can be wartrained. A Lich followed by a massive army is not uncommon. She can also throw spikes of bone and hold her own in close combat. Being arcane in nature she can still cast his magic conceal spell and use the black staff. If carrying a black aura, she will be able to cause massive bleeding and necrosis to any being that gets close.]
+[FEMALE]
+
+-----------------------------------------------------------
+white mages
+[CASTE:WHITE_1_M]
+[CASTE_NAME:Lifemancer:Lifemancers:dwarven]
+[DESCRIPTION:*LIFEMANCER* This dwarf has learned the secrets of life. Not immortality, but life. He can quicken the healing of nearby dwarves and enchant them with a spell of speed. His best use is in the hospital, far away from the front lines. Being arcane in nature he can still cast his magic conceal spell and use the white staff. The unicorn is the familiar of choice for the healer. If carrying a white aura, he will be able to instantly kill undeads that touch him. His greatest power lies in the resurrection of fallen dwarves. Only able to do this to dwarves that have not been dead for long, this ability has saved many great heroes.]
+[MALE]
+[CASTE:WHITE_1_F]
+[CASTE_NAME:Lifemancer:Lifemancers:dwarven]
+[DESCRIPTION:*LIFEMANCER* This dwarf has learned the secrets of life. Not immortality, but life. She can quicken the healing of nearby dwarves and enchant them with a spell of speed. Her best use is in the hospital, far away from the front lines. Being arcane in nature she can still cast her magic conceal spell and use the white staff. The unicorn is the familiar of choice for the healer. If carrying a white aura, she will be able to instantly kill undeads that touch her. Her greatest power lies in the resurrection of fallen dwarves. Only able to do this to dwarves that have not been dead for long, this ability has saved many great heroes.]
+[FEMALE]
+
+[CASTE:WHITE_2_M]
+[CASTE_NAME:witch hunter:witch hunters:dwarven]
+[DESCRIPTION:*WITCH HUNTER* This dwarf has learned to banish undead beings. Consumed by a holy wrath against these unnatural abominations, Witch Hunters can bring both corpses and the shambling undead to a volatile explosion.  A white sabrecat is their guardian animal. They can also put restless beings to peace, if they so desire. Being arcane in nature he can still cast his magic conceal spell and use the white staff. If carrying a white aura, he will be able to instantly kill undeads that touch him.]
+[MALE]
+[CASTE:WHITE_2_F]
+[CASTE_NAME:witch hunter:witch hunters:dwarven]
+[DESCRIPTION:*WITCH HUNTER* This dwarf has learned to banish undead beings. Consumed by a holy wrath against these unnatural abominations, Witch Hunters can bring both corpses and the shambling undead to a volatile explosion. A white sabrecat is their guardian animal. They can also put restless beings to peace, if they so desire. Being arcane in nature she can still cast her magic conceal spell and use the white staff. If carrying a white aura, she will be able to instantly kill undeads that touch her.]
+[FEMALE]
+
+[CASTE:WHITE_3_M]
+[CASTE_NAME:arcane protector:arcane protectors:dwarven]
+[DESCRIPTION:*ARCANE PROTECTOR* This dwarf has chosen to become a protector of all that is good and pure. He will guard the fortress and the dwarves in it like no other. Being able to boost the combat powers of his fellow warriors, and enabling a magical conceal spell that helps injured fighters to flee the battlefield, the Arcane Protector should be kept at the frontlines. Dwarves around him will have double the strength, toughness and agility they usually possess and feel neither pain nor exertion. He can also summon an albino mastiff as familiar. Being arcane in nature he can still cast his magic conceal spell and use the white staff. If carrying a white aura, he will be able to instantly kill undeads that touch him.]
+[MALE]
+[CASTE:WHITE_3_F]
+[CASTE_NAME:arcane protector:arcane protectors:dwarven]
+[DESCRIPTION:*ARCANE PROTECTOR* This dwarf has chosen to become a protector of all that is good and pure. She will guard the fortress and the dwarves in it like no other. Being able to boost the combat powers of her fellow warriors, and enabling a magical conceal spell that helps injured fighters to flee the battlefield, the Arcane Protector should be kept at the frontlines. Dwarves around her will have double the strength, toughness and agility they usually possess and feel neither pain nor exertion. She can also summon an albino mastiff as familiar. Being arcane in nature she can still cast her magic conceal spell and use the white staff. If carrying a white aura, she will be able to instantly kill undeads that touch her.]
+[FEMALE]
+
+
+
+	[SELECT_CASTE:ALL]
+	[SPEECH:dwarf.txt]	
+	
+	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
+	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+	[RELSIZE:BY_CATEGORY:LIVER:300]
+	
+	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
+	[TENDONS:CREATURE_MAT:ANIMAL:SINEW:200]
+	[LIGAMENTS:CREATURE_MAT:ANIMAL:SINEW:200]
+
+	[HAS_NERVES]
+	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+	[BLOOD:CREATURE_MAT:DWARF:BLOOD:LIQUID]
+	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
+	[PUS:CREATURE_MAT:ANIMAL:PUS:LIQUID]
+
+	[BODY_SIZE:0:0:3000]
+	[BODY_SIZE:1:168:15000]
+	[BODY_SIZE:5:0:70000]
+
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]
+		[APP_MOD_IMPORTANCE:500]
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]
+		[APP_MOD_IMPORTANCE:500]
+
+	[SET_BP_GROUP:BY_CATEGORY:EYE]
+		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:eyes:PLURAL]
+		[BP_APPEARANCE_MODIFIER:DEEP_SET:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:eyes:PLURAL]
+		[BP_APPEARANCE_MODIFIER:ROUND_VS_NARROW:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:eyes:PLURAL]
+		[BP_APPEARANCE_MODIFIER:LARGE_IRIS:25:70:90:100:110:130:200]
+			[APP_MOD_NOUN:eyes:PLURAL]
+	[SET_BP_GROUP:BY_CATEGORY:LIP]
+		[BP_APPEARANCE_MODIFIER:THICKNESS:50:70:90:100:110:130:200]
+			[APP_MOD_NOUN:lips:PLURAL]
+	[SET_BP_GROUP:BY_CATEGORY:NOSE]
+		[BP_APPEARANCE_MODIFIER:BROADNESS:25:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:LENGTH:25:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:UPTURNED:0:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:CONVEX:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:nose bridge:SINGULAR]
+	[SET_BP_GROUP:BY_CATEGORY:EAR]
+		[BP_APPEARANCE_MODIFIER:SPLAYED_OUT:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:ears:PLURAL]
+		[BP_APPEARANCE_MODIFIER:HANGING_LOBES:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:ears:PLURAL]
+		[BP_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+			[APP_MOD_IMPORTANCE:700]
+			[APP_MOD_NOUN:ears:PLURAL]
+		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+			[APP_MOD_IMPORTANCE:700]
+			[APP_MOD_NOUN:ears:PLURAL]
+	[SET_BP_GROUP:BY_CATEGORY:TOOTH]
+		[BP_APPEARANCE_MODIFIER:GAPS:0:70:90:100:110:130:200]
+			[APP_MOD_NOUN:teeth:PLURAL]
+	[SET_BP_GROUP:BY_CATEGORY:SKULL]
+		[BP_APPEARANCE_MODIFIER:HIGH_CHEEKBONES:0:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:BROAD_CHIN:0:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:JUTTING_CHIN:0:70:90:100:110:130:200]
+		[BP_APPEARANCE_MODIFIER:SQUARE_CHIN:0:70:90:100:110:130:200]
+
+
+
+	[SET_BP_GROUP:BY_CATEGORY:HEAD]
+		[BP_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+			[APP_MOD_IMPORTANCE:700]
+		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+			[APP_MOD_IMPORTANCE:700]
+
+	[MAXAGE:100:160]
+
+	
+
+	[BABY:1]
+	[GENERAL_BABY_NAME:dwarven baby:dwarven babies]
+	[BABYNAME:dwarven baby:dwarven babies]
+	[GENERAL_CHILD_NAME:dwarven child:dwarven children]
+	[CHILDNAME:dwarven child:dwarven children]
+	[EQUIPS]
+	[CAVE_ADAPT]
+	[DIURNAL]
+
+	[HOMEOTHERM:10067]
+	[ALCOHOL_DEPENDENT]
+	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[MANNERISM_FINGERS:finger:fingers]
+	[MANNERISM_NOSE:nose]
+	[MANNERISM_EAR:ear]
+	[MANNERISM_HEAD:head]
+	[MANNERISM_EYES:eyes]
+	[MANNERISM_MOUTH:mouth]
+	[MANNERISM_HAIR:hair]
+	[MANNERISM_KNUCKLES:knuckles]
+	[MANNERISM_LIPS:lips]
+	[MANNERISM_CHEEK:cheek]
+	[MANNERISM_NAILS:nails]
+	[MANNERISM_FEET:feet]
+	[MANNERISM_ARMS:arms]
+	[MANNERISM_HANDS:hands]
+	[MANNERISM_TONGUE:tongue]
+	[MANNERISM_LEG:leg]
+	[MANNERISM_LAUGH]
+	[MANNERISM_SMILE]
+	[MANNERISM_WALK]
+	[MANNERISM_SIT]
+	[MANNERISM_BREATH]
+	[MANNERISM_POSTURE]
+	[MANNERISM_STRETCH]
+	[MANNERISM_EYELIDS]
+	[SPOUSE_CONVERSION_TARGET]
+
+
+--------------------------------------------------------------------------------------------
+Legionnaire Training
+YESCASTE[SELECT_CASTE:LEGIONNAIRE_FEMALE]
+	YESCASTE[FEMALE]	YESCASTE[TRANCES]YESCASTE[LIKES_FIGHTING]
+	YESCASTE[MULTIPLE_LITTER_RARE]
+	YESCASTE[POP_RATIO:1735]    
+				YESCASTE[SELECT_TISSUE:BONE]
+			YESCASTE[HEALING_RATE:500]1000
+			YESCASTE[PAIN_RECEPTORS:25]50
+		YESCASTE[PHYS_ATT_RANGE:STRENGTH:325:350:375:400:430:450:500]  
+		YESCASTE[PHYS_ATT_RANGE:AGILITY:325:350:375:400:430:450:500]    
+		YESCASTE[PHYS_ATT_RANGE:ENDURANCE:325:350:375:400:430:450:500] 
+		YESCASTE[PHYS_ATT_RANGE:TOUGHNESS:325:350:375:400:430:450:500] 
+	YESCASTE[PHYS_ATT_RANGE:RECUPERATION:1250:1500:1750:2000:2300:3000:4000]      
+		YESCASTE[MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2300:3000:4000]      	
+
+
+YESCASTE[SELECT_CASTE:LEGIONNAIRE_MALE]
+	YESCASTE[MALE]	YESCASTE[TRANCES]YESCASTE[LIKES_FIGHTING]
+	YESCASTE[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	YESCASTE[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	YESCASTE[POP_RATIO:1735]    
+				YESCASTE[SELECT_TISSUE:BONE]
+			YESCASTE[HEALING_RATE:500]1000
+			YESCASTE[PAIN_RECEPTORS:25]50
+		YESCASTE[PHYS_ATT_RANGE:STRENGTH:325:350:375:400:430:450:500]  
+		YESCASTE[PHYS_ATT_RANGE:AGILITY:325:350:375:400:430:450:500]    
+		YESCASTE[PHYS_ATT_RANGE:ENDURANCE:325:350:375:400:430:450:500] 
+		YESCASTE[PHYS_ATT_RANGE:TOUGHNESS:325:350:375:400:430:450:500] 
+	YESCASTE[PHYS_ATT_RANGE:RECUPERATION:1250:1500:1750:2000:2300:3000:4000]      
+		YESCASTE[MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2300:3000:4000]   
+
+
+Earthkin
+[SELECT_CASTE:EARTH_1_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:100]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Earthkin*:*Earthkins*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Earthkin*:*Earthkins*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:3]       
+[NATURAL_SKILL:ALCHEMY:3] 
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:3]            
+[NATURAL_SKILL:THROW:3] [CREATURE_CLASS:MAGIC_EARTH]
+
+			[LIKES_FIGHTING]
+		[SELECT_TISSUE:BONE]
+			[HEALING_RATE:150]
+			[PAIN_RECEPTORS:12]
+		[SELECT_TISSUE:FAT]
+			[HEALING_RATE:150]
+			[RELATIVE_THICKNESS:1]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:MUSCLE]
+			[HEALING_RATE:150]
+			[RELATIVE_THICKNESS:2]
+			[PAIN_RECEPTORS:6]
+		[SELECT_TISSUE:SKIN]
+			[HEALING_RATE:150]
+			[RELATIVE_THICKNESS:1]
+			[PAIN_RECEPTORS:1]
+	[USE_MATERIAL_TEMPLATE:STONE:STONE_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:STONE:STONE_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:ALL:STONE]	
+
+		[CAN_DO_INTERACTION:ROCKBARRIER]
+			[CDI:ADV_NAME:Summon rock barrier]
+			[CDI:VERB:surround yourself with a rock barrier:it surrounded by a barrier of rock that protects him from harm:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:3000]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:throws up a big cloud of dust and hides within:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+
+------------ spells -----------------------------------
+
+[SELECT_CASTE:EARTH_1_F]
+	[FEMALE]
+	[POP_RATIO:100]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Earthkin*:*Earthkins*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Earthkin*:*Earthkins*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:3]    
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:3]            
+[NATURAL_SKILL:THROW:3]   
+[NATURAL_SKILL:ALCHEMY:3]  [CREATURE_CLASS:MAGIC_EARTH]
+			[LIKES_FIGHTING]
+		[SELECT_TISSUE:BONE]
+			[HEALING_RATE:150]
+			[PAIN_RECEPTORS:12]
+		[SELECT_TISSUE:FAT]
+			[HEALING_RATE:150]
+			[RELATIVE_THICKNESS:1]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:MUSCLE]
+			[HEALING_RATE:150]
+			[RELATIVE_THICKNESS:2]
+			[PAIN_RECEPTORS:6]
+		[SELECT_TISSUE:SKIN]
+			[HEALING_RATE:150]
+			[RELATIVE_THICKNESS:1]
+			[PAIN_RECEPTORS:1]
+	[USE_MATERIAL_TEMPLATE:STONE:STONE_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:STONE:STONE_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:ALL:STONE]	
+
+		[CAN_DO_INTERACTION:ROCKBARRIER]
+			[CDI:ADV_NAME:Summon rock barrier]
+			[CDI:VERB:surround yourself with a rock barrier:it surrounded by a barrier of rock that protects him from harm:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:3000]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:throws up a big cloud of dust and hides within:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+
+------------ spells -----------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+Stonemancer
+[SELECT_CASTE:EARTH_2_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:50]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Stonemancer*:*Stonemancers*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Stonemancer*:*Stonemancers*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:5]       
+[NATURAL_SKILL:ALCHEMY:5]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:5]            
+[NATURAL_SKILL:THROW:5]
+			[LIKES_FIGHTING][NOFEAR][CREATURE_CLASS:MAGIC_EARTH]
+		[SELECT_TISSUE:BONE]
+			[HEALING_RATE:100]
+			[PAIN_RECEPTORS:6]
+		[SELECT_TISSUE:FAT]
+			[HEALING_RATE:100]
+			[RELATIVE_THICKNESS:1]
+			[PAIN_RECEPTORS:2]
+		[SELECT_TISSUE:MUSCLE]
+			[HEALING_RATE:100]
+			[RELATIVE_THICKNESS:4]
+			[PAIN_RECEPTORS:4]
+		[SELECT_TISSUE:SKIN]
+			[HEALING_RATE:100]
+			[RELATIVE_THICKNESS:2]
+			[PAIN_RECEPTORS:2]
+	[USE_MATERIAL_TEMPLATE:STONE:STONE_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:STONE:STONE_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:ALL:STONE]	
+
+		[CAN_DO_INTERACTION:ROCKBARRIER]
+			[CDI:ADV_NAME:Summon rock barrier]
+			[CDI:VERB:surround yourself with a rock barrier:it surrounded by a barrier of rock that protects him from harm:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:2500]
+
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Rocklobbing]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ROCKBOLT_MAGIC:SOLID_GLOB]
+			[CDI:VERB:throw up a cloud of dust:throws up a cloud of dust:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:7]
+			[CDI:MAX_TARGET_NUMBER:C:7]
+			[CDI:WAIT_PERIOD:300]	
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_EARTH]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create an earth familiar from a nearby sprite:creates an earth familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:throws up a big cloud of dust and hides within:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+
+------------ spells -----------------------------------
+
+[SELECT_CASTE:EARTH_2_F]
+	[FEMALE]
+	[POP_RATIO:50]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Stonemancer*:*Stonemancers*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Stonemancer*:*Stonemancers*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:5]   
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:5]            
+[NATURAL_SKILL:THROW:5]    
+[NATURAL_SKILL:ALCHEMY:5]  [CREATURE_CLASS:MAGIC_EARTH]
+			[LIKES_FIGHTING][NOFEAR]
+		[SELECT_TISSUE:BONE]
+			[HEALING_RATE:100]
+			[PAIN_RECEPTORS:6]
+		[SELECT_TISSUE:FAT]
+			[HEALING_RATE:100]
+			[RELATIVE_THICKNESS:1]
+			[PAIN_RECEPTORS:2]
+		[SELECT_TISSUE:MUSCLE]
+			[HEALING_RATE:100]
+			[RELATIVE_THICKNESS:4]
+			[PAIN_RECEPTORS:4]
+		[SELECT_TISSUE:SKIN]
+			[HEALING_RATE:100]
+			[RELATIVE_THICKNESS:2]
+			[PAIN_RECEPTORS:2]
+	[USE_MATERIAL_TEMPLATE:STONE:STONE_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:STONE:STONE_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:ALL:STONE]	
+
+		[CAN_DO_INTERACTION:ROCKBARRIER]
+			[CDI:ADV_NAME:Summon rock barrier]
+			[CDI:VERB:surround yourself with a rock barrier:it surrounded by a barrier of rock that protects him from harm:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:2500]
+
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Rocklobbing]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ROCKBOLT_MAGIC:SOLID_GLOB]
+			[CDI:VERB:throw up a cloud of dust:throws up a cloud of dust:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:7]
+			[CDI:MAX_TARGET_NUMBER:C:7]
+			[CDI:WAIT_PERIOD:300]	
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_EARTH]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create an earth familiar from a nearby sprite:creates an earth familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:throws up a big cloud of dust and hides within:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+
+------------ spells -----------------------------------
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+Rockmage
+
+
+
+[SELECT_CASTE:EARTH_3_F]
+	[FEMALE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Rockmage*:*Rockmage*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Rockmage*:*Rockmage*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]    
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]   
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_EARTH]
+			[LIKES_FIGHTING][TRANCES][NOFEAR]
+		[SELECT_TISSUE:BONE]
+			[HEALING_RATE:50]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:FAT]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:2]
+			[PAIN_RECEPTORS:1]
+		[SELECT_TISSUE:MUSCLE]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:6]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:SKIN]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:3]
+			[PAIN_RECEPTORS:1]
+	[USE_MATERIAL_TEMPLATE:STONE:STONE_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:STONE:STONE_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:ALL:STONE]	
+		[PHYS_ATT_RANGE:STRENGTH:3000:3500:3750:4000:4250:4300:4500]            ++++
+		[PHYS_ATT_RANGE:AGILITY:900:1200:1400:1500:1600:1800:2500]              ++
+		[PHYS_ATT_RANGE:TOUGHNESS:3000:3500:3750:4000:4250:4300:4500]           ++++
+		[PHYS_ATT_RANGE:RECUPERATION:3000:3500:3750:4000:4250:4300:4500]        ++++
+		[MENT_ATT_RANGE:ANALYTICAL_ABILITY:450:950:1150:1250:1350:1550:2250]    +
+		[MENT_ATT_RANGE:FOCUS:700:1200:1400:1500:1600:1800:2500]                ++
+		[MENT_ATT_RANGE:CREATIVITY:700:1200:1400:1500:1600:1800:2500]           ++
+		[MENT_ATT_RANGE:PATIENCE:700:1200:1400:1500:1600:1800:2500]             ++
+		[MENT_ATT_RANGE:MEMORY:650:950:1150:1250:1350:1550:2250]                +
+		[MENT_ATT_RANGE:SPATIAL_SENSE:700:1200:1400:1500:1600:1800:2500]        ++
+		[MENT_ATT_RANGE:EMPATHY:650:950:1150:1250:1350:1550:2250]               +
+		[MENT_ATT_RANGE:SOCIAL_AWARENESS:450:950:1150:1250:1350:1550:2250]      +
+		[MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2500:3000:5000]           +++
+
+		[CAN_DO_INTERACTION:ROCKBARRIER]
+			[CDI:ADV_NAME:Summon rock barrier]
+			[CDI:VERB:surround yourself with a rock barrier:it surrounded by a barrier of rock that protects him from harm:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:2000]
+
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Rocklobbing]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ROCKBOLT_MAGIC:SOLID_GLOB]
+			[CDI:VERB:throw up a cloud of dust:throws up a cloud of dust:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:7]
+			[CDI:MAX_TARGET_NUMBER:C:7]
+			[CDI:WAIT_PERIOD:300]	
+
+	YESMAGIC[CAN_DO_INTERACTION:PETRIFY]
+		YESMAGIC[CDI:ADV_NAME:petrify]
+		YESMAGIC[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESMAGIC[CDI:USAGE_HINT:ATTACK]
+		YESMAGIC[CDI:TARGET_RANGE:A:15]
+		YESMAGIC[CDI:VERB:stare with obsidian eyes at your foe:stares with obsidian eyes at her foe:NA]
+		YESMAGIC[CDI:TARGET_VERB:is petrified and cant move:is petrified and cant move]
+		YESMAGIC[CDI:MAX_TARGET_NUMBER:A:1]
+		YESMAGIC[CDI:WAIT_PERIOD:700]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_EARTH]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create an earth familiar from a nearby sprite:creates an earth familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:throws up a big cloud of dust and hides within:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+
+------------ spells -----------------------------------
+
+[SELECT_CASTE:EARTH_3_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Rockmage*:*Rockmage*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Rockmage*:*Rockmage*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_EARTH]
+			[LIKES_FIGHTING][TRANCES][NOFEAR]
+		[SELECT_TISSUE:BONE]
+			[HEALING_RATE:50]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:FAT]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:2]
+			[PAIN_RECEPTORS:1]
+		[SELECT_TISSUE:MUSCLE]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:6]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:SKIN]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:3]
+			[PAIN_RECEPTORS:1]
+	[USE_MATERIAL_TEMPLATE:STONE:STONE_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:STONE:STONE_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:ALL:STONE]	
+		[PHYS_ATT_RANGE:STRENGTH:3000:3500:3750:4000:4250:4300:4500]            ++++
+		[PHYS_ATT_RANGE:AGILITY:900:1200:1400:1500:1600:1800:2500]              ++
+		[PHYS_ATT_RANGE:TOUGHNESS:3000:3500:3750:4000:4250:4300:4500]           ++++
+		[PHYS_ATT_RANGE:RECUPERATION:3000:3500:3750:4000:4250:4300:4500]        ++++
+		[MENT_ATT_RANGE:ANALYTICAL_ABILITY:450:950:1150:1250:1350:1550:2250]    +
+		[MENT_ATT_RANGE:FOCUS:700:1200:1400:1500:1600:1800:2500]                ++
+		[MENT_ATT_RANGE:CREATIVITY:700:1200:1400:1500:1600:1800:2500]           ++
+		[MENT_ATT_RANGE:PATIENCE:700:1200:1400:1500:1600:1800:2500]             ++
+		[MENT_ATT_RANGE:MEMORY:650:950:1150:1250:1350:1550:2250]                +
+		[MENT_ATT_RANGE:SPATIAL_SENSE:700:1200:1400:1500:1600:1800:2500]        ++
+		[MENT_ATT_RANGE:EMPATHY:650:950:1150:1250:1350:1550:2250]               +
+		[MENT_ATT_RANGE:SOCIAL_AWARENESS:450:950:1150:1250:1350:1550:2250]      +
+		[MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2500:3000:5000]           +++
+
+		[CAN_DO_INTERACTION:ROCKBARRIER]
+			[CDI:ADV_NAME:Summon rock barrier]
+			[CDI:VERB:surround yourself with a rock barrier:it surrounded by a barrier of rock that protects him from harm:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:2000]
+
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Rocklobbing]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ROCKBOLT_MAGIC:SOLID_GLOB]
+			[CDI:VERB:throw up a cloud of dust:throws up a cloud of dust:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:7]
+			[CDI:MAX_TARGET_NUMBER:C:7]
+			[CDI:WAIT_PERIOD:300]	
+
+	YESMAGIC[CAN_DO_INTERACTION:PETRIFY]
+		YESMAGIC[CDI:ADV_NAME:petrify]
+		YESMAGIC[CDI:TARGET:A:LINE_OF_SIGHT]
+		YESMAGIC[CDI:USAGE_HINT:ATTACK]
+		YESMAGIC[CDI:TARGET_RANGE:A:15]
+		YESMAGIC[CDI:VERB:stare with obsidian eyes at your foe:stares with obsidian eyes at his foe:NA]
+		YESMAGIC[CDI:TARGET_VERB:is petrified and cant move:is petrified and cant move]
+		YESMAGIC[CDI:MAX_TARGET_NUMBER:A:1]
+		YESMAGIC[CDI:WAIT_PERIOD:700]
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_EARTH]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create an earth familiar from a nearby sprite:creates an earth familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:throws up a big cloud of dust and hides within:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+
+------------ spells -----------------------------------
+
+
+
+[SELECT_CASTE:FIRE_1_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:100]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Ashkin*:*Ashkins*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Ashkin*:*Ashkins*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:3]       
+[NATURAL_SKILL:ALCHEMY:3]         
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:3]            
+[NATURAL_SKILL:THROW:3]           
+[FIREIMMUNE]
+[LIKES_FIGHTING]
+[MAGMA_VISION]
+[CREATURE_CLASS:MAGIC_FIRE][CREATURE_CLASS:MAGIC_FIRE_1]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:summons a bright flash to distract his enemies and tries to slip away in the confusion:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ spells -----------------------------------
+------------ spells -----------------------------------
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Hurl fireball]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREBALL]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:15]		
+		[CDI:VERB:gesture and hurls a ball of white hot flame towards his enemies:gestures and hurls a ball of white hot flame towards his enemies:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:150]
+------------ spells -----------------------------------
+	
+
+
+
+[SELECT_CASTE:FIRE_1_F]
+	[FEMALE]
+	[MULTIPLE_LITTER_RARE]
+	[POP_RATIO:100]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Ashkin*:*Ashkins*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Ashkin*:*Ashkins*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:3]       
+[NATURAL_SKILL:ALCHEMY:3]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:3]            
+[NATURAL_SKILL:THROW:3]           
+[FIREIMMUNE]
+[LIKES_FIGHTING]
+[MAGMA_VISION]
+[CREATURE_CLASS:MAGIC_FIRE][CREATURE_CLASS:MAGIC_FIRE_1]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:summons a bright flash to distract her enemies and tries to slip away in the confusion:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ spells -----------------------------------
+------------ spells -----------------------------------
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Hurl fireball]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREBALL]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:15]		[CDI:VERB:gesture and hurls a ball of white hot flame towards her enemies:gestures and hurls a ball of white hot flame towards her enemies:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:150]
+------------ spells -----------------------------------
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+Flamemancer
+
+
+
+[SELECT_CASTE:FIRE_2_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:50]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Flamemancer*:*Flamemancers*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Flamemancer*:*Flamemancers*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:5]       
+[NATURAL_SKILL:ALCHEMY:5]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:5]            
+[NATURAL_SKILL:THROW:5]           
+[FIREIMMUNE]
+[LIKES_FIGHTING]
+[MAGMA_VISION]
+[CREATURE_CLASS:MAGIC_FIRE][CREATURE_CLASS:MAGIC_FIRE_2]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:summons a bright flash to distract his enemies and tries to slip away in the confusion:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ spells -----------------------------------
+------------ spells -----------------------------------
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Hurl fireball]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREBALL]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:15]
+		[CDI:VERB:gesture and hurls a ball of white hot flame towards his enemies:gestures and hurls a ball of white hot flame towards his enemies:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:150]
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray jet of fire]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREJET]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:8]
+		[CDI:VERB:make an arcane gesture and spray a solid flow of flames:makes an arcane gesture and sprays a solid flow of flames:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:100]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_FIRE]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a fire familiar from a nearby sprite:creates a fire familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+	
+
+
+[SELECT_CASTE:FIRE_2_F]
+	[FEMALE]
+	[MULTIPLE_LITTER_RARE]
+	[POP_RATIO:50]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Flamemancer*:*Flamemancers*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Flamemancer*:*Flamemancers*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:5]       
+[NATURAL_SKILL:ALCHEMY:5]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:5]            
+[NATURAL_SKILL:THROW:5]           
+[FIREIMMUNE]
+[LIKES_FIGHTING]
+[MAGMA_VISION]
+[CREATURE_CLASS:MAGIC_FIRE][CREATURE_CLASS:MAGIC_FIRE_2]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:summons a bright flash to distract her enemies and tries to slip away in the confusion:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ spells -----------------------------------
+------------ spells -----------------------------------
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Hurl fireball]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREBALL]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:15]
+		[CDI:VERB:gesture and hurls a ball of white hot flame towards her enemies:gestures and hurls a ball of white hot flame towards her enemies:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:150]
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray jet of fire]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREJET]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:8]
+		[CDI:VERB:make an arcane gesture and spray a solid flow of flames:makes an arcane gesture and sprays a solid flow of flames:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:100]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_FIRE]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a fire familiar from a nearby sprite:creates a fire familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+	
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+Firemage
+
+
+
+
+[SELECT_CASTE:FIRE_3_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Firemage*:*Firemages*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Firemage*:*Firemages*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[FIREIMMUNE][FIREIMMUNE_SUPER]
+[LIKES_FIGHTING]
+[CREATURE_CLASS:MAGIC_FIRE][CREATURE_CLASS:MAGIC_FIRE_3]
+[MAGMA_VISION][WEBIMMUNE]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:summons a bright flash to distract his enemies and tries to slip away in the confusion:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ spells -----------------------------------
+------------ spells -----------------------------------
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Hurl fireball]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREBALL]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:15]
+		[CDI:VERB:gesture and hurls a ball of white hot flame towards his enemies:gestures and hurls a ball of white hot flame towards his enemies:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:150]
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray jet of fire]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREJET]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:8]
+		[CDI:VERB:make an arcane gesture and spray a solid flow of flames:makes an arcane gesture and sprays a solid flow of flames:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:100]
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray jet of fire]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:DRAGONFIRE]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:8]
+		[CDI:VERB:conjure dragonfire and melt everything in its path:conjures dragonfire and melts everything in its path:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:100]
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:panic button]
+		[CDI:USAGE_HINT:FLEEING]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+		[CDI:MATERIAL:INORGANIC:DRAGONFIRE:UNDIRECTED_DUST]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:3]
+			[CDI:VERB:utter the true name of fire itself conjuring destructive dragonfire, which bursts forth from your mouth and incinerates everything around you:utters the true name of fire itself conjuring destructive dragonfire, which bursts forth from his body and incinerates everything around him:NA]
+			[CDI:MAX_TARGET_NUMBER:C:10]
+			[CDI:WAIT_PERIOD:100800]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_FIRE]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a fire familiar from a nearby sprite:creates a fire familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+
+[SELECT_CASTE:FIRE_3_F]
+	[FEMALE]
+	[MULTIPLE_LITTER_RARE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*firemage*:*firemages*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Firemage*:*Firemages*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[FIREIMMUNE][FIREIMMUNE_SUPER][WEBIMMUNE]
+[LIKES_FIGHTING]
+[CREATURE_CLASS:MAGIC_FIRE][CREATURE_CLASS:MAGIC_FIRE_3]
+[MAGMA_VISION]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:summons a bright flash to distract her enemies and tries to slip away in the confusion:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ spells -----------------------------------
+------------ spells -----------------------------------
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Hurl fireball]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREBALL]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:15]
+		[CDI:VERB:gesture and hurls a ball of white hot flame towards her enemies:gestures and hurls a ball of white hot flame towards her enemies:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:150]
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray jet of fire]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:FIREJET]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:8]
+		[CDI:VERB:make an arcane gesture and spray a solid flow of flames:makes an arcane gesture and sprays a solid flow of flames:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:100]
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray jet of fire]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+		[CDI:FLOW:DRAGONFIRE]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:8]
+		[CDI:VERB:conjure dragonfire and melt everything in its path:conjures dragonfire and melts everything in its path:NA]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:100]
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:panic button]
+		[CDI:USAGE_HINT:FLEEING]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+		[CDI:MATERIAL:INORGANIC:DRAGONFIRE:UNDIRECTED_DUST]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:3]
+			[CDI:VERB:utter the true name of fire itself conjuring destructive dragonfire, which bursts forth from your mouth and incinerates everything around you:utters the true name of fire itself conjuring destructive dragonfire, which bursts forth from her body and incinerates everything around her:NA]
+			[CDI:MAX_TARGET_NUMBER:C:10]
+			[CDI:WAIT_PERIOD:100800]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_FIRE]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a fire familiar from a nearby sprite:creates a fire familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+-----------------------------------------------------------
+water mages
+Wavekin
+
+
+
+
+[SELECT_CASTE:WATER_1_F]
+	[FEMALE]
+	[POP_RATIO:100]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Wavekin*:*Wavekin*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Wavekin*:*Wavekin*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:3]       
+[NATURAL_SKILL:ALCHEMY:3]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:3]            
+[NATURAL_SKILL:THROW:3]
+[NOBREATHE]
+[CREATURE_CLASS:MAGIC_WATER][CREATURE_CLASS:MAGIC_WATER_1]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:transformes into an elusive wave and tries to flee unharmed:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Hailstorm]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:SOLID_GLOB]
+			[CDI:VERB:summons a driving hail:summons a driving hail:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:300]	
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Waterbolt]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:WATER:LIQUID_GLOB]
+			[CDI:VERB:blasts with a stream of chill water:blasts with a stream of chill water:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:300]	
+	[SELECT_MATERIAL:ALL]
+		[MULTIPLY_VALUE:3]
+		[COLDDAM_POINT:NONE]
+
+[SELECT_CASTE:WATER_1_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:100]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Wavekin*:*Wavekin*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Wavekin*:*Wavekin*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:3]       
+[NATURAL_SKILL:ALCHEMY:3]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:3]            
+[NATURAL_SKILL:THROW:3]
+[CREATURE_CLASS:MAGIC_WATER][CREATURE_CLASS:MAGIC_WATER_1]
+[NOBREATHE]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:transformes into an elusive wave and tries to flee unharmed:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Hailstorm]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:SOLID_GLOB]
+			[CDI:VERB:summons a driving hail:summons a driving hail:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:300]	
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Waterbolt]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:WATER:LIQUID_GLOB]
+			[CDI:VERB:blasts with a stream of chill water:blasts with a stream of chill water:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:300]	
+	[SELECT_MATERIAL:ALL]
+		[MULTIPLY_VALUE:3]
+		[COLDDAM_POINT:NONE]
+
+
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+Watermancer
+
+
+
+[SELECT_CASTE:WATER_2_F]
+	[FEMALE]
+	[POP_RATIO:50]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Watermancer*:*Watermancer*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Watermancer*:*Watermancer*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:5]       
+[NATURAL_SKILL:ALCHEMY:5]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:5]            
+[NATURAL_SKILL:THROW:5]
+[NOBREATHE][CREATURE_CLASS:MAGIC_WATER][CREATURE_CLASS:MAGIC_WATER_2]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:transformes into an elusive wave and tries to flee unharmed:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+[CAN_DO_INTERACTION:HIDE_EFFECT]
+			[CDI:ADV_NAME:Submerge]
+			[CDI:LOCATION_HINT:IN_WATER]
+			[CDI:VERB:hide underwater:hides underwater:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:300]
+			[CDI:FREE_ACTION]
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Hailstorm]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:SOLID_GLOB]
+			[CDI:VERB:summons a driving hail:summons a driving hail:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:200]	
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Waterbolt]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:WATER:LIQUID_GLOB]
+			[CDI:VERB:blasts with a stream of chill water:blasts with a stream of chill water:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:200]	
+        		[CAN_DO_INTERACTION:MATERIAL_EMISSION] 
+			[CDI:ADV_NAME:Arctic Gale]
+ 			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:TRAILING_VAPOR_FLOW]
+ 			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:VERB:conjures arctic sea foam:conjures arctic sea foam:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:10]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:300]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WATER]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a water familiar from a nearby sprite:creates a water familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+	[SELECT_MATERIAL:ALL]
+		[MULTIPLY_VALUE:3]
+		[COLDDAM_POINT:NONE]
+
+
+[SELECT_CASTE:WATER_2_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:50]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Watermancer*:*Watermancer*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Watermancer*:*Watermancer*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:5]       
+[NATURAL_SKILL:ALCHEMY:5]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:5]            
+[NATURAL_SKILL:THROW:5]
+[NOBREATHE][CREATURE_CLASS:MAGIC_WATER][CREATURE_CLASS:MAGIC_WATER_2]
+------------ spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:transformes into an elusive wave and tries to flee unharmed:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+[CAN_DO_INTERACTION:HIDE_EFFECT]
+			[CDI:ADV_NAME:Submerge]
+			[CDI:LOCATION_HINT:IN_WATER]
+			[CDI:VERB:hide underwater:hides underwater:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:300]
+			[CDI:FREE_ACTION]
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Hailstorm]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:SOLID_GLOB]
+			[CDI:VERB:summons a driving hail:summons a driving hail:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:200]	
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Waterbolt]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:WATER:LIQUID_GLOB]
+			[CDI:VERB:blasts with a stream of chill water:blasts with a stream of chill water:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:200]	
+        		[CAN_DO_INTERACTION:MATERIAL_EMISSION] 
+			[CDI:ADV_NAME:Arctic Gale]
+ 			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:TRAILING_VAPOR_FLOW]
+ 			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:VERB:conjures arctic sea foam:conjures arctic sea foam:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:10]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:300]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WATER]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a water familiar from a nearby sprite:creates a water familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+	[SELECT_MATERIAL:ALL]
+		[MULTIPLY_VALUE:3]
+		[COLDDAM_POINT:NONE]
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+Icemage		
+
+
+
+[SELECT_CASTE:WATER_3_F]
+	[FEMALE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Icemage*:*Icemage*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Icemage*:*Icemage*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[NOBREATHE][CREATURE_CLASS:MAGIC_WATER][CREATURE_CLASS:MAGIC_WATER_3]
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:transformes into an elusive wave and tries to flee unharmed:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+[CAN_DO_INTERACTION:HIDE_EFFECT]
+			[CDI:ADV_NAME:Submerge]
+			[CDI:LOCATION_HINT:IN_WATER]
+			[CDI:VERB:hide underwater:hides underwater:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:300]
+			[CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WATER]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a water familiar from a nearby sprite:creates a water familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Waterbolt]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:WATER:LIQUID_GLOB]
+			[CDI:VERB:blasts with a stream of chill water:blasts with a stream of chill water:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:150]	
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Hailstorm]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:SOLID_GLOB]
+			[CDI:VERB:summons a driving hail:summons a driving hail:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:150]	
+        		[CAN_DO_INTERACTION:MATERIAL_EMISSION] 
+			[CDI:ADV_NAME:Arctic Gale]
+ 			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:TRAILING_VAPOR_FLOW]
+ 			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:VERB:conjures arctic sea foam:conjures arctic sea foam:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:10]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:150]
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Cone of cold]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:BLIZZARD:WEB_SPRAY]
+			[CDI:VERB:invokes a crystalline ice spray:invokes a crystalline ice spray:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:10]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:300]	
+	[SELECT_MATERIAL:ALL]
+		[MULTIPLY_VALUE:3]
+		[COLDDAM_POINT:NONE]
+
+[SELECT_CASTE:WATER_3_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Icemage*:*Icemage*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Icemage*:*Icemage*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[NOBREATHE][CREATURE_CLASS:MAGIC_WATER][CREATURE_CLASS:MAGIC_WATER_3]
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:transformes into an elusive wave and tries to flee unharmed:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+[CAN_DO_INTERACTION:HIDE_EFFECT]
+			[CDI:ADV_NAME:Submerge]
+			[CDI:LOCATION_HINT:IN_WATER]
+			[CDI:VERB:hide underwater:hides underwater:NA]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:WAIT_PERIOD:300]
+			[CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WATER]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a water familiar from a nearby sprite:creates a water familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Waterbolt]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:WATER:LIQUID_GLOB]
+			[CDI:VERB:blasts with a stream of chill water:blasts with a stream of chill water:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:150]	
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Hailstorm]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:SOLID_GLOB]
+			[CDI:VERB:summons a driving hail:summons a driving hail:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:20]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:150]	
+        		[CAN_DO_INTERACTION:MATERIAL_EMISSION] 
+			[CDI:ADV_NAME:Arctic Gale]
+ 			[CDI:MATERIAL:INORGANIC:ICEBOLT_ORC:TRAILING_VAPOR_FLOW]
+ 			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:VERB:conjures arctic sea foam:conjures arctic sea foam:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:10]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:150]
+		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Cone of cold]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:MATERIAL:INORGANIC:BLIZZARD:WEB_SPRAY]
+			[CDI:VERB:invokes a crystalline ice spray:invokes a crystalline ice spray:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:10]
+			[CDI:MAX_TARGET_NUMBER:C:3]
+			[CDI:WAIT_PERIOD:300]	
+	[SELECT_MATERIAL:ALL]
+		[MULTIPLY_VALUE:3]
+		[COLDDAM_POINT:NONE]
+		[MAT_FIXED_TEMP:5000]
+
+
+
+[SELECT_CASTE:AIR_1_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:100]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Windkin*:*Windkins*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Windkin*:*Windkins*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:3]       
+[NATURAL_SKILL:ALCHEMY:3]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:3]            
+[NATURAL_SKILL:THROW:3]
+[WEBIMMUNE][CREATURE_CLASS:MAGIC_AIR][CREATURE_CLASS:MAGIC_AIR_1]
+
+
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:bends the air to create an illusion, a mirage of him disappearing:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray web]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_TOKEN:LB]
+		[CDI:MATERIAL:CREATURE_MAT:ANIMAL:SILK:WEB_SPRAY]
+		[CDI:VERB:throw webs of thinnest silk:throws webs of thinnest silk:NA]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:5]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:130]
+
+[SELECT_CASTE:AIR_1_F]
+	[FEMALE]
+	[POP_RATIO:100]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Windkin*:*Windkins*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Windkin*:*Windkins*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:3]       
+[NATURAL_SKILL:ALCHEMY:3]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:3]            
+[NATURAL_SKILL:THROW:3]
+[WEBIMMUNE][CREATURE_CLASS:MAGIC_AIR][CREATURE_CLASS:MAGIC_AIR_1]
+
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:bends the air to create an illusion, a mirage of her disappearing:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray web]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_TOKEN:LB]
+		[CDI:MATERIAL:CREATURE_MAT:ANIMAL:SILK:WEB_SPRAY]
+		[CDI:VERB:throw webs of thinnest silk:throws webs of thinnest silk:NA]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:5]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:130]
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+Airmancer
+[SELECT_CASTE:AIR_2_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:50]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Airmancer*:*Airmancers*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Airmancer*:*Airmancers*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:5]       
+[NATURAL_SKILL:ALCHEMY:5]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:5]            
+[NATURAL_SKILL:THROW:5]
+[WEBIMMUNE][CREATURE_CLASS:MAGIC_AIR][CREATURE_CLASS:MAGIC_AIR_2]
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:bends the air to create an illusion, a mirage of him disappearing:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_AIR]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create an air familiar from a nearby sprite:creates an air familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:SUFFOCATION_CURSE_ORC]
+			[CDI:ADV_NAME:Suffocate]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:VERB:call on the wind to empty the enemies lungs:calls on the wind to empty the enemies lungs:NA]
+			[CDI:TARGET_VERB:are having trouble breathing:is having trouble breathing:NA]
+			[CDI:TARGET_RANGE:A:10]
+			[CDI:MAX_TARGET_NUMBER:A:3]
+			[CDI:WAIT_PERIOD:300]
+
+[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray web]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_TOKEN:LB]
+		[CDI:MATERIAL:CREATURE_MAT:ANIMAL:SILK:WEB_SPRAY]
+		[CDI:VERB:throw webs of thinnest silk:throws webs of thinnest silk:NA]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:5]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:130]
+
+
+[SELECT_CASTE:AIR_2_F]
+	[FEMALE]
+	[POP_RATIO:50]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Airmancer*:*Airmancers*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Airmancer*:*Airmancers*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:5]       
+[NATURAL_SKILL:ALCHEMY:5]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:5]            
+[NATURAL_SKILL:THROW:5]
+[WEBIMMUNE][CREATURE_CLASS:MAGIC_AIR][CREATURE_CLASS:MAGIC_AIR_2]
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:bends the air to create an illusion, a mirage of her disappearing:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_AIR]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create an air familiar from a nearby sprite:creates an air familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:SUFFOCATION_CURSE_ORC]
+			[CDI:ADV_NAME:Suffocate]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:VERB:call on the wind to empty the enemies lungs:calls on the wind to empty the enemies lungs:NA]
+			[CDI:TARGET_VERB:are having trouble breathing:is having trouble breathing:NA]
+			[CDI:TARGET_RANGE:A:10]
+			[CDI:MAX_TARGET_NUMBER:A:3]
+			[CDI:WAIT_PERIOD:300]
+
+[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray web]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_TOKEN:LB]
+		[CDI:MATERIAL:CREATURE_MAT:ANIMAL:SILK:WEB_SPRAY]
+		[CDI:VERB:throw webs of thinnest silk:throws webs of thinnest silk:NA]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:5]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:130]
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+Skymage
+[SELECT_CASTE:AIR_3_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Skymage*:*Skymages*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Skymage*:*Skymages*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[WEBIMMUNE][CREATURE_CLASS:MAGIC_AIR][CREATURE_CLASS:MAGIC_AIR_3]
+
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:bends the air to create an illusion, a mirage of him disappearing:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_AIR]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create an air familiar from a nearby sprite:creates an air familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:SUFFOCATION_CURSE_ORC]
+			[CDI:ADV_NAME:Suffocate]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:VERB:call on the wind to empty the enemies lungs:calls on the wind to empty the enemies lungs:NA]
+			[CDI:TARGET_VERB:are having trouble breathing:is having trouble breathing:NA]
+			[CDI:TARGET_RANGE:A:10]
+			[CDI:MAX_TARGET_NUMBER:A:3]
+			[CDI:WAIT_PERIOD:300]
+
+[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray web]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_TOKEN:LB]
+		[CDI:MATERIAL:CREATURE_MAT:ANIMAL:SILK:WEB_SPRAY]
+		[CDI:VERB:throw webs of thinnest silk:throws webs of thinnest silk:NA]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:10]
+		[CDI:MAX_TARGET_NUMBER:C:2]
+		[CDI:WAIT_PERIOD:130]
+
+[CAN_DO_INTERACTION:BLINK_SPELL]
+		[CDI:ADV_NAME:Blink]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:VERB:blink forward in a rush:blinks forward in a rush:NA]
+		[CDI:WAIT_PERIOD:360]
+
+
+[SELECT_CASTE:AIR_3_F]
+	[FEMALE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Skymage*:*Skymage*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Skymage*:*Skymages*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[WEBIMMUNE][CREATURE_CLASS:MAGIC_AIR][CREATURE_CLASS:MAGIC_AIR_3]
+
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:bends the air to create an illusion, a mirage of her disappearing:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_AIR]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create an air familiar from a nearby sprite:creates an air familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+------------ spells -----------------------------------
+		[CAN_DO_INTERACTION:SUFFOCATION_CURSE_ORC]
+			[CDI:ADV_NAME:Suffocate]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:VERB:call on the wind to empty the enemies lungs:calls on the wind to empty the enemies lungs:NA]
+			[CDI:TARGET_VERB:are having trouble breathing:is having trouble breathing:NA]
+			[CDI:TARGET_RANGE:A:10]
+			[CDI:MAX_TARGET_NUMBER:A:3]
+			[CDI:WAIT_PERIOD:300]
+
+[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spray web]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:BP_REQUIRED:BY_TOKEN:LB]
+		[CDI:MATERIAL:CREATURE_MAT:ANIMAL:SILK:WEB_SPRAY]
+		[CDI:VERB:throw webs of thinnest silk:throws webs of thinnest silk:NA]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:10]
+		[CDI:MAX_TARGET_NUMBER:C:2]
+		[CDI:WAIT_PERIOD:130]
+
+[CAN_DO_INTERACTION:BLINK_SPELL]
+		[CDI:ADV_NAME:Blink]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:VERB:blink forward in a rush:blinks forward in a rush:NA]
+		[CDI:WAIT_PERIOD:360]
+
+
+
+-----------------------------------------------------------
+black mages
+
+vampire mage
+[SELECT_CASTE:BLACK_1_F]
+	[FEMALE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Vampire Mage*:*Vampire Mage*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Vampire Mage*:*Vampire Mage*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[BLOODSUCKER][CREATURE_CLASS:MAGIC_BLACK_1]
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_BLACK_1]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:completely erases herself from the enemies knowledge and hides away:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_BLACK_1]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:A:3]
+		[CDI:VERB:create a black familiar from a nearby sprite:creates a black familiar from a nearby sprite that will aid in combat:NA]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:9999999]
+------------ spells -----------------------------------
+[CAN_DO_INTERACTION:SAP_STRENGTH_ORC] 
+			[CDI:ADV_NAME:Sap strength]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:VERB:sap the strength of his enemies:saps the strength of her enemies:NA]
+			[CDI:TARGET_VERB:feel strength sapping away:feels strength sapping away:NA]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:5]
+			[CDI:MAX_TARGET_NUMBER:A:10]
+			[CDI:WAIT_PERIOD:100]
+[CAN_DO_INTERACTION:SHADOW_EMBRACE_VAMPIRE_MAGE]
+	[CDI:ADV_NAME:Embrace]
+                [CDI:VERB:embrace:embraces the enemy and drinks his blood, stilling his bloodlust for a month:NA]
+                [CDI:TARGET_VERB:embrace:is drained of blood:NA]
+	[CDI:USAGE_HINT:ATTACK]
+                [CDI:TARGET_RANGE:A:1]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:5000]
+	[CDI:TARGET:B:SELF_ONLY]
+		[CDI:MAX_TARGET_NUMBER:B:1]
+		[CDI:WAIT_PERIOD:5000]
+
+[SELECT_CASTE:BLACK_1_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Vampire Mage*:*Vampire Mage*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Vampire Mage*:*Vampire Mage*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[BLOODSUCKER][CREATURE_CLASS:MAGIC_BLACK_1]
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_BLACK_1]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:completely erases himself from the enemies knowledge and hides away:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_BLACK_1]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:A:3]
+		[CDI:VERB:create a black familiar from a nearby sprite:creates a black familiar from a nearby sprite that will aid in combat:NA]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:9999999]
+------------ spells -----------------------------------
+[CAN_DO_INTERACTION:SAP_STRENGTH_ORC] 
+			[CDI:ADV_NAME:Sap strength]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:HAND]
+			[CDI:VERB:sap the strength of his enemies:saps the strength of his enemies:NA]
+			[CDI:TARGET_VERB:feel strength sapping away:feels strength sapping away:NA]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:5]
+			[CDI:MAX_TARGET_NUMBER:A:10]
+			[CDI:WAIT_PERIOD:100]
+[CAN_DO_INTERACTION:SHADOW_EMBRACE_VAMPIRE_MAGE]
+	[CDI:ADV_NAME:Embrace]
+                [CDI:VERB:embrace:embraces the enemy and drinks his blood, stilling his bloodlust for a month:NA]
+                [CDI:TARGET_VERB:embrace:is drained of blood:NA]
+	[CDI:USAGE_HINT:ATTACK]
+                [CDI:TARGET_RANGE:A:1]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:5000]
+	[CDI:TARGET:B:SELF_ONLY]
+		[CDI:MAX_TARGET_NUMBER:B:1]
+		[CDI:WAIT_PERIOD:5000]
+
+
+demonbound
+[SELECT_CASTE:BLACK_2_F]
+	[FEMALE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Demonbound*:*Demonbound*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Demonbound*:*Demonbound*]  
+[NOFEAR][TRANCES][LIKES_FIGHTING][NOEXERT][CREATURE_CLASS:MAGIC_BLACK_2]
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+YESCASTE[SKILL_RATE:TEACHING:200:0:0:0]        
+YESCASTE[SKILL_RATE:LEADERSHIP:200:0:0:0]   
+YESCASTE[SKILL_RATE:MILITARY_TACTICS:200:0:0:0]                
+YESCASTE[SKILL_RATE:SITUATIONAL_AWARENESS:200:0:0:0]    
+YESCASTE[SKILL_RATE:KNOWLEDGE_ACQUISITION:200:0:0:0] 
+YESCASTE[SKILL_RATE:AXE:200:0:0:0]                
+YESCASTE[SKILL_RATE:BITE:200:0:0:0]                 
+YESCASTE[SKILL_RATE:DAGGER:200:0:0:0]                
+YESCASTE[SKILL_RATE:GRASP_STRIKE:200:0:0:0]                
+YESCASTE[SKILL_RATE:HAMMER:200:0:0:0]                
+YESCASTE[SKILL_RATE:MACE:200:0:0:0]                
+YESCASTE[SKILL_RATE:MELEE_COMBAT:200:0:0:0]                
+YESCASTE[SKILL_RATE:MILITARY_TACTICS:200:0:0:0]                
+YESCASTE[SKILL_RATE:MISC_WEAPON:200:0:0:0]                
+YESCASTE[SKILL_RATE:PIKE:200:0:0:0]                               
+YESCASTE[SKILL_RATE:SITUATIONAL_AWARENESS:200:0:0:0]     
+YESCASTE[SKILL_RATE:SPEAR:200:0:0:0]                
+YESCASTE[SKILL_RATE:STANCE_STRIKE:200:0:0:0]                
+YESCASTE[SKILL_RATE:SWORD:200:0:0:0]                
+YESCASTE[SKILL_RATE:WHIP:200:0:0:0]         
+YESCASTE[SKILL_RATE:CRUTCH_WALK:200:0:0:0]    
+YESCASTE[SKILL_RATE:ARMOR:200:0:0:0]            
+YESCASTE[SKILL_RATE:MELEE_COMBAT:200:0:0:0]                
+YESCASTE[SKILL_RATE:MILITARY_TACTICS:200:0:0:0]             
+YESCASTE[SKILL_RATE:SHIELD:200:0:0:0]                    
+------------ spells ------------------------------------------
+	YESMAGIC[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		YESMAGIC[CDI:ADV_NAME:stench]
+		YESMAGIC[CDI:USAGE_HINT:ATTACK]
+		YESMAGIC[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+		YESMAGIC[CDI:MATERIAL:INORGANIC:ODOR_DEATH:UNDIRECTED_VAPOR]
+		YESMAGIC[CDI:VERB:emit the odor of death:emits the odor of death:NA]
+               YESMAGIC[CDI:TARGET_VERB:are barely able to breathe:is barely able to breathe]
+		YESMAGIC[CDI:TARGET:C:LINE_OF_SIGHT]
+		YESMAGIC[CDI:TARGET_RANGE:C:5]
+		YESMAGIC[CDI:MAX_TARGET_NUMBER:C:5]
+		YESMAGIC[CDI:WAIT_PERIOD:300]
+YESMAGIC[CAN_DO_INTERACTION:SLOW_SPELL]
+		YESMAGIC[CDI:ADV_NAME:Slow]
+		YESMAGIC[CDI:USAGE_HINT:ATTACK]
+               YESMAGIC[CDI:TARGET:A:LINE_OF_SIGHT]
+               YESMAGIC[CDI:TARGET_RANGE:A:5]
+               YESMAGIC[CDI:MAX_TARGET_NUMBER:A:10]
+               YESMAGIC[CDI:INTERACTION:SLOW_SPELL]
+		YESMAGIC[CDI:VERB:seem to darken:seems to darken]
+               YESMAGIC[CDI:TARGET_VERB:are uncertain and slow down:is uncertain and slows down]
+		YESMAGIC[CDI:WAIT_PERIOD:600]
+
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_BLACK_2]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:melds with the shadows and disappears:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_BLACK_2]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a black familiar from a nearby sprite:creates a black barghest from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ spells -----------------------------------
+		[SELECT_TISSUE:BONE]
+			[HEALING_RATE:50]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:FAT]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:2]
+			[PAIN_RECEPTORS:1]
+		[SELECT_TISSUE:MUSCLE]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:6]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:SKIN]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:3]
+			[PAIN_RECEPTORS:1]
+		[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+		[PHYS_ATT_RANGE:STRENGTH:4000:4500:4750:5000:5000:5000:5000]            ++++
+		[PHYS_ATT_RANGE:AGILITY:1900:2200:2400:2500:2600:2800:3500]              +++
+		[PHYS_ATT_RANGE:TOUGHNESS:4000:4500:4750:5000:5000:5000:5000]         ++++
+		[PHYS_ATT_RANGE:RECUPERATION:4000:4500:4750:5000:5000:5000:5000]        ++++
+		[MENT_ATT_RANGE:ANALYTICAL_ABILITY:450:950:1150:1250:1350:1550:2250]    +
+		[MENT_ATT_RANGE:FOCUS:1700:2200:2400:3500:3600:4400:4500]                ++++
+		[MENT_ATT_RANGE:CREATIVITY:700:1200:1400:1500:1600:1800:2500]           ++
+		[MENT_ATT_RANGE:PATIENCE:70:120:140:150:160:180:250]             ----
+		[MENT_ATT_RANGE:MEMORY:650:950:1150:1250:1350:1550:2250]                +
+		[MENT_ATT_RANGE:SPATIAL_SENSE:700:1200:1400:1500:1600:1800:2500]        ++
+		[MENT_ATT_RANGE:EMPATHY:65:95:115:125:135:155:225]               ----
+		[MENT_ATT_RANGE:SOCIAL_AWARENESS:45:95:115:125:135:155:225]      ----
+		[MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2500:3000:5000]           +++
+
+[SELECT_CASTE:BLACK_2_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Demonbound*:*Demonbound*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Demonbound*:*Demonbound*]  
+[NOFEAR][TRANCES][LIKES_FIGHTING][NOEXERT][CREATURE_CLASS:MAGIC_BLACK_2]
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+YESCASTE[SKILL_RATE:TEACHING:200:0:0:0]        
+YESCASTE[SKILL_RATE:LEADERSHIP:200:0:0:0]   
+YESCASTE[SKILL_RATE:MILITARY_TACTICS:200:0:0:0]                
+YESCASTE[SKILL_RATE:SITUATIONAL_AWARENESS:200:0:0:0]    
+YESCASTE[SKILL_RATE:KNOWLEDGE_ACQUISITION:200:0:0:0] 
+YESCASTE[SKILL_RATE:AXE:200:0:0:0]                
+YESCASTE[SKILL_RATE:BITE:200:0:0:0]                 
+YESCASTE[SKILL_RATE:DAGGER:200:0:0:0]                
+YESCASTE[SKILL_RATE:GRASP_STRIKE:200:0:0:0]                
+YESCASTE[SKILL_RATE:HAMMER:200:0:0:0]                
+YESCASTE[SKILL_RATE:MACE:200:0:0:0]                
+YESCASTE[SKILL_RATE:MELEE_COMBAT:200:0:0:0]                
+YESCASTE[SKILL_RATE:MILITARY_TACTICS:200:0:0:0]                
+YESCASTE[SKILL_RATE:MISC_WEAPON:200:0:0:0]                
+YESCASTE[SKILL_RATE:PIKE:200:0:0:0]                               
+YESCASTE[SKILL_RATE:SITUATIONAL_AWARENESS:200:0:0:0]     
+YESCASTE[SKILL_RATE:SPEAR:200:0:0:0]                
+YESCASTE[SKILL_RATE:STANCE_STRIKE:200:0:0:0]                
+YESCASTE[SKILL_RATE:SWORD:200:0:0:0]                
+YESCASTE[SKILL_RATE:WHIP:200:0:0:0]         
+YESCASTE[SKILL_RATE:CRUTCH_WALK:200:0:0:0]    
+YESCASTE[SKILL_RATE:ARMOR:200:0:0:0]            
+YESCASTE[SKILL_RATE:MELEE_COMBAT:200:0:0:0]                
+YESCASTE[SKILL_RATE:MILITARY_TACTICS:200:0:0:0]             
+YESCASTE[SKILL_RATE:SHIELD:200:0:0:0]                    
+------------ spells ------------------------------------------
+	YESMAGIC[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		YESMAGIC[CDI:ADV_NAME:stench]
+		YESMAGIC[CDI:USAGE_HINT:ATTACK]
+		YESMAGIC[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+		YESMAGIC[CDI:MATERIAL:INORGANIC:ODOR_DEATH:UNDIRECTED_VAPOR]
+		YESMAGIC[CDI:VERB:emit the odor of death:emits the odor of death:NA]
+               YESMAGIC[CDI:TARGET_VERB:are barely able to breathe:is barely able to breathe]
+		YESMAGIC[CDI:TARGET:C:LINE_OF_SIGHT]
+		YESMAGIC[CDI:TARGET_RANGE:C:5]
+		YESMAGIC[CDI:MAX_TARGET_NUMBER:C:5]
+		YESMAGIC[CDI:WAIT_PERIOD:300]
+YESMAGIC[CAN_DO_INTERACTION:SLOW_SPELL]
+		YESMAGIC[CDI:ADV_NAME:Slow]
+		YESMAGIC[CDI:USAGE_HINT:ATTACK]
+               YESMAGIC[CDI:TARGET:A:LINE_OF_SIGHT]
+               YESMAGIC[CDI:TARGET_RANGE:A:5]
+               YESMAGIC[CDI:MAX_TARGET_NUMBER:A:10]
+               YESMAGIC[CDI:INTERACTION:SLOW_SPELL]
+		YESMAGIC[CDI:VERB:seem to darken:seems to darken]
+               YESMAGIC[CDI:TARGET_VERB:are uncertain and slow down:is uncertain and slows down]
+		YESMAGIC[CDI:WAIT_PERIOD:600]
+
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_BLACK_2]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:melds with the shadows and disappears:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_BLACK_2]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a black familiar from a nearby sprite:creates a black barghest from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ spells -----------------------------------
+		[SELECT_TISSUE:BONE]
+			[HEALING_RATE:50]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:FAT]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:2]
+			[PAIN_RECEPTORS:1]
+		[SELECT_TISSUE:MUSCLE]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:6]
+			[PAIN_RECEPTORS:3]
+		[SELECT_TISSUE:SKIN]
+			[HEALING_RATE:50]
+			[RELATIVE_THICKNESS:3]
+			[PAIN_RECEPTORS:1]
+		[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+		[PHYS_ATT_RANGE:STRENGTH:4000:4500:4750:5000:5000:5000:5000]            ++++
+		[PHYS_ATT_RANGE:AGILITY:1900:2200:2400:2500:2600:2800:3500]              +++
+		[PHYS_ATT_RANGE:TOUGHNESS:4000:4500:4750:5000:5000:5000:5000]         ++++
+		[PHYS_ATT_RANGE:RECUPERATION:4000:4500:4750:5000:5000:5000:5000]        ++++
+		[MENT_ATT_RANGE:ANALYTICAL_ABILITY:450:950:1150:1250:1350:1550:2250]    +
+		[MENT_ATT_RANGE:FOCUS:1700:2200:2400:3500:3600:4400:4500]                ++++
+		[MENT_ATT_RANGE:CREATIVITY:700:1200:1400:1500:1600:1800:2500]           ++
+		[MENT_ATT_RANGE:PATIENCE:70:120:140:150:160:180:250]             ----
+		[MENT_ATT_RANGE:MEMORY:650:950:1150:1250:1350:1550:2250]                +
+		[MENT_ATT_RANGE:SPATIAL_SENSE:700:1200:1400:1500:1600:1800:2500]        ++
+		[MENT_ATT_RANGE:EMPATHY:65:95:115:125:135:155:225]               ----
+		[MENT_ATT_RANGE:SOCIAL_AWARENESS:45:95:115:125:135:155:225]      ----
+		[MENT_ATT_RANGE:WILLPOWER:1250:1500:1750:2000:2500:3000:5000]           +++
+
+
+Lich
+[SELECT_CASTE:BLACK_3_F]
+	[FEMALE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Lich*:*Lich*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Lich*:*Lich*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]   
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]    
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_BLACK_3]
+[NOT_LIVING][CREATURE_CLASS:GLACIER][EXTRAVISION][NOEXERT][NOPAIN][NOBREATHE][NOSTUN][NONAUSEA][NO_DIZZINESS]
+[NO_FEVERS][NOEMOTION][PARALYZEIMMUNE][NOFEAR]-NO_EAT-[NO_DRINK][NO_SLEEP]
+[NOTHOUGHT][NO_THOUGHT_CENTER_FOR_MOVEMENT][NO_CONNECTIONS_FOR_MOVEMENT]
+Gets 200% strength, toughness, from interaction.
+Loses blood and the ability to have trances or feelings.
+OPPOSED_TO_LIFE => left that one out to keep it civil
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_BLACK_3]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:casts a cloak of invisibility and evades the enemy:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_BLACK_3]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a black familiar from a nearby sprite:creates a gargantuan bone golem from a nearby sprite that will aid in combat and spellcasting:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+[CAN_DO_INTERACTION:RESURRECT_LESSER_BONE_GOLEM]
+		[CDI:ADV_NAME:Summon lesser bone golem]
+		[CDI:TARGET:A:LINE_OF_SIGHT] => remove to target everything in range.
+		[CDI:TARGET_RANGE:A:1]  => raise to 300 to cover the entire map.
+		[CDI:VERB:gesture with a bony hand:gestures with a bony hand:NA]
+		[CDI:TARGET_VERB:make sickening sounds while the bones rearrange and raise from the ground:makes sickening sounds while the bones rearrange and raise from the ground]
+		[CDI:MAX_TARGET_NUMBER:A:1] => raise to 500 for all
+		[CDI:WAIT_PERIOD:8400] => once a week.
+[CAN_DO_INTERACTION:RESURRECT_BONE_GOLEM]
+		[CDI:ADV_NAME:Summon bone golem]
+		[CDI:TARGET:A:LINE_OF_SIGHT] => remove to target everything in range.
+		[CDI:TARGET_RANGE:A:1]  => raise to 300 to cover the entire map.
+		[CDI:VERB:gesture with a bony hand and mumble some incantations:gestures with a bony hand and mumbles some dark rites:NA]
+		[CDI:TARGET_VERB:make sickening sounds while the bones rearrange and raise from the ground:makes sickening sounds while the bones rearrange and raise from the ground]
+		[CDI:MAX_TARGET_NUMBER:A:1] => raise to 500 for all
+		[CDI:WAIT_PERIOD:16800] => once every two weeks.
+[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Spit spike]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:GRASP]
+			[CDI:MATERIAL:LOCAL_CREATURE_MAT:BONE:SOLID_GLOB]
+			[CDI:VERB:spit a bone pike:spits a bone spike:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:10]
+			[CDI:MAX_TARGET_NUMBER:C:1]
+			[CDI:WAIT_PERIOD:150]
+
+[SELECT_CASTE:BLACK_3_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Lich*:*Lich*]                                    
+removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Lich*:*Lich*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]    
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]   
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_BLACK_3]
+[NOT_LIVING][CREATURE_CLASS:GLACIER][EXTRAVISION][NOEXERT][NOPAIN][NOBREATHE][NOSTUN][NONAUSEA][NO_DIZZINESS]
+[NO_FEVERS][NOEMOTION][PARALYZEIMMUNE][NOFEAR]-NO_EAT-[NO_DRINK][NO_SLEEP]
+[NOTHOUGHT][NO_THOUGHT_CENTER_FOR_MOVEMENT][NO_CONNECTIONS_FOR_MOVEMENT]
+Gets 200% strength, toughness, from interaction.
+Loses blood and the ability to have trances or feelings.
+OPPOSED_TO_LIFE => left that one out to keep it civil
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_BLACK_3]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:casts a cloak of invisibility and evades the enemy:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_BLACK_3]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a black familiar from a nearby sprite:creates a gargantuan bone golem from a nearby sprite that will aid in combat and spellcasting:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+[CAN_DO_INTERACTION:RESURRECT_LESSER_BONE_GOLEM]
+		[CDI:ADV_NAME:Summon lesser bone golem]
+		[CDI:TARGET:A:LINE_OF_SIGHT] => remove to target everything in range.
+		[CDI:TARGET_RANGE:A:1]  => raise to 300 to cover the entire map.
+		[CDI:VERB:gesture with a bony hand:gestures with a bony hand:NA]
+		[CDI:TARGET_VERB:make sickening sounds while the bones rearrange and raise from the ground:makes sickening sounds while the bones rearrange and raise from the ground]
+		[CDI:MAX_TARGET_NUMBER:A:1] => raise to 500 for all
+		[CDI:WAIT_PERIOD:8400] => once a week.
+[CAN_DO_INTERACTION:RESURRECT_BONE_GOLEM]
+		[CDI:ADV_NAME:Summon bone golem]
+		[CDI:TARGET:A:LINE_OF_SIGHT] => remove to target everything in range.
+		[CDI:TARGET_RANGE:A:1]  => raise to 300 to cover the entire map.
+		[CDI:VERB:gesture with a bony hand and mumble some incantations:gestures with a bony hand and mumbles some dark rites:NA]
+		[CDI:TARGET_VERB:make sickening sounds while the bones rearrange and raise from the ground:makes sickening sounds while the bones rearrange and raise from the ground]
+		[CDI:MAX_TARGET_NUMBER:A:1] => raise to 500 for all
+		[CDI:WAIT_PERIOD:16800] => once every two weeks.
+------------ spells -----------------------------------
+[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+			[CDI:ADV_NAME:Spit spike]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:BP_REQUIRED:BY_CATEGORY:GRASP]
+			[CDI:MATERIAL:LOCAL_CREATURE_MAT:BONE:SOLID_GLOB]
+			[CDI:VERB:spit a bone pike:spits a bone spike:NA]
+			[CDI:TARGET:C:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:C:10]
+			[CDI:MAX_TARGET_NUMBER:C:1]
+			[CDI:WAIT_PERIOD:150]
+-----------------------------------------------------------
+white mages
+
+
+[SELECT_CASTE:WHITE_1_F]
+	[FEMALE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Lifemancer*:*Lifemancer*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Lifemancer*:*Lifemancer*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]     
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]  
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_WHITE_1]
+
+
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_WHITE_1]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+----------------------------------------------------------
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:conceals herself with a magic veil:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WHITE_1]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a white familiar from a nearby sprite:creates a white familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+            [CAN_DO_INTERACTION:HEALING]
+               [CDI:ADV_NAME:Healing touch]
+               [CDI:TARGET:A:LINE_OF_SIGHT]
+               [CDI:TARGET_RANGE:A:5]
+               [CDI:MAX_TARGET_NUMBER:A:1]
+               [CDI:TARGET_VERB:pray for healing:is enchanted with faster healing by the lifemancer]
+               [CDI:WAIT_PERIOD:1995]
+
+            [CAN_DO_INTERACTION:SPEED_BOOST]
+               [CDI:ADV_NAME:Speeding touch]
+               [CDI:TARGET:A:LINE_OF_SIGHT]
+               [CDI:TARGET_RANGE:A:10]
+               [CDI:MAX_TARGET_NUMBER:A:1]
+               [CDI:TARGET_VERB:bless with speed:is enchanted with a speed bonus by the lifemancer]
+               [CDI:WAIT_PERIOD:2005]
+
+            YESMAGIC[CAN_DO_INTERACTION:START:0]
+               YESMAGIC[CDI:ADV_NAME:Reconnect soul with body]
+               YESMAGIC[CDI:TARGET:A:LINE_OF_SIGHT]
+               YESMAGIC[CDI:TARGET_RANGE:A:10]
+               YESMAGIC[CDI:INTERACTION:RESSURECT]
+               YESMAGIC[CDI:MAX_TARGET_NUMBER:A:1]
+               YESMAGIC[CDI:VERB:guide a spirit back to the mortal plane:guides a spirit back to the mortal plane:NA]
+               YESMAGIC[CDI:TARGET_VERB:are brought back from beyond: is brought back from beyond]
+               YESMAGIC[CDI:WAIT_PERIOD:400600]
+
+
+
+
+[SELECT_CASTE:WHITE_1_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Lifemancer*:*Lifemancer*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Lifemancer*:*Lifemancer*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_WHITE_1]
+
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_WHITE_1]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+----------------------------------------------------------
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:conceals himself with a magic veil:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WHITE_1]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a white familiar from a nearby sprite:creates a white familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+            [CAN_DO_INTERACTION:HEALING]
+               [CDI:ADV_NAME:Healing touch]
+               [CDI:TARGET:A:LINE_OF_SIGHT]
+               [CDI:TARGET_RANGE:A:5]
+               [CDI:MAX_TARGET_NUMBER:A:1]
+               [CDI:TARGET_VERB:pray for healing:is enchanted with faster healing by the lifemancer]
+               [CDI:WAIT_PERIOD:1995]
+
+            [CAN_DO_INTERACTION:SPEED_BOOST]
+               [CDI:ADV_NAME:Speeding touch]
+               [CDI:TARGET:A:LINE_OF_SIGHT]
+               [CDI:TARGET_RANGE:A:10]
+               [CDI:MAX_TARGET_NUMBER:A:1]
+               [CDI:TARGET_VERB:bless with speed:is enchanted with a speed bonus by the lifemancer]
+               [CDI:WAIT_PERIOD:2005]
+
+            YESMAGIC[CAN_DO_INTERACTION:START:0]
+               YESMAGIC[CDI:ADV_NAME:Reconnect soul with body]
+               YESMAGIC[CDI:TARGET:A:LINE_OF_SIGHT]
+               YESMAGIC[CDI:TARGET_RANGE:A:10]
+               YESMAGIC[CDI:INTERACTION:RESSURECT]
+               YESMAGIC[CDI:MAX_TARGET_NUMBER:A:1]
+               YESMAGIC[CDI:VERB:guide a spirit back to the mortal plane:guides a spirit back to the mortal plane:NA]
+               YESMAGIC[CDI:TARGET_VERB:are brought back from beyond: is brought back from beyond]
+               YESMAGIC[CDI:WAIT_PERIOD:400600]
+
+[SELECT_CASTE:WHITE_2_F]
+	[FEMALE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Witch Hunter*:*Witch Hunter*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Witch Hunter*:*Witch Hunter*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]      
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10] 
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_WHITE_2]
+
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_WHITE_2]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+----------------------------------------------------------
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:conceals herself with a magic veil:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WHITE_2]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a white familiar from a nearby sprite:creates a white familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+[CAN_DO_INTERACTION:SANCTIFY_SPELL]
+		[CDI:ADV_NAME:Put to rest]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:TARGET_RANGE:A:5]
+      [CDI:VERB:sanctify a restless being:sanctifies a restless being:NA]
+		[CDI:TARGET_VERB:are put to the final rest:is put to the final rest]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:200]
+
+[CAN_DO_INTERACTION:CORPSE_EXPLODE_RUNE_CURSE]
+		[CDI:ADV_NAME:Put to rest]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:TARGET_RANGE:A:5]
+      [CDI:VERB:destroy a corpse:makes the sign against evil and destroys a corpse:NA]
+		[CDI:TARGET_VERB:are starting to glow:is starting to glow]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:300]
+
+
+[CAN_DO_INTERACTION:LIVING_CORPSE_EXPLODE_RUNE_CURSE]
+		[CDI:ADV_NAME:Put to rest]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:TARGET_RANGE:A:5]
+      [CDI:VERB:bring holy wrath on the undead abomination:brings holy wrath upon the undead abominationNA]
+		[CDI:TARGET_VERB:are starting to glow with a bright inner light:is starting to glow with a bright inner light, eating away the undead flesh]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:300]
+
+[SELECT_CASTE:WHITE_2_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Witch Hunter*:*Witch Hunter*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Witch Hunter*:*Witch Hunter*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]     
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]  
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_WHITE_2]
+
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_WHITE_2]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+----------------------------------------------------------
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:conceals himself with a magic veil:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WHITE_2]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a white familiar from a nearby sprite:creates a white familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+[CAN_DO_INTERACTION:SANCTIFY_SPELL]
+		[CDI:ADV_NAME:Put to rest]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:TARGET_RANGE:A:5]
+      [CDI:VERB:sanctify a restless being:sanctifies a restless being:NA]
+		[CDI:TARGET_VERB:are put to the final rest:is put to the final rest]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:200]
+
+[CAN_DO_INTERACTION:CORPSE_EXPLODE_RUNE_CURSE]
+		[CDI:ADV_NAME:Put to rest]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:TARGET_RANGE:A:5]
+      [CDI:VERB:destroy a corpse:makes the sign against evil and destroys a corpse:NA]
+		[CDI:TARGET_VERB:are starting to glow:is starting to glow]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:300]
+
+
+[CAN_DO_INTERACTION:LIVING_CORPSE_EXPLODE_RUNE_CURSE]
+		[CDI:ADV_NAME:Put to rest]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:TARGET_RANGE:A:5]
+      [CDI:VERB:bring holy wrath on the undead abomination:brings holy wrath upon the undead abominationNA]
+		[CDI:TARGET_VERB:are starting to glow with a bright inner light:is starting to glow with a bright inner light, eating away the undead flesh]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:300]
+
+
+arcane protector
+
+
+[SELECT_CASTE:WHITE_3_F]
+	[FEMALE]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Arcane Protector*:*Arcane Protector*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Arcane Protector*:*Arcane Protector*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_WHITE_3]
+
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_WHITE_3]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+----------------------------------------------------------
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:conceals herself with a magic veil:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WHITE_3]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a white familiar from a nearby sprite:creates a white familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+
+
+[CAN_DO_INTERACTION:BLINDNESS_CURSE_NO_EMISSION]
+		[CDI:ADV_NAME:Blindness]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:TARGET_RANGE:A:15]
+		[CDI:VERB:shine with an immense inner light:shines with an immense inner light:NA]
+		[CDI:TARGET_VERB:are blinded by the radiant glow:is blinded by the radiant glow]
+		[CDI:MAX_TARGET_NUMBER:A:10]
+		[CDI:WAIT_PERIOD:2600]
+
+[CAN_DO_INTERACTION:ANTIMAGIC_SPELL]
+		[CDI:ADV_NAME:Resist magic]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:VERB:are surrounded by a crackling ward:is surrounded by a crackling ward]
+		[CDI:WAIT_PERIOD:1500]
+
+            [CAN_DO_INTERACTION:COMBAT_BOOST]
+               [CDI:ADV_NAME:Combat boost]
+               [CDI:TARGET:A:LINE_OF_SIGHT]
+               [CDI:TARGET_RANGE:A:10]
+               [CDI:MAX_TARGET_NUMBER:A:10]
+               [CDI:VERB:enchant for combat bonus:enchants her fellow dwarves with renewed strength:NA]
+               [CDI:WAIT_PERIOD:2250]
+
+            [CAN_DO_INTERACTION:PROTECTOR_AURA_HIDE]
+               [CDI:ADV_NAME:Protection Aura]
+               [CDI:TARGET:A:LINE_OF_SIGHT]
+               [CDI:TARGET_RANGE:A:10]
+               [CDI:MAX_TARGET_NUMBER:A:10]
+               [CDI:VERB:enchant for protection:protects her brothers and sisters with a magical aura, taking away their pain and exertion and helping them flee and hide, if necessary:NA]
+               [CDI:WAIT_PERIOD:3500]
+
+
+[SELECT_CASTE:WHITE_3_M]
+	[MALE]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[POP_RATIO:10]       
+[CASTE_PROFESSION_NAME:ALCHEMIST:*Arcane Protector*:*Arcane Protector*]                                    
+CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
+[CASTE_PROFESSION_NAME:STANDARD:*Arcane Protector*:*Arcane Protector*]  
+[SKILL_RATE:MAGIC_NATURE:500:0:0:0]                
+[SKILL_RATE:ALCHEMY:500:0:0:0]       
+[NATURAL_SKILL:MAGIC_NATURE:10]       
+[SKILL_RATE:RANGED_COMBAT:200:0:0:0]            
+[SKILL_RATE:THROW:200:0:0:0]             
+[NATURAL_SKILL:RANGED_COMBAT:10]            
+[NATURAL_SKILL:THROW:10]
+[NATURAL_SKILL:ALCHEMY:10]  [CREATURE_CLASS:MAGIC_WHITE_3]
+
+
+-------------  block spell ---------------------------------
+[CAN_DO_INTERACTION:BLOCK_WHITE_3]
+[CDI:ADV_NAME:Block the creation of more then one mage of this type]
+[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+	-CDI:TARGET:A:LINE_OF_SIGHT-
+[CDI:TARGET_RANGE:A:200]
+[CDI:MAX_TARGET_NUMBER:A:200]
+[CDI:WAIT_PERIOD:3599]
+----------------------------------------------------------
+
+------------ hide spells -----------------------------------
+      [CAN_DO_INTERACTION:HIDE_EFFECT]
+      [CDI:ADV_NAME:hide]
+      [CDI:USAGE_HINT:FLEEING]
+      [CDI:VERB:conceal yourself with a magic veil:conceals himself with a magic veil:NA]
+      [CDI:TARGET:A:SELF_ONLY]
+      [CDI:WAIT_PERIOD:300]
+      [CDI:FREE_ACTION]
+------------ hide  spells -----------------------------------
+
+------------ familiar spells -----------------------------------
+	[CAN_DO_INTERACTION:FAMILIAR_WHITE_3]
+		[CDI:ADV_NAME:Create familiar from sprite]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BODY]
+			[CDI:TARGET:A:LINE_OF_SIGHT]
+			[CDI:TARGET_RANGE:A:3]
+			[CDI:VERB:create a white familiar from a nearby sprite:creates a white familiar from a nearby sprite that will aid in combat:NA]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:WAIT_PERIOD:9999999]
+------------ familiar spells -----------------------------------
+
+
+------------ spells -----------------------------------
+
+
+
+[CAN_DO_INTERACTION:BLINDNESS_CURSE_NO_EMISSION]
+		[CDI:ADV_NAME:Blindness]
+		[CDI:TARGET:A:LINE_OF_SIGHT]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:TARGET_RANGE:A:15]
+		[CDI:VERB:shine with an immense inner light:shines with an immense inner light:NA]
+		[CDI:TARGET_VERB:are blinded by the radiant glow:is blinded by the radiant glow]
+		[CDI:MAX_TARGET_NUMBER:A:10]
+		[CDI:WAIT_PERIOD:2600]
+
+[CAN_DO_INTERACTION:ANTIMAGIC_SPELL]
+		[CDI:ADV_NAME:Resist magic]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:USAGE_HINT:ATTACK]
+		[CDI:VERB:are surrounded by a crackling ward:is surrounded by a crackling ward]
+		[CDI:WAIT_PERIOD:1500]
+
+            [CAN_DO_INTERACTION:COMBAT_BOOST]
+               [CDI:ADV_NAME:Combat boost]
+               [CDI:TARGET:A:LINE_OF_SIGHT]
+               [CDI:TARGET_RANGE:A:10]
+               [CDI:MAX_TARGET_NUMBER:A:10]
+               [CDI:VERB:enchant for combat bonus:enchants her fellow dwarves with renewed strength:NA]
+               [CDI:WAIT_PERIOD:2250]
+
+            [CAN_DO_INTERACTION:PROTECTOR_AURA_HIDE]
+               [CDI:ADV_NAME:Protection Aura]
+               [CDI:TARGET:A:LINE_OF_SIGHT]
+               [CDI:TARGET_RANGE:A:10]
+               [CDI:MAX_TARGET_NUMBER:A:10]
+               [CDI:VERB:enchant for protection:protects her brothers and sisters with a magical aura, taking away their pain and exertion and helping them flee and hide, if necessary:NA]
+               [CDI:WAIT_PERIOD:3500]
+
+############################################################################################################################ 33600 is one month
+
+
+############################################################################################################################
+	
+	[SELECT_CASTE:ALL]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:CHEEK_WHISKERS]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:CHIN_WHISKERS]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:MOUSTACHE]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:SIDEBURNS]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYELASH]
+			
+			A color modifier takes a list of color patterns (every color is associated to a monotone color pattern of its color, so you can also use color tokens) and frequencies.
+
+	[TL_COLOR_MODIFIER:AMBER:1:AUBURN:1:BLACK:1:BROWN:1:BUFF:1:BURNT_SIENNA:1:BURNT_UMBER:1:CHARCOAL:1:CHESTNUT:1:CHOCOLATE:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_CHESTNUT:1:DARK_TAN:1:ECRU:1:FLAX:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:LIGHT_BROWN:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:PALE_CHESTNUT:1:PUMPKIN:1:RAW_UMBER:1:RUSSET:1:SAFFRON:1:SEPIA:1:TAN:1:TAUPE_DARK:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:TAUPE_PALE:1:TAUPE_SANDY:1]
+				[TLCM_NOUN:hair:SINGULAR]
+			[TL_COLOR_MODIFIER:GRAY:1]
+
+				This gives the start and finish time in <year>|<days> for the color change to occur
+		
+				[TLCM_NOUN:hair:SINGULAR]
+				[TLCM_TIMING:ROOT:80:0:130:0]
+			[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:hair:SINGULAR]
+				[TLCM_TIMING:ROOT:130:0:150:0]
+
+		Now we'll select the eyebrows and eyelashes and give them variable lengths.
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:50:80:90:100:110:120:150]
+				[APP_MOD_NOUN:eyebrows:PLURAL]
+				[APP_MOD_DESC_RANGE:55:70:90:110:130:145]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:DENSE:50:80:90:100:110:120:150]
+				[APP_MOD_NOUN:eyebrows:PLURAL]
+				[APP_MOD_DESC_RANGE:55:70:90:110:130:145]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:HIGH_POSITION:0:70:90:100:110:130:200]
+				[APP_MOD_NOUN:eyebrows:PLURAL]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:EYELASH]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:50:80:90:100:110:120:150]
+				[APP_MOD_NOUN:eyelashes:PLURAL]
+				[APP_MOD_DESC_RANGE:55:70:90:110:130:145]
+
+		All of the other hair is selected and started at length zero.  It's fine to group them all together like this -- the creature can still accomodate different lengths once hair cutting/styling goes in.  I used one modifier here because the growth rates and starting length are all the same.
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:CHEEK_WHISKERS]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:CHIN_WHISKERS]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:MOUSTACHE]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:SIDEBURNS]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:0:0:0:0:0:0:0]
+				[APP_MOD_NOUN:hair:SINGULAR]
+
+				Here we set the growth rate.  This will change the modifier (LENGTH) by 1 each day up to a maximum of 1000 from the start of the dwarf's life (early beards!) for as long as the dwarf is alive.  The format is (APP_MOD_RATE|<rate>|<scale>|<min>|<max>|<start year>|<start day>|<end year>|<end day>) where the final two tokens can be replaced by NO_END if the growth is to continue indefinitely.
+				
+				[APP_MOD_RATE:1:DAILY:0:1000:0:0:NO_END]
+				[APP_MOD_DESC_RANGE:10:25:75:125:200:300]
+
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:CURLY:0:70:90:100:110:130:200]
+				[APP_MOD_NOUN:hair:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:GREASY:0:70:90:100:110:130:200]
+				[APP_MOD_NOUN:hair:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:DENSE:50:80:90:100:110:120:150]
+				[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_DESC_RANGE:55:70:90:110:130:145]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:CHEEK_WHISKERS]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:CHIN_WHISKERS]
+			[TISSUE_STYLE_UNIT:BEARD:STANDARD_BEARD_SHAPINGS]
+				[TSU_NOUN:beard:SINGULAR]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:MOUSTACHE]
+			[TISSUE_STYLE_UNIT:MOUSTACHE:STANDARD_MOUSTACHE_SHAPINGS]
+				[TSU_NOUN:moustache:SINGULAR]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:SIDEBURNS]
+			[TISSUE_STYLE_UNIT:SIDEBURNS:STANDARD_SIDEBURNS_SHAPINGS]
+				[TSU_NOUN:sideburns:PLURAL]
+
+		Here we handle nail length.
+
+		*** need a new style to keep these short and need to make the entity def say to keep them short
+		SET_TL_GROUP:BY_CATEGORY:FINGER:NAIL]
+		 PLUS_TL_GROUP:BY_CATEGORY:TOE:NAIL]
+			TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:100:100:100:100:100:100:100]
+				APP_MOD_RATE:1:DAILY:0:1000:0:0:NO_END]
+				APP_MOD_NOUN:nails:PLURAL]
+
+		Here all of the skin is selected and various colors are listed.
+
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
+			[TLCM_NOUN:skin:SINGULAR]
+
+		[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+			[APP_MOD_RATE:1:YEARLY:0:100:60:0:NO_END]
+			[APP_MOD_NOUN:skin:SINGULAR]
+			[APP_MOD_DESC_RANGE:0:0:0:1:25:50]
+
+		Now we do the eyes, using the somewhat clunky eye color patterns.
+
+		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
+			[TL_COLOR_MODIFIER:IRIS_EYE_AMETHYST:1:IRIS_EYE_AQUAMARINE:1:IRIS_EYE_BRASS:1:IRIS_EYE_BRONZE:1:IRIS_EYE_COBALT:1:IRIS_EYE_COPPER:1:IRIS_EYE_EMERALD:1:IRIS_EYE_GOLD:1:IRIS_EYE_HELIOTROPE:1:IRIS_EYE_JADE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUST:1:IRIS_EYE_SILVER:1:IRIS_EYE_SLATE_GRAY:1:IRIS_EYE_TURQUOISE:1]
+			[TLCM_NOUN:eyes:PLURAL]
+

@@ -1,0 +1,8 @@
+reaction_loo
+
+[REACTION]
+
+[REACTION:DECO_LOO]
+[NAME:*Go to the loo*]
+[BUILDING:LOO:CUSTOM_A]
+

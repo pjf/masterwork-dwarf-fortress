@@ -1,0 +1,12 @@
+I'm [CONTEXT:NUMBER]!
+I'm only [CONTEXT:NUMBER]!
+But I'm only [CONTEXT:NUMBER]!
+I wish I were,  but I'm only [CONTEXT:NUMBER]!
+I'm not allowed!  I'm only [CONTEXT:NUMBER]!
+No way!  I'm [CONTEXT:NUMBER] years old!
+I'm only [CONTEXT:NUMBER] years old!
+Ha ha!  I'm only [CONTEXT:NUMBER]!
+What?  I'm [CONTEXT:NUMBER]!
+You're funny!
+What?
+I am!

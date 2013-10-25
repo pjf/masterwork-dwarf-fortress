@@ -1,0 +1,1885 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--This file contains the world gen tags for Dwarf Fortress version 34.01-->
+<!--This is revision 1 of this file.-->
+<!--Reference the ParamSchema.xsd file to learn the structure of the tags.-->
+<worldGen>
+  <worldGenTag>
+    <tag>WORLD_GEN</tag>
+    <description>Param set delimiter</description>
+    <category>Delimiter</category>
+    <argument/>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>TITLE</tag>
+    <description>Param set name</description>
+    <category>Title</category>
+    <argument/>
+  </worldGenTag>
+  <worldGenTag optional="true">
+    <tag>SEED</tag>
+    <description>Main Seed</description>
+    <category>Generation</category>
+    <argument>
+      <description/>
+      <tooltip>Main seed value for map generation within Dwarf Fortress.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>4294967295</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag optional="true">
+    <tag>HISTORY_SEED</tag>
+    <description>History Seed</description>
+    <category>Generation</category>
+    <argument>
+      <description/>
+      <tooltip>Seed value for history generation within Dwarf Fortress.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>4294967295</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag optional="true">
+    <tag>NAME_SEED</tag>
+    <description>Name Seed</description>
+    <category>Generation</category>
+    <argument>
+      <description/>
+      <tooltip>Seed value for name generation within Dwarf Fortress.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>4294967295</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag optional="true">
+    <tag>CREATURE_SEED</tag>
+    <description>Creature Seed</description>
+    <category>Generation</category>
+    <argument>
+      <description/>
+      <tooltip>Seed value for creature generation within Dwarf Fortress.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>4294967295</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>DIM</tag>
+    <description>Map Size</description>
+    <category>Dimension</category>
+    <argument>
+      <description>X Size</description>
+      <tooltip>Size of the map in the X direction.</tooltip>
+      <listBoxControl>
+        <listBoxItem itemText="17">17</listBoxItem>
+        <listBoxItem itemText="33">33</listBoxItem>
+        <listBoxItem itemText="65">65</listBoxItem>
+        <listBoxItem itemText="129">129</listBoxItem>
+        <listBoxItem itemText="257">257</listBoxItem>
+      </listBoxControl>
+    </argument>
+    <argument>
+      <description>Y Size</description>
+      <tooltip>Size of the map in the Y direction.</tooltip>
+      <listBoxControl>
+        <listBoxItem itemText="17">17</listBoxItem>
+        <listBoxItem itemText="33">33</listBoxItem>
+        <listBoxItem itemText="65">65</listBoxItem>
+        <listBoxItem itemText="129">129</listBoxItem>
+        <listBoxItem itemText="257">257</listBoxItem>
+      </listBoxControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>EMBARK_POINTS</tag>
+    <description>Embark Points</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Points available to purchase skills and equipment prior to embarkation.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>END_YEAR</tag>
+    <description>End Year</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Year when world generation will stop no matter what.</tooltip>
+      <numericControl>
+        <min>10</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>BEAST_END_YEAR</tag>
+    <description>Beast End Year</description>
+    <category>General</category>
+    <argument>
+      <description>Year</description>
+      <tooltip>Year to start checking for world gen end due to too many beast deaths.</tooltip>
+      <numericControl>
+        <min>10</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Percent Dead</description>
+      <tooltip>Percent of beasts dead needed to stop world gen prematurely.</tooltip>
+      <numericControl>
+        <min>-1</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>REVEAL_ALL_HISTORY</tag>
+    <description>Reveal All Historical Events</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Reveal All Historical Events.</tooltip>
+      <checkBoxControl/>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CULL_HISTORICAL_FIGURES</tag>
+    <description>Cull Unimportant Historical Figures</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Cull unimportant historical figures.</tooltip>
+      <checkBoxControl/>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Elevation">
+    <tag>ELEVATION</tag>
+    <description>Elevation</description>
+    <category>Generation</category>
+    <argument>
+      <description>Minimum</description>
+      <tooltip>Minimum elevation.</tooltip>
+        <numericControl>
+          <min>1</min>
+          <max>400</max>
+        </numericControl>
+    </argument>
+    <argument>
+      <description>Maximum</description>
+      <tooltip>Maximum elevation.</tooltip>
+      <numericControl>
+        <min>1</min>
+        <max>400</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>X Var</description>
+      <tooltip>Elevation variance in the X direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Y Var</description>
+      <tooltip>Elevation variance in the Y direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Rainfall">
+    <tag>RAINFALL</tag>
+    <description>Rainfall</description>
+    <category>Generation</category>
+    <argument>
+      <description>Minimum</description>
+      <tooltip>Minimum rainfall.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Maximum</description>
+      <tooltip>Maximum rainfall.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>X Var</description>
+      <tooltip>Rainfall variance in the X direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Y Var</description>
+      <tooltip>Rainfall variance in the Y direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Temperature">
+    <tag>TEMPERATURE</tag>
+    <description>Temperature</description>
+    <category>Generation</category>
+    <argument>
+      <description>Minimum</description>
+      <tooltip>Minimum temperature.</tooltip>
+      <numericControl>
+        <min>-1000</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Maximum</description>
+      <tooltip>Maximum temperature.</tooltip>
+      <numericControl>
+        <min>-1000</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>X Var</description>
+      <tooltip>Temperature variance in the X direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Y Var</description>
+      <tooltip>Temperature variance in the Y direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Drainage">
+    <tag>DRAINAGE</tag>
+    <description>Drainage</description>
+    <category>Generation</category>
+    <argument>
+      <description>Minimum</description>
+      <tooltip>Minimum drainage.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Maximum</description>
+      <tooltip>Maximum drainage.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>X Var</description>
+      <tooltip>Drainage variance in the X direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Y Var</description>
+      <tooltip>Drainage variance in the Y direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Volcanism">
+    <tag>VOLCANISM</tag>
+    <description>Volcanism</description>
+    <category>Generation</category>
+    <argument>
+      <description>Minimum</description>
+      <tooltip>Minimum volcanism.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Maximum</description>
+      <tooltip>Maximum volcanism.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>X Var</description>
+      <tooltip>Volcanism variance in the X direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Y Var</description>
+      <tooltip>Volcanism variance in the Y direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Savagery">
+    <tag>SAVAGERY</tag>
+    <description>Savagery</description>
+    <category>Generation</category>
+    <argument>
+      <description>Minimum</description>
+      <tooltip>Minimum savagery.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Maximum</description>
+      <tooltip>Maximum savagery.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>X Var</description>
+      <tooltip>Savagery variance in the X direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Y Var</description>
+      <tooltip>Savagery variance in the Y direction.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3200</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Elevation">
+    <tag>ELEVATION_FREQUENCY</tag>
+    <description>Elevation</description>
+    <category>Generation</category>
+    <argument>
+      <description>Mesh Size</description>
+      <tooltip>I'm not sure what this means.</tooltip>
+      <listBoxControl>
+        <listBoxItem itemText="Ignore">1</listBoxItem>
+        <listBoxItem itemText="2x2">2</listBoxItem>
+        <listBoxItem itemText="4x4">3</listBoxItem>
+        <listBoxItem itemText="8x8">4</listBoxItem>
+        <listBoxItem itemText="16x16">5</listBoxItem>
+        <listBoxItem itemText="32x32">6</listBoxItem>
+      </listBoxControl>
+    </argument>
+    <argument>
+      <description>Weighted Range(0-20)</description>
+      <tooltip>0 - 20 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(20 - 40)</description>
+      <tooltip>20 - 40 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(40-60)</description>
+      <tooltip>40 - 60 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(60-80)</description>
+      <tooltip>60 - 80 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(80-100)</description>
+      <tooltip>80 - 100 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Rainfall">
+    <tag>RAIN_FREQUENCY</tag>
+    <description>Rainfall</description>
+    <category>Generation</category>
+    <argument>
+      <description>Mesh Size</description>
+      <tooltip>I'm not sure what this means.</tooltip>
+      <listBoxControl>
+        <listBoxItem itemText="Ignore">1</listBoxItem>
+        <listBoxItem itemText="2x2">2</listBoxItem>
+        <listBoxItem itemText="4x4">3</listBoxItem>
+        <listBoxItem itemText="8x8">4</listBoxItem>
+        <listBoxItem itemText="16x16">5</listBoxItem>
+        <listBoxItem itemText="32x32">6</listBoxItem>
+      </listBoxControl>
+    </argument>
+    <argument>
+      <description>Weighted Range(0-20)</description>
+      <tooltip>0 - 20 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(20 - 40)</description>
+      <tooltip>20 - 40 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(40-60)</description>
+      <tooltip>40 - 60 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(60-80)</description>
+      <tooltip>60 - 80 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(80-100)</description>
+      <tooltip>80 - 100 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Drainage">
+    <tag>DRAINAGE_FREQUENCY</tag>
+    <description>Drainage</description>
+    <category>Generation</category>
+    <argument>
+      <description>Mesh Size</description>
+      <tooltip>I'm not sure what this means.</tooltip>
+      <listBoxControl>
+        <listBoxItem itemText="Ignore">1</listBoxItem>
+        <listBoxItem itemText="2x2">2</listBoxItem>
+        <listBoxItem itemText="4x4">3</listBoxItem>
+        <listBoxItem itemText="8x8">4</listBoxItem>
+        <listBoxItem itemText="16x16">5</listBoxItem>
+        <listBoxItem itemText="32x32">6</listBoxItem>
+      </listBoxControl>
+    </argument>
+    <argument>
+      <description>Weighted Range(0-20)</description>
+      <tooltip>0 - 20 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(20 - 40)</description>
+      <tooltip>20 - 40 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(40-60)</description>
+      <tooltip>40 - 60 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(60-80)</description>
+      <tooltip>60 - 80 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(80-100)</description>
+      <tooltip>80 - 100 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Temperature">
+    <tag>TEMPERATURE_FREQUENCY</tag>
+    <description>Temperature</description>
+    <category>Generation</category>
+    <argument>
+      <description>Mesh Size</description>
+      <tooltip>I'm not sure what this means.</tooltip>
+      <listBoxControl>
+        <listBoxItem itemText="Ignore">1</listBoxItem>
+        <listBoxItem itemText="2x2">2</listBoxItem>
+        <listBoxItem itemText="4x4">3</listBoxItem>
+        <listBoxItem itemText="8x8">4</listBoxItem>
+        <listBoxItem itemText="16x16">5</listBoxItem>
+        <listBoxItem itemText="32x32">6</listBoxItem>
+      </listBoxControl>
+    </argument>
+    <argument>
+      <description>Weighted Range(0-20)</description>
+      <tooltip>0 - 20 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(20 - 40)</description>
+      <tooltip>20 - 40 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(40-60)</description>
+      <tooltip>40 - 60 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(60-80)</description>
+      <tooltip>60 - 80 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(80-100)</description>
+      <tooltip>80 - 100 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Savagery">
+    <tag>SAVAGERY_FREQUENCY</tag>
+    <description>Savagery</description>
+    <category>Generation</category>
+    <argument>
+      <description>Mesh Size</description>
+      <tooltip>I'm not sure what this means.</tooltip>
+      <listBoxControl>
+        <listBoxItem itemText="Ignore">1</listBoxItem>
+        <listBoxItem itemText="2x2">2</listBoxItem>
+        <listBoxItem itemText="4x4">3</listBoxItem>
+        <listBoxItem itemText="8x8">4</listBoxItem>
+        <listBoxItem itemText="16x16">5</listBoxItem>
+        <listBoxItem itemText="32x32">6</listBoxItem>
+      </listBoxControl>
+    </argument>
+    <argument>
+      <description>Weighted Range(0-20)</description>
+      <tooltip>0 - 20 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(20 - 40)</description>
+      <tooltip>20 - 40 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(40-60)</description>
+      <tooltip>40 - 60 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(60-80)</description>
+      <tooltip>60 - 80 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(80-100)</description>
+      <tooltip>80 - 100 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Volcanism">
+    <tag>VOLCANISM_FREQUENCY</tag>
+    <description>Volcanism</description>
+    <category>Generation</category>
+    <argument>
+      <description>Mesh Size</description>
+      <tooltip>I'm not sure what this means.</tooltip>
+      <listBoxControl>
+        <listBoxItem itemText="Ignore">1</listBoxItem>
+        <listBoxItem itemText="2x2">2</listBoxItem>
+        <listBoxItem itemText="4x4">3</listBoxItem>
+        <listBoxItem itemText="8x8">4</listBoxItem>
+        <listBoxItem itemText="16x16">5</listBoxItem>
+        <listBoxItem itemText="32x32">6</listBoxItem>
+      </listBoxControl>
+    </argument>
+    <argument>
+      <description>Weighted Range(0-20)</description>
+      <tooltip>0 - 20 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(20 - 40)</description>
+      <tooltip>20 - 40 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(40-60)</description>
+      <tooltip>40 - 60 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(60-80)</description>
+      <tooltip>60 - 80 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>(80-100)</description>
+      <tooltip>80 - 100 percent.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>10000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>MINERAL_SCARCITY</tag>
+    <description>Mineral Scarcity</description>
+    <category>General</category>
+    <argument>
+       <description/>
+       <tooltip>Mineral scarcity. The lower this number is the more minerals there will be.</tooltip>
+       <numericControl>
+         <min>100</min>
+         <max>100000</max>
+       </numericControl>
+     </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>MEGABEAST_CAP</tag>
+    <description>Maximum Megabeast Caves</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Maximum megabeast caves.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>SEMIMEGABEAST_CAP</tag>
+    <description>Maximum Semi-Megabeast caves</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Maximum semi-megabeast caves.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>TITAN_NUMBER</tag>
+    <description>Titan Number</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated titans.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>TITAN_ATTACK_TRIGGER</tag>
+    <description>Titan Attack Trigger</description>
+    <category>General</category>
+    <argument>
+      <description>Population Requirement</description>
+      <tooltip>Population reached to allow your fort to ba attacked by titans/forgotten beasts.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Exported Wealth Requirement</description>
+      <tooltip>Exported wealth achieved to allow your fort to ba attacked by titans/forgotten beasts.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000000</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Created Wealth Requirement</description>
+      <tooltip>Created wealth achieved to allow your fort to ba attacked by titans/forgotten beasts.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>DEMON_NUMBER</tag>
+    <description>Number Of Demon Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated demon types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>NIGHT_TROLL_NUMBER</tag>
+    <description>Number Of Night Troll Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated night troll types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>BOGEYMAN_NUMBER</tag>
+    <description>Number Of Bogeyman Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated bogeyman types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>VAMPIRE_NUMBER</tag>
+    <description>Number Of Vampire Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated vampire types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>WEREBEAST_NUMBER</tag>
+    <description>Number Of Werebeast Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated werebeast types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>SECRET_NUMBER</tag>
+    <description>Number Of Secret Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated secret types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>REGIONAL_INTERACTION_NUMBER</tag>
+    <description>Number Of Regional Interaction Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated regional interaction types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>DISTURBANCE_INTERACTION_NUMBER</tag>
+    <description>Number Of Disturbance Interaction Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated disturbance interaction types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>EVIL_CLOUD_NUMBER</tag>
+    <description>Number Of Evil Cloud Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated evil cloud types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>EVIL_RAIN_NUMBER</tag>
+    <description>Number Of Evil Rain Types</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of randomly generated evil rain types.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>GOOD_SQ_COUNTS</tag>
+    <description>Good Square Counts</description>
+    <category>General</category>
+    <argument>
+      <description>In Small Regions</description>
+      <tooltip>Minimum number of good squares found in small regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>In Medium Regions</description>
+      <tooltip>Minimum number of good squares found in medium regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>In Large Regions</description>
+      <tooltip>Minimum number of good squares found in large regions. Any non-zero number here will often cause any large oceans to become good.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>EVIL_SQ_COUNTS</tag>
+    <description>Evil Square Counts</description>
+    <category>General</category>
+    <argument>
+      <description>In Small Regions</description>
+      <tooltip>Minimum number of evil squares found in small regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>In Medium Regions</description>
+      <tooltip>Minimum number of evil squares found in medium regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>In Large Regions</description>
+      <tooltip>Minimum number of evil squares found in large regions. Any non-zero number here will often cause any large oceans to become evil.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>PEAK_NUMBER_MIN</tag>
+    <description>Min. Mountain Peak Number</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>This is actually the exact number of mountain peaks that will occur.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>200</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>PARTIAL_OCEAN_EDGE_MIN</tag>
+    <description>Min. Partial Ocean Edges</description>
+    <category>Generation</category>
+    <argument>
+      <description/>
+      <tooltip>Minimum number of partial ocean edges. Generally not used with PerfectWorldDF.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>4</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>COMPLETE_OCEAN_EDGE_MIN</tag>
+    <description>Min. Complete Ocean Edges</description>
+    <category>Generation</category>
+    <argument>
+      <description/>
+      <tooltip>Minimum number of complete ocean edges. Generally not used with PerfectWorldDF.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>4</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>VOLCANO_MIN</tag>
+    <description>Min. Number of Volcanos</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>This is actually the exact number of volcanos that will appear, providing there are enough squares with the highest possible volcanism</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>200</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Rainfall">
+    <tag>REGION_COUNTS:SWAMP</tag>
+    <description>Region Counts : Wetlands</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Init. Square Count</description>
+      <tooltip>Minimum number of individual wetland squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Init. Region Count</description>
+      <tooltip>Minimum number of initial wetland regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Final Region Count</description>
+      <tooltip>Minimum number of final wetland regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Rainfall">
+    <tag>REGION_COUNTS:DESERT</tag>
+    <description>Region Counts : Desert</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Init. Square Count</description>
+      <tooltip>Minimum number of individual desert squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Init. Region Count</description>
+      <tooltip>Minimum number of initial desert regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Final Region Count</description>
+      <tooltip>Minimum number of final desert regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Rainfall">
+    <tag>REGION_COUNTS:FOREST</tag>
+    <description>Region Counts : Forest</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min.Init. Square Count</description>
+      <tooltip>Minimum number of individual forest squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Init. Region Count</description>
+      <tooltip>Minimum number of initial forest regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Final Region Count</description>
+      <tooltip>Minimum number of final forest regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Elevation">
+    <tag>REGION_COUNTS:MOUNTAINS</tag>
+    <description>Region Counts : Mountains</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Init. Square Count</description>
+      <tooltip>Minimum number of individual mountain squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Init. Region Count</description>
+      <tooltip>Minimum number of initial mountain regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Final Region Count</description>
+      <tooltip>Minimum number of final mountain regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Elevation">
+    <tag>REGION_COUNTS:OCEAN</tag>
+    <description>Region Counts : Ocean</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Init. Square Count</description>
+      <tooltip>Minimum number of individual ocean squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Init. Region Count</description>
+      <tooltip>Minimum number of initial ocean regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Final Region Count</description>
+      <tooltip>Minimum number of final ocean regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Elevation">
+    <tag>REGION_COUNTS:GLACIER</tag>
+    <description>Region Counts : Glacier</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Init. Square Count</description>
+      <tooltip>Minimum number of individual glacier squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Init. Region Count</description>
+      <tooltip>Minimum number of initial glacier regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Final Region Count</description>
+      <tooltip>Minimum number of final glacier regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Elevation">
+    <tag>REGION_COUNTS:TUNDRA</tag>
+    <description>Region Counts : Tundra</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Init. Square Count</description>
+      <tooltip>Minimum number of individual tundra squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Init. Region Count</description>
+      <tooltip>Minimum number of initial tundra regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Final Region Count</description>
+      <tooltip>Minimum number of final tundra regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Rainfall">
+    <tag>REGION_COUNTS:GRASSLAND</tag>
+    <description>Region Counts : Grassland</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Init. Square Count</description>
+      <tooltip>Minimum number of individual grassland squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Init. Region Count</description>
+      <tooltip>Minimum number of initial grassland regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Final Region Count</description>
+      <tooltip>Minimum number of final grassland regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Elevation">
+    <tag>REGION_COUNTS:HILLS</tag>
+    <description>Region Counts : Hills</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Init. Square Count</description>
+      <tooltip>Minimum number of individual hills squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Init. Region Count</description>
+      <tooltip>Minimum number of initial hills regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Final Region Count</description>
+      <tooltip>Minimum number of final hills regions.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>20</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>EROSION_CYCLE_COUNT</tag>
+    <description>Erosion Cycle Count</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of erosion cycles. PerfectWorldDF tends to create maps with smooth brownian motion, so you will generally want this field to be less than the default to prevent melting away your mountains.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>1000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>RIVER_MINS</tag>
+    <description>Minimum River Starts</description>
+    <category>General</category>
+    <argument>
+      <description>Pre-Erosion</description>
+      <tooltip>River starts placed before erosion happens.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>800</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Post-Erosion</description>
+      <tooltip>River starts remaining after erosion happens. Possible rejection value.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>800</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>PERIODICALLY_ERODE_EXTREMES</tag>
+    <description>Periodically Erode Extremes?</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>This option will erode extreme cliffs. Without this set, all rivers will cut straight into the earth with no sloping river banks.</tooltip>
+      <checkBoxControl/>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>OROGRAPHIC_PRECIPITATION</tag>
+    <description>Orographic Precipitation?</description>
+    <category>Generation</category>
+    <argument>
+      <description/>
+      <tooltip>This option causes DF to create rain shadows. Normally not used with PerfectWorldDF, which has its own mechanism for this on the rainfall map.</tooltip>
+      <checkBoxControl/>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>SUBREGION_MAX</tag>
+    <description>Max. Number of Subregions</description>
+    <category>Rejection</category>
+    <argument>
+      <description/>
+      <tooltip>Maximum number of subregions. Possible rejection value.</tooltip>
+      <numericControl>
+        <min>1</min>
+        <max>5000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CAVERN_LAYER_COUNT</tag>
+    <description>Number Of Cavern Layers</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Number of cavern layers. Setting this to zero will prevent underground cultivation, as the needed seeds will not exist.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>3</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CAVERN_LAYER_OPENNESS_MIN</tag>
+    <description>Cavern Layer Openness Min.</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Minimum openness, or size, of caverns.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CAVERN_LAYER_OPENNESS_MAX</tag>
+    <description>Cavern Layer Openness Max.</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Maximum openness, or size, of caverns.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CAVERN_LAYER_PASSAGE_DENSITY_MIN</tag>
+    <description>Cavern Passage Density Min.</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Minimum amount of dense passages in cavern layer.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>        
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CAVERN_LAYER_PASSAGE_DENSITY_MAX</tag>
+    <description>Cavern Passage Density Max.</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Maximum amount of dense passages in cavern layer.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CAVERN_LAYER_WATER_MIN</tag>
+    <description>Cavern Water Min.</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Minimum amount of water in the caverns.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CAVERN_LAYER_WATER_MAX</tag>
+    <description>Cavern Water Max.</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Maximum amount of water in the caverns.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>HAVE_BOTTOM_LAYER_1</tag>
+    <description>Magma Layer?</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Allow a magma layer.</tooltip>
+      <checkBoxControl/>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>HAVE_BOTTOM_LAYER_2</tag>
+    <description>Bottom Layer?</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>If you don't know what this is, just say yes. ;) This will force a magma layer also.</tooltip>
+      <checkBoxControl/>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>LEVELS_ABOVE_GROUND</tag>
+    <description>Levels Above Ground</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>The number of Z-Levels of air above the highest surface level.</tooltip>
+      <numericControl>
+        <min>1</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>LEVELS_ABOVE_LAYER_1</tag>
+    <description>Levels Above Layer 1</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>The number of Z-levels above the first cavern layer.</tooltip>
+      <numericControl>
+        <min>5</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>LEVELS_ABOVE_LAYER_2</tag>
+    <description>Levels Above Layer 2</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>The number of Z-levels above the second cavern layer.</tooltip>
+      <numericControl>
+        <min>1</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>LEVELS_ABOVE_LAYER_3</tag>
+    <description>Levels Above Layer 3</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>The number of Z-levels above the third cavern layer.</tooltip>
+      <numericControl>
+        <min>1</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>LEVELS_ABOVE_LAYER_4</tag>
+    <description>Levels Above Layer 4</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>The number of Z-levels above the magma layer. See the wiki for spoiler information.</tooltip>
+      <numericControl>
+        <min>1</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>LEVELS_ABOVE_LAYER_5</tag>
+    <description>Levels Above Layer 5</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>The number of Z-levels above the bottom layer. See the wiki for more info.</tooltip>
+      <numericControl>
+        <min>2</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>LEVELS_AT_BOTTOM</tag>
+    <description>Levels At Bottom</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Generally the height of the bottom layer, but not predictible. See the wiki for more info.</tooltip>
+      <numericControl>
+        <min>1</min>
+        <max>100</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CAVE_MIN_SIZE</tag>
+    <description>Cave Min. Size</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Minimum size of surface caves. If caves are large enough, they may link up to the caverns.</tooltip>
+      <numericControl>
+        <min>1</min>
+        <max>500</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>CAVE_MAX_SIZE</tag>
+    <description>Cave Max. Size</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Maximum size of surface caves. If caves are large enough, they may link up to the caverns.</tooltip>
+      <numericControl>
+        <min>1</min>
+        <max>500</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>MOUNTAIN_CAVE_MIN</tag>
+    <description>Min. Number of Mountain Caves</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Exact number of mountain caves. Caves are home to terrible creatures and can be a mortal threat to civilization if there are too many.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>800</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>NON_MOUNTAIN_CAVE_MIN</tag>
+    <description>Min. No# of Non-Mountain Caves</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Exact number of non-mountain caves. Caves are home to terrible creatures and can be a mortal threat to civilization if there are too many.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>800</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>ALL_CAVES_VISIBLE</tag>
+    <description>All Caves Visible?</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>This option makes all caves visible on the map.</tooltip>
+      <checkBoxControl/>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>SHOW_EMBARK_TUNNEL</tag>
+    <description>Show Embark Tunnel</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Allow initial embark options to show tunnels, wich in previous versions of DF were like underground roads. This tag is not used in DF 31.x</tooltip>
+      <listBoxControl>
+        <listBoxItem itemText="No">0</listBoxItem>
+        <listBoxItem itemText="Only in Finder">1</listBoxItem>
+        <listBoxItem itemText="Always">2</listBoxItem>
+      </listBoxControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>TOTAL_CIV_NUMBER</tag>
+    <description>Number Of Civilizations</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>Total number of civs to place when history gen starts. Setting this too high can cause rejection.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>300</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>TOTAL_CIV_POPULATION</tag>
+    <description>Civ Population Cap</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>This is a world wide population cap that applies to all beings who are members of a civilization. Setting this too high can cause history gen to take forever.</tooltip>
+      <numericControl>
+        <min>-1</min>
+        <max>100000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>SITE_CAP</tag>
+    <description>Site Cap</description>
+    <category>General</category>
+    <argument>
+      <description/>
+      <tooltip>This is the cap on civilization related sites. It does not affect caves, lairs etc.</tooltip>
+      <numericControl>
+        <min>-1</min>
+        <max>100000</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag>
+    <tag>PLAYABLE_CIVILIZATION_REQUIRED</tag>
+    <description>Playable Civilization Required?</description>
+    <category>Rejection</category>
+    <argument>
+      <description/>
+      <tooltip>This option decides whether to reject the map if no playable civ exists. Usually you will want to reject such worlds as they cannot be played in fortress mode.</tooltip>
+      <checkBoxControl/>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Elevation">
+    <tag>ELEVATION_RANGES</tag>
+    <description>Elevation Ranges</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Low Elevation Squares</description>
+      <tooltip>Minimum low elevation squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Mid Elevation Squares</description>
+      <tooltip>Minimum mid elevation squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. High Elevation Squares</description>
+      <tooltip>Minimum high elevation squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Rainfall">
+    <tag>RAIN_RANGES</tag>
+    <description>Rainfall Ranges</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Low Rainfall Squares</description>
+      <tooltip>Minimum low rainfall squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Mid Rainfall Squares</description>
+      <tooltip>Minimum mid rainfall squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. High Rainfall Squares</description>
+      <tooltip>Minimum high rainfall squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Drainage">
+    <tag>DRAINAGE_RANGES</tag>
+    <description>Drainage Ranges</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Low Drainage Squares</description>
+      <tooltip>Minimum low drainage squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Mid Drainage Squares</description>
+      <tooltip>Minimum mid drainage squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. High Drainage Squares</description>
+      <tooltip>Minimum high drainage squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Savagery">
+    <tag>SAVAGERY_RANGES</tag>
+    <description>Savagery Ranges</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Low Savagery Squares</description>
+      <tooltip>Minimum low savagery squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Mid Savagery Squares</description>
+      <tooltip>Minimum mid savagery squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. High Savagery Squares</description>
+      <tooltip>Minimum high savagery squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Volcanism">
+    <tag>VOLCANISM_RANGES</tag>
+    <description>Volcanism Ranges</description>
+    <category>Rejection</category>
+    <argument>
+      <description>Min. Low Volcanism Squares</description>
+      <tooltip>Minimum low volcanism squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. Mid Volcanism Squares</description>
+      <tooltip>Minimum mid volcanism squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+    <argument>
+      <description>Min. High Volcanism Squares</description>
+      <tooltip>Minimum high volcanism squares.</tooltip>
+      <numericControl>
+        <min>0</min>
+        <max>66049</max>
+      </numericControl>
+    </argument>
+  </worldGenTag>
+  <worldGenTag map="Elevation">
+    <tag>PS_EL</tag>
+    <description>pre-set elevation data</description>
+    <category>MapData</category>
+    <argument/>
+  </worldGenTag>
+  <worldGenTag map="Rainfall">
+    <tag>PS_RF</tag>
+    <description>pre-set rainfall data</description>
+    <category>MapData</category>
+    <argument/>
+  </worldGenTag>
+  <worldGenTag map="Temperature">
+    <tag>PS_TP</tag>
+    <description>pre-set temperature data</description>
+    <category>MapData</category>
+    <argument/>
+  </worldGenTag>
+  <worldGenTag map="Drainage">
+    <tag>PS_DR</tag>
+    <description>pre-set drainage data</description>
+    <category>MapData</category>
+    <argument/>
+  </worldGenTag>
+  <worldGenTag map="Volcanism">
+    <tag>PS_VL</tag>
+    <description>pre-set volcanism data</description>
+    <category>MapData</category>
+    <argument/>
+  </worldGenTag>
+  <worldGenTag map="Savagery">
+    <tag>PS_SV</tag>
+    <description>pre-set savagery data</description>
+    <category>MapData</category>
+    <argument/>
+  </worldGenTag>
+</worldGen>

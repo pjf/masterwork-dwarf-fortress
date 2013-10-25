@@ -1,0 +1,11 @@
+I once wandered the wilds.
+For [CONTEXT:NUMBER] of my years, I wandered the wilds.
+I was a nomad for [CONTEXT:NUMBER] years.
+I roamed the land for [CONTEXT:NUMBER] years.
+I wandered the world for about [CONTEXT:NUMBER] years.
+I wandered the wilds for [CONTEXT:NUMBER] years.  Back then, I had no true home.
+I have wandered the wild lands for [CONTEXT:NUMBER] years.
+I wandered [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] years.  I am happy to have settled here.
+I lived off the land for [CONTEXT:NUMBER] years.
+I wandered for [CONTEXT:NUMBER] years, and spent much time in [CONTEXT:PLACE:TRANS_NAME].
+I roamed [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] years.  I am glad those days are over.

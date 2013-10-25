@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Editing Maps with the Brush</title>
+</head>
+<body>
+<h1>Editing Maps with the Brush.</h1>
+It is possible to edit the different map types directly using the
+brush. This is something I really wanted to include into this
+application, but many of the ideas that I had regarding how this should
+be done didn't work very well. You should be able to do whatever you
+might want to do, but it's not as easy or intuitive as I would have
+liked it to be. I will try to use this section to explain some of the
+issues you might face while using the brush.<br>
+<h3>What the brush is useful for.</h3>
+The brush is most useful for making small edits to maps that you have
+made with the generation functions. If you want to connect two oceans
+by a channel, or extend a mountain range, or create a mysterious forest
+in the middle of a desert, you can do that easily.<br>
+<br>
+However, if you want to paint the entire map from scratch, you might
+find the system clunky, confusing and altogether way too much work.
+First I will explain some of the basic brush functions and the options
+they have and how they work, and then I will explain some of the
+confusion that comes with relying only on the brush. <br>
+<h3>Options for the brush.</h3>
+<img style="width: 499px; height: 56px;" alt="Brush Settings Screenshot"
+ src="Images/Brush%20Settings.jpg"><br>
+<br>
+The 'Brush Value' control determines the value that is painted with the
+brush. If you are <span style="font-weight: bold;">not</span> using a
+'Smoothing Brush' as indicated by the check box, then the whole brush
+will use the value set by the control. If you are using a smoothing
+brush, then the brush value selected will be weighted by 100% at the
+center of the brush, and 0% at the edge of the brush along a cosine
+curve. When the brush weight is 100% it paints the value of the brush,
+when the weight is 0% it leaves the underlying values unchanged.
+Everything in between will be a smooth blend between your current brush
+value and the values that existed before. To demonstrate this curve
+better look at the following graph. For a brush of radius 8, this graph
+represents the weight of the brush as the distance from the center
+increases:<br>
+<img style="width: 600px; height: 430px;" alt="Smoothing Brush Weight"
+ src="Images/Smoothing%20Brush%20Weight.jpg"><br>
+<br>
+The brush size options are Point, Small, and Large. The reason that you
+don't have direct access to the brushes radius, is because I wanted the
+cursor to represent the extent of the brushes effect, and I couldn't do
+that at every zoom level with a Windows cursor, for complicated reasons
+that I won't go into. In any case, the actual size of the brush also
+depends upon the zoom level of the map you are painting on. The higher
+the zoom, the smaller the brush in terms of tile radius. For the small
+and large brush sizes, the extent of the brushes effect is what you see
+on the screen no matter the zoom level. The point size brush is a
+single map tile no matter what the zoom level, and is weighted 100% on
+a smoothing brush or a flat brush.<br>
+<h3>Painting a map on a blank canvas.</h3>
+This is where the painting work flow falls a bit short. One problem is
+that the final map that combines all the different map inputs is
+normalized to values between 0.0 and 1.0. The lowest value on the map
+is always 0.0 and the highest value is always 1.0 and everything else
+is scaled to be between them. As soon as you start painting on a blank
+map with a value of 0.5, as soon as you release the mouse button all
+the values you painted will jump to 1.0 as the highest values on the
+map. Internally however, the edit value in memory is still 0.5, so if
+you then raise the brush value to 0.75 and paint with it, those values
+will become 1.0 and the painting you did earlier will fall down to 0.66
+or so.<br>
+<br>
+One way to mitigate this confusion somewhat is to decide where you want
+your highest mountain and paint a 1.0 there. That will stabilize the
+brush values from there on out to make things more predictable, but
+there is another item of confusion you will run into. Painting by hand
+tends to lead to much of the map having 3 or 4 discrete values, rather
+than the full spectrum of highs to lows. This wreaks havoc with the
+threshold sliders. The sliders used to adjust the different thresholds
+respond to your brush painting to try to maintain an accurate
+percentage and they will jump around, wildly changing the colors on the
+map as you paint. It takes considerable mental discipline to paint when
+colors you are using change with every stroke.<br>
+<br>
+These reasons are why it is easier to edit an existing map than to
+paint a new one from scratch.
+<h3>How the system works.</h3>
+Edits are not stored on a map in the way other map data stored. There
+is no two-dimensional array for the storage of editing data. Each time
+you press and release the left mouse button over a map an 'edit'
+&nbsp;containing a list of all the map tiles altered and how they are
+altered is pushed onto an undo stack. There is no specific limit to the
+levels of undo. You can undo all of your edits at any time, even after
+a save and reload. When the final map is built from the input of the
+various noise maps etc. the edits are then added to it from the bottom
+of the undo stack.
+</body>
+</html>

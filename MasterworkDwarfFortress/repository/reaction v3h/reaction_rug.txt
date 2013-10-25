@@ -1,0 +1,8 @@
+reaction_rug
+
+[REACTION]
+
+[REACTION:DECO_RUG]
+[NAME:*Clean your shoes on the rug*]
+[BUILDING:RUG:CUSTOM_A]
+

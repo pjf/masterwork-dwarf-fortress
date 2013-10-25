@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>The Drainage Map Tab</title>
+</head>
+<body>
+<h1>The Drainage Map Tab.</h1>
+The drainage map is used in conjunction with the rainfall map to
+determine the biomes present in the tile.<br>
+<img style="width: 862px; height: 708px;" alt="Drainage Tab Screenshot"
+ src="Images/Drainage%20Map%20Tab.jpg"><br>
+<br>
+The Zoom Level control will zoom in all maps associated with this tab.
+Zooming in will change the size of the edit brush so that the edit
+reticle cursor always shows the extent of the brushes effect.<br>
+<br>
+The &lsquo;Percent Below Dune/Swamp Threshold&rsquo; slider
+controls the threshold of the lowest category of drainage. Sand Desert
+and Swamp will occur here depending on the rainfall amount.<br>
+<br>
+The &lsquo;Percent Below Rocky/Grass Threshold&rsquo; slider
+controls the next threshold, generally rock desert and grassland appear
+below this drainage level.<br>
+<br>
+The &lsquo;Percent Below Hills Threshold&rsquo; slider controls
+the third drainage threshold, below this level is usually hills and
+above this level can be the sharp spiky badlands type or forest.<br>
+<br>
+As a starting point for the drainage map, we calculate the standard
+deviation over a small area to judge its flatness or steepness.<br>
+<br>
+The &lsquo;Filter Size&rsquo; control determines the size of
+the area used to determine the flatness of a tile. Larger values
+generate smoother results but take longer to calculate.<br>
+<br>
+The &lsquo;Elevation Standard Deviation Map Weight&rsquo;
+slider controls the amount of the standard deviation map that is added
+to the final drainage map. <br>
+<br>
+The noise map control is the same as on other tabs.<br>
+<br>
+The &lsquo;weight&rsquo; slider governs how much of this noise
+map is added to the final map.<br>
+<br>
+The &lsquo;Feature Size&rsquo; slider adjusts the size of the
+features in the noise field. The higher the number, the smaller the
+features get. If that seems awkward, the slider is actually controlling
+&lsquo;frequency&rsquo; directly, and size indirectly as a
+result of frequency.<br>
+<br>
+The &lsquo;Smoothness&rsquo; slider adjusts the smoothness of
+the noise field.<br>
+<br>
+The &lsquo;Generate New&rsquo; buttons scramble the noise
+inputs to create a new noise field. &nbsp;<br>
+<br>
+You may also click and drag on the noise fields to adjust their
+position in case you want a certain feature to appear in a specific
+location.<br>
+</body>
+</html>

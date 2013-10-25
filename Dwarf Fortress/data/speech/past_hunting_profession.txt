@@ -1,0 +1,12 @@
+In the past, I hunted great beasts.
+I was a hunter of mighty beasts for [CONTEXT:NUMBER] of my years.
+I once traveled [CONTEXT:PLACE:TRANS_NAME] in search of game.
+For almost [CONTEXT:NUMBER] years, I stalked the land in search of game.
+I was a hunter for [CONTEXT:NUMBER] years.
+For [CONTEXT:NUMBER] years, I hunted the animals in [CONTEXT:PLACE:TRANS_NAME].
+I spent [CONTEXT:NUMBER] years hunting game in [CONTEXT:PLACE:TRANS_NAME]
+I lived the life of a hunter for [CONTEXT:NUMBER] years.
+I hunted the animals in [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] of my years.
+In my [CONTEXT:NUMBER] years as a hunter, I went where my heart drove me.
+I lived off the land for [CONTEXT:NUMBER] years as a hunter.
+For [CONTEXT:NUMBER] years, I sought great beasts in the name of the hunt.

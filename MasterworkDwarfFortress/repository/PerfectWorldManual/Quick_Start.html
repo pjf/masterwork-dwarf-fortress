@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Quick Start Guide</title>
+</head>
+<body>
+<h1>Quick Start Guide</h1>
+<br>
+In order to quickly learn the workflow of this application, follow
+these step-by-step instructions.<br>
+<br>
+<h3>Overview.</h3>
+The way Dwarf Fortress creates worlds is by generating a series of
+random maps and combining them to describe the world in detail. For
+each type of map thrown into the mix, PerfectWorldDF allows you to
+customize the map before sending it into DF to kick off the
+world&rsquo;s history. The maps you can create with PerfectWorldDF
+are one or all of the following:<br>
+<br>
+* Elevation Map<br>
+* Rainfall Map<br>
+* Drainage Map<br>
+* Volcanism Map<br>
+* Savagery Map <br>
+<br>
+Note: Dwarf Fortress also uses a Temperature Map, but as this is
+heavily modified inside the game in an unpredictable way (i.e. north or
+south pole) it is not currently useful to import pre-set map values for
+this map.<br>
+<h3>Step 1.</h3>
+Before starting the application, make a backup of your world_gen.txt
+file in your df_xx_xx\data\init folder. This is the file that PW will
+edit in generating your worlds. I can&rsquo;t guarantee this
+software will be bug free now or later, and it&rsquo;s wise to
+backup this file so you don&rsquo;t have to download a whole new
+version package just because your world_gen.txt file should become
+unusable. So in case I made a mistake somewhere, make a copy of this
+file and put it somewhere safe. Simple making a copy and renaming it in
+the same directory should be fine.<br>
+<br>
+<h3>Step 2.</h3>
+Start the application and go to the Elevation Map tab. All of the
+settings and sliders are set by default to values that are good for
+making a basic map, so all you have to do for now is press a few
+buttons to make a usable Dwarf Fortress world.<br>
+<br>
+Press the &lsquo;Generate New Turbulence Field&rsquo; button.
+Turbulence is like noise, but slightly different. It&rsquo;s good
+for making formations that look like mountain ranges. For a more
+detailed explanation, see the reference page for the Elevation Map Tab.<br>
+<br>
+Press the &lsquo;Generate New Noise Field&rsquo; button. This
+second noise field has several uses, but for now it just adds
+turbulence on a smaller scale to add some detail.<br>
+<br>
+On either of the noise maps, and on any of the noise maps on the other
+tabs, you may left click and drag on the field to change the postion of
+the noise features. The performance of this operation is fairly slow,
+so you'll have to wait a couple of seconds to see where things will end
+up.<br>
+<br>
+When you are done, you should get an elevation map that looks something
+like this or similar:<br>
+<img style="width: 862px; height: 708px;" alt="Elevation Tab Screenshot"
+ src="Images/Elevation%20Map%20Tab.jpg"><br>
+<h3>Step 3.</h3>
+Go to the Rainfall Map tab. Here you have a decision to make. You
+should select a direction for the prevailing wind to bring moisture to
+your world. In general, it looks best to have the wind coming off the
+water, where the wind can gather moisture before casting it upon the
+land as it passes over. So use the angle control to select a wind
+direction that you think suits your world.<br>
+<br>
+Now press the &lsquo;Generate Rain Shadow Map&rsquo; button.
+This will distribute rainfall on your rainfall map according to the
+direction you have chosen. Notice that higher elevations will tend to
+block moisture and cause most of it to fall on the windward side of any
+hills or mountains. It is a rather simplified model of orographic
+precipitation, but it can help give a realistic and fun quality to the
+final world.<br>
+<br>
+Before we move on, press the &lsquo;Generate New Noise
+Field&rsquo; button. This map can be used to randomize the result
+of the rain shadow map a bit to get rid of any unsightly straight
+lines. Pretty much every map has a secondary noise field that can be
+used for this purpose, or else you can adjust the weights of the maps
+to only use noise if you prefer.<br>
+<br>
+When you are done, your rainfall map should look like this:<br>
+<img style="width: 862px; height: 708px;" alt="Rainfall Tab Screenshot"
+ src="Images/Rainfall%20Map%20Tab.jpg"><br>
+<h3>Step 4.
+</h3>
+Go to the Drainage Map tab. This map is used in conjunction with the
+rainfall map to determine what biomes are present on a particular world
+square. Rainfall determines how much water arrives in a tile, and
+drainage determines how long it stays around. Different stuff happens
+depending on these two variables.<br>
+<br>
+Press the &lsquo;Generate Elevation Standard Deviation
+Map&rsquo; button. Generally, the slope of the land determines how
+quickly water will run off. Areas that are steep will lose water
+quickly and erode, while flatter areas will collect this runoff and
+silt up, acting like a sponge.<br>
+<br>
+Press the &lsquo;Generate New Noise Field&rsquo; button for the
+usual added randomness.<br>
+<br>
+When you are done, you should have something like this:<br>
+<img style="width: 862px; height: 708px;" alt="Drainage Tab Screenshot"
+ src="Images/Drainage%20Map%20Tab.jpg"><br>
+<h3>Step 5.</h3>
+Go to the Volcanism Map tab. Press the &lsquo;Generate Elevation
+Cusp Map&rsquo;. This will set most of the volcanism at certain
+elevation &lsquo;cusps&rsquo; so that the volcanism happens
+most often at a certain altitude level that you can adjust with the
+cusp sliders.<br>
+<br>
+Press the &lsquo;Generate New Noise Field&rsquo; button. This
+is like before, but in this case you generally want a fairly high level
+of noise. High volcanism also brings igneous extrusive rock layers, and
+you might not want that everywhere that mountain meets the lower
+elevations if that&rsquo;s where you set the cusp.<br>
+<br>
+When you are done, you&rsquo;ll have one of the prettier maps like
+this:<br>
+<img style="width: 862px; height: 708px;" alt="Volcanism Tab Screenshot"
+ src="Images/Volcanism%20Map%20Tab.jpg"><br>
+<h3>Step 6. </h3>
+Go to the Savagery Map tab. Press the &lsquo;Generate Savagery
+Gradient Map&rsquo; button. By applying a gradient to the savagery
+map, you can make things more wild as you go east or west or toward or
+away a certain map location.<br>
+<br>
+Once again press the &lsquo;Generate New Noise Field&rsquo;
+button. Again you usually want a high level of noise for this because
+civilizations won&rsquo;t settle in savage areas, and if you crowd
+them into a small geographical area they tend to kill each other. Its
+fun to watch on your historical maps and legends, but the result can be
+a rather non-diverse and possibly boring world.<br>
+<br>
+When you are done, you&rsquo;ll have a nice rainbow colored map
+like this:<br>
+<img style="width: 862px; height: 708px;" alt="Savagery Tab Screenshot"
+ src="Images/Savagery%20Map%20Tab.jpg"><br>
+<h3>Step 7.</h3>
+Ok, now it&rsquo;s time to finally see some preliminary results! Go
+to the Biome Map tab and see how things are turning out. If you went
+here earlier, you probably would have seen just a field of endless
+mountains, because we had yet to actually give this tab any meaningful
+input. Now that we have, we can get an idea of how this map will look
+inside the Dwarf Fortress game. Ultimately, the game will apply some
+erosion and humans and dwarves will build roads and chop down trees so
+the end result might look somewhat different, but this will give you a
+good idea.<br>
+<br>
+Now that you have generated all the different maps in the set, you can
+save your work. Go to the File menu, and select &lsquo;Save Map Set
+As&rsquo;. PerfectWorldDF map set files are in a binary format with
+the *.pwset file extension.<br>
+<br>
+The biome map:<br>
+<img style="width: 862px; height: 708px;" alt="Biome Tab Screenshot"
+ src="Images/Biome%20Map%20Tab.jpg"><br>
+<h3>Step 8.</h3>
+The last tab we will look at is a rather intimidating mess. The Map
+Parameters tab is where we can edit all the fields that are defined in
+the world_gen.txt file. You won&rsquo;t need to know what most of
+these fields do, but I&rsquo;ll go over a couple of the important
+ones. Here is where we also decide which maps will be generated by
+PerfectWorldDF and which ones will be generated by Dwarf Fortress. You
+can actually pick and choose where each map is generated but I
+don&rsquo;t really know when you would want that since all the maps
+depend somewhat on the elevation map. If you do, it&rsquo;s there.<br>
+<br>
+To import the world_gen.txt map, go to the File menu and select
+&lsquo;Import world_gen File&rsquo;. Navigate to your Dwarf
+Fortress directory and find world_gen.txt in the data\init folder. Now
+that you have imported the world_gen.txt file, you can start editing
+the fields, but don&rsquo;t just yet.<br>
+<br>
+We want to generate a medium sized (129x129) map for this
+demonstration, but we don&rsquo;t want to overwrite the default
+settings in case we want to look at them later, so we will create a new
+param set for our new map. First use the text list box labeled
+&lsquo;Name:&rsquo; to select the param set called
+&lsquo;MEDIUM_REGION&rsquo;. This param set has the world_gen
+settings appropriate for a 129x129 world with a high percentage of land
+tiles. We want to copy these settings into a new param set. When we
+type a new param set name into the text list box and press the
+&lsquo;enter&rsquo; key, it will create a new param set by that
+name with the same settings as the param set previously selected. So in
+the screenshot below you can see that I have a param set called
+&lsquo;MyWorld&rsquo; that so far is an exact copy of the param
+set &lsquo;MEDIUM_REGION&rsquo;. Make sure you press and
+release the &lsquo;enter&rsquo; key, or the new param set will
+not be made and you&rsquo;ll end up editing the
+&lsquo;MEDIUM_REGION&rsquo; param set which is not ideal. If
+you do this on accident you should re-import the world_gen.txt file and
+start over so we can keep our clean param set.<br>
+<img style="width: 862px; height: 708px;" alt="Map Params Screenshot"
+ src="Images/Map%20Parameters%20Tab.jpg"><br>
+Now, in order to use the maps we just generated, we want to mark the
+checkboxes for each map from PerfectWorldDF that we want to use, and
+leave blank any maps that we want Dwarf Fortress to generate. For now,
+just check them all. The maps you are using will be indicated in the
+table just above the checkmarks.<br>
+<br>
+Before we do a final export, there are some parameter fields that we
+want to look at so we can start you off with a bit of control. The
+number of caves in your world is a very important number. The default
+numbers from the MEDIUM_REGION should be pretty good numbers, but if
+you find that the world gen process is unusually short, you might turn
+the total number of caves down. Caves are home to terrible civilization
+destroying creatures who can easily get the upper hand and destroy all
+civilizations in the first few years of the age of myth. Turn these
+numbers way up and you&rsquo;ll find that the world gen process
+will last only a few seconds! That is because very few historical
+figures will be born into the world.<br>
+<br>
+Another area to look at is the number of peaks and volcanoes.
+You&rsquo;ll find these on the parameters tab named &lsquo;Map
+Generation&rsquo;. I don&rsquo;t really know what peaks do but
+we all know how much dwarves love volcanoes! With PW maps you should
+usually have plenty of room for these things. Set the fields labeled
+&lsquo;Minimum Number Of Peaks&rsquo; and &lsquo;Minimum
+Number Of Volcanoes&rsquo; to 20 each. These fields are not really
+minimums, they are exactly how many will be placed.<br>
+<br>
+Also on the &lsquo;Map Generation&rsquo; tab you will find a
+table for setting the numbers of good and evil map squares. Good and
+evil regions are fun! I should explain these numbers a bit, because
+they are both quirky and useful. The desired number of map squares is
+exactly that, how many squares in each region size category that you
+want. For small and medium regions, this is easy to control. For large
+regions, it&rsquo;s a lot more difficult. Large regions have a
+large range of sizes, and no matter what number you use, you never know
+if you&rsquo;ll end up with one region or many regions. If you max
+these numbers out, all large regions will be good or evil, if you set
+these numbers to 1, you will have exactly 1 large region that is good
+and 1 that is evil. Personally I find that setting the medium region
+numbers to high values gives me what I&rsquo;m looking for. Keep in
+mind that dwarves only settle in Neutral mountain regions, so if you
+have &lsquo;Playable Civ Required&rsquo; (on the &lsquo;Map
+Rejection&rsquo; tab) set to yes, you need some neutral mountain
+ranges or the map will be rejected.<br>
+<br>
+Now that we are ready to export, from the File menu select
+&lsquo;Export world_gen file&rsquo;. Your new world_gen.txt
+file is ready to use! You may now close PWDF or minimize it. You will
+be prompted to save your maps if you close, but you can say no unless
+you really want to keep them.<br>
+<br>
+<h3>Step 9.</h3>
+Now fire up Dwarf Fortress and select the option &lsquo;Design New
+World with Parameters&rsquo;. Then select your new param set that
+you made and press enter, sit back and watch your new world come alive!
+&nbsp;<br>
+<br>
+</body>
+</html>

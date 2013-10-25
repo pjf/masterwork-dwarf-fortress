@@ -1,0 +1,8 @@
+reaction_display_case
+
+[REACTION]
+
+[REACTION:DECO_CASE]
+[NAME:*Marvel at the displayed artefact*]
+[BUILDING:DISPLAY_CASE:CUSTOM_A]
+

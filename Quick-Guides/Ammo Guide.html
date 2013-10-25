@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #000
+}
+body, td, th {
+	color: #FFF;
+	font-size: 18px;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #CCC;
+}
+.Rot {color: #F00;
+}
+.Rot {color: #F00;
+}
+</style>
+</head>
+
+<body>
+<div align="center">
+  <p><img src="../MasterworkDwarfFortress/repository/Logo.JPG" alt="logo" width="768" height="225" align="absmiddle" /></p>
+</div>
+<tr>
+  <td width="840"><h1 align="center"><u><strong>Masterwork DF Ammo Table</strong></u></h1>
+    <p>In here you can find all ammo of the mod, with all infos. They are sorted alphabetically and list name, size, class and attack rating. How good or bad ammo really is depends heavily on the material and the weapon it is used with.</p>
+    <p>At this point a big thanks to maklak for the script to read these out directly from the raws. You can search this table with Ctrl+F.</p>
+    <hr />
+    <p><b>Explanation of the table:</b> </p>
+    <p><b>Name: </b>Is the items ingame name. </p>
+    <p><b>Size:</b> is in cubic centimeters. Together with material density and weapon's shoot force this determines kinetic energy of the projectile, which is also capped by weapon's max velocity.<br />
+      <br />
+    <b>Class:</b> is the type of ammo listed in ranged weapons table.</p>
+    <p><b>Attack:</b> lists all the attacks that can be made with this weapon. The attack is always chosen at random, with edged attacks being 100 times more likely. The format is name, type (edged or blunt), contact area, penetration, velocity multiplier. <br />
+Blunt attacks are better at penetrating armour and breaking bones, while edged attacks can cause bleeding, pierce internal organs or even sever entire limbs. Edged attacks become piercing attacks when their contact area is less than 25% of the targeted body part or cutting attacks otherwise. So edged attacks with large contact area are primarily cutting, while those with 10 or 20 contact area are primarily piercing. Piercing attacks are better at penetrating armour and damaging internal organs (such as brain), but Cutting attacks can cut off entire limbs. The problem with cutting attacks is that there needs to be enough force behind them and enemy armour can convert them to blunt attacks, which tend to be much less effective.<br />
+The higher the penetration is, the better, especially against bigger enemies. My best guess is that 10000 penetration is 1m.  Velocity multipler greatly increases effectiveness of an attack, multiplying the force behind it.<br />
+Rating and comparing attacks isn't trivial to do. Good luck interpreting the numbers.</p>
+    <p><strong>Note</strong>: The ranged weapon can influence it's power through shoot force and max velocity.<br />
+<br />
+<font size=5><b>Table of ammo:</b></font> (count: 35)<br />
+</p>
+    <div align="center">
+      <table border="1">
+        <center>
+          <tr> <td width="158"><b>Name</b></td> <td width="31"><b>Size</b></td> <td width="126"><b>Class</b></td> <td width="454"><b>Attack</b></td></tr>
+          <tr> <td><b>arrow</b></td> <td>100</td> <td>ARROW</td> <td>stab: edge C:20 P:1000 V:1</td></tr>
+          <tr> <td><b>axe head</b></td> <td>300</td> <td>AXE</td> <td>cut: edge C:105 P:2000 V:1<br />hack: edge C:105 P:2000 V:1.25<br />chop: edge C:105 P:2000 V:1.25</td></tr>
+          <tr> <td><b>bladeshard</b></td> <td>50</td> <td>SPELLWRAITH</td> <td>strike: edge C:1 P:2500 V:1.8</td></tr>
+          <tr> <td><b>blowdart</b></td> <td>20</td> <td>BLOWDART</td> <td>stick: edge C:10 P:50 V:1</td></tr>
+          <tr> <td><b>bodkin arrow</b></td> <td>100</td> <td>ARROW</td> <td>stab: edge C:45 P:1500 V:1</td></tr>
+          <tr> <td><b>bodkin bolt</b></td> <td>150</td> <td>BOLT</td> <td>stab: edge C:45 P:2000 V:1</td></tr>
+          <tr> <td><b>bolas</b></td> <td>400</td> <td>WHIP</td> <td>whip: edge C:200 P:12000 V:3<br />wire cut: edge C:200 P:12000 V:3<br />long wire entangle: edge C:200 P:12000 V:3</td></tr>
+          <tr> <td><b>bolt</b></td> <td>100</td> <td>BOLT</td> <td>stab: edge C:20 P:1000 V:1</td></tr>
+          <tr> <td><b>broadhead arrow</b></td> <td>150</td> <td>ARROW</td> <td>strike: edge C:10000 P:10000 V:1.5</td></tr>
+          <tr> <td><b>broadhead bolt</b></td> <td>150</td> <td>BOLT</td> <td>strike: edge C:10000 P:10000 V:1.5</td></tr>
+          <tr> <td><b>broadhead javelin</b></td> <td>425</td> <td>JAVELIN</td> <td>strike: edge C:100000 P:100000 V:1.5</td></tr>
+          <tr> <td><b>bullet</b></td> <td>25</td> <td>BULLET_L</td> <td>pierce: edge C:5 P:5000 V:7.5</td></tr>
+          <tr> <td><b>bulletspike</b></td> <td>450</td> <td>BULLET_L</td> <td>pierce: edge C:50 P:50000 V:30</td></tr>
+          <tr> <td><b>cannon ball</b></td> <td>450</td> <td>CANNON</td> <td>explode upon contact and hit: edge C:50 P:50000 V:30</td></tr>
+          <tr> <td><b>crude javelin</b></td> <td>125</td> <td>JAVELIN</td> <td>strike: edge C:100 P:10 V:1</td></tr>
+          <tr> <td><b>darkmoon arrow</b></td> <td>100</td> <td>ARROW</td> <td>stab: edge C:165 P:2000 V:1</td></tr>
+          <tr> <td><b>doomshard</b></td> <td>50</td> <td>SPELLWRAITH</td> <td>strike: edge C:1 P:2500 V:1.8</td></tr>
+          <tr> <td><b>hammer head</b></td> <td>400</td> <td>HAMMER</td> <td>smash: blunt C:100000 P:2000 V:1<br />beat: blunt C:8000 P:3000 V:1.2<br />weight bludgeon: blunt C:8000 P:3000 V:1.3<br />massive weight powerfully strike: blunt C:100 P:5000 V:1.5</td></tr>
+          <tr> <td><b>hammerhead arrow</b></td> <td>150</td> <td>ARROW</td> <td>smash: blunt C:10000 P:2000 V:2</td></tr>
+          <tr> <td><b>hammerhead bolt</b></td> <td>150</td> <td>BOLT</td> <td>smash: blunt C:10000 P:2000 V:2</td></tr>
+          <tr> <td><b>hammerhead javelin</b></td> <td>450</td> <td>JAVELIN</td> <td>smash: blunt C:100000 P:2000 V:2</td></tr>
+          <tr> <td><b>hooked arrow</b></td> <td>150</td> <td>ARROW</td> <td>stab: edge C:165 P:1500 V:1.5</td></tr>
+          <tr> <td><b>ivy tendril</b></td> <td>50</td> <td>SPELLDRUID</td> <td>strike: edge C:1 P:2500 V:1.8</td></tr>
+          <tr> <td><b>javelin</b></td> <td>125</td> <td>JAVELIN</td> <td>strike: edge C:20 P:1000 V:1</td></tr>
+          <tr> <td><b>knife blade</b></td> <td>50</td> <td>DAGGER</td> <td>stab: edge C:5 P:2500 V:3<br />spike drill: edge C:10 P:2000 V:1.2<br />impale: edge C:10 P:5000 V:2<br />gore: edge C:10 P:5000 V:2</td></tr>
+          <tr> <td><b>magic missile</b></td> <td>50</td> <td>SPELLDRUID</td> <td>strike: edge C:1 P:2500 V:1.8</td></tr>
+          <tr> <td><b>missile</b></td> <td>3</td> <td>MAGIC_SPELL</td> <td>strike: edge C:10 P:2500 V:2.8</td></tr>
+          <tr> <td><b>piercing arrow</b></td> <td>150</td> <td>ARROW</td> <td>strike: edge C:10 P:8000 V:1.5</td></tr>
+          <tr> <td><b>piercing bolt</b></td> <td>150</td> <td>BOLT</td> <td>strike: edge C:10 P:8000 V:1.5</td></tr>
+          <tr> <td><b>piercing javelin</b></td> <td>400</td> <td>JAVELIN</td> <td>strike: edge C:10 P:200000 V:1.5</td></tr>
+          <tr> <td><b>singing arrow</b></td> <td>80</td> <td>ARROW</td> <td>stab: edge C:5 P:12000 V:3</td></tr>
+          <tr> <td><b>sling bullet</b></td> <td>30</td> <td>SLING</td> <td>impact: blunt C:10 P:200 V:2.2</td></tr>
+          <tr> <td><b>throwing spears</b></td> <td>400</td> <td>SPEAR</td> <td>stab: edge C:20 P:15000 V:2<br />savage point mercilessly pierce: edge C:10 P:10000 V:1.8<br />run through: edge C:50 P:10000 V:1.1</td></tr>
+          <tr> <td><b>throwing tomahawk</b></td> <td>300</td> <td>AXE</td> <td>strike: edge C:3000 P:2000 V:1.5</td></tr>
+          <tr> <td><b>totem-bomb</b></td> <td>250</td> <td>TOTEM</td> <td>strike: edge C:5 P:5000 V:7.5</td></tr>
+  </center></table>
+    </div>
+    <p><br />
+  &nbsp;
+  </p>
+</p>
+<p align="center">&nbsp;</p></td>
+    
+  <content-type: text/html>
+
+</body>
+</html>

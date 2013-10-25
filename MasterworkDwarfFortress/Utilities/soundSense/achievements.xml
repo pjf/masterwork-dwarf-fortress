@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<achievements>
+
+	<achievementPattern logPattern="(.+) has created a masterpiece!">
+		<achievement title="Craftsdwarf" description="Create a Masterpiece item." triggerAmount="1" image="masterpiece.png" />
+		<achievement title="Fond of Industry" description="Create 10 Masterpiece items." triggerAmount="10" image="masterpiece.png" />
+		<achievement title="Legendary Craftsmen" description="Create 100 Masterpiece items." triggerAmount="100" image="masterpiece.png" />
+		<achievement title="Your deeds are legend" description="Create 1000 Masterpiece items." triggerAmount="1000" image="masterpiece.png" />
+	</achievementPattern>
+	
+	<achievementPattern logPattern="(.+) has given birth to ((a kitten)|(kittens))\.">
+		<achievement title="Nice little kitten" description="Have cat give birth." triggerAmount="1" image="cats.png" />
+		<achievement title="Free kitten giveaway!" description="Have cats give 10 births." triggerAmount="10" image="cats.png" />
+		<achievement title="We might have a cat problem..." description="Have cats give 100 births." triggerAmount="100" image="cats.png" />
+		<achievement title="Catsplosion!" description="Have cats give 1000 births." triggerAmount="1000" image="cats.png" />
+	</achievementPattern>
+	
+	<achievementPattern logPattern="The Stray Kitten \(Tame\) has been struck down\.">
+		<achievement title="Heartless" description="Butcher live kitten." triggerAmount="1" image="cats.png" />
+		<achievement title="No catsplosion on my watch!" description="Butcher 10 live kittens." triggerAmount="10" image="cats.png" />
+		<achievement title="Critical cat mass prevention" description="Butcher 100 live kittens." triggerAmount="100" image="cats.png" />
+		<achievement title="Cat powered industry" description="Butcher 1000 live kittens." triggerAmount="1000" image="cats.png" />
+	</achievementPattern>
+	
+	<achievementPattern logPattern="You have struck (.+)!">
+		<achievement title="Strike the earth!" description="Discover a mineral deposit." triggerAmount="1" image="ore.png" />
+		<achievement title="Dig Deeper!" description="Discover 10 mineral deposits." triggerAmount="10" image="ore.png" />
+		<achievement title="Underground diversity" description="Discover 100 mineral deposits." triggerAmount="100" image="ore.png" />
+		<achievement title="Maybe we should go outsite for a bit..." description="Discover 1000 mineral deposits." triggerAmount="1000" image="ore.png" />
+	</achievementPattern>
+	
+	<achievementPattern logPattern="The (.+) has organized a party at (.+)\.">
+		<achievement title="Party time! Excellent!" description="Let dwarves organize party." triggerAmount="1" image="party.png" />
+	</achievementPattern>
+	
+</achievements>

@@ -1,0 +1,34 @@
+[AUDIENCE:FIRST_NAME]...  your parents must have been interesting!
+You know, you don't meet many people with the name [AUDIENCE:FIRST_NAME].
+So, [AUDIENCE:FIRST_NAME]...   [AUDIENCE:FIRST_NAME], was it?
+[AUDIENCE:FIRST_NAME].  Does that mean something?
+[AUDIENCE:FIRST_NAME].  I can't say I've heard that before.
+[AUDIENCE:FIRST_NAME]... [AUDIENCE:FIRST_NAME]... where have I heard that before?
+[AUDIENCE:FIRST_NAME]?  Where did you say you were from?
+[AUDIENCE:FIRST_NAME], is it?
+Well, [AUDIENCE:FIRST_NAME], you're not from around here, are you?
+[AUDIENCE:FIRST_NAME]!  Now that's a name I haven't heard in a while!
+[AUDIENCE:FIRST_NAME].  You're a long way from home, I'd wager.
+Well... pleased to meet you... [AUDIENCE:FIRST_NAME].
+I once met someone named [AUDIENCE:FIRST_NAME].  But that was a long time ago.
+[AUDIENCE:FIRST_NAME]?  What kind of a name is [AUDIENCE:FIRST_NAME]?
+[AUDIENCE:FIRST_NAME]!  Ha!  I insist, what is your real name?
+[AUDIENCE:FIRST_NAME]?  From where do you hail, [AUDIENCE:FIRST_NAME]?
+[AUDIENCE:FIRST_NAME], was it?  What brings you here?
+Hello, um, [AUDIENCE:FIRST_NAME].
+[AUDIENCE:FIRST_NAME]?  Well, hello then.
+Hello, [AUDIENCE:FIRST_NAME].  I am [SPEAKER:TRANS_NAME].
+Hello, [AUDIENCE:FIRST_NAME].  My name is [SPEAKER:TRANS_NAME].
+Hello, [AUDIENCE:FIRST_NAME].  What brings you here?
+Greetings, [AUDIENCE:FIRST_NAME].  I'm [SPEAKER:TRANS_NAME].
+Greetings, [AUDIENCE:FIRST_NAME].  My name is [SPEAKER:TRANS_NAME].
+Greetings, [AUDIENCE:FIRST_NAME].  What brings you here?
+Hail, [AUDIENCE:FIRST_NAME].  I'm [SPEAKER:TRANS_NAME].
+Hail, [AUDIENCE:FIRST_NAME].  My name is [SPEAKER:TRANS_NAME].
+Hail, [AUDIENCE:FIRST_NAME].  What brings you here?
+Yes, [AUDIENCE:FIRST_NAME]?  What do you want?
+Well, [AUDIENCE:FIRST_NAME], what can I do for you?
+Hail, stranger.  What do you want?
+Hail, stranger.  What can I do for you?
+What do you want, stranger?
+What can I do for you, stranger?

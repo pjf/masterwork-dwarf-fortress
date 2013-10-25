@@ -1,0 +1,23 @@
+Welcome to [CONTEXT:ENTITY:TRANS_NAME].  Praise be to [CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME]!
+Welcome to [CONTEXT:ENTITY:TRANS_NAME].  Praise be to [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE]!
+Hail, friend, and welcome to [CONTEXT:ENTITY:TRANS_NAME].  [CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME] be with you.
+Welcome to [CONTEXT:ENTITY:TRANS_NAME], friend.  Go with [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE].
+Welcome to [CONTEXT:ENTITY:TRANS_NAME].  All children of [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE] are welcome here.
+We of [CONTEXT:ENTITY:TRANS_NAME] welcome our fellow child of [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE].
+Praise [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE], friend.  You are always welcome here.
+Make sure you devote enough time to [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE].
+Make sure you have enough room in your life for [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE].
+[CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE] be with you always.
+[CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME] bless you, friend.  Come back whenever you can.
+[CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME] bless you.  Be safe in your travels.
+May you always and forever go with [CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME].
+If ever you need [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE], we will be here.
+When in doubt, seek [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE].
+Whenever you are troubled, seek [CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME] for guidance.
+May [CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME] watch over you.
+Behold the power of [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE].
+[CONTEXT:ENTITY:TRANS_NAME] will always be open to you, friend.
+Let [CONTEXT:ENTITY:TRANS_NAME] be your ever faithful ally in these troubled times.
+May [CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME] guide you through these troubled times.
+May [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE] help you through these troubled times.
+We thank [CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME] for giving us [CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE].

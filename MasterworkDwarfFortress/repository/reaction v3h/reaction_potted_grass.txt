@@ -1,0 +1,8 @@
+reaction_potted_grass
+
+[REACTION]
+
+[REACTION:DECO_GRASS]
+[NAME:*Trample on the grass*]
+[BUILDING:POTTED_GRASS:CUSTOM_A]
+

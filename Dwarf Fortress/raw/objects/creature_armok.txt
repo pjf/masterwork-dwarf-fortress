@@ -1,0 +1,23 @@
+creature_armok
+
+[OBJECT:CREATURE]
+
+[CREATURE:ARMOK]
+[DOES_NOT_EXIST]
+[MALE] 
+[NAME:male dwarf with red eyes:Armok:The God of Blood]
+[CASTE_NAME:Armok:The God of Blood:Armok] 
+[DESCRIPTION:The God of Blood.]
+[CREATURE_CLASS:DFHACK_GOD]
+	[SPHERE:FORTRESSES]
+	[SPHERE:JEWELS]
+	[SPHERE:METALS]
+	[SPHERE:MINERALS]
+	[SPHERE:MOUNTAINS]
+	[SPHERE:WEALTH]
+
+
+Results in:
+
+Armok "The God of Blood"
+Armok was a deity. The God of Blood was most often depicted as a male dwarf with red eyes and was associated with fortresses, jewels, metals, minerals, mountains and wealth.

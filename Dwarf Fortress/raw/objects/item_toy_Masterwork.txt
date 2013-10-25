@@ -1,0 +1,561 @@
+item_toy_masterwork
+
+[OBJECT:ITEM]
+
+[ITEM_TOY:ITEM_TOY_TOY]
+[NAME:candelabra:candelabras]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BRAZIER]
+[NAME:brazier:braziers]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_FIREPLACE]
+[NAME:fireplace:fireplaces]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_ALLIGATOR_DOLL]
+[NAME:alligator doll:alligator dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BLACK_BEAR_DOLL]
+[NAME:black bear doll:black bear dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BONOBO_DOLL]
+[NAME:bonobo doll:bonobo dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BRONZE_COLOSSUS_DOLL]
+[NAME:bronze colossus doll:bronze colossus dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BUZZARD_DOLL]
+[NAME:buzzard doll:buzzard dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CAPYBARA_DOLL]
+[NAME:capybara doll:capybara dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CARP_DOLL]
+[NAME:carp doll:carp dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CAT_DOLL]
+[NAME:cat doll:cat dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CAVE_TROLL_DOLL]
+[NAME:cave troll doll:cave troll dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CENTAUR_DOLL]
+[NAME:centaur doll:centaur dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CHEETAH_DOLL]
+[NAME:cheetah doll:cheetah dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CHIMERA_DOLL]
+[NAME:chimera doll:chimera dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CHIMPANZEE_DOLL]
+[NAME:chimpanzee doll:chimpanzee dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_COUGAR_DOLL]
+[NAME:cougar doll:cougar dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CYCLOPS_DOLL]
+[NAME:cyclops doll:cyclops dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DARK_ELF_DOLL]
+[NAME:dark elf doll:dark elf dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DARK_GNOME_DOLL]
+[NAME:dark gnome doll:dark gnome dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DEER_DOLL]
+[NAME:deer doll:deer dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DOG_DOLL]
+[NAME:dog doll:dog dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DRAGON_DOLL]
+[NAME:red dragon doll:red dragon dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DWARF_DOLL]
+[NAME:dwarf doll:dwarf dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_ELEPHANT_DOLL]
+[NAME:elephant doll:elephant dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_ELF_DOLL]
+[NAME:elf doll:elf dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_ETTIN_DOLL]
+[NAME:ettin doll:ettin dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_FAIRY_DOLL]
+[NAME:fairy doll:fairy dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_FOX_DOLL]
+[NAME:fox doll:fox dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_FRILL_SHARK_DOLL]
+[NAME:frill shark doll:frill shark dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GAZELLE_DOLL]
+[NAME:gazelle doll:gazelle dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GCS_DOLL]
+[NAME:giant cave spider doll:giant cave spider dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GIANT_DOLL]
+[NAME:giant doll:giant dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GIGANTIC_PANDA_DOLL]
+[NAME:gigantic panda doll:gigantic panda dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GIANT_EAGLE_DOLL]
+[NAME:giant eagle doll:giant eagle dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GIRAFFE_DOLL]
+[NAME:giraffe doll:giraffe dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GORILLA_DOLL]
+[NAME:gorilla doll:gorilla dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GREAT_WHITE_SHARK_DOLL]
+[NAME:great white shark doll:great white shark dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GREMLIN_DOLL]
+[NAME:gremlin doll:gremlin dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GRIFFON_DOLL]
+[NAME:griffon doll:griffon dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GRIZZLY_BEAR_DOLL]
+[NAME:grizzly bear doll:grizzly bear dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GROUNDHOG_DOLL]
+[NAME:groundhog doll:groundhog dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_HOARY_MARMOT_DOLL]
+[NAME:hoary marmot doll:hoary marmot dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_HUMAN_DOLL]
+[NAME:human doll:human dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_JAGUAR_DOLL]
+[NAME:jaguar doll:jaguar dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_KOBOLD_DOLL]
+[NAME:kobold doll:kobold dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_LEOPARD_DOLL]
+[NAME:leopard doll:leopard dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_LION_DOLL]
+[NAME:lion doll:lion dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_LIZARD_DOLL]
+[NAME:lizard doll:lizard dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MANDRILL_DOLL]
+[NAME:mandrill doll:mandrill dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MINOTAUR_DOLL]
+[NAME:minotaur doll:minotaur dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MOUNTAIN_GNOME_DOLL]
+[NAME:mountain gnome doll:mountain gnome dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MOUNTAIN_GOAT_DOLL]
+[NAME:mountain goat doll:mountain goat dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_OGRE_DOLL]
+[NAME:ogre doll:ogre dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_ORANGUTAN_DOLL]
+[NAME:orangutan doll:orangutan dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_ORC_DOLL]
+[NAME:orc doll:orc dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_PANDA_DOLL]
+[NAME:panda doll:panda dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_PANDA_MAN_DOLL]
+[NAME:panda man doll:panda man dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_PIXIE_DOLL]
+[NAME:pixie doll:pixie dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_POLAR_BEAR_DOLL]
+[NAME:polar bear doll:polar bear dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_RACCOON_DOLL]
+[NAME:raccoon doll:raccoon dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_RHESUS_MACAQUE_DOLL]
+[NAME:rhesus macaque doll:rhesus macaque dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_RHINOCEROS_DOLL]
+[NAME:rhinoceros doll:rhinoceros dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_SASQUATCH_DOLL]
+[NAME:sasquatch doll:sasquatch dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_SATYR_DOLL]
+[NAME:satyr doll:satyr dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_SEA_LAMPREY_DOLL]
+[NAME:sea lamprey doll:sea lamprey dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_SPINY_DOGFISH_DOLL]
+[NAME:spiny dogfish doll:spiny dogfish dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TENTACLE_DEMON_DOLL]
+[NAME:tentacle demon doll:tentacle demon dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TIGER_DOLL]
+[NAME:tiger doll:tiger dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOAD_DOLL]
+[NAME:toad doll:toad dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TURTLE_DOLL]
+[NAME:turtle doll:turtle dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_UNICORN_DOLL]
+[NAME:unicorn doll:unicorn dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_WALRUS_DOLL]
+[NAME:walrus doll:walrus dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_WARTHOG_DOLL]
+[NAME:warthog doll:warthog dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_WEREWOLF_DOLL]
+[NAME:werewolf doll:werewolf dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_WHALE_DOLL]
+[NAME:whale doll:whale dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_WIZARD_DOLL]
+[NAME:wizard doll:wizard dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_WOLF_DOLL]
+[NAME:wolf doll:wolf dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_YETI_DOLL]
+[NAME:yeti doll:yeti dolls]
+[HARD_MAT]
+
+OTHER
+
+[ITEM_TOY:ITEM_TOY_SPINNING_TOP]
+[NAME:spinning top:spinning tops]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MUSIC_BOX]
+[NAME:music box:music boxes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MARBLESET]
+[NAME:marble set:marble sets]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MININGPICK]
+[NAME:toy mining pick:toy mining picks]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_SPEAR]
+[NAME:toy spear:toy spears]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CROWN]
+[NAME:toy crown:toy crowns]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_SWORD]
+[NAME:toy sword:toy swords]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CROSSBOW]
+[NAME:toy crossbow:toy crossbows]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BALL]
+[NAME:ball:balls]
+[HARD_MAT]
+
+
+
+[ITEM_TOY:ITEM_TOY_VELLUM]
+[NAME:book:books]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_TOY_TOME_FARMING]
+[NAME:farming tome:farming tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_FARMING_EPIC]
+[NAME:'Harvest moon' tome:'Harvest moon' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_KITCHEN]
+[NAME:kitchen tome:kitchen tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_KITCHEN_EPIC]
+[NAME:'How to do Demon roast' tome:'How to do Demon Roast' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_CRAFTING]
+[NAME:crafting tome:crafting tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_CRAFTING_EPIC]
+[NAME:'Origami 1*1' tome:'Origami 1*1' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_SMITHING]
+[NAME:smithing tome:smithing tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_SMITHING_EPIC]
+[NAME:'The One Ring' tome:'The One Ring' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_MENTAL]
+[NAME:mental tome:mental tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_MENTAL_EPIC]
+[NAME:'War and Peace' tome:'War and Peace' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_MEDICAL]
+[NAME:medical tome:medical tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_MEDICAL_EPIC]
+[NAME:'DaVincis sketch' tome:'DaVincis sketch' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_PHILOSOPHY]
+[NAME:philosophy tome:philosophy tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_PHILOSOPHY_EPIC]
+[NAME:'Schroedingers cat' tome:'Schroedingers cat' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_TACTIC]
+[NAME:military tactic tome:military tactic tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_TACTIC_EPIC]
+[NAME:'The Art of War' tome:'The Art of War' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_SIEGE]
+[NAME:siege tome:siege tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_SIEGE_EPIC]
+[NAME:'Trebuchet 1*1' tome:'Trebuchet 1*1' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_COMBAT_RANGED]
+[NAME:ranged combat tome:ranged combat tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_COMBAT_MELEE]
+[NAME:melee combat tome:melee combat tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_COMBAT_MELEE_EPIC]
+[NAME:'Be water my friend' tome:'Be water my friend' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_COMBAT_RANGED_EPIC]
+[NAME:'47 ways to headshots' tome:'47 ways to headshots' tomes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TOME_DEFENSE]
+[NAME:defense tome:defense tomes]
+[HARD_MAT]
+[ITEM_TOY:ITEM_TOY_TOME_DEFENSE_EPIC]
+[NAME:'The Last Stand' tome:'The Last Stand' tomes]
+[HARD_MAT]
+
+
+
+[ITEM_TOY:ITEM_TOY_CHESSBOARD]
+[NAME:chessboard:chessboards]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GO_BOARD]
+[NAME:Go game:Go games]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_TABLETOP]
+[NAME:Human Fortress game:Human Fortress games]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_TOY_LAMP]
+[NAME:lamp:lamps]
+[HARD_MAT]
+
+
+
+
+####################################################################
+##############    FLAVOR ITEMS  ####################################
+####################################################################
+
+
+[ITEM_TOY:ITEM_TOY_ELF1]
+[NAME:crystal holder:crystal holders]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_ELF2]
+[NAME:diara:diaras]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_ELF3]
+[NAME:leafshaped broach:leafshaped broaches]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_HUMAN1]
+[NAME:chessboard:chessboards]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_HUMAN2]
+[NAME:paladin figurine:paladin figurines]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_HUMAN3]
+[NAME:miniature castle:miniature castles]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DWARF1]
+[NAME:toy merfolk farm:toy merfolk farms]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DWARF2]
+[NAME:cacamene figurine:cacamene figurines]   <--- triple check that name
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DWARF3]
+[NAME:burning elephant figurine:burning elephant figurines]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_EVIL1]
+[NAME:pentagram:pentagrams]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_EVIL2]
+[NAME:slave band:slave bands] 
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_EVIL3]
+[NAME:riddle:riddles]
+[HARD_MAT]
+
+
+
+[ITEM_TOY:ITEM_TOY_BLUEPRINT_GOLEM]
+[NAME:golem heart:golem hearts]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_LOOT]
+[NAME:bag of loot:bags of loot]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_LEGION]
+[NAME:legion permit:legion permits]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_SMITH]
+[NAME:smith guild permit:smith guild permits]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CRAFT]
+[NAME:craft guild permit:craft guild permits]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_NOBLE]
+[NAME:letter of recommendation:letters of recommendation]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_TOY_BLOODPOOL]
+[NAME:Chalice of Blood:Chalices of Blood]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_MAGICFOUNTAIN]
+[NAME:Glowing Crystal:Glowing Crystals]
+[HARD_MAT]
+

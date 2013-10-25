@@ -1,0 +1,8 @@
+For [CONTEXT:NUMBER] of my years, I have been rescuing lost children and bringing them back to [CONTEXT:PLACE:TRANS_NAME].
+For [CONTEXT:NUMBER] years, I have brought children to [CONTEXT:PLACE:TRANS_NAME] where they can be brought up properly.
+I have helped children reach their full potential in [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] of my years.
+For [CONTEXT:NUMBER] of my years, I have led abandoned children back to [CONTEXT:PLACE:TRANS_NAME].
+I bring children to [CONTEXT:PLACE:TRANS_NAME] and help teach them our ways.  I have done this for [CONTEXT:NUMBER] years.
+For [CONTEXT:NUMBER] years, I have taken neglected children to [CONTEXT:PLACE:TRANS_NAME] that they may flourish.
+For [CONTEXT:NUMBER] years, I help lost children find their way back to their true home.
+It has been my [CONTEXT:NUMBER] year task to save children from unworthy caretakers.

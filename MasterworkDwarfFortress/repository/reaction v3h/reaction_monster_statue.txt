@@ -1,0 +1,8 @@
+reaction_monster_statue
+
+[REACTION]
+
+[REACTION:MONSTER_STATUE]
+[NAME:*Have a close look at the statues vicious claws*]
+[BUILDING:MONSTER_STATUE:CUSTOM_A]
+

@@ -1,0 +1,14 @@
+I seek treasures and bring them back to [CONTEXT:PLACE:TRANS_NAME] and have done so for [CONTEXT:NUMBER] of the years of my life.
+I have been a treasure hunter for [CONTEXT:NUMBER] years.
+I do a little of this, a little of that.
+What I do is not important.
+For [CONTEXT:NUMBER] years, I have sought artifacts of renown.
+For [CONTEXT:NUMBER] years, I have retrieved treasures in the name of [CONTEXT:PLACE:TRANS_NAME].
+Mind your own business, you.
+I am the sort to hide your coinpurse from.
+I take cumbersome objects off the hands of their weary owners.
+I brave the walls of dwarven fortresses to emerge with their wealth.
+You talk too much.
+I have no wish to discuss it.
+Let us speak of something else.
+I appreciate your curiosity, but my business is mine.

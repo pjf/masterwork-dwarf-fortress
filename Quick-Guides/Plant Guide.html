@@ -1,0 +1,4202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #000
+}
+body, td, th {
+	color: #FFF;
+	font-size: 18px;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #CCC;
+}
+.Rot {color: #F00;
+}
+.Rot {color: #F00;
+}
+</style>
+</head>
+
+<body>
+<div align="center">
+  <p><img src="../MasterworkDwarfFortress/repository/Logo.JPG" alt="logo" width="768" height="225" align="absmiddle" /></p>
+</div>
+<table width="846" border="0" align="center">
+  <tr>
+    <td width="840"><h1 align="center"><u><strong>Masterwork DF Plant Table</strong></u></h1>
+    <p>In here you can find all plants for the mod, with all infos. They are sorted in normal plants you can encounter, fake plants that are only used for products (for example plump helmet-juice plants, which are just used to give the juice a different ID then the plump helmet-wine has), Kobold Camp plants, Orc Fortress plants, the additional Flora&amp;Fauna plants and the additional Flora&amp;Fauna trees. The last two are quite long and are disabled by default. You can also find already compiled lists for the dfhack getplants command, sorted by aboveground plants, underground plants, aboveground trees and underground trees.</p>
+    <p>At this point a big thanks to maklak for the script to read these out directly from the raws.</p>
+    <hr />
+    <h1>Plant Standart</h1>
+    <hr />
+    <p>75 plants.<br />
+      <br />
+      <font size="5"><b>Dfhack # getplants commands for easy designating tree cutting and plant gathering:</b><br />
+      <br />
+      <b>Aboveground bushes:</b> (only edible, cookable or brewable)<br />
+      # getplants VINE_WHIP HERB_VALLEY BERRY_SUN BERRIES_STRAW_WILD SLIVER_BARB REED_ROPE WEED_RAT BERRIES_PRICKLE FLOWER_ORCHID_SPITTING GRASS_LONGLAND BERRIES_FISHER TUBER_BLOATED WEED_BLADE <br />
+  <br />
+  <b>Aboveground trees:</b><br />
+      # getplants MANGROVE SAGUARO PINE CEDAR OAK MAPLE WILLOW ALDER PALM <br />
+  <br />
+  <b>Underground bushes:</b> (only edible, cookable or brewable)<br />
+      # getplants POD_SWEET shadowleaf bush SKULL_FRONDS_R BUSH_QUARRY MUSHROOM_HELMET_PLUMP GRASS_TAIL_PIG NETHER_VINE NETHER_CREEPER ROOT_MUCK LICHFINGER_R HELL_PLANT GRASS_WHEAT_CAVE CORPSETOUNGE_R BUSH_BONE_R HELL_PLANT_ARMOK <br />
+  <br />
+  <b>Underground trees:</b><br />
+      # getplants BLACK_CAP NETHER_CAP FUNGIWOOD_REAL FIREWOOD POISON_CAP <br />
+  &nbsp;</p>
+    <p><font size="5"><b>Aboveground crop table:</b><br />
+    </p>
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>whip vine</b><br />
+            VINE_WHIP</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>whip wine (3)</td>
+          <td>FLOUR: whip vine flour (9)<br />
+          </td>
+          <td>Brew Mill </td>
+        </tr>
+        <tr>
+          <td><b>valley herb</b><br />
+            HERB_VALLEY</td>
+          <td>5</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): golden salve (100)</td>
+          <td>Cook</td>
+        </tr>
+        <tr>
+          <td><b>tree sapling</b><br />
+            TREE_SMALL</td>
+          <td>1</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>wood logs</td>
+          <td>Farmed by timberyard</td>
+        </tr>
+        <tr>
+          <td><b>sun berry</b><br />
+            BERRY_SUN</td>
+          <td>3</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>sunshine (5)</td>
+          <td>DYE: sunberry dye (15)<br />
+          </td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>strawberry</b><br />
+            BERRIES_STRAW_WILD</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>strawberry wine (2)</td>
+          <td>N/A</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>steeloak sapling</b><br />
+            STEELOAK_SMALL</td>
+          <td>20</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>steel bars</td>
+          <td>Farmed by timberyard</td>
+        </tr>
+        <tr>
+          <td><b>sliver barb</b><br />
+            SLIVER_BARB</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>gutter cruor (2)</td>
+          <td>DYE: sliver dye (20)<br />
+          </td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>rope reed</b><br />
+            REED_ROPE</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>river spirits (2)</td>
+          <td>THREAD: rope reed thread (2)<br />
+          </td>
+          <td>Thread</td>
+        </tr>
+        <tr>
+          <td><b>rat weed</b><br />
+            WEED_RAT</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>sewer brew (2)</td>
+          <td>LEAF: rat weed leaves (1)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>prickle berry</b><br />
+            BERRIES_PRICKLE</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>prickle berry wine (2)</td>
+          <td>N/A</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>orchid</b><br />
+            FLOWER_ORCHID_SPITTING</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): orchid fragrance (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>longland grass</b><br />
+            GRASS_LONGLAND</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>longland beer (2)</td>
+          <td>LEAF: longland grass leaves (1)<br />
+            FLOUR: longland flour (9)<br />
+            </td>
+          <td>Leaves Mill </td>
+        </tr>
+        <tr>
+          <td><b>ironbark sapling</b><br />
+            IRONWOOD_SMALL</td>
+          <td>10</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>iron bars</td>
+          <td>Farmed by timberyard</td>
+        </tr>
+        <tr>
+          <td><b>hide root</b><br />
+            ROOT_HIDE</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>DYE: hide root dye (10)<br />
+          OIL: hide root oil (5)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>fisher berry</b><br />
+            BERRIES_FISHER</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>fisher berry wine (2)</td>
+          <td>N/A</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>bloated tuber</b><br />
+            TUBER_BLOATED</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>tuber beer (2)</td>
+          <td>N/A</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>blade weed</b><br />
+            WEED_BLADE</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>LEAF: blade weed leaves (1)<br />
+          DYE: emerald dye (12)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>bitterroot</b><br />
+            bitterroot</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): bitterroot poison (25)</td>
+          <td>--</td>
+        </tr>
+      </center>
+    </table>
+    <br />
+    <font size="5"><b>Subterranean crop table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>armok's thorntree</b><br />
+            HELL_TREE_ARMOK</td>
+          <td>50</td>
+          <td>25</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>only from temple</td>
+        </tr>
+        <tr>
+          <td><b>shade thorn</b><br />
+            SHADE_THORN</td>
+          <td>35</td>
+          <td>25</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>only from 3rd cavern</td>
+        </tr>
+        <tr>
+          <td><b>zombie flower</b><br />
+            FLOWER_ZOMBIE_R</td>
+          <td>3</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>FLOUR: zombie powder (2)<br />
+          </td>
+          <td>trade from drow</td>
+        </tr>
+        <tr>
+          <td><b>sweet pod</b><br />
+            POD_SWEET</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>dwarven rum (2)</td>
+          <td>SUGAR: dwarven sugar (12)<br />
+            CANDY: sweet pod candy (12)<br />
+            EXTRACT(Barrel): dwarven syrup (12)</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>shadowleaf bush</b><br />
+            shadowleaf bush</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: shadowleaf bush leaves (2)<br />
+            EXTRACT(Barrel): shadowleaf poison (25)<br />
+            OIL: shadowleaf oil (7)<br />
+            SOAP: shadowleaf soap (7)<br />
+            PRESSED: shadowleaf seed press cake (1)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>skull frond</b><br />
+            SKULL_FRONDS_R</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>skull juice (3) (Y)</td>
+          <td>EXTRACT(Flask): skull essence (10)</td>
+          <td>Brew, trade from drow</td>
+        </tr>
+        <tr>
+          <td><b>quarry bush</b><br />
+            BUSH_QUARRY</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>LEAF: quarry bush leaves (5)<br />
+            OIL: rock nut oil (5)<br />
+            SOAP: rock nut soap (5)<br />
+            PRESSED: rock nut press cake (2)</td>
+          <td>Leaves Embark </td>
+        </tr>
+        <tr>
+          <td><b>plump helmet</b><br />
+            MUSHROOM_HELMET_PLUMP</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dwarven wine (2)</td>
+          <td>DYE: plump helmet dye (5)<br />
+          </td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>pig tail</b><br />
+            GRASS_TAIL_PIG</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>dwarven ale (2)</td>
+          <td>LEAF: pig tail leaves (1)<br />
+            THREAD: pig tail thread (2)<br />
+              OIL: pig tail oil (5)<br />
+            SOAP: pig tail soap (5)</td>
+          <td>Leaves Thread</td>
+        </tr>
+        <tr>
+          <td><b>nether vine</b><br />
+            NETHER_VINE</td>
+          <td>5</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>nether wine (10) (Y)</td>
+          <td>positive effect on drink, no fear</td>
+          <td>Brew, only 3rd cavern</td>
+        </tr>
+        <tr>
+          <td><b>nether creeper</b><br />
+            NETHER_CREEPER</td>
+          <td>5</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>nether grour (2) (Y)</td>
+          <td>used for poison, negative effect on drink</td>
+          <td>only third cavern</td>
+        </tr>
+        <tr>
+          <td><b>nether-cap sapling</b><br />
+            NETHER_CAP_SMALL</td>
+          <td>1</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>fireproof leather</td>
+          <td>Farmed by timberyard</td>
+        </tr>
+        <tr>
+          <td><b>muck root</b><br />
+            ROOT_MUCK</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>swamp whiskey (2)</td>
+          <td>DYE: muck root dye (5)<br />
+          </td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>lichfinger</b><br />
+            LICHFINGER_R</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: lich meal (7)</td>
+          <td>trade from drow</td>
+        </tr>
+        <tr>
+          <td><b>fungiwood sapling</b><br />
+            FUNGIWOOD_SMALL</td>
+          <td>1</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>dimple cup</b><br />
+            MUSHROOM_CUP_DIMPLE</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>DYE: dimple dye (20)<br />
+          </td>
+          <td>Useless Dye </td>
+        </tr>
+        <tr>
+          <td><b>devil mushroom</b><br />
+            HELL_PLANT</td>
+          <td>10</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>hell wine (10)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>cave wheat</b><br />
+            GRASS_WHEAT_CAVE</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>dwarven beer (2)</td>
+          <td>LEAF: cave wheat leaves (1)<br />
+            FLOUR: cave wheat flour (15)<br />
+            </td>
+          <td>Leaves Mill </td>
+        </tr>
+        <tr>
+          <td><b>corpsetongue</b><br />
+            CORPSETOUNGE_R</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>corpse wine (2) (Y)</td>
+          <td>N/A</td>
+          <td>Brew, trade from drow</td>
+        </tr>
+        <tr>
+          <td><b>bone bush</b><br />
+            BUSH_BONE_R</td>
+          <td>2</td>
+          <td>336</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>essence of marrow (2) (Y)</td>
+          <td>FLOUR: bone bush meal (8)</td>
+          <td>trade from drow</td>
+        </tr>
+        <tr>
+          <td><b>armok's shroom</b><br />
+            HELL_PLANT_ARMOK</td>
+          <td>50</td>
+          <td>25</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>armok's wine (50)</td>
+          <td>N/A</td>
+          <td>Brew, only from temple</td>
+        </tr>
+        <tr>
+          <td><b>devil thorn</b><br />
+            HELL_TREE</td>
+          <td>10</td>
+          <td>25</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>only from hell</td>
+        </tr>
+        <tr>
+          <td><b>crystal tree</b><br />
+            CRYSTAL_TREE</td>
+          <td>1</td>
+          <td>25</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>glass, glass pikes</td>
+          <td>only 2nd cavern</td>
+        </tr>
+        <tr>
+          <td><b>glass thorn</b><br />
+            GLASS_THORN</td>
+          <td>1</td>
+          <td>25</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>glass, glass pikes</td>
+          <td>only 2nd cavern</td>
+        </tr>
+        <tr>
+          <td><b>glass splitter</b><br />
+            POISON</td>
+          <td>1</td>
+          <td>25</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>hurts the woodcutter</td>
+          <td>only 2nd cavern</td>
+        </tr>
+      </center>
+    </table>
+    <br />
+    <font size="5"><b>Fake plant table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>tears of armok</b><br />
+            ARMOK_DRINK</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>tears of armok (2) (Y)</td>
+          <td>Special drink</td>
+          <td>Brew, only from tear of armok gem</td>
+        </tr>
+        <tr>
+          <td><b>silphium</b><br />
+            SILPHIUM</td>
+          <td>4</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>sterility draught (4) (Y)</td>
+          <td>Special drink</td>
+          <td>Brew, trade from elves</td>
+        </tr>
+        <tr>
+          <td><b>philosophum</b><br />
+            PHILOSOPHUM</td>
+          <td>4</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>eternal youth potion (4) (Y)</td>
+          <td>Special drink</td>
+          <td>Brew, trade from elves</td>
+        </tr>
+        <tr>
+          <td><b>norrium</b><br />
+            NORRIUM</td>
+          <td>6</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>warriors shot (6) (Y)</td>
+          <td>Special drink</td>
+          <td>Brew, trade from elves</td>
+        </tr>
+        <tr>
+          <td><b>insomnium</b><br />
+            INSOMNIUM</td>
+          <td>4</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>insomnia wine (4) (Y)</td>
+          <td>Special drink</td>
+          <td>Brew, trade from elves</td>
+        </tr>
+        <tr>
+          <td><b>elixir of life</b><br />
+            PHILOSOPHER_DRINK</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>elixir of life (2) (Y)</td>
+          <td>Adds no age</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>cure-all</b><br />
+            CURE_ALL</td>
+          <td>4</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>disease resistance draught (4) (Y)</td>
+          <td>Special drink</td>
+          <td>Brew, trade from elves</td>
+        </tr>
+        <tr>
+          <td><b>pure evil</b><br />
+            EVIL_CM</td>
+          <td>50</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>liquid evil (50) (Y)</td>
+          <td>N/A</td>
+          <td>Only from hell</td>
+        </tr>
+        <tr>
+          <td><b>fungiwood bark</b><br />
+            FUNGIWOOD_BARK</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dwarven fungi brew (5)</td>
+          <td>makes drinks</td>
+          <td>Brew, only from timberyard</td>
+        </tr>
+        <tr>
+          <td><b>ironbark</b><br />
+            IRONWOOD</td>
+          <td>10</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>iron bars</td>
+          <td>N/A</td>
+          <td>only from timberyard</td>
+        </tr>
+        <tr>
+          <td><b>steeloak</b><br />
+            STEELOAK</td>
+          <td>15</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>steel bars</td>
+          <td>N/A</td>
+          <td>only from timberyard</td>
+        </tr>
+        <tr>
+          <td><b>boozebelly rum</b><br />
+            GOAT_MILK</td>
+          <td>2</td>
+          <td>84</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>boozebelly rum (2) (Y)</td>
+          <td>N/A</td>
+          <td>Brew, only from boozebelly goats</td>
+        </tr>
+      </center>
+    </table>
+    <p>&nbsp;</p>
+    <h1>KOBOLD CAMP</h1>
+    <hr />
+    <p> 4 plants.<br />
+      <br />
+      <font size="5"><b>Dfhack # getplants commands for easy designating tree cutting and plant gathering:</b><br />
+      <br />
+      <b>Aboveground bushes:</b> (only edible, cookable or brewable)<br />
+      # getplants STALK_WOOD BERRIES_BLOOM INDIGO_FLOWER <br />
+  <br />
+    </p>
+    <hr />
+    <br />
+    <font size="5"><b>Aboveground crop table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>wood stalk</b><br />
+            STALK_WOOD</td>
+          <td>2</td>
+          <td>75</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>stalk whisky (2) (Y)</td>
+          <td>wood logs</td>
+          <td>Brew, use in wood processor</td>
+        </tr>
+        <tr>
+          <td><b>bloomberry</b><br />
+            BERRIES_BLOOM</td>
+          <td>4</td>
+          <td>75</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>DYE: scarlet bloomberry dye (24)<br />
+          </td>
+          <td>Cook</td>
+        </tr>
+        <tr>
+          <td><b>indigo flower</b><br />
+            INDIGO_FLOWER</td>
+          <td>6</td>
+          <td>75</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>DYE: indigo flower dye (30)<br />
+          </td>
+          <td>Cook</td>
+        </tr>
+        <tr>
+          <td><b>kobold bulb</b><br />
+            BULB_KOBOLD</td>
+          <td>2</td>
+          <td>84</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): slowpoke poison (25)</td>
+          <td>Poison Cookery</td>
+        </tr>
+      </center>
+    </table>
+    <br />
+    <p>&nbsp;</p>
+    <h1>ORC FORTRESS</h1>
+    <hr />
+    <p>8 plants.<br />
+      <br />
+      <font size="5"><b>Dfhack # getplants commands for easy designating tree cutting and plant gathering:</b><br />
+      <br />
+      <b>Aboveground bushes:</b> (only edible, cookable or brewable)<br />
+      # getplants STALK_WOOD FRUIT_PEAR_BOREAL HERB_MINT_BOREAL BERRIES_BOREAL VEGETABLE_POTATO_BOREAL <br />
+  <br />
+    </p>
+    <hr />
+    <br />
+    <font size="5"><b>Aboveground crop table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>wood stalk</b><br />
+            STALK_WOOD</td>
+          <td>2</td>
+          <td>75</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>stalk whisky (2) (Y)</td>
+          <td>Wood logs</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>taiga pear</b><br />
+            FRUIT_PEAR_BOREAL</td>
+          <td>4</td>
+          <td>75</td>
+          <td>Autumn Winter </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>orcish pear cider (4)</td>
+          <td>EXTRACT(Barrel): pear sauce (8)</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>icicle mint</b><br />
+            HERB_MINT_BOREAL</td>
+          <td>6</td>
+          <td>75</td>
+          <td>Autumn Winter </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: icicle mint leaves (6)<br />
+          EXTRACT(Flask): icicle mint oil (20)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>winter bloodberry</b><br />
+            BERRIES_BOREAL</td>
+          <td>4</td>
+          <td>75</td>
+          <td>Autumn Winter </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>DYE: scarlet bloodberry dye (24)<br />
+          EXTRACT(Barrel): bloodberry jelly (16)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>boreal tuber</b><br />
+            VEGETABLE_POTATO_BOREAL</td>
+          <td>6</td>
+          <td>75</td>
+          <td>Autumn Winter </td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>orcish tuber vodka (6) (Y)</td>
+          <td>DYE: indigo tuber dye (30)<br />
+          </td>
+          <td>Brew</td>
+        </tr>
+      </center>
+    </table>
+    <br />
+    <br />
+    <font size="5"><b>Fake plant table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>black draught</b><br />
+            BLACK_DRAUGHT</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>black draught (6) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>firewater</b><br />
+            FIREWATER_DRAUGHT</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>firewater (6) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>pinkskin bane</b><br />
+            PINKSKIN_BANE</td>
+          <td>10</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): pinkskin bane (50)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>cadaverine blight</b><br />
+            CADAVERINE_BLIGHT</td>
+          <td>10</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): cadaverine blight poison (50)</td>
+          <td>--</td>
+        </tr>
+      </center>
+    </table>
+    <p>&nbsp;</p>
+    <h1>Fake Plants for Products</h1>
+    <hr />
+    <p>24 plants.<br />
+      <br />
+      <font size="5"><b>Dfhack # getplants commands for easy designating tree cutting and plant gathering:</b><br />
+      <br />
+    </p>
+    <hr />
+    <br />
+    <font size="5"><b>Fake plant table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>giants essence</b><br />
+            GIANT_STRENGTH_POTION</td>
+          <td>5</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>giant strength potion (10) (Y)</td>
+          <td>max strength</td>
+          <td>Brew, only from giant</td>
+        </tr>
+        <tr>
+          <td><b>cyclops eye</b><br />
+            TRUE_SIGHT_POTION</td>
+          <td>5</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>true sight potion (5) (Y)</td>
+          <td>extravision - see through walls</td>
+          <td>Brew, only from cyclops</td>
+        </tr>
+        <tr>
+          <td><b>cotton</b><br />
+            COTTON</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>THREAD: cotton thread (1)<br />
+          </td>
+          <td>Thread</td>
+        </tr>
+        <tr>
+          <td><b>voodoo poison</b><br />
+            VOODOO</td>
+          <td>10</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): voodoo poison (5)</td>
+          <td>makes target undead</td>
+        </tr>
+        <tr>
+          <td><b>greenskin bane</b><br />
+            GREENSKIN_BANE</td>
+          <td>10</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): greenskin bane (5)</td>
+          <td>only works on goblins, trolls and orcs</td>
+        </tr>
+        <tr>
+          <td><b>everdream</b><br />
+            EVERDREAM</td>
+          <td>10</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): everdream (5)</td>
+          <td>makes target sleepy</td>
+        </tr>
+        <tr>
+          <td><b>nether horror</b><br />
+            NETHER_HORROR</td>
+          <td>10</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): nether horror (5)</td>
+          <td>transforms target into monster</td>
+        </tr>
+        <tr>
+          <td><b>carmine</b><br />
+            CARMINE</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>DYE: carmine dye (10)<br />
+          </td>
+          <td>Useless Dye </td>
+        </tr>
+        <tr>
+          <td><b>fatty</b><br />
+            OIL</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>OIL: fatty oil (5)<br />
+            SOAP: fatty soap (5)</td>
+          <td>oil from tallow</td>
+        </tr>
+        <tr>
+          <td><b>mineral</b><br />
+            OIL_MINERAL</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>OIL: mineral oil (5)<br />
+            SOAP: mineral soap (5)</td>
+          <td>oil from minerals</td>
+        </tr>
+        <tr>
+          <td><b>swamp fever</b><br />
+            SWAMP_FEVER</td>
+          <td>10</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): swamp fever poison (5)</td>
+          <td>makes target sick</td>
+        </tr>
+        <tr>
+          <td><b>cave wheat tea</b><br />
+            TEA_CAVE_WHEAT</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>Cave wheat tea</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>longland grass tea</b><br />
+            TEA_LONGLAND_GRASS</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>Longland Grass tea</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>root tea</b><br />
+            TEA_MUCK_ROOT</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>Muck root tea</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>rat weed tea</b><br />
+            TEA_RAT_WEED</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>Rat weed tea</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>whip vine tea</b><br />
+            TEA_WHIP_VINE</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>whip vine tea</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>strawberry juice</b><br />
+            JUICE_BERRY_STRAW</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>strawberry juice</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>fisherberry juice</b><br />
+            JUICE_BERRY_FISHER</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>fisherberry juice</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>bloomberry juice</b><br />
+            JUICE_BERRY_BLOOM</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>bloomberry juice</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>plump helmet juice</b><br />
+            JUICE_PLUMP_HELMET</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>plump helmet juice</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>prickleberry juice</b><br />
+            JUICE_BERRY_PRICKLE</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>prickle berry juice</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>sunberry juice</b><br />
+            JUICE_BERRY_SUN</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>sunberry juice</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>sweed pod juice</b><br />
+            JUICE_SWEET_POD</td>
+          <td>1</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>sweed pod juice</td>
+          <td>Cook, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>psychoactive toad</b><br />
+            PSYCHOACTIVE_TOAD</td>
+          <td>5</td>
+          <td>0</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>psychoactive shot (10) (Y)</td>
+          <td>Random effect, ~3,5 effects of max. 50 per drink.</td>
+          <td>Brew, kobold only</td>
+        </tr>
+        <tr>
+          <td><b>roasted seeds</b><br />
+            ROASTED_SEED</td>
+          <td>1</td>
+          <td>0</td>
+          <td><font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>edible seeds</td>
+          <td>N/A</td>
+          <td>Kitchen, seeds are edible.</td>
+        </tr>
+      </center>
+    </table>
+    <p><br />
+    </p>
+    <p>&nbsp;</p>
+    <h1>FLORA &amp; FAUNA PLANTS, optional &quot;more plants&quot; setting</h1>
+    <hr />
+    <p>159 plants.<br />
+      <br />
+      <font size="5"><b>Dfhack # getplants commands for easy designating tree cutting and plant gathering:</b><br />
+      <br />
+      <b>Aboveground bushes:</b> (only edible, cookable or brewable)<br />
+      # getplants BERRIES_BLACK_CURRANT BERRIES_BLACK_WILD BERRIES_BLUE_WILD BERRY_BRAMBLE BERRY_ELDER BERRIES_FEN BERRIES_RED_CURRANT FRUIT_GRAPE_RED BERRIES_RED_MULBERRY BERRIES_SNOW FRUIT_GRAPE_WHITE BERRY_WOLF FLOWER_CANNA_WILD FLOWER_CASSAVA_WILD FLOWER_DANDELION_WILD FLOWER_FLEECE_FLOWER FLOWER_HIBISCUS_WILD FLOWER_HONEY_SUCKLE FLOWER_KLAMATH HERB_MARSH_ROOT FLOWER_JUTE FLOWER_ROSE_RED FLOWER_SAFFRON_WILD FLOWER_SAGE_WILD FLOWER_SEA_DEW FLOWER_SUN_FLOWER FLOWER_WOAD FRUIT_WILD_BANANA FRUIT_BELL_PEPPER FRUIT_BOTTLE_GOURD FRUIT_CUCUMBER_WILD FRUIT_CURRANT_TOMATO FRUIT_EGGPLANT_WILD FRUIT_KIWI_WILD FRUIT_MUSK_MELON FRUIT_WILD_PINEAPPLE FRUIT_SUMMER_SQUASH FRUIT_VINE_TOMATO FRUIT_WATER_MELON FRUIT_WOLF_APPLE MUSHROOM_FOREST MUSHROOM_OYSTER MUSHROOM_BLACK_TRUFFLE MUSHROOM_SUMMER_TRUFFLE MUSHROOM_WHITE_TRUFFLE GRASS_BARLEY GRAIN_BUCKWHEAT GRAIN_FADELESS_FLOWER GRAIN_LEMONGRASS GRAIN_FLAX GRAIN_LOVE_GRASS GRASS_MAIZE_WILD GRASS_MILLET GRAIN_CANOLA GRASS_OATS GRAIN_RICE_WILD GRASS_RYE GRAIN_SESAME VEGETABLE_PEPPER_BLACK VEGETABLE_BROCCOLI VEGETABLE_CARROT VEGETABLE_CELERY LEAF_KALE VEGETABLE_CAULIFLOWER VEGETABLE_PARSNIP VEGETABLE_GARLIC VEGETABLE_GINGER VEGETABLE_SHALLOT LEAF_CABBAGE VEGETABLE_LEEK LEAF_LETTUCE VEGETABLE_OKRA VEGETABLE_ONION VEGETABLE_RADISH VEGETABLE_BEET_RED VEGETABLE_RHUBARB VEGETABLE_CHIVE VEGETABLE_RUTABAGA VEGETABLE_ASPARAGUS LEAF_SPINACH LEAF_SPRING_GREEN VEGETABLE_BEET VEGETABLE_SWEET_POTATO LEAF_WATERCRESS VEGETABLE_YAM_WATER VEGETABLE_YAM PLANT_AGAVE CACTUS_PRICKLY_PEAR FERN_BRACKEN FERN_CINNAMON FERN_OSTRICH FERN_VEGETABLE KELP_RED PLANT_TEA LEGUME_BROAD_BEAN LEGUME_CHICKPEA LEGUME_COWPEA LEGUME_LENTIL HERB_LICORICE LEGUME_LUPIN LEGUME_PEA LEGUME_PEANUT LEGUME_BEAN_SNAP LEGUME_SOY LEGUME_SWEETPEA HERB_ANISE HERB_BASIL HERB_CATNIP HERB_THYME HERB_TARRAGON HERB_MINT HERB_MINT_PEPPER HERB_PERILLA HERB_MINT_RED HERB_PARSLEY HERB_MINT_SPEAR HERB_MINT_WATER HERB_MINT_WOOLLY HERB_WORMWOOD <br />
+  <br />
+  <b>Underground bushes:</b> (only edible, cookable or brewable)<br />
+      # getplants GRASS_BARLEY_CAVE LICHEN_GREEN GRASS_OATS_PALE FUNGUS_PEARLY_BLOOMS FLOWER_STONE GRASS_MILLET_WHITE GRASS_RYE_CAVERN FRUIT_UNDERBERRY MUSHROOM_COCOA_CUP MUSHROOM_GHOST_CAP BERRIES_GROTTO FUNGUS_HONEYSTALK GRASS_GRAIN_MOSS FUNGUS_SPUD_MOLD MUSHROOM_TOE_TROLL FUNGUS_BLOODSTALKS <br />
+  <br />
+    </p>
+    <hr />
+    <br />
+    <font size="5"><b>Aboveground crop table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>black currant</b><br />
+            BERRIES_BLACK_CURRANT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>black currant wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): black currant syrup (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild blackberry</b><br />
+            BERRIES_BLACK_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>wild blackberry wine (2) (Y)</td>
+          <td>DYE: purple dye (20)<br />
+            EXTRACT(Barrel): blackberry jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild blueberry</b><br />
+            BERRIES_BLUE_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>blueberry wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): blueberry jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>bramble berry</b><br />
+            BERRY_BRAMBLE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>bramble berry wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): bramble berry jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>elder berry</b><br />
+            BERRY_ELDER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>Spring Summer Autumn </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>elder berry wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): elder berry jelly (10)</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>fen berry</b><br />
+            BERRIES_FEN</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>fen berry wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): fen berry jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>red currant</b><br />
+            BERRIES_RED_CURRANT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>red currant wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): red currant syrup (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>red grape</b><br />
+            FRUIT_GRAPE_RED</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>red wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): red grape jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>red mulberry</b><br />
+            BERRIES_RED_MULBERRY</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>mulberry wine (2) (Y)</td>
+          <td>DYE: sanguine dye (20)<br />
+            EXTRACT(Barrel): mulberry jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>snow berry</b><br />
+            BERRIES_SNOW</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>snow berry wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): snow berry jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>white grape</b><br />
+            FRUIT_GRAPE_WHITE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>white wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): white grape jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wolf berry</b><br />
+            BERRY_WOLF</td>
+          <td>2</td>
+          <td>25</td>
+          <td><font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>wolf berry brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): wolf berry jelly (10)</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>blue lotus</b><br />
+            FLOWER_BLUE_LOTUS</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): lotus fragrance (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>canna lily</b><br />
+            FLOWER_CANNA_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>canna spirits (2) (Y)</td>
+          <td>THREAD: canna lily thread (2)<br />
+          DYE: canna dye (20)</td>
+          <td>Thread Brew</td>
+        </tr>
+        <tr>
+          <td><b>cassava shrub</b><br />
+            FLOWER_CASSAVA_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>cassava spirits (2) (Y)</td>
+          <td>LEAF: cassava shrub leaves (2)<br />
+            SUGAR: tapioca (20)<br />
+            EXTRACT(Barrel): cassava syrup (20)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild dandelion</b><br />
+            FLOWER_DANDELION_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dandelion wine (2) (Y)</td>
+          <td>DYE: dandelion dye (5)<br />
+          </td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild daffodil</b><br />
+            FLOWER_DAFFODIL_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): daffodil poison (40)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>dog bane</b><br />
+            FLOWER_DOG_BANE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>THREAD: dog bane thread (2)<br />
+          EXTRACT(Flask): dog bane extract (40)</td>
+          <td>Thread</td>
+        </tr>
+        <tr>
+          <td><b>field tulip</b><br />
+            FLOWER_FIELD_TULIP</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): tulip poison (40)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>fleece flower</b><br />
+            FLOWER_FLEECE_FLOWER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>henna flower</b><br />
+            FLOWER_HENNA_FLOWER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>DYE: rustic dye (20)</td>
+          <td>Useless Dye </td>
+        </tr>
+        <tr>
+          <td><b>wild hibiscus</b><br />
+            FLOWER_HIBISCUS_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): hibiscus fragrance (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>honey suckle</b><br />
+            FLOWER_HONEY_SUCKLE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): honey suckle fragrance (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild hyacinth</b><br />
+            FLOWER_HYACINTH_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): hyacinth fragrance (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>indigo flower</b><br />
+            FLOWER_INDIGO</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>DYE: indigo dye (20)</td>
+          <td>Useless Dye </td>
+        </tr>
+        <tr>
+          <td><b>klamath weed</b><br />
+            FLOWER_KLAMATH</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>DYE: klamath dye (10)<br />
+          </td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild lavender</b><br />
+            FLOWER_LAVENDER_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): lavender fragrance (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>marsh root</b><br />
+            HERB_MARSH_ROOT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): marsh root extract (10)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>morning glory</b><br />
+            FLOWER_MORNING_GLORY_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): morning glory fragrance (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild orchid</b><br />
+            FLOWER_ORCHID_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): orchid fragrance (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>pink carnation</b><br />
+            FLOWER_CARNATION</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): carnation fragrance (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>red jute</b><br />
+            FLOWER_JUTE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>LEAF: red jute leaves (2)<br />
+            THREAD: red jute thread (2)<br />
+            </td>
+          <td>Thread</td>
+        </tr>
+        <tr>
+          <td><b>rose bush</b><br />
+            FLOWER_ROSE_RED</td>
+          <td>3</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: rose bush leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>river lily</b><br />
+            FLOWER_LILY</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): lily fragrance (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild safflower</b><br />
+            FLOWER_SAFFLOWER_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>DYE: safflower dye (20)<br />
+            EXTRACT(Barrel): safflower oil (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild saffron</b><br />
+            FLOWER_SAFFRON_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>DYE: saffron dye (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild sage</b><br />
+            FLOWER_SAGE_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): sage oil (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>sea dew</b><br />
+            FLOWER_SEA_DEW</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): sea dew oil (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>sun flower</b><br />
+            FLOWER_SUN_FLOWER</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: sunflower seed flour (20)<br />
+          EXTRACT(Barrel): sunflower butter (10)</td>
+          <td>Mill </td>
+        </tr>
+        <tr>
+          <td><b>vanilla flower</b><br />
+            FLOWER_VANILLA</td>
+          <td>3</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): liquid vanilla extract (10)<br />
+            OIL: vanilla oil (20)<br />
+            PRESSED: vanilla bean husk (3)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild violet</b><br />
+            FLOWER_VIOLET_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): violet fragrance (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>woad flower</b><br />
+            FLOWER_WOAD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>LEAF: woad flower leaves (2)<br />
+          DYE: woad dye (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild banana</b><br />
+            FRUIT_WILD_BANANA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>banana beer (3) (Y)</td>
+          <td>EXTRACT(Barrel): banana sauce (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>bell pepper</b><br />
+            FRUIT_BELL_PEPPER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: paprika (20)<br />
+            EXTRACT(Barrel): hot pepper sauce (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>bottle gourd</b><br />
+            FRUIT_BOTTLE_GOURD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild cucumber</b><br />
+            FRUIT_CUCUMBER_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>currant tomato</b><br />
+            FRUIT_CURRANT_TOMATO</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild eggplant</b><br />
+            FRUIT_EGGPLANT_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild kiwifruit</b><br />
+            FRUIT_KIWI_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>kiwifruit wine (3) (Y)</td>
+          <td>EXTRACT(Barrel): kiwi jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>musk melon</b><br />
+            FRUIT_MUSK_MELON</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild pineapple</b><br />
+            FRUIT_WILD_PINEAPPLE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>pineapple wine (3) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>summer squash</b><br />
+            FRUIT_SUMMER_SQUASH</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>vine tomato</b><br />
+            FRUIT_VINE_TOMATO</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): tomato sauce (10)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>water melon</b><br />
+            FRUIT_WATER_MELON</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>water melon wine (3) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wolf apple</b><br />
+            FRUIT_WOLF_APPLE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>forest mushroom</b><br />
+            MUSHROOM_FOREST</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Flask): forest mushroom oil (10)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>oyster mushroom</b><br />
+            MUSHROOM_OYSTER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>black truffle</b><br />
+            MUSHROOM_BLACK_TRUFFLE</td>
+          <td>3</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>black truffle vodka (5) (Y)</td>
+          <td>EXTRACT(Flask): black truffle oil (30)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>summer truffle</b><br />
+            MUSHROOM_SUMMER_TRUFFLE</td>
+          <td>3</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>summer truffle vodka (5) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>white truffle</b><br />
+            MUSHROOM_WHITE_TRUFFLE</td>
+          <td>3</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>white truffle vodka (5) (Y)</td>
+          <td>EXTRACT(Flask): white truffle oil (30)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>barley grass</b><br />
+            GRASS_BARLEY</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>barley porter (2) (Y)</td>
+          <td>FLOUR: barley flour (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>buck wheat</b><br />
+            GRAIN_BUCKWHEAT</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>buck wheat ale (2) (Y)</td>
+          <td>FLOUR: buck wheat flour (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>fadeless flower</b><br />
+            GRAIN_FADELESS_FLOWER</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: fadeless flower flour (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>lemon grass</b><br />
+            GRAIN_LEMONGRASS</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>loom blossom</b><br />
+            GRAIN_FLAX</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>THREAD: loom blossom thread (2)<br />
+            FLOUR: flax flour (20)<br />
+            OIL: flax oil (10)<br />
+            PRESSED: pressed flax seed (2)</td>
+          <td>Thread</td>
+        </tr>
+        <tr>
+          <td><b>love grass</b><br />
+            GRAIN_LOVE_GRASS</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>lovegrass whiskey (2) (Y)</td>
+          <td>FLOUR: lovegrass flour (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild maize</b><br />
+            GRASS_MAIZE_WILD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>corn whiskey (2) (Y)</td>
+          <td>FLOUR: corn meal (10)<br />
+          </td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>millet grass</b><br />
+            GRASS_MILLET</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>millet beer (2) (Y)</td>
+          <td>FLOUR: millet flour (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>golden bloom</b><br />
+            GRAIN_CANOLA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: ground golden bloom seed (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild oat</b><br />
+            GRASS_OATS</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>oatmeal stout (2) (Y)</td>
+          <td>FLOUR: milled oats (20)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild rice</b><br />
+            GRAIN_RICE_WILD</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>rice wine (2) (Y)</td>
+          <td>FLOUR: rice flour (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>rye grass</b><br />
+            GRASS_RYE</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>rye whiskey (2) (Y)</td>
+          <td>FLOUR: rye flour (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild sesame</b><br />
+            GRAIN_SESAME</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: sesame paste (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>black pepper</b><br />
+            VEGETABLE_PEPPER_BLACK</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: ground peppercorn (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild broccoli</b><br />
+            VEGETABLE_BROCCOLI</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild carrot</b><br />
+            VEGETABLE_CARROT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild celery</b><br />
+            VEGETABLE_CELERY</td>
+          <td>2</td>
+          <td>25</td>
+          <td><font color="red">None</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>curling kale</b><br />
+            LEAF_KALE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: curling kale leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>flower cabbage</b><br />
+            VEGETABLE_CAULIFLOWER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>fork root</b><br />
+            VEGETABLE_PARSNIP</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild garlic</b><br />
+            VEGETABLE_GARLIC</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: wild garlic leaves (10)<br />
+            FLOUR: garlic powder (10)<br />
+            EXTRACT(Barrel): garlic extract (10)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>ginger root</b><br />
+            VEGETABLE_GINGER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>ginger beer (3) (Y)</td>
+          <td>FLOUR: ginger powder (20)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>gray shallot</b><br />
+            VEGETABLE_SHALLOT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: shallot powder (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>green cabbage</b><br />
+            LEAF_CABBAGE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: green cabbage leaves (3)<br />
+            EXTRACT(Barrel): cabbage juice (20)</td>
+          <td>Leaves </td>
+        </tr>
+        <tr>
+          <td><b>wild leek</b><br />
+            VEGETABLE_LEEK</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild lettuce</b><br />
+            LEAF_LETTUCE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: wild lettuce leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>wild okra</b><br />
+            VEGETABLE_OKRA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: wild okra leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>wild onion</b><br />
+            VEGETABLE_ONION</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: onion powder (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>quick root</b><br />
+            VEGETABLE_RADISH</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>red beet</b><br />
+            VEGETABLE_BEET_RED</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>beet wine (2) (Y)</td>
+          <td>LEAF: red beet leaves (3)</td>
+          <td>Brew Leaves </td>
+        </tr>
+        <tr>
+          <td><b>wild rhubarb</b><br />
+            VEGETABLE_RHUBARB</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>rhubarb wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): rhubarb sauce (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>rush bulbs</b><br />
+            VEGETABLE_CHIVE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>satchel root</b><br />
+            VEGETABLE_RUTABAGA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: satchel root leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>sparrow grass</b><br />
+            VEGETABLE_ASPARAGUS</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild spinach</b><br />
+            LEAF_SPINACH</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: wild spinach leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>spring green</b><br />
+            LEAF_SPRING_GREEN</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: spring green leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>sugar beet</b><br />
+            VEGETABLE_BEET</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>beet sugar rum (2) (Y)</td>
+          <td>SUGAR: raw beet sugar (20)<br />
+            EXTRACT(Barrel): beet syrup (30)<br />
+            EXTRACT(Flask): beet molasses (40)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>sweet spud</b><br />
+            VEGETABLE_SWEET_POTATO</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>sweet spud brew (2) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>water cress</b><br />
+            LEAF_WATERCRESS</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: water cress leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>water yam</b><br />
+            VEGETABLE_YAM_WATER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>yam wine (3) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>yellow yam</b><br />
+            VEGETABLE_YAM</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>yam brew (2) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>barrel cactus</b><br />
+            CACTUS_BARREL</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>century star</b><br />
+            PLANT_AGAVE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>desert brew (3) (Y)</td>
+          <td>EXTRACT(Barrel): desert nectar (20)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>prickly pear</b><br />
+            CACTUS_PRICKLY_PEAR</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>spined cactus</b><br />
+            CACTUS_SPINED</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>bracken fern</b><br />
+            FERN_BRACKEN</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>bracken beer (3) (Y)</td>
+          <td>LEAF: bracken fern leaves (5)<br />
+          FLOUR: bracken meal (20)</td>
+          <td>Leaves Brew</td>
+        </tr>
+        <tr>
+          <td><b>cinnamon fern</b><br />
+            FERN_CINNAMON</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>LEAF: cinnamon fern leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>ostrich fern</b><br />
+            FERN_OSTRICH</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>LEAF: ostrich fern leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>vegetable fern</b><br />
+            FERN_VEGETABLE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: vegetable fern leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>red kelp</b><br />
+            KELP_RED</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>SUGAR: dried kelp powder (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>tea plant</b><br />
+            PLANT_TEA</td>
+          <td>3</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: tea plant leaves (5)<br />
+          OIL: tea oil (20)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>broad bean</b><br />
+            LEGUME_BROAD_BEAN</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: broad bean flour (10)<br />
+          EXTRACT(Barrel): broad bean paste (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>chick pea</b><br />
+            LEGUME_CHICKPEA</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: chick pea flour (20)<br />
+            EXTRACT(Barrel): chick pea paste (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>cow pea</b><br />
+            LEGUME_COWPEA</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: cow pea flour (10)<br />
+          EXTRACT(Barrel): cow pea paste (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild lentil</b><br />
+            LEGUME_LENTIL</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: lentil flour (10)<br />
+          EXTRACT(Barrel): lentil paste (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild licorice</b><br />
+            HERB_LICORICE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>licorice spirits (3) (Y)</td>
+          <td>EXTRACT(Flask): licorice extract (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild lupin</b><br />
+            LEGUME_LUPIN</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: lupin flour (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild pea</b><br />
+            LEGUME_PEA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: peasemeal (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild peanut</b><br />
+            LEGUME_PEANUT</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: peanut flour (10)<br />
+            EXTRACT(Barrel): peanut milk (4)<br />
+            OIL: peanut oil (5)<br />
+            PRESSED: peanut mash (2)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>snap bean</b><br />
+            LEGUME_BEAN_SNAP</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: snap bean flour (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>soy bean</b><br />
+            LEGUME_SOY</td>
+          <td>15</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: soy flour (10)<br />
+            EXTRACT(Barrel): soy milk (4)<br />
+            OIL: soy bean oil (5)<br />
+            PRESSED: pressed soy bean (2)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>sweet pea</b><br />
+            LEGUME_SWEETPEA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: sweet pea meal (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>anise herb</b><br />
+            HERB_ANISE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>anise spirits (3) (Y)</td>
+          <td>EXTRACT(Barrel): aniseed extract (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild basil</b><br />
+            HERB_BASIL</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: wild basil leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>cat mint</b><br />
+            HERB_CATNIP</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>LEAF: cat mint leaves (2)<br />
+          EXTRACT(Barrel): cat mint extract (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>common thyme</b><br />
+            HERB_THYME</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>dragon herb</b><br />
+            HERB_TARRAGON</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): dragon herb extract (10)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>field mint</b><br />
+            HERB_MINT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: field mint leaves (5)<br />
+          EXTRACT(Flask): field mint oil (10)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>pepper mint</b><br />
+            HERB_MINT_PEPPER</td>
+          <td>3</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: pepper mint leaves (5)<br />
+          EXTRACT(Flask): pepper mint oil (20)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>purple mint</b><br />
+            HERB_PERILLA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: purple mint leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>red mint</b><br />
+            HERB_MINT_RED</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: red mint leaves (5)<br />
+          EXTRACT(Flask): red mint oil (20)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>rock parsley</b><br />
+            HERB_PARSLEY</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: rock parsley leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>spear mint</b><br />
+            HERB_MINT_SPEAR</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: spear mint leaves (5)<br />
+          EXTRACT(Flask): spear mint oil (20)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>water mint</b><br />
+            HERB_MINT_WATER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: water mint leaves (5)<br />
+          EXTRACT(Flask): water mint oil (10)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>woolly mint</b><br />
+            HERB_MINT_WOOLLY</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: woolly mint leaves (5)<br />
+          EXTRACT(Flask): woolly mint oil (20)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>wild wormwood</b><br />
+            HERB_WORMWOOD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>absinthe (3) (Y)</td>
+          <td>EXTRACT(Barrel): wormwood extract (10)</td>
+          <td>Brew</td>
+        </tr>
+      </center>
+    </table>
+    <br />
+    <font size="5"><b>Subterranean crop table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>cave barley</b><br />
+            GRASS_BARLEY_CAVE</td>
+          <td>15</td>
+          <td>41</td>
+          <td>Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>dwarven porter (2) (Y)</td>
+          <td>FLOUR: dwarven barley flour (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>green lichen</b><br />
+            LICHEN_GREEN</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>lichen swill (2) (Y)</td>
+          <td>N/A</td>
+          <td>Brew Embark </td>
+        </tr>
+        <tr>
+          <td><b>pale oat</b><br />
+            GRASS_OATS_PALE</td>
+          <td>2</td>
+          <td>41</td>
+          <td>Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>dwarven stout (2) (Y)</td>
+          <td>FLOUR: dwarven oatmeal (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>pearly bloom</b><br />
+            FUNGUS_PEARLY_BLOOMS</td>
+          <td>5</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dwarven moonlight (8) (Y)</td>
+          <td>N/A</td>
+          <td>Brew Embark </td>
+        </tr>
+        <tr>
+          <td><b>stone flower</b><br />
+            FLOWER_STONE</td>
+          <td>3</td>
+          <td>25</td>
+          <td>Spring Summer </td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>stone flower tea (5) (Y)</td>
+          <td>FLOUR: stone flower seed meal (30)<br />
+          </td>
+          <td>Brew Mill </td>
+        </tr>
+        <tr>
+          <td><b>white millet</b><br />
+            GRASS_MILLET_WHITE</td>
+          <td>15</td>
+          <td>41</td>
+          <td>Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>dwarven grog (2) (Y)</td>
+          <td>FLOUR: dwarven millet flour (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>cavern rye</b><br />
+            GRASS_RYE_CAVERN</td>
+          <td>15</td>
+          <td>41</td>
+          <td>Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dwarven whiskey (2) (Y)</td>
+          <td>FLOUR: dwarven rye flour (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>chasm berry</b><br />
+            FRUIT_UNDERBERRY</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dwarven gin (2) (Y)</td>
+          <td>N/A</td>
+          <td>Brew Embark </td>
+        </tr>
+        <tr>
+          <td><b>cocoa cup</b><br />
+            MUSHROOM_COCOA_CUP</td>
+          <td>5</td>
+          <td>25</td>
+          <td>Spring Summer </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dwarven chocolate (20) (Y)</td>
+          <td>FLOUR: dwarven cocoa powder (20)<br />
+            EXTRACT(Barrel): dwarven cocoa butter (20)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>ghost cap</b><br />
+            MUSHROOM_GHOST_CAP</td>
+          <td>2</td>
+          <td>41</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>DYE: ghost dye (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>grotto berry</b><br />
+            BERRIES_GROTTO</td>
+          <td>2</td>
+          <td>41</td>
+          <td>Spring Summer </td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dwarven brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): grotto jelly (20)</td>
+          <td>Brew </td>
+        </tr>
+        <tr>
+          <td><b>honey stalk</b><br />
+            FUNGUS_HONEYSTALK</td>
+          <td>2</td>
+          <td>41</td>
+          <td>Spring Summer </td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>dwarven mead (2) (Y)</td>
+          <td>FLOUR: honey stalk powder (20)<br />
+            EXTRACT(Barrel): dwarven honey (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>ink vine</b><br />
+            ROOT_INK</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>DYE: inkvine dye (20)</td>
+          <td>Useless Dye </td>
+        </tr>
+        <tr>
+          <td><b>moss grain</b><br />
+            GRASS_GRAIN_MOSS</td>
+          <td>2</td>
+          <td>41</td>
+          <td>Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dwarven bourban (2) (Y)</td>
+          <td>FLOUR: dwarven moss meal (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>spud mold</b><br />
+            FUNGUS_SPUD_MOLD</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dwarven vodka (2) (Y)</td>
+          <td>DYE: brown mold dye (10)<br />
+          </td>
+          <td>Brew Embark </td>
+        </tr>
+        <tr>
+          <td><b>troll toe</b><br />
+            MUSHROOM_TOE_TROLL</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>THREAD: troll toe thread (1)<br />
+          FLOUR: dwarven spice (15)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wooly gill</b><br />
+            FUNGUS_WOOLYGILL</td>
+          <td>2</td>
+          <td>41</td>
+          <td>Summer Autumn </td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>THREAD: wooly gill thread (1)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>blood stalk</b><br />
+            FUNGUS_BLOODSTALKS</td>
+          <td>5</td>
+          <td>25</td>
+          <td>Summer Autumn Winter </td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>dwarven bloodwine (5) (Y)</td>
+          <td>DYE: sanguine dye (20)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>slither weed</b><br />
+            GRASS_SLITHER_WEED</td>
+          <td>2</td>
+          <td>25</td>
+          <td>Autumn Winter </td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>DYE: emerald dye (20)</td>
+          <td>Useless Dye </td>
+        </tr>
+      </center>
+    </table>
+    <br />
+    <font size="5"><b>Fake plant table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>bread wheat</b><br />
+            GRAIN_BREAD_WHEAT</td>
+          <td>15</td>
+          <td>0</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>wheat beer (2) (Y)</td>
+          <td>FLOUR: wheat flour (20)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>velvet bean</b><br />
+            LEGUME_VELVET_BEAN</td>
+          <td>15</td>
+          <td>0</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: velvet bean flour (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>winged bean</b><br />
+            LEGUME_WINGED_BEAN</td>
+          <td>15</td>
+          <td>0</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: winged bean flour (10)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>fennel herb</b><br />
+            HERB_FENNEL</td>
+          <td>2</td>
+          <td>0</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>fennel spirits (3) (Y)</td>
+          <td>EXTRACT(Barrel): fennel extract (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild marjoram</b><br />
+            HERB_OREGANO</td>
+          <td>2</td>
+          <td>0</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>LEAF: wild marjoram leaves (5)<br />
+          </td>
+          <td>Leaves</td>
+        </tr>
+      </center>
+    </table>
+    <p>&nbsp;</p>
+    <h1>Flora &amp; Fauna Trees - Optional &quot;more trees&quot; setting</h1>
+    <hr />
+    <p>
+      <content-type: text/html>
+      130 plants.<br />
+      <br />
+      <font size="5"><b>Dfhack # getplants commands for easy designating tree cutting and plant gathering:</b><br />
+      <br />
+      <b>Aboveground bushes:</b> (only edible, cookable or brewable)<br />
+      # getplants NUT_OAK NUT_ALMENDRAS FRUIT_ALDER NUT_ALMOND FRUIT_APPLE FRUIT_APRICOT FRUIT_AVOCADO NUT_BEECH FRUIT_BREADFRUIT NUT_CANDLENUT NUT_CACAO NUT_CAROB FRUIT_CASHEW FRUIT_CHERRY NUT_CHESTNUT HERB_CINNAMON FRUIT_CITRON FRUIT_COCONUT FRUIT_COFFEE FRUIT_CRABAPPLE FRUIT_DATE FRUIT_DRAGON FRUIT_FIG FRUIT_GRAPEFRUIT FRUIT_GUAVA NUT_HAZELNUT NUT_HICKORY FRUIT_JUNIPER_BERRY NUT_KOLA NUT_LARCH FRUIT_LEMON FRUIT_LIME FRUIT_MANGO FRUIT_NECTARINE FRUIT_NUTMEG FRUIT_OLIVE_BLACK FRUIT_OLIVE FRUIT_ORANGE FRUIT_PAPAYA FRUIT_PEACH FRUIT_PEAR FRUIT_PERSIMMON NUT_PISTACHIO FRUIT_PLUM FRUIT_PLUM_YELLOW FRUIT_POMEGRANATE FRUIT_PUMELO FRUIT_STARFRUIT FRUIT_TAMARIND FRUIT_HAWTHORN FRUIT_TREE_TOMATO NUT_WALNUT <br />
+  <br />
+  <b>Aboveground trees:</b><br />
+      # getplants ALMENDRA ALMOND APPLE_TREE APRICOT ASPEN AVOCADO BALSA BAMBOO_TREE BAOBAB BASSWOOD BEECH BLACKWOOD BREADFRUIT CAMPHORWOOD CAROB CASHEW CHERRY CINNAMON CITRUS COFFEE CORAL_TREE CORK COTTONWOOD CRABAPPLE CYCAD CYPRESS DOGWOOD EBONY ELM FIG FIR GUAVA GUM HAZEL HEMLOCK_TREE HICKORY HOLLY IRONBARK JUNIPER KOLA LAUREL LOCUSTWOOD LOGWOOD MULBERRY NECTARINE OLIVE PAPAYA PAPERBARK PEACH PEAR PEPPERIDGE PEPPERWOOD PLUM POMEGRANATE POPLAR PUZZLE_TREE REDWOOD ROSEWOOD ROWAN SAPPANWOOD SASSAFRAS SPRUCE STARFRUIT_TREE SWEETGUM SYCAMORE TAMARIND TAMARILLO TEAK WALNUT WHITEBEAM WINGFRUIT YEW YUCCA <br />
+  <br />
+    </p>
+    <hr />
+    <br />
+    <font size="5"><b>Aboveground crop table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>oak nut</b><br />
+            NUT_OAK</td>
+          <td>15</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: acorn flour (4)<br />
+          </td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>almendra nut</b><br />
+            NUT_ALMENDRAS</td>
+          <td>15</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: almendra flour (20)<br />
+          </td>
+          <td>Mill </td>
+        </tr>
+        <tr>
+          <td><b>alder catkin</b><br />
+            FRUIT_ALDER</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>almond nut</b><br />
+            NUT_ALMOND</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): almond milk (20)<br />
+            OIL: almond oil (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild apple</b><br />
+            FRUIT_APPLE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>apple cider (2) (Y)</td>
+          <td>EXTRACT(Barrel): apple sauce (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild apricot</b><br />
+            FRUIT_APRICOT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>apricot wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): apricot jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild avocado</b><br />
+            FRUIT_AVOCADO</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): avocado sauce (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>beech nut</b><br />
+            NUT_BEECH</td>
+          <td>15</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: beech nut flour (20)<br />
+          </td>
+          <td>Mill </td>
+        </tr>
+        <tr>
+          <td><b>wild breadfruit</b><br />
+            FRUIT_BREADFRUIT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): breadfruit jelly (10)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>candle nut</b><br />
+            NUT_CANDLENUT</td>
+          <td>15</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: candlenut flour (10)<br />
+            SOAP: candlenut soap (5)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>cacao bean</b><br />
+            NUT_CACAO</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>cacao beer (4) (Y)</td>
+          <td>FLOUR: cocoa powder (20)<br />
+          EXTRACT(Barrel): cocoa butter (20)</td>
+          <td>Brew Mill </td>
+        </tr>
+        <tr>
+          <td><b>carob nut</b><br />
+            NUT_CAROB</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: carob gum (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>cashew fruit</b><br />
+            FRUIT_CASHEW</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>cashew wine (4) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>cedar cone</b><br />
+            NUT_CEDAR</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>OIL: cedar oil (5)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>wild cherry</b><br />
+            FRUIT_CHERRY</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>cherry wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): cherry jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild chestnut</b><br />
+            NUT_CHESTNUT</td>
+          <td>15</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: chestnut flour (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>cinnamon bark</b><br />
+            HERB_CINNAMON</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>FLOUR: ground cinnamon (20)<br />
+          EXTRACT(Barrel): cinnamon extract (20)</td>
+          <td>Mill </td>
+        </tr>
+        <tr>
+          <td><b>wild citron</b><br />
+            FRUIT_CITRON</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>citron brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): citron jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild coconut</b><br />
+            FRUIT_COCONUT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>coconut beer (3) (Y)</td>
+          <td>EXTRACT(Barrel): coconut milk (20)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>coffee bean</b><br />
+            FRUIT_COFFEE</td>
+          <td>3</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>brewed coffee (5) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>crab apple</b><br />
+            FRUIT_CRABAPPLE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>crab apple cider (2) (Y)</td>
+          <td>EXTRACT(Barrel): crab apple jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild date</b><br />
+            FRUIT_DATE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>SUGAR: date sugar (20)<br />
+            EXTRACT(Barrel): date syrup (20)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>dragon fruit</b><br />
+            FRUIT_DRAGON</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>dragon fruit brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): dragon fruit jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>feather tree feather</b><br />
+            LEAF_FEATHER</td>
+          <td>3</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>THREAD: feather tree feather thread (4)<br />
+          </td>
+          <td>Thread</td>
+        </tr>
+        <tr>
+          <td><b>wild fig</b><br />
+            FRUIT_FIG</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>fig wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): fig jelly (20)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild grapefruit</b><br />
+            FRUIT_GRAPEFRUIT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>grapefruit brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): grapefruit jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild guava</b><br />
+            FRUIT_GUAVA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>guava spirits (2) (Y)</td>
+          <td>EXTRACT(Barrel): guava jelly (20)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>hazel nut</b><br />
+            NUT_HAZELNUT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>hickory nut</b><br />
+            NUT_HICKORY</td>
+          <td>15</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: hickory nut flour (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>holly berry</b><br />
+            BERRY_HOLLY</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): holly extract (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>juniper berry</b><br />
+            FRUIT_JUNIPER_BERRY</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>mountain gin (4) (Y)</td>
+          <td>EXTRACT(Barrel): juniper berry jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>kapok pod</b><br />
+            FRUIT_KAPOK</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>THREAD: kapok pod thread (2)</td>
+          <td>Thread </td>
+        </tr>
+        <tr>
+          <td><b>kola nut</b><br />
+            NUT_KOLA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>larch cone</b><br />
+            NUT_LARCH</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>OIL: larch oil (5)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild lemon</b><br />
+            FRUIT_LEMON</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>lemon spirits (2) (Y)</td>
+          <td>EXTRACT(Barrel): lemon jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild lime</b><br />
+            FRUIT_LIME</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>lime spirits (2) (Y)</td>
+          <td>EXTRACT(Barrel): lime jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild mango</b><br />
+            FRUIT_MANGO</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>mango wine (3) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild nectarine</b><br />
+            FRUIT_NECTARINE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>nectarine brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): nectarine jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild nutmeg</b><br />
+            FRUIT_NUTMEG</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: nutmeg powder (20)<br />
+          </td>
+          <td>Mill </td>
+        </tr>
+        <tr>
+          <td><b>black olive</b><br />
+            FRUIT_OLIVE_BLACK</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>OIL: black oilve oil (10)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>green olive</b><br />
+            FRUIT_OLIVE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>OIL: green oilve oil (10)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild orange</b><br />
+            FRUIT_ORANGE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>orange brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): orange jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild papaya</b><br />
+            FRUIT_PAPAYA</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): papaya jelly (10)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild peach</b><br />
+            FRUIT_PEACH</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>peach brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): peach jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild pear</b><br />
+            FRUIT_PEAR</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>pear cider (2) (Y)</td>
+          <td>EXTRACT(Barrel): pear sauce (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild persimmon</b><br />
+            FRUIT_PERSIMMON</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>persimmon wine (2) (Y)</td>
+          <td>N/A</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>pistachio nut</b><br />
+            NUT_PISTACHIO</td>
+          <td>15</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: pistachio flour (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>red plum</b><br />
+            FRUIT_PLUM</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>red plum wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): red plum jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>yellow plum</b><br />
+            FRUIT_PLUM_YELLOW</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>yellow plum wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): yellow plum jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild pomegranate</b><br />
+            FRUIT_POMEGRANATE</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>pomegranate wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): pomegranate jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>wild pomelo</b><br />
+            FRUIT_PUMELO</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>pomelo brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): pomelo jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>star fruit</b><br />
+            FRUIT_STARFRUIT</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): star fruit jelly (30)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>wild tamarind</b><br />
+            FRUIT_TAMARIND</td>
+          <td>2</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>tamarind wine (2) (Y)</td>
+          <td>EXTRACT(Barrel): tamarind jelly (10)</td>
+          <td>Brew</td>
+        </tr>
+        <tr>
+          <td><b>thorn bush</b><br />
+            FRUIT_HAWTHORN</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="red">No</font></td>
+          <td>Pr.</td>
+          <td>N/A</td>
+          <td>LEAF: thorn bush leaves (3)<br />
+          EXTRACT(Barrel): thornapple jelly (10)</td>
+          <td>Leaves</td>
+        </tr>
+        <tr>
+          <td><b>tree tomato</b><br />
+            FRUIT_TREE_TOMATO</td>
+          <td>2</td>
+          <td>25</td>
+          <td>All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>EXTRACT(Barrel): tree tomato jelly (10)</td>
+          <td>Cook </td>
+        </tr>
+        <tr>
+          <td><b>walnut kernal</b><br />
+            NUT_WALNUT</td>
+          <td>15</td>
+          <td>25</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>N/A</td>
+          <td>FLOUR: walnut flour (10)</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td><b>tree fern</b><br />
+            TREEFERN</td>
+          <td>1</td>
+          <td>25</td>
+          <td>N/A? <font color="red">None</font></td>
+          <td><font color="red">No</font></td>
+          <td><font color="red">No</font></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>--</td>
+        </tr>
+      </center>
+    </table>
+    <br />
+    <font size="5"><b>Fake plant table:</b><br />
+    <table border="1">
+      <center>
+        <tr>
+          <td><b>Name</b><br />
+            <b>ID</b></td>
+          <td><b>Value</b></td>
+          <td><b>Grows</b></td>
+          <td><b>Seasons</b></td>
+          <td><b>Eat</b></td>
+          <td><b>Cook</b></td>
+          <td><b>Brew (Value) (Cook)</b></td>
+          <td><b>Products (Value)</b></td>
+          <td><b>Hints</b></td>
+        </tr>
+        <tr>
+          <td><b>wild kumquat</b><br />
+            FRUIT_KUMQUAT</td>
+          <td>2</td>
+          <td>0</td>
+          <td>N/A? All year</td>
+          <td><font color="lime">Yes</font></td>
+          <td><font color="lime">Yes</font></td>
+          <td>kumquat brandy (2) (Y)</td>
+          <td>EXTRACT(Barrel): kumquat jelly (10)</td>
+          <td>Brew </td>
+        </tr>
+      </center>
+    </table>
+    <br />
+&nbsp;
+</p>
+<p align="center">&nbsp;</p></td>
+    
+    <content-type: text/html>
+
+</body>
+</html>

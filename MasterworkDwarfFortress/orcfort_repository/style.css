@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'KnightsQuestRegular';
+    src: url('masterworkdwarffortress/repository/KnightsQuestRegular.ttf');
+}
+
+*{
+font: 'KnightsQuestRegular', Arial, Verdana;
+}

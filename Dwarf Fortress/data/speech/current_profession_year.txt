@@ -1,0 +1,9 @@
+This is my [CONTEXT:ORDINAL] year as a [CONTEXT:UNIT_NAME].
+I have been a [CONTEXT:UNIT_NAME] for [CONTEXT:NUMBER] years.
+I am a [CONTEXT:UNIT_NAME].  I have been one for [CONTEXT:NUMBER] years.
+For almost [CONTEXT:NUMBER] years, I have been a [CONTEXT:UNIT_NAME].
+I am a [CONTEXT:UNIT_NAME] with over [CONTEXT:NUMBER] years of experience.
+For [CONTEXT:NUMBER] years, I have made my living as a [CONTEXT:UNIT_NAME].
+What I do is not important.
+I would rather not discuss it.
+Is it not obvious?

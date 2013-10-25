@@ -1,0 +1,13 @@
+I hunt great beasts in [CONTEXT:PLACE:TRANS_NAME].
+I travel through [CONTEXT:PLACE:TRANS_NAME] in search of game.
+I travel the land in search of game.  I am quite familiar with [CONTEXT:PLACE:TRANS_NAME].
+I am a hunter.  I know [CONTEXT:PLACE:TRANS_NAME] very well.
+I wander [CONTEXT:PLACE:TRANS_NAME] in search of game.
+I spend my days hunting in [CONTEXT:PLACE:TRANS_NAME]
+I am often found hunting animals in [CONTEXT:PLACE:TRANS_NAME].
+I live the life of a hunter.  My favorite place is [CONTEXT:PLACE:TRANS_NAME].
+I have hunted the animals in [CONTEXT:PLACE:TRANS_NAME] for many years.
+I have been a hunter for many long years.
+I go where my heart drives me, as I have done my whole life as a hunter.
+I have lived off the land for most of my life as a hunter.
+I seek great beasts in the name of the hunt.
