@@ -1503,6 +1503,17 @@ less xp now
 [PRODUCT:100:1:BOULDER:NONE:GET_MATERIAL_FROM_REAGENT:INORGANIC:WATER_SPLASH3]
 [SKILL:SWIMMING]
 
+[REACTION:FILL_BUCKET]
+	[NAME:fill bucket with water]
+	[BUILDING:FOUNTAIN:CUSTOM_F]
+	[REAGENT:A:1:BUCKET:NONE:NONE:NONE]
+		[EMPTY]
+		[NOT_IMPROVED]
+		[PRESERVE_REAGENT]
+		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+  		[DOES_NOT_ABSORB]
+	[PRODUCT:100:7:LIQUID_MISC:NONE:WATER:NONE][PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:A]
+
 ##############################################################################
 ##################     CRUCIBLE AKA STEEL MAKING    #############################
 ##############################################################################
@@ -12372,18 +12383,6 @@ YESSTORAGE[PRODUCT:100:1:BAR:NONE:CREATURE_MAT:BONE_IRON_CRATE:SOAP]YESSTORAGE[P
 #########################################################################################
 ##############################  CURRENTLY NOT IN USE       ##############################
 #########################################################################################
-
-[REACTION:FILL_BUCKET]
-	[NAME:fill bucket with water]
-	[BUILDING:FOUNTAIN:CUSTOM_F]
-	[REAGENT:A:1:BUCKET:NONE:NONE:NONE]
-		[EMPTY]
-		[NOT_IMPROVED]
-		[PRESERVE_REAGENT]
-		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-  		[DOES_NOT_ABSORB]
-	[PRODUCT:100:7:LIQUID_MISC:NONE:WATER:NONE][PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:A]
-
 
 
 
