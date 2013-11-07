@@ -2938,7 +2938,6 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 			[CDI:MAX_TARGET_NUMBER:C:3]
 			[CDI:WAIT_PERIOD:300]	
 	[SELECT_MATERIAL:ALL]
-		[MULTIPLY_VALUE:3]
 		[COLDDAM_POINT:NONE]
 
 [SELECT_CASTE:WATER_1_M]
@@ -2990,7 +2989,6 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 			[CDI:MAX_TARGET_NUMBER:C:3]
 			[CDI:WAIT_PERIOD:300]	
 	[SELECT_MATERIAL:ALL]
-		[MULTIPLY_VALUE:3]
 		[COLDDAM_POINT:NONE]
 
 
@@ -3077,7 +3075,6 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 			[CDI:WAIT_PERIOD:9999999]
 ------------ familiar spells -----------------------------------
 	[SELECT_MATERIAL:ALL]
-		[MULTIPLY_VALUE:3]
 		[COLDDAM_POINT:NONE]
 
 
@@ -3155,7 +3152,6 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 			[CDI:WAIT_PERIOD:9999999]
 ------------ familiar spells -----------------------------------
 	[SELECT_MATERIAL:ALL]
-		[MULTIPLY_VALUE:3]
 		[COLDDAM_POINT:NONE]
 
 --------------------------------------------------------------------------------------------
@@ -3254,7 +3250,6 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 			[CDI:MAX_TARGET_NUMBER:C:3]
 			[CDI:WAIT_PERIOD:300]	
 	[SELECT_MATERIAL:ALL]
-		[MULTIPLY_VALUE:3]
 		[COLDDAM_POINT:NONE]
 
 [SELECT_CASTE:WATER_3_M]
@@ -3345,7 +3340,6 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 			[CDI:MAX_TARGET_NUMBER:C:3]
 			[CDI:WAIT_PERIOD:300]	
 	[SELECT_MATERIAL:ALL]
-		[MULTIPLY_VALUE:3]
 		[COLDDAM_POINT:NONE]
 		[MAT_FIXED_TEMP:5000]
 
