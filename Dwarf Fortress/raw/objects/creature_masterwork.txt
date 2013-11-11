@@ -11163,7 +11163,7 @@ YESMAGIC[CAN_DO_INTERACTION:HASTE_SPELL]
 
 
 [CREATURE:CULTLEADER]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:---a slimy voice speaks to you--- You found me. You are cleverer then I thought, but this wont safe you. Prepare to die, unbeliever.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:---a slimy voice speaks to you--- You found me. You are cleverer than I thought, but this won't save you. Prepare to die, unbeliever.]
 	[NAME:cultleader of the carp god:cultleaders of the carp god:vile]
 	[PRONE_TO_RAGE:100]
 	[AMPHIBIOUS][UNDERSWIM]
