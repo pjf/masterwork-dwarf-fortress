@@ -7,6 +7,7 @@ use IPC::System::Simple qw(capture systemx);
 
 my $UPSTREAM      = 'upstream';     # git branch with official MWDF latest.
 my $PATCHLOG_FILE = 'PATCHLOG.txt'; # Tiny git history goes here.
+my $EXPORT_DIR    = "$ENV{HOME}/Dropbox/Public/MWDF";
 
 my $EXCLUDED_FILES_RE = qr{
     ^MasterworkDwarfFortress/Utilities/DwarfTherapist|
@@ -63,4 +64,13 @@ sub make_patch_from_branch {
 
     # Clean up!
     unlink($PATCHLOG_FILE);
+
+    # Move to export dir
+
+    # TODO: Allow this step to be skipped, for benefit of non-PJF
+    # contributors.
+
+    rename($zipname, "$EXPORT_DIR/$zipname");
+
+    return;
 }
