@@ -50,6 +50,8 @@ sub make_patch_from_branch {
     my $patch_log = capture("git log --oneline $UPSTREAM..HEAD");
 
     open(my $patchlog_fh, '>', $PATCHLOG_FILE);
+    my $date = gmtime();
+    say {$patchlog_fh} "# Patches on '$branch' generated at $date GMT\n";
     print {$patchlog_fh} $patch_log;
     close($patchlog_fh);
 
