@@ -681,7 +681,7 @@ German 2-handed sword. Longest two handed sword to ever exist.
 [ATTACK:BLUNT:200:200:make an undercut swing at:makes an undercut swing at:NO_SUB:4000]
 [ATTACK:BLUNT:1000:7000:whirl around and bash:whirls around and bashes:head:3000]
 [ATTACK:BLUNT:2000:10000:whirl around with outstreched arms and bash:whirls around with outstretched arms and bashes:massive head:4000]
-[ATTACK:EDGE:90000:900000:strike:strikes:incredible stench given:15000]
+[ATTACK:EDGE:90000:900000:strike:strikes:incredible strength given:15000]
 [ATTACK:EDGE:90000:900000:hit:hits:embrace of father nurgle offered by the essence:15000]
 
 
