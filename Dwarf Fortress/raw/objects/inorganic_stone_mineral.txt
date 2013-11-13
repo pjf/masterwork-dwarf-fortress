@@ -363,8 +363,8 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[SYNDROME]
 		[SYN_CLASS:DFHACK_ITEM_SYNDROME]
 		[SYN_AFFECTED_CREATURE:DWARF:ALL]
-		[CE_SKILL_ROLL_ADJUST:PERC:0:PERC_ON:20:START:0:END:450]
-		[CE_ADD_TAG:PROB:1:CRAZED:OPPOSED_TO_LIFE:START:0:END:450] 50.000 ticks => 1 time madness for 5000 ticks.
+		[CE_SKILL_ROLL_ADJUST:PERC:0:PERC_ON:20:START:0]
+		CE_ADD_TAG:PROB:1:CRAZED:OPPOSED_TO_LIFE:START:0 this is going to need a refactor for the new itemsyndrome
 
 [INORGANIC:BRASS]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
