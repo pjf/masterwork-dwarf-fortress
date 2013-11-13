@@ -69,7 +69,7 @@ function CreateUnit(race_id,caste_id)
 	if caste.misc.maxage_max==-1 then
 		unit.relations.old_year=-1
 	else
-		unit.relations.old_year=math.random(caste.misc.maxage_min,caste.misc.maxage_max)+df.global.cur_year
+		unit.relations.old_year=df.global.cur_year-15+math.random(caste.misc.maxage_min,caste.misc.maxage_max)
 	end
 	unit.sex=caste.gender
     local body=unit.body
@@ -78,7 +78,7 @@ function CreateUnit(race_id,caste_id)
     local body_part_count=#body.body_plan.body_parts
     local layer_count=#body.body_plan.layer_part
     --components
-    unit.relations.birth_year=df.global.cur_year
+    unit.relations.birth_year=df.global.cur_year-15
     --unit.relations.birth_time=??
     
     --unit.relations.old_time=?? --TODO add normal age
@@ -89,11 +89,11 @@ function CreateUnit(race_id,caste_id)
         cp.numbered_masks[num]=v
     end
     
-    cp.body_layer_338:resize(layer_count)
-    cp.body_layer_348:resize(layer_count)
-    cp.body_layer_358:resize(layer_count)
-    cp.body_layer_368:resize(layer_count)
-    cp.body_layer_378:resize(layer_count)
+    cp.layer_status:resize(layer_count)
+    cp.layer_wound_area:resize(layer_count)
+    cp.layer_cut_fraction:resize(layer_count)
+    cp.layer_dent_fraction:resize(layer_count)
+    cp.layer_effect_fraction:resize(layer_count)
     local attrs=caste.attributes
     for k,v in pairs(attrs.phys_att_range) do
         local max_percent=attrs.phys_att_cap_perc[k]/100
@@ -104,7 +104,7 @@ function CreateUnit(race_id,caste_id)
  
     body.blood_max=getBodySize(caste,0) --TODO normal values
     body.blood_count=body.blood_max
-    body.unk_494=0 --infection level
+    body.infection_level=0
     unit.status2.body_part_temperature:resize(body_part_count)
     for k,v in pairs(unit.status2.body_part_temperature) do
         unit.status2.body_part_temperature[k]={new=true,whole=10067,fraction=0}
@@ -118,12 +118,12 @@ function CreateUnit(race_id,caste_id)
  
     --TODO add correct sizes. (calculate from age)
 	local size=caste.body_size_2[#caste.body_size_2-1]
-	body.physical_attr_tissues[0]=size
-	body.physical_attr_tissues[1]=size
-	body.physical_attr_tissues[2]=math.pow(size,0.666)
-	body.physical_attr_tissues[3]=math.pow(size,0.666)
-    body.physical_attr_tissues[4]=math.pow(size*10000,0.333)
-	body.physical_attr_tissues[5]=math.pow(size*10000,0.333)
+	body.size_info.size_cur=size
+	body.size_info.size_base=size
+	body.size_info.area_cur=math.pow(size,0.666)
+	body.size_info.area_base=math.pow(size,0.666)
+    body.size_info.area_cur=math.pow(size*10000,0.333)
+	body.size_info.area_base=math.pow(size*10000,0.333)
 	
     stuff.were_race=race_id
     stuff.were_caste=caste_id
@@ -163,7 +163,6 @@ function CreateUnit(race_id,caste_id)
 	
 	local num_inter=#caste.body_info.interactions
 	unit.curse.anon_5:resize(num_inter)
-	unit.curse.anon_6:resize(num_inter)
     return unit
 end
 function findRace(name)
@@ -189,12 +188,7 @@ end
 	u.civ_id=df.global.ui.civ_id
  
 	local desig,ocupan=dfhack.maps.getTileFlags(pos)
-	if ocupan.unit then
-		ocupan.unit_grounded=true
-		u.flags1.on_ground=true
-	else
-		ocupan.unit=true
-	end
+	ocupan.unit=true
 	--createNemesis(u)
 end
 function createFigure(trgunit)
@@ -241,7 +235,6 @@ function createNemesis(trgunit)
     ]]
     nem.figure=createFigure(trgunit)
 end
- 
 local argPos
  
 if #args>3 then
