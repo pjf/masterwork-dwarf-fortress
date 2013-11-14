@@ -49,15 +49,21 @@ Dummy symbol table entry: window_y
 Dummy symbol table entry: window_z
 Dummy symbol table entry: building_next_id
 Dummy symbol table entry: job_next_id
-Dummy symbol table entry: cur_season
-Dummy symbol table entry: cur_season_tick
 Loaded 10 DF symbol tables.
 Version: v0.34.11 SDL
 Initializing Console.
 Console is running.
 Initializing Plugins.
+Plugin hotkeys was not built for this version of DFHack.
+Plugin: 0.34.11-r3, DFHack: 0.34.11-r4
 d_init: 232
+Can't load plugin C:\Users\Brayden\Documents\masterwork-dwarf-fortress-master\Dwarf Fortress\hack\plugins\rendermax.plug.dll
+Can't load plugin C:\Users\Brayden\Documents\masterwork-dwarf-fortress-master\Dwarf Fortress\hack\plugins\stockflow.plug.dll
 world: 1670492 ui: 31024 b_stock: 1632
+Plugin stonesense was not built for this version of DFHack.
+Plugin: 0.34.11-r3, DFHack: 0.34.11-r4
+Plugin trueTransformation was not built for this version of DFHack.
+Plugin: 0.34.11-r3, DFHack: 0.34.11-r4
 Starting IO thread.
 Starting DF input capture thread.
 Starting the TCP listener.
@@ -67,6 +73,7 @@ Invoking: diggingInvaders edgesPerTick 10
 Invoking: diggingInvaders add FROST_GIANT
 Invoking: diggingInvaders setCost FROST_GIANT destroyBuilding 1
 Invoking: diggingInvaders setCost FROST_GIANT dig -1
+DFHack is running.
 Invoking: diggingInvaders setCost FROST_GIANT walk 0
 Invoking: diggingInvaders setCost FROST_GIANT destroyRoughConstruction 1
 Invoking: diggingInvaders setCost FROST_GIANT destroySmoothConstruction 1
@@ -80,7 +87,6 @@ Invoking: diggingInvaders setCost ANT_MAN dig 5
 Invoking: diggingInvaders setCost ANT_MAN walk 0
 Invoking: diggingInvaders setCost ANT_MAN destroyRoughConstruction -1
 Invoking: diggingInvaders setCost ANT_MAN destroySmoothConstruction -1
-DFHack is running.
 Invoking: diggingInvaders setDelay ANT_MAN destroyBuilding -1
 Invoking: diggingInvaders setDelay ANT_MAN dig 5
 Invoking: diggingInvaders setDelay ANT_MAN destroyRoughConstruction -1
@@ -516,6 +522,4 @@ Invoking: binpatch apply training-ammo
 Invoking: binpatch apply weaponrack-unassign
 Invoking: binpatch apply armorstand-capacity
 Invoking: fix/growthbug enable
-Invoking: cls
-Invoking: fastdwarf 1
 Invoking: die

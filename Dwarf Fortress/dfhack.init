@@ -440,10 +440,9 @@ diggingInvaders setDelay TITAN_10 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_10 destroySmoothConstruction 50
 
 
-load autoSyndrome			
-load trueTransformation			
+enable autoSyndrome			
+syndromeTrigger	enable
 autofixhandedness start
-projectileExpansion
 projectileExpansion enable
 
 keybinding add Alt-Shift-S@dwarfmode/Default "stocks show"
