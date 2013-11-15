@@ -166,6 +166,22 @@ YESLEARNING[SKILL_RATES:50:50:6:60] 50% xp
 
 	These body modifiers give individual dwarves different characteristics.  In the case of HEIGHT, BROADNESS and LENGTH, the modifier is also a percentage change to the BODY_SIZE of the individual creature.  The seven numbers afterward give a distribution of ranges.  Each interval has an equal chance of occurring.
 
+	Attributes for dwarves are still described in terms of the median value below, but the actual game effects are altered according to the raw numbers.  The numbers are different percentile values.  1000 is the human median for all attributes, so dwarven strength, for instance, has a higher median of 1250, although they suffer from their smaller size.
+
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]              +
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]                 -
+	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]             +
+	[MENT_ATT_RANGE:ANALYTICAL_ABILITY:450:950:1150:1250:1350:1550:2250]    +
+	[MENT_ATT_RANGE:FOCUS:700:1200:1400:1500:1600:1800:2500]                ++
+	[MENT_ATT_RANGE:CREATIVITY:450:950:1150:1250:1350:1550:2250]            +
+	[MENT_ATT_RANGE:PATIENCE:450:950:1150:1250:1350:1550:2250]              +
+	[MENT_ATT_RANGE:MEMORY:450:950:1150:1250:1350:1550:2250]                +
+	[MENT_ATT_RANGE:SPATIAL_SENSE:700:1200:1400:1500:1600:1800:2500]        ++
+
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]
+		[APP_MOD_IMPORTANCE:500]
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]
+		[APP_MOD_IMPORTANCE:500]
 
 
 	In order to set properties for body parts, first you select them.  In this case, we select all body parts of category EYE, then we add a few modifiers to them.
