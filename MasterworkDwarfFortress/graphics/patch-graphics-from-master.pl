@@ -48,8 +48,7 @@ foreach my $base_dir (@directories) {
 
         if ($patch) {
             print "\n+ ";
-            # open(my $patch_fh, '|-', 'patch', '--no-backup-if-mismatch');
-            open(my $patch_fh, '|-', 'patch', '--dry-run');
+            open(my $patch_fh, '|-', 'patch', '--no-backup-if-mismatch');
 
             say {$patch_fh} $patch;
             close($patch_fh);
