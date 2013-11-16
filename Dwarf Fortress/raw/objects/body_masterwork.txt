@@ -3080,3 +3080,31 @@ body_masterwork
 		[DEFAULT_RELSIZE:120]
 	[BP:LF:left foot:left feet][CON:LLL][STANCE][LEFT][CATEGORY:FOOT]
 		[DEFAULT_RELSIZE:120]
+
+
+=====Thought Gem=====
+
+[BODY:GEM]
+[BP:GM:gem:gems][INTERNAL][THOUGHT][CONTYPE:UPPERBODY][CATEGORY:GEM]
+[DEFAULT_RELSIZE:50]
+
+=====Main Bodies=====
+
+[BODY:HANDLE]
+[BP:HT:handle:handles][UPPERBODY][CATEGORY:HANDLE]
+[DEFAULT_RELSIZE:150]
+
+[BODYGLOSS:HILT:handle:hilt:handles:hilts] 
+[BODYGLOSS:HAFT:handle:haft:handles:hafts]
+
+[BODY:WEAPON_HEAD]
+[BP:B:head:heads][LOWERBODY][CONTYPE:UPPERBODY][CATEGORY:OFFENSE]
+[DEFAULT_RELSIZE:1000]
+
+[BODYGLOSS:BLADE:head:blade:heads:blades]
+ 
+=====Handle Related=====
+
+[BODY:CROSSGUARD]
+[BP:GD:guard:guards][CON_CAT:HANDLE][CATEGORY:GUARD]
+[DEFAULT_RELSIZE:75]

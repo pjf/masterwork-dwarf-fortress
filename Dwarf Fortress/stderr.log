@@ -80,10 +80,10 @@ Invoking: diggingInvaders setCost ANT_MAN dig 5
 Invoking: diggingInvaders setCost ANT_MAN walk 0
 Invoking: diggingInvaders setCost ANT_MAN destroyRoughConstruction -1
 Invoking: diggingInvaders setCost ANT_MAN destroySmoothConstruction -1
-DFHack is running.
 Invoking: diggingInvaders setDelay ANT_MAN destroyBuilding -1
 Invoking: diggingInvaders setDelay ANT_MAN dig 5
 Invoking: diggingInvaders setDelay ANT_MAN destroyRoughConstruction -1
+DFHack is running.
 Invoking: diggingInvaders setDelay ANT_MAN destroySmoothConstruction -1
 Invoking: diggingInvaders add ORC
 Invoking: diggingInvaders setCost ORC destroyBuilding 1
@@ -455,9 +455,6 @@ Invoking: keybinding add Alt-Shift-I@dwarfmode/Zones "zone set"
 Invoking: keybinding add Alt-M@dwarfmode/Default "dwarfmonitor prefs"
 Invoking:    keybinding add Shift-B@pet/List/Unit "gui/autobutcher"
 Invoking: keybinding add Ctrl-W twaterlvl
-Invoking: keybinding add Ctrl-E "startdwarf 14"
-Invoking: keybinding add Ctrl-Shift-E "startdwarf 21"
-Invoking: keybinding add Ctrl-Alt-E "startdwarf 28"
 Invoking: keybinding add Ctrl-Q@dwarfmode/Default quicksave
 Invoking: keybinding add Ctrl-Shift-P forumdwarves
 Invoking: keybinding add Ctrl-M@dwarfmode/QueryBuilding/Some gui/mechanisms
@@ -517,5 +514,5 @@ Invoking: binpatch apply weaponrack-unassign
 Invoking: binpatch apply armorstand-capacity
 Invoking: fix/growthbug enable
 Invoking: cls
-Invoking: fastdwarf 1
+Invoking: itemsyndrome enable
 Invoking: die

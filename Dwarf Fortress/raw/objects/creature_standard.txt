@@ -13,6 +13,22 @@ creature_standard
 	[CANOPENDOORS]
 	[PREFSTRING:beards]
 
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_DEPRESSION]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_BLACK_PLAGUE]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_BUBONIC_PLAGUE]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_SMALLPOX]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_INFLUENZA]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_MENINGITIS]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_PNEUMONITIS]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_BLOOD_PRESSURE]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_SCHIZOPHRENIA]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_LIVER_CANCER]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_GIGANTISM]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_DWARFISM]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_BLINDNESS]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_INSOMNIA]
+YESNEWDISEASE[APPLY_CREATURE_VARIATION:HAS_PSYCHOPATHY]
+
 
 YESLEARNING[SKILL_RATES:50:50:6:60] 50% xp
 [PHYS_ATT_CAP_PERC:10000]
@@ -1044,27 +1060,27 @@ YESSECRET[CASTE:SECRET_CULTLEADER]
 
 
 
-YESDISEASE[CASTE:SECRET13]
-		YESDISEASE[CASTE_NAME:sick dwarf:sick dwarves:sick]
-		YESDISEASE[FEMALE]
-YESDISEASE[CASTE:SECRET6]
-		YESDISEASE[CASTE_NAME:sick dwarf:sick dwarves:sick]
-		YESDISEASE[FEMALE]
-YESDISEASE[CASTE:SECRET7]
-		YESDISEASE[CASTE_NAME:sick dwarf:sick dwarves:sick]
-		YESDISEASE[FEMALE]
-YESDISEASE[CASTE:SECRET8]
-		YESDISEASE[CASTE_NAME:sick dwarf:sick dwarves:sick]
-		YESDISEASE[FEMALE]
-YESDISEASE[CASTE:SECRET9]
-		YESDISEASE[CASTE_NAME:sick dwarf:sick dwarves:sick]
-		YESDISEASE[FEMALE]
-YESDISEASE[CASTE:SECRET10]
-		YESDISEASE[CASTE_NAME:sick dwarf:sick dwarves:sick]
-		YESDISEASE[FEMALE]
-YESDISEASE[CASTE:SECRET11]
-		YESDISEASE[CASTE_NAME:sick dwarf:sick dwarves:sick]
-		YESDISEASE[FEMALE]
+!NODISEASE!CASTE:SECRET13]
+		!NODISEASE!CASTE_NAME:sick dwarf:sick dwarves:sick]
+		!NODISEASE!FEMALE]
+!NODISEASE!CASTE:SECRET6]
+		!NODISEASE!CASTE_NAME:sick dwarf:sick dwarves:sick]
+		!NODISEASE!FEMALE]
+!NODISEASE!CASTE:SECRET7]
+		!NODISEASE!CASTE_NAME:sick dwarf:sick dwarves:sick]
+		!NODISEASE!FEMALE]
+!NODISEASE!CASTE:SECRET8]
+		!NODISEASE!CASTE_NAME:sick dwarf:sick dwarves:sick]
+		!NODISEASE!FEMALE]
+!NODISEASE!CASTE:SECRET9]
+		!NODISEASE!CASTE_NAME:sick dwarf:sick dwarves:sick]
+		!NODISEASE!FEMALE]
+!NODISEASE!CASTE:SECRET10]
+		!NODISEASE!CASTE_NAME:sick dwarf:sick dwarves:sick]
+		!NODISEASE!FEMALE]
+!NODISEASE!CASTE:SECRET11]
+		!NODISEASE!CASTE_NAME:sick dwarf:sick dwarves:sick]
+		!NODISEASE!FEMALE]
 
 
 
@@ -2053,7 +2069,7 @@ Earthkin
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:100]       
+	[POP_RATIO:25]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Earthkin*:*Earthkins*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Earthkin*:*Earthkins*]  
@@ -2104,7 +2120,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- 
 
 [SELECT_CASTE:EARTH_1_F]
 	[FEMALE]
-	[POP_RATIO:100]       
+	[POP_RATIO:25]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Earthkin*:*Earthkins*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Earthkin*:*Earthkins*]  
@@ -2162,7 +2178,7 @@ Stonemancer
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:50]       
+	[POP_RATIO:10]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Stonemancer*:*Stonemancers*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Stonemancer*:*Stonemancers*]  
@@ -2234,7 +2250,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- 
 
 [SELECT_CASTE:EARTH_2_F]
 	[FEMALE]
-	[POP_RATIO:50]       
+	[POP_RATIO:10]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Stonemancer*:*Stonemancers*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Stonemancer*:*Stonemancers*]  
@@ -2316,7 +2332,7 @@ Rockmage
 
 [SELECT_CASTE:EARTH_3_F]
 	[FEMALE]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Rockmage*:*Rockmage*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Rockmage*:*Rockmage*]  
@@ -2412,7 +2428,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- 
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Rockmage*:*Rockmage*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Rockmage*:*Rockmage*]  
@@ -2505,13 +2521,11 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Earthwand user*:*Earthwand users*- 
 
 ------------ spells -----------------------------------
 
-
-
 [SELECT_CASTE:FIRE_1_M]
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:100]       
+	[POP_RATIO:1]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Ashkin*:*Ashkins*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Ashkin*:*Ashkins*]  
@@ -2555,7 +2569,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- re
 [SELECT_CASTE:FIRE_1_F]
 	[FEMALE]
 	[MULTIPLE_LITTER_RARE]
-	[POP_RATIO:100]       
+	[POP_RATIO:1]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Ashkin*:*Ashkins*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Ashkin*:*Ashkins*]  
@@ -2606,7 +2620,7 @@ Flamemancer
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:50]       
+	[POP_RATIO:1]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Flamemancer*:*Flamemancers*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Flamemancer*:*Flamemancers*]  
@@ -2668,7 +2682,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- re
 [SELECT_CASTE:FIRE_2_F]
 	[FEMALE]
 	[MULTIPLE_LITTER_RARE]
-	[POP_RATIO:50]       
+	[POP_RATIO:1]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Flamemancer*:*Flamemancers*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Flamemancer*:*Flamemancers*]  
@@ -2740,7 +2754,7 @@ Firemage
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:1]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Firemage*:*Firemages*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Firemage*:*Firemages*]  
@@ -2822,7 +2836,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- re
 [SELECT_CASTE:FIRE_3_F]
 	[FEMALE]
 	[MULTIPLE_LITTER_RARE]
-	[POP_RATIO:10]       
+	[POP_RATIO:1]     
 [CASTE_PROFESSION_NAME:ALCHEMIST:*firemage*:*firemages*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Firewand user*:*Firewand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Firemage*:*Firemages*]  
@@ -2909,7 +2923,7 @@ Wavekin
 
 [SELECT_CASTE:WATER_1_F]
 	[FEMALE]
-	[POP_RATIO:100]       
+	[POP_RATIO:25]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Wavekin*:*Wavekin*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Wavekin*:*Wavekin*]  
@@ -2960,7 +2974,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:100]       
+	[POP_RATIO:25]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Wavekin*:*Wavekin*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Wavekin*:*Wavekin*]  
@@ -3021,7 +3035,7 @@ Watermancer
 
 [SELECT_CASTE:WATER_2_F]
 	[FEMALE]
-	[POP_RATIO:50]       
+	[POP_RATIO:10]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Watermancer*:*Watermancer*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Watermancer*:*Watermancer*]  
@@ -3098,7 +3112,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:50]       
+	[POP_RATIO:10]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Watermancer*:*Watermancer*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Watermancer*:*Watermancer*]  
@@ -3182,7 +3196,7 @@ Icemage
 
 [SELECT_CASTE:WATER_3_F]
 	[FEMALE]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Icemage*:*Icemage*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Icemage*:*Icemage*]  
@@ -3272,7 +3286,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Icemage*:*Icemage*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Icemage*:*Icemage*]  
@@ -3365,7 +3379,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Waterwand user*:*Waterwand users*- 
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:100]       
+	[POP_RATIO:25]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Windkin*:*Windkins*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Windkin*:*Windkins*]  
@@ -3404,7 +3418,7 @@ CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
 
 [SELECT_CASTE:AIR_1_F]
 	[FEMALE]
-	[POP_RATIO:100]       
+	[POP_RATIO:25]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Windkin*:*Windkins*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Windkin*:*Windkins*]  
@@ -3451,7 +3465,7 @@ Airmancer
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:50]       
+	[POP_RATIO:10]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Airmancer*:*Airmancers*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Airmancer*:*Airmancers*]  
@@ -3512,7 +3526,7 @@ CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
 
 [SELECT_CASTE:AIR_2_F]
 	[FEMALE]
-	[POP_RATIO:50]       
+	[POP_RATIO:10]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Airmancer*:*Airmancers*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Airmancer*:*Airmancers*]  
@@ -3580,7 +3594,7 @@ Skymage
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Skymage*:*Skymages*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Skymage*:*Skymages*]  
@@ -3648,7 +3662,7 @@ CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
 
 [SELECT_CASTE:AIR_3_F]
 	[FEMALE]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Skymage*:*Skymage*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*Windwand user*:*Windwand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Skymage*:*Skymages*]  
@@ -3721,7 +3735,7 @@ black mages
 vampire mage
 [SELECT_CASTE:BLACK_1_F]
 	[FEMALE]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Vampire Mage*:*Vampire Mage*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Vampire Mage*:*Vampire Mage*]  
@@ -3786,7 +3800,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Vampire Mage*:*Vampire Mage*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Vampire Mage*:*Vampire Mage*]  
@@ -3851,7 +3865,7 @@ removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*
 demonbound
 [SELECT_CASTE:BLACK_2_F]
 	[FEMALE]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Demonbound*:*Demonbound*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Demonbound*:*Demonbound*]  
@@ -3972,7 +3986,7 @@ YESMAGIC[CAN_DO_INTERACTION:SLOW_SPELL]
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Demonbound*:*Demonbound*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Demonbound*:*Demonbound*]  
@@ -4093,7 +4107,7 @@ YESMAGIC[CAN_DO_INTERACTION:SLOW_SPELL]
 Lich
 [SELECT_CASTE:BLACK_3_F]
 	[FEMALE]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Lich*:*Lich*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Lich*:*Lich*]  
@@ -4168,7 +4182,7 @@ OPPOSED_TO_LIFE => left that one out to keep it civil
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Lich*:*Lich*]                                    
 removed -CASTE_PROFESSION_NAME:MAGIC_NATURE:*Black wand user*:*Black wand users*- removed  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Lich*:*Lich*]  
@@ -4245,7 +4259,7 @@ white mages
 
 [SELECT_CASTE:WHITE_1_F]
 	[FEMALE]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Lifemancer*:*Lifemancer*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Lifemancer*:*Lifemancer*]  
@@ -4325,7 +4339,7 @@ CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => brok
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Lifemancer*:*Lifemancer*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Lifemancer*:*Lifemancer*]  
@@ -4395,7 +4409,7 @@ CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => brok
 
 [SELECT_CASTE:WHITE_2_F]
 	[FEMALE]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Witch Hunter*:*Witch Hunter*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Witch Hunter*:*Witch Hunter*]  
@@ -4476,7 +4490,7 @@ CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => brok
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Witch Hunter*:*Witch Hunter*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Witch Hunter*:*Witch Hunter*]  
@@ -4559,7 +4573,7 @@ arcane protector
 
 [SELECT_CASTE:WHITE_3_F]
 	[FEMALE]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Arcane Protector*:*Arcane Protector*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Arcane Protector*:*Arcane Protector*]  
@@ -4645,7 +4659,7 @@ CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => brok
 	[MALE]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[POP_RATIO:10]       
+	[POP_RATIO:3]       
 [CASTE_PROFESSION_NAME:ALCHEMIST:*Arcane Protector*:*Arcane Protector*]                                    
 CASTE_PROFESSION_NAME:MAGIC_NATURE:*White wand user*:*White wand users*  => broken
 [CASTE_PROFESSION_NAME:STANDARD:*Arcane Protector*:*Arcane Protector*]  
@@ -4786,75 +4800,75 @@ YESSECRET[CAN_DO_INTERACTION:CULTLEADER]
 		YESSECRET[CDI:WAIT_PERIOD:10]
 
 
-YESDISEASE[SELECT_CASTE:SECRET13]
-	YESDISEASE[FEMALE]
-	YESDISEASE[POP_RATIO:4]YESDISEASE[CREATURE_CLASS:SECRET13]
-YESDISEASE[CAN_DO_INTERACTION:PASS_PLAGUE]
-YESDISEASE[CDI:USAGE_HINT:GREETING]
-YESDISEASE[CDI:VERB:cough sickly and are feeling weakened:coughs sickly and feels weak:is coughing sickly and feels weak]
-YESDISEASE[CDI:TARGET:B:TOUCHABLE]
-YESDISEASE[CDI:TARGET_RANGE:B:1]
-YESDISEASE[CDI:WAIT_PERIOD:20]
+!NODISEASE!SELECT_CASTE:SECRET13]
+	!NODISEASE!FEMALE]
+	!NODISEASE!POP_RATIO:4]!NODISEASE!CREATURE_CLASS:SECRET13]
+!NODISEASE!CAN_DO_INTERACTION:PASS_PLAGUE]
+!NODISEASE!CDI:USAGE_HINT:GREETING]
+!NODISEASE!CDI:VERB:cough sickly and are feeling weakened:coughs sickly and feels weak:is coughing sickly and feels weak]
+!NODISEASE!CDI:TARGET:B:TOUCHABLE]
+!NODISEASE!CDI:TARGET_RANGE:B:1]
+!NODISEASE!CDI:WAIT_PERIOD:20]
 
-YESDISEASE[SELECT_CASTE:SECRET6]
-	YESDISEASE[FEMALE]
-	YESDISEASE[POP_RATIO:4]YESDISEASE[CREATURE_CLASS:SECRET6]
-YESDISEASE[CAN_DO_INTERACTION:PASS_PLAGUE_VOMIT]
-YESDISEASE[CDI:USAGE_HINT:GREETING]
-YESDISEASE[CDI:VERB:look horribly sick and vomit:looks horribly sick:is looking horribly sick and vomits]
-YESDISEASE[CDI:TARGET:B:TOUCHABLE]
-YESDISEASE[CDI:TARGET_RANGE:B:1]
-YESDISEASE[CDI:WAIT_PERIOD:20]
+!NODISEASE!SELECT_CASTE:SECRET6]
+	!NODISEASE!FEMALE]
+	!NODISEASE!POP_RATIO:4]!NODISEASE!CREATURE_CLASS:SECRET6]
+!NODISEASE!CAN_DO_INTERACTION:PASS_PLAGUE_VOMIT]
+!NODISEASE!CDI:USAGE_HINT:GREETING]
+!NODISEASE!CDI:VERB:look horribly sick and vomit:looks horribly sick:is looking horribly sick and vomits]
+!NODISEASE!CDI:TARGET:B:TOUCHABLE]
+!NODISEASE!CDI:TARGET_RANGE:B:1]
+!NODISEASE!CDI:WAIT_PERIOD:20]
 
-YESDISEASE[SELECT_CASTE:SECRET7]
-	YESDISEASE[FEMALE]
-	YESDISEASE[POP_RATIO:4]YESDISEASE[CREATURE_CLASS:SECRET7]
-YESDISEASE[CAN_DO_INTERACTION:PASS_PLAGUE_SLEEP]
-YESDISEASE[CDI:USAGE_HINT:GREETING]
-YESDISEASE[CDI:VERB:look dead tired, wanting to sleep and never wake up:looks dead tired, wanting to sleep and never wake up:is looking dead tired, wanting to sleep and never wake up]
-YESDISEASE[CDI:TARGET:B:TOUCHABLE]
-YESDISEASE[CDI:TARGET_RANGE:B:1]
-YESDISEASE[CDI:WAIT_PERIOD:20]
+!NODISEASE!SELECT_CASTE:SECRET7]
+	!NODISEASE!FEMALE]
+	!NODISEASE!POP_RATIO:4]!NODISEASE!CREATURE_CLASS:SECRET7]
+!NODISEASE!CAN_DO_INTERACTION:PASS_PLAGUE_SLEEP]
+!NODISEASE!CDI:USAGE_HINT:GREETING]
+!NODISEASE!CDI:VERB:look dead tired, wanting to sleep and never wake up:looks dead tired, wanting to sleep and never wake up:is looking dead tired, wanting to sleep and never wake up]
+!NODISEASE!CDI:TARGET:B:TOUCHABLE]
+!NODISEASE!CDI:TARGET_RANGE:B:1]
+!NODISEASE!CDI:WAIT_PERIOD:20]
 
-YESDISEASE[SELECT_CASTE:SECRET8]
-	YESDISEASE[FEMALE]
-	YESDISEASE[POP_RATIO:4]YESDISEASE[CREATURE_CLASS:SECRET8]
-YESDISEASE[CAN_DO_INTERACTION:PASS_PLAGUE_DEATH]
-YESDISEASE[CDI:USAGE_HINT:GREETING]
-YESDISEASE[CDI:VERB:catch the plague and pray to Armok to be spared a horrible death:catches the plague and prays to Armok to be spared a horrible death:is catching the plague and prays to Armok to be spared a horrible death]
-YESDISEASE[CDI:TARGET:B:TOUCHABLE]
-YESDISEASE[CDI:TARGET_RANGE:B:1]
-YESDISEASE[CDI:WAIT_PERIOD:20]
+!NODISEASE!SELECT_CASTE:SECRET8]
+	!NODISEASE!FEMALE]
+	!NODISEASE!POP_RATIO:4]!NODISEASE!CREATURE_CLASS:SECRET8]
+!NODISEASE!CAN_DO_INTERACTION:PASS_PLAGUE_DEATH]
+!NODISEASE!CDI:USAGE_HINT:GREETING]
+!NODISEASE!CDI:VERB:catch the plague and pray to Armok to be spared a horrible death:catches the plague and prays to Armok to be spared a horrible death:is catching the plague and prays to Armok to be spared a horrible death]
+!NODISEASE!CDI:TARGET:B:TOUCHABLE]
+!NODISEASE!CDI:TARGET_RANGE:B:1]
+!NODISEASE!CDI:WAIT_PERIOD:20]
 
-YESDISEASE[SELECT_CASTE:SECRET9]
-	YESDISEASE[FEMALE]
-	YESDISEASE[POP_RATIO:4]YESDISEASE[CREATURE_CLASS:SECRET9]
-YESDISEASE[CAN_DO_INTERACTION:PASS_PLAGUE_BLIND]
-YESDISEASE[CDI:USAGE_HINT:GREETING]
-YESDISEASE[CDI:VERB:develop a gray film over their eyes and are blind from this moment on:develops a gray film over the eyes and is blind from this moment on:is developing a gray film over the eyes and is blind from this moment on]
-YESDISEASE[CDI:TARGET:B:TOUCHABLE]
-YESDISEASE[CDI:TARGET_RANGE:B:1]
-YESDISEASE[CDI:WAIT_PERIOD:20]
+!NODISEASE!SELECT_CASTE:SECRET9]
+	!NODISEASE!FEMALE]
+	!NODISEASE!POP_RATIO:4]!NODISEASE!CREATURE_CLASS:SECRET9]
+!NODISEASE!CAN_DO_INTERACTION:PASS_PLAGUE_BLIND]
+!NODISEASE!CDI:USAGE_HINT:GREETING]
+!NODISEASE!CDI:VERB:develop a gray film over their eyes and are blind from this moment on:develops a gray film over the eyes and is blind from this moment on:is developing a gray film over the eyes and is blind from this moment on]
+!NODISEASE!CDI:TARGET:B:TOUCHABLE]
+!NODISEASE!CDI:TARGET_RANGE:B:1]
+!NODISEASE!CDI:WAIT_PERIOD:20]
 
-YESDISEASE[SELECT_CASTE:SECRET10]
-	YESDISEASE[FEMALE]
-	YESDISEASE[POP_RATIO:4]YESDISEASE[CREATURE_CLASS:SECRET10]
-YESDISEASE[CAN_DO_INTERACTION:PASS_PLAGUE_STERILE]
-YESDISEASE[CDI:USAGE_HINT:GREETING]
-YESDISEASE[CDI:VERB:catch the weird plague that goes around and are turned sterile:catches the weird plague that goes around and is turned sterile:is catching the weird plague that goes around and is turned sterile]
-YESDISEASE[CDI:TARGET:B:TOUCHABLE]
-YESDISEASE[CDI:TARGET_RANGE:B:1]
-YESDISEASE[CDI:WAIT_PERIOD:20]
+!NODISEASE!SELECT_CASTE:SECRET10]
+	!NODISEASE!FEMALE]
+	!NODISEASE!POP_RATIO:4]!NODISEASE!CREATURE_CLASS:SECRET10]
+!NODISEASE!CAN_DO_INTERACTION:PASS_PLAGUE_STERILE]
+!NODISEASE!CDI:USAGE_HINT:GREETING]
+!NODISEASE!CDI:VERB:catch the weird plague that goes around and are turned sterile:catches the weird plague that goes around and is turned sterile:is catching the weird plague that goes around and is turned sterile]
+!NODISEASE!CDI:TARGET:B:TOUCHABLE]
+!NODISEASE!CDI:TARGET_RANGE:B:1]
+!NODISEASE!CDI:WAIT_PERIOD:20]
 
-YESDISEASE[SELECT_CASTE:SECRET11]
-	YESDISEASE[FEMALE]
-	YESDISEASE[POP_RATIO:4]YESDISEASE[CREATURE_CLASS:SECRET11]
-YESDISEASE[CAN_DO_INTERACTION:PASS_PLAGUE_NOSLEEP]
-YESDISEASE[CDI:USAGE_HINT:GREETING]
-YESDISEASE[CDI:VERB:dont feel tired anymore, nor really awake. They are infected with insomnia and cant sleep:does not feel tired anymore, nor really awake. He is infected with insomnia and cant sleep:is not feeling tired anymore, nor really awake. He is infected with insomnia and cant sleep]
-YESDISEASE[CDI:TARGET:B:TOUCHABLE]
-YESDISEASE[CDI:TARGET_RANGE:B:1]
-YESDISEASE[CDI:WAIT_PERIOD:20]
+!NODISEASE!SELECT_CASTE:SECRET11]
+	!NODISEASE!FEMALE]
+	!NODISEASE!POP_RATIO:4]!NODISEASE!CREATURE_CLASS:SECRET11]
+!NODISEASE!CAN_DO_INTERACTION:PASS_PLAGUE_NOSLEEP]
+!NODISEASE!CDI:USAGE_HINT:GREETING]
+!NODISEASE!CDI:VERB:dont feel tired anymore, nor really awake. They are infected with insomnia and cant sleep:does not feel tired anymore, nor really awake. He is infected with insomnia and cant sleep:is not feeling tired anymore, nor really awake. He is infected with insomnia and cant sleep]
+!NODISEASE!CDI:TARGET:B:TOUCHABLE]
+!NODISEASE!CDI:TARGET_RANGE:B:1]
+!NODISEASE!CDI:WAIT_PERIOD:20]
 
 
 ############################################################################################################################

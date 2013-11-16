@@ -351,7 +351,7 @@ creature_subterrenean
 	[CASTE:WORKER][CASTE_COLOR:0:0:0]
 		[CASTE_NAME:worker:worker:worker]
 		Female, but non-breeding.
-		[POP_RATIO:100]
+		[POP_RATIO:25]
 	[CASTE:SOLDIER][CASTE_COLOR:7:0:1]
 		[CASTE_NAME:soldier:soldier:soldier]
 		Female, but non-breeding.

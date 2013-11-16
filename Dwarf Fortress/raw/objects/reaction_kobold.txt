@@ -9605,7 +9605,7 @@ SURGICAL_THEATER
 ######   TINKERER        ###################
 #####################################
 [REACTION:SKILL_TINKERER_KOBOLD]
-[NAME:=====SKILL RESEARCHING=====]
+[NAME:=====SKILL TINKERING=====]
    [BUILDING:TINKERER:NONE]
 	[BUILDING:TRAPSHOP:NONE]
 

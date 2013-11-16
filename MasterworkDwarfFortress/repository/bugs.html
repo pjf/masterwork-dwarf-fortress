@@ -44,7 +44,50 @@ a:visited {
             </tr>
             <tr>
               <td><div align="center">Solution: </div></td>
-              <td><div align="center">Dont run it on repeat 'R'. Autosyndrome, the script behind it, does not run when the reaction is set to repeat, so just queue them up normally.</div></td>
+              <td><div align="center">
+                <p>Dont run it on repeat 'R'. Autosyndrome, the script behind it, does not run when the reaction is set to repeat, so just queue them up normally.</p>
+                <p>A workaround using dfhack:</p>
+                <p align="left">1. Type &quot;v&quot; and move your cursor to the unit you want to change.<br />
+                  2. Switch to dfhack and type &quot;lua&quot;. That will take you to the lua interpreter.<br />
+                  3. type &quot;c = dfhack.gui.getSelectedUnit()&quot; (case sensitive)<br />
+                  3. now &quot;c.enemy.normal_caste = number&quot; where number is one of the list below.<br />
+                  4. unpause the game, the dwarf should transform.</p>
+                <p align="left">3 Merchants<br />
+                  4 Carpenter<br />
+                  5 Carpenter<br />
+                  7 Mason<br />
+                  9 BeastWarden<br />
+                  10 Smith<br />
+                  11 Smith<br />
+                  12 Jewlers<br />
+                  15 Crafts<br />
+                  16 Fishers<br />
+                  19 Farmer<br />
+                  20 Healer<br />
+                  23 Engineers<br />
+                  24 Alchemist<br />
+                  27 Apostle<br />
+                  28 Arcane<br />
+                  31 Legionnaire<br />
+                  32 Marksman<br />
+                  34 Guard<br />
+                  37 Wrestler<br />
+                  38 Ashkin lvl1<br />
+                  43 Firemage lvl3<br />
+                  44 Wavekin lvl1<br />
+                  45 Wavekin lvl1<br />
+                  46 Watermancer lvl2<br />
+                  49 Icemage lvl3<br />
+                  50 Windkin lvl1<br />
+                  53 Airmancer lvl2<br />
+                  55 Skymage lvl3<br />
+                  63 Vampire Mage<br />
+                  64 DemonBound<br />
+                  66 Lich<br />
+                  69 Lifemancer<br />
+                  70 Witch Hunter<br />
+                  73 Arcane Protector</p>
+              </div></td>
             </tr>
           </table>
           <p>&nbsp;</p>

@@ -69,7 +69,7 @@ Use these to set the color of wounded body parts.  The format is <foreground col
 
 This controls the display of areas that are far below outside.  The format is SKY:<character>:<foreground color>:<background color>:<brightness>.  The <character> can be either an ASCII tile number or a character in quotes, like '#'.
 
-[SKY:178:3:0:0]
+[SKY:178:2:1:0]
 
 As above, for inside/subterranean areas.
 
@@ -77,25 +77,25 @@ As above, for inside/subterranean areas.
 
 Pillar tile, <character> as above.
 
-[PILLAR_TILE:199]
+[PILLAR_TILE:'O']
 
 Track tiles.  I at the end inverts the material colors.
 
-[TRACK_N:152I]
-[TRACK_S:152I]
-[TRACK_E:152I]
-[TRACK_W:152I]
+[TRACK_N:210I]
+[TRACK_S:208I]
+[TRACK_E:181I]
+[TRACK_W:198I]
 [TRACK_NS:179I]
 [TRACK_NE:192I]
 [TRACK_NW:217I]
 [TRACK_SE:218I]
 [TRACK_SW:191I]
 [TRACK_EW:196I]
-[TRACK_NSE:195I] 26
-[TRACK_NSW:180I] 27
+[TRACK_NSE:195I]
+[TRACK_NSW:180I]
 [TRACK_NEW:193I]
 [TRACK_SEW:194I]
-[TRACK_NSEW:158I]
+[TRACK_NSEW:182I]
 [TRACK_RAMP_N:30I]
 [TRACK_RAMP_S:30I]
 [TRACK_RAMP_E:30I]
