@@ -461,9 +461,6 @@ keybinding add Alt-M@dwarfmode/Default "dwarfmonitor prefs"
 
 # toggle the display of water level as 1-7 tiles
 keybinding add Ctrl-W twaterlvl
-keybinding add Ctrl-E "startdwarf 14"
-keybinding add Ctrl-Shift-E "startdwarf 21"
-keybinding add Ctrl-Alt-E "startdwarf 28"
 # with cursor:
 
 # quicksave, only in main dwarfmode screen and menu page
@@ -609,6 +606,7 @@ tweak military-training
 
 #putnams awesome items
 itemsyndrome contaminantsOn enable
+itemsyndrome enable
 
 
 # write the correct season to gamelog on world load

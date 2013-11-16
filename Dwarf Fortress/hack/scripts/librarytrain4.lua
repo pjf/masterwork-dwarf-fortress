@@ -64,11 +64,11 @@ function getUnitSkill(skillId, unit)
 		end
  
 		skill.experience = 100 * skill.rating + 500
-		skill.rating = skill.rating + 4
+		skill.rating = skill.rating + 5
 	else
 		skill.id = skillId
 		skill.experience = 500
-		skill.rating = 4
+		skill.rating = 5
 	end
  
 	return skill

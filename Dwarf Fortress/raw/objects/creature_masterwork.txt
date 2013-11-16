@@ -1,6 +1,80 @@
 creature_masterwork
 
 [OBJECT:CREATURE]
+
+         // fake creature for mythskin leather
+         [CREATURE:ANIMAL_MYTHSKIN]
+         [NAME:::]
+         [USE_MATERIAL_TEMPLATE:LEATHER:LEATHERFOUR_TEMPLATE]
+         [SELECT_MATERIAL:ALL]
+                  [ARENA_RESTRICTED]
+                  [DOES_NOT_EXIST]
+
+         // fake creature for deephide leather
+         [CREATURE:ANIMAL_DEEPHIDE]
+         [NAME:::]
+         [USE_MATERIAL_TEMPLATE:LEATHER:LEATHERFIVE_TEMPLATE]
+         [SELECT_MATERIAL:ALL]
+                  [ARENA_RESTRICTED]
+                  [DOES_NOT_EXIST]
+
+         // fake creature for rigid chitinplate
+         [CREATURE:RIGID_CHITINPLATE]
+         [NAME:::]
+         [USE_MATERIAL_TEMPLATE:CHITIN:TANNED_CHITIN_TEMPLATE_HEAVY]
+         [SELECT_MATERIAL:ALL]
+                  [ARENA_RESTRICTED]
+                  [DOES_NOT_EXIST]
+
+         // fake creature for rigid shellplate
+         [CREATURE:RIGID_SHELLPLATE]
+         [NAME:::]
+         [USE_MATERIAL_TEMPLATE:SHELL:TANNED_SHELL_TEMPLATE_HEAVY]
+         [SELECT_MATERIAL:ALL]
+                  [ARENA_RESTRICTED]
+                  [DOES_NOT_EXIST]
+
+         // fake creature for rigid scaleplate
+         [CREATURE:RIGID_SCALEPLATE]
+         [NAME:::]
+         [USE_MATERIAL_TEMPLATE:SCALE:TANNED_DRAKESCALE]
+         [SELECT_MATERIAL:ALL]
+                  [ARENA_RESTRICTED]
+                  [DOES_NOT_EXIST]
+
+         // fake creature for tough leather
+         [CREATURE:ANIMAL_TOUGHLEATHER]
+         [NAME:tough:tough:tough]
+         [USE_MATERIAL_TEMPLATE:LEATHER:LEATHER_EXOTIC]
+         [SELECT_MATERIAL:ALL]
+                  [ARENA_RESTRICTED]
+                  [DOES_NOT_EXIST]
+
+         // fake creature for Chitinplate
+         [CREATURE:TANNED_CHITIN]
+         [NAME:::]
+         [USE_MATERIAL_TEMPLATE:TANNED_CHITIN:TANNED_CHITIN_TEMPLATE]
+         [SELECT_MATERIAL:ALL]
+                  [ARENA_RESTRICTED]
+                  [DOES_NOT_EXIST]
+
+         // fake creature for Shellplate
+         [CREATURE:TANNED_SHELL]
+         [NAME:::]
+         [USE_MATERIAL_TEMPLATE:TANNED_SHELL:TANNED_SHELL_TEMPLATE]
+         [SELECT_MATERIAL:ALL]
+                  [ARENA_RESTRICTED]
+                  [DOES_NOT_EXIST]
+
+         // fake creature for Scaleplate
+         [CREATURE:TANNED_SCALE]
+         [NAME:::]
+         [USE_MATERIAL_TEMPLATE:TANNED_SCALE:TANNED_SCALE_TEMPLATE]
+         [SELECT_MATERIAL:ALL]
+                  [ARENA_RESTRICTED]
+                  [DOES_NOT_EXIST]
+
+
  
 [CREATURE:RAPTOR_DRAGON]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:(Size 1280, bipedal) A huge, fierce, taloned creature, relentless in its pursuit. Size of two large horses. It resembles a wingless bird with powerful jaws and legs. Feathers adorn its arms and head in a colorful crest. Its markings vary widely in shape and color.]
@@ -32,7 +106,7 @@ creature_masterwork
 [BODY:HUMANOID:HUMANOID_JOINTS:TAIL:2EYES:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:OUTERBRAIN:BRAIN:SKULL:NOSE:MOUTH:GENERIC_TEETH_WITH_FANGS:RIBCAGE:3FINGERS:4TOES]
 	[BODYGLOSS:MAW:CLAW_HAND:CLAW_FOOT]
 	[USE_MATERIAL_TEMPLATE:SKIN:SKINFOUR_TEMPLATE] --not dragon-class, but mythical.
-	[USE_MATERIAL_TEMPLATE:LEATHER:LEATHERFOUR_TEMPLATE]
+	[BODY_DETAIL_PLAN:MYTHSKIN]
 	[USE_MATERIAL_TEMPLATE:FAT:FAT_TEMPLATE]
 	[USE_MATERIAL_TEMPLATE:MUSCLE:TOUGHMUSCLE_TEMPLATE]
 	[USE_MATERIAL_TEMPLATE:BONE:TOUGHBONE_TEMPLATE]
@@ -4546,7 +4620,7 @@ creature_masterwork
 
 
 [CREATURE:SUEDE]
-   [NAME:thin:thin:thin]
+   [NAME:::]
    [USE_MATERIAL_TEMPLATE:SKIN:THINSKIN_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:LEATHER:LEATHER_THIN_TEMPLATE]
 	[ARENA_RESTRICTED]
@@ -4599,6 +4673,14 @@ creature_masterwork
 	[MATERIAL_VALUE:5]
 	[ARENA_RESTRICTED]
 	[DOES_NOT_EXIST]
+
+// fake creature for leather
+[CREATURE:ANIMAL_LEATHER]
+   [NAME:::]
+   [USE_MATERIAL_TEMPLATE:LEATHER:LEATHER_TEMPLATE]
+   [SELECT_MATERIAL:ALL]
+        [ARENA_RESTRICTED]
+        [DOES_NOT_EXIST]
 
 [CREATURE:ANIMAL]
    [NAME:::]
@@ -4661,7 +4743,6 @@ creature_masterwork
 		[STATE_NAME_ADJ:LIQUID:mead]
 		[STATE_NAME_ADJ:GAS:boiling mead]
 		[PREFIX:NONE]
-   [USE_MATERIAL_TEMPLATE:LEATHER:LEATHER_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:LEATHER_INTESTINE:LEATHER_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:stomach]
 		[STATE_NAME_ADJ:LIQUID:stomach]
@@ -4683,19 +4764,10 @@ creature_masterwork
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:300]
    [USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_CHITIN:TANNED_CHITIN_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:SHELL:SHELL_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_SHELL:TANNED_SHELL_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_SHELL_TEMPLATE_HEAVY:TANNED_SHELL_TEMPLATE_HEAVY]
-   [USE_MATERIAL_TEMPLATE:TANNED_CHITIN_TEMPLATE_HEAVY:TANNED_CHITIN_TEMPLATE_HEAVY]
-   [USE_MATERIAL_TEMPLATE:TANNED_SHELL_HEAVY:TANNED_SHELL_TEMPLATE_HEAVY]
-   [USE_MATERIAL_TEMPLATE:TANNED_CHITIN_HEAVY:TANNED_CHITIN_TEMPLATE_HEAVY]
    [USE_MATERIAL_TEMPLATE:SCALE:SCALE_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_SCALE:TANNED_SCALE_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:DRAKESCALE:DRAKESCALE_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_DRAKESCALE:TANNED_DRAKESCALE]
    [USE_MATERIAL_TEMPLATE:BONE:BONE_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:BONERATTLE:BONERATTLE_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:SOAP:SOAP_TEMPLATE]
 [MATERIAL:SOAP]
 	[STATE_COLOR:ALL_SOLID:CREAM]
@@ -5697,8 +5769,6 @@ creature_masterwork
 [CREATURE:ANIMAL_RARE]
    [NAME:rare:rare:rare]
    [USE_MATERIAL_TEMPLATE:SKIN:SKIN_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:LEATHER:LEATHER_TEMPLATE]   
-   [USE_MATERIAL_TEMPLATE:CHITIN:CHITIN_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:SILK:SILK_TEMPLATE]
       [WEBBER:CREATURE_MAT:ANIMAL_RARE:SILK]
 	  	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
@@ -5710,11 +5780,6 @@ creature_masterwork
 		[CDI:TARGET_RANGE:C:5]
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:300]
-   [USE_MATERIAL_TEMPLATE:TANNED_CHITIN:TANNED_CHITIN_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:SHELL:SHELL_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_SHELL:TANNED_SHELL_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:SCALE:SCALE_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_SCALE:TANNED_SCALE_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:BONE:BONE_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:FAT:FAT_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:TALLOW:TALLOW_TEMPLATE]
@@ -5753,15 +5818,6 @@ creature_masterwork
 [CREATURE:ANIMAL_EXOTIC]
    [NAME:tough:tough:tough]
    [USE_MATERIAL_TEMPLATE:SKIN:TOUGHSKIN_TEMPLATE
-   [USE_MATERIAL_TEMPLATE:LEATHER:TOUGHLEATHER_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:LEATHER:LEATHER_EXOTIC]
-   [USE_MATERIAL_TEMPLATE:LEATHER_EXOTIC:LEATHER_EXOTIC]
-   [USE_MATERIAL_TEMPLATE:CHITIN:CHITIN_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_CHITIN:TANNED_CHITIN_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:SHELL:SHELL_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_SHELL:TANNED_SHELL_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:SCALE:SCALE_TEMPLATE]
-   [USE_MATERIAL_TEMPLATE:TANNED_SCALE:TANNED_SCALE_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:BONE:TOUGHBONE_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:SINEW:TOUGHSINEW_TEMPLATE]
    [USE_MATERIAL_TEMPLATE:SHELL:SHELL_TEMPLATE]
@@ -5833,7 +5889,7 @@ creature_masterwork
 
 
 [CREATURE:UNDEAD_ZOMBIE]
-[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into on of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
+[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into one of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
    [NAME:undead:undead:undead]
 [CASTE_NAME:undead:undead:undead]
    [CREATURE_TILE:'Z'][COLOR:2:0:0]
@@ -6088,7 +6144,7 @@ creature_masterwork
       [MALE]
       [BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
    [CASTE:FEMALE_DWARF]
-[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into on of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
+[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into one of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
       [CASTE_NAME:zombie dwarf:zombie dwarves:zombie dwarven]
 [POP_RATIO:12]
       [FEMALE]
@@ -6097,15 +6153,15 @@ creature_masterwork
       [BODY_SIZE:1:168:15000]
       [BODY_SIZE:12:0:60000]
 [SELECT_CASTE:FEMALE_DWARF]
-[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into on of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
+[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into one of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
    [CASTE:MALE_DWARF]
-[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into on of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
+[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into one of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
       [CASTE_NAME:zombie dwarf:zombie dwarves:zombie dwarven]
 [POP_RATIO:12]
       [MALE]
       [BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 [SELECT_CASTE:MALE_DWARF]
-[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into on of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
+[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A zombie. This sad creature has been turned into one of the walking dead by a zombie bite. Isolate it and take it down before it infects others. If all else fails kill it with fire.]
    [CASTE:FEMALE_GOBLIN]
       [CASTE_NAME:zombie goblin:zombie goblins:zombie goblin]
 [POP_RATIO:12]
@@ -9744,13 +9800,13 @@ YE_JADE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUST:1:IRIS_EYE_SILVER:
 
 	
 [CREATURE:ZOMBIE_SPY]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A dwarven zombie. This sad creature has been turned into on of the walking dead by a zombie bite. Isolate him and take him down before he infects others. A zombie bite has a chance to spread the disease so send armored units to take care of him. If all else fails kill it with fire.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A dwarven zombie. This sad creature has been turned into one of the walking dead by a zombie bite. Isolate him and take him down before he infects others. A zombie bite has a chance to spread the disease so send armored units to take care of him. If all else fails kill it with fire.]
 [NAME:dwarven zombie:dwarven zombies:dwarven zombie]
 	[CASTE_NAME:dwarven zombie:dwarven zombies:dwarven zombie]
 [CASTE:MALE]
-[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A dwarven zombie. This sad creature has been turned into on of the walking dead by a zombie bite. Isolate him and take him down before he infects others. A zombie bite has a chance to spread the disease so send armored units to take care of him. If all else fails kill it with fire.]
+[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A dwarven zombie. This sad creature has been turned into one of the walking dead by a zombie bite. Isolate him and take him down before he infects others. A zombie bite has a chance to spread the disease so send armored units to take care of him. If all else fails kill it with fire.]
 [SELECT_CASTE:MALE]
-[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A dwarven zombie. This sad creature has been turned into on of the walking dead by a zombie bite. Isolate him and take him down before he infects others. A zombie bite has a chance to spread the disease so send armored units to take care of him. If all else fails kill it with fire.]
+[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A dwarven zombie. This sad creature has been turned into one of the walking dead by a zombie bite. Isolate him and take him down before he infects others. A zombie bite has a chance to spread the disease so send armored units to take care of him. If all else fails kill it with fire.]
 	 [CREATURE_TILE:'Z'][COLOR:2:0:0]
    [CREATURE_SOLDIER_TILE:'Z']
    [CREATURE_CLASS:GENERAL_POISON]
@@ -11163,7 +11219,7 @@ YESMAGIC[CAN_DO_INTERACTION:HASTE_SPELL]
 
 
 [CREATURE:CULTLEADER]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:---a slimy voice speaks to you--- You found me. You are cleverer then I thought, but this wont safe you. Prepare to die, unbeliever.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:---a slimy voice speaks to you--- You found me. You are cleverer than I thought, but this won't save you. Prepare to die, unbeliever.]
 	[NAME:cultleader of the carp god:cultleaders of the carp god:vile]
 	[PRONE_TO_RAGE:100]
 	[AMPHIBIOUS][UNDERSWIM]
@@ -13435,13 +13491,12 @@ YESMAGIC[CAN_DO_INTERACTION:HASTE_SPELL]
       [REMOVE_MATERIAL:SKIN]
       [REMOVE_MATERIAL:LEATHER]
       [REMOVE_MATERIAL:HAIR]
-      [USE_MATERIAL_TEMPLATE:SCALE:TOUGHSCALE_TEMPLATE]
-	  [USE_MATERIAL_TEMPLATE:LEATHER:LEATHERFIVE_TEMPLATE]
-      
+      [USE_MATERIAL_TEMPLATE:SCALE:TOUGHSCALE_TEMPLATE]      
       [USE_MATERIAL_TEMPLATE:SHADOW:SHADOW_TEMPLATE]
 	[TISSUE:VEIL]
 		[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SHADOW_TEMPLATE]
 	[SECRETION:LOCAL_CREATURE_MAT:VEIL:GAS:BY_CATEGORY:ALL:SKIN]
+   [BODY_DETAIL_PLAN:DEEPHIDE]
    [BODY_DETAIL_PLAN:STANDARD_TISSUES]
       [USE_TISSUE_TEMPLATE:HORN:HORN_TEMPLATE]
       [REMOVE_TISSUE:SKIN]
@@ -14842,8 +14897,7 @@ nevermind lol
       [REMOVE_MATERIAL:LEATHER]
       [REMOVE_MATERIAL:HAIR]
       [USE_MATERIAL_TEMPLATE:SCALE:TOUGHSCALE_TEMPLATE]
-	  [USE_MATERIAL_TEMPLATE:LEATHER:LEATHERFIVE_TEMPLATE]
-      
+     
       [USE_MATERIAL_TEMPLATE:SHADOW:SHADOW_TEMPLATE]
 		[SYNDROME]
 			[SYN_NAME:balrog cough]
@@ -14856,7 +14910,7 @@ nevermind lol
 		[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SHADOW_TEMPLATE]
 	
 	[SECRETION:LOCAL_CREATURE_MAT:VEIL:GAS:BY_CATEGORY:ALL:SKIN]
-	
+   [BODY_DETAIL_PLAN:DEEPHIDE]	
    [BODY_DETAIL_PLAN:STANDARD_TISSUES]
       [USE_TISSUE_TEMPLATE:HORN:HORN_TEMPLATE]
       [REMOVE_TISSUE:SKIN]
@@ -15239,7 +15293,6 @@ nevermind lol
 	[BODYGLOSS:MAW:CLAW_HAND:CLAW_FOOT]
 
 	[USE_MATERIAL_TEMPLATE:SKIN:SKINFOUR_TEMPLATE] --not dragon-class, but mythical.
-	[USE_MATERIAL_TEMPLATE:LEATHER:LEATHERFOUR_TEMPLATE]
 	[USE_MATERIAL_TEMPLATE:FAT:FAT_TEMPLATE]
 	[USE_MATERIAL_TEMPLATE:MUSCLE:TOUGHMUSCLE_TEMPLATE]
 	[USE_MATERIAL_TEMPLATE:BONE:TOUGHBONE_TEMPLATE]
@@ -15271,6 +15324,7 @@ nevermind lol
 	  [USE_TISSUE_TEMPLATE:FEATHER:FEATHER_TEMPLATE]
 	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
 	[BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:FEATHER]
+	[BODY_DETAIL_PLAN:MYTHSKIN]
 
 	[USE_MATERIAL_TEMPLATE:TOOTH_BEAST:TOOTH_BEAST_TEMPLATE]
 	[USE_TISSUE_TEMPLATE:TOOTH_BEAST:TOOTH_TEMPLATE]
