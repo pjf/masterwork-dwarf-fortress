@@ -16,7 +16,7 @@ my $EXCLUDED_FILES_RE = qr{
     \.gitignore$
 }msx;
 
-my @BRANCHES = qw(master simple-leather unified);
+my @BRANCHES = qw(master unified);
 
 # Remember what branch we're on now
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
