@@ -20,7 +20,9 @@ my $GRAPHICS_DIRS = abs_path(
     File::Spec->catfile($RealBin, '..', 'MasterworkDwarfFortress/graphics')
 );
 
-# List of harmless tags. We skip diffs which only consist of these
+# List of harmless tags. We skip diffs which only consist of these.
+# (Altough not really harmless; these would be be better called 'display'
+# tags)
 
 my %harmless;
 
@@ -59,6 +61,8 @@ my %harmless;
 
     STATE_NAME_ADJ
 )} = ();
+
+my $contains_display_info_re = '^[+-][^\n]*?(?:\[' . join('|\[', keys %harmless). ')';
 
 # NOTE : STATE_NAME_ADJ is *not* a display attribute, but
 # it appears in oodles of places combined with display tags,
@@ -111,16 +115,38 @@ foreach my $base_dir (@directories) {
 
             @patches = capturex(
                 [0,1], 'diff', '-b', '-u',
-                File::Spec->catfile($PATCH_FROM, $raw_file),
                 File::Spec->catfile($base_dir, qw(raw objects), $raw_file),
+                File::Spec->catfile($PATCH_FROM, $raw_file),
             );
+
+            chomp @patches;
 
         }
 
-        # Print the ones which are significant
+        # Print the ones which are significant, and their headers
+        # as appropriate.
+
+        my %printed_headers;
+        my $header;
 
         foreach my $patch (@patches) {
-            print $patch if significant_change($patch);
+            given ($patch) {
+                when (/^(?:\+\+\+|---)/) { $header = $patch }
+                when (significant_change($patch)) {
+                    if ($patch =~ /($contains_display_info_re)/ms) {
+
+                        # TODO: Unravel the patch so that only the
+                        # non-display sections are included.
+
+                        # Throwing these on STDERR isn't ideal.
+                        warn "$patch\n";
+                    }
+                    else {
+                        print $header if not $printed_headers{$header}++;
+                        print "\n\@\@$patch";
+                    }
+                }
+            }
         }
 
         print "\n\n";
