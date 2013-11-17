@@ -122,7 +122,7 @@ YESWARP[INORGANIC:ANTHRACITE_DUST]
 	[SYN_NAME:black lung] 			I think you can work this one out.
 	[SYN_AFFECTED_CLASS:GENERAL_POISON][SYN_AFFECTED_CLASS:UNDEAD]	
 [SYN_IMMUNE_CREATURE:DWARF:MASON_MALE]
-[SYN_IMMUNE_CREATURE:DWARF:MASON_FEMALE]this syndrome affects all creatures with the general_poison class, ie. most of them.
+[SYN_IMMUNE_CREATURE:DWARF:MASON_FEMALE]	this syndrome affects all creatures with the general_poison class, ie. most of them.
 	[SYN_INHALED]				this syndrome must be inhaled to take effect.
 	First stage: shortness of breath, chronic cough
 	[CE_IMPAIR_FUNCTION:SEV:250:PROB:30:RESISTABLE:VASCULAR_ONLY:BP:BY_CATEGORY:LUNG:ALL:START:5000:PEAK:400000:END:400000]
