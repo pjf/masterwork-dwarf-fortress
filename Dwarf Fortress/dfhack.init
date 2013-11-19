@@ -439,7 +439,7 @@ diggingInvaders setDelay TITAN_10 dig -1
 diggingInvaders setDelay TITAN_10 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_10 destroySmoothConstruction 50
 
-
+enable search
 enable autoSyndrome			
 syndromeTrigger	enable
 autofixhandedness start
