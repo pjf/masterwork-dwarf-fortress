@@ -439,8 +439,11 @@ diggingInvaders setDelay TITAN_10 dig -1
 diggingInvaders setDelay TITAN_10 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_10 destroySmoothConstruction 50
 
+enable autoSyndrome
+enable mousequery
 enable search
-enable autoSyndrome			
+enable zone
+
 syndromeTrigger	enable
 autofixhandedness start
 projectileExpansion enable
