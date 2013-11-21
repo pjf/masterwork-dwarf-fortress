@@ -371,7 +371,7 @@ Public Class optionManager
 
         If m_worldGenIndex = -1 Then
             'replace ALL tokens
-            Dim rx As New Regex(pattern.Replace("?<value>", "")) 'remove the value part since we're replacing the whole line
+            Dim rx As New Regex(pattern.Replace("?<value>", ""), RegexOptions.IgnoreCase) 'remove the value part since we're replacing the whole line
             m_world_gen = rx.Replace(m_world_gen, strReplace)
             'update the global world gen values
             For Each key As Integer In globals.m_tokensWorldGen.Keys
@@ -393,7 +393,7 @@ Public Class optionManager
 #Region "pattern replacement loading/saving"
     'these functions are used when replacing specific values within patters. see the invader skills for an example
     Public Function loadPatternValue(ByVal pattern As String, ByVal filePaths As List(Of String)) As String
-        Dim rx As New Regex(pattern)
+        Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
         Dim m As Match
         For Each f As String In filePaths
             m = rx.Match(readFile(f))
@@ -411,7 +411,7 @@ Public Class optionManager
     End Function
 
     Private Function replaceWithPatterns(ByVal pattern As String, ByVal replacement As String, ByVal filePaths As List(Of String), Optional ByVal isCritical As Boolean = True) As Boolean
-        Dim rx As New Regex(pattern)
+        Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
         Dim changeCount As Integer = 0
         For Each f As String In filePaths
             Dim data As String = readFile(f)

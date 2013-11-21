@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><configuration>
 
-	<gamelog encoding="Cp850" path="../gamelog.txt"/>
+	<gamelog encoding="Cp850" path="../../../Dwarf Fortress/gamelog.txt"/>
  	<supplementalLogs>
  		<item path="${gameBaseDir}/ss_fix.log"/>
  	</supplementalLogs> 

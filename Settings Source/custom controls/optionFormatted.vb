@@ -25,7 +25,7 @@ Public Class optionFormatted
     Private m_ep As New ErrorProvider
 
     Private Sub optionFormatted_Validating(sender As Object, e As CancelEventArgs) Handles Me.Validating
-        Dim rx As New Regex(m_pattern)
+        Dim rx As New Regex(m_pattern, RegexOptions.IgnoreCase)
         If Not rx.IsMatch(Me.Text) Then
             m_ep.SetError(Me, "The input must be in the format of: " & m_niceFormat)
             m_ep.SetIconAlignment(Me, ErrorIconAlignment.MiddleLeft)
@@ -115,7 +115,7 @@ Public Class optionFormatted
 
     Public Sub runtTest() Implements iTest.runtTest
         Dim valid As Boolean = False
-        Dim rx As New Regex(m_pattern)
+        Dim rx As New Regex(m_pattern, RegexOptions.IgnoreCase)
         Dim newVal As String = Me.Text
         While Not valid
             newval = InputBox("Enter test value for " & Me.Name.ToString, "", Me.Text)

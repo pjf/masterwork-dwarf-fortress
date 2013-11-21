@@ -26,7 +26,7 @@ Public Class graphicsSets
             'first update the graphics section (sky,chasm,pillar,tracks) from the graphics d_init to the df d_init
             Dim om As New optionManager
             Dim basePattern As String = ".*(\\" & packName & "\\)"
-            Dim rx As New Regex(basePattern & ".*(d_init.txt)")
+            Dim rx As New Regex(basePattern & ".*(d_init.txt)", RegexOptions.IgnoreCase)
             Dim f_info As IO.FileInfo = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) rx.IsMatch(f.FullName))
             If f_info IsNot Nothing Then
                 Dim graphicsDInit As String = f_info.FullName
@@ -56,7 +56,7 @@ Public Class graphicsSets
 
             'next copy the tileset; currently these are all named 'Phoebus_16x16.png'
             Dim tileSetName As String = "Phoebus_16x16.png"
-            rx = New Regex(basePattern & ".*(" & tileSetName & ")")
+            rx = New Regex(basePattern & ".*(" & tileSetName & ")", RegexOptions.IgnoreCase)
             f_info = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) rx.IsMatch(f.FullName))
             If f_info IsNot Nothing Then
                 Dim gTileSet As String = f_info.FullName

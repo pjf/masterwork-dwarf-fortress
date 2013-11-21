@@ -92,7 +92,7 @@ Public Class fileWorking
     End Function
 
     Private Shared Function findFilePath(ByVal fileName As String, ByVal pathList As List(Of IO.FileInfo)) As String
-        Dim f_info As IO.FileInfo = pathList.Find(Function(f As IO.FileInfo) f.Name = fileName)
+        Dim f_info As IO.FileInfo = pathList.Find(Function(f As IO.FileInfo) String.Compare(f.Name, fileName, True) = 0)
         If f_info IsNot Nothing Then
             Return f_info.FullName
         Else
@@ -100,7 +100,7 @@ Public Class fileWorking
         End If
     End Function
     Private Shared Function findFile(ByVal fileName As String, ByVal pathList As List(Of IO.FileInfo)) As IO.FileInfo
-        Dim f_info As IO.FileInfo = pathList.Find(Function(f As IO.FileInfo) f.Name = fileName)
+        Dim f_info As IO.FileInfo = pathList.Find(Function(f As IO.FileInfo) String.Compare(f.Name, fileName, True) = 0)
         If f_info IsNot Nothing Then
             Return f_info
         Else

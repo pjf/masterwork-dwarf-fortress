@@ -7,7 +7,7 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        Me.FlatStyle = Windows.Forms.FlatStyle.Standard
+        Me.FlatStyle = Windows.Forms.FlatStyle.Flat
     End Sub
 
 

@@ -312,6 +312,7 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <None Include="Resources\preview.png" />
     <None Include="Resources\network-firewall.png" />
     <None Include="Resources\wiki.png" />
     <None Include="Resources\toolbox.png" />

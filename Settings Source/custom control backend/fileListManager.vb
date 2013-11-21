@@ -66,13 +66,13 @@ Public Class fileListManager
     End Function
 
     Private Sub buildPattern(ByVal fileName As String)
-        m_currentPattern = New Regex("^" & fileName.Replace("*", ".*"))
+        m_currentPattern = New Regex("^" & fileName.Replace("*", ".*"), RegexOptions.IgnoreCase)
     End Sub
 
 
     Public Function getRelatedGraphicsFilePaths() As List(Of String)
         Dim fPaths As New List(Of String)
-        Dim rx As New Regex("(" & String.Join(")|(", m_fileNames.ToArray) & ")")
+        Dim rx As New Regex("(" & String.Join(")|(", m_fileNames.ToArray) & ")", RegexOptions.IgnoreCase)
         Dim f_infos As List(Of IO.FileInfo) = mwGraphicFilePaths.FindAll(Function(f) rx.IsMatch(f.Name))
         For Each f_info As IO.FileInfo In f_infos
             fPaths.Add(f_info.FullName)

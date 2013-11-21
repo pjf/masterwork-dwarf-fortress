@@ -12,13 +12,20 @@ Imports System.Text.RegularExpressions
     Private m_refreshingWorldGen As Boolean = False
 #End Region
 
+    Public Sub New()
+        'load the proper theme before we initialize controls
+        Theme.ColorTable = New ribbonThemeDark
+
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+        ribbonMain.Refresh()
+    End Sub
 
 
 
     Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-        Theme.ColorTable = New ribbonThemeDark
-        ribbonMain.Refresh()
 
         refreshFileAndDirPaths()
         If m_dwarfFortressRootDir <> "" Then
@@ -82,9 +89,16 @@ Imports System.Text.RegularExpressions
         For Each c As Control In parentControl.Controls
 
             Dim conOpt As iToken = TryCast(c, iToken)
-            If conOpt IsNot Nothing Then
+            If conOpt IsNot Nothing Then                
                 If c.Enabled Then conOpt.loadOption() 'only load options of enabled controls
                 If Not m_refreshingWorldGen Then 'when refreshing from world gen, we just want to reload
+
+                    If TypeOf (c) Is mwCheckBox Then
+                        'for an unknown reason, this is the only way to get the theme forecolor to stick for
+                        'the checkbox buttons
+                        c.ForeColor = Theme.ColorTable.Text
+                    End If
+
                     If TypeOf conOpt Is iTooltip Then 'set the tooltip
                         Dim tt As String = ToolTipMaker.GetToolTip(conOpt)
                         Dim conTooltip As String = CType(conOpt, iTooltip).getToolTip
@@ -265,23 +279,25 @@ Imports System.Text.RegularExpressions
             End If
 
         End If
-        Try
-            'ensure our random files exist first
-            checkCreateRndFile("entity_random_rc.txt")
-            checkCreateRndFile("language_RANDOM.txt")
-            checkCreateRndFile("creature_random_rc.txt")
-        Catch ex As Exception
-            MsgBox("Failed to initialize random creature files!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
-        End Try
 
         Try
-            Dim p As New Process
-            p.StartInfo.FileName = findDfFilePath("RandCreatures.exe")
-            p.StartInfo.WindowStyle = ProcessWindowStyle.Normal
-            p.Start()
+            Dim f_info As IO.FileInfo = findDfFile("RandCreatures.exe")
 
-            p.WaitForExit()
-            p.Close()
+            If f_info IsNot Nothing Then
+                Dim pExec As New Process
+                Dim pInfo As New ProcessStartInfo
+                With pInfo
+                    .WorkingDirectory = f_info.Directory.Parent.FullName 'run in objects folder
+                    .UseShellExecute = True
+                    .FileName = f_info.FullName
+                    .WindowStyle = ProcessWindowStyle.Normal
+                    .Verb = "runas"
+                End With
+                pExec = Process.Start(pInfo)
+                pExec.WaitForExit()
+                pExec.Close()
+            End If
+
         Catch ex As Exception
             MsgBox("Failed to run RandCreatures.exe!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
         End Try
@@ -289,7 +305,9 @@ Imports System.Text.RegularExpressions
     End Sub
 
     Private Sub btnDelRandoms_Click(sender As Object, e As EventArgs) Handles btnDelRandoms.Click
-
+        If MsgBox("Remove all random creatures, civilizations and languages?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm Delete") = MsgBoxResult.No Then
+            Exit Sub
+        End If
         'clear the random creature, entity and language files
         Dim mgr As New optionManager()
         mgr.saveFile(findDfFilePath("entity_random_rc.txt"), "", False)
@@ -298,17 +316,10 @@ Imports System.Text.RegularExpressions
         btnDelRandoms.Enabled = False
     End Sub
 
-    Private Sub checkCreateRndFile(ByVal fileName As String)
-        Dim f As String = findDfFilePath(fileName)
-        If f = "" Then
-            IO.File.Create(IO.Path.Combine(globals.m_dwarfFortressRootDir, "raw", "objects", fileName))
-        End If
-    End Sub
-
     Private Function randomCreaturesExistCheck() As Boolean
         Try
             Dim data As String = readFile(findDfFilePath("creature_random_rc.txt"), False)
-            If data.Contains("[OBJECT:CREATURE]") Then
+            If data.Contains("[CREATURE:") Then
                 btnDelRandoms.Enabled = True
                 Return True
             Else
@@ -387,13 +398,16 @@ Imports System.Text.RegularExpressions
 #End Region
 
 
-#Region "testing"
+#Region "basic test of all options"
+
+    'this doesn't include applying graphic tilsets, or launching the ulilities or menu urls
 
     Private Sub MainForm_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
         If Not Debugger.IsAttached Then Exit Sub
         If e.Alt And e.Control And e.KeyCode = Keys.Oemtilde Then
             If MsgBox("Run test? This will change raws!", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.No Then Exit Sub
             testSettings(tabMain)
+            MsgBox("Test Complete.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
         End If
     End Sub
 
@@ -408,7 +422,9 @@ Imports System.Text.RegularExpressions
                 Dim conOpt As iTest = TryCast(c, iTest)
                 If conOpt IsNot Nothing Then
                     Try
+                        Debug.WriteLine("TESTING... " & c.Name)
                         conOpt.runtTest()
+                        Debug.WriteLine("TEST ENDED")
                     Catch ex As Exception
                         Debug.WriteLine("!TEST EXCEPTION! " & ex.ToString)
                     End Try
@@ -418,7 +434,7 @@ Imports System.Text.RegularExpressions
                     testSettings(c)
                 End If
             End If
-        Next
+        Next       
     End Sub
 
 #End Region

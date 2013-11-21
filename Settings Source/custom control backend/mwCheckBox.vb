@@ -12,20 +12,20 @@
         Me.ImageAlign = ContentAlignment.MiddleLeft
         Me.DoubleBuffered = True
 
-        Me.FlatStyle = Windows.Forms.FlatStyle.Flat
         Me.BackgroundImage = My.Resources.transp_1
         Me.BackgroundImageLayout = ImageLayout.Tile
 
+        Me.FlatStyle = Windows.Forms.FlatStyle.Flat
         Me.FlatAppearance.CheckedBackColor = Color.Transparent
-
-        Me.ForeColor = Color.White
         Me.FlatAppearance.BorderSize = 0
+
+        Me.ForeColor = Color.WhiteSmoke
 
         Me.Image = My.Resources.cross_small
     End Sub
 
 
-    Private Sub optionSingle_CheckedChanged(sender As Object, e As EventArgs) Handles Me.CheckedChanged        
+    Private Sub optionSingle_CheckedChanged(sender As Object, e As EventArgs) Handles Me.CheckedChanged
         If Me.Checked Then
             Me.Image = My.Resources.tick_small
         Else
@@ -38,9 +38,9 @@
             MyBase.FlatAppearance.MouseOverBackColor = Theme.ColorTable.TabSelectedGlow
             MyBase.FlatAppearance.MouseDownBackColor = Theme.ColorTable.TabSelectedGlow
         End If
-        If MyBase.ForeColor <> Theme.ColorTable.Text Then
-            MyBase.ForeColor = Theme.ColorTable.Text
-        End If
+        'If MyBase.ForeColor <> Theme.ColorTable.Text Then
+        '    MyBase.ForeColor = Theme.ColorTable.Text
+        'End If
     End Sub
 
     Protected Function yesNoToBoolean(ByVal value As String) As Boolean
