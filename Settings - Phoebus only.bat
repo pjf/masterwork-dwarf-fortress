@@ -1,1 +1,0 @@
-start /d "%PAL:Dwarf Fortress\" PhoebusTilesetAssembler.exe
