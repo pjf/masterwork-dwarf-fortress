@@ -1148,6 +1148,7 @@ Partial Class MainForm
         Dim ComboFileItem22 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
         Dim ComboFileItem23 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
         Dim ComboFileItem24 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
+        Dim ComboFileItem25 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
         Dim OptionSettingManager269 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim OptionSingle61 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager266 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
@@ -11307,42 +11308,45 @@ Partial Class MainForm
         ComboFileItem12.display = "SOV.G.1"
         ComboFileItem12.fileName = "colors_GRYSOV1.txt"
         ComboFileItem12.value = "GRYSOV1"
-        ComboFileItem13.display = "Jolly Bastion Warm"
-        ComboFileItem13.fileName = "colors_JollyBastionWarm.txt"
-        ComboFileItem13.value = "JOLLYWARM"
-        ComboFileItem14.display = "KRM-SOV 1"
-        ComboFileItem14.fileName = "colors_KRMSOV1.txt"
-        ComboFileItem14.value = "KRMSOV1"
-        ComboFileItem15.display = "KRM-SOV 2"
-        ComboFileItem15.fileName = "colors_KRMSOV2.txt"
-        ComboFileItem15.value = "KRMSOV2"
-        ComboFileItem16.display = "KRM-SOV 3"
-        ComboFileItem16.fileName = "colors_KRMSOV3.txt"
-        ComboFileItem16.value = "KRMSOV3"
-        ComboFileItem17.display = "Matrix"
-        ComboFileItem17.fileName = "colors_Matrix.txt"
-        ComboFileItem17.value = "MATRIX"
-        ComboFileItem18.display = "MAT-SOV 1"
-        ComboFileItem18.fileName = "colors_MATSOV1.txt"
-        ComboFileItem18.value = "MATSOV1"
-        ComboFileItem19.display = "NES"
-        ComboFileItem19.fileName = "colors_NES.txt"
-        ComboFileItem19.value = "NES"
-        ComboFileItem20.display = "Natural"
-        ComboFileItem20.fileName = "colors_Natural.txt"
-        ComboFileItem20.value = "NATURAL"
-        ComboFileItem21.display = "Tocky"
-        ComboFileItem21.fileName = "colors_Tocky.txt"
-        ComboFileItem21.value = "TOCKY"
-        ComboFileItem22.display = "Toxic Warm"
-        ComboFileItem22.fileName = "colors_ToxicWarm.txt"
-        ComboFileItem22.value = "TOXICWARM"
-        ComboFileItem23.display = "Warm"
-        ComboFileItem23.fileName = "colors_Warm.txt"
-        ComboFileItem23.value = "WARM"
-        ComboFileItem24.display = "Wasteland"
-        ComboFileItem24.fileName = "colors_Wasteland.txt"
-        ComboFileItem24.value = "WASTELAND"
+        ComboFileItem13.display = "Jolly Bastion"
+        ComboFileItem13.fileName = "colors_JollyBastion.txt"
+        ComboFileItem13.value = "JOLLYBASTION"
+        ComboFileItem14.display = "Jolly Bastion Warm"
+        ComboFileItem14.fileName = "colors_JollyBastionWarm.txt"
+        ComboFileItem14.value = "JOLLYWARM"
+        ComboFileItem15.display = "KRM-SOV 1"
+        ComboFileItem15.fileName = "colors_KRMSOV1.txt"
+        ComboFileItem15.value = "KRMSOV1"
+        ComboFileItem16.display = "KRM-SOV 2"
+        ComboFileItem16.fileName = "colors_KRMSOV2.txt"
+        ComboFileItem16.value = "KRMSOV2"
+        ComboFileItem17.display = "KRM-SOV 3"
+        ComboFileItem17.fileName = "colors_KRMSOV3.txt"
+        ComboFileItem17.value = "KRMSOV3"
+        ComboFileItem18.display = "Matrix"
+        ComboFileItem18.fileName = "colors_Matrix.txt"
+        ComboFileItem18.value = "MATRIX"
+        ComboFileItem19.display = "MAT-SOV 1"
+        ComboFileItem19.fileName = "colors_MATSOV1.txt"
+        ComboFileItem19.value = "MATSOV1"
+        ComboFileItem20.display = "NES"
+        ComboFileItem20.fileName = "colors_NES.txt"
+        ComboFileItem20.value = "NES"
+        ComboFileItem21.display = "Natural"
+        ComboFileItem21.fileName = "colors_Natural.txt"
+        ComboFileItem21.value = "NATURAL"
+        ComboFileItem22.display = "Tocky"
+        ComboFileItem22.fileName = "colors_Tocky.txt"
+        ComboFileItem22.value = "TOCKY"
+        ComboFileItem23.display = "Toxic Warm"
+        ComboFileItem23.fileName = "colors_ToxicWarm.txt"
+        ComboFileItem23.value = "TOXICWARM"
+        ComboFileItem24.display = "Warm"
+        ComboFileItem24.fileName = "colors_Warm.txt"
+        ComboFileItem24.value = "WARM"
+        ComboFileItem25.display = "Wasteland"
+        ComboFileItem25.fileName = "colors_Wasteland.txt"
+        ComboFileItem25.value = "WASTELAND"
         OptionSingleFileReplace4.itemList.Add(ComboFileItem7)
         OptionSingleFileReplace4.itemList.Add(ComboFileItem8)
         OptionSingleFileReplace4.itemList.Add(ComboFileItem9)
@@ -11361,6 +11365,7 @@ Partial Class MainForm
         OptionSingleFileReplace4.itemList.Add(ComboFileItem22)
         OptionSingleFileReplace4.itemList.Add(ComboFileItem23)
         OptionSingleFileReplace4.itemList.Add(ComboFileItem24)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem25)
         OptionSettingManager269.settingName = "COLORS"
         OptionSingleFileReplace4.settingManager = OptionSettingManager269
         Me.optCbColors.options = OptionSingleFileReplace4
