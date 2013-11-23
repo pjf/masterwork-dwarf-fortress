@@ -16,7 +16,8 @@ Public Class fileWorking
         loadMwGraphics()
     End Sub
 
-    Private Shared Sub loadDfFilePaths()
+    Public Shared Sub loadDfFilePaths()
+        If m_dfFilePaths IsNot Nothing Then m_dfFilePaths.Clear()
         'load the init files (txt)
         m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\data\init", True, New String() {".txt"}))
         'load the art files (png and ttf files)

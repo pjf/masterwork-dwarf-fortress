@@ -298,6 +298,8 @@ Imports System.Text.RegularExpressions
         Catch ex As Exception
             MsgBox("Failed to run RandCreatures.exe!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
         End Try
+        'refresh the file list
+        fileWorking.loadDfFilePaths()
         randomCreaturesExistCheck()
     End Sub
 
