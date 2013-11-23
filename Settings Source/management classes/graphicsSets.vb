@@ -1,5 +1,6 @@
 ﻿Imports System.Text.RegularExpressions
 Imports MasterworkDwarfFortress.fileWorking
+Imports System.Xml
 
 Public Class graphicsSets
 
@@ -66,9 +67,9 @@ Public Class graphicsSets
                 End If
             End If
 
-            'finally, copy the raw files. for now it's assumed these are in the <graphics pack name dir>\raw\ folder
+            'next, copy the raw files. for now it's assumed these are in the <graphics pack name dir>\raw\ folder
             Try
-                Dim gDir As IO.DirectoryInfo = mwGraphicDirs.Find(Function(d As IO.DirectoryInfo) d.Name = packName)
+                Dim gDir As IO.DirectoryInfo = mwGraphicDirs.Find(Function(d As IO.DirectoryInfo) String.Compare(d.Name, packName, True) = 0)
                 If gDir IsNot Nothing Then
                     Dim fsp As MyServices.FileSystemProxy = My.Computer.FileSystem
                     Dim mwPath As String = IO.Path.Combine(gDir.FullName, "raw")
@@ -78,6 +79,35 @@ Public Class graphicsSets
                     Else
                         MsgBox("Invalid paths for graphics pack raws.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
                     End If
+
+                    Try
+                        'read the graphic pack to color map file, find the color, and set it
+                        Dim mapFile As IO.FileInfo = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) String.Compare(f.Name, "color_map.xml", True) = 0)
+                        If mapFile IsNot Nothing Then
+                            Dim xmlDoc As XmlDocument
+                            Dim nodes As XmlNodeList
+
+                            xmlDoc = New XmlDocument
+                            xmlDoc.Load(mapFile.FullName)
+                            nodes = xmlDoc.SelectNodes("/graphics/pack")
+
+                            For Each node As XmlNode In nodes
+                                If String.Compare(node.ChildNodes(0).InnerText, packName, True) = 0 Then
+                                    Dim color As String = node.ChildNodes(1).InnerText
+                                    If color <> MainForm.optCbColors.SelectedValue.ToString AndAlso _
+                                        MsgBox("This tileset has a color scheme associated with it, would you like apply it as well?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Change Colors") = MsgBoxResult.Yes Then
+                                        MainForm.optCbColors.SelectedValue = color
+                                        MainForm.optCbColors.saveOption()
+                                        Exit For
+                                    End If
+                                End If
+                            Next
+                        End If
+                    Catch ex As Exception
+                        MsgBox("Failed to apply the default color scheme!" & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
+                    End Try
+                Else
+                    MsgBox("Could not find the graphics pack directory! No changes have been applied!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
                 End If
             Catch ex As Exception
                 MsgBox("Failed to copy graphics pack raw folder." & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
@@ -92,14 +122,17 @@ Public Class graphicsSets
     End Sub
 
     Public Shared Sub updateSavedGames()
-        If MsgBox("WARNING: This can break the save if you changed settings for creatures, plants or inorganics." & vbCrLf & vbCrLf & "Changes to buildings, entities and reactions are fine; it is best if you only do this if your current settings are the same as when you generated the world." & vbCrLf & vbCrLf & "If you are unsure, abort now!", MsgBoxStyle.Exclamation + MsgBoxStyle.YesNo, "Confirm Save Game Update") = MsgBoxResult.Yes Then
+        If MsgBox("WARNING: This can break the save if you changed settings for creatures, plants or inorganics." & vbCrLf & vbCrLf & _
+                  "Changes to buildings, entities and reactions are fine; it is best if you only do this if your current settings are the same as when you generated the world." & _
+                  vbCrLf & vbCrLf & "If you are unsure, abort now!", MsgBoxStyle.Exclamation + MsgBoxStyle.YesNo, "Confirm Save Game Update") = MsgBoxResult.Yes Then
             Try
                 Dim fsp As MyServices.FileSystemProxy = My.Computer.FileSystem
                 Dim dfRawPath As String = IO.Path.Combine(globals.m_dwarfFortressRootDir, "raw")
 
-                'find all savegames
-                Dim saveGameDirs As List(Of IO.DirectoryInfo) = getDirectories(IO.Path.Combine(globals.m_dwarfFortressRootDir, "data", "save"), False)
-                If saveGameDirs.Count > 0 Then
+                'find all save games
+                Dim saveGameDirs As List(Of IO.DirectoryInfo) = fileWorking.savedGameDirs
+                If saveGameDirs.Count > 1 Then 'exclude current
+
                     For Each save As IO.DirectoryInfo In saveGameDirs.Where(Function(d As IO.DirectoryInfo) d.Name <> "current")
                         Dim saveRawPath As String = IO.Path.Combine(save.FullName, "raw")
                         Dim saveGraphicsPath As String = IO.Path.Combine(saveRawPath, "graphics")
@@ -118,5 +151,6 @@ Public Class graphicsSets
             End Try
         End If
     End Sub
+
 
 End Class

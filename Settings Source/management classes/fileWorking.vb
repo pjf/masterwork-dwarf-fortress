@@ -37,7 +37,7 @@ Public Class fileWorking
 
     Private Shared Sub loadMwGraphics()
         m_mwGraphicDirs.AddRange(getDirectories(m_graphicsDir, False))
-        m_mwGraphicFilePaths.AddRange(getFiles(m_graphicsDir, True, New String() {".txt", ".png"}))
+        m_mwGraphicFilePaths.AddRange(getFiles(m_graphicsDir, True, New String() {".txt", ".png", ".xml"}))
     End Sub
 
 
@@ -171,4 +171,21 @@ Public Class fileWorking
         End Try
     End Function
 
+    Public Shared Function savedGameDirs() As List(Of IO.DirectoryInfo)
+        Dim saveDirs As New List(Of IO.DirectoryInfo)
+        Try
+            Dim dfRawPath As String = IO.Path.Combine(globals.m_dwarfFortressRootDir, "raw")
+            Dim savePath As String = IO.Path.Combine(globals.m_dwarfFortressRootDir, "data", "save")
+
+            If IO.Directory.Exists(savePath) Then
+                'find all save games
+                saveDirs = getDirectories(savePath, False)
+            End If
+
+            Return saveDirs
+        Catch ex As Exception
+            Debug.WriteLine(ex.ToString)
+            Return saveDirs
+        End Try
+    End Function
 End Class
