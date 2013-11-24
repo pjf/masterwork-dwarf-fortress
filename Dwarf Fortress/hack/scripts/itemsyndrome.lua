@@ -310,7 +310,7 @@ local function getAllValidUnits()
     end
     return checkedUnits
 end
- 
+
  
 local function findItems()
     local unitDelay=1
@@ -337,7 +337,7 @@ local function findItems()
         until _uid>#allUnitsToCheck
     end
 end
- 
+
 local function findItemSyndromeInorganic()
     local allInorganics = {}
     for matID,material in ipairs(df.global.world.raws.inorganics) do
