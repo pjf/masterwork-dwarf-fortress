@@ -42,6 +42,9 @@ Imports System.Text.RegularExpressions
 
         randomCreaturesExistCheck()
 
+        If fileWorking.savedGameDirs.Count > 1 Then
+            btnUpdateSaves.Enabled = True
+        End If
     End Sub
 
 
@@ -161,19 +164,11 @@ Imports System.Text.RegularExpressions
 
 #Region "tileset change and preview"
 
-    Private Sub ChangeGraphicsButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInstallGraphics.Click
-        If cmbTileSets.SelectedItem IsNot Nothing Then
-            GraphicsSets.switchGraphics(cmbTileSets.SelectedValue)
-        Else
-            MsgBox("Select a graphics set from the list first!", MsgBoxStyle.Information, "Oops!")
-        End If
+    Private Sub btnUpdateSaves_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateSaves.Click
+        graphicsSets.updateSavedGames()
     End Sub
 
-    Private Sub UpdateSaveGamesButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateSaves.Click
-        GraphicsSets.updateSavedGames()
-    End Sub
-
-    Private Sub tilesetPreview_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTilesetPreview.Click
+    Private Sub btnTilesetPreview_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTilesetPreview.Click
         If Not m_frmPreview.Visible Then
             m_frmPreview.Show()
         Else
@@ -181,7 +176,9 @@ Imports System.Text.RegularExpressions
         End If
     End Sub
 
-
+    Private Sub cmbTileSets_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmbTileSets.SelectionChangeCommitted
+        graphicsSets.switchGraphics(cmbTileSets.SelectedValue)
+    End Sub
 #End Region
 
 
@@ -301,6 +298,8 @@ Imports System.Text.RegularExpressions
         Catch ex As Exception
             MsgBox("Failed to run RandCreatures.exe!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
         End Try
+        'refresh the file list
+        fileWorking.loadDfFilePaths()
         randomCreaturesExistCheck()
     End Sub
 
@@ -351,6 +350,11 @@ Imports System.Text.RegularExpressions
     End Sub
     Private Sub rBtnOpenUtilities_Click(sender As Object, e As EventArgs) Handles rBtnOpenUtilities.Click
         Process.Start("explorer.exe", m_utilityDir)
+    End Sub
+
+    Private Sub rBtnAbout_Click(sender As Object, e As EventArgs) Handles rBtnAbout.Click
+        Dim f As New frmAbout
+        frmAbout.ShowDialog()
     End Sub
 #End Region
 
@@ -438,6 +442,7 @@ Imports System.Text.RegularExpressions
     End Sub
 
 #End Region
+
 
 End Class
 

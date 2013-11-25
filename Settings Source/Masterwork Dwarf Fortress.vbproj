@@ -88,17 +88,18 @@
     <TargetZone>Custom</TargetZone>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Jacksonsoft.CustomTabControl, Version=1.0.1.5, Culture=neutral, PublicKeyToken=53c237210c7e462d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\CustomTabControl\VBCustomTabControl\bin\Debug\Jacksonsoft.CustomTabControl.dll</HintPath>
+    <Reference Include="Jacksonsoft.CustomTabControl">
+      <HintPath>.\Jacksonsoft.CustomTabControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
+    <Reference Include="System.configuration">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.Ribbon35">
-      <HintPath>..\System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon\bin\Debug\System.Windows.Forms.Ribbon35.dll</HintPath>
+      <HintPath>.\System.Windows.Forms.Ribbon35.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core">
@@ -190,6 +191,12 @@
     <Compile Include="custom control backend\fileListConverter.vb" />
     <Compile Include="custom control backend\MultilineStringArrayConverter.vb" />
     <Compile Include="custom control backend\optionBase.vb" />
+    <Compile Include="helper forms\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="helper forms\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="helper forms\frmTilesetPreviewer.Designer.vb">
       <DependentUpon>frmTilesetPreviewer.vb</DependentUpon>
     </Compile>
@@ -244,6 +251,9 @@
     <EmbeddedResource Include="custom controls\colorViewer.resx">
       <DependentUpon>colorViewer.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="helper forms\frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="helper forms\frmTilesetPreviewer.resx">
       <DependentUpon>frmTilesetPreviewer.vb</DependentUpon>
     </EmbeddedResource>
@@ -262,7 +272,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -275,7 +287,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\app.manifest" />
-    <None Include="Resources\LNPSMALL.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -312,43 +323,22 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <None Include="Resources\tilegenie.PNG" />
     <None Include="Resources\preview.png" />
     <None Include="Resources\network-firewall.png" />
     <None Include="Resources\wiki.png" />
     <None Include="Resources\toolbox.png" />
     <None Include="Resources\tick-small.png" />
-    <None Include="Resources\transp-3.png" />
-    <None Include="Resources\transp-2.png" />
     <None Include="Resources\transp-1.png" />
-    <None Include="Resources\wizard.PNG" />
-    <None Include="Resources\knots small.JPG" />
-    <None Include="Resources\dwarf mining.PNG" />
-    <None Include="Resources\dwarf mining1.PNG" />
-    <None Include="Resources\kobold logo.png" />
-    <None Include="Resources\kobold logo1.png" />
-    <None Include="Resources\heart ico.png" />
     <None Include="Resources\bay12.png" />
-    <None Include="Resources\heart ico1.png" />
     <None Include="Resources\isoworld.png" />
     <None Include="Resources\dfinit.png" />
     <None Include="Resources\LAA.png" />
     <None Include="Resources\folder.png" />
-    <None Include="Resources\Isoworld Wallpaper 800x4501.jpg" />
-    <None Include="Resources\Isoworld Wallpaper worldgen 1024.jpg" />
-    <None Include="Resources\Isoworld Wallpaper worldgen 10241.jpg" />
-    <None Include="Resources\background worldgen1.PNG" />
-    <None Include="Resources\background worldgen2.PNG" />
-    <None Include="Resources\background worldgen3.PNG" />
-    <None Include="Resources\display.PNG" />
-    <None Include="Resources\armory.PNG" />
-    <None Include="Resources\golem.PNG" />
     <None Include="bin\debug\MasterworkDwarfFortress\repository\tilegenie.PNG" />
-    <None Include="Resources\Isoworld-Wallpaper-1024-1.jpg" />
-    <None Include="Resources\Isoworld-Wallpaper-1024-2.jpg" />
     <None Include="Resources\cross-small.png" />
     <None Include="Resources\exclamation-small.png" />
     <None Include="bin\debug\MasterworkDwarfFortress\graphics\preview.png" />
-    <None Include="Resources\Isoworld-Wallpaper-1024-3.jpg" />
     <None Include="Resources\fb-1024x576.jpg" />
     <None Include="Resources\folder-open.png" />
     <None Include="Resources\DF.png" />
@@ -360,20 +350,12 @@
     <None Include="Resources\globe-green.png" />
     <None Include="Resources\application.png" />
     <None Include="Resources\heart.png" />
-    <Content Include="Resources\LazyNewbPackIconA.ico" />
-    <Content Include="Resources\LazyNewbPackIconB.ico" />
+    <None Include="Resources\information.png" />
     <None Include="Resources\playdf.png" />
-    <None Include="Resources\link.png" />
     <None Include="Resources\quickfort.png" />
     <None Include="Resources\perfect world.png" />
-    <None Include="Resources\legends viewer and embark everywhere1.png" />
-    <None Include="Resources\legends viewer and embark everywhere.png" />
     <None Include="Resources\soundsense.png" />
     <None Include="Resources\therapist.png" />
-    <None Include="Resources\Manual.png" />
-    <None Include="Resources\orc small vb.PNG" />
-    <None Include="Resources\l_dwarf large.JPG" />
-    <None Include="Resources\logo tranparent.png" />
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="Resources\LazyNewbPackIconA.ico">
