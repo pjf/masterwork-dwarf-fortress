@@ -1,6 +1,7 @@
 -- On map load writes the current season to gamelog.txt
 
 local seasons = {
+    [-1] = 'Nothing', -- worldgen
     [0] = 'Spring',
     [1] = 'Summer',
     [2] = 'Autumn',
@@ -20,9 +21,7 @@ if args[1] == 'disable' then
 else
     dfhack.onStateChange[_ENV] = function(op)
         if op == SC_WORLD_LOADED then
-            if df.global.cur_season and df.global.cur_season>-1 then
-                write_gamelog(seasons[df.global.cur_season]..' has arrived on the calendar.')
-            end
+            write_gamelog(seasons[df.global.cur_season]..' has arrived on the calendar.')
         end
     end
 end

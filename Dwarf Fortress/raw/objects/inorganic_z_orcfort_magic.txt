@@ -8,7 +8,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:ALL_SOLID:bug100]
 [STATE_NAME_ADJ:LIQUID:bug100]
 [STATE_NAME_ADJ:GAS:Invite migration]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:migrants][SYN_CLASS:TAIGA]
          [SYN_NAME:Invite migration]
          [SYN_CONTACT][SYN_INHALED]
@@ -23,7 +23,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:ALL_SOLID:bug100]
 [STATE_NAME_ADJ:LIQUID:bug100]
 [STATE_NAME_ADJ:GAS:Invite tradefair]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:TAIGA]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -38,7 +38,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:ALL_SOLID:bug100]
 [STATE_NAME_ADJ:LIQUID:bug100]
 [STATE_NAME_ADJ:GAS:Invite tradefair]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:DROW_EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -46,7 +46,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:MOUNTAIN_EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -54,7 +54,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:PLAINS_EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -62,7 +62,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:FOREST_EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -70,7 +70,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -78,7 +78,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:FROST_GIANT]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -581,7 +581,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:ALL_SOLID:Steppe Minotaur (male)]
 [STATE_NAME_ADJ:LIQUID:Steppe Minotaur (male)]
 [STATE_NAME_ADJ:GAS:Steppe Minotaur (male)]
-    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:\LOCATION]
    [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
    [SYN_CLASS:\REACTION_INDEX]
