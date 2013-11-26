@@ -4,10 +4,9 @@ use strict;
 use warnings;
 use autodie;
 use File::Spec;
+use FindBin qw($Bin);
 use Cwd qw(getcwd abs_path);
 use IPC::System::Simple qw(capturex);
-
-my $PATCH_FROM = abs_path('../../Dwarf Fortress/raw/objects');
 
 # Patches everything in the graphics directories based upon whatever
 # we see via 'git diff' in the main Dwarf Fortress directory. This
@@ -18,6 +17,13 @@ my $PATCH_FROM = abs_path('../../Dwarf Fortress/raw/objects');
 # By Paul '@pjf' Fenwick.
 # This is open source code. You can use, modify, and distribute it under
 # the same terms and Perl 5 itself.
+
+# This script assumes it's being run from the graphics directory,
+# so let's get there.
+
+chdir("$Bin/../MasterworkDwarfFortress/graphics");
+
+my $PATCH_FROM = abs_path('../../Dwarf Fortress/raw/objects');
 
 my $orig_dir = getcwd();
 
