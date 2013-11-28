@@ -1,44 +1,52 @@
 ﻿Imports MasterworkDwarfFortress.globals
 Imports MasterworkDwarfFortress.fileWorking
 Imports System.Text.RegularExpressions
+Imports System.ComponentModel
 
 <Microsoft.VisualBasic.ComClass()> Public Class MainForm
 
 #Region "declarations"
-    Private m_randomEntityName As String
-    Private m_randomCreatureName As String
-
     Private m_frmPreview As New frmTilesetPreviewer
-    Private m_refreshingWorldGen As Boolean = False
+    'Private m_refreshingWorldGen As Boolean = False
+
+    Private m_currTheme As RibbonProfesionalRendererColorTable
 #End Region
 
     Public Sub New()
-        'load the proper theme before we initialize controls
-        Theme.ColorTable = New ribbonThemeDark
-
         ' This call is required by the designer.
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        ribbonMain.Refresh()
+        setTheme()
     End Sub
 
+    Private Sub setTheme()
+        Select Case My.Settings.THEME
+            Case Is = "DEFAULT"
+                Theme.ThemeColor = RibbonTheme.Normal
+                m_currTheme = New RibbonProfesionalRendererColorTableNormal
+            Case Is = "BLUE"
+                Theme.ThemeColor = RibbonTheme.Blue
+                m_currTheme = New RibbonProfesionalRendererColorTableBlue
+        End Select
+
+        Me.BackColor = Theme.ColorTable.RibbonBackground_2013
+        ribbonMain.Refresh()
+    End Sub
 
 
     Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         refreshFileAndDirPaths()
         If m_dwarfFortressRootDir <> "" Then
-            loadTokenData()
-            GraphicsSets.findGraphicPacks(m_graphicsDir) 'and graphics
+            initialLoad()
+            graphicsSets.findGraphicPacks(m_graphicsDir) 'and graphics
         End If
 
         setupRibbonHandlers(rPanelGeneral.Items)
         setupRibbonHandlers(rPanelUtilities.Items)
 
-        Me.BackColor = Theme.ColorTable.OrbDropDownDarkBorder
-
-        Me.Text = "Masterwork Settings Version " + My.Application.Info.Version.Major.ToString + "." + My.Application.Info.Version.Minor.ToString
+        Me.Text = "Masterwork Settings"
 
         randomCreaturesExistCheck()
 
@@ -69,6 +77,28 @@ Imports System.Text.RegularExpressions
         End Try
     End Sub
 
+    Public Sub initialLoad()
+        'read init and world gen files
+        m_init = fileWorking.readFile(findDfFilePath(m_initFileName))
+        m_world_gen = fileWorking.readFile(findDfFilePath(m_worldGenFileName))
+        m_dinit = fileWorking.readFile(findDfFilePath(m_dInitFileName))
+        If m_init <> "" And m_dinit <> "" And m_world_gen <> "" Then
+
+            'load init and world gen tokens
+            m_tokensInit = tokenLoading.loadFileTokens(m_init)
+            m_tokensDInit = tokenLoading.loadFileTokens(m_dinit)
+            tokenLoading.loadWorldGenTokens()
+
+            'load all our current options, and format our controls to the current theme
+            initControls(Me, True, True, True)
+
+            'load the world gen templates
+            loadWorldGenCombo()
+        Else
+            Me.Close()
+        End If
+    End Sub
+
     Private Sub setupRibbonHandlers(ByVal items As RibbonItemCollection)
         For Each item As RibbonItem In items
             If item.Tag IsNot Nothing AndAlso item.Tag.ToString <> "" Then
@@ -88,78 +118,124 @@ Imports System.Text.RegularExpressions
         Next
     End Sub
 
-    Private Sub initControls(ByVal parentControl As Control)
+    Private Sub initControls(ByVal parentControl As Control, ByVal loadSetting As Boolean, ByVal loadTooltip As Boolean, ByVal loadTheme As Boolean)
         For Each c As Control In parentControl.Controls
 
-            Dim conOpt As iToken = TryCast(c, iToken)
-            If conOpt IsNot Nothing Then                
-                If c.Enabled Then conOpt.loadOption() 'only load options of enabled controls
-                If Not m_refreshingWorldGen Then 'when refreshing from world gen, we just want to reload
-
-                    If TypeOf (c) Is mwCheckBox Then
-                        'for an unknown reason, this is the only way to get the theme forecolor to stick for
-                        'the checkbox buttons
-                        c.ForeColor = Theme.ColorTable.Text
-                    End If
-
-                    If TypeOf conOpt Is iTooltip Then 'set the tooltip
-                        Dim tt As String = ToolTipMaker.GetToolTip(conOpt)
-                        Dim conTooltip As String = CType(conOpt, iTooltip).getToolTip
-                        If tt.ToString = "" Then
-                            tt = conTooltip
-                        Else
-                            tt = conTooltip & vbCrLf & vbCrLf & tt
-                        End If
-                        ToolTipMaker.SetToolTip(conOpt, tt)
-                    End If
+            If loadTheme Then
+                Dim cTheme As iTheme = TryCast(c, iTheme)
+                If cTheme IsNot Nothing Then
+                    cTheme.applyTheme()
+                Else
+                    formatControl(c)
                 End If
-            Else
-                'regular control, needs formatting
-                If Not m_refreshingWorldGen Then formatControl(c)
+
+            End If
+
+            If loadTooltip Then
+                Dim cTool As iTooltip = TryCast(c, iTooltip)
+                If cTool IsNot Nothing Then
+                    Dim tt As String = ToolTipMaker.GetToolTip(cTool)
+                    Dim conTooltip As String = cTool.getToolTip
+                    If tt.ToString = "" Then
+                        tt = conTooltip
+                    Else
+                        tt = conTooltip & vbCrLf & vbCrLf & tt
+                    End If
+                    ToolTipMaker.SetToolTip(cTool, tt)
+                End If
+            End If
+
+            If loadSetting Then
+                Dim conOpt As iToken = TryCast(c, iToken)
+                If conOpt IsNot Nothing Then If c.Enabled Then conOpt.loadOption() 'only load options of enabled controls
             End If
 
             If c.HasChildren Then
-                initControls(c)
+                initControls(c, loadSetting, loadTooltip, loadTheme)
             End If
         Next
     End Sub
 
+#Region "formatting and themes"
+    Private Sub rBtnThemes_DropDownItemClicked(sender As Object, e As RibbonItemEventArgs) Handles rBtnThemes.DropDownItemClicked
+        If My.Settings.THEME = e.Item.Tag.ToString.ToUpper Then Exit Sub
+
+        My.Settings.THEME = e.Item.Tag.ToString.ToUpper
+
+        setTheme()
+        Dim frmWait As New frmThemeChange
+        Me.Opacity = 0
+        frmWait.Show()
+        Application.DoEvents() 'hurrghh, this is a bad idea
+        initControls(Me, False, False, True)
+        Me.Opacity = 1
+        frmWait.Hide()
+    End Sub
+
     Private Sub formatControl(ByVal c As Control)
+        'this formats any non-custom controls with the ribbon's theme colors
+        'currently groupboxes and labels only have their forecolor changed,
+        'since solid backgrounds hides our beautiful background image
+
         Select Case c.GetType
             Case GetType(Button)
                 Dim btn As Button = DirectCast(c, Button)
                 btn.ForeColor = Theme.ColorTable.Text
-                btn.FlatAppearance.MouseOverBackColor = Theme.ColorTable.TabSelectedGlow
-                btn.FlatAppearance.MouseDownBackColor = Theme.ColorTable.TabSelectedGlow
+
+                btn.FlatAppearance.MouseOverBackColor = Theme.ColorTable.ButtonSelected_2013
+                btn.FlatAppearance.MouseDownBackColor = Theme.ColorTable.ButtonSelected_2013
+
+                If Theme.ThemeColor <> RibbonTheme.Normal Then
+                    btn.BackgroundImage = Nothing
+                    btn.BackgroundImageLayout = ImageLayout.None
+                    btn.BackColor = Theme.ColorTable.RibbonBackground_2013
+                    btn.FlatAppearance.CheckedBackColor = Theme.ColorTable.RibbonBackground_2013
+                Else
+                    btn.BackgroundImage = My.Resources.transp_1
+                    btn.BackgroundImageLayout = ImageLayout.Tile
+                    btn.BackColor = Color.Transparent
+                    btn.FlatAppearance.CheckedBackColor = Color.Transparent
+                End If
+
             Case GetType(Label)
-                c.ForeColor = Theme.ColorTable.Text
+                c.ForeColor = Theme.ColorTable.Caption1
+                c.BackColor = Color.Transparent
+
             Case GetType(GroupBox)
-                c.ForeColor = Theme.ColorTable.Text
+                c.ForeColor = Theme.ColorTable.Caption1
+
             Case GetType(ComboBox)
                 Dim cb As ComboBox = DirectCast(c, ComboBox)
                 cb.ForeColor = Theme.ColorTable.Text
-                cb.BackColor = Theme.ColorTable.TabSelectedGlow
-                cb.FlatStyle = FlatStyle.Standard
+                cb.BackColor = Theme.ColorTable.ButtonPressed_2013
+                cb.FlatStyle = FlatStyle.Flat
+
+            Case GetType(CustomTabControl)
+
+                If Theme.ThemeColor = RibbonTheme.Normal Then
+                    tabMain.DisplayStyle = TabStyle.VS2010
+                    tabMain.DisplayStyleProvider.BorderColor = Theme.ColorTable.RibbonBackground_2013
+                    tabMain.DisplayStyleProvider.Radius = 1
+                Else
+                    tabMain.DisplayStyle = TabStyle.Angled
+                    tabMain.DisplayStyleProvider.BorderColor = Theme.ColorTable.PanelDarkBorder
+                End If
+
+                tabMain.DisplayStyleProvider.SelectedTabColor = Theme.ColorTable.TabActiveBackground_2013
+                tabMain.DisplayStyleProvider.SelectedTabColorTop = Theme.ColorTable.TabActiveBackground_2013
+
+                tabMain.DisplayStyleProvider.TextColor = Theme.ColorTable.TabText_2013
+                tabMain.DisplayStyleProvider.TextColorDisabled = Theme.ColorTable.TabText_2013
+                tabMain.DisplayStyleProvider.TextColorSelected = Theme.ColorTable.TabText_2013
+
+                tabMain.DisplayStyleProvider.ShowTabCloser = False
+                tabMain.DisplayStyleProvider.HotTrack = False
+                tabMain.DisplayStyleProvider.FocusTrack = False
         End Select
     End Sub
 
-    Public Sub loadTokenData()
-        'load variables with contents of init files
-        m_init = fileWorking.readFile(findDfFilePath(m_initFileName))
-        m_world_gen = fileWorking.readFile(findDfFilePath(m_worldGenFileName))
-        m_dinit = fileWorking.readFile(findDfFilePath(m_dInitFileName))
-        If m_init <> "" And m_dinit <> "" And m_world_gen <> "" Then
+#End Region
 
-            m_tokensInit = tokenLoading.loadFileTokens(m_init)
-            m_tokensDInit = tokenLoading.loadFileTokens(m_dinit)
-            tokenLoading.loadWorldGenTokens()
-
-            initControls(Me.tabMain)
-            loadWorldGenCombo()
-        Else
-            Me.Close()
-        End If
-    End Sub
 
 
 #Region "tileset change and preview"
@@ -249,9 +325,9 @@ Imports System.Text.RegularExpressions
         'set the global world gen being edit
         globals.currentWorldGenIndex = CType(cmbWorldGenIndex.SelectedItem, comboItem).value
         'refresh our world gen controls. the internal loading will check the global var
-        m_refreshingWorldGen = True
-        initControls(tabWorldGen)
-        m_refreshingWorldGen = False
+        'm_refreshingWorldGen = True
+        initControls(tabWorldGen, True, False, False)
+        'm_refreshingWorldGen = False
     End Sub
 
     Private Sub tabMain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tabMain.SelectedIndexChanged
@@ -438,11 +514,11 @@ Imports System.Text.RegularExpressions
                     testSettings(c)
                 End If
             End If
-        Next       
+        Next
     End Sub
 
 #End Region
 
-
+ 
 End Class
 

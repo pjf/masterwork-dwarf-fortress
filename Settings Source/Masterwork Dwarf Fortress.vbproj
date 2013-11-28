@@ -88,8 +88,9 @@
     <TargetZone>Custom</TargetZone>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Jacksonsoft.CustomTabControl">
-      <HintPath>.\Jacksonsoft.CustomTabControl.dll</HintPath>
+    <Reference Include="Jacksonsoft.CustomTabControl, Version=1.0.1.5, Culture=neutral, PublicKeyToken=53c237210c7e462d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Third Party Extras\CustomTabControl\VBCustomTabControl\bin\Release\Jacksonsoft.CustomTabControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration">
@@ -98,8 +99,9 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Windows.Forms.Ribbon35">
-      <HintPath>.\System.Windows.Forms.Ribbon35.dll</HintPath>
+    <Reference Include="System.Windows.Forms.Ribbon35, Version=3.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Third Party Extras\System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon\bin\Release\System.Windows.Forms.Ribbon35.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core">
@@ -126,16 +128,16 @@
     <Compile Include="custom control backend\comboItem.vb" />
     <Compile Include="custom control backend\fileListManager.vb" />
     <Compile Include="custom control backend\fileReplaceManager.vb" />
-    <Compile Include="custom control backend\mwCheckBox.Designer.vb">
+    <Compile Include="custom controls\mwCheckBox.Designer.vb">
       <DependentUpon>mwCheckBox.vb</DependentUpon>
     </Compile>
-    <Compile Include="custom control backend\mwCheckBox.vb">
+    <Compile Include="custom controls\mwCheckBox.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="custom control backend\mwComboBox.Designer.vb">
+    <Compile Include="custom controls\mwComboBox.Designer.vb">
       <DependentUpon>mwComboBox.vb</DependentUpon>
     </Compile>
-    <Compile Include="custom control backend\mwComboBox.vb">
+    <Compile Include="custom controls\mwComboBox.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="custom controls\colorViewer.Designer.vb">
@@ -197,6 +199,12 @@
     <Compile Include="helper forms\frmAbout.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="helper forms\frmThemeChange.Designer.vb">
+      <DependentUpon>frmThemeChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="helper forms\frmThemeChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="helper forms\frmTilesetPreviewer.Designer.vb">
       <DependentUpon>frmTilesetPreviewer.vb</DependentUpon>
     </Compile>
@@ -205,6 +213,7 @@
     </Compile>
     <Compile Include="globals.vb" />
     <Compile Include="interfaces\iTest.vb" />
+    <Compile Include="interfaces\iTheme.vb" />
     <Compile Include="interfaces\iToken.vb" />
     <Compile Include="interfaces\iTooltip.vb" />
     <Compile Include="management classes\appSettingsManager.vb" />
@@ -245,7 +254,6 @@
     <Compile Include="custom controls\optionNumeric.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="themes\ribbonThemeDark.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="custom controls\colorViewer.resx">
@@ -253,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="helper forms\frmAbout.resx">
       <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helper forms\frmThemeChange.resx">
+      <DependentUpon>frmThemeChange.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="helper forms\frmTilesetPreviewer.resx">
       <DependentUpon>frmTilesetPreviewer.vb</DependentUpon>
@@ -323,6 +334,8 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\color.png" />
     <None Include="Resources\tilegenie.PNG" />
     <None Include="Resources\preview.png" />
     <None Include="Resources\network-firewall.png" />

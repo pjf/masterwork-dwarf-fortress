@@ -120,7 +120,7 @@ Public Class optionManager
                 '**
                 'this really shouldn't ever happen (programmer's last words...), as pulling a token's value is
                 'loaded from the init, d_init or worldgen files, which has already been done above
-                'so by this point, this is just in case someone certain extra files in addition to the init files
+                'so by this point, this is just in case someone adds certain extra files in addition to the init files
                 '**
                 Dim pattern As String = String.Format("\[(?" & tokens.Item(0).tokenName & "\w+):(?<value>.*)\]")
                 For Each f As String In filePaths
@@ -143,7 +143,7 @@ Public Class optionManager
 
     Private Function findTokensInFiles(ByVal pattern As String, ByVal filePaths As List(Of String)) As Boolean
         Dim data As String
-        Dim regex As Regex = New Regex(pattern, RegexOptions.IgnoreCase) 'define regular expression search
+        Dim regex As Regex = New Regex(pattern, RegexOptions.IgnoreCase)
 
         For Each fPath As String In filePaths
             data = fileWorking.ReadFile(fPath)
@@ -156,7 +156,11 @@ Public Class optionManager
         Return False
     End Function
 
-    'checks the tokens for only a single value (no 'off' value) indicating specific replacement
+    'when changing a specific token's value, we still use the same rawToken structure.
+    'since we're not toggling between an on/off value, we only need one of the two values (enabled/disabled)
+    'from the rawToken structure. the enabled value is what we use
+
+    'so if a token has only an 'on/enabled' value, we know we're doing a token value update
     Private Function hasSingleValueTokens(ByVal tokens As rawTokenCollection) As Boolean
         For Each t As rawToken In tokens
             If singleValueToken(t) Then

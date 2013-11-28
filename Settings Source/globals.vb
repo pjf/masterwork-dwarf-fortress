@@ -11,7 +11,6 @@
     Public Shared m_dwarfFortressRootDir As String
 
     'Store contents of text files
-    Public Shared m_randomCreature As String
     Public Shared m_init As String
     Public Shared m_dinit As String
     Public Shared m_world_gen As String

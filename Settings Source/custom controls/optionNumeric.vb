@@ -8,6 +8,7 @@ Public Class optionNumeric
     Implements iToken
     Implements iTooltip
     Implements iTest
+    Implements iTheme
 
     Public Sub New()
         ' This call is required by the designer.
@@ -59,15 +60,6 @@ Public Class optionNumeric
         Return String.Format("{0} - {1}", Me.Minimum.ToString, Me.Maximum.ToString)
     End Function
 
-    Private Sub optionNumeric_Paint(sender As Object, e As PaintEventArgs) Handles Me.Paint
-        If Me.BackColor <> Theme.ColorTable.TabSelectedGlow Then
-            Me.BackColor = Theme.ColorTable.TabSelectedGlow
-        End If
-        If Me.ForeColor <> Theme.ColorTable.Text Then
-            Me.ForeColor = Theme.ColorTable.Text
-        End If
-    End Sub
-
     Public Sub runtTest() Implements iTest.runtTest
         Dim newVal As Integer = Me.Value - Me.Increment
         If newVal >= Me.Minimum And newVal <= Me.Maximum Then
@@ -76,5 +68,10 @@ Public Class optionNumeric
             Me.Value = Me.Value + Me.Increment
         End If
         optionNumeric_Validated(Me, New EventArgs)
+    End Sub
+
+    Public Sub applyTheme() Implements iTheme.applyTheme
+        Me.BackColor = Theme.ColorTable.ButtonPressed_2013
+        Me.ForeColor = Theme.ColorTable.Text
     End Sub
 End Class

@@ -9,6 +9,7 @@ Public Class optionFormatted
     Implements iToken
     Implements iTooltip
     Implements iTest
+    Implements iTheme
 
     Public Sub New()
         ' This call is required by the designer.
@@ -94,34 +95,21 @@ Public Class optionFormatted
         Return m_niceFormat
     End Function
 
-
-    Public Overrides Property ForeColor As Color
-        Get
-            Return Theme.ColorTable.Text
-        End Get
-        Set(value As Color)
-            MyBase.ForeColor = value
-        End Set
-    End Property
-
-    Public Overrides Property BackColor As Color
-        Get
-            Return Theme.ColorTable.TabSelectedGlow
-        End Get
-        Set(value As Color)
-            MyBase.BackColor = value
-        End Set
-    End Property
-
     Public Sub runtTest() Implements iTest.runtTest
         Dim valid As Boolean = False
         Dim rx As New Regex(m_pattern, RegexOptions.IgnoreCase)
         Dim newVal As String = Me.Text
         While Not valid
-            newval = InputBox("Enter test value for " & Me.Name.ToString, "", Me.Text)
+            newVal = InputBox("Enter test value for " & Me.Name.ToString, "", Me.Text)
             If rx.IsMatch(newVal) Then valid = True
         End While
         Me.Text = newVal
         optionFormatted_Validated(Me, New System.EventArgs)
     End Sub
+
+    Public Sub applyTheme() Implements iTheme.applyTheme
+        Me.BackColor = Theme.ColorTable.ButtonPressed_2013
+        Me.ForeColor = Theme.ColorTable.Text
+    End Sub
+
 End Class

@@ -1,10 +1,13 @@
-﻿Public Class frmAbout
+﻿Imports System.Reflection
+
+Public Class frmAbout
 
     Private Sub frmAbout_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblVersion.Text = "Version: " & My.Application.Info.Version.Major.ToString + "." + My.Application.Info.Version.Minor.ToString
+        lblVersion.Text = "Version: " & Assembly.GetExecutingAssembly.GetName.Version.ToString
 
-        Me.BackColor = Theme.ColorTable.TabSelectedGlow
-        Me.ForeColor = Theme.ColorTable.Text
+        Me.BackColor = Theme.ColorTable.RibbonBackground_2013
+
+        lblVersion.ForeColor = Theme.ColorTable.Text
 
         lblBackground.ActiveLinkColor = Theme.ColorTable.PanelDarkBorder
         lblIcons.ActiveLinkColor = Theme.ColorTable.PanelDarkBorder

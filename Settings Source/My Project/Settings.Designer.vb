@@ -118,6 +118,19 @@ Namespace My
                 Me("GRAPHICS") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Configuration.SettingsProviderAttribute(GetType(MasterworkDwarfFortress.appSettingsManager)),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("DEFAULT")>  _
+        Public Property THEME() As String
+            Get
+                Return CType(Me("THEME"),String)
+            End Get
+            Set
+                Me("THEME") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

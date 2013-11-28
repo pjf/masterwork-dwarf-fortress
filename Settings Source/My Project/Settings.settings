@@ -17,5 +17,8 @@
     <Setting Name="GRAPHICS" Provider="MasterworkDwarfFortress.appSettingsManager" Type="System.String" Scope="User">
       <Value Profile="(Default)">Masterwork - Obsidian Walls</Value>
     </Setting>
+    <Setting Name="THEME" Provider="MasterworkDwarfFortress.appSettingsManager" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DEFAULT</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
