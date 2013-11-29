@@ -62,6 +62,8 @@ my %harmless;
     STATE_NAME_ADJ
 
     ALTTILE
+
+    BUILD_COLOR
 )} = ();
 
 my $contains_display_info_re = '^[+-][^\n]*?(?:\[' . join('|\[', keys %harmless). ')';
