@@ -1582,7 +1582,7 @@ Squids were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:gigantic squid:gigantic squids:gigantic squid]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A huge sea monster the shape of a squid.]
 	[POPULATION_NUMBER:15:30]
-	[CLUSTER_NUMBER:3:1]
+	[CLUSTER_NUMBER:3:6]
 	[CREATURE_TILE:'S']
 	[COLOR:7:0:1]
 	[PET_EXOTIC][CREATURE_CLASS:PET_HEALING]
