@@ -60,6 +60,8 @@ my %harmless;
     DEAD_SAPLING_COLOR
 
     STATE_NAME_ADJ
+
+    ALTTILE
 )} = ();
 
 my $contains_display_info_re = '^[+-][^\n]*?(?:\[' . join('|\[', keys %harmless). ')';
@@ -114,7 +116,7 @@ foreach my $base_dir (@directories) {
             # Generate potential differences
 
             @patches = capturex(
-                [0,1], 'diff', '-b', '-u1',
+                [0,1], 'diff', '-b', '-u0',
                 File::Spec->catfile($base_dir, qw(raw objects), $raw_file),
                 File::Spec->catfile($PATCH_FROM, $raw_file),
             );
@@ -139,7 +141,7 @@ foreach my $base_dir (@directories) {
                         # non-display sections are included.
 
                         # Throwing these on STDERR isn't ideal.
-                        warn "$patch\n";
+                        warn "$header\n$patch\n";
                     }
                     else {
                         print $header if not $printed_headers{$header}++;
@@ -161,12 +163,26 @@ sub significant_change {
     my @lines = split(/\n+/,$patch);
 
     foreach (@lines) {
+        # say "Line: $_";
         return 1 if /^(?:\+\+\+|---)/;  # Always print headers
-        next if not /^[+-]/;            # Skip context lines
-        while (my ($tag) = m/\G[^\[]*\[(\w+)[^\]]*]/gc) {
-            return 1 unless exists $harmless{$tag};
+        next if not /^[<>+-]/;            # Skip context lines
+        while (m{(
+            \G
+            [^\[]*  # Non open-brackets
+            \[      # An actual open-bracket
+            (?<tag>\w+)   # Our tag
+            [^\]]*  # Non-close brackets (tag content)
+            ]       # A close-brakcet
+        )}gcx) {
+            # say "Tag: $+{tag}";
+            if (not exists $harmless{$+{tag}}) {
+                # say "Woah!";
+                return 1;
+            }
         }
     }
+
+    # say "Not significant";
 
     return 0;
 }
