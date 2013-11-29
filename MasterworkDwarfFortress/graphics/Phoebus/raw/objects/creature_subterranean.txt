@@ -2250,7 +2250,7 @@ creature_subterrenean
 
 
 
-[CREATURE:SPIDER_CAVE_GIANT][TRAINABLE_WAR]
+[CREATURE:SPIDER_CAVE_GIANT]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A large underground monster with eight legs and sharp, venomous fangs.]
 	[NAME:giant cave spider:giant cave spiders:giant cave spider]
 	[CASTE_NAME:giant cave spider:giant cave spiders:giant cave spider]
@@ -2353,7 +2353,7 @@ creature_subterrenean
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:4]
 
-[CREATURE:SPIDER_CAVE][TRAINABLE_WAR]
+[CREATURE:SPIDER_CAVE]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A tiny underground bug, sought after for its thread.]
 	[NAME:cave spider:cave spiders:cave spider]
 	[CASTE_NAME:cave spider:cave spiders:cave spider]

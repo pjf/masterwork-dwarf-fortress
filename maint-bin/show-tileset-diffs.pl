@@ -114,7 +114,7 @@ foreach my $base_dir (@directories) {
             # Generate potential differences
 
             @patches = capturex(
-                [0,1], 'diff', '-b', '-u',
+                [0,1], 'diff', '-b', '-u1',
                 File::Spec->catfile($base_dir, qw(raw objects), $raw_file),
                 File::Spec->catfile($PATCH_FROM, $raw_file),
             );
