@@ -1,7 +1,7 @@
 -- Checks for inventory changes and applies or removes syndromes that items or their materials have. Use "disable" (minus quotes) to disable and "help" to get help.
-
+ 
 local args = {...}
-
+ 
 local function printItemSyndromeHelp()
     print("Arguments:")
     print('    "help": displays this dialogue.')
@@ -13,6 +13,8 @@ local function printItemSyndromeHelp()
     print('    "contaminantson/contaminantsoff": toggles searching for contaminants.')
     print('    Disabling speeds itemsyndrome up greatly.')
 end
+ 
+itemsyndromedebug=false 
 
 function processArgs(args)
     for k,v in ipairs(args) do
@@ -24,18 +26,19 @@ function processArgs(args)
         if v == "contaminantsoff" then itemsyndromecontaminants = false end
     end
 end
-
+ 
 processArgs(args)
-
+ 
 local function getMaterial(item)
-    local material = dfhack.matinfo.decode(item)
+    local material = dfhack.matinfo.decode(item) and dfhack.matinfo.decode(item) or false
+    if not material then return nil end
     if material.mode ~= "inorganic"  then 
         return nil
     else
         return material.material --the "material" thing up there contains a bit more info which is all pretty important but impertinent, like the creature that the material comes from
     end
 end
-
+ 
 local function findItemSyndromeInorganic()
     local allInorganics = {}
     for matID,material in ipairs(df.global.world.raws.inorganics) do
@@ -44,7 +47,7 @@ local function findItemSyndromeInorganic()
     if itemsyndromedebug then printall(allInorganics) end
     if #allInorganics>0 then return allInorganics else return nil end
 end
-
+ 
 local function getAllItemSyndromeMats(itemSyndromeMatIDs)
     local allActualInorganics = {}
     for _,itemSyndromeMatID in ipairs(itemSyndromeMatIDs) do
@@ -53,20 +56,14 @@ local function getAllItemSyndromeMats(itemSyndromeMatIDs)
     if itemsyndromedebug then printall(allActualInorganics) end
     return allActualInorganics
 end
-
-local function getSyndrome(material)
-    if material==nil then return nil end
-    if #material.syndrome>0 then return material.syndrome[0]
-    else return nil end
-end
-
+ 
 local function syndromeIsDfHackSyndrome(syndrome)
     for k,v in ipairs(syndrome.syn_class) do
         if v.value=="DFHACK_ITEM_SYNDROME" then return true end
     end
     return false
 end
-
+ 
 local function itemHasNoSubtype(item)
    local subtypedItemTypes =
     {
@@ -88,30 +85,31 @@ local function itemHasNoSubtype(item)
     end
     return true
 end
-
+ 
 local function itemHasSyndrome(item)
     if itemHasNoSubtype(item) or not itemSyndromeMats then return nil end
+    local allItemSyndromes={}
     for _,material in ipairs(itemSyndromeMats) do
         for __,syndrome in ipairs(material.syndrome) do
-            if syndrome.syn_name == item.subtype.name then return syndrome end
+            if syndrome.syn_name == item.subtype.name then table.insert(allItemSyndromes,syndrome) end
         end
     end
-    return nil
+    return #allItemSyndromes>0 and allItemSyndromes or false
 end
-
+ 
 local function alreadyHasSyndrome(unit,syn_id)
     for _,syndrome in ipairs(unit.syndromes.active) do
         if syndrome.type == syn_id then return true end
     end
     return false
 end
-
+ 
 local function eraseSyndrome(target,syn_id)
     for i=#target.syndromes.active-1,0,-1 do
         if target.syndromes.active[i].type==syn_id then target.syndromes.active:erase(i) end
     end
 end
-
+ 
 local function assignSyndrome(target,syn_id) --taken straight from here, but edited so I can understand it better: https://gist.github.com/warmist/4061959/. Also implemented expwnent's changes for compatibility with syndromeTrigger.
     if target==nil then
         return nil
@@ -144,12 +142,11 @@ local function assignSyndrome(target,syn_id) --taken straight from here, but edi
     end
     return true
 end
-
+ 
 local function syndromeIsIndiscriminate(syndrome)
-    if #syndrome.syn_affected_class==0 and #syndrome.syn_affected_creature==0 and #syndrome.syn_affected_caste==0 and #syndrome.syn_immune_class==0 and #syndrome.syn_immune_creature==0 and #syndrome.syn_immune_caste==0 then return true end
-    return false
+    return (#syndrome.syn_affected_class==0 and #syndrome.syn_affected_creature==0 and #syndrome.syn_affected_caste==0 and #syndrome.syn_immune_class==0 and #syndrome.syn_immune_creature==0 and #syndrome.syn_immune_caste==0)
 end
-
+ 
 local function creatureIsAffected(unit,syndrome)
     if syndromeIsIndiscriminate(syndrome) then return true end
     local affected = false
@@ -184,54 +181,32 @@ local function creatureIsAffected(unit,syndrome)
     return affected
 end
 
-local function itemAffectsHauler(syndrome)
+local function getValidPositions(syndrome)
+    local returnTable={AffectsHauler=false,AffectsStuckins=false,IsArmorOnly=false,IsWieldedOnly=false,OnlyAffectsStuckins=false}
     for k,v in ipairs(syndrome.syn_class) do
-        if v.value=="DFHACK_AFFECTS_HAULER" then return true end
+        if v:find('DFHACK') then
+            if v.value=="DFHACK_AFFECTS_HAULER" then returnTable.AffectsHauler=true end
+            if v.value=="DFHACK_AFFECTS_STUCKIN" then returnTable.AffectsStuckins=true end
+            if v.value=="DFHACK_STUCKINS_ONLY" then returnTable.OnlyAffectsStuckins=true end    
+            if v.value=="DFHACK_WIELDED_ONLY" then returnTable.IsWieldedOnly=true end
+            if v.value=="DFHACK_ARMOR_ONLY" then returnTable.IsArmorOnly=true end
+        end
     end
-    return false
-end
-
-local function itemAffectsStuckins(syndrome)
-    for k,v in ipairs(syndrome.syn_class) do
-        if v.value=="DFHACK_AFFECTS_STUCKIN" then return true end
-    end
-    return false
-end
-
-local function itemIsArmorOnly(syndrome)
-    for k,v in ipairs(syndrome.syn_class) do
-        if v.value=="DFHACK_ARMOR_ONLY" then return true end
-    end
-    return false
-end
-    
-local function itemIsWieldedOnly(syndrome)
-    for k,v in ipairs(syndrome.syn_class) do
-        if v.value=="DFHACK_WIELDED_ONLY" then return true end
-    end
-    return false
-end
-    
-local function itemOnlyAffectsStuckins(syndrome)
-    for k,v in ipairs(syndrome.syn_class) do
-        if v.value=="DFHACK_STUCKINS_ONLY" then return true end
-    end
-    return false
+    return returnTable
 end
         
 local function itemIsInValidPosition(item_inv, syndrome)
-    if (item_inv.mode == 0 and not itemAffectsHauler(syndrome)) or (item_inv.mode == 7 and not itemAffectsStuckins(syndrome)) or (item_inv.mode ~= 2 and itemIsArmorOnly(syndrome)) or (item_inv.mode ~=1 and itemIsWieldedOnly(syndrome)) or (item_inv.mode ~=7 and itemOnlyAffectsStuckins(syndrome)) then return false end
-    return true
+    local item = getValidPositions(syndrome)
+    return not ((item_inv.mode == 0 and not item.AffectsHauler) or (item_inv.mode == 7 and not item.AffectsStuckins) or (item_inv.mode ~= 2 and item.IsArmorOnly) or (item_inv.mode ~=1 and item.IsWieldedOnly) or (item_inv.mode ~=7 and item.OnlyAffectsStuckins))
 end
-
+ 
 local function syndromeIsTransformation(syndrome)
     for _,effect in ipairs(syndrome.ce) do
-        local effectType = tostring(effect)
-        if string.find(effectType,"body_transformation") then return true end
+        if df.creature_interaction_effect_body_transformationst:is_instance(effect) then return true end
     end
     return false
 end
-
+ 
 local function rememberInventory(unit)
     local invCopy = {}
     for inv_id,item_inv in ipairs(unit.inventory) do
@@ -243,25 +218,27 @@ local function rememberInventory(unit)
     end
     return invCopy
 end
-
+ 
 local function moveAllToInventory(unit,invTable)
     for _,item_inv in ipairs(invTable) do
         dfhack.items.moveToInventory(item_inv.item,unit,item_inv.mode,item_inv.body_part_id)
     end
 end
-
+ 
 local function addOrRemoveSyndromeDepending(unit,item_inv,syndrome)
-    if item_inv and syndromeIsDfHackSyndrome(syndrome) and creatureIsAffected(unit,syndrome) and itemIsInValidPosition(item_inv, syndrome) then
-        assignSyndrome(unit,syndrome.id)
-    else
-        eraseSyndrome(unit,syndrome.id)
+    if syndromeIsDfHackSyndrome(syndrome) and creatureIsAffected(unit,syndrome) and itemIsInValidPosition(item_inv, syndrome) then
+        if item_inv then
+            assignSyndrome(unit,syndrome.id)
+        else
+            eraseSyndrome(unit,syndrome.id)
+        end
     end
 end
-
+ 
 eventful=require('plugins.eventful')
-
+ 
 eventful.enableEvent(eventful.eventType.INVENTORY_CHANGE,5)
-
+ 
 local function checkAndAddSyndrome(unit_id,new_equip,item_id)
     local item = df.item.find(item_id)
     local unit = df.unit.find(unit_id)
@@ -269,51 +246,58 @@ local function checkAndAddSyndrome(unit_id,new_equip,item_id)
     if itemsyndromedebug then print("Checking unit #" .. unit_id) end
     local transformation = false
     if itemsyndromedebug then print("checking item #" .. item_id .." on unit #" .. unit_id) end
-    if getSyndrome(getMaterial(item)) then
-        if itemsyndromedebug then print("item has a syndrome, checking if item is valid for application...") end
-        local syndrome = getSyndrome(getMaterial(item))
-        if syndromeIsTransformation(syndrome) then
-            unitInventory = rememberInventory(unit)
-            transformation = true
+    local itemMaterial=getMaterial(item)
+    if itemMaterial then
+        for k,syndrome in ipairs(itemMaterial.syndrome) do
+		    if itemsyndromedebug then print("item has a syndrome, checking if item is valid for application...") end
+            if syndromeIsTransformation(syndrome) then
+                unitInventory = rememberInventory(unit)
+                transformation = true
+            end
+            addOrRemoveSyndromeDepending(unit,new_equip,syndrome)
         end
-        addOrRemoveSyndromeDepending(unit,new_equip,syndrome)
     end
-    if itemHasSyndrome(item) then
+    local itemSyndromes = itemHasSyndrome(item)
+    if itemSyndromes then
         if itemsyndromedebug then print("Item itself has a syndrome, checking if item is in correct position and creature is affected") end
-        local syndrome = itemHasSyndrome(item)
-        if syndromeIsTransformation(syndrome) then
-            unitInventory = rememberInventory(unit)
-            transformation = true
+        for k,syndrome in ipairs(itemSyndromes) do
+            if syndromeIsTransformation(syndrome) then
+                unitInventory = rememberInventory(unit)
+                transformation = true
+            end
+            addOrRemoveSyndromeDepending(unit,new_equip,syndrome)
         end
-        addOrRemoveSyndromeDepending(unit,new_equip,syndrome)
     end
     if itemsyndromecontaminants and item.contaminants then
         if itemsyndromedebug then print("Item has contaminants. Checking for syndromes...") end
         for _,contaminant in ipairs(item.contaminants) do
-            if itemsyndromedebug then print("Checking contaminant #" .. _ .. " on item #" .. item_id .. " on unit #" .. unit_id ..".") end
-            if getSyndrome(getMaterial(contaminant)) then
-                local syndrome = getSyndrome(getMaterial(contaminant))
-                if syndromeIsTransformation(syndrome) then
-                    unitInventory = rememberInventory(unit)
-                    transformation =true
+            local contaminantMaterial=getMaterial(contaminant)
+            if contaminantMaterial then
+                for k,syndrome in ipairs(contaminantMaterial.syndrome) do
+                    if itemsyndromedebug then print("Checking syndrome #" .. k .. "on contaminant #" .. _ .. " on item #" .. item_id .. " on unit #" .. unit_id ..".") end
+                    if syndromeIsTransformation(syndrome) then
+                        unitInventory = rememberInventory(unit)
+                        transformation =true
+                    end
+                    addOrRemoveSyndromeDepending(unit,new_equip,syndrome)
                 end
-                addOrRemoveSyndromeDepending(unit,new_equip,syndrome)
             end
         end
     end
     if transformation then dfhack.timeout(2,"ticks",function() moveAllToInventory(unit,unitInventory) end) end
 end
+
 eventful.onInventoryChange.itemsyndrome=function(unit_id,item_id,old_equip,new_equip)
     checkAndAddSyndrome(unit_id,new_equip,item_id)
 end
-
+ 
 dfhack.onStateChange.itemsyndrome=function(code)
     if code==SC_WORLD_LOADED then
         itemSyndromeMatIDs = findItemSyndromeInorganic()
         if itemSyndromeMatIDs then itemSyndromeMats = getAllItemSyndromeMats(itemSyndromeMatIDs) end
     end
 end
-
+ 
 if disable then 
     eventful.onInventoryChange.itemsyndrome=nil
     print("Disabled itemsyndrome.")
