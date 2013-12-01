@@ -1437,7 +1437,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
 	[STATE_NAME_ADJ:GAS:death]
 	[SYNDROME]
 	   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -4353,7 +4353,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [SOLID_DENSITY:55667]
 	[SYNDROME]
 	   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -4381,7 +4381,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[DISPLAY_COLOR:4:0:0]
 [SOLID_DENSITY:55667
    [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX]
@@ -4983,7 +4983,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:GAS:disorienting smoke]
 [SYNDROME]
    [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -5006,7 +5006,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:GAS:blinding light]
 [SYNDROME]
    [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -5028,7 +5028,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:power of the sheep]
 [STATE_NAME_ADJ:GAS:power of the sheep]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -5052,7 +5052,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:Bloodbeast Vapors]
 [STATE_NAME_ADJ:GAS:Bloodbeast Vapors]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -5077,7 +5077,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:Frost Wraith Vapors]
 [STATE_NAME_ADJ:GAS:Frost Wraith Vapors]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -5102,7 +5102,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:Berserking Vapors]
 [STATE_NAME_ADJ:GAS:Berserking Vapors]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -5186,7 +5186,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[DISPLAY_COLOR:4:0:0]
 [SOLID_DENSITY:55667]
 	[SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6003,7 +6003,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:GAS:stone dust]
 	[SYNDROME]
 	   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6048,7 +6048,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [HEATDAM_POINT:1]
    [SYNDROME]
       [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6062,7 +6062,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6076,7 +6076,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6091,7 +6091,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6106,7 +6106,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [HEATDAM_POINT:1]
    [SYNDROME]
       [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6120,7 +6120,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6135,7 +6135,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6149,7 +6149,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6165,7 +6165,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6183,7 +6183,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6200,7 +6200,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6216,7 +6216,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6234,7 +6234,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [HEATDAM_POINT:1]
    [SYNDROME]
       [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6259,7 +6259,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6284,7 +6284,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6312,7 +6312,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6338,7 +6338,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [HEATDAM_POINT:1]
    [SYNDROME]
       [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6363,7 +6363,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6389,7 +6389,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6414,7 +6414,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6441,7 +6441,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6467,7 +6467,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6493,7 +6493,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6521,7 +6521,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6548,7 +6548,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6576,7 +6576,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone25]
 [STATE_NAME_ADJ:GAS:Armoks Ward against the Carp God]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX[SYN_NAME:armor][SYN_CONTACT][SYN_INHALED]
@@ -6624,7 +6624,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone26]
 [STATE_NAME_ADJ:GAS:Iron Swordgolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6651,7 +6651,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone27]
 [STATE_NAME_ADJ:GAS:Iron Hammergolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6678,7 +6678,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone28]
 [STATE_NAME_ADJ:GAS:Iron Speargolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6705,7 +6705,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone29]
 [STATE_NAME_ADJ:GAS:Golden Swordgolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6732,7 +6732,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone30]
 [STATE_NAME_ADJ:GAS:Golden Hammergolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6759,7 +6759,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone31]
 [STATE_NAME_ADJ:GAS:Golden Speargolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6786,7 +6786,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone32]
 [STATE_NAME_ADJ:GAS:Copper Swordgolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6813,7 +6813,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone33]
 [STATE_NAME_ADJ:GAS:Copper Hammergolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6840,7 +6840,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone34]
 [STATE_NAME_ADJ:GAS:Copper Speargolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6867,7 +6867,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone35]
 [STATE_NAME_ADJ:GAS:Steel Swordgolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6894,7 +6894,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone36]
 [STATE_NAME_ADJ:GAS:Steel Hammergolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6921,7 +6921,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone37]
 [STATE_NAME_ADJ:GAS:Steel Speargolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6948,7 +6948,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone38]
 [STATE_NAME_ADJ:GAS:Titanium Swordgolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -6975,7 +6975,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone39]
 [STATE_NAME_ADJ:GAS:Titanium Hammergolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7002,7 +7002,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone40]
 [STATE_NAME_ADJ:GAS:Titanium Speargolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7029,7 +7029,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone41]
 [STATE_NAME_ADJ:GAS:Mithril Swordgolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7056,7 +7056,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone42]
 [STATE_NAME_ADJ:GAS:Mithril Hammergolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7083,7 +7083,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone43]
 [STATE_NAME_ADJ:GAS:Mithril Speargolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7110,7 +7110,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone44]
 [STATE_NAME_ADJ:GAS:Adamantine Swordgolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7137,7 +7137,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone45]
 [STATE_NAME_ADJ:GAS:Adamantine Hammergolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7164,7 +7164,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [STATE_NAME_ADJ:LIQUID:molten failure stone46]
 [STATE_NAME_ADJ:GAS:Adamantine Speargolem]
     [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7587,7 +7587,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7614,7 +7614,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7639,7 +7639,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -7972,7 +7972,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 [BOILING_POINT:8999]
 [SOLID_DENSITY:20000000]
 	[SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -8276,7 +8276,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[STATE_COLOR:LIQUID:BLUE]
 	[STATE_COLOR:GAS:BLUE]
 [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -8434,7 +8434,7 @@ YESWARP[INORGANIC:TEARS_OF_ARMOK]
 [STATE_NAME_ADJ:LIQUID:explosion]
 [STATE_NAME_ADJ:GAS:explosion]
 [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
    was syn_class location
    [SYN_CLASS:\WORKER_ID]
     was SYN_CLASS:\REACTION_INDEX
@@ -12224,7 +12224,7 @@ YESWARP[INORGANIC:TEARS_OF_ARMOK]
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   [SYN_CLASS:\WORKER_ONLY]
+   
       [SYN_AFFECTED_CREATURE:DWARF:ALL][SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
       [SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
       [SYN_INHALED]
