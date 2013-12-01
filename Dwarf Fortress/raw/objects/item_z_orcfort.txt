@@ -444,31 +444,6 @@ TOOLKITS
 FLUID WORKSHOPS
 ----
 
-# Masterwork has these bottle items now
-
-# ITEM_TOOL:ITEM_TOOL_BOTTLE_MAGMA]
-# NAME:portable magma flask:portable magma flasks]
-# VALUE:40]
-# TILE:145]
-# SIZE:100]
-# MATERIAL_SIZE:1]
-# UNIMPROVABLE]
-
-# ITEM_TOOL:ITEM_TOOL_BOTTLE_WATER]
-# NAME:portable water flask:portable water flasks]
-# VALUE:20]
-# TILE:145]
-# SIZE:100]
-# MATERIAL_SIZE:1]
-# UNIMPROVABLE]
-
-[ITEM_TOOL:ITEM_TOOL_BOTTLE_OKTANE]
-[NAME:oktane juice flask:oktane juice flasks]
-[VALUE:40]
-[TILE:145]
-[SIZE:100]
-[MATERIAL_SIZE:1]
-[UNIMPROVABLE]
 [ITEM_TOOL:ITEM_TOOL_VIAL_ACID]
 [NAME:acid vial:acid vials]
 [VALUE:40]
@@ -476,13 +451,7 @@ FLUID WORKSHOPS
 [SIZE:100]
 [MATERIAL_SIZE:1]
 [UNIMPROVABLE]
-[ITEM_TOOL:ITEM_TOOL_BOTTLE_WARP]
-[NAME:refined warpstone flask:refined warpstone flasks]
-[VALUE:40]
-[TILE:145]
-[SIZE:100]
-[MATERIAL_SIZE:1]
-[UNIMPROVABLE]
+
 [ITEM_TOOL:ITEM_TOOL_MAGMATANKER]
 [NAME:magmatanker cart:magmatanker carts]
 [VALUE:50]

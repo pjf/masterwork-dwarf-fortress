@@ -203,14 +203,6 @@ item_tool_masterwork
 [SIZE:1]
 [MATERIAL_SIZE:1][UNIMPROVABLE]
 
-[ITEM_TOOL:ITEM_TOOL_DOWN]
-[NAME:downs:downs]
-[ADJECTIVE:bag of]
-[VALUE:15]
-[TILE:11]
-[SIZE:1]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
-
 [ITEM_TOOL:ITEM_TOOL_CEREMONIAL_STATUE]
 [NAME:ceremonial statue:ceremonial statue]
 [VALUE:10]

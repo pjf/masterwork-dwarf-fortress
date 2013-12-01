@@ -435,59 +435,59 @@ local function announcement_lobotomy() dfhack.gui.showAnnouncement(
     COLOR_CYAN, true)end
 	
 local function announcement_batchcoke() dfhack.gui.showAnnouncement(
-    'A batch of coke has been created in the Batch Furnace.',
+    'A batch of coke has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalalu() dfhack.gui.showAnnouncement(
-    'A batch of aluminum bars has been created in the Batch Furnace.',
+    'A batch of aluminum bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalbra() dfhack.gui.showAnnouncement(
-    'A batch of brass bars has been created in the Batch Furnace.',
+    'A batch of brass bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalbro() dfhack.gui.showAnnouncement(
-    'A batch of bronze bars has been created in the Batch Furnace.',
+    'A batch of bronze bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalcop() dfhack.gui.showAnnouncement(
-    'A batch of copper bars has been created in the Batch Furnace.',
+    'A batch of copper bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetaliro() dfhack.gui.showAnnouncement(
-    'A batch of iron bars has been created in the Batch Furnace.',
+    'A batch of iron bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalgol() dfhack.gui.showAnnouncement(
-    'A batch of gold bars has been created in the Batch Furnace.',
+    'A batch of gold bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalpig() dfhack.gui.showAnnouncement(
-    'A batch of pig iron bars has been created in the Batch Furnace.',
+    'A batch of pig iron bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalpla() dfhack.gui.showAnnouncement(
-    'A batch of platinum has been created in the Batch Furnace.',
+    'A batch of platinum has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalsil() dfhack.gui.showAnnouncement(
-    'A batch of silver bars has been created in the Batch Furnace.',
+    'A batch of silver bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalste() dfhack.gui.showAnnouncement(
-    'A batch of steel bars has been created in the Batch Furnace.',
+    'A batch of steel bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalspr() dfhack.gui.showAnnouncement(
-    'A batch of spring-steel bars has been created in the Batch Furnace.',
+    'A batch of spring-steel bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetaltin() dfhack.gui.showAnnouncement(
-    'A batch of tin bars has been created in the Batch Furnace.',
+    'A batch of tin bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalzin() dfhack.gui.showAnnouncement(
-    'A batch of zinc bars has been created in the Batch Furnace.',
+    'A batch of zinc bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_bread() dfhack.gui.showAnnouncement(

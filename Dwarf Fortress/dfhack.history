@@ -1,4 +1,8 @@
 die
+itemsyndrome enable
+die
+dir
+die
 fastdwarf 1
 die
 fastdwarf 1
@@ -93,7 +97,4 @@ feature list
 revflood
 revflood help
 revreveal
-rendermax light
-rendermax disable
-unreveal
 rendermax light
