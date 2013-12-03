@@ -15,8 +15,8 @@ interaction_disease_probabilities
    [CDI:INTERACTION:PLAGUE_NOT_IMMUNE]
    [CDI:TARGET:A:SELF_ONLY][CDI:FREE_ACTION][CDI:MAX_TARGET_NUMBER:A:1][CDI:WAIT_PERIOD:300001]
 
-   ##If resisted, 2% chance immunity to all plagues
-   [CE_CAN_DO_INTERACTION:PROB:2:START:0:END:3000]
+   ##If resisted, 30% chance immunity to all plagues (~40% of dwarf's passed resistance check with an ~average of 1000 disease_resistance, ending in a final 10% avg result)
+   [CE_CAN_DO_INTERACTION:PROB:25:START:0:END:3000]
    [CDI:INTERACTION:PLAGUE_IMMUNE]
    [CDI:TARGET:A:SELF_ONLY][CDI:FREE_ACTION][CDI:MAX_TARGET_NUMBER:A:1][CDI:WAIT_PERIOD:300001]
    
