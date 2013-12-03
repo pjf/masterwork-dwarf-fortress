@@ -54,7 +54,7 @@ foreach my $base_dir (@directories) {
 
         if ($patch) {
             print "\n+ ";
-            open(my $patch_fh, '|-', 'patch', '--no-backup-if-mismatch','-r','-','-N');
+            open(my $patch_fh, '|-', 'patch', '--no-backup-if-mismatch','-r','-','-N','-l');
 
             say {$patch_fh} $patch;
             CORE::close($patch_fh); # Ignore close failures.
