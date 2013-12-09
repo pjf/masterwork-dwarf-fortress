@@ -1098,7 +1098,7 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 	Priestly
 	Tristan Hayes
 
-[CREATURE:BIRD_OSTRICH][TRAINABLE_WAR]
+[CREATURE:BIRD_OSTRICH]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A large flightless bird that runs through the savanna.  It has a long neck and legs.]
 	[NAME:ostrich:ostriches:ostrich]
 	[CHILD:1][GENERAL_CHILD_NAME:ostrich chick:ostrich chicks]
@@ -1229,7 +1229,7 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'O']
 	[COLOR:0:0:1]
 
-[CREATURE:BIRD_OSTRICH_GIANT][TRAINABLE_WAR]
+[CREATURE:BIRD_OSTRICH_GIANT]
 	[COPY_TAGS_FROM:BIRD_OSTRICH]
 	[APPLY_CREATURE_VARIATION:GIANT][FREQUENCY:75]
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
