@@ -60,7 +60,7 @@ Public Class optionNumeric
         Return String.Format("{0} - {1}", Me.Minimum.ToString, Me.Maximum.ToString)
     End Function
 
-    Public Sub runtTest() Implements iTest.runtTest
+    Public Sub runtTest() Implements iTest.runTest
         Dim newVal As Integer = Me.Value - Me.Increment
         If newVal >= Me.Minimum And newVal <= Me.Maximum Then
             Me.Value = newVal

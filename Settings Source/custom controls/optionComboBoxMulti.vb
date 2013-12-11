@@ -1,33 +1,37 @@
 ﻿Imports System.ComponentModel
 Imports System.Configuration
 Imports MasterworkDwarfFortress.globals
-
-<DescriptionAttribute("Sets the value of a specific token to a value chosen from a dropdown list.")> _
-Public Class optionComboBoxFileReplace
+Public Class optionComboBoxMulti
     Inherits mwComboBox
     Implements iToken
     Implements iTest
 
+    Private m_opt As optionListMulti
+
     Public Sub New()
+
         ' This call is required by the designer.
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        m_opt = New optionSingleFileReplace
+        m_opt = New optionListMulti
     End Sub
 
-    Private m_opt As optionSingleFileReplace
-
-    Public Property options As optionSingleFileReplace
+    Public Property options As optionListMulti
         Get
             Return m_opt
         End Get
-        Set(value As optionSingleFileReplace)
+        Set(value As optionListMulti)
             m_opt = value
         End Set
     End Property
 
-    Private Sub optionComboBox_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles Me.SelectionChangeCommitted
+    Private Sub optionComboBoxMulti_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles Me.SelectionChangeCommitted
+        Dim val As String = CStr(Me.SelectedValue)
+        For Each t As rawToken In m_opt.tokenList
+            t.optionOnValue = val
+            t.optionOffValue = ""
+        Next
         saveOption()
     End Sub
 
@@ -41,7 +45,9 @@ Public Class optionComboBoxFileReplace
                     Me.ValueMember = "value"
                 End If
             End If
-            Me.SelectedValue = CStr(m_opt.settingManager.getSettingValue)
+
+            Me.SelectedValue = CStr(m_opt.loadOption)
+
         Catch ex As Exception
             Me.SelectedIndex = -1
         Finally
@@ -51,7 +57,7 @@ Public Class optionComboBoxFileReplace
 
     Public Sub saveOption() Implements iToken.saveOption
         If m_opt.valueUpdatingPaused Or Me.DesignMode Then Exit Sub
-        m_opt.saveOption(CType(Me.SelectedItem, comboFileItem).fileName, CType(Me.SelectedItem, comboFileItem).value)
+        m_opt.saveOption()
         m_opt.valueUpdatingPaused = False
     End Sub
 
@@ -62,7 +68,6 @@ Public Class optionComboBoxFileReplace
                 Exit For
             End If
         Next
-        optionComboBox_SelectionChangeCommitted(Me, New EventArgs)
+        optionComboBoxMulti_SelectionChangeCommitted(Me, New EventArgs)
     End Sub
 End Class
-

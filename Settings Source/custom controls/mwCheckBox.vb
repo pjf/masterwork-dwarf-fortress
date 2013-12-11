@@ -9,8 +9,10 @@
 
         ' Add any initialization after the InitializeComponent() call.
         Me.Appearance = Windows.Forms.Appearance.Button
-        Me.TextAlign = ContentAlignment.MiddleCenter
-        Me.ImageAlign = ContentAlignment.MiddleLeft
+        Me.FlatStyle = FlatStyle.Flat
+        Me.FlatAppearance.BorderSize = 0
+        'Me.TextAlign = ContentAlignment.MiddleCenter
+        'Me.ImageAlign = ContentAlignment.MiddleLeft
         Me.DoubleBuffered = True
 
 

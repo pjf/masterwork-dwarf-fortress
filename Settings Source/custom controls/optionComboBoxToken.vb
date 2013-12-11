@@ -60,7 +60,7 @@ Public Class optionComboBoxToken
     End Sub
 
 
-    Public Sub runtTest() Implements iTest.runtTest
+    Public Sub runtTest() Implements iTest.runTest
         For i As Integer = 0 To Me.Items.Count
             If Not Me.Items(i).Equals(Me.SelectedItem) Then
                 Me.SelectedItem = Me.Items(i)

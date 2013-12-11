@@ -1,4 +1,5 @@
 ﻿Imports MasterworkDwarfFortress.globals
+Imports MasterworkDwarfFortress.utils
 Imports MasterworkDwarfFortress.fileWorking
 Imports System.Text.RegularExpressions
 Imports System.ComponentModel
@@ -53,6 +54,12 @@ Imports System.ComponentModel
         If fileWorking.savedGameDirs.Count > 1 Then
             btnUpdateSaves.Enabled = True
         End If
+
+        'cycle through all our tabs to ensure everything is visible immediately
+        For Each t As TabPage In tabMain.TabPages
+            tabMain.SelectedTab = t
+        Next
+        tabMain.SelectedIndex = 0
     End Sub
 
 
@@ -89,8 +96,11 @@ Imports System.ComponentModel
             m_tokensDInit = tokenLoading.loadFileTokens(m_dinit)
             tokenLoading.loadWorldGenTokens()
 
+            'load all the civ table controls first
+            loadCivTable()
+
             'load all our current options, and format our controls to the current theme
-            initControls(Me, True, True, True)
+            initControls(Me, ToolTipMaker, True, True, True)            
 
             'load the world gen templates
             loadWorldGenCombo()
@@ -118,124 +128,27 @@ Imports System.ComponentModel
         Next
     End Sub
 
-    Private Sub initControls(ByVal parentControl As Control, ByVal loadSetting As Boolean, ByVal loadTooltip As Boolean, ByVal loadTheme As Boolean)
-        For Each c As Control In parentControl.Controls
-
-            If loadTheme Then
-                Dim cTheme As iTheme = TryCast(c, iTheme)
-                If cTheme IsNot Nothing Then
-                    cTheme.applyTheme()
-                Else
-                    formatControl(c)
-                End If
-
-            End If
-
-            If loadTooltip Then
-                Dim cTool As iTooltip = TryCast(c, iTooltip)
-                If cTool IsNot Nothing Then
-                    Dim tt As String = ToolTipMaker.GetToolTip(cTool)
-                    Dim conTooltip As String = cTool.getToolTip
-                    If tt.ToString = "" Then
-                        tt = conTooltip
-                    Else
-                        tt = conTooltip & vbCrLf & vbCrLf & tt
-                    End If
-                    ToolTipMaker.SetToolTip(cTool, tt)
-                End If
-            End If
-
-            If loadSetting Then
-                Dim conOpt As iToken = TryCast(c, iToken)
-                If conOpt IsNot Nothing Then If c.Enabled Then conOpt.loadOption() 'only load options of enabled controls
-            End If
-
-            If c.HasChildren Then
-                initControls(c, loadSetting, loadTooltip, loadTheme)
-            End If
-        Next
-    End Sub
-
 #Region "formatting and themes"
     Private Sub rBtnThemes_DropDownItemClicked(sender As Object, e As RibbonItemEventArgs) Handles rBtnThemes.DropDownItemClicked
         If My.Settings.THEME = e.Item.Tag.ToString.ToUpper Then Exit Sub
 
         My.Settings.THEME = e.Item.Tag.ToString.ToUpper
 
+        Dim currTab As TabPage = tabMain.SelectedTab
+
         setTheme()
         Dim frmWait As New frmThemeChange
         Me.Opacity = 0
+        Me.tabMain.SelectedTab = tabSettings 'choose a tab with few controls as the refresh causes massive flickering
         frmWait.Show()
         Application.DoEvents() 'hurrghh, this is a bad idea
-        initControls(Me, False, False, True)
-        Me.Opacity = 1
+        initControls(Me, ToolTipMaker, False, False, True)
+        Me.tabMain.SelectedTab = currTab
+        Me.Opacity = 1        
         frmWait.Hide()
     End Sub
 
-    Private Sub formatControl(ByVal c As Control)
-        'this formats any non-custom controls with the ribbon's theme colors
-        'currently groupboxes and labels only have their forecolor changed,
-        'since solid backgrounds hides our beautiful background image
-
-        Select Case c.GetType
-            Case GetType(Button)
-                Dim btn As Button = DirectCast(c, Button)
-                btn.ForeColor = Theme.ColorTable.Text
-
-                btn.FlatAppearance.MouseOverBackColor = Theme.ColorTable.ButtonSelected_2013
-                btn.FlatAppearance.MouseDownBackColor = Theme.ColorTable.ButtonSelected_2013
-
-                If Theme.ThemeColor <> RibbonTheme.Normal Then
-                    btn.BackgroundImage = Nothing
-                    btn.BackgroundImageLayout = ImageLayout.None
-                    btn.BackColor = Theme.ColorTable.RibbonBackground_2013
-                    btn.FlatAppearance.CheckedBackColor = Theme.ColorTable.RibbonBackground_2013
-                Else
-                    btn.BackgroundImage = My.Resources.transp_1
-                    btn.BackgroundImageLayout = ImageLayout.Tile
-                    btn.BackColor = Color.Transparent
-                    btn.FlatAppearance.CheckedBackColor = Color.Transparent
-                End If
-
-            Case GetType(Label)
-                c.ForeColor = Theme.ColorTable.Caption1
-                c.BackColor = Color.Transparent
-
-            Case GetType(GroupBox)
-                c.ForeColor = Theme.ColorTable.Caption1
-
-            Case GetType(ComboBox)
-                Dim cb As ComboBox = DirectCast(c, ComboBox)
-                cb.ForeColor = Theme.ColorTable.Text
-                cb.BackColor = Theme.ColorTable.ButtonPressed_2013
-                cb.FlatStyle = FlatStyle.Flat
-
-            Case GetType(CustomTabControl)
-
-                If Theme.ThemeColor = RibbonTheme.Normal Then
-                    tabMain.DisplayStyle = TabStyle.VS2010
-                    tabMain.DisplayStyleProvider.BorderColor = Theme.ColorTable.RibbonBackground_2013
-                    tabMain.DisplayStyleProvider.Radius = 1
-                Else
-                    tabMain.DisplayStyle = TabStyle.Angled
-                    tabMain.DisplayStyleProvider.BorderColor = Theme.ColorTable.PanelDarkBorder
-                End If
-
-                tabMain.DisplayStyleProvider.SelectedTabColor = Theme.ColorTable.TabActiveBackground_2013
-                tabMain.DisplayStyleProvider.SelectedTabColorTop = Theme.ColorTable.TabActiveBackground_2013
-
-                tabMain.DisplayStyleProvider.TextColor = Theme.ColorTable.TabText_2013
-                tabMain.DisplayStyleProvider.TextColorDisabled = Theme.ColorTable.TabText_2013
-                tabMain.DisplayStyleProvider.TextColorSelected = Theme.ColorTable.TabText_2013
-
-                tabMain.DisplayStyleProvider.ShowTabCloser = False
-                tabMain.DisplayStyleProvider.HotTrack = False
-                tabMain.DisplayStyleProvider.FocusTrack = False
-        End Select
-    End Sub
-
 #End Region
-
 
 
 #Region "tileset change and preview"
@@ -326,7 +239,7 @@ Imports System.ComponentModel
         globals.currentWorldGenIndex = CType(cmbWorldGenIndex.SelectedItem, comboItem).value
         'refresh our world gen controls. the internal loading will check the global var
         'm_refreshingWorldGen = True
-        initControls(tabWorldGen, True, False, False)
+        initControls(tabWorldGen, ToolTipMaker, True, False, False)
         'm_refreshingWorldGen = False
     End Sub
 
@@ -336,7 +249,7 @@ Imports System.ComponentModel
         Else
             RemoveHandler cmbWorldGenIndex.SelectionChangeCommitted, AddressOf refreshWorldGen
             globals.currentWorldGenIndex = -2
-        End If
+        End If        
     End Sub
 
 #End Region
@@ -503,7 +416,7 @@ Imports System.ComponentModel
                 If conOpt IsNot Nothing Then
                     Try
                         Debug.WriteLine("TESTING... " & c.Name)
-                        conOpt.runtTest()
+                        conOpt.runTest()
                         Debug.WriteLine("TEST ENDED")
                     Catch ex As Exception
                         Debug.WriteLine("!TEST EXCEPTION! " & ex.ToString)
@@ -519,6 +432,170 @@ Imports System.ComponentModel
 
 #End Region
 
- 
+
+#Region "civ table loading"
+    Private m_comboItemNames As List(Of String) = New List(Of String)(New String() {"Never", "Very Early", "Early", "Default", "Late", "Very Late"})
+
+    Private m_tradeTokens As List(Of String) = New List(Of String)(New String() {"PROGRESS_TRIGGER_POPULATION", "PROGRESS_TRIGGER_PRODUCTION", "PROGRESS_TRIGGER_TRADE"})
+    Private m_popLevels As List(Of String) = New List(Of String)(New String() {"N/A", "20", "50", "80", "110", "140"})
+    Private m_wealthLevels As List(Of String) = New List(Of String)(New String() {"N/A", "5000", "25000", "100000", "200000", "300000"})
+    Private m_exportLevels As List(Of String) = New List(Of String)(New String() {"N/A", "500", "2500", "10000", "20000", "30000"})
+
+    Private m_invasionTokens As List(Of String) = New List(Of String)(New String() {"PROGRESS_TRIGGER_POP_SIEGE", "PROGRESS_TRIGGER_PROD_SIEGE", "PROGRESS_TRIGGER_TRADE_SIEGE"})
+
+    Private Sub loadCivTable()
+        'column indexes
+        Dim idxPlayable As Integer = 2
+        Dim idxCaravan As Integer = 3
+        Dim idxInvasion As Integer = 4
+        Dim idxHostile As Integer = 5
+        Dim idxMaterials As Integer = 6
+        Dim idxSkills As Integer = 7
+
+        'width/height based on table cell sizes
+        Dim intCtrlHeight As Integer = Me.tableLayoutCivs.GetControlFromPosition(1, 1).Height
+        Dim intCtrlWidth As Integer = 50
+
+        'our main label that has all the information we'll need to load the various options
+        Dim civLabel As mwCivLabel
+        Dim civName As String = ""
+
+        Me.tableLayoutCivs.SuspendLayout()
+        For idxRow As Integer = 1 To Me.tableLayoutCivs.RowCount - 1            
+            civLabel = Me.tableLayoutCivs.GetControlFromPosition(0, idxRow)
+            If civLabel Is Nothing OrElse (civLabel.entityFileName = "") Then
+                Throw New Exception("Civ Label " & Me.tableLayoutCivs.GetControlFromPosition(0, idxRow).Name & " is missing required properties!")
+            Else
+                civName = civLabel.entityFileName.ToString.Replace("_", " ")
+                civName = civName.ToLower.Replace("entity", "")
+                civName = civName.Replace(".txt", "")
+                civName = StrConv(civName, VbStrConv.ProperCase)
+                civName = civName.Replace(" ", "")
+
+                If idxRow >= 4 Then
+                    'add a disabled placeholder for playable race
+                    intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlayable, 0).Width
+                    Dim btnPlayable As New optionSingleReplaceButton
+                    btnPlayable.Name = "optBtnPlayablePlaceholder" & civName
+                    btnPlayable.ImageAlign = ContentAlignment.MiddleCenter
+                    btnPlayable.Text = ""
+                    btnPlayable.Enabled = False
+                    formatCivTableControl(btnPlayable, intCtrlWidth, intCtrlHeight)
+                    Me.tableLayoutCivs.Controls.Add(btnPlayable, idxPlayable, idxRow)
+                End If
+
+                'add a caravan option
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxCaravan, 0).Width
+                Dim cbCaravans As New optionComboBoxMulti
+                cbCaravans.Name = "optCbMultiCaravans" & civName
+                formatCivTableControl(cbCaravans, intCtrlWidth, intCtrlHeight)
+                buildTriggerOption(cbCaravans, civLabel.entityFileName, m_tradeTokens)
+                Me.tableLayoutCivs.Controls.Add(cbCaravans, idxCaravan, idxRow)
+
+                'add an invasion option
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxInvasion, 0).Width
+                Dim cbInvasions As New optionComboBoxMulti
+                cbInvasions.Name = "optCbMultiInvasions" & civName
+                formatCivTableControl(cbInvasions, intCtrlWidth, intCtrlHeight)
+                buildTriggerOption(cbInvasions, civLabel.entityFileName, m_invasionTokens)
+                Me.tableLayoutCivs.Controls.Add(cbInvasions, idxInvasion, idxRow)
+
+                'add a good/evil option
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxHostile, 0).Width
+                Dim btnHostile As New optionSingleReplaceButton
+                btnHostile.Name = "optBtnGood" & civName
+                btnHostile.options.fileManager.fileNames = New String() {civLabel.entityFileName}
+                btnHostile.options.enabledValue = "!BABYSNATCHER!"
+                btnHostile.options.disabledValue = "[BABYSNATCHER]"
+                btnHostile.ImageAlign = ContentAlignment.MiddleCenter
+                btnHostile.Text = ""
+                formatCivTableControl(btnHostile, intCtrlWidth, intCtrlHeight)
+                Me.tableLayoutCivs.Controls.Add(btnHostile, idxHostile, idxRow)
+
+                'add a material option
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxMaterials, 0).Width
+                Dim cbTemp As New optionComboBoxMulti
+                cbTemp.Name = "temp1" & civName
+                formatCivTableControl(cbTemp, intCtrlWidth, intCtrlHeight)
+                Me.tableLayoutCivs.Controls.Add(cbTemp, idxMaterials, idxRow)
+
+                'add a skill option
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxSkills, 0).Width
+                Dim cbSkills As optionComboPatternToken = New optionComboPatternToken
+                cbSkills.Name = "optCbPatternSkills" & civName
+                formatCivTableControl(cbSkills, intCtrlWidth, intCtrlHeight)
+                buildSkillOption(cbSkills, civLabel.creatureFileName, civLabel.skillsTag)
+                Me.tableLayoutCivs.Controls.Add(cbSkills, idxSkills, idxRow)
+            End If
+
+        Next
+        Me.tableLayoutCivs.ResumeLayout()
+        'Me.tableLayoutCivs.AutoScroll = True
+    End Sub
+
+    Private Sub formatCivTableControl(ByRef c As Control, ByVal w As Integer, ByVal h As Integer)
+        c.Size = New Size(w, h)
+        c.Margin = New Padding(1)
+    End Sub
+
+    Private Sub buildSkillOption(ByRef cb As optionComboPatternToken, ByVal creatureFileName As String, ByVal tag As String)
+        For i As Integer = 0 To 15
+            cb.Items.Add(CStr(i))
+        Next
+        cb.options.fileManager.fileNames = New String() {creatureFileName}
+        If tag Is Nothing OrElse tag.Trim <> "" Then
+            cb.pattern = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & ")"
+            cb.replace = "${1}${value}${2}"
+        Else
+            cb.Enabled = False
+        End If
+        cb.options.updateTileSets = True
+    End Sub
+
+    Private Sub buildTriggerOption(ByRef cb As optionComboBoxMulti, ByVal entityFileName As String, ByVal tokenList As List(Of String))
+        'add the combobox items and associated values 0-5
+        loadTriggerItems(cb)
+
+        'set the file name
+        cb.options.fileManager.fileNames = New String() {entityFileName}
+
+        'set the tokens
+        loadTriggerTokens(tokenList, cb.options.tokenList)
+
+        'set the tooltips        
+        ToolTipMaker.SetToolTip(cb, buildTriggerTooltip())
+    End Sub
+
+    Private Sub loadTriggerItems(ByRef cb As optionComboBoxMulti)
+        Dim idx As Integer = 0
+        For Each s As String In m_comboItemNames
+            Dim newItem As New comboItem
+            newItem.display = s
+            newItem.value = idx
+            cb.options.itemList.Add(newItem)
+            idx += 1
+        Next
+    End Sub
+
+    Private Function buildTriggerTooltip() As String
+        Dim msg As New List(Of String)
+        Dim idx As Integer = 0
+        For Each s In m_comboItemNames
+            msg.Add(String.Format("{0} - {1}", s, String.Format("{0}: {1} or {2}: {3} or {4}: {5}", "Wealth", m_wealthLevels(idx), "Population", m_popLevels(idx), "Exported", m_exportLevels(idx))))
+            idx += 1
+        Next
+        Return String.Join(vbCrLf & vbCrLf, msg)
+    End Function
+
+    Private Sub loadTriggerTokens(ByVal l As List(Of String), ByRef tokenList As rawTokenCollection)
+        For Each s As String In l
+            Dim newToken As New rawToken
+            newToken.tokenName = s : newToken.optionOnValue = "3" 'placeholder value (default)
+            tokenList.Add(newToken)
+        Next
+    End Sub
+
+#End Region
+
 End Class
 

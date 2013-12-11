@@ -128,6 +128,19 @@
     <Compile Include="custom control backend\comboItem.vb" />
     <Compile Include="custom control backend\fileListManager.vb" />
     <Compile Include="custom control backend\fileReplaceManager.vb" />
+    <Compile Include="custom controls\mwCivLabel.Designer.vb">
+      <DependentUpon>mwCivLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\mwCivLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom controls\mwTableLayout.Designer.vb">
+      <DependentUpon>mwTableLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\mwTableLayout.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom control backend\optionListMulti.vb" />
     <Compile Include="custom controls\mwCheckBox.Designer.vb">
       <DependentUpon>mwCheckBox.vb</DependentUpon>
     </Compile>
@@ -150,6 +163,12 @@
       <DependentUpon>optionComboBoxFileReplace.vb</DependentUpon>
     </Compile>
     <Compile Include="custom controls\optionComboBoxFileReplace.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom controls\optionComboBoxMulti.Designer.vb">
+      <DependentUpon>optionComboBoxMulti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\optionComboBoxMulti.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="custom controls\optionComboBoxToken.Designer.vb">
@@ -227,6 +246,7 @@
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="management classes\utils.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -256,8 +276,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="custom controls\mwTableLayout.resx">
+      <DependentUpon>mwTableLayout.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="custom controls\colorViewer.resx">
       <DependentUpon>colorViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom controls\optionComboBoxMulti.resx">
+      <DependentUpon>optionComboBoxMulti.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="helper forms\frmAbout.resx">
       <DependentUpon>frmAbout.vb</DependentUpon>
@@ -334,6 +362,7 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <None Include="Resources\gear--plus.png" />
     <None Include="Resources\ajax-loader.gif" />
     <None Include="Resources\color.png" />
     <None Include="Resources\tilegenie.PNG" />

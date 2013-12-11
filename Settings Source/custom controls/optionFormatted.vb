@@ -95,7 +95,7 @@ Public Class optionFormatted
         Return m_niceFormat
     End Function
 
-    Public Sub runtTest() Implements iTest.runtTest
+    Public Sub runtTest() Implements iTest.runTest
         Dim valid As Boolean = False
         Dim rx As New Regex(m_pattern, RegexOptions.IgnoreCase)
         Dim newVal As String = Me.Text

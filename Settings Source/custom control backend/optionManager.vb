@@ -115,20 +115,14 @@ Public Class optionManager
                     retValue = "YES"
                 End If
             Else
-                'in this case we're looking for a specific token within multiple files. we're only looking to return a single value however, so return the first one
-
-                '**
-                'this really shouldn't ever happen (programmer's last words...), as pulling a token's value is
-                'loaded from the init, d_init or worldgen files, which has already been done above
-                'so by this point, this is just in case someone adds certain extra files in addition to the init files
-                '**
-                Dim pattern As String = String.Format("\[(?" & tokens.Item(0).tokenName & "\w+):(?<value>.*)\]")
+                'in this case we're looking token value(s) within multiple files. 
+                'we're only looking to return a single value however, so return the first one
+                Dim pattern As String = String.Format("(\[" & tokens.Item(0).tokenName & ":)(?<value>\w+)\]")                
+                Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
+                Dim m As Match
                 For Each f As String In filePaths
-                    Dim matches As MatchCollection = Regex.Matches(ReadFile(f), pattern)
-                    If matches.Count > 0 Then
-                        retValue = matches(0).Value.ToString
-                        Exit For
-                    End If
+                    m = rx.Match(readFile(f))
+                    If m.Success Then Return m.Groups("value").Value
                 Next
             End If
         End If
@@ -395,7 +389,7 @@ Public Class optionManager
 #End Region
 
 #Region "pattern replacement loading/saving"
-    'these functions are used when replacing specific values within patters. see the invader skills for an example
+    'these functions are used when replacing specific values within patterns. see the invader skills for an example
     Public Function loadPatternValue(ByVal pattern As String, ByVal filePaths As List(Of String)) As String
         Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
         Dim m As Match

@@ -60,7 +60,7 @@ Public Class optionSingleBoolButton
         Return strValue
     End Function
 
-    Public Sub runtTest() Implements iTest.runtTest
+    Public Sub runtTest() Implements iTest.runTest
         Me.Checked = Not Me.Checked
         Me.Checked = Not Me.Checked
     End Sub

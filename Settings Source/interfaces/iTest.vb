@@ -1,3 +1,3 @@
 ﻿Public Interface iTest
-    Sub runtTest()
+    Sub runTest()
 End Interface
