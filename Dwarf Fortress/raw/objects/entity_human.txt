@@ -1,21 +1,9 @@
 entity_human
 
 YESHUMANRACE[OBJECT:ENTITY]
-
-
-################################################################
-################################################################
-###########       HUMANS          ##############################
-################################################################
-################################################################
-
-
-
-
-
 [ENTITY:PLAINS]
 	[INDIV_CONTROLLABLE]
-	[CREATURE:HUMAN]
+	[CREATURE:HUMAN]!BABYSNATCHER!
 	[TRANSLATION:HUMAN]
 	[DIGGER:ITEM_WEAPON_PICK]
 	[WEAPON:ITEM_WEAPON_HAMMER_WAR:FORCED]
@@ -161,6 +149,8 @@ YESSIMPLETOY[TOY:ITEM_TOY_TOY][TOY:ITEM_TOY_BRAZIER]
 	[MERCHANT_NOBILITY]
 	YESBODYGUARD[DIPLOMAT_BODYGUARDS]
 	YESBODYGUARD[MERCHANT_BODYGUARDS]
+	[PROGRESS_TRIGGER_PRODUCTION:2]
+	[PROGRESS_TRIGGER_POPULATION:2]
 	[PROGRESS_TRIGGER_TRADE:2]
 	[PROGRESS_TRIGGER_POP_SIEGE:2]
 	[PROGRESS_TRIGGER_PROD_SIEGE:2]

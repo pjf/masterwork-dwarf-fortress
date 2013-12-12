@@ -24,12 +24,14 @@ Namespace System.Windows.Forms
 
 		Public Sub New()
 
-			Me.SetStyle(ControlStyles.UserPaint Or ControlStyles.AllPaintingInWmPaint Or ControlStyles.Opaque Or ControlStyles.ResizeRedraw, True)
+            'Me.SetStyle(ControlStyles.UserPaint Or ControlStyles.AllPaintingInWmPaint Or ControlStyles.OptimizedDoubleBuffer Or ControlStyles.ResizeRedraw, True)
 
-			Me._BackBuffer = New Bitmap(Me.Width, Me.Height)
-			Me._BackBufferGraphics = Graphics.FromImage(Me._BackBuffer)
-			Me._TabBuffer = New Bitmap(Me.Width, Me.Height)
-			Me._TabBufferGraphics = Graphics.FromImage(Me._TabBuffer)
+            Me.SetStyle(ControlStyles.UserPaint Or ControlStyles.AllPaintingInWmPaint Or ControlStyles.Opaque Or ControlStyles.ResizeRedraw, True)
+
+            Me._BackBuffer = New Bitmap(Me.Width, Me.Height)
+            Me._BackBufferGraphics = Graphics.FromImage(Me._BackBuffer)
+            Me._TabBuffer = New Bitmap(Me.Width, Me.Height)
+            Me._TabBufferGraphics = Graphics.FromImage(Me._TabBuffer)
 
 
 			Me.DisplayStyle = TabStyle.[Default]
@@ -682,10 +684,18 @@ Namespace System.Windows.Forms
 
         Private nopaintbounce As Boolean
         Protected Overrides Sub OnPaint(e As PaintEventArgs)
+            ''        We must always paint the entire area of the tab control
+            'If e.ClipRectangle.Equals(Me.ClientRectangle) Then
+            '    Me.CustomPaint(e.Graphics)
+            'Else
+            '    '        it is less intensive to just reinvoke the paint with the whole surface available to draw on.
+            '    Me.Invalidate()
+            'End If
+
             If nopaintbounce Then
                 Me.CustomPaint(e.Graphics)
                 nopaintbounce = False
-                Exit Sub            
+                Exit Sub
             End If
             If e.ClipRectangle.Equals(Me.ClientRectangle) Then
                 Me.CustomPaint(e.Graphics)
@@ -693,13 +703,6 @@ Namespace System.Windows.Forms
                 nopaintbounce = True
                 Me.Invalidate()
             End If
-            ''	We must always paint the entire area of the tab control
-            'If e.ClipRectangle.Equals(Me.ClientRectangle) Then
-            '	Me.CustomPaint(e.Graphics)
-            'Else
-            '	'	it is less intensive to just reinvoke the paint with the whole surface available to draw on.
-            '	Me.Invalidate()
-            'End If
         End Sub
 
 		Private Sub CustomPaint(screenGraphics As Graphics)

@@ -9,6 +9,7 @@
 
         ' Add any initialization after the InitializeComponent() call.
         Me.FlatStyle = Windows.Forms.FlatStyle.Flat
+        Me.DoubleBuffered = True
     End Sub
 
     Public Sub applyTheme() Implements iTheme.applyTheme

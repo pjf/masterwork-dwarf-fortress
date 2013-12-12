@@ -11,16 +11,6 @@ entity_drow_evil
 #####
 # Changed some of the Drow weapons into closest Orcish counterpart
 #
-
-################################################################
-################################################################
-###########       DROW          ##############################
-################################################################
-################################################################
-
-
-
-
 [ENTITY:DROW_EVIL]
 	[CREATURE:DROW_EVIL][BABYSNATCHER]
 	[TRANSLATION:DROW]
@@ -178,7 +168,7 @@ entity_drow_evil
 	[DIPLOMAT_BODYGUARDS]
 	[MERCHANT_BODYGUARDS]
 	[MERCHANT_NOBILITY]
-	[PROGRESS_TRIGGER_POPULATION:3] all 3
+	[PROGRESS_TRIGGER_POPULATION:3]
 	[PROGRESS_TRIGGER_PRODUCTION:3]
 	[PROGRESS_TRIGGER_TRADE:3]
 	[PROGRESS_TRIGGER_POP_SIEGE:3]
@@ -822,7 +812,8 @@ entity_drow_evil
 		[SITE]
 		[NUMBER:1]
 		[REPLACED_BY:HOUSE_ADMINISTRATOR]
-		[APPOINTED_BY:EXPEDITION_LEADER]		
+		[APPOINTED_BY:EXPEDITION_LEADER]
+		
 		[APPOINTED_BY:OUTPOST_OVERSEER]
 		[APPOINTED_BY:HOUSE_OVERSEER]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
