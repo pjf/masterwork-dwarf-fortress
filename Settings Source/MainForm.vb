@@ -63,7 +63,7 @@ Imports System.ComponentModel
     End Sub
 
 
-    'this override prevents flickering when drawing transparent controls over background images with a tabcontrol, since it doesn't support double buffering
+    'this override prevents flickering when drawing transparent controls over background images within a tabcontrol
     Protected Overrides ReadOnly Property CreateParams As CreateParams
         Get
             Dim cp As CreateParams = MyBase.CreateParams
@@ -460,6 +460,10 @@ Imports System.ComponentModel
         Dim civLabel As mwCivLabel
         Dim civName As String = ""
 
+        'set some tooltips
+        ToolTipMaker.SetToolTip(lblCivCaravans, buildTriggerTooltip())
+        ToolTipMaker.SetToolTip(lblCivInvasions, buildTriggerTooltip())
+
         Me.tableLayoutCivs.SuspendLayout()
         For idxRow As Integer = 1 To Me.tableLayoutCivs.RowCount - 1            
             civLabel = Me.tableLayoutCivs.GetControlFromPosition(0, idxRow)
@@ -472,9 +476,9 @@ Imports System.ComponentModel
                 civName = StrConv(civName, VbStrConv.ProperCase)
                 civName = civName.Replace(" ", "")
 
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlayable, 0).Width
                 If idxRow >= 4 Then
                     'add a disabled placeholder for playable race
-                    intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlayable, 0).Width
                     Dim btnPlayable As New optionSingleReplaceButton
                     btnPlayable.Name = "optBtnPlayablePlaceholder" & civName
                     btnPlayable.ImageAlign = ContentAlignment.MiddleCenter
@@ -482,6 +486,10 @@ Imports System.ComponentModel
                     btnPlayable.Enabled = False
                     formatCivTableControl(btnPlayable, intCtrlWidth, intCtrlHeight)
                     Me.tableLayoutCivs.Controls.Add(btnPlayable, idxPlayable, idxRow)
+                Else
+                    'exiting playable button, just resize it to ensure it fits in the cell
+                    Dim btnPlayable As optionSingleReplaceButton = Me.tableLayoutCivs.GetControlFromPosition(idxPlayable, idxRow)
+                    formatCivTableControl(btnPlayable, intCtrlWidth, intCtrlHeight)
                 End If
 
                 'add a caravan option
@@ -505,17 +513,18 @@ Imports System.ComponentModel
                 Dim btnHostile As New optionSingleReplaceButton
                 btnHostile.Name = "optBtnGood" & civName
                 btnHostile.options.fileManager.fileNames = New String() {civLabel.entityFileName}
-                btnHostile.options.enabledValue = "!BABYSNATCHER!"
+                btnHostile.options.enabledValue = "!BABYSNATCHER!" 'enabled = good = not baby snatchers
                 btnHostile.options.disabledValue = "[BABYSNATCHER]"
                 btnHostile.ImageAlign = ContentAlignment.MiddleCenter
                 btnHostile.Text = ""
                 formatCivTableControl(btnHostile, intCtrlWidth, intCtrlHeight)
                 Me.tableLayoutCivs.Controls.Add(btnHostile, idxHostile, idxRow)
 
-                'add a material option
+                'add a material option (placeholder, currently disabled)
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxMaterials, 0).Width
                 Dim cbTemp As New optionComboBoxMulti
                 cbTemp.Name = "temp1" & civName
+                cbTemp.Enabled = False
                 formatCivTableControl(cbTemp, intCtrlWidth, intCtrlHeight)
                 Me.tableLayoutCivs.Controls.Add(cbTemp, idxMaterials, idxRow)
 
@@ -530,12 +539,13 @@ Imports System.ComponentModel
 
         Next
         Me.tableLayoutCivs.ResumeLayout()
-        'Me.tableLayoutCivs.AutoScroll = True
+        'Me.tableLayoutCivs.AutoScroll = True 'need this if we add any more civs to the table
     End Sub
 
     Private Sub formatCivTableControl(ByRef c As Control, ByVal w As Integer, ByVal h As Integer)
         c.Size = New Size(w, h)
-        c.Margin = New Padding(1)
+        c.Margin = New Padding(3, 1, 3, 1)
+        c.Anchor = AnchorStyles.Top
     End Sub
 
     Private Sub buildSkillOption(ByRef cb As optionComboPatternToken, ByVal creatureFileName As String, ByVal tag As String)
@@ -555,15 +565,11 @@ Imports System.ComponentModel
     Private Sub buildTriggerOption(ByRef cb As optionComboBoxMulti, ByVal entityFileName As String, ByVal tokenList As List(Of String))
         'add the combobox items and associated values 0-5
         loadTriggerItems(cb)
-
-        'set the file name
         cb.options.fileManager.fileNames = New String() {entityFileName}
-
-        'set the tokens
         loadTriggerTokens(tokenList, cb.options.tokenList)
 
         'set the tooltips        
-        ToolTipMaker.SetToolTip(cb, buildTriggerTooltip())
+        'ToolTipMaker.SetToolTip(cb, buildTriggerTooltip())
     End Sub
 
     Private Sub loadTriggerItems(ByRef cb As optionComboBoxMulti)
@@ -581,7 +587,7 @@ Imports System.ComponentModel
         Dim msg As New List(Of String)
         Dim idx As Integer = 0
         For Each s In m_comboItemNames
-            msg.Add(String.Format("{0} - {1}", s, String.Format("{0}: {1} or {2}: {3} or {4}: {5}", "Wealth", m_wealthLevels(idx), "Population", m_popLevels(idx), "Exported", m_exportLevels(idx))))
+            msg.Add(String.Format("{0} - {1}", s, String.Format("{0}: {1} or {2}: {3} or {4}: {5}", "Population", m_popLevels(idx), "Wealth", m_wealthLevels(idx), "Exported", m_exportLevels(idx))))
             idx += 1
         Next
         Return String.Join(vbCrLf & vbCrLf, msg)
