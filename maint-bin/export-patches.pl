@@ -16,7 +16,7 @@ my $EXCLUDED_FILES_RE = qr{
     \.gitignore$
 }msx;
 
-my @BRANCHES = qw(master unified);
+my @BRANCHES = qw(master unified nerfed_diseases);
 
 # Remember what branch we're on now
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
