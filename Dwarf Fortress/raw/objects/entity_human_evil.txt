@@ -11,16 +11,6 @@ entity_human_evil
 #####
 # Gave more Pirate/bandit gear and less Paladin heavy arms & armor
 #####
-
-################################################################
-################################################################
-###########       HUMANS          ##############################
-################################################################
-################################################################
-
-
-
-
 [ENTITY:PLAINS_EVIL]
 	[CREATURE:HUMAN_EVIL][BABYSNATCHER]
 	[TRANSLATION:HUMAN]
@@ -94,9 +84,6 @@ entity_human_evil
 [PERMITTED_REACTION:MUSIC_SPEED_ORC]
 [PERMITTED_REACTION:MUSIC_IMPROVISE_ORC]
 ######
-
-
-
 [TOY:ITEM_TOY_HUMAN1]
 [TOY:ITEM_TOY_HUMAN2]
 [TOY:ITEM_TOY_HUMAN3]
@@ -206,6 +193,8 @@ entity_human_evil
 	[MERCHANT_NOBILITY]
 	[DIPLOMAT_BODYGUARDS]
 	[MERCHANT_BODYGUARDS]
+	[PROGRESS_TRIGGER_PRODUCTION:2]
+	[PROGRESS_TRIGGER_POPULATION:2]
 	[PROGRESS_TRIGGER_TRADE:2]
 	[PROGRESS_TRIGGER_POP_SIEGE:2]
 	[PROGRESS_TRIGGER_PROD_SIEGE:2]
