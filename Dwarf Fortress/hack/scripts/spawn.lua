@@ -173,11 +173,12 @@ function findRace(name)
     end
     qerror("Race:"..name.." not found!")
 end
+
 function PlaceUnit(race,caste,name,position)
-local pos=position or copyall(df.global.cursor)
-if pos.x==-30000 then
-    qerror("Point your pointy thing somewhere")
-end
+    local pos=position or copyall(df.global.cursor)
+    if pos.x==-30000 then
+        qerror("Point your pointy thing somewhere")
+    end
     race=findRace(race)
     local u=CreateUnit(race,tonumber(caste) or 0)
     u.pos:assign(pos)
@@ -186,15 +187,17 @@ end
         u.name.has_name=true
     end
     u.civ_id=df.global.ui.civ_id
- 
+    
     local desig,ocupan=dfhack.maps.getTileFlags(pos)
     if ocupan.unit then
         ocupan.unit_grounded=true
         u.flags1.on_ground=true
     else
         ocupan.unit=true
-    --createNemesis(u)
+        --createNemesis(u)
+    end
 end
+
 function createFigure(trgunit)
     local hf=df.historical_figure:new()
     hf.id=df.global.hist_figure_next_id
