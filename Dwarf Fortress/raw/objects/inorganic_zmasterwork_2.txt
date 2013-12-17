@@ -1038,7 +1038,7 @@ inorganic_zmasterwork_2
    [SYN_CLASS:misery]
    [SYN_CLASS:enable]
    [SYN_CLASS:2]
-         [SYN_NAME:Feel bad for doing so]
+         [SYN_NAME:Bad Karma]
          [SYN_CONTACT][SYN_INHALED]
              [SYN_AFFECTED_CREATURE:DWARF:ALL]
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
