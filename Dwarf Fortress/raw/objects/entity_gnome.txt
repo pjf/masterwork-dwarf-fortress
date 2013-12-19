@@ -1,20 +1,8 @@
 entity_gnome
 
 YESGNOME[OBJECT:ENTITY]
-
-
-################################################################
-################################################################
-###########       GNOMES                            ##############################
-################################################################
-################################################################
-
-
-
-
-
 [ENTITY:GNOMES]
-	[CREATURE:GNOME_CIV]
+	[CREATURE:GNOME_CIV]!BABYSNATCHER!
 	[TRANSLATION:GNOME]
 	[DIGGER:ITEM_WEAPON_PICK]
 [WEAPON:ITEM_WEAPON_MUSKET:FORCED]
