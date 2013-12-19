@@ -12,8 +12,6 @@ use IPC::System::Simple qw(capture);
 # on github. :)
 my @branches = qw(
     nerfed_diseases
-    settings
-    iteru
     unified
     drowfort
 );

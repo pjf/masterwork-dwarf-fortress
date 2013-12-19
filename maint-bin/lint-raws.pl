@@ -35,11 +35,13 @@ while (<>) {
     # by entities.
     next if $ARGV =~ /reaction_wanderer\.txt/;
 
+    my $filename = (File::Spec->splitpath($ARGV))[-1];
+
     if (/\[PERMITTED_REACTION:([^\]]+)\]/) {
-        $permitted_reaction{$1}++;
+        $permitted_reaction{$1}{$filename}++;
     }
     elsif (/\[REACTION:([^\]]+)\]/) {
-        $defined_reaction{$1}++;
+        $defined_reaction{$1}{$filename}++;
     }
 }
 
@@ -54,14 +56,15 @@ say show_hash_diff(\%defined_reaction, \%permitted_reaction, "Defined, but not p
 sub show_hash_diff {
     my ($h1, $h2, $title) = @_;
 
-    my $out = "\n\n== $title==\n\n";
+    my $out = "\n\n== $title ==\n\n";
 
     my %h1 = %$h1;
     delete @h1{keys %$h2};
 
     foreach my $key (sort keys %h1) {
         next if $key =~ /^CHEAT/;   # Ignore cheats
-        $out .= "    * $key\n";
+        my @files = sort keys %{ $h1{$key} };
+        $out .= " - [ ] $key (@files)\n";
     }
 
     return $out;
