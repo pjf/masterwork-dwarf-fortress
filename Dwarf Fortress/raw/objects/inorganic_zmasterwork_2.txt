@@ -151,10 +151,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored unicorn(male)]
 [STATE_NAME_ADJ:LIQUID:armored unicorn(male)]
 [STATE_NAME_ADJ:GAS:armored unicorn(male)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -175,10 +175,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored unicorn(female)]
 [STATE_NAME_ADJ:LIQUID:armored unicorn(female)]
 [STATE_NAME_ADJ:GAS:armored unicorn(female)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -198,10 +198,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored unicorn(male)]
 [STATE_NAME_ADJ:LIQUID:armored unicorn(male)]
 [STATE_NAME_ADJ:GAS:armored unicorn(male)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -222,10 +222,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored unicorn(female)]
 [STATE_NAME_ADJ:LIQUID:armored unicorn(female)]
 [STATE_NAME_ADJ:GAS:armored unicorn(female)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -246,10 +246,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored dire wolves(male)]
 [STATE_NAME_ADJ:LIQUID:armored dire wolves(male)]
 [STATE_NAME_ADJ:GAS:armored dire wolves(male)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -270,10 +270,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored dire wolves(female)]
 [STATE_NAME_ADJ:LIQUID:armored dire wolves(female)]
 [STATE_NAME_ADJ:GAS:armored dire wolves(female)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -293,10 +293,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored dire wolvesmale)]
 [STATE_NAME_ADJ:LIQUID:armored dire wolves(male)]
 [STATE_NAME_ADJ:GAS:armored dire wolves(male)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -317,10 +317,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored dire wolves(female)]
 [STATE_NAME_ADJ:LIQUID:armored dire wolves(female)]
 [STATE_NAME_ADJ:GAS:armored dire wolves(female)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -340,10 +340,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored wolves(male)]
 [STATE_NAME_ADJ:LIQUID:armored wolves(male)]
 [STATE_NAME_ADJ:GAS:armored wolves(male)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -364,10 +364,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored wolves(female)]
 [STATE_NAME_ADJ:LIQUID:armored wolves(female)]
 [STATE_NAME_ADJ:GAS:armored wolves(female)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -387,10 +387,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored wolves(male)]
 [STATE_NAME_ADJ:LIQUID:armored wolves(male)]
 [STATE_NAME_ADJ:GAS:armored wolves(male)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -411,10 +411,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored wolves(female)]
 [STATE_NAME_ADJ:LIQUID:armored wolves(female)]
 [STATE_NAME_ADJ:GAS:armored wolves(female)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -434,10 +434,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored cougar(male)]
 [STATE_NAME_ADJ:LIQUID:armored cougar(male)]
 [STATE_NAME_ADJ:GAS:armored cougar(male)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -458,10 +458,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored cougar(female)]
 [STATE_NAME_ADJ:LIQUID:armored cougar(female)]
 [STATE_NAME_ADJ:GAS:armored cougar(female)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -482,10 +482,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored cougar(male)]
 [STATE_NAME_ADJ:LIQUID:armored cougar(male)]
 [STATE_NAME_ADJ:GAS:armored cougar(male)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -506,10 +506,10 @@ inorganic_zmasterwork_2
 [STATE_NAME_ADJ:ALL_SOLID:armored cougar(female)]
 [STATE_NAME_ADJ:LIQUID:armored cougar(female)]
 [STATE_NAME_ADJ:GAS:armored cougar(female)]
-    [SYNDROME]   [SYN_CLASS:/COMMAND] autosyndrome command begins here
-   [SYN_CLASS:/LOCATION]
-   [SYN_CLASS:/ALLOW_MULTIPLE_TARGETS]
-   [SYN_CLASS:/REACTION_INDEX]
+    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYN_CLASS:\LOCATION]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\REACTION_INDEX]
          [SYN_NAME:armor]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -1038,7 +1038,7 @@ inorganic_zmasterwork_2
    [SYN_CLASS:misery]
    [SYN_CLASS:enable]
    [SYN_CLASS:2]
-         [SYN_NAME:Feel bad for doing so]
+         [SYN_NAME:Bad Karma]
          [SYN_CONTACT][SYN_INHALED]
              [SYN_AFFECTED_CREATURE:DWARF:ALL]
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
@@ -1327,44 +1327,6 @@ paper discovery
 [INORGANIC:ANNOUNCEMENT_ENGINEER_DISCOVERY][USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE][STATE_NAME_ADJ:ALL_SOLID:announcement][STATE_NAME_ADJ:LIQUID:announcement][STATE_NAME_ADJ:GAS:announcement][DISPLAY_COLOR:4:4:1][SYNDROME][SYN_CLASS:\COMMAND][SYN_CLASS:announcement][SYN_CLASS:engineer]
 
 
-[INORGANIC:BLOWGUN_L] produced in transmutation
-[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE][DISPLAY_COLOR:4:4:1][TILE:'*']
-[STATE_NAME_ADJ:ALL_SOLID:Spray of Pitch]
-[STATE_NAME_ADJ:LIQUID:Spray of Pitch]
-[STATE_NAME_ADJ:GAS:Spray of Pitch]
-[SYNDROME]
-[SYN_CLASS:\COMMAND]   [SYN_CLASS:\WORKER_ID][SYN_CLASS:make_legendary][SYN_CLASS:blowgun]
-	[SYN_AFFECTED_CLASS:GENERAL_POISON][SYN_INHALED]
-	[SYN_AFFECTED_CREATURE:DWARF:ALL]
-[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:200]
-
-
-[INORGANIC:BLOWGUN_L2] produced in transmutation
-[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE][DISPLAY_COLOR:4:4:1][TILE:'*']
-[STATE_NAME_ADJ:ALL_SOLID:Spray of Pitch]
-[STATE_NAME_ADJ:LIQUID:Spray of Pitch]
-[STATE_NAME_ADJ:GAS:Spray of Pitch]
-[SYNDROME]
-[SYN_CLASS:\COMMAND] [SYN_CLASS:\LOCATION][SYN_CLASS:/LOCATION][SYN_CLASS:make_legendary][SYN_CLASS:blowgun]
-	[SYN_AFFECTED_CLASS:GENERAL_POISON][SYN_INHALED]
-	[SYN_AFFECTED_CREATURE:DWARF:ALL]
-[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:200]
-
-
-[INORGANIC:BLOWGUN_L3] produced in transmutation
-[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE][DISPLAY_COLOR:4:4:1][TILE:'*']
-[STATE_NAME_ADJ:ALL_SOLID:Spray of Pitch]
-[STATE_NAME_ADJ:LIQUID:Spray of Pitch]
-[STATE_NAME_ADJ:GAS:Spray of Pitch]
-[SYNDROME]
-[SYN_CLASS:\LOCATION][SYN_CLASS:/LOCATION][SYN_CLASS:\COMMAND] [SYN_CLASS:make_legendary][SYN_CLASS:blowgun]
-	[SYN_AFFECTED_CLASS:GENERAL_POISON][SYN_INHALED]
-	[SYN_AFFECTED_CREATURE:DWARF:ALL]
-[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:200]
-
-
-
-
 [INORGANIC:TAR_PITCH] produced in transmutation
 [USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE][DISPLAY_COLOR:4:4:1][TILE:'*']
 [STATE_NAME_ADJ:ALL_SOLID:Spray of Pitch]
@@ -1605,8 +1567,6 @@ paper discovery
 [CE_PHYS_ATT_CHANGE:TOUGHNESS:200:0:START:0]
 
 
-
-
 [INORGANIC:DWARF_DEVAMPIRES]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
 	[STATE_NAME_ADJ:ALL:Cure vampirism][DISPLAY_COLOR:1:0:0]
@@ -1629,7 +1589,7 @@ paper discovery
 
 [INORGANIC:DWARF_WEREWOLF]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL:Inflict lycantrophy][DISPLAY_COLOR:1:0:0]
+	[STATE_NAME_ADJ:ALL:Inflict lycanthropy][DISPLAY_COLOR:1:0:0]
 [MELTING_POINT:9000][BOILING_POINT:905][SOLID_DENSITY:55520]
 [SYNDROME][SYN_CLASS:WERECURSE][SYN_CLASS:\COMMAND][SYN_CLASS:\WORKER_ONLY]
 		[SYN_AFFECTED_CREATURE:DWARF:ALL]
