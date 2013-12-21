@@ -1,3 +1,5 @@
+entity_troglodyte
+
 YESTROGLODYTE[OBJECT:ENTITY]
 
 [ENTITY:TROGS]

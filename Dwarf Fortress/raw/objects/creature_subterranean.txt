@@ -1,4 +1,4 @@
-creature_subterrenean
+creature_subterranean
 
 [OBJECT:CREATURE]
 

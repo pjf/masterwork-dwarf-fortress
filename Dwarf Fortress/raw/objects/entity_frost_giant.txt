@@ -1,4 +1,4 @@
-entity_frost_gaint
+entity_frost_giant
 
 YESFROSTGIANT[OBJECT:ENTITY]
 

@@ -1,4 +1,4 @@
-entity__automaton
+entity_automaton
 
 	YESAUTOMATON[OBJECT:ENTITY]
 

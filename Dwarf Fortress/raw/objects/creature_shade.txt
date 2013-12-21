@@ -1,4 +1,4 @@
-creature_shade.txt
+creature_shade
 
 [OBJECT:CREATURE]
 

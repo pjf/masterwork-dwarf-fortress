@@ -1,4 +1,4 @@
-item_a_bonestack
+item_clay_greenware
 
 [OBJECT:ITEM]
 

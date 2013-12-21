@@ -1,4 +1,4 @@
-creature_fish_masterwork.txt
+creature_fish_masterwork
 
 YESFISH[OBJECT:CREATURE]
 
