@@ -1,4 +1,4 @@
-items_orcfort_weapon
+item_z_orcfort_weapon
 
 [OBJECT:ITEM]
 

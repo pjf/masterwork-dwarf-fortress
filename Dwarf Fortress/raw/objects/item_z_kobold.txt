@@ -1,4 +1,4 @@
-item_kobold
+item_z_kobold
 
 [OBJECT:ITEM]
 [ITEM_AMMO:ITEM_AMMO_SLING_BULLET]

@@ -1,4 +1,4 @@
-﻿creature_large_temperate
+creature_large_temperate
 
 
 [OBJECT:CREATURE]

@@ -1,4 +1,4 @@
-﻿creature_birds_new
+creature_birds_new
 
 YESBIRD[OBJECT:CREATURE]
 

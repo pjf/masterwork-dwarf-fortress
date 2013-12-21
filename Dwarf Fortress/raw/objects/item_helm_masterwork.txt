@@ -1,4 +1,4 @@
-item_helm_mood
+item_helm_masterwork
 
 [OBJECT:ITEM]
 
