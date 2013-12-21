@@ -1,4 +1,4 @@
-item_shield_mood
+item_shield_masterwork
 
 [OBJECT:ITEM]
 

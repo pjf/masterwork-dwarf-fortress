@@ -1,4 +1,4 @@
-interaction_attack_resource
+interaction_dwarfchocolate
 
 [OBJECT:INTERACTION]
 

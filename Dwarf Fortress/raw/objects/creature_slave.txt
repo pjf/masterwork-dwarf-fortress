@@ -1,4 +1,4 @@
-creature_other
+creature_slave
 
 YESSLAVE[OBJECT:CREATURE]
 

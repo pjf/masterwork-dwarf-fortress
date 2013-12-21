@@ -1,4 +1,4 @@
-item_weapon_mood
+item_weapon_masterwork
 
 [OBJECT:ITEM]
 

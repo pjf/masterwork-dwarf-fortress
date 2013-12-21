@@ -1,4 +1,4 @@
-inorganic_blob_reward
+inorganic_z_blob_reward
 
 YESALCHEMY[OBJECT:INORGANIC]
 

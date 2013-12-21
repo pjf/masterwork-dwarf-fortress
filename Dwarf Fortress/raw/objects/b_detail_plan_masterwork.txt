@@ -1,4 +1,4 @@
-b_detail_plan_faerun
+b_detail_plan_masterwork
 
 [OBJECT:BODY_DETAIL_PLAN]
 
