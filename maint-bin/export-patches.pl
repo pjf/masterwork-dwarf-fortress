@@ -13,7 +13,8 @@ my $EXCLUDED_FILES_RE = qr{
     ^MasterworkDwarfFortress/Utilities/DwarfTherapist|
     ^maint-bin|
     \.pl$|
-    \.gitignore$
+    \.gitignore$|
+    Settings[ ]Source
 }msx;
 
 my @BRANCHES = qw(master unified nerfed_diseases);
