@@ -70,7 +70,7 @@ namespace System.Windows.Forms
             TabContentNorth = FromHex("#C8D9ED");
             TabContentSouth = FromHex("#E7F2FF");
             TabSelectedGlow = FromHex("#E1D2A5");
-            PanelDarkBorder = FromHex("#15428B");
+            PanelDarkBorder = FromHex("#335463");
             PanelLightBorder = FromHex("#FFFFFF");
             PanelTextBackground = FromHex("#C2D9F0");
             PanelTextBackgroundSelected = FromHex("#C2D9F0");
@@ -154,7 +154,7 @@ namespace System.Windows.Forms
             RibbonBackground_2013 = FromHex("#FFFFFF");
             TabCompleteBackground_2013 = FromHex("#FFFFFF");
             TabNormalBackground_2013 = FromHex("#FFFFFF");
-            TabActiveBackground_2013 = FromHex("#FFFFFF");
+            TabActiveBackground_2013 = FromHex("#92C0E0");
             TabBorder_2013 = FromHex("#D4D4D4");
             TabCompleteBorder_2013 = FromHex("#D4D4D4");
             TabActiveBorder_2013 = FromHex("#D4D4D4");

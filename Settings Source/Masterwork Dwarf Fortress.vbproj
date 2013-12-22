@@ -88,9 +88,8 @@
     <TargetZone>Custom</TargetZone>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Jacksonsoft.CustomTabControl, Version=1.0.1.5, Culture=neutral, PublicKeyToken=53c237210c7e462d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Third Party Extras\CustomTabControl\VBCustomTabControl\bin\Release\Jacksonsoft.CustomTabControl.dll</HintPath>
+    <Reference Include="KRBTabControl">
+      <HintPath>Third Party Extras\KRBTabControl\KRBTabControl\bin\Release\KRBTabControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration">

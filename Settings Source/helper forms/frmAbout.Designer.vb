@@ -85,7 +85,7 @@ Partial Class frmAbout
         Me.lblTabs.Size = New System.Drawing.Size(115, 15)
         Me.lblTabs.TabIndex = 2
         Me.lblTabs.TabStop = True
-        Me.lblTabs.Tag = "http://www.codeproject.com/Articles/91387/Painting-Your-Own-Tabs-Second-Edition"
+        Me.lblTabs.Tag = "http://www.codeproject.com/Articles/38014/KRBTabControl"
         Me.lblTabs.Text = "Custom Tab Control"
         Me.lblTabs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '

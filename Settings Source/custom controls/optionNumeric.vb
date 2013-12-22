@@ -17,6 +17,7 @@ Public Class optionNumeric
         ' Add any initialization after the InitializeComponent() call.
         Me.TextAlign = HorizontalAlignment.Center
         Me.BorderStyle = Windows.Forms.BorderStyle.None
+        Me.DoubleBuffered = True
     End Sub
 
     Dim m_opt As New optionSingle
@@ -71,7 +72,7 @@ Public Class optionNumeric
     End Sub
 
     Public Sub applyTheme() Implements iTheme.applyTheme
-        Me.BackColor = Theme.ColorTable.ButtonPressed_2013
+        Me.BackColor = Theme.ColorTable.RibbonBackground_2013 'ButtonPressed_2013
         Me.ForeColor = Theme.ColorTable.Text
     End Sub
 End Class
