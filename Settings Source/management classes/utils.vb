@@ -84,37 +84,29 @@
             Case GetType(ComboBox)
                 Dim cb As ComboBox = DirectCast(c, ComboBox)
                 cb.ForeColor = Theme.ColorTable.Text
-                cb.BackColor = Theme.ColorTable.ButtonPressed_2013
+                cb.BackColor = Theme.ColorTable.RibbonBackground_2013 'ButtonPressed_2013
                 cb.FlatStyle = FlatStyle.Flat
 
             Case GetType(KRBTabControl.KRBTabControl)
                 Dim tabMain As KRBTabControl.KRBTabControl = CType(c, KRBTabControl.KRBTabControl)
 
                 If Theme.ThemeColor = RibbonTheme.Normal Then
-
+                    tabMain.BorderColor = Color.Transparent
+                    tabMain.BackgroundColor = Color.Transparent
+                    tabMain.TabBorderColor = Color.Transparent
                 Else
-
+                    tabMain.BorderColor = Theme.ColorTable.PanelBorder_2013
+                    tabMain.BackgroundColor = Theme.ColorTable.RibbonBackground_2013
+                    tabMain.TabBorderColor = Theme.ColorTable.TabText_2013
                 End If
 
-                'If Theme.ThemeColor = RibbonTheme.Normal Then
-                '    tabMain.DisplayStyle = TabStyle.VS2010
-                '    tabMain.DisplayStyleProvider.BorderColor = Theme.ColorTable.RibbonBackground_2013
-                '    tabMain.DisplayStyleProvider.Radius = 1
-                'Else
-                '    tabMain.DisplayStyle = TabStyle.Angled
-                '    tabMain.DisplayStyleProvider.BorderColor = Theme.ColorTable.PanelDarkBorder
-                'End If
+                
 
-                'tabMain.DisplayStyleProvider.SelectedTabColor = Theme.ColorTable.TabActiveBackground_2013
-                'tabMain.DisplayStyleProvider.SelectedTabColorTop = Theme.ColorTable.TabActiveBackground_2013
+                tabMain.TabGradient.ColorStart = Theme.ColorTable.TabActiveBackground_2013
+                tabMain.TabGradient.ColorEnd = Theme.ColorTable.TabActiveBackground_2013
 
-                'tabMain.DisplayStyleProvider.TextColor = Theme.ColorTable.TabText_2013
-                'tabMain.DisplayStyleProvider.TextColorDisabled = Theme.ColorTable.TabText_2013
-                'tabMain.DisplayStyleProvider.TextColorSelected = Theme.ColorTable.TabText_2013
-
-                'tabMain.DisplayStyleProvider.ShowTabCloser = False
-                'tabMain.DisplayStyleProvider.HotTrack = False
-                'tabMain.DisplayStyleProvider.FocusTrack = False
+                tabMain.TabGradient.TabPageSelectedTextColor = Theme.ColorTable.Caption1
+                tabMain.TabGradient.TabPageTextColor = Theme.ColorTable.TabText_2013
         End Select
     End Sub
 
