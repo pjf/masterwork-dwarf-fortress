@@ -171,7 +171,7 @@ namespace System.Windows.Forms
             RibbonBackground_2013 = FromHex("#FFFFFF");
             TabCompleteBackground_2013 = FromHex("#FFFFFF");
             TabNormalBackground_2013 = FromHex("#FFFFFF");
-            TabActiveBackbround_2013 = FromHex("#FFFFFF");
+            TabActiveBackground_2013 = FromHex("#FFFFFF");
             TabBorder_2013 = FromHex("#D4D4D4");
             TabCompleteBorder_2013 = FromHex("#D4D4D4");
             TabActiveBorder_2013 = FromHex("#D4D4D4");

@@ -30,7 +30,7 @@ Imports System.ComponentModel
                 Theme.ThemeColor = RibbonTheme.Blue
                 m_currTheme = New RibbonProfesionalRendererColorTableBlue
         End Select
-
+        Theme.ColorTable = m_currTheme
         Me.BackColor = Theme.ColorTable.RibbonBackground_2013
         ribbonMain.Refresh()
     End Sub
@@ -139,7 +139,7 @@ Imports System.ComponentModel
         setTheme()
         Dim frmWait As New frmThemeChange
         Me.Opacity = 0
-        Me.tabMain.SelectedTab = tabSettings 'choose a tab with few controls as the refresh causes massive flickering
+        Me.tabMain.SelectedTab = tabSettings2 'choose a tab with few controls as the refresh causes massive flickering
         frmWait.Show()
         Application.DoEvents() 'hurrghh, this is a bad idea
         initControls(Me, ToolTipMaker, False, False, True)
@@ -239,17 +239,17 @@ Imports System.ComponentModel
         globals.currentWorldGenIndex = CType(cmbWorldGenIndex.SelectedItem, comboItem).value
         'refresh our world gen controls. the internal loading will check the global var
         'm_refreshingWorldGen = True
-        initControls(tabWorldGen, ToolTipMaker, True, False, False)
+        initControls(tabWorldGen2, ToolTipMaker, True, False, False)
         'm_refreshingWorldGen = False
     End Sub
 
     Private Sub tabMain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tabMain.SelectedIndexChanged
-        If tabMain.SelectedTab Is tabWorldGen Then
+        If tabMain.SelectedTab Is tabWorldGen2 Then
             AddHandler cmbWorldGenIndex.SelectionChangeCommitted, AddressOf refreshWorldGen
         Else
             RemoveHandler cmbWorldGenIndex.SelectionChangeCommitted, AddressOf refreshWorldGen
             globals.currentWorldGenIndex = -2
-        End If        
+        End If
     End Sub
 
 #End Region
