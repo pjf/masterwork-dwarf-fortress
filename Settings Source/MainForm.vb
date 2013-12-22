@@ -30,7 +30,7 @@ Imports System.ComponentModel
                 Theme.ThemeColor = RibbonTheme.Blue
                 m_currTheme = New RibbonProfesionalRendererColorTableBlue
         End Select
-
+        Theme.ColorTable = m_currTheme
         Me.BackColor = Theme.ColorTable.RibbonBackground_2013
         ribbonMain.Refresh()
     End Sub

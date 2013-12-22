@@ -70,7 +70,7 @@ namespace System.Windows.Forms
             TabContentNorth = FromHex("#C8D9ED");
             TabContentSouth = FromHex("#E7F2FF");
             TabSelectedGlow = FromHex("#E1D2A5");
-            PanelDarkBorder = FromHex("#15428B");
+            PanelDarkBorder = FromHex("#335463");
             PanelLightBorder = FromHex("#FFFFFF");
             PanelTextBackground = FromHex("#C2D9F0");
             PanelTextBackgroundSelected = FromHex("#C2D9F0");

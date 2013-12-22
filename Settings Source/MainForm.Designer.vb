@@ -1838,7 +1838,7 @@ Partial Class MainForm
         Me.grpStandardization.Controls.Add(Me.optMultiSimpleMeat)
         Me.grpStandardization.Controls.Add(Me.optBtnSimpleGemShapes)
         Me.grpStandardization.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpStandardization.Location = New System.Drawing.Point(143, 88)
+        Me.grpStandardization.Location = New System.Drawing.Point(142, 88)
         Me.grpStandardization.Name = "grpStandardization"
         Me.grpStandardization.Size = New System.Drawing.Size(144, 326)
         Me.grpStandardization.TabIndex = 0
@@ -2200,7 +2200,7 @@ Partial Class MainForm
         Me.grpWorldGenHostiles.Controls.Add(Me.lblEvilClouds)
         Me.grpWorldGenHostiles.Controls.Add(Me.lblEvilRain)
         Me.grpWorldGenHostiles.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenHostiles.Location = New System.Drawing.Point(166, 66)
+        Me.grpWorldGenHostiles.Location = New System.Drawing.Point(166, 76)
         Me.grpWorldGenHostiles.Name = "grpWorldGenHostiles"
         Me.grpWorldGenHostiles.Size = New System.Drawing.Size(192, 418)
         Me.grpWorldGenHostiles.TabIndex = 2
@@ -2674,7 +2674,7 @@ Partial Class MainForm
         Me.cmbWorldGenIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbWorldGenIndex.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmbWorldGenIndex.FormattingEnabled = true
-        Me.cmbWorldGenIndex.Location = New System.Drawing.Point(469, 38)
+        Me.cmbWorldGenIndex.Location = New System.Drawing.Point(469, 48)
         Me.cmbWorldGenIndex.Name = "cmbWorldGenIndex"
         Me.cmbWorldGenIndex.Size = New System.Drawing.Size(155, 23)
         Me.cmbWorldGenIndex.TabIndex = 1
@@ -11664,7 +11664,7 @@ Partial Class MainForm
         Me.grpMachinery.Controls.Add(Me.optBtnLiquidSpawner)
         Me.grpMachinery.Controls.Add(Me.optBtnCoinMint)
         Me.grpMachinery.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMachinery.Location = New System.Drawing.Point(818, 191)
+        Me.grpMachinery.Location = New System.Drawing.Point(817, 191)
         Me.grpMachinery.Name = "grpMachinery"
         Me.grpMachinery.Size = New System.Drawing.Size(144, 167)
         Me.grpMachinery.TabIndex = 10
@@ -11690,7 +11690,7 @@ Partial Class MainForm
         Me.grpWorkshops.Controls.Add(Me.optBtnPainter)
         Me.grpWorkshops.Controls.Add(Me.optBtnToolmaker)
         Me.grpWorkshops.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorkshops.Location = New System.Drawing.Point(68, 56)
+        Me.grpWorkshops.Location = New System.Drawing.Point(67, 56)
         Me.grpWorkshops.Name = "grpWorkshops"
         Me.grpWorkshops.Size = New System.Drawing.Size(144, 403)
         Me.grpWorkshops.TabIndex = 0
@@ -11706,7 +11706,7 @@ Partial Class MainForm
         Me.grpMiscBuildings.Controls.Add(Me.optBtnWoodsplitting)
         Me.grpMiscBuildings.Controls.Add(Me.optBtnStorage)
         Me.grpMiscBuildings.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMiscBuildings.Location = New System.Drawing.Point(218, 235)
+        Me.grpMiscBuildings.Location = New System.Drawing.Point(217, 235)
         Me.grpMiscBuildings.Name = "grpMiscBuildings"
         Me.grpMiscBuildings.Size = New System.Drawing.Size(144, 123)
         Me.grpMiscBuildings.TabIndex = 2
@@ -11724,7 +11724,7 @@ Partial Class MainForm
         Me.grpFarming.Controls.Add(Me.optBtnSlaughterhouse)
         Me.grpFarming.Controls.Add(Me.optBtnStables)
         Me.grpFarming.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpFarming.Location = New System.Drawing.Point(218, 56)
+        Me.grpFarming.Location = New System.Drawing.Point(217, 56)
         Me.grpFarming.Name = "grpFarming"
         Me.grpFarming.Size = New System.Drawing.Size(144, 173)
         Me.grpFarming.TabIndex = 1
@@ -11741,7 +11741,7 @@ Partial Class MainForm
         Me.grpStudies.Controls.Add(Me.optBtnApothecary)
         Me.grpStudies.Controls.Add(Me.optBtnBiology)
         Me.grpStudies.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpStudies.Location = New System.Drawing.Point(368, 56)
+        Me.grpStudies.Location = New System.Drawing.Point(367, 56)
         Me.grpStudies.Name = "grpStudies"
         Me.grpStudies.Size = New System.Drawing.Size(144, 144)
         Me.grpStudies.TabIndex = 3
@@ -11760,7 +11760,7 @@ Partial Class MainForm
         Me.grpTrade.Controls.Add(Me.optBtnTeduk)
         Me.grpTrade.Controls.Add(Me.optBtnIneri)
         Me.grpTrade.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpTrade.Location = New System.Drawing.Point(668, 150)
+        Me.grpTrade.Location = New System.Drawing.Point(667, 150)
         Me.grpTrade.Name = "grpTrade"
         Me.grpTrade.Size = New System.Drawing.Size(144, 208)
         Me.grpTrade.TabIndex = 8
@@ -11777,7 +11777,7 @@ Partial Class MainForm
         Me.grpLaboratories.Controls.Add(Me.optBtnChemistry)
         Me.grpLaboratories.Controls.Add(Me.optBtnHerbalist)
         Me.grpLaboratories.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpLaboratories.Location = New System.Drawing.Point(368, 206)
+        Me.grpLaboratories.Location = New System.Drawing.Point(367, 206)
         Me.grpLaboratories.Name = "grpLaboratories"
         Me.grpLaboratories.Size = New System.Drawing.Size(144, 152)
         Me.grpLaboratories.TabIndex = 4
@@ -11793,7 +11793,7 @@ Partial Class MainForm
         Me.grpReligion.Controls.Add(Me.optBtnShrine)
         Me.grpReligion.Controls.Add(Me.optBtnTemple)
         Me.grpReligion.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpReligion.Location = New System.Drawing.Point(818, 56)
+        Me.grpReligion.Location = New System.Drawing.Point(817, 56)
         Me.grpReligion.Name = "grpReligion"
         Me.grpReligion.Size = New System.Drawing.Size(144, 129)
         Me.grpReligion.TabIndex = 9
@@ -11809,7 +11809,7 @@ Partial Class MainForm
         Me.grpDiplomacy.Controls.Add(Me.optBtnExpedition)
         Me.grpDiplomacy.Controls.Add(Me.optBtnPodium)
         Me.grpDiplomacy.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpDiplomacy.Location = New System.Drawing.Point(518, 56)
+        Me.grpDiplomacy.Location = New System.Drawing.Point(517, 56)
         Me.grpDiplomacy.Name = "grpDiplomacy"
         Me.grpDiplomacy.Size = New System.Drawing.Size(144, 115)
         Me.grpDiplomacy.TabIndex = 5
@@ -11824,7 +11824,7 @@ Partial Class MainForm
         Me.grpLibrary.Controls.Add(Me.optBtnScriptorium)
         Me.grpLibrary.Controls.Add(Me.optBtnLibraries)
         Me.grpLibrary.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpLibrary.Location = New System.Drawing.Point(668, 56)
+        Me.grpLibrary.Location = New System.Drawing.Point(667, 56)
         Me.grpLibrary.Name = "grpLibrary"
         Me.grpLibrary.Size = New System.Drawing.Size(144, 88)
         Me.grpLibrary.TabIndex = 7
@@ -11842,7 +11842,7 @@ Partial Class MainForm
         Me.grpAdministration.Controls.Add(Me.optBtnMonastery)
         Me.grpAdministration.Controls.Add(Me.optBtnGarrison)
         Me.grpAdministration.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpAdministration.Location = New System.Drawing.Point(518, 175)
+        Me.grpAdministration.Location = New System.Drawing.Point(517, 175)
         Me.grpAdministration.Name = "grpAdministration"
         Me.grpAdministration.Size = New System.Drawing.Size(144, 183)
         Me.grpAdministration.TabIndex = 6
@@ -11861,7 +11861,7 @@ Partial Class MainForm
         Me.grpIllumination.Controls.Add(Me.optBtnGemOfLight)
         Me.grpIllumination.Controls.Add(Me.lblIlluminationNote)
         Me.grpIllumination.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpIllumination.Location = New System.Drawing.Point(68, 51)
+        Me.grpIllumination.Location = New System.Drawing.Point(67, 51)
         Me.grpIllumination.Name = "grpIllumination"
         Me.grpIllumination.Size = New System.Drawing.Size(144, 209)
         Me.grpIllumination.TabIndex = 0
@@ -11894,7 +11894,7 @@ Partial Class MainForm
         Me.grpSmithing.Controls.Add(Me.optBtnGemforge)
         Me.grpSmithing.Controls.Add(Me.optBtnRockForge)
         Me.grpSmithing.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpSmithing.Location = New System.Drawing.Point(368, 51)
+        Me.grpSmithing.Location = New System.Drawing.Point(367, 51)
         Me.grpSmithing.Name = "grpSmithing"
         Me.grpSmithing.Size = New System.Drawing.Size(144, 347)
         Me.grpSmithing.TabIndex = 3
@@ -11912,7 +11912,7 @@ Partial Class MainForm
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnKiln)
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnSlagPit)
         Me.grpMiscFurnaces.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMiscFurnaces.Location = New System.Drawing.Point(218, 51)
+        Me.grpMiscFurnaces.Location = New System.Drawing.Point(217, 51)
         Me.grpMiscFurnaces.Name = "grpMiscFurnaces"
         Me.grpMiscFurnaces.Size = New System.Drawing.Size(144, 177)
         Me.grpMiscFurnaces.TabIndex = 1
@@ -11931,7 +11931,7 @@ Partial Class MainForm
         Me.grpUpgrades.Controls.Add(Me.optBtnMegabeastKennel)
         Me.grpUpgrades.Controls.Add(Me.optBtnWarKennel)
         Me.grpUpgrades.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpUpgrades.Location = New System.Drawing.Point(518, 51)
+        Me.grpUpgrades.Location = New System.Drawing.Point(517, 51)
         Me.grpUpgrades.Name = "grpUpgrades"
         Me.grpUpgrades.Size = New System.Drawing.Size(144, 209)
         Me.grpUpgrades.TabIndex = 4
@@ -11948,7 +11948,7 @@ Partial Class MainForm
         Me.grpMetalworks.Controls.Add(Me.optBtnFinishingForge)
         Me.grpMetalworks.Controls.Add(Me.optBtnMetallurgist)
         Me.grpMetalworks.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMetalworks.Location = New System.Drawing.Point(218, 244)
+        Me.grpMetalworks.Location = New System.Drawing.Point(217, 244)
         Me.grpMetalworks.Name = "grpMetalworks"
         Me.grpMetalworks.Size = New System.Drawing.Size(144, 154)
         Me.grpMetalworks.TabIndex = 2
@@ -11963,7 +11963,7 @@ Partial Class MainForm
         Me.grpSiege.Controls.Add(Me.optBtnArbalest)
         Me.grpSiege.Controls.Add(Me.optBtnTrebuchet)
         Me.grpSiege.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpSiege.Location = New System.Drawing.Point(518, 277)
+        Me.grpSiege.Location = New System.Drawing.Point(517, 277)
         Me.grpSiege.Name = "grpSiege"
         Me.grpSiege.Size = New System.Drawing.Size(144, 121)
         Me.grpSiege.TabIndex = 5
@@ -11984,7 +11984,7 @@ Partial Class MainForm
         Me.grpDecorations.Controls.Add(Me.optBtnDecoItems)
         Me.grpDecorations.Controls.Add(Me.optBtnStatues)
         Me.grpDecorations.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpDecorations.Location = New System.Drawing.Point(818, 51)
+        Me.grpDecorations.Location = New System.Drawing.Point(817, 51)
         Me.grpDecorations.Name = "grpDecorations"
         Me.grpDecorations.Size = New System.Drawing.Size(144, 347)
         Me.grpDecorations.TabIndex = 8
@@ -12002,7 +12002,7 @@ Partial Class MainForm
         Me.grpMagic.Controls.Add(Me.optBtnBlackMagic)
         Me.grpMagic.Controls.Add(Me.optBtnWarpstonePool)
         Me.grpMagic.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMagic.Location = New System.Drawing.Point(668, 51)
+        Me.grpMagic.Location = New System.Drawing.Point(667, 51)
         Me.grpMagic.Name = "grpMagic"
         Me.grpMagic.Size = New System.Drawing.Size(144, 209)
         Me.grpMagic.TabIndex = 6
@@ -12018,7 +12018,7 @@ Partial Class MainForm
         Me.grpVolcanic.Controls.Add(Me.optBtnGreatMagmaForge)
         Me.grpVolcanic.Controls.Add(Me.lblReqMagmaNote)
         Me.grpVolcanic.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpVolcanic.Location = New System.Drawing.Point(668, 277)
+        Me.grpVolcanic.Location = New System.Drawing.Point(667, 277)
         Me.grpVolcanic.Name = "grpVolcanic"
         Me.grpVolcanic.Size = New System.Drawing.Size(144, 121)
         Me.grpVolcanic.TabIndex = 7
@@ -12051,7 +12051,7 @@ Partial Class MainForm
         Me.grpExtraReactions.Controls.Add(Me.optBtnScrewPress)
         Me.grpExtraReactions.Controls.Add(Me.optBtnSoapmaker)
         Me.grpExtraReactions.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpExtraReactions.Location = New System.Drawing.Point(443, 88)
+        Me.grpExtraReactions.Location = New System.Drawing.Point(442, 88)
         Me.grpExtraReactions.Name = "grpExtraReactions"
         Me.grpExtraReactions.Size = New System.Drawing.Size(144, 326)
         Me.grpExtraReactions.TabIndex = 2
@@ -12073,7 +12073,7 @@ Partial Class MainForm
         Me.grpBalancing.Controls.Add(Me.optBtnSecrets)
         Me.grpBalancing.Controls.Add(Me.optBtnDiseases)
         Me.grpBalancing.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpBalancing.Location = New System.Drawing.Point(593, 88)
+        Me.grpBalancing.Location = New System.Drawing.Point(592, 88)
         Me.grpBalancing.Name = "grpBalancing"
         Me.grpBalancing.Size = New System.Drawing.Size(144, 326)
         Me.grpBalancing.TabIndex = 3
@@ -12096,7 +12096,7 @@ Partial Class MainForm
         Me.grpMiscFeatures.Controls.Add(Me.optBtnBuildDimensions)
         Me.grpMiscFeatures.Controls.Add(Me.optBtnCombatLogs)
         Me.grpMiscFeatures.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMiscFeatures.Location = New System.Drawing.Point(293, 88)
+        Me.grpMiscFeatures.Location = New System.Drawing.Point(292, 88)
         Me.grpMiscFeatures.Name = "grpMiscFeatures"
         Me.grpMiscFeatures.Size = New System.Drawing.Size(144, 326)
         Me.grpMiscFeatures.TabIndex = 1
@@ -12118,7 +12118,7 @@ Partial Class MainForm
         Me.grpExtraMods.Controls.Add(Me.lblModNote)
         Me.grpExtraMods.Controls.Add(Me.optBtnRendermax)
         Me.grpExtraMods.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpExtraMods.Location = New System.Drawing.Point(743, 88)
+        Me.grpExtraMods.Location = New System.Drawing.Point(742, 88)
         Me.grpExtraMods.Name = "grpExtraMods"
         Me.grpExtraMods.Size = New System.Drawing.Size(144, 326)
         Me.grpExtraMods.TabIndex = 4
@@ -12164,7 +12164,7 @@ Partial Class MainForm
         Me.grpWorldGenMisc.Controls.Add(Me.optNumEndYear)
         Me.grpWorldGenMisc.Controls.Add(Me.optNumPopSize)
         Me.grpWorldGenMisc.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenMisc.Location = New System.Drawing.Point(630, 334)
+        Me.grpWorldGenMisc.Location = New System.Drawing.Point(629, 344)
         Me.grpWorldGenMisc.Name = "grpWorldGenMisc"
         Me.grpWorldGenMisc.Size = New System.Drawing.Size(234, 150)
         Me.grpWorldGenMisc.TabIndex = 6
@@ -12230,7 +12230,7 @@ Partial Class MainForm
         Me.grpWorldGenCaves.Controls.Add(Me.optNumOtherCaves)
         Me.grpWorldGenCaves.Controls.Add(Me.optBtnVisibleCaves)
         Me.grpWorldGenCaves.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenCaves.Location = New System.Drawing.Point(630, 201)
+        Me.grpWorldGenCaves.Location = New System.Drawing.Point(629, 211)
         Me.grpWorldGenCaves.Name = "grpWorldGenCaves"
         Me.grpWorldGenCaves.Size = New System.Drawing.Size(234, 128)
         Me.grpWorldGenCaves.TabIndex = 5
@@ -12294,7 +12294,7 @@ Partial Class MainForm
         Me.grpWorldGenLayers.Controls.Add(Me.optBtnMagmaLake)
         Me.grpWorldGenLayers.Controls.Add(Me.optBtnHFS)
         Me.grpWorldGenLayers.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenLayers.Location = New System.Drawing.Point(364, 66)
+        Me.grpWorldGenLayers.Location = New System.Drawing.Point(363, 76)
         Me.grpWorldGenLayers.Name = "grpWorldGenLayers"
         Me.grpWorldGenLayers.Size = New System.Drawing.Size(260, 418)
         Me.grpWorldGenLayers.TabIndex = 3
@@ -12403,7 +12403,7 @@ Partial Class MainForm
         Me.grpWorldGenAreas.Controls.Add(Me.optMaskGoodAreas)
         Me.grpWorldGenAreas.Controls.Add(Me.optMaskEvilAreas)
         Me.grpWorldGenAreas.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenAreas.Location = New System.Drawing.Point(630, 66)
+        Me.grpWorldGenAreas.Location = New System.Drawing.Point(629, 76)
         Me.grpWorldGenAreas.Name = "grpWorldGenAreas"
         Me.grpWorldGenAreas.Size = New System.Drawing.Size(234, 132)
         Me.grpWorldGenAreas.TabIndex = 4
@@ -12443,7 +12443,7 @@ Partial Class MainForm
         '
         Me.lblWorldGenSelect.BackColor = System.Drawing.Color.Transparent
         Me.lblWorldGenSelect.ForeColor = System.Drawing.Color.White
-        Me.lblWorldGenSelect.Location = New System.Drawing.Point(365, 38)
+        Me.lblWorldGenSelect.Location = New System.Drawing.Point(365, 48)
         Me.lblWorldGenSelect.Name = "lblWorldGenSelect"
         Me.lblWorldGenSelect.Size = New System.Drawing.Size(104, 23)
         Me.lblWorldGenSelect.TabIndex = 0
@@ -12985,7 +12985,7 @@ Partial Class MainForm
         Me.ribbonMain.OrbVisible = false
         Me.ribbonMain.PanelCaptionHeight = 0
         Me.ribbonMain.RibbonTabFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.ribbonMain.Size = New System.Drawing.Size(1028, 72)
+        Me.ribbonMain.Size = New System.Drawing.Size(1027, 72)
         Me.ribbonMain.TabIndex = 100
         Me.ribbonMain.Tabs.Add(Me.rTabGeneral)
         Me.ribbonMain.Tabs.Add(Me.rTabUtilities)
@@ -13718,9 +13718,9 @@ Partial Class MainForm
         'tabMain
         '
         Me.tabMain.AllowDrop = true
-        Me.tabMain.BackgroundColor = System.Drawing.Color.Transparent
+        Me.tabMain.BackgroundColor = System.Drawing.Color.Black
         Me.tabMain.BackgroundHatcher.HatchType = System.Drawing.Drawing2D.HatchStyle.DashedVertical
-        Me.tabMain.BorderColor = System.Drawing.Color.Transparent
+        Me.tabMain.BorderColor = System.Drawing.Color.Black
         Me.tabMain.Controls.Add(Me.tabSettings2)
         Me.tabMain.Controls.Add(Me.tabCivs2)
         Me.tabMain.Controls.Add(Me.tabOtherCreatures2)
@@ -13736,7 +13736,7 @@ Partial Class MainForm
         Me.tabMain.Location = New System.Drawing.Point(0, 72)
         Me.tabMain.Name = "tabMain"
         Me.tabMain.SelectedIndex = 0
-        Me.tabMain.Size = New System.Drawing.Size(1028, 586)
+        Me.tabMain.Size = New System.Drawing.Size(1027, 614)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorStart = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
@@ -13750,6 +13750,8 @@ Partial Class MainForm
         'tabSettings2
         '
         Me.tabSettings2.BackColor = System.Drawing.Color.Transparent
+        Me.tabSettings2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabSettings2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabSettings2.Controls.Add(Me.grpWorldSettings)
         Me.tabSettings2.Controls.Add(Me.tileSetColorPreviewer)
         Me.tabSettings2.Controls.Add(Me.grpSaveSettings)
@@ -13763,25 +13765,29 @@ Partial Class MainForm
         Me.tabSettings2.IsClosable = false
         Me.tabSettings2.Location = New System.Drawing.Point(1, 32)
         Me.tabSettings2.Name = "tabSettings2"
-        Me.tabSettings2.Size = New System.Drawing.Size(1026, 549)
+        Me.tabSettings2.Size = New System.Drawing.Size(1025, 577)
         Me.tabSettings2.TabIndex = 0
         Me.tabSettings2.Text = "Settings"
         '
         'tabCivs2
         '
         Me.tabCivs2.BackColor = System.Drawing.Color.Transparent
+        Me.tabCivs2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabCivs2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabCivs2.Controls.Add(Me.panCivTable)
         Me.tabCivs2.Font = New System.Drawing.Font("Segoe UI", 9!)
         Me.tabCivs2.IsClosable = false
         Me.tabCivs2.Location = New System.Drawing.Point(1, 32)
         Me.tabCivs2.Name = "tabCivs2"
-        Me.tabCivs2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabCivs2.Size = New System.Drawing.Size(1025, 577)
         Me.tabCivs2.TabIndex = 1
         Me.tabCivs2.Text = "Civilizations"
         '
         'tabOtherCreatures2
         '
         Me.tabOtherCreatures2.BackColor = System.Drawing.Color.Transparent
+        Me.tabOtherCreatures2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabOtherCreatures2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabOtherCreatures2.Controls.Add(Me.grpExtraCreatures)
         Me.tabOtherCreatures2.Controls.Add(Me.grpFortressDefense)
         Me.tabOtherCreatures2.Controls.Add(Me.grpRandomCreatures)
@@ -13789,13 +13795,15 @@ Partial Class MainForm
         Me.tabOtherCreatures2.IsClosable = false
         Me.tabOtherCreatures2.Location = New System.Drawing.Point(1, 32)
         Me.tabOtherCreatures2.Name = "tabOtherCreatures2"
-        Me.tabOtherCreatures2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabOtherCreatures2.Size = New System.Drawing.Size(1025, 577)
         Me.tabOtherCreatures2.TabIndex = 2
         Me.tabOtherCreatures2.Text = "Other Creatures"
         '
         'tabWorkshops2
         '
         Me.tabWorkshops2.BackColor = System.Drawing.Color.Transparent
+        Me.tabWorkshops2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabWorkshops2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabWorkshops2.Controls.Add(Me.grpMachinery)
         Me.tabWorkshops2.Controls.Add(Me.grpWorkshops)
         Me.tabWorkshops2.Controls.Add(Me.grpAdministration)
@@ -13811,13 +13819,15 @@ Partial Class MainForm
         Me.tabWorkshops2.IsClosable = false
         Me.tabWorkshops2.Location = New System.Drawing.Point(1, 32)
         Me.tabWorkshops2.Name = "tabWorkshops2"
-        Me.tabWorkshops2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabWorkshops2.Size = New System.Drawing.Size(1025, 577)
         Me.tabWorkshops2.TabIndex = 3
         Me.tabWorkshops2.Text = "Workshops"
         '
         'tabFurnaces2
         '
         Me.tabFurnaces2.BackColor = System.Drawing.Color.Transparent
+        Me.tabFurnaces2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabFurnaces2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabFurnaces2.Controls.Add(Me.grpIllumination)
         Me.tabFurnaces2.Controls.Add(Me.grpSmithing)
         Me.tabFurnaces2.Controls.Add(Me.grpVolcanic)
@@ -13831,13 +13841,15 @@ Partial Class MainForm
         Me.tabFurnaces2.IsClosable = false
         Me.tabFurnaces2.Location = New System.Drawing.Point(1, 32)
         Me.tabFurnaces2.Name = "tabFurnaces2"
-        Me.tabFurnaces2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabFurnaces2.Size = New System.Drawing.Size(1025, 577)
         Me.tabFurnaces2.TabIndex = 4
         Me.tabFurnaces2.Text = "Furnaces"
         '
         'tabMisc2
         '
         Me.tabMisc2.BackColor = System.Drawing.Color.Transparent
+        Me.tabMisc2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabMisc2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabMisc2.Controls.Add(Me.grpExtraReactions)
         Me.tabMisc2.Controls.Add(Me.grpStandardization)
         Me.tabMisc2.Controls.Add(Me.grpExtraMods)
@@ -13847,13 +13859,15 @@ Partial Class MainForm
         Me.tabMisc2.IsClosable = false
         Me.tabMisc2.Location = New System.Drawing.Point(1, 32)
         Me.tabMisc2.Name = "tabMisc2"
-        Me.tabMisc2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabMisc2.Size = New System.Drawing.Size(1025, 577)
         Me.tabMisc2.TabIndex = 5
         Me.tabMisc2.Text = "Misc. Features"
         '
         'tabWorldGen2
         '
         Me.tabWorldGen2.BackColor = System.Drawing.Color.Transparent
+        Me.tabWorldGen2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabWorldGen2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabWorldGen2.Controls.Add(Me.grpWorldGenMisc)
         Me.tabWorldGen2.Controls.Add(Me.grpWorldGenHostiles)
         Me.tabWorldGen2.Controls.Add(Me.lblWorldGenSelect)
@@ -13865,7 +13879,7 @@ Partial Class MainForm
         Me.tabWorldGen2.IsClosable = false
         Me.tabWorldGen2.Location = New System.Drawing.Point(1, 32)
         Me.tabWorldGen2.Name = "tabWorldGen2"
-        Me.tabWorldGen2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabWorldGen2.Size = New System.Drawing.Size(1025, 577)
         Me.tabWorldGen2.TabIndex = 6
         Me.tabWorldGen2.Text = "World Gen."
         '
@@ -13874,9 +13888,8 @@ Partial Class MainForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1028, 658)
+        Me.ClientSize = New System.Drawing.Size(1027, 686)
         Me.Controls.Add(Me.tabMain)
         Me.Controls.Add(Me.ribbonMain)
         Me.DoubleBuffered = true
