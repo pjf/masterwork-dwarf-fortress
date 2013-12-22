@@ -3841,62 +3841,6 @@
         nWzhi7P0wVn+juAD42puaIR94XQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="grpWorldSettings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
-        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="grpSaveSettings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
-        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="grpGraphics.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
-        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnTilesetPreview.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
-        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="grpFps.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
-        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="grpSound.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
-        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="grpEmbark.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
-        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="grpAnnouncements.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
-        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="grpExtraCreatures.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -3978,6 +3922,62 @@
 </value>
   </data>
   <data name="grpLibrary.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
+        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="grpWorldSettings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
+        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="grpSaveSettings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
+        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="grpGraphics.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
+        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnTilesetPreview.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
+        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="grpFps.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
+        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="grpSound.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
+        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="grpEmbark.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC
+        KZzCKZzCKZzCeaQDwuMyAcTQ5QAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="grpAnnouncements.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVChTjcixDQAACMOwnt7TYUYeiOQl2frEKZzC

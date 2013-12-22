@@ -1118,13 +1118,17 @@ Partial Class MainForm
         Dim FileListManager263 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager263 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager266 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionList4 As MasterworkDwarfFortress.optionList = New MasterworkDwarfFortress.optionList()
+        Dim OptionSingleReplace194 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager264 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
+        Dim OptionManager264 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager267 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionList4 As MasterworkDwarfFortress.optionList = New MasterworkDwarfFortress.optionList()
+        Dim FileListManager265 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim ComboItem17 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
         Dim ComboItem18 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
         Dim ComboItem19 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim OptionManager264 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
-        Dim OptionSettingManager267 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionManager265 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager268 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim OptionSingleFileReplace4 As MasterworkDwarfFortress.optionSingleFileReplace = New MasterworkDwarfFortress.optionSingleFileReplace()
         Dim ComboFileItem7 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
         Dim ComboFileItem8 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
@@ -1148,12 +1152,8 @@ Partial Class MainForm
         Dim ComboFileItem26 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
         Dim ComboFileItem27 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
         Dim ComboFileItem28 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
-        Dim OptionSettingManager268 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle61 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
-        Dim FileListManager265 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
-        Dim OptionManager265 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager269 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace194 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingle61 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager266 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager266 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager270 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
@@ -1455,8 +1455,94 @@ Partial Class MainForm
         Me.optMaskEvilAreas = New MasterworkDwarfFortress.optionFormatted()
         Me.lblHFSLevels = New System.Windows.Forms.Label()
         Me.lblSettingExplanation = New System.Windows.Forms.Label()
-        Me.tabMain = New System.Windows.Forms.CustomTabControl()
-        Me.tabSettings = New System.Windows.Forms.TabPage()
+        Me.panCivTable = New System.Windows.Forms.Panel()
+        Me.tableLayoutCivs = New MasterworkDwarfFortress.mwTableLayout()
+        Me.lblCivInvasions = New System.Windows.Forms.Label()
+        Me.lblCivCaravans = New System.Windows.Forms.Label()
+        Me.lblCivDwarf = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivTaigaOrcs = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivKoboldCamp = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivHuman = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivElf = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivDrow = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivGnome = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivKobold = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivGoblin = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivOrc = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivFrostGiant = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivWarlock = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivAutomaton = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivGremlin = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivTroglodyte = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivAntmen = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivEvilDwarf = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivEvilHuman = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivEvilDrow = New MasterworkDwarfFortress.mwCivLabel()
+        Me.lblCivEvilElf = New MasterworkDwarfFortress.mwCivLabel()
+        Me.grpExtraCreatures = New System.Windows.Forms.GroupBox()
+        Me.optBtnMoreAnimals = New MasterworkDwarfFortress.optionSingleReplaceButton()
+        Me.grpRandomCreatures = New System.Windows.Forms.GroupBox()
+        Me.lblRandomNote = New System.Windows.Forms.Label()
+        Me.grpFortressDefense = New System.Windows.Forms.GroupBox()
+        Me.lblInvaderSkills = New System.Windows.Forms.Label()
+        Me.lblFortDefEasyTitle = New System.Windows.Forms.Label()
+        Me.lblForDefMedTitle = New System.Windows.Forms.Label()
+        Me.lblFortDefHardTitle = New System.Windows.Forms.Label()
+        Me.lblFortDefNote = New System.Windows.Forms.Label()
+        Me.grpMachinery = New System.Windows.Forms.GroupBox()
+        Me.grpWorkshops = New System.Windows.Forms.GroupBox()
+        Me.grpMiscBuildings = New System.Windows.Forms.GroupBox()
+        Me.grpFarming = New System.Windows.Forms.GroupBox()
+        Me.grpStudies = New System.Windows.Forms.GroupBox()
+        Me.grpTrade = New System.Windows.Forms.GroupBox()
+        Me.grpLaboratories = New System.Windows.Forms.GroupBox()
+        Me.grpReligion = New System.Windows.Forms.GroupBox()
+        Me.grpDiplomacy = New System.Windows.Forms.GroupBox()
+        Me.grpLibrary = New System.Windows.Forms.GroupBox()
+        Me.grpAdministration = New System.Windows.Forms.GroupBox()
+        Me.grpIllumination = New System.Windows.Forms.GroupBox()
+        Me.lblIlluminationNote = New System.Windows.Forms.Label()
+        Me.grpSmithing = New System.Windows.Forms.GroupBox()
+        Me.grpMiscFurnaces = New System.Windows.Forms.GroupBox()
+        Me.grpUpgrades = New System.Windows.Forms.GroupBox()
+        Me.grpMetalworks = New System.Windows.Forms.GroupBox()
+        Me.grpSiege = New System.Windows.Forms.GroupBox()
+        Me.grpDecorations = New System.Windows.Forms.GroupBox()
+        Me.grpMagic = New System.Windows.Forms.GroupBox()
+        Me.grpVolcanic = New System.Windows.Forms.GroupBox()
+        Me.lblReqMagmaNote = New System.Windows.Forms.Label()
+        Me.grpExtraReactions = New System.Windows.Forms.GroupBox()
+        Me.grpBalancing = New System.Windows.Forms.GroupBox()
+        Me.grpMiscFeatures = New System.Windows.Forms.GroupBox()
+        Me.grpExtraMods = New System.Windows.Forms.GroupBox()
+        Me.lblRendermaxNote = New System.Windows.Forms.Label()
+        Me.lblModNote = New System.Windows.Forms.Label()
+        Me.grpWorldGenMisc = New System.Windows.Forms.GroupBox()
+        Me.lblMineralScarcity = New System.Windows.Forms.Label()
+        Me.lblCivNumber = New System.Windows.Forms.Label()
+        Me.lblEmbarkPoints = New System.Windows.Forms.Label()
+        Me.lblEndYear = New System.Windows.Forms.Label()
+        Me.lblPopulationSize = New System.Windows.Forms.Label()
+        Me.grpWorldGenCaves = New System.Windows.Forms.GroupBox()
+        Me.lblCaveSize = New System.Windows.Forms.Label()
+        Me.lblMountainCaves = New System.Windows.Forms.Label()
+        Me.lblOtherCaves = New System.Windows.Forms.Label()
+        Me.grpWorldGenLayers = New System.Windows.Forms.GroupBox()
+        Me.lblCaverns = New System.Windows.Forms.Label()
+        Me.lblCavernOpenness = New System.Windows.Forms.Label()
+        Me.lblCavernMaze = New System.Windows.Forms.Label()
+        Me.lblCavernWater = New System.Windows.Forms.Label()
+        Me.lblAboveCavern1 = New System.Windows.Forms.Label()
+        Me.lblAboveCavern2 = New System.Windows.Forms.Label()
+        Me.lblAboveCavern3 = New System.Windows.Forms.Label()
+        Me.lblAboveMagma = New System.Windows.Forms.Label()
+        Me.lblAboveHFS = New System.Windows.Forms.Label()
+        Me.lblMapDepthNote = New System.Windows.Forms.Label()
+        Me.grpWorldGenAreas = New System.Windows.Forms.GroupBox()
+        Me.lblGoodAreas = New System.Windows.Forms.Label()
+        Me.lblEvilAreas = New System.Windows.Forms.Label()
+        Me.lblBiomeNote = New System.Windows.Forms.Label()
+        Me.lblWorldGenSelect = New System.Windows.Forms.Label()
         Me.grpWorldSettings = New System.Windows.Forms.GroupBox()
         Me.lblPopCap = New System.Windows.Forms.Label()
         Me.grpSaveSettings = New System.Windows.Forms.GroupBox()
@@ -1485,100 +1571,6 @@ Partial Class MainForm
         Me.lblEmbarkSize = New System.Windows.Forms.Label()
         Me.grpAnnouncements = New System.Windows.Forms.GroupBox()
         Me.tileSetColorPreviewer = New MasterworkDwarfFortress.colorViewer()
-        Me.tabCivs = New System.Windows.Forms.TabPage()
-        Me.panCivTable = New System.Windows.Forms.Panel()
-        Me.tableLayoutCivs = New MasterworkDwarfFortress.mwTableLayout()
-        Me.lblCivInvasions = New System.Windows.Forms.Label()
-        Me.lblCivCaravans = New System.Windows.Forms.Label()
-        Me.lblCivDwarf = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivTaigaOrcs = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivKoboldCamp = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivHuman = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivElf = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivDrow = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivGnome = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivKobold = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivGoblin = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivOrc = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivFrostGiant = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivWarlock = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivAutomaton = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivGremlin = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivTroglodyte = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivAntmen = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivEvilDwarf = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivEvilHuman = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivEvilDrow = New MasterworkDwarfFortress.mwCivLabel()
-        Me.lblCivEvilElf = New MasterworkDwarfFortress.mwCivLabel()
-        Me.tabCreaturesOther = New System.Windows.Forms.TabPage()
-        Me.grpExtraCreatures = New System.Windows.Forms.GroupBox()
-        Me.optBtnMoreAnimals = New MasterworkDwarfFortress.optionSingleReplaceButton()
-        Me.grpRandomCreatures = New System.Windows.Forms.GroupBox()
-        Me.lblRandomNote = New System.Windows.Forms.Label()
-        Me.grpFortressDefense = New System.Windows.Forms.GroupBox()
-        Me.lblInvaderSkills = New System.Windows.Forms.Label()
-        Me.lblFortDefEasyTitle = New System.Windows.Forms.Label()
-        Me.lblForDefMedTitle = New System.Windows.Forms.Label()
-        Me.lblFortDefHardTitle = New System.Windows.Forms.Label()
-        Me.lblFortDefNote = New System.Windows.Forms.Label()
-        Me.tabWorkshops = New System.Windows.Forms.TabPage()
-        Me.grpMachinery = New System.Windows.Forms.GroupBox()
-        Me.grpWorkshops = New System.Windows.Forms.GroupBox()
-        Me.grpMiscBuildings = New System.Windows.Forms.GroupBox()
-        Me.grpFarming = New System.Windows.Forms.GroupBox()
-        Me.grpStudies = New System.Windows.Forms.GroupBox()
-        Me.grpTrade = New System.Windows.Forms.GroupBox()
-        Me.grpLaboratories = New System.Windows.Forms.GroupBox()
-        Me.grpReligion = New System.Windows.Forms.GroupBox()
-        Me.grpDiplomacy = New System.Windows.Forms.GroupBox()
-        Me.grpLibrary = New System.Windows.Forms.GroupBox()
-        Me.grpAdministration = New System.Windows.Forms.GroupBox()
-        Me.tabFurnaces = New System.Windows.Forms.TabPage()
-        Me.grpIllumination = New System.Windows.Forms.GroupBox()
-        Me.lblIlluminationNote = New System.Windows.Forms.Label()
-        Me.grpSmithing = New System.Windows.Forms.GroupBox()
-        Me.grpMiscFurnaces = New System.Windows.Forms.GroupBox()
-        Me.grpUpgrades = New System.Windows.Forms.GroupBox()
-        Me.grpMetalworks = New System.Windows.Forms.GroupBox()
-        Me.grpSiege = New System.Windows.Forms.GroupBox()
-        Me.grpDecorations = New System.Windows.Forms.GroupBox()
-        Me.grpMagic = New System.Windows.Forms.GroupBox()
-        Me.grpVolcanic = New System.Windows.Forms.GroupBox()
-        Me.lblReqMagmaNote = New System.Windows.Forms.Label()
-        Me.tabMisc = New System.Windows.Forms.TabPage()
-        Me.grpExtraReactions = New System.Windows.Forms.GroupBox()
-        Me.grpBalancing = New System.Windows.Forms.GroupBox()
-        Me.grpMiscFeatures = New System.Windows.Forms.GroupBox()
-        Me.grpExtraMods = New System.Windows.Forms.GroupBox()
-        Me.lblRendermaxNote = New System.Windows.Forms.Label()
-        Me.lblModNote = New System.Windows.Forms.Label()
-        Me.tabWorldGen = New System.Windows.Forms.TabPage()
-        Me.grpWorldGenMisc = New System.Windows.Forms.GroupBox()
-        Me.lblMineralScarcity = New System.Windows.Forms.Label()
-        Me.lblCivNumber = New System.Windows.Forms.Label()
-        Me.lblEmbarkPoints = New System.Windows.Forms.Label()
-        Me.lblEndYear = New System.Windows.Forms.Label()
-        Me.lblPopulationSize = New System.Windows.Forms.Label()
-        Me.grpWorldGenCaves = New System.Windows.Forms.GroupBox()
-        Me.lblCaveSize = New System.Windows.Forms.Label()
-        Me.lblMountainCaves = New System.Windows.Forms.Label()
-        Me.lblOtherCaves = New System.Windows.Forms.Label()
-        Me.grpWorldGenLayers = New System.Windows.Forms.GroupBox()
-        Me.lblCaverns = New System.Windows.Forms.Label()
-        Me.lblCavernOpenness = New System.Windows.Forms.Label()
-        Me.lblCavernMaze = New System.Windows.Forms.Label()
-        Me.lblCavernWater = New System.Windows.Forms.Label()
-        Me.lblAboveCavern1 = New System.Windows.Forms.Label()
-        Me.lblAboveCavern2 = New System.Windows.Forms.Label()
-        Me.lblAboveCavern3 = New System.Windows.Forms.Label()
-        Me.lblAboveMagma = New System.Windows.Forms.Label()
-        Me.lblAboveHFS = New System.Windows.Forms.Label()
-        Me.lblMapDepthNote = New System.Windows.Forms.Label()
-        Me.grpWorldGenAreas = New System.Windows.Forms.GroupBox()
-        Me.lblGoodAreas = New System.Windows.Forms.Label()
-        Me.lblEvilAreas = New System.Windows.Forms.Label()
-        Me.lblBiomeNote = New System.Windows.Forms.Label()
-        Me.lblWorldGenSelect = New System.Windows.Forms.Label()
         Me.ribbonMain = New System.Windows.Forms.Ribbon()
         Me.rTabGeneral = New System.Windows.Forms.RibbonTab()
         Me.rPanelGeneral = New System.Windows.Forms.RibbonPanel()
@@ -1662,6 +1654,14 @@ Partial Class MainForm
         Me.rBtnUtilDwarfTherapist = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilTileGenie = New System.Windows.Forms.RibbonButton()
         Me.optNumHFSLevels = New MasterworkDwarfFortress.optionNumeric()
+        Me.tabMain = New KRBTabControl.KRBTabControl()
+        Me.tabSettings2 = New KRBTabControl.TabPageEx()
+        Me.tabCivs2 = New KRBTabControl.TabPageEx()
+        Me.tabOtherCreatures2 = New KRBTabControl.TabPageEx()
+        Me.tabWorkshops2 = New KRBTabControl.TabPageEx()
+        Me.tabFurnaces2 = New KRBTabControl.TabPageEx()
+        Me.tabMisc2 = New KRBTabControl.TabPageEx()
+        Me.tabWorldGen2 = New KRBTabControl.TabPageEx()
         Me.grpStandardization.SuspendLayout
         Me.grpWorldGenHostiles.SuspendLayout
         CType(Me.optNumMegabeasts,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1701,25 +1701,11 @@ Partial Class MainForm
         CType(Me.optNumAboveCav3,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.optNumAboveMagma,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.optNumAboveHFS,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.tabMain.SuspendLayout
-        Me.tabSettings.SuspendLayout
-        Me.grpWorldSettings.SuspendLayout
-        Me.grpSaveSettings.SuspendLayout
-        Me.grpMiscSettings.SuspendLayout
-        Me.grpGraphics.SuspendLayout
-        Me.grpFps.SuspendLayout
-        Me.grpSound.SuspendLayout
-        CType(Me.optNumVolume,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.grpEmbark.SuspendLayout
-        Me.grpAnnouncements.SuspendLayout
-        Me.tabCivs.SuspendLayout
         Me.panCivTable.SuspendLayout
         Me.tableLayoutCivs.SuspendLayout
-        Me.tabCreaturesOther.SuspendLayout
         Me.grpExtraCreatures.SuspendLayout
         Me.grpRandomCreatures.SuspendLayout
         Me.grpFortressDefense.SuspendLayout
-        Me.tabWorkshops.SuspendLayout
         Me.grpMachinery.SuspendLayout
         Me.grpWorkshops.SuspendLayout
         Me.grpMiscBuildings.SuspendLayout
@@ -1731,7 +1717,6 @@ Partial Class MainForm
         Me.grpDiplomacy.SuspendLayout
         Me.grpLibrary.SuspendLayout
         Me.grpAdministration.SuspendLayout
-        Me.tabFurnaces.SuspendLayout
         Me.grpIllumination.SuspendLayout
         Me.grpSmithing.SuspendLayout
         Me.grpMiscFurnaces.SuspendLayout
@@ -1741,17 +1726,32 @@ Partial Class MainForm
         Me.grpDecorations.SuspendLayout
         Me.grpMagic.SuspendLayout
         Me.grpVolcanic.SuspendLayout
-        Me.tabMisc.SuspendLayout
         Me.grpExtraReactions.SuspendLayout
         Me.grpBalancing.SuspendLayout
         Me.grpMiscFeatures.SuspendLayout
         Me.grpExtraMods.SuspendLayout
-        Me.tabWorldGen.SuspendLayout
         Me.grpWorldGenMisc.SuspendLayout
         Me.grpWorldGenCaves.SuspendLayout
         Me.grpWorldGenLayers.SuspendLayout
         Me.grpWorldGenAreas.SuspendLayout
+        Me.grpWorldSettings.SuspendLayout
+        Me.grpSaveSettings.SuspendLayout
+        Me.grpMiscSettings.SuspendLayout
+        Me.grpGraphics.SuspendLayout
+        Me.grpFps.SuspendLayout
+        Me.grpSound.SuspendLayout
+        CType(Me.optNumVolume,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.grpEmbark.SuspendLayout
+        Me.grpAnnouncements.SuspendLayout
         CType(Me.optNumHFSLevels,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.tabMain.SuspendLayout
+        Me.tabSettings2.SuspendLayout
+        Me.tabCivs2.SuspendLayout
+        Me.tabOtherCreatures2.SuspendLayout
+        Me.tabWorkshops2.SuspendLayout
+        Me.tabFurnaces2.SuspendLayout
+        Me.tabMisc2.SuspendLayout
+        Me.tabWorldGen2.SuspendLayout
         Me.SuspendLayout
         '
         'ToolTipMaker
@@ -1838,7 +1838,7 @@ Partial Class MainForm
         Me.grpStandardization.Controls.Add(Me.optMultiSimpleMeat)
         Me.grpStandardization.Controls.Add(Me.optBtnSimpleGemShapes)
         Me.grpStandardization.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpStandardization.Location = New System.Drawing.Point(140, 83)
+        Me.grpStandardization.Location = New System.Drawing.Point(143, 88)
         Me.grpStandardization.Name = "grpStandardization"
         Me.grpStandardization.Size = New System.Drawing.Size(144, 326)
         Me.grpStandardization.TabIndex = 0
@@ -2200,7 +2200,7 @@ Partial Class MainForm
         Me.grpWorldGenHostiles.Controls.Add(Me.lblEvilClouds)
         Me.grpWorldGenHostiles.Controls.Add(Me.lblEvilRain)
         Me.grpWorldGenHostiles.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenHostiles.Location = New System.Drawing.Point(163, 83)
+        Me.grpWorldGenHostiles.Location = New System.Drawing.Point(166, 66)
         Me.grpWorldGenHostiles.Name = "grpWorldGenHostiles"
         Me.grpWorldGenHostiles.Size = New System.Drawing.Size(192, 418)
         Me.grpWorldGenHostiles.TabIndex = 2
@@ -2674,7 +2674,7 @@ Partial Class MainForm
         Me.cmbWorldGenIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbWorldGenIndex.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmbWorldGenIndex.FormattingEnabled = true
-        Me.cmbWorldGenIndex.Location = New System.Drawing.Point(466, 55)
+        Me.cmbWorldGenIndex.Location = New System.Drawing.Point(469, 38)
         Me.cmbWorldGenIndex.Name = "cmbWorldGenIndex"
         Me.cmbWorldGenIndex.Size = New System.Drawing.Size(155, 23)
         Me.cmbWorldGenIndex.TabIndex = 1
@@ -4357,7 +4357,7 @@ Partial Class MainForm
         Me.lblCivSkills.TabIndex = 6
         Me.lblCivSkills.Text = "Skills"
         Me.lblCivSkills.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.lblCivSkills, "Determines the natural fighting skill levels of invading creatures. WARNING: Be c" & _
+        Me.ToolTipMaker.SetToolTip(Me.lblCivSkills, "Determines the natural fighting skill levels of invading creatures. WARNING: Be c"& _ 
         "areful when setting this for your playable civilization!")
         '
         'optBtnDrowRace
@@ -4919,7 +4919,7 @@ Partial Class MainForm
         Me.optCbPatternInvaderSkills.options = OptionBase1
         Me.optCbPatternInvaderSkills.pattern = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER)"
         Me.optCbPatternInvaderSkills.replace = "${1}${value}${2}"
-        Me.optCbPatternInvaderSkills.Size = New System.Drawing.Size(57, 21)
+        Me.optCbPatternInvaderSkills.Size = New System.Drawing.Size(57, 23)
         Me.optCbPatternInvaderSkills.TabIndex = 22
         Me.ToolTipMaker.SetToolTip(Me.optCbPatternInvaderSkills, "This sets the combat skills for the above races. Be careful not to underestimate "& _ 
         "the effects of higher skills!")
@@ -10998,595 +10998,6 @@ Partial Class MainForm
         Me.lblSettingExplanation.Text = "All settings can be changed without generating a new world, with the only excepti"& _ 
     "on being tileset changes. New settings do require restarting DF to take effect."
         '
-        'tabMain
-        '
-        Me.tabMain.Controls.Add(Me.tabSettings)
-        Me.tabMain.Controls.Add(Me.tabCivs)
-        Me.tabMain.Controls.Add(Me.tabCreaturesOther)
-        Me.tabMain.Controls.Add(Me.tabWorkshops)
-        Me.tabMain.Controls.Add(Me.tabFurnaces)
-        Me.tabMain.Controls.Add(Me.tabMisc)
-        Me.tabMain.Controls.Add(Me.tabWorldGen)
-        Me.tabMain.DisplayStyle = System.Windows.Forms.TabStyle.VS2010
-        '
-        '
-        '
-        Me.tabMain.DisplayStyleProvider.BorderColor = System.Drawing.Color.Transparent
-        Me.tabMain.DisplayStyleProvider.BorderColorHot = System.Drawing.Color.Black
-        Me.tabMain.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.Black
-        Me.tabMain.DisplayStyleProvider.CloserColor = System.Drawing.Color.FromArgb(CType(CType(117,Byte),Integer), CType(CType(99,Byte),Integer), CType(CType(61,Byte),Integer))
-        Me.tabMain.DisplayStyleProvider.FocusTrack = false
-        Me.tabMain.DisplayStyleProvider.HotTrack = false
-        Me.tabMain.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.tabMain.DisplayStyleProvider.Opacity = 1!
-        Me.tabMain.DisplayStyleProvider.Overlap = 0
-        Me.tabMain.DisplayStyleProvider.Padding = New System.Drawing.Point(12, 5)
-        Me.tabMain.DisplayStyleProvider.SelectedTabColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
-        Me.tabMain.DisplayStyleProvider.SelectedTabColorTop = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
-        Me.tabMain.DisplayStyleProvider.ShowTabCloser = false
-        Me.tabMain.DisplayStyleProvider.TextColor = System.Drawing.Color.WhiteSmoke
-        Me.tabMain.DisplayStyleProvider.TextColorDisabled = System.Drawing.Color.WhiteSmoke
-        Me.tabMain.DisplayStyleProvider.TextColorSelected = System.Drawing.Color.WhiteSmoke
-        Me.tabMain.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.tabMain.ItemSize = New System.Drawing.Size(52, 22)
-        Me.tabMain.Location = New System.Drawing.Point(1, 75)
-        Me.tabMain.Margin = New System.Windows.Forms.Padding(1)
-        Me.tabMain.Name = "tabMain"
-        Me.tabMain.SelectedIndex = 0
-        Me.tabMain.ShowToolTips = true
-        Me.tabMain.Size = New System.Drawing.Size(1032, 607)
-        Me.tabMain.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight
-        Me.tabMain.TabIndex = 0
-        '
-        'tabSettings
-        '
-        Me.tabSettings.BackColor = System.Drawing.Color.White
-        Me.tabSettings.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabSettings.Controls.Add(Me.grpWorldSettings)
-        Me.tabSettings.Controls.Add(Me.grpSaveSettings)
-        Me.tabSettings.Controls.Add(Me.grpMiscSettings)
-        Me.tabSettings.Controls.Add(Me.grpGraphics)
-        Me.tabSettings.Controls.Add(Me.grpFps)
-        Me.tabSettings.Controls.Add(Me.grpSound)
-        Me.tabSettings.Controls.Add(Me.grpEmbark)
-        Me.tabSettings.Controls.Add(Me.grpAnnouncements)
-        Me.tabSettings.Controls.Add(Me.tileSetColorPreviewer)
-        Me.tabSettings.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.tabSettings.Location = New System.Drawing.Point(4, 27)
-        Me.tabSettings.Name = "tabSettings"
-        Me.tabSettings.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabSettings.Size = New System.Drawing.Size(1024, 576)
-        Me.tabSettings.TabIndex = 0
-        Me.tabSettings.Text = "Settings"
-        Me.tabSettings.UseVisualStyleBackColor = true
-        '
-        'grpWorldSettings
-        '
-        Me.grpWorldSettings.BackColor = System.Drawing.Color.Transparent
-        Me.grpWorldSettings.BackgroundImage = CType(resources.GetObject("grpWorldSettings.BackgroundImage"),System.Drawing.Image)
-        Me.grpWorldSettings.Controls.Add(Me.optBtnTemperature)
-        Me.grpWorldSettings.Controls.Add(Me.optBtnWeather)
-        Me.grpWorldSettings.Controls.Add(Me.optBtnCaveins)
-        Me.grpWorldSettings.Controls.Add(Me.optBtnInvaders)
-        Me.grpWorldSettings.Controls.Add(Me.optBtnLiquidDepth)
-        Me.grpWorldSettings.Controls.Add(Me.optBtnAdvCenter)
-        Me.grpWorldSettings.Controls.Add(Me.optBtnAdvTraps)
-        Me.grpWorldSettings.Controls.Add(Me.optBtnPetCoffins)
-        Me.grpWorldSettings.Controls.Add(Me.optNumPopCap)
-        Me.grpWorldSettings.Controls.Add(Me.optMaskChildBabyCap)
-        Me.grpWorldSettings.Controls.Add(Me.lblPopCap)
-        Me.grpWorldSettings.Controls.Add(Me.lblChildCap)
-        Me.grpWorldSettings.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldSettings.Location = New System.Drawing.Point(78, 83)
-        Me.grpWorldSettings.Name = "grpWorldSettings"
-        Me.grpWorldSettings.Size = New System.Drawing.Size(169, 322)
-        Me.grpWorldSettings.TabIndex = 0
-        Me.grpWorldSettings.TabStop = false
-        Me.grpWorldSettings.Text = "World Settings"
-        '
-        'lblPopCap
-        '
-        Me.lblPopCap.BackColor = System.Drawing.Color.Transparent
-        Me.lblPopCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblPopCap.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblPopCap.Location = New System.Drawing.Point(-3, 259)
-        Me.lblPopCap.Name = "lblPopCap"
-        Me.lblPopCap.Size = New System.Drawing.Size(94, 20)
-        Me.lblPopCap.TabIndex = 8
-        Me.lblPopCap.Text = "Population Cap"
-        Me.lblPopCap.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'grpSaveSettings
-        '
-        Me.grpSaveSettings.BackColor = System.Drawing.Color.Transparent
-        Me.grpSaveSettings.BackgroundImage = CType(resources.GetObject("grpSaveSettings.BackgroundImage"),System.Drawing.Image)
-        Me.grpSaveSettings.Controls.Add(Me.optCbAutoSave)
-        Me.grpSaveSettings.Controls.Add(Me.optBtnAutoSavePause)
-        Me.grpSaveSettings.Controls.Add(Me.optBtnAutoBackup)
-        Me.grpSaveSettings.Controls.Add(Me.optBtnEmbarkSave)
-        Me.grpSaveSettings.Controls.Add(Me.optBtnCompressSaves)
-        Me.grpSaveSettings.Controls.Add(Me.optBtnPauseLoad)
-        Me.grpSaveSettings.Controls.Add(Me.lblAutoSave)
-        Me.grpSaveSettings.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpSaveSettings.Location = New System.Drawing.Point(253, 83)
-        Me.grpSaveSettings.Name = "grpSaveSettings"
-        Me.grpSaveSettings.Size = New System.Drawing.Size(169, 226)
-        Me.grpSaveSettings.TabIndex = 1
-        Me.grpSaveSettings.TabStop = false
-        Me.grpSaveSettings.Text = "Save && Load Settings"
-        '
-        'optCbAutoSave
-        '
-        Me.optCbAutoSave.DropDownWidth = 150
-        Me.optCbAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optCbAutoSave.FormattingEnabled = true
-        Me.optCbAutoSave.Location = New System.Drawing.Point(76, 22)
-        Me.optCbAutoSave.Name = "optCbAutoSave"
-        FileListManager264.fileNames = Nothing
-        OptionList4.fileManager = FileListManager264
-        ComboItem17.display = "Never"
-        ComboItem17.value = "NONE"
-        ComboItem18.display = "Seasonal"
-        ComboItem18.value = "SEASONAL"
-        ComboItem19.display = "Yearly"
-        ComboItem19.value = "YEARLY"
-        OptionList4.itemList.Add(ComboItem17)
-        OptionList4.itemList.Add(ComboItem18)
-        OptionList4.itemList.Add(ComboItem19)
-        OptionManager264.loadFromDInit = true
-        OptionManager264.loadFromInit = false
-        OptionManager264.loadFromWorldGen = false
-        OptionList4.optionManager = OptionManager264
-        OptionSettingManager267.settingName = Nothing
-        OptionList4.settingManager = OptionSettingManager267
-        OptionList4.tokenName = "AUTOSAVE"
-        OptionList4.updateTileSets = false
-        Me.optCbAutoSave.options = OptionList4
-        Me.optCbAutoSave.Size = New System.Drawing.Size(75, 23)
-        Me.optCbAutoSave.TabIndex = 1
-        '
-        'lblAutoSave
-        '
-        Me.lblAutoSave.BackColor = System.Drawing.Color.Transparent
-        Me.lblAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblAutoSave.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblAutoSave.Location = New System.Drawing.Point(15, 22)
-        Me.lblAutoSave.Name = "lblAutoSave"
-        Me.lblAutoSave.Size = New System.Drawing.Size(62, 20)
-        Me.lblAutoSave.TabIndex = 0
-        Me.lblAutoSave.Text = "Auto-Save"
-        Me.lblAutoSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'grpMiscSettings
-        '
-        Me.grpMiscSettings.BackColor = System.Drawing.Color.Transparent
-        Me.grpMiscSettings.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
-        Me.grpMiscSettings.Controls.Add(Me.lblKeybinds)
-        Me.grpMiscSettings.Controls.Add(Me.optCbKeybinds)
-        Me.grpMiscSettings.Controls.Add(Me.lblArena)
-        Me.grpMiscSettings.Controls.Add(Me.optCbArena)
-        Me.grpMiscSettings.Controls.Add(Me.lblWindowed)
-        Me.grpMiscSettings.Controls.Add(Me.optCbWindow)
-        Me.grpMiscSettings.Controls.Add(Me.lblPriority)
-        Me.grpMiscSettings.Controls.Add(Me.optCbPriority)
-        Me.grpMiscSettings.Controls.Add(Me.optBtnIntro)
-        Me.grpMiscSettings.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMiscSettings.Location = New System.Drawing.Point(603, 83)
-        Me.grpMiscSettings.Name = "grpMiscSettings"
-        Me.grpMiscSettings.Size = New System.Drawing.Size(169, 216)
-        Me.grpMiscSettings.TabIndex = 4
-        Me.grpMiscSettings.TabStop = false
-        Me.grpMiscSettings.Text = "Misc. Settings"
-        '
-        'lblKeybinds
-        '
-        Me.lblKeybinds.BackColor = System.Drawing.Color.Transparent
-        Me.lblKeybinds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblKeybinds.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblKeybinds.Location = New System.Drawing.Point(7, 21)
-        Me.lblKeybinds.Name = "lblKeybinds"
-        Me.lblKeybinds.Size = New System.Drawing.Size(61, 20)
-        Me.lblKeybinds.TabIndex = 0
-        Me.lblKeybinds.Text = "Keybinds"
-        Me.lblKeybinds.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblArena
-        '
-        Me.lblArena.BackColor = System.Drawing.Color.Transparent
-        Me.lblArena.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblArena.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblArena.Location = New System.Drawing.Point(7, 47)
-        Me.lblArena.Name = "lblArena"
-        Me.lblArena.Size = New System.Drawing.Size(61, 20)
-        Me.lblArena.TabIndex = 2
-        Me.lblArena.Text = "Arena"
-        Me.lblArena.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblWindowed
-        '
-        Me.lblWindowed.BackColor = System.Drawing.Color.Transparent
-        Me.lblWindowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblWindowed.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblWindowed.Location = New System.Drawing.Point(7, 73)
-        Me.lblWindowed.Name = "lblWindowed"
-        Me.lblWindowed.Size = New System.Drawing.Size(61, 20)
-        Me.lblWindowed.TabIndex = 4
-        Me.lblWindowed.Text = "Window"
-        Me.lblWindowed.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblPriority
-        '
-        Me.lblPriority.BackColor = System.Drawing.Color.Transparent
-        Me.lblPriority.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblPriority.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblPriority.Location = New System.Drawing.Point(10, 99)
-        Me.lblPriority.Name = "lblPriority"
-        Me.lblPriority.Size = New System.Drawing.Size(58, 21)
-        Me.lblPriority.TabIndex = 6
-        Me.lblPriority.Text = "Priority"
-        Me.lblPriority.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'grpGraphics
-        '
-        Me.grpGraphics.BackColor = System.Drawing.Color.Transparent
-        Me.grpGraphics.BackgroundImage = CType(resources.GetObject("grpGraphics.BackgroundImage"),System.Drawing.Image)
-        Me.grpGraphics.Controls.Add(Me.lblColors)
-        Me.grpGraphics.Controls.Add(Me.optCbColors)
-        Me.grpGraphics.Controls.Add(Me.optCbPrintMode)
-        Me.grpGraphics.Controls.Add(Me.optBtnSprites)
-        Me.grpGraphics.Controls.Add(Me.optBtnTruetype)
-        Me.grpGraphics.Controls.Add(Me.lblFonts)
-        Me.grpGraphics.Controls.Add(Me.optCbFonts)
-        Me.grpGraphics.Controls.Add(Me.lblGraphicsPack)
-        Me.grpGraphics.Controls.Add(Me.cmbTileSets)
-        Me.grpGraphics.Controls.Add(Me.btnTilesetPreview)
-        Me.grpGraphics.Controls.Add(Me.btnUpdateSaves)
-        Me.grpGraphics.Controls.Add(Me.lblPrintMode)
-        Me.grpGraphics.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpGraphics.Location = New System.Drawing.Point(428, 83)
-        Me.grpGraphics.Name = "grpGraphics"
-        Me.grpGraphics.Size = New System.Drawing.Size(169, 322)
-        Me.grpGraphics.TabIndex = 3
-        Me.grpGraphics.TabStop = false
-        Me.grpGraphics.Text = "Graphic Settings"
-        '
-        'lblColors
-        '
-        Me.lblColors.BackColor = System.Drawing.Color.Transparent
-        Me.lblColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblColors.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblColors.Location = New System.Drawing.Point(8, 21)
-        Me.lblColors.Name = "lblColors"
-        Me.lblColors.Size = New System.Drawing.Size(61, 20)
-        Me.lblColors.TabIndex = 0
-        Me.lblColors.Text = "Color"
-        Me.lblColors.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'optCbColors
-        '
-        Me.optCbColors.DropDownWidth = 150
-        Me.optCbColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbColors.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optCbColors.FormattingEnabled = true
-        Me.optCbColors.Location = New System.Drawing.Point(72, 22)
-        Me.optCbColors.MaxDropDownItems = 50
-        Me.optCbColors.Name = "optCbColors"
-        OptionSingleFileReplace4.fileName = "colors.txt"
-        ComboFileItem7.display = "BLUscale"
-        ComboFileItem7.fileName = "colors_BLUscale.txt"
-        ComboFileItem7.value = "BLUSCALE"
-        ComboFileItem8.display = "CLA"
-        ComboFileItem8.fileName = "colors_CLA.txt"
-        ComboFileItem8.value = "CLA"
-        ComboFileItem9.display = "Default"
-        ComboFileItem9.fileName = "colors_default.txt"
-        ComboFileItem9.value = "VANILLA"
-        ComboFileItem10.display = "Default+"
-        ComboFileItem10.fileName = "colors_defaultPlus.txt"
-        ComboFileItem10.value = "DEFAULT+"
-        ComboFileItem11.display = "Ironhand"
-        ComboFileItem11.fileName = "colors_Ironhand.txt"
-        ComboFileItem11.value = "IRONHAND"
-        ComboFileItem12.display = "Jolly Bastion"
-        ComboFileItem12.fileName = "colors_JollyBastion.txt"
-        ComboFileItem12.value = "JOLLYBASTION"
-        ComboFileItem13.display = "Jolly Bastion Warm"
-        ComboFileItem13.fileName = "colors_JollyBastionWarm.txt"
-        ComboFileItem13.value = "JOLLYWARM"
-        ComboFileItem14.display = "KRM-SOV 1"
-        ComboFileItem14.fileName = "colors_KRMSOV1.txt"
-        ComboFileItem14.value = "KRMSOV1"
-        ComboFileItem15.display = "KRM-SOV 2"
-        ComboFileItem15.fileName = "colors_KRMSOV2.txt"
-        ComboFileItem15.value = "KRMSOV2"
-        ComboFileItem16.display = "KRM-SOV 3"
-        ComboFileItem16.fileName = "colors_KRMSOV3.txt"
-        ComboFileItem16.value = "KRMSOV3"
-        ComboFileItem17.display = "Matrix"
-        ComboFileItem17.fileName = "colors_Matrix.txt"
-        ComboFileItem17.value = "MATRIX"
-        ComboFileItem18.display = "MAT-SOV 1"
-        ComboFileItem18.fileName = "colors_MATSOV1.txt"
-        ComboFileItem18.value = "MATSOV1"
-        ComboFileItem19.display = "Natural"
-        ComboFileItem19.fileName = "colors_Natural.txt"
-        ComboFileItem19.value = "NATURAL"
-        ComboFileItem20.display = "NES"
-        ComboFileItem20.fileName = "colors_NES.txt"
-        ComboFileItem20.value = "NES"
-        ComboFileItem21.display = "Obsidian Soul"
-        ComboFileItem21.fileName = "colors_Obsidian.txt"
-        ComboFileItem21.value = "OBSIDIAN"
-        ComboFileItem22.display = "Phoebus"
-        ComboFileItem22.fileName = "colors_Phoebus.txt"
-        ComboFileItem22.value = "PHOEBUS"
-        ComboFileItem23.display = "SOV.G.1"
-        ComboFileItem23.fileName = "colors_GRYSOV1.txt"
-        ComboFileItem23.value = "GRYSOV1"
-        ComboFileItem24.display = "Spacefox"
-        ComboFileItem24.fileName = "colors_Spacefox.txt"
-        ComboFileItem24.value = "SPACEFOX"
-        ComboFileItem25.display = "Tocky"
-        ComboFileItem25.fileName = "colors_Tocky.txt"
-        ComboFileItem25.value = "TOCKY"
-        ComboFileItem26.display = "Toxic Warm"
-        ComboFileItem26.fileName = "colors_ToxicWarm.txt"
-        ComboFileItem26.value = "TOXICWARM"
-        ComboFileItem27.display = "Warm"
-        ComboFileItem27.fileName = "colors_Warm.txt"
-        ComboFileItem27.value = "WARM"
-        ComboFileItem28.display = "Wasteland"
-        ComboFileItem28.fileName = "colors_Wasteland.txt"
-        ComboFileItem28.value = "WASTELAND"
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem7)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem8)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem9)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem10)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem11)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem12)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem13)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem14)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem15)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem16)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem17)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem18)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem19)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem20)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem21)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem22)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem23)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem24)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem25)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem26)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem27)
-        OptionSingleFileReplace4.itemList.Add(ComboFileItem28)
-        OptionSettingManager268.settingName = "COLORS"
-        OptionSingleFileReplace4.settingManager = OptionSettingManager268
-        Me.optCbColors.options = OptionSingleFileReplace4
-        Me.optCbColors.Size = New System.Drawing.Size(91, 23)
-        Me.optCbColors.TabIndex = 1
-        '
-        'lblFonts
-        '
-        Me.lblFonts.BackColor = System.Drawing.Color.Transparent
-        Me.lblFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblFonts.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblFonts.Location = New System.Drawing.Point(21, 72)
-        Me.lblFonts.Name = "lblFonts"
-        Me.lblFonts.Size = New System.Drawing.Size(48, 20)
-        Me.lblFonts.TabIndex = 4
-        Me.lblFonts.Text = "Font"
-        Me.lblFonts.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblGraphicsPack
-        '
-        Me.lblGraphicsPack.BackColor = System.Drawing.Color.Transparent
-        Me.lblGraphicsPack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblGraphicsPack.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblGraphicsPack.Location = New System.Drawing.Point(8, 197)
-        Me.lblGraphicsPack.Name = "lblGraphicsPack"
-        Me.lblGraphicsPack.Size = New System.Drawing.Size(61, 20)
-        Me.lblGraphicsPack.TabIndex = 8
-        Me.lblGraphicsPack.Text = "Tileset"
-        Me.lblGraphicsPack.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cmbTileSets
-        '
-        Me.cmbTileSets.DropDownWidth = 150
-        Me.cmbTileSets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbTileSets.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.cmbTileSets.FormattingEnabled = true
-        Me.cmbTileSets.Location = New System.Drawing.Point(72, 197)
-        Me.cmbTileSets.Name = "cmbTileSets"
-        Me.cmbTileSets.Size = New System.Drawing.Size(91, 23)
-        Me.cmbTileSets.TabIndex = 9
-        '
-        'btnTilesetPreview
-        '
-        Me.btnTilesetPreview.BackColor = System.Drawing.Color.Transparent
-        Me.btnTilesetPreview.BackgroundImage = CType(resources.GetObject("btnTilesetPreview.BackgroundImage"),System.Drawing.Image)
-        Me.btnTilesetPreview.FlatAppearance.BorderSize = 0
-        Me.btnTilesetPreview.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTilesetPreview.ForeColor = System.Drawing.Color.White
-        Me.btnTilesetPreview.Location = New System.Drawing.Point(17, 229)
-        Me.btnTilesetPreview.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnTilesetPreview.Name = "btnTilesetPreview"
-        Me.btnTilesetPreview.Size = New System.Drawing.Size(134, 27)
-        Me.btnTilesetPreview.TabIndex = 11
-        Me.btnTilesetPreview.Text = "Tilesets Preview"
-        Me.btnTilesetPreview.UseVisualStyleBackColor = false
-        '
-        'lblPrintMode
-        '
-        Me.lblPrintMode.BackColor = System.Drawing.Color.Transparent
-        Me.lblPrintMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblPrintMode.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblPrintMode.Location = New System.Drawing.Point(3, 47)
-        Me.lblPrintMode.Name = "lblPrintMode"
-        Me.lblPrintMode.Size = New System.Drawing.Size(66, 20)
-        Me.lblPrintMode.TabIndex = 2
-        Me.lblPrintMode.Text = "Print Mode"
-        Me.lblPrintMode.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'grpFps
-        '
-        Me.grpFps.BackColor = System.Drawing.Color.Transparent
-        Me.grpFps.BackgroundImage = CType(resources.GetObject("grpFps.BackgroundImage"),System.Drawing.Image)
-        Me.grpFps.Controls.Add(Me.optBtnFps)
-        Me.grpFps.Controls.Add(Me.lblGraphicsCap)
-        Me.grpFps.Controls.Add(Me.optNumGFPS)
-        Me.grpFps.Controls.Add(Me.lblFpsCap)
-        Me.grpFps.Controls.Add(Me.optNumFPSCap)
-        Me.grpFps.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpFps.Location = New System.Drawing.Point(778, 83)
-        Me.grpFps.Name = "grpFps"
-        Me.grpFps.Size = New System.Drawing.Size(169, 100)
-        Me.grpFps.TabIndex = 6
-        Me.grpFps.TabStop = false
-        Me.grpFps.Text = "FPS Settings"
-        '
-        'lblGraphicsCap
-        '
-        Me.lblGraphicsCap.BackColor = System.Drawing.Color.Transparent
-        Me.lblGraphicsCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblGraphicsCap.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblGraphicsCap.Location = New System.Drawing.Point(6, 48)
-        Me.lblGraphicsCap.Name = "lblGraphicsCap"
-        Me.lblGraphicsCap.Size = New System.Drawing.Size(88, 20)
-        Me.lblGraphicsCap.TabIndex = 1
-        Me.lblGraphicsCap.Text = "Graphics Cap"
-        Me.lblGraphicsCap.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblFpsCap
-        '
-        Me.lblFpsCap.BackColor = System.Drawing.Color.Transparent
-        Me.lblFpsCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblFpsCap.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblFpsCap.Location = New System.Drawing.Point(6, 72)
-        Me.lblFpsCap.Name = "lblFpsCap"
-        Me.lblFpsCap.Size = New System.Drawing.Size(88, 20)
-        Me.lblFpsCap.TabIndex = 3
-        Me.lblFpsCap.Text = "FPS Cap"
-        Me.lblFpsCap.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'grpSound
-        '
-        Me.grpSound.BackColor = System.Drawing.Color.Transparent
-        Me.grpSound.BackgroundImage = CType(resources.GetObject("grpSound.BackgroundImage"),System.Drawing.Image)
-        Me.grpSound.Controls.Add(Me.optBtnSound)
-        Me.grpSound.Controls.Add(Me.lblVolume)
-        Me.grpSound.Controls.Add(Me.optNumVolume)
-        Me.grpSound.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpSound.Location = New System.Drawing.Point(778, 189)
-        Me.grpSound.Name = "grpSound"
-        Me.grpSound.Size = New System.Drawing.Size(169, 81)
-        Me.grpSound.TabIndex = 7
-        Me.grpSound.TabStop = false
-        Me.grpSound.Text = "Sound Settings"
-        '
-        'lblVolume
-        '
-        Me.lblVolume.BackColor = System.Drawing.Color.Transparent
-        Me.lblVolume.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblVolume.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblVolume.Location = New System.Drawing.Point(6, 48)
-        Me.lblVolume.Name = "lblVolume"
-        Me.lblVolume.Size = New System.Drawing.Size(88, 20)
-        Me.lblVolume.TabIndex = 1
-        Me.lblVolume.Text = "Volume"
-        Me.lblVolume.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'optNumVolume
-        '
-        Me.optNumVolume.BackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
-        Me.optNumVolume.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumVolume.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumVolume.ForeColor = System.Drawing.Color.FromArgb(CType(CType(21,Byte),Integer), CType(CType(66,Byte),Integer), CType(CType(139,Byte),Integer))
-        Me.optNumVolume.Increment = New Decimal(New Integer() {10, 0, 0, 0})
-        Me.optNumVolume.Location = New System.Drawing.Point(100, 49)
-        Me.optNumVolume.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.optNumVolume.Name = "optNumVolume"
-        FileListManager265.fileNames = Nothing
-        OptionSingle61.fileManager = FileListManager265
-        OptionManager265.loadFromDInit = false
-        OptionManager265.loadFromInit = true
-        OptionManager265.loadFromWorldGen = false
-        OptionSingle61.optionManager = OptionManager265
-        OptionSettingManager269.settingName = Nothing
-        OptionSingle61.settingManager = OptionSettingManager269
-        OptionSingle61.tokenName = "VOLUME"
-        OptionSingle61.updateTileSets = false
-        Me.optNumVolume.options = OptionSingle61
-        Me.optNumVolume.Size = New System.Drawing.Size(51, 19)
-        Me.optNumVolume.TabIndex = 2
-        Me.optNumVolume.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'grpEmbark
-        '
-        Me.grpEmbark.BackColor = System.Drawing.Color.Transparent
-        Me.grpEmbark.BackgroundImage = CType(resources.GetObject("grpEmbark.BackgroundImage"),System.Drawing.Image)
-        Me.grpEmbark.Controls.Add(Me.optBtnEmbarkWarn)
-        Me.grpEmbark.Controls.Add(Me.lblEmbarkSize)
-        Me.grpEmbark.Controls.Add(Me.optMaskEmbarkSize)
-        Me.grpEmbark.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpEmbark.Location = New System.Drawing.Point(603, 305)
-        Me.grpEmbark.Name = "grpEmbark"
-        Me.grpEmbark.Size = New System.Drawing.Size(169, 100)
-        Me.grpEmbark.TabIndex = 5
-        Me.grpEmbark.TabStop = false
-        Me.grpEmbark.Text = "Embark Settings"
-        '
-        'lblEmbarkSize
-        '
-        Me.lblEmbarkSize.BackColor = System.Drawing.Color.Transparent
-        Me.lblEmbarkSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblEmbarkSize.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblEmbarkSize.Location = New System.Drawing.Point(10, 58)
-        Me.lblEmbarkSize.Name = "lblEmbarkSize"
-        Me.lblEmbarkSize.Size = New System.Drawing.Size(74, 21)
-        Me.lblEmbarkSize.TabIndex = 1
-        Me.lblEmbarkSize.Text = "Embark Size"
-        Me.lblEmbarkSize.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'grpAnnouncements
-        '
-        Me.grpAnnouncements.BackColor = System.Drawing.Color.Transparent
-        Me.grpAnnouncements.BackgroundImage = CType(resources.GetObject("grpAnnouncements.BackgroundImage"),System.Drawing.Image)
-        Me.grpAnnouncements.Controls.Add(Me.optBtnTransformMsgs)
-        Me.grpAnnouncements.Controls.Add(Me.optBtnDigStop)
-        Me.grpAnnouncements.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpAnnouncements.Location = New System.Drawing.Point(253, 315)
-        Me.grpAnnouncements.Name = "grpAnnouncements"
-        Me.grpAnnouncements.Size = New System.Drawing.Size(169, 90)
-        Me.grpAnnouncements.TabIndex = 2
-        Me.grpAnnouncements.TabStop = false
-        Me.grpAnnouncements.Text = "Announcement Settings"
-        '
-        'tileSetColorPreviewer
-        '
-        Me.tileSetColorPreviewer.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.tileSetColorPreviewer.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.tileSetColorPreviewer.CausesValidation = false
-        Me.tileSetColorPreviewer.Location = New System.Drawing.Point(392, 17)
-        Me.tileSetColorPreviewer.Name = "tileSetColorPreviewer"
-        Me.tileSetColorPreviewer.Size = New System.Drawing.Size(240, 60)
-        Me.tileSetColorPreviewer.TabIndex = 173
-        Me.tileSetColorPreviewer.Visible = false
-        '
-        'tabCivs
-        '
-        Me.tabCivs.BackColor = System.Drawing.Color.Black
-        Me.tabCivs.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabCivs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabCivs.Controls.Add(Me.panCivTable)
-        Me.tabCivs.Location = New System.Drawing.Point(4, 27)
-        Me.tabCivs.Name = "tabCivs"
-        Me.tabCivs.Size = New System.Drawing.Size(1024, 576)
-        Me.tabCivs.TabIndex = 1
-        Me.tabCivs.Text = "Civilizations"
-        '
         'panCivTable
         '
         Me.panCivTable.BackColor = System.Drawing.Color.Transparent
@@ -11594,7 +11005,7 @@ Partial Class MainForm
         Me.panCivTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panCivTable.Controls.Add(Me.tableLayoutCivs)
         Me.panCivTable.ForeColor = System.Drawing.Color.White
-        Me.panCivTable.Location = New System.Drawing.Point(198, 42)
+        Me.panCivTable.Location = New System.Drawing.Point(201, 3)
         Me.panCivTable.Name = "panCivTable"
         Me.panCivTable.Size = New System.Drawing.Size(628, 532)
         Me.panCivTable.TabIndex = 18
@@ -12063,20 +11474,6 @@ Partial Class MainForm
         Me.lblCivEvilElf.Text = "Evil Elves"
         Me.lblCivEvilElf.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'tabCreaturesOther
-        '
-        Me.tabCreaturesOther.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabCreaturesOther.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabCreaturesOther.Controls.Add(Me.grpExtraCreatures)
-        Me.tabCreaturesOther.Controls.Add(Me.grpRandomCreatures)
-        Me.tabCreaturesOther.Controls.Add(Me.grpFortressDefense)
-        Me.tabCreaturesOther.Location = New System.Drawing.Point(4, 27)
-        Me.tabCreaturesOther.Name = "tabCreaturesOther"
-        Me.tabCreaturesOther.Size = New System.Drawing.Size(1024, 576)
-        Me.tabCreaturesOther.TabIndex = 6
-        Me.tabCreaturesOther.Text = "Other Creatures"
-        Me.tabCreaturesOther.UseVisualStyleBackColor = true
-        '
         'grpExtraCreatures
         '
         Me.grpExtraCreatures.BackColor = System.Drawing.Color.Transparent
@@ -12094,7 +11491,7 @@ Partial Class MainForm
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreDemons)
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreMagical)
         Me.grpExtraCreatures.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpExtraCreatures.Location = New System.Drawing.Point(514, 83)
+        Me.grpExtraCreatures.Location = New System.Drawing.Point(517, 57)
         Me.grpExtraCreatures.Name = "grpExtraCreatures"
         Me.grpExtraCreatures.Size = New System.Drawing.Size(144, 420)
         Me.grpExtraCreatures.TabIndex = 3
@@ -12117,14 +11514,14 @@ Partial Class MainForm
         Me.optBtnMoreAnimals.Name = "optBtnMoreAnimals"
         OptionSingleReplace194.disabledValue = "!NOFF!"
         OptionSingleReplace194.enabledValue = "YESFF["
-        FileListManager266.fileNames = New String() {"creature_ff.txt", "creature_mountain_new.txt", "creature_desert_new.txt", "creature_riverlakepool_new.txt", "creature_small_mammal_new.txt", "creature_temperate_new.txt", "creature_tropical_new.txt", "creature_tundra_taiga_new.txt", "creature_bug_slug_new.txt"}
-        OptionSingleReplace194.fileManager = FileListManager266
-        OptionManager266.loadFromDInit = false
-        OptionManager266.loadFromInit = false
-        OptionManager266.loadFromWorldGen = false
-        OptionSingleReplace194.optionManager = OptionManager266
-        OptionSettingManager270.settingName = Nothing
-        OptionSingleReplace194.settingManager = OptionSettingManager270
+        FileListManager264.fileNames = New String() {"creature_ff.txt", "creature_mountain_new.txt", "creature_desert_new.txt", "creature_riverlakepool_new.txt", "creature_small_mammal_new.txt", "creature_temperate_new.txt", "creature_tropical_new.txt", "creature_tundra_taiga_new.txt", "creature_bug_slug_new.txt"}
+        OptionSingleReplace194.fileManager = FileListManager264
+        OptionManager264.loadFromDInit = false
+        OptionManager264.loadFromInit = false
+        OptionManager264.loadFromWorldGen = false
+        OptionSingleReplace194.optionManager = OptionManager264
+        OptionSettingManager267.settingName = Nothing
+        OptionSingleReplace194.settingManager = OptionSettingManager267
         OptionSingleReplace194.tokenName = ""
         OptionSingleReplace194.updateTileSets = false
         Me.optBtnMoreAnimals.options = OptionSingleReplace194
@@ -12142,7 +11539,7 @@ Partial Class MainForm
         Me.grpRandomCreatures.Controls.Add(Me.btnGenerateCreatures)
         Me.grpRandomCreatures.Controls.Add(Me.lblRandomNote)
         Me.grpRandomCreatures.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpRandomCreatures.Location = New System.Drawing.Point(664, 83)
+        Me.grpRandomCreatures.Location = New System.Drawing.Point(667, 57)
         Me.grpRandomCreatures.Name = "grpRandomCreatures"
         Me.grpRandomCreatures.Size = New System.Drawing.Size(144, 172)
         Me.grpRandomCreatures.TabIndex = 4
@@ -12190,7 +11587,7 @@ Partial Class MainForm
         Me.grpFortressDefense.Controls.Add(Me.optBtnFdSpiderFiends)
         Me.grpFortressDefense.Controls.Add(Me.optBtnFdNightwings)
         Me.grpFortressDefense.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpFortressDefense.Location = New System.Drawing.Point(217, 83)
+        Me.grpFortressDefense.Location = New System.Drawing.Point(220, 57)
         Me.grpFortressDefense.Name = "grpFortressDefense"
         Me.grpFortressDefense.Size = New System.Drawing.Size(291, 420)
         Me.grpFortressDefense.TabIndex = 2
@@ -12257,28 +11654,6 @@ Partial Class MainForm
         Me.lblFortDefNote.Text = "Mind that I didn't write these races and they may be unbalanced in MDF."
         Me.lblFortDefNote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'tabWorkshops
-        '
-        Me.tabWorkshops.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabWorkshops.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabWorkshops.Controls.Add(Me.grpMachinery)
-        Me.tabWorkshops.Controls.Add(Me.grpWorkshops)
-        Me.tabWorkshops.Controls.Add(Me.grpMiscBuildings)
-        Me.tabWorkshops.Controls.Add(Me.grpFarming)
-        Me.tabWorkshops.Controls.Add(Me.grpStudies)
-        Me.tabWorkshops.Controls.Add(Me.grpTrade)
-        Me.tabWorkshops.Controls.Add(Me.grpLaboratories)
-        Me.tabWorkshops.Controls.Add(Me.grpReligion)
-        Me.tabWorkshops.Controls.Add(Me.grpDiplomacy)
-        Me.tabWorkshops.Controls.Add(Me.grpLibrary)
-        Me.tabWorkshops.Controls.Add(Me.grpAdministration)
-        Me.tabWorkshops.Location = New System.Drawing.Point(4, 27)
-        Me.tabWorkshops.Name = "tabWorkshops"
-        Me.tabWorkshops.Size = New System.Drawing.Size(1024, 576)
-        Me.tabWorkshops.TabIndex = 2
-        Me.tabWorkshops.Text = "Workshops"
-        Me.tabWorkshops.UseVisualStyleBackColor = true
-        '
         'grpMachinery
         '
         Me.grpMachinery.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -12289,7 +11664,7 @@ Partial Class MainForm
         Me.grpMachinery.Controls.Add(Me.optBtnLiquidSpawner)
         Me.grpMachinery.Controls.Add(Me.optBtnCoinMint)
         Me.grpMachinery.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMachinery.Location = New System.Drawing.Point(815, 218)
+        Me.grpMachinery.Location = New System.Drawing.Point(818, 191)
         Me.grpMachinery.Name = "grpMachinery"
         Me.grpMachinery.Size = New System.Drawing.Size(144, 167)
         Me.grpMachinery.TabIndex = 10
@@ -12315,7 +11690,7 @@ Partial Class MainForm
         Me.grpWorkshops.Controls.Add(Me.optBtnPainter)
         Me.grpWorkshops.Controls.Add(Me.optBtnToolmaker)
         Me.grpWorkshops.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorkshops.Location = New System.Drawing.Point(65, 83)
+        Me.grpWorkshops.Location = New System.Drawing.Point(68, 56)
         Me.grpWorkshops.Name = "grpWorkshops"
         Me.grpWorkshops.Size = New System.Drawing.Size(144, 403)
         Me.grpWorkshops.TabIndex = 0
@@ -12331,7 +11706,7 @@ Partial Class MainForm
         Me.grpMiscBuildings.Controls.Add(Me.optBtnWoodsplitting)
         Me.grpMiscBuildings.Controls.Add(Me.optBtnStorage)
         Me.grpMiscBuildings.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMiscBuildings.Location = New System.Drawing.Point(215, 262)
+        Me.grpMiscBuildings.Location = New System.Drawing.Point(218, 235)
         Me.grpMiscBuildings.Name = "grpMiscBuildings"
         Me.grpMiscBuildings.Size = New System.Drawing.Size(144, 123)
         Me.grpMiscBuildings.TabIndex = 2
@@ -12349,7 +11724,7 @@ Partial Class MainForm
         Me.grpFarming.Controls.Add(Me.optBtnSlaughterhouse)
         Me.grpFarming.Controls.Add(Me.optBtnStables)
         Me.grpFarming.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpFarming.Location = New System.Drawing.Point(215, 83)
+        Me.grpFarming.Location = New System.Drawing.Point(218, 56)
         Me.grpFarming.Name = "grpFarming"
         Me.grpFarming.Size = New System.Drawing.Size(144, 173)
         Me.grpFarming.TabIndex = 1
@@ -12366,7 +11741,7 @@ Partial Class MainForm
         Me.grpStudies.Controls.Add(Me.optBtnApothecary)
         Me.grpStudies.Controls.Add(Me.optBtnBiology)
         Me.grpStudies.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpStudies.Location = New System.Drawing.Point(365, 83)
+        Me.grpStudies.Location = New System.Drawing.Point(368, 56)
         Me.grpStudies.Name = "grpStudies"
         Me.grpStudies.Size = New System.Drawing.Size(144, 144)
         Me.grpStudies.TabIndex = 3
@@ -12385,7 +11760,7 @@ Partial Class MainForm
         Me.grpTrade.Controls.Add(Me.optBtnTeduk)
         Me.grpTrade.Controls.Add(Me.optBtnIneri)
         Me.grpTrade.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpTrade.Location = New System.Drawing.Point(665, 177)
+        Me.grpTrade.Location = New System.Drawing.Point(668, 150)
         Me.grpTrade.Name = "grpTrade"
         Me.grpTrade.Size = New System.Drawing.Size(144, 208)
         Me.grpTrade.TabIndex = 8
@@ -12402,7 +11777,7 @@ Partial Class MainForm
         Me.grpLaboratories.Controls.Add(Me.optBtnChemistry)
         Me.grpLaboratories.Controls.Add(Me.optBtnHerbalist)
         Me.grpLaboratories.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpLaboratories.Location = New System.Drawing.Point(365, 233)
+        Me.grpLaboratories.Location = New System.Drawing.Point(368, 206)
         Me.grpLaboratories.Name = "grpLaboratories"
         Me.grpLaboratories.Size = New System.Drawing.Size(144, 152)
         Me.grpLaboratories.TabIndex = 4
@@ -12418,7 +11793,7 @@ Partial Class MainForm
         Me.grpReligion.Controls.Add(Me.optBtnShrine)
         Me.grpReligion.Controls.Add(Me.optBtnTemple)
         Me.grpReligion.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpReligion.Location = New System.Drawing.Point(815, 83)
+        Me.grpReligion.Location = New System.Drawing.Point(818, 56)
         Me.grpReligion.Name = "grpReligion"
         Me.grpReligion.Size = New System.Drawing.Size(144, 129)
         Me.grpReligion.TabIndex = 9
@@ -12434,7 +11809,7 @@ Partial Class MainForm
         Me.grpDiplomacy.Controls.Add(Me.optBtnExpedition)
         Me.grpDiplomacy.Controls.Add(Me.optBtnPodium)
         Me.grpDiplomacy.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpDiplomacy.Location = New System.Drawing.Point(515, 83)
+        Me.grpDiplomacy.Location = New System.Drawing.Point(518, 56)
         Me.grpDiplomacy.Name = "grpDiplomacy"
         Me.grpDiplomacy.Size = New System.Drawing.Size(144, 115)
         Me.grpDiplomacy.TabIndex = 5
@@ -12449,7 +11824,7 @@ Partial Class MainForm
         Me.grpLibrary.Controls.Add(Me.optBtnScriptorium)
         Me.grpLibrary.Controls.Add(Me.optBtnLibraries)
         Me.grpLibrary.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpLibrary.Location = New System.Drawing.Point(665, 83)
+        Me.grpLibrary.Location = New System.Drawing.Point(668, 56)
         Me.grpLibrary.Name = "grpLibrary"
         Me.grpLibrary.Size = New System.Drawing.Size(144, 88)
         Me.grpLibrary.TabIndex = 7
@@ -12467,32 +11842,12 @@ Partial Class MainForm
         Me.grpAdministration.Controls.Add(Me.optBtnMonastery)
         Me.grpAdministration.Controls.Add(Me.optBtnGarrison)
         Me.grpAdministration.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpAdministration.Location = New System.Drawing.Point(515, 202)
+        Me.grpAdministration.Location = New System.Drawing.Point(518, 175)
         Me.grpAdministration.Name = "grpAdministration"
         Me.grpAdministration.Size = New System.Drawing.Size(144, 183)
         Me.grpAdministration.TabIndex = 6
         Me.grpAdministration.TabStop = false
         Me.grpAdministration.Text = "Administration"
-        '
-        'tabFurnaces
-        '
-        Me.tabFurnaces.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabFurnaces.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabFurnaces.Controls.Add(Me.grpIllumination)
-        Me.tabFurnaces.Controls.Add(Me.grpSmithing)
-        Me.tabFurnaces.Controls.Add(Me.grpMiscFurnaces)
-        Me.tabFurnaces.Controls.Add(Me.grpUpgrades)
-        Me.tabFurnaces.Controls.Add(Me.grpMetalworks)
-        Me.tabFurnaces.Controls.Add(Me.grpSiege)
-        Me.tabFurnaces.Controls.Add(Me.grpDecorations)
-        Me.tabFurnaces.Controls.Add(Me.grpMagic)
-        Me.tabFurnaces.Controls.Add(Me.grpVolcanic)
-        Me.tabFurnaces.Location = New System.Drawing.Point(4, 27)
-        Me.tabFurnaces.Name = "tabFurnaces"
-        Me.tabFurnaces.Size = New System.Drawing.Size(1024, 576)
-        Me.tabFurnaces.TabIndex = 3
-        Me.tabFurnaces.Text = "Furnaces"
-        Me.tabFurnaces.UseVisualStyleBackColor = true
         '
         'grpIllumination
         '
@@ -12506,7 +11861,7 @@ Partial Class MainForm
         Me.grpIllumination.Controls.Add(Me.optBtnGemOfLight)
         Me.grpIllumination.Controls.Add(Me.lblIlluminationNote)
         Me.grpIllumination.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpIllumination.Location = New System.Drawing.Point(65, 83)
+        Me.grpIllumination.Location = New System.Drawing.Point(68, 51)
         Me.grpIllumination.Name = "grpIllumination"
         Me.grpIllumination.Size = New System.Drawing.Size(144, 209)
         Me.grpIllumination.TabIndex = 0
@@ -12539,7 +11894,7 @@ Partial Class MainForm
         Me.grpSmithing.Controls.Add(Me.optBtnGemforge)
         Me.grpSmithing.Controls.Add(Me.optBtnRockForge)
         Me.grpSmithing.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpSmithing.Location = New System.Drawing.Point(365, 83)
+        Me.grpSmithing.Location = New System.Drawing.Point(368, 51)
         Me.grpSmithing.Name = "grpSmithing"
         Me.grpSmithing.Size = New System.Drawing.Size(144, 347)
         Me.grpSmithing.TabIndex = 3
@@ -12557,7 +11912,7 @@ Partial Class MainForm
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnKiln)
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnSlagPit)
         Me.grpMiscFurnaces.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMiscFurnaces.Location = New System.Drawing.Point(215, 83)
+        Me.grpMiscFurnaces.Location = New System.Drawing.Point(218, 51)
         Me.grpMiscFurnaces.Name = "grpMiscFurnaces"
         Me.grpMiscFurnaces.Size = New System.Drawing.Size(144, 177)
         Me.grpMiscFurnaces.TabIndex = 1
@@ -12576,7 +11931,7 @@ Partial Class MainForm
         Me.grpUpgrades.Controls.Add(Me.optBtnMegabeastKennel)
         Me.grpUpgrades.Controls.Add(Me.optBtnWarKennel)
         Me.grpUpgrades.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpUpgrades.Location = New System.Drawing.Point(515, 83)
+        Me.grpUpgrades.Location = New System.Drawing.Point(518, 51)
         Me.grpUpgrades.Name = "grpUpgrades"
         Me.grpUpgrades.Size = New System.Drawing.Size(144, 209)
         Me.grpUpgrades.TabIndex = 4
@@ -12593,7 +11948,7 @@ Partial Class MainForm
         Me.grpMetalworks.Controls.Add(Me.optBtnFinishingForge)
         Me.grpMetalworks.Controls.Add(Me.optBtnMetallurgist)
         Me.grpMetalworks.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMetalworks.Location = New System.Drawing.Point(215, 276)
+        Me.grpMetalworks.Location = New System.Drawing.Point(218, 244)
         Me.grpMetalworks.Name = "grpMetalworks"
         Me.grpMetalworks.Size = New System.Drawing.Size(144, 154)
         Me.grpMetalworks.TabIndex = 2
@@ -12608,7 +11963,7 @@ Partial Class MainForm
         Me.grpSiege.Controls.Add(Me.optBtnArbalest)
         Me.grpSiege.Controls.Add(Me.optBtnTrebuchet)
         Me.grpSiege.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpSiege.Location = New System.Drawing.Point(515, 309)
+        Me.grpSiege.Location = New System.Drawing.Point(518, 277)
         Me.grpSiege.Name = "grpSiege"
         Me.grpSiege.Size = New System.Drawing.Size(144, 121)
         Me.grpSiege.TabIndex = 5
@@ -12629,7 +11984,7 @@ Partial Class MainForm
         Me.grpDecorations.Controls.Add(Me.optBtnDecoItems)
         Me.grpDecorations.Controls.Add(Me.optBtnStatues)
         Me.grpDecorations.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpDecorations.Location = New System.Drawing.Point(815, 83)
+        Me.grpDecorations.Location = New System.Drawing.Point(818, 51)
         Me.grpDecorations.Name = "grpDecorations"
         Me.grpDecorations.Size = New System.Drawing.Size(144, 347)
         Me.grpDecorations.TabIndex = 8
@@ -12647,7 +12002,7 @@ Partial Class MainForm
         Me.grpMagic.Controls.Add(Me.optBtnBlackMagic)
         Me.grpMagic.Controls.Add(Me.optBtnWarpstonePool)
         Me.grpMagic.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMagic.Location = New System.Drawing.Point(665, 83)
+        Me.grpMagic.Location = New System.Drawing.Point(668, 51)
         Me.grpMagic.Name = "grpMagic"
         Me.grpMagic.Size = New System.Drawing.Size(144, 209)
         Me.grpMagic.TabIndex = 6
@@ -12663,7 +12018,7 @@ Partial Class MainForm
         Me.grpVolcanic.Controls.Add(Me.optBtnGreatMagmaForge)
         Me.grpVolcanic.Controls.Add(Me.lblReqMagmaNote)
         Me.grpVolcanic.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpVolcanic.Location = New System.Drawing.Point(665, 309)
+        Me.grpVolcanic.Location = New System.Drawing.Point(668, 277)
         Me.grpVolcanic.Name = "grpVolcanic"
         Me.grpVolcanic.Size = New System.Drawing.Size(144, 121)
         Me.grpVolcanic.TabIndex = 7
@@ -12681,22 +12036,6 @@ Partial Class MainForm
         Me.lblReqMagmaNote.Text = "These buildings require a magma source."
         Me.lblReqMagmaNote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'tabMisc
-        '
-        Me.tabMisc.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabMisc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabMisc.Controls.Add(Me.grpExtraReactions)
-        Me.tabMisc.Controls.Add(Me.grpStandardization)
-        Me.tabMisc.Controls.Add(Me.grpBalancing)
-        Me.tabMisc.Controls.Add(Me.grpMiscFeatures)
-        Me.tabMisc.Controls.Add(Me.grpExtraMods)
-        Me.tabMisc.Location = New System.Drawing.Point(4, 27)
-        Me.tabMisc.Name = "tabMisc"
-        Me.tabMisc.Size = New System.Drawing.Size(1024, 576)
-        Me.tabMisc.TabIndex = 4
-        Me.tabMisc.Text = "Misc. Features"
-        Me.tabMisc.UseVisualStyleBackColor = true
-        '
         'grpExtraReactions
         '
         Me.grpExtraReactions.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -12712,7 +12051,7 @@ Partial Class MainForm
         Me.grpExtraReactions.Controls.Add(Me.optBtnScrewPress)
         Me.grpExtraReactions.Controls.Add(Me.optBtnSoapmaker)
         Me.grpExtraReactions.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpExtraReactions.Location = New System.Drawing.Point(440, 83)
+        Me.grpExtraReactions.Location = New System.Drawing.Point(443, 88)
         Me.grpExtraReactions.Name = "grpExtraReactions"
         Me.grpExtraReactions.Size = New System.Drawing.Size(144, 326)
         Me.grpExtraReactions.TabIndex = 2
@@ -12734,7 +12073,7 @@ Partial Class MainForm
         Me.grpBalancing.Controls.Add(Me.optBtnSecrets)
         Me.grpBalancing.Controls.Add(Me.optBtnDiseases)
         Me.grpBalancing.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpBalancing.Location = New System.Drawing.Point(590, 83)
+        Me.grpBalancing.Location = New System.Drawing.Point(593, 88)
         Me.grpBalancing.Name = "grpBalancing"
         Me.grpBalancing.Size = New System.Drawing.Size(144, 326)
         Me.grpBalancing.TabIndex = 3
@@ -12757,7 +12096,7 @@ Partial Class MainForm
         Me.grpMiscFeatures.Controls.Add(Me.optBtnBuildDimensions)
         Me.grpMiscFeatures.Controls.Add(Me.optBtnCombatLogs)
         Me.grpMiscFeatures.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpMiscFeatures.Location = New System.Drawing.Point(290, 83)
+        Me.grpMiscFeatures.Location = New System.Drawing.Point(293, 88)
         Me.grpMiscFeatures.Name = "grpMiscFeatures"
         Me.grpMiscFeatures.Size = New System.Drawing.Size(144, 326)
         Me.grpMiscFeatures.TabIndex = 1
@@ -12779,7 +12118,7 @@ Partial Class MainForm
         Me.grpExtraMods.Controls.Add(Me.lblModNote)
         Me.grpExtraMods.Controls.Add(Me.optBtnRendermax)
         Me.grpExtraMods.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpExtraMods.Location = New System.Drawing.Point(740, 83)
+        Me.grpExtraMods.Location = New System.Drawing.Point(743, 88)
         Me.grpExtraMods.Name = "grpExtraMods"
         Me.grpExtraMods.Size = New System.Drawing.Size(144, 326)
         Me.grpExtraMods.TabIndex = 4
@@ -12809,24 +12148,6 @@ Partial Class MainForm
         Me.lblModNote.Text = "Please mind that I did not write these mods and take no responsibility for bugs."
         Me.lblModNote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'tabWorldGen
-        '
-        Me.tabWorldGen.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabWorldGen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabWorldGen.Controls.Add(Me.grpWorldGenMisc)
-        Me.tabWorldGen.Controls.Add(Me.grpWorldGenHostiles)
-        Me.tabWorldGen.Controls.Add(Me.grpWorldGenCaves)
-        Me.tabWorldGen.Controls.Add(Me.grpWorldGenLayers)
-        Me.tabWorldGen.Controls.Add(Me.grpWorldGenAreas)
-        Me.tabWorldGen.Controls.Add(Me.cmbWorldGenIndex)
-        Me.tabWorldGen.Controls.Add(Me.lblWorldGenSelect)
-        Me.tabWorldGen.Location = New System.Drawing.Point(4, 27)
-        Me.tabWorldGen.Name = "tabWorldGen"
-        Me.tabWorldGen.Size = New System.Drawing.Size(1024, 576)
-        Me.tabWorldGen.TabIndex = 5
-        Me.tabWorldGen.Text = "World Gen."
-        Me.tabWorldGen.UseVisualStyleBackColor = true
-        '
         'grpWorldGenMisc
         '
         Me.grpWorldGenMisc.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -12843,7 +12164,7 @@ Partial Class MainForm
         Me.grpWorldGenMisc.Controls.Add(Me.optNumEndYear)
         Me.grpWorldGenMisc.Controls.Add(Me.optNumPopSize)
         Me.grpWorldGenMisc.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenMisc.Location = New System.Drawing.Point(627, 351)
+        Me.grpWorldGenMisc.Location = New System.Drawing.Point(630, 334)
         Me.grpWorldGenMisc.Name = "grpWorldGenMisc"
         Me.grpWorldGenMisc.Size = New System.Drawing.Size(234, 150)
         Me.grpWorldGenMisc.TabIndex = 6
@@ -12909,7 +12230,7 @@ Partial Class MainForm
         Me.grpWorldGenCaves.Controls.Add(Me.optNumOtherCaves)
         Me.grpWorldGenCaves.Controls.Add(Me.optBtnVisibleCaves)
         Me.grpWorldGenCaves.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenCaves.Location = New System.Drawing.Point(627, 218)
+        Me.grpWorldGenCaves.Location = New System.Drawing.Point(630, 201)
         Me.grpWorldGenCaves.Name = "grpWorldGenCaves"
         Me.grpWorldGenCaves.Size = New System.Drawing.Size(234, 128)
         Me.grpWorldGenCaves.TabIndex = 5
@@ -12973,7 +12294,7 @@ Partial Class MainForm
         Me.grpWorldGenLayers.Controls.Add(Me.optBtnMagmaLake)
         Me.grpWorldGenLayers.Controls.Add(Me.optBtnHFS)
         Me.grpWorldGenLayers.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenLayers.Location = New System.Drawing.Point(361, 83)
+        Me.grpWorldGenLayers.Location = New System.Drawing.Point(364, 66)
         Me.grpWorldGenLayers.Name = "grpWorldGenLayers"
         Me.grpWorldGenLayers.Size = New System.Drawing.Size(260, 418)
         Me.grpWorldGenLayers.TabIndex = 3
@@ -13082,7 +12403,7 @@ Partial Class MainForm
         Me.grpWorldGenAreas.Controls.Add(Me.optMaskGoodAreas)
         Me.grpWorldGenAreas.Controls.Add(Me.optMaskEvilAreas)
         Me.grpWorldGenAreas.ForeColor = System.Drawing.SystemColors.Window
-        Me.grpWorldGenAreas.Location = New System.Drawing.Point(627, 83)
+        Me.grpWorldGenAreas.Location = New System.Drawing.Point(630, 66)
         Me.grpWorldGenAreas.Name = "grpWorldGenAreas"
         Me.grpWorldGenAreas.Size = New System.Drawing.Size(234, 132)
         Me.grpWorldGenAreas.TabIndex = 4
@@ -13122,16 +12443,529 @@ Partial Class MainForm
         '
         Me.lblWorldGenSelect.BackColor = System.Drawing.Color.Transparent
         Me.lblWorldGenSelect.ForeColor = System.Drawing.Color.White
-        Me.lblWorldGenSelect.Location = New System.Drawing.Point(362, 55)
+        Me.lblWorldGenSelect.Location = New System.Drawing.Point(365, 38)
         Me.lblWorldGenSelect.Name = "lblWorldGenSelect"
         Me.lblWorldGenSelect.Size = New System.Drawing.Size(104, 23)
         Me.lblWorldGenSelect.TabIndex = 0
         Me.lblWorldGenSelect.Text = "Currently Editing"
         Me.lblWorldGenSelect.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'grpWorldSettings
+        '
+        Me.grpWorldSettings.BackColor = System.Drawing.Color.Transparent
+        Me.grpWorldSettings.BackgroundImage = CType(resources.GetObject("grpWorldSettings.BackgroundImage"),System.Drawing.Image)
+        Me.grpWorldSettings.Controls.Add(Me.optBtnTemperature)
+        Me.grpWorldSettings.Controls.Add(Me.optBtnWeather)
+        Me.grpWorldSettings.Controls.Add(Me.optBtnCaveins)
+        Me.grpWorldSettings.Controls.Add(Me.optBtnInvaders)
+        Me.grpWorldSettings.Controls.Add(Me.optBtnLiquidDepth)
+        Me.grpWorldSettings.Controls.Add(Me.optBtnAdvCenter)
+        Me.grpWorldSettings.Controls.Add(Me.optBtnAdvTraps)
+        Me.grpWorldSettings.Controls.Add(Me.optBtnPetCoffins)
+        Me.grpWorldSettings.Controls.Add(Me.optNumPopCap)
+        Me.grpWorldSettings.Controls.Add(Me.optMaskChildBabyCap)
+        Me.grpWorldSettings.Controls.Add(Me.lblPopCap)
+        Me.grpWorldSettings.Controls.Add(Me.lblChildCap)
+        Me.grpWorldSettings.ForeColor = System.Drawing.SystemColors.Window
+        Me.grpWorldSettings.Location = New System.Drawing.Point(81, 99)
+        Me.grpWorldSettings.Name = "grpWorldSettings"
+        Me.grpWorldSettings.Size = New System.Drawing.Size(169, 322)
+        Me.grpWorldSettings.TabIndex = 0
+        Me.grpWorldSettings.TabStop = false
+        Me.grpWorldSettings.Text = "World Settings"
+        '
+        'lblPopCap
+        '
+        Me.lblPopCap.BackColor = System.Drawing.Color.Transparent
+        Me.lblPopCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblPopCap.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblPopCap.Location = New System.Drawing.Point(-3, 259)
+        Me.lblPopCap.Name = "lblPopCap"
+        Me.lblPopCap.Size = New System.Drawing.Size(94, 20)
+        Me.lblPopCap.TabIndex = 8
+        Me.lblPopCap.Text = "Population Cap"
+        Me.lblPopCap.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'grpSaveSettings
+        '
+        Me.grpSaveSettings.BackColor = System.Drawing.Color.Transparent
+        Me.grpSaveSettings.BackgroundImage = CType(resources.GetObject("grpSaveSettings.BackgroundImage"),System.Drawing.Image)
+        Me.grpSaveSettings.Controls.Add(Me.optCbAutoSave)
+        Me.grpSaveSettings.Controls.Add(Me.optBtnAutoSavePause)
+        Me.grpSaveSettings.Controls.Add(Me.optBtnAutoBackup)
+        Me.grpSaveSettings.Controls.Add(Me.optBtnEmbarkSave)
+        Me.grpSaveSettings.Controls.Add(Me.optBtnCompressSaves)
+        Me.grpSaveSettings.Controls.Add(Me.optBtnPauseLoad)
+        Me.grpSaveSettings.Controls.Add(Me.lblAutoSave)
+        Me.grpSaveSettings.ForeColor = System.Drawing.SystemColors.Window
+        Me.grpSaveSettings.Location = New System.Drawing.Point(256, 99)
+        Me.grpSaveSettings.Name = "grpSaveSettings"
+        Me.grpSaveSettings.Size = New System.Drawing.Size(169, 226)
+        Me.grpSaveSettings.TabIndex = 1
+        Me.grpSaveSettings.TabStop = false
+        Me.grpSaveSettings.Text = "Save && Load Settings"
+        '
+        'optCbAutoSave
+        '
+        Me.optCbAutoSave.DropDownWidth = 150
+        Me.optCbAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optCbAutoSave.FormattingEnabled = true
+        Me.optCbAutoSave.Location = New System.Drawing.Point(76, 22)
+        Me.optCbAutoSave.Name = "optCbAutoSave"
+        FileListManager265.fileNames = Nothing
+        OptionList4.fileManager = FileListManager265
+        ComboItem17.display = "Never"
+        ComboItem17.value = "NONE"
+        ComboItem18.display = "Seasonal"
+        ComboItem18.value = "SEASONAL"
+        ComboItem19.display = "Yearly"
+        ComboItem19.value = "YEARLY"
+        OptionList4.itemList.Add(ComboItem17)
+        OptionList4.itemList.Add(ComboItem18)
+        OptionList4.itemList.Add(ComboItem19)
+        OptionManager265.loadFromDInit = true
+        OptionManager265.loadFromInit = false
+        OptionManager265.loadFromWorldGen = false
+        OptionList4.optionManager = OptionManager265
+        OptionSettingManager268.settingName = Nothing
+        OptionList4.settingManager = OptionSettingManager268
+        OptionList4.tokenName = "AUTOSAVE"
+        OptionList4.updateTileSets = false
+        Me.optCbAutoSave.options = OptionList4
+        Me.optCbAutoSave.Size = New System.Drawing.Size(75, 23)
+        Me.optCbAutoSave.TabIndex = 1
+        '
+        'lblAutoSave
+        '
+        Me.lblAutoSave.BackColor = System.Drawing.Color.Transparent
+        Me.lblAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblAutoSave.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblAutoSave.Location = New System.Drawing.Point(15, 22)
+        Me.lblAutoSave.Name = "lblAutoSave"
+        Me.lblAutoSave.Size = New System.Drawing.Size(62, 20)
+        Me.lblAutoSave.TabIndex = 0
+        Me.lblAutoSave.Text = "Auto-Save"
+        Me.lblAutoSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'grpMiscSettings
+        '
+        Me.grpMiscSettings.BackColor = System.Drawing.Color.Transparent
+        Me.grpMiscSettings.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpMiscSettings.Controls.Add(Me.lblKeybinds)
+        Me.grpMiscSettings.Controls.Add(Me.optCbKeybinds)
+        Me.grpMiscSettings.Controls.Add(Me.lblArena)
+        Me.grpMiscSettings.Controls.Add(Me.optCbArena)
+        Me.grpMiscSettings.Controls.Add(Me.lblWindowed)
+        Me.grpMiscSettings.Controls.Add(Me.optCbWindow)
+        Me.grpMiscSettings.Controls.Add(Me.lblPriority)
+        Me.grpMiscSettings.Controls.Add(Me.optCbPriority)
+        Me.grpMiscSettings.Controls.Add(Me.optBtnIntro)
+        Me.grpMiscSettings.ForeColor = System.Drawing.SystemColors.Window
+        Me.grpMiscSettings.Location = New System.Drawing.Point(606, 99)
+        Me.grpMiscSettings.Name = "grpMiscSettings"
+        Me.grpMiscSettings.Size = New System.Drawing.Size(169, 216)
+        Me.grpMiscSettings.TabIndex = 4
+        Me.grpMiscSettings.TabStop = false
+        Me.grpMiscSettings.Text = "Misc. Settings"
+        '
+        'lblKeybinds
+        '
+        Me.lblKeybinds.BackColor = System.Drawing.Color.Transparent
+        Me.lblKeybinds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblKeybinds.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblKeybinds.Location = New System.Drawing.Point(7, 21)
+        Me.lblKeybinds.Name = "lblKeybinds"
+        Me.lblKeybinds.Size = New System.Drawing.Size(61, 20)
+        Me.lblKeybinds.TabIndex = 0
+        Me.lblKeybinds.Text = "Keybinds"
+        Me.lblKeybinds.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblArena
+        '
+        Me.lblArena.BackColor = System.Drawing.Color.Transparent
+        Me.lblArena.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblArena.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblArena.Location = New System.Drawing.Point(7, 47)
+        Me.lblArena.Name = "lblArena"
+        Me.lblArena.Size = New System.Drawing.Size(61, 20)
+        Me.lblArena.TabIndex = 2
+        Me.lblArena.Text = "Arena"
+        Me.lblArena.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblWindowed
+        '
+        Me.lblWindowed.BackColor = System.Drawing.Color.Transparent
+        Me.lblWindowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblWindowed.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblWindowed.Location = New System.Drawing.Point(7, 73)
+        Me.lblWindowed.Name = "lblWindowed"
+        Me.lblWindowed.Size = New System.Drawing.Size(61, 20)
+        Me.lblWindowed.TabIndex = 4
+        Me.lblWindowed.Text = "Window"
+        Me.lblWindowed.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblPriority
+        '
+        Me.lblPriority.BackColor = System.Drawing.Color.Transparent
+        Me.lblPriority.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblPriority.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblPriority.Location = New System.Drawing.Point(10, 99)
+        Me.lblPriority.Name = "lblPriority"
+        Me.lblPriority.Size = New System.Drawing.Size(58, 21)
+        Me.lblPriority.TabIndex = 6
+        Me.lblPriority.Text = "Priority"
+        Me.lblPriority.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'grpGraphics
+        '
+        Me.grpGraphics.BackColor = System.Drawing.Color.Transparent
+        Me.grpGraphics.BackgroundImage = CType(resources.GetObject("grpGraphics.BackgroundImage"),System.Drawing.Image)
+        Me.grpGraphics.Controls.Add(Me.lblColors)
+        Me.grpGraphics.Controls.Add(Me.optCbColors)
+        Me.grpGraphics.Controls.Add(Me.optCbPrintMode)
+        Me.grpGraphics.Controls.Add(Me.optBtnSprites)
+        Me.grpGraphics.Controls.Add(Me.optBtnTruetype)
+        Me.grpGraphics.Controls.Add(Me.lblFonts)
+        Me.grpGraphics.Controls.Add(Me.optCbFonts)
+        Me.grpGraphics.Controls.Add(Me.lblGraphicsPack)
+        Me.grpGraphics.Controls.Add(Me.cmbTileSets)
+        Me.grpGraphics.Controls.Add(Me.btnTilesetPreview)
+        Me.grpGraphics.Controls.Add(Me.btnUpdateSaves)
+        Me.grpGraphics.Controls.Add(Me.lblPrintMode)
+        Me.grpGraphics.ForeColor = System.Drawing.SystemColors.Window
+        Me.grpGraphics.Location = New System.Drawing.Point(431, 99)
+        Me.grpGraphics.Name = "grpGraphics"
+        Me.grpGraphics.Size = New System.Drawing.Size(169, 322)
+        Me.grpGraphics.TabIndex = 3
+        Me.grpGraphics.TabStop = false
+        Me.grpGraphics.Text = "Graphic Settings"
+        '
+        'lblColors
+        '
+        Me.lblColors.BackColor = System.Drawing.Color.Transparent
+        Me.lblColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblColors.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblColors.Location = New System.Drawing.Point(8, 21)
+        Me.lblColors.Name = "lblColors"
+        Me.lblColors.Size = New System.Drawing.Size(61, 20)
+        Me.lblColors.TabIndex = 0
+        Me.lblColors.Text = "Color"
+        Me.lblColors.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'optCbColors
+        '
+        Me.optCbColors.DropDownWidth = 150
+        Me.optCbColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.optCbColors.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optCbColors.FormattingEnabled = true
+        Me.optCbColors.Location = New System.Drawing.Point(72, 22)
+        Me.optCbColors.MaxDropDownItems = 50
+        Me.optCbColors.Name = "optCbColors"
+        OptionSingleFileReplace4.fileName = "colors.txt"
+        ComboFileItem7.display = "BLUscale"
+        ComboFileItem7.fileName = "colors_BLUscale.txt"
+        ComboFileItem7.value = "BLUSCALE"
+        ComboFileItem8.display = "CLA"
+        ComboFileItem8.fileName = "colors_CLA.txt"
+        ComboFileItem8.value = "CLA"
+        ComboFileItem9.display = "Default"
+        ComboFileItem9.fileName = "colors_default.txt"
+        ComboFileItem9.value = "VANILLA"
+        ComboFileItem10.display = "Default+"
+        ComboFileItem10.fileName = "colors_defaultPlus.txt"
+        ComboFileItem10.value = "DEFAULT+"
+        ComboFileItem11.display = "Ironhand"
+        ComboFileItem11.fileName = "colors_Ironhand.txt"
+        ComboFileItem11.value = "IRONHAND"
+        ComboFileItem12.display = "Jolly Bastion"
+        ComboFileItem12.fileName = "colors_JollyBastion.txt"
+        ComboFileItem12.value = "JOLLYBASTION"
+        ComboFileItem13.display = "Jolly Bastion Warm"
+        ComboFileItem13.fileName = "colors_JollyBastionWarm.txt"
+        ComboFileItem13.value = "JOLLYWARM"
+        ComboFileItem14.display = "KRM-SOV 1"
+        ComboFileItem14.fileName = "colors_KRMSOV1.txt"
+        ComboFileItem14.value = "KRMSOV1"
+        ComboFileItem15.display = "KRM-SOV 2"
+        ComboFileItem15.fileName = "colors_KRMSOV2.txt"
+        ComboFileItem15.value = "KRMSOV2"
+        ComboFileItem16.display = "KRM-SOV 3"
+        ComboFileItem16.fileName = "colors_KRMSOV3.txt"
+        ComboFileItem16.value = "KRMSOV3"
+        ComboFileItem17.display = "Matrix"
+        ComboFileItem17.fileName = "colors_Matrix.txt"
+        ComboFileItem17.value = "MATRIX"
+        ComboFileItem18.display = "MAT-SOV 1"
+        ComboFileItem18.fileName = "colors_MATSOV1.txt"
+        ComboFileItem18.value = "MATSOV1"
+        ComboFileItem19.display = "Natural"
+        ComboFileItem19.fileName = "colors_Natural.txt"
+        ComboFileItem19.value = "NATURAL"
+        ComboFileItem20.display = "NES"
+        ComboFileItem20.fileName = "colors_NES.txt"
+        ComboFileItem20.value = "NES"
+        ComboFileItem21.display = "Obsidian Soul"
+        ComboFileItem21.fileName = "colors_Obsidian.txt"
+        ComboFileItem21.value = "OBSIDIAN"
+        ComboFileItem22.display = "Phoebus"
+        ComboFileItem22.fileName = "colors_Phoebus.txt"
+        ComboFileItem22.value = "PHOEBUS"
+        ComboFileItem23.display = "SOV.G.1"
+        ComboFileItem23.fileName = "colors_GRYSOV1.txt"
+        ComboFileItem23.value = "GRYSOV1"
+        ComboFileItem24.display = "Spacefox"
+        ComboFileItem24.fileName = "colors_Spacefox.txt"
+        ComboFileItem24.value = "SPACEFOX"
+        ComboFileItem25.display = "Tocky"
+        ComboFileItem25.fileName = "colors_Tocky.txt"
+        ComboFileItem25.value = "TOCKY"
+        ComboFileItem26.display = "Toxic Warm"
+        ComboFileItem26.fileName = "colors_ToxicWarm.txt"
+        ComboFileItem26.value = "TOXICWARM"
+        ComboFileItem27.display = "Warm"
+        ComboFileItem27.fileName = "colors_Warm.txt"
+        ComboFileItem27.value = "WARM"
+        ComboFileItem28.display = "Wasteland"
+        ComboFileItem28.fileName = "colors_Wasteland.txt"
+        ComboFileItem28.value = "WASTELAND"
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem7)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem8)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem9)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem10)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem11)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem12)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem13)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem14)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem15)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem16)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem17)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem18)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem19)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem20)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem21)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem22)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem23)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem24)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem25)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem26)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem27)
+        OptionSingleFileReplace4.itemList.Add(ComboFileItem28)
+        OptionSettingManager269.settingName = "COLORS"
+        OptionSingleFileReplace4.settingManager = OptionSettingManager269
+        Me.optCbColors.options = OptionSingleFileReplace4
+        Me.optCbColors.Size = New System.Drawing.Size(91, 23)
+        Me.optCbColors.TabIndex = 1
+        '
+        'lblFonts
+        '
+        Me.lblFonts.BackColor = System.Drawing.Color.Transparent
+        Me.lblFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblFonts.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblFonts.Location = New System.Drawing.Point(21, 72)
+        Me.lblFonts.Name = "lblFonts"
+        Me.lblFonts.Size = New System.Drawing.Size(48, 20)
+        Me.lblFonts.TabIndex = 4
+        Me.lblFonts.Text = "Font"
+        Me.lblFonts.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblGraphicsPack
+        '
+        Me.lblGraphicsPack.BackColor = System.Drawing.Color.Transparent
+        Me.lblGraphicsPack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblGraphicsPack.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblGraphicsPack.Location = New System.Drawing.Point(8, 197)
+        Me.lblGraphicsPack.Name = "lblGraphicsPack"
+        Me.lblGraphicsPack.Size = New System.Drawing.Size(61, 20)
+        Me.lblGraphicsPack.TabIndex = 8
+        Me.lblGraphicsPack.Text = "Tileset"
+        Me.lblGraphicsPack.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cmbTileSets
+        '
+        Me.cmbTileSets.DropDownWidth = 150
+        Me.cmbTileSets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbTileSets.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.cmbTileSets.FormattingEnabled = true
+        Me.cmbTileSets.Location = New System.Drawing.Point(72, 197)
+        Me.cmbTileSets.Name = "cmbTileSets"
+        Me.cmbTileSets.Size = New System.Drawing.Size(91, 23)
+        Me.cmbTileSets.TabIndex = 9
+        '
+        'btnTilesetPreview
+        '
+        Me.btnTilesetPreview.BackColor = System.Drawing.Color.Transparent
+        Me.btnTilesetPreview.BackgroundImage = CType(resources.GetObject("btnTilesetPreview.BackgroundImage"),System.Drawing.Image)
+        Me.btnTilesetPreview.FlatAppearance.BorderSize = 0
+        Me.btnTilesetPreview.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTilesetPreview.ForeColor = System.Drawing.Color.White
+        Me.btnTilesetPreview.Location = New System.Drawing.Point(17, 229)
+        Me.btnTilesetPreview.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnTilesetPreview.Name = "btnTilesetPreview"
+        Me.btnTilesetPreview.Size = New System.Drawing.Size(134, 27)
+        Me.btnTilesetPreview.TabIndex = 11
+        Me.btnTilesetPreview.Text = "Tilesets Preview"
+        Me.btnTilesetPreview.UseVisualStyleBackColor = false
+        '
+        'lblPrintMode
+        '
+        Me.lblPrintMode.BackColor = System.Drawing.Color.Transparent
+        Me.lblPrintMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblPrintMode.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblPrintMode.Location = New System.Drawing.Point(3, 47)
+        Me.lblPrintMode.Name = "lblPrintMode"
+        Me.lblPrintMode.Size = New System.Drawing.Size(66, 20)
+        Me.lblPrintMode.TabIndex = 2
+        Me.lblPrintMode.Text = "Print Mode"
+        Me.lblPrintMode.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'grpFps
+        '
+        Me.grpFps.BackColor = System.Drawing.Color.Transparent
+        Me.grpFps.BackgroundImage = CType(resources.GetObject("grpFps.BackgroundImage"),System.Drawing.Image)
+        Me.grpFps.Controls.Add(Me.optBtnFps)
+        Me.grpFps.Controls.Add(Me.lblGraphicsCap)
+        Me.grpFps.Controls.Add(Me.optNumGFPS)
+        Me.grpFps.Controls.Add(Me.lblFpsCap)
+        Me.grpFps.Controls.Add(Me.optNumFPSCap)
+        Me.grpFps.ForeColor = System.Drawing.SystemColors.Window
+        Me.grpFps.Location = New System.Drawing.Point(781, 99)
+        Me.grpFps.Name = "grpFps"
+        Me.grpFps.Size = New System.Drawing.Size(169, 100)
+        Me.grpFps.TabIndex = 6
+        Me.grpFps.TabStop = false
+        Me.grpFps.Text = "FPS Settings"
+        '
+        'lblGraphicsCap
+        '
+        Me.lblGraphicsCap.BackColor = System.Drawing.Color.Transparent
+        Me.lblGraphicsCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblGraphicsCap.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblGraphicsCap.Location = New System.Drawing.Point(6, 48)
+        Me.lblGraphicsCap.Name = "lblGraphicsCap"
+        Me.lblGraphicsCap.Size = New System.Drawing.Size(88, 20)
+        Me.lblGraphicsCap.TabIndex = 1
+        Me.lblGraphicsCap.Text = "Graphics Cap"
+        Me.lblGraphicsCap.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblFpsCap
+        '
+        Me.lblFpsCap.BackColor = System.Drawing.Color.Transparent
+        Me.lblFpsCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblFpsCap.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblFpsCap.Location = New System.Drawing.Point(6, 72)
+        Me.lblFpsCap.Name = "lblFpsCap"
+        Me.lblFpsCap.Size = New System.Drawing.Size(88, 20)
+        Me.lblFpsCap.TabIndex = 3
+        Me.lblFpsCap.Text = "FPS Cap"
+        Me.lblFpsCap.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'grpSound
+        '
+        Me.grpSound.BackColor = System.Drawing.Color.Transparent
+        Me.grpSound.BackgroundImage = CType(resources.GetObject("grpSound.BackgroundImage"),System.Drawing.Image)
+        Me.grpSound.Controls.Add(Me.optBtnSound)
+        Me.grpSound.Controls.Add(Me.lblVolume)
+        Me.grpSound.Controls.Add(Me.optNumVolume)
+        Me.grpSound.ForeColor = System.Drawing.SystemColors.Window
+        Me.grpSound.Location = New System.Drawing.Point(781, 205)
+        Me.grpSound.Name = "grpSound"
+        Me.grpSound.Size = New System.Drawing.Size(169, 81)
+        Me.grpSound.TabIndex = 7
+        Me.grpSound.TabStop = false
+        Me.grpSound.Text = "Sound Settings"
+        '
+        'lblVolume
+        '
+        Me.lblVolume.BackColor = System.Drawing.Color.Transparent
+        Me.lblVolume.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblVolume.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblVolume.Location = New System.Drawing.Point(6, 48)
+        Me.lblVolume.Name = "lblVolume"
+        Me.lblVolume.Size = New System.Drawing.Size(88, 20)
+        Me.lblVolume.TabIndex = 1
+        Me.lblVolume.Text = "Volume"
+        Me.lblVolume.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'optNumVolume
+        '
+        Me.optNumVolume.BackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optNumVolume.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.optNumVolume.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumVolume.ForeColor = System.Drawing.Color.FromArgb(CType(CType(21,Byte),Integer), CType(CType(66,Byte),Integer), CType(CType(139,Byte),Integer))
+        Me.optNumVolume.Increment = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.optNumVolume.Location = New System.Drawing.Point(100, 49)
+        Me.optNumVolume.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.optNumVolume.Name = "optNumVolume"
+        FileListManager266.fileNames = Nothing
+        OptionSingle61.fileManager = FileListManager266
+        OptionManager266.loadFromDInit = false
+        OptionManager266.loadFromInit = true
+        OptionManager266.loadFromWorldGen = false
+        OptionSingle61.optionManager = OptionManager266
+        OptionSettingManager270.settingName = Nothing
+        OptionSingle61.settingManager = OptionSettingManager270
+        OptionSingle61.tokenName = "VOLUME"
+        OptionSingle61.updateTileSets = false
+        Me.optNumVolume.options = OptionSingle61
+        Me.optNumVolume.Size = New System.Drawing.Size(51, 19)
+        Me.optNumVolume.TabIndex = 2
+        Me.optNumVolume.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'grpEmbark
+        '
+        Me.grpEmbark.BackColor = System.Drawing.Color.Transparent
+        Me.grpEmbark.BackgroundImage = CType(resources.GetObject("grpEmbark.BackgroundImage"),System.Drawing.Image)
+        Me.grpEmbark.Controls.Add(Me.optBtnEmbarkWarn)
+        Me.grpEmbark.Controls.Add(Me.lblEmbarkSize)
+        Me.grpEmbark.Controls.Add(Me.optMaskEmbarkSize)
+        Me.grpEmbark.ForeColor = System.Drawing.SystemColors.Window
+        Me.grpEmbark.Location = New System.Drawing.Point(606, 321)
+        Me.grpEmbark.Name = "grpEmbark"
+        Me.grpEmbark.Size = New System.Drawing.Size(169, 100)
+        Me.grpEmbark.TabIndex = 5
+        Me.grpEmbark.TabStop = false
+        Me.grpEmbark.Text = "Embark Settings"
+        '
+        'lblEmbarkSize
+        '
+        Me.lblEmbarkSize.BackColor = System.Drawing.Color.Transparent
+        Me.lblEmbarkSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblEmbarkSize.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblEmbarkSize.Location = New System.Drawing.Point(10, 58)
+        Me.lblEmbarkSize.Name = "lblEmbarkSize"
+        Me.lblEmbarkSize.Size = New System.Drawing.Size(74, 21)
+        Me.lblEmbarkSize.TabIndex = 1
+        Me.lblEmbarkSize.Text = "Embark Size"
+        Me.lblEmbarkSize.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'grpAnnouncements
+        '
+        Me.grpAnnouncements.BackColor = System.Drawing.Color.Transparent
+        Me.grpAnnouncements.BackgroundImage = CType(resources.GetObject("grpAnnouncements.BackgroundImage"),System.Drawing.Image)
+        Me.grpAnnouncements.Controls.Add(Me.optBtnTransformMsgs)
+        Me.grpAnnouncements.Controls.Add(Me.optBtnDigStop)
+        Me.grpAnnouncements.ForeColor = System.Drawing.SystemColors.Window
+        Me.grpAnnouncements.Location = New System.Drawing.Point(256, 331)
+        Me.grpAnnouncements.Name = "grpAnnouncements"
+        Me.grpAnnouncements.Size = New System.Drawing.Size(169, 90)
+        Me.grpAnnouncements.TabIndex = 2
+        Me.grpAnnouncements.TabStop = false
+        Me.grpAnnouncements.Text = "Announcement Settings"
+        '
+        'tileSetColorPreviewer
+        '
+        Me.tileSetColorPreviewer.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.tileSetColorPreviewer.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.tileSetColorPreviewer.CausesValidation = false
+        Me.tileSetColorPreviewer.Location = New System.Drawing.Point(395, 33)
+        Me.tileSetColorPreviewer.Name = "tileSetColorPreviewer"
+        Me.tileSetColorPreviewer.Size = New System.Drawing.Size(240, 60)
+        Me.tileSetColorPreviewer.TabIndex = 173
+        Me.tileSetColorPreviewer.Visible = false
+        '
         'ribbonMain
         '
-        Me.ribbonMain.BorderMode = System.Windows.Forms.RibbonWindowMode.InsideWindow
         Me.ribbonMain.CaptionBarVisible = false
         Me.ribbonMain.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.ribbonMain.Location = New System.Drawing.Point(0, 0)
@@ -13151,7 +12985,7 @@ Partial Class MainForm
         Me.ribbonMain.OrbVisible = false
         Me.ribbonMain.PanelCaptionHeight = 0
         Me.ribbonMain.RibbonTabFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.ribbonMain.Size = New System.Drawing.Size(1035, 72)
+        Me.ribbonMain.Size = New System.Drawing.Size(1028, 72)
         Me.ribbonMain.TabIndex = 100
         Me.ribbonMain.Tabs.Add(Me.rTabGeneral)
         Me.ribbonMain.Tabs.Add(Me.rTabUtilities)
@@ -13881,14 +13715,170 @@ Partial Class MainForm
         Me.optNumHFSLevels.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.optNumHFSLevels.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
+        'tabMain
+        '
+        Me.tabMain.AllowDrop = true
+        Me.tabMain.BackgroundColor = System.Drawing.Color.Transparent
+        Me.tabMain.BackgroundHatcher.HatchType = System.Drawing.Drawing2D.HatchStyle.DashedVertical
+        Me.tabMain.BorderColor = System.Drawing.Color.Transparent
+        Me.tabMain.Controls.Add(Me.tabSettings2)
+        Me.tabMain.Controls.Add(Me.tabCivs2)
+        Me.tabMain.Controls.Add(Me.tabOtherCreatures2)
+        Me.tabMain.Controls.Add(Me.tabWorkshops2)
+        Me.tabMain.Controls.Add(Me.tabFurnaces2)
+        Me.tabMain.Controls.Add(Me.tabMisc2)
+        Me.tabMain.Controls.Add(Me.tabWorldGen2)
+        Me.tabMain.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tabMain.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.tabMain.IsCaptionVisible = false
+        Me.tabMain.IsDocumentTabStyle = true
+        Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
+        Me.tabMain.Location = New System.Drawing.Point(0, 72)
+        Me.tabMain.Name = "tabMain"
+        Me.tabMain.SelectedIndex = 0
+        Me.tabMain.Size = New System.Drawing.Size(1028, 586)
+        Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
+        Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
+        Me.tabMain.TabGradient.ColorStart = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
+        Me.tabMain.TabGradient.GradientStyle = System.Drawing.Drawing2D.LinearGradientMode.Vertical
+        Me.tabMain.TabGradient.TabPageSelectedTextColor = System.Drawing.Color.WhiteSmoke
+        Me.tabMain.TabGradient.TabPageTextColor = System.Drawing.Color.WhiteSmoke
+        Me.tabMain.TabIndex = 101
+        Me.tabMain.TabStyles = KRBTabControl.KRBTabControl.TabStyle.VS2010
+        Me.tabMain.UpDownStyle = KRBTabControl.KRBTabControl.UpDown32Style.[Default]
+        '
+        'tabSettings2
+        '
+        Me.tabSettings2.BackColor = System.Drawing.Color.Transparent
+        Me.tabSettings2.Controls.Add(Me.grpWorldSettings)
+        Me.tabSettings2.Controls.Add(Me.tileSetColorPreviewer)
+        Me.tabSettings2.Controls.Add(Me.grpSaveSettings)
+        Me.tabSettings2.Controls.Add(Me.grpAnnouncements)
+        Me.tabSettings2.Controls.Add(Me.grpMiscSettings)
+        Me.tabSettings2.Controls.Add(Me.grpEmbark)
+        Me.tabSettings2.Controls.Add(Me.grpGraphics)
+        Me.tabSettings2.Controls.Add(Me.grpSound)
+        Me.tabSettings2.Controls.Add(Me.grpFps)
+        Me.tabSettings2.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.tabSettings2.IsClosable = false
+        Me.tabSettings2.Location = New System.Drawing.Point(1, 32)
+        Me.tabSettings2.Name = "tabSettings2"
+        Me.tabSettings2.Size = New System.Drawing.Size(1026, 549)
+        Me.tabSettings2.TabIndex = 0
+        Me.tabSettings2.Text = "Settings"
+        '
+        'tabCivs2
+        '
+        Me.tabCivs2.BackColor = System.Drawing.Color.Transparent
+        Me.tabCivs2.Controls.Add(Me.panCivTable)
+        Me.tabCivs2.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabCivs2.IsClosable = false
+        Me.tabCivs2.Location = New System.Drawing.Point(1, 32)
+        Me.tabCivs2.Name = "tabCivs2"
+        Me.tabCivs2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabCivs2.TabIndex = 1
+        Me.tabCivs2.Text = "Civilizations"
+        '
+        'tabOtherCreatures2
+        '
+        Me.tabOtherCreatures2.BackColor = System.Drawing.Color.Transparent
+        Me.tabOtherCreatures2.Controls.Add(Me.grpExtraCreatures)
+        Me.tabOtherCreatures2.Controls.Add(Me.grpFortressDefense)
+        Me.tabOtherCreatures2.Controls.Add(Me.grpRandomCreatures)
+        Me.tabOtherCreatures2.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabOtherCreatures2.IsClosable = false
+        Me.tabOtherCreatures2.Location = New System.Drawing.Point(1, 32)
+        Me.tabOtherCreatures2.Name = "tabOtherCreatures2"
+        Me.tabOtherCreatures2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabOtherCreatures2.TabIndex = 2
+        Me.tabOtherCreatures2.Text = "Other Creatures"
+        '
+        'tabWorkshops2
+        '
+        Me.tabWorkshops2.BackColor = System.Drawing.Color.Transparent
+        Me.tabWorkshops2.Controls.Add(Me.grpMachinery)
+        Me.tabWorkshops2.Controls.Add(Me.grpWorkshops)
+        Me.tabWorkshops2.Controls.Add(Me.grpAdministration)
+        Me.tabWorkshops2.Controls.Add(Me.grpMiscBuildings)
+        Me.tabWorkshops2.Controls.Add(Me.grpLibrary)
+        Me.tabWorkshops2.Controls.Add(Me.grpFarming)
+        Me.tabWorkshops2.Controls.Add(Me.grpDiplomacy)
+        Me.tabWorkshops2.Controls.Add(Me.grpStudies)
+        Me.tabWorkshops2.Controls.Add(Me.grpReligion)
+        Me.tabWorkshops2.Controls.Add(Me.grpTrade)
+        Me.tabWorkshops2.Controls.Add(Me.grpLaboratories)
+        Me.tabWorkshops2.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabWorkshops2.IsClosable = false
+        Me.tabWorkshops2.Location = New System.Drawing.Point(1, 32)
+        Me.tabWorkshops2.Name = "tabWorkshops2"
+        Me.tabWorkshops2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabWorkshops2.TabIndex = 3
+        Me.tabWorkshops2.Text = "Workshops"
+        '
+        'tabFurnaces2
+        '
+        Me.tabFurnaces2.BackColor = System.Drawing.Color.Transparent
+        Me.tabFurnaces2.Controls.Add(Me.grpIllumination)
+        Me.tabFurnaces2.Controls.Add(Me.grpSmithing)
+        Me.tabFurnaces2.Controls.Add(Me.grpVolcanic)
+        Me.tabFurnaces2.Controls.Add(Me.grpMiscFurnaces)
+        Me.tabFurnaces2.Controls.Add(Me.grpMagic)
+        Me.tabFurnaces2.Controls.Add(Me.grpUpgrades)
+        Me.tabFurnaces2.Controls.Add(Me.grpDecorations)
+        Me.tabFurnaces2.Controls.Add(Me.grpMetalworks)
+        Me.tabFurnaces2.Controls.Add(Me.grpSiege)
+        Me.tabFurnaces2.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabFurnaces2.IsClosable = false
+        Me.tabFurnaces2.Location = New System.Drawing.Point(1, 32)
+        Me.tabFurnaces2.Name = "tabFurnaces2"
+        Me.tabFurnaces2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabFurnaces2.TabIndex = 4
+        Me.tabFurnaces2.Text = "Furnaces"
+        '
+        'tabMisc2
+        '
+        Me.tabMisc2.BackColor = System.Drawing.Color.Transparent
+        Me.tabMisc2.Controls.Add(Me.grpExtraReactions)
+        Me.tabMisc2.Controls.Add(Me.grpStandardization)
+        Me.tabMisc2.Controls.Add(Me.grpExtraMods)
+        Me.tabMisc2.Controls.Add(Me.grpBalancing)
+        Me.tabMisc2.Controls.Add(Me.grpMiscFeatures)
+        Me.tabMisc2.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabMisc2.IsClosable = false
+        Me.tabMisc2.Location = New System.Drawing.Point(1, 32)
+        Me.tabMisc2.Name = "tabMisc2"
+        Me.tabMisc2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabMisc2.TabIndex = 5
+        Me.tabMisc2.Text = "Misc. Features"
+        '
+        'tabWorldGen2
+        '
+        Me.tabWorldGen2.BackColor = System.Drawing.Color.Transparent
+        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenMisc)
+        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenHostiles)
+        Me.tabWorldGen2.Controls.Add(Me.lblWorldGenSelect)
+        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenCaves)
+        Me.tabWorldGen2.Controls.Add(Me.cmbWorldGenIndex)
+        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenLayers)
+        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenAreas)
+        Me.tabWorldGen2.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabWorldGen2.IsClosable = false
+        Me.tabWorldGen2.Location = New System.Drawing.Point(1, 32)
+        Me.tabWorldGen2.Name = "tabWorldGen2"
+        Me.tabWorldGen2.Size = New System.Drawing.Size(1026, 537)
+        Me.tabWorldGen2.TabIndex = 6
+        Me.tabWorldGen2.Text = "World Gen."
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(1035, 684)
-        Me.Controls.Add(Me.ribbonMain)
+        Me.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.ClientSize = New System.Drawing.Size(1028, 658)
         Me.Controls.Add(Me.tabMain)
+        Me.Controls.Add(Me.ribbonMain)
         Me.DoubleBuffered = true
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.ForeColor = System.Drawing.Color.WhiteSmoke
@@ -13938,27 +13928,11 @@ Partial Class MainForm
         CType(Me.optNumAboveCav3,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.optNumAboveMagma,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.optNumAboveHFS,System.ComponentModel.ISupportInitialize).EndInit
-        Me.tabMain.ResumeLayout(false)
-        Me.tabSettings.ResumeLayout(false)
-        Me.grpWorldSettings.ResumeLayout(false)
-        Me.grpWorldSettings.PerformLayout
-        Me.grpSaveSettings.ResumeLayout(false)
-        Me.grpMiscSettings.ResumeLayout(false)
-        Me.grpGraphics.ResumeLayout(false)
-        Me.grpFps.ResumeLayout(false)
-        Me.grpSound.ResumeLayout(false)
-        CType(Me.optNumVolume,System.ComponentModel.ISupportInitialize).EndInit
-        Me.grpEmbark.ResumeLayout(false)
-        Me.grpEmbark.PerformLayout
-        Me.grpAnnouncements.ResumeLayout(false)
-        Me.tabCivs.ResumeLayout(false)
         Me.panCivTable.ResumeLayout(false)
         Me.tableLayoutCivs.ResumeLayout(false)
-        Me.tabCreaturesOther.ResumeLayout(false)
         Me.grpExtraCreatures.ResumeLayout(false)
         Me.grpRandomCreatures.ResumeLayout(false)
         Me.grpFortressDefense.ResumeLayout(false)
-        Me.tabWorkshops.ResumeLayout(false)
         Me.grpMachinery.ResumeLayout(false)
         Me.grpWorkshops.ResumeLayout(false)
         Me.grpMiscBuildings.ResumeLayout(false)
@@ -13970,7 +13944,6 @@ Partial Class MainForm
         Me.grpDiplomacy.ResumeLayout(false)
         Me.grpLibrary.ResumeLayout(false)
         Me.grpAdministration.ResumeLayout(false)
-        Me.tabFurnaces.ResumeLayout(false)
         Me.grpIllumination.ResumeLayout(false)
         Me.grpSmithing.ResumeLayout(false)
         Me.grpMiscFurnaces.ResumeLayout(false)
@@ -13980,19 +13953,36 @@ Partial Class MainForm
         Me.grpDecorations.ResumeLayout(false)
         Me.grpMagic.ResumeLayout(false)
         Me.grpVolcanic.ResumeLayout(false)
-        Me.tabMisc.ResumeLayout(false)
         Me.grpExtraReactions.ResumeLayout(false)
         Me.grpBalancing.ResumeLayout(false)
         Me.grpMiscFeatures.ResumeLayout(false)
         Me.grpExtraMods.ResumeLayout(false)
         Me.grpExtraMods.PerformLayout
-        Me.tabWorldGen.ResumeLayout(false)
         Me.grpWorldGenMisc.ResumeLayout(false)
         Me.grpWorldGenCaves.ResumeLayout(false)
         Me.grpWorldGenLayers.ResumeLayout(false)
         Me.grpWorldGenAreas.ResumeLayout(false)
         Me.grpWorldGenAreas.PerformLayout
+        Me.grpWorldSettings.ResumeLayout(false)
+        Me.grpWorldSettings.PerformLayout
+        Me.grpSaveSettings.ResumeLayout(false)
+        Me.grpMiscSettings.ResumeLayout(false)
+        Me.grpGraphics.ResumeLayout(false)
+        Me.grpFps.ResumeLayout(false)
+        Me.grpSound.ResumeLayout(false)
+        CType(Me.optNumVolume,System.ComponentModel.ISupportInitialize).EndInit
+        Me.grpEmbark.ResumeLayout(false)
+        Me.grpEmbark.PerformLayout
+        Me.grpAnnouncements.ResumeLayout(false)
         CType(Me.optNumHFSLevels,System.ComponentModel.ISupportInitialize).EndInit
+        Me.tabMain.ResumeLayout(false)
+        Me.tabSettings2.ResumeLayout(false)
+        Me.tabCivs2.ResumeLayout(false)
+        Me.tabOtherCreatures2.ResumeLayout(false)
+        Me.tabWorkshops2.ResumeLayout(false)
+        Me.tabFurnaces2.ResumeLayout(false)
+        Me.tabMisc2.ResumeLayout(false)
+        Me.tabWorldGen2.ResumeLayout(false)
         Me.ResumeLayout(false)
 
 End Sub
@@ -14374,13 +14364,6 @@ End Sub
     Friend WithEvents lblPopCap As System.Windows.Forms.Label
     Friend WithEvents lblChildCap As System.Windows.Forms.Label
     Friend WithEvents tileSetColorPreviewer As MasterworkDwarfFortress.colorViewer
-    Friend WithEvents tabMain As System.Windows.Forms.CustomTabControl
-    Friend WithEvents tabSettings As System.Windows.Forms.TabPage
-    Friend WithEvents tabCivs As System.Windows.Forms.TabPage
-    Friend WithEvents tabWorkshops As System.Windows.Forms.TabPage
-    Friend WithEvents tabFurnaces As System.Windows.Forms.TabPage
-    Friend WithEvents tabMisc As System.Windows.Forms.TabPage
-    Friend WithEvents tabWorldGen As System.Windows.Forms.TabPage
     Friend WithEvents ribbonMain As System.Windows.Forms.Ribbon
     Friend WithEvents rTabGeneral As System.Windows.Forms.RibbonTab
     Friend WithEvents rPanelGeneral As System.Windows.Forms.RibbonPanel
@@ -14465,7 +14448,6 @@ End Sub
     Friend WithEvents rBtnThemeDefault As System.Windows.Forms.RibbonButton
     Friend WithEvents rBtnThemeBlue As System.Windows.Forms.RibbonButton
     Friend WithEvents RibbonSeparator4 As System.Windows.Forms.RibbonSeparator
-    Friend WithEvents tabCreaturesOther As System.Windows.Forms.TabPage
     Friend WithEvents tableLayoutCivs As MasterworkDwarfFortress.mwTableLayout
     Friend WithEvents lblCivActive As System.Windows.Forms.Label
     Friend WithEvents lblCivCaravans As System.Windows.Forms.Label
@@ -14497,5 +14479,13 @@ End Sub
     Friend WithEvents optCbPatternInvaderSkills As MasterworkDwarfFortress.optionComboPatternToken
     Friend WithEvents lblInvaderSkills As System.Windows.Forms.Label
     Friend WithEvents panCivTable As System.Windows.Forms.Panel
+    Friend WithEvents tabMain As KRBTabControl.KRBTabControl
+    Friend WithEvents tabSettings2 As KRBTabControl.TabPageEx
+    Friend WithEvents tabCivs2 As KRBTabControl.TabPageEx
+    Friend WithEvents tabOtherCreatures2 As KRBTabControl.TabPageEx
+    Friend WithEvents tabWorkshops2 As KRBTabControl.TabPageEx
+    Friend WithEvents tabFurnaces2 As KRBTabControl.TabPageEx
+    Friend WithEvents tabMisc2 As KRBTabControl.TabPageEx
+    Friend WithEvents tabWorldGen2 As KRBTabControl.TabPageEx
 
 End Class
