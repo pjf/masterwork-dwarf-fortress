@@ -403,7 +403,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
    
 [INORGANIC:TAR]
 [STATE_NAME_ADJ:ALL_SOLID:tar][DISPLAY_COLOR:7:0:0][TILE:176]
-[MATERIAL_VALUE:10][REACTION_CLASS:CORPSE]
+[MATERIAL_VALUE:10]
 [STATE_NAME:ALL_SOLID:tar]
        [STATE_ADJ:ALL_SOLID:tar]
        [STATE_NAME:LIQUID:tar]
@@ -413,7 +413,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
    
 [INORGANIC:PITCH]
 [STATE_NAME_ADJ:ALL_SOLID:pitch][DISPLAY_COLOR:7:0:0][TILE:176]
-[MATERIAL_VALUE:10][REACTION_CLASS:CORPSE]
+[MATERIAL_VALUE:10]
 [STATE_NAME:ALL_SOLID:pitch]
        [STATE_ADJ:ALL_SOLID:pitch]
        [STATE_NAME:LIQUID:pitch]
@@ -424,7 +424,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
 
 [INORGANIC:BLANK_UNKNOWN]
 [STATE_NAME_ADJ:ALL_SOLID:unknown material][DISPLAY_COLOR:0:4:1][TILE:176]
-[MATERIAL_VALUE:10][REACTION_CLASS:CORPSE]
+[MATERIAL_VALUE:10]
 [STATE_NAME:ALL_SOLID:unknown material]
        [STATE_ADJ:ALL_SOLID:unknown material]
        [STATE_NAME:LIQUID:unknown material]
