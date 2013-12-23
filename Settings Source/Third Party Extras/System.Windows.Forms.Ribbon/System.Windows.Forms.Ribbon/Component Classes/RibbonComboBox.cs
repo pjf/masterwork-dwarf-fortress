@@ -265,7 +265,7 @@ namespace System.Windows.Forms
       {
          _DropDownVisible = false;
 
-         //Steve - when popup closed, un-highlight the dropdown arrow and redraw
+         //Steve - when popup closed, un-m_highlight the dropdown arrow and redraw
          _dropDownPressed = false;
          //Kevin - Unselect it as well
          _dropDownSelected = false;

@@ -81,7 +81,7 @@ namespace System.Windows.Forms
             PanelOverflowBackgroundSelectedNorth = FromHex("#FFFFFF");
             PanelOverflowBackgroundSelectedSouth = FromHex("#B8D7FD");
             ButtonBgOut = FromHex("#C1D5F1");
-            ButtonBgCenter = FromHex("#CFE0F7");
+            ButtonBgCenter = FromHex("#FFFFFF");
             ButtonBorderOut = FromHex("#B9D0ED");
             ButtonBorderIn = FromHex("#E3EDFB");
             ButtonGlossyNorth = FromHex("#DEEBFE");

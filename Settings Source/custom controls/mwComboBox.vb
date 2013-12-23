@@ -13,8 +13,15 @@
     End Sub
 
     Public Sub applyTheme() Implements iTheme.applyTheme
-        Me.BackColor = Theme.ColorTable.RibbonBackground_2013 'ButtonPressed_2013
+        Me.BackColor = Theme.ColorTable.DropDownBg
         Me.ForeColor = Theme.ColorTable.Text
     End Sub
 
+    Protected Overrides ReadOnly Property CreateParams() As CreateParams
+        Get
+            Dim cp As CreateParams = MyBase.CreateParams
+            cp.ExStyle = cp.ExStyle Or &H20
+            Return cp
+        End Get
+    End Property
 End Class
