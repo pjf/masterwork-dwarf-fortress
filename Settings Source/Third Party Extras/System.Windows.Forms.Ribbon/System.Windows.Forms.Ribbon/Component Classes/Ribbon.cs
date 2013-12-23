@@ -2126,7 +2126,7 @@ namespace System.Windows.Forms
             //if (!someTabHitted)
             //    SetSelectedTab(null);
 
-            ////Clear the orb highlight
+            ////Clear the orb m_highlight
             //if (OrbSelected && !OrbBounds.Contains(e.Location))
             //{
             //    OrbSelected = false;
