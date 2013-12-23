@@ -139,6 +139,12 @@
     <Compile Include="custom controls\mwGroupBox.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="custom controls\mwPanel.Designer.vb">
+      <DependentUpon>mwPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\mwPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="custom controls\mwTableLayout.Designer.vb">
       <DependentUpon>mwTableLayout.vb</DependentUpon>
     </Compile>
