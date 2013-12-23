@@ -1166,7 +1166,7 @@ Partial Class MainForm
         Me.btnUpdateSaves = New System.Windows.Forms.Button()
         Me.btnDelRandoms = New System.Windows.Forms.Button()
         Me.btnGenerateCreatures = New System.Windows.Forms.Button()
-        Me.grpStandardization = New System.Windows.Forms.GroupBox()
+        Me.grpStandardization = New MasterworkDwarfFortress.mwGroupBox()
         Me.optBtnSimpleTrees = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optBtnSimpleGems = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optBtnSimpleSoil = New MasterworkDwarfFortress.optionSingleReplaceButton()
@@ -1176,7 +1176,7 @@ Partial Class MainForm
         Me.optBtnSimplePets = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optMultiSimpleMeat = New MasterworkDwarfFortress.optionMultiButton()
         Me.optBtnSimpleGemShapes = New MasterworkDwarfFortress.optionSingleReplaceButton()
-        Me.grpWorldGenHostiles = New System.Windows.Forms.GroupBox()
+        Me.grpWorldGenHostiles = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblMegabeasts = New System.Windows.Forms.Label()
         Me.lblSemiMegaBeasts = New System.Windows.Forms.Label()
         Me.lblTitans = New System.Windows.Forms.Label()
@@ -1455,7 +1455,7 @@ Partial Class MainForm
         Me.optMaskEvilAreas = New MasterworkDwarfFortress.optionFormatted()
         Me.lblHFSLevels = New System.Windows.Forms.Label()
         Me.lblSettingExplanation = New System.Windows.Forms.Label()
-        Me.panCivTable = New System.Windows.Forms.Panel()
+        Me.panCivTable = New MasterworkDwarfFortress.mwPanel()
         Me.tableLayoutCivs = New MasterworkDwarfFortress.mwTableLayout()
         Me.lblCivInvasions = New System.Windows.Forms.Label()
         Me.lblCivCaravans = New System.Windows.Forms.Label()
@@ -1479,55 +1479,55 @@ Partial Class MainForm
         Me.lblCivEvilHuman = New MasterworkDwarfFortress.mwCivLabel()
         Me.lblCivEvilDrow = New MasterworkDwarfFortress.mwCivLabel()
         Me.lblCivEvilElf = New MasterworkDwarfFortress.mwCivLabel()
-        Me.grpExtraCreatures = New System.Windows.Forms.GroupBox()
+        Me.grpExtraCreatures = New MasterworkDwarfFortress.mwGroupBox()
         Me.optBtnMoreAnimals = New MasterworkDwarfFortress.optionSingleReplaceButton()
-        Me.grpRandomCreatures = New System.Windows.Forms.GroupBox()
+        Me.grpRandomCreatures = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblRandomNote = New System.Windows.Forms.Label()
-        Me.grpFortressDefense = New System.Windows.Forms.GroupBox()
+        Me.grpFortressDefense = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblInvaderSkills = New System.Windows.Forms.Label()
         Me.lblFortDefEasyTitle = New System.Windows.Forms.Label()
         Me.lblForDefMedTitle = New System.Windows.Forms.Label()
         Me.lblFortDefHardTitle = New System.Windows.Forms.Label()
         Me.lblFortDefNote = New System.Windows.Forms.Label()
-        Me.grpMachinery = New System.Windows.Forms.GroupBox()
-        Me.grpWorkshops = New System.Windows.Forms.GroupBox()
-        Me.grpMiscBuildings = New System.Windows.Forms.GroupBox()
-        Me.grpFarming = New System.Windows.Forms.GroupBox()
-        Me.grpStudies = New System.Windows.Forms.GroupBox()
-        Me.grpTrade = New System.Windows.Forms.GroupBox()
-        Me.grpLaboratories = New System.Windows.Forms.GroupBox()
-        Me.grpReligion = New System.Windows.Forms.GroupBox()
-        Me.grpDiplomacy = New System.Windows.Forms.GroupBox()
-        Me.grpLibrary = New System.Windows.Forms.GroupBox()
-        Me.grpAdministration = New System.Windows.Forms.GroupBox()
-        Me.grpIllumination = New System.Windows.Forms.GroupBox()
+        Me.grpMachinery = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpWorkshops = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpMiscBuildings = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpFarming = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpStudies = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpTrade = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpLaboratories = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpReligion = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpDiplomacy = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpLibrary = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpAdministration = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpIllumination = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblIlluminationNote = New System.Windows.Forms.Label()
-        Me.grpSmithing = New System.Windows.Forms.GroupBox()
-        Me.grpMiscFurnaces = New System.Windows.Forms.GroupBox()
-        Me.grpUpgrades = New System.Windows.Forms.GroupBox()
-        Me.grpMetalworks = New System.Windows.Forms.GroupBox()
-        Me.grpSiege = New System.Windows.Forms.GroupBox()
-        Me.grpDecorations = New System.Windows.Forms.GroupBox()
-        Me.grpMagic = New System.Windows.Forms.GroupBox()
-        Me.grpVolcanic = New System.Windows.Forms.GroupBox()
+        Me.grpSmithing = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpMiscFurnaces = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpUpgrades = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpMetalworks = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpSiege = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpDecorations = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpMagic = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpVolcanic = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblReqMagmaNote = New System.Windows.Forms.Label()
-        Me.grpExtraReactions = New System.Windows.Forms.GroupBox()
-        Me.grpBalancing = New System.Windows.Forms.GroupBox()
-        Me.grpMiscFeatures = New System.Windows.Forms.GroupBox()
-        Me.grpExtraMods = New System.Windows.Forms.GroupBox()
+        Me.grpExtraReactions = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpBalancing = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpMiscFeatures = New MasterworkDwarfFortress.mwGroupBox()
+        Me.grpExtraMods = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblRendermaxNote = New System.Windows.Forms.Label()
         Me.lblModNote = New System.Windows.Forms.Label()
-        Me.grpWorldGenMisc = New System.Windows.Forms.GroupBox()
+        Me.grpWorldGenMisc = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblMineralScarcity = New System.Windows.Forms.Label()
         Me.lblCivNumber = New System.Windows.Forms.Label()
         Me.lblEmbarkPoints = New System.Windows.Forms.Label()
         Me.lblEndYear = New System.Windows.Forms.Label()
         Me.lblPopulationSize = New System.Windows.Forms.Label()
-        Me.grpWorldGenCaves = New System.Windows.Forms.GroupBox()
+        Me.grpWorldGenCaves = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblCaveSize = New System.Windows.Forms.Label()
         Me.lblMountainCaves = New System.Windows.Forms.Label()
         Me.lblOtherCaves = New System.Windows.Forms.Label()
-        Me.grpWorldGenLayers = New System.Windows.Forms.GroupBox()
+        Me.grpWorldGenLayers = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblCaverns = New System.Windows.Forms.Label()
         Me.lblCavernOpenness = New System.Windows.Forms.Label()
         Me.lblCavernMaze = New System.Windows.Forms.Label()
@@ -1538,22 +1538,22 @@ Partial Class MainForm
         Me.lblAboveMagma = New System.Windows.Forms.Label()
         Me.lblAboveHFS = New System.Windows.Forms.Label()
         Me.lblMapDepthNote = New System.Windows.Forms.Label()
-        Me.grpWorldGenAreas = New System.Windows.Forms.GroupBox()
+        Me.grpWorldGenAreas = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblGoodAreas = New System.Windows.Forms.Label()
         Me.lblEvilAreas = New System.Windows.Forms.Label()
         Me.lblBiomeNote = New System.Windows.Forms.Label()
         Me.lblWorldGenSelect = New System.Windows.Forms.Label()
-        Me.grpWorldSettings = New System.Windows.Forms.GroupBox()
+        Me.grpWorldSettings = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblPopCap = New System.Windows.Forms.Label()
-        Me.grpSaveSettings = New System.Windows.Forms.GroupBox()
+        Me.grpSaveSettings = New MasterworkDwarfFortress.mwGroupBox()
         Me.optCbAutoSave = New MasterworkDwarfFortress.optionComboBoxToken()
         Me.lblAutoSave = New System.Windows.Forms.Label()
-        Me.grpMiscSettings = New System.Windows.Forms.GroupBox()
+        Me.grpMiscSettings = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblKeybinds = New System.Windows.Forms.Label()
         Me.lblArena = New System.Windows.Forms.Label()
         Me.lblWindowed = New System.Windows.Forms.Label()
         Me.lblPriority = New System.Windows.Forms.Label()
-        Me.grpGraphics = New System.Windows.Forms.GroupBox()
+        Me.grpGraphics = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblColors = New System.Windows.Forms.Label()
         Me.optCbColors = New MasterworkDwarfFortress.optionComboBoxFileReplace()
         Me.lblFonts = New System.Windows.Forms.Label()
@@ -1561,15 +1561,15 @@ Partial Class MainForm
         Me.cmbTileSets = New System.Windows.Forms.ComboBox()
         Me.btnTilesetPreview = New System.Windows.Forms.Button()
         Me.lblPrintMode = New System.Windows.Forms.Label()
-        Me.grpFps = New System.Windows.Forms.GroupBox()
+        Me.grpFps = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblGraphicsCap = New System.Windows.Forms.Label()
         Me.lblFpsCap = New System.Windows.Forms.Label()
-        Me.grpSound = New System.Windows.Forms.GroupBox()
+        Me.grpSound = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblVolume = New System.Windows.Forms.Label()
         Me.optNumVolume = New MasterworkDwarfFortress.optionNumeric()
-        Me.grpEmbark = New System.Windows.Forms.GroupBox()
+        Me.grpEmbark = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblEmbarkSize = New System.Windows.Forms.Label()
-        Me.grpAnnouncements = New System.Windows.Forms.GroupBox()
+        Me.grpAnnouncements = New MasterworkDwarfFortress.mwGroupBox()
         Me.tileSetColorPreviewer = New MasterworkDwarfFortress.colorViewer()
         Me.ribbonMain = New System.Windows.Forms.Ribbon()
         Me.rTabGeneral = New System.Windows.Forms.RibbonTab()
@@ -1655,13 +1655,13 @@ Partial Class MainForm
         Me.rBtnUtilTileGenie = New System.Windows.Forms.RibbonButton()
         Me.optNumHFSLevels = New MasterworkDwarfFortress.optionNumeric()
         Me.tabMain = New KRBTabControl.KRBTabControl()
-        Me.tabSettings2 = New KRBTabControl.TabPageEx()
-        Me.tabCivs2 = New KRBTabControl.TabPageEx()
-        Me.tabOtherCreatures2 = New KRBTabControl.TabPageEx()
-        Me.tabWorkshops2 = New KRBTabControl.TabPageEx()
-        Me.tabFurnaces2 = New KRBTabControl.TabPageEx()
-        Me.tabMisc2 = New KRBTabControl.TabPageEx()
-        Me.tabWorldGen2 = New KRBTabControl.TabPageEx()
+        Me.tabSettings = New KRBTabControl.TabPageEx()
+        Me.tabCivs = New KRBTabControl.TabPageEx()
+        Me.tabOtherCreatures = New KRBTabControl.TabPageEx()
+        Me.tabWorkshops = New KRBTabControl.TabPageEx()
+        Me.tabFurnaces = New KRBTabControl.TabPageEx()
+        Me.tabMisc = New KRBTabControl.TabPageEx()
+        Me.tabWorldGen = New KRBTabControl.TabPageEx()
         Me.grpStandardization.SuspendLayout
         Me.grpWorldGenHostiles.SuspendLayout
         CType(Me.optNumMegabeasts,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1745,13 +1745,13 @@ Partial Class MainForm
         Me.grpAnnouncements.SuspendLayout
         CType(Me.optNumHFSLevels,System.ComponentModel.ISupportInitialize).BeginInit
         Me.tabMain.SuspendLayout
-        Me.tabSettings2.SuspendLayout
-        Me.tabCivs2.SuspendLayout
-        Me.tabOtherCreatures2.SuspendLayout
-        Me.tabWorkshops2.SuspendLayout
-        Me.tabFurnaces2.SuspendLayout
-        Me.tabMisc2.SuspendLayout
-        Me.tabWorldGen2.SuspendLayout
+        Me.tabSettings.SuspendLayout
+        Me.tabCivs.SuspendLayout
+        Me.tabOtherCreatures.SuspendLayout
+        Me.tabWorkshops.SuspendLayout
+        Me.tabFurnaces.SuspendLayout
+        Me.tabMisc.SuspendLayout
+        Me.tabWorldGen.SuspendLayout
         Me.SuspendLayout
         '
         'ToolTipMaker
@@ -1762,7 +1762,7 @@ Partial Class MainForm
         '
         'lblChildCap
         '
-        Me.lblChildCap.BackColor = System.Drawing.Color.Transparent
+        Me.lblChildCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblChildCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblChildCap.ForeColor = System.Drawing.SystemColors.Window
         Me.lblChildCap.Location = New System.Drawing.Point(-8, 287)
@@ -1775,8 +1775,7 @@ Partial Class MainForm
         '
         'btnUpdateSaves
         '
-        Me.btnUpdateSaves.BackColor = System.Drawing.Color.Transparent
-        Me.btnUpdateSaves.BackgroundImage = CType(resources.GetObject("btnUpdateSaves.BackgroundImage"),System.Drawing.Image)
+        Me.btnUpdateSaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.btnUpdateSaves.FlatAppearance.BorderSize = 0
         Me.btnUpdateSaves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdateSaves.ForeColor = System.Drawing.Color.White
@@ -1792,8 +1791,7 @@ Partial Class MainForm
         '
         'btnDelRandoms
         '
-        Me.btnDelRandoms.BackColor = System.Drawing.Color.Transparent
-        Me.btnDelRandoms.BackgroundImage = CType(resources.GetObject("btnDelRandoms.BackgroundImage"),System.Drawing.Image)
+        Me.btnDelRandoms.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.btnDelRandoms.FlatAppearance.BorderSize = 0
         Me.btnDelRandoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDelRandoms.ForeColor = System.Drawing.Color.White
@@ -1808,8 +1806,7 @@ Partial Class MainForm
         '
         'btnGenerateCreatures
         '
-        Me.btnGenerateCreatures.BackColor = System.Drawing.Color.Transparent
-        Me.btnGenerateCreatures.BackgroundImage = CType(resources.GetObject("btnGenerateCreatures.BackgroundImage"),System.Drawing.Image)
+        Me.btnGenerateCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.btnGenerateCreatures.FlatAppearance.BorderSize = 0
         Me.btnGenerateCreatures.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGenerateCreatures.ForeColor = System.Drawing.Color.White
@@ -1826,8 +1823,7 @@ Partial Class MainForm
         'grpStandardization
         '
         Me.grpStandardization.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpStandardization.BackColor = System.Drawing.Color.Transparent
-        Me.grpStandardization.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpStandardization.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpStandardization.Controls.Add(Me.optBtnSimpleTrees)
         Me.grpStandardization.Controls.Add(Me.optBtnSimpleGems)
         Me.grpStandardization.Controls.Add(Me.optBtnSimpleSoil)
@@ -1849,10 +1845,10 @@ Partial Class MainForm
         'optBtnSimpleTrees
         '
         Me.optBtnSimpleTrees.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSimpleTrees.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSimpleTrees.BackgroundImage = CType(resources.GetObject("optBtnSimpleTrees.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSimpleTrees.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSimpleTrees.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.optBtnSimpleTrees.FlatAppearance.BorderSize = 0
-        Me.optBtnSimpleTrees.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSimpleTrees.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSimpleTrees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSimpleTrees.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSimpleTrees.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -1884,10 +1880,10 @@ Partial Class MainForm
         'optBtnSimpleGems
         '
         Me.optBtnSimpleGems.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSimpleGems.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSimpleGems.BackgroundImage = CType(resources.GetObject("optBtnSimpleGems.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSimpleGems.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSimpleGems.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.optBtnSimpleGems.FlatAppearance.BorderSize = 0
-        Me.optBtnSimpleGems.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSimpleGems.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSimpleGems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSimpleGems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSimpleGems.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -1919,10 +1915,10 @@ Partial Class MainForm
         'optBtnSimpleSoil
         '
         Me.optBtnSimpleSoil.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSimpleSoil.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSimpleSoil.BackgroundImage = CType(resources.GetObject("optBtnSimpleSoil.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSimpleSoil.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSimpleSoil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.optBtnSimpleSoil.FlatAppearance.BorderSize = 0
-        Me.optBtnSimpleSoil.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSimpleSoil.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSimpleSoil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSimpleSoil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSimpleSoil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -1954,10 +1950,10 @@ Partial Class MainForm
         'optBtnSimpleStones
         '
         Me.optBtnSimpleStones.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSimpleStones.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSimpleStones.BackgroundImage = CType(resources.GetObject("optBtnSimpleStones.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSimpleStones.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSimpleStones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.optBtnSimpleStones.FlatAppearance.BorderSize = 0
-        Me.optBtnSimpleStones.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSimpleStones.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSimpleStones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSimpleStones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSimpleStones.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -1989,10 +1985,10 @@ Partial Class MainForm
         'optBtnSimpleMetals
         '
         Me.optBtnSimpleMetals.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSimpleMetals.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSimpleMetals.BackgroundImage = CType(resources.GetObject("optBtnSimpleMetals.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSimpleMetals.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSimpleMetals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.optBtnSimpleMetals.FlatAppearance.BorderSize = 0
-        Me.optBtnSimpleMetals.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSimpleMetals.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSimpleMetals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSimpleMetals.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSimpleMetals.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -2024,9 +2020,10 @@ Partial Class MainForm
         'optMultiSimpleWood
         '
         Me.optMultiSimpleWood.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optMultiSimpleWood.BackgroundImage = CType(resources.GetObject("optMultiSimpleWood.BackgroundImage"),System.Drawing.Image)
+        Me.optMultiSimpleWood.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optMultiSimpleWood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.optMultiSimpleWood.FlatAppearance.BorderSize = 0
-        Me.optMultiSimpleWood.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optMultiSimpleWood.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optMultiSimpleWood.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optMultiSimpleWood.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optMultiSimpleWood.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -2058,15 +2055,15 @@ Partial Class MainForm
         Me.optMultiSimpleWood.Text = "Simple Wood"
         Me.optMultiSimpleWood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optMultiSimpleWood, "Enable for standardized wood. Disable for every tree to use specific wood names.")
-        Me.optMultiSimpleWood.UseVisualStyleBackColor = true
+        Me.optMultiSimpleWood.UseVisualStyleBackColor = false
         '
         'optBtnSimplePets
         '
         Me.optBtnSimplePets.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSimplePets.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSimplePets.BackgroundImage = CType(resources.GetObject("optBtnSimplePets.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSimplePets.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSimplePets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.optBtnSimplePets.FlatAppearance.BorderSize = 0
-        Me.optBtnSimplePets.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSimplePets.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSimplePets.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSimplePets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSimplePets.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -2098,9 +2095,10 @@ Partial Class MainForm
         'optMultiSimpleMeat
         '
         Me.optMultiSimpleMeat.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optMultiSimpleMeat.BackgroundImage = CType(resources.GetObject("optMultiSimpleMeat.BackgroundImage"),System.Drawing.Image)
+        Me.optMultiSimpleMeat.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optMultiSimpleMeat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.optMultiSimpleMeat.FlatAppearance.BorderSize = 0
-        Me.optMultiSimpleMeat.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optMultiSimpleMeat.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optMultiSimpleMeat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optMultiSimpleMeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optMultiSimpleMeat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -2132,15 +2130,15 @@ Partial Class MainForm
         Me.optMultiSimpleMeat.Text = "Simple Meat"
         Me.optMultiSimpleMeat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optMultiSimpleMeat, "Enable to standardize all butchery products to one type of meat.")
-        Me.optMultiSimpleMeat.UseVisualStyleBackColor = true
+        Me.optMultiSimpleMeat.UseVisualStyleBackColor = false
         '
         'optBtnSimpleGemShapes
         '
         Me.optBtnSimpleGemShapes.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSimpleGemShapes.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSimpleGemShapes.BackgroundImage = CType(resources.GetObject("optBtnSimpleGemShapes.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSimpleGemShapes.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSimpleGemShapes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.optBtnSimpleGemShapes.FlatAppearance.BorderSize = 0
-        Me.optBtnSimpleGemShapes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSimpleGemShapes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSimpleGemShapes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSimpleGemShapes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSimpleGemShapes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -2171,8 +2169,7 @@ Partial Class MainForm
         '
         'grpWorldGenHostiles
         '
-        Me.grpWorldGenHostiles.BackColor = System.Drawing.Color.Transparent
-        Me.grpWorldGenHostiles.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpWorldGenHostiles.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldGenHostiles.Controls.Add(Me.lblMegabeasts)
         Me.grpWorldGenHostiles.Controls.Add(Me.lblSemiMegaBeasts)
         Me.grpWorldGenHostiles.Controls.Add(Me.lblTitans)
@@ -2684,10 +2681,9 @@ Partial Class MainForm
         'optBtnTemperature
         '
         Me.optBtnTemperature.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTemperature.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTemperature.BackgroundImage = CType(resources.GetObject("optBtnTemperature.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTemperature.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTemperature.FlatAppearance.BorderSize = 0
-        Me.optBtnTemperature.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTemperature.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTemperature.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnTemperature.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnTemperature.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -2719,9 +2715,8 @@ Partial Class MainForm
         'optBtnWeather
         '
         Me.optBtnWeather.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWeather.BackgroundImage = CType(resources.GetObject("optBtnWeather.BackgroundImage"),System.Drawing.Image)
         Me.optBtnWeather.FlatAppearance.BorderSize = 0
-        Me.optBtnWeather.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnWeather.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWeather.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnWeather.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnWeather.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -2752,9 +2747,8 @@ Partial Class MainForm
         'optBtnCaveins
         '
         Me.optBtnCaveins.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCaveins.BackgroundImage = CType(resources.GetObject("optBtnCaveins.BackgroundImage"),System.Drawing.Image)
         Me.optBtnCaveins.FlatAppearance.BorderSize = 0
-        Me.optBtnCaveins.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnCaveins.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCaveins.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnCaveins.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnCaveins.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -2786,9 +2780,8 @@ Partial Class MainForm
         'optBtnInvaders
         '
         Me.optBtnInvaders.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnInvaders.BackgroundImage = CType(resources.GetObject("optBtnInvaders.BackgroundImage"),System.Drawing.Image)
         Me.optBtnInvaders.FlatAppearance.BorderSize = 0
-        Me.optBtnInvaders.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnInvaders.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnInvaders.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnInvaders.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnInvaders.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -2819,9 +2812,8 @@ Partial Class MainForm
         'optBtnLiquidDepth
         '
         Me.optBtnLiquidDepth.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnLiquidDepth.BackgroundImage = CType(resources.GetObject("optBtnLiquidDepth.BackgroundImage"),System.Drawing.Image)
         Me.optBtnLiquidDepth.FlatAppearance.BorderSize = 0
-        Me.optBtnLiquidDepth.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnLiquidDepth.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnLiquidDepth.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnLiquidDepth.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnLiquidDepth.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -2852,9 +2844,8 @@ Partial Class MainForm
         'optBtnAdvCenter
         '
         Me.optBtnAdvCenter.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAdvCenter.BackgroundImage = CType(resources.GetObject("optBtnAdvCenter.BackgroundImage"),System.Drawing.Image)
         Me.optBtnAdvCenter.FlatAppearance.BorderSize = 0
-        Me.optBtnAdvCenter.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnAdvCenter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAdvCenter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnAdvCenter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnAdvCenter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -2885,9 +2876,8 @@ Partial Class MainForm
         'optBtnAdvTraps
         '
         Me.optBtnAdvTraps.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAdvTraps.BackgroundImage = CType(resources.GetObject("optBtnAdvTraps.BackgroundImage"),System.Drawing.Image)
         Me.optBtnAdvTraps.FlatAppearance.BorderSize = 0
-        Me.optBtnAdvTraps.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnAdvTraps.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAdvTraps.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnAdvTraps.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnAdvTraps.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -2918,9 +2908,8 @@ Partial Class MainForm
         'optBtnPetCoffins
         '
         Me.optBtnPetCoffins.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPetCoffins.BackgroundImage = CType(resources.GetObject("optBtnPetCoffins.BackgroundImage"),System.Drawing.Image)
         Me.optBtnPetCoffins.FlatAppearance.BorderSize = 0
-        Me.optBtnPetCoffins.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnPetCoffins.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPetCoffins.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnPetCoffins.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnPetCoffins.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3003,9 +2992,8 @@ Partial Class MainForm
         'optBtnAutoSavePause
         '
         Me.optBtnAutoSavePause.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAutoSavePause.BackgroundImage = CType(resources.GetObject("optBtnAutoSavePause.BackgroundImage"),System.Drawing.Image)
         Me.optBtnAutoSavePause.FlatAppearance.BorderSize = 0
-        Me.optBtnAutoSavePause.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnAutoSavePause.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAutoSavePause.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnAutoSavePause.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnAutoSavePause.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3036,9 +3024,8 @@ Partial Class MainForm
         'optBtnAutoBackup
         '
         Me.optBtnAutoBackup.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAutoBackup.BackgroundImage = CType(resources.GetObject("optBtnAutoBackup.BackgroundImage"),System.Drawing.Image)
         Me.optBtnAutoBackup.FlatAppearance.BorderSize = 0
-        Me.optBtnAutoBackup.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnAutoBackup.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAutoBackup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnAutoBackup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnAutoBackup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3069,9 +3056,8 @@ Partial Class MainForm
         'optBtnEmbarkSave
         '
         Me.optBtnEmbarkSave.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEmbarkSave.BackgroundImage = CType(resources.GetObject("optBtnEmbarkSave.BackgroundImage"),System.Drawing.Image)
         Me.optBtnEmbarkSave.FlatAppearance.BorderSize = 0
-        Me.optBtnEmbarkSave.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnEmbarkSave.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEmbarkSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnEmbarkSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnEmbarkSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3102,9 +3088,8 @@ Partial Class MainForm
         'optBtnCompressSaves
         '
         Me.optBtnCompressSaves.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCompressSaves.BackgroundImage = CType(resources.GetObject("optBtnCompressSaves.BackgroundImage"),System.Drawing.Image)
         Me.optBtnCompressSaves.FlatAppearance.BorderSize = 0
-        Me.optBtnCompressSaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnCompressSaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCompressSaves.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnCompressSaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnCompressSaves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3135,9 +3120,8 @@ Partial Class MainForm
         'optBtnPauseLoad
         '
         Me.optBtnPauseLoad.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPauseLoad.BackgroundImage = CType(resources.GetObject("optBtnPauseLoad.BackgroundImage"),System.Drawing.Image)
         Me.optBtnPauseLoad.FlatAppearance.BorderSize = 0
-        Me.optBtnPauseLoad.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnPauseLoad.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPauseLoad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnPauseLoad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnPauseLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3290,9 +3274,8 @@ Partial Class MainForm
         'optBtnIntro
         '
         Me.optBtnIntro.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnIntro.BackgroundImage = CType(resources.GetObject("optBtnIntro.BackgroundImage"),System.Drawing.Image)
         Me.optBtnIntro.FlatAppearance.BorderSize = 0
-        Me.optBtnIntro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnIntro.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnIntro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnIntro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnIntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3367,9 +3350,8 @@ Partial Class MainForm
         'optBtnSprites
         '
         Me.optBtnSprites.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSprites.BackgroundImage = CType(resources.GetObject("optBtnSprites.BackgroundImage"),System.Drawing.Image)
         Me.optBtnSprites.FlatAppearance.BorderSize = 0
-        Me.optBtnSprites.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSprites.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSprites.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnSprites.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnSprites.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3400,9 +3382,8 @@ Partial Class MainForm
         'optBtnTruetype
         '
         Me.optBtnTruetype.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTruetype.BackgroundImage = CType(resources.GetObject("optBtnTruetype.BackgroundImage"),System.Drawing.Image)
         Me.optBtnTruetype.FlatAppearance.BorderSize = 0
-        Me.optBtnTruetype.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTruetype.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTruetype.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnTruetype.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnTruetype.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3458,9 +3439,9 @@ Partial Class MainForm
         'optBtnFps
         '
         Me.optBtnFps.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFps.BackgroundImage = CType(resources.GetObject("optBtnFps.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFps.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFps.FlatAppearance.BorderSize = 0
-        Me.optBtnFps.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnFps.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFps.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnFps.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnFps.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3486,7 +3467,7 @@ Partial Class MainForm
         Me.optBtnFps.Text = "FPS Display"
         Me.optBtnFps.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFps, "Shows the current FPS on top left.")
-        Me.optBtnFps.UseVisualStyleBackColor = true
+        Me.optBtnFps.UseVisualStyleBackColor = false
         '
         'optNumGFPS
         '
@@ -3543,9 +3524,8 @@ Partial Class MainForm
         'optBtnSound
         '
         Me.optBtnSound.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSound.BackgroundImage = CType(resources.GetObject("optBtnSound.BackgroundImage"),System.Drawing.Image)
         Me.optBtnSound.FlatAppearance.BorderSize = 0
-        Me.optBtnSound.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSound.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSound.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnSound.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnSound.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3576,9 +3556,8 @@ Partial Class MainForm
         'optBtnEmbarkWarn
         '
         Me.optBtnEmbarkWarn.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEmbarkWarn.BackgroundImage = CType(resources.GetObject("optBtnEmbarkWarn.BackgroundImage"),System.Drawing.Image)
         Me.optBtnEmbarkWarn.FlatAppearance.BorderSize = 0
-        Me.optBtnEmbarkWarn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnEmbarkWarn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEmbarkWarn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnEmbarkWarn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnEmbarkWarn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3634,9 +3613,8 @@ Partial Class MainForm
         'optBtnTransformMsgs
         '
         Me.optBtnTransformMsgs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTransformMsgs.BackgroundImage = CType(resources.GetObject("optBtnTransformMsgs.BackgroundImage"),System.Drawing.Image)
         Me.optBtnTransformMsgs.FlatAppearance.BorderSize = 0
-        Me.optBtnTransformMsgs.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTransformMsgs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTransformMsgs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnTransformMsgs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnTransformMsgs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3670,9 +3648,8 @@ Partial Class MainForm
         'optBtnDigStop
         '
         Me.optBtnDigStop.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDigStop.BackgroundImage = CType(resources.GetObject("optBtnDigStop.BackgroundImage"),System.Drawing.Image)
         Me.optBtnDigStop.FlatAppearance.BorderSize = 0
-        Me.optBtnDigStop.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnDigStop.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDigStop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnDigStop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optBtnDigStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3705,8 +3682,7 @@ Partial Class MainForm
         'optBtnFrostGiants
         '
         Me.optBtnFrostGiants.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFrostGiants.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFrostGiants.BackgroundImage = CType(resources.GetObject("optBtnFrostGiants.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFrostGiants.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFrostGiants.FlatAppearance.BorderSize = 0
         Me.optBtnFrostGiants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFrostGiants.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3737,8 +3713,7 @@ Partial Class MainForm
         'optBtnWarlocks
         '
         Me.optBtnWarlocks.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWarlocks.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnWarlocks.BackgroundImage = CType(resources.GetObject("optBtnWarlocks.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnWarlocks.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWarlocks.FlatAppearance.BorderSize = 0
         Me.optBtnWarlocks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnWarlocks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3769,8 +3744,7 @@ Partial Class MainForm
         'optBtnAutomatons
         '
         Me.optBtnAutomatons.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAutomatons.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnAutomatons.BackgroundImage = CType(resources.GetObject("optBtnAutomatons.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnAutomatons.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAutomatons.FlatAppearance.BorderSize = 0
         Me.optBtnAutomatons.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnAutomatons.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3801,8 +3775,7 @@ Partial Class MainForm
         'optBtnOrcs
         '
         Me.optBtnOrcs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnOrcs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnOrcs.BackgroundImage = CType(resources.GetObject("optBtnOrcs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnOrcs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnOrcs.FlatAppearance.BorderSize = 0
         Me.optBtnOrcs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnOrcs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3833,8 +3806,7 @@ Partial Class MainForm
         'optBtnGoblins
         '
         Me.optBtnGoblins.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGoblins.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGoblins.BackgroundImage = CType(resources.GetObject("optBtnGoblins.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGoblins.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGoblins.FlatAppearance.BorderSize = 0
         Me.optBtnGoblins.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGoblins.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3865,8 +3837,7 @@ Partial Class MainForm
         'optBtnKobolds
         '
         Me.optBtnKobolds.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnKobolds.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnKobolds.BackgroundImage = CType(resources.GetObject("optBtnKobolds.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnKobolds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnKobolds.FlatAppearance.BorderSize = 0
         Me.optBtnKobolds.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnKobolds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3897,8 +3868,7 @@ Partial Class MainForm
         'optBtnElfRace
         '
         Me.optBtnElfRace.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnElfRace.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnElfRace.BackgroundImage = CType(resources.GetObject("optBtnElfRace.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnElfRace.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnElfRace.FlatAppearance.BorderSize = 0
         Me.optBtnElfRace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnElfRace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3929,8 +3899,7 @@ Partial Class MainForm
         'optBtnAntmen
         '
         Me.optBtnAntmen.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAntmen.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnAntmen.BackgroundImage = CType(resources.GetObject("optBtnAntmen.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnAntmen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAntmen.FlatAppearance.BorderSize = 0
         Me.optBtnAntmen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnAntmen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3961,8 +3930,7 @@ Partial Class MainForm
         'optBtnGnomes
         '
         Me.optBtnGnomes.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGnomes.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGnomes.BackgroundImage = CType(resources.GetObject("optBtnGnomes.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGnomes.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGnomes.FlatAppearance.BorderSize = 0
         Me.optBtnGnomes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGnomes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -3994,8 +3962,7 @@ Partial Class MainForm
         'optBtnTroglodytes
         '
         Me.optBtnTroglodytes.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTroglodytes.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTroglodytes.BackgroundImage = CType(resources.GetObject("optBtnTroglodytes.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTroglodytes.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTroglodytes.FlatAppearance.BorderSize = 0
         Me.optBtnTroglodytes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnTroglodytes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4026,8 +3993,7 @@ Partial Class MainForm
         'optBtnGremlins
         '
         Me.optBtnGremlins.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGremlins.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGremlins.BackgroundImage = CType(resources.GetObject("optBtnGremlins.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGremlins.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGremlins.FlatAppearance.BorderSize = 0
         Me.optBtnGremlins.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGremlins.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4058,8 +4024,7 @@ Partial Class MainForm
         'optBtnHumanRace
         '
         Me.optBtnHumanRace.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHumanRace.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnHumanRace.BackgroundImage = CType(resources.GetObject("optBtnHumanRace.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnHumanRace.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHumanRace.FlatAppearance.BorderSize = 0
         Me.optBtnHumanRace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnHumanRace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4106,8 +4071,7 @@ Partial Class MainForm
         'optBtnCivDwarves
         '
         Me.optBtnCivDwarves.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCivDwarves.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCivDwarves.BackgroundImage = CType(resources.GetObject("optBtnCivDwarves.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCivDwarves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCivDwarves.FlatAppearance.BorderSize = 0
         Me.optBtnCivDwarves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCivDwarves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4138,8 +4102,7 @@ Partial Class MainForm
         'optBtnCivOrcs
         '
         Me.optBtnCivOrcs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCivOrcs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCivOrcs.BackgroundImage = CType(resources.GetObject("optBtnCivOrcs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCivOrcs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCivOrcs.FlatAppearance.BorderSize = 0
         Me.optBtnCivOrcs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCivOrcs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4170,8 +4133,7 @@ Partial Class MainForm
         'optBtnPlayableDwarves
         '
         Me.optBtnPlayableDwarves.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPlayableDwarves.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnPlayableDwarves.BackgroundImage = CType(resources.GetObject("optBtnPlayableDwarves.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnPlayableDwarves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPlayableDwarves.FlatAppearance.BorderSize = 0
         Me.optBtnPlayableDwarves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnPlayableDwarves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4202,8 +4164,7 @@ Partial Class MainForm
         'optBtnPlayableOrcs
         '
         Me.optBtnPlayableOrcs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPlayableOrcs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnPlayableOrcs.BackgroundImage = CType(resources.GetObject("optBtnPlayableOrcs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnPlayableOrcs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPlayableOrcs.FlatAppearance.BorderSize = 0
         Me.optBtnPlayableOrcs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnPlayableOrcs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4234,8 +4195,7 @@ Partial Class MainForm
         'optBtnPlayableKobolds
         '
         Me.optBtnPlayableKobolds.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPlayableKobolds.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnPlayableKobolds.BackgroundImage = CType(resources.GetObject("optBtnPlayableKobolds.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnPlayableKobolds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPlayableKobolds.FlatAppearance.BorderSize = 0
         Me.optBtnPlayableKobolds.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnPlayableKobolds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4266,8 +4226,7 @@ Partial Class MainForm
         'optBtnCivKobolds
         '
         Me.optBtnCivKobolds.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCivKobolds.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCivKobolds.BackgroundImage = CType(resources.GetObject("optBtnCivKobolds.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCivKobolds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCivKobolds.FlatAppearance.BorderSize = 0
         Me.optBtnCivKobolds.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCivKobolds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4302,7 +4261,7 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lblCivBabySnatcher.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivBabySnatcher.ForeColor = System.Drawing.Color.White
-        Me.lblCivBabySnatcher.Location = New System.Drawing.Point(388, 1)
+        Me.lblCivBabySnatcher.Location = New System.Drawing.Point(397, 1)
         Me.lblCivBabySnatcher.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.lblCivBabySnatcher.Name = "lblCivBabySnatcher"
         Me.lblCivBabySnatcher.Size = New System.Drawing.Size(46, 23)
@@ -4321,7 +4280,7 @@ Partial Class MainForm
         Me.lblCivPlayable.Location = New System.Drawing.Point(163, 1)
         Me.lblCivPlayable.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.lblCivPlayable.Name = "lblCivPlayable"
-        Me.lblCivPlayable.Size = New System.Drawing.Size(55, 23)
+        Me.lblCivPlayable.Size = New System.Drawing.Size(64, 23)
         Me.lblCivPlayable.TabIndex = 6
         Me.lblCivPlayable.Text = "Playable"
         Me.lblCivPlayable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4334,10 +4293,10 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lblCivMaterials.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivMaterials.ForeColor = System.Drawing.Color.White
-        Me.lblCivMaterials.Location = New System.Drawing.Point(440, 1)
+        Me.lblCivMaterials.Location = New System.Drawing.Point(449, 1)
         Me.lblCivMaterials.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.lblCivMaterials.Name = "lblCivMaterials"
-        Me.lblCivMaterials.Size = New System.Drawing.Size(60, 23)
+        Me.lblCivMaterials.Size = New System.Drawing.Size(68, 23)
         Me.lblCivMaterials.TabIndex = 6
         Me.lblCivMaterials.Text = "Materials"
         Me.lblCivMaterials.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4350,7 +4309,7 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lblCivSkills.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivSkills.ForeColor = System.Drawing.Color.White
-        Me.lblCivSkills.Location = New System.Drawing.Point(506, 1)
+        Me.lblCivSkills.Location = New System.Drawing.Point(523, 1)
         Me.lblCivSkills.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.lblCivSkills.Name = "lblCivSkills"
         Me.lblCivSkills.Size = New System.Drawing.Size(61, 23)
@@ -4363,8 +4322,7 @@ Partial Class MainForm
         'optBtnDrowRace
         '
         Me.optBtnDrowRace.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDrowRace.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnDrowRace.BackgroundImage = CType(resources.GetObject("optBtnDrowRace.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnDrowRace.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDrowRace.FlatAppearance.BorderSize = 0
         Me.optBtnDrowRace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnDrowRace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4395,8 +4353,7 @@ Partial Class MainForm
         'optBtnEvilDwarves
         '
         Me.optBtnEvilDwarves.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEvilDwarves.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnEvilDwarves.BackgroundImage = CType(resources.GetObject("optBtnEvilDwarves.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnEvilDwarves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEvilDwarves.FlatAppearance.BorderSize = 0
         Me.optBtnEvilDwarves.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnEvilDwarves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
@@ -4428,8 +4385,7 @@ Partial Class MainForm
         'optBtnEvilHumans
         '
         Me.optBtnEvilHumans.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEvilHumans.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnEvilHumans.BackgroundImage = CType(resources.GetObject("optBtnEvilHumans.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnEvilHumans.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEvilHumans.FlatAppearance.BorderSize = 0
         Me.optBtnEvilHumans.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnEvilHumans.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
@@ -4461,8 +4417,7 @@ Partial Class MainForm
         'optBtnEvilElves
         '
         Me.optBtnEvilElves.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEvilElves.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnEvilElves.BackgroundImage = CType(resources.GetObject("optBtnEvilElves.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnEvilElves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEvilElves.FlatAppearance.BorderSize = 0
         Me.optBtnEvilElves.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnEvilElves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
@@ -4494,8 +4449,7 @@ Partial Class MainForm
         'optBtnEvilDrow
         '
         Me.optBtnEvilDrow.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEvilDrow.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnEvilDrow.BackgroundImage = CType(resources.GetObject("optBtnEvilDrow.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnEvilDrow.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEvilDrow.FlatAppearance.BorderSize = 0
         Me.optBtnEvilDrow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnEvilDrow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
@@ -4527,8 +4481,7 @@ Partial Class MainForm
         'optBtnDomesticPets
         '
         Me.optBtnDomesticPets.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDomesticPets.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnDomesticPets.BackgroundImage = CType(resources.GetObject("optBtnDomesticPets.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnDomesticPets.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDomesticPets.FlatAppearance.BorderSize = 0
         Me.optBtnDomesticPets.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnDomesticPets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4561,8 +4514,7 @@ Partial Class MainForm
         'optBtnMoreVermin
         '
         Me.optBtnMoreVermin.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreVermin.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreVermin.BackgroundImage = CType(resources.GetObject("optBtnMoreVermin.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreVermin.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreVermin.FlatAppearance.BorderSize = 0
         Me.optBtnMoreVermin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreVermin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4595,8 +4547,7 @@ Partial Class MainForm
         'optBtnMoreGiantAnimals
         '
         Me.optBtnMoreGiantAnimals.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreGiantAnimals.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreGiantAnimals.BackgroundImage = CType(resources.GetObject("optBtnMoreGiantAnimals.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreGiantAnimals.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreGiantAnimals.FlatAppearance.BorderSize = 0
         Me.optBtnMoreGiantAnimals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreGiantAnimals.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4629,8 +4580,7 @@ Partial Class MainForm
         'optBtnMoreMegaBeasts
         '
         Me.optBtnMoreMegaBeasts.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreMegaBeasts.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreMegaBeasts.BackgroundImage = CType(resources.GetObject("optBtnMoreMegaBeasts.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreMegaBeasts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreMegaBeasts.FlatAppearance.BorderSize = 0
         Me.optBtnMoreMegaBeasts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreMegaBeasts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4663,8 +4613,7 @@ Partial Class MainForm
         'optBtnMoreBirds
         '
         Me.optBtnMoreBirds.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreBirds.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreBirds.BackgroundImage = CType(resources.GetObject("optBtnMoreBirds.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreBirds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreBirds.FlatAppearance.BorderSize = 0
         Me.optBtnMoreBirds.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreBirds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4698,8 +4647,7 @@ Partial Class MainForm
         'optBtnMoreFish
         '
         Me.optBtnMoreFish.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreFish.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreFish.BackgroundImage = CType(resources.GetObject("optBtnMoreFish.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreFish.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreFish.FlatAppearance.BorderSize = 0
         Me.optBtnMoreFish.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreFish.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4732,8 +4680,7 @@ Partial Class MainForm
         'optBtnMoreAnimalmen
         '
         Me.optBtnMoreAnimalmen.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreAnimalmen.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreAnimalmen.BackgroundImage = CType(resources.GetObject("optBtnMoreAnimalmen.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreAnimalmen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreAnimalmen.FlatAppearance.BorderSize = 0
         Me.optBtnMoreAnimalmen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreAnimalmen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4766,8 +4713,7 @@ Partial Class MainForm
         'optBtnMoreCavernCreatures
         '
         Me.optBtnMoreCavernCreatures.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreCavernCreatures.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreCavernCreatures.BackgroundImage = CType(resources.GetObject("optBtnMoreCavernCreatures.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreCavernCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreCavernCreatures.FlatAppearance.BorderSize = 0
         Me.optBtnMoreCavernCreatures.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreCavernCreatures.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4800,8 +4746,7 @@ Partial Class MainForm
         'optBtnMoreSurfaceCreatures
         '
         Me.optBtnMoreSurfaceCreatures.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreSurfaceCreatures.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreSurfaceCreatures.BackgroundImage = CType(resources.GetObject("optBtnMoreSurfaceCreatures.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreSurfaceCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreSurfaceCreatures.FlatAppearance.BorderSize = 0
         Me.optBtnMoreSurfaceCreatures.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreSurfaceCreatures.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4834,8 +4779,7 @@ Partial Class MainForm
         'optBtnMoreDemons
         '
         Me.optBtnMoreDemons.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreDemons.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreDemons.BackgroundImage = CType(resources.GetObject("optBtnMoreDemons.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreDemons.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreDemons.FlatAppearance.BorderSize = 0
         Me.optBtnMoreDemons.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreDemons.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4868,8 +4812,7 @@ Partial Class MainForm
         'optBtnMoreMagical
         '
         Me.optBtnMoreMagical.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreMagical.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreMagical.BackgroundImage = CType(resources.GetObject("optBtnMoreMagical.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreMagical.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreMagical.FlatAppearance.BorderSize = 0
         Me.optBtnMoreMagical.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreMagical.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4927,8 +4870,7 @@ Partial Class MainForm
         'optBtnFdFrogmen
         '
         Me.optBtnFdFrogmen.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdFrogmen.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdFrogmen.BackgroundImage = CType(resources.GetObject("optBtnFdFrogmen.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdFrogmen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdFrogmen.FlatAppearance.BorderSize = 0
         Me.optBtnFdFrogmen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdFrogmen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4961,8 +4903,7 @@ Partial Class MainForm
         'optBtnFdFireImps
         '
         Me.optBtnFdFireImps.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdFireImps.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdFireImps.BackgroundImage = CType(resources.GetObject("optBtnFdFireImps.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdFireImps.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdFireImps.FlatAppearance.BorderSize = 0
         Me.optBtnFdFireImps.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdFireImps.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -4995,8 +4936,7 @@ Partial Class MainForm
         'optBtnFdStranglers
         '
         Me.optBtnFdStranglers.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdStranglers.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdStranglers.BackgroundImage = CType(resources.GetObject("optBtnFdStranglers.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdStranglers.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdStranglers.FlatAppearance.BorderSize = 0
         Me.optBtnFdStranglers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdStranglers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5029,8 +4969,7 @@ Partial Class MainForm
         'optBtnFdWerewolfs
         '
         Me.optBtnFdWerewolfs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdWerewolfs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdWerewolfs.BackgroundImage = CType(resources.GetObject("optBtnFdWerewolfs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdWerewolfs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdWerewolfs.FlatAppearance.BorderSize = 0
         Me.optBtnFdWerewolfs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdWerewolfs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5063,8 +5002,7 @@ Partial Class MainForm
         'optBtnFdBlendecs
         '
         Me.optBtnFdBlendecs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdBlendecs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdBlendecs.BackgroundImage = CType(resources.GetObject("optBtnFdBlendecs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdBlendecs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdBlendecs.FlatAppearance.BorderSize = 0
         Me.optBtnFdBlendecs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdBlendecs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5097,8 +5035,7 @@ Partial Class MainForm
         'optBtnFdSerpentmen
         '
         Me.optBtnFdSerpentmen.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdSerpentmen.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdSerpentmen.BackgroundImage = CType(resources.GetObject("optBtnFdSerpentmen.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdSerpentmen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdSerpentmen.FlatAppearance.BorderSize = 0
         Me.optBtnFdSerpentmen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdSerpentmen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5131,8 +5068,7 @@ Partial Class MainForm
         'optBtnFdWhiteTigermen
         '
         Me.optBtnFdWhiteTigermen.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdWhiteTigermen.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdWhiteTigermen.BackgroundImage = CType(resources.GetObject("optBtnFdWhiteTigermen.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdWhiteTigermen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdWhiteTigermen.FlatAppearance.BorderSize = 0
         Me.optBtnFdWhiteTigermen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdWhiteTigermen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5165,8 +5101,7 @@ Partial Class MainForm
         'optBtnFdBeakWolfs
         '
         Me.optBtnFdBeakWolfs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdBeakWolfs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdBeakWolfs.BackgroundImage = CType(resources.GetObject("optBtnFdBeakWolfs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdBeakWolfs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdBeakWolfs.FlatAppearance.BorderSize = 0
         Me.optBtnFdBeakWolfs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdBeakWolfs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5199,8 +5134,7 @@ Partial Class MainForm
         'optBtnFdElephants
         '
         Me.optBtnFdElephants.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdElephants.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdElephants.BackgroundImage = CType(resources.GetObject("optBtnFdElephants.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdElephants.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdElephants.FlatAppearance.BorderSize = 0
         Me.optBtnFdElephants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdElephants.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5233,8 +5167,7 @@ Partial Class MainForm
         'optBtnFdFerricElves
         '
         Me.optBtnFdFerricElves.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdFerricElves.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdFerricElves.BackgroundImage = CType(resources.GetObject("optBtnFdFerricElves.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdFerricElves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdFerricElves.FlatAppearance.BorderSize = 0
         Me.optBtnFdFerricElves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdFerricElves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5267,8 +5200,7 @@ Partial Class MainForm
         'optBtnFdGreatBadgermen
         '
         Me.optBtnFdGreatBadgermen.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdGreatBadgermen.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdGreatBadgermen.BackgroundImage = CType(resources.GetObject("optBtnFdGreatBadgermen.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdGreatBadgermen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdGreatBadgermen.FlatAppearance.BorderSize = 0
         Me.optBtnFdGreatBadgermen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdGreatBadgermen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5301,8 +5233,7 @@ Partial Class MainForm
         'optBtnFdPandashi
         '
         Me.optBtnFdPandashi.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdPandashi.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdPandashi.BackgroundImage = CType(resources.GetObject("optBtnFdPandashi.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdPandashi.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdPandashi.FlatAppearance.BorderSize = 0
         Me.optBtnFdPandashi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdPandashi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5335,8 +5266,7 @@ Partial Class MainForm
         'optBtnFdRaptormen
         '
         Me.optBtnFdRaptormen.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdRaptormen.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdRaptormen.BackgroundImage = CType(resources.GetObject("optBtnFdRaptormen.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdRaptormen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdRaptormen.FlatAppearance.BorderSize = 0
         Me.optBtnFdRaptormen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdRaptormen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5369,8 +5299,7 @@ Partial Class MainForm
         'optBtnFdHarpies
         '
         Me.optBtnFdHarpies.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdHarpies.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdHarpies.BackgroundImage = CType(resources.GetObject("optBtnFdHarpies.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdHarpies.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdHarpies.FlatAppearance.BorderSize = 0
         Me.optBtnFdHarpies.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdHarpies.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5403,8 +5332,7 @@ Partial Class MainForm
         'optBtnFdMinotaurs
         '
         Me.optBtnFdMinotaurs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdMinotaurs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdMinotaurs.BackgroundImage = CType(resources.GetObject("optBtnFdMinotaurs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdMinotaurs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdMinotaurs.FlatAppearance.BorderSize = 0
         Me.optBtnFdMinotaurs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdMinotaurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5437,8 +5365,7 @@ Partial Class MainForm
         'optBtnFdJotun
         '
         Me.optBtnFdJotun.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdJotun.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdJotun.BackgroundImage = CType(resources.GetObject("optBtnFdJotun.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdJotun.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdJotun.FlatAppearance.BorderSize = 0
         Me.optBtnFdJotun.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdJotun.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5471,8 +5398,7 @@ Partial Class MainForm
         'optBtnFdSpiderFiends
         '
         Me.optBtnFdSpiderFiends.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdSpiderFiends.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdSpiderFiends.BackgroundImage = CType(resources.GetObject("optBtnFdSpiderFiends.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdSpiderFiends.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdSpiderFiends.FlatAppearance.BorderSize = 0
         Me.optBtnFdSpiderFiends.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdSpiderFiends.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5505,8 +5431,7 @@ Partial Class MainForm
         'optBtnFdNightwings
         '
         Me.optBtnFdNightwings.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFdNightwings.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFdNightwings.BackgroundImage = CType(resources.GetObject("optBtnFdNightwings.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFdNightwings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFdNightwings.FlatAppearance.BorderSize = 0
         Me.optBtnFdNightwings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFdNightwings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -5539,10 +5464,9 @@ Partial Class MainForm
         'optBtnSteamEngine
         '
         Me.optBtnSteamEngine.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSteamEngine.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSteamEngine.BackgroundImage = CType(resources.GetObject("optBtnSteamEngine.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSteamEngine.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSteamEngine.FlatAppearance.BorderSize = 0
-        Me.optBtnSteamEngine.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSteamEngine.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSteamEngine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSteamEngine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSteamEngine.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5574,10 +5498,9 @@ Partial Class MainForm
         'optBtnMachineFactory
         '
         Me.optBtnMachineFactory.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMachineFactory.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMachineFactory.BackgroundImage = CType(resources.GetObject("optBtnMachineFactory.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMachineFactory.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMachineFactory.FlatAppearance.BorderSize = 0
-        Me.optBtnMachineFactory.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnMachineFactory.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMachineFactory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMachineFactory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnMachineFactory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5610,10 +5533,9 @@ Partial Class MainForm
         'optBtnLiquidSpawner
         '
         Me.optBtnLiquidSpawner.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnLiquidSpawner.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnLiquidSpawner.BackgroundImage = CType(resources.GetObject("optBtnLiquidSpawner.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnLiquidSpawner.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnLiquidSpawner.FlatAppearance.BorderSize = 0
-        Me.optBtnLiquidSpawner.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnLiquidSpawner.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnLiquidSpawner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnLiquidSpawner.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnLiquidSpawner.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5646,10 +5568,9 @@ Partial Class MainForm
         'optBtnCoinMint
         '
         Me.optBtnCoinMint.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCoinMint.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCoinMint.BackgroundImage = CType(resources.GetObject("optBtnCoinMint.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCoinMint.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCoinMint.FlatAppearance.BorderSize = 0
-        Me.optBtnCoinMint.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnCoinMint.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCoinMint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCoinMint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnCoinMint.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5681,10 +5602,9 @@ Partial Class MainForm
         'optBtnBonecarver
         '
         Me.optBtnBonecarver.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBonecarver.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBonecarver.BackgroundImage = CType(resources.GetObject("optBtnBonecarver.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBonecarver.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBonecarver.FlatAppearance.BorderSize = 0
-        Me.optBtnBonecarver.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBonecarver.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBonecarver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBonecarver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBonecarver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5716,10 +5636,9 @@ Partial Class MainForm
         'optBtnStonecrafter
         '
         Me.optBtnStonecrafter.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnStonecrafter.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnStonecrafter.BackgroundImage = CType(resources.GetObject("optBtnStonecrafter.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnStonecrafter.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStonecrafter.FlatAppearance.BorderSize = 0
-        Me.optBtnStonecrafter.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnStonecrafter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStonecrafter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnStonecrafter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnStonecrafter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5751,10 +5670,9 @@ Partial Class MainForm
         'optBtnGemcutter
         '
         Me.optBtnGemcutter.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGemcutter.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGemcutter.BackgroundImage = CType(resources.GetObject("optBtnGemcutter.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGemcutter.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGemcutter.FlatAppearance.BorderSize = 0
-        Me.optBtnGemcutter.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGemcutter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGemcutter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGemcutter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGemcutter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5787,10 +5705,9 @@ Partial Class MainForm
         'optBtnWoodcrafter
         '
         Me.optBtnWoodcrafter.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWoodcrafter.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnWoodcrafter.BackgroundImage = CType(resources.GetObject("optBtnWoodcrafter.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnWoodcrafter.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWoodcrafter.FlatAppearance.BorderSize = 0
-        Me.optBtnWoodcrafter.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnWoodcrafter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWoodcrafter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnWoodcrafter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnWoodcrafter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5822,10 +5739,9 @@ Partial Class MainForm
         'optBtnThatchery
         '
         Me.optBtnThatchery.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnThatchery.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnThatchery.BackgroundImage = CType(resources.GetObject("optBtnThatchery.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnThatchery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnThatchery.FlatAppearance.BorderSize = 0
-        Me.optBtnThatchery.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnThatchery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnThatchery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnThatchery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnThatchery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5857,10 +5773,9 @@ Partial Class MainForm
         'optBtnFurnitureWorkshop
         '
         Me.optBtnFurnitureWorkshop.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFurnitureWorkshop.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFurnitureWorkshop.BackgroundImage = CType(resources.GetObject("optBtnFurnitureWorkshop.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFurnitureWorkshop.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFurnitureWorkshop.FlatAppearance.BorderSize = 0
-        Me.optBtnFurnitureWorkshop.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnFurnitureWorkshop.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFurnitureWorkshop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFurnitureWorkshop.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnFurnitureWorkshop.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5893,10 +5808,9 @@ Partial Class MainForm
         'optBtnTailor
         '
         Me.optBtnTailor.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTailor.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTailor.BackgroundImage = CType(resources.GetObject("optBtnTailor.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTailor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTailor.FlatAppearance.BorderSize = 0
-        Me.optBtnTailor.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTailor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTailor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnTailor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnTailor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5929,10 +5843,9 @@ Partial Class MainForm
         'optBtnChandler
         '
         Me.optBtnChandler.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnChandler.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnChandler.BackgroundImage = CType(resources.GetObject("optBtnChandler.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnChandler.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnChandler.FlatAppearance.BorderSize = 0
-        Me.optBtnChandler.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnChandler.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnChandler.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnChandler.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnChandler.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5964,10 +5877,9 @@ Partial Class MainForm
         'optBtnFletcher
         '
         Me.optBtnFletcher.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFletcher.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFletcher.BackgroundImage = CType(resources.GetObject("optBtnFletcher.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFletcher.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFletcher.FlatAppearance.BorderSize = 0
-        Me.optBtnFletcher.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnFletcher.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFletcher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFletcher.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnFletcher.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -5999,10 +5911,9 @@ Partial Class MainForm
         'optBtnPottery
         '
         Me.optBtnPottery.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPottery.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnPottery.BackgroundImage = CType(resources.GetObject("optBtnPottery.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnPottery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPottery.FlatAppearance.BorderSize = 0
-        Me.optBtnPottery.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnPottery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPottery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnPottery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnPottery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6035,10 +5946,9 @@ Partial Class MainForm
         'optBtnGreatDyer
         '
         Me.optBtnGreatDyer.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGreatDyer.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGreatDyer.BackgroundImage = CType(resources.GetObject("optBtnGreatDyer.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGreatDyer.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGreatDyer.FlatAppearance.BorderSize = 0
-        Me.optBtnGreatDyer.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGreatDyer.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGreatDyer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGreatDyer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGreatDyer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6071,10 +5981,9 @@ Partial Class MainForm
         'optBtnPainter
         '
         Me.optBtnPainter.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPainter.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnPainter.BackgroundImage = CType(resources.GetObject("optBtnPainter.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnPainter.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPainter.FlatAppearance.BorderSize = 0
-        Me.optBtnPainter.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnPainter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPainter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnPainter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnPainter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6106,10 +6015,9 @@ Partial Class MainForm
         'optBtnToolmaker
         '
         Me.optBtnToolmaker.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnToolmaker.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnToolmaker.BackgroundImage = CType(resources.GetObject("optBtnToolmaker.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnToolmaker.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnToolmaker.FlatAppearance.BorderSize = 0
-        Me.optBtnToolmaker.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnToolmaker.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnToolmaker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnToolmaker.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnToolmaker.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6141,10 +6049,9 @@ Partial Class MainForm
         'optBtnWeightBench
         '
         Me.optBtnWeightBench.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWeightBench.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnWeightBench.BackgroundImage = CType(resources.GetObject("optBtnWeightBench.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnWeightBench.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWeightBench.FlatAppearance.BorderSize = 0
-        Me.optBtnWeightBench.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnWeightBench.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWeightBench.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnWeightBench.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnWeightBench.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6176,10 +6083,9 @@ Partial Class MainForm
         'optBtnWoodsplitting
         '
         Me.optBtnWoodsplitting.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWoodsplitting.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnWoodsplitting.BackgroundImage = CType(resources.GetObject("optBtnWoodsplitting.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnWoodsplitting.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWoodsplitting.FlatAppearance.BorderSize = 0
-        Me.optBtnWoodsplitting.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnWoodsplitting.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWoodsplitting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnWoodsplitting.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnWoodsplitting.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6212,10 +6118,9 @@ Partial Class MainForm
         'optBtnStorage
         '
         Me.optBtnStorage.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnStorage.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnStorage.BackgroundImage = CType(resources.GetObject("optBtnStorage.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnStorage.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStorage.FlatAppearance.BorderSize = 0
-        Me.optBtnStorage.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnStorage.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStorage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnStorage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnStorage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6247,10 +6152,9 @@ Partial Class MainForm
         'optBtnBrewery
         '
         Me.optBtnBrewery.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBrewery.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBrewery.BackgroundImage = CType(resources.GetObject("optBtnBrewery.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBrewery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBrewery.FlatAppearance.BorderSize = 0
-        Me.optBtnBrewery.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBrewery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBrewery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBrewery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBrewery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6283,10 +6187,9 @@ Partial Class MainForm
         'optBtnSawmill
         '
         Me.optBtnSawmill.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSawmill.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSawmill.BackgroundImage = CType(resources.GetObject("optBtnSawmill.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSawmill.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSawmill.FlatAppearance.BorderSize = 0
-        Me.optBtnSawmill.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSawmill.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSawmill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSawmill.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSawmill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6319,10 +6222,9 @@ Partial Class MainForm
         'optBtnFishpond
         '
         Me.optBtnFishpond.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFishpond.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFishpond.BackgroundImage = CType(resources.GetObject("optBtnFishpond.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFishpond.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFishpond.FlatAppearance.BorderSize = 0
-        Me.optBtnFishpond.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnFishpond.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFishpond.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFishpond.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnFishpond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6354,10 +6256,9 @@ Partial Class MainForm
         'optBtnSlaughterhouse
         '
         Me.optBtnSlaughterhouse.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSlaughterhouse.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSlaughterhouse.BackgroundImage = CType(resources.GetObject("optBtnSlaughterhouse.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSlaughterhouse.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSlaughterhouse.FlatAppearance.BorderSize = 0
-        Me.optBtnSlaughterhouse.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSlaughterhouse.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSlaughterhouse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSlaughterhouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSlaughterhouse.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6389,10 +6290,9 @@ Partial Class MainForm
         'optBtnStables
         '
         Me.optBtnStables.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnStables.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnStables.BackgroundImage = CType(resources.GetObject("optBtnStables.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnStables.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStables.FlatAppearance.BorderSize = 0
-        Me.optBtnStables.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnStables.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStables.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnStables.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnStables.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6424,10 +6324,9 @@ Partial Class MainForm
         'optBtnResearch
         '
         Me.optBtnResearch.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnResearch.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnResearch.BackgroundImage = CType(resources.GetObject("optBtnResearch.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnResearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnResearch.FlatAppearance.BorderSize = 0
-        Me.optBtnResearch.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnResearch.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnResearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnResearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnResearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6459,10 +6358,9 @@ Partial Class MainForm
         'optBtnArcheology
         '
         Me.optBtnArcheology.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnArcheology.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnArcheology.BackgroundImage = CType(resources.GetObject("optBtnArcheology.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnArcheology.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnArcheology.FlatAppearance.BorderSize = 0
-        Me.optBtnArcheology.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnArcheology.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnArcheology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnArcheology.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnArcheology.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6494,10 +6392,9 @@ Partial Class MainForm
         'optBtnApothecary
         '
         Me.optBtnApothecary.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnApothecary.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnApothecary.BackgroundImage = CType(resources.GetObject("optBtnApothecary.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnApothecary.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnApothecary.FlatAppearance.BorderSize = 0
-        Me.optBtnApothecary.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnApothecary.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnApothecary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnApothecary.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnApothecary.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6530,10 +6427,9 @@ Partial Class MainForm
         'optBtnBiology
         '
         Me.optBtnBiology.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBiology.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBiology.BackgroundImage = CType(resources.GetObject("optBtnBiology.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBiology.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBiology.FlatAppearance.BorderSize = 0
-        Me.optBtnBiology.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBiology.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBiology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBiology.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBiology.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6566,10 +6462,9 @@ Partial Class MainForm
         'optBtnTavern
         '
         Me.optBtnTavern.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTavern.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTavern.BackgroundImage = CType(resources.GetObject("optBtnTavern.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTavern.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTavern.FlatAppearance.BorderSize = 0
-        Me.optBtnTavern.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTavern.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTavern.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnTavern.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnTavern.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6602,10 +6497,9 @@ Partial Class MainForm
         'optBtnOlon
         '
         Me.optBtnOlon.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnOlon.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnOlon.BackgroundImage = CType(resources.GetObject("optBtnOlon.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnOlon.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnOlon.FlatAppearance.BorderSize = 0
-        Me.optBtnOlon.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnOlon.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnOlon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnOlon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnOlon.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6637,10 +6531,9 @@ Partial Class MainForm
         'optBtnBomrek
         '
         Me.optBtnBomrek.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBomrek.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBomrek.BackgroundImage = CType(resources.GetObject("optBtnBomrek.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBomrek.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBomrek.FlatAppearance.BorderSize = 0
-        Me.optBtnBomrek.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBomrek.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBomrek.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBomrek.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBomrek.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6672,10 +6565,9 @@ Partial Class MainForm
         'optBtnUrist
         '
         Me.optBtnUrist.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnUrist.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnUrist.BackgroundImage = CType(resources.GetObject("optBtnUrist.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnUrist.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnUrist.FlatAppearance.BorderSize = 0
-        Me.optBtnUrist.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnUrist.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnUrist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnUrist.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnUrist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6707,10 +6599,9 @@ Partial Class MainForm
         'optBtnTeduk
         '
         Me.optBtnTeduk.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTeduk.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTeduk.BackgroundImage = CType(resources.GetObject("optBtnTeduk.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTeduk.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTeduk.FlatAppearance.BorderSize = 0
-        Me.optBtnTeduk.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTeduk.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTeduk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnTeduk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnTeduk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6742,10 +6633,9 @@ Partial Class MainForm
         'optBtnIneri
         '
         Me.optBtnIneri.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnIneri.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnIneri.BackgroundImage = CType(resources.GetObject("optBtnIneri.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnIneri.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnIneri.FlatAppearance.BorderSize = 0
-        Me.optBtnIneri.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnIneri.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnIneri.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnIneri.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnIneri.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6777,10 +6667,9 @@ Partial Class MainForm
         'optBtnAlchemy
         '
         Me.optBtnAlchemy.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAlchemy.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnAlchemy.BackgroundImage = CType(resources.GetObject("optBtnAlchemy.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnAlchemy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAlchemy.FlatAppearance.BorderSize = 0
-        Me.optBtnAlchemy.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnAlchemy.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAlchemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnAlchemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnAlchemy.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6813,10 +6702,9 @@ Partial Class MainForm
         'optBtnToxicology
         '
         Me.optBtnToxicology.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnToxicology.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnToxicology.BackgroundImage = CType(resources.GetObject("optBtnToxicology.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnToxicology.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnToxicology.FlatAppearance.BorderSize = 0
-        Me.optBtnToxicology.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnToxicology.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnToxicology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnToxicology.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnToxicology.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6848,10 +6736,9 @@ Partial Class MainForm
         'optBtnChemistry
         '
         Me.optBtnChemistry.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnChemistry.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnChemistry.BackgroundImage = CType(resources.GetObject("optBtnChemistry.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnChemistry.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnChemistry.FlatAppearance.BorderSize = 0
-        Me.optBtnChemistry.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnChemistry.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnChemistry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnChemistry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnChemistry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6883,10 +6770,9 @@ Partial Class MainForm
         'optBtnHerbalist
         '
         Me.optBtnHerbalist.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHerbalist.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnHerbalist.BackgroundImage = CType(resources.GetObject("optBtnHerbalist.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnHerbalist.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHerbalist.FlatAppearance.BorderSize = 0
-        Me.optBtnHerbalist.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnHerbalist.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHerbalist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnHerbalist.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnHerbalist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6918,10 +6804,9 @@ Partial Class MainForm
         'optBtnAltar
         '
         Me.optBtnAltar.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAltar.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnAltar.BackgroundImage = CType(resources.GetObject("optBtnAltar.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnAltar.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAltar.FlatAppearance.BorderSize = 0
-        Me.optBtnAltar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnAltar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnAltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnAltar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6953,10 +6838,9 @@ Partial Class MainForm
         'optBtnShrine
         '
         Me.optBtnShrine.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnShrine.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnShrine.BackgroundImage = CType(resources.GetObject("optBtnShrine.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnShrine.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnShrine.FlatAppearance.BorderSize = 0
-        Me.optBtnShrine.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnShrine.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnShrine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnShrine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnShrine.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -6988,10 +6872,9 @@ Partial Class MainForm
         'optBtnTemple
         '
         Me.optBtnTemple.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTemple.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTemple.BackgroundImage = CType(resources.GetObject("optBtnTemple.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTemple.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTemple.FlatAppearance.BorderSize = 0
-        Me.optBtnTemple.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTemple.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTemple.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnTemple.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnTemple.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7023,10 +6906,9 @@ Partial Class MainForm
         'optBtnEmbassy
         '
         Me.optBtnEmbassy.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEmbassy.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnEmbassy.BackgroundImage = CType(resources.GetObject("optBtnEmbassy.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnEmbassy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEmbassy.FlatAppearance.BorderSize = 0
-        Me.optBtnEmbassy.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnEmbassy.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEmbassy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnEmbassy.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnEmbassy.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7058,10 +6940,9 @@ Partial Class MainForm
         'optBtnExpedition
         '
         Me.optBtnExpedition.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnExpedition.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnExpedition.BackgroundImage = CType(resources.GetObject("optBtnExpedition.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnExpedition.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnExpedition.FlatAppearance.BorderSize = 0
-        Me.optBtnExpedition.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnExpedition.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnExpedition.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnExpedition.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnExpedition.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7093,10 +6974,9 @@ Partial Class MainForm
         'optBtnPodium
         '
         Me.optBtnPodium.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPodium.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnPodium.BackgroundImage = CType(resources.GetObject("optBtnPodium.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnPodium.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPodium.FlatAppearance.BorderSize = 0
-        Me.optBtnPodium.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnPodium.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPodium.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnPodium.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnPodium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7129,9 +7009,8 @@ Partial Class MainForm
         'optBtnScriptorium
         '
         Me.optBtnScriptorium.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnScriptorium.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
         Me.optBtnScriptorium.FlatAppearance.BorderSize = 0
-        Me.optBtnScriptorium.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnScriptorium.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnScriptorium.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnScriptorium.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnScriptorium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7163,10 +7042,9 @@ Partial Class MainForm
         'optBtnLibraries
         '
         Me.optBtnLibraries.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnLibraries.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnLibraries.BackgroundImage = CType(resources.GetObject("optBtnLibraries.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnLibraries.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnLibraries.FlatAppearance.BorderSize = 0
-        Me.optBtnLibraries.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnLibraries.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnLibraries.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnLibraries.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnLibraries.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7198,10 +7076,9 @@ Partial Class MainForm
         'optBtnColosseum
         '
         Me.optBtnColosseum.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnColosseum.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnColosseum.BackgroundImage = CType(resources.GetObject("optBtnColosseum.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnColosseum.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnColosseum.FlatAppearance.BorderSize = 0
-        Me.optBtnColosseum.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnColosseum.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnColosseum.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnColosseum.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnColosseum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7233,10 +7110,9 @@ Partial Class MainForm
         'optBtnGuildhall
         '
         Me.optBtnGuildhall.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGuildhall.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGuildhall.BackgroundImage = CType(resources.GetObject("optBtnGuildhall.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGuildhall.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGuildhall.FlatAppearance.BorderSize = 0
-        Me.optBtnGuildhall.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGuildhall.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGuildhall.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGuildhall.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGuildhall.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7268,10 +7144,9 @@ Partial Class MainForm
         'optBtnPrison
         '
         Me.optBtnPrison.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPrison.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnPrison.BackgroundImage = CType(resources.GetObject("optBtnPrison.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnPrison.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPrison.FlatAppearance.BorderSize = 0
-        Me.optBtnPrison.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnPrison.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPrison.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnPrison.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnPrison.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7303,10 +7178,9 @@ Partial Class MainForm
         'optBtnMonastery
         '
         Me.optBtnMonastery.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMonastery.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMonastery.BackgroundImage = CType(resources.GetObject("optBtnMonastery.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMonastery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMonastery.FlatAppearance.BorderSize = 0
-        Me.optBtnMonastery.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnMonastery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMonastery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMonastery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnMonastery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7339,10 +7213,9 @@ Partial Class MainForm
         'optBtnGarrison
         '
         Me.optBtnGarrison.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGarrison.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGarrison.BackgroundImage = CType(resources.GetObject("optBtnGarrison.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGarrison.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGarrison.FlatAppearance.BorderSize = 0
-        Me.optBtnGarrison.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGarrison.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGarrison.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGarrison.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGarrison.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7375,10 +7248,9 @@ Partial Class MainForm
         'optBtnBrazier
         '
         Me.optBtnBrazier.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBrazier.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBrazier.BackgroundImage = CType(resources.GetObject("optBtnBrazier.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBrazier.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBrazier.FlatAppearance.BorderSize = 0
-        Me.optBtnBrazier.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBrazier.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBrazier.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBrazier.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBrazier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7410,10 +7282,9 @@ Partial Class MainForm
         'optBtnCandelabra
         '
         Me.optBtnCandelabra.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCandelabra.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCandelabra.BackgroundImage = CType(resources.GetObject("optBtnCandelabra.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCandelabra.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCandelabra.FlatAppearance.BorderSize = 0
-        Me.optBtnCandelabra.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnCandelabra.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCandelabra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCandelabra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnCandelabra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7445,10 +7316,9 @@ Partial Class MainForm
         'optBtnFireplace
         '
         Me.optBtnFireplace.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFireplace.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFireplace.BackgroundImage = CType(resources.GetObject("optBtnFireplace.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFireplace.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFireplace.FlatAppearance.BorderSize = 0
-        Me.optBtnFireplace.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnFireplace.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFireplace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFireplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnFireplace.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7480,10 +7350,9 @@ Partial Class MainForm
         'optBtnTorchbearerStatue
         '
         Me.optBtnTorchbearerStatue.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTorchbearerStatue.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTorchbearerStatue.BackgroundImage = CType(resources.GetObject("optBtnTorchbearerStatue.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTorchbearerStatue.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTorchbearerStatue.FlatAppearance.BorderSize = 0
-        Me.optBtnTorchbearerStatue.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTorchbearerStatue.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTorchbearerStatue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnTorchbearerStatue.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnTorchbearerStatue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7515,10 +7384,9 @@ Partial Class MainForm
         'optBtnGemOfLight
         '
         Me.optBtnGemOfLight.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGemOfLight.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGemOfLight.BackgroundImage = CType(resources.GetObject("optBtnGemOfLight.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGemOfLight.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGemOfLight.FlatAppearance.BorderSize = 0
-        Me.optBtnGemOfLight.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGemOfLight.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGemOfLight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGemOfLight.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGemOfLight.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7550,10 +7418,9 @@ Partial Class MainForm
         'optBtnAmmocaster
         '
         Me.optBtnAmmocaster.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAmmocaster.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnAmmocaster.BackgroundImage = CType(resources.GetObject("optBtnAmmocaster.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnAmmocaster.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAmmocaster.FlatAppearance.BorderSize = 0
-        Me.optBtnAmmocaster.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnAmmocaster.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAmmocaster.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnAmmocaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnAmmocaster.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7585,10 +7452,9 @@ Partial Class MainForm
         'optBtnGunsmith
         '
         Me.optBtnGunsmith.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGunsmith.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGunsmith.BackgroundImage = CType(resources.GetObject("optBtnGunsmith.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGunsmith.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGunsmith.FlatAppearance.BorderSize = 0
-        Me.optBtnGunsmith.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGunsmith.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGunsmith.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGunsmith.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGunsmith.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7620,10 +7486,9 @@ Partial Class MainForm
         'optBtnHeavySiegeworks
         '
         Me.optBtnHeavySiegeworks.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHeavySiegeworks.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnHeavySiegeworks.BackgroundImage = CType(resources.GetObject("optBtnHeavySiegeworks.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnHeavySiegeworks.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHeavySiegeworks.FlatAppearance.BorderSize = 0
-        Me.optBtnHeavySiegeworks.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnHeavySiegeworks.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHeavySiegeworks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnHeavySiegeworks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnHeavySiegeworks.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7656,10 +7521,9 @@ Partial Class MainForm
         'optBtnEngineer
         '
         Me.optBtnEngineer.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEngineer.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnEngineer.BackgroundImage = CType(resources.GetObject("optBtnEngineer.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnEngineer.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEngineer.FlatAppearance.BorderSize = 0
-        Me.optBtnEngineer.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnEngineer.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEngineer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnEngineer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnEngineer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7691,10 +7555,9 @@ Partial Class MainForm
         'optBtnInventor
         '
         Me.optBtnInventor.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnInventor.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnInventor.BackgroundImage = CType(resources.GetObject("optBtnInventor.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnInventor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnInventor.FlatAppearance.BorderSize = 0
-        Me.optBtnInventor.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnInventor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnInventor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnInventor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnInventor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7727,10 +7590,9 @@ Partial Class MainForm
         'optBtnGreatforge
         '
         Me.optBtnGreatforge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGreatforge.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGreatforge.BackgroundImage = CType(resources.GetObject("optBtnGreatforge.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGreatforge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGreatforge.FlatAppearance.BorderSize = 0
-        Me.optBtnGreatforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGreatforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGreatforge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGreatforge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGreatforge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7762,10 +7624,9 @@ Partial Class MainForm
         'optBtnGlassforge
         '
         Me.optBtnGlassforge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGlassforge.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGlassforge.BackgroundImage = CType(resources.GetObject("optBtnGlassforge.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGlassforge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGlassforge.FlatAppearance.BorderSize = 0
-        Me.optBtnGlassforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGlassforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGlassforge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGlassforge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGlassforge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7797,10 +7658,9 @@ Partial Class MainForm
         'optBtnGemforge
         '
         Me.optBtnGemforge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGemforge.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGemforge.BackgroundImage = CType(resources.GetObject("optBtnGemforge.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGemforge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGemforge.FlatAppearance.BorderSize = 0
-        Me.optBtnGemforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGemforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGemforge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGemforge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGemforge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7833,10 +7693,9 @@ Partial Class MainForm
         'optBtnRockForge
         '
         Me.optBtnRockForge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRockForge.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnRockForge.BackgroundImage = CType(resources.GetObject("optBtnRockForge.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnRockForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRockForge.FlatAppearance.BorderSize = 0
-        Me.optBtnRockForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnRockForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRockForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnRockForge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnRockForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7868,10 +7727,9 @@ Partial Class MainForm
         'optBtnBrickOven
         '
         Me.optBtnBrickOven.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBrickOven.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBrickOven.BackgroundImage = CType(resources.GetObject("optBtnBrickOven.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBrickOven.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBrickOven.FlatAppearance.BorderSize = 0
-        Me.optBtnBrickOven.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBrickOven.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBrickOven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBrickOven.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBrickOven.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7903,10 +7761,9 @@ Partial Class MainForm
         'optBtnCrematorium
         '
         Me.optBtnCrematorium.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCrematorium.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCrematorium.BackgroundImage = CType(resources.GetObject("optBtnCrematorium.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCrematorium.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCrematorium.FlatAppearance.BorderSize = 0
-        Me.optBtnCrematorium.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnCrematorium.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCrematorium.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCrematorium.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnCrematorium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7938,9 +7795,8 @@ Partial Class MainForm
         'optMultiOreProcessor
         '
         Me.optMultiOreProcessor.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optMultiOreProcessor.BackgroundImage = CType(resources.GetObject("optMultiOreProcessor.BackgroundImage"),System.Drawing.Image)
         Me.optMultiOreProcessor.FlatAppearance.BorderSize = 0
-        Me.optMultiOreProcessor.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optMultiOreProcessor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optMultiOreProcessor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optMultiOreProcessor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optMultiOreProcessor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -7986,10 +7842,9 @@ Partial Class MainForm
         'optBtnKiln
         '
         Me.optBtnKiln.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnKiln.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnKiln.BackgroundImage = CType(resources.GetObject("optBtnKiln.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnKiln.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnKiln.FlatAppearance.BorderSize = 0
-        Me.optBtnKiln.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnKiln.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnKiln.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnKiln.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnKiln.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8021,10 +7876,9 @@ Partial Class MainForm
         'optBtnSlagPit
         '
         Me.optBtnSlagPit.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSlagPit.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSlagPit.BackgroundImage = CType(resources.GetObject("optBtnSlagPit.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSlagPit.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSlagPit.FlatAppearance.BorderSize = 0
-        Me.optBtnSlagPit.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSlagPit.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSlagPit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSlagPit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSlagPit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8056,10 +7910,9 @@ Partial Class MainForm
         'optBtnRuneArmory
         '
         Me.optBtnRuneArmory.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRuneArmory.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnRuneArmory.BackgroundImage = CType(resources.GetObject("optBtnRuneArmory.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnRuneArmory.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRuneArmory.FlatAppearance.BorderSize = 0
-        Me.optBtnRuneArmory.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnRuneArmory.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRuneArmory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnRuneArmory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnRuneArmory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8091,10 +7944,9 @@ Partial Class MainForm
         'optBtnRuneWeaponry
         '
         Me.optBtnRuneWeaponry.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRuneWeaponry.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnRuneWeaponry.BackgroundImage = CType(resources.GetObject("optBtnRuneWeaponry.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnRuneWeaponry.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRuneWeaponry.FlatAppearance.BorderSize = 0
-        Me.optBtnRuneWeaponry.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnRuneWeaponry.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRuneWeaponry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnRuneWeaponry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnRuneWeaponry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8126,10 +7978,9 @@ Partial Class MainForm
         'optBtnArmory
         '
         Me.optBtnArmory.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnArmory.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnArmory.BackgroundImage = CType(resources.GetObject("optBtnArmory.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnArmory.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnArmory.FlatAppearance.BorderSize = 0
-        Me.optBtnArmory.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnArmory.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnArmory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnArmory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnArmory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8161,10 +8012,9 @@ Partial Class MainForm
         'optBtnWeaponry
         '
         Me.optBtnWeaponry.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWeaponry.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnWeaponry.BackgroundImage = CType(resources.GetObject("optBtnWeaponry.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnWeaponry.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWeaponry.FlatAppearance.BorderSize = 0
-        Me.optBtnWeaponry.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnWeaponry.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWeaponry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnWeaponry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnWeaponry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8197,10 +8047,9 @@ Partial Class MainForm
         'optBtnMegabeastKennel
         '
         Me.optBtnMegabeastKennel.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMegabeastKennel.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMegabeastKennel.BackgroundImage = CType(resources.GetObject("optBtnMegabeastKennel.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMegabeastKennel.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMegabeastKennel.FlatAppearance.BorderSize = 0
-        Me.optBtnMegabeastKennel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnMegabeastKennel.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMegabeastKennel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMegabeastKennel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnMegabeastKennel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8233,10 +8082,9 @@ Partial Class MainForm
         'optBtnWarKennel
         '
         Me.optBtnWarKennel.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWarKennel.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnWarKennel.BackgroundImage = CType(resources.GetObject("optBtnWarKennel.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnWarKennel.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWarKennel.FlatAppearance.BorderSize = 0
-        Me.optBtnWarKennel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnWarKennel.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWarKennel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnWarKennel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnWarKennel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8268,10 +8116,9 @@ Partial Class MainForm
         'optBtnBlastFurnace
         '
         Me.optBtnBlastFurnace.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBlastFurnace.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBlastFurnace.BackgroundImage = CType(resources.GetObject("optBtnBlastFurnace.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBlastFurnace.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBlastFurnace.FlatAppearance.BorderSize = 0
-        Me.optBtnBlastFurnace.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBlastFurnace.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBlastFurnace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBlastFurnace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBlastFurnace.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8303,10 +8150,9 @@ Partial Class MainForm
         'optBtnCrucible
         '
         Me.optBtnCrucible.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCrucible.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCrucible.BackgroundImage = CType(resources.GetObject("optBtnCrucible.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCrucible.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCrucible.FlatAppearance.BorderSize = 0
-        Me.optBtnCrucible.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnCrucible.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCrucible.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCrucible.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnCrucible.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8338,10 +8184,9 @@ Partial Class MainForm
         'optBtnFinishingForge
         '
         Me.optBtnFinishingForge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFinishingForge.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFinishingForge.BackgroundImage = CType(resources.GetObject("optBtnFinishingForge.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFinishingForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFinishingForge.FlatAppearance.BorderSize = 0
-        Me.optBtnFinishingForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnFinishingForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFinishingForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFinishingForge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnFinishingForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8373,10 +8218,9 @@ Partial Class MainForm
         'optBtnMetallurgist
         '
         Me.optBtnMetallurgist.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMetallurgist.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMetallurgist.BackgroundImage = CType(resources.GetObject("optBtnMetallurgist.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMetallurgist.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMetallurgist.FlatAppearance.BorderSize = 0
-        Me.optBtnMetallurgist.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnMetallurgist.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMetallurgist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMetallurgist.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnMetallurgist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8408,10 +8252,9 @@ Partial Class MainForm
         'optBtnArbalest
         '
         Me.optBtnArbalest.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnArbalest.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnArbalest.BackgroundImage = CType(resources.GetObject("optBtnArbalest.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnArbalest.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnArbalest.FlatAppearance.BorderSize = 0
-        Me.optBtnArbalest.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnArbalest.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnArbalest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnArbalest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnArbalest.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8443,10 +8286,9 @@ Partial Class MainForm
         'optBtnTrebuchet
         '
         Me.optBtnTrebuchet.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTrebuchet.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTrebuchet.BackgroundImage = CType(resources.GetObject("optBtnTrebuchet.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTrebuchet.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTrebuchet.FlatAppearance.BorderSize = 0
-        Me.optBtnTrebuchet.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTrebuchet.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTrebuchet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnTrebuchet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnTrebuchet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8478,10 +8320,9 @@ Partial Class MainForm
         'optBtnDisplayCase
         '
         Me.optBtnDisplayCase.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDisplayCase.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnDisplayCase.BackgroundImage = CType(resources.GetObject("optBtnDisplayCase.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnDisplayCase.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDisplayCase.FlatAppearance.BorderSize = 0
-        Me.optBtnDisplayCase.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnDisplayCase.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDisplayCase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnDisplayCase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnDisplayCase.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8513,10 +8354,9 @@ Partial Class MainForm
         'optBtnPottedPlant
         '
         Me.optBtnPottedPlant.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPottedPlant.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnPottedPlant.BackgroundImage = CType(resources.GetObject("optBtnPottedPlant.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnPottedPlant.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPottedPlant.FlatAppearance.BorderSize = 0
-        Me.optBtnPottedPlant.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnPottedPlant.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnPottedPlant.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnPottedPlant.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnPottedPlant.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8548,10 +8388,9 @@ Partial Class MainForm
         'optBtnTotems
         '
         Me.optBtnTotems.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTotems.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTotems.BackgroundImage = CType(resources.GetObject("optBtnTotems.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTotems.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTotems.FlatAppearance.BorderSize = 0
-        Me.optBtnTotems.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTotems.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTotems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnTotems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnTotems.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8583,10 +8422,9 @@ Partial Class MainForm
         'optBtnFountain
         '
         Me.optBtnFountain.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFountain.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFountain.BackgroundImage = CType(resources.GetObject("optBtnFountain.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFountain.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFountain.FlatAppearance.BorderSize = 0
-        Me.optBtnFountain.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnFountain.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFountain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFountain.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnFountain.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8618,10 +8456,9 @@ Partial Class MainForm
         'optBtnDwarvenLoo
         '
         Me.optBtnDwarvenLoo.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDwarvenLoo.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnDwarvenLoo.BackgroundImage = CType(resources.GetObject("optBtnDwarvenLoo.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnDwarvenLoo.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDwarvenLoo.FlatAppearance.BorderSize = 0
-        Me.optBtnDwarvenLoo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnDwarvenLoo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDwarvenLoo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnDwarvenLoo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnDwarvenLoo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8654,10 +8491,9 @@ Partial Class MainForm
         'optBtnCarpet
         '
         Me.optBtnCarpet.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCarpet.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCarpet.BackgroundImage = CType(resources.GetObject("optBtnCarpet.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCarpet.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCarpet.FlatAppearance.BorderSize = 0
-        Me.optBtnCarpet.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnCarpet.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCarpet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCarpet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnCarpet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8689,10 +8525,9 @@ Partial Class MainForm
         'optBtnDecoItems
         '
         Me.optBtnDecoItems.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDecoItems.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnDecoItems.BackgroundImage = CType(resources.GetObject("optBtnDecoItems.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnDecoItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDecoItems.FlatAppearance.BorderSize = 0
-        Me.optBtnDecoItems.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnDecoItems.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDecoItems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnDecoItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnDecoItems.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8724,10 +8559,9 @@ Partial Class MainForm
         'optBtnStatues
         '
         Me.optBtnStatues.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnStatues.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnStatues.BackgroundImage = CType(resources.GetObject("optBtnStatues.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnStatues.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStatues.FlatAppearance.BorderSize = 0
-        Me.optBtnStatues.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnStatues.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStatues.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnStatues.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnStatues.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8759,10 +8593,9 @@ Partial Class MainForm
         'optBtnMagicSchool
         '
         Me.optBtnMagicSchool.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMagicSchool.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMagicSchool.BackgroundImage = CType(resources.GetObject("optBtnMagicSchool.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMagicSchool.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMagicSchool.FlatAppearance.BorderSize = 0
-        Me.optBtnMagicSchool.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnMagicSchool.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMagicSchool.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMagicSchool.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnMagicSchool.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8794,10 +8627,9 @@ Partial Class MainForm
         'optBtnElementalMagic
         '
         Me.optBtnElementalMagic.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnElementalMagic.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnElementalMagic.BackgroundImage = CType(resources.GetObject("optBtnElementalMagic.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnElementalMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnElementalMagic.FlatAppearance.BorderSize = 0
-        Me.optBtnElementalMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnElementalMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnElementalMagic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnElementalMagic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnElementalMagic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8830,10 +8662,9 @@ Partial Class MainForm
         'optBtnWhiteMagic
         '
         Me.optBtnWhiteMagic.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWhiteMagic.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnWhiteMagic.BackgroundImage = CType(resources.GetObject("optBtnWhiteMagic.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnWhiteMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWhiteMagic.FlatAppearance.BorderSize = 0
-        Me.optBtnWhiteMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnWhiteMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWhiteMagic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnWhiteMagic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnWhiteMagic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8865,10 +8696,9 @@ Partial Class MainForm
         'optBtnBlackMagic
         '
         Me.optBtnBlackMagic.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBlackMagic.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBlackMagic.BackgroundImage = CType(resources.GetObject("optBtnBlackMagic.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBlackMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBlackMagic.FlatAppearance.BorderSize = 0
-        Me.optBtnBlackMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBlackMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBlackMagic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBlackMagic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBlackMagic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8901,10 +8731,9 @@ Partial Class MainForm
         'optBtnWarpstonePool
         '
         Me.optBtnWarpstonePool.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWarpstonePool.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnWarpstonePool.BackgroundImage = CType(resources.GetObject("optBtnWarpstonePool.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnWarpstonePool.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWarpstonePool.FlatAppearance.BorderSize = 0
-        Me.optBtnWarpstonePool.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnWarpstonePool.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnWarpstonePool.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnWarpstonePool.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnWarpstonePool.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8936,10 +8765,9 @@ Partial Class MainForm
         'optBtnGolemForge
         '
         Me.optBtnGolemForge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGolemForge.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGolemForge.BackgroundImage = CType(resources.GetObject("optBtnGolemForge.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGolemForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGolemForge.FlatAppearance.BorderSize = 0
-        Me.optBtnGolemForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGolemForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGolemForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGolemForge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGolemForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -8971,10 +8799,9 @@ Partial Class MainForm
         'optBtnGreatMagmaForge
         '
         Me.optBtnGreatMagmaForge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGreatMagmaForge.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnGreatMagmaForge.BackgroundImage = CType(resources.GetObject("optBtnGreatMagmaForge.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnGreatMagmaForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGreatMagmaForge.FlatAppearance.BorderSize = 0
-        Me.optBtnGreatMagmaForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnGreatMagmaForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnGreatMagmaForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnGreatMagmaForge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnGreatMagmaForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9006,10 +8833,9 @@ Partial Class MainForm
         'optBtnClayOven
         '
         Me.optBtnClayOven.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnClayOven.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnClayOven.BackgroundImage = CType(resources.GetObject("optBtnClayOven.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnClayOven.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnClayOven.FlatAppearance.BorderSize = 0
-        Me.optBtnClayOven.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnClayOven.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnClayOven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnClayOven.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnClayOven.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9042,10 +8868,9 @@ Partial Class MainForm
         'optBtnCrafts
         '
         Me.optBtnCrafts.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCrafts.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCrafts.BackgroundImage = CType(resources.GetObject("optBtnCrafts.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCrafts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCrafts.FlatAppearance.BorderSize = 0
-        Me.optBtnCrafts.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnCrafts.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCrafts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCrafts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnCrafts.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9077,10 +8902,9 @@ Partial Class MainForm
         'optBtnQuenMill
         '
         Me.optBtnQuenMill.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnQuenMill.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnQuenMill.BackgroundImage = CType(resources.GetObject("optBtnQuenMill.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnQuenMill.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnQuenMill.FlatAppearance.BorderSize = 0
-        Me.optBtnQuenMill.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnQuenMill.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnQuenMill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnQuenMill.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnQuenMill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9113,10 +8937,9 @@ Partial Class MainForm
         'optBtnMillstone
         '
         Me.optBtnMillstone.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMillstone.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMillstone.BackgroundImage = CType(resources.GetObject("optBtnMillstone.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMillstone.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMillstone.FlatAppearance.BorderSize = 0
-        Me.optBtnMillstone.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnMillstone.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMillstone.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMillstone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnMillstone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9148,10 +8971,9 @@ Partial Class MainForm
         'optBtnStill
         '
         Me.optBtnStill.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnStill.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnStill.BackgroundImage = CType(resources.GetObject("optBtnStill.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnStill.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStill.FlatAppearance.BorderSize = 0
-        Me.optBtnStill.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnStill.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnStill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnStill.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnStill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9183,10 +9005,9 @@ Partial Class MainForm
         'optBtnKitchen
         '
         Me.optBtnKitchen.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnKitchen.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnKitchen.BackgroundImage = CType(resources.GetObject("optBtnKitchen.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnKitchen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnKitchen.FlatAppearance.BorderSize = 0
-        Me.optBtnKitchen.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnKitchen.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnKitchen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnKitchen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnKitchen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9218,10 +9039,9 @@ Partial Class MainForm
         'optBtnTanner
         '
         Me.optBtnTanner.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTanner.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnTanner.BackgroundImage = CType(resources.GetObject("optBtnTanner.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnTanner.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTanner.FlatAppearance.BorderSize = 0
-        Me.optBtnTanner.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnTanner.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnTanner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnTanner.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnTanner.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9253,10 +9073,9 @@ Partial Class MainForm
         'optBtnScrewPress
         '
         Me.optBtnScrewPress.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnScrewPress.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnScrewPress.BackgroundImage = CType(resources.GetObject("optBtnScrewPress.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnScrewPress.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnScrewPress.FlatAppearance.BorderSize = 0
-        Me.optBtnScrewPress.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnScrewPress.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnScrewPress.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnScrewPress.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnScrewPress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9288,10 +9107,9 @@ Partial Class MainForm
         'optBtnSoapmaker
         '
         Me.optBtnSoapmaker.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSoapmaker.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSoapmaker.BackgroundImage = CType(resources.GetObject("optBtnSoapmaker.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSoapmaker.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSoapmaker.FlatAppearance.BorderSize = 0
-        Me.optBtnSoapmaker.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSoapmaker.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSoapmaker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSoapmaker.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSoapmaker.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9324,10 +9142,9 @@ Partial Class MainForm
         'optBtnAquifier
         '
         Me.optBtnAquifier.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAquifier.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnAquifier.BackgroundImage = CType(resources.GetObject("optBtnAquifier.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnAquifier.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAquifier.FlatAppearance.BorderSize = 0
-        Me.optBtnAquifier.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnAquifier.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnAquifier.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnAquifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnAquifier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9359,9 +9176,8 @@ Partial Class MainForm
         'optMultiHarderSmithing
         '
         Me.optMultiHarderSmithing.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optMultiHarderSmithing.BackgroundImage = CType(resources.GetObject("optMultiHarderSmithing.BackgroundImage"),System.Drawing.Image)
         Me.optMultiHarderSmithing.FlatAppearance.BorderSize = 0
-        Me.optMultiHarderSmithing.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optMultiHarderSmithing.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optMultiHarderSmithing.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optMultiHarderSmithing.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optMultiHarderSmithing.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9399,9 +9215,8 @@ Partial Class MainForm
         'optMultiHarderFarming
         '
         Me.optMultiHarderFarming.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optMultiHarderFarming.BackgroundImage = CType(resources.GetObject("optMultiHarderFarming.BackgroundImage"),System.Drawing.Image)
         Me.optMultiHarderFarming.FlatAppearance.BorderSize = 0
-        Me.optMultiHarderFarming.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optMultiHarderFarming.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optMultiHarderFarming.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optMultiHarderFarming.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optMultiHarderFarming.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9439,10 +9254,9 @@ Partial Class MainForm
         'optBtnHarderMining
         '
         Me.optBtnHarderMining.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHarderMining.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnHarderMining.BackgroundImage = CType(resources.GetObject("optBtnHarderMining.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnHarderMining.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHarderMining.FlatAppearance.BorderSize = 0
-        Me.optBtnHarderMining.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnHarderMining.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHarderMining.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnHarderMining.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnHarderMining.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9474,10 +9288,9 @@ Partial Class MainForm
         'optBtnHarderLearning
         '
         Me.optBtnHarderLearning.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHarderLearning.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnHarderLearning.BackgroundImage = CType(resources.GetObject("optBtnHarderLearning.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnHarderLearning.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHarderLearning.FlatAppearance.BorderSize = 0
-        Me.optBtnHarderLearning.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnHarderLearning.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHarderLearning.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnHarderLearning.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnHarderLearning.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9509,10 +9322,9 @@ Partial Class MainForm
         'optBtnHarderInvaders
         '
         Me.optBtnHarderInvaders.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHarderInvaders.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnHarderInvaders.BackgroundImage = CType(resources.GetObject("optBtnHarderInvaders.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnHarderInvaders.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHarderInvaders.FlatAppearance.BorderSize = 0
-        Me.optBtnHarderInvaders.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnHarderInvaders.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHarderInvaders.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnHarderInvaders.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnHarderInvaders.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9544,10 +9356,9 @@ Partial Class MainForm
         'optBtnBodyguards
         '
         Me.optBtnBodyguards.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBodyguards.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBodyguards.BackgroundImage = CType(resources.GetObject("optBtnBodyguards.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBodyguards.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBodyguards.FlatAppearance.BorderSize = 0
-        Me.optBtnBodyguards.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBodyguards.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBodyguards.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBodyguards.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBodyguards.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9579,10 +9390,9 @@ Partial Class MainForm
         'optBtnSecrets
         '
         Me.optBtnSecrets.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSecrets.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSecrets.BackgroundImage = CType(resources.GetObject("optBtnSecrets.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSecrets.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSecrets.FlatAppearance.BorderSize = 0
-        Me.optBtnSecrets.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSecrets.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSecrets.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSecrets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSecrets.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9615,10 +9425,9 @@ Partial Class MainForm
         'optBtnDiseases
         '
         Me.optBtnDiseases.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDiseases.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnDiseases.BackgroundImage = CType(resources.GetObject("optBtnDiseases.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnDiseases.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDiseases.FlatAppearance.BorderSize = 0
-        Me.optBtnDiseases.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnDiseases.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDiseases.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnDiseases.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnDiseases.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9651,9 +9460,8 @@ Partial Class MainForm
         'optMultiCavernFlavor
         '
         Me.optMultiCavernFlavor.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optMultiCavernFlavor.BackgroundImage = CType(resources.GetObject("optMultiCavernFlavor.BackgroundImage"),System.Drawing.Image)
         Me.optMultiCavernFlavor.FlatAppearance.BorderSize = 0
-        Me.optMultiCavernFlavor.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optMultiCavernFlavor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optMultiCavernFlavor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optMultiCavernFlavor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optMultiCavernFlavor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9690,10 +9498,9 @@ Partial Class MainForm
         'optBtnRegionalWeather
         '
         Me.optBtnRegionalWeather.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRegionalWeather.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnRegionalWeather.BackgroundImage = CType(resources.GetObject("optBtnRegionalWeather.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnRegionalWeather.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRegionalWeather.FlatAppearance.BorderSize = 0
-        Me.optBtnRegionalWeather.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnRegionalWeather.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRegionalWeather.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnRegionalWeather.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnRegionalWeather.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9725,10 +9532,9 @@ Partial Class MainForm
         'optBtnRegionalEffects
         '
         Me.optBtnRegionalEffects.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRegionalEffects.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnRegionalEffects.BackgroundImage = CType(resources.GetObject("optBtnRegionalEffects.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnRegionalEffects.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRegionalEffects.FlatAppearance.BorderSize = 0
-        Me.optBtnRegionalEffects.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnRegionalEffects.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRegionalEffects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnRegionalEffects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnRegionalEffects.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9761,10 +9567,9 @@ Partial Class MainForm
         'optBtnSmokeEffects
         '
         Me.optBtnSmokeEffects.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSmokeEffects.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnSmokeEffects.BackgroundImage = CType(resources.GetObject("optBtnSmokeEffects.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnSmokeEffects.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSmokeEffects.FlatAppearance.BorderSize = 0
-        Me.optBtnSmokeEffects.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnSmokeEffects.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnSmokeEffects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnSmokeEffects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnSmokeEffects.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9797,10 +9602,9 @@ Partial Class MainForm
         'optBtnNobles
         '
         Me.optBtnNobles.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnNobles.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnNobles.BackgroundImage = CType(resources.GetObject("optBtnNobles.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnNobles.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnNobles.FlatAppearance.BorderSize = 0
-        Me.optBtnNobles.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnNobles.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnNobles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnNobles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnNobles.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9834,10 +9638,9 @@ Partial Class MainForm
         'optBtnBattlecries
         '
         Me.optBtnBattlecries.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBattlecries.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBattlecries.BackgroundImage = CType(resources.GetObject("optBtnBattlecries.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBattlecries.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBattlecries.FlatAppearance.BorderSize = 0
-        Me.optBtnBattlecries.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBattlecries.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBattlecries.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBattlecries.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBattlecries.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9870,10 +9673,9 @@ Partial Class MainForm
         'optBtnDiplomats
         '
         Me.optBtnDiplomats.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDiplomats.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnDiplomats.BackgroundImage = CType(resources.GetObject("optBtnDiplomats.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnDiplomats.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDiplomats.FlatAppearance.BorderSize = 0
-        Me.optBtnDiplomats.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnDiplomats.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDiplomats.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnDiplomats.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnDiplomats.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9906,10 +9708,9 @@ Partial Class MainForm
         'optBtnEnglishDwarves
         '
         Me.optBtnEnglishDwarves.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEnglishDwarves.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnEnglishDwarves.BackgroundImage = CType(resources.GetObject("optBtnEnglishDwarves.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnEnglishDwarves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEnglishDwarves.FlatAppearance.BorderSize = 0
-        Me.optBtnEnglishDwarves.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnEnglishDwarves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnEnglishDwarves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnEnglishDwarves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnEnglishDwarves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9941,10 +9742,9 @@ Partial Class MainForm
         'optBtnBuildDimensions
         '
         Me.optBtnBuildDimensions.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBuildDimensions.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnBuildDimensions.BackgroundImage = CType(resources.GetObject("optBtnBuildDimensions.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnBuildDimensions.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBuildDimensions.FlatAppearance.BorderSize = 0
-        Me.optBtnBuildDimensions.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnBuildDimensions.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnBuildDimensions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnBuildDimensions.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnBuildDimensions.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -9977,11 +9777,10 @@ Partial Class MainForm
         'optBtnCombatLogs
         '
         Me.optBtnCombatLogs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCombatLogs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnCombatLogs.BackgroundImage = CType(resources.GetObject("optBtnCombatLogs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnCombatLogs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCombatLogs.Enabled = false
         Me.optBtnCombatLogs.FlatAppearance.BorderSize = 0
-        Me.optBtnCombatLogs.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnCombatLogs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnCombatLogs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnCombatLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnCombatLogs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10014,10 +9813,9 @@ Partial Class MainForm
         'optBtnMoreTrees
         '
         Me.optBtnMoreTrees.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreTrees.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreTrees.BackgroundImage = CType(resources.GetObject("optBtnMoreTrees.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreTrees.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreTrees.FlatAppearance.BorderSize = 0
-        Me.optBtnMoreTrees.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnMoreTrees.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreTrees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreTrees.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnMoreTrees.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10049,10 +9847,9 @@ Partial Class MainForm
         'optBtnMorePlants
         '
         Me.optBtnMorePlants.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMorePlants.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMorePlants.BackgroundImage = CType(resources.GetObject("optBtnMorePlants.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMorePlants.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMorePlants.FlatAppearance.BorderSize = 0
-        Me.optBtnMorePlants.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnMorePlants.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMorePlants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMorePlants.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnMorePlants.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10084,10 +9881,9 @@ Partial Class MainForm
         'optBtnFoodNames
         '
         Me.optBtnFoodNames.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFoodNames.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFoodNames.BackgroundImage = CType(resources.GetObject("optBtnFoodNames.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFoodNames.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFoodNames.FlatAppearance.BorderSize = 0
-        Me.optBtnFoodNames.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnFoodNames.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFoodNames.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFoodNames.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnFoodNames.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10119,10 +9915,9 @@ Partial Class MainForm
         'optBtnFearTheNight
         '
         Me.optBtnFearTheNight.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFearTheNight.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnFearTheNight.BackgroundImage = CType(resources.GetObject("optBtnFearTheNight.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnFearTheNight.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFearTheNight.FlatAppearance.BorderSize = 0
-        Me.optBtnFearTheNight.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnFearTheNight.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnFearTheNight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnFearTheNight.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnFearTheNight.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10154,10 +9949,9 @@ Partial Class MainForm
         'optBtnDiggingCivs
         '
         Me.optBtnDiggingCivs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDiggingCivs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnDiggingCivs.BackgroundImage = CType(resources.GetObject("optBtnDiggingCivs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnDiggingCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDiggingCivs.FlatAppearance.BorderSize = 0
-        Me.optBtnDiggingCivs.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnDiggingCivs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnDiggingCivs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnDiggingCivs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnDiggingCivs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10189,11 +9983,10 @@ Partial Class MainForm
         'optBtnRazingCivs
         '
         Me.optBtnRazingCivs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRazingCivs.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnRazingCivs.BackgroundImage = CType(resources.GetObject("optBtnRazingCivs.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnRazingCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRazingCivs.Enabled = false
         Me.optBtnRazingCivs.FlatAppearance.BorderSize = 0
-        Me.optBtnRazingCivs.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnRazingCivs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRazingCivs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnRazingCivs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnRazingCivs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10225,10 +10018,9 @@ Partial Class MainForm
         'optBtnRendermax
         '
         Me.optBtnRendermax.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRendermax.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnRendermax.BackgroundImage = CType(resources.GetObject("optBtnRendermax.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnRendermax.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRendermax.FlatAppearance.BorderSize = 0
-        Me.optBtnRendermax.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnRendermax.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnRendermax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnRendermax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnRendermax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10509,9 +10301,8 @@ Partial Class MainForm
         'optBtnVisibleCaves
         '
         Me.optBtnVisibleCaves.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnVisibleCaves.BackgroundImage = CType(resources.GetObject("optBtnVisibleCaves.BackgroundImage"),System.Drawing.Image)
         Me.optBtnVisibleCaves.FlatAppearance.BorderSize = 0
-        Me.optBtnVisibleCaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnVisibleCaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnVisibleCaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnVisibleCaves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnVisibleCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10863,9 +10654,8 @@ Partial Class MainForm
         'optBtnMagmaLake
         '
         Me.optBtnMagmaLake.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMagmaLake.BackgroundImage = CType(resources.GetObject("optBtnMagmaLake.BackgroundImage"),System.Drawing.Image)
         Me.optBtnMagmaLake.FlatAppearance.BorderSize = 0
-        Me.optBtnMagmaLake.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnMagmaLake.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMagmaLake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMagmaLake.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnMagmaLake.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10896,9 +10686,8 @@ Partial Class MainForm
         'optBtnHFS
         '
         Me.optBtnHFS.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHFS.BackgroundImage = CType(resources.GetObject("optBtnHFS.BackgroundImage"),System.Drawing.Image)
         Me.optBtnHFS.FlatAppearance.BorderSize = 0
-        Me.optBtnHFS.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.optBtnHFS.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnHFS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnHFS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
@@ -10988,7 +10777,7 @@ Partial Class MainForm
         'lblSettingExplanation
         '
         Me.lblSettingExplanation.AutoSize = true
-        Me.lblSettingExplanation.BackColor = System.Drawing.Color.Transparent
+        Me.lblSettingExplanation.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblSettingExplanation.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblSettingExplanation.ForeColor = System.Drawing.Color.White
         Me.lblSettingExplanation.Location = New System.Drawing.Point(108, 534)
@@ -11000,8 +10789,7 @@ Partial Class MainForm
         '
         'panCivTable
         '
-        Me.panCivTable.BackColor = System.Drawing.Color.Transparent
-        Me.panCivTable.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.panCivTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.panCivTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panCivTable.Controls.Add(Me.tableLayoutCivs)
         Me.panCivTable.ForeColor = System.Drawing.Color.White
@@ -11012,16 +10800,16 @@ Partial Class MainForm
         '
         'tableLayoutCivs
         '
-        Me.tableLayoutCivs.BackColor = System.Drawing.Color.Transparent
+        Me.tableLayoutCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.tableLayoutCivs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tableLayoutCivs.ColumnCount = 9
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70!))
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 66!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74!))
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67!))
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.tableLayoutCivs.Controls.Add(Me.optBtnFrostGiants, 1, 11)
@@ -11111,7 +10899,7 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lblCivInvasions.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivInvasions.ForeColor = System.Drawing.Color.White
-        Me.lblCivInvasions.Location = New System.Drawing.Point(306, 1)
+        Me.lblCivInvasions.Location = New System.Drawing.Point(315, 1)
         Me.lblCivInvasions.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.lblCivInvasions.Name = "lblCivInvasions"
         Me.lblCivInvasions.Size = New System.Drawing.Size(76, 23)
@@ -11126,7 +10914,7 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lblCivCaravans.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivCaravans.ForeColor = System.Drawing.Color.White
-        Me.lblCivCaravans.Location = New System.Drawing.Point(224, 1)
+        Me.lblCivCaravans.Location = New System.Drawing.Point(233, 1)
         Me.lblCivCaravans.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.lblCivCaravans.Name = "lblCivCaravans"
         Me.lblCivCaravans.Size = New System.Drawing.Size(76, 23)
@@ -11476,8 +11264,7 @@ Partial Class MainForm
         '
         'grpExtraCreatures
         '
-        Me.grpExtraCreatures.BackColor = System.Drawing.Color.Transparent
-        Me.grpExtraCreatures.BackgroundImage = CType(resources.GetObject("grpExtraCreatures.BackgroundImage"),System.Drawing.Image)
+        Me.grpExtraCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpExtraCreatures.Controls.Add(Me.optBtnDomesticPets)
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreAnimals)
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreVermin)
@@ -11501,8 +11288,7 @@ Partial Class MainForm
         'optBtnMoreAnimals
         '
         Me.optBtnMoreAnimals.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreAnimals.BackColor = System.Drawing.Color.Transparent
-        Me.optBtnMoreAnimals.BackgroundImage = CType(resources.GetObject("optBtnMoreAnimals.BackgroundImage"),System.Drawing.Image)
+        Me.optBtnMoreAnimals.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreAnimals.FlatAppearance.BorderSize = 0
         Me.optBtnMoreAnimals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreAnimals.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -11533,8 +11319,7 @@ Partial Class MainForm
         '
         'grpRandomCreatures
         '
-        Me.grpRandomCreatures.BackColor = System.Drawing.Color.Transparent
-        Me.grpRandomCreatures.BackgroundImage = CType(resources.GetObject("grpRandomCreatures.BackgroundImage"),System.Drawing.Image)
+        Me.grpRandomCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpRandomCreatures.Controls.Add(Me.btnDelRandoms)
         Me.grpRandomCreatures.Controls.Add(Me.btnGenerateCreatures)
         Me.grpRandomCreatures.Controls.Add(Me.lblRandomNote)
@@ -11560,8 +11345,7 @@ Partial Class MainForm
         '
         'grpFortressDefense
         '
-        Me.grpFortressDefense.BackColor = System.Drawing.Color.Transparent
-        Me.grpFortressDefense.BackgroundImage = CType(resources.GetObject("grpFortressDefense.BackgroundImage"),System.Drawing.Image)
+        Me.grpFortressDefense.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpFortressDefense.Controls.Add(Me.optCbPatternInvaderSkills)
         Me.grpFortressDefense.Controls.Add(Me.lblInvaderSkills)
         Me.grpFortressDefense.Controls.Add(Me.lblFortDefEasyTitle)
@@ -11643,7 +11427,7 @@ Partial Class MainForm
         '
         'lblFortDefNote
         '
-        Me.lblFortDefNote.BackColor = System.Drawing.Color.Transparent
+        Me.lblFortDefNote.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblFortDefNote.Cursor = System.Windows.Forms.Cursors.Default
         Me.lblFortDefNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblFortDefNote.ForeColor = System.Drawing.Color.White
@@ -11657,8 +11441,7 @@ Partial Class MainForm
         'grpMachinery
         '
         Me.grpMachinery.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMachinery.BackColor = System.Drawing.Color.Transparent
-        Me.grpMachinery.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpMachinery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMachinery.Controls.Add(Me.optBtnSteamEngine)
         Me.grpMachinery.Controls.Add(Me.optBtnMachineFactory)
         Me.grpMachinery.Controls.Add(Me.optBtnLiquidSpawner)
@@ -11674,8 +11457,7 @@ Partial Class MainForm
         'grpWorkshops
         '
         Me.grpWorkshops.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorkshops.BackColor = System.Drawing.Color.Transparent
-        Me.grpWorkshops.BackgroundImage = CType(resources.GetObject("grpWorkshops.BackgroundImage"),System.Drawing.Image)
+        Me.grpWorkshops.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorkshops.Controls.Add(Me.optBtnBonecarver)
         Me.grpWorkshops.Controls.Add(Me.optBtnStonecrafter)
         Me.grpWorkshops.Controls.Add(Me.optBtnGemcutter)
@@ -11700,8 +11482,7 @@ Partial Class MainForm
         'grpMiscBuildings
         '
         Me.grpMiscBuildings.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMiscBuildings.BackColor = System.Drawing.Color.Transparent
-        Me.grpMiscBuildings.BackgroundImage = CType(resources.GetObject("grpMiscBuildings.BackgroundImage"),System.Drawing.Image)
+        Me.grpMiscBuildings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMiscBuildings.Controls.Add(Me.optBtnWeightBench)
         Me.grpMiscBuildings.Controls.Add(Me.optBtnWoodsplitting)
         Me.grpMiscBuildings.Controls.Add(Me.optBtnStorage)
@@ -11716,8 +11497,7 @@ Partial Class MainForm
         'grpFarming
         '
         Me.grpFarming.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpFarming.BackColor = System.Drawing.Color.Transparent
-        Me.grpFarming.BackgroundImage = CType(resources.GetObject("grpFarming.BackgroundImage"),System.Drawing.Image)
+        Me.grpFarming.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpFarming.Controls.Add(Me.optBtnBrewery)
         Me.grpFarming.Controls.Add(Me.optBtnSawmill)
         Me.grpFarming.Controls.Add(Me.optBtnFishpond)
@@ -11734,8 +11514,7 @@ Partial Class MainForm
         'grpStudies
         '
         Me.grpStudies.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpStudies.BackColor = System.Drawing.Color.Transparent
-        Me.grpStudies.BackgroundImage = CType(resources.GetObject("grpStudies.BackgroundImage"),System.Drawing.Image)
+        Me.grpStudies.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpStudies.Controls.Add(Me.optBtnResearch)
         Me.grpStudies.Controls.Add(Me.optBtnArcheology)
         Me.grpStudies.Controls.Add(Me.optBtnApothecary)
@@ -11751,8 +11530,7 @@ Partial Class MainForm
         'grpTrade
         '
         Me.grpTrade.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpTrade.BackColor = System.Drawing.Color.Transparent
-        Me.grpTrade.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpTrade.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpTrade.Controls.Add(Me.optBtnTavern)
         Me.grpTrade.Controls.Add(Me.optBtnOlon)
         Me.grpTrade.Controls.Add(Me.optBtnBomrek)
@@ -11770,8 +11548,7 @@ Partial Class MainForm
         'grpLaboratories
         '
         Me.grpLaboratories.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpLaboratories.BackColor = System.Drawing.Color.Transparent
-        Me.grpLaboratories.BackgroundImage = CType(resources.GetObject("grpLaboratories.BackgroundImage"),System.Drawing.Image)
+        Me.grpLaboratories.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpLaboratories.Controls.Add(Me.optBtnAlchemy)
         Me.grpLaboratories.Controls.Add(Me.optBtnToxicology)
         Me.grpLaboratories.Controls.Add(Me.optBtnChemistry)
@@ -11787,8 +11564,7 @@ Partial Class MainForm
         'grpReligion
         '
         Me.grpReligion.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpReligion.BackColor = System.Drawing.Color.Transparent
-        Me.grpReligion.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpReligion.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpReligion.Controls.Add(Me.optBtnAltar)
         Me.grpReligion.Controls.Add(Me.optBtnShrine)
         Me.grpReligion.Controls.Add(Me.optBtnTemple)
@@ -11803,8 +11579,7 @@ Partial Class MainForm
         'grpDiplomacy
         '
         Me.grpDiplomacy.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpDiplomacy.BackColor = System.Drawing.Color.Transparent
-        Me.grpDiplomacy.BackgroundImage = CType(resources.GetObject("grpDiplomacy.BackgroundImage"),System.Drawing.Image)
+        Me.grpDiplomacy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpDiplomacy.Controls.Add(Me.optBtnEmbassy)
         Me.grpDiplomacy.Controls.Add(Me.optBtnExpedition)
         Me.grpDiplomacy.Controls.Add(Me.optBtnPodium)
@@ -11819,8 +11594,7 @@ Partial Class MainForm
         'grpLibrary
         '
         Me.grpLibrary.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpLibrary.BackColor = System.Drawing.Color.Transparent
-        Me.grpLibrary.BackgroundImage = CType(resources.GetObject("grpLibrary.BackgroundImage"),System.Drawing.Image)
+        Me.grpLibrary.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpLibrary.Controls.Add(Me.optBtnScriptorium)
         Me.grpLibrary.Controls.Add(Me.optBtnLibraries)
         Me.grpLibrary.ForeColor = System.Drawing.SystemColors.Window
@@ -11834,8 +11608,7 @@ Partial Class MainForm
         'grpAdministration
         '
         Me.grpAdministration.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpAdministration.BackColor = System.Drawing.Color.Transparent
-        Me.grpAdministration.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpAdministration.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpAdministration.Controls.Add(Me.optBtnColosseum)
         Me.grpAdministration.Controls.Add(Me.optBtnGuildhall)
         Me.grpAdministration.Controls.Add(Me.optBtnPrison)
@@ -11852,8 +11625,7 @@ Partial Class MainForm
         'grpIllumination
         '
         Me.grpIllumination.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpIllumination.BackColor = System.Drawing.Color.Transparent
-        Me.grpIllumination.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpIllumination.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpIllumination.Controls.Add(Me.optBtnBrazier)
         Me.grpIllumination.Controls.Add(Me.optBtnCandelabra)
         Me.grpIllumination.Controls.Add(Me.optBtnFireplace)
@@ -11882,8 +11654,7 @@ Partial Class MainForm
         'grpSmithing
         '
         Me.grpSmithing.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpSmithing.BackColor = System.Drawing.Color.Transparent
-        Me.grpSmithing.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpSmithing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpSmithing.Controls.Add(Me.optBtnAmmocaster)
         Me.grpSmithing.Controls.Add(Me.optBtnGunsmith)
         Me.grpSmithing.Controls.Add(Me.optBtnHeavySiegeworks)
@@ -11904,8 +11675,7 @@ Partial Class MainForm
         'grpMiscFurnaces
         '
         Me.grpMiscFurnaces.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMiscFurnaces.BackColor = System.Drawing.Color.Transparent
-        Me.grpMiscFurnaces.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpMiscFurnaces.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnBrickOven)
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnCrematorium)
         Me.grpMiscFurnaces.Controls.Add(Me.optMultiOreProcessor)
@@ -11922,8 +11692,7 @@ Partial Class MainForm
         'grpUpgrades
         '
         Me.grpUpgrades.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpUpgrades.BackColor = System.Drawing.Color.Transparent
-        Me.grpUpgrades.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpUpgrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpUpgrades.Controls.Add(Me.optBtnRuneArmory)
         Me.grpUpgrades.Controls.Add(Me.optBtnRuneWeaponry)
         Me.grpUpgrades.Controls.Add(Me.optBtnArmory)
@@ -11941,8 +11710,7 @@ Partial Class MainForm
         'grpMetalworks
         '
         Me.grpMetalworks.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMetalworks.BackColor = System.Drawing.Color.Transparent
-        Me.grpMetalworks.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpMetalworks.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMetalworks.Controls.Add(Me.optBtnBlastFurnace)
         Me.grpMetalworks.Controls.Add(Me.optBtnCrucible)
         Me.grpMetalworks.Controls.Add(Me.optBtnFinishingForge)
@@ -11958,8 +11726,7 @@ Partial Class MainForm
         'grpSiege
         '
         Me.grpSiege.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpSiege.BackColor = System.Drawing.Color.Transparent
-        Me.grpSiege.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpSiege.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpSiege.Controls.Add(Me.optBtnArbalest)
         Me.grpSiege.Controls.Add(Me.optBtnTrebuchet)
         Me.grpSiege.ForeColor = System.Drawing.SystemColors.Window
@@ -11973,8 +11740,7 @@ Partial Class MainForm
         'grpDecorations
         '
         Me.grpDecorations.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpDecorations.BackColor = System.Drawing.Color.Transparent
-        Me.grpDecorations.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpDecorations.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpDecorations.Controls.Add(Me.optBtnDisplayCase)
         Me.grpDecorations.Controls.Add(Me.optBtnPottedPlant)
         Me.grpDecorations.Controls.Add(Me.optBtnTotems)
@@ -11994,8 +11760,7 @@ Partial Class MainForm
         'grpMagic
         '
         Me.grpMagic.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMagic.BackColor = System.Drawing.Color.Transparent
-        Me.grpMagic.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMagic.Controls.Add(Me.optBtnMagicSchool)
         Me.grpMagic.Controls.Add(Me.optBtnElementalMagic)
         Me.grpMagic.Controls.Add(Me.optBtnWhiteMagic)
@@ -12012,8 +11777,7 @@ Partial Class MainForm
         'grpVolcanic
         '
         Me.grpVolcanic.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpVolcanic.BackColor = System.Drawing.Color.Transparent
-        Me.grpVolcanic.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpVolcanic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpVolcanic.Controls.Add(Me.optBtnGolemForge)
         Me.grpVolcanic.Controls.Add(Me.optBtnGreatMagmaForge)
         Me.grpVolcanic.Controls.Add(Me.lblReqMagmaNote)
@@ -12039,8 +11803,7 @@ Partial Class MainForm
         'grpExtraReactions
         '
         Me.grpExtraReactions.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpExtraReactions.BackColor = System.Drawing.Color.Transparent
-        Me.grpExtraReactions.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpExtraReactions.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpExtraReactions.Controls.Add(Me.optBtnClayOven)
         Me.grpExtraReactions.Controls.Add(Me.optBtnCrafts)
         Me.grpExtraReactions.Controls.Add(Me.optBtnQuenMill)
@@ -12061,8 +11824,7 @@ Partial Class MainForm
         'grpBalancing
         '
         Me.grpBalancing.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpBalancing.BackColor = System.Drawing.Color.Transparent
-        Me.grpBalancing.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpBalancing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpBalancing.Controls.Add(Me.optBtnAquifier)
         Me.grpBalancing.Controls.Add(Me.optMultiHarderSmithing)
         Me.grpBalancing.Controls.Add(Me.optMultiHarderFarming)
@@ -12083,8 +11845,7 @@ Partial Class MainForm
         'grpMiscFeatures
         '
         Me.grpMiscFeatures.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMiscFeatures.BackColor = System.Drawing.Color.Transparent
-        Me.grpMiscFeatures.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpMiscFeatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMiscFeatures.Controls.Add(Me.optMultiCavernFlavor)
         Me.grpMiscFeatures.Controls.Add(Me.optBtnRegionalWeather)
         Me.grpMiscFeatures.Controls.Add(Me.optBtnRegionalEffects)
@@ -12106,8 +11867,7 @@ Partial Class MainForm
         'grpExtraMods
         '
         Me.grpExtraMods.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpExtraMods.BackColor = System.Drawing.Color.Transparent
-        Me.grpExtraMods.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpExtraMods.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpExtraMods.Controls.Add(Me.optBtnMoreTrees)
         Me.grpExtraMods.Controls.Add(Me.optBtnMorePlants)
         Me.grpExtraMods.Controls.Add(Me.optBtnFoodNames)
@@ -12151,8 +11911,7 @@ Partial Class MainForm
         'grpWorldGenMisc
         '
         Me.grpWorldGenMisc.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenMisc.BackColor = System.Drawing.Color.Transparent
-        Me.grpWorldGenMisc.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpWorldGenMisc.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldGenMisc.Controls.Add(Me.lblMineralScarcity)
         Me.grpWorldGenMisc.Controls.Add(Me.lblCivNumber)
         Me.grpWorldGenMisc.Controls.Add(Me.lblEmbarkPoints)
@@ -12219,8 +11978,7 @@ Partial Class MainForm
         'grpWorldGenCaves
         '
         Me.grpWorldGenCaves.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenCaves.BackColor = System.Drawing.Color.Transparent
-        Me.grpWorldGenCaves.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpWorldGenCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldGenCaves.Controls.Add(Me.lblCaveSize)
         Me.grpWorldGenCaves.Controls.Add(Me.lblMountainCaves)
         Me.grpWorldGenCaves.Controls.Add(Me.lblOtherCaves)
@@ -12267,8 +12025,7 @@ Partial Class MainForm
         'grpWorldGenLayers
         '
         Me.grpWorldGenLayers.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenLayers.BackColor = System.Drawing.Color.Transparent
-        Me.grpWorldGenLayers.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpWorldGenLayers.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldGenLayers.Controls.Add(Me.lblCaverns)
         Me.grpWorldGenLayers.Controls.Add(Me.lblCavernOpenness)
         Me.grpWorldGenLayers.Controls.Add(Me.lblCavernMaze)
@@ -12395,8 +12152,7 @@ Partial Class MainForm
         'grpWorldGenAreas
         '
         Me.grpWorldGenAreas.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenAreas.BackColor = System.Drawing.Color.Transparent
-        Me.grpWorldGenAreas.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpWorldGenAreas.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldGenAreas.Controls.Add(Me.lblGoodAreas)
         Me.grpWorldGenAreas.Controls.Add(Me.lblEvilAreas)
         Me.grpWorldGenAreas.Controls.Add(Me.lblBiomeNote)
@@ -12441,7 +12197,7 @@ Partial Class MainForm
         '
         'lblWorldGenSelect
         '
-        Me.lblWorldGenSelect.BackColor = System.Drawing.Color.Transparent
+        Me.lblWorldGenSelect.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblWorldGenSelect.ForeColor = System.Drawing.Color.White
         Me.lblWorldGenSelect.Location = New System.Drawing.Point(363, 71)
         Me.lblWorldGenSelect.Name = "lblWorldGenSelect"
@@ -12452,8 +12208,7 @@ Partial Class MainForm
         '
         'grpWorldSettings
         '
-        Me.grpWorldSettings.BackColor = System.Drawing.Color.Transparent
-        Me.grpWorldSettings.BackgroundImage = CType(resources.GetObject("grpWorldSettings.BackgroundImage"),System.Drawing.Image)
+        Me.grpWorldSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldSettings.Controls.Add(Me.optBtnTemperature)
         Me.grpWorldSettings.Controls.Add(Me.optBtnWeather)
         Me.grpWorldSettings.Controls.Add(Me.optBtnCaveins)
@@ -12476,7 +12231,7 @@ Partial Class MainForm
         '
         'lblPopCap
         '
-        Me.lblPopCap.BackColor = System.Drawing.Color.Transparent
+        Me.lblPopCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblPopCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPopCap.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPopCap.Location = New System.Drawing.Point(-3, 259)
@@ -12488,8 +12243,7 @@ Partial Class MainForm
         '
         'grpSaveSettings
         '
-        Me.grpSaveSettings.BackColor = System.Drawing.Color.Transparent
-        Me.grpSaveSettings.BackgroundImage = CType(resources.GetObject("grpSaveSettings.BackgroundImage"),System.Drawing.Image)
+        Me.grpSaveSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpSaveSettings.Controls.Add(Me.optCbAutoSave)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoSavePause)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoBackup)
@@ -12538,7 +12292,7 @@ Partial Class MainForm
         '
         'lblAutoSave
         '
-        Me.lblAutoSave.BackColor = System.Drawing.Color.Transparent
+        Me.lblAutoSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblAutoSave.ForeColor = System.Drawing.SystemColors.Window
         Me.lblAutoSave.Location = New System.Drawing.Point(15, 22)
@@ -12550,8 +12304,7 @@ Partial Class MainForm
         '
         'grpMiscSettings
         '
-        Me.grpMiscSettings.BackColor = System.Drawing.Color.Transparent
-        Me.grpMiscSettings.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.transp_1
+        Me.grpMiscSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMiscSettings.Controls.Add(Me.lblKeybinds)
         Me.grpMiscSettings.Controls.Add(Me.optCbKeybinds)
         Me.grpMiscSettings.Controls.Add(Me.lblArena)
@@ -12571,7 +12324,7 @@ Partial Class MainForm
         '
         'lblKeybinds
         '
-        Me.lblKeybinds.BackColor = System.Drawing.Color.Transparent
+        Me.lblKeybinds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblKeybinds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblKeybinds.ForeColor = System.Drawing.SystemColors.Window
         Me.lblKeybinds.Location = New System.Drawing.Point(7, 21)
@@ -12583,7 +12336,7 @@ Partial Class MainForm
         '
         'lblArena
         '
-        Me.lblArena.BackColor = System.Drawing.Color.Transparent
+        Me.lblArena.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblArena.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblArena.ForeColor = System.Drawing.SystemColors.Window
         Me.lblArena.Location = New System.Drawing.Point(7, 47)
@@ -12595,7 +12348,7 @@ Partial Class MainForm
         '
         'lblWindowed
         '
-        Me.lblWindowed.BackColor = System.Drawing.Color.Transparent
+        Me.lblWindowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblWindowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblWindowed.ForeColor = System.Drawing.SystemColors.Window
         Me.lblWindowed.Location = New System.Drawing.Point(7, 73)
@@ -12607,7 +12360,7 @@ Partial Class MainForm
         '
         'lblPriority
         '
-        Me.lblPriority.BackColor = System.Drawing.Color.Transparent
+        Me.lblPriority.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblPriority.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPriority.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPriority.Location = New System.Drawing.Point(10, 99)
@@ -12619,8 +12372,7 @@ Partial Class MainForm
         '
         'grpGraphics
         '
-        Me.grpGraphics.BackColor = System.Drawing.Color.Transparent
-        Me.grpGraphics.BackgroundImage = CType(resources.GetObject("grpGraphics.BackgroundImage"),System.Drawing.Image)
+        Me.grpGraphics.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpGraphics.Controls.Add(Me.lblColors)
         Me.grpGraphics.Controls.Add(Me.optCbColors)
         Me.grpGraphics.Controls.Add(Me.optCbPrintMode)
@@ -12643,7 +12395,7 @@ Partial Class MainForm
         '
         'lblColors
         '
-        Me.lblColors.BackColor = System.Drawing.Color.Transparent
+        Me.lblColors.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblColors.ForeColor = System.Drawing.SystemColors.Window
         Me.lblColors.Location = New System.Drawing.Point(8, 21)
@@ -12759,7 +12511,7 @@ Partial Class MainForm
         '
         'lblFonts
         '
-        Me.lblFonts.BackColor = System.Drawing.Color.Transparent
+        Me.lblFonts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblFonts.ForeColor = System.Drawing.SystemColors.Window
         Me.lblFonts.Location = New System.Drawing.Point(21, 72)
@@ -12771,7 +12523,7 @@ Partial Class MainForm
         '
         'lblGraphicsPack
         '
-        Me.lblGraphicsPack.BackColor = System.Drawing.Color.Transparent
+        Me.lblGraphicsPack.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblGraphicsPack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblGraphicsPack.ForeColor = System.Drawing.SystemColors.Window
         Me.lblGraphicsPack.Location = New System.Drawing.Point(8, 197)
@@ -12794,8 +12546,7 @@ Partial Class MainForm
         '
         'btnTilesetPreview
         '
-        Me.btnTilesetPreview.BackColor = System.Drawing.Color.Transparent
-        Me.btnTilesetPreview.BackgroundImage = CType(resources.GetObject("btnTilesetPreview.BackgroundImage"),System.Drawing.Image)
+        Me.btnTilesetPreview.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.btnTilesetPreview.FlatAppearance.BorderSize = 0
         Me.btnTilesetPreview.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTilesetPreview.ForeColor = System.Drawing.Color.White
@@ -12809,7 +12560,7 @@ Partial Class MainForm
         '
         'lblPrintMode
         '
-        Me.lblPrintMode.BackColor = System.Drawing.Color.Transparent
+        Me.lblPrintMode.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblPrintMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPrintMode.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPrintMode.Location = New System.Drawing.Point(3, 47)
@@ -12821,8 +12572,7 @@ Partial Class MainForm
         '
         'grpFps
         '
-        Me.grpFps.BackColor = System.Drawing.Color.Transparent
-        Me.grpFps.BackgroundImage = CType(resources.GetObject("grpFps.BackgroundImage"),System.Drawing.Image)
+        Me.grpFps.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpFps.Controls.Add(Me.optBtnFps)
         Me.grpFps.Controls.Add(Me.lblGraphicsCap)
         Me.grpFps.Controls.Add(Me.optNumGFPS)
@@ -12838,7 +12588,7 @@ Partial Class MainForm
         '
         'lblGraphicsCap
         '
-        Me.lblGraphicsCap.BackColor = System.Drawing.Color.Transparent
+        Me.lblGraphicsCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblGraphicsCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblGraphicsCap.ForeColor = System.Drawing.SystemColors.Window
         Me.lblGraphicsCap.Location = New System.Drawing.Point(6, 48)
@@ -12850,7 +12600,7 @@ Partial Class MainForm
         '
         'lblFpsCap
         '
-        Me.lblFpsCap.BackColor = System.Drawing.Color.Transparent
+        Me.lblFpsCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblFpsCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblFpsCap.ForeColor = System.Drawing.SystemColors.Window
         Me.lblFpsCap.Location = New System.Drawing.Point(6, 72)
@@ -12862,8 +12612,7 @@ Partial Class MainForm
         '
         'grpSound
         '
-        Me.grpSound.BackColor = System.Drawing.Color.Transparent
-        Me.grpSound.BackgroundImage = CType(resources.GetObject("grpSound.BackgroundImage"),System.Drawing.Image)
+        Me.grpSound.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpSound.Controls.Add(Me.optBtnSound)
         Me.grpSound.Controls.Add(Me.lblVolume)
         Me.grpSound.Controls.Add(Me.optNumVolume)
@@ -12877,7 +12626,7 @@ Partial Class MainForm
         '
         'lblVolume
         '
-        Me.lblVolume.BackColor = System.Drawing.Color.Transparent
+        Me.lblVolume.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblVolume.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblVolume.ForeColor = System.Drawing.SystemColors.Window
         Me.lblVolume.Location = New System.Drawing.Point(6, 48)
@@ -12914,8 +12663,7 @@ Partial Class MainForm
         '
         'grpEmbark
         '
-        Me.grpEmbark.BackColor = System.Drawing.Color.Transparent
-        Me.grpEmbark.BackgroundImage = CType(resources.GetObject("grpEmbark.BackgroundImage"),System.Drawing.Image)
+        Me.grpEmbark.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpEmbark.Controls.Add(Me.optBtnEmbarkWarn)
         Me.grpEmbark.Controls.Add(Me.lblEmbarkSize)
         Me.grpEmbark.Controls.Add(Me.optMaskEmbarkSize)
@@ -12929,7 +12677,7 @@ Partial Class MainForm
         '
         'lblEmbarkSize
         '
-        Me.lblEmbarkSize.BackColor = System.Drawing.Color.Transparent
+        Me.lblEmbarkSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblEmbarkSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblEmbarkSize.ForeColor = System.Drawing.SystemColors.Window
         Me.lblEmbarkSize.Location = New System.Drawing.Point(10, 58)
@@ -12941,8 +12689,7 @@ Partial Class MainForm
         '
         'grpAnnouncements
         '
-        Me.grpAnnouncements.BackColor = System.Drawing.Color.Transparent
-        Me.grpAnnouncements.BackgroundImage = CType(resources.GetObject("grpAnnouncements.BackgroundImage"),System.Drawing.Image)
+        Me.grpAnnouncements.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpAnnouncements.Controls.Add(Me.optBtnTransformMsgs)
         Me.grpAnnouncements.Controls.Add(Me.optBtnDigStop)
         Me.grpAnnouncements.ForeColor = System.Drawing.SystemColors.Window
@@ -12985,7 +12732,7 @@ Partial Class MainForm
         Me.ribbonMain.OrbVisible = false
         Me.ribbonMain.PanelCaptionHeight = 0
         Me.ribbonMain.RibbonTabFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.ribbonMain.Size = New System.Drawing.Size(1027, 72)
+        Me.ribbonMain.Size = New System.Drawing.Size(1026, 72)
         Me.ribbonMain.TabIndex = 100
         Me.ribbonMain.Tabs.Add(Me.rTabGeneral)
         Me.ribbonMain.Tabs.Add(Me.rTabUtilities)
@@ -13721,13 +13468,13 @@ Partial Class MainForm
         Me.tabMain.BackgroundColor = System.Drawing.Color.Black
         Me.tabMain.BackgroundHatcher.HatchType = System.Drawing.Drawing2D.HatchStyle.DashedVertical
         Me.tabMain.BorderColor = System.Drawing.Color.Black
-        Me.tabMain.Controls.Add(Me.tabSettings2)
-        Me.tabMain.Controls.Add(Me.tabCivs2)
-        Me.tabMain.Controls.Add(Me.tabOtherCreatures2)
-        Me.tabMain.Controls.Add(Me.tabWorkshops2)
-        Me.tabMain.Controls.Add(Me.tabFurnaces2)
-        Me.tabMain.Controls.Add(Me.tabMisc2)
-        Me.tabMain.Controls.Add(Me.tabWorldGen2)
+        Me.tabMain.Controls.Add(Me.tabSettings)
+        Me.tabMain.Controls.Add(Me.tabCivs)
+        Me.tabMain.Controls.Add(Me.tabOtherCreatures)
+        Me.tabMain.Controls.Add(Me.tabWorkshops)
+        Me.tabMain.Controls.Add(Me.tabFurnaces)
+        Me.tabMain.Controls.Add(Me.tabMisc)
+        Me.tabMain.Controls.Add(Me.tabWorldGen)
         Me.tabMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tabMain.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.tabMain.IsCaptionVisible = false
@@ -13736,7 +13483,7 @@ Partial Class MainForm
         Me.tabMain.Location = New System.Drawing.Point(0, 72)
         Me.tabMain.Name = "tabMain"
         Me.tabMain.SelectedIndex = 0
-        Me.tabMain.Size = New System.Drawing.Size(1027, 614)
+        Me.tabMain.Size = New System.Drawing.Size(1026, 613)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorStart = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
@@ -13747,141 +13494,141 @@ Partial Class MainForm
         Me.tabMain.TabStyles = KRBTabControl.KRBTabControl.TabStyle.VS2010
         Me.tabMain.UpDownStyle = KRBTabControl.KRBTabControl.UpDown32Style.[Default]
         '
-        'tabSettings2
+        'tabSettings
         '
-        Me.tabSettings2.BackColor = System.Drawing.Color.Transparent
-        Me.tabSettings2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabSettings2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabSettings2.Controls.Add(Me.grpWorldSettings)
-        Me.tabSettings2.Controls.Add(Me.tileSetColorPreviewer)
-        Me.tabSettings2.Controls.Add(Me.grpSaveSettings)
-        Me.tabSettings2.Controls.Add(Me.grpAnnouncements)
-        Me.tabSettings2.Controls.Add(Me.grpMiscSettings)
-        Me.tabSettings2.Controls.Add(Me.grpEmbark)
-        Me.tabSettings2.Controls.Add(Me.grpGraphics)
-        Me.tabSettings2.Controls.Add(Me.grpSound)
-        Me.tabSettings2.Controls.Add(Me.grpFps)
-        Me.tabSettings2.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.tabSettings2.IsClosable = false
-        Me.tabSettings2.Location = New System.Drawing.Point(1, 32)
-        Me.tabSettings2.Name = "tabSettings2"
-        Me.tabSettings2.Size = New System.Drawing.Size(1025, 577)
-        Me.tabSettings2.TabIndex = 0
-        Me.tabSettings2.Text = "Settings"
+        Me.tabSettings.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.tabSettings.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tabSettings.Controls.Add(Me.grpWorldSettings)
+        Me.tabSettings.Controls.Add(Me.tileSetColorPreviewer)
+        Me.tabSettings.Controls.Add(Me.grpSaveSettings)
+        Me.tabSettings.Controls.Add(Me.grpAnnouncements)
+        Me.tabSettings.Controls.Add(Me.grpMiscSettings)
+        Me.tabSettings.Controls.Add(Me.grpEmbark)
+        Me.tabSettings.Controls.Add(Me.grpGraphics)
+        Me.tabSettings.Controls.Add(Me.grpSound)
+        Me.tabSettings.Controls.Add(Me.grpFps)
+        Me.tabSettings.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.tabSettings.IsClosable = false
+        Me.tabSettings.Location = New System.Drawing.Point(1, 32)
+        Me.tabSettings.Name = "tabSettings"
+        Me.tabSettings.Size = New System.Drawing.Size(1024, 576)
+        Me.tabSettings.TabIndex = 0
+        Me.tabSettings.Text = "Settings"
         '
-        'tabCivs2
+        'tabCivs
         '
-        Me.tabCivs2.BackColor = System.Drawing.Color.Transparent
-        Me.tabCivs2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabCivs2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabCivs2.Controls.Add(Me.panCivTable)
-        Me.tabCivs2.Font = New System.Drawing.Font("Segoe UI", 9!)
-        Me.tabCivs2.IsClosable = false
-        Me.tabCivs2.Location = New System.Drawing.Point(1, 32)
-        Me.tabCivs2.Name = "tabCivs2"
-        Me.tabCivs2.Size = New System.Drawing.Size(1025, 577)
-        Me.tabCivs2.TabIndex = 1
-        Me.tabCivs2.Text = "Civilizations"
+        Me.tabCivs.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.tabCivs.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabCivs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tabCivs.Controls.Add(Me.panCivTable)
+        Me.tabCivs.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabCivs.IsClosable = false
+        Me.tabCivs.Location = New System.Drawing.Point(1, 32)
+        Me.tabCivs.Name = "tabCivs"
+        Me.tabCivs.Size = New System.Drawing.Size(1024, 576)
+        Me.tabCivs.TabIndex = 1
+        Me.tabCivs.Text = "Civilizations"
         '
-        'tabOtherCreatures2
+        'tabOtherCreatures
         '
-        Me.tabOtherCreatures2.BackColor = System.Drawing.Color.Transparent
-        Me.tabOtherCreatures2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabOtherCreatures2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabOtherCreatures2.Controls.Add(Me.grpExtraCreatures)
-        Me.tabOtherCreatures2.Controls.Add(Me.grpFortressDefense)
-        Me.tabOtherCreatures2.Controls.Add(Me.grpRandomCreatures)
-        Me.tabOtherCreatures2.Font = New System.Drawing.Font("Segoe UI", 9!)
-        Me.tabOtherCreatures2.IsClosable = false
-        Me.tabOtherCreatures2.Location = New System.Drawing.Point(1, 32)
-        Me.tabOtherCreatures2.Name = "tabOtherCreatures2"
-        Me.tabOtherCreatures2.Size = New System.Drawing.Size(1025, 577)
-        Me.tabOtherCreatures2.TabIndex = 2
-        Me.tabOtherCreatures2.Text = "Other Creatures"
+        Me.tabOtherCreatures.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.tabOtherCreatures.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabOtherCreatures.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tabOtherCreatures.Controls.Add(Me.grpExtraCreatures)
+        Me.tabOtherCreatures.Controls.Add(Me.grpFortressDefense)
+        Me.tabOtherCreatures.Controls.Add(Me.grpRandomCreatures)
+        Me.tabOtherCreatures.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabOtherCreatures.IsClosable = false
+        Me.tabOtherCreatures.Location = New System.Drawing.Point(1, 32)
+        Me.tabOtherCreatures.Name = "tabOtherCreatures"
+        Me.tabOtherCreatures.Size = New System.Drawing.Size(1024, 576)
+        Me.tabOtherCreatures.TabIndex = 2
+        Me.tabOtherCreatures.Text = "Other Creatures"
         '
-        'tabWorkshops2
+        'tabWorkshops
         '
-        Me.tabWorkshops2.BackColor = System.Drawing.Color.Transparent
-        Me.tabWorkshops2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabWorkshops2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabWorkshops2.Controls.Add(Me.grpMachinery)
-        Me.tabWorkshops2.Controls.Add(Me.grpWorkshops)
-        Me.tabWorkshops2.Controls.Add(Me.grpAdministration)
-        Me.tabWorkshops2.Controls.Add(Me.grpMiscBuildings)
-        Me.tabWorkshops2.Controls.Add(Me.grpLibrary)
-        Me.tabWorkshops2.Controls.Add(Me.grpFarming)
-        Me.tabWorkshops2.Controls.Add(Me.grpDiplomacy)
-        Me.tabWorkshops2.Controls.Add(Me.grpStudies)
-        Me.tabWorkshops2.Controls.Add(Me.grpReligion)
-        Me.tabWorkshops2.Controls.Add(Me.grpTrade)
-        Me.tabWorkshops2.Controls.Add(Me.grpLaboratories)
-        Me.tabWorkshops2.Font = New System.Drawing.Font("Segoe UI", 9!)
-        Me.tabWorkshops2.IsClosable = false
-        Me.tabWorkshops2.Location = New System.Drawing.Point(1, 32)
-        Me.tabWorkshops2.Name = "tabWorkshops2"
-        Me.tabWorkshops2.Size = New System.Drawing.Size(1025, 577)
-        Me.tabWorkshops2.TabIndex = 3
-        Me.tabWorkshops2.Text = "Workshops"
+        Me.tabWorkshops.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.tabWorkshops.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabWorkshops.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tabWorkshops.Controls.Add(Me.grpMachinery)
+        Me.tabWorkshops.Controls.Add(Me.grpWorkshops)
+        Me.tabWorkshops.Controls.Add(Me.grpAdministration)
+        Me.tabWorkshops.Controls.Add(Me.grpMiscBuildings)
+        Me.tabWorkshops.Controls.Add(Me.grpLibrary)
+        Me.tabWorkshops.Controls.Add(Me.grpFarming)
+        Me.tabWorkshops.Controls.Add(Me.grpDiplomacy)
+        Me.tabWorkshops.Controls.Add(Me.grpStudies)
+        Me.tabWorkshops.Controls.Add(Me.grpReligion)
+        Me.tabWorkshops.Controls.Add(Me.grpTrade)
+        Me.tabWorkshops.Controls.Add(Me.grpLaboratories)
+        Me.tabWorkshops.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabWorkshops.IsClosable = false
+        Me.tabWorkshops.Location = New System.Drawing.Point(1, 32)
+        Me.tabWorkshops.Name = "tabWorkshops"
+        Me.tabWorkshops.Size = New System.Drawing.Size(1024, 576)
+        Me.tabWorkshops.TabIndex = 3
+        Me.tabWorkshops.Text = "Workshops"
         '
-        'tabFurnaces2
+        'tabFurnaces
         '
-        Me.tabFurnaces2.BackColor = System.Drawing.Color.Transparent
-        Me.tabFurnaces2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabFurnaces2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabFurnaces2.Controls.Add(Me.grpIllumination)
-        Me.tabFurnaces2.Controls.Add(Me.grpSmithing)
-        Me.tabFurnaces2.Controls.Add(Me.grpVolcanic)
-        Me.tabFurnaces2.Controls.Add(Me.grpMiscFurnaces)
-        Me.tabFurnaces2.Controls.Add(Me.grpMagic)
-        Me.tabFurnaces2.Controls.Add(Me.grpUpgrades)
-        Me.tabFurnaces2.Controls.Add(Me.grpDecorations)
-        Me.tabFurnaces2.Controls.Add(Me.grpMetalworks)
-        Me.tabFurnaces2.Controls.Add(Me.grpSiege)
-        Me.tabFurnaces2.Font = New System.Drawing.Font("Segoe UI", 9!)
-        Me.tabFurnaces2.IsClosable = false
-        Me.tabFurnaces2.Location = New System.Drawing.Point(1, 32)
-        Me.tabFurnaces2.Name = "tabFurnaces2"
-        Me.tabFurnaces2.Size = New System.Drawing.Size(1025, 577)
-        Me.tabFurnaces2.TabIndex = 4
-        Me.tabFurnaces2.Text = "Furnaces"
+        Me.tabFurnaces.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.tabFurnaces.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabFurnaces.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tabFurnaces.Controls.Add(Me.grpIllumination)
+        Me.tabFurnaces.Controls.Add(Me.grpSmithing)
+        Me.tabFurnaces.Controls.Add(Me.grpVolcanic)
+        Me.tabFurnaces.Controls.Add(Me.grpMiscFurnaces)
+        Me.tabFurnaces.Controls.Add(Me.grpMagic)
+        Me.tabFurnaces.Controls.Add(Me.grpUpgrades)
+        Me.tabFurnaces.Controls.Add(Me.grpDecorations)
+        Me.tabFurnaces.Controls.Add(Me.grpMetalworks)
+        Me.tabFurnaces.Controls.Add(Me.grpSiege)
+        Me.tabFurnaces.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabFurnaces.IsClosable = false
+        Me.tabFurnaces.Location = New System.Drawing.Point(1, 32)
+        Me.tabFurnaces.Name = "tabFurnaces"
+        Me.tabFurnaces.Size = New System.Drawing.Size(1024, 576)
+        Me.tabFurnaces.TabIndex = 4
+        Me.tabFurnaces.Text = "Furnaces"
         '
-        'tabMisc2
+        'tabMisc
         '
-        Me.tabMisc2.BackColor = System.Drawing.Color.Transparent
-        Me.tabMisc2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabMisc2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabMisc2.Controls.Add(Me.grpExtraReactions)
-        Me.tabMisc2.Controls.Add(Me.grpStandardization)
-        Me.tabMisc2.Controls.Add(Me.grpExtraMods)
-        Me.tabMisc2.Controls.Add(Me.grpBalancing)
-        Me.tabMisc2.Controls.Add(Me.grpMiscFeatures)
-        Me.tabMisc2.Font = New System.Drawing.Font("Segoe UI", 9!)
-        Me.tabMisc2.IsClosable = false
-        Me.tabMisc2.Location = New System.Drawing.Point(1, 32)
-        Me.tabMisc2.Name = "tabMisc2"
-        Me.tabMisc2.Size = New System.Drawing.Size(1025, 577)
-        Me.tabMisc2.TabIndex = 5
-        Me.tabMisc2.Text = "Misc. Features"
+        Me.tabMisc.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.tabMisc.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabMisc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tabMisc.Controls.Add(Me.grpExtraReactions)
+        Me.tabMisc.Controls.Add(Me.grpStandardization)
+        Me.tabMisc.Controls.Add(Me.grpExtraMods)
+        Me.tabMisc.Controls.Add(Me.grpBalancing)
+        Me.tabMisc.Controls.Add(Me.grpMiscFeatures)
+        Me.tabMisc.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabMisc.IsClosable = false
+        Me.tabMisc.Location = New System.Drawing.Point(1, 32)
+        Me.tabMisc.Name = "tabMisc"
+        Me.tabMisc.Size = New System.Drawing.Size(1024, 576)
+        Me.tabMisc.TabIndex = 5
+        Me.tabMisc.Text = "Misc. Features"
         '
-        'tabWorldGen2
+        'tabWorldGen
         '
-        Me.tabWorldGen2.BackColor = System.Drawing.Color.Transparent
-        Me.tabWorldGen2.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
-        Me.tabWorldGen2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenMisc)
-        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenHostiles)
-        Me.tabWorldGen2.Controls.Add(Me.lblWorldGenSelect)
-        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenCaves)
-        Me.tabWorldGen2.Controls.Add(Me.cmbWorldGenIndex)
-        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenLayers)
-        Me.tabWorldGen2.Controls.Add(Me.grpWorldGenAreas)
-        Me.tabWorldGen2.Font = New System.Drawing.Font("Segoe UI", 9!)
-        Me.tabWorldGen2.IsClosable = false
-        Me.tabWorldGen2.Location = New System.Drawing.Point(1, 32)
-        Me.tabWorldGen2.Name = "tabWorldGen2"
-        Me.tabWorldGen2.Size = New System.Drawing.Size(1025, 577)
-        Me.tabWorldGen2.TabIndex = 6
-        Me.tabWorldGen2.Text = "World Gen."
+        Me.tabWorldGen.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.tabWorldGen.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabWorldGen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tabWorldGen.Controls.Add(Me.grpWorldGenMisc)
+        Me.tabWorldGen.Controls.Add(Me.grpWorldGenHostiles)
+        Me.tabWorldGen.Controls.Add(Me.lblWorldGenSelect)
+        Me.tabWorldGen.Controls.Add(Me.grpWorldGenCaves)
+        Me.tabWorldGen.Controls.Add(Me.cmbWorldGenIndex)
+        Me.tabWorldGen.Controls.Add(Me.grpWorldGenLayers)
+        Me.tabWorldGen.Controls.Add(Me.grpWorldGenAreas)
+        Me.tabWorldGen.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.tabWorldGen.IsClosable = false
+        Me.tabWorldGen.Location = New System.Drawing.Point(1, 32)
+        Me.tabWorldGen.Name = "tabWorldGen"
+        Me.tabWorldGen.Size = New System.Drawing.Size(1024, 576)
+        Me.tabWorldGen.TabIndex = 6
+        Me.tabWorldGen.Text = "World Gen."
         '
         'MainForm
         '
@@ -13889,7 +13636,7 @@ Partial Class MainForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1027, 686)
+        Me.ClientSize = New System.Drawing.Size(1026, 685)
         Me.Controls.Add(Me.tabMain)
         Me.Controls.Add(Me.ribbonMain)
         Me.DoubleBuffered = true
@@ -13989,18 +13736,18 @@ Partial Class MainForm
         Me.grpAnnouncements.ResumeLayout(false)
         CType(Me.optNumHFSLevels,System.ComponentModel.ISupportInitialize).EndInit
         Me.tabMain.ResumeLayout(false)
-        Me.tabSettings2.ResumeLayout(false)
-        Me.tabCivs2.ResumeLayout(false)
-        Me.tabOtherCreatures2.ResumeLayout(false)
-        Me.tabWorkshops2.ResumeLayout(false)
-        Me.tabFurnaces2.ResumeLayout(false)
-        Me.tabMisc2.ResumeLayout(false)
-        Me.tabWorldGen2.ResumeLayout(false)
+        Me.tabSettings.ResumeLayout(false)
+        Me.tabCivs.ResumeLayout(false)
+        Me.tabOtherCreatures.ResumeLayout(false)
+        Me.tabWorkshops.ResumeLayout(false)
+        Me.tabFurnaces.ResumeLayout(false)
+        Me.tabMisc.ResumeLayout(false)
+        Me.tabWorldGen.ResumeLayout(false)
         Me.ResumeLayout(false)
 
 End Sub
     Friend WithEvents ToolTipMaker As System.Windows.Forms.ToolTip
-    Friend WithEvents grpRandomCreatures As System.Windows.Forms.GroupBox
+    Friend WithEvents grpRandomCreatures As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents btnDelRandoms As System.Windows.Forms.Button
     Friend WithEvents btnGenerateCreatures As System.Windows.Forms.Button
     Friend WithEvents optBtnKobolds As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14026,7 +13773,7 @@ End Sub
     Friend WithEvents optBtnPlayableKobolds As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnPlayableOrcs As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnPlayableDwarves As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpFortressDefense As System.Windows.Forms.GroupBox
+    Friend WithEvents grpFortressDefense As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents lblFortDefEasyTitle As System.Windows.Forms.Label
     Friend WithEvents lblFortDefNote As System.Windows.Forms.Label
     Friend WithEvents optBtnFdFireImps As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14049,7 +13796,7 @@ End Sub
     Friend WithEvents optBtnFdNightwings As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnFdSpiderFiends As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnFdJotun As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpExtraCreatures As System.Windows.Forms.GroupBox
+    Friend WithEvents grpExtraCreatures As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnMoreMagical As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnMoreAnimalmen As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnMoreGiantAnimals As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14062,7 +13809,7 @@ End Sub
     Friend WithEvents optBtnMoreCavernCreatures As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnMoreMegaBeasts As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnDomesticPets As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpWorkshops As System.Windows.Forms.GroupBox
+    Friend WithEvents grpWorkshops As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnBonecarver As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnToolmaker As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnPainter As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14076,38 +13823,38 @@ End Sub
     Friend WithEvents optBtnGemcutter As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnThatchery As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnStonecrafter As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpTrade As System.Windows.Forms.GroupBox
-    Friend WithEvents grpFarming As System.Windows.Forms.GroupBox
+    Friend WithEvents grpTrade As MasterworkDwarfFortress.mwGroupBox
+    Friend WithEvents grpFarming As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnBrewery As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnStables As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnSlaughterhouse As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnFishpond As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnSawmill As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpMiscBuildings As System.Windows.Forms.GroupBox
+    Friend WithEvents grpMiscBuildings As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnStorage As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnWoodsplitting As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnWeightBench As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpStudies As System.Windows.Forms.GroupBox
+    Friend WithEvents grpStudies As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnResearch As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnBiology As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnApothecary As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnArcheology As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpLaboratories As System.Windows.Forms.GroupBox
+    Friend WithEvents grpLaboratories As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnHerbalist As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnChemistry As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnToxicology As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnAlchemy As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpDiplomacy As System.Windows.Forms.GroupBox
+    Friend WithEvents grpDiplomacy As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnPodium As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnExpedition As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnEmbassy As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpAdministration As System.Windows.Forms.GroupBox
+    Friend WithEvents grpAdministration As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnGarrison As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnMonastery As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnPrison As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnGuildhall As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnColosseum As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpLibrary As System.Windows.Forms.GroupBox
+    Friend WithEvents grpLibrary As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnScriptorium As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnLibraries As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnIneri As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14116,8 +13863,8 @@ End Sub
     Friend WithEvents optBtnOlon As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnBomrek As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnTavern As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpMachinery As System.Windows.Forms.GroupBox
-    Friend WithEvents grpReligion As System.Windows.Forms.GroupBox
+    Friend WithEvents grpMachinery As MasterworkDwarfFortress.mwGroupBox
+    Friend WithEvents grpReligion As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnCoinMint As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnLiquidSpawner As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnMachineFactory As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14125,16 +13872,16 @@ End Sub
     Friend WithEvents optBtnTemple As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnShrine As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnAltar As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpIllumination As System.Windows.Forms.GroupBox
+    Friend WithEvents grpIllumination As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnGemOfLight As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnTorchbearerStatue As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnFireplace As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnCandelabra As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnBrazier As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpMiscFurnaces As System.Windows.Forms.GroupBox
+    Friend WithEvents grpMiscFurnaces As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents lblIlluminationNote As System.Windows.Forms.Label
-    Friend WithEvents grpDecorations As System.Windows.Forms.GroupBox
-    Friend WithEvents grpMetalworks As System.Windows.Forms.GroupBox
+    Friend WithEvents grpDecorations As MasterworkDwarfFortress.mwGroupBox
+    Friend WithEvents grpMetalworks As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnMetallurgist As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnBlastFurnace As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnFinishingForge As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14144,7 +13891,7 @@ End Sub
     Friend WithEvents optBtnCrematorium As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnBrickOven As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optMultiOreProcessor As MasterworkDwarfFortress.optionMultiButton
-    Friend WithEvents grpSmithing As System.Windows.Forms.GroupBox
+    Friend WithEvents grpSmithing As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnRockForge As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnGemforge As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnEngineer As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14154,9 +13901,9 @@ End Sub
     Friend WithEvents optBtnGunsmith As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnInventor As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnAmmocaster As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpUpgrades As System.Windows.Forms.GroupBox
+    Friend WithEvents grpUpgrades As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnRuneArmory As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpSiege As System.Windows.Forms.GroupBox
+    Friend WithEvents grpSiege As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnWarKennel As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnWeaponry As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnRuneWeaponry As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14164,8 +13911,8 @@ End Sub
     Friend WithEvents optBtnArmory As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnTrebuchet As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnArbalest As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpMagic As System.Windows.Forms.GroupBox
-    Friend WithEvents grpVolcanic As System.Windows.Forms.GroupBox
+    Friend WithEvents grpMagic As MasterworkDwarfFortress.mwGroupBox
+    Friend WithEvents grpVolcanic As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnGreatMagmaForge As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents lblReqMagmaNote As System.Windows.Forms.Label
     Friend WithEvents optBtnGolemForge As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14182,7 +13929,7 @@ End Sub
     Friend WithEvents optBtnCarpet As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnTotems As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnPottedPlant As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpStandardization As System.Windows.Forms.GroupBox
+    Friend WithEvents grpStandardization As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnSimpleGemShapes As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnSimpleStones As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnSimplePets As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14192,7 +13939,7 @@ End Sub
     Friend WithEvents optBtnSimpleTrees As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optMultiSimpleWood As MasterworkDwarfFortress.optionMultiButton
     Friend WithEvents optMultiSimpleMeat As MasterworkDwarfFortress.optionMultiButton
-    Friend WithEvents grpMiscFeatures As System.Windows.Forms.GroupBox
+    Friend WithEvents grpMiscFeatures As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optMultiCavernFlavor As MasterworkDwarfFortress.optionMultiButton
     Friend WithEvents optBtnCombatLogs As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnDiplomats As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14203,7 +13950,7 @@ End Sub
     Friend WithEvents optBtnEnglishDwarves As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnNobles As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnRegionalWeather As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpExtraReactions As System.Windows.Forms.GroupBox
+    Friend WithEvents grpExtraReactions As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnSoapmaker As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnKitchen As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnQuenMill As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14213,7 +13960,7 @@ End Sub
     Friend WithEvents optBtnTanner As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnMillstone As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnClayOven As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpBalancing As System.Windows.Forms.GroupBox
+    Friend WithEvents grpBalancing As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnAquifier As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optMultiHarderSmithing As MasterworkDwarfFortress.optionMultiButton
     Friend WithEvents optMultiHarderFarming As MasterworkDwarfFortress.optionMultiButton
@@ -14224,7 +13971,7 @@ End Sub
     Friend WithEvents optBtnSecrets As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents lblRendermaxNote As System.Windows.Forms.Label
     Friend WithEvents lblModNote As System.Windows.Forms.Label
-    Friend WithEvents grpExtraMods As System.Windows.Forms.GroupBox
+    Friend WithEvents grpExtraMods As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnMorePlants As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnMoreTrees As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnFearTheNight As MasterworkDwarfFortress.optionSingleReplaceButton
@@ -14232,7 +13979,7 @@ End Sub
     Friend WithEvents optBtnRazingCivs As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnRendermax As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnDiggingCivs As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpWorldGenHostiles As System.Windows.Forms.GroupBox
+    Friend WithEvents grpWorldGenHostiles As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents lblWorldGenSelect As System.Windows.Forms.Label
     Friend WithEvents cmbWorldGenIndex As System.Windows.Forms.ComboBox
     Friend WithEvents optNumEvilRains As MasterworkDwarfFortress.optionNumeric
@@ -14263,8 +14010,8 @@ End Sub
     Friend WithEvents lblMegabeasts As System.Windows.Forms.Label
     Friend WithEvents optBtnHFS As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnMagmaLake As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpWorldGenAreas As System.Windows.Forms.GroupBox
-    Friend WithEvents grpWorldGenLayers As System.Windows.Forms.GroupBox
+    Friend WithEvents grpWorldGenAreas As MasterworkDwarfFortress.mwGroupBox
+    Friend WithEvents grpWorldGenLayers As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optNumWaterMax As MasterworkDwarfFortress.optionNumeric
     Friend WithEvents optNumHFSLevels As MasterworkDwarfFortress.optionNumeric
     Friend WithEvents optNumAboveHFS As MasterworkDwarfFortress.optionNumeric
@@ -14312,28 +14059,28 @@ End Sub
     Friend WithEvents lblOtherCaves As System.Windows.Forms.Label
     Friend WithEvents optBtnVisibleCaves As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents lblBiomeNote As System.Windows.Forms.Label
-    Friend WithEvents grpWorldGenMisc As System.Windows.Forms.GroupBox
-    Friend WithEvents grpWorldGenCaves As System.Windows.Forms.GroupBox
+    Friend WithEvents grpWorldGenMisc As MasterworkDwarfFortress.mwGroupBox
+    Friend WithEvents grpWorldGenCaves As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnDiseases As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents lblSettingExplanation As System.Windows.Forms.Label
-    Friend WithEvents grpAnnouncements As System.Windows.Forms.GroupBox
+    Friend WithEvents grpAnnouncements As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnTransformMsgs As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnDigStop As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents grpEmbark As System.Windows.Forms.GroupBox
+    Friend WithEvents grpEmbark As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnEmbarkWarn As MasterworkDwarfFortress.optionSingleBoolButton
     Friend WithEvents optMaskEmbarkSize As MasterworkDwarfFortress.optionFormatted
     Friend WithEvents lblEmbarkSize As System.Windows.Forms.Label
-    Friend WithEvents grpFps As System.Windows.Forms.GroupBox
+    Friend WithEvents grpFps As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnFps As MasterworkDwarfFortress.optionSingleBoolButton
     Friend WithEvents lblFpsCap As System.Windows.Forms.Label
     Friend WithEvents optNumFPSCap As MasterworkDwarfFortress.optionNumeric
     Friend WithEvents optNumGFPS As MasterworkDwarfFortress.optionNumeric
     Friend WithEvents lblGraphicsCap As System.Windows.Forms.Label
-    Friend WithEvents grpSound As System.Windows.Forms.GroupBox
+    Friend WithEvents grpSound As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnSound As MasterworkDwarfFortress.optionSingleBoolButton
     Friend WithEvents lblVolume As System.Windows.Forms.Label
     Friend WithEvents optNumVolume As MasterworkDwarfFortress.optionNumeric
-    Friend WithEvents grpGraphics As System.Windows.Forms.GroupBox
+    Friend WithEvents grpGraphics As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optBtnTruetype As MasterworkDwarfFortress.optionSingleBoolButton
     Friend WithEvents optCbFonts As MasterworkDwarfFortress.optionComboBoxFileReplace
     Public WithEvents cmbTileSets As System.Windows.Forms.ComboBox
@@ -14345,7 +14092,7 @@ End Sub
     Friend WithEvents optBtnSprites As MasterworkDwarfFortress.optionSingleBoolButton
     Friend WithEvents lblGraphicsPack As System.Windows.Forms.Label
     Friend WithEvents lblPrintMode As System.Windows.Forms.Label
-    Friend WithEvents grpMiscSettings As System.Windows.Forms.GroupBox
+    Friend WithEvents grpMiscSettings As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optCbPriority As MasterworkDwarfFortress.optionComboBoxToken
     Friend WithEvents lblPriority As System.Windows.Forms.Label
     Friend WithEvents optCbWindow As MasterworkDwarfFortress.optionComboBoxToken
@@ -14355,7 +14102,7 @@ End Sub
     Friend WithEvents optCbKeybinds As MasterworkDwarfFortress.optionComboBoxFileReplace
     Friend WithEvents lblKeybinds As System.Windows.Forms.Label
     Friend WithEvents optBtnIntro As MasterworkDwarfFortress.optionSingleBoolButton
-    Friend WithEvents grpSaveSettings As System.Windows.Forms.GroupBox
+    Friend WithEvents grpSaveSettings As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optCbAutoSave As MasterworkDwarfFortress.optionComboBoxToken
     Friend WithEvents lblAutoSave As System.Windows.Forms.Label
     Friend WithEvents optBtnPauseLoad As MasterworkDwarfFortress.optionSingleBoolButton
@@ -14363,7 +14110,7 @@ End Sub
     Friend WithEvents optBtnEmbarkSave As MasterworkDwarfFortress.optionSingleBoolButton
     Friend WithEvents optBtnAutoBackup As MasterworkDwarfFortress.optionSingleBoolButton
     Friend WithEvents optBtnAutoSavePause As MasterworkDwarfFortress.optionSingleBoolButton
-    Friend WithEvents grpWorldSettings As System.Windows.Forms.GroupBox
+    Friend WithEvents grpWorldSettings As MasterworkDwarfFortress.mwGroupBox
     Friend WithEvents optMaskChildBabyCap As MasterworkDwarfFortress.optionFormatted
     Friend WithEvents optNumPopCap As MasterworkDwarfFortress.optionNumeric
     Friend WithEvents optBtnPetCoffins As MasterworkDwarfFortress.optionSingleBoolButton
@@ -14491,14 +14238,14 @@ End Sub
     Friend WithEvents lblCivEvilDrow As MasterworkDwarfFortress.mwCivLabel
     Friend WithEvents optCbPatternInvaderSkills As MasterworkDwarfFortress.optionComboPatternToken
     Friend WithEvents lblInvaderSkills As System.Windows.Forms.Label
-    Friend WithEvents panCivTable As System.Windows.Forms.Panel
+    Friend WithEvents panCivTable As MasterworkDwarfFortress.mwPanel
     Friend WithEvents tabMain As KRBTabControl.KRBTabControl
-    Friend WithEvents tabSettings2 As KRBTabControl.TabPageEx
-    Friend WithEvents tabCivs2 As KRBTabControl.TabPageEx
-    Friend WithEvents tabOtherCreatures2 As KRBTabControl.TabPageEx
-    Friend WithEvents tabWorkshops2 As KRBTabControl.TabPageEx
-    Friend WithEvents tabFurnaces2 As KRBTabControl.TabPageEx
-    Friend WithEvents tabMisc2 As KRBTabControl.TabPageEx
-    Friend WithEvents tabWorldGen2 As KRBTabControl.TabPageEx
+    Friend WithEvents tabSettings As KRBTabControl.TabPageEx
+    Friend WithEvents tabCivs As KRBTabControl.TabPageEx
+    Friend WithEvents tabOtherCreatures As KRBTabControl.TabPageEx
+    Friend WithEvents tabWorkshops As KRBTabControl.TabPageEx
+    Friend WithEvents tabFurnaces As KRBTabControl.TabPageEx
+    Friend WithEvents tabMisc As KRBTabControl.TabPageEx
+    Friend WithEvents tabWorldGen As KRBTabControl.TabPageEx
 
 End Class

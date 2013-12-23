@@ -288,15 +288,10 @@ namespace System.Windows.Forms
         //internal static Color FromHex(string hex)
         static Color FromHexStr(string hex)
         {
-            if (hex.StartsWith("#"))
-                hex = hex.Substring(1);
+            if (hex.Length < 7 || hex.Length > 9)
+                throw new Exception("Invalid color!");
 
-            if (hex.Length != 6) throw new Exception("Color not valid");
-
-            return Color.FromArgb(
-                int.Parse(hex.Substring(0, 2), System.Globalization.NumberStyles.HexNumber),
-                int.Parse(hex.Substring(2, 2), System.Globalization.NumberStyles.HexNumber),
-                int.Parse(hex.Substring(4, 2), System.Globalization.NumberStyles.HexNumber));
+            return System.Drawing.ColorTranslator.FromHtml(hex);
         }
 
         public Color FromHex(string hex)

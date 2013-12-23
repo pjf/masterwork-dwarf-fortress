@@ -1,7 +1,8 @@
-﻿Public Class mwTableLayout
-    Inherits TableLayoutPanel
+﻿Public Class mwPanel
+    Inherits Panel
 
     Public Sub New()
+
         ' This call is required by the designer.
         InitializeComponent()
 

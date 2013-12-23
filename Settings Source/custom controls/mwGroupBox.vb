@@ -1,13 +1,15 @@
-﻿Public Class mwTableLayout
-    Inherits TableLayoutPanel
+﻿Public Class mwGroupBox
+    Inherits GroupBox
 
     Public Sub New()
+
         ' This call is required by the designer.
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
+        SetStyle(ControlStyles.SupportsTransparentBackColor, True)
         Me.DoubleBuffered = True
-        Me.SetStyle(ControlStyles.SupportsTransparentBackColor, True)
+        'BackColor = System.Drawing.Color.FromArgb(130, 0, 0, 0) 'Color.Transparent
     End Sub
 
     Protected Overrides ReadOnly Property CreateParams() As CreateParams
@@ -17,4 +19,5 @@
             Return cp
         End Get
     End Property
+
 End Class
