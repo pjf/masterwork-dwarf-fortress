@@ -18,10 +18,29 @@ a:link {
 a:visited {
 	color: #CCC;
 }
-.Rot {	color: #F00;
+
+#goblin p {
+    padding-top: 20px;
+    clear: both; 
 }
-.Rot {	color: #F00;
+
+#goblin img {
+    padding-bottom: 10px;
+    border: 0px;
+    clear:both;
 }
+
+#goblin p:nth-child(odd) img { 
+    float: left;  
+    padding-right: 10px;
+}
+
+#goblin p:nth-child(even) img {
+    float: right;
+    padding-left: 10px;
+}
+
+
 </style>
 </head>
 
@@ -61,55 +80,81 @@ you can always just fork over cash to the Shadowbroker to smuggle workers in.&nb
 Until deployed into their workshop, Goblin workers will be stored along with
 other useful items in your Tools stockpile.</p>
 
-<p align="left">
-<img border="0" src="screenshots/goblin_stonecutter.png" width="133" height="86" align="left">&nbsp;&nbsp;&nbsp;
-The Stonecutter&#39;s Shanty houses a goblin masonry apprentice and his workshop.&nbsp;
+<div id="goblin">
+<p><img src="screenshots/goblin_stonecutter.png" />
+<b>The Stonecutter&#39;s Shanty</b> houses a goblin masonry apprentice and his workshop.
 He takes on tasks which are beneath the notice of Orcish masons, like grinding
 excess stone, sorting the magma-safe rocks from others, crafting rock weapons
 and traps, and cutting blocks
-<img border="0" src="screenshots/goblin_sawmill.png" width="131" height="84" align="right">back
-apart into stone.&nbsp; He can also make rock bins and barrels, although be
-warned that they can be pretty heavy.<p align="left">
-The Sawmill Shanty houses a goblin woodworker and his shop.&nbsp; The goblin
+back apart into stone. He can also make rock bins and barrels, although be
+warned that they can be pretty heavy.
+</p>
+
+<p>
+<img src="screenshots/goblin_sawmill.png" />
+<b>The Sawmill Shanty</b> houses a goblin woodworker and his shop.&nbsp; The goblin
 woodworker is excellent at stretching limited resources; he can cut 20
-<img border="0" src="screenshots/goblin_tinkerer.png" width="132" height="83" align="left">planks
+planks
 from 5 logs.&nbsp; He can even make big batches of 10 bins or barrels from 5
-logs, as long as he has access to some metal for fasteners.<p align="left">
-&nbsp;&nbsp;&nbsp; The Tinkerer&#39;s Shanty houses a goblin who can craft advanced
+logs, as long as he has access to some metal for fasteners.
+</p>
+
+
+<p>
+<img src="screenshots/goblin_tinkerer.png" />
+<b>The Tinkerer&#39;s Shanty</b> houses a goblin who can craft advanced
 flachette guns, pistols, and muskets (although the last, only by using up a
 stolen human toolkit).&nbsp; He can also hand-load rounds for guns, making his
 own black powder from scratch without help of a chemist.&nbsp; Since the
 tinkerer uses so much brass and lead, he has his own small low-temperature
-furnace to help with smelting a few basic ores.<p align="left">
-<img border="0" src="screenshots/kobold_poisoner.png" width="132" height="84" align="left">&nbsp;&nbsp;&nbsp;
-The Poisoner&#39;s Hut houses a kobold who creates and applies poison to ammo,
+furnace to help with smelting a few basic ores.
+</p>
+
+<p>
+<img src="screenshots/kobold_poisoner.png" />
+<b>The Poisoner&#39;s Hut</b> houses a kobold who creates and applies poison to ammo,
 weapons, and trap components.&nbsp; Besides using a number of poison recipes
 stolen from the Free Peoples, the kobold poisoner has developed a few extra
 poisons from Wetland and Boreal plants: an improved universal Blight poison
 distilled from kobold-bulb and cadaverine, and a Pinkskin Bane poison from
-icicle mint and Taiga<img border="0" src="screenshots/kobold_tracker.png" width="131" height="82" align="right">
-bloodberry.<p align="left">
-&nbsp;&nbsp;&nbsp; The Hunter&#39;s Hut can equip kobold thieves with a dagger and
+icicle mint and Taiga bloodberry.
+</p>
+
+<p>
+<img src="screenshots/kobold_tracker.png" />
+<b>The Hunter&#39;s Hut</b> can equip kobold thieves with a dagger and
 bag, and send them out into the world with a chance to steal some precious
-metals and gems for the clan.&nbsp; He can also forge batches of darts, useful
-if the Goblin Tinkerer is providing the troops with flachette guns.&nbsp;
+metals and gems for the clan. He can also forge batches of darts, useful
+if the Goblin Tinkerer is providing the troops with flachette guns.
 Flachette guns have a good rate of fire and so dart batches can be effective for
-<img border="0" src="screenshots/kobold_textile.png" width="133" height="86" align="left">training
-up a gun warband if metal guns &amp; ammo are in low supply.&nbsp; They also make
-fine trap components, perhaps in combination with poisoned darts. <p align="left">
-&nbsp;&nbsp;&nbsp; The Kobold Textile Hut can batch produce sets of clothing
-from cloth, wool, or silk; and can process grasses<img border="0" src="screenshots/laborcells.png" align="right" width="186" height="185">
+training
+up a gun warband if metal guns &amp; ammo are in low supply. They also make
+fine trap components, perhaps in combination with poisoned darts.
+</p>
+
+<p>
+<img src="screenshots/kobold_textile.png" />
+<b>The Kobold Textile Hut</b> can batch produce sets of clothing
+from cloth, wool, or silk; and can process grasses
 to wicker.&nbsp; Wicker bins are valued for their light weight in any fort, and
 other wicker furniture can be in great demand in overland camps.&nbsp;&nbsp; He
 can also practice a few tribal weavers&#39; tricks such as weaving rope from
-rope-reed, and stripping wood-stalks down to logs.&nbsp; <p align="left">
-The Labor Cells are a special case.&nbsp; Sometimes your Raiders will take
+rope-reed, and stripping wood-stalks down to logs.
+</p>
+
+<p>
+<img src="screenshots/laborcells.png" />
+<b>The Labor Cells</b> are a special case.&nbsp; Sometimes your Raiders will take
 captive a Dwarf, Drow, Elf or Human.&nbsp; Large clanholdings generally pass
 these captives quickly through contacts at the Caravanserai&#39;s Shadowbroker
 for a significant ransom.&nbsp; However, camps which are short on simple
 materials such as stone, silk, wood, or basic crafts can choose to deploy these
 guests as laborers, although their work presents a significant drain on food
-resources.&nbsp; <h1 align="center">
+resources.
+</p>
+</div>
+
+&nbsp; <h1 align="center">
 &nbsp;</h1>
 
 <h1 align="center">
