@@ -20,5 +20,4 @@
     Public Shared m_tokensWorldGen As New Dictionary(Of Integer, Dictionary(Of String, List(Of String)))
 
     Public Shared currentWorldGenIndex As Integer
-
 End Class

@@ -11,11 +11,7 @@
         Me.Appearance = Windows.Forms.Appearance.Button
         Me.FlatStyle = FlatStyle.Flat
         Me.FlatAppearance.BorderSize = 0
-        'Me.TextAlign = ContentAlignment.MiddleCenter
-        'Me.ImageAlign = ContentAlignment.MiddleLeft
         Me.DoubleBuffered = True
-
-
         Me.ForeColor = Theme.ColorTable.Text
         Me.Image = My.Resources.cross_small
     End Sub
@@ -30,28 +26,15 @@
 
     Public Sub applyTheme() Implements iTheme.applyTheme
         If Theme.ThemeColor = RibbonTheme.Normal Then
-            'Me.BackgroundImage = My.Resources.transp_1            
-            'Me.BackgroundImageLayout = ImageLayout.Tile
-
-            'Me.BackColor = Color.Transparent
-            'Me.FlatAppearance.CheckedBackColor = Color.Transparent
-            Me.BackColor = Drawing.Color.FromArgb(130, 0, 0, 0)
-            Me.FlatAppearance.CheckedBackColor = Drawing.Color.FromArgb(130, 0, 0, 0)
-
             Me.FlatAppearance.MouseOverBackColor = Theme.ColorTable.TabSelectedGlow
             Me.FlatAppearance.MouseDownBackColor = Theme.ColorTable.TabSelectedGlow
         Else
-            'Me.FlatStyle = Windows.Forms.FlatStyle.Standard
-            'Me.BackgroundImageLayout = ImageLayout.None
-            'Me.BackgroundImage = Nothing
-
-            Me.BackColor = Theme.ColorTable.RibbonBackground_2013
-            Me.FlatAppearance.CheckedBackColor = Theme.ColorTable.RibbonBackground_2013
             Me.FlatAppearance.MouseDownBackColor = Theme.ColorTable.RibbonBackground_2013
-
             Me.FlatAppearance.MouseOverBackColor = Theme.ColorTable.ButtonSelected_2013
         End If
 
+        Me.BackColor = Theme.ColorTable.ButtonBgCenter
+        Me.FlatAppearance.CheckedBackColor = Theme.ColorTable.ButtonBgCenter
         Me.FlatAppearance.BorderSize = 0
         Me.ForeColor = Theme.ColorTable.Text        
     End Sub
@@ -64,12 +47,11 @@
         End If
     End Function
 
-    'Protected Overrides ReadOnly Property CreateParams() As CreateParams
-    '    Get
-    '        Dim parms = MyBase.CreateParams
-    '        parms.Style = parms.Style And Not &H2000000 ' Turn off WS_CLIPCHILDREN
-    '        Return parms
-    '    End Get
-    'End Property
-
+    Protected Overrides ReadOnly Property CreateParams() As CreateParams
+        Get
+            Dim cp As CreateParams = MyBase.CreateParams
+            cp.ExStyle = cp.ExStyle Or &H20
+            Return cp
+        End Get
+    End Property
 End Class

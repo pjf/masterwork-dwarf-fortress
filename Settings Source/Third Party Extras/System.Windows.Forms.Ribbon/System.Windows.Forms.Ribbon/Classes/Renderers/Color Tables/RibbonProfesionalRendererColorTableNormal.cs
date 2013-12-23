@@ -26,6 +26,7 @@ namespace System.Windows.Forms
         string m_lightGray = "#D0D0D0";
         string m_medGray = "#757575";
         string m_textColor = "#F8F8F2";
+        string m_transBack = "#82000000";
 
         public RibbonProfesionalRendererColorTableNormal()
         {
@@ -78,7 +79,8 @@ namespace System.Windows.Forms
             TabContentNorth = FromHex(m_medGray);
             TabContentSouth = FromHex("#B7B7B7");
             TabSelectedGlow = FromHex(m_highlight);
-            PanelDarkBorder = FromHex(m_medGray);
+
+            PanelDarkBorder = FromHex(m_transBack);
             PanelLightBorder = FromHex(m_lightGray);
             PanelTextBackground = FromHex(m_backgroundColor);
             PanelTextBackgroundSelected = FromHex(m_medGray);
@@ -90,7 +92,7 @@ namespace System.Windows.Forms
             PanelOverflowBackgroundSelectedSouth = FromHex(m_medGray);
 
             ButtonBgOut = FromHex(m_medGray);
-            ButtonBgCenter = FromHex(m_backgroundColor);
+            ButtonBgCenter = FromHex(m_transBack);
             ButtonBorderOut = FromHex(m_lightGray);
             ButtonBorderIn = FromHex(m_medGray);
             ButtonGlossyNorth = FromHex(m_lightGray);
