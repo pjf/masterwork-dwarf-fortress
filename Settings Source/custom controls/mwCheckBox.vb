@@ -30,18 +30,20 @@
 
     Public Sub applyTheme() Implements iTheme.applyTheme
         If Theme.ThemeColor = RibbonTheme.Normal Then
-            Me.BackgroundImage = My.Resources.transp_1
-            Me.BackgroundImageLayout = ImageLayout.Tile
+            'Me.BackgroundImage = My.Resources.transp_1            
+            'Me.BackgroundImageLayout = ImageLayout.Tile
 
-            Me.BackColor = Color.Transparent
-            Me.FlatAppearance.CheckedBackColor = Color.Transparent
+            'Me.BackColor = Color.Transparent
+            'Me.FlatAppearance.CheckedBackColor = Color.Transparent
+            Me.BackColor = Drawing.Color.FromArgb(130, 0, 0, 0)
+            Me.FlatAppearance.CheckedBackColor = Drawing.Color.FromArgb(130, 0, 0, 0)
 
             Me.FlatAppearance.MouseOverBackColor = Theme.ColorTable.TabSelectedGlow
             Me.FlatAppearance.MouseDownBackColor = Theme.ColorTable.TabSelectedGlow
         Else
             'Me.FlatStyle = Windows.Forms.FlatStyle.Standard
-            Me.BackgroundImageLayout = ImageLayout.None
-            Me.BackgroundImage = Nothing
+            'Me.BackgroundImageLayout = ImageLayout.None
+            'Me.BackgroundImage = Nothing
 
             Me.BackColor = Theme.ColorTable.RibbonBackground_2013
             Me.FlatAppearance.CheckedBackColor = Theme.ColorTable.RibbonBackground_2013
@@ -51,7 +53,7 @@
         End If
 
         Me.FlatAppearance.BorderSize = 0
-        Me.ForeColor = Theme.ColorTable.Text
+        Me.ForeColor = Theme.ColorTable.Text        
     End Sub
 
     Protected Function yesNoToBoolean(ByVal value As String) As Boolean
