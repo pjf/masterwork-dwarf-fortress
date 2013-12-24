@@ -12,7 +12,6 @@ use IPC::System::Simple qw(capture);
 # on github. :)
 my @branches = qw(
     unified
-    drowfort
 );
 
 # Remember our current branch.
