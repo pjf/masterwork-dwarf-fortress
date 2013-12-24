@@ -2649,6 +2649,27 @@ YESSTORAGE[PRODUCT:100:10:BAR:NONE:CREATURE_MAT:ENGINEER_CRATE:SOAP]YESSTORAGE[P
 	[PRODUCT:100:1:TOOL:ITEM_TOOL_RAIDGEAR:INORGANIC:RUSTY_IRON]
 	[SKILL:SIEGECRAFT]
 
+[REACTION:RAID_HEADER_CHEAP]
+        [NAME:======= 1000 shillings =======]
+        [BUILDING:ORC_RAIDERS:NONE]
+
+# Raiding farmlands is cheaper than other raids, only 1000 coins,
+# and is successful 80% of the time.
+
+[REACTION:RAID_FARMLANDS]
+        [NAME:Raid farmlands for food/drink]
+        [BUILDING:ORC_RAIDERS:CUSTOM_SHIFT_F]
+        [REAGENT:A:1:TOOL:ITEM_TOOL_LONGBOAT:NONE:NONE]
+        [REAGENT:B:1:TOOL:ITEM_TOOL_RAIDGEAR:NONE:NONE]
+        [REAGENT:coins:1000:COIN:NONE:INORGANIC:RUSTY_IRON]
+        [PRODUCT:80:1:TOOL:ITEM_TOOL_LONGBOAT:GET_MATERIAL_FROM_REAGENT:A:NONE]
+        [PRODUCT:80:1:TOOL:FARMLAND_LOOT_CRATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+[SKILL:SIEGECRAFT]
+
+[REACTION:RAID_HEADER_MODEST]
+        [NAME:======= 2500 shillings =======]
+        [BUILDING:ORC_RAIDERS:NONE]
+
 [REACTION:RAID_GOBLIN_ORC]
 	[NAME:Round up some goblin workers]
 	[BUILDING:ORC_RAIDERS:CUSTOM_SHIFT_G]
@@ -2670,6 +2691,10 @@ YESSTORAGE[PRODUCT:100:10:BAR:NONE:CREATURE_MAT:ENGINEER_CRATE:SOAP]YESSTORAGE[P
 	[PRODUCT:80:1:TOOL:ITEM_TOOL_RAIDGEAR:GET_MATERIAL_FROM_REAGENT:B:NONE]
 	[PRODUCT:80:1:TOOL:ITEM_TOOL_BLUEPRINT_KOBOLD:INORGANIC:TIN]
 [SKILL:SIEGECRAFT]
+
+[REACTION:RAID_HEADER_STANDARD]
+        [NAME:======= 5000 shillings =======]
+        [BUILDING:ORC_RAIDERS:NONE]
 
 [REACTION:RAID_ELF_ORC]
 	[NAME:Raid elvish forest retreat]
@@ -2730,6 +2755,59 @@ YESSTORAGE[PRODUCT:100:10:BAR:NONE:CREATURE_MAT:ENGINEER_CRATE:SOAP]YESSTORAGE[P
 	[PRODUCT:50:1:TOOL:ITEM_TOOL_RAIDGEAR:GET_MATERIAL_FROM_REAGENT:B:NONE]
 	[PRODUCT:50:1:TOOL:SHIPPING_LOOT_CRATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
 [SKILL:SIEGECRAFT]
+
+[REACTION:RAID_HEADER_UNPACK]
+        [NAME:===== Unpack loot (automatic)  =====]
+        [BUILDING:ORC_RAIDERS:NONE]
+
+# Citizens require two units of food per month. For a band of 20
+# orcs, we'd need 120 food returned to keep them going for a month.
+
+# Currently, we return about 30 food, 80% of the time, averaging
+# about 24 food per raid. A new fort would need to raid twice
+# per season to support 7 orcs.  It works out to be about 33 coins per
+# unit of food, which is a pretty good return, although there
+# is the risk of losing one's ship and arms (and the capital cost
+# of establishing a raiding industry).
+
+# Raiding farms doesn't provoke retaliation, it's relatively
+# safe. There's potential for a 'raze farmlands for food' or
+# similar which can provoke a reaction, but returns much more.
+
+[REACTION:CRATE_FARMLAND_LOOT]
+        [NAME:Unpack farmland loot from ship]
+        [BUILDING:ORC_RAIDERS:CUSTOM_CTRL_F]
+        [REAGENT:A:1:TOOL:FARMLAND_LOOT_CRATE:NONE:NONE]
+
+        # Meat (5-15, avg 8.25)
+        [PRODUCT:100:5:MEAT:NONE:CREATURE_MAT:ANIMAL:MUSCLE]
+        [PRODUCT:50:5:MEAT:NONE:CREATURE_MAT:ANIMAL:MUSCLE]
+        [PRODUCT:10:5:MEAT:NONE:CREATURE_MAT:ANIMAL:MUSCLE]
+
+        # Plants (avg 23.75)
+        [PRODUCT:100:5:PLANT:NONE:PLANT_MAT:GRASS_LONGLAND:PLANT]
+        [PRODUCT:50:5:PLANT:NONE:PLANT_MAT:GRASS_LONGLAND:PLANT]
+        [PRODUCT:25:5:PLANT:NONE:PLANT_MAT:GRASS_LONGLAND:PLANT]
+
+        [PRODUCT:50:5:PLANT:NONE:PLANT_MAT:BERRIES_STRAW_WILD:PLANT]
+        [PRODUCT:25:5:PLANT:NONE:PLANT_MAT:BERRIES_STRAW_WILD:PLANT]
+
+        [PRODUCT:50:5:PLANT:NONE:PLANT_MAT:TUBER_BLOATED:PLANT]
+        [PRODUCT:25:5:PLANT:NONE:PLANT_MAT:TUBER_BLOATED:PLANT]
+
+        [PRODUCT:50:5:PLANT:NONE:PLANT_MAT:BERRIES_PRICKLE:PLANT]
+        [PRODUCT:25:5:PLANT:NONE:PLANT_MAT:BERRIES_PRICKLE:PLANT]
+
+        [PRODUCT:50:5:PLANT:NONE:PLANT_MAT:BERRIES_FISHER:PLANT]
+        [PRODUCT:25:5:PLANT:NONE:PLANT_MAT:BERRIES_FISHER:PLANT]
+
+        # TODO - Animals. Raiders should occasionally bring back
+        # a chicken, goat, etc. This will probably require some
+        # DFHack magic. It's such a shame AutoSyndrome doesn't
+        # look at product probabilities.
+
+        [PRODUCT:100:1:TOOL:ITEM_TOOL_LONGBOAT:GET_MATERIAL_FROM_REAGENT:A:NONE]
+        [SKILL:SIEGECRAFT]
 
 [REACTION:CRATE_ELF_LOOT]
 	[NAME:Unpack elvish loot from ship]

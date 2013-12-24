@@ -127,6 +127,13 @@ ORCS
 [SIZE:10000]
 [MATERIAL_SIZE:1][UNIMPROVABLE]
 
+[ITEM_TOOL:FARMLAND_LOOT_CRATE]
+[NAME:ship laden with farmland loot:ships laden with farmland loot]
+[VALUE:20]
+[TILE:152]
+[SIZE:1000]
+[MATERIAL_SIZE:1][UNIMPROVABLE]
+
 [ITEM_TOOL:ELF_LOOT_CRATE]
 [NAME:ship laden with elvish loot:ships laden with elvish loot]
 [VALUE:20]
