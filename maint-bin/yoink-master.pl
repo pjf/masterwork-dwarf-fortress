@@ -11,7 +11,6 @@ use IPC::System::Simple qw(capture);
 # This ordering produces the most beautiful looking network diagram
 # on github. :)
 my @branches = qw(
-    nerfed_diseases
     unified
     drowfort
 );
