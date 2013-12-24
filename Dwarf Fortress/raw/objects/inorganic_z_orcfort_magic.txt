@@ -8,7 +8,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:ALL_SOLID:bug100]
 [STATE_NAME_ADJ:LIQUID:bug100]
 [STATE_NAME_ADJ:GAS:Invite migration]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:migrants][SYN_CLASS:TAIGA]
          [SYN_NAME:Invite migration]
          [SYN_CONTACT][SYN_INHALED]
@@ -23,7 +23,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:ALL_SOLID:bug100]
 [STATE_NAME_ADJ:LIQUID:bug100]
 [STATE_NAME_ADJ:GAS:Invite tradefair]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:TAIGA]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -38,7 +38,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:ALL_SOLID:bug100]
 [STATE_NAME_ADJ:LIQUID:bug100]
 [STATE_NAME_ADJ:GAS:Invite tradefair]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:DROW_EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -46,7 +46,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:MOUNTAIN_EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -54,7 +54,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:PLAINS_EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -62,7 +62,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:FOREST_EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -70,7 +70,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:EVIL]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -78,7 +78,7 @@ inorganic_z_orcfort_magic
 	[SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
 	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
-  [SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+  [SYNDROME][SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:force][SYN_CLASS:caravan][SYN_CLASS:FROST_GIANT]
          [SYN_NAME:Invite tradefair]
          [SYN_CONTACT][SYN_INHALED]
@@ -263,7 +263,7 @@ inorganic_z_orcfort_magic
 	[STATE_NAME_ADJ:LIQUID:liquid turbo]
 	[STATE_NAME_ADJ:GAS:turbo vapor]
 	[SYNDROME]
-	   [SYN_CLASS:\WORKER_ONLY]
+	   
 	[SYN_NAME:orcish turbo]
 	[SYN_AFFECTED_CLASS:GENERAL_POISON]
 	[SYN_INHALED]
@@ -282,7 +282,7 @@ inorganic_z_orcfort_magic
 	[STATE_NAME_ADJ:LIQUID:liquid courage]
 	[STATE_NAME_ADJ:GAS:courage vapor]
 	[SYNDROME]
-	   [SYN_CLASS:\WORKER_ONLY]
+	   
 	[SYN_NAME:orcish courage]
 	[SYN_AFFECTED_CLASS:GENERAL_POISON]
 	[SYN_INHALED]
@@ -301,7 +301,7 @@ inorganic_z_orcfort_magic
 	[STATE_NAME_ADJ:LIQUID:liquid pain resistance]
 	[STATE_NAME_ADJ:GAS:pain resistance vapor]
 	[SYNDROME]
-	   [SYN_CLASS:\WORKER_ONLY]
+	   
    	   [SYN_NAME:orcish pain resistance]
 	[SYN_AFFECTED_CLASS:GENERAL_POISON]
 	[SYN_INHALED]
@@ -325,7 +325,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-   	   [SYN_CLASS:\WORKER_ONLY]
+   	   
       [SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
       [SYN_INHALED]
       [SYN_CONTACT]
@@ -350,7 +350,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
       [SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
       [SYN_INHALED]
       [SYN_CONTACT]
@@ -376,7 +376,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
       [SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
       [SYN_INHALED]
       [SYN_CONTACT]
@@ -406,7 +406,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:LIQUID:Druidic Dream (m)]
 [STATE_NAME_ADJ:GAS:Druidic Dream (m)]
     [SYNDROME]
-       	   [SYN_CLASS:\WORKER_ONLY]
+       	   
          [SYN_NAME:dreamwalk]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -428,7 +428,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:LIQUID:Druidic Dream (f)]
 [STATE_NAME_ADJ:GAS:Druidic Dream (f)]
     [SYNDROME]
-       	   [SYN_CLASS:\WORKER_ONLY]
+       	   
          [SYN_NAME:dreamwalk]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -450,7 +450,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:LIQUID:Sorcery Dream (m)]
 [STATE_NAME_ADJ:GAS:Sorcery Dream (m)]
     [SYNDROME]
-       	   [SYN_CLASS:\WORKER_ONLY]
+       	   
          [SYN_NAME:dreamwalk]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -473,7 +473,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:LIQUID:Sorcery Dream (f)]
 [STATE_NAME_ADJ:GAS:Sorcery Dream (f)]
     [SYNDROME]
-       	   [SYN_CLASS:\WORKER_ONLY]
+       	   
          [SYN_NAME:dreamwalk]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -495,7 +495,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:LIQUID:Frost Dream (m)]
 [STATE_NAME_ADJ:GAS:Frost Dream (m)]
     [SYNDROME]
-       	   [SYN_CLASS:\WORKER_ONLY]
+       	   
          [SYN_NAME:dreamwalk]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -517,7 +517,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:LIQUID:Frost Dream (f)]
 [STATE_NAME_ADJ:GAS:Frost Dream (f)]
     [SYNDROME]
-       	   [SYN_CLASS:\WORKER_ONLY]
+       	   
          [SYN_NAME:dreamwalk]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -539,7 +539,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:LIQUID:Frost Dream (m)]
 [STATE_NAME_ADJ:GAS:Frost Dream (m)]
     [SYNDROME]
-       	   [SYN_CLASS:\WORKER_ONLY]
+       	   
          [SYN_NAME:dreamwalk]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -561,7 +561,7 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:LIQUID:Frost Dream (f)]
 [STATE_NAME_ADJ:GAS:Frost Dream (f)]
     [SYNDROME]
-       	   [SYN_CLASS:\WORKER_ONLY]
+       	   
          [SYN_NAME:dreamwalk]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -581,9 +581,9 @@ inorganic_z_orcfort_magic
 [STATE_NAME_ADJ:ALL_SOLID:Steppe Minotaur (male)]
 [STATE_NAME_ADJ:LIQUID:Steppe Minotaur (male)]
 [STATE_NAME_ADJ:GAS:Steppe Minotaur (male)]
-    [SYNDROME]   [SYN_CLASS:\COMMAND] autosyndrome command begins here
+    [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:\LOCATION]
-   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS]
+   [SYN_CLASS:\ALLOW_MULTIPLE_TARGETS][SYN_CLASS:\ALLOW_NONWORKER_TARGETS]
    [SYN_CLASS:\REACTION_INDEX]
          [SYN_CONTACT]
          [SYN_INHALED]
@@ -609,7 +609,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -646,7 +646,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -684,7 +684,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -721,7 +721,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -759,7 +759,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -796,7 +796,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -830,7 +830,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -867,7 +867,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -904,7 +904,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -941,7 +941,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -978,7 +978,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -1015,7 +1015,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
@@ -1052,7 +1052,7 @@ inorganic_z_orcfort_magic
    [BOILING_POINT:7005]
    [HEATDAM_POINT:1]
    [SYNDROME]
-      	   [SYN_CLASS:\WORKER_ONLY]
+      	   
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_MALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:DREAMWALKER_FEMALE]
 	[SYN_AFFECTED_CREATURE:ORC_TAIGA:SORCERER_MALE]
