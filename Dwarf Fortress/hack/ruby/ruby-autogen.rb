@@ -36,6 +36,13 @@ class ActivityEventType < MemHack::Enum
     ENUM[5] = :RangedPractice ; NUME[:RangedPractice] = 5
 end
 
+class AdvTaskType < MemHack::Enum
+    ENUM = Hash.new
+    NUME = Hash.new
+    ENUM[0] = :KillNemesis ; NUME[:KillNemesis] = 0
+    ENUM[1] = :SeekNemesis ; NUME[:SeekNemesis] = 1
+end
+
 class AmmoFlags < MemHack::Enum
     ENUM = Hash.new
     NUME = Hash.new
@@ -428,6 +435,12 @@ class BlockSquareEventType < MemHack::Enum
     ENUM[4] = :Grass ; NUME[:Grass] = 4
 end
 
+class BodyPartLayerFlags < MemHack::Enum
+    ENUM = Hash.new
+    NUME = Hash.new
+    ENUM[0] = :CONNECTS ; NUME[:CONNECTS] = 0
+end
+
 class BodyPartRawFlags < MemHack::Enum
     ENUM = Hash.new
     NUME = Hash.new
@@ -742,7 +755,7 @@ class CasteRawFlags < MemHack::Enum
     ENUM[39] = :NO_DIZZINESS ; NUME[:NO_DIZZINESS] = 39
     ENUM[40] = :NO_FEVERS ; NUME[:NO_FEVERS] = 40
     ENUM[41] = :NO_PROFESSION_COLOR ; NUME[:NO_PROFESSION_COLOR] = 41
-    ENUM[42] = :Unk2a ; NUME[:Unk2a] = 42
+    ENUM[42] = :NO_CONNECTIONS_FOR_MOVEMENT ; NUME[:NO_CONNECTIONS_FOR_MOVEMENT] = 42
     ENUM[43] = :Unk2b ; NUME[:Unk2b] = 43
     ENUM[44] = :AMBUSHPREDATOR ; NUME[:AMBUSHPREDATOR] = 44
     ENUM[45] = :Unk2d ; NUME[:Unk2d] = 45
@@ -827,7 +840,7 @@ class CasteRawFlags < MemHack::Enum
     ENUM[124] = :POWER ; NUME[:POWER] = 124
     ENUM[125] = :Unk7d ; NUME[:Unk7d] = 125
     ENUM[126] = :Unk7e ; NUME[:Unk7e] = 126
-    ENUM[127] = :Unk7f ; NUME[:Unk7f] = 127
+    ENUM[127] = :CASTE_TILE ; NUME[:CASTE_TILE] = 127
     ENUM[128] = :CASTE_COLOR ; NUME[:CASTE_COLOR] = 128
     ENUM[129] = :Unk81 ; NUME[:Unk81] = 129
     ENUM[130] = :Unk82 ; NUME[:Unk82] = 130
@@ -917,6 +930,21 @@ class ConstructionType < MemHack::Enum
     ENUM[19] = :TrackNEW ; NUME[:TrackNEW] = 19
     ENUM[20] = :TrackSEW ; NUME[:TrackSEW] = 20
     ENUM[21] = :TrackNSEW ; NUME[:TrackNSEW] = 21
+    ENUM[22] = :TrackRampN ; NUME[:TrackRampN] = 22
+    ENUM[23] = :TrackRampS ; NUME[:TrackRampS] = 23
+    ENUM[24] = :TrackRampE ; NUME[:TrackRampE] = 24
+    ENUM[25] = :TrackRampW ; NUME[:TrackRampW] = 25
+    ENUM[26] = :TrackRampNS ; NUME[:TrackRampNS] = 26
+    ENUM[27] = :TrackRampNE ; NUME[:TrackRampNE] = 27
+    ENUM[28] = :TrackRampNW ; NUME[:TrackRampNW] = 28
+    ENUM[29] = :TrackRampSE ; NUME[:TrackRampSE] = 29
+    ENUM[30] = :TrackRampSW ; NUME[:TrackRampSW] = 30
+    ENUM[31] = :TrackRampEW ; NUME[:TrackRampEW] = 31
+    ENUM[32] = :TrackRampNSE ; NUME[:TrackRampNSE] = 32
+    ENUM[33] = :TrackRampNSW ; NUME[:TrackRampNSW] = 33
+    ENUM[34] = :TrackRampNEW ; NUME[:TrackRampNEW] = 34
+    ENUM[35] = :TrackRampSEW ; NUME[:TrackRampSEW] = 35
+    ENUM[36] = :TrackRampNSEW ; NUME[:TrackRampNSEW] = 36
 end
 
 class CorpseMaterialType < MemHack::Enum
@@ -3500,6 +3528,20 @@ class InterfaceKey < MemHack::Enum
     ENUM[1432] = :KEYBINDING_COMPLETE ; NUME[:KEYBINDING_COMPLETE] = 1432
 end
 
+class ItemMagicnessType < MemHack::Enum
+    ENUM = Hash.new
+    NUME = Hash.new
+    ENUM[0] = :Sparkle ; NUME[:Sparkle] = 0
+    ENUM[1] = :AirWarped ; NUME[:AirWarped] = 1
+    ENUM[2] = :Whistle ; NUME[:Whistle] = 2
+    ENUM[3] = :OddlySquare ; NUME[:OddlySquare] = 3
+    ENUM[4] = :SmallBumps ; NUME[:SmallBumps] = 4
+    ENUM[5] = :EarthSmell ; NUME[:EarthSmell] = 5
+    ENUM[6] = :Lightning ; NUME[:Lightning] = 6
+    ENUM[7] = :GrayHairs ; NUME[:GrayHairs] = 7
+    ENUM[8] = :RustlingLeaves ; NUME[:RustlingLeaves] = 8
+end
+
 class ItemQuality < MemHack::Enum
     ENUM = Hash.new
     NUME = Hash.new
@@ -3517,6 +3559,7 @@ class ItemType < MemHack::Enum
     NUME = Hash.new
     Caption = Hash.new
     IsRawable = Hash.new
+    IsStackable = Hash.new
     IsCasteMat = Hash.new
     Classname = Hash.new
     ENUM[-1] = :NONE ; NUME[:NONE] = -1
@@ -3558,7 +3601,7 @@ class ItemType < MemHack::Enum
     ENUM[35] = :FIGURINE ; NUME[:FIGURINE] = 35 ; Caption[:FIGURINE] = 'figurine' ; Classname[:FIGURINE] = 'item_figurinest'
     ENUM[36] = :AMULET ; NUME[:AMULET] = 36 ; Caption[:AMULET] = 'amulet' ; Classname[:AMULET] = 'item_amuletst'
     ENUM[37] = :SCEPTER ; NUME[:SCEPTER] = 37 ; Caption[:SCEPTER] = 'scepter' ; Classname[:SCEPTER] = 'item_scepterst'
-    ENUM[38] = :AMMO ; NUME[:AMMO] = 38 ; Caption[:AMMO] = 'ammo' ; IsRawable[:AMMO] = true ; Classname[:AMMO] = 'item_ammost'
+    ENUM[38] = :AMMO ; NUME[:AMMO] = 38 ; Caption[:AMMO] = 'ammo' ; IsRawable[:AMMO] = true ; IsStackable[:AMMO] = true ; Classname[:AMMO] = 'item_ammost'
     ENUM[39] = :CROWN ; NUME[:CROWN] = 39 ; Caption[:CROWN] = 'crown' ; Classname[:CROWN] = 'item_crownst'
     ENUM[40] = :RING ; NUME[:RING] = 40 ; Caption[:RING] = 'ring' ; Classname[:RING] = 'item_ringst'
     ENUM[41] = :EARRING ; NUME[:EARRING] = 41 ; Caption[:EARRING] = 'earring' ; Classname[:EARRING] = 'item_earringst'
@@ -3566,16 +3609,16 @@ class ItemType < MemHack::Enum
     ENUM[43] = :GEM ; NUME[:GEM] = 43 ; Caption[:GEM] = 'large gem' ; Classname[:GEM] = 'item_gemst'
     ENUM[44] = :ANVIL ; NUME[:ANVIL] = 44 ; Caption[:ANVIL] = 'anvil' ; Classname[:ANVIL] = 'item_anvilst'
     ENUM[45] = :CORPSEPIECE ; NUME[:CORPSEPIECE] = 45 ; Caption[:CORPSEPIECE] = 'body part' ; Classname[:CORPSEPIECE] = 'item_corpsepiecest'
-    ENUM[46] = :REMAINS ; NUME[:REMAINS] = 46 ; Caption[:REMAINS] = 'remains' ; IsCasteMat[:REMAINS] = true ; Classname[:REMAINS] = 'item_remainsst'
-    ENUM[47] = :MEAT ; NUME[:MEAT] = 47 ; Caption[:MEAT] = 'meat' ; Classname[:MEAT] = 'item_meatst'
-    ENUM[48] = :FISH ; NUME[:FISH] = 48 ; Caption[:FISH] = 'fish' ; IsCasteMat[:FISH] = true ; Classname[:FISH] = 'item_fishst'
-    ENUM[49] = :FISH_RAW ; NUME[:FISH_RAW] = 49 ; Caption[:FISH_RAW] = 'raw fish' ; IsCasteMat[:FISH_RAW] = true ; Classname[:FISH_RAW] = 'item_fish_rawst'
+    ENUM[46] = :REMAINS ; NUME[:REMAINS] = 46 ; Caption[:REMAINS] = 'remains' ; IsCasteMat[:REMAINS] = true ; IsStackable[:REMAINS] = true ; Classname[:REMAINS] = 'item_remainsst'
+    ENUM[47] = :MEAT ; NUME[:MEAT] = 47 ; Caption[:MEAT] = 'meat' ; IsStackable[:MEAT] = true ; Classname[:MEAT] = 'item_meatst'
+    ENUM[48] = :FISH ; NUME[:FISH] = 48 ; Caption[:FISH] = 'fish' ; IsCasteMat[:FISH] = true ; IsStackable[:FISH] = true ; Classname[:FISH] = 'item_fishst'
+    ENUM[49] = :FISH_RAW ; NUME[:FISH_RAW] = 49 ; Caption[:FISH_RAW] = 'raw fish' ; IsCasteMat[:FISH_RAW] = true ; IsStackable[:FISH_RAW] = true ; Classname[:FISH_RAW] = 'item_fish_rawst'
     ENUM[50] = :VERMIN ; NUME[:VERMIN] = 50 ; Caption[:VERMIN] = 'vermin' ; IsCasteMat[:VERMIN] = true ; Classname[:VERMIN] = 'item_verminst'
     ENUM[51] = :PET ; NUME[:PET] = 51 ; Caption[:PET] = 'tame vermin' ; IsCasteMat[:PET] = true ; Classname[:PET] = 'item_petst'
     ENUM[52] = :SEEDS ; NUME[:SEEDS] = 52 ; Caption[:SEEDS] = 'seeds' ; Classname[:SEEDS] = 'item_seedsst'
-    ENUM[53] = :PLANT ; NUME[:PLANT] = 53 ; Caption[:PLANT] = 'plant' ; Classname[:PLANT] = 'item_plantst'
+    ENUM[53] = :PLANT ; NUME[:PLANT] = 53 ; Caption[:PLANT] = 'plant' ; IsStackable[:PLANT] = true ; Classname[:PLANT] = 'item_plantst'
     ENUM[54] = :SKIN_TANNED ; NUME[:SKIN_TANNED] = 54 ; Caption[:SKIN_TANNED] = 'leather' ; Classname[:SKIN_TANNED] = 'item_skin_tannedst'
-    ENUM[55] = :LEAVES ; NUME[:LEAVES] = 55 ; Caption[:LEAVES] = 'leaves' ; Classname[:LEAVES] = 'item_leavesst'
+    ENUM[55] = :LEAVES ; NUME[:LEAVES] = 55 ; Caption[:LEAVES] = 'leaves' ; IsStackable[:LEAVES] = true ; Classname[:LEAVES] = 'item_leavesst'
     ENUM[56] = :THREAD ; NUME[:THREAD] = 56 ; Caption[:THREAD] = 'thread' ; Classname[:THREAD] = 'item_threadst'
     ENUM[57] = :CLOTH ; NUME[:CLOTH] = 57 ; Caption[:CLOTH] = 'cloth' ; Classname[:CLOTH] = 'item_clothst'
     ENUM[58] = :TOTEM ; NUME[:TOTEM] = 58 ; Caption[:TOTEM] = 'totem' ; Classname[:TOTEM] = 'item_totemst'
@@ -3588,12 +3631,12 @@ class ItemType < MemHack::Enum
     ENUM[65] = :BALLISTAARROWHEAD ; NUME[:BALLISTAARROWHEAD] = 65 ; Caption[:BALLISTAARROWHEAD] = 'ballista arrow head' ; Classname[:BALLISTAARROWHEAD] = 'item_ballistaarrowheadst'
     ENUM[66] = :TRAPPARTS ; NUME[:TRAPPARTS] = 66 ; Caption[:TRAPPARTS] = 'mechanism' ; Classname[:TRAPPARTS] = 'item_trappartsst'
     ENUM[67] = :TRAPCOMP ; NUME[:TRAPCOMP] = 67 ; Caption[:TRAPCOMP] = 'trap component' ; IsRawable[:TRAPCOMP] = true ; Classname[:TRAPCOMP] = 'item_trapcompst'
-    ENUM[68] = :DRINK ; NUME[:DRINK] = 68 ; Caption[:DRINK] = 'drink' ; Classname[:DRINK] = 'item_drinkst'
-    ENUM[69] = :POWDER_MISC ; NUME[:POWDER_MISC] = 69 ; Caption[:POWDER_MISC] = 'powder' ; Classname[:POWDER_MISC] = 'item_powder_miscst'
-    ENUM[70] = :CHEESE ; NUME[:CHEESE] = 70 ; Caption[:CHEESE] = 'cheese' ; Classname[:CHEESE] = 'item_cheesest'
-    ENUM[71] = :FOOD ; NUME[:FOOD] = 71 ; Caption[:FOOD] = 'prepared meal' ; Classname[:FOOD] = 'item_foodst'
-    ENUM[72] = :LIQUID_MISC ; NUME[:LIQUID_MISC] = 72 ; Caption[:LIQUID_MISC] = 'liquid' ; Classname[:LIQUID_MISC] = 'item_liquid_miscst'
-    ENUM[73] = :COIN ; NUME[:COIN] = 73 ; Caption[:COIN] = 'coin' ; Classname[:COIN] = 'item_coinst'
+    ENUM[68] = :DRINK ; NUME[:DRINK] = 68 ; Caption[:DRINK] = 'drink' ; IsStackable[:DRINK] = true ; Classname[:DRINK] = 'item_drinkst'
+    ENUM[69] = :POWDER_MISC ; NUME[:POWDER_MISC] = 69 ; Caption[:POWDER_MISC] = 'powder' ; IsStackable[:POWDER_MISC] = true ; Classname[:POWDER_MISC] = 'item_powder_miscst'
+    ENUM[70] = :CHEESE ; NUME[:CHEESE] = 70 ; Caption[:CHEESE] = 'cheese' ; IsStackable[:CHEESE] = true ; Classname[:CHEESE] = 'item_cheesest'
+    ENUM[71] = :FOOD ; NUME[:FOOD] = 71 ; Caption[:FOOD] = 'prepared meal' ; IsStackable[:FOOD] = true ; Classname[:FOOD] = 'item_foodst'
+    ENUM[72] = :LIQUID_MISC ; NUME[:LIQUID_MISC] = 72 ; Caption[:LIQUID_MISC] = 'liquid' ; IsStackable[:LIQUID_MISC] = true ; Classname[:LIQUID_MISC] = 'item_liquid_miscst'
+    ENUM[73] = :COIN ; NUME[:COIN] = 73 ; Caption[:COIN] = 'coin' ; IsStackable[:COIN] = true ; Classname[:COIN] = 'item_coinst'
     ENUM[74] = :GLOB ; NUME[:GLOB] = 74 ; Caption[:GLOB] = 'glob' ; Classname[:GLOB] = 'item_globst'
     ENUM[75] = :ROCK ; NUME[:ROCK] = 75 ; Caption[:ROCK] = 'small rock' ; Classname[:ROCK] = 'item_rockst'
     ENUM[76] = :PIPE_SECTION ; NUME[:PIPE_SECTION] = 76 ; Caption[:PIPE_SECTION] = 'pipe section' ; Classname[:PIPE_SECTION] = 'item_pipe_sectionst'
@@ -3607,7 +3650,7 @@ class ItemType < MemHack::Enum
     ENUM[84] = :ORTHOPEDIC_CAST ; NUME[:ORTHOPEDIC_CAST] = 84 ; Caption[:ORTHOPEDIC_CAST] = 'orthopedic cast' ; Classname[:ORTHOPEDIC_CAST] = 'item_orthopedic_castst'
     ENUM[85] = :TOOL ; NUME[:TOOL] = 85 ; Caption[:TOOL] = 'tool' ; IsRawable[:TOOL] = true ; Classname[:TOOL] = 'item_toolst'
     ENUM[86] = :SLAB ; NUME[:SLAB] = 86 ; Caption[:SLAB] = 'slab' ; Classname[:SLAB] = 'item_slabst'
-    ENUM[87] = :EGG ; NUME[:EGG] = 87 ; Caption[:EGG] = 'egg' ; IsCasteMat[:EGG] = true ; Classname[:EGG] = 'item_eggst'
+    ENUM[87] = :EGG ; NUME[:EGG] = 87 ; Caption[:EGG] = 'egg' ; IsCasteMat[:EGG] = true ; IsStackable[:EGG] = true ; Classname[:EGG] = 'item_eggst'
     ENUM[88] = :BOOK ; NUME[:BOOK] = 88 ; Caption[:BOOK] = 'book' ; Classname[:BOOK] = 'item_bookst'
 end
 
@@ -4025,6 +4068,15 @@ class JobSkillClass < MemHack::Enum
     ENUM[7] = :MilitaryAttack ; NUME[:MilitaryAttack] = 7
     ENUM[8] = :MilitaryDefense ; NUME[:MilitaryDefense] = 8
     ENUM[9] = :MilitaryMisc ; NUME[:MilitaryMisc] = 9
+end
+
+class JobSubtypeSurgery < MemHack::Enum
+    ENUM = Hash.new
+    NUME = Hash.new
+    ENUM[0] = :Surgery ; NUME[:Surgery] = 0
+    ENUM[1] = :StopBleeding ; NUME[:StopBleeding] = 1
+    ENUM[2] = :RepairCompoundFracture ; NUME[:RepairCompoundFracture] = 2
+    ENUM[3] = :RemoveRottenTissue ; NUME[:RemoveRottenTissue] = 3
 end
 
 class JobType < MemHack::Enum
@@ -4847,6 +4899,23 @@ class ReactionReagentType < MemHack::Enum
     ENUM = Hash.new
     NUME = Hash.new
     ENUM[0] = :Item ; NUME[:Item] = 0
+end
+
+class RegionMapEntryFlags < MemHack::Enum
+    ENUM = Hash.new
+    NUME = Hash.new
+    ENUM[0] = :HasRiver ; NUME[:HasRiver] = 0
+    ENUM[1] = :TileVariant ; NUME[:TileVariant] = 1
+    ENUM[3] = :HasSite ; NUME[:HasSite] = 3
+    ENUM[5] = :RiverUp ; NUME[:RiverUp] = 5
+    ENUM[6] = :RiverDown ; NUME[:RiverDown] = 6
+    ENUM[7] = :RiverRight ; NUME[:RiverRight] = 7
+    ENUM[8] = :RiverLeft ; NUME[:RiverLeft] = 8
+    ENUM[9] = :Discovered ; NUME[:Discovered] = 9
+    ENUM[13] = :IsPeak ; NUME[:IsPeak] = 13
+    ENUM[14] = :IsLake ; NUME[:IsLake] = 14
+    ENUM[15] = :IsBrook ; NUME[:IsBrook] = 15
+    ENUM[16] = :HasRoad ; NUME[:HasRoad] = 16
 end
 
 class ResourceAllotmentSpecifierType < MemHack::Enum
@@ -6692,6 +6761,37 @@ class WorldPopulationType < MemHack::Enum
     ENUM[7] = :Bush ; NUME[:Bush] = 7
 end
 
+class WorldRegionType < MemHack::Enum
+    ENUM = Hash.new
+    NUME = Hash.new
+    ENUM[0] = :Swamp ; NUME[:Swamp] = 0
+    ENUM[1] = :Desert ; NUME[:Desert] = 1
+    ENUM[2] = :Jungle ; NUME[:Jungle] = 2
+    ENUM[3] = :Mountains ; NUME[:Mountains] = 3
+    ENUM[4] = :Ocean ; NUME[:Ocean] = 4
+    ENUM[5] = :Lake ; NUME[:Lake] = 5
+    ENUM[6] = :Glacier ; NUME[:Glacier] = 6
+    ENUM[7] = :Tundra ; NUME[:Tundra] = 7
+    ENUM[8] = :Steppe ; NUME[:Steppe] = 8
+    ENUM[9] = :Hills ; NUME[:Hills] = 9
+end
+
+class WorldSiteType < MemHack::Enum
+    ENUM = Hash.new
+    NUME = Hash.new
+    ENUM[0] = :PlayerFortress ; NUME[:PlayerFortress] = 0
+    ENUM[1] = :DarkFortress ; NUME[:DarkFortress] = 1
+    ENUM[2] = :Cave ; NUME[:Cave] = 2
+    ENUM[3] = :MountainHalls ; NUME[:MountainHalls] = 3
+    ENUM[4] = :ForestRetreat ; NUME[:ForestRetreat] = 4
+    ENUM[5] = :Town ; NUME[:Town] = 5
+    ENUM[6] = :Unk6 ; NUME[:Unk6] = 6
+    ENUM[7] = :LairShrine ; NUME[:LairShrine] = 7
+    ENUM[8] = :Fortress ; NUME[:Fortress] = 8
+    ENUM[9] = :Camp ; NUME[:Camp] = 9
+    ENUM[10] = :Monument ; NUME[:Monument] = 10
+end
+
 class WorldgenRangeType < MemHack::Enum
     ENUM = Hash.new
     NUME = Hash.new
@@ -7373,18 +7473,18 @@ class AdvTask < MemHack::Compound
         number 32, true, -1
     }
     def quest_giver_tg ; df.world.history.figures.binsearch(quest_giver_id) ; end
-    field(:anon_1, 16) {
+    field(:giver_site, 16) {
         number 32, true, -1
     }
-    def anon_1_tg ; df.world.world_data.sites.binsearch(anon_1) ; end
-    field(:anon_2, 20) {
+    def giver_site_tg ; df.world.world_data.sites.binsearch(giver_site) ; end
+    field(:unk1, 20) {
         number 32, true
     }
     field(:adventurer_id, 24) {
         number 32, true, -1
     }
     def adventurer_tg ; df.world.history.figures.binsearch(adventurer_id) ; end
-    field(:anon_3, 28) {
+    field(:unk2, 28) {
         number 32, true
     }
     field(:target_pos, 32) {
@@ -7393,12 +7493,45 @@ class AdvTask < MemHack::Compound
     field(:giver_pos, 36) {
         global :Coord2d
     }
-    field(:anon_4, 40) {
-        number 32, true
+    field(:target_x1, 40) {
+        number 16, true, -1
     }
-    field(:anon_5, 44) {
-        number 32, true
+    field(:target_x2, 42) {
+        number 16, true, -1
     }
+    field(:target_y1, 44) {
+        number 16, true, -1
+    }
+    field(:target_y2, 46) {
+        number 16, true, -1
+    }
+    def getType()
+        AdvTaskType.sym(DFHack.vmethod_call(self, 0))
+    end
+    def getStatus()
+        val = DFHack.vmethod_call(self, 4)
+    end
+    def getDescription(arg0)
+        DFHack.vmethod_call(self, 8, arg0) ; nil
+    end
+    def onKill(histfig_id)
+        DFHack.vmethod_call(self, 12, histfig_id) ; nil
+    end
+    def updateTargetPos()
+        DFHack.vmethod_call(self, 16) ; nil
+    end
+    def getGoalSite()
+        val = DFHack.vmethod_call(self, 20)
+    end
+    def getTargetHistFig()
+        val = DFHack.vmethod_call(self, 24)
+    end
+    def read_file(arg0, loadversion)
+        DFHack.vmethod_call(self, 28, arg0, loadversion) ; nil
+    end
+    def write_file(arg0)
+        DFHack.vmethod_call(self, 32, arg0) ; nil
+    end
 end
 
 class AdventureMovementOption < MemHack::Compound
@@ -7867,6 +8000,10 @@ class BlockFlags < MemHack::Compound
     field(:update_temperature, 0) { bit 1 }
     field(:update_liquid, 0) { bit 2 }
     field(:update_liquid_twice, 0) { bit 3 }
+    field(:repath_on_freeze, 0) { bit 4 }
+    field(:repath_on_melt, 0) { bit 5 }
+    field(:has_aquifer, 0) { bit 6 }
+    field(:check_aquifer, 0) { bit 7 }
 end
 
 class BlockSquareEvent < MemHack::Compound
@@ -7980,6 +8117,8 @@ class BlockSquareEventMineralst < BlockSquareEvent
             field(:discovered, 0) { bit 0 }
             field(:cluster, 0) { bit 1 }
             field(:vein, 0) { bit 2 }
+            field(:cluster_small, 0) { bit 3 }
+            field(:cluster_one, 0) { bit 4 }
         }
     }
 end
@@ -8065,32 +8204,32 @@ class BodyComponentInfo < MemHack::Compound
             number 32, false
         }
     }
-    field(:body_layer_328, 32) {
+    field(:nonsolid_remaining, 32) {
         stl_vector(4) {
             number 32, false
         }
     }
-    field(:body_layer_338, 48) {
+    field(:layer_status, 48) {
+        stl_vector(4) {
+            global :BodyLayerStatus
+        }
+    }
+    field(:layer_wound_area, 64) {
         stl_vector(4) {
             number 32, false
         }
     }
-    field(:body_layer_348, 64) {
+    field(:layer_cut_fraction, 80) {
         stl_vector(4) {
             number 32, false
         }
     }
-    field(:body_layer_358, 80) {
+    field(:layer_dent_fraction, 96) {
         stl_vector(4) {
             number 32, false
         }
     }
-    field(:body_layer_368, 96) {
-        stl_vector(4) {
-            number 32, false
-        }
-    }
-    field(:body_layer_378, 112) {
+    field(:layer_effect_fraction, 112) {
         stl_vector(4) {
             number 32, false
         }
@@ -8196,6 +8335,14 @@ class BodyDetailPlan < MemHack::Compound
     }
 end
 
+class BodyLayerStatus < MemHack::Compound
+    field(:_whole, 0) {
+        number 32, true
+    }
+    field(:gone, 0) { bit 0 }
+    field(:leaking, 0) { bit 1 }
+end
+
 class BodyPartLayerRaw < MemHack::Compound
     sizeof 108
 
@@ -8206,9 +8353,9 @@ class BodyPartLayerRaw < MemHack::Compound
         number 32, true
     }
     field(:flags, 32) {
-        df_flagarray
+        df_flagarray(BodyPartLayerFlags)
     }
-    field(:unk2, 40) {
+    field(:part_fraction, 40) {
         number 32, true
     }
     field(:healing_rate, 44) {
@@ -8234,10 +8381,10 @@ class BodyPartLayerRaw < MemHack::Compound
     field(:layer_id, 80) {
         number 32, true
     }
-    field(:unk10, 84) {
-        number 32, true
+    field(:parent_idx, 84) {
+        number 32, true, -1
     }
-    field(:unk11, 88) {
+    field(:parent_layer_id, 88) {
         number 32, true
     }
     field(:layer_depth, 92) {
@@ -8246,10 +8393,10 @@ class BodyPartLayerRaw < MemHack::Compound
     field(:unk13, 96) {
         number 32, true
     }
-    field(:unk14, 100) {
+    field(:nonsolid_id, 100) {
         number 32, true
     }
-    field(:unk15, 104) {
+    field(:styleable_id, 104) {
         number 32, true
     }
 end
@@ -8276,16 +8423,16 @@ class BodyPartRaw < MemHack::Compound
             }
         }
     }
-    field(:unk2, 84) {
+    field(:fraction_total, 84) {
         number 32, true
     }
-    field(:unk3, 88) {
+    field(:fraction_base, 88) {
         number 32, true
     }
-    field(:unk4, 92) {
+    field(:fraction_fat, 92) {
         number 32, true
     }
-    field(:unk5, 96) {
+    field(:fraction_muscle, 96) {
         number 32, true
     }
     field(:relsize, 100) {
@@ -8344,10 +8491,10 @@ class BodyPartRaw < MemHack::Compound
     field(:numbered_idx, 164) {
         number 32, true, -1
     }
-    field(:insulation_muscle, 168) {
+    field(:insulation_fat, 168) {
         number 16, true
     }
-    field(:insulation_fat, 170) {
+    field(:insulation_muscle, 170) {
         number 16, true
     }
     field(:insulation_base, 172) {
@@ -8373,9 +8520,13 @@ class BodyPartStatus < MemHack::Compound
     field(:skin_damage, 0) { bit 8 }
     field(:motor_nerve_severed, 0) { bit 9 }
     field(:sensory_nerve_severed, 0) { bit 10 }
+    field(:spilled_guts, 0) { bit 11 }
     field(:has_splint, 0) { bit 12 }
     field(:has_bandage, 0) { bit 13 }
     field(:has_plaster_cast, 0) { bit 14 }
+    field(:severed_or_jammed, 0) { bit 18 }
+    field(:under_shell, 0) { bit 19 }
+    field(:is_shell, 0) { bit 20 }
 end
 
 class BodyPartTemplate < MemHack::Compound
@@ -8418,6 +8569,29 @@ class BodyPartTemplate < MemHack::Compound
                 stl_string
             }
         }
+    }
+end
+
+class BodySizeInfo < MemHack::Compound
+    sizeof 24
+
+    field(:size_cur, 0) {
+        number 32, true
+    }
+    field(:size_base, 4) {
+        number 32, true
+    }
+    field(:area_cur, 8) {
+        number 32, true
+    }
+    field(:area_base, 12) {
+        number 32, true
+    }
+    field(:length_cur, 16) {
+        number 32, true
+    }
+    field(:length_base, 20) {
+        number 32, true
     }
 end
 
@@ -8970,6 +9144,10 @@ class Building < MemHack::Compound
     def cleanupMap()
         DFHack.vmethod_call(self, 312) ; nil
     end
+    def isFireSafe(fire_type)
+        val = DFHack.vmethod_call(self, 316, fire_type)
+        (val & 1) != 0
+    end
     def fillSidebarMenu()
         DFHack.vmethod_call(self, 320) ; nil
     end
@@ -8985,11 +9163,15 @@ class Building < MemHack::Compound
         val = DFHack.vmethod_call(self, 332)
         (val & 1) != 0
     end
+    def isVisibleInViewport(viewport)
+        val = DFHack.vmethod_call(self, 336, viewport)
+        (val & 1) != 0
+    end
     def getDrawExtents(buffer)
         DFHack.vmethod_call(self, 340, buffer) ; nil
     end
-    def drawBuilding(buffer, unknown)
-        DFHack.vmethod_call(self, 344, buffer, unknown) ; nil
+    def drawBuilding(buffer, z_offset)
+        DFHack.vmethod_call(self, 344, buffer, z_offset) ; nil
     end
     def setSquadUse(squad, arg1)
         DFHack.vmethod_call(self, 348, squad, arg1) ; nil
@@ -9382,19 +9564,19 @@ class BuildingCivzonest < Building
     field(:anon_2, 272) {
         number 32, true, -1
     }
-    field(:anon_3, 276) {
+    field(:abstract_building_id, 276) {
         number 32, true, -1
     }
-    field(:anon_4, 280) {
+    field(:anon_3, 280) {
         number 32, true, -1
     }
-    field(:anon_5, 284) {
+    field(:anon_4, 284) {
         number 32, true, -1
     }
     field(:zone_num, 288) {
         number 32, true, -1
     }
-    field(:anon_6, 292) {
+    field(:anon_5, 292) {
         number 32, true
     }
     field(:pit_flags, 296) {
@@ -9899,26 +10081,19 @@ class BuildingHivest < BuildingActual
 
     rtti_classname :building_hivest
 
-    field(:flags, 256) {
-        compound(:BuildingHivest_TFlags) {
-            field(:_whole, 0) {
-                number 32, true, 3
-            }
-            field(:do_install, 0) { bit 0 }
-            field(:do_gather, 0) { bit 1 }
-            field(:ready_split, 0) { bit 2 }
-        }
+    field(:hive_flags, 256) {
+        global :HiveFlags
     }
-    field(:anon_1, 260) {
+    field(:split_timer, 260) {
         number 32, true
     }
-    field(:anon_2, 264) {
+    field(:activity_timer, 264) {
         number 32, true
     }
-    field(:anon_3, 268) {
+    field(:install_timer, 268) {
         number 32, true
     }
-    field(:anon_4, 272) {
+    field(:gather_timer, 272) {
         number 32, true
     }
 end
@@ -9998,7 +10173,7 @@ class BuildingScrewPumpst < BuildingActual
     field(:machine, 256) {
         global :MachineInfo
     }
-    field(:unk_100, 264) {
+    field(:pump_energy, 264) {
         number 8, false
     }
     field(:direction, 265) {
@@ -10671,7 +10846,7 @@ class CasteBodyInfo < MemHack::Compound
             }
         }
     }
-    field(:unk8, 64) {
+    field(:total_relsize, 64) {
         number 32, true
     }
     field(:layer_part, 68) {
@@ -10705,16 +10880,16 @@ class CasteBodyInfo < MemHack::Compound
     field(:materials, 152) {
         global :MaterialVecRef
     }
-    field(:unk15a, 184) {
+    field(:fraction_total, 184) {
         number 32, true
     }
-    field(:unk15b, 188) {
+    field(:fraction_base, 188) {
         number 32, true
     }
-    field(:unk15c, 192) {
+    field(:fraction_fat, 192) {
         number 32, true
     }
-    field(:unk15d, 196) {
+    field(:fraction_muscle, 196) {
         number 32, true
     }
     field(:clothing_items, 200) {
@@ -11789,6 +11964,146 @@ class Contaminant < MemHack::Compound
     }
 end
 
+class Conversation < MemHack::Compound
+    sizeof 208
+
+    field(:conv_title, 0) {
+        stl_string
+    }
+    field(:state, 28) {
+        class ::DFHack::Conversation_TState < MemHack::Enum
+            ENUM = Hash.new
+            NUME = Hash.new
+            ENUM[0] = :Started ; NUME[:Started] = 0
+            ENUM[1] = :Active ; NUME[:Active] = 1
+            ENUM[2] = :Finished ; NUME[:Finished] = 2
+            ENUM[3] = :Quit ; NUME[:Quit] = 3
+        end
+
+        number 32, true, nil, Conversation_TState
+    }
+    field(:talk_choices, 32) {
+        stl_vector(2) {
+            number 16, true
+        }
+    }
+    field(:unk_30, 48) {
+        number 32, true, -1
+    }
+    def unk_30_tg ; df.world.units.all.binsearch(unk_30) ; end
+    field(:unk_34, 52) {
+        number 32, true, -1
+    }
+    def unk_34_tg ; df.world.history.figures.binsearch(unk_34) ; end
+    field(:unk_38, 56) {
+        number 32, true
+    }
+    field(:unk_3c, 60) {
+        number 32, true, -1
+    }
+    def unk_3c_tg ; df.world.units.all.binsearch(unk_3c) ; end
+    field(:unk_40, 64) {
+        number 32, true, -1
+    }
+    def unk_40_tg ; df.world.history.figures.binsearch(unk_40) ; end
+    field(:unk_44, 68) {
+        number 32, true
+    }
+    field(:unk_48, 72) {
+        number 32, true, -1
+    }
+    def unk_48_tg ; df.world.units.all.binsearch(unk_48) ; end
+    field(:unk_4c, 76) {
+        number 32, true, -1
+    }
+    def unk_4c_tg ; df.world.history.figures.binsearch(unk_4c) ; end
+    field(:unk_50, 80) {
+        number 32, true
+    }
+    field(:unk_54, 84) {
+        stl_vector(4) {
+            pointer {
+                global :NemesisRecord
+            }
+        }
+    }
+    field(:unk_64, 100) {
+        stl_vector(4) {
+            pointer {
+                global :HistoricalEntity
+            }
+        }
+    }
+    field(:unk_74, 116) {
+        number 8, true
+    }
+    field(:unk_78, 120) {
+        number 32, true
+    }
+    field(:unk_7c, 124) {
+        number 32, true
+    }
+    field(:unk_80, 128) {
+        number 16, true
+    }
+    field(:unk_84, 132) {
+        stl_vector
+    }
+    field(:unk_94, 148) {
+        stl_vector
+    }
+    field(:unk_a4, 164) {
+        stl_vector
+    }
+    field(:location, 180) {
+        pointer {
+            global :Building
+        }
+    }
+    field(:unk_b8, 184) {
+        number 8, true
+    }
+    field(:unk_bc, 188) {
+        number 32, true
+    }
+    field(:speech, 192) {
+        stl_vector(4) {
+            pointer {
+                compound(:Conversation_TSpeech) {
+                    sizeof 36
+
+                    field(:text, 0) {
+                        stl_vector(4) {
+                            pointer {
+                                stl_string
+                            }
+                        }
+                    }
+                    field(:speaker, 16) {
+                        number 32, true, -1
+                    }
+                    def speaker_tg ; df.world.units.all.binsearch(speaker) ; end
+                    field(:unk_14, 20) {
+                        number 32, true
+                    }
+                    field(:unk_18, 24) {
+                        number 32, true
+                    }
+                    field(:fg, 28) {
+                        number 16, true
+                    }
+                    field(:bg, 30) {
+                        number 16, true
+                    }
+                    field(:bright, 32) {
+                        number 16, true
+                    }
+                }
+            }
+        }
+    }
+end
+
 class Coord < MemHack::Compound
     sizeof 6
 
@@ -12046,7 +12361,7 @@ class CreatureInteractionEffectBodyTransformationst < CreatureInteractionEffect
 
     rtti_classname :creature_interaction_effect_body_transformationst
 
-    field(:unk_6c, 108) {
+    field(:chance, 108) {
         number 32, true
     }
     field(:race_str, 112) {
@@ -12118,14 +12433,10 @@ class CreatureInteractionEffectCanDoInteractionst < CreatureInteractionEffect
     }
     field(:unk_e2, 226) {
     }
-    field(:unk_e4, 228) {
-        stl_string
-    }
-    field(:unk_100, 256) {
-        stl_string
-    }
-    field(:unk_11c, 284) {
-        stl_string
+    field(:verb, 228) {
+        static_array(3, 28) {
+            stl_string
+        }
     }
     field(:unk_138, 312) {
         stl_string
@@ -12139,10 +12450,10 @@ class CreatureInteractionEffectCanDoInteractionst < CreatureInteractionEffect
     field(:unk_18c, 396) {
         stl_string
     }
-    field(:unk_1a8, 424) {
+    field(:interaction_name, 424) {
         stl_string
     }
-    field(:unk_1c4, 452) {
+    field(:type_id, 452) {
         number 32, true
     }
     field(:unk_1c8, 456) {
@@ -12182,10 +12493,10 @@ class CreatureInteractionEffectCanDoInteractionst < CreatureInteractionEffect
     field(:unk_24c, 588) {
         stl_vector
     }
-    field(:unk_25c, 604) {
+    field(:name, 604) {
         stl_string
     }
-    field(:unk_278, 632) {
+    field(:usage_delay, 632) {
         number 32, true
     }
 end
@@ -12224,10 +12535,10 @@ class CreatureInteractionEffectDisplaySymbolst < CreatureInteractionEffect
 
     rtti_classname :creature_interaction_effect_display_symbolst
 
-    field(:unk_6c, 108) {
+    field(:tile, 108) {
         number 32, true
     }
-    field(:unk_70, 112) {
+    field(:color, 112) {
         number 32, true
     }
 end
@@ -12280,7 +12591,9 @@ class CreatureInteractionEffectFlashSymbolst < CreatureInteractionEffect
     rtti_classname :creature_interaction_effect_flash_symbolst
 
     field(:sym_color, 108) {
-        number 32, true
+        static_array(4, 1) {
+            number 8, false
+        }
     }
     field(:period, 112) {
         number 32, true
@@ -12320,18 +12633,16 @@ class CreatureInteractionEffectMaterialForceAdjustst < CreatureInteractionEffect
     field(:unk_a4, 164) {
         stl_string
     }
-    field(:unk_c0, 192) {
-        number 16, true
+    field(:mat_type, 192) {
+        number 16, true, -1
     }
-    field(:unk_c2, 194) {
-    }
-    field(:unk_c4, 196) {
+    field(:mat_index, 196) {
         number 32, true
     }
-    field(:unk_c8, 200) {
+    field(:fraction_mul, 200) {
         number 32, true
     }
-    field(:unk_cc, 204) {
+    field(:fraction_div, 204) {
         number 32, true
     }
 end
@@ -12346,7 +12657,7 @@ class CreatureInteractionEffectMentAttChangest < CreatureInteractionEffect
             number 32, true
         }
     }
-    field(:ment_att_unk, 160) {
+    field(:ment_att_add, 160) {
         static_array(13, 4, MentalAttributeType) {
             number 32, true
         }
@@ -12438,7 +12749,7 @@ class CreatureInteractionEffectPhysAttChangest < CreatureInteractionEffect
             number 32, true
         }
     }
-    field(:phys_att_unk, 132) {
+    field(:phys_att_add, 132) {
         static_array(6, 4, PhysicalAttributeType) {
             number 32, true
         }
@@ -12463,10 +12774,10 @@ class CreatureInteractionEffectSkillRollAdjustst < CreatureInteractionEffect
 
     rtti_classname :creature_interaction_effect_skill_roll_adjustst
 
-    field(:unk_6c, 108) {
+    field(:multiplier, 108) {
         number 32, true
     }
-    field(:unk_70, 112) {
+    field(:chance, 112) {
         number 32, true
     }
 end
@@ -12476,10 +12787,10 @@ class CreatureInteractionEffectSpeedChangest < CreatureInteractionEffect
 
     rtti_classname :creature_interaction_effect_speed_changest
 
-    field(:unk_6c, 108) {
+    field(:bonus_add, 108) {
         number 32, true
     }
-    field(:unk_70, 112) {
+    field(:bonus_perc, 112) {
         number 32, true
     }
 end
@@ -12794,41 +13105,38 @@ class CreatureRaw < MemHack::Compound
             number 32, true
         }
     }
-    field(:hive_product_0, 13268) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:hive_product_1, 13284) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:hive_product_2, 13300) {
-        stl_vector(2) {
-            number 16, true
-        }
-    }
-    field(:hive_product_3, 13316) {
-        stl_vector(2) {
-            number 16, true
-        }
-    }
-    field(:hive_product_4, 13332) {
-        stl_vector(2) {
-            number 16, true
-        }
-    }
-    field(:hive_product_5, 13348) {
-        stl_vector(4) {
-            number 32, true
-        }
-    }
-    field(:hive_product_tmpstr, 13364) {
-        static_array(5, 16) {
-            stl_vector(4) {
-                pointer {
-                    stl_string
+    field(:hive_product, 13268) {
+        compound(:CreatureRaw_THiveProduct) {
+            field(:number, 0) {
+                stl_vector(4) {
+                    number 32, true
+                }
+            }
+            field(:time, 16) {
+                stl_vector(4) {
+                    number 32, true
+                }
+            }
+            field(:item_type, 32) {
+                stl_vector(2) {
+                    number 16, true, nil, ItemType
+                }
+            }
+            field(:item_subtype, 48) {
+                stl_vector(2) {
+                    number 16, true
+                }
+            }
+            field(:material, 64) {
+                global :MaterialVecRef
+            }
+            field(:tmpstr, 96) {
+                static_array(5, 16) {
+                    stl_vector(4) {
+                        pointer {
+                            stl_string
+                        }
+                    }
                 }
             }
         }
@@ -13002,6 +13310,31 @@ class CriminalCase < MemHack::Compound
                     }
                 }
             }
+        }
+    }
+end
+
+class CurseAttrChange < MemHack::Compound
+    sizeof 152
+
+    field(:phys_att_perc, 0) {
+        static_array(6, 4, PhysicalAttributeType) {
+            number 32, true
+        }
+    }
+    field(:phys_att_add, 24) {
+        static_array(6, 4, PhysicalAttributeType) {
+            number 32, true
+        }
+    }
+    field(:ment_att_perc, 48) {
+        static_array(13, 4, MentalAttributeType) {
+            number 32, true
+        }
+    }
+    field(:ment_att_add, 100) {
+        static_array(13, 4, MentalAttributeType) {
+            number 32, true
         }
     }
 end
@@ -13360,6 +13693,59 @@ class DipscriptInfo < MemHack::Compound
     }
     field(:code, 64) {
         stl_string
+    }
+end
+
+class DipscriptPopup < MemHack::Compound
+    sizeof 12
+
+    field(:unk0, 0) {
+        number 32, true
+    }
+    field(:unk4, 4) {
+        pointer {
+            global :DipscriptPopupUnit
+        }
+    }
+    field(:flags, 8) {
+        compound(:DipscriptPopup_TFlags) {
+            field(:_whole, 0) {
+                number 32, true
+            }
+            field(:unk0, 0) { bit 0 }
+            field(:unk1, 0) { bit 1 }
+        }
+    }
+end
+
+class DipscriptPopupUnit < MemHack::Compound
+    sizeof 20
+
+    field(:unk0, 0) {
+        number 32, true
+    }
+    field(:unit, 4) {
+        pointer {
+            global :Unit
+        }
+    }
+    field(:unk8, 8) {
+        number 32, true
+    }
+    field(:unkC, 12) {
+        number 32, true
+    }
+    field(:flags, 16) {
+        compound(:DipscriptPopupUnit_TFlags) {
+            field(:_whole, 0) {
+                number 32, true
+            }
+            field(:unk0, 0) { bit 0 }
+            field(:unk1, 0) { bit 1 }
+            field(:unk2, 0) { bit 2 }
+            field(:unk3, 0) { bit 3 }
+            field(:unk4, 0) { bit 4 }
+        }
     }
 end
 
@@ -17915,10 +18301,10 @@ class HistoricalFigure < MemHack::Compound
     field(:curse_seconds, 24) {
         number 32, true
     }
-    field(:anon_1, 28) {
+    field(:birth_year_bias, 28) {
         number 32, true
     }
-    field(:anon_2, 32) {
+    field(:birth_time_bias, 32) {
         number 32, true
     }
     field(:old_year, 36) {
@@ -21120,6 +21506,15 @@ class HistoryHitItem < MemHack::Compound
     }
 end
 
+class HiveFlags < MemHack::Compound
+    field(:_whole, 0) {
+        number 32, false
+    }
+    field(:do_install, 0) { bit 0 }
+    field(:do_gather, 0) { bit 1 }
+    field(:ready_split, 0) { bit 2 }
+end
+
 class HospitalSupplies < MemHack::Compound
     sizeof 64
 
@@ -22147,7 +22542,7 @@ class Item < MemHack::Compound
     def setSeedsPlantSkillLevel(level)
         DFHack.vmethod_call(self, 268, level) ; nil
     end
-    def getCorpseMuscleAmount()
+    def getCorpseSize()
         val = DFHack.vmethod_call(self, 272)
         val &= ((1 << 16) - 1)
         ((val >> (16-1)) & 1) == 0 ? val : val - (1 << 16)
@@ -22978,10 +23373,8 @@ class ItemBodyComponent < ItemActual
                     number 32, true
                 }
             }
-            field(:physical_attr_tissues, 236) {
-                static_array(6, 4, PhysicalAttributeType) {
-                    number 32, true
-                }
+            field(:size_info, 236) {
+                global :BodySizeInfo
             }
             field(:unk_194, 260) {
                 stl_vector(4) {
@@ -23015,10 +23408,10 @@ class ItemBodyComponent < ItemActual
     field(:curse_time, 488) {
         number 32, true
     }
-    field(:anon_1, 492) {
+    field(:birth_year_bias, 492) {
         number 32, true
     }
-    field(:anon_2, 496) {
+    field(:birth_time_bias, 496) {
         number 32, true
     }
     field(:death_year, 500) {
@@ -23066,7 +23459,7 @@ class ItemBodyComponent < ItemActual
         number 32, true, -1
     }
     def hist_figure_tg2 ; df.world.history.figures.binsearch(hist_figure_id2) ; end
-    field(:anon_3, 600) {
+    field(:anon_1, 600) {
         number 32, true
     }
     field(:unit_id2, 604) {
@@ -23349,42 +23742,63 @@ class ItemEggst < ItemActual
     field(:egg_materials, 144) {
         global :MaterialVecRef
     }
-    field(:anon_1, 176) {
-    }
-    field(:anon_2, 220) {
-        number 32, true
-    }
-    field(:anon_3, 224) {
-        number 32, true
-    }
-    field(:unk_cc, 228) {
-        compound(:ItemEggst_TUnkCc) {
-            field(:anon_1, 0) {
-                number 16, true
-            }
-            field(:anon_2, 2) {
-                number 16, true
-            }
-            field(:anon_3, 4) {
-                number 16, true
-            }
-            field(:anon_4, 8) {
+    field(:egg_flags, 176) {
+        compound(:ItemEggst_TEggFlags) {
+            field(:_whole, 0) {
                 number 32, true
             }
-            field(:anon_5, 12) {
-                number 32, true
-            }
-            field(:anon_6, 16) {
-                number 32, true
-            }
-            field(:anon_7, 20) {
-                number 16, true
-            }
+            field(:fertile, 0) { bit 0 }
         }
     }
-    field(:anon_4, 252) {
+    field(:incubation_counter, 180) {
         number 32, true
     }
+    field(:hatchling_civ_id, 184) {
+        number 32, true, -1
+    }
+    def hatchling_civ_tg ; df.world.entities.all.binsearch(hatchling_civ_id) ; end
+    field(:hatchling_population_id, 188) {
+        number 32, true, -1
+    }
+    def hatchling_population_tg ; df.world.entity_populations.binsearch(hatchling_population_id) ; end
+    field(:hatchling_unit_unk_c0, 192) {
+        number 32, true, -1
+    }
+    field(:mothers_genes, 196) {
+        pointer {
+            global :UnitGenes
+        }
+    }
+    field(:mothers_caste, 200) {
+        number 16, true, -1
+    }
+    field(:fathers_genes, 204) {
+        pointer {
+            global :UnitGenes
+        }
+    }
+    field(:fathers_caste, 208) {
+        number 16, true, -1
+    }
+    field(:hatchling_flags1, 212) {
+        global :UnitFlags1
+    }
+    field(:hatchling_flags2, 216) {
+        global :UnitFlags2
+    }
+    field(:hatchling_flags3, 220) {
+        global :UnitFlags3
+    }
+    field(:hatchling_training_level, 224) {
+        number 32, true, :WildUntamed, AnimalTrainingLevel
+    }
+    field(:hatchling_animal_population, 228) {
+        global :WorldPopulationRef
+    }
+    field(:hatchling_mother_id, 252) {
+        number 32, true, -1
+    }
+    def hatchling_mother_tg ; df.world.units.all.binsearch(hatchling_mother_id) ; end
     field(:size, 256) {
         number 32, true
     }
@@ -23473,7 +23887,7 @@ class ItemFlags < MemHack::Compound
     field(:spider_web, 0) { bit 9 }
     field(:construction, 0) { bit 10 }
     field(:encased, 0) { bit 11 }
-    field(:unk4, 0) { bit 12 }
+    field(:unk12, 0) { bit 12 }
     field(:murder, 0) { bit 13 }
     field(:foreign, 0) { bit 14 }
     field(:trader, 0) { bit 15 }
@@ -23481,18 +23895,18 @@ class ItemFlags < MemHack::Compound
     field(:garbage_collect, 0) { bit 17 }
     field(:artifact, 0) { bit 18 }
     field(:forbid, 0) { bit 19 }
-    field(:unk6, 0) { bit 20 }
+    field(:unk20, 0) { bit 20 }
     field(:dump, 0) { bit 21 }
     field(:on_fire, 0) { bit 22 }
     field(:melt, 0) { bit 23 }
     field(:hidden, 0) { bit 24 }
     field(:in_chest, 0) { bit 25 }
-    field(:unk7, 0) { bit 26 }
+    field(:unk26, 0) { bit 26 }
     field(:artifact_mood, 0) { bit 27 }
     field(:temps_computed, 0) { bit 28 }
     field(:weight_computed, 0) { bit 29 }
-    field(:unk10, 0) { bit 30 }
-    field(:unk11, 0) { bit 31 }
+    field(:unk30, 0) { bit 30 }
+    field(:unk31, 0) { bit 31 }
 end
 
 class ItemFlags2 < MemHack::Compound
@@ -23731,7 +24145,7 @@ class ItemMagicness < MemHack::Compound
     sizeof 12
 
     field(:type, 0) {
-        number 16, true
+        number 16, true, nil, ItemMagicnessType
     }
     field(:value, 2) {
         number 16, true
@@ -24288,7 +24702,7 @@ class ItemdefAmmost < Itemdef
     field(:size, 152) {
         number 32, true
     }
-    field(:unk_84, 156) {
+    field(:value, 156) {
         number 32, true
     }
     field(:attacks, 160) {
@@ -24640,7 +25054,7 @@ class ItemdefTrapcompst < Itemdef
     field(:size, 144) {
         number 32, true
     }
-    field(:unk_7c, 148) {
+    field(:value, 148) {
         number 32, true
     }
     field(:hits, 152) {
@@ -24678,7 +25092,7 @@ class ItemdefWeaponst < Itemdef
     field(:size, 144) {
         number 32, true
     }
-    field(:unk_7c, 148) {
+    field(:value, 148) {
         number 32, true
     }
     field(:skill_melee, 152) {
@@ -24925,7 +25339,7 @@ class Job < MemHack::Compound
     field(:job_type, 8) {
         number 16, true, nil, JobType
     }
-    field(:unk2, 12) {
+    field(:job_subtype, 12) {
         number 32, true, -1
     }
     field(:pos, 16) {
@@ -25957,6 +26371,7 @@ class MapBlock < MemHack::Compound
     field(:global_feature, 36) {
         number 32, true, -1
     }
+    def global_feature_tg ; df.world.world_data.underground_regions[global_feature] ; end
     field(:unk2, 40) {
         number 32, true, -1
     }
@@ -26092,10 +26507,10 @@ end
 class MapBlockColumn < MemHack::Compound
     sizeof 3140
 
-    field(:unk_0, 0) {
+    field(:sink_level, 0) {
         number 16, true
     }
-    field(:unk_2, 2) {
+    field(:beach_level, 2) {
         number 16, true
     }
     field(:ground_level, 4) {
@@ -26145,26 +26560,20 @@ class MapBlockColumn < MemHack::Compound
             }
         }
     }
-    field(:unk_c2c, 3116) {
+    field(:z_shift, 3116) {
         number 16, true
     }
     field(:flags, 3120) {
         df_flagarray
     }
-    field(:tile_min_x, 3128) {
-        number 16, true
-    }
-    field(:tile_min_y, 3130) {
-        number 16, true
+    field(:map_pos, 3128) {
+        global :Coord2d
     }
     field(:unk_c3c, 3132) {
         number 16, true
     }
-    field(:unk_c3e, 3134) {
-        number 16, true
-    }
-    field(:unk_c40, 3136) {
-        number 16, true
+    field(:region_pos, 3134) {
+        global :Coord2d
     }
 end
 
@@ -26660,13 +27069,14 @@ class PetInfo < MemHack::Compound
     field(:unk0, 0) {
         number 32, true
     }
-    field(:unk1, 4) {
-        number 32, true
-    }
-    field(:pet_id, 8) {
+    field(:pet_item_id, 4) {
         number 32, true, -1
     }
-    def pet_tg ; df.world.units.all.binsearch(pet_id) ; end
+    def pet_item_tg ; df.world.items.all.binsearch(pet_item_id) ; end
+    field(:pet_unit_id, 8) {
+        number 32, true, -1
+    }
+    def pet_unit_tg ; df.world.units.all.binsearch(pet_unit_id) ; end
     field(:name, 12) {
         global :LanguageName
     }
@@ -27650,7 +28060,8 @@ class RegionMapEntry < MemHack::Compound
     field(:unk_0, 0) {
         number 32, true
     }
-    field(:unk_4, 4) {
+    field(:finder_rank, 4) {
+        number 32, true, -1
     }
     field(:sites, 8) {
         stl_vector(4) {
@@ -27660,7 +28071,7 @@ class RegionMapEntry < MemHack::Compound
         }
     }
     field(:flags, 24) {
-        df_flagarray
+        df_flagarray(RegionMapEntryFlags)
     }
     field(:elevation, 32) {
         number 16, true
@@ -28636,6 +29047,44 @@ class RouteStockpileLink < MemHack::Compound
     }
 end
 
+class ScheduleInfo < MemHack::Compound
+    sizeof 24
+
+    field(:id, 0) {
+        number 32, true
+    }
+    field(:anon_1, 4) {
+        number 16, true
+    }
+    field(:slots, 8) {
+        stl_vector(4) {
+            pointer {
+                global :ScheduleSlot
+            }
+        }
+    }
+end
+
+class ScheduleSlot < MemHack::Compound
+    sizeof 10
+
+    field(:type, 0) {
+        number 16, true
+    }
+    field(:start_time, 2) {
+        number 16, true
+    }
+    field(:end_time, 4) {
+        number 16, true
+    }
+    field(:anon_1, 6) {
+        number 16, true
+    }
+    field(:processed, 8) {
+        number 8, true
+    }
+end
+
 class SiteBuildingInhabitant < MemHack::Compound
     sizeof 24
 
@@ -28687,22 +29136,22 @@ end
 class SiteRealizationBuilding < MemHack::Compound
     sizeof 112
 
-    field(:index, 0) {
+    field(:id, 0) {
         number 32, true
     }
     field(:unk_4, 4) {
         number 32, true
     }
-    field(:unk_8, 8) {
+    field(:min_x, 8) {
         number 32, true
     }
-    field(:unk_c, 12) {
+    field(:min_y, 12) {
         number 32, true
     }
-    field(:unk_10, 16) {
+    field(:max_x, 16) {
         number 32, true
     }
-    field(:unk_14, 20) {
+    field(:max_y, 20) {
         number 32, true
     }
     field(:unk_18, 24) {
@@ -30228,7 +30677,7 @@ class TaskKillNemesisst < AdvTask
 
     rtti_classname :task_kill_nemesisst
 
-    field(:anon_1, 48) {
+    field(:unk3, 48) {
         number 32, true
     }
     field(:target_site, 52) {
@@ -30239,8 +30688,8 @@ class TaskKillNemesisst < AdvTask
         number 32, true, -1
     }
     def target_hfid_tg ; df.world.history.figures.binsearch(target_hfid) ; end
-    field(:anon_2, 60) {
-        number 8, true
+    field(:is_killed, 60) {
+        number 8, true, nil, BooleanEnum
     }
 end
 
@@ -30249,7 +30698,7 @@ class TaskSeekNemesisst < AdvTask
 
     rtti_classname :task_seek_nemesisst
 
-    field(:anon_1, 48) {
+    field(:unk3, 48) {
         number 32, true
     }
     field(:target_site, 52) {
@@ -30915,6 +31364,7 @@ class Ui < MemHack::Compound
     field(:dipscript_popups, 9064) {
         stl_vector(4) {
             pointer {
+                global :DipscriptPopup
             }
         }
     }
@@ -32099,11 +32549,33 @@ class UiAdvmode < MemHack::Compound
         number 32, true, -1
     }
     def player_tg ; df.world.nemesis.all[player_id] ; end
-    field(:unk27, 192) {
-        stl_vector
+    field(:talk_targets, 192) {
+        stl_vector(4) {
+            pointer {
+                compound(:UiAdvmode_TTalkTargets) {
+                    sizeof 12
+
+                    field(:unit_id, 0) {
+                        number 32, true, -1
+                    }
+                    def unit_tg ; df.world.units.all.binsearch(unit_id) ; end
+                    field(:histfig_id, 4) {
+                        number 32, true, -1
+                    }
+                    def histfig_tg ; df.world.history.figures.binsearch(histfig_id) ; end
+                    field(:anon_1, 8) {
+                        number 32, true
+                    }
+                }
+            }
+        }
     }
-    field(:talks, 208) {
-        stl_vector
+    field(:conversations, 208) {
+        stl_vector(4) {
+            pointer {
+                global :Conversation
+            }
+        }
     }
     field(:unk_e0, 224) {
         number 32, true
@@ -32923,9 +33395,10 @@ class Unit < MemHack::Compound
     field(:training_level, 260) {
         number 32, true, :WildUntamed, AnimalTrainingLevel
     }
-    field(:unk_104, 264) {
+    field(:schedule_id, 264) {
         number 32, true, -1
     }
+    def schedule_tg ; df.world.schedules.all.binsearch(schedule_id) ; end
     field(:civ_id, 268) {
         number 32, true, -1
     }
@@ -32934,7 +33407,7 @@ class Unit < MemHack::Compound
         number 32, true, -1
     }
     def population_tg ; df.world.entity_populations.binsearch(population_id) ; end
-    field(:anon_1, 276) {
+    field(:unk_c0, 276) {
         number 32, true, -1
     }
     field(:invasion_id, 280) {
@@ -33048,12 +33521,12 @@ class Unit < MemHack::Compound
             field(:pregnancy_timer, 0) {
                 number 32, false
             }
-            field(:pregnancy_ptr, 4) {
+            field(:pregnancy_genes, 4) {
                 pointer {
                     global :UnitGenes
                 }
             }
-            field(:pregnancy_mystery, 8) {
+            field(:pregnancy_caste, 8) {
                 number 16, true, -1
             }
             field(:mood_copy, 10) {
@@ -33079,11 +33552,11 @@ class Unit < MemHack::Compound
             field(:curse_time, 32) {
                 number 32, true, -1
             }
-            field(:anon_2, 36) {
-                number 32, true, -1
+            field(:birth_year_bias, 36) {
+                number 32, true
             }
-            field(:anon_3, 40) {
-                number 32, true, -1
+            field(:birth_time_bias, 40) {
+                number 32, true
             }
             field(:old_year, 44) {
                 number 32, true, -1
@@ -33265,10 +33738,8 @@ class Unit < MemHack::Compound
                     global :UnitAttribute
                 }
             }
-            field(:physical_attr_tissues, 364) {
-                static_array(6, 4, PhysicalAttributeType) {
-                    number 32, true
-                }
+            field(:size_info, 364) {
+                global :BodySizeInfo
             }
             field(:blood_max, 388) {
                 number 32, false
@@ -33276,8 +33747,8 @@ class Unit < MemHack::Compound
             field(:blood_count, 392) {
                 number 32, false
             }
-            field(:unk_494, 396) {
-                number 32, false
+            field(:infection_level, 396) {
+                number 32, true
             }
             field(:spatters, 400) {
                 stl_vector(4) {
@@ -33300,8 +33771,8 @@ class Unit < MemHack::Compound
                     number 32, true
                 }
             }
-            field(:unk_4c8, 32) {
-                number 32, false
+            field(:size_modifier, 32) {
+                number 32, true
             }
             field(:tissue_style, 36) {
                 stl_vector(2) {
@@ -33442,7 +33913,7 @@ class Unit < MemHack::Compound
             field(:flash_time2, 116) {
                 number 32, false
             }
-            field(:maybe_body_appearance, 120) {
+            field(:body_appearance, 120) {
                 stl_vector(4) {
                     number 32, true
                 }
@@ -33460,53 +33931,30 @@ class Unit < MemHack::Compound
             }
             field(:attr_change, 160) {
                 pointer {
-                    compound(:Unit_TCurse_TAttrChange) {
-                        sizeof 152
-
-                        field(:phys_att_perc, 0) {
-                            static_array(6, 4, PhysicalAttributeType) {
-                                number 32, true
-                            }
-                        }
-                        field(:phys_att_add, 24) {
-                            static_array(6, 4, PhysicalAttributeType) {
-                                number 32, true
-                            }
-                        }
-                        field(:ment_att_perc, 48) {
-                            static_array(13, 4, MentalAttributeType) {
-                                number 32, true
-                            }
-                        }
-                        field(:ment_att_add, 100) {
-                            static_array(13, 4, MentalAttributeType) {
-                                number 32, true
-                            }
-                        }
-                    }
+                    global :CurseAttrChange
                 }
             }
-            field(:anon_1, 164) {
+            field(:luck_mul_percent, 164) {
                 number 32, false, 100
             }
-            field(:anon_2, 168) {
+            field(:anon_1, 168) {
                 stl_vector
             }
-            field(:anon_3, 184) {
+            field(:anon_2, 184) {
                 stl_vector
             }
-            field(:anon_4, 200) {
+            field(:anon_3, 200) {
                 stl_vector
             }
             field(:time_on_site, 216) {
                 number 32, true
             }
-            field(:anon_5, 220) {
+            field(:anon_4, 220) {
                 stl_vector(4) {
                     number 32, true
                 }
             }
-            field(:anon_6, 236) {
+            field(:anon_5, 236) {
                 stl_vector(4) {
                     number 32, true
                 }
@@ -33548,7 +33996,7 @@ class Unit < MemHack::Compound
             field(:stored_fat, 40) {
                 number 32, false
             }
-            field(:unk_59c, 44) {
+            field(:undead_hitpoints, 44) {
                 number 32, false
             }
         }
@@ -33706,26 +34154,10 @@ class Unit < MemHack::Compound
             field(:unk_728, 392) {
                 stl_vector
             }
-            field(:acquintances, 408) {
+            field(:acquaintances, 408) {
                 stl_vector(4) {
                     pointer {
-                        compound(:Unit_TStatus_TAcquintances) {
-                            sizeof 16
-
-                            field(:unit_id, 0) {
-                                number 32, true, -1
-                            }
-                            def unit_tg ; df.world.units.all.binsearch(unit_id) ; end
-                            field(:acquintance_level, 4) {
-                                number 32, true
-                            }
-                            field(:timer, 8) {
-                                number 32, true
-                            }
-                            field(:is_friend, 12) {
-                                number 32, true
-                            }
-                        }
+                        global :UnitAcquaintance
                     }
                 }
             }
@@ -34008,6 +34440,31 @@ class Unit < MemHack::Compound
     }
 end
 
+class UnitAcquaintance < MemHack::Compound
+    sizeof 16
+
+    field(:unit_id, 0) {
+        number 32, true, -1
+    }
+    def unit_tg ; df.world.units.all.binsearch(unit_id) ; end
+    field(:strength, 4) {
+        number 32, true
+    }
+    field(:timer, 8) {
+        number 32, true
+    }
+    field(:flags, 12) {
+        compound(:UnitAcquaintance_TFlags) {
+            field(:_whole, 0) {
+                number 32, true
+            }
+            field(:is_friend, 0) { bit 0 }
+            field(:is_grudge, 0) { bit 1 }
+            field(:is_bonded, 0) { bit 2 }
+        }
+    }
+end
+
 class UnitAttribute < MemHack::Compound
     sizeof 28
 
@@ -34195,7 +34652,7 @@ class UnitFlags3 < MemHack::Compound
         number 32, false
     }
     field(:body_part_relsize_computed, 0) { bit 0 }
-    field(:unk1, 0) { bit 1 }
+    field(:size_modifier_computed, 0) { bit 1 }
     field(:unk2, 0) { bit 2 }
     field(:compute_health, 0) { bit 3 }
     field(:announce_titan, 0) { bit 4 }
@@ -34431,7 +34888,7 @@ class UnitInventoryItem < MemHack::Compound
             ENUM[4] = :Flask ; NUME[:Flask] = 4
             ENUM[5] = :WrappedAround ; NUME[:WrappedAround] = 5
             ENUM[6] = :StuckIn ; NUME[:StuckIn] = 6
-            ENUM[7] = :Unk7 ; NUME[:Unk7] = 7
+            ENUM[7] = :InMouth ; NUME[:InMouth] = 7
             ENUM[8] = :Shouldered ; NUME[:Shouldered] = 8
             ENUM[9] = :SewnInto ; NUME[:SewnInto] = 9
         end
@@ -34959,8 +35416,9 @@ class UnitWound < MemHack::Compound
     field(:unk_3c, 60) {
         number 32, true
     }
-    field(:unk_40, 64) {
+    field(:curse, 64) {
         pointer {
+            global :WoundCurseInfo
         }
     }
 end
@@ -35117,80 +35575,116 @@ class ViewscreenAdventureLogst < Viewscreen
 
     rtti_classname :viewscreen_adventure_logst
 
-    field(:anon_1, 16) {
+    field(:mode, 16) {
+        class ::DFHack::ViewscreenAdventureLogst_TMode < MemHack::Enum
+            ENUM = Hash.new
+            NUME = Hash.new
+            ENUM[0] = :Info ; NUME[:Info] = 0
+            ENUM[1] = :Map ; NUME[:Map] = 1
+        end
+
+        number 8, true, nil, ViewscreenAdventureLogst_TMode
+    }
+    field(:map_islocalview, 17) {
         number 8, true
     }
-    field(:anon_2, 17) {
+    field(:map_hidden, 18) {
         number 8, true
     }
-    field(:anon_3, 18) {
-        number 8, true
-    }
-    field(:anon_4, 20) {
+    field(:player_region_x, 20) {
         number 16, true
     }
-    field(:anon_5, 22) {
+    field(:player_region_y, 22) {
         number 16, true
     }
-    field(:anon_6, 24) {
+    field(:player_local_x, 24) {
         number 16, true
     }
-    field(:anon_7, 26) {
+    field(:player_local_y, 26) {
         number 16, true
     }
-    field(:anon_8, 28) {
+    field(:unk_8, 28) {
         number 16, true
     }
-    field(:anon_9, 30) {
+    field(:unk_9, 30) {
         number 16, true
     }
-    field(:anon_10, 32) {
+    field(:unk_10, 32) {
         number 16, true
     }
-    field(:anon_11, 34) {
+    field(:unk_11, 34) {
         number 16, true
     }
-    field(:anon_12, 36) {
+    field(:cursor_x, 36) {
         number 16, true
     }
-    field(:anon_13, 38) {
+    field(:cursor_y, 38) {
         number 16, true
     }
-    field(:anon_14, 40) {
+    field(:index, 40) {
         number 32, true
     }
-    field(:anon_15, 44) {
+    field(:map_draw_line, 44) {
         number 8, true
     }
-    field(:anon_16, 46) {
+    field(:info_mode, 46) {
+        class ::DFHack::ViewscreenAdventureLogst_TInfoMode < MemHack::Enum
+            ENUM = Hash.new
+            NUME = Hash.new
+            ENUM[0] = :Tasks ; NUME[:Tasks] = 0
+            ENUM[1] = :Entities ; NUME[:Entities] = 1
+            ENUM[2] = :Sites ; NUME[:Sites] = 2
+            ENUM[3] = :Regions ; NUME[:Regions] = 3
+        end
+
+        number 16, true, nil, ViewscreenAdventureLogst_TInfoMode
+    }
+    field(:local_area_x1, 48) {
         number 16, true
     }
-    field(:anon_17, 48) {
+    field(:local_area_x2, 50) {
         number 16, true
     }
-    field(:anon_18, 50) {
+    field(:local_area_y1, 52) {
         number 16, true
     }
-    field(:anon_19, 52) {
-        number 16, true
-    }
-    field(:anon_20, 54) {
+    field(:local_area_y2, 54) {
         number 16, true
     }
     field(:sites, 56) {
-        stl_vector
+        stl_vector(4) {
+            pointer {
+                global :WorldSite
+            }
+        }
     }
     field(:tasks, 72) {
-        stl_vector
+        stl_vector(4) {
+            pointer {
+                global :AdvTask
+            }
+        }
     }
     field(:entities, 88) {
-        stl_vector
+        stl_vector(4) {
+            pointer {
+                global :HistoricalEntity
+            }
+        }
     }
     field(:regions, 104) {
-        stl_vector
+        stl_vector(4) {
+            pointer {
+                global :WorldRegion
+            }
+        }
     }
     field(:layers, 120) {
-        stl_vector
+        stl_vector(4) {
+            pointer {
+                global :WorldGeoLayer
+            }
+        }
     }
 end
 
@@ -35438,10 +35932,10 @@ class ViewscreenChooseStartSitest < Viewscreen
             field(:anon_1, 0) {
                 number 32, true
             }
-            field(:unk_90, 4) {
-                number 32, true
+            field(:search_x, 4) {
+                number 32, true, -1
             }
-            field(:unk_94, 8) {
+            field(:search_y, 8) {
                 number 32, true
             }
             field(:cursor, 12) {
@@ -35462,7 +35956,7 @@ class ViewscreenChooseStartSitest < Viewscreen
                     number 32, true, nil, EmbarkFinderOption
                 }
             }
-            field(:unk_11c, 144) {
+            field(:finder_state, 144) {
                 number 16, true, -1
             }
             field(:unk_11e, 146) {
@@ -35536,17 +36030,18 @@ class ViewscreenConversationst < Viewscreen
 
     rtti_classname :viewscreen_conversationst
 
-    field(:anon_1, 16) {
+    field(:conversation, 16) {
         pointer {
+            global :Conversation
         }
     }
-    field(:anon_2, 20) {
+    field(:cursor_speech_line, 20) {
         number 32, true
     }
-    field(:anon_3, 24) {
+    field(:current_question, 24) {
         number 32, true
     }
-    field(:anon_4, 28) {
+    field(:cursor_line, 28) {
         number 16, true
     }
 end
@@ -35572,7 +36067,7 @@ class ViewscreenCreatequotast < Viewscreen
             }
         }
     }
-    field(:anon_1, 296) {
+    field(:pages, 296) {
         stl_vector(4) {
             number 32, true
         }
@@ -35778,7 +36273,7 @@ class ViewscreenDwarfmodest < Viewscreen
 
     rtti_classname :viewscreen_dwarfmodest
 
-    field(:unk_10, 16) {
+    field(:shown_site_name, 16) {
         number 8, true
     }
     field(:jeweler_mat_count, 18) {
@@ -37552,13 +38047,17 @@ class ViewscreenMeetingst < Viewscreen
 
     rtti_classname :viewscreen_meetingst
 
-    field(:anon_1, 16) {
-        number 32, true
+    field(:dipscript_popup, 16) {
+        pointer {
+            global :DipscriptPopup
+        }
     }
-    field(:anon_2, 20) {
-        number 32, true
+    field(:popup_unk4, 20) {
+        pointer {
+            global :DipscriptPopupUnit
+        }
     }
-    field(:anon_3, 24) {
+    field(:popup_unk0, 24) {
         number 32, true
     }
 end
@@ -37995,110 +38494,110 @@ class ViewscreenSetupadventurest < Viewscreen
 
     rtti_classname :viewscreen_setupadventurest
 
-    field(:anon_1, 16) {
+    field(:editing_name, 16) {
         number 8, true
     }
-    field(:anon_2, 20) {
+    field(:saved_firstname, 20) {
         stl_string
     }
-    field(:anon_3, 48) {
+    field(:index_col1, 48) {
         number 32, true
     }
-    field(:anon_4, 52) {
+    field(:index_skills, 52) {
         number 32, true
     }
-    field(:anon_5, 56) {
+    field(:skill_points_remaining, 56) {
         number 32, true
     }
-    field(:anon_6, 60) {
-        number 16, true
+    field(:subscreen, 60) {
+        class ::DFHack::ViewscreenSetupadventurest_TSubscreen < MemHack::Enum
+            ENUM = Hash.new
+            NUME = Hash.new
+            ENUM[1] = :Nemesis ; NUME[:Nemesis] = 1
+            ENUM[2] = :Skills ; NUME[:Skills] = 2
+            ENUM[3] = :Name ; NUME[:Name] = 3
+        end
+
+        number 16, true, nil, ViewscreenSetupadventurest_TSubscreen
     }
-    field(:unk1, 64) {
-        compound(:ViewscreenSetupadventurest_TUnk1) {
-            field(:anon_1, 0) {
+    field(:adventurer, 64) {
+        compound(:ViewscreenSetupadventurest_TAdventurer) {
+            field(:name, 0) {
                 global :LanguageName
             }
-            field(:anon_2, 108) {
+            field(:race, 108) {
                 number 16, true
             }
-            field(:anon_3, 110) {
-                number 8, true
+            field(:caste, 110) {
+                number 16, true
             }
-            field(:anon_4, 112) {
-                static_array(116, 4) {
+            field(:skills, 112) {
+                static_array(116, 4, JobSkill) {
                     number 32, true
                 }
             }
-            field(:anon_5, 576) {
+            field(:entity, 576) {
+                number 32, true, -1
+            }
+            def entity_tg ; df.world.entities.all.binsearch(entity) ; end
+            field(:histfig, 580) {
+                number 16, true, -1
+            }
+            def histfig_tg ; df.world.nemesis.all[histfig] ; end
+            field(:unk_7, 584) {
                 number 32, true
             }
-            field(:anon_6, 580) {
+            field(:unk_8, 588) {
+                number 32, true
+            }
+            field(:unk_9, 592) {
                 number 16, true
             }
-            field(:anon_7, 584) {
-                number 32, true
-            }
-            field(:anon_8, 588) {
-                number 32, true
-            }
-            field(:anon_9, 592) {
-                number 16, true
-            }
-            field(:anon_10, 596) {
-                number 32, true
-            }
-            field(:anon_11, 600) {
-                number 32, true
-            }
-            field(:anon_12, 604) {
-                number 32, true
-            }
-            field(:anon_13, 608) {
-                number 32, true
-            }
-            field(:anon_14, 612) {
-                number 32, true
-            }
-            field(:anon_15, 616) {
-                number 32, true
-            }
-            field(:anon_16, 620) {
-                static_array(13, 4) {
+            field(:attributes, 596) {
+                static_array(19, 4) {
                     number 32, true
                 }
             }
-            field(:anon_17, 672) {
-                number 16, true
+            field(:status, 672) {
+                class ::DFHack::ViewscreenSetupadventurest_TAdventurer_TStatus < MemHack::Enum
+                    ENUM = Hash.new
+                    NUME = Hash.new
+                    ENUM[0] = :Peasant ; NUME[:Peasant] = 0
+                    ENUM[1] = :Hero ; NUME[:Hero] = 1
+                    ENUM[2] = :Demigod ; NUME[:Demigod] = 2
+                end
+
+                number 16, true, nil, ViewscreenSetupadventurest_TAdventurer_TStatus
             }
         }
     }
-    field(:anon_7, 740) {
+    field(:race_list, 740) {
         stl_vector(2) {
             number 16, true
         }
     }
-    field(:anon_8, 756) {
+    field(:entity_list, 756) {
         stl_vector(4) {
             number 32, true
         }
     }
-    field(:anon_9, 772) {
+    field(:nemesis_list, 772) {
         stl_vector(2) {
             number 16, true
         }
     }
-    field(:anon_10, 788) {
-        stl_vector(4) {
-            number 32, true
+    field(:skill_list, 788) {
+        stl_vector(2) {
+            number 16, true
         }
     }
-    field(:anon_11, 804) {
+    field(:focus_column, 804) {
         number 8, true
     }
-    field(:anon_12, 808) {
+    field(:attribute_points_remaining, 808) {
         number 32, true
     }
-    field(:anon_13, 812) {
+    field(:index_attributes, 812) {
         number 32, true
     }
 end
@@ -38393,7 +38892,7 @@ class ViewscreenTextviewerst < Viewscreen
     field(:viewscreen_class, 160) {
         stl_string
     }
-    field(:anon_7, 188) {
+    field(:file_path, 188) {
         stl_string
     }
     field(:text_display, 216) {
@@ -38428,19 +38927,23 @@ class ViewscreenTextviewerst < Viewscreen
             }
         }
     }
-    field(:anon_8, 232) {
-        stl_vector
+    field(:hyperlinks, 232) {
+        stl_vector(4) {
+            pointer {
+                stl_string
+            }
+        }
     }
-    field(:anon_9, 248) {
+    field(:anon_7, 248) {
         number 8, true
     }
     field(:scroll_pos, 252) {
         number 32, true
     }
-    field(:anon_10, 256) {
+    field(:cursor_line, 256) {
         number 32, true
     }
-    field(:anon_11, 260) {
+    field(:anon_8, 260) {
         number 32, true
     }
 end
@@ -38594,12 +39097,14 @@ class ViewscreenTopicmeetingTakerequestsst < Viewscreen
         number 32, true
     }
     field(:anon_3, 280) {
-        stl_vector
+        stl_vector(2) {
+            number 16, true
+        }
     }
-    field(:anon_4, 296) {
+    field(:type_idx, 296) {
         number 32, true
     }
-    field(:anon_5, 300) {
+    field(:good_idx, 300) {
         number 32, true
     }
 end
@@ -38629,18 +39134,20 @@ class ViewscreenTradeagreementst < Viewscreen
         number 32, true
     }
     field(:anon_3, 24) {
-        stl_vector
+        stl_vector(2) {
+            number 16, true
+        }
     }
-    field(:anon_4, 40) {
+    field(:type_idx, 40) {
         number 32, true
     }
-    field(:anon_5, 44) {
+    field(:good_idx, 44) {
         number 32, true
     }
-    field(:anon_6, 48) {
+    field(:anon_4, 48) {
         static_string(256)
     }
-    field(:anon_7, 304) {
+    field(:anon_5, 304) {
         number 32, true
     }
 end
@@ -39006,48 +39513,44 @@ class World < MemHack::Compound
             }
         }
     }
-    field(:unk_54, 128) {
+    field(:web_clusters, 128) {
         stl_vector(4) {
             pointer {
-                compound(:World_TUnk54) {
+                compound(:World_TWebClusters) {
                     sizeof 64
 
-                    field(:anon_1, 0) {
+                    field(:x, 0) {
                         stl_vector(2) {
                             number 16, true
                         }
                     }
-                    field(:anon_2, 16) {
+                    field(:y, 16) {
                         stl_vector(2) {
                             number 16, true
                         }
                     }
-                    field(:anon_3, 32) {
+                    field(:z, 32) {
                         number 16, true
                     }
-                    field(:anon_4, 34) {
-                        number 16, true
+                    field(:race, 34) {
+                        number 16, true, -1
                     }
-                    field(:anon_5, 36) {
-                        number 16, true
+                    def race_tg ; df.world.raws.creatures.all[race] ; end
+                    field(:caste, 36) {
+                        number 16, true, -1
                     }
-                    field(:anon_6, 38) {
-                        number 16, true
+                    field(:pos_min, 38) {
+                        global :Coord2d
                     }
-                    field(:anon_7, 40) {
-                        number 16, true
+                    field(:pos_max, 42) {
+                        global :Coord2d
                     }
-                    field(:anon_8, 42) {
-                        number 16, true
-                    }
-                    field(:anon_9, 44) {
-                        number 16, true
-                    }
-                    field(:anon_10, 48) {
+                    field(:ambushers, 48) {
                         stl_vector(4) {
-                            number 32, true
+                            number 32, true, -1
                         }
                     }
+                    def ambushers_tg ; ambushers.map { |i| df.world.units.all.binsearch(i) } ; end
                 }
             }
         }
@@ -39087,33 +39590,27 @@ class World < MemHack::Compound
                     sizeof 72
 
                     field(:anon_1, 0) {
-                        number 16, true
+                        global :Coord
                     }
-                    field(:anon_2, 2) {
-                        number 16, true
-                    }
-                    field(:anon_3, 4) {
-                        number 16, true
-                    }
-                    field(:anon_4, 6) {
+                    field(:anon_2, 6) {
                         number 8, true
                     }
-                    field(:anon_5, 8) {
+                    field(:anon_3, 8) {
                         stl_vector(2) {
                             number 16, true
                         }
                     }
-                    field(:anon_6, 24) {
+                    field(:anon_4, 24) {
                         stl_vector(2) {
                             number 16, true
                         }
                     }
-                    field(:anon_7, 40) {
+                    field(:anon_5, 40) {
                         stl_vector(2) {
                             number 16, true
                         }
                     }
-                    field(:anon_8, 56) {
+                    field(:anon_6, 56) {
                         stl_vector(2) {
                             number 16, true
                         }
@@ -39128,28 +39625,28 @@ class World < MemHack::Compound
                 compound(:World_TUnk78) {
                     sizeof 14
 
-                    field(:anon_1, 0) {
+                    field(:x1, 0) {
                         number 16, true
                     }
-                    field(:anon_2, 2) {
+                    field(:y1, 2) {
                         number 16, true
                     }
-                    field(:anon_3, 4) {
+                    field(:x2, 4) {
                         number 16, true
                     }
-                    field(:anon_4, 6) {
+                    field(:y2, 6) {
                         number 16, true
                     }
-                    field(:anon_5, 8) {
+                    field(:z, 8) {
                         number 16, true
                     }
-                    field(:anon_6, 10) {
+                    field(:anon_1, 10) {
                         number 8, true
                     }
-                    field(:anon_7, 11) {
+                    field(:anon_2, 11) {
                         number 8, true
                     }
-                    field(:anon_8, 12) {
+                    field(:anon_3, 12) {
                         number 8, true
                     }
                 }
@@ -40048,12 +40545,14 @@ class World < MemHack::Compound
             field(:all, 0) {
                 stl_vector(4) {
                     pointer {
+                        global :ScheduleInfo
                     }
                 }
             }
             field(:bad, 16) {
                 stl_vector(4) {
                     pointer {
+                        global :ScheduleInfo
                     }
                 }
             }
@@ -41192,8 +41691,29 @@ class World < MemHack::Compound
                     }
                 }
             }
-            field(:anon_2, 48) {
-                static_array(18, 16) {
+            field(:feature_x, 48) {
+                stl_vector(2) {
+                    number 16, true
+                }
+            }
+            field(:feature_y, 64) {
+                stl_vector(2) {
+                    number 16, true
+                }
+            }
+            field(:feature_local_idx, 80) {
+                stl_vector(2) {
+                    number 16, true
+                }
+            }
+            field(:feature_global_idx, 96) {
+                stl_vector(4) {
+                    number 32, true, -1
+                }
+            }
+            def feature_global_tgx ; feature_global_idx.map { |i| df.world.world_data.underground_regions[i] } ; end
+            field(:anon_2, 112) {
+                static_array(14, 16) {
                     stl_vector
                 }
             }
@@ -41625,10 +42145,10 @@ class WorldData < MemHack::Compound
     field(:unk_7c, 176) {
         number 32, true
     }
-    field(:unk_80, 180) {
+    field(:flip_latitude, 180) {
         number 16, true
     }
-    field(:unk_82, 182) {
+    field(:flip_longitude, 182) {
         number 16, true
     }
     field(:unk_84, 184) {
@@ -42881,22 +43401,7 @@ class WorldRegion < MemHack::Compound
         number 32, true
     }
     field(:type, 112) {
-        class ::DFHack::WorldRegion_TType < MemHack::Enum
-            ENUM = Hash.new
-            NUME = Hash.new
-            ENUM[0] = :Swamp ; NUME[:Swamp] = 0
-            ENUM[1] = :Desert ; NUME[:Desert] = 1
-            ENUM[2] = :Jungle ; NUME[:Jungle] = 2
-            ENUM[3] = :Mountains ; NUME[:Mountains] = 3
-            ENUM[4] = :Ocean ; NUME[:Ocean] = 4
-            ENUM[5] = :Lake ; NUME[:Lake] = 5
-            ENUM[6] = :Glacier ; NUME[:Glacier] = 6
-            ENUM[7] = :Tundra ; NUME[:Tundra] = 7
-            ENUM[8] = :Steppe ; NUME[:Steppe] = 8
-            ENUM[9] = :Hills ; NUME[:Hills] = 9
-        end
-
-        number 16, true, nil, WorldRegion_TType
+        number 16, true, nil, WorldRegionType
     }
     field(:region_coords, 116) {
         global :Coord2dPath
@@ -42967,7 +43472,7 @@ class WorldRegion < MemHack::Compound
     field(:unk_1e8, 488) {
         number 16, true
     }
-    field(:unk_1ec, 490) {
+    field(:lake_surface, 490) {
         number 16, true
     }
     field(:unk_1f0, 492) {
@@ -43021,57 +43526,61 @@ class WorldRegionDetails < MemHack::Compound
             }
         }
     }
-    field(:unk4a, 1892) {
-        static_array(17, 64) {
-            static_array(16, 4) {
-                global :Coord2d
+    field(:edges, 1892) {
+        compound(:WorldRegionDetails_TEdges) {
+            field(:split_x, 0) {
+                static_array(16, 68) {
+                    static_array(17, 4) {
+                        global :Coord2d
+                    }
+                }
             }
-        }
-    }
-    field(:unk4b, 2980) {
-        static_array(16, 68) {
-            static_array(17, 4) {
-                global :Coord2d
+            field(:split_y, 1088) {
+                static_array(17, 64) {
+                    static_array(16, 4) {
+                        global :Coord2d
+                    }
+                }
             }
-        }
-    }
-    field(:unk5, 4068) {
-        static_array(16, 16) {
-            static_array(16, 1) {
-                number 8, true
+            field(:biome_corner, 2176) {
+                static_array(16, 16) {
+                    static_array(16, 1) {
+                        number 8, true
+                    }
+                }
             }
-        }
-    }
-    field(:unk6, 4324) {
-        static_array(16, 16) {
-            static_array(16, 1) {
-                number 8, true
+            field(:biome_x, 2432) {
+                static_array(16, 16) {
+                    static_array(16, 1) {
+                        number 8, true
+                    }
+                }
             }
-        }
-    }
-    field(:unk7, 4580) {
-        static_array(16, 16) {
-            static_array(16, 1) {
-                number 8, true
+            field(:biome_y, 2688) {
+                static_array(16, 16) {
+                    static_array(16, 1) {
+                        number 8, true
+                    }
+                }
             }
         }
     }
     field(:pos, 4836) {
         global :Coord2d
     }
-    field(:anon_1, 4840) {
+    field(:unk12e8, 4840) {
         number 16, true
     }
-    field(:anon_2, 4842) {
+    field(:anon_1, 4842) {
         number 16, true
     }
-    field(:anon_3, 4844) {
+    field(:anon_2, 4844) {
         number 16, true
     }
-    field(:anon_4, 4846) {
+    field(:anon_3, 4846) {
         number 16, true
     }
-    field(:anon_5, 4848) {
+    field(:anon_4, 4848) {
         number 16, true
     }
     field(:rivers_vertical, 4850) {
@@ -43097,7 +43606,7 @@ class WorldRegionDetails < MemHack::Compound
                     }
                 }
             }
-            field(:local_id, 1360) {
+            field(:elevation, 1360) {
                 static_array(16, 34) {
                     static_array(17, 2) {
                         number 16, true
@@ -43129,7 +43638,7 @@ class WorldRegionDetails < MemHack::Compound
                     }
                 }
             }
-            field(:local_id, 1360) {
+            field(:elevation, 1360) {
                 static_array(17, 32) {
                     static_array(16, 2) {
                         number 16, true
@@ -43236,7 +43745,7 @@ class WorldRiver < MemHack::Compound
             number 16, true
         }
     }
-    field(:local_id, 172) {
+    field(:elevation, 172) {
         stl_vector(2) {
             number 16, true
         }
@@ -43272,23 +43781,7 @@ class WorldSite < MemHack::Compound
     }
     def outcast_tg ; df.world.entities.all.binsearch(outcast_id) ; end
     field(:type, 124) {
-        class ::DFHack::WorldSite_TType < MemHack::Enum
-            ENUM = Hash.new
-            NUME = Hash.new
-            ENUM[0] = :PlayerFortress ; NUME[:PlayerFortress] = 0
-            ENUM[1] = :DarkFortress ; NUME[:DarkFortress] = 1
-            ENUM[2] = :Cave ; NUME[:Cave] = 2
-            ENUM[3] = :MountainHalls ; NUME[:MountainHalls] = 3
-            ENUM[4] = :ForestRetreat ; NUME[:ForestRetreat] = 4
-            ENUM[5] = :Town ; NUME[:Town] = 5
-            ENUM[6] = :Unk6 ; NUME[:Unk6] = 6
-            ENUM[7] = :LairShrine ; NUME[:LairShrine] = 7
-            ENUM[8] = :Fortress ; NUME[:Fortress] = 8
-            ENUM[9] = :Camp ; NUME[:Camp] = 9
-            ENUM[10] = :Monument ; NUME[:Monument] = 10
-        end
-
-        number 16, true, nil, WorldSite_TType
+        number 16, true, nil, WorldSiteType
     }
     field(:pos, 126) {
         global :Coord2d
@@ -43967,6 +44460,82 @@ class WorldUnkC0 < MemHack::Compound
     }
 end
 
+class WoundCurseInfo < MemHack::Compound
+    sizeof 212
+
+    field(:add_tags1, 0) {
+        global :CieAddTagMask1
+    }
+    field(:rem_tags1, 4) {
+        global :CieAddTagMask1
+    }
+    field(:add_tags2, 8) {
+        global :CieAddTagMask2
+    }
+    field(:rem_tags2, 12) {
+        global :CieAddTagMask2
+    }
+    field(:name_visible, 16) {
+        number 8, true, nil, BooleanEnum
+    }
+    field(:name, 20) {
+        stl_string
+    }
+    field(:name_plural, 48) {
+        stl_string
+    }
+    field(:name_adjective, 76) {
+        stl_string
+    }
+    field(:sym_and_color1, 104) {
+        number 32, false, 0x400
+    }
+    field(:sym_and_color2, 108) {
+        number 32, false, 0x400
+    }
+    field(:flash_period, 112) {
+        number 32, false
+    }
+    field(:flash_time2, 116) {
+        number 32, false
+    }
+    field(:speed_add, 120) {
+        number 32, false
+    }
+    field(:speed_mul_percent, 124) {
+        number 32, false, 100
+    }
+    field(:attr_change, 128) {
+        pointer {
+            global :CurseAttrChange
+        }
+    }
+    field(:luck_mul_percent, 132) {
+        number 32, false, 100
+    }
+    field(:anon_1, 136) {
+        stl_vector
+    }
+    field(:anon_2, 152) {
+        stl_vector
+    }
+    field(:unk1, 168) {
+        number 32, true
+    }
+    field(:unk2, 172) {
+        number 32, true, -1
+    }
+    field(:unk3, 176) {
+        number 32, true, -1
+    }
+    field(:anon_3, 180) {
+        stl_vector
+    }
+    field(:anon_4, 196) {
+        stl_vector
+    }
+end
+
 class WoundDamageFlags1 < MemHack::Compound
     field(:_whole, 0) {
         number 32, true
@@ -43987,11 +44556,18 @@ class WoundDamageFlags1 < MemHack::Compound
     field(:smashed_apart, 0) { bit 13 }
     field(:major_artery, 0) { bit 14 }
     field(:guts_spilled, 0) { bit 15 }
+    field(:edged_shake1, 0) { bit 16 }
     field(:jagged_scar, 0) { bit 17 }
+    field(:edged_shake2, 0) { bit 18 }
     field(:broken, 0) { bit 19 }
     field(:huge_dent2, 0) { bit 20 }
+    field(:gouged, 0) { bit 21 }
+    field(:blunt_shake1, 0) { bit 22 }
     field(:jagged_scar2, 0) { bit 23 }
+    field(:blunt_shake2, 0) { bit 24 }
+    field(:joint_bend1, 0) { bit 25 }
     field(:jagged_scar3, 0) { bit 26 }
+    field(:joint_bend2, 0) { bit 27 }
     field(:compound_fracture, 0) { bit 28 }
     field(:diagnosed, 0) { bit 29 }
     field(:artery, 0) { bit 30 }
@@ -44003,7 +44579,7 @@ class WoundDamageFlags2 < MemHack::Compound
         number 32, true
     }
     field(:needs_setting, 0) { bit 0 }
-    field(:unk1, 0) { bit 1 }
+    field(:entire_surface, 0) { bit 1 }
 end
 
 class ZLevelFlags < MemHack::Compound
