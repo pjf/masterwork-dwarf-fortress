@@ -49,8 +49,6 @@ Dummy symbol table entry: window_y
 Dummy symbol table entry: window_z
 Dummy symbol table entry: building_next_id
 Dummy symbol table entry: job_next_id
-Dummy symbol table entry: cur_season
-Dummy symbol table entry: cur_season_tick
 Loaded 10 DF symbol tables.
 Version: v0.34.11 SDL
 Initializing Console.
@@ -58,6 +56,7 @@ Console is running.
 Initializing Plugins.
 d_init: 232
 world: 1670492 ui: 31024 b_stock: 1632
+Plugin stonesense has no enabled var!
 Starting IO thread.
 Starting DF input capture thread.
 Starting the TCP listener.
@@ -83,11 +82,11 @@ Invoking: diggingInvaders setCost ANT_MAN destroySmoothConstruction -1
 Invoking: diggingInvaders setDelay ANT_MAN destroyBuilding -1
 Invoking: diggingInvaders setDelay ANT_MAN dig 5
 Invoking: diggingInvaders setDelay ANT_MAN destroyRoughConstruction -1
-DFHack is running.
 Invoking: diggingInvaders setDelay ANT_MAN destroySmoothConstruction -1
 Invoking: diggingInvaders add ORC
 Invoking: diggingInvaders setCost ORC destroyBuilding 1
 Invoking: diggingInvaders setCost ORC dig -1
+DFHack is running.
 Invoking: diggingInvaders setCost ORC walk 0
 Invoking: diggingInvaders setCost ORC destroyRoughConstruction 1
 Invoking: diggingInvaders setCost ORC destroySmoothConstruction 1
@@ -445,10 +444,18 @@ Invoking: diggingInvaders setDelay TITAN_10 destroyBuilding 50
 Invoking: diggingInvaders setDelay TITAN_10 dig -1
 Invoking: diggingInvaders setDelay TITAN_10 destroyRoughConstruction 50
 Invoking: diggingInvaders setDelay TITAN_10 destroySmoothConstruction 50
-Invoking: load autoSyndrome			
-Invoking: load trueTransformation			
+Invoking: enable automaterial
+Invoking: enable autoSyndrome
+Invoking: enable autotrade
+Invoking: enable buildingplan
+Invoking: enable dwarfmonitor
+Invoking: enable getplants
+Invoking: enable mousequery
+Invoking: enable resume
+Invoking: enable search
+Invoking: enable zone
+Invoking: syndromeTrigger	enable
 Invoking: autofixhandedness start
-Invoking: projectileExpansion
 Invoking: projectileExpansion enable
 Invoking: keybinding add Alt-Shift-S@dwarfmode/Default "stocks show"
 Invoking: keybinding add Alt-Shift-I@dwarfmode/Zones "zone set"
@@ -503,6 +510,7 @@ Invoking: tweak military-stable-assign
 Invoking: tweak military-color-assigned
 Invoking: tweak military-training
 Invoking: itemsyndrome contaminantsOn enable
+Invoking: itemsyndrome enable
 Invoking: soundsense-season
 Invoking: fix/cloth-stockpile enable
 Invoking: binpatch apply deconstruct-teleport
@@ -514,5 +522,4 @@ Invoking: binpatch apply weaponrack-unassign
 Invoking: binpatch apply armorstand-capacity
 Invoking: fix/growthbug enable
 Invoking: cls
-Invoking: itemsyndrome enable
 Invoking: die
