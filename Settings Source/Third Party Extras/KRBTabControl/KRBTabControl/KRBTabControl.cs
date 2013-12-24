@@ -1655,6 +1655,10 @@ namespace KRBTabControl
                     msg.Result = new IntPtr(1);
                     return true;
                 }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -1697,6 +1701,7 @@ namespace KRBTabControl
                         {
                             TabPageEx tabPage = new TabPageEx();
                             this.Controls.Add(tabPage);
+                            return true;
                         }
                         break;
                     case Keys.Delete:
@@ -1716,15 +1721,20 @@ namespace KRBTabControl
                                         {
                                             this.TabPages.Remove(removingTabPage);
                                             SelectNextAvailableTabPage();
+                                            return true;
                                         }
                                         else
+                                        {
                                             MessageBox.Show("The operation was canceled by the user.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            return true;
+                                        }
                                     }
                                 }
                                 else
                                 {
                                     MessageBox.Show("The selected tab page could not be deleted!!!, it may be due to the following reasons;\r\n\r\n1.Tab page might be null or disposed by the application.\r\n2.Tab page might not be closable.\r\n3.Tab page might be disable.",
                                         Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    return true;
                                 }
                             }
                         }
@@ -1732,11 +1742,12 @@ namespace KRBTabControl
                     case Keys.Escape:
                         break;
                     case Keys.F1:
-                        break;
+                        break;                                          
                 }
+                return false;
             }
 
-            return true;
+            
         }
 
         protected override bool ProcessMnemonic(char charCode)

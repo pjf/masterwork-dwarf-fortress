@@ -13479,6 +13479,7 @@ Partial Class MainForm
         Me.tabMain.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.tabMain.IsCaptionVisible = false
         Me.tabMain.IsDocumentTabStyle = true
+        Me.tabMain.IsUserInteraction = False
         Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
         Me.tabMain.Location = New System.Drawing.Point(0, 72)
         Me.tabMain.Name = "tabMain"
