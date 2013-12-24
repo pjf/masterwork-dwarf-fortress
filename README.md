@@ -29,21 +29,25 @@ Please try to be as specific as possible.
 
 ## Contributing
 
-If you wish to contribute, and you're already familiar with git,
-then start by
-[forking this repo](https://github.com/pjf/masterwork-dwarf-fortress/fork).
+1. [Set up git](https://help.github.com/articles/set-up-git)
+2. [Fork this repo](https://github.com/pjf/masterwork-dwarf-fortress/fork) and then clone it to your local machine.
+3. Make your changes.
+4. Commit them (`git add` the files that hav changed, `git commit` them, and then `git push` them back to github).
+5. Submit a [pull request](https://github.com/pjf/masterwork-dwarf-fortress/compare/), or point me to your changes [on the forum](http://www.bay12forums.com/smf/index.php?topic=133174.0)
+6. Celebrate, because you're awesome!
 
-Usually you'll want to do your own work on the master branch, as
-it's considered "stable". Note that the unified branch *only* consists
-of merges of the other branches, and it may occasionally be subject
-to rebasing. Working from it is not recommended, but you can
-do so if you've got a good reason.
+If you're an advanced git user, you're encouraged to use feature
+branches if you're going to be making a lot of related changes. Likewise
+we suggest you make your changes based upon master, or a feature branch
+your changes depend upon (like `dfhack_r4`), as the unified branch is
+really just an amalgan of features, rather than a proper development
+branch in and of itself.
 
-One you're happy with your work, send through a pull request to
-mark it as a candidate for merging.
-
-If you're not already familiar with git, then there are
-[some great guides online](https://help.github.com/articles/set-up-git).
+If you're still new to git, don't worry about the preceeding paragraph.
+Just do what feels best; git makes it easy to apply patches to the
+right place. However we do encourage you to commit early and often;
+little commits each making a set of related changes are easier to manage
+than larger commits which may involve changing different features.
 
 ## More information
 

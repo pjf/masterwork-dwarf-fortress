@@ -133,6 +133,18 @@
     <Compile Include="custom controls\mwCivLabel.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="custom controls\mwGroupBox.Designer.vb">
+      <DependentUpon>mwGroupBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\mwGroupBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom controls\mwPanel.Designer.vb">
+      <DependentUpon>mwPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\mwPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="custom controls\mwTableLayout.Designer.vb">
       <DependentUpon>mwTableLayout.vb</DependentUpon>
     </Compile>
