@@ -58,7 +58,7 @@ my $EXCLUDED_COMMIT_RE = qr{(?:
       Merge\ branch\ '\w+'
     | Merge\ pull\ request
     | maint-bin:
-    | \#dev\b
+    | .* \#dev\b
 )}msx;
 
 # Get our patches
