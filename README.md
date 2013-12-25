@@ -32,7 +32,7 @@ Please try to be as specific as possible.
 1. [Set up git](https://help.github.com/articles/set-up-git)
 2. [Fork this repo](https://github.com/pjf/masterwork-dwarf-fortress/fork) and then clone it to your local machine.
 3. Make your changes.
-4. Commit them (`git add` the files that hav changed, `git commit` them, and then `git push` them back to github).
+4. Commit them (`git add` the files that have changed, `git commit` them, and then `git push` them back to github).
 5. Submit a [pull request](https://github.com/pjf/masterwork-dwarf-fortress/compare/), or point me to your changes [on the forum](http://www.bay12forums.com/smf/index.php?topic=133174.0)
 6. Celebrate, because you're awesome!
 

@@ -14,6 +14,7 @@ missing: eggs, milk, bread, candy
 [REACTION:BUY_FOOD_D]
 	[NAME:=========== FOOD ============]
 	[BUILDING:FOOD_MERCHANTS_STALL:NONE]
+	[REAGENT:A:500:COIN:NONE:INORGANIC:SILVER]
 
 [REACTION:BUY_MEAT_D]
 	[NAME:Buy meat(3) for 500 shillings]

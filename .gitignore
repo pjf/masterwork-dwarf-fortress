@@ -1,2 +1,7 @@
 MWDF-patch-*
 Dwarf Fortress/data/save
+Dwarf Fortress/dfhack.history
+Dwarf Fortress/gamelog.txt
+Dwarf Fortress/stderr.txt
+Dwarf Fortress/stdout.txt
+MasterworkDwarfFortress/Utilities/DwarfTherapist/log/run.log
