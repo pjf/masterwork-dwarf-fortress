@@ -59,7 +59,6 @@ sub check_raw_headers {
 }
 
 sub check_reactions { 
-
     my ($raws) = @_;
 
     # Using @ARGV and Perl's <> operator saves us time when
@@ -69,10 +68,13 @@ sub check_reactions {
 
     my %permitted_reaction;
     my %defined_reaction;
+    my %hotkey;
+
+    my $reaction;
 
     # Walk through everything, record seen and permitted reactions,
     # reporting what's missing
-        
+
     while (<>) {
 
         # Skip adventure mode reactions. They won't be 'permitted'
@@ -85,17 +87,49 @@ sub check_reactions {
             $permitted_reaction{$1}{$filename}++;
         }
         elsif (/\[REACTION:([^\]]+)\]/) {
+            $reaction = $1; # Remeber this for hotkey conflicts
             $defined_reaction{$1}{$filename}++;
+        }
+        elsif (/\[BUILDING:(?<building>[^:]+):(?<hotkey>[^]]+)\]/) {
+
+            # Skip 'none' hotkeys. Also, WTF, are there two ways of
+            # specify a hotkey isn't there?
+            next if $+{hotkey} =~ /^(?:CUSTOM_)?NONE$/;
+
+            # If reactions are in different files, we'll assume
+            # they're for different races, and it's okay if they
+            # have the same hotkey.
+
+            # Yes, we're totally munging keys into a string here to
+            # simplify the conflict detection code later on.
+
+            my $key = sprintf("%-30s%-30s%-15s",$filename, $+{building}, $+{hotkey});
+
+            push( @{$hotkey{$key}}, $reaction);
         }
     }
 
     # Errors we spot:
     #   * Reaction is permitted, but not defined
     #   * Reaction is defined, but not permitted
+    #   * Hotkey is over-defined
 
     say show_hash_diff(\%permitted_reaction, \%defined_reaction, "Permitted, but not defined (BUGS!)");
 
     say show_hash_diff(\%defined_reaction, \%permitted_reaction, "Defined, but not permitted (WARNING)");
+
+    # Show hotkey conflicts
+
+    say "\n\n== Hotkey Conflicts ==\n\n";
+
+    foreach my $key (sort keys %hotkey) {
+
+        my $count = @{$hotkey{$key}};
+
+        if ($count > 1) {       # Conflict!
+            say "$key ($count)";
+        }
+    }
 
 }
 
