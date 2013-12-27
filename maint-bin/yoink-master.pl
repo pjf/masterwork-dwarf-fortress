@@ -12,6 +12,7 @@ use IPC::System::Simple qw(capture);
 # on github. :)
 my @branches = qw(
     unified
+    master_4g_beta
 );
 
 # Remember our current branch.
