@@ -3,7 +3,10 @@ use v5.10.0;
 use strict;
 use warnings;
 use autodie;
+use FindBin qw($Bin);
 use IPC::System::Simple qw(capture systemx);
+
+chdir("$Bin/..");   # Move to root directory of repo
 
 my $UPSTREAM      = 'upstream';     # git branch with official MWDF latest.
 my $PATCHLOG_FILE = 'PATCHLOG.txt'; # Tiny git history goes here.
@@ -28,9 +31,26 @@ foreach my $branch (@BRANCHES) {
     make_patch_from_branch($branch);
 }
 
+export_probability_syndrome();
+
 # Return to our original branch
 say "Returning to $now_branch";
 systemx('git','checkout',$now_branch);
+
+sub export_probability_syndrome { 
+    my $zipname = 'probability-syndrome.zip';
+
+    # Export probability-syndrome from master
+    systemx('git','checkout','master');
+    systemx('zip', '-q', $zipname,
+        'Dwarf Fortress/hack/scripts/probability-syndrome.rb',
+        'Dwarf Fortress/raw/objects/inorganic_probability_syndrome.txt',
+    );
+
+    rename($zipname, "$EXPORT_DIR/$zipname");
+    
+    return;
+}
 
 sub make_patch_from_branch {
     my ($branch) = @_;
