@@ -12,13 +12,17 @@ use File::Spec;
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
 chomp($now_branch);
 
-# Sync branches and export patches
+# Sync branches
 systemx(File::Spec->catdir($Bin, 'yoink-master.pl'));
-systemx(File::Spec->catdir($Bin, 'export-patches.pl'));
 
 # Make sure we're on master before we do a push
 systemx(qw(git checkout master));
 systemx(qw(git push));
+
+# Export patches
+systemx(File::Spec->catdir($Bin, 'export-patches.pl'));
+
+# And return home...
 systemx(qw(git checkout), $now_branch);
 
 # All done!

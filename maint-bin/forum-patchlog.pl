@@ -43,9 +43,10 @@ Paul Fenwick (pjf@cpan.org)
 
 my %opts = (
     T => 0, # 'text', show without markup
+    a => 0, # 'all', always show since upstream
 );
 
-getopts('T',\%opts);
+getopts('Ta',\%opts);
 
 my $REPO_ROOT = "https://github.com/pjf/masterwork-dwarf-fortress";
 
@@ -54,9 +55,13 @@ chomp($now_branch);
 
 my $parent = ($now_branch eq 'master') ? "upstream" : "master";
 
+# -a (all) forces upstream
+if ($opts{a}) { $parent = 'upstream' }
+
 my $EXCLUDED_COMMIT_RE = qr{(?:
       Merge\ branch\ '\w+'
     | Merge\ pull\ request
+    | Merge\ remote-tracking\ branch
     | maint-bin:
     | .* \#dev\b
 )}msx;
@@ -64,7 +69,7 @@ my $EXCLUDED_COMMIT_RE = qr{(?:
 # Get our patches
 
 my @patch_log = 
-    grep { not /^\w+ $EXCLUDED_COMMIT_RE/ } capture("git log --oneline $parent..HEAD");
+    grep { not /^\w+ $EXCLUDED_COMMIT_RE/ } capture(qq{git log --no-merges --pretty=format:"%h %s (%aN)" $parent..HEAD});
 ;
 
 chomp @patch_log;

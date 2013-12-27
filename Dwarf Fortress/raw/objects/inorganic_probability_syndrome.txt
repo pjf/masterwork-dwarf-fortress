@@ -1,0 +1,71 @@
+inorganic_probability_syndrome
+
+[OBJECT:INORGANIC]
+
+# Including the PROBABILITY_TABLE stone in our reaction causes the
+# probability-syndrome script to scan it, build a probability table, and
+# execute one command according to the weightings listed
+#
+# For example the following would effectively roll 1d5,
+# and initiate an ambush by elves, humans, drow, dwarves,
+# or have no effect, based upon the result.
+#
+# [PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROBABILITY_TABLE]
+#     [PRODUCT:20:1:BOULDER:NONE:INORGANIC:SIEGE_ELF]
+#     [PRODUCT:20:1:BOULDER:NONE:INORGANIC:SIEGE_HUMAN]
+#     [PRODUCT:20:1:BOULDER:NONE:INORGANIC:SIEGE_DROW]
+#     [PRODUCT:20:1:BOULDER:NONE:INORGANIC:SIEGE_DWARF]
+
+
+[INORGANIC:PROBABILITY_TABLE]
+    [USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+    [SYNDROME]
+        [SYN_CLASS:\AUTO_SYNDROME]
+        [SYN_CLASS:\COMMAND]
+        [SYN_CLASS:probability-syndrome]
+            [SYN_CLASS:init]
+            [SYN_CLASS:\REACTION_INDEX]
+            [SYN_CLASS:\WORKER_ID]
+            [SYN_CLASS:\LOCATION]
+
+# Sample inorganics showing how to code a probability table entry.
+
+[INORGANIC:SIEGE_ELF]
+    [USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+    [SYNDROME]
+        [SYN_CLASS:\AUTO_SYNDROME]
+        [SYN_CLASS:\COMMAND]
+        [SYN_CLASS:probability-syndrome][SYN_CLASS:cmd]
+            [SYN_CLASS:force]
+            [SYN_CLASS:siege]
+            [SYN_CLASS:FOREST]
+
+[INORGANIC:SIEGE_HUMAN]
+    [USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+    [SYNDROME]
+        [SYN_CLASS:\AUTO_SYNDROME]
+        [SYN_CLASS:\COMMAND]
+        [SYN_CLASS:probability-syndrome][SYN_CLASS:cmd]
+            [SYN_CLASS:force]
+            [SYN_CLASS:siege]
+            [SYN_CLASS:PLAINS]
+
+[INORGANIC:SIEGE_DWARF]
+    [USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+    [SYNDROME]
+        [SYN_CLASS:\AUTO_SYNDROME]
+        [SYN_CLASS:\COMMAND]
+        [SYN_CLASS:probability-syndrome][SYN_CLASS:cmd]
+            [SYN_CLASS:force]
+            [SYN_CLASS:siege]
+            [SYN_CLASS:DWARF]
+
+[INORGANIC:SIEGE_DROW]
+    [USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+    [SYNDROME]
+        [SYN_CLASS:\AUTO_SYNDROME]
+        [SYN_CLASS:\COMMAND]
+        [SYN_CLASS:probability-syndrome][SYN_CLASS:cmd]
+            [SYN_CLASS:force]
+            [SYN_CLASS:siege]
+            [SYN_CLASS:DROW]
