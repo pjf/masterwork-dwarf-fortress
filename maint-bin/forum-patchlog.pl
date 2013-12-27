@@ -69,7 +69,7 @@ my $EXCLUDED_COMMIT_RE = qr{(?:
 # Get our patches
 
 my @patch_log = 
-    grep { not /^\w+ $EXCLUDED_COMMIT_RE/ } capture("git log --oneline $parent..HEAD");
+    grep { not /^\w+ $EXCLUDED_COMMIT_RE/ } capture(qq{git log --no-merges --pretty=format:"%h %s (%aN)" $parent..HEAD});
 ;
 
 chomp @patch_log;
