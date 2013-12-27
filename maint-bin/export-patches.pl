@@ -68,15 +68,15 @@ sub make_patch_from_branch {
     my @to_package = grep { not m{$EXCLUDED_FILES_RE} } @changed_files;
 
     # Write our patch-log
-    my @patch_log = capture("git log --oneline $UPSTREAM..HEAD");
+    my $patch_log = capture("$Bin/forum-patchlog.pl -Ta");
 
-    # Filter 'merge' messages from patch log
-    @patch_log = grep { not /^\w+ Merge branch '/ } @patch_log;
+    say "Patchlog generated";
 
     open(my $patchlog_fh, '>', $PATCHLOG_FILE);
+
     my $date = gmtime();
     say {$patchlog_fh} "# Patches on '$branch' generated at $date GMT\n";
-    print {$patchlog_fh} @patch_log;
+    print {$patchlog_fh} $patch_log;
     close($patchlog_fh);
 
     # Package!
