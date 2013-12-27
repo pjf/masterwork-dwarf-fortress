@@ -72,7 +72,7 @@ plant_grasses
 	[GRASS]
 	[GRASS_TILES:'.':',':'`':''']
 	[GRASS_COLORS:2:0:1:2:0:0:6:0:1:6:0:0]
-	[WET][DRY][EVIL][BIOME:ALL_MAIN]
+	[WET][DRY][EVIL][SYNDROME][SYN_NAME:madness from eating corrupted grass][SYN_INGESTED][CE_ADD_TAG:OPPOSED_TO_LIFE:PROB:15:START:400:END:23600][BIOME:ALL_MAIN]
 
 [PLANT:EYEBALL2]
 	[NAME:marsh shroom][NAME_PLURAL:marsh shrooms][ADJ:marsh shroom]
@@ -81,7 +81,7 @@ plant_grasses
 	[GRASS]
 	[GRASS_TILES:'.':',':'`':''']
 	[GRASS_COLORS:2:0:1:2:0:0:6:0:1:6:0:0]
-	[WET][DRY][EVIL][BIOME:ALL_MAIN]
+	[WET][DRY][EVIL][SYNDROME][SYN_NAME:madness from eating corrupted grass][SYN_INGESTED][CE_ADD_TAG:OPPOSED_TO_LIFE:PROB:15:START:400:END:23600][BIOME:ALL_MAIN]
 
 [PLANT:WORMY TENDRILS2]
 	[NAME:shadow thistle][NAME_PLURAL:shadow thistles][ADJ:shadow thistle]
@@ -90,7 +90,7 @@ plant_grasses
 	[GRASS]
 	[GRASS_TILES:242:243:169:170]
 	[GRASS_COLORS:5:0:1:5:0:1:5:0:0:0:0:1]
-	[WET][DRY][EVIL][BIOME:ALL_MAIN]
+	[WET][DRY][EVIL][SYNDROME][SYN_NAME:madness from eating corrupted grass][SYN_INGESTED][CE_ADD_TAG:OPPOSED_TO_LIFE:PROB:15:START:400:END:23600][BIOME:ALL_MAIN]
 
 [PLANT:EYEBALL]
 	[NAME:marsh shroom][NAME_PLURAL:marsh shrooms][ADJ:marsh shroom]
@@ -99,7 +99,7 @@ plant_grasses
 	[GRASS]
 	[GRASS_TILES:'O':'o':9:248]
 	[GRASS_COLORS:7:0:1:7:0:0:7:0:0:0:0:1]
-	[WET][DRY][EVIL][BIOME:ALL_MAIN]
+	[WET][DRY][EVIL][SYNDROME][SYN_NAME:madness from eating corrupted grass][SYN_INGESTED][CE_ADD_TAG:OPPOSED_TO_LIFE:PROB:15:START:400:END:23600][BIOME:ALL_MAIN]
 
 NOSTANDARTCAVERN!PLANT:MOSS]
 	NOSTANDARTCAVERN!ALL_NAMES:moss]

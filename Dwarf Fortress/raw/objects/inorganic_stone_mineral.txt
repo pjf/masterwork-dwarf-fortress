@@ -2174,7 +2174,7 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_STRAIN_AT_YIELD:175]
 	[MAX_EDGE:15000]
 
-//triple (30 times actually) damage against EVIL
+//30 times damage against EVIL
 [INORGANIC:MOONSILVER]
 	-USE_MATERIAL_TEMPLATE:METAL_TEMPLATE-
 	[STATE_NAME_ADJ:ALL_SOLID:moonsilver]
@@ -2208,9 +2208,9 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_FRACTURE:170000]
 	[BENDING_STRAIN_AT_YIELD:120]
 	[MAX_EDGE:10000]
-	[REACTION_CLASS:SILVER_COATING] 
+	[REACTION_CLASS:SILVER_COATING] [ITEMS_WEAPON]
 
-//triple (30 times actually) damage against GOOD
+//30 times damage against GOOD
 [INORGANIC:SHADESILVER]
 	-USE_MATERIAL_TEMPLATE:METAL_TEMPLATE-
 	[STATE_NAME_ADJ:ALL_SOLID:shadesilver]
@@ -2244,4 +2244,4 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_FRACTURE:170000]
 	[BENDING_STRAIN_AT_YIELD:120]
 	[MAX_EDGE:10000]
-	[REACTION_CLASS:SILVER_COATING] 
+	[REACTION_CLASS:SILVER_COATING] [ITEMS_WEAPON]

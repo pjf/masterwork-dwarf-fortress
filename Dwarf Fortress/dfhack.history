@@ -1,4 +1,18 @@
 die
+fastdwarf 1
+fastdwarf 0
+fastdwarf 1
+points 10000
+dwarves 25
+die
+points 250000
+dwarves 50
+die
+createitem WEAPON:ITEM_WEAPON_PICK INORGANIC:IRON
+createitem PICK INORGANIC:IRON
+die
+fastdwarf 1
+die
 itemsyndrome enable
 die
 dir
@@ -84,16 +98,3 @@ spawn FORGOTTEN_BEAST_2 0 Omgthatsawesome
 spawn FORGOTTEN_BEAST_1 0 Omgthatsawesome
 spawn DWARF 0 Clark
 die
-feature show 8
-feature show 7
-feature show 6
-feature show 5
-feature show 
-feature show 4
-feature show 3
-feature show 2
-feature show 1
-feature list
-revflood
-revflood help
-revreveal

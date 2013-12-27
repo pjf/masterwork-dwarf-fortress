@@ -86,7 +86,6 @@ Invoking: diggingInvaders setDelay ANT_MAN destroySmoothConstruction -1
 Invoking: diggingInvaders add ORC
 Invoking: diggingInvaders setCost ORC destroyBuilding 1
 Invoking: diggingInvaders setCost ORC dig -1
-DFHack is running.
 Invoking: diggingInvaders setCost ORC walk 0
 Invoking: diggingInvaders setCost ORC destroyRoughConstruction 1
 Invoking: diggingInvaders setCost ORC destroySmoothConstruction 1
@@ -97,6 +96,7 @@ Invoking: diggingInvaders setDelay ORC destroySmoothConstruction 50
 Invoking: diggingInvaders add FORGOTTEN_BEAST_1
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 destroyBuilding -1
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 dig 5
+DFHack is running.
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 walk 0
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 destroyRoughConstruction -1
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 destroySmoothConstruction -1
@@ -522,4 +522,17 @@ Invoking: binpatch apply weaponrack-unassign
 Invoking: binpatch apply armorstand-capacity
 Invoking: fix/growthbug enable
 Invoking: cls
+Invoking: dwarves 25
+Invoking: points 10000
+Invoking: fastdwarf 1
+Invoking: fastdwarf 0
+Invoking: fastdwarf 1
+\WORKER_ID is not a recognized command.
+Invoking: gui/siege-engine
+UNKNOWN CLASS 'dfhack_lua_viewscreen@DFHack': vtable = 0x1bebcac
+Invoking: gui/siege-engine
+Invoking: gui/siege-engine
+Invoking: gui/siege-engine
+Invoking: gui/siege-engine
+Invoking: gui/siege-engine
 Invoking: die

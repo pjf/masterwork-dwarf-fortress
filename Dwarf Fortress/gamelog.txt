@@ -3,3 +3,513 @@ This is the gamelog. Every annoucnement of every fortress can be found here.
 ---
 
 *** STARTING NEW GAME ***
+*** STARTING NEW GAME ***
+Generating world using parameter set DIVERSE(Many Biomes)
+ Seed: 31337
+ History Seed: 733133752
+ Name Seed: 2188605780
+ Creature Seed: 500403440
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+** Starting New Outpost **
+The Stray Drake (Tame) has been slaughtered.
+The Stray Cragtooth Boar (Tame) has been slaughtered.
+The Stray Changeling (Tame) has been slaughtered.
+The Stray Pekyt (Tame) has been slaughtered.
+*** STARTING NEW GAME ***
+Generating world using parameter set CREATE WORLD NOW = 1353333
+ Seed: uwkMq6SGOQmcCcIIaCSk
+ History Seed: G04o2mEIAywS0QEUGOMc
+ Name Seed: MEiok0kIyKGg4SQUyycE
+ Creature Seed: UwCqYqSuIgoue6Mo04CS
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+*** STARTING NEW GAME ***
+Generating world using parameter set CREATE WORLD NOW = 1353333
+ Seed: 1rMQ36gIu2RRZ5Lz9GRS
+ History Seed: vQQz8oRwQHzWnKB2TXJM
+ Name Seed: B5SXbCHRD47Cw9ZxPX5i
+ Creature Seed: st6w0SS6GSOnUrsYGfve
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+** Starting New Outpost **
+The expedition leader is blushed and has bloodshot eyes!
+The expedition leader serial killer suddenly makes you feel very scared, but you are not sure why!
+The Stray war Plump Helmet Man (Tame) has been slaughtered.
+The Stray Mountain Tuskox Bull (Tame) has been slaughtered.
+The Stray Moleweasel (Tame) has been slaughtered.
+Doren Kogsakdisuth, *Wrestler Recruit* cancels Construct Building: Job item lost or destroyed.
+The dwarves were unable to complete the Distillery.
+Zagel Kobrul, Peasant cancels Construct Building: Job item lost or destroyed.
+The dwarves were unable to complete the Carpenter's Workshop.
+*** STARTING NEW GAME ***
+Generating world using parameter set CREATE WORLD NOW = 1353333
+ Seed: DpQwLqqGAojjBJLt30b0
+ History Seed: jQg9a4lGw156tetufhlK
+ Name Seed: Xx2Nb0Txr4zSORrFFL7y
+ Creature Seed: SdGOm6IqOgcDmdAOqVrW
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+** Starting New Outpost **
+The Peasant looks hopeless and despondent!
+*** STARTING NEW GAME ***
+Generating world using parameter set CREATE WORLD NOW = 1333333
+ Seed: 75KIPk6Me41f3RBRZyvC
+ History Seed: NESZMiLoOrTW7KVgBlHi
+ Name Seed: ThGXL47d9wfwiLvRjJDq
+ Creature Seed: whOAOMkq2ic9w9CiMdVW
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+** Starting New Outpost **
+*** STARTING NEW GAME ***
+Generating world using parameter set DIVERSE(Many Biomes)
+ Seed: 31337
+ History Seed: 733133752
+ Name Seed: 2188605780
+ Creature Seed: 500403440
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+** Starting New Outpost **
+The Peasant studies the refuse stockpile!
+The Stray Boozebelly Goat (Tame) has been slaughtered.
+The Stray Mastiff Puppy (Tame) has been slaughtered.
+*** STARTING NEW GAME ***
+Generating world using parameter set DIVERSE(Many Biomes)
+ Seed: 31337
+ History Seed: 733133752
+ Name Seed: 2188605780
+ Creature Seed: 500403440
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+*** STARTING NEW GAME ***
+Generating world using parameter set DIVERSE(Many Biomes)
+ Seed: 31337
+ History Seed: 733133752
+ Name Seed: 2188605780
+ Creature Seed: 500403440
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+*** STARTING NEW GAME ***
+Generating world using parameter set PLAINS (Good Biomes)
+ Seed: 31338
+ History Seed: 3757804509
+ Name Seed: 1681632938
+ Creature Seed: 825444517
+Nothing has arrived on the calendar.
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+** Starting New Outpost **
+The expedition leader is blushed and has bloodshot eyes!
+The expedition leader stands up.
+The expedition leader stands up.
+Feb Elcurustuth, Stray Kobold (Tame) has been slaughtered.
+Mistem Nilunoslan, Stray Kobold Child (Tame) has been slaughtered.
+Sosh Akrulvathez, Stray Kobold (Tame) has been slaughtered.
+Vucar Datanmeng, Peasant cancels Make bone javelins: Needs unrotten bone body part.
+Vucar Datanmeng, Peasant cancels Make bone breastplate: Needs 3 unrotten bone body part.
+Vucar Datanmeng, Peasant cancels Make bone helm: Needs unrotten bone body part.
+x2
+x3
+x4
+Vucar Datanmeng, Peasant cancels Make bone helm: Needs unrotten bone body part.
+Itur Ustuthrozsed, Stray Kobold Child (Tame) has been slaughtered.
+The Stray Cragtooth Boar (Tame) has been slaughtered.
+The Stray Mastiff (Tame) has been slaughtered.
+*** STARTING NEW GAME ***
+Generating world using parameter set MANDELBROT (Volcano-Lake)
+ Seed: NXwyJYQYycFfrh5rR6Je
+ History Seed: r64nEwTeSvjUvclEjbfI
+ Name Seed: 9xGLl2nTfaLK8FTRzfj4
+ Creature Seed: SDAokKG2Qc4j09o8qTL4
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+** Starting New Outpost **
+The Dwarf Peasant insomniac does not want to go to sleep just yet!
+You have struck clear zircon!
+You have struck old chest!
+You have struck chromite!
+Ushrir Kuletongos has become a Miner.
+A snow storm has come.
+The weather has cleared.
+You have struck rocksalt!
+A snow storm has come.
+The Stray Mastiff (Tame) has been slaughtered.
+The Stray Mastiff (Tame) has been slaughtered.
+The Stray Mastiff (Tame) has been slaughtered.
+The Stray Mastiff (Tame) has been slaughtered.
+The Stray Mountain Tuskox Bull (Tame) has been slaughtered.
+You have struck galena bearing rock!
+You have struck raw mithril!
+You have struck gold bearing rock!
+A snow storm has come.
+The weather has cleared.
+You have struck malachite bearing rock!
+You have struck lapis lazuli!
+Ushrir Kuletongos, Miner cancels Store Item in Barrel: Interrupted by Forest Spider.
+The Miner runs for his life!
+The Forest Spider has become enraged!
+The Forest Spider shoots out thick strands of webbing!
+Monom Amostterstum, Dwarf Peasant insomniac cancels Store Item in Stockpile: Interrupted by Forest Spider.
+The Dwarf Peasant insomniac runs for his life!
+Forest Spider is no longer enraged.
+Monom Amostterstum, Dwarf Peasant insomniac cancels Store Item in Stockpile: Interrupted by Forest Spider.
+Monom Amostterstum, Dwarf Peasant insomniac cancels Store Item in Stockpile: Interrupted by Forest Spider.
+The Forest Spider shoots out thick strands of webbing!
+Ib Tosidastan, Peasant cancels Construct Building: Interrupted by Forest Spider.
+The dwarves suspended the construction of Volcanic Oracle of Armok.
+The Peasant runs for his life!
+The Forest Spider has become enraged!
+The Dwarf Peasant insomniac is caught up in the web!
+The Dwarf Peasant insomniac falls over.
+Monom Amostterstum, Dwarf Peasant insomniac cancels Store Item in Stockpile: Webbed.
+The Forest Spider bites The Peasant in the head, bruising the muscle and bruising the neck's bone through the (cotton fiber hood)!
+The Forest Spider latches on firmly!
+Ib Tosidastan, Peasant cancels Sleep: Interrupted by Forest Spider.
+The Dwarf Peasant insomniac is partially free of the web.
+The Peasant regains consciousness.
+The Dwarf Peasant insomniac is completely free of the web.
+The Peasant loses hold of the iron pick.
+The Peasant loses hold of the (cotton fiber hood).
+The Forest Spider shakes The Peasant around by the head and the severed part sails off in an arc!
+The head is ripped away and remains in The Forest Spider's grip!
+Ib Tosidastan, Peasant has been struck down.
+The Dwarf Peasant insomniac stands up.
+The Forest Spider shoots out thick strands of webbing!
+The Dwarf Peasant insomniac is caught up in the web!
+The Dwarf Peasant insomniac falls over.
+The Dwarf Peasant insomniac is caught up in the web!
+The Forest Spider bites The Dwarf Peasant insomniac in the head, bruising the muscle through the (cotton fiber hood)!
+The Forest Spider latches on firmly!
+The Dwarf Peasant insomniac loses hold of the (cotton fiber hood).
+The Forest Spider shakes The Dwarf Peasant insomniac around by the head and the severed part sails off in an arc!
+The head is ripped away and remains in The Forest Spider's grip!
+Ushrir Kuletongos, Miner cancels Store Item in Stockpile: Interrupted by Forest Spider.
+The Miner runs for his life!
+Tostekast, Forest Spider is no longer enraged.
+Ushrir Kuletongos, Miner cancels Drink: Interrupted by Forest Spider.
+The Forest Spider shoots out thick strands of webbing!
+The Miner is caught up in the web!
+The Miner falls over.
+Ushrir Kuletongos, Miner cancels Drink: Webbed.
+Urosh Oddomatrid, expedition leader cancels Store Item in Stockpile: Interrupted by Forest Spider.
+The expedition leader runs for his life!
+The Miner is partially free of the web.
+The Miner is completely free of the web.
+Monom Amostterstum, Dwarf Peasant insomniac has been found dead.
+The Miner stands up.
+The Miner is caught up in the web!
+The Miner falls over.
+Ushrir Kuletongos, Miner cancels Drink: Webbed.
+The Miner is partially free of the web.
+The Miner is completely free of the web.
+The Miner stands up.
+The expedition leader is caught up in the web!
+The expedition leader falls over.
+Urosh Oddomatrid, expedition leader cancels Dig: Webbed.
+The Forest Spider has become enraged!
+The expedition leader is partially free of the web.
+The expedition leader is completely free of the web.
+The expedition leader stands up.
+The expedition leader is caught up in the web!
+The expedition leader falls over.
+Urosh Oddomatrid, expedition leader cancels Store Item in Stockpile: Webbed.
+The expedition leader is partially free of the web.
+The expedition leader is completely free of the web.
+The expedition leader stands up.
+Forest Spider is no longer enraged.
+Doren Ongosud, Peasant cancels Clean: Webbed.
+Doren Ongosud, Peasant cancels Drink: Webbed.
+Ushrir Kuletongos, Miner cancels Store Item in Stockpile: Webbed.
+Doren Ongosud, Peasant cancels Store Item in Stockpile: Webbed.
+Doren Ongosud, Peasant cancels Store Item in Stockpile: Webbed.
+The Forest Spider has become enraged!
+The Forest Spider shoots out thick strands of webbing!
+The Stray Mountain Tuskox leaps at The Forest Spider!
+The Stray Mountain Tuskox gores The Forest Spider in the right first leg with her right tusk, tearing the fat!
+A ligament has been torn and a tendon has been torn!
+The Stray Mountain Tuskox collides with The Forest Spider!
+The Forest Spider is knocked over and tumbles backward!
+The Forest Spider slams into an obstacle!
+The Stray Mountain Tuskox stands up.
+The Forest Spider stands up.
+The Stray Mountain Tuskox gores The Forest Spider in the left fourth foot with her left tusk, tearing apart the fat!
+A ligament has been torn and a tendon has been torn!
+The Stray Mountain Tuskox gores The Forest Spider in the left mandible with her left tusk, tearing the muscle!
+An artery has been opened by the attack, a ligament has been torn and a tendon has been torn!
+The Forest Spider attacks The Stray Mountain Tuskox but She jumps away!
+The Stray Mountain Tuskox slams into an obstacle!
+The Stray Mountain Tuskox's head takes the full force of the impact, bruising the muscle and bruising the neck's bone!
+The Stray Mountain Tuskox's upper body takes the full force of the impact, bruising the muscle and bruising the left lung!
+The Stray Mountain Tuskox is having trouble breathing!
+The Forest Spider bites The Stray Mountain Tuskox in the right front hoof from behind, but the attack glances away!
+Tostekast, Forest Spider is no longer enraged.
+The Forest Spider bites The Stray Mountain Tuskox in the left front hoof from behind, but the attack glances away!
+The Stray Mountain Tuskox stands up.
+The Forest Spider bites The Stray Mountain Tuskox in the lower body, tearing the fat and bruising the muscle!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider latches on firmly!
+The Stray Mountain Tuskox falls over.
+The Forest Spider shakes The Stray Mountain Tuskox around by the lower body, tearing apart the lower body's pelt!
+The Forest Spider has become enraged!
+The Forest Spider shakes The Stray Mountain Tuskox around by the lower body, tearing apart the lower body's pelt!
+The Forest Spider shoots out thick strands of webbing!
+The Stray Mountain Tuskox is caught up in the web!
+The Forest Spider bites The Stray Mountain Tuskox in the head, tearing the fat and bruising the muscle and bruising the brain!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider latches on firmly!
+The Forest Spider shakes The Stray Mountain Tuskox around by the head, tearing apart the head's pelt and bruising the fat!
+The Forest Spider bites The Stray Mountain Tuskox in the head, tearing the fat and bruising the muscle and bruising the brain!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider latches on firmly!
+The Stray Mountain Tuskox regains consciousness.
+The Stray Mountain Tuskox gives in to pain.
+The Forest Spider shakes The Stray Mountain Tuskox around by the head, tearing apart the head's pelt and bruising the fat!
+The Forest Spider bites The Stray Mountain Tuskox in the head, tearing the fat and bruising the muscle and bruising the brain!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider latches on firmly!
+The Forest Spider shakes The Stray Mountain Tuskox around by the head, tearing apart the head's pelt and bruising the fat!
+The Forest Spider bites The Stray Mountain Tuskox in the head, tearing the fat and bruising the muscle and bruising the brain!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider latches on firmly!
+The Forest Spider shakes The Stray Mountain Tuskox around by the head, tearing apart the head's pelt and bruising the fat!
+The Stray Mountain Tuskox regains consciousness.
+The Stray Mountain Tuskox is partially free of the web.
+The Stray Mountain Tuskox is completely free of the web.
+The Stray Mountain Tuskox breaks the grip of The Forest Spider's mouth on The Stray Mountain Tuskox's head.
+The Forest Spider bites The Stray Mountain Tuskox in the right front lower leg, tearing the fat and bruising the muscle!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider latches on firmly!
+The Stray Mountain Tuskox breaks the grip of The Forest Spider's mouth on The Stray Mountain Tuskox's right front lower leg.
+The Forest Spider bites The Stray Mountain Tuskox in the left tusk, but the attack glances away!
+The Stray Mountain Tuskox stands up.
+The Forest Spider bites The Stray Mountain Tuskox in the right tusk, but the attack glances away!
+The Forest Spider shoots out thick strands of webbing!
+The Stray Mountain Tuskox is caught up in the web!
+The Stray Mountain Tuskox falls over.
+The Stray Mountain Tuskox is no longer stunned.
+The Stray Mountain Tuskox is partially free of the web.
+The Stray Mountain Tuskox is completely free of the web.
+The Forest Spider bites The Stray Mountain Tuskox in the left front hoof, but the attack glances away!
+The Stray Mountain Tuskox is caught up in the web!
+The Stray Mountain Tuskox is partially free of the web.
+The Stray Mountain Tuskox is completely free of the web.
+The Forest Spider bites The Stray Mountain Tuskox in the left rear upper leg, tearing the fat and bruising the muscle!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider latches on firmly!
+The Stray Mountain Tuskox gives in to pain.
+Doren Ongosud, Peasant cancels Store Item in Stockpile: Webbed.
+Tostekast, Forest Spider is no longer enraged.
+The Forest Spider shakes The Stray Mountain Tuskox around by the left rear upper leg, tearing apart the left rear upper leg's pelt!
+The Forest Spider bites The Stray Mountain Tuskox in the head, tearing the fat and bruising the muscle and bruising the brain!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider latches on firmly!
+The Forest Spider shakes The Stray Mountain Tuskox around by the head, tearing apart the head's pelt and bruising the fat!
+The Forest Spider bites The Stray Mountain Tuskox in the head, tearing the fat and bruising the muscle and bruising the brain!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider latches on firmly!
+The Forest Spider shakes The Stray Mountain Tuskox around by the head, tearing apart the head's pelt and bruising the fat!
+Doren Ongosud, Peasant cancels Store Item in Stockpile: Webbed.
+The Forest Spider shakes The Stray Mountain Tuskox around by the head, tearing apart the head's pelt and bruising the fat!
+The Forest Spider has become enraged!
+The Forest Spider shakes The Stray Mountain Tuskox around by the head, tearing apart the head's pelt and bruising the fat!
+The Forest Spider bites The Stray Mountain Tuskox in the head, tearing the fat and bruising the muscle and bruising the brain!
+Forest spider venom is injected into the The Stray Mountain Tuskox's mountain tuskox blood!
+The Forest Spider shoots out thick strands of webbing!
+Doren Ongosud, Peasant cancels Dig: Webbed.
+Imush Onuliseth, Peasant cancels Dig: Interrupted by Forest Spider.
+The Peasant runs for his life!
+Ushrir Kuletongos, Miner cancels Store Item in Barrel: Interrupted by Forest Spider.
+The Miner runs for his life!
+Tostekast, Forest Spider is no longer enraged.
+The Forest Spider shoots out thick strands of webbing!
+The Stray Mountain Tuskox (Tame) has been found dead.
+The Forest Spider has become enraged!
+Doren Ongosud, Peasant cancels Dig: Interrupted by Forest Spider.
+The Peasant runs for his life!
+The Forest Spider shoots out thick strands of webbing!
+Tostekast, Forest Spider is no longer enraged.
+The Forest Spider has become enraged!
+Ushrir Kuletongos, Miner cancels Store Item in Stockpile: Interrupted by Forest Spider.
+The Miner runs for his life!
+Forest Spider is no longer enraged.
+Tostekast, Forest Spider is no longer enraged.
+Doren Ongosud, Peasant cancels Store Item in Stockpile: Webbed.
+Ushrir Kuletongos, Miner cancels Store Item in Stockpile: Webbed.
+Doren Ongosud, Peasant cancels Store Item in Stockpile: Webbed.
+Urosh Oddomatrid, expedition leader cancels Store Item in Stockpile: Webbed.
+Urosh Oddomatrid, expedition leader cancels Store Item in Stockpile: Webbed.
+Doren Ongosud, Peasant cancels Store Item in Stockpile: Webbed.
+Urosh Oddomatrid, expedition leader cancels Store Item in Stockpile: Webbed.
+Ushrir Kuletongos, Miner cancels Store Item in Stockpile: Webbed.
+Ushrir Kuletongos, Miner cancels Store Item in Stockpile: Webbed.
+Imush Onuliseth, Peasant cancels Store Item in Stockpile: Interrupted by Snow Leopard.
+It is now summer.
+Ushrir Kuletongos, Miner cancels Give Water: Need empty bucket.
+Urist Sazirbukog, Peasant is throwing a tantrum!
+Urist Sazirbukog, Peasant has calmed down.
+Urist Sazirbukog, Peasant has transformed into a fully healed creature!
+Urist Sazirbukog, Fully Healed Creature has transformed into a dwarf!
+Urosh Oddomatrid, expedition leader cancels Store Item in Stockpile: Job item misplaced.
+Doren Ongosud, Peasant cancels Give Water: Need empty bucket.
+Imush Onuliseth, Peasant cancels Pray and offer a heart: Needs unrotten HEART_MAT-producing meat.
+x2
+Doren Ongosud, Peasant cancels Give Water: Need empty bucket.
+Doren Ongosud, Peasant has transformed into a fully healed creature!
+Doren Ongosud, Fully Healed Creature has transformed into a dwarf!
+Urosh Oddomatrid, expedition leader has transformed into a fully healed creature!
+Urosh Oddomatrid, expedition leader has transformed into a dwarf!
+Urist Sazirbukog, Peasant is throwing a tantrum!
+Urist Sazirbukog, Peasant cancels Construct Building: Throwing tantrum.
+The dwarves suspended the construction of Temple of Armok.
+Urosh Oddomatrid, expedition leader has transformed into a praying dwarf!
+Urist Sazirbukog, Peasant has calmed down.
+A snow storm has come.
+Some migrants have arrived.
+The Tanner is blushed and has bloodshot eyes!
+The Tanner stands up.
+The weather has cleared.
+Tazuk Lishngalak, Fisherdwarf cancels Drink: Interrupted by Foul Blendec.
+The Fisherdwarf runs for his life!
+The Peasant runs for his life!
+Ib Buketudib, Tanner has transformed into a fully healed creature!
+Ib Buketudib, Fully Healed Creature Tanner has transformed into a dwarf!
+Urosh Oddomatrid, expedition leader has transformed into a dwarven apostle!
+The expedition leader swears an oath of celibacy!
+The expedition leader swears an oath of celibacy!
+The expedition leader swears an oath of celibacy!
+Tazuk Lishngalak, Fisherdwarf cancels Store Item in Stockpile: Interrupted by Foul Blendec.
+The Fisherdwarf runs for his life!
+Tazuk Lishngalak, Fisherdwarf cancels Drink: Interrupted by Foul Blendec.
+x2
+x3
+x4
+The expedition leader swears an oath of celibacy!
+The expedition leader is caught in a burst of Become a Priestess!
+The expedition leader is caught in a burst of Become a Priest!
+The expedition leader is caught in a cloud of Become a Priestess!
+Urosh Oddomatrid, expedition leader has transformed into a praying dwarf!
+Tazuk Lishngalak, Fisherdwarf cancels Store Item in Barrel: Interrupted by Foul Blendec.
+The Fisherdwarf runs for his life!
+Ushrir Kuletongos, Miner has transformed into a sacrifice to Armok!
+Ushrir Kuletongos, Sacrifice To Armok Miner has transformed into a bloody heartless corpse!
+*** STARTING NEW GAME ***
+Generating world using parameter set DESERT (Volcanos)
+ Seed: Uy2uuKg8IIOEMkIYkCyy
+ History Seed: sM6yKwKk2YKkYYa6scGC
+ Name Seed: isUcCq62eg8aMI0oeS0U
+ Creature Seed: syGiCUYSuaSgUOKesY40
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+** Starting New Outpost **
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* stands up.
+The Peasant looks hopeless and despondent!
+The Peasant is blushed and has bloodshot eyes!
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* stands up.
+The *Guard Recruit* is blushed and has bloodshot eyes!
+The *Smiths-Guild Peasant* is blushed and has bloodshot eyes!
+The Fishermans Guild Dwarf *Fishers-Guild Peasant* insomniac does not want to go to sleep just yet!
+The Fishermans Guild Dwarf *Fishers-Guild Peasant* insomniac stands up.
+The *Nun of Armok* swears an oath of celibacy!
+The *Arcane Dwarf* is blushed and has bloodshot eyes!
+The *Nun of Armok* stands up.
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* swears an oath of celibacy!
+The Stray Drake (Tame) has been slaughtered.
+The *Nun of Armok* swears an oath of celibacy!
+The Stray Changeling (Tame) has been slaughtered.
+Cerol Kamukoddom, *Arcane Dwarf* cancels Construct Building: Creature occupying site.
+The dwarves suspended the construction of Butcher's Shop.
+The Stray Cave Turtle Hatchling (Tame) has been slaughtered.
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* swears an oath of celibacy!
+Cerol Kamukoddom, *Arcane Dwarf* cancels Construct Building: Creature occupying site.
+The dwarves suspended the construction of Butcher's Shop.
+The *Nun of Armok* stands up.
+The *Nun of Armok* swears an oath of celibacy!
+The Stray Moleweasel (Tame) has been slaughtered.
+The *Nun of Armok* stands up.
+The Stray Animated Iron Hammer (Tame) has been slaughtered.
+The *Nun of Armok* swears an oath of celibacy!
+The Stray Ironclad Cragtooth Boar (Tame) has been slaughtered.
+The *Nun of Armok* stands up.
+The *Nun of Armok* stands up.
+The *Nun of Armok* swears an oath of celibacy!
+The Stray Mastiff Puppy (Tame) has been slaughtered.
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* swears an oath of celibacy!
+The Stray Boozebelly Goat (Tame) has been slaughtered.
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* swears an oath of celibacy!
+The *Nun of Armok* swears an oath of celibacy!
+The Stray hunting Plump Helmet Man (Tame) has been slaughtered.
+The *Nun of Armok* swears an oath of celibacy!
+*** STARTING NEW GAME ***
+Generating world using parameter set CREATE WORLD NOW = 1343333
+ Seed: cYqUgm0G28gy8EuQGqCS
+ History Seed: kQOkIGosIIYayeyCy0Ao
+ Name Seed: OUEG8EIkWmgKKUiUYECK
+ Creature Seed: k0Uci4kaqSmgkEYwKuOO
+Nothing has arrived on the calendar.
+Spring has arrived on the calendar.
+** Starting New Outpost **
+The Dwarf Peasant schizophrenic glances around, as if looking for someone who is not here!
+It has started raining.
+Onul Osenur, *Smiths-Guild Peasant* cancels Construct Building: Item blocking site.
+The dwarves suspended the construction of Volcanic Oracle of Armok.
+Udib Suthmamkas, Peasant cancels Construct Building: Item blocking site.
+The dwarves suspended the construction of Volcanic Oracle of Armok.
+The Stray Female Horned Caveturtle (Tame) has been slaughtered.
+The Stray Horned Caveturtle (Tame) has been slaughtered.
+The Stray Female Boulder Crab (Tame) has been slaughtered.
+The Stray Cragtooth Boar (Tame) has been slaughtered.
+The Stray Doe Dewbeetle (Tame) has been slaughtered.
+The Stray Boulder Crab (Tame) has been slaughtered.
+The Stray Cragtooth Boar (Tame) has been slaughtered.
+The Stray Shaggy Badgerdog (Tame) has been slaughtered.
+The Stray Stag Dewbeetle (Tame) has been slaughtered.
+The Stray Moleweasel (Tame) has been slaughtered.
+The Stray Shaggy Badgerdog (Tame) has been slaughtered.
+The Stray Leatherwing Bat (Tame) has been slaughtered.
+The Stray Moleweasel (Tame) has been slaughtered.
+The Stray Leatherwing Bat (Tame) has been slaughtered.
+The Stray Bearded Cavernkeet Hen (Tame) has been slaughtered.
+The Stray Bearded Cavernkeet (Tame) has been slaughtered.
+The Dwarf Peasant schizophrenic glances around, as if looking for someone who is not here!
+The Stray Woolly Mountain Goat (Tame) has been slaughtered.
+x2
+The Stray Mountain Tuskox (Tame) has been slaughtered.
+The Stray Mountain Tuskox Bull (Tame) has been slaughtered.
+The Stray Mountain Tuskox Bull (Tame) has been slaughtered.
+The Stray Mountain Tuskox (Tame) has been slaughtered.
+The *Engineer-Guild Peasant* feels the goodwill of armok. Filled with new energy all movement seems faster and the body seems to carry the heaviest burdens with ease!
+The Brewer feels the goodwill of armok. Filled with new energy all movement seems faster and the body seems to carry the heaviest burdens with ease!
+The Brewer stands up.
+The weather has cleared.
+Fath Soshorkes, *Engineer-Guild Peasant* has transformed into a sacrifice to Armok!
+Fath Soshorkes, Sacrifice To Armok has transformed into a bloody heartless corpse!
+Udib Suthmamkas, Peasant has been bitten by a bog crawler!
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock.
+Fath Soshorkes, Bloody Heartless Corpse has been missing for a week.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock item.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock item.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock item.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock item.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock item.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock item.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard barrel.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard barrel.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock item.
+Kubuk Sethallim, Peasant cancels Load Catapult: Needs non-economic hard rock item.
