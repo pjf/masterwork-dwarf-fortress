@@ -1530,8 +1530,6 @@ TODO: Re-implement megabeast reactions and corpse stripping
 	[PERMITTED_REACTION:MILL_SUNBERRY] 
 	[PERMITTED_REACTION:MILL_ROOT_MUCK]	
 
-
-
 ##################################################################
 ##################     ARCHEOLOGY       ##########################
 ##################################################################
