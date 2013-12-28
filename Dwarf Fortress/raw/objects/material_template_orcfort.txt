@@ -1,0 +1,16 @@
+material_template_orcfort
+
+[OBJECT:MATERIAL_TEMPLATE]
+
+# Scalps for playable orcs!
+# Original template provided by Meph for McTeellox's Orc Rebalance
+# http://www.bay12forums.com/smf/index.php?topic=134547.msg4865715#msg4865715
+
+[MATERIAL_TEMPLATE:SCALP_TEMPLATE]
+    [STATE_COLOR:ALL:MAUVE]
+    [STATE_NAME_ADJ:ALL_SOLID:bloody]
+    [DISPLAY_COLOR:4:0:0]
+    [ROTS]
+    [BUTCHER_SPECIAL:MEAT:NONE]
+    [MEAT_NAME:NONE:scalp:scalps]
+    [REACTION_CLASS:SCLAP]

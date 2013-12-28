@@ -1,0 +1,59 @@
+creature_orcfort
+
+[OBJECT:CREATURE]
+
+# = Scalps for the orcish tech-tree =
+#
+# Great races (Orcs have specific workshops for these):
+#
+# - Drow
+# - Dwarves
+# - Elves
+# - Humans
+#
+# Unimplemented, but stage 2 potential:
+# - Automaton (questionable; use cogs?)
+# - Frost giants (although they melt, so...?)
+# - Warlock
+#
+# - Lesser scalps (anything that drops a PLANT:SOUL?)
+#
+# Not implemented, but potential to use:
+#
+# - Antmen (need better name than 'scalp')
+# - Batmen
+# - Gnomes
+# - Goblin
+# - Gremlin
+# - Kobold
+# - Orc
+# - Troglodyte
+#
+# TODO: At the very least we probably want some sort of generic scalp, so
+# that a great battle with the gnomes/trogs/whatevers can yield
+# buildmats
+
+[CREATURE:SCALP_DROW]
+    [NAME:dwarf:drow:drow]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:SCLAP_DROW]
+
+[CREATURE:SCALP_DWARF]
+    [NAME:dwarf:dwarves:dwarf]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:SCLAP_DWARF]
+
+[CREATURE:SCALP_ELF]
+    [NAME:elf:elves:elf]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:SCLAP_ELF]
+
+[CREATURE:SCALP_HUMAN]
+    [NAME:human:humans:human]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:SCLAP_HUMAN]
+
