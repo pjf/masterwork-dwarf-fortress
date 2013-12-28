@@ -3,7 +3,7 @@
 local args = {...}
  
 local function printItemSyndromeHelp()
-    print("Arguments:")
+    print("Arguments (non case-sensitive):")
     print('    "help": displays this dialogue.')
     print(" ")
     print('    "disable": disables the script.')
@@ -12,18 +12,21 @@ local function printItemSyndromeHelp()
     print(" ")
     print('    "contaminantson/contaminantsoff": toggles searching for contaminants.')
     print('    Disabling speeds itemsyndrome up greatly.')
+    print('    "transformReEquipOn/TransformReEquipOff": toggles transformation auto-reequip.')
 end
  
 itemsyndromedebug=false 
 
 function processArgs(args)
     for k,v in ipairs(args) do
-        v=string.lower(v)
+        v=v:lower()
         if v == "help" then printItemSyndromeHelp() return end
         if v == "debugon" then itemsyndromedebug = true end
         if v == "debugoff" then itemsyndromedebug = false end
         if v == "contaminantson" then itemsyndromecontaminants = true end
         if v == "contaminantsoff" then itemsyndromecontaminants = false end
+        if v == "transformreequipon" then transformationReEquip = true end
+        if v == "transformreequipoff" then transformationReEquip = false end
     end
 end
  
@@ -284,7 +287,7 @@ local function checkAndAddSyndrome(unit_id,new_equip,item_id)
             end
         end
     end
-    if transformation then dfhack.timeout(2,"ticks",function() moveAllToInventory(unit,unitInventory) end) end
+    if transformation and transformationReEquip then dfhack.timeout(2,"ticks",function() moveAllToInventory(unit,unitInventory) end) end
 end
 
 eventful.onInventoryChange.itemsyndrome=function(unit_id,item_id,old_equip,new_equip)
