@@ -7586,26 +7586,18 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [SPEC_HEAT:1]
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
-   [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   
-   was syn_class location
-   [SYN_CLASS:\WORKER_ID]
-    was SYN_CLASS:\REACTION_INDEX
+   [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME] autosyndrome command begins here
       [SYN_AFFECTED_CREATURE:DWARF:ALL][SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
-      [SYN_INHALED]
-      [SYN_CONTACT]
-      [CE_CAN_DO_INTERACTION:PROB:100:START:0:END:11060]
-    [CDI:INTERACTION:BLESSING_ATTRIBUTE]
-			[CDI:USAGE_HINT:GREETING]
-			[CDI:VERB:feel the goodwill of armok. Filled with new energy all movement seems faster and the body seems to carry the heaviest burdens with ease:feels the goodwill of armok. Filled with new energy all movement seems faster and the body seems to carry the heaviest burdens with ease:NA]
-			[CDI:TARGET:B:LINE_OF_SIGHT]
-			[CDI:TARGET_RANGE:B:25]
-			[CDI:WAIT_PERIOD:20]
-
-
-
-
-
+      [SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
+      [CE_CAN_DO_INTERACTION:PROB:100:START:0:END:160]
+         [CDI:INTERACTION:BLESSING_ATTRIBUTE]
+         [CDI:ADV_NAME:Bow]
+         [CDI:TARGET_RANGE:A:325]
+			[CDI:VERB:feel the goodwill of armok. Filled with new energy all movement seems faster and the body seems to carry the heaviest burdens with ease:feels the goodwill of armok. Filled with new energy all movement seems faster and the body seems to carry the heaviest burdens with ease. THIS APPLIES TO ALL DWARVES FOR ONE MONTH.:NA]
+         [CDI:MAX_TARGET_NUMBER:A:225]
+         [CDI:FREE_ACTION]
+		 
+		 
 
 [INORGANIC:BLESSING_COURAGE]
 [STATE_NAME_ADJ:GAS:Courage of Armok]
@@ -7613,24 +7605,16 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [SPEC_HEAT:1]
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
-   [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   
-   was syn_class location
-   [SYN_CLASS:\WORKER_ID]
-    was SYN_CLASS:\REACTION_INDEX
+   [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME] autosyndrome command begins here
       [SYN_AFFECTED_CREATURE:DWARF:ALL][SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
-      [SYN_INHALED]
-      [SYN_CONTACT]
-      [CE_CAN_DO_INTERACTION:PROB:100:START:0:END:11060]
-				[CDI:INTERACTION:BLESSING_COURAGE]
-				[CDI:USAGE_HINT:GREETING]
-				[CDI:VERB:feel the wrath of armok. Blessed with the berserker rage he feels neither pain nor fear:feels the wrath of armok. Blessed with the berserker rage he feels neither pain nor fear:NA]
-				[CDI:TARGET:B:LINE_OF_SIGHT]
-				[CDI:TARGET_RANGE:B:25]
-				[CDI:WAIT_PERIOD:20]
-
-
-
+      [SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
+      [CE_CAN_DO_INTERACTION:PROB:100:START:0:END:160]
+         [CDI:INTERACTION:BLESSING_COURAGE]
+         [CDI:ADV_NAME:Bow]
+         [CDI:TARGET_RANGE:A:325]
+				[CDI:VERB:feel the wrath of armok. Blessed with the berserker rage he feels neither pain nor fear:feels the wrath of armok. Blessed with the berserker rage he feels neither pain nor fear. THIS APPLIES TO ALL DWARVES FOR ONE MONTH.:NA]
+         [CDI:MAX_TARGET_NUMBER:A:225]
+         [CDI:FREE_ACTION]
 
 [INORGANIC:BLESSING_EMOTION]
    [USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
@@ -7638,23 +7622,16 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
    [SPEC_HEAT:1]
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
-   [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
-   
-   was syn_class location
-   [SYN_CLASS:\WORKER_ID]
-    was SYN_CLASS:\REACTION_INDEX
+   [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME] autosyndrome command begins here
       [SYN_AFFECTED_CREATURE:DWARF:ALL][SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
-      [SYN_INHALED]
-      [SYN_CONTACT]
-      [CE_CAN_DO_INTERACTION:PROB:100:START:0:END:11060]
-				[CDI:INTERACTION:BLESSING_EMOTION]
-				[CDI:USAGE_HINT:GREETING]
-				[CDI:VERB:'s mind is blank. Armoks blessing fills his body and leaves no room for his own emotions, all he can think of is that dwarves should never fight other dwarves:'s mind is blank. Armoks blessing fills his body and leaves no room for his own emotions, all he can think of is that dwarves should never fight other dwarves:NA]
-				[CDI:TARGET:B:LINE_OF_SIGHT]
-				[CDI:TARGET_RANGE:B:25]
-				[CDI:WAIT_PERIOD:20]
-
-
+      [SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]
+      [CE_CAN_DO_INTERACTION:PROB:100:START:0:END:160]
+         [CDI:INTERACTION:BLESSING_EMOTION]
+         [CDI:ADV_NAME:Bow]
+         [CDI:TARGET_RANGE:A:325]
+				[CDI:VERB:'s mind is blank. Armoks blessing fills his body and leaves no room for his own emotions, all he can think of is that dwarves should never fight other dwarves:'s mind is blank. Armoks blessing fills his body and leaves no room for his own emotions, all he can think of is that dwarves should never fight other dwarves. THIS APPLIES TO ALL DWARVES FOR ONE MONTH.:NA]
+         [CDI:MAX_TARGET_NUMBER:A:225]
+         [CDI:FREE_ACTION]
 
 
 [INORGANIC:ILLITHID_RANGED]
@@ -12223,7 +12200,7 @@ YESWARP[INORGANIC:TEARS_OF_ARMOK]
    [SPEC_HEAT:1]
    [IGNITE_POINT:NONE]
    [HEATDAM_POINT:1]
-   [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
+   [SYNDROME]   [SYN_CLASS:\AUTO_SYNDROME] autosyndrome command begins here
    
       [SYN_AFFECTED_CREATURE:DWARF:ALL][SYN_AFFECTED_CREATURE:KOBOLD_CAMP:ALL]
       [SYN_AFFECTED_CREATURE:ORC_TAIGA:ALL]

@@ -13,3 +13,5 @@ b0a42d9 Remove game and therapist logfiles from git.
 94943bc Update README on how to contribute.
 045b21c The ===FOOD=== heading at OLON's no longer costs 500 silver to select.
 9856e87 Settings changed to use default theme by default, as that's how Meph ships. :)
+2f97cd5 Revert "Updated itemsyndrome.lua with 'transformequipon'"
+6354218 Updated itemsyndrome.lua with 'transformequipon'

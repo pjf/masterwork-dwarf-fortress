@@ -64,10 +64,6 @@ Public Class optionBase
         Return m_optionManager.loadOption(m_fileManager.getFilePaths, m_tokens, m_settingManager)
     End Function
 
-    'Public Function saveOption(ByVal newValue As String) As Boolean
-    '    Return m_optionManager.saveOption(m_fileManager, m_tokens, newValue, m_updateTileSets)
-    'End Function
-
     Public Function saveOption(Optional ByVal enable As Boolean = False) As Boolean
         Return m_optionManager.saveOption(m_fileManager, m_tokens, enable, m_updateTileSets)
     End Function

@@ -26,6 +26,7 @@ Public Class optionNumeric
         m_opt.valueUpdatingPaused = True
         Try
             Me.Value = CInt(m_opt.loadOption)
+            m_opt.valueChanged(CStr(Me.Value))
         Catch ex As Exception
             Me.Value = 0
         Finally
