@@ -72,6 +72,7 @@ sub check_reactions {
     my %permitted_reaction;
     my %defined_reaction;
     my %hotkey;
+    my %reaction_class;
 
     my $reaction;
     
@@ -110,6 +111,9 @@ sub check_reactions {
 
             push( @{$hotkey{$key}}, $reaction);
         }
+        elsif (/\[REACTION_CLASS:([^\]]+)\]/) {
+            $reaction_class{$1}++;   # Count seen reaction classes
+        }
     }
 
     # Errors we spot:
@@ -120,6 +124,8 @@ sub check_reactions {
     say show_hash_diff(\%permitted_reaction, \%defined_reaction, "Permitted, but not defined (BUGS!)");
 
     say show_hash_diff(\%defined_reaction, \%permitted_reaction, "Defined, but not permitted (WARNING)");
+
+    # Show used-once reaction classes
 
     # Show hotkey conflicts
 
@@ -133,6 +139,15 @@ sub check_reactions {
             say "$key ($count)";
         }
     }
+
+    say "\n\n== Used once reaction classes ==\n\n";
+
+    foreach my $class (sort keys %reaction_class) {
+        if ($reaction_class{$class} == 1) {
+            say "Reaction class used only once: $class";
+        }
+    }
+
     
     return;
 }
