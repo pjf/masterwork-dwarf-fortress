@@ -44,11 +44,14 @@ Paul Fenwick (pjf@cpan.org)
 my %opts = (
     T => 0, # 'text', show without markup
     a => 0, # 'all', always show since upstream
+    A => 0, # 'ALL', show everything ever
 );
 
-getopts('Ta',\%opts);
+getopts('TaA',\%opts);
 
 my $REPO_ROOT = "https://github.com/pjf/masterwork-dwarf-fortress";
+
+my $ORIG_COMMIT = "70ba14c57178ef7b86133281e6d98300de2234ba";
 
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
 chomp($now_branch);
@@ -56,7 +59,10 @@ chomp($now_branch);
 my $parent = ($now_branch eq 'master') ? "upstream" : "master";
 
 # -a (all) forces upstream
+# -A (ALL) forces everything
+
 if ($opts{a}) { $parent = 'upstream' }
+if ($opts{A}) { $parent = '70ba14c57178ef7b86133281e6d98300de2234ba' }
 
 my $EXCLUDED_COMMIT_RE = qr{(?:
       Merge\ branch\ '\w+'
