@@ -5,7 +5,7 @@ item_z_orcfort
 # Scalps. Type type of scalp is determined by its material
 
 [ITEM_TOOL:PREPARED_SCALP]
-    [NAME:(prepared):(prepared)]
+    [NAME:scalp (prepared):scalp (prepared)]
     [UNIMPROVABLE]
 
 ---- 
