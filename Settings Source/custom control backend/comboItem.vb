@@ -8,6 +8,11 @@ Public Class comboItem
     Public Sub New()
     End Sub
 
+    Public Sub New(ByVal value As String, ByVal display As String)
+        m_value = value
+        m_text = display
+    End Sub
+
     Public Overrides Function ToString() As String
         Return m_value & " " & m_text
     End Function

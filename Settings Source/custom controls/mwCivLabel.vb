@@ -6,7 +6,8 @@ Public Class mwCivLabel
     Private m_entityFileName As String
     Private m_creatureFileName As String
     Private m_skillsTag As String
-    Private m_materialsTag As String
+    Private m_advTag As String
+    Private m_fortTag As String
 
     <DisplayNameAttribute("Entity file"), _
     CategoryAttribute("~MASTERWORK"), _
@@ -44,15 +45,27 @@ Public Class mwCivLabel
         End Set
     End Property
 
-    <DisplayNameAttribute("Materials Tag"), _
+    <DisplayNameAttribute("Fortress Tag"), _
     CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("The tag identifier for this civilization's creatures' materials.")> _
-    Public Overridable Property materialsTag As String
+    DescriptionAttribute("The tag identifier to play this civilization in fortress mode.")> _
+    Public Overridable Property fortTag As String
         Get
-            Return m_materialsTag
+            Return m_fortTag
         End Get
         Set(value As String)
-            m_materialsTag = value
+            m_fortTag = value
+        End Set
+    End Property
+
+    <DisplayNameAttribute("Adventurer Tag"), _
+    CategoryAttribute("~MASTERWORK"), _
+    DescriptionAttribute("The tag identifier to play this civilization in adventurer mode.")> _
+    Public Overridable Property advTag As String
+        Get
+            Return m_advTag
+        End Get
+        Set(value As String)
+            m_advTag = value
         End Set
     End Property
 
