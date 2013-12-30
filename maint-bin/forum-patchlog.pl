@@ -69,6 +69,12 @@ my $EXCLUDED_COMMIT_RE = qr{(?:
     | Merge\ pull\ request
     | Merge\ remote-tracking\ branch
     | maint-bin:
+    | export-patches
+    | .gitignore
+    | lint-raws
+    | yoink-master
+    | patch-graph?ics-from-master
+    | show-tileset-diffs
     | .* \#dev\b
 )}msx;
 
