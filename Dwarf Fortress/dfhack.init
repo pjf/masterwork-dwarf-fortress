@@ -445,6 +445,7 @@ enable autotrade
 enable buildingplan
 enable dwarfmonitor
 enable getplants
+enable manipulator
 enable mousequery
 enable resume
 enable search

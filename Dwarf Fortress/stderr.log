@@ -62,6 +62,7 @@ Starting DF input capture thread.
 Starting the TCP listener.
 Invoking: keybinding add Ctrl-F1 hotkeys
 Invoking: keybinding add Ctrl-H hotkeys
+Invoking: rendermax light
 Invoking: diggingInvaders edgesPerTick 10
 Invoking: diggingInvaders add FROST_GIANT
 Invoking: diggingInvaders setCost FROST_GIANT destroyBuilding 1
@@ -79,6 +80,7 @@ Invoking: diggingInvaders setCost ANT_MAN dig 5
 Invoking: diggingInvaders setCost ANT_MAN walk 0
 Invoking: diggingInvaders setCost ANT_MAN destroyRoughConstruction -1
 Invoking: diggingInvaders setCost ANT_MAN destroySmoothConstruction -1
+DFHack is running.
 Invoking: diggingInvaders setDelay ANT_MAN destroyBuilding -1
 Invoking: diggingInvaders setDelay ANT_MAN dig 5
 Invoking: diggingInvaders setDelay ANT_MAN destroyRoughConstruction -1
@@ -96,7 +98,6 @@ Invoking: diggingInvaders setDelay ORC destroySmoothConstruction 50
 Invoking: diggingInvaders add FORGOTTEN_BEAST_1
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 destroyBuilding -1
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 dig 5
-DFHack is running.
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 walk 0
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 destroyRoughConstruction -1
 Invoking: diggingInvaders setCost FORGOTTEN_BEAST_1 destroySmoothConstruction -1
@@ -450,6 +451,7 @@ Invoking: enable autotrade
 Invoking: enable buildingplan
 Invoking: enable dwarfmonitor
 Invoking: enable getplants
+Invoking: enable manipulator
 Invoking: enable mousequery
 Invoking: enable resume
 Invoking: enable search
@@ -522,17 +524,5 @@ Invoking: binpatch apply weaponrack-unassign
 Invoking: binpatch apply armorstand-capacity
 Invoking: fix/growthbug enable
 Invoking: cls
-Invoking: dwarves 25
-Invoking: points 10000
-Invoking: fastdwarf 1
-Invoking: fastdwarf 0
-Invoking: fastdwarf 1
-\WORKER_ID is not a recognized command.
-Invoking: gui/siege-engine
-UNKNOWN CLASS 'dfhack_lua_viewscreen@DFHack': vtable = 0x1bebcac
-Invoking: gui/siege-engine
-Invoking: gui/siege-engine
-Invoking: gui/siege-engine
-Invoking: gui/siege-engine
-Invoking: gui/siege-engine
+Invoking: reveal all
 Invoking: die

@@ -439,7 +439,7 @@ item_weapon_masterwork
 
 
 [ITEM_WEAPON:ITEM_WEAPON_SWORD_CRESCENT]
-[NAME:crescent bladeed sword:crescent bladed swords]
+[NAME:crescent bladed sword:crescent bladed swords]
 [SIZE:1500]
 [SKILL:SWORD]
 [TWO_HANDED:77500]

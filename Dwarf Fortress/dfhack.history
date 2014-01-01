@@ -1,4 +1,85 @@
 die
+reveal all
+die
+reveal all
+die
+showunitsyndromes selected
+die
+showunitsyndromes selected
+die
+showunitsyndromes selected
+showunitsyndromes help
+showunitsyndrome him
+showunitsyndromes him
+showunitsyndromes
+showunitsyndrome
+die
+dwarves 15
+die
+slayrace BLIND_CAVE_BEAR
+slayrace
+die
+magma
+location
+die
+createitem BLOCKS OBSIDIAN
+die
+slayrace TROLL_BROOK
+slayrace TROLL_BROCK
+createitem BLOCKS OBSIDIAN
+die
+slayrace TROLL_BROOK
+slayrace
+slayrace BROOK_TROLL
+createitem BLOCKS OBSIDIAN
+die
+createitem BOULDER OBSIDIANdie
+createitem BOULDER OBSIDIAN
+slayrace BEAK_DOG
+die
+spawn MASTIFF 0 Mastiff
+spawn MONOLITH 0 Monolith
+die
+createitem TRAPCOMP:ITEM_TRAPCOMP_LARGESERRATEDDISC STEELdie
+createitem TRAPCOMP:ITEM_TRAPCOMP_LARGESERRATEDDISC STEEL
+createitem ANVIL STEEL
+createitem WOOD PLANT_MAT:ALDER
+createitem ANVIL STEEL
+createitem WOOD PLANT_MAT:ALDER
+slayrace ALLIGATOR
+fastdwarf 1
+die
+diedie
+die
+createitem WEAPON:ITEM_WEAPON_PICK IRON
+createitem BARREL IRON
+createitem BUCKET IRON
+createitem ANVIL IRON
+createitems ANVIL IRON
+fastdwarf 1
+die
+spawn UNDEAD_ZOMBIE 3 test
+spawn UNDEAD_ZOMBIE 2 test
+spawn UNDEAD_ZOMBIE 1 test
+spawn WARLOCK_CIV 0 Skelettor
+dwarves 9
+die
+spawn WARLOCK_CIV 2 witch
+spawn WARLOCK_CIV 1 warlock
+spawn WARLOCK_CIV 0 skeleton
+die
+points 10000
+dwarves 20
+die
+points 50000
+dwarves 25
+die
+points 50000
+points 5000
+dwarves 25
+die
+dwarves 100
+die
 fastdwarf 1
 fastdwarf 0
 fastdwarf 1
@@ -16,85 +97,4 @@ die
 itemsyndrome enable
 die
 dir
-die
-fastdwarf 1
-die
-fastdwarf 1
-die
-quicksave
-die
-fastdwarf 1
-die
-rendermax disable
-die
-rendermax light
-rendermax reload
-rendermax lua
-rendermax truecolor blue
-rendermax truecolor red
-rendermax trippy
-rendermax light occlusionON|occlusionOFF
-rendermax light
-rendermax enable
-fastdwarf 1
-itemsyndrome enable
-rendermax disable
-fastdwarf 0
-itemsyndrome disable
-fastdwarf 1
-die
-spawn KOBOLD_CAMP 0 scrat
-spawn KOBOLD_CAMP 0
-spawn KOBOLD_CAMP scrat
-die
-fastdwarf 1
-die
-force caravan FOREST
-force caravan FORST
-rendermax disable
-crashfix1
-rendermax disable
-unload all
-rendermax disable
-slayrace mastiff
-slayrace shaggy_badgerdog_iron
-slayrace iron_shaggy_badgerdog_ddd
-slayrace shaggy_badgerdog_ddd
-slayrace shaggy_badgerdog
-rendermax disable
-unload all
-rendermax disable
-die
-reveal hell
-unreveal
-reveal
-die
-fastdwarf 1
-die
-fastdwarf 1
-die
-fastdwarf 1
-die
-fastdwarf 1
-die
-fastdwarf 1
-die
-fastdwarf 1
-createitem BOULDER INORGANIC:GRANITE 20
-die
-fastdwarf 1
-reveal
-die
-fastdwarf 1
-spawn DEMON_8 0 Omgthatsawesome
-spawn DEMON_9 0 Omgthatsawesome
-spawn DEMON_10 0 Omgthatsawesome
-spawn DEMON_50 0 Omgthatsawesome
-spawn TITAN_50 0 Omgthatsawesome
-spawn FORGOTTEN_BEAST_50 0 Omgthatsawesome
-spawn FORGOTTEN_BEAST_100 0 Omgthatsawesome
-spawn FORGOTTEN_BEAST_10 0 Omgthatsawesome
-spawn FORGOTTEN_BEAST_2 0 Omgthatsawesome
-spawn FORGOTTEN_BEAST_1 0 Omgthatsawesome
-spawn DWARF 0 Clark
 die
