@@ -1644,6 +1644,8 @@ Partial Class MainForm
         Me.rBtnThemes = New System.Windows.Forms.RibbonButton()
         Me.rBtnThemeDefault = New System.Windows.Forms.RibbonButton()
         Me.rBtnThemeBlue = New System.Windows.Forms.RibbonButton()
+        Me.RibbonSeparator5 = New System.Windows.Forms.RibbonSeparator()
+        Me.rBtnDatabase = New System.Windows.Forms.RibbonButton()
         Me.rTabUtilities = New System.Windows.Forms.RibbonTab()
         Me.rPanelUtilities = New System.Windows.Forms.RibbonPanel()
         Me.rBtnUtilAnnounceFilter = New System.Windows.Forms.RibbonButton()
@@ -5762,20 +5764,19 @@ Partial Class MainForm
         Me.optBtnFurnitureWorkshop.TabIndex = 5
         Me.optBtnFurnitureWorkshop.Text = "Furniture Shop"
         Me.optBtnFurnitureWorkshop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnFurnitureWorkshop, "Allows to create many more rock objects, from weapons and trap parts up till anvi"& _ 
-        "ls.")
-        Me.optBtnFurnitureWorkshop.UseVisualStyleBackColor = false
+        Me.ToolTipMaker.SetToolTip(Me.optBtnFurnitureWorkshop, """Allow the creation of complete itemsets, made of rock, wood, bone or metal.")
+        Me.optBtnFurnitureWorkshop.UseVisualStyleBackColor = False
         '
         'optBtnTailor
         '
         Me.optBtnTailor.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTailor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnTailor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnTailor.FlatAppearance.BorderSize = 0
-        Me.optBtnTailor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnTailor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnTailor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnTailor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnTailor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnTailor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnTailor.Image = CType(resources.GetObject("optBtnTailor.Image"),System.Drawing.Image)
+        Me.optBtnTailor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnTailor.Image = CType(resources.GetObject("optBtnTailor.Image"), System.Drawing.Image)
         Me.optBtnTailor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnTailor.Location = New System.Drawing.Point(5, 193)
         Me.optBtnTailor.Margin = New System.Windows.Forms.Padding(1)
@@ -5784,33 +5785,33 @@ Partial Class MainForm
         OptionSingleReplace69.enabledValue = "YESTAILOR["
         FileListManager112.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace69.fileManager = FileListManager112
-        OptionManager112.loadFromDInit = false
-        OptionManager112.loadFromInit = false
-        OptionManager112.loadFromWorldGen = false
+        OptionManager112.loadFromDInit = False
+        OptionManager112.loadFromInit = False
+        OptionManager112.loadFromWorldGen = False
         OptionSingleReplace69.optionManager = OptionManager112
         OptionSettingManager115.settingName = Nothing
         OptionSingleReplace69.settingManager = OptionSettingManager115
         OptionSingleReplace69.tokenName = ""
-        OptionSingleReplace69.updateTileSets = false
+        OptionSingleReplace69.updateTileSets = False
         Me.optBtnTailor.options = OptionSingleReplace69
         Me.optBtnTailor.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTailor.TabIndex = 6
         Me.optBtnTailor.Text = "Tailor"
         Me.optBtnTailor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnTailor, "Select specific silk, cloth, leather, shell, scale or chitin for clothing and arm"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnTailor, "Select specific silk, cloth, leather, shell, scale or chitin for clothing and arm" & _
         "or.")
-        Me.optBtnTailor.UseVisualStyleBackColor = false
+        Me.optBtnTailor.UseVisualStyleBackColor = False
         '
         'optBtnChandler
         '
         Me.optBtnChandler.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnChandler.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnChandler.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnChandler.FlatAppearance.BorderSize = 0
-        Me.optBtnChandler.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnChandler.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnChandler.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnChandler.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnChandler.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnChandler.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnChandler.Image = CType(resources.GetObject("optBtnChandler.Image"),System.Drawing.Image)
+        Me.optBtnChandler.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnChandler.Image = CType(resources.GetObject("optBtnChandler.Image"), System.Drawing.Image)
         Me.optBtnChandler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnChandler.Location = New System.Drawing.Point(5, 222)
         Me.optBtnChandler.Margin = New System.Windows.Forms.Padding(1)
@@ -5819,32 +5820,32 @@ Partial Class MainForm
         OptionSingleReplace70.enabledValue = "YESCHANDLER["
         FileListManager113.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace70.fileManager = FileListManager113
-        OptionManager113.loadFromDInit = false
-        OptionManager113.loadFromInit = false
-        OptionManager113.loadFromWorldGen = false
+        OptionManager113.loadFromDInit = False
+        OptionManager113.loadFromInit = False
+        OptionManager113.loadFromWorldGen = False
         OptionSingleReplace70.optionManager = OptionManager113
         OptionSettingManager116.settingName = Nothing
         OptionSingleReplace70.settingManager = OptionSettingManager116
         OptionSingleReplace70.tokenName = ""
-        OptionSingleReplace70.updateTileSets = false
+        OptionSingleReplace70.updateTileSets = False
         Me.optBtnChandler.options = OptionSingleReplace70
         Me.optBtnChandler.Size = New System.Drawing.Size(134, 27)
         Me.optBtnChandler.TabIndex = 7
         Me.optBtnChandler.Text = "Chandler"
         Me.optBtnChandler.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnChandler, "Creates torches and candles for the rendermax lighting creation buildings.")
-        Me.optBtnChandler.UseVisualStyleBackColor = false
+        Me.optBtnChandler.UseVisualStyleBackColor = False
         '
         'optBtnFletcher
         '
         Me.optBtnFletcher.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFletcher.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnFletcher.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnFletcher.FlatAppearance.BorderSize = 0
-        Me.optBtnFletcher.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnFletcher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnFletcher.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnFletcher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnFletcher.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnFletcher.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnFletcher.Image = CType(resources.GetObject("optBtnFletcher.Image"),System.Drawing.Image)
+        Me.optBtnFletcher.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnFletcher.Image = CType(resources.GetObject("optBtnFletcher.Image"), System.Drawing.Image)
         Me.optBtnFletcher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnFletcher.Location = New System.Drawing.Point(5, 251)
         Me.optBtnFletcher.Margin = New System.Windows.Forms.Padding(1)
@@ -5853,32 +5854,32 @@ Partial Class MainForm
         OptionSingleReplace71.enabledValue = "YESFLETCHER["
         FileListManager114.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace71.fileManager = FileListManager114
-        OptionManager114.loadFromDInit = false
-        OptionManager114.loadFromInit = false
-        OptionManager114.loadFromWorldGen = false
+        OptionManager114.loadFromDInit = False
+        OptionManager114.loadFromInit = False
+        OptionManager114.loadFromWorldGen = False
         OptionSingleReplace71.optionManager = OptionManager114
         OptionSettingManager117.settingName = Nothing
         OptionSingleReplace71.settingManager = OptionSettingManager117
         OptionSingleReplace71.tokenName = ""
-        OptionSingleReplace71.updateTileSets = false
+        OptionSingleReplace71.updateTileSets = False
         Me.optBtnFletcher.options = OptionSingleReplace71
         Me.optBtnFletcher.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFletcher.TabIndex = 8
         Me.optBtnFletcher.Text = "Fletcher"
         Me.optBtnFletcher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFletcher, "Makes special ammo and upgrades ranged weapons.")
-        Me.optBtnFletcher.UseVisualStyleBackColor = false
+        Me.optBtnFletcher.UseVisualStyleBackColor = False
         '
         'optBtnPottery
         '
         Me.optBtnPottery.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPottery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnPottery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnPottery.FlatAppearance.BorderSize = 0
-        Me.optBtnPottery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnPottery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnPottery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnPottery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnPottery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnPottery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnPottery.Image = CType(resources.GetObject("optBtnPottery.Image"),System.Drawing.Image)
+        Me.optBtnPottery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnPottery.Image = CType(resources.GetObject("optBtnPottery.Image"), System.Drawing.Image)
         Me.optBtnPottery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnPottery.Location = New System.Drawing.Point(5, 280)
         Me.optBtnPottery.Margin = New System.Windows.Forms.Padding(1)
@@ -5887,33 +5888,33 @@ Partial Class MainForm
         OptionSingleReplace72.enabledValue = "YESPOTTERY["
         FileListManager115.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace72.fileManager = FileListManager115
-        OptionManager115.loadFromDInit = false
-        OptionManager115.loadFromInit = false
-        OptionManager115.loadFromWorldGen = false
+        OptionManager115.loadFromDInit = False
+        OptionManager115.loadFromInit = False
+        OptionManager115.loadFromWorldGen = False
         OptionSingleReplace72.optionManager = OptionManager115
         OptionSettingManager118.settingName = Nothing
         OptionSingleReplace72.settingManager = OptionSettingManager118
         OptionSingleReplace72.tokenName = ""
-        OptionSingleReplace72.updateTileSets = false
+        OptionSingleReplace72.updateTileSets = False
         Me.optBtnPottery.options = OptionSingleReplace72
         Me.optBtnPottery.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPottery.TabIndex = 9
         Me.optBtnPottery.Text = "Pottery"
         Me.optBtnPottery.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnPottery, "Makes clay, fire-clay or kaolinite items, which need to be dried and fired before"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnPottery, "Makes clay, fire-clay or kaolinite items, which need to be dried and fired before" & _
         " they can be used.")
-        Me.optBtnPottery.UseVisualStyleBackColor = false
+        Me.optBtnPottery.UseVisualStyleBackColor = False
         '
         'optBtnGreatDyer
         '
         Me.optBtnGreatDyer.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGreatDyer.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGreatDyer.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGreatDyer.FlatAppearance.BorderSize = 0
-        Me.optBtnGreatDyer.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGreatDyer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGreatDyer.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGreatDyer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGreatDyer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGreatDyer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGreatDyer.Image = CType(resources.GetObject("optBtnGreatDyer.Image"),System.Drawing.Image)
+        Me.optBtnGreatDyer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGreatDyer.Image = CType(resources.GetObject("optBtnGreatDyer.Image"), System.Drawing.Image)
         Me.optBtnGreatDyer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGreatDyer.Location = New System.Drawing.Point(5, 309)
         Me.optBtnGreatDyer.Margin = New System.Windows.Forms.Padding(1)
@@ -5922,33 +5923,33 @@ Partial Class MainForm
         OptionSingleReplace73.enabledValue = "YESDYER["
         FileListManager116.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace73.fileManager = FileListManager116
-        OptionManager116.loadFromDInit = false
-        OptionManager116.loadFromInit = false
-        OptionManager116.loadFromWorldGen = false
+        OptionManager116.loadFromDInit = False
+        OptionManager116.loadFromInit = False
+        OptionManager116.loadFromWorldGen = False
         OptionSingleReplace73.optionManager = OptionManager116
         OptionSettingManager119.settingName = Nothing
         OptionSingleReplace73.settingManager = OptionSettingManager119
         OptionSingleReplace73.tokenName = ""
-        OptionSingleReplace73.updateTileSets = false
+        OptionSingleReplace73.updateTileSets = False
         Me.optBtnGreatDyer.options = OptionSingleReplace73
         Me.optBtnGreatDyer.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGreatDyer.TabIndex = 10
         Me.optBtnGreatDyer.Text = "Greater Dyery"
         Me.optBtnGreatDyer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnGreatDyer, "Allows dyeing of finished items. You can select the type and material one by one."& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnGreatDyer, "Allows dyeing of finished items. You can select the type and material one by one." & _
         "")
-        Me.optBtnGreatDyer.UseVisualStyleBackColor = false
+        Me.optBtnGreatDyer.UseVisualStyleBackColor = False
         '
         'optBtnPainter
         '
         Me.optBtnPainter.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPainter.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnPainter.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnPainter.FlatAppearance.BorderSize = 0
-        Me.optBtnPainter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnPainter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnPainter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnPainter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnPainter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnPainter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnPainter.Image = CType(resources.GetObject("optBtnPainter.Image"),System.Drawing.Image)
+        Me.optBtnPainter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnPainter.Image = CType(resources.GetObject("optBtnPainter.Image"), System.Drawing.Image)
         Me.optBtnPainter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnPainter.Location = New System.Drawing.Point(5, 338)
         Me.optBtnPainter.Margin = New System.Windows.Forms.Padding(1)
@@ -5957,32 +5958,32 @@ Partial Class MainForm
         OptionSingleReplace74.enabledValue = "YESPAINTER["
         FileListManager117.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace74.fileManager = FileListManager117
-        OptionManager117.loadFromDInit = false
-        OptionManager117.loadFromInit = false
-        OptionManager117.loadFromWorldGen = false
+        OptionManager117.loadFromDInit = False
+        OptionManager117.loadFromInit = False
+        OptionManager117.loadFromWorldGen = False
         OptionSingleReplace74.optionManager = OptionManager117
         OptionSettingManager120.settingName = Nothing
         OptionSingleReplace74.settingManager = OptionSettingManager120
         OptionSingleReplace74.tokenName = ""
-        OptionSingleReplace74.updateTileSets = false
+        OptionSingleReplace74.updateTileSets = False
         Me.optBtnPainter.options = OptionSingleReplace74
         Me.optBtnPainter.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPainter.TabIndex = 11
         Me.optBtnPainter.Text = "Painter"
         Me.optBtnPainter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnPainter, "Colors furniture using dye, allows for easy color coding of your fort.")
-        Me.optBtnPainter.UseVisualStyleBackColor = false
+        Me.optBtnPainter.UseVisualStyleBackColor = False
         '
         'optBtnToolmaker
         '
         Me.optBtnToolmaker.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnToolmaker.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnToolmaker.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnToolmaker.FlatAppearance.BorderSize = 0
-        Me.optBtnToolmaker.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnToolmaker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnToolmaker.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnToolmaker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnToolmaker.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnToolmaker.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnToolmaker.Image = CType(resources.GetObject("optBtnToolmaker.Image"),System.Drawing.Image)
+        Me.optBtnToolmaker.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnToolmaker.Image = CType(resources.GetObject("optBtnToolmaker.Image"), System.Drawing.Image)
         Me.optBtnToolmaker.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnToolmaker.Location = New System.Drawing.Point(5, 367)
         Me.optBtnToolmaker.Margin = New System.Windows.Forms.Padding(1)
@@ -5991,32 +5992,32 @@ Partial Class MainForm
         OptionSingleReplace75.enabledValue = "YESTOOLMAKER["
         FileListManager118.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace75.fileManager = FileListManager118
-        OptionManager118.loadFromDInit = false
-        OptionManager118.loadFromInit = false
-        OptionManager118.loadFromWorldGen = false
+        OptionManager118.loadFromDInit = False
+        OptionManager118.loadFromInit = False
+        OptionManager118.loadFromWorldGen = False
         OptionSingleReplace75.optionManager = OptionManager118
         OptionSettingManager121.settingName = Nothing
         OptionSingleReplace75.settingManager = OptionSettingManager121
         OptionSingleReplace75.tokenName = ""
-        OptionSingleReplace75.updateTileSets = false
+        OptionSingleReplace75.updateTileSets = False
         Me.optBtnToolmaker.options = OptionSingleReplace75
         Me.optBtnToolmaker.Size = New System.Drawing.Size(134, 27)
         Me.optBtnToolmaker.TabIndex = 12
         Me.optBtnToolmaker.Text = "Toolmaker"
         Me.optBtnToolmaker.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnToolmaker, "Creates basic tools for advanced buildings. You will want to keep this building.")
-        Me.optBtnToolmaker.UseVisualStyleBackColor = false
+        Me.optBtnToolmaker.UseVisualStyleBackColor = False
         '
         'optBtnWeightBench
         '
         Me.optBtnWeightBench.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWeightBench.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnWeightBench.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnWeightBench.FlatAppearance.BorderSize = 0
-        Me.optBtnWeightBench.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnWeightBench.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnWeightBench.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnWeightBench.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnWeightBench.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnWeightBench.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnWeightBench.Image = CType(resources.GetObject("optBtnWeightBench.Image"),System.Drawing.Image)
+        Me.optBtnWeightBench.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnWeightBench.Image = CType(resources.GetObject("optBtnWeightBench.Image"), System.Drawing.Image)
         Me.optBtnWeightBench.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnWeightBench.Location = New System.Drawing.Point(5, 25)
         Me.optBtnWeightBench.Margin = New System.Windows.Forms.Padding(1)
@@ -6025,32 +6026,32 @@ Partial Class MainForm
         OptionSingleReplace76.enabledValue = "YESWEIGHT["
         FileListManager119.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace76.fileManager = FileListManager119
-        OptionManager119.loadFromDInit = false
-        OptionManager119.loadFromInit = false
-        OptionManager119.loadFromWorldGen = false
+        OptionManager119.loadFromDInit = False
+        OptionManager119.loadFromInit = False
+        OptionManager119.loadFromWorldGen = False
         OptionSingleReplace76.optionManager = OptionManager119
         OptionSettingManager122.settingName = Nothing
         OptionSingleReplace76.settingManager = OptionSettingManager122
         OptionSingleReplace76.tokenName = ""
-        OptionSingleReplace76.updateTileSets = false
+        OptionSingleReplace76.updateTileSets = False
         Me.optBtnWeightBench.options = OptionSingleReplace76
         Me.optBtnWeightBench.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWeightBench.TabIndex = 0
         Me.optBtnWeightBench.Text = "Weight Bench"
         Me.optBtnWeightBench.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnWeightBench, "Trains attributes of your dwarves, like strength, endurance and agility.")
-        Me.optBtnWeightBench.UseVisualStyleBackColor = false
+        Me.optBtnWeightBench.UseVisualStyleBackColor = False
         '
         'optBtnWoodsplitting
         '
         Me.optBtnWoodsplitting.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWoodsplitting.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnWoodsplitting.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnWoodsplitting.FlatAppearance.BorderSize = 0
-        Me.optBtnWoodsplitting.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnWoodsplitting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnWoodsplitting.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnWoodsplitting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnWoodsplitting.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnWoodsplitting.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnWoodsplitting.Image = CType(resources.GetObject("optBtnWoodsplitting.Image"),System.Drawing.Image)
+        Me.optBtnWoodsplitting.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnWoodsplitting.Image = CType(resources.GetObject("optBtnWoodsplitting.Image"), System.Drawing.Image)
         Me.optBtnWoodsplitting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnWoodsplitting.Location = New System.Drawing.Point(5, 54)
         Me.optBtnWoodsplitting.Margin = New System.Windows.Forms.Padding(1)
@@ -6059,33 +6060,33 @@ Partial Class MainForm
         OptionSingleReplace77.enabledValue = "YESWOODSPLITTING["
         FileListManager120.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace77.fileManager = FileListManager120
-        OptionManager120.loadFromDInit = false
-        OptionManager120.loadFromInit = false
-        OptionManager120.loadFromWorldGen = false
+        OptionManager120.loadFromDInit = False
+        OptionManager120.loadFromInit = False
+        OptionManager120.loadFromWorldGen = False
         OptionSingleReplace77.optionManager = OptionManager120
         OptionSettingManager123.settingName = Nothing
         OptionSingleReplace77.settingManager = OptionSettingManager123
         OptionSingleReplace77.tokenName = ""
-        OptionSingleReplace77.updateTileSets = false
+        OptionSingleReplace77.updateTileSets = False
         Me.optBtnWoodsplitting.options = OptionSingleReplace77
         Me.optBtnWoodsplitting.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWoodsplitting.TabIndex = 1
         Me.optBtnWoodsplitting.Text = "Wood Block"
         Me.optBtnWoodsplitting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnWoodsplitting, "Little brother of the sawmill, cuts wood into planks and can smooth some types of"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnWoodsplitting, "Little brother of the sawmill, cuts wood into planks and can smooth some types of" & _
         " wood. Very basic, early workshop.")
-        Me.optBtnWoodsplitting.UseVisualStyleBackColor = false
+        Me.optBtnWoodsplitting.UseVisualStyleBackColor = False
         '
         'optBtnStorage
         '
         Me.optBtnStorage.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnStorage.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnStorage.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnStorage.FlatAppearance.BorderSize = 0
-        Me.optBtnStorage.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnStorage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnStorage.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnStorage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnStorage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnStorage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnStorage.Image = CType(resources.GetObject("optBtnStorage.Image"),System.Drawing.Image)
+        Me.optBtnStorage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnStorage.Image = CType(resources.GetObject("optBtnStorage.Image"), System.Drawing.Image)
         Me.optBtnStorage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnStorage.Location = New System.Drawing.Point(5, 83)
         Me.optBtnStorage.Margin = New System.Windows.Forms.Padding(1)
@@ -6094,32 +6095,32 @@ Partial Class MainForm
         OptionSingleReplace78.enabledValue = "YESSTORAGE["
         FileListManager121.fileNames = New String() {"entity_default.txt", "reaction_masterwork.txt"}
         OptionSingleReplace78.fileManager = FileListManager121
-        OptionManager121.loadFromDInit = false
-        OptionManager121.loadFromInit = false
-        OptionManager121.loadFromWorldGen = false
+        OptionManager121.loadFromDInit = False
+        OptionManager121.loadFromInit = False
+        OptionManager121.loadFromWorldGen = False
         OptionSingleReplace78.optionManager = OptionManager121
         OptionSettingManager124.settingName = Nothing
         OptionSingleReplace78.settingManager = OptionSettingManager124
         OptionSingleReplace78.tokenName = ""
-        OptionSingleReplace78.updateTileSets = false
+        OptionSingleReplace78.updateTileSets = False
         Me.optBtnStorage.options = OptionSingleReplace78
         Me.optBtnStorage.Size = New System.Drawing.Size(134, 27)
         Me.optBtnStorage.TabIndex = 2
         Me.optBtnStorage.Text = "Trade Storehouse"
         Me.optBtnStorage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnStorage, "Allows the unpacking of crates from caravans.")
-        Me.optBtnStorage.UseVisualStyleBackColor = false
+        Me.optBtnStorage.UseVisualStyleBackColor = False
         '
         'optBtnBrewery
         '
         Me.optBtnBrewery.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBrewery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBrewery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBrewery.FlatAppearance.BorderSize = 0
-        Me.optBtnBrewery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBrewery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBrewery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBrewery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBrewery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBrewery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBrewery.Image = CType(resources.GetObject("optBtnBrewery.Image"),System.Drawing.Image)
+        Me.optBtnBrewery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBrewery.Image = CType(resources.GetObject("optBtnBrewery.Image"), System.Drawing.Image)
         Me.optBtnBrewery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBrewery.Location = New System.Drawing.Point(5, 19)
         Me.optBtnBrewery.Margin = New System.Windows.Forms.Padding(1)
@@ -6128,33 +6129,33 @@ Partial Class MainForm
         OptionSingleReplace79.enabledValue = "YESBREWERY["
         FileListManager122.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace79.fileManager = FileListManager122
-        OptionManager122.loadFromDInit = false
-        OptionManager122.loadFromInit = false
-        OptionManager122.loadFromWorldGen = false
+        OptionManager122.loadFromDInit = False
+        OptionManager122.loadFromInit = False
+        OptionManager122.loadFromWorldGen = False
         OptionSingleReplace79.optionManager = OptionManager122
         OptionSettingManager125.settingName = Nothing
         OptionSingleReplace79.settingManager = OptionSettingManager125
         OptionSingleReplace79.tokenName = ""
-        OptionSingleReplace79.updateTileSets = false
+        OptionSingleReplace79.updateTileSets = False
         Me.optBtnBrewery.options = OptionSingleReplace79
         Me.optBtnBrewery.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBrewery.TabIndex = 0
         Me.optBtnBrewery.Text = "Brewery"
         Me.optBtnBrewery.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnBrewery, "Allows the refining of alcoholic drinks with sugar. New drinks have special effec"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnBrewery, "Allows the refining of alcoholic drinks with sugar. New drinks have special effec" & _
         "ts..")
-        Me.optBtnBrewery.UseVisualStyleBackColor = false
+        Me.optBtnBrewery.UseVisualStyleBackColor = False
         '
         'optBtnSawmill
         '
         Me.optBtnSawmill.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSawmill.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSawmill.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnSawmill.FlatAppearance.BorderSize = 0
-        Me.optBtnSawmill.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnSawmill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnSawmill.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnSawmill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnSawmill.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnSawmill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnSawmill.Image = CType(resources.GetObject("optBtnSawmill.Image"),System.Drawing.Image)
+        Me.optBtnSawmill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnSawmill.Image = CType(resources.GetObject("optBtnSawmill.Image"), System.Drawing.Image)
         Me.optBtnSawmill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnSawmill.Location = New System.Drawing.Point(5, 48)
         Me.optBtnSawmill.Margin = New System.Windows.Forms.Padding(1)
@@ -6163,33 +6164,33 @@ Partial Class MainForm
         OptionSingleReplace80.enabledValue = "YESSAWMILL["
         FileListManager123.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace80.fileManager = FileListManager123
-        OptionManager123.loadFromDInit = false
-        OptionManager123.loadFromInit = false
-        OptionManager123.loadFromWorldGen = false
+        OptionManager123.loadFromDInit = False
+        OptionManager123.loadFromInit = False
+        OptionManager123.loadFromWorldGen = False
         OptionSingleReplace80.optionManager = OptionManager123
         OptionSettingManager126.settingName = Nothing
         OptionSingleReplace80.settingManager = OptionSettingManager126
         OptionSingleReplace80.tokenName = ""
-        OptionSingleReplace80.updateTileSets = false
+        OptionSingleReplace80.updateTileSets = False
         Me.optBtnSawmill.options = OptionSingleReplace80
         Me.optBtnSawmill.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSawmill.TabIndex = 1
         Me.optBtnSawmill.Text = "Sawmill"
         Me.optBtnSawmill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnSawmill, "Cuts wooden logs into 4 blocks to be used in constructions and refines farmed tre"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnSawmill, "Cuts wooden logs into 4 blocks to be used in constructions and refines farmed tre" & _
         "es.")
-        Me.optBtnSawmill.UseVisualStyleBackColor = false
+        Me.optBtnSawmill.UseVisualStyleBackColor = False
         '
         'optBtnFishpond
         '
         Me.optBtnFishpond.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFishpond.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnFishpond.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnFishpond.FlatAppearance.BorderSize = 0
-        Me.optBtnFishpond.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnFishpond.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnFishpond.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnFishpond.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnFishpond.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnFishpond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnFishpond.Image = CType(resources.GetObject("optBtnFishpond.Image"),System.Drawing.Image)
+        Me.optBtnFishpond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnFishpond.Image = CType(resources.GetObject("optBtnFishpond.Image"), System.Drawing.Image)
         Me.optBtnFishpond.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnFishpond.Location = New System.Drawing.Point(5, 77)
         Me.optBtnFishpond.Margin = New System.Windows.Forms.Padding(1)
@@ -6198,32 +6199,32 @@ Partial Class MainForm
         OptionSingleReplace81.enabledValue = "YESFISHPOND["
         FileListManager124.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace81.fileManager = FileListManager124
-        OptionManager124.loadFromDInit = false
-        OptionManager124.loadFromInit = false
-        OptionManager124.loadFromWorldGen = false
+        OptionManager124.loadFromDInit = False
+        OptionManager124.loadFromInit = False
+        OptionManager124.loadFromWorldGen = False
         OptionSingleReplace81.optionManager = OptionManager124
         OptionSettingManager127.settingName = Nothing
         OptionSingleReplace81.settingManager = OptionSettingManager127
         OptionSingleReplace81.tokenName = ""
-        OptionSingleReplace81.updateTileSets = false
+        OptionSingleReplace81.updateTileSets = False
         Me.optBtnFishpond.options = OptionSingleReplace81
         Me.optBtnFishpond.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFishpond.TabIndex = 2
         Me.optBtnFishpond.Text = "Fishpond"
         Me.optBtnFishpond.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFishpond, "Indoor fishing area for your fisherdwarves. Great for waterless maps.")
-        Me.optBtnFishpond.UseVisualStyleBackColor = false
+        Me.optBtnFishpond.UseVisualStyleBackColor = False
         '
         'optBtnSlaughterhouse
         '
         Me.optBtnSlaughterhouse.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSlaughterhouse.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSlaughterhouse.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnSlaughterhouse.FlatAppearance.BorderSize = 0
-        Me.optBtnSlaughterhouse.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnSlaughterhouse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnSlaughterhouse.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnSlaughterhouse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnSlaughterhouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnSlaughterhouse.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnSlaughterhouse.Image = CType(resources.GetObject("optBtnSlaughterhouse.Image"),System.Drawing.Image)
+        Me.optBtnSlaughterhouse.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnSlaughterhouse.Image = CType(resources.GetObject("optBtnSlaughterhouse.Image"), System.Drawing.Image)
         Me.optBtnSlaughterhouse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnSlaughterhouse.Location = New System.Drawing.Point(5, 106)
         Me.optBtnSlaughterhouse.Margin = New System.Windows.Forms.Padding(1)
@@ -6232,32 +6233,32 @@ Partial Class MainForm
         OptionSingleReplace82.enabledValue = "YESSLAUGHTERHOUSE["
         FileListManager125.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace82.fileManager = FileListManager125
-        OptionManager125.loadFromDInit = false
-        OptionManager125.loadFromInit = false
-        OptionManager125.loadFromWorldGen = false
+        OptionManager125.loadFromDInit = False
+        OptionManager125.loadFromInit = False
+        OptionManager125.loadFromWorldGen = False
         OptionSingleReplace82.optionManager = OptionManager125
         OptionSettingManager128.settingName = Nothing
         OptionSingleReplace82.settingManager = OptionSettingManager128
         OptionSingleReplace82.tokenName = ""
-        OptionSingleReplace82.updateTileSets = false
+        OptionSingleReplace82.updateTileSets = False
         Me.optBtnSlaughterhouse.options = OptionSingleReplace82
         Me.optBtnSlaughterhouse.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSlaughterhouse.TabIndex = 3
         Me.optBtnSlaughterhouse.Text = "Slaughterhouse"
         Me.optBtnSlaughterhouse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnSlaughterhouse, "Take megabeast corpses apart for special rewards.")
-        Me.optBtnSlaughterhouse.UseVisualStyleBackColor = false
+        Me.optBtnSlaughterhouse.UseVisualStyleBackColor = False
         '
         'optBtnStables
         '
         Me.optBtnStables.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnStables.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnStables.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnStables.FlatAppearance.BorderSize = 0
-        Me.optBtnStables.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnStables.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnStables.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnStables.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnStables.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnStables.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnStables.Image = CType(resources.GetObject("optBtnStables.Image"),System.Drawing.Image)
+        Me.optBtnStables.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnStables.Image = CType(resources.GetObject("optBtnStables.Image"), System.Drawing.Image)
         Me.optBtnStables.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnStables.Location = New System.Drawing.Point(5, 135)
         Me.optBtnStables.Margin = New System.Windows.Forms.Padding(1)
@@ -6266,32 +6267,32 @@ Partial Class MainForm
         OptionSingleReplace83.enabledValue = "YESSTABLES["
         FileListManager126.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace83.fileManager = FileListManager126
-        OptionManager126.loadFromDInit = false
-        OptionManager126.loadFromInit = false
-        OptionManager126.loadFromWorldGen = false
+        OptionManager126.loadFromDInit = False
+        OptionManager126.loadFromInit = False
+        OptionManager126.loadFromWorldGen = False
         OptionSingleReplace83.optionManager = OptionManager126
         OptionSettingManager129.settingName = Nothing
         OptionSingleReplace83.settingManager = OptionSettingManager129
         OptionSingleReplace83.tokenName = ""
-        OptionSingleReplace83.updateTileSets = false
+        OptionSingleReplace83.updateTileSets = False
         Me.optBtnStables.options = OptionSingleReplace83
         Me.optBtnStables.Size = New System.Drawing.Size(134, 27)
         Me.optBtnStables.TabIndex = 4
         Me.optBtnStables.Text = "Stables"
         Me.optBtnStables.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnStables, "Allows the indoor feeding of grazers.")
-        Me.optBtnStables.UseVisualStyleBackColor = false
+        Me.optBtnStables.UseVisualStyleBackColor = False
         '
         'optBtnResearch
         '
         Me.optBtnResearch.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnResearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnResearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnResearch.FlatAppearance.BorderSize = 0
-        Me.optBtnResearch.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnResearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnResearch.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnResearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnResearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnResearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnResearch.Image = CType(resources.GetObject("optBtnResearch.Image"),System.Drawing.Image)
+        Me.optBtnResearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnResearch.Image = CType(resources.GetObject("optBtnResearch.Image"), System.Drawing.Image)
         Me.optBtnResearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnResearch.Location = New System.Drawing.Point(5, 19)
         Me.optBtnResearch.Margin = New System.Windows.Forms.Padding(1)
@@ -6300,32 +6301,32 @@ Partial Class MainForm
         OptionSingleReplace84.enabledValue = "YESBEASTLAB["
         FileListManager127.fileNames = New String() {"entity_default.txt", "building_masterwork.txt", "building_furnaces_masterwork.txt"}
         OptionSingleReplace84.fileManager = FileListManager127
-        OptionManager127.loadFromDInit = false
-        OptionManager127.loadFromInit = false
-        OptionManager127.loadFromWorldGen = false
+        OptionManager127.loadFromDInit = False
+        OptionManager127.loadFromInit = False
+        OptionManager127.loadFromWorldGen = False
         OptionSingleReplace84.optionManager = OptionManager127
         OptionSettingManager130.settingName = Nothing
         OptionSingleReplace84.settingManager = OptionSettingManager130
         OptionSingleReplace84.tokenName = ""
-        OptionSingleReplace84.updateTileSets = false
+        OptionSingleReplace84.updateTileSets = False
         Me.optBtnResearch.options = OptionSingleReplace84
         Me.optBtnResearch.Size = New System.Drawing.Size(134, 27)
         Me.optBtnResearch.TabIndex = 0
         Me.optBtnResearch.Text = "Research"
         Me.optBtnResearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnResearch, "Conduct research to unlock new buildings and furnaces.")
-        Me.optBtnResearch.UseVisualStyleBackColor = false
+        Me.optBtnResearch.UseVisualStyleBackColor = False
         '
         'optBtnArcheology
         '
         Me.optBtnArcheology.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnArcheology.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnArcheology.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnArcheology.FlatAppearance.BorderSize = 0
-        Me.optBtnArcheology.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnArcheology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnArcheology.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnArcheology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnArcheology.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnArcheology.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnArcheology.Image = CType(resources.GetObject("optBtnArcheology.Image"),System.Drawing.Image)
+        Me.optBtnArcheology.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnArcheology.Image = CType(resources.GetObject("optBtnArcheology.Image"), System.Drawing.Image)
         Me.optBtnArcheology.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnArcheology.Location = New System.Drawing.Point(5, 48)
         Me.optBtnArcheology.Margin = New System.Windows.Forms.Padding(1)
@@ -6334,32 +6335,32 @@ Partial Class MainForm
         OptionSingleReplace85.enabledValue = "YESARCHEOLOGIST["
         FileListManager128.fileNames = New String() {"entity_default.txt", "inorganic_fossil.txt"}
         OptionSingleReplace85.fileManager = FileListManager128
-        OptionManager128.loadFromDInit = false
-        OptionManager128.loadFromInit = false
-        OptionManager128.loadFromWorldGen = false
+        OptionManager128.loadFromDInit = False
+        OptionManager128.loadFromInit = False
+        OptionManager128.loadFromWorldGen = False
         OptionSingleReplace85.optionManager = OptionManager128
         OptionSettingManager131.settingName = Nothing
         OptionSingleReplace85.settingManager = OptionSettingManager131
         OptionSingleReplace85.tokenName = ""
-        OptionSingleReplace85.updateTileSets = false
+        OptionSingleReplace85.updateTileSets = False
         Me.optBtnArcheology.options = OptionSingleReplace85
         Me.optBtnArcheology.Size = New System.Drawing.Size(134, 27)
         Me.optBtnArcheology.TabIndex = 1
         Me.optBtnArcheology.Text = "Archeology"
         Me.optBtnArcheology.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnArcheology, "Adds Archeologist and fossils. Excavates fossils and creates special items.")
-        Me.optBtnArcheology.UseVisualStyleBackColor = false
+        Me.optBtnArcheology.UseVisualStyleBackColor = False
         '
         'optBtnApothecary
         '
         Me.optBtnApothecary.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnApothecary.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnApothecary.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnApothecary.FlatAppearance.BorderSize = 0
-        Me.optBtnApothecary.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnApothecary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnApothecary.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnApothecary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnApothecary.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnApothecary.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnApothecary.Image = CType(resources.GetObject("optBtnApothecary.Image"),System.Drawing.Image)
+        Me.optBtnApothecary.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnApothecary.Image = CType(resources.GetObject("optBtnApothecary.Image"), System.Drawing.Image)
         Me.optBtnApothecary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnApothecary.Location = New System.Drawing.Point(5, 77)
         Me.optBtnApothecary.Margin = New System.Windows.Forms.Padding(1)
@@ -6368,33 +6369,33 @@ Partial Class MainForm
         OptionSingleReplace86.enabledValue = "YESAPO["
         FileListManager129.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace86.fileManager = FileListManager129
-        OptionManager129.loadFromDInit = false
-        OptionManager129.loadFromInit = false
-        OptionManager129.loadFromWorldGen = false
+        OptionManager129.loadFromDInit = False
+        OptionManager129.loadFromInit = False
+        OptionManager129.loadFromWorldGen = False
         OptionSingleReplace86.optionManager = OptionManager129
         OptionSettingManager132.settingName = Nothing
         OptionSingleReplace86.settingManager = OptionSettingManager132
         OptionSingleReplace86.tokenName = ""
-        OptionSingleReplace86.updateTileSets = false
+        OptionSingleReplace86.updateTileSets = False
         Me.optBtnApothecary.options = OptionSingleReplace86
         Me.optBtnApothecary.Size = New System.Drawing.Size(134, 27)
         Me.optBtnApothecary.TabIndex = 2
         Me.optBtnApothecary.Text = "Apothecary"
         Me.optBtnApothecary.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnApothecary, "Adds a workshop for your hospital. Creates casts, crutches, splints, soap and emp"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnApothecary, "Adds a workshop for your hospital. Creates casts, crutches, splints, soap and emp" & _
         "ties out buckets.")
-        Me.optBtnApothecary.UseVisualStyleBackColor = false
+        Me.optBtnApothecary.UseVisualStyleBackColor = False
         '
         'optBtnBiology
         '
         Me.optBtnBiology.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBiology.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBiology.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBiology.FlatAppearance.BorderSize = 0
-        Me.optBtnBiology.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBiology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBiology.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBiology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBiology.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBiology.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBiology.Image = CType(resources.GetObject("optBtnBiology.Image"),System.Drawing.Image)
+        Me.optBtnBiology.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBiology.Image = CType(resources.GetObject("optBtnBiology.Image"), System.Drawing.Image)
         Me.optBtnBiology.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBiology.Location = New System.Drawing.Point(5, 106)
         Me.optBtnBiology.Margin = New System.Windows.Forms.Padding(1)
@@ -6403,33 +6404,33 @@ Partial Class MainForm
         OptionSingleReplace87.enabledValue = "YESBIOLOGIST["
         FileListManager130.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace87.fileManager = FileListManager130
-        OptionManager130.loadFromDInit = false
-        OptionManager130.loadFromInit = false
-        OptionManager130.loadFromWorldGen = false
+        OptionManager130.loadFromDInit = False
+        OptionManager130.loadFromInit = False
+        OptionManager130.loadFromWorldGen = False
         OptionSingleReplace87.optionManager = OptionManager130
         OptionSettingManager133.settingName = Nothing
         OptionSingleReplace87.settingManager = OptionSettingManager133
         OptionSingleReplace87.tokenName = ""
-        OptionSingleReplace87.updateTileSets = false
+        OptionSingleReplace87.updateTileSets = False
         Me.optBtnBiology.options = OptionSingleReplace87
         Me.optBtnBiology.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBiology.TabIndex = 3
         Me.optBtnBiology.Text = "Biology"
         Me.optBtnBiology.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnBiology, "Takes invader corpses and might research a permanent bonus against a specific rac"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnBiology, "Takes invader corpses and might research a permanent bonus against a specific rac" & _
         "e.")
-        Me.optBtnBiology.UseVisualStyleBackColor = false
+        Me.optBtnBiology.UseVisualStyleBackColor = False
         '
         'optBtnTavern
         '
         Me.optBtnTavern.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTavern.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnTavern.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnTavern.FlatAppearance.BorderSize = 0
-        Me.optBtnTavern.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnTavern.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnTavern.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnTavern.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnTavern.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnTavern.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnTavern.Image = CType(resources.GetObject("optBtnTavern.Image"),System.Drawing.Image)
+        Me.optBtnTavern.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnTavern.Image = CType(resources.GetObject("optBtnTavern.Image"), System.Drawing.Image)
         Me.optBtnTavern.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnTavern.Location = New System.Drawing.Point(5, 23)
         Me.optBtnTavern.Margin = New System.Windows.Forms.Padding(1)
@@ -6438,33 +6439,33 @@ Partial Class MainForm
         OptionSingleReplace88.enabledValue = "YESMUSIC["
         FileListManager131.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace88.fileManager = FileListManager131
-        OptionManager131.loadFromDInit = false
-        OptionManager131.loadFromInit = false
-        OptionManager131.loadFromWorldGen = false
+        OptionManager131.loadFromDInit = False
+        OptionManager131.loadFromInit = False
+        OptionManager131.loadFromWorldGen = False
         OptionSingleReplace88.optionManager = OptionManager131
         OptionSettingManager134.settingName = Nothing
         OptionSingleReplace88.settingManager = OptionSettingManager134
         OptionSingleReplace88.tokenName = ""
-        OptionSingleReplace88.updateTileSets = false
+        OptionSingleReplace88.updateTileSets = False
         Me.optBtnTavern.options = OptionSingleReplace88
         Me.optBtnTavern.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTavern.TabIndex = 0
         Me.optBtnTavern.Text = "Morul's Tavern"
         Me.optBtnTavern.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnTavern, "Play music with different instruments to boost your dwarves. Also allows basic ga"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnTavern, "Play music with different instruments to boost your dwarves. Also allows basic ga" & _
         "mbling and tavern brawls.")
-        Me.optBtnTavern.UseVisualStyleBackColor = false
+        Me.optBtnTavern.UseVisualStyleBackColor = False
         '
         'optBtnOlon
         '
         Me.optBtnOlon.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnOlon.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnOlon.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnOlon.FlatAppearance.BorderSize = 0
-        Me.optBtnOlon.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnOlon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnOlon.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnOlon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnOlon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnOlon.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnOlon.Image = CType(resources.GetObject("optBtnOlon.Image"),System.Drawing.Image)
+        Me.optBtnOlon.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnOlon.Image = CType(resources.GetObject("optBtnOlon.Image"), System.Drawing.Image)
         Me.optBtnOlon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnOlon.Location = New System.Drawing.Point(5, 52)
         Me.optBtnOlon.Margin = New System.Windows.Forms.Padding(1)
@@ -6473,32 +6474,32 @@ Partial Class MainForm
         OptionSingleReplace89.enabledValue = "YESOLON["
         FileListManager132.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace89.fileManager = FileListManager132
-        OptionManager132.loadFromDInit = false
-        OptionManager132.loadFromInit = false
-        OptionManager132.loadFromWorldGen = false
+        OptionManager132.loadFromDInit = False
+        OptionManager132.loadFromInit = False
+        OptionManager132.loadFromWorldGen = False
         OptionSingleReplace89.optionManager = OptionManager132
         OptionSettingManager135.settingName = Nothing
         OptionSingleReplace89.settingManager = OptionSettingManager135
         OptionSingleReplace89.tokenName = ""
-        OptionSingleReplace89.updateTileSets = false
+        OptionSingleReplace89.updateTileSets = False
         Me.optBtnOlon.options = OptionSingleReplace89
         Me.optBtnOlon.Size = New System.Drawing.Size(134, 27)
         Me.optBtnOlon.TabIndex = 1
         Me.optBtnOlon.Text = "Olon's Wonders"
         Me.optBtnOlon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnOlon, "A trader to buy/sell items for coins. Olon handles food.")
-        Me.optBtnOlon.UseVisualStyleBackColor = false
+        Me.optBtnOlon.UseVisualStyleBackColor = False
         '
         'optBtnBomrek
         '
         Me.optBtnBomrek.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBomrek.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBomrek.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBomrek.FlatAppearance.BorderSize = 0
-        Me.optBtnBomrek.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBomrek.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBomrek.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBomrek.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBomrek.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBomrek.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBomrek.Image = CType(resources.GetObject("optBtnBomrek.Image"),System.Drawing.Image)
+        Me.optBtnBomrek.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBomrek.Image = CType(resources.GetObject("optBtnBomrek.Image"), System.Drawing.Image)
         Me.optBtnBomrek.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBomrek.Location = New System.Drawing.Point(5, 81)
         Me.optBtnBomrek.Margin = New System.Windows.Forms.Padding(1)
@@ -6507,32 +6508,32 @@ Partial Class MainForm
         OptionSingleReplace90.enabledValue = "YESBOMREK["
         FileListManager133.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace90.fileManager = FileListManager133
-        OptionManager133.loadFromDInit = false
-        OptionManager133.loadFromInit = false
-        OptionManager133.loadFromWorldGen = false
+        OptionManager133.loadFromDInit = False
+        OptionManager133.loadFromInit = False
+        OptionManager133.loadFromWorldGen = False
         OptionSingleReplace90.optionManager = OptionManager133
         OptionSettingManager136.settingName = Nothing
         OptionSingleReplace90.settingManager = OptionSettingManager136
         OptionSingleReplace90.tokenName = ""
-        OptionSingleReplace90.updateTileSets = false
+        OptionSingleReplace90.updateTileSets = False
         Me.optBtnBomrek.options = OptionSingleReplace90
         Me.optBtnBomrek.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBomrek.TabIndex = 2
         Me.optBtnBomrek.Text = "Bomrek's Bargains"
         Me.optBtnBomrek.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnBomrek, "A trader to buy/sell items for coins. Bomrek handles basic materials.")
-        Me.optBtnBomrek.UseVisualStyleBackColor = false
+        Me.optBtnBomrek.UseVisualStyleBackColor = False
         '
         'optBtnUrist
         '
         Me.optBtnUrist.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnUrist.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnUrist.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnUrist.FlatAppearance.BorderSize = 0
-        Me.optBtnUrist.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnUrist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnUrist.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnUrist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnUrist.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnUrist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnUrist.Image = CType(resources.GetObject("optBtnUrist.Image"),System.Drawing.Image)
+        Me.optBtnUrist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnUrist.Image = CType(resources.GetObject("optBtnUrist.Image"), System.Drawing.Image)
         Me.optBtnUrist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnUrist.Location = New System.Drawing.Point(5, 110)
         Me.optBtnUrist.Margin = New System.Windows.Forms.Padding(1)
@@ -6541,32 +6542,32 @@ Partial Class MainForm
         OptionSingleReplace91.enabledValue = "YESURIST["
         FileListManager134.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace91.fileManager = FileListManager134
-        OptionManager134.loadFromDInit = false
-        OptionManager134.loadFromInit = false
-        OptionManager134.loadFromWorldGen = false
+        OptionManager134.loadFromDInit = False
+        OptionManager134.loadFromInit = False
+        OptionManager134.loadFromWorldGen = False
         OptionSingleReplace91.optionManager = OptionManager134
         OptionSettingManager137.settingName = Nothing
         OptionSingleReplace91.settingManager = OptionSettingManager137
         OptionSingleReplace91.tokenName = ""
-        OptionSingleReplace91.updateTileSets = false
+        OptionSingleReplace91.updateTileSets = False
         Me.optBtnUrist.options = OptionSingleReplace91
         Me.optBtnUrist.Size = New System.Drawing.Size(134, 27)
         Me.optBtnUrist.TabIndex = 3
         Me.optBtnUrist.Text = "Urist's Emporium"
         Me.optBtnUrist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnUrist, "A trader to buy/sell items for coins. Urist handles weapons and armors.")
-        Me.optBtnUrist.UseVisualStyleBackColor = false
+        Me.optBtnUrist.UseVisualStyleBackColor = False
         '
         'optBtnTeduk
         '
         Me.optBtnTeduk.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTeduk.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnTeduk.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnTeduk.FlatAppearance.BorderSize = 0
-        Me.optBtnTeduk.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnTeduk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnTeduk.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnTeduk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnTeduk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnTeduk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnTeduk.Image = CType(resources.GetObject("optBtnTeduk.Image"),System.Drawing.Image)
+        Me.optBtnTeduk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnTeduk.Image = CType(resources.GetObject("optBtnTeduk.Image"), System.Drawing.Image)
         Me.optBtnTeduk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnTeduk.Location = New System.Drawing.Point(5, 139)
         Me.optBtnTeduk.Margin = New System.Windows.Forms.Padding(1)
@@ -6575,32 +6576,32 @@ Partial Class MainForm
         OptionSingleReplace92.enabledValue = "YESTEDUK["
         FileListManager135.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace92.fileManager = FileListManager135
-        OptionManager135.loadFromDInit = false
-        OptionManager135.loadFromInit = false
-        OptionManager135.loadFromWorldGen = false
+        OptionManager135.loadFromDInit = False
+        OptionManager135.loadFromInit = False
+        OptionManager135.loadFromWorldGen = False
         OptionSingleReplace92.optionManager = OptionManager135
         OptionSettingManager138.settingName = Nothing
         OptionSingleReplace92.settingManager = OptionSettingManager138
         OptionSingleReplace92.tokenName = ""
-        OptionSingleReplace92.updateTileSets = false
+        OptionSingleReplace92.updateTileSets = False
         Me.optBtnTeduk.options = OptionSingleReplace92
         Me.optBtnTeduk.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTeduk.TabIndex = 4
         Me.optBtnTeduk.Text = "Teduk's Fine Goods"
         Me.optBtnTeduk.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ToolTipMaker.SetToolTip(Me.optBtnTeduk, "A trader to buy/sell items for coins. Teduk handles expensive goods.")
-        Me.optBtnTeduk.UseVisualStyleBackColor = false
+        Me.optBtnTeduk.UseVisualStyleBackColor = False
         '
         'optBtnIneri
         '
         Me.optBtnIneri.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnIneri.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnIneri.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnIneri.FlatAppearance.BorderSize = 0
-        Me.optBtnIneri.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnIneri.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnIneri.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnIneri.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnIneri.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnIneri.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnIneri.Image = CType(resources.GetObject("optBtnIneri.Image"),System.Drawing.Image)
+        Me.optBtnIneri.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnIneri.Image = CType(resources.GetObject("optBtnIneri.Image"), System.Drawing.Image)
         Me.optBtnIneri.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnIneri.Location = New System.Drawing.Point(5, 168)
         Me.optBtnIneri.Margin = New System.Windows.Forms.Padding(1)
@@ -6609,32 +6610,32 @@ Partial Class MainForm
         OptionSingleReplace93.enabledValue = "YESINARI["
         FileListManager136.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace93.fileManager = FileListManager136
-        OptionManager136.loadFromDInit = false
-        OptionManager136.loadFromInit = false
-        OptionManager136.loadFromWorldGen = false
+        OptionManager136.loadFromDInit = False
+        OptionManager136.loadFromInit = False
+        OptionManager136.loadFromWorldGen = False
         OptionSingleReplace93.optionManager = OptionManager136
         OptionSettingManager139.settingName = Nothing
         OptionSingleReplace93.settingManager = OptionSettingManager139
         OptionSingleReplace93.tokenName = ""
-        OptionSingleReplace93.updateTileSets = false
+        OptionSingleReplace93.updateTileSets = False
         Me.optBtnIneri.options = OptionSingleReplace93
         Me.optBtnIneri.Size = New System.Drawing.Size(134, 27)
         Me.optBtnIneri.TabIndex = 5
         Me.optBtnIneri.Text = "Ineri's Pet Shop"
         Me.optBtnIneri.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnIneri, "A trader to buy creatures for coins. Ineri specializes in pets.")
-        Me.optBtnIneri.UseVisualStyleBackColor = false
+        Me.optBtnIneri.UseVisualStyleBackColor = False
         '
         'optBtnAlchemy
         '
         Me.optBtnAlchemy.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAlchemy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnAlchemy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnAlchemy.FlatAppearance.BorderSize = 0
-        Me.optBtnAlchemy.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnAlchemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnAlchemy.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnAlchemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnAlchemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnAlchemy.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnAlchemy.Image = CType(resources.GetObject("optBtnAlchemy.Image"),System.Drawing.Image)
+        Me.optBtnAlchemy.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnAlchemy.Image = CType(resources.GetObject("optBtnAlchemy.Image"), System.Drawing.Image)
         Me.optBtnAlchemy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnAlchemy.Location = New System.Drawing.Point(5, 25)
         Me.optBtnAlchemy.Margin = New System.Windows.Forms.Padding(1)
@@ -6643,33 +6644,33 @@ Partial Class MainForm
         OptionSingleReplace94.enabledValue = "YESALCHEMY["
         FileListManager137.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace94.fileManager = FileListManager137
-        OptionManager137.loadFromDInit = false
-        OptionManager137.loadFromInit = false
-        OptionManager137.loadFromWorldGen = false
+        OptionManager137.loadFromDInit = False
+        OptionManager137.loadFromInit = False
+        OptionManager137.loadFromWorldGen = False
         OptionSingleReplace94.optionManager = OptionManager137
         OptionSettingManager140.settingName = Nothing
         OptionSingleReplace94.settingManager = OptionSettingManager140
         OptionSingleReplace94.tokenName = ""
-        OptionSingleReplace94.updateTileSets = false
+        OptionSingleReplace94.updateTileSets = False
         Me.optBtnAlchemy.options = OptionSingleReplace94
         Me.optBtnAlchemy.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAlchemy.TabIndex = 0
         Me.optBtnAlchemy.Text = "Alchemy"
         Me.optBtnAlchemy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnAlchemy, "Allows transmutation of metals, the creation of gems and special metals. as well "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnAlchemy, "Allows transmutation of metals, the creation of gems and special metals. as well " & _
         "as magma and water.")
-        Me.optBtnAlchemy.UseVisualStyleBackColor = false
+        Me.optBtnAlchemy.UseVisualStyleBackColor = False
         '
         'optBtnToxicology
         '
         Me.optBtnToxicology.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnToxicology.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnToxicology.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnToxicology.FlatAppearance.BorderSize = 0
-        Me.optBtnToxicology.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnToxicology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnToxicology.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnToxicology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnToxicology.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnToxicology.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnToxicology.Image = CType(resources.GetObject("optBtnToxicology.Image"),System.Drawing.Image)
+        Me.optBtnToxicology.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnToxicology.Image = CType(resources.GetObject("optBtnToxicology.Image"), System.Drawing.Image)
         Me.optBtnToxicology.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnToxicology.Location = New System.Drawing.Point(5, 54)
         Me.optBtnToxicology.Margin = New System.Windows.Forms.Padding(1)
@@ -6678,32 +6679,32 @@ Partial Class MainForm
         OptionSingleReplace95.enabledValue = "YESTOXICIST["
         FileListManager138.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace95.fileManager = FileListManager138
-        OptionManager138.loadFromDInit = false
-        OptionManager138.loadFromInit = false
-        OptionManager138.loadFromWorldGen = false
+        OptionManager138.loadFromDInit = False
+        OptionManager138.loadFromInit = False
+        OptionManager138.loadFromWorldGen = False
         OptionSingleReplace95.optionManager = OptionManager138
         OptionSettingManager141.settingName = Nothing
         OptionSingleReplace95.settingManager = OptionSettingManager141
         OptionSingleReplace95.tokenName = ""
-        OptionSingleReplace95.updateTileSets = false
+        OptionSingleReplace95.updateTileSets = False
         Me.optBtnToxicology.options = OptionSingleReplace95
         Me.optBtnToxicology.Size = New System.Drawing.Size(134, 27)
         Me.optBtnToxicology.TabIndex = 1
         Me.optBtnToxicology.Text = "Toxicology"
         Me.optBtnToxicology.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnToxicology, "Coat weapons, ammo or traps with different poisons.")
-        Me.optBtnToxicology.UseVisualStyleBackColor = false
+        Me.optBtnToxicology.UseVisualStyleBackColor = False
         '
         'optBtnChemistry
         '
         Me.optBtnChemistry.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnChemistry.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnChemistry.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnChemistry.FlatAppearance.BorderSize = 0
-        Me.optBtnChemistry.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnChemistry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnChemistry.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnChemistry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnChemistry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnChemistry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnChemistry.Image = CType(resources.GetObject("optBtnChemistry.Image"),System.Drawing.Image)
+        Me.optBtnChemistry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnChemistry.Image = CType(resources.GetObject("optBtnChemistry.Image"), System.Drawing.Image)
         Me.optBtnChemistry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnChemistry.Location = New System.Drawing.Point(5, 83)
         Me.optBtnChemistry.Margin = New System.Windows.Forms.Padding(1)
@@ -6712,32 +6713,32 @@ Partial Class MainForm
         OptionSingleReplace96.enabledValue = "YESCHEMISTRYLAB["
         FileListManager139.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace96.fileManager = FileListManager139
-        OptionManager139.loadFromDInit = false
-        OptionManager139.loadFromInit = false
-        OptionManager139.loadFromWorldGen = false
+        OptionManager139.loadFromDInit = False
+        OptionManager139.loadFromInit = False
+        OptionManager139.loadFromWorldGen = False
         OptionSingleReplace96.optionManager = OptionManager139
         OptionSettingManager142.settingName = Nothing
         OptionSingleReplace96.settingManager = OptionSettingManager142
         OptionSingleReplace96.tokenName = ""
-        OptionSingleReplace96.updateTileSets = false
+        OptionSingleReplace96.updateTileSets = False
         Me.optBtnChemistry.options = OptionSingleReplace96
         Me.optBtnChemistry.Size = New System.Drawing.Size(134, 27)
         Me.optBtnChemistry.TabIndex = 2
         Me.optBtnChemistry.Text = "Chemistry"
         Me.optBtnChemistry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnChemistry, "Adds chemistry to the game. Mostly used for explosives and acids.")
-        Me.optBtnChemistry.UseVisualStyleBackColor = false
+        Me.optBtnChemistry.UseVisualStyleBackColor = False
         '
         'optBtnHerbalist
         '
         Me.optBtnHerbalist.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHerbalist.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnHerbalist.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnHerbalist.FlatAppearance.BorderSize = 0
-        Me.optBtnHerbalist.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnHerbalist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnHerbalist.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnHerbalist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnHerbalist.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnHerbalist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnHerbalist.Image = CType(resources.GetObject("optBtnHerbalist.Image"),System.Drawing.Image)
+        Me.optBtnHerbalist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnHerbalist.Image = CType(resources.GetObject("optBtnHerbalist.Image"), System.Drawing.Image)
         Me.optBtnHerbalist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnHerbalist.Location = New System.Drawing.Point(5, 112)
         Me.optBtnHerbalist.Margin = New System.Windows.Forms.Padding(1)
@@ -6746,32 +6747,32 @@ Partial Class MainForm
         OptionSingleReplace97.enabledValue = "YESHERBALIST["
         FileListManager140.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace97.fileManager = FileListManager140
-        OptionManager140.loadFromDInit = false
-        OptionManager140.loadFromInit = false
-        OptionManager140.loadFromWorldGen = false
+        OptionManager140.loadFromDInit = False
+        OptionManager140.loadFromInit = False
+        OptionManager140.loadFromWorldGen = False
         OptionSingleReplace97.optionManager = OptionManager140
         OptionSettingManager143.settingName = Nothing
         OptionSingleReplace97.settingManager = OptionSettingManager143
         OptionSingleReplace97.tokenName = ""
-        OptionSingleReplace97.updateTileSets = false
+        OptionSingleReplace97.updateTileSets = False
         Me.optBtnHerbalist.options = OptionSingleReplace97
         Me.optBtnHerbalist.Size = New System.Drawing.Size(134, 27)
         Me.optBtnHerbalist.TabIndex = 3
-        Me.optBtnHerbalist.Text = "Botany"
+        Me.optBtnHerbalist.Text = "Herbalism"
         Me.optBtnHerbalist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnHerbalist, "Refines special plants and woods into useful items and materials for your fort.")
-        Me.optBtnHerbalist.UseVisualStyleBackColor = false
+        Me.optBtnHerbalist.UseVisualStyleBackColor = False
         '
         'optBtnAltar
         '
         Me.optBtnAltar.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAltar.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnAltar.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnAltar.FlatAppearance.BorderSize = 0
-        Me.optBtnAltar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnAltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnAltar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnAltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnAltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnAltar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnAltar.Image = CType(resources.GetObject("optBtnAltar.Image"),System.Drawing.Image)
+        Me.optBtnAltar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnAltar.Image = CType(resources.GetObject("optBtnAltar.Image"), System.Drawing.Image)
         Me.optBtnAltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnAltar.Location = New System.Drawing.Point(5, 19)
         Me.optBtnAltar.Margin = New System.Windows.Forms.Padding(1)
@@ -6780,32 +6781,32 @@ Partial Class MainForm
         OptionSingleReplace98.enabledValue = "YESALTAR["
         FileListManager141.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace98.fileManager = FileListManager141
-        OptionManager141.loadFromDInit = false
-        OptionManager141.loadFromInit = false
-        OptionManager141.loadFromWorldGen = false
+        OptionManager141.loadFromDInit = False
+        OptionManager141.loadFromInit = False
+        OptionManager141.loadFromWorldGen = False
         OptionSingleReplace98.optionManager = OptionManager141
         OptionSettingManager144.settingName = Nothing
         OptionSingleReplace98.settingManager = OptionSettingManager144
         OptionSingleReplace98.tokenName = ""
-        OptionSingleReplace98.updateTileSets = false
+        OptionSingleReplace98.updateTileSets = False
         Me.optBtnAltar.options = OptionSingleReplace98
         Me.optBtnAltar.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAltar.TabIndex = 0
         Me.optBtnAltar.Text = "Altar of Armok"
         Me.optBtnAltar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnAltar, "Adds the Altar of Armok. Allow your dwarves to pray to Armok for help.")
-        Me.optBtnAltar.UseVisualStyleBackColor = false
+        Me.optBtnAltar.UseVisualStyleBackColor = False
         '
         'optBtnShrine
         '
         Me.optBtnShrine.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnShrine.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnShrine.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnShrine.FlatAppearance.BorderSize = 0
-        Me.optBtnShrine.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnShrine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnShrine.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnShrine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnShrine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnShrine.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnShrine.Image = CType(resources.GetObject("optBtnShrine.Image"),System.Drawing.Image)
+        Me.optBtnShrine.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnShrine.Image = CType(resources.GetObject("optBtnShrine.Image"), System.Drawing.Image)
         Me.optBtnShrine.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnShrine.Location = New System.Drawing.Point(5, 48)
         Me.optBtnShrine.Margin = New System.Windows.Forms.Padding(1)
@@ -6814,32 +6815,32 @@ Partial Class MainForm
         OptionSingleReplace99.enabledValue = "YESSHRINE["
         FileListManager142.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace99.fileManager = FileListManager142
-        OptionManager142.loadFromDInit = false
-        OptionManager142.loadFromInit = false
-        OptionManager142.loadFromWorldGen = false
+        OptionManager142.loadFromDInit = False
+        OptionManager142.loadFromInit = False
+        OptionManager142.loadFromWorldGen = False
         OptionSingleReplace99.optionManager = OptionManager142
         OptionSettingManager145.settingName = Nothing
         OptionSingleReplace99.settingManager = OptionSettingManager145
         OptionSingleReplace99.tokenName = ""
-        OptionSingleReplace99.updateTileSets = false
+        OptionSingleReplace99.updateTileSets = False
         Me.optBtnShrine.options = OptionSingleReplace99
         Me.optBtnShrine.Size = New System.Drawing.Size(134, 27)
         Me.optBtnShrine.TabIndex = 1
         Me.optBtnShrine.Text = "Shrine of Armok"
         Me.optBtnShrine.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnShrine, "Adds the Shrine of Armok. Allow your dwarves to pray to Armok for help.")
-        Me.optBtnShrine.UseVisualStyleBackColor = false
+        Me.optBtnShrine.UseVisualStyleBackColor = False
         '
         'optBtnTemple
         '
         Me.optBtnTemple.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTemple.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnTemple.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnTemple.FlatAppearance.BorderSize = 0
-        Me.optBtnTemple.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnTemple.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnTemple.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnTemple.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnTemple.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnTemple.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnTemple.Image = CType(resources.GetObject("optBtnTemple.Image"),System.Drawing.Image)
+        Me.optBtnTemple.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnTemple.Image = CType(resources.GetObject("optBtnTemple.Image"), System.Drawing.Image)
         Me.optBtnTemple.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnTemple.Location = New System.Drawing.Point(5, 77)
         Me.optBtnTemple.Margin = New System.Windows.Forms.Padding(1)
@@ -6848,32 +6849,32 @@ Partial Class MainForm
         OptionSingleReplace100.enabledValue = "YESTEMPLE["
         FileListManager143.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace100.fileManager = FileListManager143
-        OptionManager143.loadFromDInit = false
-        OptionManager143.loadFromInit = false
-        OptionManager143.loadFromWorldGen = false
+        OptionManager143.loadFromDInit = False
+        OptionManager143.loadFromInit = False
+        OptionManager143.loadFromWorldGen = False
         OptionSingleReplace100.optionManager = OptionManager143
         OptionSettingManager146.settingName = Nothing
         OptionSingleReplace100.settingManager = OptionSettingManager146
         OptionSingleReplace100.tokenName = ""
-        OptionSingleReplace100.updateTileSets = false
+        OptionSingleReplace100.updateTileSets = False
         Me.optBtnTemple.options = OptionSingleReplace100
         Me.optBtnTemple.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTemple.TabIndex = 2
         Me.optBtnTemple.Text = "Temple of Armok"
         Me.optBtnTemple.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnTemple, "Adds the Temple of Armok. Allow your dwarves to pray to Armok for help.")
-        Me.optBtnTemple.UseVisualStyleBackColor = false
+        Me.optBtnTemple.UseVisualStyleBackColor = False
         '
         'optBtnEmbassy
         '
         Me.optBtnEmbassy.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEmbassy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnEmbassy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnEmbassy.FlatAppearance.BorderSize = 0
-        Me.optBtnEmbassy.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnEmbassy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnEmbassy.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnEmbassy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnEmbassy.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnEmbassy.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnEmbassy.Image = CType(resources.GetObject("optBtnEmbassy.Image"),System.Drawing.Image)
+        Me.optBtnEmbassy.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnEmbassy.Image = CType(resources.GetObject("optBtnEmbassy.Image"), System.Drawing.Image)
         Me.optBtnEmbassy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnEmbassy.Location = New System.Drawing.Point(5, 19)
         Me.optBtnEmbassy.Margin = New System.Windows.Forms.Padding(1)
@@ -6882,32 +6883,32 @@ Partial Class MainForm
         OptionSingleReplace101.enabledValue = "YESEMBASSY["
         FileListManager144.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace101.fileManager = FileListManager144
-        OptionManager144.loadFromDInit = false
-        OptionManager144.loadFromInit = false
-        OptionManager144.loadFromWorldGen = false
+        OptionManager144.loadFromDInit = False
+        OptionManager144.loadFromInit = False
+        OptionManager144.loadFromWorldGen = False
         OptionSingleReplace101.optionManager = OptionManager144
         OptionSettingManager147.settingName = Nothing
         OptionSingleReplace101.settingManager = OptionSettingManager147
         OptionSingleReplace101.tokenName = ""
-        OptionSingleReplace101.updateTileSets = false
+        OptionSingleReplace101.updateTileSets = False
         Me.optBtnEmbassy.options = OptionSingleReplace101
         Me.optBtnEmbassy.Size = New System.Drawing.Size(134, 27)
         Me.optBtnEmbassy.TabIndex = 0
         Me.optBtnEmbassy.Text = "Embassy"
         Me.optBtnEmbassy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnEmbassy, "Invite diplomats or traders and challenge beasts and civilizations.")
-        Me.optBtnEmbassy.UseVisualStyleBackColor = false
+        Me.optBtnEmbassy.UseVisualStyleBackColor = False
         '
         'optBtnExpedition
         '
         Me.optBtnExpedition.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnExpedition.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnExpedition.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnExpedition.FlatAppearance.BorderSize = 0
-        Me.optBtnExpedition.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnExpedition.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnExpedition.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnExpedition.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnExpedition.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnExpedition.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnExpedition.Image = CType(resources.GetObject("optBtnExpedition.Image"),System.Drawing.Image)
+        Me.optBtnExpedition.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnExpedition.Image = CType(resources.GetObject("optBtnExpedition.Image"), System.Drawing.Image)
         Me.optBtnExpedition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnExpedition.Location = New System.Drawing.Point(5, 48)
         Me.optBtnExpedition.Margin = New System.Windows.Forms.Padding(1)
@@ -6916,32 +6917,32 @@ Partial Class MainForm
         OptionSingleReplace102.enabledValue = "YESEXPEDITION["
         FileListManager145.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace102.fileManager = FileListManager145
-        OptionManager145.loadFromDInit = false
-        OptionManager145.loadFromInit = false
-        OptionManager145.loadFromWorldGen = false
+        OptionManager145.loadFromDInit = False
+        OptionManager145.loadFromInit = False
+        OptionManager145.loadFromWorldGen = False
         OptionSingleReplace102.optionManager = OptionManager145
         OptionSettingManager148.settingName = Nothing
         OptionSingleReplace102.settingManager = OptionSettingManager148
         OptionSingleReplace102.tokenName = ""
-        OptionSingleReplace102.updateTileSets = false
+        OptionSingleReplace102.updateTileSets = False
         Me.optBtnExpedition.options = OptionSingleReplace102
         Me.optBtnExpedition.Size = New System.Drawing.Size(134, 27)
         Me.optBtnExpedition.TabIndex = 1
         Me.optBtnExpedition.Text = "Expedition Outfitter"
         Me.optBtnExpedition.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ToolTipMaker.SetToolTip(Me.optBtnExpedition, "Send expeditions, raiding parties, diplomats and bards throughout the world.")
-        Me.optBtnExpedition.UseVisualStyleBackColor = false
+        Me.optBtnExpedition.UseVisualStyleBackColor = False
         '
         'optBtnPodium
         '
         Me.optBtnPodium.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPodium.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnPodium.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnPodium.FlatAppearance.BorderSize = 0
-        Me.optBtnPodium.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnPodium.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnPodium.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnPodium.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnPodium.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnPodium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnPodium.Image = CType(resources.GetObject("optBtnPodium.Image"),System.Drawing.Image)
+        Me.optBtnPodium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnPodium.Image = CType(resources.GetObject("optBtnPodium.Image"), System.Drawing.Image)
         Me.optBtnPodium.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnPodium.Location = New System.Drawing.Point(5, 77)
         Me.optBtnPodium.Margin = New System.Windows.Forms.Padding(1)
@@ -6950,32 +6951,32 @@ Partial Class MainForm
         OptionSingleReplace103.enabledValue = "YESSPEAKERSPODIUM["
         FileListManager146.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace103.fileManager = FileListManager146
-        OptionManager146.loadFromDInit = false
-        OptionManager146.loadFromInit = false
-        OptionManager146.loadFromWorldGen = false
+        OptionManager146.loadFromDInit = False
+        OptionManager146.loadFromInit = False
+        OptionManager146.loadFromWorldGen = False
         OptionSingleReplace103.optionManager = OptionManager146
         OptionSettingManager149.settingName = Nothing
         OptionSingleReplace103.settingManager = OptionSettingManager149
         OptionSingleReplace103.tokenName = ""
-        OptionSingleReplace103.updateTileSets = false
+        OptionSingleReplace103.updateTileSets = False
         Me.optBtnPodium.options = OptionSingleReplace103
         Me.optBtnPodium.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPodium.TabIndex = 2
         Me.optBtnPodium.Text = "Speaker's Podium"
         Me.optBtnPodium.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.ToolTipMaker.SetToolTip(Me.optBtnPodium, "Hold speeches to influence nearby dwarves and give them permanent mental attribut"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnPodium, "Hold speeches to influence nearby dwarves and give them permanent mental attribut" & _
         "e boosts.")
-        Me.optBtnPodium.UseVisualStyleBackColor = false
+        Me.optBtnPodium.UseVisualStyleBackColor = False
         '
         'optBtnScriptorium
         '
         Me.optBtnScriptorium.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnScriptorium.FlatAppearance.BorderSize = 0
-        Me.optBtnScriptorium.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnScriptorium.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnScriptorium.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnScriptorium.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnScriptorium.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnScriptorium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnScriptorium.Image = CType(resources.GetObject("optBtnScriptorium.Image"),System.Drawing.Image)
+        Me.optBtnScriptorium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnScriptorium.Image = CType(resources.GetObject("optBtnScriptorium.Image"), System.Drawing.Image)
         Me.optBtnScriptorium.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnScriptorium.Location = New System.Drawing.Point(5, 19)
         Me.optBtnScriptorium.Margin = New System.Windows.Forms.Padding(1)
@@ -6984,32 +6985,32 @@ Partial Class MainForm
         OptionSingleReplace104.enabledValue = "YESSCRIPTORIUM["
         FileListManager147.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace104.fileManager = FileListManager147
-        OptionManager147.loadFromDInit = false
-        OptionManager147.loadFromInit = false
-        OptionManager147.loadFromWorldGen = false
+        OptionManager147.loadFromDInit = False
+        OptionManager147.loadFromInit = False
+        OptionManager147.loadFromWorldGen = False
         OptionSingleReplace104.optionManager = OptionManager147
         OptionSettingManager150.settingName = Nothing
         OptionSingleReplace104.settingManager = OptionSettingManager150
         OptionSingleReplace104.tokenName = ""
-        OptionSingleReplace104.updateTileSets = false
+        OptionSingleReplace104.updateTileSets = False
         Me.optBtnScriptorium.options = OptionSingleReplace104
         Me.optBtnScriptorium.Size = New System.Drawing.Size(134, 27)
         Me.optBtnScriptorium.TabIndex = 0
         Me.optBtnScriptorium.Text = "Scriptorium"
         Me.optBtnScriptorium.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnScriptorium, "Write books to read in libraries, copy research discoveries.")
-        Me.optBtnScriptorium.UseVisualStyleBackColor = false
+        Me.optBtnScriptorium.UseVisualStyleBackColor = False
         '
         'optBtnLibraries
         '
         Me.optBtnLibraries.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnLibraries.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnLibraries.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnLibraries.FlatAppearance.BorderSize = 0
-        Me.optBtnLibraries.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnLibraries.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnLibraries.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnLibraries.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnLibraries.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnLibraries.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnLibraries.Image = CType(resources.GetObject("optBtnLibraries.Image"),System.Drawing.Image)
+        Me.optBtnLibraries.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnLibraries.Image = CType(resources.GetObject("optBtnLibraries.Image"), System.Drawing.Image)
         Me.optBtnLibraries.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnLibraries.Location = New System.Drawing.Point(5, 48)
         Me.optBtnLibraries.Margin = New System.Windows.Forms.Padding(1)
@@ -7018,32 +7019,32 @@ Partial Class MainForm
         OptionSingleReplace105.enabledValue = "YESLIBRARY["
         FileListManager148.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace105.fileManager = FileListManager148
-        OptionManager148.loadFromDInit = false
-        OptionManager148.loadFromInit = false
-        OptionManager148.loadFromWorldGen = false
+        OptionManager148.loadFromDInit = False
+        OptionManager148.loadFromInit = False
+        OptionManager148.loadFromWorldGen = False
         OptionSingleReplace105.optionManager = OptionManager148
         OptionSettingManager151.settingName = Nothing
         OptionSingleReplace105.settingManager = OptionSettingManager151
         OptionSingleReplace105.tokenName = ""
-        OptionSingleReplace105.updateTileSets = false
+        OptionSingleReplace105.updateTileSets = False
         Me.optBtnLibraries.options = OptionSingleReplace105
         Me.optBtnLibraries.Size = New System.Drawing.Size(134, 27)
         Me.optBtnLibraries.TabIndex = 1
         Me.optBtnLibraries.Text = "Libraries"
         Me.optBtnLibraries.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnLibraries, "Adds 6 Library section in which your dwarves can read to train their skills.")
-        Me.optBtnLibraries.UseVisualStyleBackColor = false
+        Me.optBtnLibraries.UseVisualStyleBackColor = False
         '
         'optBtnColosseum
         '
         Me.optBtnColosseum.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnColosseum.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnColosseum.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnColosseum.FlatAppearance.BorderSize = 0
-        Me.optBtnColosseum.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnColosseum.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnColosseum.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnColosseum.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnColosseum.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnColosseum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnColosseum.Image = CType(resources.GetObject("optBtnColosseum.Image"),System.Drawing.Image)
+        Me.optBtnColosseum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnColosseum.Image = CType(resources.GetObject("optBtnColosseum.Image"), System.Drawing.Image)
         Me.optBtnColosseum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnColosseum.Location = New System.Drawing.Point(5, 27)
         Me.optBtnColosseum.Margin = New System.Windows.Forms.Padding(1)
@@ -7052,32 +7053,32 @@ Partial Class MainForm
         OptionSingleReplace106.enabledValue = "YESCOLLOSSEUM["
         FileListManager149.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace106.fileManager = FileListManager149
-        OptionManager149.loadFromDInit = false
-        OptionManager149.loadFromInit = false
-        OptionManager149.loadFromWorldGen = false
+        OptionManager149.loadFromDInit = False
+        OptionManager149.loadFromInit = False
+        OptionManager149.loadFromWorldGen = False
         OptionSingleReplace106.optionManager = OptionManager149
         OptionSettingManager152.settingName = Nothing
         OptionSingleReplace106.settingManager = OptionSettingManager152
         OptionSingleReplace106.tokenName = ""
-        OptionSingleReplace106.updateTileSets = false
+        OptionSingleReplace106.updateTileSets = False
         Me.optBtnColosseum.options = OptionSingleReplace106
         Me.optBtnColosseum.Size = New System.Drawing.Size(134, 27)
         Me.optBtnColosseum.TabIndex = 0
         Me.optBtnColosseum.Text = "Colosseum"
         Me.optBtnColosseum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnColosseum, "Summon enemies to train your soldiers or fight for glory.")
-        Me.optBtnColosseum.UseVisualStyleBackColor = false
+        Me.optBtnColosseum.UseVisualStyleBackColor = False
         '
         'optBtnGuildhall
         '
         Me.optBtnGuildhall.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGuildhall.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGuildhall.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGuildhall.FlatAppearance.BorderSize = 0
-        Me.optBtnGuildhall.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGuildhall.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGuildhall.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGuildhall.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGuildhall.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGuildhall.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGuildhall.Image = CType(resources.GetObject("optBtnGuildhall.Image"),System.Drawing.Image)
+        Me.optBtnGuildhall.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGuildhall.Image = CType(resources.GetObject("optBtnGuildhall.Image"), System.Drawing.Image)
         Me.optBtnGuildhall.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGuildhall.Location = New System.Drawing.Point(5, 56)
         Me.optBtnGuildhall.Margin = New System.Windows.Forms.Padding(1)
@@ -7086,32 +7087,32 @@ Partial Class MainForm
         OptionSingleReplace107.enabledValue = "YESGUILDHALL["
         FileListManager150.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace107.fileManager = FileListManager150
-        OptionManager150.loadFromDInit = false
-        OptionManager150.loadFromInit = false
-        OptionManager150.loadFromWorldGen = false
+        OptionManager150.loadFromDInit = False
+        OptionManager150.loadFromInit = False
+        OptionManager150.loadFromWorldGen = False
         OptionSingleReplace107.optionManager = OptionManager150
         OptionSettingManager153.settingName = Nothing
         OptionSingleReplace107.settingManager = OptionSettingManager153
         OptionSingleReplace107.tokenName = ""
-        OptionSingleReplace107.updateTileSets = false
+        OptionSingleReplace107.updateTileSets = False
         Me.optBtnGuildhall.options = OptionSingleReplace107
         Me.optBtnGuildhall.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGuildhall.TabIndex = 1
         Me.optBtnGuildhall.Text = "Guildhall"
         Me.optBtnGuildhall.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnGuildhall, "Dwarves can join guilds to get a 200% bonus in learn rate for fitting skills.")
-        Me.optBtnGuildhall.UseVisualStyleBackColor = false
+        Me.optBtnGuildhall.UseVisualStyleBackColor = False
         '
         'optBtnPrison
         '
         Me.optBtnPrison.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPrison.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnPrison.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnPrison.FlatAppearance.BorderSize = 0
-        Me.optBtnPrison.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnPrison.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnPrison.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnPrison.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnPrison.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnPrison.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnPrison.Image = CType(resources.GetObject("optBtnPrison.Image"),System.Drawing.Image)
+        Me.optBtnPrison.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnPrison.Image = CType(resources.GetObject("optBtnPrison.Image"), System.Drawing.Image)
         Me.optBtnPrison.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnPrison.Location = New System.Drawing.Point(5, 85)
         Me.optBtnPrison.Margin = New System.Windows.Forms.Padding(1)
@@ -7120,32 +7121,32 @@ Partial Class MainForm
         OptionSingleReplace108.enabledValue = "YESPRISON["
         FileListManager151.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace108.fileManager = FileListManager151
-        OptionManager151.loadFromDInit = false
-        OptionManager151.loadFromInit = false
-        OptionManager151.loadFromWorldGen = false
+        OptionManager151.loadFromDInit = False
+        OptionManager151.loadFromInit = False
+        OptionManager151.loadFromWorldGen = False
         OptionSingleReplace108.optionManager = OptionManager151
         OptionSettingManager154.settingName = Nothing
         OptionSingleReplace108.settingManager = OptionSettingManager154
         OptionSingleReplace108.tokenName = ""
-        OptionSingleReplace108.updateTileSets = false
+        OptionSingleReplace108.updateTileSets = False
         Me.optBtnPrison.options = OptionSingleReplace108
         Me.optBtnPrison.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPrison.TabIndex = 2
         Me.optBtnPrison.Text = "Prison"
         Me.optBtnPrison.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnPrison, "Lock away specific dwarves for a specific time.")
-        Me.optBtnPrison.UseVisualStyleBackColor = false
+        Me.optBtnPrison.UseVisualStyleBackColor = False
         '
         'optBtnMonastery
         '
         Me.optBtnMonastery.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMonastery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMonastery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMonastery.FlatAppearance.BorderSize = 0
-        Me.optBtnMonastery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMonastery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMonastery.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMonastery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMonastery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMonastery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMonastery.Image = CType(resources.GetObject("optBtnMonastery.Image"),System.Drawing.Image)
+        Me.optBtnMonastery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMonastery.Image = CType(resources.GetObject("optBtnMonastery.Image"), System.Drawing.Image)
         Me.optBtnMonastery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMonastery.Location = New System.Drawing.Point(5, 114)
         Me.optBtnMonastery.Margin = New System.Windows.Forms.Padding(1)
@@ -7154,33 +7155,33 @@ Partial Class MainForm
         OptionSingleReplace109.enabledValue = "YESMONASTERY["
         FileListManager152.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace109.fileManager = FileListManager152
-        OptionManager152.loadFromDInit = false
-        OptionManager152.loadFromInit = false
-        OptionManager152.loadFromWorldGen = false
+        OptionManager152.loadFromDInit = False
+        OptionManager152.loadFromInit = False
+        OptionManager152.loadFromWorldGen = False
         OptionSingleReplace109.optionManager = OptionManager152
         OptionSettingManager155.settingName = Nothing
         OptionSingleReplace109.settingManager = OptionSettingManager155
         OptionSingleReplace109.tokenName = ""
-        OptionSingleReplace109.updateTileSets = false
+        OptionSingleReplace109.updateTileSets = False
         Me.optBtnMonastery.options = OptionSingleReplace109
         Me.optBtnMonastery.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMonastery.TabIndex = 3
         Me.optBtnMonastery.Text = "Monastery"
         Me.optBtnMonastery.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnMonastery, "Allows dwarves to join the religious castes and creates construction materials fo"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnMonastery, "Allows dwarves to join the religious castes and creates construction materials fo" & _
         "r temples.")
-        Me.optBtnMonastery.UseVisualStyleBackColor = false
+        Me.optBtnMonastery.UseVisualStyleBackColor = False
         '
         'optBtnGarrison
         '
         Me.optBtnGarrison.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGarrison.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGarrison.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGarrison.FlatAppearance.BorderSize = 0
-        Me.optBtnGarrison.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGarrison.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGarrison.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGarrison.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGarrison.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGarrison.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGarrison.Image = CType(resources.GetObject("optBtnGarrison.Image"),System.Drawing.Image)
+        Me.optBtnGarrison.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGarrison.Image = CType(resources.GetObject("optBtnGarrison.Image"), System.Drawing.Image)
         Me.optBtnGarrison.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGarrison.Location = New System.Drawing.Point(5, 143)
         Me.optBtnGarrison.Margin = New System.Windows.Forms.Padding(1)
@@ -7189,33 +7190,33 @@ Partial Class MainForm
         OptionSingleReplace110.enabledValue = "YESGARRISON["
         FileListManager153.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace110.fileManager = FileListManager153
-        OptionManager153.loadFromDInit = false
-        OptionManager153.loadFromInit = false
-        OptionManager153.loadFromWorldGen = false
+        OptionManager153.loadFromDInit = False
+        OptionManager153.loadFromInit = False
+        OptionManager153.loadFromWorldGen = False
         OptionSingleReplace110.optionManager = OptionManager153
         OptionSettingManager156.settingName = Nothing
         OptionSingleReplace110.settingManager = OptionSettingManager156
         OptionSingleReplace110.tokenName = ""
-        OptionSingleReplace110.updateTileSets = false
+        OptionSingleReplace110.updateTileSets = False
         Me.optBtnGarrison.options = OptionSingleReplace110
         Me.optBtnGarrison.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGarrison.TabIndex = 4
         Me.optBtnGarrison.Text = "Garrison"
         Me.optBtnGarrison.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnGarrison, "Dwarves can join military groups which gives a 200% learning bonus to military sk"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnGarrison, "Dwarves can join military groups which gives a 200% learning bonus to military sk" & _
         "ills.")
-        Me.optBtnGarrison.UseVisualStyleBackColor = false
+        Me.optBtnGarrison.UseVisualStyleBackColor = False
         '
         'optBtnBrazier
         '
         Me.optBtnBrazier.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBrazier.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBrazier.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBrazier.FlatAppearance.BorderSize = 0
-        Me.optBtnBrazier.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBrazier.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBrazier.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBrazier.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBrazier.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBrazier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBrazier.Image = CType(resources.GetObject("optBtnBrazier.Image"),System.Drawing.Image)
+        Me.optBtnBrazier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBrazier.Image = CType(resources.GetObject("optBtnBrazier.Image"), System.Drawing.Image)
         Me.optBtnBrazier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBrazier.Location = New System.Drawing.Point(5, 19)
         Me.optBtnBrazier.Margin = New System.Windows.Forms.Padding(1)
@@ -7224,32 +7225,32 @@ Partial Class MainForm
         OptionSingleReplace111.enabledValue = "YESBRAZIER["
         FileListManager154.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace111.fileManager = FileListManager154
-        OptionManager154.loadFromDInit = false
-        OptionManager154.loadFromInit = false
-        OptionManager154.loadFromWorldGen = false
+        OptionManager154.loadFromDInit = False
+        OptionManager154.loadFromInit = False
+        OptionManager154.loadFromWorldGen = False
         OptionSingleReplace111.optionManager = OptionManager154
         OptionSettingManager157.settingName = Nothing
         OptionSingleReplace111.settingManager = OptionSettingManager157
         OptionSingleReplace111.tokenName = ""
-        OptionSingleReplace111.updateTileSets = false
+        OptionSingleReplace111.updateTileSets = False
         Me.optBtnBrazier.options = OptionSingleReplace111
         Me.optBtnBrazier.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBrazier.TabIndex = 0
         Me.optBtnBrazier.Text = "Brazier"
         Me.optBtnBrazier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnBrazier, "Adds a way to make fire, light pipes and create light.")
-        Me.optBtnBrazier.UseVisualStyleBackColor = false
+        Me.optBtnBrazier.UseVisualStyleBackColor = False
         '
         'optBtnCandelabra
         '
         Me.optBtnCandelabra.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCandelabra.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnCandelabra.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnCandelabra.FlatAppearance.BorderSize = 0
-        Me.optBtnCandelabra.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnCandelabra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnCandelabra.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnCandelabra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnCandelabra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnCandelabra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnCandelabra.Image = CType(resources.GetObject("optBtnCandelabra.Image"),System.Drawing.Image)
+        Me.optBtnCandelabra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnCandelabra.Image = CType(resources.GetObject("optBtnCandelabra.Image"), System.Drawing.Image)
         Me.optBtnCandelabra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnCandelabra.Location = New System.Drawing.Point(5, 48)
         Me.optBtnCandelabra.Margin = New System.Windows.Forms.Padding(1)
@@ -7258,32 +7259,32 @@ Partial Class MainForm
         OptionSingleReplace112.enabledValue = "YESCANDELABRA["
         FileListManager155.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace112.fileManager = FileListManager155
-        OptionManager155.loadFromDInit = false
-        OptionManager155.loadFromInit = false
-        OptionManager155.loadFromWorldGen = false
+        OptionManager155.loadFromDInit = False
+        OptionManager155.loadFromInit = False
+        OptionManager155.loadFromWorldGen = False
         OptionSingleReplace112.optionManager = OptionManager155
         OptionSettingManager158.settingName = Nothing
         OptionSingleReplace112.settingManager = OptionSettingManager158
         OptionSingleReplace112.tokenName = ""
-        OptionSingleReplace112.updateTileSets = false
+        OptionSingleReplace112.updateTileSets = False
         Me.optBtnCandelabra.options = OptionSingleReplace112
         Me.optBtnCandelabra.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCandelabra.TabIndex = 1
         Me.optBtnCandelabra.Text = "Candelabra"
         Me.optBtnCandelabra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnCandelabra, "Adds a way to make fire, light pipes and create light.")
-        Me.optBtnCandelabra.UseVisualStyleBackColor = false
+        Me.optBtnCandelabra.UseVisualStyleBackColor = False
         '
         'optBtnFireplace
         '
         Me.optBtnFireplace.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFireplace.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnFireplace.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnFireplace.FlatAppearance.BorderSize = 0
-        Me.optBtnFireplace.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnFireplace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnFireplace.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnFireplace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnFireplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnFireplace.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnFireplace.Image = CType(resources.GetObject("optBtnFireplace.Image"),System.Drawing.Image)
+        Me.optBtnFireplace.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnFireplace.Image = CType(resources.GetObject("optBtnFireplace.Image"), System.Drawing.Image)
         Me.optBtnFireplace.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnFireplace.Location = New System.Drawing.Point(5, 77)
         Me.optBtnFireplace.Margin = New System.Windows.Forms.Padding(1)
@@ -7292,32 +7293,32 @@ Partial Class MainForm
         OptionSingleReplace113.enabledValue = "YESFIREPLACE["
         FileListManager156.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace113.fileManager = FileListManager156
-        OptionManager156.loadFromDInit = false
-        OptionManager156.loadFromInit = false
-        OptionManager156.loadFromWorldGen = false
+        OptionManager156.loadFromDInit = False
+        OptionManager156.loadFromInit = False
+        OptionManager156.loadFromWorldGen = False
         OptionSingleReplace113.optionManager = OptionManager156
         OptionSettingManager159.settingName = Nothing
         OptionSingleReplace113.settingManager = OptionSettingManager159
         OptionSingleReplace113.tokenName = ""
-        OptionSingleReplace113.updateTileSets = false
+        OptionSingleReplace113.updateTileSets = False
         Me.optBtnFireplace.options = OptionSingleReplace113
         Me.optBtnFireplace.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFireplace.TabIndex = 2
         Me.optBtnFireplace.Text = "Fireplace"
         Me.optBtnFireplace.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFireplace, "Adds a way to make fire, light pipes and create light.")
-        Me.optBtnFireplace.UseVisualStyleBackColor = false
+        Me.optBtnFireplace.UseVisualStyleBackColor = False
         '
         'optBtnTorchbearerStatue
         '
         Me.optBtnTorchbearerStatue.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTorchbearerStatue.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnTorchbearerStatue.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnTorchbearerStatue.FlatAppearance.BorderSize = 0
-        Me.optBtnTorchbearerStatue.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnTorchbearerStatue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnTorchbearerStatue.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnTorchbearerStatue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnTorchbearerStatue.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnTorchbearerStatue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnTorchbearerStatue.Image = CType(resources.GetObject("optBtnTorchbearerStatue.Image"),System.Drawing.Image)
+        Me.optBtnTorchbearerStatue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnTorchbearerStatue.Image = CType(resources.GetObject("optBtnTorchbearerStatue.Image"), System.Drawing.Image)
         Me.optBtnTorchbearerStatue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnTorchbearerStatue.Location = New System.Drawing.Point(5, 106)
         Me.optBtnTorchbearerStatue.Margin = New System.Windows.Forms.Padding(1)
@@ -7326,32 +7327,32 @@ Partial Class MainForm
         OptionSingleReplace114.enabledValue = "YESTORCHBEARER["
         FileListManager157.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace114.fileManager = FileListManager157
-        OptionManager157.loadFromDInit = false
-        OptionManager157.loadFromInit = false
-        OptionManager157.loadFromWorldGen = false
+        OptionManager157.loadFromDInit = False
+        OptionManager157.loadFromInit = False
+        OptionManager157.loadFromWorldGen = False
         OptionSingleReplace114.optionManager = OptionManager157
         OptionSettingManager160.settingName = Nothing
         OptionSingleReplace114.settingManager = OptionSettingManager160
         OptionSingleReplace114.tokenName = ""
-        OptionSingleReplace114.updateTileSets = false
+        OptionSingleReplace114.updateTileSets = False
         Me.optBtnTorchbearerStatue.options = OptionSingleReplace114
         Me.optBtnTorchbearerStatue.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTorchbearerStatue.TabIndex = 3
         Me.optBtnTorchbearerStatue.Text = "Torchbearer"
         Me.optBtnTorchbearerStatue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnTorchbearerStatue, "Adds a way to make fire, light pipes and create light.")
-        Me.optBtnTorchbearerStatue.UseVisualStyleBackColor = false
+        Me.optBtnTorchbearerStatue.UseVisualStyleBackColor = False
         '
         'optBtnGemOfLight
         '
         Me.optBtnGemOfLight.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGemOfLight.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGemOfLight.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGemOfLight.FlatAppearance.BorderSize = 0
-        Me.optBtnGemOfLight.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGemOfLight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGemOfLight.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGemOfLight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGemOfLight.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGemOfLight.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGemOfLight.Image = CType(resources.GetObject("optBtnGemOfLight.Image"),System.Drawing.Image)
+        Me.optBtnGemOfLight.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGemOfLight.Image = CType(resources.GetObject("optBtnGemOfLight.Image"), System.Drawing.Image)
         Me.optBtnGemOfLight.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGemOfLight.Location = New System.Drawing.Point(5, 135)
         Me.optBtnGemOfLight.Margin = New System.Windows.Forms.Padding(1)
@@ -7360,32 +7361,32 @@ Partial Class MainForm
         OptionSingleReplace115.enabledValue = "YESGEMOFLIGHT["
         FileListManager158.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace115.fileManager = FileListManager158
-        OptionManager158.loadFromDInit = false
-        OptionManager158.loadFromInit = false
-        OptionManager158.loadFromWorldGen = false
+        OptionManager158.loadFromDInit = False
+        OptionManager158.loadFromInit = False
+        OptionManager158.loadFromWorldGen = False
         OptionSingleReplace115.optionManager = OptionManager158
         OptionSettingManager161.settingName = Nothing
         OptionSingleReplace115.settingManager = OptionSettingManager161
         OptionSingleReplace115.tokenName = ""
-        OptionSingleReplace115.updateTileSets = false
+        OptionSingleReplace115.updateTileSets = False
         Me.optBtnGemOfLight.options = OptionSingleReplace115
         Me.optBtnGemOfLight.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGemOfLight.TabIndex = 4
         Me.optBtnGemOfLight.Text = "Gem of Light"
         Me.optBtnGemOfLight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnGemOfLight, "Creates a lot of light.")
-        Me.optBtnGemOfLight.UseVisualStyleBackColor = false
+        Me.optBtnGemOfLight.UseVisualStyleBackColor = False
         '
         'optBtnAmmocaster
         '
         Me.optBtnAmmocaster.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAmmocaster.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnAmmocaster.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnAmmocaster.FlatAppearance.BorderSize = 0
-        Me.optBtnAmmocaster.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnAmmocaster.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnAmmocaster.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnAmmocaster.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnAmmocaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnAmmocaster.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnAmmocaster.Image = CType(resources.GetObject("optBtnAmmocaster.Image"),System.Drawing.Image)
+        Me.optBtnAmmocaster.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnAmmocaster.Image = CType(resources.GetObject("optBtnAmmocaster.Image"), System.Drawing.Image)
         Me.optBtnAmmocaster.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnAmmocaster.Location = New System.Drawing.Point(5, 19)
         Me.optBtnAmmocaster.Margin = New System.Windows.Forms.Padding(1)
@@ -7394,32 +7395,32 @@ Partial Class MainForm
         OptionSingleReplace116.enabledValue = "YESAMMOCASTER["
         FileListManager159.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace116.fileManager = FileListManager159
-        OptionManager159.loadFromDInit = false
-        OptionManager159.loadFromInit = false
-        OptionManager159.loadFromWorldGen = false
+        OptionManager159.loadFromDInit = False
+        OptionManager159.loadFromInit = False
+        OptionManager159.loadFromWorldGen = False
         OptionSingleReplace116.optionManager = OptionManager159
         OptionSettingManager162.settingName = Nothing
         OptionSingleReplace116.settingManager = OptionSettingManager162
         OptionSingleReplace116.tokenName = ""
-        OptionSingleReplace116.updateTileSets = false
+        OptionSingleReplace116.updateTileSets = False
         Me.optBtnAmmocaster.options = OptionSingleReplace116
         Me.optBtnAmmocaster.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAmmocaster.TabIndex = 0
         Me.optBtnAmmocaster.Text = "Ammo Caster"
         Me.optBtnAmmocaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnAmmocaster, "Create several new types of ammo in this furnace.")
-        Me.optBtnAmmocaster.UseVisualStyleBackColor = false
+        Me.optBtnAmmocaster.UseVisualStyleBackColor = False
         '
         'optBtnGunsmith
         '
         Me.optBtnGunsmith.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGunsmith.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGunsmith.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGunsmith.FlatAppearance.BorderSize = 0
-        Me.optBtnGunsmith.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGunsmith.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGunsmith.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGunsmith.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGunsmith.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGunsmith.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGunsmith.Image = CType(resources.GetObject("optBtnGunsmith.Image"),System.Drawing.Image)
+        Me.optBtnGunsmith.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGunsmith.Image = CType(resources.GetObject("optBtnGunsmith.Image"), System.Drawing.Image)
         Me.optBtnGunsmith.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGunsmith.Location = New System.Drawing.Point(5, 48)
         Me.optBtnGunsmith.Margin = New System.Windows.Forms.Padding(1)
@@ -7428,32 +7429,32 @@ Partial Class MainForm
         OptionSingleReplace117.enabledValue = "YESGUN["
         FileListManager160.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace117.fileManager = FileListManager160
-        OptionManager160.loadFromDInit = false
-        OptionManager160.loadFromInit = false
-        OptionManager160.loadFromWorldGen = false
+        OptionManager160.loadFromDInit = False
+        OptionManager160.loadFromInit = False
+        OptionManager160.loadFromWorldGen = False
         OptionSingleReplace117.optionManager = OptionManager160
         OptionSettingManager163.settingName = Nothing
         OptionSingleReplace117.settingManager = OptionSettingManager163
         OptionSingleReplace117.tokenName = ""
-        OptionSingleReplace117.updateTileSets = false
+        OptionSingleReplace117.updateTileSets = False
         Me.optBtnGunsmith.options = OptionSingleReplace117
         Me.optBtnGunsmith.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGunsmith.TabIndex = 1
         Me.optBtnGunsmith.Text = "Gunsmith"
         Me.optBtnGunsmith.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnGunsmith, "Adds a gunsmith. You can now create gunpowder and several guns.")
-        Me.optBtnGunsmith.UseVisualStyleBackColor = false
+        Me.optBtnGunsmith.UseVisualStyleBackColor = False
         '
         'optBtnHeavySiegeworks
         '
         Me.optBtnHeavySiegeworks.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHeavySiegeworks.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnHeavySiegeworks.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnHeavySiegeworks.FlatAppearance.BorderSize = 0
-        Me.optBtnHeavySiegeworks.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnHeavySiegeworks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnHeavySiegeworks.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnHeavySiegeworks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnHeavySiegeworks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnHeavySiegeworks.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnHeavySiegeworks.Image = CType(resources.GetObject("optBtnHeavySiegeworks.Image"),System.Drawing.Image)
+        Me.optBtnHeavySiegeworks.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnHeavySiegeworks.Image = CType(resources.GetObject("optBtnHeavySiegeworks.Image"), System.Drawing.Image)
         Me.optBtnHeavySiegeworks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnHeavySiegeworks.Location = New System.Drawing.Point(5, 77)
         Me.optBtnHeavySiegeworks.Margin = New System.Windows.Forms.Padding(1)
@@ -7462,33 +7463,33 @@ Partial Class MainForm
         OptionSingleReplace118.enabledValue = "YESHEAVYSIEGE["
         FileListManager161.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace118.fileManager = FileListManager161
-        OptionManager161.loadFromDInit = false
-        OptionManager161.loadFromInit = false
-        OptionManager161.loadFromWorldGen = false
+        OptionManager161.loadFromDInit = False
+        OptionManager161.loadFromInit = False
+        OptionManager161.loadFromWorldGen = False
         OptionSingleReplace118.optionManager = OptionManager161
         OptionSettingManager164.settingName = Nothing
         OptionSingleReplace118.settingManager = OptionSettingManager164
         OptionSingleReplace118.tokenName = ""
-        OptionSingleReplace118.updateTileSets = false
+        OptionSingleReplace118.updateTileSets = False
         Me.optBtnHeavySiegeworks.options = OptionSingleReplace118
         Me.optBtnHeavySiegeworks.Size = New System.Drawing.Size(134, 27)
         Me.optBtnHeavySiegeworks.TabIndex = 2
         Me.optBtnHeavySiegeworks.Text = "Heavy Siegeworks"
         Me.optBtnHeavySiegeworks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnHeavySiegeworks, "Adds the ability to make exploding ballista bolts, metal ballistae and catapults "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnHeavySiegeworks, "Adds the ability to make exploding ballista bolts, metal ballistae and catapults " & _
         "and more.")
-        Me.optBtnHeavySiegeworks.UseVisualStyleBackColor = false
+        Me.optBtnHeavySiegeworks.UseVisualStyleBackColor = False
         '
         'optBtnEngineer
         '
         Me.optBtnEngineer.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEngineer.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnEngineer.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnEngineer.FlatAppearance.BorderSize = 0
-        Me.optBtnEngineer.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnEngineer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnEngineer.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnEngineer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnEngineer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnEngineer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnEngineer.Image = CType(resources.GetObject("optBtnEngineer.Image"),System.Drawing.Image)
+        Me.optBtnEngineer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnEngineer.Image = CType(resources.GetObject("optBtnEngineer.Image"), System.Drawing.Image)
         Me.optBtnEngineer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnEngineer.Location = New System.Drawing.Point(5, 106)
         Me.optBtnEngineer.Margin = New System.Windows.Forms.Padding(1)
@@ -7497,32 +7498,32 @@ Partial Class MainForm
         OptionSingleReplace119.enabledValue = "YESENGINEER["
         FileListManager162.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace119.fileManager = FileListManager162
-        OptionManager162.loadFromDInit = false
-        OptionManager162.loadFromInit = false
-        OptionManager162.loadFromWorldGen = false
+        OptionManager162.loadFromDInit = False
+        OptionManager162.loadFromInit = False
+        OptionManager162.loadFromWorldGen = False
         OptionSingleReplace119.optionManager = OptionManager162
         OptionSettingManager165.settingName = Nothing
         OptionSingleReplace119.settingManager = OptionSettingManager165
         OptionSingleReplace119.tokenName = ""
-        OptionSingleReplace119.updateTileSets = false
+        OptionSingleReplace119.updateTileSets = False
         Me.optBtnEngineer.options = OptionSingleReplace119
         Me.optBtnEngineer.Size = New System.Drawing.Size(134, 27)
         Me.optBtnEngineer.TabIndex = 3
         Me.optBtnEngineer.Text = "Engineer"
         Me.optBtnEngineer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnEngineer, "A workshop to upgrade your traps. Only needed if you play with: Weaker trap ON.")
-        Me.optBtnEngineer.UseVisualStyleBackColor = false
+        Me.optBtnEngineer.UseVisualStyleBackColor = False
         '
         'optBtnInventor
         '
         Me.optBtnInventor.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnInventor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnInventor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnInventor.FlatAppearance.BorderSize = 0
-        Me.optBtnInventor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnInventor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnInventor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnInventor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnInventor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnInventor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnInventor.Image = CType(resources.GetObject("optBtnInventor.Image"),System.Drawing.Image)
+        Me.optBtnInventor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnInventor.Image = CType(resources.GetObject("optBtnInventor.Image"), System.Drawing.Image)
         Me.optBtnInventor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnInventor.Location = New System.Drawing.Point(5, 135)
         Me.optBtnInventor.Margin = New System.Windows.Forms.Padding(1)
@@ -7531,33 +7532,33 @@ Partial Class MainForm
         OptionSingleReplace120.enabledValue = "YESINVENTORSWORKBENCH["
         FileListManager163.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace120.fileManager = FileListManager163
-        OptionManager163.loadFromDInit = false
-        OptionManager163.loadFromInit = false
-        OptionManager163.loadFromWorldGen = false
+        OptionManager163.loadFromDInit = False
+        OptionManager163.loadFromInit = False
+        OptionManager163.loadFromWorldGen = False
         OptionSingleReplace120.optionManager = OptionManager163
         OptionSettingManager166.settingName = Nothing
         OptionSingleReplace120.settingManager = OptionSettingManager166
         OptionSingleReplace120.tokenName = ""
-        OptionSingleReplace120.updateTileSets = false
+        OptionSingleReplace120.updateTileSets = False
         Me.optBtnInventor.options = OptionSingleReplace120
         Me.optBtnInventor.Size = New System.Drawing.Size(134, 27)
         Me.optBtnInventor.TabIndex = 4
         Me.optBtnInventor.Text = "Inventor"
         Me.optBtnInventor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnInventor, "Invent foreign weapons, shields or armors and copy existing models of them. Can m"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnInventor, "Invent foreign weapons, shields or armors and copy existing models of them. Can m" & _
         "ake copies of leather, metal or gem.")
-        Me.optBtnInventor.UseVisualStyleBackColor = false
+        Me.optBtnInventor.UseVisualStyleBackColor = False
         '
         'optBtnGreatforge
         '
         Me.optBtnGreatforge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGreatforge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGreatforge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGreatforge.FlatAppearance.BorderSize = 0
-        Me.optBtnGreatforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGreatforge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGreatforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGreatforge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGreatforge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGreatforge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGreatforge.Image = CType(resources.GetObject("optBtnGreatforge.Image"),System.Drawing.Image)
+        Me.optBtnGreatforge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGreatforge.Image = CType(resources.GetObject("optBtnGreatforge.Image"), System.Drawing.Image)
         Me.optBtnGreatforge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGreatforge.Location = New System.Drawing.Point(5, 164)
         Me.optBtnGreatforge.Margin = New System.Windows.Forms.Padding(1)
@@ -7566,32 +7567,32 @@ Partial Class MainForm
         OptionSingleReplace121.enabledValue = "YESGREATFORGE["
         FileListManager164.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace121.fileManager = FileListManager164
-        OptionManager164.loadFromDInit = false
-        OptionManager164.loadFromInit = false
-        OptionManager164.loadFromWorldGen = false
+        OptionManager164.loadFromDInit = False
+        OptionManager164.loadFromInit = False
+        OptionManager164.loadFromWorldGen = False
         OptionSingleReplace121.optionManager = OptionManager164
         OptionSettingManager167.settingName = Nothing
         OptionSingleReplace121.settingManager = OptionSettingManager167
         OptionSingleReplace121.tokenName = ""
-        OptionSingleReplace121.updateTileSets = false
+        OptionSingleReplace121.updateTileSets = False
         Me.optBtnGreatforge.options = OptionSingleReplace121
         Me.optBtnGreatforge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGreatforge.TabIndex = 5
         Me.optBtnGreatforge.Text = "Greatforge"
         Me.optBtnGreatforge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnGreatforge, "Forges two-handed weapons, kite shields and armor sets.")
-        Me.optBtnGreatforge.UseVisualStyleBackColor = false
+        Me.optBtnGreatforge.UseVisualStyleBackColor = False
         '
         'optBtnGlassforge
         '
         Me.optBtnGlassforge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGlassforge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGlassforge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGlassforge.FlatAppearance.BorderSize = 0
-        Me.optBtnGlassforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGlassforge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGlassforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGlassforge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGlassforge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGlassforge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGlassforge.Image = CType(resources.GetObject("optBtnGlassforge.Image"),System.Drawing.Image)
+        Me.optBtnGlassforge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGlassforge.Image = CType(resources.GetObject("optBtnGlassforge.Image"), System.Drawing.Image)
         Me.optBtnGlassforge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGlassforge.Location = New System.Drawing.Point(5, 193)
         Me.optBtnGlassforge.Margin = New System.Windows.Forms.Padding(1)
@@ -7600,32 +7601,32 @@ Partial Class MainForm
         OptionSingleReplace122.enabledValue = "YESGLASSFORGE["
         FileListManager165.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace122.fileManager = FileListManager165
-        OptionManager165.loadFromDInit = false
-        OptionManager165.loadFromInit = false
-        OptionManager165.loadFromWorldGen = false
+        OptionManager165.loadFromDInit = False
+        OptionManager165.loadFromInit = False
+        OptionManager165.loadFromWorldGen = False
         OptionSingleReplace122.optionManager = OptionManager165
         OptionSettingManager168.settingName = Nothing
         OptionSingleReplace122.settingManager = OptionSettingManager168
         OptionSingleReplace122.tokenName = ""
-        OptionSingleReplace122.updateTileSets = false
+        OptionSingleReplace122.updateTileSets = False
         Me.optBtnGlassforge.options = OptionSingleReplace122
         Me.optBtnGlassforge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGlassforge.TabIndex = 6
         Me.optBtnGlassforge.Text = "Glassforge"
         Me.optBtnGlassforge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnGlassforge, "Create all kinds of items made of glass.")
-        Me.optBtnGlassforge.UseVisualStyleBackColor = false
+        Me.optBtnGlassforge.UseVisualStyleBackColor = False
         '
         'optBtnGemforge
         '
         Me.optBtnGemforge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGemforge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGemforge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGemforge.FlatAppearance.BorderSize = 0
-        Me.optBtnGemforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGemforge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGemforge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGemforge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGemforge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGemforge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGemforge.Image = CType(resources.GetObject("optBtnGemforge.Image"),System.Drawing.Image)
+        Me.optBtnGemforge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGemforge.Image = CType(resources.GetObject("optBtnGemforge.Image"), System.Drawing.Image)
         Me.optBtnGemforge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGemforge.Location = New System.Drawing.Point(5, 222)
         Me.optBtnGemforge.Margin = New System.Windows.Forms.Padding(1)
@@ -7634,33 +7635,33 @@ Partial Class MainForm
         OptionSingleReplace123.enabledValue = "YESGEMFORGE["
         FileListManager166.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace123.fileManager = FileListManager166
-        OptionManager166.loadFromDInit = false
-        OptionManager166.loadFromInit = false
-        OptionManager166.loadFromWorldGen = false
+        OptionManager166.loadFromDInit = False
+        OptionManager166.loadFromInit = False
+        OptionManager166.loadFromWorldGen = False
         OptionSingleReplace123.optionManager = OptionManager166
         OptionSettingManager169.settingName = Nothing
         OptionSingleReplace123.settingManager = OptionSettingManager169
         OptionSingleReplace123.tokenName = ""
-        OptionSingleReplace123.updateTileSets = false
+        OptionSingleReplace123.updateTileSets = False
         Me.optBtnGemforge.options = OptionSingleReplace123
         Me.optBtnGemforge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGemforge.TabIndex = 7
         Me.optBtnGemforge.Text = "Gemforge"
         Me.optBtnGemforge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnGemforge, "Allows the creation of gem weapons and armor. Lets you cut big gems into smaller "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnGemforge, "Allows the creation of gem weapons and armor. Lets you cut big gems into smaller " & _
         "ones as well.")
-        Me.optBtnGemforge.UseVisualStyleBackColor = false
+        Me.optBtnGemforge.UseVisualStyleBackColor = False
         '
         'optBtnRockForge
         '
         Me.optBtnRockForge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRockForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnRockForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnRockForge.FlatAppearance.BorderSize = 0
-        Me.optBtnRockForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnRockForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnRockForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnRockForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnRockForge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnRockForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnRockForge.Image = CType(resources.GetObject("optBtnRockForge.Image"),System.Drawing.Image)
+        Me.optBtnRockForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnRockForge.Image = CType(resources.GetObject("optBtnRockForge.Image"), System.Drawing.Image)
         Me.optBtnRockForge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnRockForge.Location = New System.Drawing.Point(5, 251)
         Me.optBtnRockForge.Margin = New System.Windows.Forms.Padding(1)
@@ -7669,32 +7670,32 @@ Partial Class MainForm
         OptionSingleReplace124.enabledValue = "YESMAGMASAFE["
         FileListManager167.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace124.fileManager = FileListManager167
-        OptionManager167.loadFromDInit = false
-        OptionManager167.loadFromInit = false
-        OptionManager167.loadFromWorldGen = false
+        OptionManager167.loadFromDInit = False
+        OptionManager167.loadFromInit = False
+        OptionManager167.loadFromWorldGen = False
         OptionSingleReplace124.optionManager = OptionManager167
         OptionSettingManager170.settingName = Nothing
         OptionSingleReplace124.settingManager = OptionSettingManager170
         OptionSingleReplace124.tokenName = ""
-        OptionSingleReplace124.updateTileSets = false
+        OptionSingleReplace124.updateTileSets = False
         Me.optBtnRockForge.options = OptionSingleReplace124
         Me.optBtnRockForge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRockForge.TabIndex = 8
         Me.optBtnRockForge.Text = "Rock Forge"
         Me.optBtnRockForge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnRockForge, "Allows the creation of rock weapons, ammo and basic armor. Great for the start.")
-        Me.optBtnRockForge.UseVisualStyleBackColor = false
+        Me.optBtnRockForge.UseVisualStyleBackColor = False
         '
         'optBtnBrickOven
         '
         Me.optBtnBrickOven.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBrickOven.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBrickOven.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBrickOven.FlatAppearance.BorderSize = 0
-        Me.optBtnBrickOven.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBrickOven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBrickOven.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBrickOven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBrickOven.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBrickOven.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBrickOven.Image = CType(resources.GetObject("optBtnBrickOven.Image"),System.Drawing.Image)
+        Me.optBtnBrickOven.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBrickOven.Image = CType(resources.GetObject("optBtnBrickOven.Image"), System.Drawing.Image)
         Me.optBtnBrickOven.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBrickOven.Location = New System.Drawing.Point(5, 19)
         Me.optBtnBrickOven.Margin = New System.Windows.Forms.Padding(1)
@@ -7703,32 +7704,32 @@ Partial Class MainForm
         OptionSingleReplace125.enabledValue = "YESBRICK["
         FileListManager168.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace125.fileManager = FileListManager168
-        OptionManager168.loadFromDInit = false
-        OptionManager168.loadFromInit = false
-        OptionManager168.loadFromWorldGen = false
+        OptionManager168.loadFromDInit = False
+        OptionManager168.loadFromInit = False
+        OptionManager168.loadFromWorldGen = False
         OptionSingleReplace125.optionManager = OptionManager168
         OptionSettingManager171.settingName = Nothing
         OptionSingleReplace125.settingManager = OptionSettingManager171
         OptionSingleReplace125.tokenName = ""
-        OptionSingleReplace125.updateTileSets = false
+        OptionSingleReplace125.updateTileSets = False
         Me.optBtnBrickOven.options = OptionSingleReplace125
         Me.optBtnBrickOven.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBrickOven.TabIndex = 0
         Me.optBtnBrickOven.Text = "Brick Oven"
         Me.optBtnBrickOven.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnBrickOven, "Creates 8 types of colorful blocks. Great for mega-projects.")
-        Me.optBtnBrickOven.UseVisualStyleBackColor = false
+        Me.optBtnBrickOven.UseVisualStyleBackColor = False
         '
         'optBtnCrematorium
         '
         Me.optBtnCrematorium.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCrematorium.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnCrematorium.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnCrematorium.FlatAppearance.BorderSize = 0
-        Me.optBtnCrematorium.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnCrematorium.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnCrematorium.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnCrematorium.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnCrematorium.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnCrematorium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnCrematorium.Image = CType(resources.GetObject("optBtnCrematorium.Image"),System.Drawing.Image)
+        Me.optBtnCrematorium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnCrematorium.Image = CType(resources.GetObject("optBtnCrematorium.Image"), System.Drawing.Image)
         Me.optBtnCrematorium.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnCrematorium.Location = New System.Drawing.Point(5, 48)
         Me.optBtnCrematorium.Margin = New System.Windows.Forms.Padding(1)
@@ -7737,40 +7738,40 @@ Partial Class MainForm
         OptionSingleReplace126.enabledValue = "YESCREMATORY["
         FileListManager169.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace126.fileManager = FileListManager169
-        OptionManager169.loadFromDInit = false
-        OptionManager169.loadFromInit = false
-        OptionManager169.loadFromWorldGen = false
+        OptionManager169.loadFromDInit = False
+        OptionManager169.loadFromInit = False
+        OptionManager169.loadFromWorldGen = False
         OptionSingleReplace126.optionManager = OptionManager169
         OptionSettingManager172.settingName = Nothing
         OptionSingleReplace126.settingManager = OptionSettingManager172
         OptionSingleReplace126.tokenName = ""
-        OptionSingleReplace126.updateTileSets = false
+        OptionSingleReplace126.updateTileSets = False
         Me.optBtnCrematorium.options = OptionSingleReplace126
         Me.optBtnCrematorium.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCrematorium.TabIndex = 1
         Me.optBtnCrematorium.Text = "Crematorium"
         Me.optBtnCrematorium.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnCrematorium, "Allows to cremate remains, body parts and items to regain ash and coke.")
-        Me.optBtnCrematorium.UseVisualStyleBackColor = false
+        Me.optBtnCrematorium.UseVisualStyleBackColor = False
         '
         'optMultiOreProcessor
         '
         Me.optMultiOreProcessor.Appearance = System.Windows.Forms.Appearance.Button
         Me.optMultiOreProcessor.FlatAppearance.BorderSize = 0
-        Me.optMultiOreProcessor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optMultiOreProcessor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optMultiOreProcessor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optMultiOreProcessor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optMultiOreProcessor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optMultiOreProcessor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optMultiOreProcessor.Image = CType(resources.GetObject("optMultiOreProcessor.Image"),System.Drawing.Image)
+        Me.optMultiOreProcessor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optMultiOreProcessor.Image = CType(resources.GetObject("optMultiOreProcessor.Image"), System.Drawing.Image)
         Me.optMultiOreProcessor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optMultiOreProcessor.Location = New System.Drawing.Point(5, 77)
         Me.optMultiOreProcessor.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiOreProcessor.Name = "optMultiOreProcessor"
         FileListManager170.fileNames = New String() {"entity_default.txt", "inorganic_mineral.txt", "inorganic_dfhack.txt", "reaction_masterwork.txt"}
         OptionMulti3.fileManager = FileListManager170
-        OptionManager170.loadFromDInit = false
-        OptionManager170.loadFromInit = false
-        OptionManager170.loadFromWorldGen = false
+        OptionManager170.loadFromDInit = False
+        OptionManager170.loadFromInit = False
+        OptionManager170.loadFromWorldGen = False
         OptionMulti3.optionManager = OptionManager170
         OptionSettingManager173.settingName = Nothing
         OptionMulti3.settingManager = OptionSettingManager173
@@ -7790,26 +7791,26 @@ Partial Class MainForm
         OptionMulti3.tokenList.Add(RawToken6)
         OptionMulti3.tokenList.Add(RawToken7)
         OptionMulti3.tokenList.Add(RawToken8)
-        OptionMulti3.updateTileSets = true
+        OptionMulti3.updateTileSets = True
         Me.optMultiOreProcessor.options = OptionMulti3
         Me.optMultiOreProcessor.Size = New System.Drawing.Size(134, 27)
         Me.optMultiOreProcessor.TabIndex = 2
         Me.optMultiOreProcessor.Text = "Ore Processor"
         Me.optMultiOreProcessor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optMultiOreProcessor, "Separate the ore from rock, allowing greater yield before smelting ores. Also red"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optMultiOreProcessor, "Separate the ore from rock, allowing greater yield before smelting ores. Also red" & _
         "uces slag and gives free stone.")
-        Me.optMultiOreProcessor.UseVisualStyleBackColor = true
+        Me.optMultiOreProcessor.UseVisualStyleBackColor = True
         '
         'optBtnKiln
         '
         Me.optBtnKiln.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnKiln.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnKiln.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnKiln.FlatAppearance.BorderSize = 0
-        Me.optBtnKiln.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnKiln.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnKiln.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnKiln.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnKiln.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnKiln.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnKiln.Image = CType(resources.GetObject("optBtnKiln.Image"),System.Drawing.Image)
+        Me.optBtnKiln.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnKiln.Image = CType(resources.GetObject("optBtnKiln.Image"), System.Drawing.Image)
         Me.optBtnKiln.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnKiln.Location = New System.Drawing.Point(5, 106)
         Me.optBtnKiln.Margin = New System.Windows.Forms.Padding(1)
@@ -7818,32 +7819,32 @@ Partial Class MainForm
         OptionSingleReplace127.enabledValue = "YESKILN["
         FileListManager171.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace127.fileManager = FileListManager171
-        OptionManager171.loadFromDInit = false
-        OptionManager171.loadFromInit = false
-        OptionManager171.loadFromWorldGen = false
+        OptionManager171.loadFromDInit = False
+        OptionManager171.loadFromInit = False
+        OptionManager171.loadFromWorldGen = False
         OptionSingleReplace127.optionManager = OptionManager171
         OptionSettingManager174.settingName = Nothing
         OptionSingleReplace127.settingManager = OptionSettingManager174
         OptionSingleReplace127.tokenName = ""
-        OptionSingleReplace127.updateTileSets = false
+        OptionSingleReplace127.updateTileSets = False
         Me.optBtnKiln.options = OptionSingleReplace127
         Me.optBtnKiln.Size = New System.Drawing.Size(134, 27)
         Me.optBtnKiln.TabIndex = 3
         Me.optBtnKiln.Text = "Kiln"
         Me.optBtnKiln.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnKiln, "Allows to cremate remains, body parts and items to regain ash and coke.")
-        Me.optBtnKiln.UseVisualStyleBackColor = false
+        Me.optBtnKiln.UseVisualStyleBackColor = False
         '
         'optBtnSlagPit
         '
         Me.optBtnSlagPit.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSlagPit.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSlagPit.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnSlagPit.FlatAppearance.BorderSize = 0
-        Me.optBtnSlagPit.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnSlagPit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnSlagPit.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnSlagPit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnSlagPit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnSlagPit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnSlagPit.Image = CType(resources.GetObject("optBtnSlagPit.Image"),System.Drawing.Image)
+        Me.optBtnSlagPit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnSlagPit.Image = CType(resources.GetObject("optBtnSlagPit.Image"), System.Drawing.Image)
         Me.optBtnSlagPit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnSlagPit.Location = New System.Drawing.Point(5, 135)
         Me.optBtnSlagPit.Margin = New System.Windows.Forms.Padding(1)
@@ -7852,32 +7853,32 @@ Partial Class MainForm
         OptionSingleReplace128.enabledValue = "YESSLAGPIT["
         FileListManager172.fileNames = New String() {"entity_default.txt", "reaction_masterwork.txt", "inorganic_mineral.txt"}
         OptionSingleReplace128.fileManager = FileListManager172
-        OptionManager172.loadFromDInit = false
-        OptionManager172.loadFromInit = false
-        OptionManager172.loadFromWorldGen = false
+        OptionManager172.loadFromDInit = False
+        OptionManager172.loadFromInit = False
+        OptionManager172.loadFromWorldGen = False
         OptionSingleReplace128.optionManager = OptionManager172
         OptionSettingManager175.settingName = Nothing
         OptionSingleReplace128.settingManager = OptionSettingManager175
         OptionSingleReplace128.tokenName = ""
-        OptionSingleReplace128.updateTileSets = true
+        OptionSingleReplace128.updateTileSets = True
         Me.optBtnSlagPit.options = OptionSingleReplace128
         Me.optBtnSlagPit.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSlagPit.TabIndex = 4
         Me.optBtnSlagPit.Text = "Slag Pit"
         Me.optBtnSlagPit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnSlagPit, "Clear up slag waste products from metal fabrication.")
-        Me.optBtnSlagPit.UseVisualStyleBackColor = false
+        Me.optBtnSlagPit.UseVisualStyleBackColor = False
         '
         'optBtnRuneArmory
         '
         Me.optBtnRuneArmory.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRuneArmory.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnRuneArmory.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnRuneArmory.FlatAppearance.BorderSize = 0
-        Me.optBtnRuneArmory.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnRuneArmory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnRuneArmory.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnRuneArmory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnRuneArmory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnRuneArmory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnRuneArmory.Image = CType(resources.GetObject("optBtnRuneArmory.Image"),System.Drawing.Image)
+        Me.optBtnRuneArmory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnRuneArmory.Image = CType(resources.GetObject("optBtnRuneArmory.Image"), System.Drawing.Image)
         Me.optBtnRuneArmory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnRuneArmory.Location = New System.Drawing.Point(5, 19)
         Me.optBtnRuneArmory.Margin = New System.Windows.Forms.Padding(1)
@@ -7886,32 +7887,32 @@ Partial Class MainForm
         OptionSingleReplace129.enabledValue = "YESRUNEARMORY["
         FileListManager173.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace129.fileManager = FileListManager173
-        OptionManager173.loadFromDInit = false
-        OptionManager173.loadFromInit = false
-        OptionManager173.loadFromWorldGen = false
+        OptionManager173.loadFromDInit = False
+        OptionManager173.loadFromInit = False
+        OptionManager173.loadFromWorldGen = False
         OptionSingleReplace129.optionManager = OptionManager173
         OptionSettingManager176.settingName = Nothing
         OptionSingleReplace129.settingManager = OptionSettingManager176
         OptionSingleReplace129.tokenName = ""
-        OptionSingleReplace129.updateTileSets = false
+        OptionSingleReplace129.updateTileSets = False
         Me.optBtnRuneArmory.options = OptionSingleReplace129
         Me.optBtnRuneArmory.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRuneArmory.TabIndex = 0
         Me.optBtnRuneArmory.Text = "Rune Armory"
         Me.optBtnRuneArmory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnRuneArmory, "Enchant armors with metal runes for special effects on the wearer.")
-        Me.optBtnRuneArmory.UseVisualStyleBackColor = false
+        Me.optBtnRuneArmory.UseVisualStyleBackColor = False
         '
         'optBtnRuneWeaponry
         '
         Me.optBtnRuneWeaponry.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRuneWeaponry.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnRuneWeaponry.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnRuneWeaponry.FlatAppearance.BorderSize = 0
-        Me.optBtnRuneWeaponry.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnRuneWeaponry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnRuneWeaponry.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnRuneWeaponry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnRuneWeaponry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnRuneWeaponry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnRuneWeaponry.Image = CType(resources.GetObject("optBtnRuneWeaponry.Image"),System.Drawing.Image)
+        Me.optBtnRuneWeaponry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnRuneWeaponry.Image = CType(resources.GetObject("optBtnRuneWeaponry.Image"), System.Drawing.Image)
         Me.optBtnRuneWeaponry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnRuneWeaponry.Location = New System.Drawing.Point(5, 48)
         Me.optBtnRuneWeaponry.Margin = New System.Windows.Forms.Padding(1)
@@ -7920,32 +7921,32 @@ Partial Class MainForm
         OptionSingleReplace130.enabledValue = "YESRUNESMITH["
         FileListManager174.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace130.fileManager = FileListManager174
-        OptionManager174.loadFromDInit = false
-        OptionManager174.loadFromInit = false
-        OptionManager174.loadFromWorldGen = false
+        OptionManager174.loadFromDInit = False
+        OptionManager174.loadFromInit = False
+        OptionManager174.loadFromWorldGen = False
         OptionSingleReplace130.optionManager = OptionManager174
         OptionSettingManager177.settingName = Nothing
         OptionSingleReplace130.settingManager = OptionSettingManager177
         OptionSingleReplace130.tokenName = ""
-        OptionSingleReplace130.updateTileSets = false
+        OptionSingleReplace130.updateTileSets = False
         Me.optBtnRuneWeaponry.options = OptionSingleReplace130
         Me.optBtnRuneWeaponry.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRuneWeaponry.TabIndex = 1
         Me.optBtnRuneWeaponry.Text = "Rune Weaponry"
         Me.optBtnRuneWeaponry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnRuneWeaponry, "Enchant weapons with runes, to allow special effects.")
-        Me.optBtnRuneWeaponry.UseVisualStyleBackColor = false
+        Me.optBtnRuneWeaponry.UseVisualStyleBackColor = False
         '
         'optBtnArmory
         '
         Me.optBtnArmory.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnArmory.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnArmory.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnArmory.FlatAppearance.BorderSize = 0
-        Me.optBtnArmory.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnArmory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnArmory.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnArmory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnArmory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnArmory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnArmory.Image = CType(resources.GetObject("optBtnArmory.Image"),System.Drawing.Image)
+        Me.optBtnArmory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnArmory.Image = CType(resources.GetObject("optBtnArmory.Image"), System.Drawing.Image)
         Me.optBtnArmory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnArmory.Location = New System.Drawing.Point(5, 77)
         Me.optBtnArmory.Margin = New System.Windows.Forms.Padding(1)
@@ -7954,32 +7955,32 @@ Partial Class MainForm
         OptionSingleReplace131.enabledValue = "YESARMORY["
         FileListManager175.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace131.fileManager = FileListManager175
-        OptionManager175.loadFromDInit = false
-        OptionManager175.loadFromInit = false
-        OptionManager175.loadFromWorldGen = false
+        OptionManager175.loadFromDInit = False
+        OptionManager175.loadFromInit = False
+        OptionManager175.loadFromWorldGen = False
         OptionSingleReplace131.optionManager = OptionManager175
         OptionSettingManager178.settingName = Nothing
         OptionSingleReplace131.settingManager = OptionSettingManager178
         OptionSingleReplace131.tokenName = ""
-        OptionSingleReplace131.updateTileSets = false
+        OptionSingleReplace131.updateTileSets = False
         Me.optBtnArmory.options = OptionSingleReplace131
         Me.optBtnArmory.Size = New System.Drawing.Size(134, 27)
         Me.optBtnArmory.TabIndex = 2
         Me.optBtnArmory.Text = "Armory"
         Me.optBtnArmory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnArmory, "Upgrades any armor to the best armor in the game, plate-mail.")
-        Me.optBtnArmory.UseVisualStyleBackColor = false
+        Me.optBtnArmory.UseVisualStyleBackColor = False
         '
         'optBtnWeaponry
         '
         Me.optBtnWeaponry.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWeaponry.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnWeaponry.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnWeaponry.FlatAppearance.BorderSize = 0
-        Me.optBtnWeaponry.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnWeaponry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnWeaponry.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnWeaponry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnWeaponry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnWeaponry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnWeaponry.Image = CType(resources.GetObject("optBtnWeaponry.Image"),System.Drawing.Image)
+        Me.optBtnWeaponry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnWeaponry.Image = CType(resources.GetObject("optBtnWeaponry.Image"), System.Drawing.Image)
         Me.optBtnWeaponry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnWeaponry.Location = New System.Drawing.Point(5, 106)
         Me.optBtnWeaponry.Margin = New System.Windows.Forms.Padding(1)
@@ -7988,33 +7989,33 @@ Partial Class MainForm
         OptionSingleReplace132.enabledValue = "YESWEAPONRY["
         FileListManager176.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace132.fileManager = FileListManager176
-        OptionManager176.loadFromDInit = false
-        OptionManager176.loadFromInit = false
-        OptionManager176.loadFromWorldGen = false
+        OptionManager176.loadFromDInit = False
+        OptionManager176.loadFromInit = False
+        OptionManager176.loadFromWorldGen = False
         OptionSingleReplace132.optionManager = OptionManager176
         OptionSettingManager179.settingName = Nothing
         OptionSingleReplace132.settingManager = OptionSettingManager179
         OptionSingleReplace132.tokenName = ""
-        OptionSingleReplace132.updateTileSets = false
+        OptionSingleReplace132.updateTileSets = False
         Me.optBtnWeaponry.options = OptionSingleReplace132
         Me.optBtnWeaponry.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWeaponry.TabIndex = 3
         Me.optBtnWeaponry.Text = "Weaponry"
         Me.optBtnWeaponry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnWeaponry, "Upgrade all available weapons to an improved version. Has a small chance for a le"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnWeaponry, "Upgrade all available weapons to an improved version. Has a small chance for a le" & _
         "gendary version.")
-        Me.optBtnWeaponry.UseVisualStyleBackColor = false
+        Me.optBtnWeaponry.UseVisualStyleBackColor = False
         '
         'optBtnMegabeastKennel
         '
         Me.optBtnMegabeastKennel.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMegabeastKennel.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMegabeastKennel.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMegabeastKennel.FlatAppearance.BorderSize = 0
-        Me.optBtnMegabeastKennel.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMegabeastKennel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMegabeastKennel.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMegabeastKennel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMegabeastKennel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMegabeastKennel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMegabeastKennel.Image = CType(resources.GetObject("optBtnMegabeastKennel.Image"),System.Drawing.Image)
+        Me.optBtnMegabeastKennel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMegabeastKennel.Image = CType(resources.GetObject("optBtnMegabeastKennel.Image"), System.Drawing.Image)
         Me.optBtnMegabeastKennel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMegabeastKennel.Location = New System.Drawing.Point(5, 135)
         Me.optBtnMegabeastKennel.Margin = New System.Windows.Forms.Padding(1)
@@ -8023,33 +8024,33 @@ Partial Class MainForm
         OptionSingleReplace133.enabledValue = "YESMEGABEASTKENNELS["
         FileListManager177.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace133.fileManager = FileListManager177
-        OptionManager177.loadFromDInit = false
-        OptionManager177.loadFromInit = false
-        OptionManager177.loadFromWorldGen = false
+        OptionManager177.loadFromDInit = False
+        OptionManager177.loadFromInit = False
+        OptionManager177.loadFromWorldGen = False
         OptionSingleReplace133.optionManager = OptionManager177
         OptionSettingManager180.settingName = Nothing
         OptionSingleReplace133.settingManager = OptionSettingManager180
         OptionSingleReplace133.tokenName = ""
-        OptionSingleReplace133.updateTileSets = false
+        OptionSingleReplace133.updateTileSets = False
         Me.optBtnMegabeastKennel.options = OptionSingleReplace133
         Me.optBtnMegabeastKennel.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMegabeastKennel.TabIndex = 4
         Me.optBtnMegabeastKennel.Text = "MegaBeast Kennels"
         Me.optBtnMegabeastKennel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.ToolTipMaker.SetToolTip(Me.optBtnMegabeastKennel, "Train a dwarf to an epic fighter or revive a megabeast by using its soul as reage"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnMegabeastKennel, "Train a dwarf to an epic fighter or revive a megabeast by using its soul as reage" & _
         "nt. Needs megabeasts and the slaughterhouse.")
-        Me.optBtnMegabeastKennel.UseVisualStyleBackColor = false
+        Me.optBtnMegabeastKennel.UseVisualStyleBackColor = False
         '
         'optBtnWarKennel
         '
         Me.optBtnWarKennel.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWarKennel.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnWarKennel.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnWarKennel.FlatAppearance.BorderSize = 0
-        Me.optBtnWarKennel.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnWarKennel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnWarKennel.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnWarKennel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnWarKennel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnWarKennel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnWarKennel.Image = CType(resources.GetObject("optBtnWarKennel.Image"),System.Drawing.Image)
+        Me.optBtnWarKennel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnWarKennel.Image = CType(resources.GetObject("optBtnWarKennel.Image"), System.Drawing.Image)
         Me.optBtnWarKennel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnWarKennel.Location = New System.Drawing.Point(5, 164)
         Me.optBtnWarKennel.Margin = New System.Windows.Forms.Padding(1)
@@ -8058,32 +8059,32 @@ Partial Class MainForm
         OptionSingleReplace134.enabledValue = "YESARMORED["
         FileListManager178.fileNames = New String() {"entity_default.txt", "creature_pet_armored.txt"}
         OptionSingleReplace134.fileManager = FileListManager178
-        OptionManager178.loadFromDInit = false
-        OptionManager178.loadFromInit = false
-        OptionManager178.loadFromWorldGen = false
+        OptionManager178.loadFromDInit = False
+        OptionManager178.loadFromInit = False
+        OptionManager178.loadFromWorldGen = False
         OptionSingleReplace134.optionManager = OptionManager178
         OptionSettingManager181.settingName = Nothing
         OptionSingleReplace134.settingManager = OptionSettingManager181
         OptionSingleReplace134.tokenName = ""
-        OptionSingleReplace134.updateTileSets = false
+        OptionSingleReplace134.updateTileSets = False
         Me.optBtnWarKennel.options = OptionSingleReplace134
         Me.optBtnWarKennel.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWarKennel.TabIndex = 5
         Me.optBtnWarKennel.Text = "War Kennels"
         Me.optBtnWarKennel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnWarKennel, "Allows to outfit a selection of pets with steel plating.")
-        Me.optBtnWarKennel.UseVisualStyleBackColor = false
+        Me.optBtnWarKennel.UseVisualStyleBackColor = False
         '
         'optBtnBlastFurnace
         '
         Me.optBtnBlastFurnace.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBlastFurnace.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBlastFurnace.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBlastFurnace.FlatAppearance.BorderSize = 0
-        Me.optBtnBlastFurnace.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBlastFurnace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBlastFurnace.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBlastFurnace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBlastFurnace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBlastFurnace.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBlastFurnace.Image = CType(resources.GetObject("optBtnBlastFurnace.Image"),System.Drawing.Image)
+        Me.optBtnBlastFurnace.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBlastFurnace.Image = CType(resources.GetObject("optBtnBlastFurnace.Image"), System.Drawing.Image)
         Me.optBtnBlastFurnace.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBlastFurnace.Location = New System.Drawing.Point(5, 29)
         Me.optBtnBlastFurnace.Margin = New System.Windows.Forms.Padding(1)
@@ -8092,32 +8093,32 @@ Partial Class MainForm
         OptionSingleReplace135.enabledValue = "YESBLASTFURNACE["
         FileListManager179.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace135.fileManager = FileListManager179
-        OptionManager179.loadFromDInit = false
-        OptionManager179.loadFromInit = false
-        OptionManager179.loadFromWorldGen = false
+        OptionManager179.loadFromDInit = False
+        OptionManager179.loadFromInit = False
+        OptionManager179.loadFromWorldGen = False
         OptionSingleReplace135.optionManager = OptionManager179
         OptionSettingManager182.settingName = Nothing
         OptionSingleReplace135.settingManager = OptionSettingManager182
         OptionSingleReplace135.tokenName = ""
-        OptionSingleReplace135.updateTileSets = false
+        OptionSingleReplace135.updateTileSets = False
         Me.optBtnBlastFurnace.options = OptionSingleReplace135
         Me.optBtnBlastFurnace.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBlastFurnace.TabIndex = 0
         Me.optBtnBlastFurnace.Text = "Blast Furnace"
         Me.optBtnBlastFurnace.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnBlastFurnace, "Mass smelting of ore.")
-        Me.optBtnBlastFurnace.UseVisualStyleBackColor = false
+        Me.optBtnBlastFurnace.UseVisualStyleBackColor = False
         '
         'optBtnCrucible
         '
         Me.optBtnCrucible.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCrucible.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnCrucible.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnCrucible.FlatAppearance.BorderSize = 0
-        Me.optBtnCrucible.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnCrucible.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnCrucible.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnCrucible.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnCrucible.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnCrucible.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnCrucible.Image = CType(resources.GetObject("optBtnCrucible.Image"),System.Drawing.Image)
+        Me.optBtnCrucible.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnCrucible.Image = CType(resources.GetObject("optBtnCrucible.Image"), System.Drawing.Image)
         Me.optBtnCrucible.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnCrucible.Location = New System.Drawing.Point(5, 58)
         Me.optBtnCrucible.Margin = New System.Windows.Forms.Padding(1)
@@ -8126,32 +8127,32 @@ Partial Class MainForm
         OptionSingleReplace136.enabledValue = "YESCRUCIBLE["
         FileListManager180.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace136.fileManager = FileListManager180
-        OptionManager180.loadFromDInit = false
-        OptionManager180.loadFromInit = false
-        OptionManager180.loadFromWorldGen = false
+        OptionManager180.loadFromDInit = False
+        OptionManager180.loadFromInit = False
+        OptionManager180.loadFromWorldGen = False
         OptionSingleReplace136.optionManager = OptionManager180
         OptionSettingManager183.settingName = Nothing
         OptionSingleReplace136.settingManager = OptionSettingManager183
         OptionSingleReplace136.tokenName = ""
-        OptionSingleReplace136.updateTileSets = false
+        OptionSingleReplace136.updateTileSets = False
         Me.optBtnCrucible.options = OptionSingleReplace136
         Me.optBtnCrucible.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCrucible.TabIndex = 1
         Me.optBtnCrucible.Text = "Crucible"
         Me.optBtnCrucible.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnCrucible, "Refine more advanced minerals here.")
-        Me.optBtnCrucible.UseVisualStyleBackColor = false
+        Me.optBtnCrucible.UseVisualStyleBackColor = False
         '
         'optBtnFinishingForge
         '
         Me.optBtnFinishingForge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFinishingForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnFinishingForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnFinishingForge.FlatAppearance.BorderSize = 0
-        Me.optBtnFinishingForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnFinishingForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnFinishingForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnFinishingForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnFinishingForge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnFinishingForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnFinishingForge.Image = CType(resources.GetObject("optBtnFinishingForge.Image"),System.Drawing.Image)
+        Me.optBtnFinishingForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnFinishingForge.Image = CType(resources.GetObject("optBtnFinishingForge.Image"), System.Drawing.Image)
         Me.optBtnFinishingForge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnFinishingForge.Location = New System.Drawing.Point(5, 87)
         Me.optBtnFinishingForge.Margin = New System.Windows.Forms.Padding(1)
@@ -8160,32 +8161,32 @@ Partial Class MainForm
         OptionSingleReplace137.enabledValue = "YESFINISHINGFORGE["
         FileListManager181.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace137.fileManager = FileListManager181
-        OptionManager181.loadFromDInit = false
-        OptionManager181.loadFromInit = false
-        OptionManager181.loadFromWorldGen = false
+        OptionManager181.loadFromDInit = False
+        OptionManager181.loadFromInit = False
+        OptionManager181.loadFromWorldGen = False
         OptionSingleReplace137.optionManager = OptionManager181
         OptionSettingManager184.settingName = Nothing
         OptionSingleReplace137.settingManager = OptionSettingManager184
         OptionSingleReplace137.tokenName = ""
-        OptionSingleReplace137.updateTileSets = false
+        OptionSingleReplace137.updateTileSets = False
         Me.optBtnFinishingForge.options = OptionSingleReplace137
         Me.optBtnFinishingForge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFinishingForge.TabIndex = 2
         Me.optBtnFinishingForge.Text = "Finishing Forge"
         Me.optBtnFinishingForge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFinishingForge, "Cold-hammer copper, tin and bronze for an early army.")
-        Me.optBtnFinishingForge.UseVisualStyleBackColor = false
+        Me.optBtnFinishingForge.UseVisualStyleBackColor = False
         '
         'optBtnMetallurgist
         '
         Me.optBtnMetallurgist.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMetallurgist.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMetallurgist.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMetallurgist.FlatAppearance.BorderSize = 0
-        Me.optBtnMetallurgist.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMetallurgist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMetallurgist.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMetallurgist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMetallurgist.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMetallurgist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMetallurgist.Image = CType(resources.GetObject("optBtnMetallurgist.Image"),System.Drawing.Image)
+        Me.optBtnMetallurgist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMetallurgist.Image = CType(resources.GetObject("optBtnMetallurgist.Image"), System.Drawing.Image)
         Me.optBtnMetallurgist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMetallurgist.Location = New System.Drawing.Point(5, 116)
         Me.optBtnMetallurgist.Margin = New System.Windows.Forms.Padding(1)
@@ -8194,32 +8195,32 @@ Partial Class MainForm
         OptionSingleReplace138.enabledValue = "YESMETALLURGIST["
         FileListManager182.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace138.fileManager = FileListManager182
-        OptionManager182.loadFromDInit = false
-        OptionManager182.loadFromInit = false
-        OptionManager182.loadFromWorldGen = false
+        OptionManager182.loadFromDInit = False
+        OptionManager182.loadFromInit = False
+        OptionManager182.loadFromWorldGen = False
         OptionSingleReplace138.optionManager = OptionManager182
         OptionSettingManager185.settingName = Nothing
         OptionSingleReplace138.settingManager = OptionSettingManager185
         OptionSingleReplace138.tokenName = ""
-        OptionSingleReplace138.updateTileSets = false
+        OptionSingleReplace138.updateTileSets = False
         Me.optBtnMetallurgist.options = OptionSingleReplace138
         Me.optBtnMetallurgist.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMetallurgist.TabIndex = 3
         Me.optBtnMetallurgist.Text = "Metallurgist"
         Me.optBtnMetallurgist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnMetallurgist, "All alloys are created in this workshop. ")
-        Me.optBtnMetallurgist.UseVisualStyleBackColor = false
+        Me.optBtnMetallurgist.UseVisualStyleBackColor = False
         '
         'optBtnArbalest
         '
         Me.optBtnArbalest.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnArbalest.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnArbalest.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnArbalest.FlatAppearance.BorderSize = 0
-        Me.optBtnArbalest.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnArbalest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnArbalest.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnArbalest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnArbalest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnArbalest.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnArbalest.Image = CType(resources.GetObject("optBtnArbalest.Image"),System.Drawing.Image)
+        Me.optBtnArbalest.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnArbalest.Image = CType(resources.GetObject("optBtnArbalest.Image"), System.Drawing.Image)
         Me.optBtnArbalest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnArbalest.Location = New System.Drawing.Point(5, 25)
         Me.optBtnArbalest.Margin = New System.Windows.Forms.Padding(1)
@@ -8228,32 +8229,32 @@ Partial Class MainForm
         OptionSingleReplace139.enabledValue = "YESARBALEST["
         FileListManager183.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace139.fileManager = FileListManager183
-        OptionManager183.loadFromDInit = false
-        OptionManager183.loadFromInit = false
-        OptionManager183.loadFromWorldGen = false
+        OptionManager183.loadFromDInit = False
+        OptionManager183.loadFromInit = False
+        OptionManager183.loadFromWorldGen = False
         OptionSingleReplace139.optionManager = OptionManager183
         OptionSettingManager186.settingName = Nothing
         OptionSingleReplace139.settingManager = OptionSettingManager186
         OptionSingleReplace139.tokenName = ""
-        OptionSingleReplace139.updateTileSets = false
+        OptionSingleReplace139.updateTileSets = False
         Me.optBtnArbalest.options = OptionSingleReplace139
         Me.optBtnArbalest.Size = New System.Drawing.Size(134, 27)
         Me.optBtnArbalest.TabIndex = 0
         Me.optBtnArbalest.Text = "Arbalest"
         Me.optBtnArbalest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnArbalest, "A new siege engine that fires rapidly at your foes.")
-        Me.optBtnArbalest.UseVisualStyleBackColor = false
+        Me.optBtnArbalest.UseVisualStyleBackColor = False
         '
         'optBtnTrebuchet
         '
         Me.optBtnTrebuchet.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTrebuchet.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnTrebuchet.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnTrebuchet.FlatAppearance.BorderSize = 0
-        Me.optBtnTrebuchet.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnTrebuchet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnTrebuchet.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnTrebuchet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnTrebuchet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnTrebuchet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnTrebuchet.Image = CType(resources.GetObject("optBtnTrebuchet.Image"),System.Drawing.Image)
+        Me.optBtnTrebuchet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnTrebuchet.Image = CType(resources.GetObject("optBtnTrebuchet.Image"), System.Drawing.Image)
         Me.optBtnTrebuchet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnTrebuchet.Location = New System.Drawing.Point(5, 54)
         Me.optBtnTrebuchet.Margin = New System.Windows.Forms.Padding(1)
@@ -8262,32 +8263,32 @@ Partial Class MainForm
         OptionSingleReplace140.enabledValue = "YESTREBUCHET["
         FileListManager184.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace140.fileManager = FileListManager184
-        OptionManager184.loadFromDInit = false
-        OptionManager184.loadFromInit = false
-        OptionManager184.loadFromWorldGen = false
+        OptionManager184.loadFromDInit = False
+        OptionManager184.loadFromInit = False
+        OptionManager184.loadFromWorldGen = False
         OptionSingleReplace140.optionManager = OptionManager184
         OptionSettingManager187.settingName = Nothing
         OptionSingleReplace140.settingManager = OptionSettingManager187
         OptionSingleReplace140.tokenName = ""
-        OptionSingleReplace140.updateTileSets = false
+        OptionSingleReplace140.updateTileSets = False
         Me.optBtnTrebuchet.options = OptionSingleReplace140
         Me.optBtnTrebuchet.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTrebuchet.TabIndex = 1
         Me.optBtnTrebuchet.Text = "Trebuchet"
         Me.optBtnTrebuchet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnTrebuchet, "A new siege engines that fires slow AoE damage at your foes.")
-        Me.optBtnTrebuchet.UseVisualStyleBackColor = false
+        Me.optBtnTrebuchet.UseVisualStyleBackColor = False
         '
         'optBtnDisplayCase
         '
         Me.optBtnDisplayCase.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDisplayCase.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnDisplayCase.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnDisplayCase.FlatAppearance.BorderSize = 0
-        Me.optBtnDisplayCase.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnDisplayCase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnDisplayCase.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnDisplayCase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnDisplayCase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnDisplayCase.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnDisplayCase.Image = CType(resources.GetObject("optBtnDisplayCase.Image"),System.Drawing.Image)
+        Me.optBtnDisplayCase.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnDisplayCase.Image = CType(resources.GetObject("optBtnDisplayCase.Image"), System.Drawing.Image)
         Me.optBtnDisplayCase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnDisplayCase.Location = New System.Drawing.Point(5, 19)
         Me.optBtnDisplayCase.Margin = New System.Windows.Forms.Padding(1)
@@ -8296,32 +8297,32 @@ Partial Class MainForm
         OptionSingleReplace141.enabledValue = "YESDECORATION["
         FileListManager185.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace141.fileManager = FileListManager185
-        OptionManager185.loadFromDInit = false
-        OptionManager185.loadFromInit = false
-        OptionManager185.loadFromWorldGen = false
+        OptionManager185.loadFromDInit = False
+        OptionManager185.loadFromInit = False
+        OptionManager185.loadFromWorldGen = False
         OptionSingleReplace141.optionManager = OptionManager185
         OptionSettingManager188.settingName = Nothing
         OptionSingleReplace141.settingManager = OptionSettingManager188
         OptionSingleReplace141.tokenName = ""
-        OptionSingleReplace141.updateTileSets = false
+        OptionSingleReplace141.updateTileSets = False
         Me.optBtnDisplayCase.options = OptionSingleReplace141
         Me.optBtnDisplayCase.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDisplayCase.TabIndex = 0
         Me.optBtnDisplayCase.Text = "Display Case"
         Me.optBtnDisplayCase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnDisplayCase, "Adds display cases. Raise room value or decorate your fortress.")
-        Me.optBtnDisplayCase.UseVisualStyleBackColor = false
+        Me.optBtnDisplayCase.UseVisualStyleBackColor = False
         '
         'optBtnPottedPlant
         '
         Me.optBtnPottedPlant.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnPottedPlant.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnPottedPlant.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnPottedPlant.FlatAppearance.BorderSize = 0
-        Me.optBtnPottedPlant.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnPottedPlant.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnPottedPlant.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnPottedPlant.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnPottedPlant.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnPottedPlant.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnPottedPlant.Image = CType(resources.GetObject("optBtnPottedPlant.Image"),System.Drawing.Image)
+        Me.optBtnPottedPlant.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnPottedPlant.Image = CType(resources.GetObject("optBtnPottedPlant.Image"), System.Drawing.Image)
         Me.optBtnPottedPlant.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnPottedPlant.Location = New System.Drawing.Point(5, 48)
         Me.optBtnPottedPlant.Margin = New System.Windows.Forms.Padding(1)
@@ -8330,32 +8331,32 @@ Partial Class MainForm
         OptionSingleReplace142.enabledValue = "YESPOTTEDPLANT["
         FileListManager186.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace142.fileManager = FileListManager186
-        OptionManager186.loadFromDInit = false
-        OptionManager186.loadFromInit = false
-        OptionManager186.loadFromWorldGen = false
+        OptionManager186.loadFromDInit = False
+        OptionManager186.loadFromInit = False
+        OptionManager186.loadFromWorldGen = False
         OptionSingleReplace142.optionManager = OptionManager186
         OptionSettingManager189.settingName = Nothing
         OptionSingleReplace142.settingManager = OptionSettingManager189
         OptionSingleReplace142.tokenName = ""
-        OptionSingleReplace142.updateTileSets = false
+        OptionSingleReplace142.updateTileSets = False
         Me.optBtnPottedPlant.options = OptionSingleReplace142
         Me.optBtnPottedPlant.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPottedPlant.TabIndex = 1
         Me.optBtnPottedPlant.Text = "Plants"
         Me.optBtnPottedPlant.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnPottedPlant, "Adds a potted plant as decoration.")
-        Me.optBtnPottedPlant.UseVisualStyleBackColor = false
+        Me.optBtnPottedPlant.UseVisualStyleBackColor = False
         '
         'optBtnTotems
         '
         Me.optBtnTotems.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTotems.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnTotems.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnTotems.FlatAppearance.BorderSize = 0
-        Me.optBtnTotems.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnTotems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnTotems.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnTotems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnTotems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnTotems.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnTotems.Image = CType(resources.GetObject("optBtnTotems.Image"),System.Drawing.Image)
+        Me.optBtnTotems.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnTotems.Image = CType(resources.GetObject("optBtnTotems.Image"), System.Drawing.Image)
         Me.optBtnTotems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnTotems.Location = New System.Drawing.Point(5, 77)
         Me.optBtnTotems.Margin = New System.Windows.Forms.Padding(1)
@@ -8364,32 +8365,32 @@ Partial Class MainForm
         OptionSingleReplace143.enabledValue = "YESTOTEM["
         FileListManager187.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace143.fileManager = FileListManager187
-        OptionManager187.loadFromDInit = false
-        OptionManager187.loadFromInit = false
-        OptionManager187.loadFromWorldGen = false
+        OptionManager187.loadFromDInit = False
+        OptionManager187.loadFromInit = False
+        OptionManager187.loadFromWorldGen = False
         OptionSingleReplace143.optionManager = OptionManager187
         OptionSettingManager190.settingName = Nothing
         OptionSingleReplace143.settingManager = OptionSettingManager190
         OptionSingleReplace143.tokenName = ""
-        OptionSingleReplace143.updateTileSets = false
+        OptionSingleReplace143.updateTileSets = False
         Me.optBtnTotems.options = OptionSingleReplace143
         Me.optBtnTotems.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTotems.TabIndex = 2
         Me.optBtnTotems.Text = "Totems"
         Me.optBtnTotems.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnTotems, "Adds two buildable totems to the game, just for the looks.")
-        Me.optBtnTotems.UseVisualStyleBackColor = false
+        Me.optBtnTotems.UseVisualStyleBackColor = False
         '
         'optBtnFountain
         '
         Me.optBtnFountain.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFountain.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnFountain.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnFountain.FlatAppearance.BorderSize = 0
-        Me.optBtnFountain.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnFountain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnFountain.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnFountain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnFountain.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnFountain.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnFountain.Image = CType(resources.GetObject("optBtnFountain.Image"),System.Drawing.Image)
+        Me.optBtnFountain.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnFountain.Image = CType(resources.GetObject("optBtnFountain.Image"), System.Drawing.Image)
         Me.optBtnFountain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnFountain.Location = New System.Drawing.Point(5, 106)
         Me.optBtnFountain.Margin = New System.Windows.Forms.Padding(1)
@@ -8398,32 +8399,32 @@ Partial Class MainForm
         OptionSingleReplace144.enabledValue = "YESFOUNTAIN["
         FileListManager188.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace144.fileManager = FileListManager188
-        OptionManager188.loadFromDInit = false
-        OptionManager188.loadFromInit = false
-        OptionManager188.loadFromWorldGen = false
+        OptionManager188.loadFromDInit = False
+        OptionManager188.loadFromInit = False
+        OptionManager188.loadFromWorldGen = False
         OptionSingleReplace144.optionManager = OptionManager188
         OptionSettingManager191.settingName = Nothing
         OptionSingleReplace144.settingManager = OptionSettingManager191
         OptionSingleReplace144.tokenName = ""
-        OptionSingleReplace144.updateTileSets = false
+        OptionSingleReplace144.updateTileSets = False
         Me.optBtnFountain.options = OptionSingleReplace144
         Me.optBtnFountain.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFountain.TabIndex = 3
         Me.optBtnFountain.Text = "Fountain"
         Me.optBtnFountain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFountain, "Adds a small fountain as decoration for your fortress.")
-        Me.optBtnFountain.UseVisualStyleBackColor = false
+        Me.optBtnFountain.UseVisualStyleBackColor = False
         '
         'optBtnDwarvenLoo
         '
         Me.optBtnDwarvenLoo.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDwarvenLoo.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnDwarvenLoo.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnDwarvenLoo.FlatAppearance.BorderSize = 0
-        Me.optBtnDwarvenLoo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnDwarvenLoo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnDwarvenLoo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnDwarvenLoo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnDwarvenLoo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnDwarvenLoo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnDwarvenLoo.Image = CType(resources.GetObject("optBtnDwarvenLoo.Image"),System.Drawing.Image)
+        Me.optBtnDwarvenLoo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnDwarvenLoo.Image = CType(resources.GetObject("optBtnDwarvenLoo.Image"), System.Drawing.Image)
         Me.optBtnDwarvenLoo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnDwarvenLoo.Location = New System.Drawing.Point(5, 135)
         Me.optBtnDwarvenLoo.Margin = New System.Windows.Forms.Padding(1)
@@ -8432,33 +8433,33 @@ Partial Class MainForm
         OptionSingleReplace145.enabledValue = "YESLOO["
         FileListManager189.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace145.fileManager = FileListManager189
-        OptionManager189.loadFromDInit = false
-        OptionManager189.loadFromInit = false
-        OptionManager189.loadFromWorldGen = false
+        OptionManager189.loadFromDInit = False
+        OptionManager189.loadFromInit = False
+        OptionManager189.loadFromWorldGen = False
         OptionSingleReplace145.optionManager = OptionManager189
         OptionSettingManager192.settingName = Nothing
         OptionSingleReplace145.settingManager = OptionSettingManager192
         OptionSingleReplace145.tokenName = ""
-        OptionSingleReplace145.updateTileSets = false
+        OptionSingleReplace145.updateTileSets = False
         Me.optBtnDwarvenLoo.options = OptionSingleReplace145
         Me.optBtnDwarvenLoo.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDwarvenLoo.TabIndex = 4
         Me.optBtnDwarvenLoo.Text = "Dwarven Loo"
         Me.optBtnDwarvenLoo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnDwarvenLoo, "Adds a toilet, for those that always wondered where dwarves do their business. Ca"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnDwarvenLoo, "Adds a toilet, for those that always wondered where dwarves do their business. Ca" & _
         "n clean buckets and other containers.")
-        Me.optBtnDwarvenLoo.UseVisualStyleBackColor = false
+        Me.optBtnDwarvenLoo.UseVisualStyleBackColor = False
         '
         'optBtnCarpet
         '
         Me.optBtnCarpet.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCarpet.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnCarpet.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnCarpet.FlatAppearance.BorderSize = 0
-        Me.optBtnCarpet.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnCarpet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnCarpet.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnCarpet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnCarpet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnCarpet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnCarpet.Image = CType(resources.GetObject("optBtnCarpet.Image"),System.Drawing.Image)
+        Me.optBtnCarpet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnCarpet.Image = CType(resources.GetObject("optBtnCarpet.Image"), System.Drawing.Image)
         Me.optBtnCarpet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnCarpet.Location = New System.Drawing.Point(5, 164)
         Me.optBtnCarpet.Margin = New System.Windows.Forms.Padding(1)
@@ -8467,32 +8468,32 @@ Partial Class MainForm
         OptionSingleReplace146.enabledValue = "YESCARPET["
         FileListManager190.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace146.fileManager = FileListManager190
-        OptionManager190.loadFromDInit = false
-        OptionManager190.loadFromInit = false
-        OptionManager190.loadFromWorldGen = false
+        OptionManager190.loadFromDInit = False
+        OptionManager190.loadFromInit = False
+        OptionManager190.loadFromWorldGen = False
         OptionSingleReplace146.optionManager = OptionManager190
         OptionSettingManager193.settingName = Nothing
         OptionSingleReplace146.settingManager = OptionSettingManager193
         OptionSingleReplace146.tokenName = ""
-        OptionSingleReplace146.updateTileSets = false
+        OptionSingleReplace146.updateTileSets = False
         Me.optBtnCarpet.options = OptionSingleReplace146
         Me.optBtnCarpet.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCarpet.TabIndex = 5
         Me.optBtnCarpet.Text = "Carpets"
         Me.optBtnCarpet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnCarpet, "Adds several tiles for indoor decoration.")
-        Me.optBtnCarpet.UseVisualStyleBackColor = false
+        Me.optBtnCarpet.UseVisualStyleBackColor = False
         '
         'optBtnDecoItems
         '
         Me.optBtnDecoItems.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDecoItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnDecoItems.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnDecoItems.FlatAppearance.BorderSize = 0
-        Me.optBtnDecoItems.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnDecoItems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnDecoItems.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnDecoItems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnDecoItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnDecoItems.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnDecoItems.Image = CType(resources.GetObject("optBtnDecoItems.Image"),System.Drawing.Image)
+        Me.optBtnDecoItems.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnDecoItems.Image = CType(resources.GetObject("optBtnDecoItems.Image"), System.Drawing.Image)
         Me.optBtnDecoItems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnDecoItems.Location = New System.Drawing.Point(5, 193)
         Me.optBtnDecoItems.Margin = New System.Windows.Forms.Padding(1)
@@ -8501,32 +8502,32 @@ Partial Class MainForm
         OptionSingleReplace147.enabledValue = "YESDECOITEMS["
         FileListManager191.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace147.fileManager = FileListManager191
-        OptionManager191.loadFromDInit = false
-        OptionManager191.loadFromInit = false
-        OptionManager191.loadFromWorldGen = false
+        OptionManager191.loadFromDInit = False
+        OptionManager191.loadFromInit = False
+        OptionManager191.loadFromWorldGen = False
         OptionSingleReplace147.optionManager = OptionManager191
         OptionSettingManager194.settingName = Nothing
         OptionSingleReplace147.settingManager = OptionSettingManager194
         OptionSingleReplace147.tokenName = ""
-        OptionSingleReplace147.updateTileSets = false
+        OptionSingleReplace147.updateTileSets = False
         Me.optBtnDecoItems.options = OptionSingleReplace147
         Me.optBtnDecoItems.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDecoItems.TabIndex = 6
         Me.optBtnDecoItems.Text = "Items"
         Me.optBtnDecoItems.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnDecoItems, "Adds many new items for dwarven rooms. Use this only with Masterwork Tileset.")
-        Me.optBtnDecoItems.UseVisualStyleBackColor = false
+        Me.optBtnDecoItems.UseVisualStyleBackColor = False
         '
         'optBtnStatues
         '
         Me.optBtnStatues.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnStatues.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnStatues.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnStatues.FlatAppearance.BorderSize = 0
-        Me.optBtnStatues.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnStatues.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnStatues.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnStatues.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnStatues.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnStatues.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnStatues.Image = CType(resources.GetObject("optBtnStatues.Image"),System.Drawing.Image)
+        Me.optBtnStatues.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnStatues.Image = CType(resources.GetObject("optBtnStatues.Image"), System.Drawing.Image)
         Me.optBtnStatues.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnStatues.Location = New System.Drawing.Point(5, 222)
         Me.optBtnStatues.Margin = New System.Windows.Forms.Padding(1)
@@ -8535,32 +8536,32 @@ Partial Class MainForm
         OptionSingleReplace148.enabledValue = "YESSTATUES["
         FileListManager192.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace148.fileManager = FileListManager192
-        OptionManager192.loadFromDInit = false
-        OptionManager192.loadFromInit = false
-        OptionManager192.loadFromWorldGen = false
+        OptionManager192.loadFromDInit = False
+        OptionManager192.loadFromInit = False
+        OptionManager192.loadFromWorldGen = False
         OptionSingleReplace148.optionManager = OptionManager192
         OptionSettingManager195.settingName = Nothing
         OptionSingleReplace148.settingManager = OptionSettingManager195
         OptionSingleReplace148.tokenName = ""
-        OptionSingleReplace148.updateTileSets = false
+        OptionSingleReplace148.updateTileSets = False
         Me.optBtnStatues.options = OptionSingleReplace148
         Me.optBtnStatues.Size = New System.Drawing.Size(134, 27)
         Me.optBtnStatues.TabIndex = 7
         Me.optBtnStatues.Text = "Statues"
         Me.optBtnStatues.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnStatues, "Adds 4 new statues to the game, demon, beast, skeleton and golem statue.")
-        Me.optBtnStatues.UseVisualStyleBackColor = false
+        Me.optBtnStatues.UseVisualStyleBackColor = False
         '
         'optBtnMagicSchool
         '
         Me.optBtnMagicSchool.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMagicSchool.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMagicSchool.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMagicSchool.FlatAppearance.BorderSize = 0
-        Me.optBtnMagicSchool.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMagicSchool.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMagicSchool.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMagicSchool.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMagicSchool.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMagicSchool.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMagicSchool.Image = CType(resources.GetObject("optBtnMagicSchool.Image"),System.Drawing.Image)
+        Me.optBtnMagicSchool.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMagicSchool.Image = CType(resources.GetObject("optBtnMagicSchool.Image"), System.Drawing.Image)
         Me.optBtnMagicSchool.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMagicSchool.Location = New System.Drawing.Point(5, 19)
         Me.optBtnMagicSchool.Margin = New System.Windows.Forms.Padding(1)
@@ -8569,32 +8570,32 @@ Partial Class MainForm
         OptionSingleReplace149.enabledValue = "YESSCHOOLWIZARD["
         FileListManager193.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace149.fileManager = FileListManager193
-        OptionManager193.loadFromDInit = false
-        OptionManager193.loadFromInit = false
-        OptionManager193.loadFromWorldGen = false
+        OptionManager193.loadFromDInit = False
+        OptionManager193.loadFromInit = False
+        OptionManager193.loadFromWorldGen = False
         OptionSingleReplace149.optionManager = OptionManager193
         OptionSettingManager196.settingName = Nothing
         OptionSingleReplace149.settingManager = OptionSettingManager196
         OptionSingleReplace149.tokenName = ""
-        OptionSingleReplace149.updateTileSets = false
+        OptionSingleReplace149.updateTileSets = False
         Me.optBtnMagicSchool.options = OptionSingleReplace149
         Me.optBtnMagicSchool.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMagicSchool.TabIndex = 0
         Me.optBtnMagicSchool.Text = "School of Wizardry"
         Me.optBtnMagicSchool.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ToolTipMaker.SetToolTip(Me.optBtnMagicSchool, "Turns dwarves into arcane dwarves and unlocks magic altars.")
-        Me.optBtnMagicSchool.UseVisualStyleBackColor = false
+        Me.optBtnMagicSchool.UseVisualStyleBackColor = False
         '
         'optBtnElementalMagic
         '
         Me.optBtnElementalMagic.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnElementalMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnElementalMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnElementalMagic.FlatAppearance.BorderSize = 0
-        Me.optBtnElementalMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnElementalMagic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnElementalMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnElementalMagic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnElementalMagic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnElementalMagic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnElementalMagic.Image = CType(resources.GetObject("optBtnElementalMagic.Image"),System.Drawing.Image)
+        Me.optBtnElementalMagic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnElementalMagic.Image = CType(resources.GetObject("optBtnElementalMagic.Image"), System.Drawing.Image)
         Me.optBtnElementalMagic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnElementalMagic.Location = New System.Drawing.Point(5, 48)
         Me.optBtnElementalMagic.Margin = New System.Windows.Forms.Padding(1)
@@ -8603,33 +8604,33 @@ Partial Class MainForm
         OptionSingleReplace150.enabledValue = "YESELEMENTALMAGIC["
         FileListManager194.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace150.fileManager = FileListManager194
-        OptionManager194.loadFromDInit = false
-        OptionManager194.loadFromInit = false
-        OptionManager194.loadFromWorldGen = false
+        OptionManager194.loadFromDInit = False
+        OptionManager194.loadFromInit = False
+        OptionManager194.loadFromWorldGen = False
         OptionSingleReplace150.optionManager = OptionManager194
         OptionSettingManager197.settingName = Nothing
         OptionSingleReplace150.settingManager = OptionSettingManager197
         OptionSingleReplace150.tokenName = ""
-        OptionSingleReplace150.updateTileSets = false
+        OptionSingleReplace150.updateTileSets = False
         Me.optBtnElementalMagic.options = OptionSingleReplace150
         Me.optBtnElementalMagic.Size = New System.Drawing.Size(134, 27)
         Me.optBtnElementalMagic.TabIndex = 1
         Me.optBtnElementalMagic.Text = "Elemental Altars"
         Me.optBtnElementalMagic.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnElementalMagic, "4 new buildings: Fire, Water, Earth and Air based magic altars to train your mage"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnElementalMagic, "4 new buildings: Fire, Water, Earth and Air based magic altars to train your mage" & _
         "s and do much more.")
-        Me.optBtnElementalMagic.UseVisualStyleBackColor = false
+        Me.optBtnElementalMagic.UseVisualStyleBackColor = False
         '
         'optBtnWhiteMagic
         '
         Me.optBtnWhiteMagic.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWhiteMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnWhiteMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnWhiteMagic.FlatAppearance.BorderSize = 0
-        Me.optBtnWhiteMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnWhiteMagic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnWhiteMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnWhiteMagic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnWhiteMagic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnWhiteMagic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnWhiteMagic.Image = CType(resources.GetObject("optBtnWhiteMagic.Image"),System.Drawing.Image)
+        Me.optBtnWhiteMagic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnWhiteMagic.Image = CType(resources.GetObject("optBtnWhiteMagic.Image"), System.Drawing.Image)
         Me.optBtnWhiteMagic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnWhiteMagic.Location = New System.Drawing.Point(5, 77)
         Me.optBtnWhiteMagic.Margin = New System.Windows.Forms.Padding(1)
@@ -8638,32 +8639,32 @@ Partial Class MainForm
         OptionSingleReplace151.enabledValue = "YESWHITEMAGIC["
         FileListManager195.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace151.fileManager = FileListManager195
-        OptionManager195.loadFromDInit = false
-        OptionManager195.loadFromInit = false
-        OptionManager195.loadFromWorldGen = false
+        OptionManager195.loadFromDInit = False
+        OptionManager195.loadFromInit = False
+        OptionManager195.loadFromWorldGen = False
         OptionSingleReplace151.optionManager = OptionManager195
         OptionSettingManager198.settingName = Nothing
         OptionSingleReplace151.settingManager = OptionSettingManager198
         OptionSingleReplace151.tokenName = ""
-        OptionSingleReplace151.updateTileSets = false
+        OptionSingleReplace151.updateTileSets = False
         Me.optBtnWhiteMagic.options = OptionSingleReplace151
         Me.optBtnWhiteMagic.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWhiteMagic.TabIndex = 2
         Me.optBtnWhiteMagic.Text = "Good Altar"
         Me.optBtnWhiteMagic.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnWhiteMagic, "White magic based on good biomes for 3 unique mages and resurrections.")
-        Me.optBtnWhiteMagic.UseVisualStyleBackColor = false
+        Me.optBtnWhiteMagic.UseVisualStyleBackColor = False
         '
         'optBtnBlackMagic
         '
         Me.optBtnBlackMagic.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBlackMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBlackMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBlackMagic.FlatAppearance.BorderSize = 0
-        Me.optBtnBlackMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBlackMagic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBlackMagic.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBlackMagic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBlackMagic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBlackMagic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBlackMagic.Image = CType(resources.GetObject("optBtnBlackMagic.Image"),System.Drawing.Image)
+        Me.optBtnBlackMagic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBlackMagic.Image = CType(resources.GetObject("optBtnBlackMagic.Image"), System.Drawing.Image)
         Me.optBtnBlackMagic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBlackMagic.Location = New System.Drawing.Point(5, 106)
         Me.optBtnBlackMagic.Margin = New System.Windows.Forms.Padding(1)
@@ -8672,33 +8673,33 @@ Partial Class MainForm
         OptionSingleReplace152.enabledValue = "YESBLACKMAGIC["
         FileListManager196.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace152.fileManager = FileListManager196
-        OptionManager196.loadFromDInit = false
-        OptionManager196.loadFromInit = false
-        OptionManager196.loadFromWorldGen = false
+        OptionManager196.loadFromDInit = False
+        OptionManager196.loadFromInit = False
+        OptionManager196.loadFromWorldGen = False
         OptionSingleReplace152.optionManager = OptionManager196
         OptionSettingManager199.settingName = Nothing
         OptionSingleReplace152.settingManager = OptionSettingManager199
         OptionSingleReplace152.tokenName = ""
-        OptionSingleReplace152.updateTileSets = false
+        OptionSingleReplace152.updateTileSets = False
         Me.optBtnBlackMagic.options = OptionSingleReplace152
         Me.optBtnBlackMagic.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBlackMagic.TabIndex = 3
         Me.optBtnBlackMagic.Text = "Evil Altar"
         Me.optBtnBlackMagic.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnBlackMagic, "Black magic based on evil biomes for 3 unique mages and raising the undead, vampi"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnBlackMagic, "Black magic based on evil biomes for 3 unique mages and raising the undead, vampi" & _
         "res, demons and more.")
-        Me.optBtnBlackMagic.UseVisualStyleBackColor = false
+        Me.optBtnBlackMagic.UseVisualStyleBackColor = False
         '
         'optBtnWarpstonePool
         '
         Me.optBtnWarpstonePool.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnWarpstonePool.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnWarpstonePool.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnWarpstonePool.FlatAppearance.BorderSize = 0
-        Me.optBtnWarpstonePool.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnWarpstonePool.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnWarpstonePool.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnWarpstonePool.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnWarpstonePool.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnWarpstonePool.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnWarpstonePool.Image = CType(resources.GetObject("optBtnWarpstonePool.Image"),System.Drawing.Image)
+        Me.optBtnWarpstonePool.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnWarpstonePool.Image = CType(resources.GetObject("optBtnWarpstonePool.Image"), System.Drawing.Image)
         Me.optBtnWarpstonePool.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnWarpstonePool.Location = New System.Drawing.Point(5, 135)
         Me.optBtnWarpstonePool.Margin = New System.Windows.Forms.Padding(1)
@@ -8707,32 +8708,32 @@ Partial Class MainForm
         OptionSingleReplace153.enabledValue = "YESWARPSTONELAB["
         FileListManager197.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace153.fileManager = FileListManager197
-        OptionManager197.loadFromDInit = false
-        OptionManager197.loadFromInit = false
-        OptionManager197.loadFromWorldGen = false
+        OptionManager197.loadFromDInit = False
+        OptionManager197.loadFromInit = False
+        OptionManager197.loadFromWorldGen = False
         OptionSingleReplace153.optionManager = OptionManager197
         OptionSettingManager200.settingName = Nothing
         OptionSingleReplace153.settingManager = OptionSettingManager200
         OptionSingleReplace153.tokenName = ""
-        OptionSingleReplace153.updateTileSets = false
+        OptionSingleReplace153.updateTileSets = False
         Me.optBtnWarpstonePool.options = OptionSingleReplace153
         Me.optBtnWarpstonePool.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWarpstonePool.TabIndex = 4
         Me.optBtnWarpstonePool.Text = "Warpstone Pool"
         Me.optBtnWarpstonePool.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnWarpstonePool, "Use warpstone to mutate matter into forgotten beasts.")
-        Me.optBtnWarpstonePool.UseVisualStyleBackColor = false
+        Me.optBtnWarpstonePool.UseVisualStyleBackColor = False
         '
         'optBtnGolemForge
         '
         Me.optBtnGolemForge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGolemForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGolemForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGolemForge.FlatAppearance.BorderSize = 0
-        Me.optBtnGolemForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGolemForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGolemForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGolemForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGolemForge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGolemForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGolemForge.Image = CType(resources.GetObject("optBtnGolemForge.Image"),System.Drawing.Image)
+        Me.optBtnGolemForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGolemForge.Image = CType(resources.GetObject("optBtnGolemForge.Image"), System.Drawing.Image)
         Me.optBtnGolemForge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGolemForge.Location = New System.Drawing.Point(5, 25)
         Me.optBtnGolemForge.Margin = New System.Windows.Forms.Padding(1)
@@ -8741,32 +8742,32 @@ Partial Class MainForm
         OptionSingleReplace154.enabledValue = "YESGOLEM["
         FileListManager198.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace154.fileManager = FileListManager198
-        OptionManager198.loadFromDInit = false
-        OptionManager198.loadFromInit = false
-        OptionManager198.loadFromWorldGen = false
+        OptionManager198.loadFromDInit = False
+        OptionManager198.loadFromInit = False
+        OptionManager198.loadFromWorldGen = False
         OptionSingleReplace154.optionManager = OptionManager198
         OptionSettingManager201.settingName = Nothing
         OptionSingleReplace154.settingManager = OptionSettingManager201
         OptionSingleReplace154.tokenName = ""
-        OptionSingleReplace154.updateTileSets = false
+        OptionSingleReplace154.updateTileSets = False
         Me.optBtnGolemForge.options = OptionSingleReplace154
         Me.optBtnGolemForge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGolemForge.TabIndex = 0
         Me.optBtnGolemForge.Text = "Golemforge"
         Me.optBtnGolemForge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnGolemForge, "Allows to cast dwarves into mighty metal warriors.")
-        Me.optBtnGolemForge.UseVisualStyleBackColor = false
+        Me.optBtnGolemForge.UseVisualStyleBackColor = False
         '
         'optBtnGreatMagmaForge
         '
         Me.optBtnGreatMagmaForge.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnGreatMagmaForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnGreatMagmaForge.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnGreatMagmaForge.FlatAppearance.BorderSize = 0
-        Me.optBtnGreatMagmaForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnGreatMagmaForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnGreatMagmaForge.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnGreatMagmaForge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnGreatMagmaForge.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnGreatMagmaForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnGreatMagmaForge.Image = CType(resources.GetObject("optBtnGreatMagmaForge.Image"),System.Drawing.Image)
+        Me.optBtnGreatMagmaForge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnGreatMagmaForge.Image = CType(resources.GetObject("optBtnGreatMagmaForge.Image"), System.Drawing.Image)
         Me.optBtnGreatMagmaForge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnGreatMagmaForge.Location = New System.Drawing.Point(5, 54)
         Me.optBtnGreatMagmaForge.Margin = New System.Windows.Forms.Padding(1)
@@ -8775,32 +8776,32 @@ Partial Class MainForm
         OptionSingleReplace155.enabledValue = "YESGREATMAGMAFORGE["
         FileListManager199.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace155.fileManager = FileListManager199
-        OptionManager199.loadFromDInit = false
-        OptionManager199.loadFromInit = false
-        OptionManager199.loadFromWorldGen = false
+        OptionManager199.loadFromDInit = False
+        OptionManager199.loadFromInit = False
+        OptionManager199.loadFromWorldGen = False
         OptionSingleReplace155.optionManager = OptionManager199
         OptionSettingManager202.settingName = Nothing
         OptionSingleReplace155.settingManager = OptionSettingManager202
         OptionSingleReplace155.tokenName = ""
-        OptionSingleReplace155.updateTileSets = false
+        OptionSingleReplace155.updateTileSets = False
         Me.optBtnGreatMagmaForge.options = OptionSingleReplace155
         Me.optBtnGreatMagmaForge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGreatMagmaForge.TabIndex = 1
         Me.optBtnGreatMagmaForge.Text = "Foundry"
         Me.optBtnGreatMagmaForge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnGreatMagmaForge, "Merge several metals into volcanic metal. ")
-        Me.optBtnGreatMagmaForge.UseVisualStyleBackColor = false
+        Me.optBtnGreatMagmaForge.UseVisualStyleBackColor = False
         '
         'optBtnClayOven
         '
         Me.optBtnClayOven.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnClayOven.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnClayOven.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnClayOven.FlatAppearance.BorderSize = 0
-        Me.optBtnClayOven.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnClayOven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnClayOven.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnClayOven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnClayOven.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnClayOven.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnClayOven.Image = CType(resources.GetObject("optBtnClayOven.Image"),System.Drawing.Image)
+        Me.optBtnClayOven.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnClayOven.Image = CType(resources.GetObject("optBtnClayOven.Image"), System.Drawing.Image)
         Me.optBtnClayOven.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnClayOven.Location = New System.Drawing.Point(5, 19)
         Me.optBtnClayOven.Margin = New System.Windows.Forms.Padding(1)
@@ -8809,33 +8810,33 @@ Partial Class MainForm
         OptionSingleReplace156.enabledValue = "YESCLAYOVEN["
         FileListManager200.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace156.fileManager = FileListManager200
-        OptionManager200.loadFromDInit = false
-        OptionManager200.loadFromInit = false
-        OptionManager200.loadFromWorldGen = false
+        OptionManager200.loadFromDInit = False
+        OptionManager200.loadFromInit = False
+        OptionManager200.loadFromWorldGen = False
         OptionSingleReplace156.optionManager = OptionManager200
         OptionSettingManager203.settingName = Nothing
         OptionSingleReplace156.settingManager = OptionSettingManager203
         OptionSingleReplace156.tokenName = ""
-        OptionSingleReplace156.updateTileSets = false
+        OptionSingleReplace156.updateTileSets = False
         Me.optBtnClayOven.options = OptionSingleReplace156
         Me.optBtnClayOven.Size = New System.Drawing.Size(134, 27)
         Me.optBtnClayOven.TabIndex = 0
         Me.optBtnClayOven.Text = "Clay Oven"
         Me.optBtnClayOven.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnClayOven, "Adds several reactions to the kiln and quern about glazing. See the manual for fu"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnClayOven, "Adds several reactions to the kiln and quern about glazing. See the manual for fu" & _
         "ll details.")
-        Me.optBtnClayOven.UseVisualStyleBackColor = false
+        Me.optBtnClayOven.UseVisualStyleBackColor = False
         '
         'optBtnCrafts
         '
         Me.optBtnCrafts.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCrafts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnCrafts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnCrafts.FlatAppearance.BorderSize = 0
-        Me.optBtnCrafts.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnCrafts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnCrafts.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnCrafts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnCrafts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnCrafts.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnCrafts.Image = CType(resources.GetObject("optBtnCrafts.Image"),System.Drawing.Image)
+        Me.optBtnCrafts.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnCrafts.Image = CType(resources.GetObject("optBtnCrafts.Image"), System.Drawing.Image)
         Me.optBtnCrafts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnCrafts.Location = New System.Drawing.Point(5, 48)
         Me.optBtnCrafts.Margin = New System.Windows.Forms.Padding(1)
@@ -8844,32 +8845,32 @@ Partial Class MainForm
         OptionSingleReplace157.enabledValue = "YESCRAFTSMAN["
         FileListManager201.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace157.fileManager = FileListManager201
-        OptionManager201.loadFromDInit = false
-        OptionManager201.loadFromInit = false
-        OptionManager201.loadFromWorldGen = false
+        OptionManager201.loadFromDInit = False
+        OptionManager201.loadFromInit = False
+        OptionManager201.loadFromWorldGen = False
         OptionSingleReplace157.optionManager = OptionManager201
         OptionSettingManager204.settingName = Nothing
         OptionSingleReplace157.settingManager = OptionSettingManager204
         OptionSingleReplace157.tokenName = ""
-        OptionSingleReplace157.updateTileSets = false
+        OptionSingleReplace157.updateTileSets = False
         Me.optBtnCrafts.options = OptionSingleReplace157
         Me.optBtnCrafts.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCrafts.TabIndex = 1
         Me.optBtnCrafts.Text = "Craftsmen"
         Me.optBtnCrafts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnCrafts, "Adds several new reactions to the craftsman. See manual for full detail.")
-        Me.optBtnCrafts.UseVisualStyleBackColor = false
+        Me.optBtnCrafts.UseVisualStyleBackColor = False
         '
         'optBtnQuenMill
         '
         Me.optBtnQuenMill.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnQuenMill.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnQuenMill.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnQuenMill.FlatAppearance.BorderSize = 0
-        Me.optBtnQuenMill.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnQuenMill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnQuenMill.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnQuenMill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnQuenMill.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnQuenMill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnQuenMill.Image = CType(resources.GetObject("optBtnQuenMill.Image"),System.Drawing.Image)
+        Me.optBtnQuenMill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnQuenMill.Image = CType(resources.GetObject("optBtnQuenMill.Image"), System.Drawing.Image)
         Me.optBtnQuenMill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnQuenMill.Location = New System.Drawing.Point(5, 77)
         Me.optBtnQuenMill.Margin = New System.Windows.Forms.Padding(1)
@@ -8878,33 +8879,33 @@ Partial Class MainForm
         OptionSingleReplace158.enabledValue = "YESMILLING["
         FileListManager202.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace158.fileManager = FileListManager202
-        OptionManager202.loadFromDInit = false
-        OptionManager202.loadFromInit = false
-        OptionManager202.loadFromWorldGen = false
+        OptionManager202.loadFromDInit = False
+        OptionManager202.loadFromInit = False
+        OptionManager202.loadFromWorldGen = False
         OptionSingleReplace158.optionManager = OptionManager202
         OptionSettingManager205.settingName = Nothing
         OptionSingleReplace158.settingManager = OptionSettingManager205
         OptionSingleReplace158.tokenName = ""
-        OptionSingleReplace158.updateTileSets = false
+        OptionSingleReplace158.updateTileSets = False
         Me.optBtnQuenMill.options = OptionSingleReplace158
         Me.optBtnQuenMill.Size = New System.Drawing.Size(134, 27)
         Me.optBtnQuenMill.TabIndex = 2
         Me.optBtnQuenMill.Text = "Quern"
         Me.optBtnQuenMill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnQuenMill, "Adds several new reactions to the quern and millstone. See manual for full detail"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnQuenMill, "Adds several new reactions to the quern and millstone. See manual for full detail" & _
         ".")
-        Me.optBtnQuenMill.UseVisualStyleBackColor = false
+        Me.optBtnQuenMill.UseVisualStyleBackColor = False
         '
         'optBtnMillstone
         '
         Me.optBtnMillstone.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMillstone.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMillstone.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMillstone.FlatAppearance.BorderSize = 0
-        Me.optBtnMillstone.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMillstone.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMillstone.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMillstone.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMillstone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMillstone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMillstone.Image = CType(resources.GetObject("optBtnMillstone.Image"),System.Drawing.Image)
+        Me.optBtnMillstone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMillstone.Image = CType(resources.GetObject("optBtnMillstone.Image"), System.Drawing.Image)
         Me.optBtnMillstone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMillstone.Location = New System.Drawing.Point(5, 106)
         Me.optBtnMillstone.Margin = New System.Windows.Forms.Padding(1)
@@ -8913,32 +8914,32 @@ Partial Class MainForm
         OptionSingleReplace159.enabledValue = "YESMILLSTONE["
         FileListManager203.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace159.fileManager = FileListManager203
-        OptionManager203.loadFromDInit = false
-        OptionManager203.loadFromInit = false
-        OptionManager203.loadFromWorldGen = false
+        OptionManager203.loadFromDInit = False
+        OptionManager203.loadFromInit = False
+        OptionManager203.loadFromWorldGen = False
         OptionSingleReplace159.optionManager = OptionManager203
         OptionSettingManager206.settingName = Nothing
         OptionSingleReplace159.settingManager = OptionSettingManager206
         OptionSingleReplace159.tokenName = ""
-        OptionSingleReplace159.updateTileSets = false
+        OptionSingleReplace159.updateTileSets = False
         Me.optBtnMillstone.options = OptionSingleReplace159
         Me.optBtnMillstone.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMillstone.TabIndex = 3
         Me.optBtnMillstone.Text = "Millstone"
         Me.optBtnMillstone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnMillstone, "Adds rock, sand and bone grinding to the millstone.")
-        Me.optBtnMillstone.UseVisualStyleBackColor = false
+        Me.optBtnMillstone.UseVisualStyleBackColor = False
         '
         'optBtnStill
         '
         Me.optBtnStill.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnStill.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnStill.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnStill.FlatAppearance.BorderSize = 0
-        Me.optBtnStill.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnStill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnStill.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnStill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnStill.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnStill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnStill.Image = CType(resources.GetObject("optBtnStill.Image"),System.Drawing.Image)
+        Me.optBtnStill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnStill.Image = CType(resources.GetObject("optBtnStill.Image"), System.Drawing.Image)
         Me.optBtnStill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnStill.Location = New System.Drawing.Point(5, 135)
         Me.optBtnStill.Margin = New System.Windows.Forms.Padding(1)
@@ -8947,32 +8948,32 @@ Partial Class MainForm
         OptionSingleReplace160.enabledValue = "YESSTILL["
         FileListManager204.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace160.fileManager = FileListManager204
-        OptionManager204.loadFromDInit = false
-        OptionManager204.loadFromInit = false
-        OptionManager204.loadFromWorldGen = false
+        OptionManager204.loadFromDInit = False
+        OptionManager204.loadFromInit = False
+        OptionManager204.loadFromWorldGen = False
         OptionSingleReplace160.optionManager = OptionManager204
         OptionSettingManager207.settingName = Nothing
         OptionSingleReplace160.settingManager = OptionSettingManager207
         OptionSingleReplace160.tokenName = ""
-        OptionSingleReplace160.updateTileSets = false
+        OptionSingleReplace160.updateTileSets = False
         Me.optBtnStill.options = OptionSingleReplace160
         Me.optBtnStill.Size = New System.Drawing.Size(134, 27)
         Me.optBtnStill.TabIndex = 4
         Me.optBtnStill.Text = "Still"
         Me.optBtnStill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnStill, "Adds several new reactions to the still. See manual for full detail.")
-        Me.optBtnStill.UseVisualStyleBackColor = false
+        Me.optBtnStill.UseVisualStyleBackColor = False
         '
         'optBtnKitchen
         '
         Me.optBtnKitchen.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnKitchen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnKitchen.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnKitchen.FlatAppearance.BorderSize = 0
-        Me.optBtnKitchen.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnKitchen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnKitchen.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnKitchen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnKitchen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnKitchen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnKitchen.Image = CType(resources.GetObject("optBtnKitchen.Image"),System.Drawing.Image)
+        Me.optBtnKitchen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnKitchen.Image = CType(resources.GetObject("optBtnKitchen.Image"), System.Drawing.Image)
         Me.optBtnKitchen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnKitchen.Location = New System.Drawing.Point(5, 164)
         Me.optBtnKitchen.Margin = New System.Windows.Forms.Padding(1)
@@ -8981,32 +8982,32 @@ Partial Class MainForm
         OptionSingleReplace161.enabledValue = "YESKITCHEN["
         FileListManager205.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace161.fileManager = FileListManager205
-        OptionManager205.loadFromDInit = false
-        OptionManager205.loadFromInit = false
-        OptionManager205.loadFromWorldGen = false
+        OptionManager205.loadFromDInit = False
+        OptionManager205.loadFromInit = False
+        OptionManager205.loadFromWorldGen = False
         OptionSingleReplace161.optionManager = OptionManager205
         OptionSettingManager208.settingName = Nothing
         OptionSingleReplace161.settingManager = OptionSettingManager208
         OptionSingleReplace161.tokenName = ""
-        OptionSingleReplace161.updateTileSets = false
+        OptionSingleReplace161.updateTileSets = False
         Me.optBtnKitchen.options = OptionSingleReplace161
         Me.optBtnKitchen.Size = New System.Drawing.Size(134, 27)
         Me.optBtnKitchen.TabIndex = 5
         Me.optBtnKitchen.Text = "Kitchen"
         Me.optBtnKitchen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnKitchen, "Adds several new reactions to the kitchen. See manual for full detail.")
-        Me.optBtnKitchen.UseVisualStyleBackColor = false
+        Me.optBtnKitchen.UseVisualStyleBackColor = False
         '
         'optBtnTanner
         '
         Me.optBtnTanner.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnTanner.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnTanner.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnTanner.FlatAppearance.BorderSize = 0
-        Me.optBtnTanner.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnTanner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnTanner.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnTanner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnTanner.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnTanner.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnTanner.Image = CType(resources.GetObject("optBtnTanner.Image"),System.Drawing.Image)
+        Me.optBtnTanner.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnTanner.Image = CType(resources.GetObject("optBtnTanner.Image"), System.Drawing.Image)
         Me.optBtnTanner.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnTanner.Location = New System.Drawing.Point(5, 193)
         Me.optBtnTanner.Margin = New System.Windows.Forms.Padding(1)
@@ -9015,32 +9016,32 @@ Partial Class MainForm
         OptionSingleReplace162.enabledValue = "YESTANNER["
         FileListManager206.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace162.fileManager = FileListManager206
-        OptionManager206.loadFromDInit = false
-        OptionManager206.loadFromInit = false
-        OptionManager206.loadFromWorldGen = false
+        OptionManager206.loadFromDInit = False
+        OptionManager206.loadFromInit = False
+        OptionManager206.loadFromWorldGen = False
         OptionSingleReplace162.optionManager = OptionManager206
         OptionSettingManager209.settingName = Nothing
         OptionSingleReplace162.settingManager = OptionSettingManager209
         OptionSingleReplace162.tokenName = ""
-        OptionSingleReplace162.updateTileSets = false
+        OptionSingleReplace162.updateTileSets = False
         Me.optBtnTanner.options = OptionSingleReplace162
         Me.optBtnTanner.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTanner.TabIndex = 6
         Me.optBtnTanner.Text = "Tanner"
         Me.optBtnTanner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnTanner, "Adds several new reactions to the tanner. See manual for full detail.")
-        Me.optBtnTanner.UseVisualStyleBackColor = false
+        Me.optBtnTanner.UseVisualStyleBackColor = False
         '
         'optBtnScrewPress
         '
         Me.optBtnScrewPress.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnScrewPress.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnScrewPress.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnScrewPress.FlatAppearance.BorderSize = 0
-        Me.optBtnScrewPress.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnScrewPress.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnScrewPress.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnScrewPress.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnScrewPress.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnScrewPress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnScrewPress.Image = CType(resources.GetObject("optBtnScrewPress.Image"),System.Drawing.Image)
+        Me.optBtnScrewPress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnScrewPress.Image = CType(resources.GetObject("optBtnScrewPress.Image"), System.Drawing.Image)
         Me.optBtnScrewPress.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnScrewPress.Location = New System.Drawing.Point(5, 222)
         Me.optBtnScrewPress.Margin = New System.Windows.Forms.Padding(1)
@@ -9049,32 +9050,32 @@ Partial Class MainForm
         OptionSingleReplace163.enabledValue = "YESSCREWPRESS["
         FileListManager207.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace163.fileManager = FileListManager207
-        OptionManager207.loadFromDInit = false
-        OptionManager207.loadFromInit = false
-        OptionManager207.loadFromWorldGen = false
+        OptionManager207.loadFromDInit = False
+        OptionManager207.loadFromInit = False
+        OptionManager207.loadFromWorldGen = False
         OptionSingleReplace163.optionManager = OptionManager207
         OptionSettingManager210.settingName = Nothing
         OptionSingleReplace163.settingManager = OptionSettingManager210
         OptionSingleReplace163.tokenName = ""
-        OptionSingleReplace163.updateTileSets = false
+        OptionSingleReplace163.updateTileSets = False
         Me.optBtnScrewPress.options = OptionSingleReplace163
         Me.optBtnScrewPress.Size = New System.Drawing.Size(134, 27)
         Me.optBtnScrewPress.TabIndex = 7
         Me.optBtnScrewPress.Text = "Screw Press"
         Me.optBtnScrewPress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnScrewPress, "Adds several new reactions to the screw press. See manual for full detail.")
-        Me.optBtnScrewPress.UseVisualStyleBackColor = false
+        Me.optBtnScrewPress.UseVisualStyleBackColor = False
         '
         'optBtnSoapmaker
         '
         Me.optBtnSoapmaker.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSoapmaker.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSoapmaker.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnSoapmaker.FlatAppearance.BorderSize = 0
-        Me.optBtnSoapmaker.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnSoapmaker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnSoapmaker.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnSoapmaker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnSoapmaker.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnSoapmaker.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnSoapmaker.Image = CType(resources.GetObject("optBtnSoapmaker.Image"),System.Drawing.Image)
+        Me.optBtnSoapmaker.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnSoapmaker.Image = CType(resources.GetObject("optBtnSoapmaker.Image"), System.Drawing.Image)
         Me.optBtnSoapmaker.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnSoapmaker.Location = New System.Drawing.Point(5, 251)
         Me.optBtnSoapmaker.Margin = New System.Windows.Forms.Padding(1)
@@ -9083,33 +9084,33 @@ Partial Class MainForm
         OptionSingleReplace164.enabledValue = "YESSOAP["
         FileListManager208.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace164.fileManager = FileListManager208
-        OptionManager208.loadFromDInit = false
-        OptionManager208.loadFromInit = false
-        OptionManager208.loadFromWorldGen = false
+        OptionManager208.loadFromDInit = False
+        OptionManager208.loadFromInit = False
+        OptionManager208.loadFromWorldGen = False
         OptionSingleReplace164.optionManager = OptionManager208
         OptionSettingManager211.settingName = Nothing
         OptionSingleReplace164.settingManager = OptionSettingManager211
         OptionSingleReplace164.tokenName = ""
-        OptionSingleReplace164.updateTileSets = false
+        OptionSingleReplace164.updateTileSets = False
         Me.optBtnSoapmaker.options = OptionSingleReplace164
         Me.optBtnSoapmaker.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSoapmaker.TabIndex = 8
         Me.optBtnSoapmaker.Text = "Soapmaker"
         Me.optBtnSoapmaker.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnSoapmaker, "Adds or removes the soapmaker building. Regardless of its existence the chemists "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnSoapmaker, "Adds or removes the soapmaker building. Regardless of its existence the chemists " & _
         "will still make soap. ")
-        Me.optBtnSoapmaker.UseVisualStyleBackColor = false
+        Me.optBtnSoapmaker.UseVisualStyleBackColor = False
         '
         'optBtnAquifier
         '
         Me.optBtnAquifier.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnAquifier.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnAquifier.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnAquifier.FlatAppearance.BorderSize = 0
-        Me.optBtnAquifier.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnAquifier.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnAquifier.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnAquifier.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnAquifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnAquifier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnAquifier.Image = CType(resources.GetObject("optBtnAquifier.Image"),System.Drawing.Image)
+        Me.optBtnAquifier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnAquifier.Image = CType(resources.GetObject("optBtnAquifier.Image"), System.Drawing.Image)
         Me.optBtnAquifier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnAquifier.Location = New System.Drawing.Point(5, 19)
         Me.optBtnAquifier.Margin = New System.Windows.Forms.Padding(1)
@@ -9118,40 +9119,40 @@ Partial Class MainForm
         OptionSingleReplace165.enabledValue = "[AQUIFER]"
         FileListManager209.fileNames = New String() {"inorganic_stone_layer.txt", "inorganic_stone_mineral.txt", "inorganic_stone_soil.txt"}
         OptionSingleReplace165.fileManager = FileListManager209
-        OptionManager209.loadFromDInit = false
-        OptionManager209.loadFromInit = false
-        OptionManager209.loadFromWorldGen = false
+        OptionManager209.loadFromDInit = False
+        OptionManager209.loadFromInit = False
+        OptionManager209.loadFromWorldGen = False
         OptionSingleReplace165.optionManager = OptionManager209
         OptionSettingManager212.settingName = Nothing
         OptionSingleReplace165.settingManager = OptionSettingManager212
         OptionSingleReplace165.tokenName = ""
-        OptionSingleReplace165.updateTileSets = true
+        OptionSingleReplace165.updateTileSets = True
         Me.optBtnAquifier.options = OptionSingleReplace165
         Me.optBtnAquifier.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAquifier.TabIndex = 0
         Me.optBtnAquifier.Text = "Aquifers"
         Me.optBtnAquifier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnAquifier, "Turn Aquifer on or off, as you like.")
-        Me.optBtnAquifier.UseVisualStyleBackColor = false
+        Me.optBtnAquifier.UseVisualStyleBackColor = False
         '
         'optMultiHarderSmithing
         '
         Me.optMultiHarderSmithing.Appearance = System.Windows.Forms.Appearance.Button
         Me.optMultiHarderSmithing.FlatAppearance.BorderSize = 0
-        Me.optMultiHarderSmithing.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optMultiHarderSmithing.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optMultiHarderSmithing.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optMultiHarderSmithing.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optMultiHarderSmithing.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optMultiHarderSmithing.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optMultiHarderSmithing.Image = CType(resources.GetObject("optMultiHarderSmithing.Image"),System.Drawing.Image)
+        Me.optMultiHarderSmithing.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optMultiHarderSmithing.Image = CType(resources.GetObject("optMultiHarderSmithing.Image"), System.Drawing.Image)
         Me.optMultiHarderSmithing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optMultiHarderSmithing.Location = New System.Drawing.Point(5, 48)
         Me.optMultiHarderSmithing.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiHarderSmithing.Name = "optMultiHarderSmithing"
         FileListManager210.fileNames = New String() {"item_weapon.txt", "item_armor.txt", "item_gloves.txt", "item_helm.txt", "item_shoes.txt", "item_shield.txt"}
         OptionMulti4.fileManager = FileListManager210
-        OptionManager210.loadFromDInit = false
-        OptionManager210.loadFromInit = false
-        OptionManager210.loadFromWorldGen = false
+        OptionManager210.loadFromDInit = False
+        OptionManager210.loadFromInit = False
+        OptionManager210.loadFromWorldGen = False
         OptionMulti4.optionManager = OptionManager210
         OptionSettingManager213.settingName = Nothing
         OptionMulti4.settingManager = OptionSettingManager213
@@ -9163,34 +9164,34 @@ Partial Class MainForm
         RawToken10.tokenName = ""
         OptionMulti4.tokenList.Add(RawToken9)
         OptionMulti4.tokenList.Add(RawToken10)
-        OptionMulti4.updateTileSets = false
+        OptionMulti4.updateTileSets = False
         Me.optMultiHarderSmithing.options = OptionMulti4
         Me.optMultiHarderSmithing.Size = New System.Drawing.Size(134, 27)
         Me.optMultiHarderSmithing.TabIndex = 1
         Me.optMultiHarderSmithing.Text = "Harder Smithing"
         Me.optMultiHarderSmithing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optMultiHarderSmithing, "Makes smithing harder. Items might need more then just one bar of metal to be pro"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optMultiHarderSmithing, "Makes smithing harder. Items might need more then just one bar of metal to be pro" & _
         "duced.")
-        Me.optMultiHarderSmithing.UseVisualStyleBackColor = true
+        Me.optMultiHarderSmithing.UseVisualStyleBackColor = True
         '
         'optMultiHarderFarming
         '
         Me.optMultiHarderFarming.Appearance = System.Windows.Forms.Appearance.Button
         Me.optMultiHarderFarming.FlatAppearance.BorderSize = 0
-        Me.optMultiHarderFarming.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optMultiHarderFarming.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optMultiHarderFarming.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optMultiHarderFarming.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optMultiHarderFarming.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optMultiHarderFarming.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optMultiHarderFarming.Image = CType(resources.GetObject("optMultiHarderFarming.Image"),System.Drawing.Image)
+        Me.optMultiHarderFarming.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optMultiHarderFarming.Image = CType(resources.GetObject("optMultiHarderFarming.Image"), System.Drawing.Image)
         Me.optMultiHarderFarming.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optMultiHarderFarming.Location = New System.Drawing.Point(5, 77)
         Me.optMultiHarderFarming.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiHarderFarming.Name = "optMultiHarderFarming"
         FileListManager211.fileNames = New String() {"plant_standard.txt"}
         OptionMulti5.fileManager = FileListManager211
-        OptionManager211.loadFromDInit = false
-        OptionManager211.loadFromInit = false
-        OptionManager211.loadFromWorldGen = false
+        OptionManager211.loadFromDInit = False
+        OptionManager211.loadFromInit = False
+        OptionManager211.loadFromWorldGen = False
         OptionMulti5.optionManager = OptionManager211
         OptionSettingManager214.settingName = Nothing
         OptionMulti5.settingManager = OptionSettingManager214
@@ -9202,26 +9203,26 @@ Partial Class MainForm
         RawToken12.tokenName = ""
         OptionMulti5.tokenList.Add(RawToken11)
         OptionMulti5.tokenList.Add(RawToken12)
-        OptionMulti5.updateTileSets = true
+        OptionMulti5.updateTileSets = True
         Me.optMultiHarderFarming.options = OptionMulti5
         Me.optMultiHarderFarming.Size = New System.Drawing.Size(134, 27)
         Me.optMultiHarderFarming.TabIndex = 2
         Me.optMultiHarderFarming.Text = "Harder Farming"
         Me.optMultiHarderFarming.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optMultiHarderFarming, "Slower farming and less eggs. Aboveground plants need 1 season, underground plant"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optMultiHarderFarming, "Slower farming and less eggs. Aboveground plants need 1 season, underground plant" & _
         "s 4 seasons to grow.")
-        Me.optMultiHarderFarming.UseVisualStyleBackColor = true
+        Me.optMultiHarderFarming.UseVisualStyleBackColor = True
         '
         'optBtnHarderMining
         '
         Me.optBtnHarderMining.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHarderMining.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnHarderMining.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnHarderMining.FlatAppearance.BorderSize = 0
-        Me.optBtnHarderMining.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnHarderMining.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnHarderMining.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnHarderMining.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnHarderMining.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnHarderMining.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnHarderMining.Image = CType(resources.GetObject("optBtnHarderMining.Image"),System.Drawing.Image)
+        Me.optBtnHarderMining.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnHarderMining.Image = CType(resources.GetObject("optBtnHarderMining.Image"), System.Drawing.Image)
         Me.optBtnHarderMining.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnHarderMining.Location = New System.Drawing.Point(5, 106)
         Me.optBtnHarderMining.Margin = New System.Windows.Forms.Padding(1)
@@ -9230,32 +9231,32 @@ Partial Class MainForm
         OptionSingleReplace166.enabledValue = "YESWARP["
         FileListManager212.fileNames = New String() {"inorganic_zwarpstone.txt"}
         OptionSingleReplace166.fileManager = FileListManager212
-        OptionManager212.loadFromDInit = false
-        OptionManager212.loadFromInit = false
-        OptionManager212.loadFromWorldGen = false
+        OptionManager212.loadFromDInit = False
+        OptionManager212.loadFromInit = False
+        OptionManager212.loadFromWorldGen = False
         OptionSingleReplace166.optionManager = OptionManager212
         OptionSettingManager215.settingName = Nothing
         OptionSingleReplace166.settingManager = OptionSettingManager215
         OptionSingleReplace166.tokenName = ""
-        OptionSingleReplace166.updateTileSets = true
+        OptionSingleReplace166.updateTileSets = True
         Me.optBtnHarderMining.options = OptionSingleReplace166
         Me.optBtnHarderMining.Size = New System.Drawing.Size(134, 27)
         Me.optBtnHarderMining.TabIndex = 3
         Me.optBtnHarderMining.Text = "Harder Mining"
         Me.optBtnHarderMining.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnHarderMining, "Adds coal dust and warpstone. Both might hurt your miners when mined.")
-        Me.optBtnHarderMining.UseVisualStyleBackColor = false
+        Me.optBtnHarderMining.UseVisualStyleBackColor = False
         '
         'optBtnHarderLearning
         '
         Me.optBtnHarderLearning.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnHarderLearning.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnHarderLearning.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnHarderLearning.FlatAppearance.BorderSize = 0
-        Me.optBtnHarderLearning.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnHarderLearning.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnHarderLearning.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnHarderLearning.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnHarderLearning.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnHarderLearning.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnHarderLearning.Image = CType(resources.GetObject("optBtnHarderLearning.Image"),System.Drawing.Image)
+        Me.optBtnHarderLearning.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnHarderLearning.Image = CType(resources.GetObject("optBtnHarderLearning.Image"), System.Drawing.Image)
         Me.optBtnHarderLearning.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnHarderLearning.Location = New System.Drawing.Point(5, 135)
         Me.optBtnHarderLearning.Margin = New System.Windows.Forms.Padding(1)
@@ -9264,32 +9265,32 @@ Partial Class MainForm
         OptionSingleReplace167.enabledValue = "YESLEARNING["
         FileListManager213.fileNames = New String() {"creature_standard.txt"}
         OptionSingleReplace167.fileManager = FileListManager213
-        OptionManager213.loadFromDInit = false
-        OptionManager213.loadFromInit = false
-        OptionManager213.loadFromWorldGen = false
+        OptionManager213.loadFromDInit = False
+        OptionManager213.loadFromInit = False
+        OptionManager213.loadFromWorldGen = False
         OptionSingleReplace167.optionManager = OptionManager213
         OptionSettingManager216.settingName = Nothing
         OptionSingleReplace167.settingManager = OptionSettingManager216
         OptionSingleReplace167.tokenName = ""
-        OptionSingleReplace167.updateTileSets = true
+        OptionSingleReplace167.updateTileSets = True
         Me.optBtnHarderLearning.options = OptionSingleReplace167
         Me.optBtnHarderLearning.Size = New System.Drawing.Size(134, 27)
         Me.optBtnHarderLearning.TabIndex = 4
         Me.optBtnHarderLearning.Text = "Harder Learning"
         Me.optBtnHarderLearning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnHarderLearning, "All dwarves learn only half as fast. Makes Guilds more important.")
-        Me.optBtnHarderLearning.UseVisualStyleBackColor = false
+        Me.optBtnHarderLearning.UseVisualStyleBackColor = False
         '
         'optBtnBodyguards
         '
         Me.optBtnBodyguards.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBodyguards.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBodyguards.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBodyguards.FlatAppearance.BorderSize = 0
-        Me.optBtnBodyguards.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBodyguards.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBodyguards.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBodyguards.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBodyguards.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBodyguards.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBodyguards.Image = CType(resources.GetObject("optBtnBodyguards.Image"),System.Drawing.Image)
+        Me.optBtnBodyguards.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBodyguards.Image = CType(resources.GetObject("optBtnBodyguards.Image"), System.Drawing.Image)
         Me.optBtnBodyguards.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBodyguards.Location = New System.Drawing.Point(5, 164)
         Me.optBtnBodyguards.Margin = New System.Windows.Forms.Padding(1)
@@ -9298,32 +9299,32 @@ Partial Class MainForm
         OptionSingleReplace168.enabledValue = "YESBODYGUARD["
         FileListManager214.fileNames = New String() {"entity_human.txt", "entity_default.txt", "entity_elf.txt", "entity_drow.txt"}
         OptionSingleReplace168.fileManager = FileListManager214
-        OptionManager214.loadFromDInit = false
-        OptionManager214.loadFromInit = false
-        OptionManager214.loadFromWorldGen = false
+        OptionManager214.loadFromDInit = False
+        OptionManager214.loadFromInit = False
+        OptionManager214.loadFromWorldGen = False
         OptionSingleReplace168.optionManager = OptionManager214
         OptionSettingManager217.settingName = Nothing
         OptionSingleReplace168.settingManager = OptionSettingManager217
         OptionSingleReplace168.tokenName = ""
-        OptionSingleReplace168.updateTileSets = false
+        OptionSingleReplace168.updateTileSets = False
         Me.optBtnBodyguards.options = OptionSingleReplace168
         Me.optBtnBodyguards.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBodyguards.TabIndex = 7
         Me.optBtnBodyguards.Text = "Caravan Escorts"
         Me.optBtnBodyguards.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnBodyguards, "ON gives caravans bodyguards. OFF means that you have to protect them yourself.")
-        Me.optBtnBodyguards.UseVisualStyleBackColor = false
+        Me.optBtnBodyguards.UseVisualStyleBackColor = False
         '
         'optBtnSecrets
         '
         Me.optBtnSecrets.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSecrets.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSecrets.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnSecrets.FlatAppearance.BorderSize = 0
-        Me.optBtnSecrets.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnSecrets.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnSecrets.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnSecrets.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnSecrets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnSecrets.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnSecrets.Image = CType(resources.GetObject("optBtnSecrets.Image"),System.Drawing.Image)
+        Me.optBtnSecrets.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnSecrets.Image = CType(resources.GetObject("optBtnSecrets.Image"), System.Drawing.Image)
         Me.optBtnSecrets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnSecrets.Location = New System.Drawing.Point(5, 193)
         Me.optBtnSecrets.Margin = New System.Windows.Forms.Padding(1)
@@ -9332,33 +9333,33 @@ Partial Class MainForm
         OptionSingleReplace169.enabledValue = "YESSECRET["
         FileListManager215.fileNames = New String() {"creature_standard.txt"}
         OptionSingleReplace169.fileManager = FileListManager215
-        OptionManager215.loadFromDInit = false
-        OptionManager215.loadFromInit = false
-        OptionManager215.loadFromWorldGen = false
+        OptionManager215.loadFromDInit = False
+        OptionManager215.loadFromInit = False
+        OptionManager215.loadFromWorldGen = False
         OptionSingleReplace169.optionManager = OptionManager215
         OptionSettingManager218.settingName = Nothing
         OptionSingleReplace169.settingManager = OptionSettingManager218
         OptionSingleReplace169.tokenName = ""
-        OptionSingleReplace169.updateTileSets = true
+        OptionSingleReplace169.updateTileSets = True
         Me.optBtnSecrets.options = OptionSingleReplace169
         Me.optBtnSecrets.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSecrets.TabIndex = 8
         Me.optBtnSecrets.Text = "Secret !FUN!"
         Me.optBtnSecrets.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnSecrets, "NOTE: This will make your game marginally harder. Build wards to protect you. 6 n"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnSecrets, "NOTE: This will make your game marginally harder. Build wards to protect you. 6 n" & _
         "ew sly creatures. Watch your game log.")
-        Me.optBtnSecrets.UseVisualStyleBackColor = false
+        Me.optBtnSecrets.UseVisualStyleBackColor = False
         '
         'optBtnDiseases
         '
         Me.optBtnDiseases.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDiseases.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnDiseases.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnDiseases.FlatAppearance.BorderSize = 0
-        Me.optBtnDiseases.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnDiseases.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnDiseases.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnDiseases.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnDiseases.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnDiseases.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnDiseases.Image = CType(resources.GetObject("optBtnDiseases.Image"),System.Drawing.Image)
+        Me.optBtnDiseases.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnDiseases.Image = CType(resources.GetObject("optBtnDiseases.Image"), System.Drawing.Image)
         Me.optBtnDiseases.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnDiseases.Location = New System.Drawing.Point(5, 222)
         Me.optBtnDiseases.Margin = New System.Windows.Forms.Padding(1)
@@ -9367,41 +9368,41 @@ Partial Class MainForm
         OptionSingleReplace170.enabledValue = "YESNEWDISEASE["
         FileListManager216.fileNames = New String() {"creature_standard.txt"}
         OptionSingleReplace170.fileManager = FileListManager216
-        OptionManager216.loadFromDInit = false
-        OptionManager216.loadFromInit = false
-        OptionManager216.loadFromWorldGen = false
+        OptionManager216.loadFromDInit = False
+        OptionManager216.loadFromInit = False
+        OptionManager216.loadFromWorldGen = False
         OptionSingleReplace170.optionManager = OptionManager216
         OptionSettingManager219.settingName = Nothing
         OptionSingleReplace170.settingManager = OptionSettingManager219
         OptionSingleReplace170.tokenName = ""
-        OptionSingleReplace170.updateTileSets = false
+        OptionSingleReplace170.updateTileSets = False
         Me.optBtnDiseases.options = OptionSingleReplace170
         Me.optBtnDiseases.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDiseases.TabIndex = 9
         Me.optBtnDiseases.Text = "Diseases"
         Me.optBtnDiseases.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnDiseases, "Adds Halfling's disease mod to the game.  Requires the apothecary to treat the di"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnDiseases, "Adds Halfling's disease mod to the game.  Requires the apothecary to treat the di" & _
         "seases. See the manual for more info.")
-        Me.optBtnDiseases.UseVisualStyleBackColor = false
+        Me.optBtnDiseases.UseVisualStyleBackColor = False
         '
         'optMultiCavernFlavor
         '
         Me.optMultiCavernFlavor.Appearance = System.Windows.Forms.Appearance.Button
         Me.optMultiCavernFlavor.FlatAppearance.BorderSize = 0
-        Me.optMultiCavernFlavor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optMultiCavernFlavor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optMultiCavernFlavor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optMultiCavernFlavor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optMultiCavernFlavor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optMultiCavernFlavor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optMultiCavernFlavor.Image = CType(resources.GetObject("optMultiCavernFlavor.Image"),System.Drawing.Image)
+        Me.optMultiCavernFlavor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optMultiCavernFlavor.Image = CType(resources.GetObject("optMultiCavernFlavor.Image"), System.Drawing.Image)
         Me.optMultiCavernFlavor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optMultiCavernFlavor.Location = New System.Drawing.Point(5, 19)
         Me.optMultiCavernFlavor.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiCavernFlavor.Name = "optMultiCavernFlavor"
         FileListManager217.fileNames = New String() {"plant_grasses.txt"}
         OptionMulti6.fileManager = FileListManager217
-        OptionManager217.loadFromDInit = false
-        OptionManager217.loadFromInit = false
-        OptionManager217.loadFromWorldGen = false
+        OptionManager217.loadFromDInit = False
+        OptionManager217.loadFromInit = False
+        OptionManager217.loadFromWorldGen = False
         OptionMulti6.optionManager = OptionManager217
         OptionSettingManager220.settingName = Nothing
         OptionMulti6.settingManager = OptionSettingManager220
@@ -9413,25 +9414,25 @@ Partial Class MainForm
         RawToken14.tokenName = "Standard"
         OptionMulti6.tokenList.Add(RawToken13)
         OptionMulti6.tokenList.Add(RawToken14)
-        OptionMulti6.updateTileSets = true
+        OptionMulti6.updateTileSets = True
         Me.optMultiCavernFlavor.options = OptionMulti6
         Me.optMultiCavernFlavor.Size = New System.Drawing.Size(134, 27)
         Me.optMultiCavernFlavor.TabIndex = 0
         Me.optMultiCavernFlavor.Text = "Cavern Flavor"
         Me.optMultiCavernFlavor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optMultiCavernFlavor, "Adds a separate look for each cavern. Might cause eye damage. ;-)")
-        Me.optMultiCavernFlavor.UseVisualStyleBackColor = true
+        Me.optMultiCavernFlavor.UseVisualStyleBackColor = True
         '
         'optBtnRegionalWeather
         '
         Me.optBtnRegionalWeather.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRegionalWeather.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnRegionalWeather.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnRegionalWeather.FlatAppearance.BorderSize = 0
-        Me.optBtnRegionalWeather.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnRegionalWeather.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnRegionalWeather.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnRegionalWeather.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnRegionalWeather.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnRegionalWeather.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnRegionalWeather.Image = CType(resources.GetObject("optBtnRegionalWeather.Image"),System.Drawing.Image)
+        Me.optBtnRegionalWeather.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnRegionalWeather.Image = CType(resources.GetObject("optBtnRegionalWeather.Image"), System.Drawing.Image)
         Me.optBtnRegionalWeather.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnRegionalWeather.Location = New System.Drawing.Point(5, 48)
         Me.optBtnRegionalWeather.Margin = New System.Windows.Forms.Padding(1)
@@ -9440,32 +9441,32 @@ Partial Class MainForm
         OptionSingleReplace171.enabledValue = "YESWEATHER["
         FileListManager218.fileNames = New String() {"interaction_weather.txt"}
         OptionSingleReplace171.fileManager = FileListManager218
-        OptionManager218.loadFromDInit = false
-        OptionManager218.loadFromInit = false
-        OptionManager218.loadFromWorldGen = false
+        OptionManager218.loadFromDInit = False
+        OptionManager218.loadFromInit = False
+        OptionManager218.loadFromWorldGen = False
         OptionSingleReplace171.optionManager = OptionManager218
         OptionSettingManager221.settingName = Nothing
         OptionSingleReplace171.settingManager = OptionSettingManager221
         OptionSingleReplace171.tokenName = ""
-        OptionSingleReplace171.updateTileSets = false
+        OptionSingleReplace171.updateTileSets = False
         Me.optBtnRegionalWeather.options = OptionSingleReplace171
         Me.optBtnRegionalWeather.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRegionalWeather.TabIndex = 1
         Me.optBtnRegionalWeather.Text = "Regional Weather"
         Me.optBtnRegionalWeather.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnRegionalWeather, "Adds a lot of special rains, fogs and clouds to all kinds of regions.")
-        Me.optBtnRegionalWeather.UseVisualStyleBackColor = false
+        Me.optBtnRegionalWeather.UseVisualStyleBackColor = False
         '
         'optBtnRegionalEffects
         '
         Me.optBtnRegionalEffects.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRegionalEffects.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnRegionalEffects.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnRegionalEffects.FlatAppearance.BorderSize = 0
-        Me.optBtnRegionalEffects.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnRegionalEffects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnRegionalEffects.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnRegionalEffects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnRegionalEffects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnRegionalEffects.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnRegionalEffects.Image = CType(resources.GetObject("optBtnRegionalEffects.Image"),System.Drawing.Image)
+        Me.optBtnRegionalEffects.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnRegionalEffects.Image = CType(resources.GetObject("optBtnRegionalEffects.Image"), System.Drawing.Image)
         Me.optBtnRegionalEffects.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnRegionalEffects.Location = New System.Drawing.Point(5, 77)
         Me.optBtnRegionalEffects.Margin = New System.Windows.Forms.Padding(1)
@@ -9474,33 +9475,33 @@ Partial Class MainForm
         OptionSingleReplace172.enabledValue = "YESREGIONALEFFECT["
         FileListManager219.fileNames = New String() {"interaction_regional.txt"}
         OptionSingleReplace172.fileManager = FileListManager219
-        OptionManager219.loadFromDInit = false
-        OptionManager219.loadFromInit = false
-        OptionManager219.loadFromWorldGen = false
+        OptionManager219.loadFromDInit = False
+        OptionManager219.loadFromInit = False
+        OptionManager219.loadFromWorldGen = False
         OptionSingleReplace172.optionManager = OptionManager219
         OptionSettingManager222.settingName = Nothing
         OptionSingleReplace172.settingManager = OptionSettingManager222
         OptionSingleReplace172.tokenName = ""
-        OptionSingleReplace172.updateTileSets = false
+        OptionSingleReplace172.updateTileSets = False
         Me.optBtnRegionalEffects.options = OptionSingleReplace172
         Me.optBtnRegionalEffects.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRegionalEffects.TabIndex = 2
         Me.optBtnRegionalEffects.Text = "Regional Effects"
         Me.optBtnRegionalEffects.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnRegionalEffects, "Adds specific regional effects, like animated dead in evil regions, to all region"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnRegionalEffects, "Adds specific regional effects, like animated dead in evil regions, to all region" & _
         "s. Good biomes heal dwarves for example.")
-        Me.optBtnRegionalEffects.UseVisualStyleBackColor = false
+        Me.optBtnRegionalEffects.UseVisualStyleBackColor = False
         '
         'optBtnSmokeEffects
         '
         Me.optBtnSmokeEffects.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSmokeEffects.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSmokeEffects.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnSmokeEffects.FlatAppearance.BorderSize = 0
-        Me.optBtnSmokeEffects.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnSmokeEffects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnSmokeEffects.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnSmokeEffects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnSmokeEffects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnSmokeEffects.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnSmokeEffects.Image = CType(resources.GetObject("optBtnSmokeEffects.Image"),System.Drawing.Image)
+        Me.optBtnSmokeEffects.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnSmokeEffects.Image = CType(resources.GetObject("optBtnSmokeEffects.Image"), System.Drawing.Image)
         Me.optBtnSmokeEffects.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnSmokeEffects.Location = New System.Drawing.Point(5, 106)
         Me.optBtnSmokeEffects.Margin = New System.Windows.Forms.Padding(1)
@@ -9509,33 +9510,33 @@ Partial Class MainForm
         OptionSingleReplace173.enabledValue = "YESDUST["
         FileListManager220.fileNames = New String() {"reaction_glaze.txt", "reaction_kobold.txt", "reaction_masterwork.txt", "reaction_masterwork2.txt", "reaction_other.txt"}
         OptionSingleReplace173.fileManager = FileListManager220
-        OptionManager220.loadFromDInit = false
-        OptionManager220.loadFromInit = false
-        OptionManager220.loadFromWorldGen = false
+        OptionManager220.loadFromDInit = False
+        OptionManager220.loadFromInit = False
+        OptionManager220.loadFromWorldGen = False
         OptionSingleReplace173.optionManager = OptionManager220
         OptionSettingManager223.settingName = Nothing
         OptionSingleReplace173.settingManager = OptionSettingManager223
         OptionSingleReplace173.tokenName = ""
-        OptionSingleReplace173.updateTileSets = false
+        OptionSingleReplace173.updateTileSets = False
         Me.optBtnSmokeEffects.options = OptionSingleReplace173
         Me.optBtnSmokeEffects.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSmokeEffects.TabIndex = 3
         Me.optBtnSmokeEffects.Text = "Smoke Effects"
         Me.optBtnSmokeEffects.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnSmokeEffects, "Adds a couple of smoke effects of different colors to workshops. Have no use but "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnSmokeEffects, "Adds a couple of smoke effects of different colors to workshops. Have no use but " & _
         "to look pretty.")
-        Me.optBtnSmokeEffects.UseVisualStyleBackColor = false
+        Me.optBtnSmokeEffects.UseVisualStyleBackColor = False
         '
         'optBtnNobles
         '
         Me.optBtnNobles.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnNobles.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnNobles.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnNobles.FlatAppearance.BorderSize = 0
-        Me.optBtnNobles.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnNobles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnNobles.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnNobles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnNobles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnNobles.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnNobles.Image = CType(resources.GetObject("optBtnNobles.Image"),System.Drawing.Image)
+        Me.optBtnNobles.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnNobles.Image = CType(resources.GetObject("optBtnNobles.Image"), System.Drawing.Image)
         Me.optBtnNobles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnNobles.Location = New System.Drawing.Point(5, 135)
         Me.optBtnNobles.Margin = New System.Windows.Forms.Padding(1)
@@ -9544,34 +9545,34 @@ Partial Class MainForm
         OptionSingleReplace174.enabledValue = "YESREL["
         FileListManager221.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace174.fileManager = FileListManager221
-        OptionManager221.loadFromDInit = false
-        OptionManager221.loadFromInit = false
-        OptionManager221.loadFromWorldGen = false
+        OptionManager221.loadFromDInit = False
+        OptionManager221.loadFromInit = False
+        OptionManager221.loadFromWorldGen = False
         OptionSingleReplace174.optionManager = OptionManager221
         OptionSettingManager224.settingName = Nothing
         OptionSingleReplace174.settingManager = OptionSettingManager224
         OptionSingleReplace174.tokenName = ""
-        OptionSingleReplace174.updateTileSets = false
+        OptionSingleReplace174.updateTileSets = False
         Me.optBtnNobles.options = OptionSingleReplace174
         Me.optBtnNobles.Size = New System.Drawing.Size(134, 27)
         Me.optBtnNobles.TabIndex = 4
         Me.optBtnNobles.Text = "New Nobles"
         Me.optBtnNobles.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnNobles, "Adds the Overseer, for succession forts, a psychiatrist that calms down dwarves, "& _ 
-        "and the old 20D philosopher, as well as a preacher that helps dwarves throwing t"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnNobles, "Adds the Overseer, for succession forts, a psychiatrist that calms down dwarves, " & _
+        "and the old 20D philosopher, as well as a preacher that helps dwarves throwing t" & _
         "antrums.")
-        Me.optBtnNobles.UseVisualStyleBackColor = false
+        Me.optBtnNobles.UseVisualStyleBackColor = False
         '
         'optBtnBattlecries
         '
         Me.optBtnBattlecries.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBattlecries.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBattlecries.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBattlecries.FlatAppearance.BorderSize = 0
-        Me.optBtnBattlecries.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBattlecries.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBattlecries.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBattlecries.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBattlecries.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBattlecries.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBattlecries.Image = CType(resources.GetObject("optBtnBattlecries.Image"),System.Drawing.Image)
+        Me.optBtnBattlecries.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBattlecries.Image = CType(resources.GetObject("optBtnBattlecries.Image"), System.Drawing.Image)
         Me.optBtnBattlecries.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBattlecries.Location = New System.Drawing.Point(5, 164)
         Me.optBtnBattlecries.Margin = New System.Windows.Forms.Padding(1)
@@ -9580,33 +9581,33 @@ Partial Class MainForm
         OptionSingleReplace175.enabledValue = "YESBATTLECRY["
         FileListManager222.fileNames = New String() {"creature_fortdefense.txt", "creature_gnome.txt", "creature_masterwork.txt", "creature_masterwork_eviltwins.txt", "creature_mercs.txt", "creature_standard.txt", "creature_subterranean.txt"}
         OptionSingleReplace175.fileManager = FileListManager222
-        OptionManager222.loadFromDInit = false
-        OptionManager222.loadFromInit = false
-        OptionManager222.loadFromWorldGen = false
+        OptionManager222.loadFromDInit = False
+        OptionManager222.loadFromInit = False
+        OptionManager222.loadFromWorldGen = False
         OptionSingleReplace175.optionManager = OptionManager222
         OptionSettingManager225.settingName = Nothing
         OptionSingleReplace175.settingManager = OptionSettingManager225
         OptionSingleReplace175.tokenName = ""
-        OptionSingleReplace175.updateTileSets = true
+        OptionSingleReplace175.updateTileSets = True
         Me.optBtnBattlecries.options = OptionSingleReplace175
         Me.optBtnBattlecries.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBattlecries.TabIndex = 5
         Me.optBtnBattlecries.Text = "Battlecries"
         Me.optBtnBattlecries.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnBattlecries, "Dwarves and other sentient beings will yell insults and comments at each other in"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnBattlecries, "Dwarves and other sentient beings will yell insults and comments at each other in" & _
         " the heat of battle. No effect on game play.")
-        Me.optBtnBattlecries.UseVisualStyleBackColor = false
+        Me.optBtnBattlecries.UseVisualStyleBackColor = False
         '
         'optBtnDiplomats
         '
         Me.optBtnDiplomats.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDiplomats.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnDiplomats.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnDiplomats.FlatAppearance.BorderSize = 0
-        Me.optBtnDiplomats.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnDiplomats.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnDiplomats.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnDiplomats.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnDiplomats.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnDiplomats.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnDiplomats.Image = CType(resources.GetObject("optBtnDiplomats.Image"),System.Drawing.Image)
+        Me.optBtnDiplomats.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnDiplomats.Image = CType(resources.GetObject("optBtnDiplomats.Image"), System.Drawing.Image)
         Me.optBtnDiplomats.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnDiplomats.Location = New System.Drawing.Point(5, 193)
         Me.optBtnDiplomats.Margin = New System.Windows.Forms.Padding(1)
@@ -9615,33 +9616,33 @@ Partial Class MainForm
         OptionSingleReplace176.enabledValue = "YESDIPLOMAT["
         FileListManager223.fileNames = New String() {"entity_human.txt", "entity_drow.txt", "entity_elf.txt"}
         OptionSingleReplace176.fileManager = FileListManager223
-        OptionManager223.loadFromDInit = false
-        OptionManager223.loadFromInit = false
-        OptionManager223.loadFromWorldGen = false
+        OptionManager223.loadFromDInit = False
+        OptionManager223.loadFromInit = False
+        OptionManager223.loadFromWorldGen = False
         OptionSingleReplace176.optionManager = OptionManager223
         OptionSettingManager226.settingName = Nothing
         OptionSingleReplace176.settingManager = OptionSettingManager226
         OptionSingleReplace176.tokenName = ""
-        OptionSingleReplace176.updateTileSets = false
+        OptionSingleReplace176.updateTileSets = False
         Me.optBtnDiplomats.options = OptionSingleReplace176
         Me.optBtnDiplomats.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDiplomats.TabIndex = 6
         Me.optBtnDiplomats.Text = "Diplomats"
         Me.optBtnDiplomats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnDiplomats, "Adds diplomats for both elves and humans. You can finally order trade goods from "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnDiplomats, "Adds diplomats for both elves and humans. You can finally order trade goods from " & _
         "their caravan again.")
-        Me.optBtnDiplomats.UseVisualStyleBackColor = false
+        Me.optBtnDiplomats.UseVisualStyleBackColor = False
         '
         'optBtnEnglishDwarves
         '
         Me.optBtnEnglishDwarves.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnEnglishDwarves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnEnglishDwarves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnEnglishDwarves.FlatAppearance.BorderSize = 0
-        Me.optBtnEnglishDwarves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnEnglishDwarves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnEnglishDwarves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnEnglishDwarves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnEnglishDwarves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnEnglishDwarves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnEnglishDwarves.Image = CType(resources.GetObject("optBtnEnglishDwarves.Image"),System.Drawing.Image)
+        Me.optBtnEnglishDwarves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnEnglishDwarves.Image = CType(resources.GetObject("optBtnEnglishDwarves.Image"), System.Drawing.Image)
         Me.optBtnEnglishDwarves.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnEnglishDwarves.Location = New System.Drawing.Point(5, 221)
         Me.optBtnEnglishDwarves.Margin = New System.Windows.Forms.Padding(1)
@@ -9650,32 +9651,32 @@ Partial Class MainForm
         OptionSingleReplace177.enabledValue = "YESENGLISH[TRANSLATION:ENGLISH]"
         FileListManager224.fileNames = New String() {"entity_default.txt"}
         OptionSingleReplace177.fileManager = FileListManager224
-        OptionManager224.loadFromDInit = false
-        OptionManager224.loadFromInit = false
-        OptionManager224.loadFromWorldGen = false
+        OptionManager224.loadFromDInit = False
+        OptionManager224.loadFromInit = False
+        OptionManager224.loadFromWorldGen = False
         OptionSingleReplace177.optionManager = OptionManager224
         OptionSettingManager227.settingName = Nothing
         OptionSingleReplace177.settingManager = OptionSettingManager227
         OptionSingleReplace177.tokenName = ""
-        OptionSingleReplace177.updateTileSets = false
+        OptionSingleReplace177.updateTileSets = False
         Me.optBtnEnglishDwarves.options = OptionSingleReplace177
         Me.optBtnEnglishDwarves.Size = New System.Drawing.Size(134, 27)
         Me.optBtnEnglishDwarves.TabIndex = 7
         Me.optBtnEnglishDwarves.Text = "English Names"
         Me.optBtnEnglishDwarves.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnEnglishDwarves, "All dwarven names are now in English. Instead of Urist it will read Dagger. ")
-        Me.optBtnEnglishDwarves.UseVisualStyleBackColor = false
+        Me.optBtnEnglishDwarves.UseVisualStyleBackColor = False
         '
         'optBtnBuildDimensions
         '
         Me.optBtnBuildDimensions.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBuildDimensions.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnBuildDimensions.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnBuildDimensions.FlatAppearance.BorderSize = 0
-        Me.optBtnBuildDimensions.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBuildDimensions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnBuildDimensions.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnBuildDimensions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnBuildDimensions.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBuildDimensions.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBuildDimensions.Image = CType(resources.GetObject("optBtnBuildDimensions.Image"),System.Drawing.Image)
+        Me.optBtnBuildDimensions.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnBuildDimensions.Image = CType(resources.GetObject("optBtnBuildDimensions.Image"), System.Drawing.Image)
         Me.optBtnBuildDimensions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnBuildDimensions.Location = New System.Drawing.Point(5, 250)
         Me.optBtnBuildDimensions.Margin = New System.Windows.Forms.Padding(1)
@@ -9684,34 +9685,34 @@ Partial Class MainForm
         OptionSingleReplace178.enabledValue = "YESDIMENSION["
         FileListManager225.fileNames = New String() {"building_furnaces_masterwork.txt", "building_masterwork.txt"}
         OptionSingleReplace178.fileManager = FileListManager225
-        OptionManager225.loadFromDInit = false
-        OptionManager225.loadFromInit = false
-        OptionManager225.loadFromWorldGen = false
+        OptionManager225.loadFromDInit = False
+        OptionManager225.loadFromInit = False
+        OptionManager225.loadFromWorldGen = False
         OptionSingleReplace178.optionManager = OptionManager225
         OptionSettingManager228.settingName = Nothing
         OptionSingleReplace178.settingManager = OptionSettingManager228
         OptionSingleReplace178.tokenName = ""
-        OptionSingleReplace178.updateTileSets = false
+        OptionSingleReplace178.updateTileSets = False
         Me.optBtnBuildDimensions.options = OptionSingleReplace178
         Me.optBtnBuildDimensions.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBuildDimensions.TabIndex = 8
         Me.optBtnBuildDimensions.Text = "Build Dimension"
         Me.optBtnBuildDimensions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnBuildDimensions, "Adds infos to the building names, like ""Gemcutter 3x3"", so you can see how large "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnBuildDimensions, "Adds infos to the building names, like ""Gemcutter 3x3"", so you can see how large " & _
         "a building is before you build it.")
-        Me.optBtnBuildDimensions.UseVisualStyleBackColor = false
+        Me.optBtnBuildDimensions.UseVisualStyleBackColor = False
         '
         'optBtnCombatLogs
         '
         Me.optBtnCombatLogs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnCombatLogs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnCombatLogs.Enabled = false
+        Me.optBtnCombatLogs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnCombatLogs.Enabled = False
         Me.optBtnCombatLogs.FlatAppearance.BorderSize = 0
-        Me.optBtnCombatLogs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnCombatLogs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnCombatLogs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnCombatLogs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnCombatLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnCombatLogs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnCombatLogs.Image = CType(resources.GetObject("optBtnCombatLogs.Image"),System.Drawing.Image)
+        Me.optBtnCombatLogs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnCombatLogs.Image = CType(resources.GetObject("optBtnCombatLogs.Image"), System.Drawing.Image)
         Me.optBtnCombatLogs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnCombatLogs.Location = New System.Drawing.Point(5, 279)
         Me.optBtnCombatLogs.Margin = New System.Windows.Forms.Padding(1)
@@ -9720,33 +9721,33 @@ Partial Class MainForm
         OptionSingleReplace179.enabledValue = "YESMOREATTACKS["
         FileListManager226.fileNames = New String() {"item_weapon.txt", "item_weapon_guns.txt", "item_weapon_human_tech.txt", "item_weapon_masterwork.txt", "item_weapon_throwing.txt", "item_weapon_magic.txt"}
         OptionSingleReplace179.fileManager = FileListManager226
-        OptionManager226.loadFromDInit = false
-        OptionManager226.loadFromInit = false
-        OptionManager226.loadFromWorldGen = false
+        OptionManager226.loadFromDInit = False
+        OptionManager226.loadFromInit = False
+        OptionManager226.loadFromWorldGen = False
         OptionSingleReplace179.optionManager = OptionManager226
         OptionSettingManager229.settingName = Nothing
         OptionSingleReplace179.settingManager = OptionSettingManager229
         OptionSingleReplace179.tokenName = ""
-        OptionSingleReplace179.updateTileSets = false
+        OptionSingleReplace179.updateTileSets = False
         Me.optBtnCombatLogs.options = OptionSingleReplace179
         Me.optBtnCombatLogs.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCombatLogs.TabIndex = 9
         Me.optBtnCombatLogs.Text = "Combat Logs"
         Me.optBtnCombatLogs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnCombatLogs, "Adds more colorful combat logs to fort mode. Disable this if you mostly play Adv-"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnCombatLogs, "Adds more colorful combat logs to fort mode. Disable this if you mostly play Adv-" & _
         "Mode, since the new attacks clutter the menus.")
-        Me.optBtnCombatLogs.UseVisualStyleBackColor = false
+        Me.optBtnCombatLogs.UseVisualStyleBackColor = False
         '
         'optBtnMoreTrees
         '
         Me.optBtnMoreTrees.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreTrees.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMoreTrees.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMoreTrees.FlatAppearance.BorderSize = 0
-        Me.optBtnMoreTrees.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMoreTrees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMoreTrees.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMoreTrees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMoreTrees.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMoreTrees.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMoreTrees.Image = CType(resources.GetObject("optBtnMoreTrees.Image"),System.Drawing.Image)
+        Me.optBtnMoreTrees.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMoreTrees.Image = CType(resources.GetObject("optBtnMoreTrees.Image"), System.Drawing.Image)
         Me.optBtnMoreTrees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMoreTrees.Location = New System.Drawing.Point(5, 19)
         Me.optBtnMoreTrees.Margin = New System.Windows.Forms.Padding(1)
@@ -9755,32 +9756,32 @@ Partial Class MainForm
         OptionSingleReplace180.enabledValue = "YESFF["
         FileListManager227.fileNames = New String() {"plant_trees_ff.txt"}
         OptionSingleReplace180.fileManager = FileListManager227
-        OptionManager227.loadFromDInit = false
-        OptionManager227.loadFromInit = false
-        OptionManager227.loadFromWorldGen = false
+        OptionManager227.loadFromDInit = False
+        OptionManager227.loadFromInit = False
+        OptionManager227.loadFromWorldGen = False
         OptionSingleReplace180.optionManager = OptionManager227
         OptionSettingManager230.settingName = Nothing
         OptionSingleReplace180.settingManager = OptionSettingManager230
         OptionSingleReplace180.tokenName = ""
-        OptionSingleReplace180.updateTileSets = true
+        OptionSingleReplace180.updateTileSets = True
         Me.optBtnMoreTrees.options = OptionSingleReplace180
         Me.optBtnMoreTrees.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreTrees.TabIndex = 0
         Me.optBtnMoreTrees.Text = "Tree Variety"
         Me.optBtnMoreTrees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnMoreTrees, "Adds +120 different kinds of trees to the game.")
-        Me.optBtnMoreTrees.UseVisualStyleBackColor = false
+        Me.optBtnMoreTrees.UseVisualStyleBackColor = False
         '
         'optBtnMorePlants
         '
         Me.optBtnMorePlants.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMorePlants.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMorePlants.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMorePlants.FlatAppearance.BorderSize = 0
-        Me.optBtnMorePlants.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMorePlants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMorePlants.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMorePlants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMorePlants.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMorePlants.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMorePlants.Image = CType(resources.GetObject("optBtnMorePlants.Image"),System.Drawing.Image)
+        Me.optBtnMorePlants.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMorePlants.Image = CType(resources.GetObject("optBtnMorePlants.Image"), System.Drawing.Image)
         Me.optBtnMorePlants.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMorePlants.Location = New System.Drawing.Point(5, 48)
         Me.optBtnMorePlants.Margin = New System.Windows.Forms.Padding(1)
@@ -9789,32 +9790,32 @@ Partial Class MainForm
         OptionSingleReplace181.enabledValue = "YESFF["
         FileListManager228.fileNames = New String() {"plant_florafauna_ff.txt"}
         OptionSingleReplace181.fileManager = FileListManager228
-        OptionManager228.loadFromDInit = false
-        OptionManager228.loadFromInit = false
-        OptionManager228.loadFromWorldGen = false
+        OptionManager228.loadFromDInit = False
+        OptionManager228.loadFromInit = False
+        OptionManager228.loadFromWorldGen = False
         OptionSingleReplace181.optionManager = OptionManager228
         OptionSettingManager231.settingName = Nothing
         OptionSingleReplace181.settingManager = OptionSettingManager231
         OptionSingleReplace181.tokenName = ""
-        OptionSingleReplace181.updateTileSets = true
+        OptionSingleReplace181.updateTileSets = True
         Me.optBtnMorePlants.options = OptionSingleReplace181
         Me.optBtnMorePlants.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMorePlants.TabIndex = 1
         Me.optBtnMorePlants.Text = "Plant Variety"
         Me.optBtnMorePlants.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnMorePlants, "Adds +180 different plants to the game.")
-        Me.optBtnMorePlants.UseVisualStyleBackColor = false
+        Me.optBtnMorePlants.UseVisualStyleBackColor = False
         '
         'optBtnFoodNames
         '
         Me.optBtnFoodNames.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFoodNames.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnFoodNames.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnFoodNames.FlatAppearance.BorderSize = 0
-        Me.optBtnFoodNames.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnFoodNames.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnFoodNames.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnFoodNames.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnFoodNames.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnFoodNames.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnFoodNames.Image = CType(resources.GetObject("optBtnFoodNames.Image"),System.Drawing.Image)
+        Me.optBtnFoodNames.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnFoodNames.Image = CType(resources.GetObject("optBtnFoodNames.Image"), System.Drawing.Image)
         Me.optBtnFoodNames.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnFoodNames.Location = New System.Drawing.Point(5, 77)
         Me.optBtnFoodNames.Margin = New System.Windows.Forms.Padding(1)
@@ -9823,32 +9824,32 @@ Partial Class MainForm
         OptionSingleReplace182.enabledValue = "YESFOOD["
         FileListManager229.fileNames = New String() {"item_food_Masterwork.txt"}
         OptionSingleReplace182.fileManager = FileListManager229
-        OptionManager229.loadFromDInit = false
-        OptionManager229.loadFromInit = false
-        OptionManager229.loadFromWorldGen = false
+        OptionManager229.loadFromDInit = False
+        OptionManager229.loadFromInit = False
+        OptionManager229.loadFromWorldGen = False
         OptionSingleReplace182.optionManager = OptionManager229
         OptionSettingManager232.settingName = Nothing
         OptionSingleReplace182.settingManager = OptionSettingManager232
         OptionSingleReplace182.tokenName = ""
-        OptionSingleReplace182.updateTileSets = false
+        OptionSingleReplace182.updateTileSets = False
         Me.optBtnFoodNames.options = OptionSingleReplace182
         Me.optBtnFoodNames.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFoodNames.TabIndex = 2
         Me.optBtnFoodNames.Text = "Food Variety"
         Me.optBtnFoodNames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFoodNames, "Adds more names for prepared meals, thats it.")
-        Me.optBtnFoodNames.UseVisualStyleBackColor = false
+        Me.optBtnFoodNames.UseVisualStyleBackColor = False
         '
         'optBtnFearTheNight
         '
         Me.optBtnFearTheNight.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFearTheNight.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnFearTheNight.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnFearTheNight.FlatAppearance.BorderSize = 0
-        Me.optBtnFearTheNight.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnFearTheNight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnFearTheNight.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnFearTheNight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnFearTheNight.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnFearTheNight.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnFearTheNight.Image = CType(resources.GetObject("optBtnFearTheNight.Image"),System.Drawing.Image)
+        Me.optBtnFearTheNight.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnFearTheNight.Image = CType(resources.GetObject("optBtnFearTheNight.Image"), System.Drawing.Image)
         Me.optBtnFearTheNight.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnFearTheNight.Location = New System.Drawing.Point(5, 106)
         Me.optBtnFearTheNight.Margin = New System.Windows.Forms.Padding(1)
@@ -9857,32 +9858,32 @@ Partial Class MainForm
         OptionSingleReplace183.enabledValue = "YESFEARTHENIGHT["
         FileListManager230.fileNames = New String() {"interaction_fearthenight.txt", "creature_fearthenight.txt"}
         OptionSingleReplace183.fileManager = FileListManager230
-        OptionManager230.loadFromDInit = false
-        OptionManager230.loadFromInit = false
-        OptionManager230.loadFromWorldGen = false
+        OptionManager230.loadFromDInit = False
+        OptionManager230.loadFromInit = False
+        OptionManager230.loadFromWorldGen = False
         OptionSingleReplace183.optionManager = OptionManager230
         OptionSettingManager233.settingName = Nothing
         OptionSingleReplace183.settingManager = OptionSettingManager233
         OptionSingleReplace183.tokenName = ""
-        OptionSingleReplace183.updateTileSets = false
+        OptionSingleReplace183.updateTileSets = False
         Me.optBtnFearTheNight.options = OptionSingleReplace183
         Me.optBtnFearTheNight.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFearTheNight.TabIndex = 3
         Me.optBtnFearTheNight.Text = "Fear the Night"
         Me.optBtnFearTheNight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFearTheNight, "Adds custom vampires, were-beasts, necromancers and curses to the game.")
-        Me.optBtnFearTheNight.UseVisualStyleBackColor = false
+        Me.optBtnFearTheNight.UseVisualStyleBackColor = False
         '
         'optBtnDiggingCivs
         '
         Me.optBtnDiggingCivs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDiggingCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnDiggingCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnDiggingCivs.FlatAppearance.BorderSize = 0
-        Me.optBtnDiggingCivs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnDiggingCivs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnDiggingCivs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnDiggingCivs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnDiggingCivs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnDiggingCivs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnDiggingCivs.Image = CType(resources.GetObject("optBtnDiggingCivs.Image"),System.Drawing.Image)
+        Me.optBtnDiggingCivs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnDiggingCivs.Image = CType(resources.GetObject("optBtnDiggingCivs.Image"), System.Drawing.Image)
         Me.optBtnDiggingCivs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnDiggingCivs.Location = New System.Drawing.Point(5, 203)
         Me.optBtnDiggingCivs.Margin = New System.Windows.Forms.Padding(1)
@@ -9891,33 +9892,33 @@ Partial Class MainForm
         OptionSingleReplace184.enabledValue = "diggingInvaders"
         FileListManager231.fileNames = New String() {"dfhack.init"}
         OptionSingleReplace184.fileManager = FileListManager231
-        OptionManager231.loadFromDInit = false
-        OptionManager231.loadFromInit = false
-        OptionManager231.loadFromWorldGen = false
+        OptionManager231.loadFromDInit = False
+        OptionManager231.loadFromInit = False
+        OptionManager231.loadFromWorldGen = False
         OptionSingleReplace184.optionManager = OptionManager231
         OptionSettingManager234.settingName = Nothing
         OptionSingleReplace184.settingManager = OptionSettingManager234
         OptionSingleReplace184.tokenName = ""
-        OptionSingleReplace184.updateTileSets = false
+        OptionSingleReplace184.updateTileSets = False
         Me.optBtnDiggingCivs.options = OptionSingleReplace184
         Me.optBtnDiggingCivs.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDiggingCivs.TabIndex = 6
         Me.optBtnDiggingCivs.Text = "Digging Civs"
         Me.optBtnDiggingCivs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnDiggingCivs, "Some invaders will tunnel into your fort.")
-        Me.optBtnDiggingCivs.UseVisualStyleBackColor = false
+        Me.optBtnDiggingCivs.UseVisualStyleBackColor = False
         '
         'optBtnRazingCivs
         '
         Me.optBtnRazingCivs.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRazingCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnRazingCivs.Enabled = false
+        Me.optBtnRazingCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnRazingCivs.Enabled = False
         Me.optBtnRazingCivs.FlatAppearance.BorderSize = 0
-        Me.optBtnRazingCivs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnRazingCivs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnRazingCivs.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnRazingCivs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnRazingCivs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnRazingCivs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnRazingCivs.Image = CType(resources.GetObject("optBtnRazingCivs.Image"),System.Drawing.Image)
+        Me.optBtnRazingCivs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnRazingCivs.Image = CType(resources.GetObject("optBtnRazingCivs.Image"), System.Drawing.Image)
         Me.optBtnRazingCivs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnRazingCivs.Location = New System.Drawing.Point(5, 232)
         Me.optBtnRazingCivs.Margin = New System.Windows.Forms.Padding(1)
@@ -9926,32 +9927,32 @@ Partial Class MainForm
         OptionSingleReplace185.enabledValue = "diggingInvaders"
         FileListManager232.fileNames = New String() {"dfhack.init"}
         OptionSingleReplace185.fileManager = FileListManager232
-        OptionManager232.loadFromDInit = false
-        OptionManager232.loadFromInit = false
-        OptionManager232.loadFromWorldGen = false
+        OptionManager232.loadFromDInit = False
+        OptionManager232.loadFromInit = False
+        OptionManager232.loadFromWorldGen = False
         OptionSingleReplace185.optionManager = OptionManager232
         OptionSettingManager235.settingName = Nothing
         OptionSingleReplace185.settingManager = OptionSettingManager235
         OptionSingleReplace185.tokenName = ""
-        OptionSingleReplace185.updateTileSets = false
+        OptionSingleReplace185.updateTileSets = False
         Me.optBtnRazingCivs.options = OptionSingleReplace185
         Me.optBtnRazingCivs.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRazingCivs.TabIndex = 7
         Me.optBtnRazingCivs.Text = "Razing Civs"
         Me.optBtnRazingCivs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnRazingCivs, "Some invaders will dismantle walls.")
-        Me.optBtnRazingCivs.UseVisualStyleBackColor = false
+        Me.optBtnRazingCivs.UseVisualStyleBackColor = False
         '
         'optBtnRendermax
         '
         Me.optBtnRendermax.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRendermax.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnRendermax.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnRendermax.FlatAppearance.BorderSize = 0
-        Me.optBtnRendermax.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnRendermax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnRendermax.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnRendermax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnRendermax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnRendermax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnRendermax.Image = CType(resources.GetObject("optBtnRendermax.Image"),System.Drawing.Image)
+        Me.optBtnRendermax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnRendermax.Image = CType(resources.GetObject("optBtnRendermax.Image"), System.Drawing.Image)
         Me.optBtnRendermax.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnRendermax.Location = New System.Drawing.Point(5, 164)
         Me.optBtnRendermax.Margin = New System.Windows.Forms.Padding(1)
@@ -9960,30 +9961,30 @@ Partial Class MainForm
         OptionSingleReplace186.enabledValue = "rendermax light"
         FileListManager233.fileNames = New String() {"dfhack.init"}
         OptionSingleReplace186.fileManager = FileListManager233
-        OptionManager233.loadFromDInit = false
-        OptionManager233.loadFromInit = false
-        OptionManager233.loadFromWorldGen = false
+        OptionManager233.loadFromDInit = False
+        OptionManager233.loadFromInit = False
+        OptionManager233.loadFromWorldGen = False
         OptionSingleReplace186.optionManager = OptionManager233
         OptionSettingManager236.settingName = Nothing
         OptionSingleReplace186.settingManager = OptionSettingManager236
         OptionSingleReplace186.tokenName = ""
-        OptionSingleReplace186.updateTileSets = false
+        OptionSingleReplace186.updateTileSets = False
         Me.optBtnRendermax.options = OptionSingleReplace186
         Me.optBtnRendermax.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRendermax.TabIndex = 5
         Me.optBtnRendermax.Text = "Rendermax"
         Me.optBtnRendermax.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnRendermax, "Enables the dfhack plugin. You can always disable it while playing with ""renderma"& _ 
-        "x disable"" in your dfhack window. Currently you can only have either Rendermax o"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optBtnRendermax, "Enables the dfhack plugin. You can always disable it while playing with ""renderma" & _
+        "x disable"" in your dfhack window. Currently you can only have either Rendermax o" & _
         "r TTF active.")
-        Me.optBtnRendermax.UseVisualStyleBackColor = false
+        Me.optBtnRendermax.UseVisualStyleBackColor = False
         '
         'optNumMineralScarcity
         '
-        Me.optNumMineralScarcity.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumMineralScarcity.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumMineralScarcity.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMineralScarcity.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumMineralScarcity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumMineralScarcity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumMineralScarcity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumMineralScarcity.Increment = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumMineralScarcity.Location = New System.Drawing.Point(140, 124)
         Me.optNumMineralScarcity.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
@@ -9991,14 +9992,14 @@ Partial Class MainForm
         Me.optNumMineralScarcity.Name = "optNumMineralScarcity"
         FileListManager234.fileNames = Nothing
         OptionSingle38.fileManager = FileListManager234
-        OptionManager234.loadFromDInit = false
-        OptionManager234.loadFromInit = false
-        OptionManager234.loadFromWorldGen = true
+        OptionManager234.loadFromDInit = False
+        OptionManager234.loadFromInit = False
+        OptionManager234.loadFromWorldGen = True
         OptionSingle38.optionManager = OptionManager234
         OptionSettingManager237.settingName = Nothing
         OptionSingle38.settingManager = OptionSettingManager237
         OptionSingle38.tokenName = "MINERAL_SCARCITY"
-        OptionSingle38.updateTileSets = false
+        OptionSingle38.updateTileSets = False
         Me.optNumMineralScarcity.options = OptionSingle38
         Me.optNumMineralScarcity.Size = New System.Drawing.Size(63, 19)
         Me.optNumMineralScarcity.TabIndex = 9
@@ -10008,24 +10009,24 @@ Partial Class MainForm
         '
         'optNumCivNumber
         '
-        Me.optNumCivNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumCivNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumCivNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCivNumber.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumCivNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumCivNumber.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumCivNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumCivNumber.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumCivNumber.Location = New System.Drawing.Point(140, 20)
         Me.optNumCivNumber.Maximum = New Decimal(New Integer() {300, 0, 0, 0})
         Me.optNumCivNumber.Name = "optNumCivNumber"
         FileListManager235.fileNames = Nothing
         OptionSingle39.fileManager = FileListManager235
-        OptionManager235.loadFromDInit = false
-        OptionManager235.loadFromInit = false
-        OptionManager235.loadFromWorldGen = true
+        OptionManager235.loadFromDInit = False
+        OptionManager235.loadFromInit = False
+        OptionManager235.loadFromWorldGen = True
         OptionSingle39.optionManager = OptionManager235
         OptionSettingManager238.settingName = Nothing
         OptionSingle39.settingManager = OptionSettingManager238
         OptionSingle39.tokenName = "TOTAL_CIV_NUMBER"
-        OptionSingle39.updateTileSets = false
+        OptionSingle39.updateTileSets = False
         Me.optNumCivNumber.options = OptionSingle39
         Me.optNumCivNumber.Size = New System.Drawing.Size(63, 19)
         Me.optNumCivNumber.TabIndex = 1
@@ -10035,24 +10036,24 @@ Partial Class MainForm
         '
         'optNumEmbarkPoints
         '
-        Me.optNumEmbarkPoints.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumEmbarkPoints.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumEmbarkPoints.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumEmbarkPoints.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumEmbarkPoints.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumEmbarkPoints.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumEmbarkPoints.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumEmbarkPoints.Increment = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumEmbarkPoints.Location = New System.Drawing.Point(140, 46)
         Me.optNumEmbarkPoints.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumEmbarkPoints.Name = "optNumEmbarkPoints"
         FileListManager236.fileNames = Nothing
         OptionSingle40.fileManager = FileListManager236
-        OptionManager236.loadFromDInit = false
-        OptionManager236.loadFromInit = false
-        OptionManager236.loadFromWorldGen = true
+        OptionManager236.loadFromDInit = False
+        OptionManager236.loadFromInit = False
+        OptionManager236.loadFromWorldGen = True
         OptionSingle40.optionManager = OptionManager236
         OptionSettingManager239.settingName = Nothing
         OptionSingle40.settingManager = OptionSettingManager239
         OptionSingle40.tokenName = "EMBARK_POINTS"
-        OptionSingle40.updateTileSets = false
+        OptionSingle40.updateTileSets = False
         Me.optNumEmbarkPoints.options = OptionSingle40
         Me.optNumEmbarkPoints.Size = New System.Drawing.Size(63, 19)
         Me.optNumEmbarkPoints.TabIndex = 3
@@ -10062,10 +10063,10 @@ Partial Class MainForm
         '
         'optNumEndYear
         '
-        Me.optNumEndYear.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumEndYear.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumEndYear.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumEndYear.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumEndYear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumEndYear.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumEndYear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumEndYear.Increment = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumEndYear.Location = New System.Drawing.Point(140, 72)
         Me.optNumEndYear.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
@@ -10073,14 +10074,14 @@ Partial Class MainForm
         Me.optNumEndYear.Name = "optNumEndYear"
         FileListManager237.fileNames = Nothing
         OptionSingle41.fileManager = FileListManager237
-        OptionManager237.loadFromDInit = false
-        OptionManager237.loadFromInit = false
-        OptionManager237.loadFromWorldGen = true
+        OptionManager237.loadFromDInit = False
+        OptionManager237.loadFromInit = False
+        OptionManager237.loadFromWorldGen = True
         OptionSingle41.optionManager = OptionManager237
         OptionSettingManager240.settingName = Nothing
         OptionSingle41.settingManager = OptionSettingManager240
         OptionSingle41.tokenName = "END_YEAR"
-        OptionSingle41.updateTileSets = false
+        OptionSingle41.updateTileSets = False
         Me.optNumEndYear.options = OptionSingle41
         Me.optNumEndYear.Size = New System.Drawing.Size(63, 19)
         Me.optNumEndYear.TabIndex = 5
@@ -10090,10 +10091,10 @@ Partial Class MainForm
         '
         'optNumPopSize
         '
-        Me.optNumPopSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumPopSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumPopSize.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumPopSize.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumPopSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumPopSize.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumPopSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumPopSize.Increment = New Decimal(New Integer() {250, 0, 0, 0})
         Me.optNumPopSize.Location = New System.Drawing.Point(140, 98)
         Me.optNumPopSize.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
@@ -10101,28 +10102,28 @@ Partial Class MainForm
         Me.optNumPopSize.Name = "optNumPopSize"
         FileListManager238.fileNames = Nothing
         OptionSingle42.fileManager = FileListManager238
-        OptionManager238.loadFromDInit = false
-        OptionManager238.loadFromInit = false
-        OptionManager238.loadFromWorldGen = true
+        OptionManager238.loadFromDInit = False
+        OptionManager238.loadFromInit = False
+        OptionManager238.loadFromWorldGen = True
         OptionSingle42.optionManager = OptionManager238
         OptionSettingManager241.settingName = Nothing
         OptionSingle42.settingManager = OptionSettingManager241
         OptionSingle42.tokenName = "TOTAL_CIV_POPULATION"
-        OptionSingle42.updateTileSets = false
+        OptionSingle42.updateTileSets = False
         Me.optNumPopSize.options = OptionSingle42
         Me.optNumPopSize.Size = New System.Drawing.Size(63, 19)
         Me.optNumPopSize.TabIndex = 7
         Me.optNumPopSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumPopSize, "Maximum population of civilization members in the world. -1 is unlimited, but dan"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumPopSize, "Maximum population of civilization members in the world. -1 is unlimited, but dan" & _
         "gerous.")
         Me.optNumPopSize.Value = New Decimal(New Integer() {1, 0, 0, -2147483648})
         '
         'optNumCaveSizeMin
         '
-        Me.optNumCaveSizeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumCaveSizeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumCaveSizeMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCaveSizeMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumCaveSizeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumCaveSizeMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumCaveSizeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumCaveSizeMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumCaveSizeMin.Location = New System.Drawing.Point(135, 19)
         Me.optNumCaveSizeMin.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
@@ -10130,14 +10131,14 @@ Partial Class MainForm
         Me.optNumCaveSizeMin.Name = "optNumCaveSizeMin"
         FileListManager239.fileNames = Nothing
         OptionSingle43.fileManager = FileListManager239
-        OptionManager239.loadFromDInit = false
-        OptionManager239.loadFromInit = false
-        OptionManager239.loadFromWorldGen = true
+        OptionManager239.loadFromDInit = False
+        OptionManager239.loadFromInit = False
+        OptionManager239.loadFromWorldGen = True
         OptionSingle43.optionManager = OptionManager239
         OptionSettingManager242.settingName = Nothing
         OptionSingle43.settingManager = OptionSettingManager242
         OptionSingle43.tokenName = "CAVE_MIN_SIZE"
-        OptionSingle43.updateTileSets = false
+        OptionSingle43.updateTileSets = False
         Me.optNumCaveSizeMin.options = OptionSingle43
         Me.optNumCaveSizeMin.Size = New System.Drawing.Size(43, 19)
         Me.optNumCaveSizeMin.TabIndex = 1
@@ -10147,10 +10148,10 @@ Partial Class MainForm
         '
         'optNumCaveSizeMax
         '
-        Me.optNumCaveSizeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumCaveSizeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumCaveSizeMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCaveSizeMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumCaveSizeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumCaveSizeMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumCaveSizeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumCaveSizeMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumCaveSizeMax.Location = New System.Drawing.Point(184, 19)
         Me.optNumCaveSizeMax.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
@@ -10158,14 +10159,14 @@ Partial Class MainForm
         Me.optNumCaveSizeMax.Name = "optNumCaveSizeMax"
         FileListManager240.fileNames = Nothing
         OptionSingle44.fileManager = FileListManager240
-        OptionManager240.loadFromDInit = false
-        OptionManager240.loadFromInit = false
-        OptionManager240.loadFromWorldGen = true
+        OptionManager240.loadFromDInit = False
+        OptionManager240.loadFromInit = False
+        OptionManager240.loadFromWorldGen = True
         OptionSingle44.optionManager = OptionManager240
         OptionSettingManager243.settingName = Nothing
         OptionSingle44.settingManager = OptionSettingManager243
         OptionSingle44.tokenName = "CAVE_MAX_SIZE"
-        OptionSingle44.updateTileSets = false
+        OptionSingle44.updateTileSets = False
         Me.optNumCaveSizeMax.options = OptionSingle44
         Me.optNumCaveSizeMax.Size = New System.Drawing.Size(43, 19)
         Me.optNumCaveSizeMax.TabIndex = 2
@@ -10175,24 +10176,24 @@ Partial Class MainForm
         '
         'optNumMountainCaves
         '
-        Me.optNumMountainCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumMountainCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumMountainCaves.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMountainCaves.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumMountainCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumMountainCaves.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumMountainCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumMountainCaves.Increment = New Decimal(New Integer() {50, 0, 0, 0})
         Me.optNumMountainCaves.Location = New System.Drawing.Point(135, 45)
         Me.optNumMountainCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumMountainCaves.Name = "optNumMountainCaves"
         FileListManager241.fileNames = Nothing
         OptionSingle45.fileManager = FileListManager241
-        OptionManager241.loadFromDInit = false
-        OptionManager241.loadFromInit = false
-        OptionManager241.loadFromWorldGen = true
+        OptionManager241.loadFromDInit = False
+        OptionManager241.loadFromInit = False
+        OptionManager241.loadFromWorldGen = True
         OptionSingle45.optionManager = OptionManager241
         OptionSettingManager244.settingName = Nothing
         OptionSingle45.settingManager = OptionSettingManager244
         OptionSingle45.tokenName = "MOUNTAIN_CAVE_MIN"
-        OptionSingle45.updateTileSets = false
+        OptionSingle45.updateTileSets = False
         Me.optNumMountainCaves.options = OptionSingle45
         Me.optNumMountainCaves.Size = New System.Drawing.Size(43, 19)
         Me.optNumMountainCaves.TabIndex = 4
@@ -10201,24 +10202,24 @@ Partial Class MainForm
         '
         'optNumOtherCaves
         '
-        Me.optNumOtherCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumOtherCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumOtherCaves.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumOtherCaves.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumOtherCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumOtherCaves.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumOtherCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumOtherCaves.Increment = New Decimal(New Integer() {50, 0, 0, 0})
         Me.optNumOtherCaves.Location = New System.Drawing.Point(135, 71)
         Me.optNumOtherCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumOtherCaves.Name = "optNumOtherCaves"
         FileListManager242.fileNames = Nothing
         OptionSingle46.fileManager = FileListManager242
-        OptionManager242.loadFromDInit = false
-        OptionManager242.loadFromInit = false
-        OptionManager242.loadFromWorldGen = true
+        OptionManager242.loadFromDInit = False
+        OptionManager242.loadFromInit = False
+        OptionManager242.loadFromWorldGen = True
         OptionSingle46.optionManager = OptionManager242
         OptionSettingManager245.settingName = Nothing
         OptionSingle46.settingManager = OptionSettingManager245
         OptionSingle46.tokenName = "NON_MOUNTAIN_CAVE_MIN"
-        OptionSingle46.updateTileSets = false
+        OptionSingle46.updateTileSets = False
         Me.optNumOtherCaves.options = OptionSingle46
         Me.optNumOtherCaves.Size = New System.Drawing.Size(43, 19)
         Me.optNumOtherCaves.TabIndex = 6
@@ -10229,11 +10230,11 @@ Partial Class MainForm
         '
         Me.optBtnVisibleCaves.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnVisibleCaves.FlatAppearance.BorderSize = 0
-        Me.optBtnVisibleCaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnVisibleCaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnVisibleCaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnVisibleCaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnVisibleCaves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnVisibleCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnVisibleCaves.Image = CType(resources.GetObject("optBtnVisibleCaves.Image"),System.Drawing.Image)
+        Me.optBtnVisibleCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnVisibleCaves.Image = CType(resources.GetObject("optBtnVisibleCaves.Image"), System.Drawing.Image)
         Me.optBtnVisibleCaves.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnVisibleCaves.Location = New System.Drawing.Point(64, 98)
         Me.optBtnVisibleCaves.Name = "optBtnVisibleCaves"
@@ -10241,68 +10242,68 @@ Partial Class MainForm
         OptionSingleReplace187.enabledValue = "1"
         FileListManager243.fileNames = Nothing
         OptionSingleReplace187.fileManager = FileListManager243
-        OptionManager243.loadFromDInit = false
-        OptionManager243.loadFromInit = false
-        OptionManager243.loadFromWorldGen = true
+        OptionManager243.loadFromDInit = False
+        OptionManager243.loadFromInit = False
+        OptionManager243.loadFromWorldGen = True
         OptionSingleReplace187.optionManager = OptionManager243
         OptionSettingManager246.settingName = Nothing
         OptionSingleReplace187.settingManager = OptionSettingManager246
         OptionSingleReplace187.tokenName = "ALL_CAVES_VISIBLE"
-        OptionSingleReplace187.updateTileSets = false
+        OptionSingleReplace187.updateTileSets = False
         Me.optBtnVisibleCaves.options = OptionSingleReplace187
         Me.optBtnVisibleCaves.Size = New System.Drawing.Size(117, 24)
         Me.optBtnVisibleCaves.TabIndex = 7
         Me.optBtnVisibleCaves.Text = "Caves Visible"
         Me.optBtnVisibleCaves.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnVisibleCaves, "If disabled, caves will not be marked on the map.")
-        Me.optBtnVisibleCaves.UseVisualStyleBackColor = true
+        Me.optBtnVisibleCaves.UseVisualStyleBackColor = True
         '
         'optNumCaverns
         '
-        Me.optNumCaverns.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumCaverns.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumCaverns.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCaverns.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumCaverns.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumCaverns.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumCaverns.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumCaverns.Location = New System.Drawing.Point(161, 24)
         Me.optNumCaverns.Maximum = New Decimal(New Integer() {3, 0, 0, 0})
         Me.optNumCaverns.Name = "optNumCaverns"
         FileListManager244.fileNames = Nothing
         OptionSingle47.fileManager = FileListManager244
-        OptionManager244.loadFromDInit = false
-        OptionManager244.loadFromInit = false
-        OptionManager244.loadFromWorldGen = true
+        OptionManager244.loadFromDInit = False
+        OptionManager244.loadFromInit = False
+        OptionManager244.loadFromWorldGen = True
         OptionSingle47.optionManager = OptionManager244
         OptionSettingManager247.settingName = Nothing
         OptionSingle47.settingManager = OptionSettingManager247
         OptionSingle47.tokenName = "CAVERN_LAYER_COUNT"
-        OptionSingle47.updateTileSets = false
+        OptionSingle47.updateTileSets = False
         Me.optNumCaverns.options = OptionSingle47
         Me.optNumCaverns.Size = New System.Drawing.Size(43, 19)
         Me.optNumCaverns.TabIndex = 1
         Me.optNumCaverns.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumCaverns, "The number of cavern systems. Less caverns may improve FPS. This number does not "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumCaverns, "The number of cavern systems. Less caverns may improve FPS. This number does not " & _
         "include Magma or HFS.")
         Me.optNumCaverns.Value = New Decimal(New Integer() {3, 0, 0, 0})
         '
         'optNumOpenMin
         '
-        Me.optNumOpenMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumOpenMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumOpenMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumOpenMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumOpenMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumOpenMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumOpenMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumOpenMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMin.Location = New System.Drawing.Point(161, 49)
         Me.optNumOpenMin.Name = "optNumOpenMin"
         FileListManager245.fileNames = Nothing
         OptionSingle48.fileManager = FileListManager245
-        OptionManager245.loadFromDInit = false
-        OptionManager245.loadFromInit = false
-        OptionManager245.loadFromWorldGen = true
+        OptionManager245.loadFromDInit = False
+        OptionManager245.loadFromInit = False
+        OptionManager245.loadFromWorldGen = True
         OptionSingle48.optionManager = OptionManager245
         OptionSettingManager248.settingName = Nothing
         OptionSingle48.settingManager = OptionSettingManager248
         OptionSingle48.tokenName = "CAVERN_LAYER_OPENNESS_MIN"
-        OptionSingle48.updateTileSets = false
+        OptionSingle48.updateTileSets = False
         Me.optNumOpenMin.options = OptionSingle48
         Me.optNumOpenMin.Size = New System.Drawing.Size(43, 19)
         Me.optNumOpenMin.TabIndex = 3
@@ -10311,23 +10312,23 @@ Partial Class MainForm
         '
         'optNumOpenMax
         '
-        Me.optNumOpenMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumOpenMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumOpenMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumOpenMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumOpenMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumOpenMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumOpenMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumOpenMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMax.Location = New System.Drawing.Point(210, 49)
         Me.optNumOpenMax.Name = "optNumOpenMax"
         FileListManager246.fileNames = Nothing
         OptionSingle49.fileManager = FileListManager246
-        OptionManager246.loadFromDInit = false
-        OptionManager246.loadFromInit = false
-        OptionManager246.loadFromWorldGen = true
+        OptionManager246.loadFromDInit = False
+        OptionManager246.loadFromInit = False
+        OptionManager246.loadFromWorldGen = True
         OptionSingle49.optionManager = OptionManager246
         OptionSettingManager249.settingName = Nothing
         OptionSingle49.settingManager = OptionSettingManager249
         OptionSingle49.tokenName = "CAVERN_LAYER_OPENNESS_MAX"
-        OptionSingle49.updateTileSets = false
+        OptionSingle49.updateTileSets = False
         Me.optNumOpenMax.options = OptionSingle49
         Me.optNumOpenMax.Size = New System.Drawing.Size(43, 19)
         Me.optNumOpenMax.TabIndex = 4
@@ -10336,23 +10337,23 @@ Partial Class MainForm
         '
         'optNumMazeMin
         '
-        Me.optNumMazeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumMazeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumMazeMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMazeMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumMazeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumMazeMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumMazeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumMazeMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMin.Location = New System.Drawing.Point(161, 75)
         Me.optNumMazeMin.Name = "optNumMazeMin"
         FileListManager247.fileNames = Nothing
         OptionSingle50.fileManager = FileListManager247
-        OptionManager247.loadFromDInit = false
-        OptionManager247.loadFromInit = false
-        OptionManager247.loadFromWorldGen = true
+        OptionManager247.loadFromDInit = False
+        OptionManager247.loadFromInit = False
+        OptionManager247.loadFromWorldGen = True
         OptionSingle50.optionManager = OptionManager247
         OptionSettingManager250.settingName = Nothing
         OptionSingle50.settingManager = OptionSettingManager250
         OptionSingle50.tokenName = "CAVERN_LAYER_PASSAGE_DENSITY_MIN"
-        OptionSingle50.updateTileSets = false
+        OptionSingle50.updateTileSets = False
         Me.optNumMazeMin.options = OptionSingle50
         Me.optNumMazeMin.Size = New System.Drawing.Size(43, 19)
         Me.optNumMazeMin.TabIndex = 6
@@ -10361,23 +10362,23 @@ Partial Class MainForm
         '
         'optNumMazeMax
         '
-        Me.optNumMazeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumMazeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumMazeMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMazeMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumMazeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumMazeMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumMazeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumMazeMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMax.Location = New System.Drawing.Point(210, 75)
         Me.optNumMazeMax.Name = "optNumMazeMax"
         FileListManager248.fileNames = Nothing
         OptionSingle51.fileManager = FileListManager248
-        OptionManager248.loadFromDInit = false
-        OptionManager248.loadFromInit = false
-        OptionManager248.loadFromWorldGen = true
+        OptionManager248.loadFromDInit = False
+        OptionManager248.loadFromInit = False
+        OptionManager248.loadFromWorldGen = True
         OptionSingle51.optionManager = OptionManager248
         OptionSettingManager251.settingName = Nothing
         OptionSingle51.settingManager = OptionSettingManager251
         OptionSingle51.tokenName = "CAVERN_LAYER_PASSAGE_DENSITY_MAX"
-        OptionSingle51.updateTileSets = false
+        OptionSingle51.updateTileSets = False
         Me.optNumMazeMax.options = OptionSingle51
         Me.optNumMazeMax.Size = New System.Drawing.Size(43, 19)
         Me.optNumMazeMax.TabIndex = 7
@@ -10386,23 +10387,23 @@ Partial Class MainForm
         '
         'optNumWaterMin
         '
-        Me.optNumWaterMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumWaterMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumWaterMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumWaterMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumWaterMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumWaterMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumWaterMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumWaterMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMin.Location = New System.Drawing.Point(161, 100)
         Me.optNumWaterMin.Name = "optNumWaterMin"
         FileListManager249.fileNames = Nothing
         OptionSingle52.fileManager = FileListManager249
-        OptionManager249.loadFromDInit = false
-        OptionManager249.loadFromInit = false
-        OptionManager249.loadFromWorldGen = true
+        OptionManager249.loadFromDInit = False
+        OptionManager249.loadFromInit = False
+        OptionManager249.loadFromWorldGen = True
         OptionSingle52.optionManager = OptionManager249
         OptionSettingManager252.settingName = Nothing
         OptionSingle52.settingManager = OptionSettingManager252
         OptionSingle52.tokenName = "CAVERN_LAYER_WATER_MIN"
-        OptionSingle52.updateTileSets = false
+        OptionSingle52.updateTileSets = False
         Me.optNumWaterMin.options = OptionSingle52
         Me.optNumWaterMin.Size = New System.Drawing.Size(43, 19)
         Me.optNumWaterMin.TabIndex = 9
@@ -10411,23 +10412,23 @@ Partial Class MainForm
         '
         'optNumWaterMax
         '
-        Me.optNumWaterMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumWaterMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumWaterMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumWaterMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumWaterMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumWaterMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumWaterMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumWaterMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMax.Location = New System.Drawing.Point(210, 100)
         Me.optNumWaterMax.Name = "optNumWaterMax"
         FileListManager250.fileNames = Nothing
         OptionSingle53.fileManager = FileListManager250
-        OptionManager250.loadFromDInit = false
-        OptionManager250.loadFromInit = false
-        OptionManager250.loadFromWorldGen = true
+        OptionManager250.loadFromDInit = False
+        OptionManager250.loadFromInit = False
+        OptionManager250.loadFromWorldGen = True
         OptionSingle53.optionManager = OptionManager250
         OptionSettingManager253.settingName = Nothing
         OptionSingle53.settingManager = OptionSettingManager253
         OptionSingle53.tokenName = "CAVERN_LAYER_WATER_MAX"
-        OptionSingle53.updateTileSets = false
+        OptionSingle53.updateTileSets = False
         Me.optNumWaterMax.options = OptionSingle53
         Me.optNumWaterMax.Size = New System.Drawing.Size(43, 19)
         Me.optNumWaterMax.TabIndex = 10
@@ -10436,10 +10437,10 @@ Partial Class MainForm
         '
         'optNumAboveCav1
         '
-        Me.optNumAboveCav1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveCav1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveCav1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveCav1.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveCav1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveCav1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveCav1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveCav1.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveCav1.Location = New System.Drawing.Point(161, 159)
         Me.optNumAboveCav1.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10447,14 +10448,14 @@ Partial Class MainForm
         Me.optNumAboveCav1.Name = "optNumAboveCav1"
         FileListManager251.fileNames = Nothing
         OptionSingle54.fileManager = FileListManager251
-        OptionManager251.loadFromDInit = false
-        OptionManager251.loadFromInit = false
-        OptionManager251.loadFromWorldGen = true
+        OptionManager251.loadFromDInit = False
+        OptionManager251.loadFromInit = False
+        OptionManager251.loadFromWorldGen = True
         OptionSingle54.optionManager = OptionManager251
         OptionSettingManager254.settingName = Nothing
         OptionSingle54.settingManager = OptionSettingManager254
         OptionSingle54.tokenName = "LEVELS_ABOVE_LAYER_1"
-        OptionSingle54.updateTileSets = false
+        OptionSingle54.updateTileSets = False
         Me.optNumAboveCav1.options = OptionSingle54
         Me.optNumAboveCav1.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveCav1.TabIndex = 12
@@ -10464,10 +10465,10 @@ Partial Class MainForm
         '
         'optNumAboveCav2
         '
-        Me.optNumAboveCav2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveCav2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveCav2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveCav2.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveCav2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveCav2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveCav2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveCav2.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveCav2.Location = New System.Drawing.Point(161, 185)
         Me.optNumAboveCav2.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10475,28 +10476,28 @@ Partial Class MainForm
         Me.optNumAboveCav2.Name = "optNumAboveCav2"
         FileListManager252.fileNames = Nothing
         OptionSingle55.fileManager = FileListManager252
-        OptionManager252.loadFromDInit = false
-        OptionManager252.loadFromInit = false
-        OptionManager252.loadFromWorldGen = true
+        OptionManager252.loadFromDInit = False
+        OptionManager252.loadFromInit = False
+        OptionManager252.loadFromWorldGen = True
         OptionSingle55.optionManager = OptionManager252
         OptionSettingManager255.settingName = Nothing
         OptionSingle55.settingManager = OptionSettingManager255
         OptionSingle55.tokenName = "LEVELS_ABOVE_LAYER_2"
-        OptionSingle55.updateTileSets = false
+        OptionSingle55.updateTileSets = False
         Me.optNumAboveCav2.options = OptionSingle55
         Me.optNumAboveCav2.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveCav2.TabIndex = 14
         Me.optNumAboveCav2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav2, "Z-Levels of earth between the very bottom of the first cavern, and the very top o"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav2, "Z-Levels of earth between the very bottom of the first cavern, and the very top o" & _
         "f the second cavern.")
         Me.optNumAboveCav2.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'optNumAboveCav3
         '
-        Me.optNumAboveCav3.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveCav3.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveCav3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveCav3.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveCav3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveCav3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveCav3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveCav3.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveCav3.Location = New System.Drawing.Point(161, 211)
         Me.optNumAboveCav3.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10504,28 +10505,28 @@ Partial Class MainForm
         Me.optNumAboveCav3.Name = "optNumAboveCav3"
         FileListManager253.fileNames = Nothing
         OptionSingle56.fileManager = FileListManager253
-        OptionManager253.loadFromDInit = false
-        OptionManager253.loadFromInit = false
-        OptionManager253.loadFromWorldGen = true
+        OptionManager253.loadFromDInit = False
+        OptionManager253.loadFromInit = False
+        OptionManager253.loadFromWorldGen = True
         OptionSingle56.optionManager = OptionManager253
         OptionSettingManager256.settingName = Nothing
         OptionSingle56.settingManager = OptionSettingManager256
         OptionSingle56.tokenName = "LEVELS_ABOVE_LAYER_3"
-        OptionSingle56.updateTileSets = false
+        OptionSingle56.updateTileSets = False
         Me.optNumAboveCav3.options = OptionSingle56
         Me.optNumAboveCav3.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveCav3.TabIndex = 16
         Me.optNumAboveCav3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav3, "Z-Levels of earth between the very bottom of the second cavern, and the very top "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav3, "Z-Levels of earth between the very bottom of the second cavern, and the very top " & _
         "of the third cavern.")
         Me.optNumAboveCav3.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'optNumAboveMagma
         '
-        Me.optNumAboveMagma.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveMagma.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveMagma.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveMagma.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveMagma.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveMagma.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveMagma.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveMagma.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveMagma.Location = New System.Drawing.Point(161, 255)
         Me.optNumAboveMagma.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10533,28 +10534,28 @@ Partial Class MainForm
         Me.optNumAboveMagma.Name = "optNumAboveMagma"
         FileListManager254.fileNames = Nothing
         OptionSingle57.fileManager = FileListManager254
-        OptionManager254.loadFromDInit = false
-        OptionManager254.loadFromInit = false
-        OptionManager254.loadFromWorldGen = true
+        OptionManager254.loadFromDInit = False
+        OptionManager254.loadFromInit = False
+        OptionManager254.loadFromWorldGen = True
         OptionSingle57.optionManager = OptionManager254
         OptionSettingManager257.settingName = Nothing
         OptionSingle57.settingManager = OptionSettingManager257
         OptionSingle57.tokenName = "LEVELS_ABOVE_LAYER_4"
-        OptionSingle57.updateTileSets = false
+        OptionSingle57.updateTileSets = False
         Me.optNumAboveMagma.options = OptionSingle57
         Me.optNumAboveMagma.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveMagma.TabIndex = 18
         Me.optNumAboveMagma.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveMagma, "Z-Levels between the very highest magma, and the very bottom of the third cavern."& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveMagma, "Z-Levels between the very highest magma, and the very bottom of the third cavern." & _
         "")
         Me.optNumAboveMagma.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'optNumAboveHFS
         '
-        Me.optNumAboveHFS.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveHFS.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveHFS.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveHFS.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveHFS.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveHFS.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveHFS.Location = New System.Drawing.Point(161, 281)
         Me.optNumAboveHFS.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10562,19 +10563,19 @@ Partial Class MainForm
         Me.optNumAboveHFS.Name = "optNumAboveHFS"
         FileListManager255.fileNames = Nothing
         OptionSingle58.fileManager = FileListManager255
-        OptionManager255.loadFromDInit = false
-        OptionManager255.loadFromInit = false
-        OptionManager255.loadFromWorldGen = true
+        OptionManager255.loadFromDInit = False
+        OptionManager255.loadFromInit = False
+        OptionManager255.loadFromWorldGen = True
         OptionSingle58.optionManager = OptionManager255
         OptionSettingManager258.settingName = Nothing
         OptionSingle58.settingManager = OptionSettingManager258
         OptionSingle58.tokenName = "LEVELS_ABOVE_LAYER_5"
-        OptionSingle58.updateTileSets = false
+        OptionSingle58.updateTileSets = False
         Me.optNumAboveHFS.options = OptionSingle58
         Me.optNumAboveHFS.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveHFS.TabIndex = 20
         Me.optNumAboveHFS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveHFS, "Uncertain.  Seems to increase the layers of Semi-Molten Rock and the depth of the"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveHFS, "Uncertain.  Seems to increase the layers of Semi-Molten Rock and the depth of the" & _
         " magma sea. Only valid if magma layer is present.")
         Me.optNumAboveHFS.Value = New Decimal(New Integer() {2, 0, 0, 0})
         '
@@ -10582,11 +10583,11 @@ Partial Class MainForm
         '
         Me.optBtnMagmaLake.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnMagmaLake.FlatAppearance.BorderSize = 0
-        Me.optBtnMagmaLake.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMagmaLake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMagmaLake.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMagmaLake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMagmaLake.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMagmaLake.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMagmaLake.Image = CType(resources.GetObject("optBtnMagmaLake.Image"),System.Drawing.Image)
+        Me.optBtnMagmaLake.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMagmaLake.Image = CType(resources.GetObject("optBtnMagmaLake.Image"), System.Drawing.Image)
         Me.optBtnMagmaLake.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMagmaLake.Location = New System.Drawing.Point(66, 357)
         Me.optBtnMagmaLake.Name = "optBtnMagmaLake"
@@ -10594,31 +10595,31 @@ Partial Class MainForm
         OptionSingleReplace188.enabledValue = "1"
         FileListManager256.fileNames = Nothing
         OptionSingleReplace188.fileManager = FileListManager256
-        OptionManager256.loadFromDInit = false
-        OptionManager256.loadFromInit = false
-        OptionManager256.loadFromWorldGen = true
+        OptionManager256.loadFromDInit = False
+        OptionManager256.loadFromInit = False
+        OptionManager256.loadFromWorldGen = True
         OptionSingleReplace188.optionManager = OptionManager256
         OptionSettingManager259.settingName = Nothing
         OptionSingleReplace188.settingManager = OptionSettingManager259
         OptionSingleReplace188.tokenName = "HAVE_BOTTOM_LAYER_1"
-        OptionSingleReplace188.updateTileSets = false
+        OptionSingleReplace188.updateTileSets = False
         Me.optBtnMagmaLake.options = OptionSingleReplace188
         Me.optBtnMagmaLake.Size = New System.Drawing.Size(129, 24)
         Me.optBtnMagmaLake.TabIndex = 22
         Me.optBtnMagmaLake.Text = "Magma Lake"
         Me.optBtnMagmaLake.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnMagmaLake, "Determines whether the magma sea exists.")
-        Me.optBtnMagmaLake.UseVisualStyleBackColor = true
+        Me.optBtnMagmaLake.UseVisualStyleBackColor = True
         '
         'optBtnHFS
         '
         Me.optBtnHFS.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnHFS.FlatAppearance.BorderSize = 0
-        Me.optBtnHFS.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnHFS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnHFS.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnHFS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnHFS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnHFS.Image = CType(resources.GetObject("optBtnHFS.Image"),System.Drawing.Image)
+        Me.optBtnHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnHFS.Image = CType(resources.GetObject("optBtnHFS.Image"), System.Drawing.Image)
         Me.optBtnHFS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnHFS.Location = New System.Drawing.Point(66, 387)
         Me.optBtnHFS.Name = "optBtnHFS"
@@ -10626,41 +10627,41 @@ Partial Class MainForm
         OptionSingleReplace189.enabledValue = "1"
         FileListManager257.fileNames = Nothing
         OptionSingleReplace189.fileManager = FileListManager257
-        OptionManager257.loadFromDInit = false
-        OptionManager257.loadFromInit = false
-        OptionManager257.loadFromWorldGen = true
+        OptionManager257.loadFromDInit = False
+        OptionManager257.loadFromInit = False
+        OptionManager257.loadFromWorldGen = True
         OptionSingleReplace189.optionManager = OptionManager257
         OptionSettingManager260.settingName = Nothing
         OptionSingleReplace189.settingManager = OptionSettingManager260
         OptionSingleReplace189.tokenName = "HAVE_BOTTOM_LAYER_2"
-        OptionSingleReplace189.updateTileSets = false
+        OptionSingleReplace189.updateTileSets = False
         Me.optBtnHFS.options = OptionSingleReplace189
         Me.optBtnHFS.Size = New System.Drawing.Size(129, 23)
         Me.optBtnHFS.TabIndex = 23
         Me.optBtnHFS.Text = "HFS"
         Me.optBtnHFS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnHFS, "Determines if the space below the magma sea exists.")
-        Me.optBtnHFS.UseVisualStyleBackColor = true
+        Me.optBtnHFS.UseVisualStyleBackColor = True
         '
         'optMaskGoodAreas
         '
         Me.optMaskGoodAreas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.optMaskGoodAreas.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optMaskGoodAreas.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.optMaskGoodAreas.Location = New System.Drawing.Point(103, 49)
         Me.optMaskGoodAreas.Name = "optMaskGoodAreas"
         Me.optMaskGoodAreas.niceFormat = "###:###:### (0-500)"
         FileListManager258.fileNames = Nothing
         OptionSingle59.fileManager = FileListManager258
-        OptionManager258.loadFromDInit = false
-        OptionManager258.loadFromInit = false
-        OptionManager258.loadFromWorldGen = true
+        OptionManager258.loadFromDInit = False
+        OptionManager258.loadFromInit = False
+        OptionManager258.loadFromWorldGen = True
         OptionSingle59.optionManager = OptionManager258
         OptionSettingManager261.settingName = Nothing
         OptionSingle59.settingManager = OptionSettingManager261
         OptionSingle59.tokenName = "GOOD_SQ_COUNTS"
-        OptionSingle59.updateTileSets = false
+        OptionSingle59.updateTileSets = False
         Me.optMaskGoodAreas.options = OptionSingle59
-        Me.optMaskGoodAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(("& _ 
+        Me.optMaskGoodAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):((" & _
     "[0-4][0-9][0-9]|[0-9]{1,2})|(500|0))$"
         Me.optMaskGoodAreas.Size = New System.Drawing.Size(100, 23)
         Me.optMaskGoodAreas.TabIndex = 3
@@ -10670,22 +10671,22 @@ Partial Class MainForm
         'optMaskEvilAreas
         '
         Me.optMaskEvilAreas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.optMaskEvilAreas.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optMaskEvilAreas.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.optMaskEvilAreas.Location = New System.Drawing.Point(103, 24)
         Me.optMaskEvilAreas.Name = "optMaskEvilAreas"
         Me.optMaskEvilAreas.niceFormat = "###:###:### (0-500)"
         FileListManager259.fileNames = Nothing
         OptionSingle60.fileManager = FileListManager259
-        OptionManager259.loadFromDInit = false
-        OptionManager259.loadFromInit = false
-        OptionManager259.loadFromWorldGen = true
+        OptionManager259.loadFromDInit = False
+        OptionManager259.loadFromInit = False
+        OptionManager259.loadFromWorldGen = True
         OptionSingle60.optionManager = OptionManager259
         OptionSettingManager262.settingName = Nothing
         OptionSingle60.settingManager = OptionSettingManager262
         OptionSingle60.tokenName = "EVIL_SQ_COUNTS"
-        OptionSingle60.updateTileSets = false
+        OptionSingle60.updateTileSets = False
         Me.optMaskEvilAreas.options = OptionSingle60
-        Me.optMaskEvilAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(("& _ 
+        Me.optMaskEvilAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):((" & _
     "[0-4][0-9][0-9]|[0-9]{1,2})|(500|0))$"
         Me.optMaskEvilAreas.Size = New System.Drawing.Size(100, 23)
         Me.optMaskEvilAreas.TabIndex = 1
@@ -10696,8 +10697,8 @@ Partial Class MainForm
         '
         Me.optCbStartingLabors.DropDownWidth = 150
         Me.optCbStartingLabors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbStartingLabors.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optCbStartingLabors.FormattingEnabled = true
+        Me.optCbStartingLabors.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optCbStartingLabors.FormattingEnabled = True
         Me.optCbStartingLabors.Location = New System.Drawing.Point(92, 315)
         Me.optCbStartingLabors.Name = "optCbStartingLabors"
         FileListManager260.fileNames = Nothing
@@ -10711,14 +10712,14 @@ Partial Class MainForm
         OptionList5.itemList.Add(ComboItem33)
         OptionList5.itemList.Add(ComboItem34)
         OptionList5.itemList.Add(ComboItem35)
-        OptionManager260.loadFromDInit = true
-        OptionManager260.loadFromInit = false
-        OptionManager260.loadFromWorldGen = false
+        OptionManager260.loadFromDInit = True
+        OptionManager260.loadFromInit = False
+        OptionManager260.loadFromWorldGen = False
         OptionList5.optionManager = OptionManager260
         OptionSettingManager263.settingName = Nothing
         OptionList5.settingManager = OptionSettingManager263
         OptionList5.tokenName = "SET_LABOR_LISTS"
-        OptionList5.updateTileSets = false
+        OptionList5.updateTileSets = False
         Me.optCbStartingLabors.options = OptionList5
         Me.optCbStartingLabors.Size = New System.Drawing.Size(59, 23)
         Me.optCbStartingLabors.TabIndex = 1
@@ -10726,10 +10727,10 @@ Partial Class MainForm
         '
         'lblPlayableFort
         '
-        Me.lblPlayableFort.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
-            Or System.Windows.Forms.AnchorStyles.Left)  _
-            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblPlayableFort.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblPlayableFort.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblPlayableFort.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayableFort.ForeColor = System.Drawing.Color.White
         Me.lblPlayableFort.Location = New System.Drawing.Point(163, 1)
         Me.lblPlayableFort.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -10751,20 +10752,20 @@ Partial Class MainForm
         '
         'lblSettingExplanation
         '
-        Me.lblSettingExplanation.AutoSize = true
-        Me.lblSettingExplanation.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.lblSettingExplanation.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblSettingExplanation.AutoSize = True
+        Me.lblSettingExplanation.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblSettingExplanation.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSettingExplanation.ForeColor = System.Drawing.Color.White
         Me.lblSettingExplanation.Location = New System.Drawing.Point(108, 534)
         Me.lblSettingExplanation.Name = "lblSettingExplanation"
         Me.lblSettingExplanation.Size = New System.Drawing.Size(762, 13)
         Me.lblSettingExplanation.TabIndex = 179
-        Me.lblSettingExplanation.Text = "All settings can be changed without generating a new world, with the only excepti"& _ 
+        Me.lblSettingExplanation.Text = "All settings can be changed without generating a new world, with the only excepti" & _
     "on being tileset changes. New settings do require restarting DF to take effect."
         '
         'panCivTable
         '
-        Me.panCivTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.panCivTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.panCivTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panCivTable.Controls.Add(Me.tableLayoutCivs)
         Me.panCivTable.ForeColor = System.Drawing.Color.White
@@ -10775,18 +10776,18 @@ Partial Class MainForm
         '
         'tableLayoutCivs
         '
-        Me.tableLayoutCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.tableLayoutCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.tableLayoutCivs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tableLayoutCivs.ColumnCount = 10
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67.0!))
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.tableLayoutCivs.Controls.Add(Me.optBtnFrostGiants, 1, 11)
         Me.tableLayoutCivs.Controls.Add(Me.optBtnWarlocks, 1, 12)
@@ -10842,36 +10843,36 @@ Partial Class MainForm
         Me.tableLayoutCivs.Margin = New System.Windows.Forms.Padding(1)
         Me.tableLayoutCivs.Name = "tableLayoutCivs"
         Me.tableLayoutCivs.RowCount = 21
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.tableLayoutCivs.Size = New System.Drawing.Size(715, 532)
         Me.tableLayoutCivs.TabIndex = 16
         '
         'lblCivInvasions
         '
-        Me.lblCivInvasions.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
-            Or System.Windows.Forms.AnchorStyles.Left)  _
-            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivInvasions.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivInvasions.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblCivInvasions.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivInvasions.ForeColor = System.Drawing.Color.White
         Me.lblCivInvasions.Location = New System.Drawing.Point(409, 1)
         Me.lblCivInvasions.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -10883,10 +10884,10 @@ Partial Class MainForm
         '
         'lblCivCaravans
         '
-        Me.lblCivCaravans.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
-            Or System.Windows.Forms.AnchorStyles.Left)  _
-            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivCaravans.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivCaravans.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblCivCaravans.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivCaravans.ForeColor = System.Drawing.Color.White
         Me.lblCivCaravans.Location = New System.Drawing.Point(327, 1)
         Me.lblCivCaravans.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -10901,7 +10902,7 @@ Partial Class MainForm
         Me.lblCivDwarf.advTag = "ADVD"
         Me.lblCivDwarf.creatureFileName = "creature_standard.txt"
         Me.lblCivDwarf.entityFileName = "entity_default.txt"
-        Me.lblCivDwarf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivDwarf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivDwarf.ForeColor = System.Drawing.Color.White
         Me.lblCivDwarf.fortTag = "CIVD"
         Me.lblCivDwarf.Location = New System.Drawing.Point(1, 33)
@@ -10919,7 +10920,7 @@ Partial Class MainForm
         Me.lblCivTaigaOrcs.advTag = "ADVORC_TAIGA"
         Me.lblCivTaigaOrcs.creatureFileName = "creature_orcfort_taigaorc.txt"
         Me.lblCivTaigaOrcs.entityFileName = "entity_orcfort_taigaorc.txt"
-        Me.lblCivTaigaOrcs.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivTaigaOrcs.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivTaigaOrcs.ForeColor = System.Drawing.Color.White
         Me.lblCivTaigaOrcs.fortTag = "CIVO"
         Me.lblCivTaigaOrcs.Location = New System.Drawing.Point(1, 58)
@@ -10937,7 +10938,7 @@ Partial Class MainForm
         Me.lblCivKoboldCamp.advTag = "ADVKOBOLD_CAMP"
         Me.lblCivKoboldCamp.creatureFileName = "creature_kobold_camp.txt"
         Me.lblCivKoboldCamp.entityFileName = "entity_kobold_camp.txt"
-        Me.lblCivKoboldCamp.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivKoboldCamp.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivKoboldCamp.ForeColor = System.Drawing.Color.White
         Me.lblCivKoboldCamp.fortTag = "CIVK"
         Me.lblCivKoboldCamp.Location = New System.Drawing.Point(1, 83)
@@ -10955,7 +10956,7 @@ Partial Class MainForm
         Me.lblCivHuman.advTag = "ADVHUMAN"
         Me.lblCivHuman.creatureFileName = "creature_standard.txt"
         Me.lblCivHuman.entityFileName = "entity_human.txt"
-        Me.lblCivHuman.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivHuman.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivHuman.ForeColor = System.Drawing.Color.White
         Me.lblCivHuman.fortTag = Nothing
         Me.lblCivHuman.Location = New System.Drawing.Point(1, 108)
@@ -10973,7 +10974,7 @@ Partial Class MainForm
         Me.lblCivElf.advTag = "ADVELF"
         Me.lblCivElf.creatureFileName = "creature_standard.txt"
         Me.lblCivElf.entityFileName = "entity_elf.txt"
-        Me.lblCivElf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivElf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivElf.ForeColor = System.Drawing.Color.White
         Me.lblCivElf.fortTag = Nothing
         Me.lblCivElf.Location = New System.Drawing.Point(1, 133)
@@ -10991,7 +10992,7 @@ Partial Class MainForm
         Me.lblCivDrow.advTag = "ADVDROW"
         Me.lblCivDrow.creatureFileName = "creature_masterwork.txt"
         Me.lblCivDrow.entityFileName = "entity_drow.txt"
-        Me.lblCivDrow.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivDrow.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivDrow.ForeColor = System.Drawing.Color.White
         Me.lblCivDrow.fortTag = Nothing
         Me.lblCivDrow.Location = New System.Drawing.Point(1, 158)
@@ -11009,7 +11010,7 @@ Partial Class MainForm
         Me.lblCivGnome.advTag = "ADVGNOMES"
         Me.lblCivGnome.creatureFileName = "creature_gnome.txt"
         Me.lblCivGnome.entityFileName = "entity_gnome.txt"
-        Me.lblCivGnome.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivGnome.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivGnome.ForeColor = System.Drawing.Color.White
         Me.lblCivGnome.fortTag = Nothing
         Me.lblCivGnome.Location = New System.Drawing.Point(1, 183)
@@ -11027,7 +11028,7 @@ Partial Class MainForm
         Me.lblCivKobold.advTag = "ADVKOBOLD"
         Me.lblCivKobold.creatureFileName = "creature_standard.txt"
         Me.lblCivKobold.entityFileName = "entity_kobold.txt"
-        Me.lblCivKobold.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivKobold.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivKobold.ForeColor = System.Drawing.Color.White
         Me.lblCivKobold.fortTag = Nothing
         Me.lblCivKobold.Location = New System.Drawing.Point(1, 208)
@@ -11045,7 +11046,7 @@ Partial Class MainForm
         Me.lblCivGoblin.advTag = "ADVGOBLIN"
         Me.lblCivGoblin.creatureFileName = "creature_standard.txt"
         Me.lblCivGoblin.entityFileName = "entity_goblin.txt"
-        Me.lblCivGoblin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivGoblin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivGoblin.ForeColor = System.Drawing.Color.White
         Me.lblCivGoblin.fortTag = Nothing
         Me.lblCivGoblin.Location = New System.Drawing.Point(1, 233)
@@ -11063,7 +11064,7 @@ Partial Class MainForm
         Me.lblCivOrc.advTag = "ADVORC"
         Me.lblCivOrc.creatureFileName = "creature_masterwork.txt"
         Me.lblCivOrc.entityFileName = "entity_orc.txt"
-        Me.lblCivOrc.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivOrc.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivOrc.ForeColor = System.Drawing.Color.White
         Me.lblCivOrc.fortTag = Nothing
         Me.lblCivOrc.Location = New System.Drawing.Point(1, 258)
@@ -11081,7 +11082,7 @@ Partial Class MainForm
         Me.lblCivFrostGiant.advTag = "ADVFROST_GIANT"
         Me.lblCivFrostGiant.creatureFileName = "creature_masterwork.txt"
         Me.lblCivFrostGiant.entityFileName = "entity_frost_giant.txt"
-        Me.lblCivFrostGiant.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivFrostGiant.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivFrostGiant.ForeColor = System.Drawing.Color.White
         Me.lblCivFrostGiant.fortTag = Nothing
         Me.lblCivFrostGiant.Location = New System.Drawing.Point(1, 283)
@@ -11099,7 +11100,7 @@ Partial Class MainForm
         Me.lblCivWarlock.advTag = "ADVWARLOCK"
         Me.lblCivWarlock.creatureFileName = "creature_masterwork.txt"
         Me.lblCivWarlock.entityFileName = "entity_warlock.txt"
-        Me.lblCivWarlock.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivWarlock.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivWarlock.ForeColor = System.Drawing.Color.White
         Me.lblCivWarlock.fortTag = Nothing
         Me.lblCivWarlock.Location = New System.Drawing.Point(1, 308)
@@ -11117,7 +11118,7 @@ Partial Class MainForm
         Me.lblCivAutomaton.advTag = "ADVAUT"
         Me.lblCivAutomaton.creatureFileName = "creature_masterwork.txt"
         Me.lblCivAutomaton.entityFileName = "entity_automaton.txt"
-        Me.lblCivAutomaton.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivAutomaton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivAutomaton.ForeColor = System.Drawing.Color.White
         Me.lblCivAutomaton.fortTag = Nothing
         Me.lblCivAutomaton.Location = New System.Drawing.Point(1, 333)
@@ -11135,7 +11136,7 @@ Partial Class MainForm
         Me.lblCivGremlin.advTag = "ADVGREMLIN"
         Me.lblCivGremlin.creatureFileName = "creature_standard.txt"
         Me.lblCivGremlin.entityFileName = "entity_gremlin.txt"
-        Me.lblCivGremlin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivGremlin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivGremlin.ForeColor = System.Drawing.Color.White
         Me.lblCivGremlin.fortTag = Nothing
         Me.lblCivGremlin.Location = New System.Drawing.Point(1, 358)
@@ -11153,7 +11154,7 @@ Partial Class MainForm
         Me.lblCivTroglodyte.advTag = "ADVTROG"
         Me.lblCivTroglodyte.creatureFileName = "creature_subterranean.txt"
         Me.lblCivTroglodyte.entityFileName = "entity_troglodyte.txt"
-        Me.lblCivTroglodyte.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivTroglodyte.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivTroglodyte.ForeColor = System.Drawing.Color.White
         Me.lblCivTroglodyte.fortTag = Nothing
         Me.lblCivTroglodyte.Location = New System.Drawing.Point(1, 383)
@@ -11171,7 +11172,7 @@ Partial Class MainForm
         Me.lblCivAntmen.advTag = "ADVANT"
         Me.lblCivAntmen.creatureFileName = "creature_subterranean.txt"
         Me.lblCivAntmen.entityFileName = "entity_antmen.txt"
-        Me.lblCivAntmen.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivAntmen.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivAntmen.ForeColor = System.Drawing.Color.White
         Me.lblCivAntmen.fortTag = Nothing
         Me.lblCivAntmen.Location = New System.Drawing.Point(1, 408)
@@ -11189,7 +11190,7 @@ Partial Class MainForm
         Me.lblCivEvilDwarf.advTag = "ADVD_EVIL"
         Me.lblCivEvilDwarf.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilDwarf.entityFileName = "entity_dwarf_evil.txt"
-        Me.lblCivEvilDwarf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivEvilDwarf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivEvilDwarf.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilDwarf.fortTag = Nothing
         Me.lblCivEvilDwarf.Location = New System.Drawing.Point(1, 433)
@@ -11207,7 +11208,7 @@ Partial Class MainForm
         Me.lblCivEvilHuman.advTag = "ADVHUMAN_EVIL"
         Me.lblCivEvilHuman.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilHuman.entityFileName = "entity_human_evil.txt"
-        Me.lblCivEvilHuman.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivEvilHuman.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivEvilHuman.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilHuman.fortTag = Nothing
         Me.lblCivEvilHuman.Location = New System.Drawing.Point(1, 458)
@@ -11225,7 +11226,7 @@ Partial Class MainForm
         Me.lblCivEvilDrow.advTag = "ADVDROW_EVIL"
         Me.lblCivEvilDrow.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilDrow.entityFileName = "entity_drow_evil.txt"
-        Me.lblCivEvilDrow.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivEvilDrow.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivEvilDrow.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilDrow.fortTag = Nothing
         Me.lblCivEvilDrow.Location = New System.Drawing.Point(1, 483)
@@ -11243,7 +11244,7 @@ Partial Class MainForm
         Me.lblCivEvilElf.advTag = "ADVELF_EVIL"
         Me.lblCivEvilElf.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilElf.entityFileName = "entity_elf_evil.txt"
-        Me.lblCivEvilElf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivEvilElf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivEvilElf.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilElf.fortTag = Nothing
         Me.lblCivEvilElf.Location = New System.Drawing.Point(1, 508)
@@ -11258,7 +11259,7 @@ Partial Class MainForm
         '
         'grpExtraCreatures
         '
-        Me.grpExtraCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpExtraCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpExtraCreatures.Controls.Add(Me.optBtnDomesticPets)
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreAnimals)
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreVermin)
@@ -11276,18 +11277,18 @@ Partial Class MainForm
         Me.grpExtraCreatures.Name = "grpExtraCreatures"
         Me.grpExtraCreatures.Size = New System.Drawing.Size(144, 420)
         Me.grpExtraCreatures.TabIndex = 3
-        Me.grpExtraCreatures.TabStop = false
+        Me.grpExtraCreatures.TabStop = False
         Me.grpExtraCreatures.Text = "Additional Creatures"
         '
         'optBtnMoreAnimals
         '
         Me.optBtnMoreAnimals.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreAnimals.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMoreAnimals.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMoreAnimals.FlatAppearance.BorderSize = 0
-        Me.optBtnMoreAnimals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMoreAnimals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMoreAnimals.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMoreAnimals.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMoreAnimals.Image = CType(resources.GetObject("optBtnMoreAnimals.Image"),System.Drawing.Image)
+        Me.optBtnMoreAnimals.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMoreAnimals.Image = CType(resources.GetObject("optBtnMoreAnimals.Image"), System.Drawing.Image)
         Me.optBtnMoreAnimals.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMoreAnimals.Location = New System.Drawing.Point(5, 48)
         Me.optBtnMoreAnimals.Margin = New System.Windows.Forms.Padding(1)
@@ -11296,24 +11297,24 @@ Partial Class MainForm
         OptionSingleReplace190.enabledValue = "YESFF["
         FileListManager261.fileNames = New String() {"creature_ff.txt", "creature_mountain_new.txt", "creature_desert_new.txt", "creature_riverlakepool_new.txt", "creature_small_mammal_new.txt", "creature_temperate_new.txt", "creature_tropical_new.txt", "creature_tundra_taiga_new.txt", "creature_bug_slug_new.txt"}
         OptionSingleReplace190.fileManager = FileListManager261
-        OptionManager261.loadFromDInit = false
-        OptionManager261.loadFromInit = false
-        OptionManager261.loadFromWorldGen = false
+        OptionManager261.loadFromDInit = False
+        OptionManager261.loadFromInit = False
+        OptionManager261.loadFromWorldGen = False
         OptionSingleReplace190.optionManager = OptionManager261
         OptionSettingManager264.settingName = Nothing
         OptionSingleReplace190.settingManager = OptionSettingManager264
         OptionSingleReplace190.tokenName = ""
-        OptionSingleReplace190.updateTileSets = false
+        OptionSingleReplace190.updateTileSets = False
         Me.optBtnMoreAnimals.options = OptionSingleReplace190
         Me.optBtnMoreAnimals.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreAnimals.TabIndex = 1
         Me.optBtnMoreAnimals.Text = "Animals"
         Me.optBtnMoreAnimals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.optBtnMoreAnimals.UseVisualStyleBackColor = false
+        Me.optBtnMoreAnimals.UseVisualStyleBackColor = False
         '
         'grpRandomCreatures
         '
-        Me.grpRandomCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpRandomCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpRandomCreatures.Controls.Add(Me.btnDelRandoms)
         Me.grpRandomCreatures.Controls.Add(Me.btnGenerateCreatures)
         Me.grpRandomCreatures.Controls.Add(Me.lblRandomNote)
@@ -11322,13 +11323,13 @@ Partial Class MainForm
         Me.grpRandomCreatures.Name = "grpRandomCreatures"
         Me.grpRandomCreatures.Size = New System.Drawing.Size(144, 172)
         Me.grpRandomCreatures.TabIndex = 4
-        Me.grpRandomCreatures.TabStop = false
+        Me.grpRandomCreatures.TabStop = False
         Me.grpRandomCreatures.Text = "Random Monsters"
         '
         'lblRandomNote
         '
         Me.lblRandomNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblRandomNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblRandomNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRandomNote.ForeColor = System.Drawing.Color.White
         Me.lblRandomNote.Location = New System.Drawing.Point(6, 87)
         Me.lblRandomNote.Name = "lblRandomNote"
@@ -11339,7 +11340,7 @@ Partial Class MainForm
         '
         'grpFortressDefense
         '
-        Me.grpFortressDefense.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpFortressDefense.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpFortressDefense.Controls.Add(Me.optCbPatternInvaderSkills)
         Me.grpFortressDefense.Controls.Add(Me.lblInvaderSkills)
         Me.grpFortressDefense.Controls.Add(Me.lblFortDefEasyTitle)
@@ -11369,12 +11370,12 @@ Partial Class MainForm
         Me.grpFortressDefense.Name = "grpFortressDefense"
         Me.grpFortressDefense.Size = New System.Drawing.Size(291, 420)
         Me.grpFortressDefense.TabIndex = 2
-        Me.grpFortressDefense.TabStop = false
+        Me.grpFortressDefense.TabStop = False
         Me.grpFortressDefense.Text = "Fortress Defense"
         '
         'lblInvaderSkills
         '
-        Me.lblInvaderSkills.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblInvaderSkills.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblInvaderSkills.ForeColor = System.Drawing.Color.White
         Me.lblInvaderSkills.Location = New System.Drawing.Point(67, 352)
         Me.lblInvaderSkills.Name = "lblInvaderSkills"
@@ -11386,7 +11387,7 @@ Partial Class MainForm
         'lblFortDefEasyTitle
         '
         Me.lblFortDefEasyTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblFortDefEasyTitle.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblFortDefEasyTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFortDefEasyTitle.ForeColor = System.Drawing.Color.White
         Me.lblFortDefEasyTitle.Location = New System.Drawing.Point(9, 19)
         Me.lblFortDefEasyTitle.Name = "lblFortDefEasyTitle"
@@ -11398,7 +11399,7 @@ Partial Class MainForm
         'lblForDefMedTitle
         '
         Me.lblForDefMedTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblForDefMedTitle.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblForDefMedTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblForDefMedTitle.ForeColor = System.Drawing.Color.White
         Me.lblForDefMedTitle.Location = New System.Drawing.Point(148, 19)
         Me.lblForDefMedTitle.Name = "lblForDefMedTitle"
@@ -11410,7 +11411,7 @@ Partial Class MainForm
         'lblFortDefHardTitle
         '
         Me.lblFortDefHardTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblFortDefHardTitle.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblFortDefHardTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFortDefHardTitle.ForeColor = System.Drawing.Color.White
         Me.lblFortDefHardTitle.Location = New System.Drawing.Point(148, 164)
         Me.lblFortDefHardTitle.Name = "lblFortDefHardTitle"
@@ -11421,9 +11422,9 @@ Partial Class MainForm
         '
         'lblFortDefNote
         '
-        Me.lblFortDefNote.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblFortDefNote.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblFortDefNote.Cursor = System.Windows.Forms.Cursors.Default
-        Me.lblFortDefNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblFortDefNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFortDefNote.ForeColor = System.Drawing.Color.White
         Me.lblFortDefNote.Location = New System.Drawing.Point(6, 390)
         Me.lblFortDefNote.Name = "lblFortDefNote"
@@ -11435,7 +11436,7 @@ Partial Class MainForm
         'grpMachinery
         '
         Me.grpMachinery.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMachinery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpMachinery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpMachinery.Controls.Add(Me.optBtnSteamEngine)
         Me.grpMachinery.Controls.Add(Me.optBtnMachineFactory)
         Me.grpMachinery.Controls.Add(Me.optBtnLiquidSpawner)
@@ -11445,13 +11446,13 @@ Partial Class MainForm
         Me.grpMachinery.Name = "grpMachinery"
         Me.grpMachinery.Size = New System.Drawing.Size(144, 167)
         Me.grpMachinery.TabIndex = 10
-        Me.grpMachinery.TabStop = false
+        Me.grpMachinery.TabStop = False
         Me.grpMachinery.Text = "Machinery"
         '
         'grpWorkshops
         '
         Me.grpWorkshops.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorkshops.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpWorkshops.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpWorkshops.Controls.Add(Me.optBtnBonecarver)
         Me.grpWorkshops.Controls.Add(Me.optBtnStonecrafter)
         Me.grpWorkshops.Controls.Add(Me.optBtnGemcutter)
@@ -11470,13 +11471,13 @@ Partial Class MainForm
         Me.grpWorkshops.Name = "grpWorkshops"
         Me.grpWorkshops.Size = New System.Drawing.Size(144, 403)
         Me.grpWorkshops.TabIndex = 0
-        Me.grpWorkshops.TabStop = false
+        Me.grpWorkshops.TabStop = False
         Me.grpWorkshops.Text = "Workshops"
         '
         'grpMiscBuildings
         '
         Me.grpMiscBuildings.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMiscBuildings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpMiscBuildings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpMiscBuildings.Controls.Add(Me.optBtnWeightBench)
         Me.grpMiscBuildings.Controls.Add(Me.optBtnWoodsplitting)
         Me.grpMiscBuildings.Controls.Add(Me.optBtnStorage)
@@ -11485,13 +11486,13 @@ Partial Class MainForm
         Me.grpMiscBuildings.Name = "grpMiscBuildings"
         Me.grpMiscBuildings.Size = New System.Drawing.Size(144, 123)
         Me.grpMiscBuildings.TabIndex = 2
-        Me.grpMiscBuildings.TabStop = false
+        Me.grpMiscBuildings.TabStop = False
         Me.grpMiscBuildings.Text = "Misc."
         '
         'grpFarming
         '
         Me.grpFarming.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpFarming.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpFarming.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpFarming.Controls.Add(Me.optBtnBrewery)
         Me.grpFarming.Controls.Add(Me.optBtnSawmill)
         Me.grpFarming.Controls.Add(Me.optBtnFishpond)
@@ -11502,13 +11503,13 @@ Partial Class MainForm
         Me.grpFarming.Name = "grpFarming"
         Me.grpFarming.Size = New System.Drawing.Size(144, 173)
         Me.grpFarming.TabIndex = 1
-        Me.grpFarming.TabStop = false
+        Me.grpFarming.TabStop = False
         Me.grpFarming.Text = "Farming"
         '
         'grpStudies
         '
         Me.grpStudies.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpStudies.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpStudies.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpStudies.Controls.Add(Me.optBtnResearch)
         Me.grpStudies.Controls.Add(Me.optBtnArcheology)
         Me.grpStudies.Controls.Add(Me.optBtnApothecary)
@@ -11518,13 +11519,13 @@ Partial Class MainForm
         Me.grpStudies.Name = "grpStudies"
         Me.grpStudies.Size = New System.Drawing.Size(144, 144)
         Me.grpStudies.TabIndex = 3
-        Me.grpStudies.TabStop = false
+        Me.grpStudies.TabStop = False
         Me.grpStudies.Text = "Studies"
         '
         'grpTrade
         '
         Me.grpTrade.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpTrade.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpTrade.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpTrade.Controls.Add(Me.optBtnTavern)
         Me.grpTrade.Controls.Add(Me.optBtnOlon)
         Me.grpTrade.Controls.Add(Me.optBtnBomrek)
@@ -11536,13 +11537,13 @@ Partial Class MainForm
         Me.grpTrade.Name = "grpTrade"
         Me.grpTrade.Size = New System.Drawing.Size(144, 208)
         Me.grpTrade.TabIndex = 8
-        Me.grpTrade.TabStop = false
+        Me.grpTrade.TabStop = False
         Me.grpTrade.Text = "Trade"
         '
         'grpLaboratories
         '
         Me.grpLaboratories.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpLaboratories.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpLaboratories.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpLaboratories.Controls.Add(Me.optBtnAlchemy)
         Me.grpLaboratories.Controls.Add(Me.optBtnToxicology)
         Me.grpLaboratories.Controls.Add(Me.optBtnChemistry)
@@ -11552,13 +11553,13 @@ Partial Class MainForm
         Me.grpLaboratories.Name = "grpLaboratories"
         Me.grpLaboratories.Size = New System.Drawing.Size(144, 152)
         Me.grpLaboratories.TabIndex = 4
-        Me.grpLaboratories.TabStop = false
+        Me.grpLaboratories.TabStop = False
         Me.grpLaboratories.Text = "Laboratories"
         '
         'grpReligion
         '
         Me.grpReligion.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpReligion.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpReligion.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpReligion.Controls.Add(Me.optBtnAltar)
         Me.grpReligion.Controls.Add(Me.optBtnShrine)
         Me.grpReligion.Controls.Add(Me.optBtnTemple)
@@ -11567,13 +11568,13 @@ Partial Class MainForm
         Me.grpReligion.Name = "grpReligion"
         Me.grpReligion.Size = New System.Drawing.Size(144, 129)
         Me.grpReligion.TabIndex = 9
-        Me.grpReligion.TabStop = false
+        Me.grpReligion.TabStop = False
         Me.grpReligion.Text = "Religion"
         '
         'grpDiplomacy
         '
         Me.grpDiplomacy.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpDiplomacy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpDiplomacy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpDiplomacy.Controls.Add(Me.optBtnEmbassy)
         Me.grpDiplomacy.Controls.Add(Me.optBtnExpedition)
         Me.grpDiplomacy.Controls.Add(Me.optBtnPodium)
@@ -11582,13 +11583,13 @@ Partial Class MainForm
         Me.grpDiplomacy.Name = "grpDiplomacy"
         Me.grpDiplomacy.Size = New System.Drawing.Size(144, 115)
         Me.grpDiplomacy.TabIndex = 5
-        Me.grpDiplomacy.TabStop = false
+        Me.grpDiplomacy.TabStop = False
         Me.grpDiplomacy.Text = "Diplomacy"
         '
         'grpLibrary
         '
         Me.grpLibrary.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpLibrary.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpLibrary.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpLibrary.Controls.Add(Me.optBtnScriptorium)
         Me.grpLibrary.Controls.Add(Me.optBtnLibraries)
         Me.grpLibrary.ForeColor = System.Drawing.SystemColors.Window
@@ -11596,13 +11597,13 @@ Partial Class MainForm
         Me.grpLibrary.Name = "grpLibrary"
         Me.grpLibrary.Size = New System.Drawing.Size(144, 88)
         Me.grpLibrary.TabIndex = 7
-        Me.grpLibrary.TabStop = false
+        Me.grpLibrary.TabStop = False
         Me.grpLibrary.Text = "Library"
         '
         'grpAdministration
         '
         Me.grpAdministration.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpAdministration.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpAdministration.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpAdministration.Controls.Add(Me.optBtnColosseum)
         Me.grpAdministration.Controls.Add(Me.optBtnGuildhall)
         Me.grpAdministration.Controls.Add(Me.optBtnPrison)
@@ -11613,13 +11614,13 @@ Partial Class MainForm
         Me.grpAdministration.Name = "grpAdministration"
         Me.grpAdministration.Size = New System.Drawing.Size(144, 183)
         Me.grpAdministration.TabIndex = 6
-        Me.grpAdministration.TabStop = false
+        Me.grpAdministration.TabStop = False
         Me.grpAdministration.Text = "Administration"
         '
         'grpIllumination
         '
         Me.grpIllumination.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpIllumination.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpIllumination.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpIllumination.Controls.Add(Me.optBtnBrazier)
         Me.grpIllumination.Controls.Add(Me.optBtnCandelabra)
         Me.grpIllumination.Controls.Add(Me.optBtnFireplace)
@@ -11631,12 +11632,12 @@ Partial Class MainForm
         Me.grpIllumination.Name = "grpIllumination"
         Me.grpIllumination.Size = New System.Drawing.Size(144, 209)
         Me.grpIllumination.TabIndex = 0
-        Me.grpIllumination.TabStop = false
+        Me.grpIllumination.TabStop = False
         Me.grpIllumination.Text = "Illumination"
         '
         'lblIlluminationNote
         '
-        Me.lblIlluminationNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblIlluminationNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblIlluminationNote.ForeColor = System.Drawing.Color.White
         Me.lblIlluminationNote.Location = New System.Drawing.Point(3, 165)
         Me.lblIlluminationNote.Name = "lblIlluminationNote"
@@ -11648,7 +11649,7 @@ Partial Class MainForm
         'grpSmithing
         '
         Me.grpSmithing.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpSmithing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpSmithing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpSmithing.Controls.Add(Me.optBtnAmmocaster)
         Me.grpSmithing.Controls.Add(Me.optBtnGunsmith)
         Me.grpSmithing.Controls.Add(Me.optBtnHeavySiegeworks)
@@ -11663,13 +11664,13 @@ Partial Class MainForm
         Me.grpSmithing.Name = "grpSmithing"
         Me.grpSmithing.Size = New System.Drawing.Size(144, 347)
         Me.grpSmithing.TabIndex = 3
-        Me.grpSmithing.TabStop = false
+        Me.grpSmithing.TabStop = False
         Me.grpSmithing.Text = "Smithing"
         '
         'grpMiscFurnaces
         '
         Me.grpMiscFurnaces.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMiscFurnaces.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpMiscFurnaces.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnBrickOven)
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnCrematorium)
         Me.grpMiscFurnaces.Controls.Add(Me.optMultiOreProcessor)
@@ -11680,13 +11681,13 @@ Partial Class MainForm
         Me.grpMiscFurnaces.Name = "grpMiscFurnaces"
         Me.grpMiscFurnaces.Size = New System.Drawing.Size(144, 177)
         Me.grpMiscFurnaces.TabIndex = 1
-        Me.grpMiscFurnaces.TabStop = false
+        Me.grpMiscFurnaces.TabStop = False
         Me.grpMiscFurnaces.Text = "Misc. Furnaces"
         '
         'grpUpgrades
         '
         Me.grpUpgrades.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpUpgrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpUpgrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpUpgrades.Controls.Add(Me.optBtnRuneArmory)
         Me.grpUpgrades.Controls.Add(Me.optBtnRuneWeaponry)
         Me.grpUpgrades.Controls.Add(Me.optBtnArmory)
@@ -11698,13 +11699,13 @@ Partial Class MainForm
         Me.grpUpgrades.Name = "grpUpgrades"
         Me.grpUpgrades.Size = New System.Drawing.Size(144, 209)
         Me.grpUpgrades.TabIndex = 4
-        Me.grpUpgrades.TabStop = false
+        Me.grpUpgrades.TabStop = False
         Me.grpUpgrades.Text = "Upgrades"
         '
         'grpMetalworks
         '
         Me.grpMetalworks.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMetalworks.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpMetalworks.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpMetalworks.Controls.Add(Me.optBtnBlastFurnace)
         Me.grpMetalworks.Controls.Add(Me.optBtnCrucible)
         Me.grpMetalworks.Controls.Add(Me.optBtnFinishingForge)
@@ -11714,13 +11715,13 @@ Partial Class MainForm
         Me.grpMetalworks.Name = "grpMetalworks"
         Me.grpMetalworks.Size = New System.Drawing.Size(144, 154)
         Me.grpMetalworks.TabIndex = 2
-        Me.grpMetalworks.TabStop = false
+        Me.grpMetalworks.TabStop = False
         Me.grpMetalworks.Text = "Metalworks"
         '
         'grpSiege
         '
         Me.grpSiege.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpSiege.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpSiege.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpSiege.Controls.Add(Me.optBtnArbalest)
         Me.grpSiege.Controls.Add(Me.optBtnTrebuchet)
         Me.grpSiege.ForeColor = System.Drawing.SystemColors.Window
@@ -11728,13 +11729,13 @@ Partial Class MainForm
         Me.grpSiege.Name = "grpSiege"
         Me.grpSiege.Size = New System.Drawing.Size(144, 121)
         Me.grpSiege.TabIndex = 5
-        Me.grpSiege.TabStop = false
+        Me.grpSiege.TabStop = False
         Me.grpSiege.Text = "Heavy Siegeworks"
         '
         'grpDecorations
         '
         Me.grpDecorations.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpDecorations.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpDecorations.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpDecorations.Controls.Add(Me.optBtnDisplayCase)
         Me.grpDecorations.Controls.Add(Me.optBtnPottedPlant)
         Me.grpDecorations.Controls.Add(Me.optBtnTotems)
@@ -11748,13 +11749,13 @@ Partial Class MainForm
         Me.grpDecorations.Name = "grpDecorations"
         Me.grpDecorations.Size = New System.Drawing.Size(144, 347)
         Me.grpDecorations.TabIndex = 8
-        Me.grpDecorations.TabStop = false
+        Me.grpDecorations.TabStop = False
         Me.grpDecorations.Text = "Decorations"
         '
         'grpMagic
         '
         Me.grpMagic.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpMagic.Controls.Add(Me.optBtnMagicSchool)
         Me.grpMagic.Controls.Add(Me.optBtnElementalMagic)
         Me.grpMagic.Controls.Add(Me.optBtnWhiteMagic)
@@ -11765,13 +11766,13 @@ Partial Class MainForm
         Me.grpMagic.Name = "grpMagic"
         Me.grpMagic.Size = New System.Drawing.Size(144, 209)
         Me.grpMagic.TabIndex = 6
-        Me.grpMagic.TabStop = false
+        Me.grpMagic.TabStop = False
         Me.grpMagic.Text = "Magic"
         '
         'grpVolcanic
         '
         Me.grpVolcanic.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpVolcanic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpVolcanic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpVolcanic.Controls.Add(Me.optBtnGolemForge)
         Me.grpVolcanic.Controls.Add(Me.optBtnGreatMagmaForge)
         Me.grpVolcanic.Controls.Add(Me.lblReqMagmaNote)
@@ -11780,12 +11781,12 @@ Partial Class MainForm
         Me.grpVolcanic.Name = "grpVolcanic"
         Me.grpVolcanic.Size = New System.Drawing.Size(144, 121)
         Me.grpVolcanic.TabIndex = 7
-        Me.grpVolcanic.TabStop = false
+        Me.grpVolcanic.TabStop = False
         Me.grpVolcanic.Text = "Volcanic Tech."
         '
         'lblReqMagmaNote
         '
-        Me.lblReqMagmaNote.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblReqMagmaNote.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblReqMagmaNote.ForeColor = System.Drawing.Color.White
         Me.lblReqMagmaNote.Location = New System.Drawing.Point(9, 90)
         Me.lblReqMagmaNote.Name = "lblReqMagmaNote"
@@ -11797,7 +11798,7 @@ Partial Class MainForm
         'grpExtraReactions
         '
         Me.grpExtraReactions.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpExtraReactions.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpExtraReactions.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpExtraReactions.Controls.Add(Me.optBtnClayOven)
         Me.grpExtraReactions.Controls.Add(Me.optBtnCrafts)
         Me.grpExtraReactions.Controls.Add(Me.optBtnQuenMill)
@@ -11812,13 +11813,13 @@ Partial Class MainForm
         Me.grpExtraReactions.Name = "grpExtraReactions"
         Me.grpExtraReactions.Size = New System.Drawing.Size(144, 326)
         Me.grpExtraReactions.TabIndex = 2
-        Me.grpExtraReactions.TabStop = false
+        Me.grpExtraReactions.TabStop = False
         Me.grpExtraReactions.Text = "Extra Reactions"
         '
         'grpBalancing
         '
         Me.grpBalancing.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpBalancing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpBalancing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpBalancing.Controls.Add(Me.optBtnAquifier)
         Me.grpBalancing.Controls.Add(Me.optMultiHarderSmithing)
         Me.grpBalancing.Controls.Add(Me.optMultiHarderFarming)
@@ -11832,13 +11833,13 @@ Partial Class MainForm
         Me.grpBalancing.Name = "grpBalancing"
         Me.grpBalancing.Size = New System.Drawing.Size(144, 326)
         Me.grpBalancing.TabIndex = 3
-        Me.grpBalancing.TabStop = false
+        Me.grpBalancing.TabStop = False
         Me.grpBalancing.Text = "Balance Changes"
         '
         'grpMiscFeatures
         '
         Me.grpMiscFeatures.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMiscFeatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpMiscFeatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpMiscFeatures.Controls.Add(Me.optMultiCavernFlavor)
         Me.grpMiscFeatures.Controls.Add(Me.optBtnRegionalWeather)
         Me.grpMiscFeatures.Controls.Add(Me.optBtnRegionalEffects)
@@ -11854,13 +11855,13 @@ Partial Class MainForm
         Me.grpMiscFeatures.Name = "grpMiscFeatures"
         Me.grpMiscFeatures.Size = New System.Drawing.Size(144, 326)
         Me.grpMiscFeatures.TabIndex = 1
-        Me.grpMiscFeatures.TabStop = false
+        Me.grpMiscFeatures.TabStop = False
         Me.grpMiscFeatures.Text = "Miscellaneous"
         '
         'grpExtraMods
         '
         Me.grpExtraMods.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpExtraMods.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpExtraMods.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpExtraMods.Controls.Add(Me.optBtnMoreTrees)
         Me.grpExtraMods.Controls.Add(Me.optBtnMorePlants)
         Me.grpExtraMods.Controls.Add(Me.optBtnFoodNames)
@@ -11875,13 +11876,13 @@ Partial Class MainForm
         Me.grpExtraMods.Name = "grpExtraMods"
         Me.grpExtraMods.Size = New System.Drawing.Size(144, 326)
         Me.grpExtraMods.TabIndex = 4
-        Me.grpExtraMods.TabStop = false
+        Me.grpExtraMods.TabStop = False
         Me.grpExtraMods.Text = "Additional Mods"
         '
         'lblRendermaxNote
         '
-        Me.lblRendermaxNote.AutoSize = true
-        Me.lblRendermaxNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblRendermaxNote.AutoSize = True
+        Me.lblRendermaxNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRendermaxNote.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lblRendermaxNote.Location = New System.Drawing.Point(0, 144)
         Me.lblRendermaxNote.Name = "lblRendermaxNote"
@@ -11892,7 +11893,7 @@ Partial Class MainForm
         '
         'lblModNote
         '
-        Me.lblModNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblModNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblModNote.ForeColor = System.Drawing.Color.White
         Me.lblModNote.Location = New System.Drawing.Point(4, 266)
         Me.lblModNote.Name = "lblModNote"
@@ -11904,7 +11905,7 @@ Partial Class MainForm
         'grpWorldGenMisc
         '
         Me.grpWorldGenMisc.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenMisc.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpWorldGenMisc.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpWorldGenMisc.Controls.Add(Me.lblMineralScarcity)
         Me.grpWorldGenMisc.Controls.Add(Me.lblCivNumber)
         Me.grpWorldGenMisc.Controls.Add(Me.lblEmbarkPoints)
@@ -11920,7 +11921,7 @@ Partial Class MainForm
         Me.grpWorldGenMisc.Name = "grpWorldGenMisc"
         Me.grpWorldGenMisc.Size = New System.Drawing.Size(234, 150)
         Me.grpWorldGenMisc.TabIndex = 6
-        Me.grpWorldGenMisc.TabStop = false
+        Me.grpWorldGenMisc.TabStop = False
         Me.grpWorldGenMisc.Text = "Miscellaneous"
         '
         'lblMineralScarcity
@@ -11971,7 +11972,7 @@ Partial Class MainForm
         'grpWorldGenCaves
         '
         Me.grpWorldGenCaves.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpWorldGenCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpWorldGenCaves.Controls.Add(Me.lblCaveSize)
         Me.grpWorldGenCaves.Controls.Add(Me.lblMountainCaves)
         Me.grpWorldGenCaves.Controls.Add(Me.lblOtherCaves)
@@ -11985,7 +11986,7 @@ Partial Class MainForm
         Me.grpWorldGenCaves.Name = "grpWorldGenCaves"
         Me.grpWorldGenCaves.Size = New System.Drawing.Size(234, 128)
         Me.grpWorldGenCaves.TabIndex = 5
-        Me.grpWorldGenCaves.TabStop = false
+        Me.grpWorldGenCaves.TabStop = False
         Me.grpWorldGenCaves.Text = "Caves"
         '
         'lblCaveSize
@@ -12018,7 +12019,7 @@ Partial Class MainForm
         'grpWorldGenLayers
         '
         Me.grpWorldGenLayers.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenLayers.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpWorldGenLayers.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpWorldGenLayers.Controls.Add(Me.lblCaverns)
         Me.grpWorldGenLayers.Controls.Add(Me.lblCavernOpenness)
         Me.grpWorldGenLayers.Controls.Add(Me.lblCavernMaze)
@@ -12048,7 +12049,7 @@ Partial Class MainForm
         Me.grpWorldGenLayers.Name = "grpWorldGenLayers"
         Me.grpWorldGenLayers.Size = New System.Drawing.Size(260, 418)
         Me.grpWorldGenLayers.TabIndex = 3
-        Me.grpWorldGenLayers.TabStop = false
+        Me.grpWorldGenLayers.TabStop = False
         Me.grpWorldGenLayers.Text = "Caverns && Layers"
         '
         'lblCaverns
@@ -12145,7 +12146,7 @@ Partial Class MainForm
         'grpWorldGenAreas
         '
         Me.grpWorldGenAreas.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenAreas.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpWorldGenAreas.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpWorldGenAreas.Controls.Add(Me.lblGoodAreas)
         Me.grpWorldGenAreas.Controls.Add(Me.lblEvilAreas)
         Me.grpWorldGenAreas.Controls.Add(Me.lblBiomeNote)
@@ -12156,7 +12157,7 @@ Partial Class MainForm
         Me.grpWorldGenAreas.Name = "grpWorldGenAreas"
         Me.grpWorldGenAreas.Size = New System.Drawing.Size(234, 132)
         Me.grpWorldGenAreas.TabIndex = 4
-        Me.grpWorldGenAreas.TabStop = false
+        Me.grpWorldGenAreas.TabStop = False
         Me.grpWorldGenAreas.Text = "Areas"
         '
         'lblGoodAreas
@@ -12184,13 +12185,13 @@ Partial Class MainForm
         Me.lblBiomeNote.Name = "lblBiomeNote"
         Me.lblBiomeNote.Size = New System.Drawing.Size(217, 54)
         Me.lblBiomeNote.TabIndex = 4
-        Me.lblBiomeNote.Text = "The format #:#:# corresponds to small, medium and large regions. Civs require neu"& _ 
+        Me.lblBiomeNote.Text = "The format #:#:# corresponds to small, medium and large regions. Civs require neu" & _
     "tral regions so be conservative."
         Me.lblBiomeNote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblWorldGenSelect
         '
-        Me.lblWorldGenSelect.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblWorldGenSelect.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblWorldGenSelect.ForeColor = System.Drawing.Color.White
         Me.lblWorldGenSelect.Location = New System.Drawing.Point(363, 71)
         Me.lblWorldGenSelect.Name = "lblWorldGenSelect"
@@ -12201,7 +12202,7 @@ Partial Class MainForm
         '
         'grpWorldSettings
         '
-        Me.grpWorldSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpWorldSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpWorldSettings.Controls.Add(Me.optCbStartingLabors)
         Me.grpWorldSettings.Controls.Add(Me.optBtnTemperature)
         Me.grpWorldSettings.Controls.Add(Me.optBtnWeather)
@@ -12221,12 +12222,12 @@ Partial Class MainForm
         Me.grpWorldSettings.Name = "grpWorldSettings"
         Me.grpWorldSettings.Size = New System.Drawing.Size(169, 346)
         Me.grpWorldSettings.TabIndex = 0
-        Me.grpWorldSettings.TabStop = false
+        Me.grpWorldSettings.TabStop = False
         Me.grpWorldSettings.Text = "World Settings"
         '
         'lblPopCap
         '
-        Me.lblPopCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblPopCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblPopCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPopCap.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPopCap.Location = New System.Drawing.Point(-3, 256)
@@ -12238,7 +12239,7 @@ Partial Class MainForm
         '
         'lblStartingLabor
         '
-        Me.lblStartingLabor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblStartingLabor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblStartingLabor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblStartingLabor.ForeColor = System.Drawing.SystemColors.Window
         Me.lblStartingLabor.Location = New System.Drawing.Point(0, 315)
@@ -12250,7 +12251,7 @@ Partial Class MainForm
         '
         'grpSaveSettings
         '
-        Me.grpSaveSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpSaveSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpSaveSettings.Controls.Add(Me.optCbAutoSave)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoSavePause)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoBackup)
@@ -12263,15 +12264,15 @@ Partial Class MainForm
         Me.grpSaveSettings.Name = "grpSaveSettings"
         Me.grpSaveSettings.Size = New System.Drawing.Size(169, 226)
         Me.grpSaveSettings.TabIndex = 1
-        Me.grpSaveSettings.TabStop = false
+        Me.grpSaveSettings.TabStop = False
         Me.grpSaveSettings.Text = "Save && Load Settings"
         '
         'optCbAutoSave
         '
         Me.optCbAutoSave.DropDownWidth = 150
         Me.optCbAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optCbAutoSave.FormattingEnabled = true
+        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optCbAutoSave.FormattingEnabled = True
         Me.optCbAutoSave.Location = New System.Drawing.Point(76, 22)
         Me.optCbAutoSave.Name = "optCbAutoSave"
         FileListManager262.fileNames = Nothing
@@ -12285,21 +12286,21 @@ Partial Class MainForm
         OptionList6.itemList.Add(ComboItem36)
         OptionList6.itemList.Add(ComboItem37)
         OptionList6.itemList.Add(ComboItem38)
-        OptionManager262.loadFromDInit = true
-        OptionManager262.loadFromInit = false
-        OptionManager262.loadFromWorldGen = false
+        OptionManager262.loadFromDInit = True
+        OptionManager262.loadFromInit = False
+        OptionManager262.loadFromWorldGen = False
         OptionList6.optionManager = OptionManager262
         OptionSettingManager265.settingName = Nothing
         OptionList6.settingManager = OptionSettingManager265
         OptionList6.tokenName = "AUTOSAVE"
-        OptionList6.updateTileSets = false
+        OptionList6.updateTileSets = False
         Me.optCbAutoSave.options = OptionList6
         Me.optCbAutoSave.Size = New System.Drawing.Size(75, 23)
         Me.optCbAutoSave.TabIndex = 1
         '
         'lblAutoSave
         '
-        Me.lblAutoSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblAutoSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblAutoSave.ForeColor = System.Drawing.SystemColors.Window
         Me.lblAutoSave.Location = New System.Drawing.Point(15, 22)
@@ -12311,7 +12312,7 @@ Partial Class MainForm
         '
         'grpMiscSettings
         '
-        Me.grpMiscSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpMiscSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpMiscSettings.Controls.Add(Me.lblKeybinds)
         Me.grpMiscSettings.Controls.Add(Me.optCbKeybinds)
         Me.grpMiscSettings.Controls.Add(Me.lblArena)
@@ -12326,12 +12327,12 @@ Partial Class MainForm
         Me.grpMiscSettings.Name = "grpMiscSettings"
         Me.grpMiscSettings.Size = New System.Drawing.Size(169, 216)
         Me.grpMiscSettings.TabIndex = 4
-        Me.grpMiscSettings.TabStop = false
+        Me.grpMiscSettings.TabStop = False
         Me.grpMiscSettings.Text = "Misc. Settings"
         '
         'lblKeybinds
         '
-        Me.lblKeybinds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblKeybinds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblKeybinds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblKeybinds.ForeColor = System.Drawing.SystemColors.Window
         Me.lblKeybinds.Location = New System.Drawing.Point(7, 21)
@@ -12343,7 +12344,7 @@ Partial Class MainForm
         '
         'lblArena
         '
-        Me.lblArena.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblArena.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblArena.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblArena.ForeColor = System.Drawing.SystemColors.Window
         Me.lblArena.Location = New System.Drawing.Point(7, 47)
@@ -12355,7 +12356,7 @@ Partial Class MainForm
         '
         'lblWindowed
         '
-        Me.lblWindowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblWindowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblWindowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblWindowed.ForeColor = System.Drawing.SystemColors.Window
         Me.lblWindowed.Location = New System.Drawing.Point(7, 73)
@@ -12367,7 +12368,7 @@ Partial Class MainForm
         '
         'lblPriority
         '
-        Me.lblPriority.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblPriority.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblPriority.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPriority.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPriority.Location = New System.Drawing.Point(10, 99)
@@ -12379,7 +12380,7 @@ Partial Class MainForm
         '
         'grpGraphics
         '
-        Me.grpGraphics.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpGraphics.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpGraphics.Controls.Add(Me.lblColors)
         Me.grpGraphics.Controls.Add(Me.optCbColors)
         Me.grpGraphics.Controls.Add(Me.optCbPrintMode)
@@ -12397,12 +12398,12 @@ Partial Class MainForm
         Me.grpGraphics.Name = "grpGraphics"
         Me.grpGraphics.Size = New System.Drawing.Size(169, 346)
         Me.grpGraphics.TabIndex = 3
-        Me.grpGraphics.TabStop = false
+        Me.grpGraphics.TabStop = False
         Me.grpGraphics.Text = "Graphic Settings"
         '
         'lblColors
         '
-        Me.lblColors.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblColors.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblColors.ForeColor = System.Drawing.SystemColors.Window
         Me.lblColors.Location = New System.Drawing.Point(54, 22)
@@ -12767,6 +12768,8 @@ Partial Class MainForm
         Me.rPanelGeneral.Items.Add(Me.rBtnAbout)
         Me.rPanelGeneral.Items.Add(Me.RibbonSeparator4)
         Me.rPanelGeneral.Items.Add(Me.rBtnThemes)
+        Me.rPanelGeneral.Items.Add(Me.RibbonSeparator5)
+        Me.rPanelGeneral.Items.Add(Me.rBtnDatabase)
         Me.rPanelGeneral.Text = ""
         '
         'rBtnPlayDF
@@ -13302,6 +13305,16 @@ Partial Class MainForm
         Me.rBtnThemeBlue.Text = "Blue"
         Me.rBtnThemeBlue.ToolTip = "Opaque white backgrounds with blue highlights."
         '
+        'rBtnDatabase
+        '
+        Me.rBtnDatabase.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.database_cloud
+        Me.rBtnDatabase.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.database_cloud
+        Me.rBtnDatabase.Tag = "http://dfdb.info/"
+        Me.rBtnDatabase.Text = "DB"
+        Me.rBtnDatabase.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
+        Me.rBtnDatabase.ToolTip = "Online items database."
+        Me.rBtnDatabase.ToolTipTitle = "Database"
+        '
         'rTabUtilities
         '
         Me.rTabUtilities.Panels.Add(Me.rPanelUtilities)
@@ -13490,7 +13503,7 @@ Partial Class MainForm
         Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
         Me.tabMain.Location = New System.Drawing.Point(0, 72)
         Me.tabMain.Name = "tabMain"
-        Me.tabMain.SelectedIndex = 0
+        Me.tabMain.SelectedIndex = 3
         Me.tabMain.Size = New System.Drawing.Size(1026, 613)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
@@ -13505,7 +13518,7 @@ Partial Class MainForm
         'tabSettings
         '
         Me.tabSettings.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.tabSettings.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabSettings.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576c
         Me.tabSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabSettings.Controls.Add(Me.grpWorldSettings)
         Me.tabSettings.Controls.Add(Me.tileSetColorPreviewer)
@@ -13527,7 +13540,7 @@ Partial Class MainForm
         'tabCivs
         '
         Me.tabCivs.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.tabCivs.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabCivs.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576c
         Me.tabCivs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabCivs.Controls.Add(Me.panCivTable)
         Me.tabCivs.Font = New System.Drawing.Font("Segoe UI", 9!)
@@ -13541,7 +13554,7 @@ Partial Class MainForm
         'tabOtherCreatures
         '
         Me.tabOtherCreatures.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.tabOtherCreatures.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabOtherCreatures.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576c
         Me.tabOtherCreatures.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabOtherCreatures.Controls.Add(Me.grpExtraCreatures)
         Me.tabOtherCreatures.Controls.Add(Me.grpFortressDefense)
@@ -13557,7 +13570,7 @@ Partial Class MainForm
         'tabWorkshops
         '
         Me.tabWorkshops.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.tabWorkshops.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabWorkshops.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576c
         Me.tabWorkshops.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabWorkshops.Controls.Add(Me.grpMachinery)
         Me.tabWorkshops.Controls.Add(Me.grpWorkshops)
@@ -13581,7 +13594,7 @@ Partial Class MainForm
         'tabFurnaces
         '
         Me.tabFurnaces.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.tabFurnaces.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabFurnaces.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576c
         Me.tabFurnaces.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabFurnaces.Controls.Add(Me.grpIllumination)
         Me.tabFurnaces.Controls.Add(Me.grpSmithing)
@@ -13603,7 +13616,7 @@ Partial Class MainForm
         'tabMisc
         '
         Me.tabMisc.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.tabMisc.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabMisc.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576c
         Me.tabMisc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabMisc.Controls.Add(Me.grpExtraReactions)
         Me.tabMisc.Controls.Add(Me.grpStandardization)
@@ -13621,7 +13634,7 @@ Partial Class MainForm
         'tabWorldGen
         '
         Me.tabWorldGen.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.tabWorldGen.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576
+        Me.tabWorldGen.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576c
         Me.tabWorldGen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tabWorldGen.Controls.Add(Me.grpWorldGenMisc)
         Me.tabWorldGen.Controls.Add(Me.grpWorldGenHostiles)
@@ -14254,5 +14267,7 @@ End Sub
     Friend WithEvents optCbStartingLabors As MasterworkDwarfFortress.optionComboBoxToken
     Friend WithEvents lblStartingLabor As System.Windows.Forms.Label
     Friend WithEvents lblPlayableFort As System.Windows.Forms.Label
+    Friend WithEvents RibbonSeparator5 As System.Windows.Forms.RibbonSeparator
+    Friend WithEvents rBtnDatabase As System.Windows.Forms.RibbonButton
 
 End Class

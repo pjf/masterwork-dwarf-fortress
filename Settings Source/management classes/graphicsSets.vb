@@ -140,8 +140,8 @@ Public Class graphicsSets
                         If fsp.DirectoryExists(saveGraphicsPath) Then fsp.DeleteDirectory(saveGraphicsPath, FileIO.DeleteDirectoryOption.DeleteAllContents)
                         'copy all the raws
                         fsp.CopyDirectory(dfRawPath, saveRawPath, True)
-                        MsgBox("Saved games have been updated successfully!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
                     Next
+                    MsgBox("Saved games have been updated successfully!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
                 Else
                     MsgBox("No saved games found to update.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
                 End If

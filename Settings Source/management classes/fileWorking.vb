@@ -174,8 +174,7 @@ Public Class fileWorking
 
     Public Shared Function savedGameDirs() As List(Of IO.DirectoryInfo)
         Dim saveDirs As New List(Of IO.DirectoryInfo)
-        Try
-            Dim dfRawPath As String = IO.Path.Combine(globals.m_dwarfFortressRootDir, "raw")
+        Try            
             Dim savePath As String = IO.Path.Combine(globals.m_dwarfFortressRootDir, "data", "save")
 
             If IO.Directory.Exists(savePath) Then

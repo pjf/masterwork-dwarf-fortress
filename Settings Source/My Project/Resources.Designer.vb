@@ -133,6 +133,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property database_cloud() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("database-cloud", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property DF() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("DF", resourceCulture)
@@ -163,9 +173,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property fb_1024x576() As System.Drawing.Bitmap
+        Friend ReadOnly Property fb_1024x576c() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("fb_1024x576", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("fb-1024x576c", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
