@@ -51,9 +51,10 @@ Imports System.ComponentModel
 
         randomCreaturesExistCheck()
 
-        If fileWorking.savedGameDirs.Count > 1 Then
-            btnUpdateSaves.Enabled = True : btnUpdateSaves.Visible = True
-        End If
+        'DISABLED - updating saves is incredibly broken due to the messy raws
+        'If fileWorking.savedGameDirs.Count > 1 Then
+        '    btnUpdateSaves.Enabled = True : btnUpdateSaves.Visible = True
+        'End If
 
         'cycle through all our tabs to ensure everything is visible immediately
         For Each t As TabPage In tabMain.TabPages
