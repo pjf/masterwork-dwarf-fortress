@@ -51,30 +51,32 @@ getopts('TaA',\%opts);
 
 my $REPO_ROOT = "https://github.com/pjf/masterwork-dwarf-fortress";
 
-my $ORIG_COMMIT = "70ba14c57178ef7b86133281e6d98300de2234ba";
+my $ORIG_COMMIT     = "70ba14c57178ef7b86133281e6d98300de2234ba";
+my $UPSTREAM_COMMIT = "9039b22b84c3465bd179f1fb07911f784e6a5fed";
 
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
 chomp($now_branch);
 
-my $parent = ($now_branch eq 'master') ? "upstream" : "master";
+my $parent = ($now_branch eq 'master') ? $UPSTREAM_COMMIT : "master";
 
 # -a (all) forces upstream
 # -A (ALL) forces everything
 
-if ($opts{a}) { $parent = 'upstream' }
+if ($opts{a}) { $parent = $UPSTREAM_COMMIT }
 if ($opts{A}) { $parent = '70ba14c57178ef7b86133281e6d98300de2234ba' }
 
 my $EXCLUDED_COMMIT_RE = qr{(?:
       Merge\ branch\ '\w+'
     | Merge\ pull\ request
     | Merge\ remote-tracking\ branch
-    | maint-bin:
-    | export-patches
-    | .gitignore
-    | lint-raws
-    | yoink-master
-    | patch-graph?ics-from-master
-    | show-tileset-diffs
+    | .* maint-bin:
+    | .* export-patches
+    | .* .gitignore
+    | .* lint-raws
+    | .* yoink-master
+    | .* patch-graph?ics-from-master
+    | .* show-tileset-diffs
+    | .* forum-patchlog
     | .* \#dev\b
 )}msx;
 
