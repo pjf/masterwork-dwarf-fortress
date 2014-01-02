@@ -445,12 +445,13 @@ Imports System.ComponentModel
 
     Private Sub loadCivTable()
         'column indexes
-        Dim idxPlayable As Integer = 2
-        Dim idxCaravan As Integer = 3
-        Dim idxInvasion As Integer = 4
-        Dim idxHostile As Integer = 5
-        Dim idxMaterials As Integer = 6
-        Dim idxSkills As Integer = 7
+        Dim idxPlaybleFort As Integer = 2
+        Dim idxPlayableAdv As Integer = 3
+        Dim idxCaravan As Integer = 4
+        Dim idxInvasion As Integer = 5
+        Dim idxHostile As Integer = 6
+        Dim idxMaterials As Integer = 7
+        Dim idxSkills As Integer = 8
 
         'width/height based on table cell sizes
         Dim intCtrlHeight As Integer = Me.tableLayoutCivs.GetControlFromPosition(1, 1).Height
@@ -476,21 +477,21 @@ Imports System.ComponentModel
                 civName = StrConv(civName, VbStrConv.ProperCase)
                 civName = civName.Replace(" ", "")
 
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlayable, 0).Width
-                If idxRow >= 4 Then
-                    'add a disabled placeholder for playable race
-                    Dim btnPlayable As New optionSingleReplaceButton
-                    btnPlayable.Name = "optBtnPlayablePlaceholder" & civName
-                    btnPlayable.ImageAlign = ContentAlignment.MiddleCenter
-                    btnPlayable.Text = ""
-                    btnPlayable.Enabled = False
-                    formatCivTableControl(btnPlayable, intCtrlWidth, intCtrlHeight)
-                    Me.tableLayoutCivs.Controls.Add(btnPlayable, idxPlayable, idxRow)
-                Else
-                    'exiting playable button, just resize it to ensure it fits in the cell
-                    Dim btnPlayable As optionSingleReplaceButton = Me.tableLayoutCivs.GetControlFromPosition(idxPlayable, idxRow)
-                    formatCivTableControl(btnPlayable, intCtrlWidth, intCtrlHeight)
-                End If
+                'add playable fortress mode option
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlaybleFort, 0).Width                
+                Dim btnPlayFort As New optionSingleReplaceButton
+                btnPlayFort.Name = "optBtnPlayFort" & civName
+                buildPlayableOption(btnPlayFort, civLabel.entityFileName, civLabel.fortTag)
+                formatCivTableControl(btnPlayFort, intCtrlWidth, intCtrlHeight)
+                Me.tableLayoutCivs.Controls.Add(btnPlayFort, idxPlaybleFort, idxRow)
+
+                'add playable adventure mode option
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlayableAdv, 0).Width
+                Dim btnPlayAdv As New optionSingleReplaceButton
+                btnPlayAdv.Name = "optBtnPlayFort" & civName
+                buildPlayableOption(btnPlayAdv, civLabel.entityFileName, civLabel.advTag)
+                formatCivTableControl(btnPlayAdv, intCtrlWidth, intCtrlHeight)
+                Me.tableLayoutCivs.Controls.Add(btnPlayAdv, idxPlayableAdv, idxRow)
 
                 'add a caravan option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxCaravan, 0).Width
@@ -522,11 +523,11 @@ Imports System.ComponentModel
 
                 'add a material option (placeholder, currently disabled)
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxMaterials, 0).Width
-                Dim cbTemp As New optionComboBoxMulti
-                cbTemp.Name = "temp1" & civName
-                cbTemp.Enabled = False
-                formatCivTableControl(cbTemp, intCtrlWidth, intCtrlHeight)
-                Me.tableLayoutCivs.Controls.Add(cbTemp, idxMaterials, idxRow)
+                Dim cbMats As optionComboPatternToken = New optionComboPatternToken
+                cbMats.Name = "optCbPatternMats" & civName
+                formatCivTableControl(cbMats, intCtrlWidth, intCtrlHeight)
+                buildMatOption(cbMats, civLabel.entityFileName)
+                Me.tableLayoutCivs.Controls.Add(cbMats, idxMaterials, idxRow)
 
                 'add a skill option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxSkills, 0).Width
@@ -548,18 +549,50 @@ Imports System.ComponentModel
         c.Anchor = AnchorStyles.Top
     End Sub
 
+    Private Sub buildPlayableOption(ByRef btn As optionSingleReplaceButton, ByVal entityFileName As String, ByVal tag As String)
+        If tag = "" Then
+            btn.Enabled = False
+        Else
+            btn.options.enabledValue = String.Format("YES{0}[", tag)
+            btn.options.disabledValue = String.Format("!NO{0}!", tag)
+            btn.options.fileManager.fileNames = New String() {entityFileName}
+        End If
+
+        btn.ImageAlign = ContentAlignment.MiddleCenter
+        btn.Text = ""
+    End Sub
+
     Private Sub buildSkillOption(ByRef cb As optionComboPatternToken, ByVal creatureFileName As String, ByVal tag As String)
+        Dim skillComboItems As New comboItemCollection
         For i As Integer = 0 To 15
-            cb.Items.Add(CStr(i))
+            skillComboItems.Add(New comboItem(CStr(i), CStr(i)))
         Next
+
+        cb.options.itemList = skillComboItems
         cb.options.fileManager.fileNames = New String() {creatureFileName}
-        If tag Is Nothing OrElse tag.Trim <> "" Then
-            cb.pattern = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & ")"
+        If tag Is Nothing OrElse tag.Trim <> "" Then            
+            cb.pattern = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & "\b)"
             cb.replace = "${1}${value}${2}"
         Else
             cb.Enabled = False
         End If
         cb.options.updateTileSets = True
+    End Sub
+
+    Private Sub buildMatOption(ByRef cb As optionComboPatternToken, ByVal entityFile As String)
+        Dim matComboItems As New comboItemCollection
+        matComboItems.Add(New comboItem("DEFAULT", "Default"))
+        matComboItems.Add(New comboItem("WEAK", "Weak"))
+        matComboItems.Add(New comboItem("NORMAL", "Normal"))
+        matComboItems.Add(New comboItem("STRONG", "Strong"))
+
+        cb.options.itemList = matComboItems
+        cb.options.fileManager.fileNames = New String() {entityFile}
+
+        cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]"
+        cb.replace = "${1}${value}]"
+
+        cb.options.updateTileSets = False
     End Sub
 
     Private Sub buildTriggerOption(ByRef cb As optionComboBoxMulti, ByVal entityFileName As String, ByVal tokenList As List(Of String))

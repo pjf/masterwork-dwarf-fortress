@@ -26,8 +26,11 @@ my $graphics_dir = File::Spec->catdir(
 
 my @graphics_raws = bsd_glob("$graphics_dir/*/raw/objects/*.txt");
 
+my $all_raws = [ @main_raws, @graphics_raws ];
+
 check_reactions(\@main_raws);
-check_raw_headers([ @main_raws, @graphics_raws ]);
+check_raw_headers($all_raws);
+check_duplicate_objects($all_raws);
 
 sub check_raw_headers {
     my ($raws) = @_;
@@ -69,9 +72,10 @@ sub check_reactions {
     my %permitted_reaction;
     my %defined_reaction;
     my %hotkey;
+    my %reaction_class;
 
     my $reaction;
-
+    
     # Walk through everything, record seen and permitted reactions,
     # reporting what's missing
 
@@ -107,16 +111,21 @@ sub check_reactions {
 
             push( @{$hotkey{$key}}, $reaction);
         }
+        elsif (/\[REACTION_CLASS:([^\]]+)\]/) {
+            $reaction_class{$1}++;   # Count seen reaction classes
+        }
     }
 
     # Errors we spot:
     #   * Reaction is permitted, but not defined
     #   * Reaction is defined, but not permitted
-    #   * Hotkey is over-defined
+    #   * Hotkeys over-assigned
 
     say show_hash_diff(\%permitted_reaction, \%defined_reaction, "Permitted, but not defined (BUGS!)");
 
     say show_hash_diff(\%defined_reaction, \%permitted_reaction, "Defined, but not permitted (WARNING)");
+
+    # Show used-once reaction classes
 
     # Show hotkey conflicts
 
@@ -131,6 +140,62 @@ sub check_reactions {
         }
     }
 
+    say "\n\n== Used once reaction classes ==\n\n";
+
+    foreach my $class (sort keys %reaction_class) {
+        if ($reaction_class{$class} == 1) {
+            say "Reaction class used only once: $class";
+        }
+    }
+
+    
+    return;
+}
+
+sub check_duplicate_objects {
+    my ($files) = @_;
+
+    local @ARGV = @$files;
+
+    my %defined_object_count;
+    my $object_type;
+    
+    my $file = "";;
+
+    say "\n\n== Duplicate Objects ==\n\n";
+
+    while (<>) {
+
+        if ($file ne $ARGV) {
+            # We've changed files!
+            display_duplicate_raws($file, \%defined_object_count);
+            $file = $ARGV;
+            undef $object_type;
+            %defined_object_count = ();;
+        }
+
+        if (/\[OBJECT:([^\]]+)\]/) {
+            # What objects are defined in this file?
+            $object_type = $1;
+        }
+        elsif ($object_type and /\[(\Q$object_type\E:[^\]]+)\]/) {
+            # Check for duplicated objects
+            $defined_object_count{$1}++;
+        }
+    }
+
+
+}
+
+sub display_duplicate_raws {
+
+    my ($file, $obj_count) = @_;
+
+    foreach my $obj (keys %$obj_count) {
+        next if $obj_count->{$obj} <= 1;
+
+        say "$obj ($file)"
+    }
 }
 
 sub show_hash_diff {
