@@ -52,7 +52,7 @@ Imports System.ComponentModel
         randomCreaturesExistCheck()
 
         If fileWorking.savedGameDirs.Count > 1 Then
-            btnUpdateSaves.Enabled = True
+            btnUpdateSaves.Enabled = True : btnUpdateSaves.Visible = True
         End If
 
         'cycle through all our tabs to ensure everything is visible immediately
@@ -154,7 +154,7 @@ Imports System.ComponentModel
 #Region "tileset change and preview"
 
     Private Sub btnUpdateSaves_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateSaves.Click
-        graphicsSets.updateSavedGames()
+        graphicsSets.updateSavedGames()        
     End Sub
 
     Private Sub btnTilesetPreview_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTilesetPreview.Click
