@@ -244,6 +244,7 @@ eventful.enableEvent(eventful.eventType.INVENTORY_CHANGE,5)
  
 local function checkAndAddSyndrome(unit_id,new_equip,item_id)
     local item = df.item.find(item_id)
+    if not item then return false end
     local unit = df.unit.find(unit_id)
     if unit.flags1.dead then return false end
     if itemsyndromedebug then print("Checking unit #" .. unit_id) end
@@ -252,7 +253,7 @@ local function checkAndAddSyndrome(unit_id,new_equip,item_id)
     local itemMaterial=getMaterial(item)
     if itemMaterial then
         for k,syndrome in ipairs(itemMaterial.syndrome) do
-		    if itemsyndromedebug then print("item has a syndrome, checking if item is valid for application...") end
+            if itemsyndromedebug then print("item has a syndrome, checking if item is valid for application...") end
             if syndromeIsTransformation(syndrome) then
                 unitInventory = rememberInventory(unit)
                 transformation = true

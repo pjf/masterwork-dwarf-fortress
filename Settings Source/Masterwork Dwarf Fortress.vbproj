@@ -373,6 +373,8 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <None Include="Resources\fb-1024x576c.jpg" />
+    <None Include="Resources\database-cloud.png" />
     <None Include="Resources\gear--plus.png" />
     <None Include="Resources\ajax-loader.gif" />
     <None Include="Resources\color.png" />

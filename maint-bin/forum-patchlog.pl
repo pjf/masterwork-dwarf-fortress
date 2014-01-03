@@ -51,19 +51,24 @@ getopts('TaA',\%opts);
 
 my $REPO_ROOT = "https://github.com/pjf/masterwork-dwarf-fortress";
 
+# The first commit ever!
 my $ORIG_COMMIT     = "70ba14c57178ef7b86133281e6d98300de2234ba";
-my $UPSTREAM_COMMIT = "9039b22b84c3465bd179f1fb07911f784e6a5fed";
 
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
 chomp($now_branch);
 
-my $parent = ($now_branch eq 'master') ? $UPSTREAM_COMMIT : "master";
+# This amazing git-fu courtesy of @ilmari, who is a true git hero!
+my $last_upstream_merge = capture('git log --ancestry-path --merges --reverse --format=%h upstream..HEAD | head -n1');
+
+chomp $last_upstream_merge;
+
+my $parent = ($now_branch eq 'master') ? $last_upstream_merge : "master";
 
 # -a (all) forces upstream
 # -A (ALL) forces everything
 
-if ($opts{a}) { $parent = $UPSTREAM_COMMIT }
-if ($opts{A}) { $parent = '70ba14c57178ef7b86133281e6d98300de2234ba' }
+if ($opts{a}) { $parent = $last_upstream_merge }
+if ($opts{A}) { $parent = $ORIG_COMMIT }
 
 my $EXCLUDED_COMMIT_RE = qr{(?:
       Merge\ branch\ '\w+'
