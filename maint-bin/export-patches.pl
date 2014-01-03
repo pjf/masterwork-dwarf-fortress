@@ -17,6 +17,8 @@ my $EXCLUDED_FILES_RE = qr{
     ^maint-bin|
     \.pl$|
     \.gitignore$|
+    \.yoinkrc$|
+    \.mailmap$|
     Settings[ ]Source
 }msx;
 
