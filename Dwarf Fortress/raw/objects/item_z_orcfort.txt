@@ -185,13 +185,6 @@ ORCS
 
 -------------
 
-[ITEM_TOOL:ITEM_TOOL_DREAM_SMALL]
-[NAME:spirit shard:spirit shards]
-[VALUE:1]
-[TILE:163]
-[SIZE:20]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
-
 [ITEM_TOOL:ITEM_TOOL_DREAM_MEDIUM]
 [NAME:dreamwalk talisman:dreamwalk talismans]
 [VALUE:20]
@@ -205,6 +198,7 @@ ORCS
 [TILE:163]
 [SIZE:200]
 [MATERIAL_SIZE:1][UNIMPROVABLE]
+
 [ITEM_TOOL:ITEM_TOOL_CODEX_DRUID]
 [NAME:druidic dreamwalk codex:druidic dreamwalk codexes]
 [VALUE:250]
