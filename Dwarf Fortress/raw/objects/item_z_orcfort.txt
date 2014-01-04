@@ -5,12 +5,12 @@ item_z_orcfort
 # Scalps. Type type of scalp is determined by its material
 
 [ITEM_TOOL:PREPARED_SCALP]
-    [NAME:scalp (prepared):scalp (prepared)]
+    [NAME:scalp (prepared):scalps (prepared)]
     [UNIMPROVABLE]
 
----- 
-ORCS
-----
+[ITEM_TOOL:ORC_STANDARD]
+    [NAME:standard of honour:standards of honour]
+    [UNIMPROVABLE]
 
 [ITEM_TOOL:ITEM_TOOL_ANIMALMOJO]
 [NAME:animal growth mojo:animal growth mojos]
@@ -326,13 +326,6 @@ BUILDING BLUEPRINTS
 
 [ITEM_TOOL:ITEM_TOOL_BLUEPRINT_TREESINGER]
 [NAME:treesingers pagoda blueprint:treesingers pagoda blueprints]
-[VALUE:1000]
-[TILE:10]
-[SIZE:1000]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
-
-[ITEM_TOOL:ITEM_TOOL_BLUEPRINT_CARAVANSERAI]
-[NAME:caravanserai blueprint:caravanserai blueprints]
 [VALUE:1000]
 [TILE:10]
 [SIZE:1000]
