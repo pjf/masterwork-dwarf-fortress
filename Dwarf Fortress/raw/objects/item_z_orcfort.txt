@@ -12,26 +12,28 @@ item_z_orcfort
     [NAME:standard of honour:standards of honour]
     [UNIMPROVABLE]
 
-[ITEM_TOOL:ITEM_TOOL_ANIMALMOJO]
-[NAME:animal growth mojo:animal growth mojos]
-[VALUE:20]
-[TILE:163]
-[SIZE:1000]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
+### These mojo haven't been written yet ###
 
-[ITEM_TOOL:ITEM_TOOL_CHAOSMOJO]
-[NAME:chaos growth mojo:chaos growth mojos]
-[VALUE:20]
-[TILE:163]
-[SIZE:1000]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
+(ITEM_TOOL:ITEM_TOOL_ANIMALMOJO)
+(NAME:animal growth mojo:animal growth mojos)
+(VALUE:20)
+(TILE:163)
+(SIZE:1000)
+(MATERIAL_SIZE:1)(UNIMPROVABLE)
 
-[ITEM_TOOL:ITEM_TOOL_HEALMOJO]
-[NAME:healing spell mojo:healing spell mojos]
-[VALUE:150]
-[TILE:163]
-[SIZE:1000]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
+(ITEM_TOOL:ITEM_TOOL_CHAOSMOJO)
+(NAME:chaos growth mojo:chaos growth mojos)
+(VALUE:20)
+(TILE:163)
+(SIZE:1000)
+(MATERIAL_SIZE:1)(UNIMPROVABLE)
+
+(ITEM_TOOL:ITEM_TOOL_HEALMOJO)
+(NAME:healing spell mojo:healing spell mojos)
+(VALUE:150)
+(TILE:163)
+(SIZE:1000)
+(MATERIAL_SIZE:1)(UNIMPROVABLE)
 
 [ITEM_TOOL:ITEM_TOOL_FFMOJO]
 [NAME:fairyfire spell mojo:fairyfire spell mojos]
