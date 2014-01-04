@@ -15,9 +15,8 @@ chomp($now_branch);
 # Sync branches
 systemx(File::Spec->catdir($Bin, 'yoink-master.pl'));
 
-# Make sure we're on master before we do a push
-systemx(qw(git checkout master));
-systemx(qw(git push));
+# Push to github
+systemx(qw(git push origin master unified));
 
 # Export patches
 systemx(File::Spec->catdir($Bin, 'export-patches.pl'));
