@@ -128,9 +128,11 @@ local function eventTypeIsNotValid()
 "batchmetalcop",
 "batchmetaliro",
 "batchmetalgol",
+"batchmetalnic",
 "batchmetalpig",
 "batchmetalpla",
 "batchmetalsil",
+"batchmetalsilverlead"
 "batchmetalste",
 "batchmetalspr",
 "batchmetaltin",
@@ -466,6 +468,10 @@ local function announcement_batchmetaliro() dfhack.gui.showAnnouncement(
 local function announcement_batchmetalgol() dfhack.gui.showAnnouncement(
     'A batch of gold bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
+
+local function announcement_batchmetalnic() dfhack.gui.showAnnouncement(
+    'A batch of nickel bars has been created in the Blast Furnace.',
+    COLOR_CYAN, true)end
 	
 local function announcement_batchmetalpig() dfhack.gui.showAnnouncement(
     'A batch of pig iron bars has been created in the Blast Furnace.',
@@ -477,6 +483,10 @@ local function announcement_batchmetalpla() dfhack.gui.showAnnouncement(
 	
 local function announcement_batchmetalsil() dfhack.gui.showAnnouncement(
     'A batch of silver bars has been created in the Blast Furnace.',
+    COLOR_CYAN, true)end
+
+local function announcement_batchmetalsilverlead() dfhack.gui.showAnnouncement(
+    'A batch of silver and lead bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalste() dfhack.gui.showAnnouncement(
