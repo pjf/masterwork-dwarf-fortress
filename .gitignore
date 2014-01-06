@@ -5,6 +5,6 @@ Dwarf Fortress/gamelog.txt
 Dwarf Fortress/stderr.log
 Dwarf Fortress/stdout.log
 Dwarf Fortress/errorlog.txt
-Dwarf Fortress/lua.history
+Dwarf Fortress/*.history
 MasterworkDwarfFortress/Utilities/DwarfTherapist/log/run.log
 .yoinkrc
