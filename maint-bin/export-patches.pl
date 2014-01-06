@@ -26,7 +26,7 @@ my $EXCLUDED_FILES_RE = qr{
     Settings[ ]Source
 }msx;
 
-my @BRANCHES = qw(master unified);
+my @BRANCHES = qw(master unified orc_rebalance);
 
 # Remember what branch we're on now
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
