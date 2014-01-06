@@ -132,7 +132,7 @@ local function eventTypeIsNotValid()
 "batchmetalpig",
 "batchmetalpla",
 "batchmetalsil",
-"batchmetalsilverlead"
+"batchmetalsilverlead",
 "batchmetalste",
 "batchmetalspr",
 "batchmetaltin",
