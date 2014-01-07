@@ -3454,6 +3454,22 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[MAT_FIXED_TEMP:14000]
 	[MOLAR_MASS:1]
 
+[MATERIAL_TEMPLATE:FIRELING_TEMPLATE]
+This is for creatures that are "made of fire".  Right now there isn't a good format for that.
+	[STATE_COLOR:GAS:RED]
+	[STATE_NAME:GAS:slime]
+	[STATE_ADJ:GAS:slime]
+	[DISPLAY_COLOR:4:0:1]
+	[MATERIAL_VALUE:1]
+	[SPEC_HEAT:4181]
+	[IGNITE_POINT:NONE]
+	[MELTING_POINT:NONE]
+	[BOILING_POINT:NONE]
+	[HEATDAM_POINT:NONE]
+	[COLDDAM_POINT:NONE]
+	[MAT_FIXED_TEMP:15000]
+	[MOLAR_MASS:1]
+
 [MATERIAL_TEMPLATE:CHANGELING_TEMPLATE]
 This is for creatures that are "made of fire".  Right now there isn't a good format for that.
 	[STATE_COLOR:GAS:LAVENDER]
@@ -3470,6 +3486,22 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[MAT_FIXED_TEMP:10000]
 	[MOLAR_MASS:1]
 
+
+[MATERIAL_TEMPLATE:ICELING_TEMPLATE]
+This is for creatures that are "made of fire".  Right now there isn't a good format for that.
+	[STATE_COLOR:GAS:BLUE]
+	[STATE_NAME:GAS:slime]
+	[STATE_ADJ:GAS:slime]
+	[DISPLAY_COLOR:2:0:1]
+	[MATERIAL_VALUE:1]
+	[SPEC_HEAT:4181]
+	[IGNITE_POINT:NONE]
+	[MELTING_POINT:NONE]
+	[BOILING_POINT:NONE]
+	[HEATDAM_POINT:NONE]
+	[COLDDAM_POINT:NONE]
+	[MAT_FIXED_TEMP:8000]
+	[MOLAR_MASS:1]
 
 [MATERIAL_TEMPLATE:SOIL_TEMPLATE]
 	Just copied stone for now, but removed ITEMS_QUERN/HARD

@@ -617,6 +617,8 @@ tweak military-training
 itemsyndrome contaminantsOn enable
 itemsyndrome enable
 
+hackwish enable
+
 
 # write the correct season to gamelog on world load
 soundsense-season

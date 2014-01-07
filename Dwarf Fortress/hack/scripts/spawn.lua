@@ -66,7 +66,7 @@ function CreateUnit(race_id,caste_id)
     unit.caste=caste_id
     unit.id=df.global.unit_next_id
     df.global.unit_next_id=df.global.unit_next_id+1
-   unit.relations.old_year=df.global.cur_year-5 -- everybody will be 15 years old
+    unit.relations.old_year=df.global.cur_year-5 -- everybody will be 15 years old
     if caste.misc.maxage_max==-1 then
         unit.relations.old_year=-1
     else
