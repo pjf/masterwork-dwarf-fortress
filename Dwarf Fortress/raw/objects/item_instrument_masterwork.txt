@@ -36,6 +36,7 @@ item_instrument_masterwork
 
 [ITEM_INSTRUMENT:ITEM_INSTRUMENT_TAMBOURINE]
 [NAME:tambourine:tambourines]
+[HARD_MAT]
 
 [ITEM_INSTRUMENT:ITEM_INSTRUMENT_EUPHONIUM]
 [NAME:euphonium:euphoniums]
