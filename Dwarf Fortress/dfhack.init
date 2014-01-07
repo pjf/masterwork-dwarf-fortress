@@ -443,7 +443,9 @@ enable automaterial
 enable autoSyndrome
 enable autotrade
 enable buildingplan
+enable diggingInvaders
 enable dwarfmonitor
+enable fix-armory
 enable getplants
 enable manipulator
 enable mousequery
