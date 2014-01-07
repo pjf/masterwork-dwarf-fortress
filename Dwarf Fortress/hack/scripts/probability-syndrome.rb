@@ -45,9 +45,11 @@
 # = AUTHOR
 # 
 # Paul Fenwick (aka Urist McTeellox), December 2013
+# Updated with \ARGUMENT expansion, January 2014
 # 
-# Developed as part of the Masterwork Dwarf Fortress: Studded With Patches
-# project: https://github.com/pjf/masterwork-dwarf-fortress/
+# Originally developed as part of the Masterwork Dwarf Fortress:
+# Studded With Patches project:
+# https://github.com/pjf/masterwork-dwarf-fortress/
 #
 # = BUGS
 # 
@@ -56,8 +58,8 @@
 # 
 # = LICENSE
 #
-# You may use and/or modify this code under the same licenses
-# as DFHack or Ruby. (Your choice)
+# You may use and/or modify this code under the same licenses as
+# DFHack or Ruby. (Your choice)
 
 # --
 
@@ -78,9 +80,9 @@ $NO_OP_CMD   = 'cmd'
 
 $PROBABILITY_COMMAND_HEADER = [ '\AUTO_SYNDROME', '\COMMAND', $SCRIPT_NAME, $NO_OP_CMD ]
 
-$DEBUG = 0
+$DEBUG = false
 
-def get_command_from_syndrome(product)
+def get_command_from_syndrome(product, reaction_index, worker_id, x, y, z)
 
     # Skip things without a material
     return nil if product.mat_index == -1
@@ -111,14 +113,28 @@ def get_command_from_syndrome(product)
 
     puts "Valid entry found!" if $DEBUG
 
-    # Woah! We found a reaction we're interested in! Sweet!
+    # Now walk through all the arguments, and cook the meta-arguments
+    # into their expansions.
 
-    # TODO: Sub in worker ID, location, reaction ID, etc
+    cooked_command = []
+
+    for argument in command
+        case argument
+        when '\REACTION_INDEX'
+            cooked_command.push(reaction_index)
+        when '\WORKER_ID'
+            cooked_command.push(worker_id)
+        when '\LOCATION'
+            cooked_command.push(x, y, z)
+        else
+            cooked_command.push(argument)
+        end
+    end
 
     # Return the command zipped up with spaces, since dfhack_run
     # only takes a command as if written on the dfhack cmdline
 
-    return command.join(' ')
+    return cooked_command.join(' ')
 end
 
 verb = $script_args.shift
@@ -158,7 +174,7 @@ when 'init'
 
     for product in products
 
-        command = get_command_from_syndrome(product)
+        command = get_command_from_syndrome(product, reaction_index, worker_id, x, y, z)
 
         next if not command
 

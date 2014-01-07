@@ -1,4 +1,0 @@
-language_RANDOM
-
-[OBJECT:LANGUAGE]
-

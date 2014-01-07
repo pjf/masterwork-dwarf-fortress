@@ -2820,7 +2820,7 @@ plant_standard
 		[STATE_NAME_ADJ:ALL_SOLID:solid evil]
 		[STATE_NAME_ADJ:LIQUID:liquid evil]
 		[STATE_NAME_ADJ:GAS:vapors of evil]
-		[MATERIAL_VALUE:50]
+		[MATERIAL_VALUE:5]
 		[DISPLAY_COLOR:6:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]

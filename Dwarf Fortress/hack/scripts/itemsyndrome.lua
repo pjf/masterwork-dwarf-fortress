@@ -3,7 +3,7 @@
 local args = {...}
  
 local function printItemSyndromeHelp()
-    print("Arguments:")
+    print("Arguments (non case-sensitive):")
     print('    "help": displays this dialogue.')
     print(" ")
     print('    "disable": disables the script.')
@@ -12,18 +12,21 @@ local function printItemSyndromeHelp()
     print(" ")
     print('    "contaminantson/contaminantsoff": toggles searching for contaminants.')
     print('    Disabling speeds itemsyndrome up greatly.')
+    print('    "transformReEquipOn/TransformReEquipOff": toggles transformation auto-reequip.')
 end
  
-itemsyndromedebug=false 
-
+itemsyndromedebug=false
+ 
 function processArgs(args)
     for k,v in ipairs(args) do
-        v=string.lower(v)
+        v=v:lower()
         if v == "help" then printItemSyndromeHelp() return end
         if v == "debugon" then itemsyndromedebug = true end
         if v == "debugoff" then itemsyndromedebug = false end
         if v == "contaminantson" then itemsyndromecontaminants = true end
         if v == "contaminantsoff" then itemsyndromecontaminants = false end
+        if v == "transformreequipon" then transformationReEquip = true end
+        if v == "transformreequipoff" then transformationReEquip = false end
     end
 end
  
@@ -32,7 +35,7 @@ processArgs(args)
 local function getMaterial(item)
     local material = dfhack.matinfo.decode(item) and dfhack.matinfo.decode(item) or false
     if not material then return nil end
-    if material.mode ~= "inorganic"  then 
+    if material.mode ~= "inorganic"  then
         return nil
     else
         return material.material --the "material" thing up there contains a bit more info which is all pretty important but impertinent, like the creature that the material comes from
@@ -180,7 +183,7 @@ local function creatureIsAffected(unit,syndrome)
     end
     return affected
 end
-
+ 
 local function getValidPositions(syndrome)
     local returnTable={AffectsHauler=false,AffectsStuckins=false,IsArmorOnly=false,IsWieldedOnly=false,OnlyAffectsStuckins=false}
     for k,v in ipairs(syndrome.syn_class) do
@@ -194,7 +197,7 @@ local function getValidPositions(syndrome)
     end
     return returnTable
 end
-        
+       
 local function itemIsInValidPosition(item_inv, syndrome)
     local item = getValidPositions(syndrome)
     return not ((item_inv.mode == 0 and not item.AffectsHauler) or (item_inv.mode == 7 and not item.AffectsStuckins) or (item_inv.mode ~= 2 and item.IsArmorOnly) or (item_inv.mode ~=1 and item.IsWieldedOnly) or (item_inv.mode ~=7 and item.OnlyAffectsStuckins))
@@ -241,6 +244,7 @@ eventful.enableEvent(eventful.eventType.INVENTORY_CHANGE,5)
  
 local function checkAndAddSyndrome(unit_id,new_equip,item_id)
     local item = df.item.find(item_id)
+    if not item then return false end
     local unit = df.unit.find(unit_id)
     if unit.flags1.dead then return false end
     if itemsyndromedebug then print("Checking unit #" .. unit_id) end
@@ -249,7 +253,7 @@ local function checkAndAddSyndrome(unit_id,new_equip,item_id)
     local itemMaterial=getMaterial(item)
     if itemMaterial then
         for k,syndrome in ipairs(itemMaterial.syndrome) do
-		    if itemsyndromedebug then print("item has a syndrome, checking if item is valid for application...") end
+                    if itemsyndromedebug then print("item has a syndrome, checking if item is valid for application...") end
             if syndromeIsTransformation(syndrome) then
                 unitInventory = rememberInventory(unit)
                 transformation = true
@@ -284,9 +288,9 @@ local function checkAndAddSyndrome(unit_id,new_equip,item_id)
             end
         end
     end
-    if transformation then dfhack.timeout(2,"ticks",function() moveAllToInventory(unit,unitInventory) end) end
+    if transformation and transformationReEquip then dfhack.timeout(2,"ticks",function() moveAllToInventory(unit,unitInventory) end) end
 end
-
+ 
 eventful.onInventoryChange.itemsyndrome=function(unit_id,item_id,old_equip,new_equip)
     checkAndAddSyndrome(unit_id,new_equip,item_id)
 end
@@ -298,7 +302,7 @@ dfhack.onStateChange.itemsyndrome=function(code)
     end
 end
  
-if disable then 
+if disable then
     eventful.onInventoryChange.itemsyndrome=nil
     print("Disabled itemsyndrome.")
     disable = false

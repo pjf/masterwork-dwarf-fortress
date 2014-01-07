@@ -1,0 +1,14 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="4">
+            <File firstVisibleLine="995" xOffset="0" scrollWidth="2888" startPos="35640" endPos="35640" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4f\Dwarf Fortress\raw\objects\building_warlock.txt" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2888" startPos="1049" endPos="1049" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4f\Dwarf Fortress\raw\objects\creature_warlock_civ.txt" />
+            <File firstVisibleLine="9" xOffset="0" scrollWidth="2888" startPos="439" endPos="439" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4f\Dwarf Fortress\raw\objects\interaction_warlock.txt" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2888" startPos="0" endPos="0" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4f\Dwarf Fortress\raw\objects\item_z_warlock.txt" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2888" startPos="22" endPos="22" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4f\Dwarf Fortress\raw\objects\entity_warlock_civ.txt" />
+            <File firstVisibleLine="241" xOffset="0" scrollWidth="2888" startPos="9056" endPos="9056" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4f\Dwarf Fortress\raw\objects\inorganic_warlock.txt" />
+            <File firstVisibleLine="916" xOffset="0" scrollWidth="2888" startPos="37608" endPos="37608" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4f\Dwarf Fortress\raw\objects\reaction_warlock.txt" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
