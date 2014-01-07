@@ -4,34 +4,21 @@ creature_orcfort
 
 # = Scalps for the orcish tech-tree =
 #
-# Great races (Orcs have specific workshops for these):
-#
-# - Drow
-# - Dwarves
-# - Elves
-# - Humans
-#
-# Unimplemented, but stage 2 potential:
-# - Automaton (questionable; use cogs?)
-# - Frost giants (although they melt, so...?)
-# - Warlock
-#
-# - Lesser scalps (anything that drops a PLANT:SOUL?)
-#
-# Not implemented, but potential to use:
-#
-# - Antmen (need better name than 'scalp')
-# - Batmen
-# - Gnomes
-# - Goblin
-# - Gremlin
-# - Kobold
-# - Orc
-# - Troglodyte
-#
-# TODO: At the very least we probably want some sort of generic scalp, so
-# that a great battle with the gnomes/trogs/whatevers can yield
-# buildmats
+# * Automatons drop gears rather than scalps.
+# * Frost giants are made of frost. They drop bifrost instead of scalps.
+# * Only the sentient races are worthy of scalping.
+
+[CREATURE:SCALP_ANTMEN]
+    [NAME:antman:antmen:antman]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:ANTMEN]
+
+[CREATURE:SCALP_BATMEN]
+    [NAME:batman:batmen:batman]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:BATMEN]
 
 [CREATURE:SCALP_DROW]
     [NAME:drow:drow:drow]
@@ -51,9 +38,50 @@ creature_orcfort
     [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
     [REACTION_CLASS:ELF]
 
+[CREATURE:SCALP_GNOME]
+    [NAME:gnome:gnomes:gnome]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:GNOME]
+
+[CREATURE:SCALP_GOBLIN]
+    [NAME:goblin:goblins:goblin]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:GOBLIN]
+
+[CREATURE:SCALP_GREMLIN]
+    [NAME:gremlin:gremlins:gremlin]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:GREMLIN]
+
 [CREATURE:SCALP_HUMAN]
     [NAME:human:humans:human]
     [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
     [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
     [REACTION_CLASS:HUMAN]
 
+[CREATURE:SCALP_KOBOLD]
+    [NAME:kobold:kobolds:kobold]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:KOBOLD]
+
+[CREATURE:SCALP_ORC]
+    [NAME:orc:orcs:orc]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:ORC]
+
+[CREATURE:SCALP_TROGLODYTE]
+    [NAME:troglodyte:orcs:orc]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:TROGLODYTE]
+
+[CREATURE:SCALP_WARLOCK]
+    [NAME:warlock:warlocks:warlock]
+    [USE_MATERIAL_TEMPLATE:MUSCLE:SCALP_TEMPLATE]
+    [SELECT_MATERIAL:ALL][ARENA_RESTRICTED][DOES_NOT_EXIST]
+    [REACTION_CLASS:WARLOCK]
