@@ -11,6 +11,7 @@ chdir("$Bin/..");   # Move to root directory of repo
 my $UPSTREAM      = 'upstream';     # git branch with official MWDF latest.
 my $PATCHLOG_FILE = 'PATCHLOG.txt'; # Tiny git history goes here.
 my $EXPORT_DIR    = "$ENV{HOME}/Dropbox/Public/MWDF";
+my $MASTER        = 'gold';
 
 my $EXCLUDED_FILES_RE = qr{
     ^MasterworkDwarfFortress/Utilities/DwarfTherapist|
@@ -26,7 +27,7 @@ my $EXCLUDED_FILES_RE = qr{
     Settings[ ]Source
 }msx;
 
-my @BRANCHES = qw(master unified orc_rebalance);
+my @BRANCHES = ($MASTER, qw(alpha beta orc_rebalance));
 
 # Remember what branch we're on now
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
@@ -47,7 +48,7 @@ sub export_probability_syndrome {
     my $zipname = 'probability-syndrome.zip';
 
     # Export probability-syndrome from master
-    systemx('git','checkout','master');
+    systemx('git','checkout',$MASTER);
     systemx('zip', '-q', $zipname,
         'Dwarf Fortress/hack/scripts/probability-syndrome.rb',
         'Dwarf Fortress/raw/objects/inorganic_probability_syndrome.txt',

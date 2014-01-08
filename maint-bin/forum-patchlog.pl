@@ -50,6 +50,7 @@ my %opts = (
 getopts('TaA',\%opts);
 
 my $REPO_ROOT = "https://github.com/pjf/masterwork-dwarf-fortress";
+my $MASTER    = 'gold';
 
 # The first commit ever!
 my $ORIG_COMMIT     = "70ba14c57178ef7b86133281e6d98300de2234ba";
@@ -62,7 +63,7 @@ my $last_upstream_merge = capture('git log --ancestry-path --merges --reverse --
 
 chomp $last_upstream_merge;
 
-my $parent = ($now_branch eq 'master') ? $last_upstream_merge : "master";
+my $parent = ($now_branch eq $MASTER) ? $last_upstream_merge : $MASTER;
 
 # -a (all) forces upstream
 # -A (ALL) forces everything
