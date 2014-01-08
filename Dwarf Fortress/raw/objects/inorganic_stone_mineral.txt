@@ -690,6 +690,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[BENDING_FRACTURE:310000]
 	[BENDING_STRAIN_AT_YIELD:73]
 	[MAX_EDGE:10000]
+        [REACTION_CLASS:ORC_INDUSTRY_MAT]
 [REACTION_CLASS:IRON_COATING] 
 
 [INORGANIC:RHENAYAS_DARKLIGHT_IRON]
@@ -1303,6 +1304,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[BENDING_FRACTURE:280000]
 	[BENDING_STRAIN_AT_YIELD:53]
 	[MAX_EDGE:7000]
+        [REACTION_CLASS:ORC_INDUSTRY_MAT]
 
 
 // -20% as good as steel. must be cleaned in the crucible
@@ -1345,6 +1347,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:GRAY]
+        [REACTION_CLASS:ORC_INDUSTRY_MAT]
 
 	
 
@@ -1497,6 +1500,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+        [REACTION_CLASS:ORC_INDUSTRY_MAT]
 [REACTION_CLASS:STEEL_COATING] 
 
 temperature values unknown, used silver
