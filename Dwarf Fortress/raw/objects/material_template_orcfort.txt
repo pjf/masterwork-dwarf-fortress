@@ -1,0 +1,19 @@
+material_template_orcfort
+
+[OBJECT:MATERIAL_TEMPLATE]
+
+# Scalps for playable orcs!
+# Original template provided by Meph for McTeellox's Orc Rebalance
+# http://www.bay12forums.com/smf/index.php?topic=134547.msg4865715#msg4865715
+
+# Raw scalps will rot, and can't be stockpiled, but can be converted
+# to prepared scalps (an item, which doesn't rot) in the tannery.
+
+[MATERIAL_TEMPLATE:SCALP_TEMPLATE]
+    [STATE_COLOR:ALL:MAUVE]
+    [DISPLAY_COLOR:4:0:0]
+    [ROTS]
+    [BUTCHER_SPECIAL:MEAT:NONE]
+    [MEAT_NAME:NONE:scalp:scalps]
+    [REACTION_CLASS:SCALP]
+
