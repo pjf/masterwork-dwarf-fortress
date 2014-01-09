@@ -8,9 +8,11 @@ This is a community driven branch of Meph's excellent
 If all you want to do is play, you can download one of two
 ready-to-go zip files:
 
-* The [master release](https://github.com/pjf/masterwork-dwarf-fortress/archive/master.zip) contains all bugfixes and improvements which are considered stable. It is always based upon the most recently release of Masterwork Dwarf Fortress.
+* The [gold release](https://github.com/pjf/masterwork-dwarf-fortress/archive/gold.zip) contains all bugfixes and improvements which are considered stable. It is always based upon the most recently release of Masterwork Dwarf Fortress.
 
-* The [unified release](https://github.com/pjf/masterwork-dwarf-fortress/archive/unified.zip) is the same as the master release, but also includes *experimental features and bugfixes*. Things don't get placed into unified until we're pretty sure they work, so it's recommended for most users, but occasionally things will still be a bit rough around the edges.
+* The [beta release](https://github.com/pjf/masterwork-dwarf-fortress/archive/beta.zip) is the same as the gold release, but with additional changes which are not yet considered completely stable. Things don't get placed into beta  until we're pretty sure they work, so it's recommended for most users, but occasionally things will still be a bit rough around the edges.
+
+* The [alpha release](https://github.com/pjf/masterwork-dwarf-fortress/archive/alpha.zip) is the same as the beta release, but also includes *experimental features and bugfixes*. Things here may be completely broken, but you're welcome to try it if you like.
 
 If you already have the latest release of Dwarf Fortress, you can
 download patch files *should* update your distributions to the
@@ -18,8 +20,9 @@ Studded With Patches versions of the files. These are automatically
 generated, and are not guaranteed to work. If in doubt, use the
 zips above:
 
-* [master release (patches only)](https://dl.dropboxusercontent.com/u/9702672/MWDF/MWDF-patch-master.zip)
-* [unified release (patches only)](https://dl.dropboxusercontent.com/u/9702672/MWDF/MWDF-patch-unified.zip)
+* [gold release (patches only)](https://dl.dropboxusercontent.com/u/9702672/MWDF/MWDF-patch-gold.zip)
+* [beta release (patches only)](https://dl.dropboxusercontent.com/u/9702672/MWDF/MWDF-patch-beta.zip)
+* [alpha release (patches only)](https://dl.dropboxusercontent.com/u/9702672/MWDF/MWDF-patch-alpha.zip)
 
 ## Reporting bugs
 
@@ -38,9 +41,9 @@ Please try to be as specific as possible.
 
 If you're an advanced git user, you're encouraged to use feature
 branches if you're going to be making a lot of related changes. Likewise
-we suggest you make your changes based upon master, or a feature branch
-your changes depend upon (like `dfhack_r4`), as the unified branch is
-really just an amalgan of features, rather than a proper development
+we suggest you make your changes based upon gold, or a feature branch
+your changes depend upon (like `dfhack_r4`), as the beta branch is
+really just an amalgam of features, rather than a proper development
 branch in and of itself.
 
 If you're still new to git, don't worry about the preceeding paragraph.
