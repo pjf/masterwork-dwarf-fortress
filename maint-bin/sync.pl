@@ -16,7 +16,7 @@ chomp($now_branch);
 systemx(File::Spec->catdir($Bin, 'yoink-master.pl'));
 
 # Push to github
-systemx(qw(git push origin master unified));
+systemx(qw(git push origin alpha beta gold orc_rebalance));
 
 # Export patches
 systemx(File::Spec->catdir($Bin, 'export-patches.pl'));

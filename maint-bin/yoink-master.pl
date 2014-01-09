@@ -12,6 +12,8 @@ use IPC::System::Simple qw(capture);
 # Grab branches that need yoinking from the .yoinkrc
 # file at the repository root.
 
+my $MASTER = 'gold';
+
 my @branches = do{
     open(my $yoinkrc, '<', "$Bin/../.yoinkrc");
     <$yoinkrc>;
@@ -25,7 +27,7 @@ my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
 # Merge into everything
 foreach my $branch (@branches) {
     system("git checkout $branch");
-    system("git merge --log --no-edit master");
+    system("git merge --log --no-edit $MASTER");
 }
 
 # Restore our current branch
