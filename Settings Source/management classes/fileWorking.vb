@@ -109,24 +109,24 @@ Public Class fileWorking
         End If
     End Function
 
-
-    'runs a program from its root directory by creating and calling a batch file (then deleting)
-    Public Shared Sub runAppViaBat(ByVal f_info As IO.FileInfo)
-        Dim bName = "runProgram.bat"
-        Dim batch = _
-        "@ECHO off" + vbCrLf + _
-        "SETLOCAL" + vbCrLf + _
-        "CD %~dp0" + vbCrLf + _
-        "START """" " + """" + f_info.FullName + """" + vbCrLf + _
-        "start /min cmd /c del /q %~s0" 'deletes self afterwards
-
-        Dim bPath As String = IO.Path.Combine(f_info.FullName.Replace(f_info.Name, ""), bName)
-        saveFile(bPath, batch) 'save the .bat file
-        Process.Start(bPath) 'run the .bat
-    End Sub
-
-    Public Sub runApp(ByVal f_info As IO.FileInfo)
-        Process.Start(f_info.FullName)
+    Public Shared Sub runApp(ByVal f_info As IO.FileInfo, Optional ByVal runDir As String = "", Optional ByVal waitForClose As Boolean = False)
+        'Process.Start(f_info.FullName)
+        If f_info IsNot Nothing Then
+            Dim pExec As New Process
+            Dim pInfo As New ProcessStartInfo
+            With pInfo
+                .WorkingDirectory = IIf(runDir = "", f_info.DirectoryName, runDir)
+                .UseShellExecute = True
+                .FileName = f_info.FullName
+                .WindowStyle = ProcessWindowStyle.Normal
+                .Verb = "runas"
+            End With
+            pExec = Process.Start(pInfo)
+            If waitForClose Then
+                pExec.WaitForExit()
+                pExec.Close()
+            End If
+        End If
     End Sub
 
     Public Shared Function setDwarfFortressRoot() As Boolean

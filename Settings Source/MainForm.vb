@@ -8,8 +8,6 @@ Imports System.ComponentModel
 
 #Region "declarations"
     Private m_frmPreview As New frmTilesetPreviewer
-    'Private m_refreshingWorldGen As Boolean = False
-
     Private m_currTheme As RibbonProfesionalRendererColorTable
 #End Region
 
@@ -132,9 +130,7 @@ Imports System.ComponentModel
 #Region "formatting and themes"
     Private Sub rBtnThemes_DropDownItemClicked(sender As Object, e As RibbonItemEventArgs) Handles rBtnThemes.DropDownItemClicked
         If My.Settings.THEME = e.Item.Tag.ToString.ToUpper Then Exit Sub
-
         My.Settings.THEME = e.Item.Tag.ToString.ToUpper
-
         Dim currTab As TabPage = tabMain.SelectedTab
 
         setTheme()
@@ -238,10 +234,7 @@ Imports System.ComponentModel
     Private Sub refreshWorldGen(sender As Object, e As EventArgs)
         'set the global world gen being edit
         globals.currentWorldGenIndex = CType(cmbWorldGenIndex.SelectedItem, comboItem).value
-        'refresh our world gen controls. the internal loading will check the global var
-        'm_refreshingWorldGen = True
         initControls(tabWorldGen, ToolTipMaker, True, False, False)
-        'm_refreshingWorldGen = False
     End Sub
 
     Private Sub tabMain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tabMain.SelectedIndexChanged
@@ -267,23 +260,9 @@ Imports System.ComponentModel
 
         End If
 
-        Try
-            Dim f_info As IO.FileInfo = findDfFile("RandCreatures.exe")
-
-            If f_info IsNot Nothing Then
-                Dim pExec As New Process
-                Dim pInfo As New ProcessStartInfo
-                With pInfo
-                    .WorkingDirectory = f_info.Directory.Parent.FullName 'run in objects folder
-                    .UseShellExecute = True
-                    .FileName = f_info.FullName
-                    .WindowStyle = ProcessWindowStyle.Normal
-                    .Verb = "runas"
-                End With
-                pExec = Process.Start(pInfo)
-                pExec.WaitForExit()
-                pExec.Close()
-            End If
+        Try            
+            Dim f_info As IO.FileInfo = findDfFile("RandCreatures.exe")            
+            runApp(f_info, f_info.Directory.Parent.FullName, True) 'run in objects folder
 
         Catch ex As Exception
             MsgBox("Failed to run RandCreatures.exe!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
@@ -328,8 +307,8 @@ Imports System.ComponentModel
 
 #Region "general menu buttons"
 
-    Private Sub rBtnPlayDF_Click(sender As Object, e As EventArgs) Handles rBtnPlayDF.Click
-        runAppViaBat(findDfFile("Dwarf Fortress.exe"))
+    Private Sub rBtnPlayDF_Click(sender As Object, e As EventArgs) Handles rBtnPlayDF.Click        
+        runApp(findDfFile("Dwarf Fortress.exe"))
     End Sub
 
     Private Sub rBtnOpenDwarfFortress_Click(sender As Object, e As EventArgs) Handles rBtnOpenDwarfFortress.Click
@@ -378,8 +357,8 @@ Imports System.ComponentModel
 
     Private Sub ribbonExe_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
-            If TypeOf sender Is RibbonItem Then
-                runAppViaBat(findMwFile(CType(sender, RibbonItem).Tag.ToString))
+            If TypeOf sender Is RibbonItem Then                
+                runApp(findMwFile(CType(sender, RibbonItem).Tag.ToString))
             End If
         Catch ex As Exception
             MsgBox("Failed to launch executable!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
