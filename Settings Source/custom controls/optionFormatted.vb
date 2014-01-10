@@ -10,6 +10,7 @@ Public Class optionFormatted
     Implements iTooltip
     Implements iTest
     Implements iTheme
+    Implements iExportInfo
 
     Public Sub New()
         ' This call is required by the designer.
@@ -112,4 +113,11 @@ Public Class optionFormatted
         Me.ForeColor = Theme.ColorTable.Text
     End Sub
 
+    Public Function fileInfo() As List(Of String) Implements iExportInfo.fileInfo
+        Return m_opt.fullFileList
+    End Function
+
+    Public Function optionInfo() As List(Of String) Implements iExportInfo.optionInfo
+        Return m_opt.optionInfo
+    End Function
 End Class

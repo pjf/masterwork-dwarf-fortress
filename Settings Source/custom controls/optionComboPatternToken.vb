@@ -7,6 +7,7 @@ Public Class optionComboPatternToken
     Inherits mwComboBox
     Implements iToken
     Implements iTest
+    Implements iExportInfo
 
     Private m_pattern As String
     Private m_replace As String
@@ -91,7 +92,7 @@ Public Class optionComboPatternToken
         End Set
     End Property
 
-    Private Sub optionComboPatternToken_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles Me.SelectionChangeCommitted        
+    Private Sub optionComboPatternToken_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles Me.SelectionChangeCommitted
         m_value = Me.SelectedValue
         saveOption()
     End Sub
@@ -106,4 +107,12 @@ Public Class optionComboPatternToken
         Next
         optionComboPatternToken_SelectionChangeCommitted(Me, New EventArgs)
     End Sub
+
+    Public Function fileInfo() As List(Of String) Implements iExportInfo.fileInfo
+        Return m_opt.fullFileList
+    End Function
+
+    Public Function optionInfo() As List(Of String) Implements iExportInfo.optionInfo
+        Return New List(Of String)({"{PATTERN} " & m_pattern, "{REPLACE} " & m_replace})
+    End Function
 End Class

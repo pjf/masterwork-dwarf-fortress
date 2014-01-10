@@ -27,6 +27,4 @@ Public Class optionListMulti
             m_items = value
         End Set
     End Property
-
-
 End Class

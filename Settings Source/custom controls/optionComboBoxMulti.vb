@@ -5,6 +5,7 @@ Public Class optionComboBoxMulti
     Inherits mwComboBox
     Implements iToken
     Implements iTest
+    Implements iExportInfo
 
     Private m_opt As optionListMulti
 
@@ -70,4 +71,14 @@ Public Class optionComboBoxMulti
         Next
         optionComboBoxMulti_SelectionChangeCommitted(Me, New EventArgs)
     End Sub
+
+    Public Function fileInfo() As List(Of String) Implements iExportInfo.fileInfo
+        Return m_opt.fullFileList
+    End Function
+
+    Public Function optionInfo() As List(Of String) Implements iExportInfo.optionInfo
+        Dim s As List(Of String) = m_opt.optionInfo
+        s.Add("{VALUES} " & String.Join(", ", m_opt.itemList.valueList))
+        Return s
+    End Function
 End Class
