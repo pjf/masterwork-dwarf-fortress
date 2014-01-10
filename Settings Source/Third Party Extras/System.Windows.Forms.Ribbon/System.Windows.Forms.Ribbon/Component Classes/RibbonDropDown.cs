@@ -807,7 +807,7 @@ namespace System.Windows.Forms
 
       protected override void OnMouseDown(MouseEventArgs e)
       {
-         base.OnMouseDown(e);
+         base.OnMouseDown(e);          
 
          if (Cursor == Cursors.SizeNWSE)
          {
