@@ -6,10 +6,12 @@ use IPC::Open2;
 use Config::Tiny;
 use FindBin qw($Bin);
 use File::Copy qw(copy);
-use autodie;
+use autodie qw(:all);
 use autodie qw(copy);
 
-# Dead simple script to general orc fortress pages from Gollum/Markdown
+use constant DEBUG => 0;
+
+# Script to general orc fortress pages from Gollum/Markdown
 # Paul '@pjf' Fenwick, Jan 2014
 # Distributed under the same terms as Perl itself.
 
@@ -29,8 +31,16 @@ my $config = Config::Tiny->read("$Bin/maint-settings.ini");
 my $from_dir = $config->{manual}{from};
 my $to_dir   = $config->{manual}{to};
 
-say "Reading from $from_dir";
-say "Writing to $to_dir";
+say "Reading from $from_dir" if DEBUG;
+say "Writing to $to_dir"     if DEBUG;
+
+# Make sure our from repo is up-to-date
+say "Syncing git...";
+chdir($from_dir);
+system("git pull");
+say "";
+
+# Now find our files and generate our manual. :)
 
 my @markdown_files = glob("$from_dir/*.md");
 
@@ -39,12 +49,12 @@ foreach my $from_file (@markdown_files) {
 
     my $to_file = "$to_dir/$+{basename}.html";
 
-    say "$+{basename}...";
+    say "...$+{basename}";
 
     write_html($from_file,$to_file, $+{basename});
 }
 
-say "Done!\n";
+say "Done!\n" if DEBUG;
 
 sub write_html {
     my ($from, $to, $basename) = @_;
