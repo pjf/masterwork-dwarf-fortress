@@ -32,25 +32,10 @@ Please try to be as specific as possible.
 
 ## Contributing
 
-1. [Set up git](https://help.github.com/articles/set-up-git)
-2. [Fork this repo](https://github.com/pjf/masterwork-dwarf-fortress/fork) and then clone it to your local machine.
-3. Make your changes.
-4. Commit them (`git add` the files that have changed, `git commit` them, and then `git push` them back to github).
-5. Submit a [pull request](https://github.com/pjf/masterwork-dwarf-fortress/compare/), or point me to your changes [on the forum](http://www.bay12forums.com/smf/index.php?topic=133174.0)
-6. Celebrate, because you're awesome!
+We love new contributors!
 
-If you're an advanced git user, you're encouraged to use feature
-branches if you're going to be making a lot of related changes. Likewise
-we suggest you make your changes based upon gold, or a feature branch
-your changes depend upon (like `dfhack_r4`), as the beta branch is
-really just an amalgam of features, rather than a proper development
-branch in and of itself.
-
-If you're still new to git, don't worry about the preceeding paragraph.
-Just do what feels best; git makes it easy to apply patches to the
-right place. However we do encourage you to commit early and often;
-little commits each making a set of related changes are easier to manage
-than larger commits which may involve changing different features.
+Check out the [Contributor's Guide](https://github.com/pjf/masterwork-dwarf-fortress/wiki/Contributor's-guide)
+for detailed information on how to help.
 
 ## More information
 
