@@ -1,4 +1,4 @@
-item_armor_mood
+item_armor_masterwork
 
 [OBJECT:ITEM]
 
@@ -445,7 +445,7 @@ item_armor_mood
 [METAL]
 
 
-[ITEM_ARMOR:ITEM_ARMOR_GOLBIN2]
+[ITEM_ARMOR:ITEM_ARMOR_GOBLIN2]
 [NAME:crude mail shirt:crude mail shirts]
 [ARMORLEVEL:2]
 [UBSTEP:1]

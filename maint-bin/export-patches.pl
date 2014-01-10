@@ -3,20 +3,34 @@ use v5.10.0;
 use strict;
 use warnings;
 use autodie;
+use FindBin qw($Bin);
 use IPC::System::Simple qw(capture systemx);
+use Config::Tiny;
 
-my $UPSTREAM      = 'upstream';     # git branch with official MWDF latest.
+my $config = Config::Tiny->read("$Bin/maint-settings.ini");
+
+chdir("$Bin/..");   # Move to root directory of repo
+
+my $UPSTREAM      = $config->{git}{upstream} || 'upstream';     # official MWDF latest.
 my $PATCHLOG_FILE = 'PATCHLOG.txt'; # Tiny git history goes here.
-my $EXPORT_DIR    = "$ENV{HOME}/Dropbox/Public/MWDF";
+my $EXPORT_DIR    = $config->{export}{dir} || "..";
+my $MASTER        = $config->{git}{master} || 'gold';
 
 my $EXCLUDED_FILES_RE = qr{
     ^MasterworkDwarfFortress/Utilities/DwarfTherapist|
     ^maint-bin|
     \.pl$|
-    \.gitignore$
+    \.gitignore$|
+    \.yoinkrc$|
+    \.mailmap$|
+    dfhack.history$|
+    gamelog.txt$|
+    stderr.log$|
+    stdout.log$|
+    Settings[ ]Source
 }msx;
 
-my @BRANCHES = qw(master unified);
+my @BRANCHES = split /\s+/, $config->{export}{branches};
 
 # Remember what branch we're on now
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
@@ -27,9 +41,26 @@ foreach my $branch (@BRANCHES) {
     make_patch_from_branch($branch);
 }
 
+export_probability_syndrome();
+
 # Return to our original branch
 say "Returning to $now_branch";
 systemx('git','checkout',$now_branch);
+
+sub export_probability_syndrome { 
+    my $zipname = 'probability-syndrome.zip';
+
+    # Export probability-syndrome from master
+    systemx('git','checkout',$MASTER);
+    systemx('zip', '-q', $zipname,
+        'Dwarf Fortress/hack/scripts/probability-syndrome.rb',
+        'Dwarf Fortress/raw/objects/inorganic_probability_syndrome.txt',
+    );
+
+    rename($zipname, "$EXPORT_DIR/$zipname");
+    
+    return;
+}
 
 sub make_patch_from_branch {
     my ($branch) = @_;
@@ -40,22 +71,20 @@ sub make_patch_from_branch {
     systemx('git','checkout',$branch);
 
     # Find all the files different from upstream
-    my @changed_files = capture("git diff $UPSTREAM --name-only");
+    my @changed_files = capture("git diff $UPSTREAM --name-only -b");
     chomp(@changed_files);
 
-    # Filter out things we shouldn't be packagig.
+    # Filter out things we shouldn't be packaging.
     my @to_package = grep { not m{$EXCLUDED_FILES_RE} } @changed_files;
 
     # Write our patch-log
-    my @patch_log = capture("git log --oneline $UPSTREAM..HEAD");
-
-    # Filter 'merge' messages from patch log
-    @patch_log = grep { not /^\w+ Merge branch '/ } @patch_log;
+    my $patch_log = capture("$Bin/forum-patchlog.pl -Ta");
 
     open(my $patchlog_fh, '>', $PATCHLOG_FILE);
+
     my $date = gmtime();
     say {$patchlog_fh} "# Patches on '$branch' generated at $date GMT\n";
-    print {$patchlog_fh} @patch_log;
+    print {$patchlog_fh} $patch_log;
     close($patchlog_fh);
 
     # Package!

@@ -128,9 +128,11 @@ local function eventTypeIsNotValid()
 "batchmetalcop",
 "batchmetaliro",
 "batchmetalgol",
+"batchmetalnic",
 "batchmetalpig",
 "batchmetalpla",
 "batchmetalsil",
+"batchmetalsilverlead",
 "batchmetalste",
 "batchmetalspr",
 "batchmetaltin",
@@ -198,6 +200,11 @@ local function eventTypeIsNotValid()
 "diplomatforce",
 "beastforce",
 "siegeforce",
+"caravanforce_w",
+"migrantforce_w",
+"diplomatforce_w",
+"beastforce_w",
+"siegeforce_w",
 "guild",
 "military",
 "exitguild",
@@ -461,6 +468,10 @@ local function announcement_batchmetaliro() dfhack.gui.showAnnouncement(
 local function announcement_batchmetalgol() dfhack.gui.showAnnouncement(
     'A batch of gold bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
+
+local function announcement_batchmetalnic() dfhack.gui.showAnnouncement(
+    'A batch of nickel bars has been created in the Blast Furnace.',
+    COLOR_CYAN, true)end
 	
 local function announcement_batchmetalpig() dfhack.gui.showAnnouncement(
     'A batch of pig iron bars has been created in the Blast Furnace.',
@@ -472,6 +483,10 @@ local function announcement_batchmetalpla() dfhack.gui.showAnnouncement(
 	
 local function announcement_batchmetalsil() dfhack.gui.showAnnouncement(
     'A batch of silver bars has been created in the Blast Furnace.',
+    COLOR_CYAN, true)end
+
+local function announcement_batchmetalsilverlead() dfhack.gui.showAnnouncement(
+    'A batch of silver and lead bars has been created in the Blast Furnace.',
     COLOR_CYAN, true)end
 	
 local function announcement_batchmetalste() dfhack.gui.showAnnouncement(
@@ -735,7 +750,7 @@ local function announcement_diplomatforce() dfhack.gui.showAnnouncement(
     COLOR_CYAN, true)end
 	
 local function announcement_beastforce() dfhack.gui.showAnnouncement(
-    'Your diplomat has called out challanges to great beasts.',
+    'Your diplomat has called out challenges to great beasts.',
     COLOR_CYAN, true)end
 	
 local function announcement_siegeforce() dfhack.gui.showAnnouncement(
@@ -940,6 +955,26 @@ local function announcement_markerstop() dfhack.gui.showAnnouncement(
     'SUCCESS! The necromorph threat is over',
     COLOR_CYAN, true)end
 	
+	
+	local function announcement_caravanforce_w() dfhack.gui.showAnnouncement(
+    'The Emissary tries to lure a caravan to your dungeon.',
+    COLOR_CYAN, true)end
+	
+local function announcement_migrantforce_w() dfhack.gui.showAnnouncement(
+    'The Emissary calls more corpses towards your dungeon.',
+    COLOR_CYAN, true)end
+	
+local function announcement_diplomatforce_w() dfhack.gui.showAnnouncement(
+    'The Emissary tries to lure a foreign noble into your dungeon.',
+    COLOR_CYAN, true)end
+	
+local function announcement_beastforce_w() dfhack.gui.showAnnouncement(
+    'The Emissary tries to lure a mighty beast to your dungeon.',
+    COLOR_CYAN, true)end
+	
+local function announcement_siegeforce_w() dfhack.gui.showAnnouncement(
+    'The Emissary tries to lure a marauding army to their unexpected doom.',
+    COLOR_CYAN, true)end
 
 -- for each announcement you need another line here.
 if EventType=="golemold" then announcement_golem()
@@ -1102,6 +1137,11 @@ elseif EventType=="migrantforce" then announcement_migrantforce()
 elseif EventType=="diplomatforce" then announcement_diplomatforce()
 elseif EventType=="beastforce" then announcement_beastforce()
 elseif EventType=="siegeforce" then announcement_siegeforce()
+elseif EventType=="caravanforce_w" then announcement_caravanforce_w()
+elseif EventType=="migrantforce_w" then announcement_migrantforce_w()
+elseif EventType=="diplomatforce_w" then announcement_diplomatforce_w()
+elseif EventType=="beastforce_w" then announcement_beastforce_w()
+elseif EventType=="siegeforce_w" then announcement_siegeforce_w()
 elseif EventType=="guild" then announcement_guild()
 elseif EventType=="military" then announcement_military()
 elseif EventType=="exitguild" then announcement_exitguild()

@@ -1,1 +1,4 @@
-RANDOMCREATURE
+creature_random_rc
+
+[OBJECT:CREATURE]
+

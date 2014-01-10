@@ -1,2 +1,11 @@
 MWDF-patch-*
 Dwarf Fortress/data/save
+Dwarf Fortress/dfhack.history
+Dwarf Fortress/gamelog.txt
+Dwarf Fortress/stderr.log
+Dwarf Fortress/stdout.log
+Dwarf Fortress/errorlog.txt
+Dwarf Fortress/*.history
+MasterworkDwarfFortress/Utilities/DwarfTherapist/log/run.log
+.yoinkrc
+maint-bin/maint-settings.ini

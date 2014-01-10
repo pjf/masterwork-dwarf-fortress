@@ -751,9 +751,15 @@ function UnitInfoViewer:chunk_BodySize()
 		end
 	end
 	--]]
-	bs = bs * i.unit.appearance.unk_4c8 / 100
+	bs = bs * i.unit.appearance.size_modifier / 100
 	bs = tostring(math.floor(bs + 0.5))
-	local blurb = i.pronoun..' appears to be about '..i.unit.body.physical_attr_tissues.STRENGTH..':'..i.unit.body.physical_attr_tissues.AGILITY..':'..bs..' cubic decimeters in size.'
+	local blurb = i.pronoun..' appears to be about '..bs..' cubic decimeters in size.'
+        
+        -- The DfHack 3 version of this script seemed to be trying to look up strength and agility, but
+        -- reporting them as body size? That seems odd. -- pjf / McTeellox
+        --
+        -- ..i.unit.body.physical_attr_tissues.STRENGTH..':'..i.unit.body.physical_attr_tissues.AGILITY..':'
+
 	self:insert_chunk(blurb,pens.LIGHTBLUE)
 end
 function UnitInfoViewer:chunk_Ghostly()

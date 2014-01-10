@@ -439,11 +439,22 @@ diggingInvaders setDelay TITAN_10 dig -1
 diggingInvaders setDelay TITAN_10 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_10 destroySmoothConstruction 50
 
+enable automaterial
+enable autoSyndrome
+enable autotrade
+enable buildingplan
+enable diggingInvaders
+enable dwarfmonitor
+enable fix-armory
+enable getplants
+enable manipulator
+enable mousequery
+enable resume
+enable search
+enable zone
 
-load autoSyndrome			
-load trueTransformation			
+syndromeTrigger	enable
 autofixhandedness start
-projectileExpansion
 projectileExpansion enable
 
 keybinding add Alt-Shift-S@dwarfmode/Default "stocks show"
