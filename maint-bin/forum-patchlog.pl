@@ -7,6 +7,7 @@ use IPC::System::Simple qw(capture systemx);
 use Getopt::Std;
 use FindBin qw($Bin);
 use File::Spec;
+use Config::Tiny;
 
 =head1 NAME
 
@@ -41,6 +42,8 @@ Paul Fenwick (pjf@cpan.org)
 
 =cut
 
+my $config = Config::Tiny->read("$Bin/maint-settings.ini");
+
 my %opts = (
     T => 0, # 'text', show without markup
     a => 0, # 'all', always show since upstream
@@ -49,11 +52,11 @@ my %opts = (
 
 getopts('TaA',\%opts);
 
-my $REPO_ROOT = "https://github.com/pjf/masterwork-dwarf-fortress";
-my $MASTER    = 'gold';
+my $REPO_ROOT = $config->{git}{root} || "https://github.com/pjf/masterwork-dwarf-fortress";
+my $MASTER    = $config->{git}{master} || "gold";
 
 # The first commit ever!
-my $ORIG_COMMIT     = "70ba14c57178ef7b86133281e6d98300de2234ba";
+my $ORIG_COMMIT = $config->{git}{orig_commit} || "70ba14c57178ef7b86133281e6d98300de2234ba";
 
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
 chomp($now_branch);
