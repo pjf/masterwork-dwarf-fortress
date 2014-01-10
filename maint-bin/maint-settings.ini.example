@@ -1,0 +1,15 @@
+; This is an example config file for all the tools used in this directory
+; Rename this file to maint-settings.ini and edit it to your taste
+
+[git]
+master = gold
+upstream = upstream
+root = https://github.com/pjf/masterwork-dwarf-fortress
+orig_commit = 70ba14c57178ef7b86133281e6d98300de2234ba
+
+[export]
+dir = /home/pjf/Dropbox/Public/MWDF
+branches = alpha beta gold orc_rebalance
+
+[yoink]
+branches = alpha beta

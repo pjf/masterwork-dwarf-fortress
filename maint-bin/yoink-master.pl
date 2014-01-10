@@ -5,6 +5,7 @@ use warnings;
 use autodie qw(:all);
 use FindBin qw($Bin);
 use IPC::System::Simple qw(capture);
+use Config::Tiny;
 
 # Yoinks all the changes from master into all active side branches
 # that track them.
@@ -12,14 +13,11 @@ use IPC::System::Simple qw(capture);
 # Grab branches that need yoinking from the .yoinkrc
 # file at the repository root.
 
-my $MASTER = 'gold';
+my $config = Config::Tiny->read("$Bin/maint-settings.ini");
 
-my @branches = do{
-    open(my $yoinkrc, '<', "$Bin/../.yoinkrc");
-    <$yoinkrc>;
-};
+my $MASTER = $config->{git}{master} || 'gold';
 
-chomp(@branches);
+my @branches = split(/\s+/, $config->{yoink}{branches});
 
 # Remember our current branch.
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');

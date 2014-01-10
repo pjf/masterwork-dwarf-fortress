@@ -8,3 +8,4 @@ Dwarf Fortress/errorlog.txt
 Dwarf Fortress/*.history
 MasterworkDwarfFortress/Utilities/DwarfTherapist/log/run.log
 .yoinkrc
+maint-bin/maint-settings.ini

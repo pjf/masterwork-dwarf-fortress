@@ -5,13 +5,16 @@ use warnings;
 use autodie;
 use FindBin qw($Bin);
 use IPC::System::Simple qw(capture systemx);
+use Config::Tiny;
+
+my $config = Config::Tiny->read("$Bin/maint-settings.ini");
 
 chdir("$Bin/..");   # Move to root directory of repo
 
-my $UPSTREAM      = 'upstream';     # git branch with official MWDF latest.
+my $UPSTREAM      = $config->{git}{upstream} || 'upstream';     # official MWDF latest.
 my $PATCHLOG_FILE = 'PATCHLOG.txt'; # Tiny git history goes here.
-my $EXPORT_DIR    = "$ENV{HOME}/Dropbox/Public/MWDF";
-my $MASTER        = 'gold';
+my $EXPORT_DIR    = $config->{export}{dir} || "..";
+my $MASTER        = $config->{git}{master} || 'gold';
 
 my $EXCLUDED_FILES_RE = qr{
     ^MasterworkDwarfFortress/Utilities/DwarfTherapist|
@@ -27,7 +30,7 @@ my $EXCLUDED_FILES_RE = qr{
     Settings[ ]Source
 }msx;
 
-my @BRANCHES = ($MASTER, qw(alpha beta orc_rebalance));
+my @BRANCHES = split /\s+/, $config->{export}{branches};
 
 # Remember what branch we're on now
 my $now_branch = capture('git rev-parse --abbrev-ref HEAD');
@@ -76,8 +79,6 @@ sub make_patch_from_branch {
 
     # Write our patch-log
     my $patch_log = capture("$Bin/forum-patchlog.pl -Ta");
-
-    say "Patchlog generated";
 
     open(my $patchlog_fh, '>', $PATCHLOG_FILE);
 
