@@ -73,6 +73,16 @@ Public Class comboItemCollection
             List.Insert(index, t)
         End If
     End Sub
+
+    Public ReadOnly Property valueList As List(Of String)
+        Get
+            Dim result As New List(Of String)
+            For Each i As comboItem In List
+                result.Add(i.value)
+            Next
+            Return result
+        End Get
+    End Property
 End Class
 
 Public Class comboItemCollectionEditor

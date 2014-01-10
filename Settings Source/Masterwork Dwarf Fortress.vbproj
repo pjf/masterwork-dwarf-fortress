@@ -242,6 +242,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="globals.vb" />
+    <Compile Include="interfaces\iExportInfo.vb" />
     <Compile Include="interfaces\iTest.vb" />
     <Compile Include="interfaces\iTheme.vb" />
     <Compile Include="interfaces\iToken.vb" />

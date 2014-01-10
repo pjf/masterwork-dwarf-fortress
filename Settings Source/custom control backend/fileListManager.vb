@@ -32,7 +32,9 @@ Public Class fileListManager
         If m_filePaths.Count <= 0 AndAlso m_fileNames IsNot Nothing AndAlso m_fileNames.Count > 0 Then
             buildFilePaths()
         End If
+
         Return m_filePaths
+
     End Function
 
     Private Sub buildFilePaths()
