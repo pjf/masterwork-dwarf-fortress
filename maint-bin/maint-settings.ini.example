@@ -13,3 +13,7 @@ branches = alpha beta gold orc_rebalance
 
 [yoink]
 branches = alpha beta
+
+[manual]
+from = /home/pjf/cvs/MWDF-Orc-Wiki
+to =   /home/pjf/cvs/MWDF/MasterworkDwarfFortress/orcfort_repository
