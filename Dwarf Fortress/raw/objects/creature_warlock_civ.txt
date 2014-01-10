@@ -1,6 +1,10 @@
 creature_warlock_civ
 
+BABY:1
+CHILD:1
+
 [OBJECT:CREATURE]
+
 [CREATURE:WARLOCK_CIV]
                              
 [PROFESSION_NAME:TRADER:Broker:Brokers]         
@@ -801,7 +805,7 @@ Stitching runes on clothing. Robe + Thread = Robe with runes on it. Magical effe
 		YESBATTLECRY[CDI:VERBAL_SPEECH:battlecry_warlock_dwarf.txt]
 		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
 		YESBATTLECRY[CDI:WAIT_PERIOD:903]
-	[BABY:1][CHILD:1]
+	
 	[EQUIPS]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -943,7 +947,7 @@ Stitching runes on clothing. Robe + Thread = Robe with runes on it. Magical effe
 	[FLEEQUICK]
 	[PET]
 	[PETVALUE:40]
-	[NO_EAT]
+	[NO_EAT][EVIL]
 	[NO_DRINK]
 	[NO_SLEEP]
 	[NO_DIZZINESS]
@@ -1124,8 +1128,6 @@ Stitching runes on clothing. Robe + Thread = Robe with runes on it. Magical effe
 		[USE_TISSUE_TEMPLATE:BONE:MUSCLE_TEMPLATE]
 		[TISSUE_LAYER:BY_CATEGORY:ALL:BONE]
 	[BODY_SIZE:0:0:15000]
-	[CASTE:GENERIC]
-	
 	[CAN_DO_INTERACTION:RAISE_CORPSE_MONOLITH] => should animate dead.
 		[CDI:ADV_NAME:Animate corpse]
 		[CDI:TARGET_RANGE:A:10]
@@ -1138,6 +1140,9 @@ Stitching runes on clothing. Robe + Thread = Robe with runes on it. Magical effe
 	  [CAN_DO_INTERACTION:MAKE_VAMPIRE] => to make them friendly to undead.
       [CDI:TARGET:A:SELF_ONLY]
       [CDI:FREE_ACTION]
+	[CASTE:GENERIC]
+	[CASTE:GENERIC2]
+	
 
 	
 [CREATURE:GHOULIFICATION]

@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body,td,th {
+	color: #FFF;
+	font-size: 18px;
+}
+body {
+	background-color: #000;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #CCC;
+}
+.Rot {
+	color: #F00;
+}
+.Rot {
+	color: #F00;
+}
+</style>
+</head>
+
+<body>
+<h2 align="center"><img src="../repository/icons/known bugs.JPG" width="316" height="34" /></h2>
+<div align="center">
+  <div align="center">
+    <table width="556" border="0">
+      <tr>
+        <td width="550"><table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Infighting between civ-members, pets and undeads</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">Undeads are attacking something.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">
+                <p>Units have a self-targetted interaction that makes them friendly to undeads. This takes a few seconds. There is no other way to do this, so rare colleteral damage can happen, if a unit just spawned or just migrated to your fort.</p>
+                <p>Pets, caravans and wildlife is attacked by undeads as well, so take care.</p>
+              </div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Boneyard uses up bones way too fast.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">Each reaction uses up one full stack, but only produces one item. One single bone makes one item, but a stack of 20 bones will also just make one item. </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">
+                <p>No solution, this is hardcoded. The more cut-off bodyparts you have, the easier it is to get small stacks or single bones. Butchering big animals will produce big stacks, these are better used in the craftsdwarf.</p>
+                <p>The mod alters creatures to leave up to 12 bone stacks to combat this issue.</p>
+              </div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Letters are missing, lines are black, no text.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">Parts of words are missing, letters flicker in and out of existence, long names disappear. A known Vanilla DF TrueTypeFont Bug.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">No solution, this is hardcoded. You can press F11x2 to fix it temporarily, OR press F12 to turn of TrueType. TrueType is required for the custom Font to work.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Workshop reactions are red, even with all the materials available.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">If a workshop is in a burrow, even if the burrow is inactive, then it accepts only materials within the same burrow. </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">Make a bigger burrow including the materials, or keep the material stockpiles within the same burrow. Or delete the burrow.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">I have many weird boulders lying around with odd names.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">Many things in the mod depend on temperature. Things that should melt or boil away don't without it.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">Open the GUI or Init.txt and set Temperature to ON. This can be done in a running fortress, you only have to restart DF. You do not need to gen a new world. You can also turn off &quot;smoke effects&quot; in the misc features section. This will decrease the amount of these boulders significantly.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Worldgen crashes.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">Dwarf Fortress crashes to desktop while creating a world.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">I have never been able to replicate this. It appears to be at random, with major differences in the PC system people use. Try shorter histories, &lt;100 years. If the problem persists, please leave a detailed report in the forum. Please mention the mod version, tileset used, if settings have been changed, and how much virtual memory/ram you have.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">I have an error log.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">
+                <p>The Dwarf Fortress main folder shows a errorlog.txt. This is created when certain entry in the raws are missing. In 90% of the cases this is completely harmless. It is caused by enabling some settings, and disabling other. </p>
+                <p>For example you remove warpstone. The error log will tell you that warpstone is missing in the reactions for warpstone landmines and turrets.</p>
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">The default setting has no error log. If your setting has a very big error log, please leave me a message in the forum. Otherwise just ignore it, it will do no harm.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Something else is wrong.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">
+                <p>???</p>
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">
+                <p>Please report at the forum thread, or write me a PM. Please mention the mod version, tileset used, if settings have been changed, and what exactly is it that is wrong.</p>
+                <p>Please keep in mind that some issues are Vanilla DF or dfhack related. If you think this is the case, give me a quick heads up, but post the report in the fitting thread. Do mention that you play Masterwork DF though, otherwise people will get confused. Thank you.</p>
+              </div></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<hr />
+<p align="center"><a href="home.html" title="home">::: Home :::</a></p>
+<div align="center"><a href="home.html"><img src="Logo small.JPG" width="200" height="124" /></a></div>
+</body>
+</html>
