@@ -19,6 +19,16 @@ img {
     padding-right: 10px;
 }
 
+div.adjacent_images {
+    text-align: center;
+}
+
+.adjacent_images img {
+    float: none;
+    clear: none;
+    padding: 10px;
+}
+
 h1, h2, h3, h4 {
     clear:both;
     text-align: center;
