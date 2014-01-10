@@ -48,7 +48,8 @@ inorganic_stone_mineral
 	[DEEP_SPECIAL]
 	[STOCKPILE_THREAD_METAL]
 [REACTION_CLASS:ADAMANTINE_COATING] 
-
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 [INORGANIC:ALUMINUM]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -87,6 +88,7 @@ inorganic_stone_mineral
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+[REACTION_CLASS:METAL_DUST] 
 
 
 
@@ -130,6 +132,8 @@ inorganic_stone_mineral
 	[BENDING_STRAIN_AT_YIELD:0]
 	[MAX_EDGE:50000]
 	[SPECIAL]
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 
 [INORGANIC:BILLON]
@@ -168,6 +172,7 @@ inorganic_stone_mineral
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+[REACTION_CLASS:METAL_DUST] 
 
 [INORGANIC:BISMUTH]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -202,6 +207,7 @@ inorganic_stone_mineral
 	[BENDING_FRACTURE:50000]
 	[BENDING_STRAIN_AT_YIELD:94]
 	[MAX_EDGE:10000]
+[REACTION_CLASS:METAL_DUST] 
 
 you can make a lighter colored bronze by adding bismuth, used temp values from bronze, used by incas, at least according to one source ha ha
 [INORGANIC:BISMUTH_BRONZE]
@@ -242,6 +248,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:BRONZE_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:BLACK_BRONZE]
@@ -282,6 +289,8 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_SCALED]
 	[ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_DIGGER][ITEMS_ARMOR]
 [REACTION_CLASS:BRONZE_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 
 [INORGANIC:STEEL_DROW]
@@ -322,6 +331,8 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:STEEL_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 
 
@@ -362,6 +373,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 
+[REACTION_CLASS:METAL_DUST] 
 
 
 
@@ -404,6 +416,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[BENDING_STRAIN_AT_YIELD:156]
 	[MAX_EDGE:10000]
 [REACTION_CLASS:BRONZE_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 
@@ -444,6 +457,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:CHROME_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 	
 	
 [INORGANIC:COBALT]
@@ -486,6 +500,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[BENDING_STRAIN_AT_YIELD:120] used young modulus from source 2
 	[MAX_EDGE:9000]
 [REACTION_CLASS:COBALT_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 [INORGANIC:COPPER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -526,6 +541,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[BENDING_STRAIN_AT_YIELD:58]
 	[MAX_EDGE:10000][DO_NOT_CLEAN_GLOB]
 [REACTION_CLASS:COPPER_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 
@@ -569,6 +585,8 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:BRONZE_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 
 [INORGANIC:DREADNOUGHT] steel + ~25-50%, heavier, adds 50% damage reduction.
@@ -612,6 +630,8 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 [SYNDROME]
 		[SYN_CLASS:DFHACK_ITEM_SYNDROME] 
 [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:START:0]
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 	
 
 
@@ -654,6 +674,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_SCALED]
 [REACTION_CLASS:GOLD_COATING] 
 [REACTION_CLASS:SILVER_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 Ethereal Weapon => Iron, 90-120 days days
@@ -695,6 +716,7 @@ Ethereal Weapon => Iron, 90-120 days days
 	[BENDING_STRAIN_AT_YIELD:73]
 	[MAX_EDGE:10000]
 [REACTION_CLASS:ETHEREAL] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 Empyrean Weapon => Steel, ~30 days
@@ -735,6 +757,7 @@ Empyrean Weapon => Steel, ~30 days
 	[BENDING_STRAIN_AT_YIELD:215]
 	[MAX_EDGE:10000]
 [REACTION_CLASS:EMPYREAN] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 
@@ -777,6 +800,7 @@ Empyrean Weapon => Steel, ~30 days
 	[BENDING_STRAIN_AT_YIELD:73]
 	[MAX_EDGE:10000]
 [REACTION_CLASS:IRON_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 [INORGANIC:RHENAYAS_DARKLIGHT_IRON]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -816,6 +840,7 @@ Empyrean Weapon => Steel, ~30 days
 	[BENDING_STRAIN_AT_YIELD:73]
 	[MAX_EDGE:10000]
 [REACTION_CLASS:IRON_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 	
 
@@ -864,6 +889,8 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_SOFT]
 	[STOCKPILE_THREAD_METAL]
 [REACTION_CLASS:GOLD_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 
 
@@ -904,6 +931,7 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
+[REACTION_CLASS:METAL_DUST] 
 	[ITEMS_SCALED]
 
 
@@ -956,6 +984,8 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_SOFT]	[STOCKPILE_THREAD_METAL]
 [REACTION_CLASS:MITHRIL_COATING]
 	-SPECIAL- => sadly, elves wouldnt wear items of it anymore.
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 // metal from meteors. -20% as good as steel. 
 [INORGANIC:METEORIC_IRON]
@@ -998,6 +1028,7 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_SCALED]
 [REACTION_CLASS:METEORIC_COATING] 
 	[SPECIAL]
+[REACTION_CLASS:METAL_DUST] 
 
 
 
@@ -1040,6 +1071,7 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 
+[REACTION_CLASS:METAL_DUST] 
 
 [INORGANIC:NICKEL_SILVER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -1078,6 +1110,7 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:SILVER_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:ORICHALCUM_ORC] Excellent impact modulus and superior edge; otherwise like steel
@@ -1122,6 +1155,8 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_SOFT]
 	[STOCKPILE_THREAD_METAL]
 [REACTION_CLASS:ORICHALCUM_ORC_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 [INORGANIC:PIG_IRON]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -1155,6 +1190,7 @@ Empyrean Weapon => Steel, ~30 days
 	[BENDING_FRACTURE:200000]
 	[BENDING_STRAIN_AT_YIELD:62]
 	[MAX_EDGE:10000]
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:PLATINUM]
@@ -1195,6 +1231,8 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[ITEMS_ARMOR]
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 
 
@@ -1237,6 +1275,7 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:PEWTER_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 [INORGANIC:PEWTER_LAY]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -1275,6 +1314,7 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:PEWTER_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:PEWTER_TRIFLE]
@@ -1314,6 +1354,7 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:PEWTER_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:ROSE_GOLD]
@@ -1355,6 +1396,7 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:GOLD_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:RUSTY_IRON]
@@ -1395,6 +1437,7 @@ Empyrean Weapon => Steel, ~30 days
 	[BENDING_FRACTURE:280000]
 	[BENDING_STRAIN_AT_YIELD:53]
 	[MAX_EDGE:7000]
+[REACTION_CLASS:METAL_DUST] 
 
 
 // -20% as good as steel. must be cleaned in the crucible
@@ -1438,6 +1481,7 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:GRAY]
+[REACTION_CLASS:METAL_DUST] 
 
 	
 
@@ -1482,6 +1526,7 @@ Empyrean Weapon => Steel, ~30 days
 	[MAX_EDGE:10000]
 	[STOCKPILE_THREAD_METAL]
 [REACTION_CLASS:SILVER_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:SLAG] 
@@ -1518,6 +1563,7 @@ Empyrean Weapon => Steel, ~30 days
 	[MAX_EDGE:0]
 [REACTION_CLASS:SLAG] 
 	-SPECIAL- => hopefully helps with moods.
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:SPRING_STEEL]
@@ -1553,6 +1599,8 @@ Empyrean Weapon => Steel, ~30 days
 	[BENDING_STRAIN_AT_YIELD:215]
 	[MAX_EDGE:10000]
 [REACTION_CLASS:STEEL_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 [INORGANIC:STEEL]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -1592,6 +1640,8 @@ Empyrean Weapon => Steel, ~30 days
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:STEEL_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 temperature values unknown, used silver
 value is weighted average of 3 silver and 1 copper
@@ -1632,6 +1682,7 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:SILVER_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 [INORGANIC:TIN]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -1670,6 +1721,7 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:TITANIUM] it actually really sucks compared to steel, but it's worth more.
@@ -1711,6 +1763,8 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_STRAIN_AT_YIELD:357]
 	[MAX_EDGE:10000]
 [REACTION_CLASS:TITANIUM_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 	
 // twice as good as steel
@@ -1748,6 +1802,8 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_STRAIN_AT_YIELD:430]
 	[MAX_EDGE:20000] 10000
 	[SPECIAL]
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 
 
@@ -1789,6 +1845,7 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_STRAIN_AT_YIELD:156]
 	[MAX_EDGE:10000]
 	[REACTION_CLASS:COPPER_COATING] 
+[REACTION_CLASS:METAL_DUST] 
 
 
 [INORGANIC:WOLFRAM] super hard, super dense, heat immune. This stuff rocks.
@@ -1830,6 +1887,8 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:WOLFRAM_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 	-SPECIAL-
 
 
@@ -1872,6 +1931,7 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
+[REACTION_CLASS:METAL_DUST] 
 
 
 
@@ -1913,7 +1973,9 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:CHROME_COATING]
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
+[REACTION_CLASS:METAL_DUST] 
 
 
 
@@ -1956,6 +2018,8 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:COBALT_COATING]
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 
 [INORGANIC:PATTERN_MITHRIL]
@@ -1997,7 +2061,9 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_STRAIN_AT_YIELD:495]
 	[MAX_EDGE:20000]
 [REACTION_CLASS:MITHRIL_COATING] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
+[REACTION_CLASS:METAL_DUST] 
 
 [INORGANIC:PATTERN_TITANIUM]
 	[SPECIAL]
@@ -2037,6 +2103,8 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:TITANIUM_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 [INORGANIC:PATTERN_WOLFRAM] 
 	[SPECIAL]
@@ -2077,6 +2145,8 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 [REACTION_CLASS:WOLFRAM_COATING] 
+[REACTION_CLASS:METAL_DUST] 
+[REACTION_CLASS:METAL_DUST_GREATER] 
 
 
 [INORGANIC:SLADE]
@@ -2116,6 +2186,7 @@ value is weighted average of 3 silver and 1 copper
 [IS_STONE]
 -UNDIGGABLE-
 [DO_NOT_CLEAN_GLOB]
+[REACTION_CLASS:SLADE_DUST] 
 
 
 
@@ -2268,6 +2339,7 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_STRAIN_AT_YIELD:120]
 	[MAX_EDGE:10000]
 	[REACTION_CLASS:SILVER_COATING] [ITEMS_WEAPON]
+[REACTION_CLASS:METAL_DUST] 
 
 //30 times damage against GOOD
 [INORGANIC:SHADESILVER]
@@ -2304,3 +2376,4 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_STRAIN_AT_YIELD:120]
 	[MAX_EDGE:10000]
 	[REACTION_CLASS:SILVER_COATING] [ITEMS_WEAPON]
+[REACTION_CLASS:METAL_DUST] 

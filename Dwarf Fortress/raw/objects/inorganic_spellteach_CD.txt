@@ -1,0 +1,2018 @@
+inorganic_spellteach_CD
+
+[OBJECT:INORGANIC]
+
+[INORGANIC:TEACH_SPELL_FIRE_BURN]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Burn]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_FIRE_BURN]
+	[CDI:ADV_NAME:Burn]
+	[CDI:TARGET:C:TOUCHABLE]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Burn:casts Burn:NA]
+	[CDI:TARGET_VERB:is badly burnt:is badly burnt]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:500]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_FIRE_FIREJET]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Fire Jet]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_FIRE_FIREJET]
+	[CDI:ADV_NAME:Fire Jet]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Fire Jet:casts Fire Jet:NA]
+	[CDI:TARGET_VERB:is hit by a jet of flame:is hit by a jet of flame]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_FIRE_FIREBALL]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Fire Ball]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_FIRE_FIREBALL]
+	[CDI:ADV_NAME:Fire Ball]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Fire Ball:casts Fire Ball:NA]
+	[CDI:TARGET_VERB:is caught in a ball of fire:is caught in a ball of fire]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_FIRE_DRAGONFIRE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Dragon Fire]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_FIRE_DRAGONFIRE]
+	[CDI:ADV_NAME:Dragon Fire]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Dragon Fire:casts Dragon Fire:NA]
+	[CDI:TARGET_VERB:is engulfed by dragon fire:is engulfed by dragon fire]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_FIRE_INCINERATE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Incinerate]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_FIRE_INCINERATE]
+	[CDI:ADV_NAME:Incinerate]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Incinerate:casts Incinerate:NA]
+	[CDI:TARGET_VERB:is melted:is melted]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ICE_FREEZE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Freeze]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ICE_FREEZE]
+	[CDI:ADV_NAME:Freeze]
+	[CDI:TARGET:C:TOUCHABLE]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Freeze:casts Freeze:NA]
+	[CDI:TARGET_VERB:is frozen in place:is frozen in place]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ICE_ICICLE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Icicle]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ICE_ICICLE]
+	[CDI:ADV_NAME:Icicle]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Icicle:casts Icicle:NA]
+	[CDI:TARGET_VERB:is struck by a shard of ice:is struck by a shard of ice]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:500]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ICE_ARCTIC_WIND]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Arctic WInd]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ICE_ARCTIC_WIND]
+	[CDI:ADV_NAME:Arctic WInd]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Arctic Wind:casts Arctic Wind:NA]
+	[CDI:TARGET_VERB:is enveloped by a bitter wind:is enveloped by a bitter wind]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ICE_BLIZZARD]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Blizzard]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ICE_BLIZZARD]
+	[CDI:ADV_NAME:Blizzard]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Blizzard:casts Blizzard:NA]
+	[CDI:TARGET_VERB:is pummeled by a ferocious blizzard:is pummeled by a ferocious blizzard]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ICE_FROST_NOVA]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Frost Nova]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ICE_FROST_NOVA]
+	[CDI:ADV_NAME:Frost Nova]
+	[CDI:TARGET:C:TOUCHABLE]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Frost Nova:casts Frost Nova:NA]
+	[CDI:TARGET_VERB:is caught in an explosion of ice:is caught in an explosion of ice]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_AIR_BLIND]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Blind]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_AIR_BLIND]
+	[CDI:ADV_NAME:Blind]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Blind:casts Blind:NA]
+	[CDI:TARGET_VERB:is blinded by a gust of wind:is blinded by a gust of wind]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_AIR_LIGHTNING]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Lightning]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_AIR_LIGHTNING]
+	[CDI:ADV_NAME:Lightning]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Lightning:casts Lightning:NA]
+	[CDI:TARGET_VERB:is struck by a bolt of lightning:is struck by a bolt of lightning]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:500]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_AIR_CHAIN_LIGHTNING]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Chain Lightning]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_AIR_CHAIN_LIGHTNING]
+	[CDI:ADV_NAME:Chain Lightning]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Chain Lightning:casts Chain Lightning:NA]
+	[CDI:TARGET_VERB:is struck by several bolts of lightning:is struck by several bolts of lightning]
+	[CDI:MAX_TARGET_NUMBER:C:3]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_AIR_SHOCK]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Shock]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_AIR_SHOCK]
+	[CDI:ADV_NAME:Shock]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Shock:casts Shock:NA]
+	[CDI:TARGET_VERB:is badly shocked:is badly shocked]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_AIR_GUST]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Gust]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_AIR_GUST]
+	[CDI:ADV_NAME:Gust]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Gust:casts Gust:NA]
+	[CDI:TARGET_VERB:is blown away by a gust of wind:is blown away by a gust of wind]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_EARTH_BIND]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Bind]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_EARTH_BIND]
+	[CDI:ADV_NAME:Bind]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Bind:casts Bind:NA]
+	[CDI:TARGET_VERB:is bound to the earth:is bound to the earth]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_EARTH_PETRIFY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Petrify]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_EARTH_PETRIFY]
+	[CDI:ADV_NAME:Petrify]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Petrify:casts Petrify:NA]
+	[CDI:TARGET_VERB:is turned to stone:is turned to stone]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_EARTH_BOULDER]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Boulder]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_EARTH_BOULDER]
+	[CDI:ADV_NAME:Boulder]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Boulder:casts Boulder:NA]
+	[CDI:TARGET_VERB:is hit by a large boulder:is hit by a large boulder]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:500]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_EARTH_STONESKIN]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Stoneskin]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_EARTH_STONESKIN]
+	[CDI:ADV_NAME:Stoneskin]
+	[CDI:TARGET:C:SELF_ALLOWED]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Stoneskin:casts Stoneskin:NA]
+	[CDI:TARGET_VERB:is protected by stone:is protected by stone]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_EARTH_ROCK_SLIDE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Rock Slide]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_EARTH_ROCK_SLIDE]
+	[CDI:ADV_NAME:Rock Slide]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Rock Slide:casts Rock Slide:NA]
+	[CDI:TARGET_VERB:is caught in a rock slide:is caught in a rock slide]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ARCANE_HASTE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Haste]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ARCANE_HASTE]
+	[CDI:ADV_NAME:Haste]
+	[CDI:TARGET:C:SELF_ALLOWED]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Haste:casts Haste:NA]
+	[CDI:TARGET_VERB:is imbued with haste:is imbued with haste]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ARCANE_SLOW]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Slow]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ARCANE_SLOW]
+	[CDI:ADV_NAME:Slow]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Slow:casts Slow:NA]
+	[CDI:TARGET_VERB:is slowed to a crawl:is slowed to a crawl]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ARCANE_BLINK]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Blink]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ARCANE_BLINK]
+	[CDI:ADV_NAME:Blink]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:FLEEING]
+	[CDI:VERB:cast Blink:casts Blink:NA]
+	[CDI:TARGET_VERB:blinks ahead:blinks ahead]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ARCANE_ARCANE_MISSLE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Arcane Missle]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ARCANE_ARCANE_MISSLE]
+	[CDI:ADV_NAME:Arcane Missle]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Arcane Missle:casts Arcane Missle:NA]
+	[CDI:TARGET_VERB:is hit by an arrow of arcane energy:is hit by an arrow of arcane energy]
+	[CDI:MAX_TARGET_NUMBER:C:3]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_ARCANE_ARCANE_ARMOR]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Arcane Armor]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_ARCANE_ARCANE_ARMOR]
+	[CDI:ADV_NAME:Arcane Armor]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Arcane Armor:casts Arcane Armor:NA]
+	[CDI:TARGET_VERB:is fortified by arcane energy:is fortified by arcane energy]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_HEAL]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Heal]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_HEAL]
+	[CDI:ADV_NAME:Heal]
+	[CDI:TARGET:C:TOUCHABLE]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Heal:casts Heal:NA]
+	[CDI:TARGET_VERB:is healed:is healed]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_GREATER_HEAL]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Greater Heal]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_GREATER_HEAL]
+	[CDI:ADV_NAME:Greater Heal]
+	[CDI:TARGET:C:TOUCHABLE]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Greater Heal:casts Greater Heal:NA]
+	[CDI:TARGET_VERB:is healed:is healed]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_REJUVENATE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Rejuvenate]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_REJUVENATE]
+	[CDI:ADV_NAME:Rejuvenate]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Rejuvenate:casts Rejuvenate:NA]
+	[CDI:TARGET_VERB:is rejuvenated:is rejuvenated]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:10000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_CLEANSE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Cleanse]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_CLEANSE]
+	[CDI:ADV_NAME:Cleanse]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Cleanse:casts Cleanse:NA]
+	[CDI:TARGET_VERB:is cleansed:is cleansed]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_WARD]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Ward]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_WARD]
+	[CDI:ADV_NAME:Ward]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Ward:casts Ward:NA]
+	[CDI:TARGET_VERB:is warded:is warded]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_BLESS]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Bless]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_BLESS]
+	[CDI:ADV_NAME:Bless]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Bless:casts Bless:NA]
+	[CDI:TARGET_VERB:is blessed:is blessed]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_SANCTIFY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Sanctify]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_SANCTIFY]
+	[CDI:ADV_NAME:Sanctify]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Sanctify:casts Sanctify:NA]
+	[CDI:TARGET_VERB:is sanctified:is sanctified]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_RESURRECT]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Resurrect]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_RESURRECT]
+	[CDI:ADV_NAME:Resurrect]
+	[CDI:TARGET:C:TOUCHABLE]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Resurrect:casts Resurrect:NA]
+	[CDI:TARGET_VERB:is resurrected:is resurrected]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:10000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_FORTIFY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Fortify]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_FORTIFY]
+	[CDI:ADV_NAME:Fortify]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Fortify:casts Fortify:NA]
+	[CDI:TARGET_VERB:is fortified:is fortified]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_HOLY_ARMOR]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Holy Armor]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_HOLY_ARMOR]
+	[CDI:ADV_NAME:Holy Armor]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Holy Armor:casts Holy Armor:NA]
+	[CDI:TARGET_VERB:is covered in holy armor:is covered in holy armor]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_TURN_UNDEAD]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Turn Undead]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_TURN_UNDEAD]
+	[CDI:ADV_NAME:Turn Undead]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Turn Undead:casts Turn Undead:NA]
+	[CDI:TARGET_VERB:is filled with fear:is filled with fear]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_LIGHT_HOLY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Holy]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_LIGHT_HOLY]
+	[CDI:ADV_NAME:Holy]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Holy:casts Holy:NA]
+	[CDI:TARGET_VERB:is engulfed in holy light:is engulfed in holy light]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_CURSE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Curse]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_CURSE]
+	[CDI:ADV_NAME:Curse]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Curse:casts Curse:NA]
+	[CDI:TARGET_VERB:is cursed:is cursed]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_NECROSIS]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Necrosis]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_NECROSIS]
+	[CDI:ADV_NAME:Necrosis]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Necrosis:casts Necrosis:NA]
+	[CDI:TARGET_VERB:is decaying:is decaying]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_ENFEEBLE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Enfeeble]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_ENFEEBLE]
+	[CDI:ADV_NAME:Enfeeble]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Enfeeble:casts Enfeeble:NA]
+	[CDI:TARGET_VERB:is weakend:is weakend]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_DRAIN_LIFE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Drain Life]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_DRAIN_LIFE]
+	[CDI:ADV_NAME:Drain Life]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Drain Life:casts Drain Life:NA]
+	[CDI:TARGET_VERB:is drained of life:is drained of life]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_AGONY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Agony]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_AGONY]
+	[CDI:ADV_NAME:Agony]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Agony:casts Agony:NA]
+	[CDI:TARGET_VERB:is filled with agony:is filled with agony]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_DARK_PACT]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Dark Pact]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_DARK_PACT]
+	[CDI:ADV_NAME:Dark Pact]
+	[CDI:TARGET:C:TOUCHABLE]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Dark Pact:casts Dark Pact:NA]
+	[CDI:TARGET_VERB:is marked for death:is marked for death]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_SHACKLE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Shackle]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_SHACKLE]
+	[CDI:ADV_NAME:Shackle]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Shackle:casts Shackle:NA]
+	[CDI:TARGET_VERB:is shackled by dark magic:is shackled by dark magic]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_BONE_ARMOR]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Bone Armor]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_BONE_ARMOR]
+	[CDI:ADV_NAME:Bone Armor]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Bone Armor:casts Bone Armor:NA]
+	[CDI:TARGET_VERB:is covered in bone armor:is covered in bone armor]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_RAISE_CORPSE_FRIENDLY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Raise Dead (friendly)]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_RAISE_CORPSE_FRIENDLY]
+	[CDI:ADV_NAME:Raise Dead (friendly)]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Raise Dead (friendly):casts Raise Dead (friendly):NA]
+	[CDI:TARGET_VERB:is raised as a friendly servant:is raised as a friendly servant]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:10000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_DARK_RAISE_CORPSE_VIOLENT]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Raise Dead (violent)]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_DARK_RAISE_CORPSE_VIOLENT]
+	[CDI:ADV_NAME:Raise Dead (violent)]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Raise Dead (violent):casts Raise Dead (violent):NA]
+	[CDI:TARGET_VERB:is raised as a violent servant:is raised as a violent servant]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_MIND_FURY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Fury]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_MIND_FURY]
+	[CDI:ADV_NAME:Fury]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Fury:casts Fury:NA]
+	[CDI:TARGET_VERB:is filled with fury:is filled with fury]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_MIND_CALM]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Calm]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_MIND_CALM]
+	[CDI:ADV_NAME:Calm]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Calm:casts Calm:NA]
+	[CDI:TARGET_VERB:is calmed:is calmed]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_NATURE_ENTANGLE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Entangle]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_NATURE_ENTANGLE]
+	[CDI:ADV_NAME:Entangle]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Entangle:casts Entangle:NA]
+	[CDI:TARGET_VERB:is entangled by plants:is entangled by plants]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_NATURE_BARKSKIN]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Barkskin]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_NATURE_BARKSKIN]
+	[CDI:ADV_NAME:Barkskin]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Barkskin:casts Barkskin:NA]
+	[CDI:TARGET_VERB:is covered in strong bark:is covered in strong bark]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_SPELL_NATURE_POISON]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Poison]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:SPELL_NATURE_POISON]
+	[CDI:ADV_NAME:Poison]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:15]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Poison:casts Poison:NA]
+	[CDI:TARGET_VERB:is poisoned:is poisoned]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_WARRIOR_BERSERK]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Berserk]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_WARRIOR_BERSERK]
+	[CDI:ADV_NAME:Berserk]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:FLEEING]
+	[CDI:VERB:cast Berserk:casts Berserk:NA]
+	[CDI:TARGET_VERB:is filled with unstable rage:is filled with unstable rage]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_WARRIOR_HEROIC_STRENGTH]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Heroic Strength]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_WARRIOR_HEROIC_STRENGTH]
+	[CDI:ADV_NAME:Heroic Strength]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Heroic Strength:casts Heroic Strength:NA]
+	[CDI:TARGET_VERB:is filled with heroic strength:is filled with heroic strength]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_WARRIOR_WAR_CRY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt War Cry]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_WARRIOR_WAR_CRY]
+	[CDI:ADV_NAME:War Cry]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast War Cry:casts War Cry:NA]
+	[CDI:TARGET_VERB:is weakend by the loud shout:is weakend by the loud shout]
+	[CDI:MAX_TARGET_NUMBER:C:100]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_WARRIOR_BATTLE_CRY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Battle Cry]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_WARRIOR_BATTLE_CRY]
+	[CDI:ADV_NAME:Battle Cry]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Battle Cry:casts Battle Cry:NA]
+	[CDI:TARGET_VERB:is strengthend by the loud shout:is strengthend by the loud shout]
+	[CDI:MAX_TARGET_NUMBER:C:100]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_WARRIOR_INTIMIDATE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Intimidate]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_WARRIOR_INTIMIDATE]
+	[CDI:ADV_NAME:Intimidate]
+	[CDI:TARGET:C:TOUCHABLE]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Intimidate:casts Intimidate:NA]
+	[CDI:TARGET_VERB:is intimidated:is intimidated]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_WARRIOR_CHARGE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Charge]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_WARRIOR_CHARGE]
+	[CDI:ADV_NAME:Charge]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Charge:casts Charge:NA]
+	[CDI:TARGET_VERB:charges ahead:charges ahead]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_WARRIOR_RALLY]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Rally]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_WARRIOR_RALLY]
+	[CDI:ADV_NAME:Rally]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:GREETING]
+	[CDI:VERB:cast Rally:casts Rally:NA]
+	[CDI:TARGET_VERB:is filled with courage:is filled with courage]
+	[CDI:MAX_TARGET_NUMBER:C:100]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_ROGUE_HIDE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Hide]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_ROGUE_HIDE]
+	[CDI:ADV_NAME:Hide]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:FLEEING]
+	[CDI:VERB:cast Hide:casts Hide:NA]
+	[CDI:TARGET_VERB:hides:hides]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_ROGUE_EVADE]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Evade]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_ROGUE_EVADE]
+	[CDI:ADV_NAME:Evade]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:FLEEING]
+	[CDI:VERB:cast Evade:casts Evade:NA]
+	[CDI:TARGET_VERB:begins evading attacks:begins evading attacks]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_ROGUE_SPEED]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Speed]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_ROGUE_SPEED]
+	[CDI:ADV_NAME:Speed]
+	[CDI:TARGET:C:SELF_ONLY]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:FLEEING]
+	[CDI:VERB:cast Speed:casts Speed:NA]
+	[CDI:TARGET_VERB:is filled with speed:is filled with speed]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_ROGUE_MARK_FOR_DEATH]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Mark for Death]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_ROGUE_MARK_FOR_DEATH]
+	[CDI:ADV_NAME:Mark for Death]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:10]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Mark for Death:casts Mark for Death:NA]
+	[CDI:TARGET_VERB:is marked for death:is marked for death]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:2000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_ROGUE_POISON_FLASK]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Poison Flask]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_ROGUE_POISON_FLASK]
+	[CDI:ADV_NAME:Poison Flask]
+	[CDI:TARGET:C:LINE_OF_SIGHT]
+	[CDI:TARGET_RANGE:C:5]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Poison Flask:casts Poison Cloud:NA]
+	[CDI:TARGET_VERB:is poisoned by the flask:is poisoned by the cloud]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:1000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
+
+[INORGANIC:TEACH_ABILITY_ROGUE_SMOKE_BOMB]
+	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[STATE_NAME_ADJ:LIQUID:molten failure stone]
+	[STATE_NAME_ADJ:GAS:blinding light]
+	[SYNDROME]
+	[SYN_AFFECTED_CLASS:WARLOCK_M][SYN_AFFECTED_CLASS:WARLOCK_F][SYN_CLASS:\AUTO_SYNDROME] was command, which is not needed for autosyndrome to affect workers with syndromes. You only need it to run other scripts using autosyndrome.
+	was worker_only, which is default in r4.
+	was location, which is not neede for autosyndrome
+	was worker id, which is not needed for autosyndrome
+	was reaction_index, not entirely sure what it did, but not necessary ^^
+	[SYN_NAME:learnt Smoke Bomb]
+	was syn contact. not needed.
+	was syn inhaled. not needed.
+	[CE_CAN_DO_INTERACTION:PROB:100:START:0]
+	[CDI:INTERACTION:ABILITY_ROGUE_SMOKE_BOMB]
+	[CDI:ADV_NAME:Smoke Bomb]
+	[CDI:TARGET:C:TOUCHABLE]
+	[CDI:TARGET_RANGE:C:1]
+	[CDI:USAGE_HINT:ATTACK]
+	[CDI:VERB:cast Smoke Bomb:casts Smoke Cloud:NA]
+	[CDI:TARGET_VERB:is caught in a smoke cloud:is caught in a cloud of smoke]
+	[CDI:MAX_TARGET_NUMBER:C:1]
+	[CDI:WAIT_PERIOD:5000]
+	[DISPLAY_COLOR:4:4:1]
+	[TILE:'*']
+	was melting point. removed, because it uses stone vapor template anyway.
+	was boilign point. removed, because it uses stone vapor template anyway.
+	was solid-density. not needed.
+	[MATERIAL_VALUE:0] I set it from 1 to 0.
