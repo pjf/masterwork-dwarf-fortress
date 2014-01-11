@@ -381,6 +381,15 @@ Imports System.ComponentModel
             If MsgBox("Run test? This will change raws!", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.No Then Exit Sub
             testSettings(tabMain)
             MsgBox("Test Complete.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
+        ElseIf e.Shift And e.Alt And e.KeyCode = Keys.Oemtilde Then
+            Dim frmInfo As New Form
+            Dim rtext As New RichTextBox
+            frmInfo.Controls.Add(rtext)
+            rtext.Dock = DockStyle.Fill
+
+            printOptions(tabMain, rtext)
+
+            frmInfo.Show()
         End If
     End Sub
 
@@ -405,6 +414,33 @@ Imports System.ComponentModel
 
                 If c.HasChildren Then
                     testSettings(c)
+                End If
+            End If
+        Next
+    End Sub
+
+    Private Sub printOptions(ByVal parentControl As Control, ByRef rText As RichTextBox)
+        If Not Debugger.IsAttached Then Exit Sub
+
+        For Each c As Control In parentControl.Controls
+            If Not c.Enabled Then
+                Debug.WriteLine("skipping disabled control: " & c.Name)
+            Else
+                Dim conOpt As iExportInfo = TryCast(c, iExportInfo)
+                If conOpt IsNot Nothing Then
+                    Try
+                        rText.AppendText("Option: " & c.Name & " (" & c.Text & ") " & IIf(ToolTipMaker.GetToolTip(c) <> "", ToolTipMaker.GetToolTip(c).Replace(vbCrLf, " "), "") & vbCrLf)
+                        rText.AppendText(ControlChars.Tab & "Files: " & String.Join(", ", conOpt.fileInfo) & vbCrLf)
+                        rText.AppendText(ControlChars.Tab & "Tags:" & vbCrLf & ControlChars.Tab & ControlChars.Tab)
+                        rText.AppendText(String.Join(vbCrLf & ControlChars.Tab & ControlChars.Tab, conOpt.optionInfo))
+                        rText.AppendText(vbCrLf & vbCrLf)
+                    Catch ex As Exception
+                        Debug.WriteLine("!PRINT EXCEPTION! " & ex.ToString)
+                    End Try
+                End If
+
+                If c.HasChildren Then
+                    printOptions(c, rText)
                 End If
             End If
         Next
