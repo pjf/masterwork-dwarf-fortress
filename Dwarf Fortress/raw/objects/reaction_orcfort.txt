@@ -1206,6 +1206,8 @@ YESSTORAGE[PRODUCT:100:10:BAR:NONE:CREATURE_MAT:ENGINEER_CRATE:SOAP]YESSTORAGE[P
 ### Orcish Melting Pit
 ### A batch smelting furnace, crude by dwarven standards,
 ### and allows either refitting or slagging of unwanted gear
+###
+### Also doubles as a slag pit (reactions in reaction_masterwork2.txt)
 #############
 
 [REACTION:MAKESHIFT_FLAIL_ORC]
