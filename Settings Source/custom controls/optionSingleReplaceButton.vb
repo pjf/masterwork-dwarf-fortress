@@ -7,7 +7,7 @@ Public Class optionSingleReplaceButton
     Inherits mwCheckBox
     Implements iToken
     Implements iTest
-
+    Implements iExportInfo
 
     Public Sub New()
         MyBase.New()
@@ -60,4 +60,12 @@ Public Class optionSingleReplaceButton
         Me.Checked = Not Me.Checked
         Me.Checked = Not Me.Checked
     End Sub
+
+    Public Function fileInfo() As List(Of String) Implements iExportInfo.fileInfo
+        Return m_opt.fullFileList
+    End Function
+
+    Public Function optionInfo() As List(Of String) Implements iExportInfo.optionInfo
+        Return m_opt.optionInfo
+    End Function
 End Class

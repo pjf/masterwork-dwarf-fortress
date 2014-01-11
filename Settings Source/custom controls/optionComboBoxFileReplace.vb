@@ -64,5 +64,6 @@ Public Class optionComboBoxFileReplace
         Next
         optionComboBox_SelectionChangeCommitted(Me, New EventArgs)
     End Sub
+
 End Class
 

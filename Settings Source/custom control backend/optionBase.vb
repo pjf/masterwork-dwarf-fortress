@@ -59,6 +59,17 @@ Public Class optionBase
         End Set
     End Property
 
+    Public ReadOnly Property optionInfo As List(Of String)
+        Get
+            Dim idt As String = ControlChars.Tab & ControlChars.Tab
+            Dim br As String = vbCrLf
+            Dim strInfo As New List(Of String)
+            For Each t As rawToken In m_tokens
+                strInfo.Add(IIf(t.tokenName <> "", "Name: " & t.tokenName & br & idt, "") & "{ON} " & t.optionOnValue & br & idt & "{OFF} " & t.optionOffValue & br)
+            Next
+            Return strInfo
+        End Get
+    End Property
 
     Public Function loadOption() As Object
         Return m_optionManager.loadOption(m_fileManager.getFilePaths, m_tokens, m_settingManager)
@@ -84,5 +95,24 @@ Public Class optionBase
         Set(value As Boolean)
             m_internalChange = value
         End Set
+    End Property
+
+    Public ReadOnly Property fullFileList As List(Of String)
+        Get
+            Dim files As New List(Of String)
+            If m_optionManager.loadFromDInit Then files.Add(m_dInitFileName)
+            If m_optionManager.loadFromInit Then files.Add(m_initFileName)
+            If m_optionManager.loadFromWorldGen Then files.Add(m_worldGenFileName)
+
+            If m_fileManager.fileNames IsNot Nothing Then
+                files.AddRange(m_fileManager.fileNames)
+            End If
+
+            If m_updateTileSets Then
+                files.Add("** Affects graphic packs! **")
+            End If
+
+            Return files
+        End Get
     End Property
 End Class
