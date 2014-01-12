@@ -32,7 +32,7 @@ diggingInvaders setCost FROST_GIANT destroySmoothConstruction -1
 diggingInvaders setDelay FROST_GIANT destroyBuilding 50
 diggingInvaders setDelay FROST_GIANT dig -2
 diggingInvaders setDelay FROST_GIANT destroyRoughConstruction 50
-diggingInvaders setDelay FROST_GIANT destroySmoothConstruction 100
+diggingInvaders setDelay FROST_GIANT destroySmoothConstruction 99
 
 diggingInvaders add AUTOMATON
 diggingInvaders setCost AUTOMATON destroyBuilding -1
@@ -43,7 +43,7 @@ diggingInvaders setCost AUTOMATON destroySmoothConstruction -1
 diggingInvaders setDelay AUTOMATON destroyBuilding 50
 diggingInvaders setDelay AUTOMATON dig -2
 diggingInvaders setDelay AUTOMATON destroyRoughConstruction 50
-diggingInvaders setDelay AUTOMATON destroySmoothConstruction 100
+diggingInvaders setDelay AUTOMATON destroySmoothConstruction 99
 
 diggingInvaders add ANT_MAN
 diggingInvaders setCost ANT_MAN destroyBuilding -2
@@ -65,7 +65,7 @@ diggingInvaders setCost ORC destroySmoothConstruction -1
 diggingInvaders setDelay ORC destroyBuilding 50
 diggingInvaders setDelay ORC dig -2
 diggingInvaders setDelay ORC destroyRoughConstruction 50
-diggingInvaders setDelay ORC destroySmoothConstruction 100
+diggingInvaders setDelay ORC destroySmoothConstruction 99
 
 diggingInvaders add GOBLIN
 diggingInvaders setCost GOBLIN destroyBuilding -2
@@ -76,7 +76,7 @@ diggingInvaders setCost GOBLIN destroySmoothConstruction -2
 diggingInvaders setDelay GOBLIN destroyBuilding 50
 diggingInvaders setDelay GOBLIN dig -1
 diggingInvaders setDelay GOBLIN destroyRoughConstruction 50
-diggingInvaders setDelay GOBLIN destroySmoothConstruction 100
+diggingInvaders setDelay GOBLIN destroySmoothConstruction 99
 
 diggingInvaders add HUMAN
 diggingInvaders setCost HUMAN destroyBuilding -1
@@ -87,7 +87,7 @@ diggingInvaders setCost HUMAN destroySmoothConstruction -1
 diggingInvaders setDelay HUMAN destroyBuilding 50
 diggingInvaders setDelay HUMAN dig -1
 diggingInvaders setDelay HUMAN destroyRoughConstruction 50
-diggingInvaders setDelay HUMAN destroySmoothConstruction 100
+diggingInvaders setDelay HUMAN destroySmoothConstruction 99
 
 diggingInvaders add ELF
 diggingInvaders setCost ELF destroyBuilding -1
@@ -98,7 +98,7 @@ diggingInvaders setCost ELF destroySmoothConstruction -1
 diggingInvaders setDelay ELF destroyBuilding 50
 diggingInvaders setDelay ELF dig -2
 diggingInvaders setDelay ELF destroyRoughConstruction 50
-diggingInvaders setDelay ELF destroySmoothConstruction 100
+diggingInvaders setDelay ELF destroySmoothConstruction 99
 
 diggingInvaders add DROW
 diggingInvaders setCost DROW destroyBuilding -1
@@ -109,7 +109,7 @@ diggingInvaders setCost DROW destroySmoothConstruction -1
 diggingInvaders setDelay DROW destroyBuilding 50
 diggingInvaders setDelay DROW dig -2
 diggingInvaders setDelay DROW destroyRoughConstruction 50
-diggingInvaders setDelay DROW destroySmoothConstruction 100
+diggingInvaders setDelay DROW destroySmoothConstruction 99
 
 diggingInvaders add FORGOTTEN_BEAST_1
 diggingInvaders setCost FORGOTTEN_BEAST_1 destroyBuilding -2
@@ -395,7 +395,7 @@ diggingInvaders setCost TITAN_1 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_1 destroyBuilding 50
 diggingInvaders setDelay TITAN_1 dig -2
 diggingInvaders setDelay TITAN_1 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_1 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_1 destroySmoothConstruction 99
 
 diggingInvaders add TITAN_2
 diggingInvaders setCost TITAN_2 destroyBuilding -1
@@ -406,7 +406,7 @@ diggingInvaders setCost TITAN_2 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_2 destroyBuilding 50
 diggingInvaders setDelay TITAN_2 dig -2
 diggingInvaders setDelay TITAN_2 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_2 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_2 destroySmoothConstruction 99
 
 diggingInvaders add TITAN_3
 diggingInvaders setCost TITAN_3 destroyBuilding -1
@@ -417,7 +417,7 @@ diggingInvaders setCost TITAN_3 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_3 destroyBuilding 50
 diggingInvaders setDelay TITAN_3 dig -2
 diggingInvaders setDelay TITAN_3 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_3 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_3 destroySmoothConstruction 99
 
 diggingInvaders add TITAN_4
 diggingInvaders setCost TITAN_4 destroyBuilding -1
@@ -428,7 +428,7 @@ diggingInvaders setCost TITAN_4 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_4 destroyBuilding 50
 diggingInvaders setDelay TITAN_4 dig -2
 diggingInvaders setDelay TITAN_4 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_4 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_4 destroySmoothConstruction 99
 
 diggingInvaders add TITAN_5
 diggingInvaders setCost TITAN_5 destroyBuilding -1
@@ -439,7 +439,7 @@ diggingInvaders setCost TITAN_5 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_5 destroyBuilding 50
 diggingInvaders setDelay TITAN_5 dig -2
 diggingInvaders setDelay TITAN_5 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_5 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_5 destroySmoothConstruction 99
 
 diggingInvaders add TITAN_6
 diggingInvaders setCost TITAN_6 destroyBuilding -1
@@ -450,7 +450,7 @@ diggingInvaders setCost TITAN_6 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_6 destroyBuilding 50
 diggingInvaders setDelay TITAN_6 dig -2
 diggingInvaders setDelay TITAN_6 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_6 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_6 destroySmoothConstruction 99
 
 diggingInvaders add TITAN_7
 diggingInvaders setCost TITAN_7 destroyBuilding -1
@@ -461,7 +461,7 @@ diggingInvaders setCost TITAN_7 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_7 destroyBuilding 50
 diggingInvaders setDelay TITAN_7 dig -2
 diggingInvaders setDelay TITAN_7 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_7 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_7 destroySmoothConstruction 99
 
 diggingInvaders add TITAN_8
 diggingInvaders setCost TITAN_8 destroyBuilding -1
@@ -472,7 +472,7 @@ diggingInvaders setCost TITAN_8 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_8 destroyBuilding 50
 diggingInvaders setDelay TITAN_8 dig -2
 diggingInvaders setDelay TITAN_8 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_8 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_8 destroySmoothConstruction 99
 
 diggingInvaders add TITAN_9
 diggingInvaders setCost TITAN_9 destroyBuilding -1
@@ -483,7 +483,7 @@ diggingInvaders setCost TITAN_9 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_9 destroyBuilding 50
 diggingInvaders setDelay TITAN_9 dig -2
 diggingInvaders setDelay TITAN_9 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_9 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_9 destroySmoothConstruction 99
 
 diggingInvaders add TITAN_10
 diggingInvaders setCost TITAN_10 destroyBuilding -1
@@ -494,7 +494,7 @@ diggingInvaders setCost TITAN_10 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_10 destroyBuilding 50
 diggingInvaders setDelay TITAN_10 dig -2
 diggingInvaders setDelay TITAN_10 destroyRoughConstruction 50
-diggingInvaders setDelay TITAN_10 destroySmoothConstruction 100
+diggingInvaders setDelay TITAN_10 destroySmoothConstruction 99
 
 diggingInvaders add DRAGON
 diggingInvaders setCost DRAGON destroyBuilding -1
@@ -505,7 +505,7 @@ diggingInvaders setCost DRAGON destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON destroyBuilding 50
 diggingInvaders setDelay DRAGON dig -1
 diggingInvaders setDelay DRAGON destroyRoughConstruction 50
-diggingInvaders setDelay DRAGON destroySmoothConstruction 100
+diggingInvaders setDelay DRAGON destroySmoothConstruction 99
 
 diggingInvaders add DRAGON_CHROMATIC
 diggingInvaders setCost DRAGON_CHROMATIC destroyBuilding -1
@@ -516,7 +516,7 @@ diggingInvaders setCost DRAGON_CHROMATIC destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON_CHROMATIC destroyBuilding 50
 diggingInvaders setDelay DRAGON_CHROMATIC dig -1
 diggingInvaders setDelay DRAGON_CHROMATIC destroyRoughConstruction 50
-diggingInvaders setDelay DRAGON_CHROMATIC destroySmoothConstruction 100
+diggingInvaders setDelay DRAGON_CHROMATIC destroySmoothConstruction 99
 
 diggingInvaders add DRAGON_BLUE
 diggingInvaders setCost DRAGON_BLUE destroyBuilding -1
@@ -527,7 +527,7 @@ diggingInvaders setCost DRAGON_BLUE destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON_BLUE destroyBuilding 50
 diggingInvaders setDelay DRAGON_BLUE dig -1
 diggingInvaders setDelay DRAGON_BLUE destroyRoughConstruction 50
-diggingInvaders setDelay DRAGON_BLUE destroySmoothConstruction 100
+diggingInvaders setDelay DRAGON_BLUE destroySmoothConstruction 99
 
 diggingInvaders add DRAGON_GREEN
 diggingInvaders setCost DRAGON_GREEN destroyBuilding -1
@@ -538,7 +538,7 @@ diggingInvaders setCost DRAGON_GREEN destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON_GREEN destroyBuilding 50
 diggingInvaders setDelay DRAGON_GREEN dig -1
 diggingInvaders setDelay DRAGON_GREEN destroyRoughConstruction 50
-diggingInvaders setDelay DRAGON_GREEN destroySmoothConstruction 100
+diggingInvaders setDelay DRAGON_GREEN destroySmoothConstruction 99
 
 diggingInvaders add DRAGON_SKY
 diggingInvaders setCost DRAGON_SKY destroyBuilding -1
@@ -549,7 +549,7 @@ diggingInvaders setCost DRAGON_SKY destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON_SKY destroyBuilding 50
 diggingInvaders setDelay DRAGON_SKY dig -1
 diggingInvaders setDelay DRAGON_SKY destroyRoughConstruction 50
-diggingInvaders setDelay DRAGON_SKY destroySmoothConstruction 100
+diggingInvaders setDelay DRAGON_SKY destroySmoothConstruction 99
 
 diggingInvaders add BEHEMOTH
 diggingInvaders setCost BEHEMOTH destroyBuilding -1
@@ -560,7 +560,7 @@ diggingInvaders setCost BEHEMOTH destroySmoothConstruction -1
 diggingInvaders setDelay BEHEMOTH destroyBuilding 50
 diggingInvaders setDelay BEHEMOTH dig -1
 diggingInvaders setDelay BEHEMOTH destroyRoughConstruction 50
-diggingInvaders setDelay BEHEMOTH destroySmoothConstruction 100
+diggingInvaders setDelay BEHEMOTH destroySmoothConstruction 99
 
 diggingInvaders add BALROG
 diggingInvaders setCost BALROG destroyBuilding -1
@@ -571,7 +571,7 @@ diggingInvaders setCost BALROG destroySmoothConstruction -1
 diggingInvaders setDelay BALROG destroyBuilding 50
 diggingInvaders setDelay BALROG dig -1
 diggingInvaders setDelay BALROG destroyRoughConstruction 50
-diggingInvaders setDelay BALROG destroySmoothConstruction 100
+diggingInvaders setDelay BALROG destroySmoothConstruction 99
 
 enable automaterial
 enable autoSyndrome
