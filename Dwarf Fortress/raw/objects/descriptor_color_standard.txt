@@ -383,11 +383,6 @@ Most of these are from Wikipedia's color list.
 	[WORD:BLUE]
 	[RGB:0:51:102]
 
-[COLOR:MEDNIGHT_BLUE]
-	[NAME:midnight blue]
-	[WORD:BLUE]
-	[RGB:0:51:102]
-
 [COLOR:MINT_GREEN]
 	[NAME:mint green]
 	[WORD:GREEN]
