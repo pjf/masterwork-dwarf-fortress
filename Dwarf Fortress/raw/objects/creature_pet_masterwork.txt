@@ -2936,7 +2936,7 @@ YESDOMESTICPET[OBJECT:CREATURE]
 
 
 [CREATURE:MOTH_SILK]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A little white moth. Its larva spin cocoons that can be made into silk]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A little white moth. Its larvae spin cocoons that can be made into silk]
 	[NAME:silk moth:silk moths:silk moth]
 	[CREATURE_TILE:'C'][COLOR:0:15:0]
 	[NATURAL]
