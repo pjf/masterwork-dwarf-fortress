@@ -17,6 +17,7 @@ forum-patchlog.pl
 
     $ ./forum-patchlog.pl       # Show BB code
     $ ./forum-patchlog.pl -T    # Show text
+    $ ./forum-patchlog.pl -m    # show markdown
 
 =head1 DESCRIPTION
 
@@ -46,11 +47,12 @@ my $config = Config::Tiny->read("$Bin/maint-settings.ini");
 
 my %opts = (
     T => 0, # 'text', show without markup
+    m => 0, # 'markdown',
     a => 0, # 'all', always show since upstream
     A => 0, # 'ALL', show everything ever
 );
 
-getopts('TaA',\%opts);
+getopts('TmaA',\%opts);
 
 my $REPO_ROOT = $config->{git}{root} || "https://github.com/pjf/masterwork-dwarf-fortress";
 my $MASTER    = $config->{git}{master} || "gold";
@@ -86,7 +88,8 @@ my $EXCLUDED_COMMIT_RE = qr{(?:
     | .* patch-graph?ics-from-master
     | .* show-tileset-diffs
     | .* forum-patchlog
-    | .* \#dev\b
+    | .* \#(?:dev|fixup)\b
+    | Fixup:
 )}msx;
 
 # Get our patches
@@ -125,21 +128,27 @@ my $exclude_file_re;
 
 # Print our changes
 
-say "[list]" if not $opts{T};
+say "[list]" if not ($opts{T} or $opts{m});
 
 foreach (@patch_log) {
     # Ignore anythig in our exclude file
     next if /$exclude_file_re/;
 
+    my ($id, $msg) = /^(\w+) (.*)/;
+    my $url = "$REPO_ROOT/commit/$id";
+
     if ($opts{T}) {
         # Text mode, print raw
         say;
     }
+    elsif ($opts{m}) {
+        # Markdown
+        say "* [$msg]($url)";
+    }
     else {
         # Add BB markup
-        my ($id, $msg) = /^(\w+) (.*)/;
-        say "[li][url=$REPO_ROOT/commit/$id]${msg}[/url][/li]";
+        say "[li][url=$url]${msg}[/url][/li]";
     }
 }
 
-say "[/list]" if not $opts{T};
+say "[/list]" if not ($opts{T} or $opts{m});
