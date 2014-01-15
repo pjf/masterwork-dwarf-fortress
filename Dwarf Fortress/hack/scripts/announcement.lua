@@ -48,7 +48,6 @@ local function eventTypeIsNotValid()
 	"greatweapon",
 	"artificer",
 	"machine",
-	"siren",
 	"steamengine",
 	"magma",
 	"greatforge",
@@ -275,9 +274,6 @@ local function announcement_artificer() dfhack.gui.showAnnouncement(
     COLOR_CYAN, true)end
 local function announcement_machine() dfhack.gui.showAnnouncement(
     'SCIENCE DISCOVERY: MACHINE FACTORY - A dwarf discovered a way to build landmines, turrets and other defensive constructs. Industrious dwarves build these from toolkits.',
-    COLOR_CYAN, true)end
-local function announcement_siren() dfhack.gui.showAnnouncement(
-    'SCIENCE DISCOVERY: ALARM SIREN - Combining pipes and pressurized air, a dwarf has invented a siren. It can be used to wake up sleeping dwarves and stop breaks, calling you dwarves to war.',
     COLOR_CYAN, true)end
 local function announcement_steamengine() dfhack.gui.showAnnouncement(
     'SCIENCE DISCOVERY: STEAM ENGINE - Pressurized and heated water allow the production of mechanical power, which can be transfered by axles and gears.',
@@ -983,7 +979,6 @@ if EventType=="golemold" then announcement_golem()
 	elseif EventType=="greatweapon" then announcement_greatweapon()
 	elseif EventType=="artificer" then announcement_artificer()
 	elseif EventType=="machine" then announcement_machine()
-	elseif EventType=="siren" then announcement_siren()
 	elseif EventType=="steamengine" then announcement_steamengine()
 	elseif EventType=="magma" then announcement_magma()
 	elseif EventType=="greatforge" then announcement_greatforge()
