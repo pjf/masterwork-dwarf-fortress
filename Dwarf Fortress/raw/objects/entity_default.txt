@@ -1397,6 +1397,9 @@ embassy
 [PERMITTED_REACTION:FORCE_CARAVAN_ORC]
 [PERMITTED_REACTION:FORCE_CARAVAN_GOBLIN]
 [PERMITTED_REACTION:FORCE_CARAVAN_DWARF_M]
+ #######################################################################
+garrison alarm siren reaction
+[PERMITTED_REACTION:SIREN]
 #######################################################################
 gnomish artificer
 	YESARTIFICER-PERMITTED_BUILDING:ARTIFICERS_STUDY-
