@@ -17,3 +17,11 @@ branches = alpha beta
 [manual]
 from = /home/pjf/cvs/MWDF-Orc-Wiki
 to =   /home/pjf/cvs/MWDF/MasterworkDwarfFortress/orcfort_repository
+
+[forum]
+user = Your Username
+pass = Your Password
+pageroot = /home/pjf/cvs/masterwork-dwarf-fortress.wiki/TopPosts
+
+[forumpages]
+OrcRebalance.md = http://www.bay12forums.com/smf/index.php?action=post;msg=4853709;topic=134547.0
