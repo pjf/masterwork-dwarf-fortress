@@ -595,7 +595,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[STATE_NAME_ADJ:ALL_SOLID:dreadnought]
 	[STATE_NAME_ADJ:LIQUID:molten dreadnought]
 	[STATE_NAME_ADJ:GAS:boiling dreadnought]
-	[DISPLAY_COLOR:4:0:0]	[BUILD_COLOR:4:0:0]
+	[DISPLAY_COLOR:0:0:0]	[BUILD_COLOR:0:0:0]
 	[MATERIAL_VALUE:34]
 	[SPEC_HEAT:500]
 	[MELTING_POINT:12718]

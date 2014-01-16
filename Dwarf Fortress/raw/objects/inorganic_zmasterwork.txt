@@ -506,7 +506,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
 //  used for books, notebooks and essays
 [INORGANIC:BLANK_LIBRARY2]
 -USE_MATERIAL_TEMPLATE:STONE_TEMPLATE- <= reverted to "stone" as name with it.
-[STATE_NAME_ADJ:ALL_SOLID:Book][DISPLAY_COLOR:7:7:1][TILE:176]
+[STATE_NAME_ADJ:ALL_SOLID:(Book)][DISPLAY_COLOR:7:7:1][TILE:176]
 [MATERIAL_VALUE:1]
 [STATE_NAME:ALL_SOLID:]
        [STATE_ADJ:ALL_SOLID:]
@@ -518,7 +518,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
 
 [INORGANIC:BLANK_ARC]
 -USE_MATERIAL_TEMPLATE:STONE_TEMPLATE- <= reverted to "stone" as name with it.
-[STATE_NAME_ADJ:ALL_SOLID:][DISPLAY_COLOR:7:7:1][TILE:176]
+[STATE_NAME_ADJ:ALL_SOLID:(archeologist supplies)][DISPLAY_COLOR:7:7:1][TILE:176]
 [MATERIAL_VALUE:1]
 [STATE_NAME:ALL_SOLID:(archeologist supplies)]
        [STATE_ADJ:ALL_SOLID:(archeologist supplies)]
@@ -529,7 +529,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
 
 [INORGANIC:BLANK_EXPED]
 -USE_MATERIAL_TEMPLATE:STONE_TEMPLATE- <= reverted to "stone" as name with it.
-[STATE_NAME_ADJ:ALL_SOLID:][DISPLAY_COLOR:7:7:1][TILE:176]
+[STATE_NAME_ADJ:ALL_SOLID:(expedition supplies)][DISPLAY_COLOR:7:7:1][TILE:176]
 [MATERIAL_VALUE:1]
 [STATE_NAME:ALL_SOLID:(expedition supplies)]
        [STATE_ADJ:ALL_SOLID:(expedition supplies)]
@@ -541,7 +541,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
 
 [INORGANIC:BLANK_CHEMIST]
 -USE_MATERIAL_TEMPLATE:STONE_TEMPLATE- <= reverted to "stone" as name with it.
-[STATE_NAME_ADJ:ALL_SOLID:][DISPLAY_COLOR:7:7:1][TILE:176]
+[STATE_NAME_ADJ:ALL_SOLID:(chemist supplies)][DISPLAY_COLOR:7:7:1][TILE:176]
 [MATERIAL_VALUE:1]
 [STATE_NAME:ALL_SOLID:(chemist supplies)]
        [STATE_ADJ:ALL_SOLID:(chemist supplies)]
@@ -552,7 +552,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
 
 [INORGANIC:BLANK_TROPHY]
 -USE_MATERIAL_TEMPLATE:STONE_TEMPLATE- <= reverted to "stone" as name with it.
-[STATE_NAME_ADJ:ALL_SOLID:][DISPLAY_COLOR:7:7:1][TILE:176]
+[STATE_NAME_ADJ:ALL_SOLID:(trophy)][DISPLAY_COLOR:7:7:1][TILE:176]
 [MATERIAL_VALUE:1]
 [STATE_NAME:ALL_SOLID:(trophy)]
        [STATE_ADJ:ALL_SOLID:(trophy)]
@@ -566,7 +566,7 @@ a major titanium ore but can't refine through smelting (see e.g. Kroll process)
 // kobold hexes
 [INORGANIC:BLANK_HEXER]
 -USE_MATERIAL_TEMPLATE:STONE_TEMPLATE- <= reverted to "stone" as name with it.
-[STATE_NAME_ADJ:ALL_SOLID:][DISPLAY_COLOR:7:7:1][TILE:176]
+[STATE_NAME_ADJ:ALL_SOLID:(hexer supplies)][DISPLAY_COLOR:7:7:1][TILE:176]
 [MATERIAL_VALUE:1]
 [STATE_NAME:ALL_SOLID:(hexer supplies)]
        [STATE_ADJ:ALL_SOLID:(hexer supplies)]
