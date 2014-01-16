@@ -9250,7 +9250,7 @@ YE_JADE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUST:1:IRIS_EYE_SILVER:
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A skinless abomination with bulging muscles and poisonous blood.  These cursed creatures are only found very near the underworld. Possessed dwarves might transform into one of these abominations.]
 	[NAME:blood beast:blood beasts:blood beast]
 	[CASTE_NAME:blood beast:blood beasts:blood beast]
-[CASTE:MALE]
+[CASTE:MALE][CRAZED][CASTE:NOT_CRAZED]
 [CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A skinless abomination with bulging muscles and poisonous blood.  These cursed creatures are only found very near the underworld. Possessed dwarves might transform into one of these abominations.]
 [SELECT_CASTE:MALE]
 [CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A skinless abomination with bulging muscles and poisonous blood.  These cursed creatures are only found very near the underworld. Possessed dwarves might transform into one of these abominations.]
@@ -9267,7 +9267,7 @@ YE_JADE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUST:1:IRIS_EYE_SILVER:
 	[NO_FEVERS]
 	[LARGE_PREDATOR]
 	[NO_DRINK][NO_EAT][NO_SLEEP]
-	[CANNOT_UNDEAD][OPPOSED_TO_LIFE][CRAZED][NOT_LIVING]
+	[CANNOT_UNDEAD][OPPOSED_TO_LIFE][NOT_LIVING]
 	[CANOPENDOORS]
 	[NOFEAR]
 	[PREFSTRING:gruesomeness]
@@ -9669,7 +9669,7 @@ YE_JADE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUST:1:IRIS_EYE_SILVER:
 [ATTACK_FLAG_EDGE]
 [ATTACK_PRIORITY:SECOND]
 [CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A large wolf twisted into humanoid form.  It is crazed for blood and flesh.  Its eyes glow golden yellow.  Its grey hair is long and shaggy.  Now you will know why you fear the night.]
-[CASTE:DEFAULT]
+[CASTE:DEFAULT][CASTE:CRAZED][CRAZED]
 
 
 [CREATURE:WARLOCK_SPY]

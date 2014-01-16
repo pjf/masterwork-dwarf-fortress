@@ -1553,9 +1553,9 @@ autosyndrome use for command strings
 
 [INORGANIC:WEATHER_FIRE]
 [USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
-[STATE_NAME_ADJ:LIQUID:molten failure stone26]
-[STATE_NAME_ADJ:GAS:Rain of Fire]
+[STATE_NAME_ADJ:ALL_SOLID:immolate]
+[STATE_NAME_ADJ:LIQUID:immolate]
+[STATE_NAME_ADJ:GAS:immolate]
     [SYNDROME]   
  [SYN_CLASS:\AUTO_SYNDROME][SYN_CLASS:\COMMAND] autosyndrome command begins here
    [SYN_CLASS:immolate]
@@ -1571,6 +1571,8 @@ autosyndrome use for command strings
 [BOILING_POINT:905]
 [SOLID_DENSITY:55520]
 [MATERIAL_VALUE:1]
+
+
 
 [INORGANIC:WEATHER_CLEAR]
 [USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
