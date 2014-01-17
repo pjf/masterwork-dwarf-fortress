@@ -168,22 +168,22 @@ Public Class optionManager
         Return (token.optionOffValue = "" And token.optionOnValue <> "")
     End Function
 
-    Public Function saveOption(ByVal fileManager As fileListManager, ByVal tokens As rawTokenCollection, Optional ByVal enabling As Boolean = True, Optional ByVal updateTileSets As Boolean = False) As Boolean
+    Public Function saveOption(ByVal fileManager As fileListManager, ByVal tokens As rawTokenCollection, Optional ByVal enabling As Boolean = True) As Boolean
         Try
             'if the tokens have both a enable and disable option, then we do a regex replace in all the specified files
             'if we only have a token name, and an 'on' value, then this indicates we're changing a specific token's value
-            If fileManager.getFilePaths.Count > 0 Then
+            If fileManager.getFilePaths(True).Count > 0 Then
                 If hasSingleValueTokens(tokens) Then
                     If tokens.Item(0).optionOnValue <> "" Then
                         'we have file(s), a token, and a new value, so find the token in each file, and change it's value
-                        updateTokensInFiles(fileManager, tokens, updateTileSets)
+                        updateTokensInFiles(fileManager, tokens)
                     Else
                         'we have files, a single token, but no value!
                         Throw New Exception("Attempted to save an empty value!")
                     End If
                 Else
                     'we have file(s), and tokens with on/off values, so we need to toggle on/off for the tokens (pattern replace)
-                    toggleTokensInFiles(fileManager, tokens, enabling, updateTileSets)
+                    toggleTokensInFiles(fileManager, tokens, enabling)
                 End If
             End If
 
@@ -234,12 +234,12 @@ Public Class optionManager
 #Region "specific token value replacement"
 
     'finds the specific tokens specified, and updates their value with the 'on' value of the token
-    Private Function updateTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection, ByVal updateTileSets As Boolean) As Boolean
+    Private Function updateTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection) As Boolean
         Dim success As Boolean = False
-        success = updateFileTokens(fManager.getFilePaths, tokens)
-        If updateTileSets Then
-            updateFileTokens(fManager.getRelatedGraphicsFilePaths, tokens)
-        End If
+        success = updateFileTokens(fManager.getFilePaths(True), tokens)
+        'If updateTileSets Then
+        '    updateFileTokens(fManager.getRelatedGraphicsFilePaths, tokens)
+        'End If
         Return success
     End Function
 
@@ -277,18 +277,18 @@ Public Class optionManager
 #Region "toggle on/off value in multiple files and tilesets for multiple tokens"
 
 
-    Private Function toggleTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection, ByVal enable As Boolean, ByVal updateTileSets As Boolean) As Boolean
-        toggleOption(fManager.getFilePaths, tokens, enable)
-        If updateTileSets Then
-            toggleOption(fManager.getRelatedGraphicsFilePaths, tokens, enable, False)
-        End If
+    Private Function toggleTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection, ByVal enable As Boolean) As Boolean
+        toggleOption(fManager.getFilePaths(True), tokens, enable)
+        'If updateTileSets Then
+        '    toggleOption(fManager.getRelatedGraphicsFilePaths, tokens, enable, False)
+        'End If
         Return True
     End Function
 
     Private Sub toggleOption(ByVal filePaths As List(Of String), ByVal tokens As rawTokenCollection, ByVal enable As Boolean, Optional ByVal isCriticalChange As Boolean = True)
         'keep track of tokens changed
         Dim results As New Dictionary(Of rawToken, Boolean)
-        'keep a list of token info for display purposes
+
         Dim strTokens As New List(Of String)
         For Each t As rawToken In tokens
             results.Add(t, False)
@@ -400,11 +400,11 @@ Public Class optionManager
         Return ""
     End Function
 
-    Public Function replacePatternsInFiles(ByVal pattern As String, ByVal replacement As String, ByVal fManager As fileListManager, ByVal updateTileSets As Boolean) As Boolean
-        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.getFilePaths)
-        If updateTileSets Then
-            replaceWithPatterns(pattern, replacement, fManager.getRelatedGraphicsFilePaths)
-        End If
+    Public Function replacePatternsInFiles(ByVal pattern As String, ByVal replacement As String, ByVal fManager As fileListManager) As Boolean
+        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.getFilePaths(True))
+        'If updateTileSets Then
+        '    replaceWithPatterns(pattern, replacement, fManager.getRelatedGraphicsFilePaths)
+        'End If
         Return success
     End Function
 

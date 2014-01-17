@@ -1121,17 +1121,17 @@ Partial Class MainForm
         Dim FileListManager259 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager259 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager262 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace189 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionMulti7 As MasterworkDwarfFortress.optionMulti = New MasterworkDwarfFortress.optionMulti()
         Dim FileListManager260 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager260 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager263 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionMulti7 As MasterworkDwarfFortress.optionMulti = New MasterworkDwarfFortress.optionMulti()
-        Dim FileListManager261 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
-        Dim OptionManager261 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
-        Dim OptionSettingManager264 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim RawToken15 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
         Dim RawToken16 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
         Dim RawToken17 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim OptionSingleReplace189 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim FileListManager261 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
+        Dim OptionManager261 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager264 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim OptionList6 As MasterworkDwarfFortress.optionList = New MasterworkDwarfFortress.optionList()
         Dim FileListManager262 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim ComboItem36 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
@@ -1459,6 +1459,8 @@ Partial Class MainForm
         Me.optMaskEvilAreas = New MasterworkDwarfFortress.optionFormatted()
         Me.optCbStartingLabors = New MasterworkDwarfFortress.optionComboBoxToken()
         Me.lblPlayableFort = New System.Windows.Forms.Label()
+        Me.optBtnDigging = New MasterworkDwarfFortress.optionSingleReplaceButton()
+        Me.optMultiRazing = New MasterworkDwarfFortress.optionMultiButton()
         Me.lblHFSLevels = New System.Windows.Forms.Label()
         Me.lblSettingExplanation = New System.Windows.Forms.Label()
         Me.panCivTable = New MasterworkDwarfFortress.mwPanel()
@@ -1521,10 +1523,8 @@ Partial Class MainForm
         Me.grpBalancing = New MasterworkDwarfFortress.mwGroupBox()
         Me.grpMiscFeatures = New MasterworkDwarfFortress.mwGroupBox()
         Me.grpExtraMods = New MasterworkDwarfFortress.mwGroupBox()
-        Me.optBtnDigging = New MasterworkDwarfFortress.optionSingleReplaceButton()
-        Me.optMultiRazing = New MasterworkDwarfFortress.optionMultiButton()
-        Me.lblRendermaxNote = New System.Windows.Forms.Label()
         Me.lblModNote = New System.Windows.Forms.Label()
+        Me.lblRendermaxNote = New System.Windows.Forms.Label()
         Me.grpWorldGenMisc = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblMineralScarcity = New System.Windows.Forms.Label()
         Me.lblCivNumber = New System.Windows.Forms.Label()
@@ -1663,6 +1663,10 @@ Partial Class MainForm
         Me.rBtnStoryMaker = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilDwarfTherapist = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilTileGenie = New System.Windows.Forms.RibbonButton()
+        Me.rTabDev = New System.Windows.Forms.RibbonTab()
+        Me.rPanelDev = New System.Windows.Forms.RibbonPanel()
+        Me.rBtnTest = New System.Windows.Forms.RibbonButton()
+        Me.rBtnExport = New System.Windows.Forms.RibbonButton()
         Me.optNumHFSLevels = New MasterworkDwarfFortress.optionNumeric()
         Me.tabMain = New KRBTabControl.KRBTabControl()
         Me.tabSettings = New KRBTabControl.TabPageEx()
@@ -1878,7 +1882,6 @@ Partial Class MainForm
         OptionSettingManager1.settingName = Nothing
         OptionSingleReplace1.settingManager = OptionSettingManager1
         OptionSingleReplace1.tokenName = ""
-        OptionSingleReplace1.updateTileSets = true
         Me.optBtnSimpleTrees.options = OptionSingleReplace1
         Me.optBtnSimpleTrees.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSimpleTrees.TabIndex = 0
@@ -1913,7 +1916,6 @@ Partial Class MainForm
         OptionSettingManager2.settingName = Nothing
         OptionSingleReplace2.settingManager = OptionSettingManager2
         OptionSingleReplace2.tokenName = ""
-        OptionSingleReplace2.updateTileSets = true
         Me.optBtnSimpleGems.options = OptionSingleReplace2
         Me.optBtnSimpleGems.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSimpleGems.TabIndex = 1
@@ -1948,7 +1950,6 @@ Partial Class MainForm
         OptionSettingManager3.settingName = Nothing
         OptionSingleReplace3.settingManager = OptionSettingManager3
         OptionSingleReplace3.tokenName = ""
-        OptionSingleReplace3.updateTileSets = true
         Me.optBtnSimpleSoil.options = OptionSingleReplace3
         Me.optBtnSimpleSoil.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSimpleSoil.TabIndex = 2
@@ -1983,7 +1984,6 @@ Partial Class MainForm
         OptionSettingManager4.settingName = Nothing
         OptionSingleReplace4.settingManager = OptionSettingManager4
         OptionSingleReplace4.tokenName = ""
-        OptionSingleReplace4.updateTileSets = true
         Me.optBtnSimpleStones.options = OptionSingleReplace4
         Me.optBtnSimpleStones.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSimpleStones.TabIndex = 3
@@ -2018,7 +2018,6 @@ Partial Class MainForm
         OptionSettingManager5.settingName = Nothing
         OptionSingleReplace5.settingManager = OptionSettingManager5
         OptionSingleReplace5.tokenName = ""
-        OptionSingleReplace5.updateTileSets = true
         Me.optBtnSimpleMetals.options = OptionSingleReplace5
         Me.optBtnSimpleMetals.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSimpleMetals.TabIndex = 4
@@ -2058,7 +2057,6 @@ Partial Class MainForm
         RawToken2.tokenName = ""
         OptionMulti1.tokenList.Add(RawToken1)
         OptionMulti1.tokenList.Add(RawToken2)
-        OptionMulti1.updateTileSets = true
         Me.optMultiSimpleWood.options = OptionMulti1
         Me.optMultiSimpleWood.Size = New System.Drawing.Size(134, 27)
         Me.optMultiSimpleWood.TabIndex = 5
@@ -2093,7 +2091,6 @@ Partial Class MainForm
         OptionSettingManager7.settingName = Nothing
         OptionSingleReplace6.settingManager = OptionSettingManager7
         OptionSingleReplace6.tokenName = ""
-        OptionSingleReplace6.updateTileSets = false
         Me.optBtnSimplePets.options = OptionSingleReplace6
         Me.optBtnSimplePets.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSimplePets.TabIndex = 6
@@ -2133,7 +2130,6 @@ Partial Class MainForm
         RawToken4.tokenName = "All Meat"
         OptionMulti2.tokenList.Add(RawToken3)
         OptionMulti2.tokenList.Add(RawToken4)
-        OptionMulti2.updateTileSets = false
         Me.optMultiSimpleMeat.options = OptionMulti2
         Me.optMultiSimpleMeat.Size = New System.Drawing.Size(134, 27)
         Me.optMultiSimpleMeat.TabIndex = 7
@@ -2168,7 +2164,6 @@ Partial Class MainForm
         OptionSettingManager9.settingName = Nothing
         OptionSingleReplace7.settingManager = OptionSettingManager9
         OptionSingleReplace7.tokenName = ""
-        OptionSingleReplace7.updateTileSets = false
         Me.optBtnSimpleGemShapes.options = OptionSingleReplace7
         Me.optBtnSimpleGemShapes.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSimpleGemShapes.TabIndex = 8
@@ -2299,7 +2294,6 @@ Partial Class MainForm
         OptionSettingManager10.settingName = Nothing
         OptionSingle1.settingManager = OptionSettingManager10
         OptionSingle1.tokenName = "MEGABEAST_CAP"
-        OptionSingle1.updateTileSets = false
         Me.optNumMegabeasts.options = OptionSingle1
         Me.optNumMegabeasts.Size = New System.Drawing.Size(43, 19)
         Me.optNumMegabeasts.TabIndex = 1
@@ -2326,7 +2320,6 @@ Partial Class MainForm
         OptionSettingManager11.settingName = Nothing
         OptionSingle2.settingManager = OptionSettingManager11
         OptionSingle2.tokenName = "SEMIMEGABEAST_CAP"
-        OptionSingle2.updateTileSets = false
         Me.optNumSemibeasts.options = OptionSingle2
         Me.optNumSemibeasts.Size = New System.Drawing.Size(43, 19)
         Me.optNumSemibeasts.TabIndex = 3
@@ -2353,7 +2346,6 @@ Partial Class MainForm
         OptionSettingManager12.settingName = Nothing
         OptionSingle3.settingManager = OptionSettingManager12
         OptionSingle3.tokenName = "SECRET_NUMBER"
-        OptionSingle3.updateTileSets = false
         Me.optNumNecromancers.options = OptionSingle3
         Me.optNumNecromancers.Size = New System.Drawing.Size(43, 19)
         Me.optNumNecromancers.TabIndex = 17
@@ -2379,7 +2371,6 @@ Partial Class MainForm
         OptionSettingManager13.settingName = Nothing
         OptionSingle4.settingManager = OptionSettingManager13
         OptionSingle4.tokenName = "WEREBEAST_NUMBER"
-        OptionSingle4.updateTileSets = false
         Me.optNumWerebeasts.options = OptionSingle4
         Me.optNumWerebeasts.Size = New System.Drawing.Size(43, 19)
         Me.optNumWerebeasts.TabIndex = 15
@@ -2406,7 +2397,6 @@ Partial Class MainForm
         OptionSettingManager14.settingName = Nothing
         OptionSingle5.settingManager = OptionSettingManager14
         OptionSingle5.tokenName = "TITAN_NUMBER"
-        OptionSingle5.updateTileSets = false
         Me.optNumTitans.options = OptionSingle5
         Me.optNumTitans.Size = New System.Drawing.Size(43, 19)
         Me.optNumTitans.TabIndex = 5
@@ -2432,7 +2422,6 @@ Partial Class MainForm
         OptionSettingManager15.settingName = Nothing
         OptionSingle6.settingManager = OptionSettingManager15
         OptionSingle6.tokenName = "REGIONAL_INTERACTION_NUMBER"
-        OptionSingle6.updateTileSets = false
         Me.optNumEvilInteractions.options = OptionSingle6
         Me.optNumEvilInteractions.Size = New System.Drawing.Size(43, 19)
         Me.optNumEvilInteractions.TabIndex = 19
@@ -2458,7 +2447,6 @@ Partial Class MainForm
         OptionSettingManager16.settingName = Nothing
         OptionSingle7.settingManager = OptionSettingManager16
         OptionSingle7.tokenName = "DEMON_NUMBER"
-        OptionSingle7.updateTileSets = false
         Me.optNumDemons.options = OptionSingle7
         Me.optNumDemons.Size = New System.Drawing.Size(43, 19)
         Me.optNumDemons.TabIndex = 7
@@ -2484,7 +2472,6 @@ Partial Class MainForm
         OptionSettingManager17.settingName = Nothing
         OptionSingle8.settingManager = OptionSettingManager17
         OptionSingle8.tokenName = "DISTURBANCE_INTERACTION_NUMBER"
-        OptionSingle8.updateTileSets = false
         Me.optNumDisturbances.options = OptionSingle8
         Me.optNumDisturbances.Size = New System.Drawing.Size(43, 19)
         Me.optNumDisturbances.TabIndex = 21
@@ -2510,7 +2497,6 @@ Partial Class MainForm
         OptionSettingManager18.settingName = Nothing
         OptionSingle9.settingManager = OptionSettingManager18
         OptionSingle9.tokenName = "NIGHT_TROLL_NUMBER"
-        OptionSingle9.updateTileSets = false
         Me.optNumNightCreatures.options = OptionSingle9
         Me.optNumNightCreatures.Size = New System.Drawing.Size(43, 19)
         Me.optNumNightCreatures.TabIndex = 9
@@ -2536,7 +2522,6 @@ Partial Class MainForm
         OptionSettingManager19.settingName = Nothing
         OptionSingle10.settingManager = OptionSettingManager19
         OptionSingle10.tokenName = "EVIL_CLOUD_NUMBER"
-        OptionSingle10.updateTileSets = false
         Me.optNumEvilClouds.options = OptionSingle10
         Me.optNumEvilClouds.Size = New System.Drawing.Size(43, 19)
         Me.optNumEvilClouds.TabIndex = 23
@@ -2562,7 +2547,6 @@ Partial Class MainForm
         OptionSettingManager20.settingName = Nothing
         OptionSingle11.settingManager = OptionSettingManager20
         OptionSingle11.tokenName = "BOGEYMAN_NUMBER"
-        OptionSingle11.updateTileSets = false
         Me.optNumBogeymen.options = OptionSingle11
         Me.optNumBogeymen.Size = New System.Drawing.Size(43, 19)
         Me.optNumBogeymen.TabIndex = 11
@@ -2588,7 +2572,6 @@ Partial Class MainForm
         OptionSettingManager21.settingName = Nothing
         OptionSingle12.settingManager = OptionSettingManager21
         OptionSingle12.tokenName = "EVIL_RAIN_NUMBER"
-        OptionSingle12.updateTileSets = false
         Me.optNumEvilRains.options = OptionSingle12
         Me.optNumEvilRains.Size = New System.Drawing.Size(43, 19)
         Me.optNumEvilRains.TabIndex = 25
@@ -2614,7 +2597,6 @@ Partial Class MainForm
         OptionSettingManager22.settingName = Nothing
         OptionSingle13.settingManager = OptionSettingManager22
         OptionSingle13.tokenName = "VAMPIRE_NUMBER"
-        OptionSingle13.updateTileSets = false
         Me.optNumVampires.options = OptionSingle13
         Me.optNumVampires.Size = New System.Drawing.Size(43, 19)
         Me.optNumVampires.TabIndex = 13
@@ -2712,7 +2694,6 @@ Partial Class MainForm
         OptionSettingManager23.settingName = Nothing
         OptionSingle14.settingManager = OptionSettingManager23
         OptionSingle14.tokenName = "TEMPERATURE"
-        OptionSingle14.updateTileSets = false
         Me.optBtnTemperature.options = OptionSingle14
         Me.optBtnTemperature.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTemperature.TabIndex = 0
@@ -2745,7 +2726,6 @@ Partial Class MainForm
         OptionSettingManager24.settingName = Nothing
         OptionSingle15.settingManager = OptionSettingManager24
         OptionSingle15.tokenName = "WEATHER"
-        OptionSingle15.updateTileSets = false
         Me.optBtnWeather.options = OptionSingle15
         Me.optBtnWeather.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWeather.TabIndex = 1
@@ -2777,7 +2757,6 @@ Partial Class MainForm
         OptionSettingManager25.settingName = Nothing
         OptionSingle16.settingManager = OptionSettingManager25
         OptionSingle16.tokenName = "CAVEINS"
-        OptionSingle16.updateTileSets = false
         Me.optBtnCaveins.options = OptionSingle16
         Me.optBtnCaveins.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCaveins.TabIndex = 2
@@ -2810,7 +2789,6 @@ Partial Class MainForm
         OptionSettingManager26.settingName = Nothing
         OptionSingle17.settingManager = OptionSettingManager26
         OptionSingle17.tokenName = "INVADERS"
-        OptionSingle17.updateTileSets = false
         Me.optBtnInvaders.options = OptionSingle17
         Me.optBtnInvaders.Size = New System.Drawing.Size(134, 27)
         Me.optBtnInvaders.TabIndex = 3
@@ -2842,7 +2820,6 @@ Partial Class MainForm
         OptionSettingManager27.settingName = Nothing
         OptionSingle18.settingManager = OptionSettingManager27
         OptionSingle18.tokenName = "SHOW_FLOW_AMOUNTS"
-        OptionSingle18.updateTileSets = false
         Me.optBtnLiquidDepth.options = OptionSingle18
         Me.optBtnLiquidDepth.Size = New System.Drawing.Size(134, 27)
         Me.optBtnLiquidDepth.TabIndex = 4
@@ -2874,7 +2851,6 @@ Partial Class MainForm
         OptionSettingManager28.settingName = Nothing
         OptionSingle19.settingManager = OptionSettingManager28
         OptionSingle19.tokenName = "ADVENTURER_ALWAYS_CENTER"
-        OptionSingle19.updateTileSets = false
         Me.optBtnAdvCenter.options = OptionSingle19
         Me.optBtnAdvCenter.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAdvCenter.TabIndex = 6
@@ -2906,7 +2882,6 @@ Partial Class MainForm
         OptionSettingManager29.settingName = Nothing
         OptionSingle20.settingManager = OptionSettingManager29
         OptionSingle20.tokenName = "ADVENTURER_TRAPS"
-        OptionSingle20.updateTileSets = false
         Me.optBtnAdvTraps.options = OptionSingle20
         Me.optBtnAdvTraps.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAdvTraps.TabIndex = 5
@@ -2938,7 +2913,6 @@ Partial Class MainForm
         OptionSettingManager30.settingName = Nothing
         OptionSingle21.settingManager = OptionSettingManager30
         OptionSingle21.tokenName = "COFFIN_NO_PETS_DEFAULT"
-        OptionSingle21.updateTileSets = false
         Me.optBtnPetCoffins.options = OptionSingle21
         Me.optBtnPetCoffins.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPetCoffins.TabIndex = 7
@@ -2966,7 +2940,6 @@ Partial Class MainForm
         OptionSettingManager31.settingName = Nothing
         OptionSingle22.settingManager = OptionSettingManager31
         OptionSingle22.tokenName = "POPULATION_CAP"
-        OptionSingle22.updateTileSets = false
         Me.optNumPopCap.options = OptionSingle22
         Me.optNumPopCap.Size = New System.Drawing.Size(59, 19)
         Me.optNumPopCap.TabIndex = 9
@@ -2990,7 +2963,6 @@ Partial Class MainForm
         OptionSettingManager32.settingName = Nothing
         OptionSingle23.settingManager = OptionSettingManager32
         OptionSingle23.tokenName = "BABY_CHILD_CAP"
-        OptionSingle23.updateTileSets = false
         Me.optMaskChildBabyCap.options = OptionSingle23
         Me.optMaskChildBabyCap.pattern = "^\d{0,4}(\:\d{0,4})?$"
         Me.optMaskChildBabyCap.Size = New System.Drawing.Size(59, 23)
@@ -3022,7 +2994,6 @@ Partial Class MainForm
         OptionSettingManager33.settingName = Nothing
         OptionSingle24.settingManager = OptionSettingManager33
         OptionSingle24.tokenName = "AUTOSAVE_PAUSE"
-        OptionSingle24.updateTileSets = false
         Me.optBtnAutoSavePause.options = OptionSingle24
         Me.optBtnAutoSavePause.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAutoSavePause.TabIndex = 2
@@ -3054,7 +3025,6 @@ Partial Class MainForm
         OptionSettingManager34.settingName = Nothing
         OptionSingle25.settingManager = OptionSettingManager34
         OptionSingle25.tokenName = "AUTOBACKUP"
-        OptionSingle25.updateTileSets = false
         Me.optBtnAutoBackup.options = OptionSingle25
         Me.optBtnAutoBackup.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAutoBackup.TabIndex = 3
@@ -3086,7 +3056,6 @@ Partial Class MainForm
         OptionSettingManager35.settingName = Nothing
         OptionSingle26.settingManager = OptionSettingManager35
         OptionSingle26.tokenName = "INITIAL_SAVE"
-        OptionSingle26.updateTileSets = false
         Me.optBtnEmbarkSave.options = OptionSingle26
         Me.optBtnEmbarkSave.Size = New System.Drawing.Size(134, 27)
         Me.optBtnEmbarkSave.TabIndex = 4
@@ -3118,7 +3087,6 @@ Partial Class MainForm
         OptionSettingManager36.settingName = Nothing
         OptionSingle27.settingManager = OptionSettingManager36
         OptionSingle27.tokenName = "COMPRESSED_SAVES"
-        OptionSingle27.updateTileSets = false
         Me.optBtnCompressSaves.options = OptionSingle27
         Me.optBtnCompressSaves.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCompressSaves.TabIndex = 5
@@ -3150,7 +3118,6 @@ Partial Class MainForm
         OptionSettingManager37.settingName = Nothing
         OptionSingle28.settingManager = OptionSettingManager37
         OptionSingle28.tokenName = "PAUSE_ON_LOAD"
-        OptionSingle28.updateTileSets = false
         Me.optBtnPauseLoad.options = OptionSingle28
         Me.optBtnPauseLoad.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPauseLoad.TabIndex = 6
@@ -3234,7 +3201,6 @@ Partial Class MainForm
         OptionSettingManager40.settingName = Nothing
         OptionList1.settingManager = OptionSettingManager40
         OptionList1.tokenName = "WINDOWED"
-        OptionList1.updateTileSets = false
         Me.optCbWindow.options = OptionList1
         Me.optCbWindow.Size = New System.Drawing.Size(80, 23)
         Me.optCbWindow.TabIndex = 5
@@ -3275,7 +3241,6 @@ Partial Class MainForm
         OptionSettingManager41.settingName = Nothing
         OptionList2.settingManager = OptionSettingManager41
         OptionList2.tokenName = "PRIORITY"
-        OptionList2.updateTileSets = false
         Me.optCbPriority.options = OptionList2
         Me.optCbPriority.Size = New System.Drawing.Size(80, 23)
         Me.optCbPriority.TabIndex = 7
@@ -3304,7 +3269,6 @@ Partial Class MainForm
         OptionSettingManager42.settingName = Nothing
         OptionSingle29.settingManager = OptionSettingManager42
         OptionSingle29.tokenName = "INTRO"
-        OptionSingle29.updateTileSets = false
         Me.optBtnIntro.options = OptionSingle29
         Me.optBtnIntro.Size = New System.Drawing.Size(134, 27)
         Me.optBtnIntro.TabIndex = 8
@@ -3351,7 +3315,6 @@ Partial Class MainForm
         OptionSettingManager43.settingName = Nothing
         OptionList3.settingManager = OptionSettingManager43
         OptionList3.tokenName = "PRINT_MODE"
-        OptionList3.updateTileSets = false
         Me.optCbPrintMode.options = OptionList3
         Me.optCbPrintMode.Size = New System.Drawing.Size(134, 23)
         Me.optCbPrintMode.TabIndex = 3
@@ -3380,7 +3343,6 @@ Partial Class MainForm
         OptionSettingManager44.settingName = Nothing
         OptionSingle30.settingManager = OptionSettingManager44
         OptionSingle30.tokenName = "GRAPHICS"
-        OptionSingle30.updateTileSets = false
         Me.optBtnSprites.options = OptionSingle30
         Me.optBtnSprites.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSprites.TabIndex = 7
@@ -3412,7 +3374,6 @@ Partial Class MainForm
         OptionSettingManager45.settingName = Nothing
         OptionSingle31.settingManager = OptionSettingManager45
         OptionSingle31.tokenName = "TRUETYPE"
-        OptionSingle31.updateTileSets = false
         Me.optBtnTruetype.options = OptionSingle31
         Me.optBtnTruetype.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTruetype.TabIndex = 6
@@ -3470,7 +3431,6 @@ Partial Class MainForm
         OptionSettingManager47.settingName = Nothing
         OptionSingle32.settingManager = OptionSettingManager47
         OptionSingle32.tokenName = "FPS"
-        OptionSingle32.updateTileSets = false
         Me.optBtnFps.options = OptionSingle32
         Me.optBtnFps.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFps.TabIndex = 0
@@ -3498,7 +3458,6 @@ Partial Class MainForm
         OptionSettingManager48.settingName = Nothing
         OptionSingle33.settingManager = OptionSettingManager48
         OptionSingle33.tokenName = "G_FPS_CAP"
-        OptionSingle33.updateTileSets = false
         Me.optNumGFPS.options = OptionSingle33
         Me.optNumGFPS.Size = New System.Drawing.Size(51, 19)
         Me.optNumGFPS.TabIndex = 2
@@ -3524,7 +3483,6 @@ Partial Class MainForm
         OptionSettingManager49.settingName = Nothing
         OptionSingle34.settingManager = OptionSettingManager49
         OptionSingle34.tokenName = "FPS_CAP"
-        OptionSingle34.updateTileSets = false
         Me.optNumFPSCap.options = OptionSingle34
         Me.optNumFPSCap.Size = New System.Drawing.Size(51, 19)
         Me.optNumFPSCap.TabIndex = 4
@@ -3554,7 +3512,6 @@ Partial Class MainForm
         OptionSettingManager50.settingName = Nothing
         OptionSingle35.settingManager = OptionSettingManager50
         OptionSingle35.tokenName = "SOUND"
-        OptionSingle35.updateTileSets = false
         Me.optBtnSound.options = OptionSingle35
         Me.optBtnSound.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSound.TabIndex = 0
@@ -3586,7 +3543,6 @@ Partial Class MainForm
         OptionSettingManager51.settingName = Nothing
         OptionSingle36.settingManager = OptionSettingManager51
         OptionSingle36.tokenName = "EMBARK_WARNING_ALWAYS"
-        OptionSingle36.updateTileSets = false
         Me.optBtnEmbarkWarn.options = OptionSingle36
         Me.optBtnEmbarkWarn.Size = New System.Drawing.Size(134, 27)
         Me.optBtnEmbarkWarn.TabIndex = 0
@@ -3612,7 +3568,6 @@ Partial Class MainForm
         OptionSettingManager52.settingName = Nothing
         OptionSingle37.settingManager = OptionSettingManager52
         OptionSingle37.tokenName = "EMBARK_RECTANGLE"
-        OptionSingle37.updateTileSets = false
         Me.optMaskEmbarkSize.options = OptionSingle37
         Me.optMaskEmbarkSize.pattern = "^([1-9]|[1-9][0-6]):([1-9]|[1-9][0-6])$"
         Me.optMaskEmbarkSize.Size = New System.Drawing.Size(62, 23)
@@ -3645,7 +3600,6 @@ Partial Class MainForm
         OptionSettingManager53.settingName = Nothing
         OptionSingleReplace8.settingManager = OptionSettingManager53
         OptionSingleReplace8.tokenName = ""
-        OptionSingleReplace8.updateTileSets = false
         Me.optBtnTransformMsgs.options = OptionSingleReplace8
         Me.optBtnTransformMsgs.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTransformMsgs.TabIndex = 0
@@ -3680,7 +3634,6 @@ Partial Class MainForm
         OptionSettingManager54.settingName = Nothing
         OptionSingleReplace9.settingManager = OptionSettingManager54
         OptionSingleReplace9.tokenName = ""
-        OptionSingleReplace9.updateTileSets = false
         Me.optBtnDigStop.options = OptionSingleReplace9
         Me.optBtnDigStop.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDigStop.TabIndex = 1
@@ -3712,7 +3665,6 @@ Partial Class MainForm
         OptionSettingManager55.settingName = Nothing
         OptionSingleReplace10.settingManager = OptionSettingManager55
         OptionSingleReplace10.tokenName = ""
-        OptionSingleReplace10.updateTileSets = false
         Me.optBtnFrostGiants.options = OptionSingleReplace10
         Me.optBtnFrostGiants.Size = New System.Drawing.Size(53, 23)
         Me.optBtnFrostGiants.TabIndex = 3
@@ -3743,7 +3695,6 @@ Partial Class MainForm
         OptionSettingManager56.settingName = Nothing
         OptionSingleReplace11.settingManager = OptionSettingManager56
         OptionSingleReplace11.tokenName = ""
-        OptionSingleReplace11.updateTileSets = false
         Me.optBtnWarlocks.options = OptionSingleReplace11
         Me.optBtnWarlocks.Size = New System.Drawing.Size(53, 23)
         Me.optBtnWarlocks.TabIndex = 4
@@ -3774,7 +3725,6 @@ Partial Class MainForm
         OptionSettingManager57.settingName = Nothing
         OptionSingleReplace12.settingManager = OptionSettingManager57
         OptionSingleReplace12.tokenName = ""
-        OptionSingleReplace12.updateTileSets = false
         Me.optBtnAutomatons.options = OptionSingleReplace12
         Me.optBtnAutomatons.Size = New System.Drawing.Size(53, 23)
         Me.optBtnAutomatons.TabIndex = 5
@@ -3805,7 +3755,6 @@ Partial Class MainForm
         OptionSettingManager58.settingName = Nothing
         OptionSingleReplace13.settingManager = OptionSettingManager58
         OptionSingleReplace13.tokenName = ""
-        OptionSingleReplace13.updateTileSets = false
         Me.optBtnOrcs.options = OptionSingleReplace13
         Me.optBtnOrcs.Size = New System.Drawing.Size(53, 23)
         Me.optBtnOrcs.TabIndex = 2
@@ -3836,7 +3785,6 @@ Partial Class MainForm
         OptionSettingManager59.settingName = Nothing
         OptionSingleReplace14.settingManager = OptionSettingManager59
         OptionSingleReplace14.tokenName = ""
-        OptionSingleReplace14.updateTileSets = false
         Me.optBtnGoblins.options = OptionSingleReplace14
         Me.optBtnGoblins.Size = New System.Drawing.Size(53, 23)
         Me.optBtnGoblins.TabIndex = 1
@@ -3867,7 +3815,6 @@ Partial Class MainForm
         OptionSettingManager60.settingName = Nothing
         OptionSingleReplace15.settingManager = OptionSettingManager60
         OptionSingleReplace15.tokenName = ""
-        OptionSingleReplace15.updateTileSets = false
         Me.optBtnKobolds.options = OptionSingleReplace15
         Me.optBtnKobolds.Size = New System.Drawing.Size(53, 23)
         Me.optBtnKobolds.TabIndex = 0
@@ -3898,7 +3845,6 @@ Partial Class MainForm
         OptionSettingManager61.settingName = Nothing
         OptionSingleReplace16.settingManager = OptionSettingManager61
         OptionSingleReplace16.tokenName = ""
-        OptionSingleReplace16.updateTileSets = false
         Me.optBtnElfRace.options = OptionSingleReplace16
         Me.optBtnElfRace.Size = New System.Drawing.Size(53, 23)
         Me.optBtnElfRace.TabIndex = 1
@@ -3929,7 +3875,6 @@ Partial Class MainForm
         OptionSettingManager62.settingName = Nothing
         OptionSingleReplace17.settingManager = OptionSettingManager62
         OptionSingleReplace17.tokenName = ""
-        OptionSingleReplace17.updateTileSets = false
         Me.optBtnAntmen.options = OptionSingleReplace17
         Me.optBtnAntmen.Size = New System.Drawing.Size(53, 23)
         Me.optBtnAntmen.TabIndex = 9
@@ -3960,7 +3905,6 @@ Partial Class MainForm
         OptionSettingManager63.settingName = Nothing
         OptionSingleReplace18.settingManager = OptionSettingManager63
         OptionSingleReplace18.tokenName = ""
-        OptionSingleReplace18.updateTileSets = false
         Me.optBtnGnomes.options = OptionSingleReplace18
         Me.optBtnGnomes.Size = New System.Drawing.Size(53, 23)
         Me.optBtnGnomes.TabIndex = 3
@@ -3992,7 +3936,6 @@ Partial Class MainForm
         OptionSettingManager64.settingName = Nothing
         OptionSingleReplace19.settingManager = OptionSettingManager64
         OptionSingleReplace19.tokenName = ""
-        OptionSingleReplace19.updateTileSets = false
         Me.optBtnTroglodytes.options = OptionSingleReplace19
         Me.optBtnTroglodytes.Size = New System.Drawing.Size(53, 23)
         Me.optBtnTroglodytes.TabIndex = 8
@@ -4023,7 +3966,6 @@ Partial Class MainForm
         OptionSettingManager65.settingName = Nothing
         OptionSingleReplace20.settingManager = OptionSettingManager65
         OptionSingleReplace20.tokenName = ""
-        OptionSingleReplace20.updateTileSets = false
         Me.optBtnGremlins.options = OptionSingleReplace20
         Me.optBtnGremlins.Size = New System.Drawing.Size(53, 23)
         Me.optBtnGremlins.TabIndex = 7
@@ -4054,7 +3996,6 @@ Partial Class MainForm
         OptionSettingManager66.settingName = Nothing
         OptionSingleReplace21.settingManager = OptionSettingManager66
         OptionSingleReplace21.tokenName = ""
-        OptionSingleReplace21.updateTileSets = false
         Me.optBtnHumanRace.options = OptionSingleReplace21
         Me.optBtnHumanRace.Size = New System.Drawing.Size(53, 23)
         Me.optBtnHumanRace.TabIndex = 0
@@ -4101,7 +4042,6 @@ Partial Class MainForm
         OptionSettingManager67.settingName = Nothing
         OptionSingleReplace22.settingManager = OptionSettingManager67
         OptionSingleReplace22.tokenName = ""
-        OptionSingleReplace22.updateTileSets = false
         Me.optBtnCivDwarves.options = OptionSingleReplace22
         Me.optBtnCivDwarves.Size = New System.Drawing.Size(53, 23)
         Me.optBtnCivDwarves.TabIndex = 5
@@ -4132,7 +4072,6 @@ Partial Class MainForm
         OptionSettingManager68.settingName = Nothing
         OptionSingleReplace23.settingManager = OptionSettingManager68
         OptionSingleReplace23.tokenName = ""
-        OptionSingleReplace23.updateTileSets = false
         Me.optBtnCivOrcs.options = OptionSingleReplace23
         Me.optBtnCivOrcs.Size = New System.Drawing.Size(53, 23)
         Me.optBtnCivOrcs.TabIndex = 6
@@ -4163,7 +4102,6 @@ Partial Class MainForm
         OptionSettingManager69.settingName = Nothing
         OptionSingleReplace24.settingManager = OptionSettingManager69
         OptionSingleReplace24.tokenName = ""
-        OptionSingleReplace24.updateTileSets = false
         Me.optBtnCivKobolds.options = OptionSingleReplace24
         Me.optBtnCivKobolds.Size = New System.Drawing.Size(53, 23)
         Me.optBtnCivKobolds.TabIndex = 7
@@ -4259,7 +4197,6 @@ Partial Class MainForm
         OptionSettingManager70.settingName = Nothing
         OptionSingleReplace25.settingManager = OptionSettingManager70
         OptionSingleReplace25.tokenName = ""
-        OptionSingleReplace25.updateTileSets = false
         Me.optBtnDrowRace.options = OptionSingleReplace25
         Me.optBtnDrowRace.Size = New System.Drawing.Size(53, 23)
         Me.optBtnDrowRace.TabIndex = 2
@@ -4291,7 +4228,6 @@ Partial Class MainForm
         OptionSettingManager71.settingName = Nothing
         OptionSingleReplace26.settingManager = OptionSettingManager71
         OptionSingleReplace26.tokenName = ""
-        OptionSingleReplace26.updateTileSets = false
         Me.optBtnEvilDwarves.options = OptionSingleReplace26
         Me.optBtnEvilDwarves.Size = New System.Drawing.Size(53, 23)
         Me.optBtnEvilDwarves.TabIndex = 12
@@ -4323,7 +4259,6 @@ Partial Class MainForm
         OptionSettingManager72.settingName = Nothing
         OptionSingleReplace27.settingManager = OptionSettingManager72
         OptionSingleReplace27.tokenName = ""
-        OptionSingleReplace27.updateTileSets = false
         Me.optBtnEvilHumans.options = OptionSingleReplace27
         Me.optBtnEvilHumans.Size = New System.Drawing.Size(53, 23)
         Me.optBtnEvilHumans.TabIndex = 13
@@ -4355,7 +4290,6 @@ Partial Class MainForm
         OptionSettingManager73.settingName = Nothing
         OptionSingleReplace28.settingManager = OptionSettingManager73
         OptionSingleReplace28.tokenName = ""
-        OptionSingleReplace28.updateTileSets = false
         Me.optBtnEvilElves.options = OptionSingleReplace28
         Me.optBtnEvilElves.Size = New System.Drawing.Size(53, 23)
         Me.optBtnEvilElves.TabIndex = 14
@@ -4387,7 +4321,6 @@ Partial Class MainForm
         OptionSettingManager74.settingName = Nothing
         OptionSingleReplace29.settingManager = OptionSettingManager74
         OptionSingleReplace29.tokenName = ""
-        OptionSingleReplace29.updateTileSets = false
         Me.optBtnEvilDrow.options = OptionSingleReplace29
         Me.optBtnEvilDrow.Size = New System.Drawing.Size(53, 23)
         Me.optBtnEvilDrow.TabIndex = 15
@@ -4419,7 +4352,6 @@ Partial Class MainForm
         OptionSettingManager75.settingName = Nothing
         OptionSingleReplace30.settingManager = OptionSettingManager75
         OptionSingleReplace30.tokenName = ""
-        OptionSingleReplace30.updateTileSets = false
         Me.optBtnDomesticPets.options = OptionSingleReplace30
         Me.optBtnDomesticPets.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDomesticPets.TabIndex = 0
@@ -4452,7 +4384,6 @@ Partial Class MainForm
         OptionSettingManager76.settingName = Nothing
         OptionSingleReplace31.settingManager = OptionSettingManager76
         OptionSingleReplace31.tokenName = ""
-        OptionSingleReplace31.updateTileSets = false
         Me.optBtnMoreVermin.options = OptionSingleReplace31
         Me.optBtnMoreVermin.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreVermin.TabIndex = 2
@@ -4485,7 +4416,6 @@ Partial Class MainForm
         OptionSettingManager77.settingName = Nothing
         OptionSingleReplace32.settingManager = OptionSettingManager77
         OptionSingleReplace32.tokenName = ""
-        OptionSingleReplace32.updateTileSets = false
         Me.optBtnMoreGiantAnimals.options = OptionSingleReplace32
         Me.optBtnMoreGiantAnimals.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreGiantAnimals.TabIndex = 3
@@ -4518,7 +4448,6 @@ Partial Class MainForm
         OptionSettingManager78.settingName = Nothing
         OptionSingleReplace33.settingManager = OptionSettingManager78
         OptionSingleReplace33.tokenName = ""
-        OptionSingleReplace33.updateTileSets = false
         Me.optBtnMoreMegaBeasts.options = OptionSingleReplace33
         Me.optBtnMoreMegaBeasts.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreMegaBeasts.TabIndex = 4
@@ -4551,7 +4480,6 @@ Partial Class MainForm
         OptionSettingManager79.settingName = Nothing
         OptionSingleReplace34.settingManager = OptionSettingManager79
         OptionSingleReplace34.tokenName = ""
-        OptionSingleReplace34.updateTileSets = false
         Me.optBtnMoreBirds.options = OptionSingleReplace34
         Me.optBtnMoreBirds.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreBirds.TabIndex = 5
@@ -4585,7 +4513,6 @@ Partial Class MainForm
         OptionSettingManager80.settingName = Nothing
         OptionSingleReplace35.settingManager = OptionSettingManager80
         OptionSingleReplace35.tokenName = ""
-        OptionSingleReplace35.updateTileSets = true
         Me.optBtnMoreFish.options = OptionSingleReplace35
         Me.optBtnMoreFish.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreFish.TabIndex = 6
@@ -4618,7 +4545,6 @@ Partial Class MainForm
         OptionSettingManager81.settingName = Nothing
         OptionSingleReplace36.settingManager = OptionSettingManager81
         OptionSingleReplace36.tokenName = ""
-        OptionSingleReplace36.updateTileSets = false
         Me.optBtnMoreAnimalmen.options = OptionSingleReplace36
         Me.optBtnMoreAnimalmen.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreAnimalmen.TabIndex = 7
@@ -4651,7 +4577,6 @@ Partial Class MainForm
         OptionSettingManager82.settingName = Nothing
         OptionSingleReplace37.settingManager = OptionSettingManager82
         OptionSingleReplace37.tokenName = ""
-        OptionSingleReplace37.updateTileSets = false
         Me.optBtnMoreCavernCreatures.options = OptionSingleReplace37
         Me.optBtnMoreCavernCreatures.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreCavernCreatures.TabIndex = 8
@@ -4684,7 +4609,6 @@ Partial Class MainForm
         OptionSettingManager83.settingName = Nothing
         OptionSingleReplace38.settingManager = OptionSettingManager83
         OptionSingleReplace38.tokenName = ""
-        OptionSingleReplace38.updateTileSets = false
         Me.optBtnMoreSurfaceCreatures.options = OptionSingleReplace38
         Me.optBtnMoreSurfaceCreatures.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreSurfaceCreatures.TabIndex = 9
@@ -4717,7 +4641,6 @@ Partial Class MainForm
         OptionSettingManager84.settingName = Nothing
         OptionSingleReplace39.settingManager = OptionSettingManager84
         OptionSingleReplace39.tokenName = ""
-        OptionSingleReplace39.updateTileSets = false
         Me.optBtnMoreDemons.options = OptionSingleReplace39
         Me.optBtnMoreDemons.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreDemons.TabIndex = 10
@@ -4750,7 +4673,6 @@ Partial Class MainForm
         OptionSettingManager85.settingName = Nothing
         OptionSingleReplace40.settingManager = OptionSettingManager85
         OptionSingleReplace40.tokenName = ""
-        OptionSingleReplace40.updateTileSets = false
         Me.optBtnMoreMagical.options = OptionSingleReplace40
         Me.optBtnMoreMagical.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreMagical.TabIndex = 11
@@ -4823,7 +4745,6 @@ Partial Class MainForm
         OptionSettingManager86.settingName = Nothing
         OptionList4.settingManager = OptionSettingManager86
         OptionList4.tokenName = ""
-        OptionList4.updateTileSets = true
         Me.optCbPatternInvaderSkills.options = OptionList4
         Me.optCbPatternInvaderSkills.pattern = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER\b)"
         Me.optCbPatternInvaderSkills.replace = "${1}${value}${2}"
@@ -4856,7 +4777,6 @@ Partial Class MainForm
         OptionSettingManager87.settingName = Nothing
         OptionSingleReplace41.settingManager = OptionSettingManager87
         OptionSingleReplace41.tokenName = ""
-        OptionSingleReplace41.updateTileSets = false
         Me.optBtnFdFrogmen.options = OptionSingleReplace41
         Me.optBtnFdFrogmen.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdFrogmen.TabIndex = 1
@@ -4889,7 +4809,6 @@ Partial Class MainForm
         OptionSettingManager88.settingName = Nothing
         OptionSingleReplace42.settingManager = OptionSettingManager88
         OptionSingleReplace42.tokenName = ""
-        OptionSingleReplace42.updateTileSets = false
         Me.optBtnFdFireImps.options = OptionSingleReplace42
         Me.optBtnFdFireImps.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdFireImps.TabIndex = 2
@@ -4922,7 +4841,6 @@ Partial Class MainForm
         OptionSettingManager89.settingName = Nothing
         OptionSingleReplace43.settingManager = OptionSettingManager89
         OptionSingleReplace43.tokenName = ""
-        OptionSingleReplace43.updateTileSets = false
         Me.optBtnFdStranglers.options = OptionSingleReplace43
         Me.optBtnFdStranglers.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdStranglers.TabIndex = 3
@@ -4955,7 +4873,6 @@ Partial Class MainForm
         OptionSettingManager90.settingName = Nothing
         OptionSingleReplace44.settingManager = OptionSettingManager90
         OptionSingleReplace44.tokenName = ""
-        OptionSingleReplace44.updateTileSets = false
         Me.optBtnFdWerewolfs.options = OptionSingleReplace44
         Me.optBtnFdWerewolfs.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdWerewolfs.TabIndex = 4
@@ -4988,7 +4905,6 @@ Partial Class MainForm
         OptionSettingManager91.settingName = Nothing
         OptionSingleReplace45.settingManager = OptionSettingManager91
         OptionSingleReplace45.tokenName = ""
-        OptionSingleReplace45.updateTileSets = false
         Me.optBtnFdBlendecs.options = OptionSingleReplace45
         Me.optBtnFdBlendecs.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdBlendecs.TabIndex = 5
@@ -5021,7 +4937,6 @@ Partial Class MainForm
         OptionSettingManager92.settingName = Nothing
         OptionSingleReplace46.settingManager = OptionSettingManager92
         OptionSingleReplace46.tokenName = ""
-        OptionSingleReplace46.updateTileSets = false
         Me.optBtnFdSerpentmen.options = OptionSingleReplace46
         Me.optBtnFdSerpentmen.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdSerpentmen.TabIndex = 6
@@ -5054,7 +4969,6 @@ Partial Class MainForm
         OptionSettingManager93.settingName = Nothing
         OptionSingleReplace47.settingManager = OptionSettingManager93
         OptionSingleReplace47.tokenName = ""
-        OptionSingleReplace47.updateTileSets = false
         Me.optBtnFdWhiteTigermen.options = OptionSingleReplace47
         Me.optBtnFdWhiteTigermen.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdWhiteTigermen.TabIndex = 7
@@ -5087,7 +5001,6 @@ Partial Class MainForm
         OptionSettingManager94.settingName = Nothing
         OptionSingleReplace48.settingManager = OptionSettingManager94
         OptionSingleReplace48.tokenName = ""
-        OptionSingleReplace48.updateTileSets = false
         Me.optBtnFdBeakWolfs.options = OptionSingleReplace48
         Me.optBtnFdBeakWolfs.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdBeakWolfs.TabIndex = 8
@@ -5120,7 +5033,6 @@ Partial Class MainForm
         OptionSettingManager95.settingName = Nothing
         OptionSingleReplace49.settingManager = OptionSettingManager95
         OptionSingleReplace49.tokenName = ""
-        OptionSingleReplace49.updateTileSets = false
         Me.optBtnFdElephants.options = OptionSingleReplace49
         Me.optBtnFdElephants.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdElephants.TabIndex = 9
@@ -5153,7 +5065,6 @@ Partial Class MainForm
         OptionSettingManager96.settingName = Nothing
         OptionSingleReplace50.settingManager = OptionSettingManager96
         OptionSingleReplace50.tokenName = ""
-        OptionSingleReplace50.updateTileSets = false
         Me.optBtnFdFerricElves.options = OptionSingleReplace50
         Me.optBtnFdFerricElves.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdFerricElves.TabIndex = 10
@@ -5186,7 +5097,6 @@ Partial Class MainForm
         OptionSettingManager97.settingName = Nothing
         OptionSingleReplace51.settingManager = OptionSettingManager97
         OptionSingleReplace51.tokenName = ""
-        OptionSingleReplace51.updateTileSets = false
         Me.optBtnFdGreatBadgermen.options = OptionSingleReplace51
         Me.optBtnFdGreatBadgermen.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdGreatBadgermen.TabIndex = 13
@@ -5219,7 +5129,6 @@ Partial Class MainForm
         OptionSettingManager98.settingName = Nothing
         OptionSingleReplace52.settingManager = OptionSettingManager98
         OptionSingleReplace52.tokenName = ""
-        OptionSingleReplace52.updateTileSets = false
         Me.optBtnFdPandashi.options = OptionSingleReplace52
         Me.optBtnFdPandashi.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdPandashi.TabIndex = 14
@@ -5252,7 +5161,6 @@ Partial Class MainForm
         OptionSettingManager99.settingName = Nothing
         OptionSingleReplace53.settingManager = OptionSettingManager99
         OptionSingleReplace53.tokenName = ""
-        OptionSingleReplace53.updateTileSets = false
         Me.optBtnFdRaptormen.options = OptionSingleReplace53
         Me.optBtnFdRaptormen.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdRaptormen.TabIndex = 15
@@ -5285,7 +5193,6 @@ Partial Class MainForm
         OptionSettingManager100.settingName = Nothing
         OptionSingleReplace54.settingManager = OptionSettingManager100
         OptionSingleReplace54.tokenName = ""
-        OptionSingleReplace54.updateTileSets = false
         Me.optBtnFdHarpies.options = OptionSingleReplace54
         Me.optBtnFdHarpies.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdHarpies.TabIndex = 16
@@ -5318,7 +5225,6 @@ Partial Class MainForm
         OptionSettingManager101.settingName = Nothing
         OptionSingleReplace55.settingManager = OptionSettingManager101
         OptionSingleReplace55.tokenName = ""
-        OptionSingleReplace55.updateTileSets = false
         Me.optBtnFdMinotaurs.options = OptionSingleReplace55
         Me.optBtnFdMinotaurs.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdMinotaurs.TabIndex = 18
@@ -5351,7 +5257,6 @@ Partial Class MainForm
         OptionSettingManager102.settingName = Nothing
         OptionSingleReplace56.settingManager = OptionSettingManager102
         OptionSingleReplace56.tokenName = ""
-        OptionSingleReplace56.updateTileSets = false
         Me.optBtnFdJotun.options = OptionSingleReplace56
         Me.optBtnFdJotun.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdJotun.TabIndex = 19
@@ -5384,7 +5289,6 @@ Partial Class MainForm
         OptionSettingManager103.settingName = Nothing
         OptionSingleReplace57.settingManager = OptionSettingManager103
         OptionSingleReplace57.tokenName = ""
-        OptionSingleReplace57.updateTileSets = false
         Me.optBtnFdSpiderFiends.options = OptionSingleReplace57
         Me.optBtnFdSpiderFiends.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdSpiderFiends.TabIndex = 20
@@ -5417,7 +5321,6 @@ Partial Class MainForm
         OptionSettingManager104.settingName = Nothing
         OptionSingleReplace58.settingManager = OptionSettingManager104
         OptionSingleReplace58.tokenName = ""
-        OptionSingleReplace58.updateTileSets = false
         Me.optBtnFdNightwings.options = OptionSingleReplace58
         Me.optBtnFdNightwings.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFdNightwings.TabIndex = 21
@@ -5451,7 +5354,6 @@ Partial Class MainForm
         OptionSettingManager105.settingName = Nothing
         OptionSingleReplace59.settingManager = OptionSettingManager105
         OptionSingleReplace59.tokenName = ""
-        OptionSingleReplace59.updateTileSets = false
         Me.optBtnSteamEngine.options = OptionSingleReplace59
         Me.optBtnSteamEngine.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSteamEngine.TabIndex = 0
@@ -5485,7 +5387,6 @@ Partial Class MainForm
         OptionSettingManager106.settingName = Nothing
         OptionSingleReplace60.settingManager = OptionSettingManager106
         OptionSingleReplace60.tokenName = ""
-        OptionSingleReplace60.updateTileSets = false
         Me.optBtnMachineFactory.options = OptionSingleReplace60
         Me.optBtnMachineFactory.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMachineFactory.TabIndex = 1
@@ -5520,7 +5421,6 @@ Partial Class MainForm
         OptionSettingManager107.settingName = Nothing
         OptionSingleReplace61.settingManager = OptionSettingManager107
         OptionSingleReplace61.tokenName = ""
-        OptionSingleReplace61.updateTileSets = false
         Me.optBtnLiquidSpawner.options = OptionSingleReplace61
         Me.optBtnLiquidSpawner.Size = New System.Drawing.Size(134, 27)
         Me.optBtnLiquidSpawner.TabIndex = 2
@@ -5555,7 +5455,6 @@ Partial Class MainForm
         OptionSettingManager108.settingName = Nothing
         OptionSingleReplace62.settingManager = OptionSettingManager108
         OptionSingleReplace62.tokenName = ""
-        OptionSingleReplace62.updateTileSets = false
         Me.optBtnCoinMint.options = OptionSingleReplace62
         Me.optBtnCoinMint.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCoinMint.TabIndex = 3
@@ -5589,7 +5488,6 @@ Partial Class MainForm
         OptionSettingManager109.settingName = Nothing
         OptionSingleReplace63.settingManager = OptionSettingManager109
         OptionSingleReplace63.tokenName = ""
-        OptionSingleReplace63.updateTileSets = false
         Me.optBtnBonecarver.options = OptionSingleReplace63
         Me.optBtnBonecarver.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBonecarver.TabIndex = 0
@@ -5623,7 +5521,6 @@ Partial Class MainForm
         OptionSettingManager110.settingName = Nothing
         OptionSingleReplace64.settingManager = OptionSettingManager110
         OptionSingleReplace64.tokenName = ""
-        OptionSingleReplace64.updateTileSets = false
         Me.optBtnStonecrafter.options = OptionSingleReplace64
         Me.optBtnStonecrafter.Size = New System.Drawing.Size(134, 27)
         Me.optBtnStonecrafter.TabIndex = 1
@@ -5657,7 +5554,6 @@ Partial Class MainForm
         OptionSettingManager111.settingName = Nothing
         OptionSingleReplace65.settingManager = OptionSettingManager111
         OptionSingleReplace65.tokenName = ""
-        OptionSingleReplace65.updateTileSets = false
         Me.optBtnGemcutter.options = OptionSingleReplace65
         Me.optBtnGemcutter.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGemcutter.TabIndex = 2
@@ -5692,7 +5588,6 @@ Partial Class MainForm
         OptionSettingManager112.settingName = Nothing
         OptionSingleReplace66.settingManager = OptionSettingManager112
         OptionSingleReplace66.tokenName = ""
-        OptionSingleReplace66.updateTileSets = false
         Me.optBtnWoodcrafter.options = OptionSingleReplace66
         Me.optBtnWoodcrafter.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWoodcrafter.TabIndex = 3
@@ -5726,7 +5621,6 @@ Partial Class MainForm
         OptionSettingManager113.settingName = Nothing
         OptionSingleReplace67.settingManager = OptionSettingManager113
         OptionSingleReplace67.tokenName = ""
-        OptionSingleReplace67.updateTileSets = false
         Me.optBtnThatchery.options = OptionSingleReplace67
         Me.optBtnThatchery.Size = New System.Drawing.Size(134, 27)
         Me.optBtnThatchery.TabIndex = 4
@@ -5760,7 +5654,6 @@ Partial Class MainForm
         OptionSettingManager114.settingName = Nothing
         OptionSingleReplace68.settingManager = OptionSettingManager114
         OptionSingleReplace68.tokenName = ""
-        OptionSingleReplace68.updateTileSets = false
         Me.optBtnFurnitureWorkshop.options = OptionSingleReplace68
         Me.optBtnFurnitureWorkshop.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFurnitureWorkshop.TabIndex = 5
@@ -5794,7 +5687,6 @@ Partial Class MainForm
         OptionSettingManager115.settingName = Nothing
         OptionSingleReplace69.settingManager = OptionSettingManager115
         OptionSingleReplace69.tokenName = ""
-        OptionSingleReplace69.updateTileSets = false
         Me.optBtnTailor.options = OptionSingleReplace69
         Me.optBtnTailor.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTailor.TabIndex = 6
@@ -5829,7 +5721,6 @@ Partial Class MainForm
         OptionSettingManager116.settingName = Nothing
         OptionSingleReplace70.settingManager = OptionSettingManager116
         OptionSingleReplace70.tokenName = ""
-        OptionSingleReplace70.updateTileSets = false
         Me.optBtnChandler.options = OptionSingleReplace70
         Me.optBtnChandler.Size = New System.Drawing.Size(134, 27)
         Me.optBtnChandler.TabIndex = 7
@@ -5863,7 +5754,6 @@ Partial Class MainForm
         OptionSettingManager117.settingName = Nothing
         OptionSingleReplace71.settingManager = OptionSettingManager117
         OptionSingleReplace71.tokenName = ""
-        OptionSingleReplace71.updateTileSets = false
         Me.optBtnFletcher.options = OptionSingleReplace71
         Me.optBtnFletcher.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFletcher.TabIndex = 8
@@ -5897,7 +5787,6 @@ Partial Class MainForm
         OptionSettingManager118.settingName = Nothing
         OptionSingleReplace72.settingManager = OptionSettingManager118
         OptionSingleReplace72.tokenName = ""
-        OptionSingleReplace72.updateTileSets = false
         Me.optBtnPottery.options = OptionSingleReplace72
         Me.optBtnPottery.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPottery.TabIndex = 9
@@ -5932,7 +5821,6 @@ Partial Class MainForm
         OptionSettingManager119.settingName = Nothing
         OptionSingleReplace73.settingManager = OptionSettingManager119
         OptionSingleReplace73.tokenName = ""
-        OptionSingleReplace73.updateTileSets = false
         Me.optBtnGreatDyer.options = OptionSingleReplace73
         Me.optBtnGreatDyer.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGreatDyer.TabIndex = 10
@@ -5967,7 +5855,6 @@ Partial Class MainForm
         OptionSettingManager120.settingName = Nothing
         OptionSingleReplace74.settingManager = OptionSettingManager120
         OptionSingleReplace74.tokenName = ""
-        OptionSingleReplace74.updateTileSets = false
         Me.optBtnPainter.options = OptionSingleReplace74
         Me.optBtnPainter.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPainter.TabIndex = 11
@@ -6001,7 +5888,6 @@ Partial Class MainForm
         OptionSettingManager121.settingName = Nothing
         OptionSingleReplace75.settingManager = OptionSettingManager121
         OptionSingleReplace75.tokenName = ""
-        OptionSingleReplace75.updateTileSets = false
         Me.optBtnToolmaker.options = OptionSingleReplace75
         Me.optBtnToolmaker.Size = New System.Drawing.Size(134, 27)
         Me.optBtnToolmaker.TabIndex = 12
@@ -6035,7 +5921,6 @@ Partial Class MainForm
         OptionSettingManager122.settingName = Nothing
         OptionSingleReplace76.settingManager = OptionSettingManager122
         OptionSingleReplace76.tokenName = ""
-        OptionSingleReplace76.updateTileSets = false
         Me.optBtnWeightBench.options = OptionSingleReplace76
         Me.optBtnWeightBench.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWeightBench.TabIndex = 0
@@ -6069,7 +5954,6 @@ Partial Class MainForm
         OptionSettingManager123.settingName = Nothing
         OptionSingleReplace77.settingManager = OptionSettingManager123
         OptionSingleReplace77.tokenName = ""
-        OptionSingleReplace77.updateTileSets = false
         Me.optBtnWoodsplitting.options = OptionSingleReplace77
         Me.optBtnWoodsplitting.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWoodsplitting.TabIndex = 1
@@ -6104,7 +5988,6 @@ Partial Class MainForm
         OptionSettingManager124.settingName = Nothing
         OptionSingleReplace78.settingManager = OptionSettingManager124
         OptionSingleReplace78.tokenName = ""
-        OptionSingleReplace78.updateTileSets = false
         Me.optBtnStorage.options = OptionSingleReplace78
         Me.optBtnStorage.Size = New System.Drawing.Size(134, 27)
         Me.optBtnStorage.TabIndex = 2
@@ -6138,7 +6021,6 @@ Partial Class MainForm
         OptionSettingManager125.settingName = Nothing
         OptionSingleReplace79.settingManager = OptionSettingManager125
         OptionSingleReplace79.tokenName = ""
-        OptionSingleReplace79.updateTileSets = false
         Me.optBtnBrewery.options = OptionSingleReplace79
         Me.optBtnBrewery.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBrewery.TabIndex = 0
@@ -6173,7 +6055,6 @@ Partial Class MainForm
         OptionSettingManager126.settingName = Nothing
         OptionSingleReplace80.settingManager = OptionSettingManager126
         OptionSingleReplace80.tokenName = ""
-        OptionSingleReplace80.updateTileSets = false
         Me.optBtnSawmill.options = OptionSingleReplace80
         Me.optBtnSawmill.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSawmill.TabIndex = 1
@@ -6208,7 +6089,6 @@ Partial Class MainForm
         OptionSettingManager127.settingName = Nothing
         OptionSingleReplace81.settingManager = OptionSettingManager127
         OptionSingleReplace81.tokenName = ""
-        OptionSingleReplace81.updateTileSets = false
         Me.optBtnFishpond.options = OptionSingleReplace81
         Me.optBtnFishpond.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFishpond.TabIndex = 2
@@ -6242,7 +6122,6 @@ Partial Class MainForm
         OptionSettingManager128.settingName = Nothing
         OptionSingleReplace82.settingManager = OptionSettingManager128
         OptionSingleReplace82.tokenName = ""
-        OptionSingleReplace82.updateTileSets = false
         Me.optBtnSlaughterhouse.options = OptionSingleReplace82
         Me.optBtnSlaughterhouse.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSlaughterhouse.TabIndex = 3
@@ -6276,7 +6155,6 @@ Partial Class MainForm
         OptionSettingManager129.settingName = Nothing
         OptionSingleReplace83.settingManager = OptionSettingManager129
         OptionSingleReplace83.tokenName = ""
-        OptionSingleReplace83.updateTileSets = false
         Me.optBtnStables.options = OptionSingleReplace83
         Me.optBtnStables.Size = New System.Drawing.Size(134, 27)
         Me.optBtnStables.TabIndex = 4
@@ -6310,7 +6188,6 @@ Partial Class MainForm
         OptionSettingManager130.settingName = Nothing
         OptionSingleReplace84.settingManager = OptionSettingManager130
         OptionSingleReplace84.tokenName = ""
-        OptionSingleReplace84.updateTileSets = false
         Me.optBtnResearch.options = OptionSingleReplace84
         Me.optBtnResearch.Size = New System.Drawing.Size(134, 27)
         Me.optBtnResearch.TabIndex = 0
@@ -6344,7 +6221,6 @@ Partial Class MainForm
         OptionSettingManager131.settingName = Nothing
         OptionSingleReplace85.settingManager = OptionSettingManager131
         OptionSingleReplace85.tokenName = ""
-        OptionSingleReplace85.updateTileSets = false
         Me.optBtnArcheology.options = OptionSingleReplace85
         Me.optBtnArcheology.Size = New System.Drawing.Size(134, 27)
         Me.optBtnArcheology.TabIndex = 1
@@ -6378,7 +6254,6 @@ Partial Class MainForm
         OptionSettingManager132.settingName = Nothing
         OptionSingleReplace86.settingManager = OptionSettingManager132
         OptionSingleReplace86.tokenName = ""
-        OptionSingleReplace86.updateTileSets = false
         Me.optBtnApothecary.options = OptionSingleReplace86
         Me.optBtnApothecary.Size = New System.Drawing.Size(134, 27)
         Me.optBtnApothecary.TabIndex = 2
@@ -6413,7 +6288,6 @@ Partial Class MainForm
         OptionSettingManager133.settingName = Nothing
         OptionSingleReplace87.settingManager = OptionSettingManager133
         OptionSingleReplace87.tokenName = ""
-        OptionSingleReplace87.updateTileSets = false
         Me.optBtnBiology.options = OptionSingleReplace87
         Me.optBtnBiology.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBiology.TabIndex = 3
@@ -6448,7 +6322,6 @@ Partial Class MainForm
         OptionSettingManager134.settingName = Nothing
         OptionSingleReplace88.settingManager = OptionSettingManager134
         OptionSingleReplace88.tokenName = ""
-        OptionSingleReplace88.updateTileSets = false
         Me.optBtnTavern.options = OptionSingleReplace88
         Me.optBtnTavern.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTavern.TabIndex = 0
@@ -6483,7 +6356,6 @@ Partial Class MainForm
         OptionSettingManager135.settingName = Nothing
         OptionSingleReplace89.settingManager = OptionSettingManager135
         OptionSingleReplace89.tokenName = ""
-        OptionSingleReplace89.updateTileSets = false
         Me.optBtnOlon.options = OptionSingleReplace89
         Me.optBtnOlon.Size = New System.Drawing.Size(134, 27)
         Me.optBtnOlon.TabIndex = 1
@@ -6517,7 +6389,6 @@ Partial Class MainForm
         OptionSettingManager136.settingName = Nothing
         OptionSingleReplace90.settingManager = OptionSettingManager136
         OptionSingleReplace90.tokenName = ""
-        OptionSingleReplace90.updateTileSets = false
         Me.optBtnBomrek.options = OptionSingleReplace90
         Me.optBtnBomrek.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBomrek.TabIndex = 2
@@ -6551,7 +6422,6 @@ Partial Class MainForm
         OptionSettingManager137.settingName = Nothing
         OptionSingleReplace91.settingManager = OptionSettingManager137
         OptionSingleReplace91.tokenName = ""
-        OptionSingleReplace91.updateTileSets = false
         Me.optBtnUrist.options = OptionSingleReplace91
         Me.optBtnUrist.Size = New System.Drawing.Size(134, 27)
         Me.optBtnUrist.TabIndex = 3
@@ -6585,7 +6455,6 @@ Partial Class MainForm
         OptionSettingManager138.settingName = Nothing
         OptionSingleReplace92.settingManager = OptionSettingManager138
         OptionSingleReplace92.tokenName = ""
-        OptionSingleReplace92.updateTileSets = false
         Me.optBtnTeduk.options = OptionSingleReplace92
         Me.optBtnTeduk.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTeduk.TabIndex = 4
@@ -6619,7 +6488,6 @@ Partial Class MainForm
         OptionSettingManager139.settingName = Nothing
         OptionSingleReplace93.settingManager = OptionSettingManager139
         OptionSingleReplace93.tokenName = ""
-        OptionSingleReplace93.updateTileSets = false
         Me.optBtnIneri.options = OptionSingleReplace93
         Me.optBtnIneri.Size = New System.Drawing.Size(134, 27)
         Me.optBtnIneri.TabIndex = 5
@@ -6653,7 +6521,6 @@ Partial Class MainForm
         OptionSettingManager140.settingName = Nothing
         OptionSingleReplace94.settingManager = OptionSettingManager140
         OptionSingleReplace94.tokenName = ""
-        OptionSingleReplace94.updateTileSets = false
         Me.optBtnAlchemy.options = OptionSingleReplace94
         Me.optBtnAlchemy.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAlchemy.TabIndex = 0
@@ -6688,7 +6555,6 @@ Partial Class MainForm
         OptionSettingManager141.settingName = Nothing
         OptionSingleReplace95.settingManager = OptionSettingManager141
         OptionSingleReplace95.tokenName = ""
-        OptionSingleReplace95.updateTileSets = false
         Me.optBtnToxicology.options = OptionSingleReplace95
         Me.optBtnToxicology.Size = New System.Drawing.Size(134, 27)
         Me.optBtnToxicology.TabIndex = 1
@@ -6722,7 +6588,6 @@ Partial Class MainForm
         OptionSettingManager142.settingName = Nothing
         OptionSingleReplace96.settingManager = OptionSettingManager142
         OptionSingleReplace96.tokenName = ""
-        OptionSingleReplace96.updateTileSets = false
         Me.optBtnChemistry.options = OptionSingleReplace96
         Me.optBtnChemistry.Size = New System.Drawing.Size(134, 27)
         Me.optBtnChemistry.TabIndex = 2
@@ -6756,7 +6621,6 @@ Partial Class MainForm
         OptionSettingManager143.settingName = Nothing
         OptionSingleReplace97.settingManager = OptionSettingManager143
         OptionSingleReplace97.tokenName = ""
-        OptionSingleReplace97.updateTileSets = false
         Me.optBtnHerbalist.options = OptionSingleReplace97
         Me.optBtnHerbalist.Size = New System.Drawing.Size(134, 27)
         Me.optBtnHerbalist.TabIndex = 3
@@ -6790,7 +6654,6 @@ Partial Class MainForm
         OptionSettingManager144.settingName = Nothing
         OptionSingleReplace98.settingManager = OptionSettingManager144
         OptionSingleReplace98.tokenName = ""
-        OptionSingleReplace98.updateTileSets = false
         Me.optBtnAltar.options = OptionSingleReplace98
         Me.optBtnAltar.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAltar.TabIndex = 0
@@ -6824,7 +6687,6 @@ Partial Class MainForm
         OptionSettingManager145.settingName = Nothing
         OptionSingleReplace99.settingManager = OptionSettingManager145
         OptionSingleReplace99.tokenName = ""
-        OptionSingleReplace99.updateTileSets = false
         Me.optBtnShrine.options = OptionSingleReplace99
         Me.optBtnShrine.Size = New System.Drawing.Size(134, 27)
         Me.optBtnShrine.TabIndex = 1
@@ -6858,7 +6720,6 @@ Partial Class MainForm
         OptionSettingManager146.settingName = Nothing
         OptionSingleReplace100.settingManager = OptionSettingManager146
         OptionSingleReplace100.tokenName = ""
-        OptionSingleReplace100.updateTileSets = false
         Me.optBtnTemple.options = OptionSingleReplace100
         Me.optBtnTemple.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTemple.TabIndex = 2
@@ -6892,7 +6753,6 @@ Partial Class MainForm
         OptionSettingManager147.settingName = Nothing
         OptionSingleReplace101.settingManager = OptionSettingManager147
         OptionSingleReplace101.tokenName = ""
-        OptionSingleReplace101.updateTileSets = false
         Me.optBtnEmbassy.options = OptionSingleReplace101
         Me.optBtnEmbassy.Size = New System.Drawing.Size(134, 27)
         Me.optBtnEmbassy.TabIndex = 0
@@ -6926,7 +6786,6 @@ Partial Class MainForm
         OptionSettingManager148.settingName = Nothing
         OptionSingleReplace102.settingManager = OptionSettingManager148
         OptionSingleReplace102.tokenName = ""
-        OptionSingleReplace102.updateTileSets = false
         Me.optBtnExpedition.options = OptionSingleReplace102
         Me.optBtnExpedition.Size = New System.Drawing.Size(134, 27)
         Me.optBtnExpedition.TabIndex = 1
@@ -6960,7 +6819,6 @@ Partial Class MainForm
         OptionSettingManager149.settingName = Nothing
         OptionSingleReplace103.settingManager = OptionSettingManager149
         OptionSingleReplace103.tokenName = ""
-        OptionSingleReplace103.updateTileSets = false
         Me.optBtnPodium.options = OptionSingleReplace103
         Me.optBtnPodium.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPodium.TabIndex = 2
@@ -6994,7 +6852,6 @@ Partial Class MainForm
         OptionSettingManager150.settingName = Nothing
         OptionSingleReplace104.settingManager = OptionSettingManager150
         OptionSingleReplace104.tokenName = ""
-        OptionSingleReplace104.updateTileSets = false
         Me.optBtnScriptorium.options = OptionSingleReplace104
         Me.optBtnScriptorium.Size = New System.Drawing.Size(134, 27)
         Me.optBtnScriptorium.TabIndex = 0
@@ -7028,7 +6885,6 @@ Partial Class MainForm
         OptionSettingManager151.settingName = Nothing
         OptionSingleReplace105.settingManager = OptionSettingManager151
         OptionSingleReplace105.tokenName = ""
-        OptionSingleReplace105.updateTileSets = false
         Me.optBtnLibraries.options = OptionSingleReplace105
         Me.optBtnLibraries.Size = New System.Drawing.Size(134, 27)
         Me.optBtnLibraries.TabIndex = 1
@@ -7062,7 +6918,6 @@ Partial Class MainForm
         OptionSettingManager152.settingName = Nothing
         OptionSingleReplace106.settingManager = OptionSettingManager152
         OptionSingleReplace106.tokenName = ""
-        OptionSingleReplace106.updateTileSets = false
         Me.optBtnColosseum.options = OptionSingleReplace106
         Me.optBtnColosseum.Size = New System.Drawing.Size(134, 27)
         Me.optBtnColosseum.TabIndex = 0
@@ -7096,7 +6951,6 @@ Partial Class MainForm
         OptionSettingManager153.settingName = Nothing
         OptionSingleReplace107.settingManager = OptionSettingManager153
         OptionSingleReplace107.tokenName = ""
-        OptionSingleReplace107.updateTileSets = false
         Me.optBtnGuildhall.options = OptionSingleReplace107
         Me.optBtnGuildhall.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGuildhall.TabIndex = 1
@@ -7130,7 +6984,6 @@ Partial Class MainForm
         OptionSettingManager154.settingName = Nothing
         OptionSingleReplace108.settingManager = OptionSettingManager154
         OptionSingleReplace108.tokenName = ""
-        OptionSingleReplace108.updateTileSets = false
         Me.optBtnPrison.options = OptionSingleReplace108
         Me.optBtnPrison.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPrison.TabIndex = 2
@@ -7164,7 +7017,6 @@ Partial Class MainForm
         OptionSettingManager155.settingName = Nothing
         OptionSingleReplace109.settingManager = OptionSettingManager155
         OptionSingleReplace109.tokenName = ""
-        OptionSingleReplace109.updateTileSets = false
         Me.optBtnMonastery.options = OptionSingleReplace109
         Me.optBtnMonastery.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMonastery.TabIndex = 3
@@ -7199,7 +7051,6 @@ Partial Class MainForm
         OptionSettingManager156.settingName = Nothing
         OptionSingleReplace110.settingManager = OptionSettingManager156
         OptionSingleReplace110.tokenName = ""
-        OptionSingleReplace110.updateTileSets = false
         Me.optBtnGarrison.options = OptionSingleReplace110
         Me.optBtnGarrison.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGarrison.TabIndex = 4
@@ -7234,7 +7085,6 @@ Partial Class MainForm
         OptionSettingManager157.settingName = Nothing
         OptionSingleReplace111.settingManager = OptionSettingManager157
         OptionSingleReplace111.tokenName = ""
-        OptionSingleReplace111.updateTileSets = false
         Me.optBtnBrazier.options = OptionSingleReplace111
         Me.optBtnBrazier.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBrazier.TabIndex = 0
@@ -7268,7 +7118,6 @@ Partial Class MainForm
         OptionSettingManager158.settingName = Nothing
         OptionSingleReplace112.settingManager = OptionSettingManager158
         OptionSingleReplace112.tokenName = ""
-        OptionSingleReplace112.updateTileSets = false
         Me.optBtnCandelabra.options = OptionSingleReplace112
         Me.optBtnCandelabra.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCandelabra.TabIndex = 1
@@ -7302,7 +7151,6 @@ Partial Class MainForm
         OptionSettingManager159.settingName = Nothing
         OptionSingleReplace113.settingManager = OptionSettingManager159
         OptionSingleReplace113.tokenName = ""
-        OptionSingleReplace113.updateTileSets = false
         Me.optBtnFireplace.options = OptionSingleReplace113
         Me.optBtnFireplace.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFireplace.TabIndex = 2
@@ -7336,7 +7184,6 @@ Partial Class MainForm
         OptionSettingManager160.settingName = Nothing
         OptionSingleReplace114.settingManager = OptionSettingManager160
         OptionSingleReplace114.tokenName = ""
-        OptionSingleReplace114.updateTileSets = false
         Me.optBtnTorchbearerStatue.options = OptionSingleReplace114
         Me.optBtnTorchbearerStatue.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTorchbearerStatue.TabIndex = 3
@@ -7370,7 +7217,6 @@ Partial Class MainForm
         OptionSettingManager161.settingName = Nothing
         OptionSingleReplace115.settingManager = OptionSettingManager161
         OptionSingleReplace115.tokenName = ""
-        OptionSingleReplace115.updateTileSets = false
         Me.optBtnGemOfLight.options = OptionSingleReplace115
         Me.optBtnGemOfLight.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGemOfLight.TabIndex = 4
@@ -7404,7 +7250,6 @@ Partial Class MainForm
         OptionSettingManager162.settingName = Nothing
         OptionSingleReplace116.settingManager = OptionSettingManager162
         OptionSingleReplace116.tokenName = ""
-        OptionSingleReplace116.updateTileSets = false
         Me.optBtnAmmocaster.options = OptionSingleReplace116
         Me.optBtnAmmocaster.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAmmocaster.TabIndex = 0
@@ -7438,7 +7283,6 @@ Partial Class MainForm
         OptionSettingManager163.settingName = Nothing
         OptionSingleReplace117.settingManager = OptionSettingManager163
         OptionSingleReplace117.tokenName = ""
-        OptionSingleReplace117.updateTileSets = false
         Me.optBtnGunsmith.options = OptionSingleReplace117
         Me.optBtnGunsmith.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGunsmith.TabIndex = 1
@@ -7472,7 +7316,6 @@ Partial Class MainForm
         OptionSettingManager164.settingName = Nothing
         OptionSingleReplace118.settingManager = OptionSettingManager164
         OptionSingleReplace118.tokenName = ""
-        OptionSingleReplace118.updateTileSets = false
         Me.optBtnHeavySiegeworks.options = OptionSingleReplace118
         Me.optBtnHeavySiegeworks.Size = New System.Drawing.Size(134, 27)
         Me.optBtnHeavySiegeworks.TabIndex = 2
@@ -7507,7 +7350,6 @@ Partial Class MainForm
         OptionSettingManager165.settingName = Nothing
         OptionSingleReplace119.settingManager = OptionSettingManager165
         OptionSingleReplace119.tokenName = ""
-        OptionSingleReplace119.updateTileSets = false
         Me.optBtnEngineer.options = OptionSingleReplace119
         Me.optBtnEngineer.Size = New System.Drawing.Size(134, 27)
         Me.optBtnEngineer.TabIndex = 3
@@ -7541,7 +7383,6 @@ Partial Class MainForm
         OptionSettingManager166.settingName = Nothing
         OptionSingleReplace120.settingManager = OptionSettingManager166
         OptionSingleReplace120.tokenName = ""
-        OptionSingleReplace120.updateTileSets = false
         Me.optBtnInventor.options = OptionSingleReplace120
         Me.optBtnInventor.Size = New System.Drawing.Size(134, 27)
         Me.optBtnInventor.TabIndex = 4
@@ -7576,7 +7417,6 @@ Partial Class MainForm
         OptionSettingManager167.settingName = Nothing
         OptionSingleReplace121.settingManager = OptionSettingManager167
         OptionSingleReplace121.tokenName = ""
-        OptionSingleReplace121.updateTileSets = false
         Me.optBtnGreatforge.options = OptionSingleReplace121
         Me.optBtnGreatforge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGreatforge.TabIndex = 5
@@ -7610,7 +7450,6 @@ Partial Class MainForm
         OptionSettingManager168.settingName = Nothing
         OptionSingleReplace122.settingManager = OptionSettingManager168
         OptionSingleReplace122.tokenName = ""
-        OptionSingleReplace122.updateTileSets = false
         Me.optBtnGlassforge.options = OptionSingleReplace122
         Me.optBtnGlassforge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGlassforge.TabIndex = 6
@@ -7644,7 +7483,6 @@ Partial Class MainForm
         OptionSettingManager169.settingName = Nothing
         OptionSingleReplace123.settingManager = OptionSettingManager169
         OptionSingleReplace123.tokenName = ""
-        OptionSingleReplace123.updateTileSets = false
         Me.optBtnGemforge.options = OptionSingleReplace123
         Me.optBtnGemforge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGemforge.TabIndex = 7
@@ -7679,7 +7517,6 @@ Partial Class MainForm
         OptionSettingManager170.settingName = Nothing
         OptionSingleReplace124.settingManager = OptionSettingManager170
         OptionSingleReplace124.tokenName = ""
-        OptionSingleReplace124.updateTileSets = false
         Me.optBtnRockForge.options = OptionSingleReplace124
         Me.optBtnRockForge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRockForge.TabIndex = 8
@@ -7713,7 +7550,6 @@ Partial Class MainForm
         OptionSettingManager171.settingName = Nothing
         OptionSingleReplace125.settingManager = OptionSettingManager171
         OptionSingleReplace125.tokenName = ""
-        OptionSingleReplace125.updateTileSets = false
         Me.optBtnBrickOven.options = OptionSingleReplace125
         Me.optBtnBrickOven.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBrickOven.TabIndex = 0
@@ -7747,7 +7583,6 @@ Partial Class MainForm
         OptionSettingManager172.settingName = Nothing
         OptionSingleReplace126.settingManager = OptionSettingManager172
         OptionSingleReplace126.tokenName = ""
-        OptionSingleReplace126.updateTileSets = false
         Me.optBtnCrematorium.options = OptionSingleReplace126
         Me.optBtnCrematorium.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCrematorium.TabIndex = 1
@@ -7793,7 +7628,6 @@ Partial Class MainForm
         OptionMulti3.tokenList.Add(RawToken6)
         OptionMulti3.tokenList.Add(RawToken7)
         OptionMulti3.tokenList.Add(RawToken8)
-        OptionMulti3.updateTileSets = true
         Me.optMultiOreProcessor.options = OptionMulti3
         Me.optMultiOreProcessor.Size = New System.Drawing.Size(134, 27)
         Me.optMultiOreProcessor.TabIndex = 2
@@ -7828,7 +7662,6 @@ Partial Class MainForm
         OptionSettingManager174.settingName = Nothing
         OptionSingleReplace127.settingManager = OptionSettingManager174
         OptionSingleReplace127.tokenName = ""
-        OptionSingleReplace127.updateTileSets = false
         Me.optBtnKiln.options = OptionSingleReplace127
         Me.optBtnKiln.Size = New System.Drawing.Size(134, 27)
         Me.optBtnKiln.TabIndex = 3
@@ -7863,7 +7696,6 @@ Partial Class MainForm
         OptionSettingManager175.settingName = Nothing
         OptionSingleReplace128.settingManager = OptionSettingManager175
         OptionSingleReplace128.tokenName = ""
-        OptionSingleReplace128.updateTileSets = true
         Me.optBtnSlagPit.options = OptionSingleReplace128
         Me.optBtnSlagPit.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSlagPit.TabIndex = 4
@@ -7897,7 +7729,6 @@ Partial Class MainForm
         OptionSettingManager176.settingName = Nothing
         OptionSingleReplace129.settingManager = OptionSettingManager176
         OptionSingleReplace129.tokenName = ""
-        OptionSingleReplace129.updateTileSets = false
         Me.optBtnRuneArmory.options = OptionSingleReplace129
         Me.optBtnRuneArmory.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRuneArmory.TabIndex = 0
@@ -7931,7 +7762,6 @@ Partial Class MainForm
         OptionSettingManager177.settingName = Nothing
         OptionSingleReplace130.settingManager = OptionSettingManager177
         OptionSingleReplace130.tokenName = ""
-        OptionSingleReplace130.updateTileSets = false
         Me.optBtnRuneWeaponry.options = OptionSingleReplace130
         Me.optBtnRuneWeaponry.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRuneWeaponry.TabIndex = 1
@@ -7965,7 +7795,6 @@ Partial Class MainForm
         OptionSettingManager178.settingName = Nothing
         OptionSingleReplace131.settingManager = OptionSettingManager178
         OptionSingleReplace131.tokenName = ""
-        OptionSingleReplace131.updateTileSets = false
         Me.optBtnArmory.options = OptionSingleReplace131
         Me.optBtnArmory.Size = New System.Drawing.Size(134, 27)
         Me.optBtnArmory.TabIndex = 2
@@ -7999,7 +7828,6 @@ Partial Class MainForm
         OptionSettingManager179.settingName = Nothing
         OptionSingleReplace132.settingManager = OptionSettingManager179
         OptionSingleReplace132.tokenName = ""
-        OptionSingleReplace132.updateTileSets = false
         Me.optBtnWeaponry.options = OptionSingleReplace132
         Me.optBtnWeaponry.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWeaponry.TabIndex = 3
@@ -8034,7 +7862,6 @@ Partial Class MainForm
         OptionSettingManager180.settingName = Nothing
         OptionSingleReplace133.settingManager = OptionSettingManager180
         OptionSingleReplace133.tokenName = ""
-        OptionSingleReplace133.updateTileSets = false
         Me.optBtnMegabeastKennel.options = OptionSingleReplace133
         Me.optBtnMegabeastKennel.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMegabeastKennel.TabIndex = 4
@@ -8069,7 +7896,6 @@ Partial Class MainForm
         OptionSettingManager181.settingName = Nothing
         OptionSingleReplace134.settingManager = OptionSettingManager181
         OptionSingleReplace134.tokenName = ""
-        OptionSingleReplace134.updateTileSets = false
         Me.optBtnWarKennel.options = OptionSingleReplace134
         Me.optBtnWarKennel.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWarKennel.TabIndex = 5
@@ -8103,7 +7929,6 @@ Partial Class MainForm
         OptionSettingManager182.settingName = Nothing
         OptionSingleReplace135.settingManager = OptionSettingManager182
         OptionSingleReplace135.tokenName = ""
-        OptionSingleReplace135.updateTileSets = false
         Me.optBtnBlastFurnace.options = OptionSingleReplace135
         Me.optBtnBlastFurnace.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBlastFurnace.TabIndex = 0
@@ -8137,7 +7962,6 @@ Partial Class MainForm
         OptionSettingManager183.settingName = Nothing
         OptionSingleReplace136.settingManager = OptionSettingManager183
         OptionSingleReplace136.tokenName = ""
-        OptionSingleReplace136.updateTileSets = false
         Me.optBtnCrucible.options = OptionSingleReplace136
         Me.optBtnCrucible.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCrucible.TabIndex = 1
@@ -8171,7 +7995,6 @@ Partial Class MainForm
         OptionSettingManager184.settingName = Nothing
         OptionSingleReplace137.settingManager = OptionSettingManager184
         OptionSingleReplace137.tokenName = ""
-        OptionSingleReplace137.updateTileSets = false
         Me.optBtnFinishingForge.options = OptionSingleReplace137
         Me.optBtnFinishingForge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFinishingForge.TabIndex = 2
@@ -8205,7 +8028,6 @@ Partial Class MainForm
         OptionSettingManager185.settingName = Nothing
         OptionSingleReplace138.settingManager = OptionSettingManager185
         OptionSingleReplace138.tokenName = ""
-        OptionSingleReplace138.updateTileSets = false
         Me.optBtnMetallurgist.options = OptionSingleReplace138
         Me.optBtnMetallurgist.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMetallurgist.TabIndex = 3
@@ -8239,7 +8061,6 @@ Partial Class MainForm
         OptionSettingManager186.settingName = Nothing
         OptionSingleReplace139.settingManager = OptionSettingManager186
         OptionSingleReplace139.tokenName = ""
-        OptionSingleReplace139.updateTileSets = false
         Me.optBtnArbalest.options = OptionSingleReplace139
         Me.optBtnArbalest.Size = New System.Drawing.Size(134, 27)
         Me.optBtnArbalest.TabIndex = 0
@@ -8273,7 +8094,6 @@ Partial Class MainForm
         OptionSettingManager187.settingName = Nothing
         OptionSingleReplace140.settingManager = OptionSettingManager187
         OptionSingleReplace140.tokenName = ""
-        OptionSingleReplace140.updateTileSets = false
         Me.optBtnTrebuchet.options = OptionSingleReplace140
         Me.optBtnTrebuchet.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTrebuchet.TabIndex = 1
@@ -8307,7 +8127,6 @@ Partial Class MainForm
         OptionSettingManager188.settingName = Nothing
         OptionSingleReplace141.settingManager = OptionSettingManager188
         OptionSingleReplace141.tokenName = ""
-        OptionSingleReplace141.updateTileSets = false
         Me.optBtnDisplayCase.options = OptionSingleReplace141
         Me.optBtnDisplayCase.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDisplayCase.TabIndex = 0
@@ -8341,7 +8160,6 @@ Partial Class MainForm
         OptionSettingManager189.settingName = Nothing
         OptionSingleReplace142.settingManager = OptionSettingManager189
         OptionSingleReplace142.tokenName = ""
-        OptionSingleReplace142.updateTileSets = false
         Me.optBtnPottedPlant.options = OptionSingleReplace142
         Me.optBtnPottedPlant.Size = New System.Drawing.Size(134, 27)
         Me.optBtnPottedPlant.TabIndex = 1
@@ -8375,7 +8193,6 @@ Partial Class MainForm
         OptionSettingManager190.settingName = Nothing
         OptionSingleReplace143.settingManager = OptionSettingManager190
         OptionSingleReplace143.tokenName = ""
-        OptionSingleReplace143.updateTileSets = false
         Me.optBtnTotems.options = OptionSingleReplace143
         Me.optBtnTotems.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTotems.TabIndex = 2
@@ -8409,7 +8226,6 @@ Partial Class MainForm
         OptionSettingManager191.settingName = Nothing
         OptionSingleReplace144.settingManager = OptionSettingManager191
         OptionSingleReplace144.tokenName = ""
-        OptionSingleReplace144.updateTileSets = false
         Me.optBtnFountain.options = OptionSingleReplace144
         Me.optBtnFountain.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFountain.TabIndex = 3
@@ -8443,7 +8259,6 @@ Partial Class MainForm
         OptionSettingManager192.settingName = Nothing
         OptionSingleReplace145.settingManager = OptionSettingManager192
         OptionSingleReplace145.tokenName = ""
-        OptionSingleReplace145.updateTileSets = false
         Me.optBtnDwarvenLoo.options = OptionSingleReplace145
         Me.optBtnDwarvenLoo.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDwarvenLoo.TabIndex = 4
@@ -8478,7 +8293,6 @@ Partial Class MainForm
         OptionSettingManager193.settingName = Nothing
         OptionSingleReplace146.settingManager = OptionSettingManager193
         OptionSingleReplace146.tokenName = ""
-        OptionSingleReplace146.updateTileSets = false
         Me.optBtnCarpet.options = OptionSingleReplace146
         Me.optBtnCarpet.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCarpet.TabIndex = 5
@@ -8512,7 +8326,6 @@ Partial Class MainForm
         OptionSettingManager194.settingName = Nothing
         OptionSingleReplace147.settingManager = OptionSettingManager194
         OptionSingleReplace147.tokenName = ""
-        OptionSingleReplace147.updateTileSets = false
         Me.optBtnDecoItems.options = OptionSingleReplace147
         Me.optBtnDecoItems.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDecoItems.TabIndex = 6
@@ -8546,7 +8359,6 @@ Partial Class MainForm
         OptionSettingManager195.settingName = Nothing
         OptionSingleReplace148.settingManager = OptionSettingManager195
         OptionSingleReplace148.tokenName = ""
-        OptionSingleReplace148.updateTileSets = false
         Me.optBtnStatues.options = OptionSingleReplace148
         Me.optBtnStatues.Size = New System.Drawing.Size(134, 27)
         Me.optBtnStatues.TabIndex = 7
@@ -8580,7 +8392,6 @@ Partial Class MainForm
         OptionSettingManager196.settingName = Nothing
         OptionSingleReplace149.settingManager = OptionSettingManager196
         OptionSingleReplace149.tokenName = ""
-        OptionSingleReplace149.updateTileSets = false
         Me.optBtnMagicSchool.options = OptionSingleReplace149
         Me.optBtnMagicSchool.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMagicSchool.TabIndex = 0
@@ -8614,7 +8425,6 @@ Partial Class MainForm
         OptionSettingManager197.settingName = Nothing
         OptionSingleReplace150.settingManager = OptionSettingManager197
         OptionSingleReplace150.tokenName = ""
-        OptionSingleReplace150.updateTileSets = false
         Me.optBtnElementalMagic.options = OptionSingleReplace150
         Me.optBtnElementalMagic.Size = New System.Drawing.Size(134, 27)
         Me.optBtnElementalMagic.TabIndex = 1
@@ -8649,7 +8459,6 @@ Partial Class MainForm
         OptionSettingManager198.settingName = Nothing
         OptionSingleReplace151.settingManager = OptionSettingManager198
         OptionSingleReplace151.tokenName = ""
-        OptionSingleReplace151.updateTileSets = false
         Me.optBtnWhiteMagic.options = OptionSingleReplace151
         Me.optBtnWhiteMagic.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWhiteMagic.TabIndex = 2
@@ -8683,7 +8492,6 @@ Partial Class MainForm
         OptionSettingManager199.settingName = Nothing
         OptionSingleReplace152.settingManager = OptionSettingManager199
         OptionSingleReplace152.tokenName = ""
-        OptionSingleReplace152.updateTileSets = false
         Me.optBtnBlackMagic.options = OptionSingleReplace152
         Me.optBtnBlackMagic.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBlackMagic.TabIndex = 3
@@ -8718,7 +8526,6 @@ Partial Class MainForm
         OptionSettingManager200.settingName = Nothing
         OptionSingleReplace153.settingManager = OptionSettingManager200
         OptionSingleReplace153.tokenName = ""
-        OptionSingleReplace153.updateTileSets = false
         Me.optBtnWarpstonePool.options = OptionSingleReplace153
         Me.optBtnWarpstonePool.Size = New System.Drawing.Size(134, 27)
         Me.optBtnWarpstonePool.TabIndex = 4
@@ -8752,7 +8559,6 @@ Partial Class MainForm
         OptionSettingManager201.settingName = Nothing
         OptionSingleReplace154.settingManager = OptionSettingManager201
         OptionSingleReplace154.tokenName = ""
-        OptionSingleReplace154.updateTileSets = false
         Me.optBtnGolemForge.options = OptionSingleReplace154
         Me.optBtnGolemForge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGolemForge.TabIndex = 0
@@ -8786,7 +8592,6 @@ Partial Class MainForm
         OptionSettingManager202.settingName = Nothing
         OptionSingleReplace155.settingManager = OptionSettingManager202
         OptionSingleReplace155.tokenName = ""
-        OptionSingleReplace155.updateTileSets = false
         Me.optBtnGreatMagmaForge.options = OptionSingleReplace155
         Me.optBtnGreatMagmaForge.Size = New System.Drawing.Size(134, 27)
         Me.optBtnGreatMagmaForge.TabIndex = 1
@@ -8820,7 +8625,6 @@ Partial Class MainForm
         OptionSettingManager203.settingName = Nothing
         OptionSingleReplace156.settingManager = OptionSettingManager203
         OptionSingleReplace156.tokenName = ""
-        OptionSingleReplace156.updateTileSets = false
         Me.optBtnClayOven.options = OptionSingleReplace156
         Me.optBtnClayOven.Size = New System.Drawing.Size(134, 27)
         Me.optBtnClayOven.TabIndex = 0
@@ -8855,7 +8659,6 @@ Partial Class MainForm
         OptionSettingManager204.settingName = Nothing
         OptionSingleReplace157.settingManager = OptionSettingManager204
         OptionSingleReplace157.tokenName = ""
-        OptionSingleReplace157.updateTileSets = false
         Me.optBtnCrafts.options = OptionSingleReplace157
         Me.optBtnCrafts.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCrafts.TabIndex = 1
@@ -8889,7 +8692,6 @@ Partial Class MainForm
         OptionSettingManager205.settingName = Nothing
         OptionSingleReplace158.settingManager = OptionSettingManager205
         OptionSingleReplace158.tokenName = ""
-        OptionSingleReplace158.updateTileSets = false
         Me.optBtnQuenMill.options = OptionSingleReplace158
         Me.optBtnQuenMill.Size = New System.Drawing.Size(134, 27)
         Me.optBtnQuenMill.TabIndex = 2
@@ -8924,7 +8726,6 @@ Partial Class MainForm
         OptionSettingManager206.settingName = Nothing
         OptionSingleReplace159.settingManager = OptionSettingManager206
         OptionSingleReplace159.tokenName = ""
-        OptionSingleReplace159.updateTileSets = false
         Me.optBtnMillstone.options = OptionSingleReplace159
         Me.optBtnMillstone.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMillstone.TabIndex = 3
@@ -8958,7 +8759,6 @@ Partial Class MainForm
         OptionSettingManager207.settingName = Nothing
         OptionSingleReplace160.settingManager = OptionSettingManager207
         OptionSingleReplace160.tokenName = ""
-        OptionSingleReplace160.updateTileSets = false
         Me.optBtnStill.options = OptionSingleReplace160
         Me.optBtnStill.Size = New System.Drawing.Size(134, 27)
         Me.optBtnStill.TabIndex = 4
@@ -8992,7 +8792,6 @@ Partial Class MainForm
         OptionSettingManager208.settingName = Nothing
         OptionSingleReplace161.settingManager = OptionSettingManager208
         OptionSingleReplace161.tokenName = ""
-        OptionSingleReplace161.updateTileSets = false
         Me.optBtnKitchen.options = OptionSingleReplace161
         Me.optBtnKitchen.Size = New System.Drawing.Size(134, 27)
         Me.optBtnKitchen.TabIndex = 5
@@ -9026,7 +8825,6 @@ Partial Class MainForm
         OptionSettingManager209.settingName = Nothing
         OptionSingleReplace162.settingManager = OptionSettingManager209
         OptionSingleReplace162.tokenName = ""
-        OptionSingleReplace162.updateTileSets = false
         Me.optBtnTanner.options = OptionSingleReplace162
         Me.optBtnTanner.Size = New System.Drawing.Size(134, 27)
         Me.optBtnTanner.TabIndex = 6
@@ -9060,7 +8858,6 @@ Partial Class MainForm
         OptionSettingManager210.settingName = Nothing
         OptionSingleReplace163.settingManager = OptionSettingManager210
         OptionSingleReplace163.tokenName = ""
-        OptionSingleReplace163.updateTileSets = false
         Me.optBtnScrewPress.options = OptionSingleReplace163
         Me.optBtnScrewPress.Size = New System.Drawing.Size(134, 27)
         Me.optBtnScrewPress.TabIndex = 7
@@ -9094,7 +8891,6 @@ Partial Class MainForm
         OptionSettingManager211.settingName = Nothing
         OptionSingleReplace164.settingManager = OptionSettingManager211
         OptionSingleReplace164.tokenName = ""
-        OptionSingleReplace164.updateTileSets = false
         Me.optBtnSoapmaker.options = OptionSingleReplace164
         Me.optBtnSoapmaker.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSoapmaker.TabIndex = 8
@@ -9129,7 +8925,6 @@ Partial Class MainForm
         OptionSettingManager212.settingName = Nothing
         OptionSingleReplace165.settingManager = OptionSettingManager212
         OptionSingleReplace165.tokenName = ""
-        OptionSingleReplace165.updateTileSets = true
         Me.optBtnAquifier.options = OptionSingleReplace165
         Me.optBtnAquifier.Size = New System.Drawing.Size(134, 27)
         Me.optBtnAquifier.TabIndex = 0
@@ -9167,7 +8962,6 @@ Partial Class MainForm
         RawToken10.tokenName = ""
         OptionMulti4.tokenList.Add(RawToken9)
         OptionMulti4.tokenList.Add(RawToken10)
-        OptionMulti4.updateTileSets = false
         Me.optMultiHarderSmithing.options = OptionMulti4
         Me.optMultiHarderSmithing.Size = New System.Drawing.Size(134, 27)
         Me.optMultiHarderSmithing.TabIndex = 1
@@ -9206,7 +9000,6 @@ Partial Class MainForm
         RawToken12.tokenName = ""
         OptionMulti5.tokenList.Add(RawToken11)
         OptionMulti5.tokenList.Add(RawToken12)
-        OptionMulti5.updateTileSets = true
         Me.optMultiHarderFarming.options = OptionMulti5
         Me.optMultiHarderFarming.Size = New System.Drawing.Size(134, 27)
         Me.optMultiHarderFarming.TabIndex = 2
@@ -9241,7 +9034,6 @@ Partial Class MainForm
         OptionSettingManager215.settingName = Nothing
         OptionSingleReplace166.settingManager = OptionSettingManager215
         OptionSingleReplace166.tokenName = ""
-        OptionSingleReplace166.updateTileSets = true
         Me.optBtnHarderMining.options = OptionSingleReplace166
         Me.optBtnHarderMining.Size = New System.Drawing.Size(134, 27)
         Me.optBtnHarderMining.TabIndex = 3
@@ -9275,7 +9067,6 @@ Partial Class MainForm
         OptionSettingManager216.settingName = Nothing
         OptionSingleReplace167.settingManager = OptionSettingManager216
         OptionSingleReplace167.tokenName = ""
-        OptionSingleReplace167.updateTileSets = true
         Me.optBtnHarderLearning.options = OptionSingleReplace167
         Me.optBtnHarderLearning.Size = New System.Drawing.Size(134, 27)
         Me.optBtnHarderLearning.TabIndex = 4
@@ -9309,7 +9100,6 @@ Partial Class MainForm
         OptionSettingManager217.settingName = Nothing
         OptionSingleReplace168.settingManager = OptionSettingManager217
         OptionSingleReplace168.tokenName = ""
-        OptionSingleReplace168.updateTileSets = false
         Me.optBtnBodyguards.options = OptionSingleReplace168
         Me.optBtnBodyguards.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBodyguards.TabIndex = 7
@@ -9343,7 +9133,6 @@ Partial Class MainForm
         OptionSettingManager218.settingName = Nothing
         OptionSingleReplace169.settingManager = OptionSettingManager218
         OptionSingleReplace169.tokenName = ""
-        OptionSingleReplace169.updateTileSets = true
         Me.optBtnSecrets.options = OptionSingleReplace169
         Me.optBtnSecrets.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSecrets.TabIndex = 8
@@ -9378,7 +9167,6 @@ Partial Class MainForm
         OptionSettingManager219.settingName = Nothing
         OptionSingleReplace170.settingManager = OptionSettingManager219
         OptionSingleReplace170.tokenName = ""
-        OptionSingleReplace170.updateTileSets = false
         Me.optBtnDiseases.options = OptionSingleReplace170
         Me.optBtnDiseases.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDiseases.TabIndex = 9
@@ -9417,7 +9205,6 @@ Partial Class MainForm
         RawToken14.tokenName = "Standard"
         OptionMulti6.tokenList.Add(RawToken13)
         OptionMulti6.tokenList.Add(RawToken14)
-        OptionMulti6.updateTileSets = true
         Me.optMultiCavernFlavor.options = OptionMulti6
         Me.optMultiCavernFlavor.Size = New System.Drawing.Size(134, 27)
         Me.optMultiCavernFlavor.TabIndex = 0
@@ -9451,7 +9238,6 @@ Partial Class MainForm
         OptionSettingManager221.settingName = Nothing
         OptionSingleReplace171.settingManager = OptionSettingManager221
         OptionSingleReplace171.tokenName = ""
-        OptionSingleReplace171.updateTileSets = false
         Me.optBtnRegionalWeather.options = OptionSingleReplace171
         Me.optBtnRegionalWeather.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRegionalWeather.TabIndex = 1
@@ -9485,7 +9271,6 @@ Partial Class MainForm
         OptionSettingManager222.settingName = Nothing
         OptionSingleReplace172.settingManager = OptionSettingManager222
         OptionSingleReplace172.tokenName = ""
-        OptionSingleReplace172.updateTileSets = false
         Me.optBtnRegionalEffects.options = OptionSingleReplace172
         Me.optBtnRegionalEffects.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRegionalEffects.TabIndex = 2
@@ -9520,7 +9305,6 @@ Partial Class MainForm
         OptionSettingManager223.settingName = Nothing
         OptionSingleReplace173.settingManager = OptionSettingManager223
         OptionSingleReplace173.tokenName = ""
-        OptionSingleReplace173.updateTileSets = false
         Me.optBtnSmokeEffects.options = OptionSingleReplace173
         Me.optBtnSmokeEffects.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSmokeEffects.TabIndex = 3
@@ -9555,7 +9339,6 @@ Partial Class MainForm
         OptionSettingManager224.settingName = Nothing
         OptionSingleReplace174.settingManager = OptionSettingManager224
         OptionSingleReplace174.tokenName = ""
-        OptionSingleReplace174.updateTileSets = false
         Me.optBtnNobles.options = OptionSingleReplace174
         Me.optBtnNobles.Size = New System.Drawing.Size(134, 27)
         Me.optBtnNobles.TabIndex = 4
@@ -9591,7 +9374,6 @@ Partial Class MainForm
         OptionSettingManager225.settingName = Nothing
         OptionSingleReplace175.settingManager = OptionSettingManager225
         OptionSingleReplace175.tokenName = ""
-        OptionSingleReplace175.updateTileSets = true
         Me.optBtnBattlecries.options = OptionSingleReplace175
         Me.optBtnBattlecries.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBattlecries.TabIndex = 5
@@ -9626,7 +9408,6 @@ Partial Class MainForm
         OptionSettingManager226.settingName = Nothing
         OptionSingleReplace176.settingManager = OptionSettingManager226
         OptionSingleReplace176.tokenName = ""
-        OptionSingleReplace176.updateTileSets = false
         Me.optBtnDiplomats.options = OptionSingleReplace176
         Me.optBtnDiplomats.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDiplomats.TabIndex = 6
@@ -9661,7 +9442,6 @@ Partial Class MainForm
         OptionSettingManager227.settingName = Nothing
         OptionSingleReplace177.settingManager = OptionSettingManager227
         OptionSingleReplace177.tokenName = ""
-        OptionSingleReplace177.updateTileSets = false
         Me.optBtnEnglishDwarves.options = OptionSingleReplace177
         Me.optBtnEnglishDwarves.Size = New System.Drawing.Size(134, 27)
         Me.optBtnEnglishDwarves.TabIndex = 7
@@ -9695,7 +9475,6 @@ Partial Class MainForm
         OptionSettingManager228.settingName = Nothing
         OptionSingleReplace178.settingManager = OptionSettingManager228
         OptionSingleReplace178.tokenName = ""
-        OptionSingleReplace178.updateTileSets = false
         Me.optBtnBuildDimensions.options = OptionSingleReplace178
         Me.optBtnBuildDimensions.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBuildDimensions.TabIndex = 8
@@ -9731,7 +9510,6 @@ Partial Class MainForm
         OptionSettingManager229.settingName = Nothing
         OptionSingleReplace179.settingManager = OptionSettingManager229
         OptionSingleReplace179.tokenName = ""
-        OptionSingleReplace179.updateTileSets = false
         Me.optBtnCombatLogs.options = OptionSingleReplace179
         Me.optBtnCombatLogs.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCombatLogs.TabIndex = 9
@@ -9766,7 +9544,6 @@ Partial Class MainForm
         OptionSettingManager230.settingName = Nothing
         OptionSingleReplace180.settingManager = OptionSettingManager230
         OptionSingleReplace180.tokenName = ""
-        OptionSingleReplace180.updateTileSets = true
         Me.optBtnMoreTrees.options = OptionSingleReplace180
         Me.optBtnMoreTrees.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreTrees.TabIndex = 0
@@ -9800,7 +9577,6 @@ Partial Class MainForm
         OptionSettingManager231.settingName = Nothing
         OptionSingleReplace181.settingManager = OptionSettingManager231
         OptionSingleReplace181.tokenName = ""
-        OptionSingleReplace181.updateTileSets = true
         Me.optBtnMorePlants.options = OptionSingleReplace181
         Me.optBtnMorePlants.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMorePlants.TabIndex = 1
@@ -9834,7 +9610,6 @@ Partial Class MainForm
         OptionSettingManager232.settingName = Nothing
         OptionSingleReplace182.settingManager = OptionSettingManager232
         OptionSingleReplace182.tokenName = ""
-        OptionSingleReplace182.updateTileSets = false
         Me.optBtnFoodNames.options = OptionSingleReplace182
         Me.optBtnFoodNames.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFoodNames.TabIndex = 2
@@ -9868,7 +9643,6 @@ Partial Class MainForm
         OptionSettingManager233.settingName = Nothing
         OptionSingleReplace183.settingManager = OptionSettingManager233
         OptionSingleReplace183.tokenName = ""
-        OptionSingleReplace183.updateTileSets = false
         Me.optBtnFearTheNight.options = OptionSingleReplace183
         Me.optBtnFearTheNight.Size = New System.Drawing.Size(134, 27)
         Me.optBtnFearTheNight.TabIndex = 3
@@ -9895,30 +9669,29 @@ Partial Class MainForm
         OptionSingleReplace184.enabledValue = "rendermax light"
         FileListManager231.fileNames = New String() {"dfhack.init"}
         OptionSingleReplace184.fileManager = FileListManager231
-        OptionManager231.loadFromDInit = False
-        OptionManager231.loadFromInit = False
-        OptionManager231.loadFromWorldGen = False
+        OptionManager231.loadFromDInit = false
+        OptionManager231.loadFromInit = false
+        OptionManager231.loadFromWorldGen = false
         OptionSingleReplace184.optionManager = OptionManager231
         OptionSettingManager234.settingName = Nothing
         OptionSingleReplace184.settingManager = OptionSettingManager234
         OptionSingleReplace184.tokenName = ""
-        OptionSingleReplace184.updateTileSets = False
         Me.optBtnRendermax.options = OptionSingleReplace184
         Me.optBtnRendermax.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRendermax.TabIndex = 5
         Me.optBtnRendermax.Text = "Rendermax"
         Me.optBtnRendermax.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnRendermax, "Enables the dfhack plugin. You can always disable it while playing with ""renderma" & _
-        "x disable"" in your dfhack window. Currently you can only have either Rendermax o" & _
+        Me.ToolTipMaker.SetToolTip(Me.optBtnRendermax, "Enables the dfhack plugin. You can always disable it while playing with ""renderma"& _ 
+        "x disable"" in your dfhack window. Currently you can only have either Rendermax o"& _ 
         "r TTF active.")
-        Me.optBtnRendermax.UseVisualStyleBackColor = False
+        Me.optBtnRendermax.UseVisualStyleBackColor = false
         '
         'optNumMineralScarcity
         '
-        Me.optNumMineralScarcity.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumMineralScarcity.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumMineralScarcity.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMineralScarcity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumMineralScarcity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumMineralScarcity.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumMineralScarcity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumMineralScarcity.Increment = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumMineralScarcity.Location = New System.Drawing.Point(140, 124)
         Me.optNumMineralScarcity.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
@@ -9926,14 +9699,13 @@ Partial Class MainForm
         Me.optNumMineralScarcity.Name = "optNumMineralScarcity"
         FileListManager232.fileNames = Nothing
         OptionSingle38.fileManager = FileListManager232
-        OptionManager232.loadFromDInit = False
-        OptionManager232.loadFromInit = False
-        OptionManager232.loadFromWorldGen = True
+        OptionManager232.loadFromDInit = false
+        OptionManager232.loadFromInit = false
+        OptionManager232.loadFromWorldGen = true
         OptionSingle38.optionManager = OptionManager232
         OptionSettingManager235.settingName = Nothing
         OptionSingle38.settingManager = OptionSettingManager235
         OptionSingle38.tokenName = "MINERAL_SCARCITY"
-        OptionSingle38.updateTileSets = False
         Me.optNumMineralScarcity.options = OptionSingle38
         Me.optNumMineralScarcity.Size = New System.Drawing.Size(63, 19)
         Me.optNumMineralScarcity.TabIndex = 9
@@ -9943,24 +9715,23 @@ Partial Class MainForm
         '
         'optNumCivNumber
         '
-        Me.optNumCivNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumCivNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumCivNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCivNumber.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumCivNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumCivNumber.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumCivNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumCivNumber.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumCivNumber.Location = New System.Drawing.Point(140, 20)
         Me.optNumCivNumber.Maximum = New Decimal(New Integer() {300, 0, 0, 0})
         Me.optNumCivNumber.Name = "optNumCivNumber"
         FileListManager233.fileNames = Nothing
         OptionSingle39.fileManager = FileListManager233
-        OptionManager233.loadFromDInit = False
-        OptionManager233.loadFromInit = False
-        OptionManager233.loadFromWorldGen = True
+        OptionManager233.loadFromDInit = false
+        OptionManager233.loadFromInit = false
+        OptionManager233.loadFromWorldGen = true
         OptionSingle39.optionManager = OptionManager233
         OptionSettingManager236.settingName = Nothing
         OptionSingle39.settingManager = OptionSettingManager236
         OptionSingle39.tokenName = "TOTAL_CIV_NUMBER"
-        OptionSingle39.updateTileSets = False
         Me.optNumCivNumber.options = OptionSingle39
         Me.optNumCivNumber.Size = New System.Drawing.Size(63, 19)
         Me.optNumCivNumber.TabIndex = 1
@@ -9970,24 +9741,23 @@ Partial Class MainForm
         '
         'optNumEmbarkPoints
         '
-        Me.optNumEmbarkPoints.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumEmbarkPoints.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumEmbarkPoints.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumEmbarkPoints.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumEmbarkPoints.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumEmbarkPoints.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumEmbarkPoints.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumEmbarkPoints.Increment = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumEmbarkPoints.Location = New System.Drawing.Point(140, 46)
         Me.optNumEmbarkPoints.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumEmbarkPoints.Name = "optNumEmbarkPoints"
         FileListManager234.fileNames = Nothing
         OptionSingle40.fileManager = FileListManager234
-        OptionManager234.loadFromDInit = False
-        OptionManager234.loadFromInit = False
-        OptionManager234.loadFromWorldGen = True
+        OptionManager234.loadFromDInit = false
+        OptionManager234.loadFromInit = false
+        OptionManager234.loadFromWorldGen = true
         OptionSingle40.optionManager = OptionManager234
         OptionSettingManager237.settingName = Nothing
         OptionSingle40.settingManager = OptionSettingManager237
         OptionSingle40.tokenName = "EMBARK_POINTS"
-        OptionSingle40.updateTileSets = False
         Me.optNumEmbarkPoints.options = OptionSingle40
         Me.optNumEmbarkPoints.Size = New System.Drawing.Size(63, 19)
         Me.optNumEmbarkPoints.TabIndex = 3
@@ -9997,10 +9767,10 @@ Partial Class MainForm
         '
         'optNumEndYear
         '
-        Me.optNumEndYear.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumEndYear.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumEndYear.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumEndYear.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumEndYear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumEndYear.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumEndYear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumEndYear.Increment = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumEndYear.Location = New System.Drawing.Point(140, 72)
         Me.optNumEndYear.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
@@ -10008,14 +9778,13 @@ Partial Class MainForm
         Me.optNumEndYear.Name = "optNumEndYear"
         FileListManager235.fileNames = Nothing
         OptionSingle41.fileManager = FileListManager235
-        OptionManager235.loadFromDInit = False
-        OptionManager235.loadFromInit = False
-        OptionManager235.loadFromWorldGen = True
+        OptionManager235.loadFromDInit = false
+        OptionManager235.loadFromInit = false
+        OptionManager235.loadFromWorldGen = true
         OptionSingle41.optionManager = OptionManager235
         OptionSettingManager238.settingName = Nothing
         OptionSingle41.settingManager = OptionSettingManager238
         OptionSingle41.tokenName = "END_YEAR"
-        OptionSingle41.updateTileSets = False
         Me.optNumEndYear.options = OptionSingle41
         Me.optNumEndYear.Size = New System.Drawing.Size(63, 19)
         Me.optNumEndYear.TabIndex = 5
@@ -10025,10 +9794,10 @@ Partial Class MainForm
         '
         'optNumPopSize
         '
-        Me.optNumPopSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumPopSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumPopSize.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumPopSize.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumPopSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumPopSize.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumPopSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumPopSize.Increment = New Decimal(New Integer() {250, 0, 0, 0})
         Me.optNumPopSize.Location = New System.Drawing.Point(140, 98)
         Me.optNumPopSize.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
@@ -10036,28 +9805,27 @@ Partial Class MainForm
         Me.optNumPopSize.Name = "optNumPopSize"
         FileListManager236.fileNames = Nothing
         OptionSingle42.fileManager = FileListManager236
-        OptionManager236.loadFromDInit = False
-        OptionManager236.loadFromInit = False
-        OptionManager236.loadFromWorldGen = True
+        OptionManager236.loadFromDInit = false
+        OptionManager236.loadFromInit = false
+        OptionManager236.loadFromWorldGen = true
         OptionSingle42.optionManager = OptionManager236
         OptionSettingManager239.settingName = Nothing
         OptionSingle42.settingManager = OptionSettingManager239
         OptionSingle42.tokenName = "TOTAL_CIV_POPULATION"
-        OptionSingle42.updateTileSets = False
         Me.optNumPopSize.options = OptionSingle42
         Me.optNumPopSize.Size = New System.Drawing.Size(63, 19)
         Me.optNumPopSize.TabIndex = 7
         Me.optNumPopSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumPopSize, "Maximum population of civilization members in the world. -1 is unlimited, but dan" & _
+        Me.ToolTipMaker.SetToolTip(Me.optNumPopSize, "Maximum population of civilization members in the world. -1 is unlimited, but dan"& _ 
         "gerous.")
         Me.optNumPopSize.Value = New Decimal(New Integer() {1, 0, 0, -2147483648})
         '
         'optNumCaveSizeMin
         '
-        Me.optNumCaveSizeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumCaveSizeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumCaveSizeMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCaveSizeMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumCaveSizeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumCaveSizeMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumCaveSizeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumCaveSizeMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumCaveSizeMin.Location = New System.Drawing.Point(135, 19)
         Me.optNumCaveSizeMin.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
@@ -10065,14 +9833,13 @@ Partial Class MainForm
         Me.optNumCaveSizeMin.Name = "optNumCaveSizeMin"
         FileListManager237.fileNames = Nothing
         OptionSingle43.fileManager = FileListManager237
-        OptionManager237.loadFromDInit = False
-        OptionManager237.loadFromInit = False
-        OptionManager237.loadFromWorldGen = True
+        OptionManager237.loadFromDInit = false
+        OptionManager237.loadFromInit = false
+        OptionManager237.loadFromWorldGen = true
         OptionSingle43.optionManager = OptionManager237
         OptionSettingManager240.settingName = Nothing
         OptionSingle43.settingManager = OptionSettingManager240
         OptionSingle43.tokenName = "CAVE_MIN_SIZE"
-        OptionSingle43.updateTileSets = False
         Me.optNumCaveSizeMin.options = OptionSingle43
         Me.optNumCaveSizeMin.Size = New System.Drawing.Size(43, 19)
         Me.optNumCaveSizeMin.TabIndex = 1
@@ -10082,10 +9849,10 @@ Partial Class MainForm
         '
         'optNumCaveSizeMax
         '
-        Me.optNumCaveSizeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumCaveSizeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumCaveSizeMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCaveSizeMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumCaveSizeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumCaveSizeMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumCaveSizeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumCaveSizeMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumCaveSizeMax.Location = New System.Drawing.Point(184, 19)
         Me.optNumCaveSizeMax.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
@@ -10093,14 +9860,13 @@ Partial Class MainForm
         Me.optNumCaveSizeMax.Name = "optNumCaveSizeMax"
         FileListManager238.fileNames = Nothing
         OptionSingle44.fileManager = FileListManager238
-        OptionManager238.loadFromDInit = False
-        OptionManager238.loadFromInit = False
-        OptionManager238.loadFromWorldGen = True
+        OptionManager238.loadFromDInit = false
+        OptionManager238.loadFromInit = false
+        OptionManager238.loadFromWorldGen = true
         OptionSingle44.optionManager = OptionManager238
         OptionSettingManager241.settingName = Nothing
         OptionSingle44.settingManager = OptionSettingManager241
         OptionSingle44.tokenName = "CAVE_MAX_SIZE"
-        OptionSingle44.updateTileSets = False
         Me.optNumCaveSizeMax.options = OptionSingle44
         Me.optNumCaveSizeMax.Size = New System.Drawing.Size(43, 19)
         Me.optNumCaveSizeMax.TabIndex = 2
@@ -10110,24 +9876,23 @@ Partial Class MainForm
         '
         'optNumMountainCaves
         '
-        Me.optNumMountainCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumMountainCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumMountainCaves.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMountainCaves.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumMountainCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumMountainCaves.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumMountainCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumMountainCaves.Increment = New Decimal(New Integer() {50, 0, 0, 0})
         Me.optNumMountainCaves.Location = New System.Drawing.Point(135, 45)
         Me.optNumMountainCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumMountainCaves.Name = "optNumMountainCaves"
         FileListManager239.fileNames = Nothing
         OptionSingle45.fileManager = FileListManager239
-        OptionManager239.loadFromDInit = False
-        OptionManager239.loadFromInit = False
-        OptionManager239.loadFromWorldGen = True
+        OptionManager239.loadFromDInit = false
+        OptionManager239.loadFromInit = false
+        OptionManager239.loadFromWorldGen = true
         OptionSingle45.optionManager = OptionManager239
         OptionSettingManager242.settingName = Nothing
         OptionSingle45.settingManager = OptionSettingManager242
         OptionSingle45.tokenName = "MOUNTAIN_CAVE_MIN"
-        OptionSingle45.updateTileSets = False
         Me.optNumMountainCaves.options = OptionSingle45
         Me.optNumMountainCaves.Size = New System.Drawing.Size(43, 19)
         Me.optNumMountainCaves.TabIndex = 4
@@ -10136,24 +9901,23 @@ Partial Class MainForm
         '
         'optNumOtherCaves
         '
-        Me.optNumOtherCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumOtherCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumOtherCaves.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumOtherCaves.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumOtherCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumOtherCaves.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumOtherCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumOtherCaves.Increment = New Decimal(New Integer() {50, 0, 0, 0})
         Me.optNumOtherCaves.Location = New System.Drawing.Point(135, 71)
         Me.optNumOtherCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumOtherCaves.Name = "optNumOtherCaves"
         FileListManager240.fileNames = Nothing
         OptionSingle46.fileManager = FileListManager240
-        OptionManager240.loadFromDInit = False
-        OptionManager240.loadFromInit = False
-        OptionManager240.loadFromWorldGen = True
+        OptionManager240.loadFromDInit = false
+        OptionManager240.loadFromInit = false
+        OptionManager240.loadFromWorldGen = true
         OptionSingle46.optionManager = OptionManager240
         OptionSettingManager243.settingName = Nothing
         OptionSingle46.settingManager = OptionSettingManager243
         OptionSingle46.tokenName = "NON_MOUNTAIN_CAVE_MIN"
-        OptionSingle46.updateTileSets = False
         Me.optNumOtherCaves.options = OptionSingle46
         Me.optNumOtherCaves.Size = New System.Drawing.Size(43, 19)
         Me.optNumOtherCaves.TabIndex = 6
@@ -10164,11 +9928,11 @@ Partial Class MainForm
         '
         Me.optBtnVisibleCaves.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnVisibleCaves.FlatAppearance.BorderSize = 0
-        Me.optBtnVisibleCaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.optBtnVisibleCaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.optBtnVisibleCaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnVisibleCaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnVisibleCaves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnVisibleCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.optBtnVisibleCaves.Image = CType(resources.GetObject("optBtnVisibleCaves.Image"), System.Drawing.Image)
+        Me.optBtnVisibleCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optBtnVisibleCaves.Image = CType(resources.GetObject("optBtnVisibleCaves.Image"),System.Drawing.Image)
         Me.optBtnVisibleCaves.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnVisibleCaves.Location = New System.Drawing.Point(64, 98)
         Me.optBtnVisibleCaves.Name = "optBtnVisibleCaves"
@@ -10176,68 +9940,65 @@ Partial Class MainForm
         OptionSingleReplace185.enabledValue = "1"
         FileListManager241.fileNames = Nothing
         OptionSingleReplace185.fileManager = FileListManager241
-        OptionManager241.loadFromDInit = False
-        OptionManager241.loadFromInit = False
-        OptionManager241.loadFromWorldGen = True
+        OptionManager241.loadFromDInit = false
+        OptionManager241.loadFromInit = false
+        OptionManager241.loadFromWorldGen = true
         OptionSingleReplace185.optionManager = OptionManager241
         OptionSettingManager244.settingName = Nothing
         OptionSingleReplace185.settingManager = OptionSettingManager244
         OptionSingleReplace185.tokenName = "ALL_CAVES_VISIBLE"
-        OptionSingleReplace185.updateTileSets = False
         Me.optBtnVisibleCaves.options = OptionSingleReplace185
         Me.optBtnVisibleCaves.Size = New System.Drawing.Size(117, 24)
         Me.optBtnVisibleCaves.TabIndex = 7
         Me.optBtnVisibleCaves.Text = "Caves Visible"
         Me.optBtnVisibleCaves.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnVisibleCaves, "If disabled, caves will not be marked on the map.")
-        Me.optBtnVisibleCaves.UseVisualStyleBackColor = True
+        Me.optBtnVisibleCaves.UseVisualStyleBackColor = true
         '
         'optNumCaverns
         '
-        Me.optNumCaverns.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumCaverns.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumCaverns.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCaverns.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumCaverns.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumCaverns.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumCaverns.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumCaverns.Location = New System.Drawing.Point(161, 24)
         Me.optNumCaverns.Maximum = New Decimal(New Integer() {3, 0, 0, 0})
         Me.optNumCaverns.Name = "optNumCaverns"
         FileListManager242.fileNames = Nothing
         OptionSingle47.fileManager = FileListManager242
-        OptionManager242.loadFromDInit = False
-        OptionManager242.loadFromInit = False
-        OptionManager242.loadFromWorldGen = True
+        OptionManager242.loadFromDInit = false
+        OptionManager242.loadFromInit = false
+        OptionManager242.loadFromWorldGen = true
         OptionSingle47.optionManager = OptionManager242
         OptionSettingManager245.settingName = Nothing
         OptionSingle47.settingManager = OptionSettingManager245
         OptionSingle47.tokenName = "CAVERN_LAYER_COUNT"
-        OptionSingle47.updateTileSets = False
         Me.optNumCaverns.options = OptionSingle47
         Me.optNumCaverns.Size = New System.Drawing.Size(43, 19)
         Me.optNumCaverns.TabIndex = 1
         Me.optNumCaverns.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumCaverns, "The number of cavern systems. Less caverns may improve FPS. This number does not " & _
+        Me.ToolTipMaker.SetToolTip(Me.optNumCaverns, "The number of cavern systems. Less caverns may improve FPS. This number does not "& _ 
         "include Magma or HFS.")
         Me.optNumCaverns.Value = New Decimal(New Integer() {3, 0, 0, 0})
         '
         'optNumOpenMin
         '
-        Me.optNumOpenMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumOpenMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumOpenMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumOpenMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumOpenMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumOpenMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumOpenMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumOpenMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMin.Location = New System.Drawing.Point(161, 49)
         Me.optNumOpenMin.Name = "optNumOpenMin"
         FileListManager243.fileNames = Nothing
         OptionSingle48.fileManager = FileListManager243
-        OptionManager243.loadFromDInit = False
-        OptionManager243.loadFromInit = False
-        OptionManager243.loadFromWorldGen = True
+        OptionManager243.loadFromDInit = false
+        OptionManager243.loadFromInit = false
+        OptionManager243.loadFromWorldGen = true
         OptionSingle48.optionManager = OptionManager243
         OptionSettingManager246.settingName = Nothing
         OptionSingle48.settingManager = OptionSettingManager246
         OptionSingle48.tokenName = "CAVERN_LAYER_OPENNESS_MIN"
-        OptionSingle48.updateTileSets = False
         Me.optNumOpenMin.options = OptionSingle48
         Me.optNumOpenMin.Size = New System.Drawing.Size(43, 19)
         Me.optNumOpenMin.TabIndex = 3
@@ -10246,23 +10007,22 @@ Partial Class MainForm
         '
         'optNumOpenMax
         '
-        Me.optNumOpenMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumOpenMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumOpenMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumOpenMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumOpenMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumOpenMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumOpenMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumOpenMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMax.Location = New System.Drawing.Point(210, 49)
         Me.optNumOpenMax.Name = "optNumOpenMax"
         FileListManager244.fileNames = Nothing
         OptionSingle49.fileManager = FileListManager244
-        OptionManager244.loadFromDInit = False
-        OptionManager244.loadFromInit = False
-        OptionManager244.loadFromWorldGen = True
+        OptionManager244.loadFromDInit = false
+        OptionManager244.loadFromInit = false
+        OptionManager244.loadFromWorldGen = true
         OptionSingle49.optionManager = OptionManager244
         OptionSettingManager247.settingName = Nothing
         OptionSingle49.settingManager = OptionSettingManager247
         OptionSingle49.tokenName = "CAVERN_LAYER_OPENNESS_MAX"
-        OptionSingle49.updateTileSets = False
         Me.optNumOpenMax.options = OptionSingle49
         Me.optNumOpenMax.Size = New System.Drawing.Size(43, 19)
         Me.optNumOpenMax.TabIndex = 4
@@ -10271,23 +10031,22 @@ Partial Class MainForm
         '
         'optNumMazeMin
         '
-        Me.optNumMazeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumMazeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumMazeMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMazeMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumMazeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumMazeMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumMazeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumMazeMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMin.Location = New System.Drawing.Point(161, 75)
         Me.optNumMazeMin.Name = "optNumMazeMin"
         FileListManager245.fileNames = Nothing
         OptionSingle50.fileManager = FileListManager245
-        OptionManager245.loadFromDInit = False
-        OptionManager245.loadFromInit = False
-        OptionManager245.loadFromWorldGen = True
+        OptionManager245.loadFromDInit = false
+        OptionManager245.loadFromInit = false
+        OptionManager245.loadFromWorldGen = true
         OptionSingle50.optionManager = OptionManager245
         OptionSettingManager248.settingName = Nothing
         OptionSingle50.settingManager = OptionSettingManager248
         OptionSingle50.tokenName = "CAVERN_LAYER_PASSAGE_DENSITY_MIN"
-        OptionSingle50.updateTileSets = False
         Me.optNumMazeMin.options = OptionSingle50
         Me.optNumMazeMin.Size = New System.Drawing.Size(43, 19)
         Me.optNumMazeMin.TabIndex = 6
@@ -10296,23 +10055,22 @@ Partial Class MainForm
         '
         'optNumMazeMax
         '
-        Me.optNumMazeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumMazeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumMazeMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMazeMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumMazeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumMazeMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumMazeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumMazeMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMax.Location = New System.Drawing.Point(210, 75)
         Me.optNumMazeMax.Name = "optNumMazeMax"
         FileListManager246.fileNames = Nothing
         OptionSingle51.fileManager = FileListManager246
-        OptionManager246.loadFromDInit = False
-        OptionManager246.loadFromInit = False
-        OptionManager246.loadFromWorldGen = True
+        OptionManager246.loadFromDInit = false
+        OptionManager246.loadFromInit = false
+        OptionManager246.loadFromWorldGen = true
         OptionSingle51.optionManager = OptionManager246
         OptionSettingManager249.settingName = Nothing
         OptionSingle51.settingManager = OptionSettingManager249
         OptionSingle51.tokenName = "CAVERN_LAYER_PASSAGE_DENSITY_MAX"
-        OptionSingle51.updateTileSets = False
         Me.optNumMazeMax.options = OptionSingle51
         Me.optNumMazeMax.Size = New System.Drawing.Size(43, 19)
         Me.optNumMazeMax.TabIndex = 7
@@ -10321,23 +10079,22 @@ Partial Class MainForm
         '
         'optNumWaterMin
         '
-        Me.optNumWaterMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumWaterMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumWaterMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumWaterMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumWaterMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumWaterMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumWaterMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumWaterMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMin.Location = New System.Drawing.Point(161, 100)
         Me.optNumWaterMin.Name = "optNumWaterMin"
         FileListManager247.fileNames = Nothing
         OptionSingle52.fileManager = FileListManager247
-        OptionManager247.loadFromDInit = False
-        OptionManager247.loadFromInit = False
-        OptionManager247.loadFromWorldGen = True
+        OptionManager247.loadFromDInit = false
+        OptionManager247.loadFromInit = false
+        OptionManager247.loadFromWorldGen = true
         OptionSingle52.optionManager = OptionManager247
         OptionSettingManager250.settingName = Nothing
         OptionSingle52.settingManager = OptionSettingManager250
         OptionSingle52.tokenName = "CAVERN_LAYER_WATER_MIN"
-        OptionSingle52.updateTileSets = False
         Me.optNumWaterMin.options = OptionSingle52
         Me.optNumWaterMin.Size = New System.Drawing.Size(43, 19)
         Me.optNumWaterMin.TabIndex = 9
@@ -10346,23 +10103,22 @@ Partial Class MainForm
         '
         'optNumWaterMax
         '
-        Me.optNumWaterMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumWaterMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumWaterMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumWaterMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumWaterMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumWaterMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumWaterMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumWaterMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMax.Location = New System.Drawing.Point(210, 100)
         Me.optNumWaterMax.Name = "optNumWaterMax"
         FileListManager248.fileNames = Nothing
         OptionSingle53.fileManager = FileListManager248
-        OptionManager248.loadFromDInit = False
-        OptionManager248.loadFromInit = False
-        OptionManager248.loadFromWorldGen = True
+        OptionManager248.loadFromDInit = false
+        OptionManager248.loadFromInit = false
+        OptionManager248.loadFromWorldGen = true
         OptionSingle53.optionManager = OptionManager248
         OptionSettingManager251.settingName = Nothing
         OptionSingle53.settingManager = OptionSettingManager251
         OptionSingle53.tokenName = "CAVERN_LAYER_WATER_MAX"
-        OptionSingle53.updateTileSets = False
         Me.optNumWaterMax.options = OptionSingle53
         Me.optNumWaterMax.Size = New System.Drawing.Size(43, 19)
         Me.optNumWaterMax.TabIndex = 10
@@ -10371,10 +10127,10 @@ Partial Class MainForm
         '
         'optNumAboveCav1
         '
-        Me.optNumAboveCav1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumAboveCav1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumAboveCav1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveCav1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumAboveCav1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumAboveCav1.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumAboveCav1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumAboveCav1.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveCav1.Location = New System.Drawing.Point(161, 159)
         Me.optNumAboveCav1.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10382,14 +10138,13 @@ Partial Class MainForm
         Me.optNumAboveCav1.Name = "optNumAboveCav1"
         FileListManager249.fileNames = Nothing
         OptionSingle54.fileManager = FileListManager249
-        OptionManager249.loadFromDInit = False
-        OptionManager249.loadFromInit = False
-        OptionManager249.loadFromWorldGen = True
+        OptionManager249.loadFromDInit = false
+        OptionManager249.loadFromInit = false
+        OptionManager249.loadFromWorldGen = true
         OptionSingle54.optionManager = OptionManager249
         OptionSettingManager252.settingName = Nothing
         OptionSingle54.settingManager = OptionSettingManager252
         OptionSingle54.tokenName = "LEVELS_ABOVE_LAYER_1"
-        OptionSingle54.updateTileSets = False
         Me.optNumAboveCav1.options = OptionSingle54
         Me.optNumAboveCav1.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveCav1.TabIndex = 12
@@ -10399,10 +10154,10 @@ Partial Class MainForm
         '
         'optNumAboveCav2
         '
-        Me.optNumAboveCav2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumAboveCav2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumAboveCav2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveCav2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumAboveCav2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumAboveCav2.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumAboveCav2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumAboveCav2.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveCav2.Location = New System.Drawing.Point(161, 185)
         Me.optNumAboveCav2.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10410,28 +10165,27 @@ Partial Class MainForm
         Me.optNumAboveCav2.Name = "optNumAboveCav2"
         FileListManager250.fileNames = Nothing
         OptionSingle55.fileManager = FileListManager250
-        OptionManager250.loadFromDInit = False
-        OptionManager250.loadFromInit = False
-        OptionManager250.loadFromWorldGen = True
+        OptionManager250.loadFromDInit = false
+        OptionManager250.loadFromInit = false
+        OptionManager250.loadFromWorldGen = true
         OptionSingle55.optionManager = OptionManager250
         OptionSettingManager253.settingName = Nothing
         OptionSingle55.settingManager = OptionSettingManager253
         OptionSingle55.tokenName = "LEVELS_ABOVE_LAYER_2"
-        OptionSingle55.updateTileSets = False
         Me.optNumAboveCav2.options = OptionSingle55
         Me.optNumAboveCav2.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveCav2.TabIndex = 14
         Me.optNumAboveCav2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav2, "Z-Levels of earth between the very bottom of the first cavern, and the very top o" & _
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav2, "Z-Levels of earth between the very bottom of the first cavern, and the very top o"& _ 
         "f the second cavern.")
         Me.optNumAboveCav2.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'optNumAboveCav3
         '
-        Me.optNumAboveCav3.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumAboveCav3.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumAboveCav3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveCav3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumAboveCav3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumAboveCav3.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumAboveCav3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumAboveCav3.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveCav3.Location = New System.Drawing.Point(161, 211)
         Me.optNumAboveCav3.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10439,28 +10193,27 @@ Partial Class MainForm
         Me.optNumAboveCav3.Name = "optNumAboveCav3"
         FileListManager251.fileNames = Nothing
         OptionSingle56.fileManager = FileListManager251
-        OptionManager251.loadFromDInit = False
-        OptionManager251.loadFromInit = False
-        OptionManager251.loadFromWorldGen = True
+        OptionManager251.loadFromDInit = false
+        OptionManager251.loadFromInit = false
+        OptionManager251.loadFromWorldGen = true
         OptionSingle56.optionManager = OptionManager251
         OptionSettingManager254.settingName = Nothing
         OptionSingle56.settingManager = OptionSettingManager254
         OptionSingle56.tokenName = "LEVELS_ABOVE_LAYER_3"
-        OptionSingle56.updateTileSets = False
         Me.optNumAboveCav3.options = OptionSingle56
         Me.optNumAboveCav3.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveCav3.TabIndex = 16
         Me.optNumAboveCav3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav3, "Z-Levels of earth between the very bottom of the second cavern, and the very top " & _
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav3, "Z-Levels of earth between the very bottom of the second cavern, and the very top "& _ 
         "of the third cavern.")
         Me.optNumAboveCav3.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'optNumAboveMagma
         '
-        Me.optNumAboveMagma.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumAboveMagma.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumAboveMagma.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveMagma.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumAboveMagma.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumAboveMagma.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumAboveMagma.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumAboveMagma.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveMagma.Location = New System.Drawing.Point(161, 255)
         Me.optNumAboveMagma.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10468,28 +10221,27 @@ Partial Class MainForm
         Me.optNumAboveMagma.Name = "optNumAboveMagma"
         FileListManager252.fileNames = Nothing
         OptionSingle57.fileManager = FileListManager252
-        OptionManager252.loadFromDInit = False
-        OptionManager252.loadFromInit = False
-        OptionManager252.loadFromWorldGen = True
+        OptionManager252.loadFromDInit = false
+        OptionManager252.loadFromInit = false
+        OptionManager252.loadFromWorldGen = true
         OptionSingle57.optionManager = OptionManager252
         OptionSettingManager255.settingName = Nothing
         OptionSingle57.settingManager = OptionSettingManager255
         OptionSingle57.tokenName = "LEVELS_ABOVE_LAYER_4"
-        OptionSingle57.updateTileSets = False
         Me.optNumAboveMagma.options = OptionSingle57
         Me.optNumAboveMagma.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveMagma.TabIndex = 18
         Me.optNumAboveMagma.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveMagma, "Z-Levels between the very highest magma, and the very bottom of the third cavern." & _
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveMagma, "Z-Levels between the very highest magma, and the very bottom of the third cavern."& _ 
         "")
         Me.optNumAboveMagma.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'optNumAboveHFS
         '
-        Me.optNumAboveHFS.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.optNumAboveHFS.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
         Me.optNumAboveHFS.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveHFS.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumAboveHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optNumAboveHFS.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumAboveHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optNumAboveHFS.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveHFS.Location = New System.Drawing.Point(161, 281)
         Me.optNumAboveHFS.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
@@ -10497,19 +10249,18 @@ Partial Class MainForm
         Me.optNumAboveHFS.Name = "optNumAboveHFS"
         FileListManager253.fileNames = Nothing
         OptionSingle58.fileManager = FileListManager253
-        OptionManager253.loadFromDInit = False
-        OptionManager253.loadFromInit = False
-        OptionManager253.loadFromWorldGen = True
+        OptionManager253.loadFromDInit = false
+        OptionManager253.loadFromInit = false
+        OptionManager253.loadFromWorldGen = true
         OptionSingle58.optionManager = OptionManager253
         OptionSettingManager256.settingName = Nothing
         OptionSingle58.settingManager = OptionSettingManager256
         OptionSingle58.tokenName = "LEVELS_ABOVE_LAYER_5"
-        OptionSingle58.updateTileSets = False
         Me.optNumAboveHFS.options = OptionSingle58
         Me.optNumAboveHFS.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveHFS.TabIndex = 20
         Me.optNumAboveHFS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveHFS, "Uncertain.  Seems to increase the layers of Semi-Molten Rock and the depth of the" & _
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveHFS, "Uncertain.  Seems to increase the layers of Semi-Molten Rock and the depth of the"& _ 
         " magma sea. Only valid if magma layer is present.")
         Me.optNumAboveHFS.Value = New Decimal(New Integer() {2, 0, 0, 0})
         '
@@ -10517,11 +10268,11 @@ Partial Class MainForm
         '
         Me.optBtnMagmaLake.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnMagmaLake.FlatAppearance.BorderSize = 0
-        Me.optBtnMagmaLake.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.optBtnMagmaLake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.optBtnMagmaLake.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMagmaLake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMagmaLake.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMagmaLake.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.optBtnMagmaLake.Image = CType(resources.GetObject("optBtnMagmaLake.Image"), System.Drawing.Image)
+        Me.optBtnMagmaLake.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optBtnMagmaLake.Image = CType(resources.GetObject("optBtnMagmaLake.Image"),System.Drawing.Image)
         Me.optBtnMagmaLake.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMagmaLake.Location = New System.Drawing.Point(66, 357)
         Me.optBtnMagmaLake.Name = "optBtnMagmaLake"
@@ -10529,31 +10280,30 @@ Partial Class MainForm
         OptionSingleReplace186.enabledValue = "1"
         FileListManager254.fileNames = Nothing
         OptionSingleReplace186.fileManager = FileListManager254
-        OptionManager254.loadFromDInit = False
-        OptionManager254.loadFromInit = False
-        OptionManager254.loadFromWorldGen = True
+        OptionManager254.loadFromDInit = false
+        OptionManager254.loadFromInit = false
+        OptionManager254.loadFromWorldGen = true
         OptionSingleReplace186.optionManager = OptionManager254
         OptionSettingManager257.settingName = Nothing
         OptionSingleReplace186.settingManager = OptionSettingManager257
         OptionSingleReplace186.tokenName = "HAVE_BOTTOM_LAYER_1"
-        OptionSingleReplace186.updateTileSets = False
         Me.optBtnMagmaLake.options = OptionSingleReplace186
         Me.optBtnMagmaLake.Size = New System.Drawing.Size(129, 24)
         Me.optBtnMagmaLake.TabIndex = 22
         Me.optBtnMagmaLake.Text = "Magma Lake"
         Me.optBtnMagmaLake.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnMagmaLake, "Determines whether the magma sea exists.")
-        Me.optBtnMagmaLake.UseVisualStyleBackColor = True
+        Me.optBtnMagmaLake.UseVisualStyleBackColor = true
         '
         'optBtnHFS
         '
         Me.optBtnHFS.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnHFS.FlatAppearance.BorderSize = 0
-        Me.optBtnHFS.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.optBtnHFS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.optBtnHFS.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnHFS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnHFS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.optBtnHFS.Image = CType(resources.GetObject("optBtnHFS.Image"), System.Drawing.Image)
+        Me.optBtnHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optBtnHFS.Image = CType(resources.GetObject("optBtnHFS.Image"),System.Drawing.Image)
         Me.optBtnHFS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnHFS.Location = New System.Drawing.Point(66, 387)
         Me.optBtnHFS.Name = "optBtnHFS"
@@ -10561,41 +10311,39 @@ Partial Class MainForm
         OptionSingleReplace187.enabledValue = "1"
         FileListManager255.fileNames = Nothing
         OptionSingleReplace187.fileManager = FileListManager255
-        OptionManager255.loadFromDInit = False
-        OptionManager255.loadFromInit = False
-        OptionManager255.loadFromWorldGen = True
+        OptionManager255.loadFromDInit = false
+        OptionManager255.loadFromInit = false
+        OptionManager255.loadFromWorldGen = true
         OptionSingleReplace187.optionManager = OptionManager255
         OptionSettingManager258.settingName = Nothing
         OptionSingleReplace187.settingManager = OptionSettingManager258
         OptionSingleReplace187.tokenName = "HAVE_BOTTOM_LAYER_2"
-        OptionSingleReplace187.updateTileSets = False
         Me.optBtnHFS.options = OptionSingleReplace187
         Me.optBtnHFS.Size = New System.Drawing.Size(129, 23)
         Me.optBtnHFS.TabIndex = 23
         Me.optBtnHFS.Text = "HFS"
         Me.optBtnHFS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnHFS, "Determines if the space below the magma sea exists.")
-        Me.optBtnHFS.UseVisualStyleBackColor = True
+        Me.optBtnHFS.UseVisualStyleBackColor = true
         '
         'optMaskGoodAreas
         '
         Me.optMaskGoodAreas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.optMaskGoodAreas.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optMaskGoodAreas.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.optMaskGoodAreas.Location = New System.Drawing.Point(103, 49)
         Me.optMaskGoodAreas.Name = "optMaskGoodAreas"
         Me.optMaskGoodAreas.niceFormat = "###:###:### (0-500)"
         FileListManager256.fileNames = Nothing
         OptionSingle59.fileManager = FileListManager256
-        OptionManager256.loadFromDInit = False
-        OptionManager256.loadFromInit = False
-        OptionManager256.loadFromWorldGen = True
+        OptionManager256.loadFromDInit = false
+        OptionManager256.loadFromInit = false
+        OptionManager256.loadFromWorldGen = true
         OptionSingle59.optionManager = OptionManager256
         OptionSettingManager259.settingName = Nothing
         OptionSingle59.settingManager = OptionSettingManager259
         OptionSingle59.tokenName = "GOOD_SQ_COUNTS"
-        OptionSingle59.updateTileSets = False
         Me.optMaskGoodAreas.options = OptionSingle59
-        Me.optMaskGoodAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):((" & _
+        Me.optMaskGoodAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(("& _ 
     "[0-4][0-9][0-9]|[0-9]{1,2})|(500|0))$"
         Me.optMaskGoodAreas.Size = New System.Drawing.Size(100, 23)
         Me.optMaskGoodAreas.TabIndex = 3
@@ -10605,22 +10353,21 @@ Partial Class MainForm
         'optMaskEvilAreas
         '
         Me.optMaskEvilAreas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.optMaskEvilAreas.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optMaskEvilAreas.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.optMaskEvilAreas.Location = New System.Drawing.Point(103, 24)
         Me.optMaskEvilAreas.Name = "optMaskEvilAreas"
         Me.optMaskEvilAreas.niceFormat = "###:###:### (0-500)"
         FileListManager257.fileNames = Nothing
         OptionSingle60.fileManager = FileListManager257
-        OptionManager257.loadFromDInit = False
-        OptionManager257.loadFromInit = False
-        OptionManager257.loadFromWorldGen = True
+        OptionManager257.loadFromDInit = false
+        OptionManager257.loadFromInit = false
+        OptionManager257.loadFromWorldGen = true
         OptionSingle60.optionManager = OptionManager257
         OptionSettingManager260.settingName = Nothing
         OptionSingle60.settingManager = OptionSettingManager260
         OptionSingle60.tokenName = "EVIL_SQ_COUNTS"
-        OptionSingle60.updateTileSets = False
         Me.optMaskEvilAreas.options = OptionSingle60
-        Me.optMaskEvilAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):((" & _
+        Me.optMaskEvilAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(("& _ 
     "[0-4][0-9][0-9]|[0-9]{1,2})|(500|0))$"
         Me.optMaskEvilAreas.Size = New System.Drawing.Size(100, 23)
         Me.optMaskEvilAreas.TabIndex = 1
@@ -10631,8 +10378,8 @@ Partial Class MainForm
         '
         Me.optCbStartingLabors.DropDownWidth = 150
         Me.optCbStartingLabors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbStartingLabors.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optCbStartingLabors.FormattingEnabled = True
+        Me.optCbStartingLabors.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optCbStartingLabors.FormattingEnabled = true
         Me.optCbStartingLabors.Location = New System.Drawing.Point(92, 315)
         Me.optCbStartingLabors.Name = "optCbStartingLabors"
         FileListManager258.fileNames = Nothing
@@ -10646,14 +10393,13 @@ Partial Class MainForm
         OptionList5.itemList.Add(ComboItem33)
         OptionList5.itemList.Add(ComboItem34)
         OptionList5.itemList.Add(ComboItem35)
-        OptionManager258.loadFromDInit = True
-        OptionManager258.loadFromInit = False
-        OptionManager258.loadFromWorldGen = False
+        OptionManager258.loadFromDInit = true
+        OptionManager258.loadFromInit = false
+        OptionManager258.loadFromWorldGen = false
         OptionList5.optionManager = OptionManager258
         OptionSettingManager261.settingName = Nothing
         OptionList5.settingManager = OptionSettingManager261
         OptionList5.tokenName = "SET_LABOR_LISTS"
-        OptionList5.updateTileSets = False
         Me.optCbStartingLabors.options = OptionList5
         Me.optCbStartingLabors.Size = New System.Drawing.Size(59, 23)
         Me.optCbStartingLabors.TabIndex = 1
@@ -10661,10 +10407,10 @@ Partial Class MainForm
         '
         'lblPlayableFort
         '
-        Me.lblPlayableFort.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblPlayableFort.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayableFort.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lblPlayableFort.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblPlayableFort.ForeColor = System.Drawing.Color.White
         Me.lblPlayableFort.Location = New System.Drawing.Point(163, 1)
         Me.lblPlayableFort.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -10674,6 +10420,75 @@ Partial Class MainForm
         Me.lblPlayableFort.Text = "Playable (Fortress)"
         Me.lblPlayableFort.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.lblPlayableFort, "Sets the civilization to playable.")
+        '
+        'optBtnDigging
+        '
+        Me.optBtnDigging.Appearance = System.Windows.Forms.Appearance.Button
+        Me.optBtnDigging.FlatAppearance.BorderSize = 0
+        Me.optBtnDigging.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.optBtnDigging.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.optBtnDigging.Image = CType(resources.GetObject("optBtnDigging.Image"),System.Drawing.Image)
+        Me.optBtnDigging.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.optBtnDigging.Location = New System.Drawing.Point(5, 142)
+        Me.optBtnDigging.Margin = New System.Windows.Forms.Padding(1)
+        Me.optBtnDigging.Name = "optBtnDigging"
+        OptionSingleReplace188.disabledValue = " dig -1"
+        OptionSingleReplace188.enabledValue = " dig 5"
+        FileListManager259.fileNames = New String() {"dfhack.init"}
+        OptionSingleReplace188.fileManager = FileListManager259
+        OptionManager259.loadFromDInit = false
+        OptionManager259.loadFromInit = false
+        OptionManager259.loadFromWorldGen = false
+        OptionSingleReplace188.optionManager = OptionManager259
+        OptionSettingManager262.settingName = Nothing
+        OptionSingleReplace188.settingManager = OptionSettingManager262
+        OptionSingleReplace188.tokenName = ""
+        Me.optBtnDigging.options = OptionSingleReplace188
+        Me.optBtnDigging.Size = New System.Drawing.Size(134, 27)
+        Me.optBtnDigging.TabIndex = 10
+        Me.optBtnDigging.Text = "Digging Invaders"
+        Me.optBtnDigging.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTipMaker.SetToolTip(Me.optBtnDigging, "Allows forgotten beasts and some invaders to dig into your fort.")
+        Me.optBtnDigging.UseVisualStyleBackColor = true
+        '
+        'optMultiRazing
+        '
+        Me.optMultiRazing.Appearance = System.Windows.Forms.Appearance.Button
+        Me.optMultiRazing.FlatAppearance.BorderSize = 0
+        Me.optMultiRazing.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.optMultiRazing.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.optMultiRazing.Image = CType(resources.GetObject("optMultiRazing.Image"),System.Drawing.Image)
+        Me.optMultiRazing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.optMultiRazing.Location = New System.Drawing.Point(5, 171)
+        Me.optMultiRazing.Margin = New System.Windows.Forms.Padding(1)
+        Me.optMultiRazing.Name = "optMultiRazing"
+        FileListManager260.fileNames = New String() {"dfhack.init"}
+        OptionMulti7.fileManager = FileListManager260
+        OptionManager260.loadFromDInit = false
+        OptionManager260.loadFromInit = false
+        OptionManager260.loadFromWorldGen = false
+        OptionMulti7.optionManager = OptionManager260
+        OptionSettingManager263.settingName = Nothing
+        OptionMulti7.settingManager = OptionSettingManager263
+        RawToken15.optionOffValue = "destroyBuilding -1"
+        RawToken15.optionOnValue = "destroyBuilding 1"
+        RawToken15.tokenName = ""
+        RawToken16.optionOffValue = "destroyRoughConstruction -1"
+        RawToken16.optionOnValue = "destroyRoughConstruction 1"
+        RawToken16.tokenName = ""
+        RawToken17.optionOffValue = "destroySmoothConstruction -1"
+        RawToken17.optionOnValue = "destroySmoothConstruction 1"
+        RawToken17.tokenName = ""
+        OptionMulti7.tokenList.Add(RawToken15)
+        OptionMulti7.tokenList.Add(RawToken16)
+        OptionMulti7.tokenList.Add(RawToken17)
+        Me.optMultiRazing.options = OptionMulti7
+        Me.optMultiRazing.Size = New System.Drawing.Size(134, 27)
+        Me.optMultiRazing.TabIndex = 9
+        Me.optMultiRazing.Text = "Razing Invaders"
+        Me.optMultiRazing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTipMaker.SetToolTip(Me.optMultiRazing, "Allows titans and some invaders to destroy buildings and walls.")
+        Me.optMultiRazing.UseVisualStyleBackColor = true
         '
         'lblHFSLevels
         '
@@ -10686,20 +10501,20 @@ Partial Class MainForm
         '
         'lblSettingExplanation
         '
-        Me.lblSettingExplanation.AutoSize = True
-        Me.lblSettingExplanation.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblSettingExplanation.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSettingExplanation.AutoSize = true
+        Me.lblSettingExplanation.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblSettingExplanation.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblSettingExplanation.ForeColor = System.Drawing.Color.White
         Me.lblSettingExplanation.Location = New System.Drawing.Point(108, 534)
         Me.lblSettingExplanation.Name = "lblSettingExplanation"
         Me.lblSettingExplanation.Size = New System.Drawing.Size(762, 13)
         Me.lblSettingExplanation.TabIndex = 179
-        Me.lblSettingExplanation.Text = "All settings can be changed without generating a new world, with the only excepti" & _
+        Me.lblSettingExplanation.Text = "All settings can be changed without generating a new world, with the only excepti"& _ 
     "on being tileset changes. New settings do require restarting DF to take effect."
         '
         'panCivTable
         '
-        Me.panCivTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.panCivTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.panCivTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panCivTable.Controls.Add(Me.tableLayoutCivs)
         Me.panCivTable.ForeColor = System.Drawing.Color.White
@@ -10710,18 +10525,18 @@ Partial Class MainForm
         '
         'tableLayoutCivs
         '
-        Me.tableLayoutCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.tableLayoutCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.tableLayoutCivs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tableLayoutCivs.ColumnCount = 10
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52.0!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74.0!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67!))
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.tableLayoutCivs.Controls.Add(Me.optBtnFrostGiants, 1, 11)
         Me.tableLayoutCivs.Controls.Add(Me.optBtnWarlocks, 1, 12)
@@ -10777,36 +10592,36 @@ Partial Class MainForm
         Me.tableLayoutCivs.Margin = New System.Windows.Forms.Padding(1)
         Me.tableLayoutCivs.Name = "tableLayoutCivs"
         Me.tableLayoutCivs.RowCount = 21
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
         Me.tableLayoutCivs.Size = New System.Drawing.Size(715, 534)
         Me.tableLayoutCivs.TabIndex = 16
         '
         'lblCivInvasions
         '
-        Me.lblCivInvasions.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblCivInvasions.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivInvasions.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lblCivInvasions.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivInvasions.ForeColor = System.Drawing.Color.White
         Me.lblCivInvasions.Location = New System.Drawing.Point(409, 1)
         Me.lblCivInvasions.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -10818,10 +10633,10 @@ Partial Class MainForm
         '
         'lblCivCaravans
         '
-        Me.lblCivCaravans.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblCivCaravans.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivCaravans.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lblCivCaravans.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivCaravans.ForeColor = System.Drawing.Color.White
         Me.lblCivCaravans.Location = New System.Drawing.Point(327, 1)
         Me.lblCivCaravans.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -10836,7 +10651,7 @@ Partial Class MainForm
         Me.lblCivDwarf.advTag = "ADVD"
         Me.lblCivDwarf.creatureFileName = "creature_standard.txt"
         Me.lblCivDwarf.entityFileName = "entity_default.txt"
-        Me.lblCivDwarf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivDwarf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivDwarf.ForeColor = System.Drawing.Color.White
         Me.lblCivDwarf.fortTag = "CIVD"
         Me.lblCivDwarf.Location = New System.Drawing.Point(1, 33)
@@ -10854,7 +10669,7 @@ Partial Class MainForm
         Me.lblCivTaigaOrcs.advTag = "ADVORC_TAIGA"
         Me.lblCivTaigaOrcs.creatureFileName = "creature_orcfort_taigaorc.txt"
         Me.lblCivTaigaOrcs.entityFileName = "entity_orcfort_taigaorc.txt"
-        Me.lblCivTaigaOrcs.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivTaigaOrcs.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivTaigaOrcs.ForeColor = System.Drawing.Color.White
         Me.lblCivTaigaOrcs.fortTag = "CIVO"
         Me.lblCivTaigaOrcs.Location = New System.Drawing.Point(1, 58)
@@ -10872,7 +10687,7 @@ Partial Class MainForm
         Me.lblCivKoboldCamp.advTag = "ADVKOBOLD_CAMP"
         Me.lblCivKoboldCamp.creatureFileName = "creature_kobold_camp.txt"
         Me.lblCivKoboldCamp.entityFileName = "entity_kobold_camp.txt"
-        Me.lblCivKoboldCamp.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivKoboldCamp.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivKoboldCamp.ForeColor = System.Drawing.Color.White
         Me.lblCivKoboldCamp.fortTag = "CIVK"
         Me.lblCivKoboldCamp.Location = New System.Drawing.Point(1, 83)
@@ -10890,7 +10705,7 @@ Partial Class MainForm
         Me.lblCivHuman.advTag = "ADVHUMAN"
         Me.lblCivHuman.creatureFileName = "creature_standard.txt"
         Me.lblCivHuman.entityFileName = "entity_human.txt"
-        Me.lblCivHuman.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivHuman.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivHuman.ForeColor = System.Drawing.Color.White
         Me.lblCivHuman.fortTag = Nothing
         Me.lblCivHuman.Location = New System.Drawing.Point(1, 108)
@@ -10908,7 +10723,7 @@ Partial Class MainForm
         Me.lblCivElf.advTag = "ADVELF"
         Me.lblCivElf.creatureFileName = "creature_standard.txt"
         Me.lblCivElf.entityFileName = "entity_elf.txt"
-        Me.lblCivElf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivElf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivElf.ForeColor = System.Drawing.Color.White
         Me.lblCivElf.fortTag = Nothing
         Me.lblCivElf.Location = New System.Drawing.Point(1, 133)
@@ -10926,7 +10741,7 @@ Partial Class MainForm
         Me.lblCivDrow.advTag = "ADVDROW"
         Me.lblCivDrow.creatureFileName = "creature_masterwork.txt"
         Me.lblCivDrow.entityFileName = "entity_drow.txt"
-        Me.lblCivDrow.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivDrow.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivDrow.ForeColor = System.Drawing.Color.White
         Me.lblCivDrow.fortTag = Nothing
         Me.lblCivDrow.Location = New System.Drawing.Point(1, 158)
@@ -10944,7 +10759,7 @@ Partial Class MainForm
         Me.lblCivGnome.advTag = "ADVGNOMES"
         Me.lblCivGnome.creatureFileName = "creature_gnome.txt"
         Me.lblCivGnome.entityFileName = "entity_gnome.txt"
-        Me.lblCivGnome.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivGnome.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivGnome.ForeColor = System.Drawing.Color.White
         Me.lblCivGnome.fortTag = Nothing
         Me.lblCivGnome.Location = New System.Drawing.Point(1, 183)
@@ -10962,7 +10777,7 @@ Partial Class MainForm
         Me.lblCivKobold.advTag = "ADVKOBOLD"
         Me.lblCivKobold.creatureFileName = "creature_standard.txt"
         Me.lblCivKobold.entityFileName = "entity_kobold.txt"
-        Me.lblCivKobold.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivKobold.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivKobold.ForeColor = System.Drawing.Color.White
         Me.lblCivKobold.fortTag = Nothing
         Me.lblCivKobold.Location = New System.Drawing.Point(1, 208)
@@ -10980,7 +10795,7 @@ Partial Class MainForm
         Me.lblCivGoblin.advTag = "ADVGOBLIN"
         Me.lblCivGoblin.creatureFileName = "creature_standard.txt"
         Me.lblCivGoblin.entityFileName = "entity_goblin.txt"
-        Me.lblCivGoblin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivGoblin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivGoblin.ForeColor = System.Drawing.Color.White
         Me.lblCivGoblin.fortTag = Nothing
         Me.lblCivGoblin.Location = New System.Drawing.Point(1, 233)
@@ -10998,7 +10813,7 @@ Partial Class MainForm
         Me.lblCivOrc.advTag = "ADVORC"
         Me.lblCivOrc.creatureFileName = "creature_masterwork.txt"
         Me.lblCivOrc.entityFileName = "entity_orc.txt"
-        Me.lblCivOrc.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivOrc.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivOrc.ForeColor = System.Drawing.Color.White
         Me.lblCivOrc.fortTag = Nothing
         Me.lblCivOrc.Location = New System.Drawing.Point(1, 258)
@@ -11016,7 +10831,7 @@ Partial Class MainForm
         Me.lblCivFrostGiant.advTag = "ADVFROST_GIANT"
         Me.lblCivFrostGiant.creatureFileName = "creature_masterwork.txt"
         Me.lblCivFrostGiant.entityFileName = "entity_frost_giant.txt"
-        Me.lblCivFrostGiant.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivFrostGiant.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivFrostGiant.ForeColor = System.Drawing.Color.White
         Me.lblCivFrostGiant.fortTag = Nothing
         Me.lblCivFrostGiant.Location = New System.Drawing.Point(1, 283)
@@ -11034,7 +10849,7 @@ Partial Class MainForm
         Me.lblCivWarlock.advTag = "ADVWARLOCK"
         Me.lblCivWarlock.creatureFileName = "creature_masterwork.txt"
         Me.lblCivWarlock.entityFileName = "entity_warlock.txt"
-        Me.lblCivWarlock.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivWarlock.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivWarlock.ForeColor = System.Drawing.Color.White
         Me.lblCivWarlock.fortTag = Nothing
         Me.lblCivWarlock.Location = New System.Drawing.Point(1, 308)
@@ -11052,7 +10867,7 @@ Partial Class MainForm
         Me.lblCivAutomaton.advTag = "ADVAUT"
         Me.lblCivAutomaton.creatureFileName = "creature_masterwork.txt"
         Me.lblCivAutomaton.entityFileName = "entity_automaton.txt"
-        Me.lblCivAutomaton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivAutomaton.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivAutomaton.ForeColor = System.Drawing.Color.White
         Me.lblCivAutomaton.fortTag = Nothing
         Me.lblCivAutomaton.Location = New System.Drawing.Point(1, 333)
@@ -11070,7 +10885,7 @@ Partial Class MainForm
         Me.lblCivGremlin.advTag = "ADVGREMLIN"
         Me.lblCivGremlin.creatureFileName = "creature_standard.txt"
         Me.lblCivGremlin.entityFileName = "entity_gremlin.txt"
-        Me.lblCivGremlin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivGremlin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivGremlin.ForeColor = System.Drawing.Color.White
         Me.lblCivGremlin.fortTag = Nothing
         Me.lblCivGremlin.Location = New System.Drawing.Point(1, 358)
@@ -11088,7 +10903,7 @@ Partial Class MainForm
         Me.lblCivTroglodyte.advTag = "ADVTROG"
         Me.lblCivTroglodyte.creatureFileName = "creature_subterranean.txt"
         Me.lblCivTroglodyte.entityFileName = "entity_troglodyte.txt"
-        Me.lblCivTroglodyte.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivTroglodyte.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivTroglodyte.ForeColor = System.Drawing.Color.White
         Me.lblCivTroglodyte.fortTag = Nothing
         Me.lblCivTroglodyte.Location = New System.Drawing.Point(1, 383)
@@ -11106,7 +10921,7 @@ Partial Class MainForm
         Me.lblCivAntmen.advTag = "ADVANT"
         Me.lblCivAntmen.creatureFileName = "creature_subterranean.txt"
         Me.lblCivAntmen.entityFileName = "entity_antmen.txt"
-        Me.lblCivAntmen.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivAntmen.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivAntmen.ForeColor = System.Drawing.Color.White
         Me.lblCivAntmen.fortTag = Nothing
         Me.lblCivAntmen.Location = New System.Drawing.Point(1, 408)
@@ -11124,7 +10939,7 @@ Partial Class MainForm
         Me.lblCivEvilDwarf.advTag = "ADVD_EVIL"
         Me.lblCivEvilDwarf.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilDwarf.entityFileName = "entity_dwarf_evil.txt"
-        Me.lblCivEvilDwarf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivEvilDwarf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivEvilDwarf.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilDwarf.fortTag = Nothing
         Me.lblCivEvilDwarf.Location = New System.Drawing.Point(1, 433)
@@ -11142,7 +10957,7 @@ Partial Class MainForm
         Me.lblCivEvilHuman.advTag = "ADVHUMAN_EVIL"
         Me.lblCivEvilHuman.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilHuman.entityFileName = "entity_human_evil.txt"
-        Me.lblCivEvilHuman.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivEvilHuman.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivEvilHuman.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilHuman.fortTag = Nothing
         Me.lblCivEvilHuman.Location = New System.Drawing.Point(1, 458)
@@ -11160,7 +10975,7 @@ Partial Class MainForm
         Me.lblCivEvilDrow.advTag = "ADVDROW_EVIL"
         Me.lblCivEvilDrow.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilDrow.entityFileName = "entity_drow_evil.txt"
-        Me.lblCivEvilDrow.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivEvilDrow.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivEvilDrow.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilDrow.fortTag = Nothing
         Me.lblCivEvilDrow.Location = New System.Drawing.Point(1, 483)
@@ -11178,7 +10993,7 @@ Partial Class MainForm
         Me.lblCivEvilElf.advTag = "ADVELF_EVIL"
         Me.lblCivEvilElf.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilElf.entityFileName = "entity_elf_evil.txt"
-        Me.lblCivEvilElf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCivEvilElf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivEvilElf.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilElf.fortTag = Nothing
         Me.lblCivEvilElf.Location = New System.Drawing.Point(1, 508)
@@ -11193,7 +11008,7 @@ Partial Class MainForm
         '
         'grpExtraCreatures
         '
-        Me.grpExtraCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpExtraCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpExtraCreatures.Controls.Add(Me.optBtnDomesticPets)
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreAnimals)
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreVermin)
@@ -11211,44 +11026,43 @@ Partial Class MainForm
         Me.grpExtraCreatures.Name = "grpExtraCreatures"
         Me.grpExtraCreatures.Size = New System.Drawing.Size(144, 420)
         Me.grpExtraCreatures.TabIndex = 3
-        Me.grpExtraCreatures.TabStop = False
+        Me.grpExtraCreatures.TabStop = false
         Me.grpExtraCreatures.Text = "Additional Creatures"
         '
         'optBtnMoreAnimals
         '
         Me.optBtnMoreAnimals.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreAnimals.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMoreAnimals.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.optBtnMoreAnimals.FlatAppearance.BorderSize = 0
-        Me.optBtnMoreAnimals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.optBtnMoreAnimals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optBtnMoreAnimals.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMoreAnimals.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.optBtnMoreAnimals.Image = CType(resources.GetObject("optBtnMoreAnimals.Image"), System.Drawing.Image)
+        Me.optBtnMoreAnimals.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optBtnMoreAnimals.Image = CType(resources.GetObject("optBtnMoreAnimals.Image"),System.Drawing.Image)
         Me.optBtnMoreAnimals.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMoreAnimals.Location = New System.Drawing.Point(5, 48)
         Me.optBtnMoreAnimals.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnMoreAnimals.Name = "optBtnMoreAnimals"
-        OptionSingleReplace188.disabledValue = "!NOFF!"
-        OptionSingleReplace188.enabledValue = "YESFF["
-        FileListManager259.fileNames = New String() {"creature_ff.txt", "creature_mountain_new.txt", "creature_desert_new.txt", "creature_riverlakepool_new.txt", "creature_small_mammal_new.txt", "creature_temperate_new.txt", "creature_tropical_new.txt", "creature_tundra_taiga_new.txt", "creature_bug_slug_new.txt"}
-        OptionSingleReplace188.fileManager = FileListManager259
-        OptionManager259.loadFromDInit = False
-        OptionManager259.loadFromInit = False
-        OptionManager259.loadFromWorldGen = False
-        OptionSingleReplace188.optionManager = OptionManager259
-        OptionSettingManager262.settingName = Nothing
-        OptionSingleReplace188.settingManager = OptionSettingManager262
-        OptionSingleReplace188.tokenName = ""
-        OptionSingleReplace188.updateTileSets = False
-        Me.optBtnMoreAnimals.options = OptionSingleReplace188
+        OptionSingleReplace189.disabledValue = "!NOFF!"
+        OptionSingleReplace189.enabledValue = "YESFF["
+        FileListManager261.fileNames = New String() {"creature_ff.txt", "creature_mountain_new.txt", "creature_desert_new.txt", "creature_riverlakepool_new.txt", "creature_small_mammal_new.txt", "creature_temperate_new.txt", "creature_tropical_new.txt", "creature_tundra_taiga_new.txt", "creature_bug_slug_new.txt"}
+        OptionSingleReplace189.fileManager = FileListManager261
+        OptionManager261.loadFromDInit = false
+        OptionManager261.loadFromInit = false
+        OptionManager261.loadFromWorldGen = false
+        OptionSingleReplace189.optionManager = OptionManager261
+        OptionSettingManager264.settingName = Nothing
+        OptionSingleReplace189.settingManager = OptionSettingManager264
+        OptionSingleReplace189.tokenName = ""
+        Me.optBtnMoreAnimals.options = OptionSingleReplace189
         Me.optBtnMoreAnimals.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreAnimals.TabIndex = 1
         Me.optBtnMoreAnimals.Text = "Animals"
         Me.optBtnMoreAnimals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.optBtnMoreAnimals.UseVisualStyleBackColor = False
+        Me.optBtnMoreAnimals.UseVisualStyleBackColor = false
         '
         'grpRandomCreatures
         '
-        Me.grpRandomCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpRandomCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpRandomCreatures.Controls.Add(Me.btnDelRandoms)
         Me.grpRandomCreatures.Controls.Add(Me.btnGenerateCreatures)
         Me.grpRandomCreatures.Controls.Add(Me.lblRandomNote)
@@ -11257,13 +11071,13 @@ Partial Class MainForm
         Me.grpRandomCreatures.Name = "grpRandomCreatures"
         Me.grpRandomCreatures.Size = New System.Drawing.Size(144, 172)
         Me.grpRandomCreatures.TabIndex = 4
-        Me.grpRandomCreatures.TabStop = False
+        Me.grpRandomCreatures.TabStop = false
         Me.grpRandomCreatures.Text = "Random Monsters"
         '
         'lblRandomNote
         '
         Me.lblRandomNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblRandomNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRandomNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblRandomNote.ForeColor = System.Drawing.Color.White
         Me.lblRandomNote.Location = New System.Drawing.Point(6, 87)
         Me.lblRandomNote.Name = "lblRandomNote"
@@ -11274,7 +11088,7 @@ Partial Class MainForm
         '
         'grpFortressDefense
         '
-        Me.grpFortressDefense.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpFortressDefense.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpFortressDefense.Controls.Add(Me.optCbPatternInvaderSkills)
         Me.grpFortressDefense.Controls.Add(Me.lblInvaderSkills)
         Me.grpFortressDefense.Controls.Add(Me.lblFortDefEasyTitle)
@@ -11304,12 +11118,12 @@ Partial Class MainForm
         Me.grpFortressDefense.Name = "grpFortressDefense"
         Me.grpFortressDefense.Size = New System.Drawing.Size(291, 420)
         Me.grpFortressDefense.TabIndex = 2
-        Me.grpFortressDefense.TabStop = False
+        Me.grpFortressDefense.TabStop = false
         Me.grpFortressDefense.Text = "Fortress Defense"
         '
         'lblInvaderSkills
         '
-        Me.lblInvaderSkills.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInvaderSkills.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblInvaderSkills.ForeColor = System.Drawing.Color.White
         Me.lblInvaderSkills.Location = New System.Drawing.Point(67, 352)
         Me.lblInvaderSkills.Name = "lblInvaderSkills"
@@ -11321,7 +11135,7 @@ Partial Class MainForm
         'lblFortDefEasyTitle
         '
         Me.lblFortDefEasyTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblFortDefEasyTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFortDefEasyTitle.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblFortDefEasyTitle.ForeColor = System.Drawing.Color.White
         Me.lblFortDefEasyTitle.Location = New System.Drawing.Point(9, 19)
         Me.lblFortDefEasyTitle.Name = "lblFortDefEasyTitle"
@@ -11333,7 +11147,7 @@ Partial Class MainForm
         'lblForDefMedTitle
         '
         Me.lblForDefMedTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblForDefMedTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblForDefMedTitle.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblForDefMedTitle.ForeColor = System.Drawing.Color.White
         Me.lblForDefMedTitle.Location = New System.Drawing.Point(148, 19)
         Me.lblForDefMedTitle.Name = "lblForDefMedTitle"
@@ -11345,7 +11159,7 @@ Partial Class MainForm
         'lblFortDefHardTitle
         '
         Me.lblFortDefHardTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblFortDefHardTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFortDefHardTitle.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblFortDefHardTitle.ForeColor = System.Drawing.Color.White
         Me.lblFortDefHardTitle.Location = New System.Drawing.Point(148, 164)
         Me.lblFortDefHardTitle.Name = "lblFortDefHardTitle"
@@ -11356,9 +11170,9 @@ Partial Class MainForm
         '
         'lblFortDefNote
         '
-        Me.lblFortDefNote.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblFortDefNote.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblFortDefNote.Cursor = System.Windows.Forms.Cursors.Default
-        Me.lblFortDefNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFortDefNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblFortDefNote.ForeColor = System.Drawing.Color.White
         Me.lblFortDefNote.Location = New System.Drawing.Point(6, 390)
         Me.lblFortDefNote.Name = "lblFortDefNote"
@@ -11370,7 +11184,7 @@ Partial Class MainForm
         'grpMachinery
         '
         Me.grpMachinery.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMachinery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpMachinery.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMachinery.Controls.Add(Me.optBtnSteamEngine)
         Me.grpMachinery.Controls.Add(Me.optBtnMachineFactory)
         Me.grpMachinery.Controls.Add(Me.optBtnLiquidSpawner)
@@ -11380,13 +11194,13 @@ Partial Class MainForm
         Me.grpMachinery.Name = "grpMachinery"
         Me.grpMachinery.Size = New System.Drawing.Size(144, 167)
         Me.grpMachinery.TabIndex = 10
-        Me.grpMachinery.TabStop = False
+        Me.grpMachinery.TabStop = false
         Me.grpMachinery.Text = "Machinery"
         '
         'grpWorkshops
         '
         Me.grpWorkshops.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorkshops.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpWorkshops.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorkshops.Controls.Add(Me.optBtnBonecarver)
         Me.grpWorkshops.Controls.Add(Me.optBtnStonecrafter)
         Me.grpWorkshops.Controls.Add(Me.optBtnGemcutter)
@@ -11405,13 +11219,13 @@ Partial Class MainForm
         Me.grpWorkshops.Name = "grpWorkshops"
         Me.grpWorkshops.Size = New System.Drawing.Size(144, 403)
         Me.grpWorkshops.TabIndex = 0
-        Me.grpWorkshops.TabStop = False
+        Me.grpWorkshops.TabStop = false
         Me.grpWorkshops.Text = "Workshops"
         '
         'grpMiscBuildings
         '
         Me.grpMiscBuildings.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMiscBuildings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpMiscBuildings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMiscBuildings.Controls.Add(Me.optBtnWeightBench)
         Me.grpMiscBuildings.Controls.Add(Me.optBtnWoodsplitting)
         Me.grpMiscBuildings.Controls.Add(Me.optBtnStorage)
@@ -11420,13 +11234,13 @@ Partial Class MainForm
         Me.grpMiscBuildings.Name = "grpMiscBuildings"
         Me.grpMiscBuildings.Size = New System.Drawing.Size(144, 123)
         Me.grpMiscBuildings.TabIndex = 2
-        Me.grpMiscBuildings.TabStop = False
+        Me.grpMiscBuildings.TabStop = false
         Me.grpMiscBuildings.Text = "Misc."
         '
         'grpFarming
         '
         Me.grpFarming.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpFarming.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpFarming.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpFarming.Controls.Add(Me.optBtnBrewery)
         Me.grpFarming.Controls.Add(Me.optBtnSawmill)
         Me.grpFarming.Controls.Add(Me.optBtnFishpond)
@@ -11437,13 +11251,13 @@ Partial Class MainForm
         Me.grpFarming.Name = "grpFarming"
         Me.grpFarming.Size = New System.Drawing.Size(144, 173)
         Me.grpFarming.TabIndex = 1
-        Me.grpFarming.TabStop = False
+        Me.grpFarming.TabStop = false
         Me.grpFarming.Text = "Farming"
         '
         'grpStudies
         '
         Me.grpStudies.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpStudies.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpStudies.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpStudies.Controls.Add(Me.optBtnResearch)
         Me.grpStudies.Controls.Add(Me.optBtnArcheology)
         Me.grpStudies.Controls.Add(Me.optBtnApothecary)
@@ -11453,13 +11267,13 @@ Partial Class MainForm
         Me.grpStudies.Name = "grpStudies"
         Me.grpStudies.Size = New System.Drawing.Size(144, 144)
         Me.grpStudies.TabIndex = 3
-        Me.grpStudies.TabStop = False
+        Me.grpStudies.TabStop = false
         Me.grpStudies.Text = "Studies"
         '
         'grpTrade
         '
         Me.grpTrade.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpTrade.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpTrade.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpTrade.Controls.Add(Me.optBtnTavern)
         Me.grpTrade.Controls.Add(Me.optBtnOlon)
         Me.grpTrade.Controls.Add(Me.optBtnBomrek)
@@ -11471,13 +11285,13 @@ Partial Class MainForm
         Me.grpTrade.Name = "grpTrade"
         Me.grpTrade.Size = New System.Drawing.Size(144, 208)
         Me.grpTrade.TabIndex = 8
-        Me.grpTrade.TabStop = False
+        Me.grpTrade.TabStop = false
         Me.grpTrade.Text = "Trade"
         '
         'grpLaboratories
         '
         Me.grpLaboratories.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpLaboratories.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpLaboratories.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpLaboratories.Controls.Add(Me.optBtnAlchemy)
         Me.grpLaboratories.Controls.Add(Me.optBtnToxicology)
         Me.grpLaboratories.Controls.Add(Me.optBtnChemistry)
@@ -11487,13 +11301,13 @@ Partial Class MainForm
         Me.grpLaboratories.Name = "grpLaboratories"
         Me.grpLaboratories.Size = New System.Drawing.Size(144, 152)
         Me.grpLaboratories.TabIndex = 4
-        Me.grpLaboratories.TabStop = False
+        Me.grpLaboratories.TabStop = false
         Me.grpLaboratories.Text = "Laboratories"
         '
         'grpReligion
         '
         Me.grpReligion.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpReligion.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpReligion.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpReligion.Controls.Add(Me.optBtnAltar)
         Me.grpReligion.Controls.Add(Me.optBtnShrine)
         Me.grpReligion.Controls.Add(Me.optBtnTemple)
@@ -11502,13 +11316,13 @@ Partial Class MainForm
         Me.grpReligion.Name = "grpReligion"
         Me.grpReligion.Size = New System.Drawing.Size(144, 129)
         Me.grpReligion.TabIndex = 9
-        Me.grpReligion.TabStop = False
+        Me.grpReligion.TabStop = false
         Me.grpReligion.Text = "Religion"
         '
         'grpDiplomacy
         '
         Me.grpDiplomacy.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpDiplomacy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpDiplomacy.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpDiplomacy.Controls.Add(Me.optBtnEmbassy)
         Me.grpDiplomacy.Controls.Add(Me.optBtnExpedition)
         Me.grpDiplomacy.Controls.Add(Me.optBtnPodium)
@@ -11517,13 +11331,13 @@ Partial Class MainForm
         Me.grpDiplomacy.Name = "grpDiplomacy"
         Me.grpDiplomacy.Size = New System.Drawing.Size(144, 115)
         Me.grpDiplomacy.TabIndex = 5
-        Me.grpDiplomacy.TabStop = False
+        Me.grpDiplomacy.TabStop = false
         Me.grpDiplomacy.Text = "Diplomacy"
         '
         'grpLibrary
         '
         Me.grpLibrary.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpLibrary.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpLibrary.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpLibrary.Controls.Add(Me.optBtnScriptorium)
         Me.grpLibrary.Controls.Add(Me.optBtnLibraries)
         Me.grpLibrary.ForeColor = System.Drawing.SystemColors.Window
@@ -11531,13 +11345,13 @@ Partial Class MainForm
         Me.grpLibrary.Name = "grpLibrary"
         Me.grpLibrary.Size = New System.Drawing.Size(144, 88)
         Me.grpLibrary.TabIndex = 7
-        Me.grpLibrary.TabStop = False
+        Me.grpLibrary.TabStop = false
         Me.grpLibrary.Text = "Library"
         '
         'grpAdministration
         '
         Me.grpAdministration.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpAdministration.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpAdministration.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpAdministration.Controls.Add(Me.optBtnColosseum)
         Me.grpAdministration.Controls.Add(Me.optBtnGuildhall)
         Me.grpAdministration.Controls.Add(Me.optBtnPrison)
@@ -11548,13 +11362,13 @@ Partial Class MainForm
         Me.grpAdministration.Name = "grpAdministration"
         Me.grpAdministration.Size = New System.Drawing.Size(144, 183)
         Me.grpAdministration.TabIndex = 6
-        Me.grpAdministration.TabStop = False
+        Me.grpAdministration.TabStop = false
         Me.grpAdministration.Text = "Administration"
         '
         'grpIllumination
         '
         Me.grpIllumination.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpIllumination.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpIllumination.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpIllumination.Controls.Add(Me.optBtnBrazier)
         Me.grpIllumination.Controls.Add(Me.optBtnCandelabra)
         Me.grpIllumination.Controls.Add(Me.optBtnFireplace)
@@ -11566,12 +11380,12 @@ Partial Class MainForm
         Me.grpIllumination.Name = "grpIllumination"
         Me.grpIllumination.Size = New System.Drawing.Size(144, 209)
         Me.grpIllumination.TabIndex = 0
-        Me.grpIllumination.TabStop = False
+        Me.grpIllumination.TabStop = false
         Me.grpIllumination.Text = "Illumination"
         '
         'lblIlluminationNote
         '
-        Me.lblIlluminationNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIlluminationNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblIlluminationNote.ForeColor = System.Drawing.Color.White
         Me.lblIlluminationNote.Location = New System.Drawing.Point(3, 165)
         Me.lblIlluminationNote.Name = "lblIlluminationNote"
@@ -11583,7 +11397,7 @@ Partial Class MainForm
         'grpSmithing
         '
         Me.grpSmithing.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpSmithing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpSmithing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpSmithing.Controls.Add(Me.optBtnAmmocaster)
         Me.grpSmithing.Controls.Add(Me.optBtnGunsmith)
         Me.grpSmithing.Controls.Add(Me.optBtnHeavySiegeworks)
@@ -11598,13 +11412,13 @@ Partial Class MainForm
         Me.grpSmithing.Name = "grpSmithing"
         Me.grpSmithing.Size = New System.Drawing.Size(144, 347)
         Me.grpSmithing.TabIndex = 3
-        Me.grpSmithing.TabStop = False
+        Me.grpSmithing.TabStop = false
         Me.grpSmithing.Text = "Smithing"
         '
         'grpMiscFurnaces
         '
         Me.grpMiscFurnaces.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMiscFurnaces.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpMiscFurnaces.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnBrickOven)
         Me.grpMiscFurnaces.Controls.Add(Me.optBtnCrematorium)
         Me.grpMiscFurnaces.Controls.Add(Me.optMultiOreProcessor)
@@ -11615,13 +11429,13 @@ Partial Class MainForm
         Me.grpMiscFurnaces.Name = "grpMiscFurnaces"
         Me.grpMiscFurnaces.Size = New System.Drawing.Size(144, 177)
         Me.grpMiscFurnaces.TabIndex = 1
-        Me.grpMiscFurnaces.TabStop = False
+        Me.grpMiscFurnaces.TabStop = false
         Me.grpMiscFurnaces.Text = "Misc. Furnaces"
         '
         'grpUpgrades
         '
         Me.grpUpgrades.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpUpgrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpUpgrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpUpgrades.Controls.Add(Me.optBtnRuneArmory)
         Me.grpUpgrades.Controls.Add(Me.optBtnRuneWeaponry)
         Me.grpUpgrades.Controls.Add(Me.optBtnArmory)
@@ -11633,13 +11447,13 @@ Partial Class MainForm
         Me.grpUpgrades.Name = "grpUpgrades"
         Me.grpUpgrades.Size = New System.Drawing.Size(144, 209)
         Me.grpUpgrades.TabIndex = 4
-        Me.grpUpgrades.TabStop = False
+        Me.grpUpgrades.TabStop = false
         Me.grpUpgrades.Text = "Upgrades"
         '
         'grpMetalworks
         '
         Me.grpMetalworks.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMetalworks.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpMetalworks.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMetalworks.Controls.Add(Me.optBtnBlastFurnace)
         Me.grpMetalworks.Controls.Add(Me.optBtnCrucible)
         Me.grpMetalworks.Controls.Add(Me.optBtnFinishingForge)
@@ -11649,13 +11463,13 @@ Partial Class MainForm
         Me.grpMetalworks.Name = "grpMetalworks"
         Me.grpMetalworks.Size = New System.Drawing.Size(144, 154)
         Me.grpMetalworks.TabIndex = 2
-        Me.grpMetalworks.TabStop = False
+        Me.grpMetalworks.TabStop = false
         Me.grpMetalworks.Text = "Metalworks"
         '
         'grpSiege
         '
         Me.grpSiege.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpSiege.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpSiege.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpSiege.Controls.Add(Me.optBtnArbalest)
         Me.grpSiege.Controls.Add(Me.optBtnTrebuchet)
         Me.grpSiege.ForeColor = System.Drawing.SystemColors.Window
@@ -11663,13 +11477,13 @@ Partial Class MainForm
         Me.grpSiege.Name = "grpSiege"
         Me.grpSiege.Size = New System.Drawing.Size(144, 121)
         Me.grpSiege.TabIndex = 5
-        Me.grpSiege.TabStop = False
+        Me.grpSiege.TabStop = false
         Me.grpSiege.Text = "Heavy Siegeworks"
         '
         'grpDecorations
         '
         Me.grpDecorations.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpDecorations.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpDecorations.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpDecorations.Controls.Add(Me.optBtnDisplayCase)
         Me.grpDecorations.Controls.Add(Me.optBtnPottedPlant)
         Me.grpDecorations.Controls.Add(Me.optBtnTotems)
@@ -11683,13 +11497,13 @@ Partial Class MainForm
         Me.grpDecorations.Name = "grpDecorations"
         Me.grpDecorations.Size = New System.Drawing.Size(144, 347)
         Me.grpDecorations.TabIndex = 8
-        Me.grpDecorations.TabStop = False
+        Me.grpDecorations.TabStop = false
         Me.grpDecorations.Text = "Decorations"
         '
         'grpMagic
         '
         Me.grpMagic.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpMagic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMagic.Controls.Add(Me.optBtnMagicSchool)
         Me.grpMagic.Controls.Add(Me.optBtnElementalMagic)
         Me.grpMagic.Controls.Add(Me.optBtnWhiteMagic)
@@ -11700,13 +11514,13 @@ Partial Class MainForm
         Me.grpMagic.Name = "grpMagic"
         Me.grpMagic.Size = New System.Drawing.Size(144, 209)
         Me.grpMagic.TabIndex = 6
-        Me.grpMagic.TabStop = False
+        Me.grpMagic.TabStop = false
         Me.grpMagic.Text = "Magic"
         '
         'grpVolcanic
         '
         Me.grpVolcanic.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpVolcanic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpVolcanic.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpVolcanic.Controls.Add(Me.optBtnGolemForge)
         Me.grpVolcanic.Controls.Add(Me.optBtnGreatMagmaForge)
         Me.grpVolcanic.Controls.Add(Me.lblReqMagmaNote)
@@ -11715,12 +11529,12 @@ Partial Class MainForm
         Me.grpVolcanic.Name = "grpVolcanic"
         Me.grpVolcanic.Size = New System.Drawing.Size(144, 121)
         Me.grpVolcanic.TabIndex = 7
-        Me.grpVolcanic.TabStop = False
+        Me.grpVolcanic.TabStop = false
         Me.grpVolcanic.Text = "Volcanic Tech."
         '
         'lblReqMagmaNote
         '
-        Me.lblReqMagmaNote.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReqMagmaNote.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblReqMagmaNote.ForeColor = System.Drawing.Color.White
         Me.lblReqMagmaNote.Location = New System.Drawing.Point(9, 90)
         Me.lblReqMagmaNote.Name = "lblReqMagmaNote"
@@ -11732,7 +11546,7 @@ Partial Class MainForm
         'grpExtraReactions
         '
         Me.grpExtraReactions.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpExtraReactions.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpExtraReactions.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpExtraReactions.Controls.Add(Me.optBtnClayOven)
         Me.grpExtraReactions.Controls.Add(Me.optBtnCrafts)
         Me.grpExtraReactions.Controls.Add(Me.optBtnQuenMill)
@@ -11747,13 +11561,13 @@ Partial Class MainForm
         Me.grpExtraReactions.Name = "grpExtraReactions"
         Me.grpExtraReactions.Size = New System.Drawing.Size(144, 326)
         Me.grpExtraReactions.TabIndex = 2
-        Me.grpExtraReactions.TabStop = False
+        Me.grpExtraReactions.TabStop = false
         Me.grpExtraReactions.Text = "Extra Reactions"
         '
         'grpBalancing
         '
         Me.grpBalancing.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpBalancing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpBalancing.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpBalancing.Controls.Add(Me.optBtnAquifier)
         Me.grpBalancing.Controls.Add(Me.optMultiHarderSmithing)
         Me.grpBalancing.Controls.Add(Me.optMultiHarderFarming)
@@ -11767,13 +11581,13 @@ Partial Class MainForm
         Me.grpBalancing.Name = "grpBalancing"
         Me.grpBalancing.Size = New System.Drawing.Size(144, 326)
         Me.grpBalancing.TabIndex = 3
-        Me.grpBalancing.TabStop = False
+        Me.grpBalancing.TabStop = false
         Me.grpBalancing.Text = "Balance Changes"
         '
         'grpMiscFeatures
         '
         Me.grpMiscFeatures.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpMiscFeatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpMiscFeatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMiscFeatures.Controls.Add(Me.optMultiCavernFlavor)
         Me.grpMiscFeatures.Controls.Add(Me.optBtnRegionalWeather)
         Me.grpMiscFeatures.Controls.Add(Me.optBtnRegionalEffects)
@@ -11789,13 +11603,13 @@ Partial Class MainForm
         Me.grpMiscFeatures.Name = "grpMiscFeatures"
         Me.grpMiscFeatures.Size = New System.Drawing.Size(144, 326)
         Me.grpMiscFeatures.TabIndex = 1
-        Me.grpMiscFeatures.TabStop = False
+        Me.grpMiscFeatures.TabStop = false
         Me.grpMiscFeatures.Text = "Miscellaneous"
         '
         'grpExtraMods
         '
         Me.grpExtraMods.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpExtraMods.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpExtraMods.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpExtraMods.Controls.Add(Me.optBtnDigging)
         Me.grpExtraMods.Controls.Add(Me.optMultiRazing)
         Me.grpExtraMods.Controls.Add(Me.optBtnMoreTrees)
@@ -11810,95 +11624,12 @@ Partial Class MainForm
         Me.grpExtraMods.Name = "grpExtraMods"
         Me.grpExtraMods.Size = New System.Drawing.Size(144, 326)
         Me.grpExtraMods.TabIndex = 4
-        Me.grpExtraMods.TabStop = False
+        Me.grpExtraMods.TabStop = false
         Me.grpExtraMods.Text = "Additional Mods"
-        '
-        'optBtnDigging
-        '
-        Me.optBtnDigging.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnDigging.FlatAppearance.BorderSize = 0
-        Me.optBtnDigging.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnDigging.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.optBtnDigging.Image = CType(resources.GetObject("optBtnDigging.Image"), System.Drawing.Image)
-        Me.optBtnDigging.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.optBtnDigging.Location = New System.Drawing.Point(5, 142)
-        Me.optBtnDigging.Margin = New System.Windows.Forms.Padding(1)
-        Me.optBtnDigging.Name = "optBtnDigging"
-        OptionSingleReplace189.disabledValue = " dig -1"
-        OptionSingleReplace189.enabledValue = " dig 5"
-        FileListManager260.fileNames = New String() {"dfhack.init"}
-        OptionSingleReplace189.fileManager = FileListManager260
-        OptionManager260.loadFromDInit = False
-        OptionManager260.loadFromInit = False
-        OptionManager260.loadFromWorldGen = False
-        OptionSingleReplace189.optionManager = OptionManager260
-        OptionSettingManager263.settingName = Nothing
-        OptionSingleReplace189.settingManager = OptionSettingManager263
-        OptionSingleReplace189.tokenName = ""
-        OptionSingleReplace189.updateTileSets = False
-        Me.optBtnDigging.options = OptionSingleReplace189
-        Me.optBtnDigging.Size = New System.Drawing.Size(134, 27)
-        Me.optBtnDigging.TabIndex = 10
-        Me.optBtnDigging.Text = "Digging Invaders"
-        Me.optBtnDigging.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnDigging, "Allows forgotten beasts and some invaders to dig into your fort.")
-        Me.optBtnDigging.UseVisualStyleBackColor = True
-        '
-        'optMultiRazing
-        '
-        Me.optMultiRazing.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optMultiRazing.FlatAppearance.BorderSize = 0
-        Me.optMultiRazing.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optMultiRazing.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.optMultiRazing.Image = CType(resources.GetObject("optMultiRazing.Image"), System.Drawing.Image)
-        Me.optMultiRazing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.optMultiRazing.Location = New System.Drawing.Point(5, 171)
-        Me.optMultiRazing.Margin = New System.Windows.Forms.Padding(1)
-        Me.optMultiRazing.Name = "optMultiRazing"
-        FileListManager261.fileNames = New String() {"dfhack.init"}
-        OptionMulti7.fileManager = FileListManager261
-        OptionManager261.loadFromDInit = False
-        OptionManager261.loadFromInit = False
-        OptionManager261.loadFromWorldGen = False
-        OptionMulti7.optionManager = OptionManager261
-        OptionSettingManager264.settingName = Nothing
-        OptionMulti7.settingManager = OptionSettingManager264
-        RawToken15.optionOffValue = "destroyBuilding -1"
-        RawToken15.optionOnValue = "destroyBuilding 1"
-        RawToken15.tokenName = ""
-        RawToken16.optionOffValue = "destroyRoughConstruction -1"
-        RawToken16.optionOnValue = "destroyRoughConstruction 1"
-        RawToken16.tokenName = ""
-        RawToken17.optionOffValue = "destroySmoothConstruction -1"
-        RawToken17.optionOnValue = "destroySmoothConstruction 1"
-        RawToken17.tokenName = ""
-        OptionMulti7.tokenList.Add(RawToken15)
-        OptionMulti7.tokenList.Add(RawToken16)
-        OptionMulti7.tokenList.Add(RawToken17)
-        OptionMulti7.updateTileSets = False
-        Me.optMultiRazing.options = OptionMulti7
-        Me.optMultiRazing.Size = New System.Drawing.Size(134, 27)
-        Me.optMultiRazing.TabIndex = 9
-        Me.optMultiRazing.Text = "Razing Invaders"
-        Me.optMultiRazing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optMultiRazing, "Allows titans and some invaders to destroy buildings and walls.")
-        Me.optMultiRazing.UseVisualStyleBackColor = True
-        '
-        'lblRendermaxNote
-        '
-        Me.lblRendermaxNote.AutoSize = True
-        Me.lblRendermaxNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRendermaxNote.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblRendermaxNote.Location = New System.Drawing.Point(0, 209)
-        Me.lblRendermaxNote.Name = "lblRendermaxNote"
-        Me.lblRendermaxNote.Size = New System.Drawing.Size(145, 13)
-        Me.lblRendermaxNote.TabIndex = 4
-        Me.lblRendermaxNote.Text = "Needs Printmode Standard"
-        Me.lblRendermaxNote.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'lblModNote
         '
-        Me.lblModNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblModNote.ForeColor = System.Drawing.Color.White
         Me.lblModNote.Location = New System.Drawing.Point(4, 266)
         Me.lblModNote.Name = "lblModNote"
@@ -11907,10 +11638,22 @@ Partial Class MainForm
         Me.lblModNote.Text = "Please mind that I did not write these mods and take no responsibility for bugs."
         Me.lblModNote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lblRendermaxNote
+        '
+        Me.lblRendermaxNote.AutoSize = true
+        Me.lblRendermaxNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblRendermaxNote.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblRendermaxNote.Location = New System.Drawing.Point(0, 211)
+        Me.lblRendermaxNote.Name = "lblRendermaxNote"
+        Me.lblRendermaxNote.Size = New System.Drawing.Size(145, 13)
+        Me.lblRendermaxNote.TabIndex = 4
+        Me.lblRendermaxNote.Text = "Needs Printmode Standard"
+        Me.lblRendermaxNote.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'grpWorldGenMisc
         '
         Me.grpWorldGenMisc.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenMisc.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpWorldGenMisc.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldGenMisc.Controls.Add(Me.lblMineralScarcity)
         Me.grpWorldGenMisc.Controls.Add(Me.lblCivNumber)
         Me.grpWorldGenMisc.Controls.Add(Me.lblEmbarkPoints)
@@ -11926,7 +11669,7 @@ Partial Class MainForm
         Me.grpWorldGenMisc.Name = "grpWorldGenMisc"
         Me.grpWorldGenMisc.Size = New System.Drawing.Size(234, 150)
         Me.grpWorldGenMisc.TabIndex = 6
-        Me.grpWorldGenMisc.TabStop = False
+        Me.grpWorldGenMisc.TabStop = false
         Me.grpWorldGenMisc.Text = "Miscellaneous"
         '
         'lblMineralScarcity
@@ -11977,7 +11720,7 @@ Partial Class MainForm
         'grpWorldGenCaves
         '
         Me.grpWorldGenCaves.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpWorldGenCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldGenCaves.Controls.Add(Me.lblCaveSize)
         Me.grpWorldGenCaves.Controls.Add(Me.lblMountainCaves)
         Me.grpWorldGenCaves.Controls.Add(Me.lblOtherCaves)
@@ -11991,7 +11734,7 @@ Partial Class MainForm
         Me.grpWorldGenCaves.Name = "grpWorldGenCaves"
         Me.grpWorldGenCaves.Size = New System.Drawing.Size(234, 128)
         Me.grpWorldGenCaves.TabIndex = 5
-        Me.grpWorldGenCaves.TabStop = False
+        Me.grpWorldGenCaves.TabStop = false
         Me.grpWorldGenCaves.Text = "Caves"
         '
         'lblCaveSize
@@ -12024,7 +11767,7 @@ Partial Class MainForm
         'grpWorldGenLayers
         '
         Me.grpWorldGenLayers.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenLayers.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpWorldGenLayers.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldGenLayers.Controls.Add(Me.lblCaverns)
         Me.grpWorldGenLayers.Controls.Add(Me.lblCavernOpenness)
         Me.grpWorldGenLayers.Controls.Add(Me.lblCavernMaze)
@@ -12054,7 +11797,7 @@ Partial Class MainForm
         Me.grpWorldGenLayers.Name = "grpWorldGenLayers"
         Me.grpWorldGenLayers.Size = New System.Drawing.Size(260, 418)
         Me.grpWorldGenLayers.TabIndex = 3
-        Me.grpWorldGenLayers.TabStop = False
+        Me.grpWorldGenLayers.TabStop = false
         Me.grpWorldGenLayers.Text = "Caverns && Layers"
         '
         'lblCaverns
@@ -12151,7 +11894,7 @@ Partial Class MainForm
         'grpWorldGenAreas
         '
         Me.grpWorldGenAreas.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.grpWorldGenAreas.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpWorldGenAreas.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldGenAreas.Controls.Add(Me.lblGoodAreas)
         Me.grpWorldGenAreas.Controls.Add(Me.lblEvilAreas)
         Me.grpWorldGenAreas.Controls.Add(Me.lblBiomeNote)
@@ -12162,7 +11905,7 @@ Partial Class MainForm
         Me.grpWorldGenAreas.Name = "grpWorldGenAreas"
         Me.grpWorldGenAreas.Size = New System.Drawing.Size(234, 132)
         Me.grpWorldGenAreas.TabIndex = 4
-        Me.grpWorldGenAreas.TabStop = False
+        Me.grpWorldGenAreas.TabStop = false
         Me.grpWorldGenAreas.Text = "Areas"
         '
         'lblGoodAreas
@@ -12190,13 +11933,13 @@ Partial Class MainForm
         Me.lblBiomeNote.Name = "lblBiomeNote"
         Me.lblBiomeNote.Size = New System.Drawing.Size(217, 54)
         Me.lblBiomeNote.TabIndex = 4
-        Me.lblBiomeNote.Text = "The format #:#:# corresponds to small, medium and large regions. Civs require neu" & _
+        Me.lblBiomeNote.Text = "The format #:#:# corresponds to small, medium and large regions. Civs require neu"& _ 
     "tral regions so be conservative."
         Me.lblBiomeNote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblWorldGenSelect
         '
-        Me.lblWorldGenSelect.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblWorldGenSelect.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblWorldGenSelect.ForeColor = System.Drawing.Color.White
         Me.lblWorldGenSelect.Location = New System.Drawing.Point(363, 71)
         Me.lblWorldGenSelect.Name = "lblWorldGenSelect"
@@ -12207,7 +11950,7 @@ Partial Class MainForm
         '
         'grpWorldSettings
         '
-        Me.grpWorldSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpWorldSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldSettings.Controls.Add(Me.optCbStartingLabors)
         Me.grpWorldSettings.Controls.Add(Me.optBtnTemperature)
         Me.grpWorldSettings.Controls.Add(Me.optBtnWeather)
@@ -12227,12 +11970,12 @@ Partial Class MainForm
         Me.grpWorldSettings.Name = "grpWorldSettings"
         Me.grpWorldSettings.Size = New System.Drawing.Size(169, 346)
         Me.grpWorldSettings.TabIndex = 0
-        Me.grpWorldSettings.TabStop = False
+        Me.grpWorldSettings.TabStop = false
         Me.grpWorldSettings.Text = "World Settings"
         '
         'lblPopCap
         '
-        Me.lblPopCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblPopCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblPopCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPopCap.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPopCap.Location = New System.Drawing.Point(-3, 256)
@@ -12244,7 +11987,7 @@ Partial Class MainForm
         '
         'lblStartingLabor
         '
-        Me.lblStartingLabor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblStartingLabor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblStartingLabor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblStartingLabor.ForeColor = System.Drawing.SystemColors.Window
         Me.lblStartingLabor.Location = New System.Drawing.Point(0, 315)
@@ -12256,7 +11999,7 @@ Partial Class MainForm
         '
         'grpSaveSettings
         '
-        Me.grpSaveSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpSaveSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpSaveSettings.Controls.Add(Me.optCbAutoSave)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoSavePause)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoBackup)
@@ -12269,15 +12012,15 @@ Partial Class MainForm
         Me.grpSaveSettings.Name = "grpSaveSettings"
         Me.grpSaveSettings.Size = New System.Drawing.Size(169, 226)
         Me.grpSaveSettings.TabIndex = 1
-        Me.grpSaveSettings.TabStop = False
+        Me.grpSaveSettings.TabStop = false
         Me.grpSaveSettings.Text = "Save && Load Settings"
         '
         'optCbAutoSave
         '
         Me.optCbAutoSave.DropDownWidth = 150
         Me.optCbAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optCbAutoSave.FormattingEnabled = True
+        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optCbAutoSave.FormattingEnabled = true
         Me.optCbAutoSave.Location = New System.Drawing.Point(76, 22)
         Me.optCbAutoSave.Name = "optCbAutoSave"
         FileListManager262.fileNames = Nothing
@@ -12291,21 +12034,20 @@ Partial Class MainForm
         OptionList6.itemList.Add(ComboItem36)
         OptionList6.itemList.Add(ComboItem37)
         OptionList6.itemList.Add(ComboItem38)
-        OptionManager262.loadFromDInit = True
-        OptionManager262.loadFromInit = False
-        OptionManager262.loadFromWorldGen = False
+        OptionManager262.loadFromDInit = true
+        OptionManager262.loadFromInit = false
+        OptionManager262.loadFromWorldGen = false
         OptionList6.optionManager = OptionManager262
         OptionSettingManager265.settingName = Nothing
         OptionList6.settingManager = OptionSettingManager265
         OptionList6.tokenName = "AUTOSAVE"
-        OptionList6.updateTileSets = False
         Me.optCbAutoSave.options = OptionList6
         Me.optCbAutoSave.Size = New System.Drawing.Size(75, 23)
         Me.optCbAutoSave.TabIndex = 1
         '
         'lblAutoSave
         '
-        Me.lblAutoSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblAutoSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblAutoSave.ForeColor = System.Drawing.SystemColors.Window
         Me.lblAutoSave.Location = New System.Drawing.Point(15, 22)
@@ -12317,7 +12059,7 @@ Partial Class MainForm
         '
         'grpMiscSettings
         '
-        Me.grpMiscSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpMiscSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMiscSettings.Controls.Add(Me.lblKeybinds)
         Me.grpMiscSettings.Controls.Add(Me.optCbKeybinds)
         Me.grpMiscSettings.Controls.Add(Me.lblArena)
@@ -12332,12 +12074,12 @@ Partial Class MainForm
         Me.grpMiscSettings.Name = "grpMiscSettings"
         Me.grpMiscSettings.Size = New System.Drawing.Size(169, 216)
         Me.grpMiscSettings.TabIndex = 4
-        Me.grpMiscSettings.TabStop = False
+        Me.grpMiscSettings.TabStop = false
         Me.grpMiscSettings.Text = "Misc. Settings"
         '
         'lblKeybinds
         '
-        Me.lblKeybinds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblKeybinds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblKeybinds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblKeybinds.ForeColor = System.Drawing.SystemColors.Window
         Me.lblKeybinds.Location = New System.Drawing.Point(7, 21)
@@ -12349,7 +12091,7 @@ Partial Class MainForm
         '
         'lblArena
         '
-        Me.lblArena.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblArena.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblArena.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblArena.ForeColor = System.Drawing.SystemColors.Window
         Me.lblArena.Location = New System.Drawing.Point(7, 47)
@@ -12361,7 +12103,7 @@ Partial Class MainForm
         '
         'lblWindowed
         '
-        Me.lblWindowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblWindowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblWindowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblWindowed.ForeColor = System.Drawing.SystemColors.Window
         Me.lblWindowed.Location = New System.Drawing.Point(7, 73)
@@ -12373,7 +12115,7 @@ Partial Class MainForm
         '
         'lblPriority
         '
-        Me.lblPriority.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblPriority.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblPriority.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPriority.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPriority.Location = New System.Drawing.Point(10, 99)
@@ -12385,7 +12127,7 @@ Partial Class MainForm
         '
         'grpGraphics
         '
-        Me.grpGraphics.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpGraphics.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpGraphics.Controls.Add(Me.lblColors)
         Me.grpGraphics.Controls.Add(Me.optCbColors)
         Me.grpGraphics.Controls.Add(Me.optCbPrintMode)
@@ -12403,12 +12145,12 @@ Partial Class MainForm
         Me.grpGraphics.Name = "grpGraphics"
         Me.grpGraphics.Size = New System.Drawing.Size(169, 346)
         Me.grpGraphics.TabIndex = 3
-        Me.grpGraphics.TabStop = False
+        Me.grpGraphics.TabStop = false
         Me.grpGraphics.Text = "Graphic Settings"
         '
         'lblColors
         '
-        Me.lblColors.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblColors.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblColors.ForeColor = System.Drawing.SystemColors.Window
         Me.lblColors.Location = New System.Drawing.Point(54, 22)
@@ -12422,8 +12164,8 @@ Partial Class MainForm
         '
         Me.optCbColors.DropDownWidth = 150
         Me.optCbColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbColors.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optCbColors.FormattingEnabled = True
+        Me.optCbColors.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optCbColors.FormattingEnabled = true
         Me.optCbColors.Location = New System.Drawing.Point(17, 44)
         Me.optCbColors.MaxDropDownItems = 50
         Me.optCbColors.Name = "optCbColors"
@@ -12524,7 +12266,7 @@ Partial Class MainForm
         '
         'lblFonts
         '
-        Me.lblFonts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblFonts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblFonts.ForeColor = System.Drawing.SystemColors.Window
         Me.lblFonts.Location = New System.Drawing.Point(60, 119)
@@ -12536,7 +12278,7 @@ Partial Class MainForm
         '
         'lblGraphicsPack
         '
-        Me.lblGraphicsPack.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblGraphicsPack.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblGraphicsPack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblGraphicsPack.ForeColor = System.Drawing.SystemColors.Window
         Me.lblGraphicsPack.Location = New System.Drawing.Point(54, 169)
@@ -12550,8 +12292,8 @@ Partial Class MainForm
         '
         Me.cmbTileSets.DropDownWidth = 150
         Me.cmbTileSets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbTileSets.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbTileSets.FormattingEnabled = True
+        Me.cmbTileSets.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.cmbTileSets.FormattingEnabled = true
         Me.cmbTileSets.Location = New System.Drawing.Point(17, 192)
         Me.cmbTileSets.Name = "cmbTileSets"
         Me.cmbTileSets.Size = New System.Drawing.Size(134, 23)
@@ -12559,7 +12301,7 @@ Partial Class MainForm
         '
         'btnTilesetPreview
         '
-        Me.btnTilesetPreview.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnTilesetPreview.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.btnTilesetPreview.FlatAppearance.BorderSize = 0
         Me.btnTilesetPreview.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTilesetPreview.ForeColor = System.Drawing.Color.White
@@ -12569,11 +12311,11 @@ Partial Class MainForm
         Me.btnTilesetPreview.Size = New System.Drawing.Size(134, 27)
         Me.btnTilesetPreview.TabIndex = 11
         Me.btnTilesetPreview.Text = "Tilesets Preview"
-        Me.btnTilesetPreview.UseVisualStyleBackColor = False
+        Me.btnTilesetPreview.UseVisualStyleBackColor = false
         '
         'lblPrintMode
         '
-        Me.lblPrintMode.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblPrintMode.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblPrintMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPrintMode.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPrintMode.Location = New System.Drawing.Point(51, 70)
@@ -12585,7 +12327,7 @@ Partial Class MainForm
         '
         'grpFps
         '
-        Me.grpFps.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpFps.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpFps.Controls.Add(Me.optBtnFps)
         Me.grpFps.Controls.Add(Me.lblGraphicsCap)
         Me.grpFps.Controls.Add(Me.optNumGFPS)
@@ -12596,12 +12338,12 @@ Partial Class MainForm
         Me.grpFps.Name = "grpFps"
         Me.grpFps.Size = New System.Drawing.Size(169, 100)
         Me.grpFps.TabIndex = 6
-        Me.grpFps.TabStop = False
+        Me.grpFps.TabStop = false
         Me.grpFps.Text = "FPS Settings"
         '
         'lblGraphicsCap
         '
-        Me.lblGraphicsCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblGraphicsCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblGraphicsCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblGraphicsCap.ForeColor = System.Drawing.SystemColors.Window
         Me.lblGraphicsCap.Location = New System.Drawing.Point(6, 48)
@@ -12613,7 +12355,7 @@ Partial Class MainForm
         '
         'lblFpsCap
         '
-        Me.lblFpsCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblFpsCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblFpsCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblFpsCap.ForeColor = System.Drawing.SystemColors.Window
         Me.lblFpsCap.Location = New System.Drawing.Point(6, 72)
@@ -12625,7 +12367,7 @@ Partial Class MainForm
         '
         'grpSound
         '
-        Me.grpSound.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpSound.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpSound.Controls.Add(Me.optBtnSound)
         Me.grpSound.Controls.Add(Me.lblVolume)
         Me.grpSound.Controls.Add(Me.optNumVolume)
@@ -12634,12 +12376,12 @@ Partial Class MainForm
         Me.grpSound.Name = "grpSound"
         Me.grpSound.Size = New System.Drawing.Size(169, 81)
         Me.grpSound.TabIndex = 7
-        Me.grpSound.TabStop = False
+        Me.grpSound.TabStop = false
         Me.grpSound.Text = "Sound Settings"
         '
         'lblVolume
         '
-        Me.lblVolume.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblVolume.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblVolume.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblVolume.ForeColor = System.Drawing.SystemColors.Window
         Me.lblVolume.Location = New System.Drawing.Point(6, 48)
@@ -12651,24 +12393,23 @@ Partial Class MainForm
         '
         'optNumVolume
         '
-        Me.optNumVolume.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
+        Me.optNumVolume.BackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
         Me.optNumVolume.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumVolume.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optNumVolume.ForeColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(139, Byte), Integer))
+        Me.optNumVolume.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optNumVolume.ForeColor = System.Drawing.Color.FromArgb(CType(CType(21,Byte),Integer), CType(CType(66,Byte),Integer), CType(CType(139,Byte),Integer))
         Me.optNumVolume.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumVolume.Location = New System.Drawing.Point(100, 49)
         Me.optNumVolume.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.optNumVolume.Name = "optNumVolume"
         FileListManager263.fileNames = Nothing
         OptionSingle61.fileManager = FileListManager263
-        OptionManager263.loadFromDInit = False
-        OptionManager263.loadFromInit = True
-        OptionManager263.loadFromWorldGen = False
+        OptionManager263.loadFromDInit = false
+        OptionManager263.loadFromInit = true
+        OptionManager263.loadFromWorldGen = false
         OptionSingle61.optionManager = OptionManager263
         OptionSettingManager267.settingName = Nothing
         OptionSingle61.settingManager = OptionSettingManager267
         OptionSingle61.tokenName = "VOLUME"
-        OptionSingle61.updateTileSets = False
         Me.optNumVolume.options = OptionSingle61
         Me.optNumVolume.Size = New System.Drawing.Size(51, 19)
         Me.optNumVolume.TabIndex = 2
@@ -12676,7 +12417,7 @@ Partial Class MainForm
         '
         'grpEmbark
         '
-        Me.grpEmbark.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpEmbark.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpEmbark.Controls.Add(Me.optBtnEmbarkWarn)
         Me.grpEmbark.Controls.Add(Me.lblEmbarkSize)
         Me.grpEmbark.Controls.Add(Me.optMaskEmbarkSize)
@@ -12685,12 +12426,12 @@ Partial Class MainForm
         Me.grpEmbark.Name = "grpEmbark"
         Me.grpEmbark.Size = New System.Drawing.Size(169, 124)
         Me.grpEmbark.TabIndex = 5
-        Me.grpEmbark.TabStop = False
+        Me.grpEmbark.TabStop = false
         Me.grpEmbark.Text = "Embark Settings"
         '
         'lblEmbarkSize
         '
-        Me.lblEmbarkSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblEmbarkSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblEmbarkSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblEmbarkSize.ForeColor = System.Drawing.SystemColors.Window
         Me.lblEmbarkSize.Location = New System.Drawing.Point(5, 73)
@@ -12702,7 +12443,7 @@ Partial Class MainForm
         '
         'grpAnnouncements
         '
-        Me.grpAnnouncements.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpAnnouncements.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpAnnouncements.Controls.Add(Me.optBtnTransformMsgs)
         Me.grpAnnouncements.Controls.Add(Me.optBtnDigStop)
         Me.grpAnnouncements.ForeColor = System.Drawing.SystemColors.Window
@@ -12710,26 +12451,26 @@ Partial Class MainForm
         Me.grpAnnouncements.Name = "grpAnnouncements"
         Me.grpAnnouncements.Size = New System.Drawing.Size(169, 114)
         Me.grpAnnouncements.TabIndex = 2
-        Me.grpAnnouncements.TabStop = False
+        Me.grpAnnouncements.TabStop = false
         Me.grpAnnouncements.Text = "Announcement Settings"
         '
         'tileSetColorPreviewer
         '
         Me.tileSetColorPreviewer.AccessibleRole = System.Windows.Forms.AccessibleRole.None
         Me.tileSetColorPreviewer.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.tileSetColorPreviewer.CausesValidation = False
+        Me.tileSetColorPreviewer.CausesValidation = false
         Me.tileSetColorPreviewer.Location = New System.Drawing.Point(402, 509)
         Me.tileSetColorPreviewer.Name = "tileSetColorPreviewer"
         Me.tileSetColorPreviewer.Size = New System.Drawing.Size(240, 60)
         Me.tileSetColorPreviewer.TabIndex = 173
-        Me.tileSetColorPreviewer.Visible = False
+        Me.tileSetColorPreviewer.Visible = false
         '
         'ribbonMain
         '
-        Me.ribbonMain.CaptionBarVisible = False
-        Me.ribbonMain.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ribbonMain.CaptionBarVisible = false
+        Me.ribbonMain.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.ribbonMain.Location = New System.Drawing.Point(0, 0)
-        Me.ribbonMain.Minimized = False
+        Me.ribbonMain.Minimized = false
         Me.ribbonMain.Name = "ribbonMain"
         '
         '
@@ -12742,13 +12483,14 @@ Partial Class MainForm
         Me.ribbonMain.OrbImage = Nothing
         Me.ribbonMain.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2013
         Me.ribbonMain.OrbText = "MDF"
-        Me.ribbonMain.OrbVisible = False
+        Me.ribbonMain.OrbVisible = false
         Me.ribbonMain.PanelCaptionHeight = 0
-        Me.ribbonMain.RibbonTabFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ribbonMain.RibbonTabFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.ribbonMain.Size = New System.Drawing.Size(1026, 72)
         Me.ribbonMain.TabIndex = 100
         Me.ribbonMain.Tabs.Add(Me.rTabGeneral)
         Me.ribbonMain.Tabs.Add(Me.rTabUtilities)
+        Me.ribbonMain.Tabs.Add(Me.rTabDev)
         Me.ribbonMain.TabsMargin = New System.Windows.Forms.Padding(12, 2, 20, 0)
         Me.ribbonMain.ThemeColor = System.Windows.Forms.RibbonTheme.Blue
         '
@@ -12759,8 +12501,8 @@ Partial Class MainForm
         '
         'rPanelGeneral
         '
-        Me.rPanelGeneral.ButtonMoreEnabled = False
-        Me.rPanelGeneral.ButtonMoreVisible = False
+        Me.rPanelGeneral.ButtonMoreEnabled = false
+        Me.rPanelGeneral.ButtonMoreVisible = false
         Me.rPanelGeneral.Items.Add(Me.rBtnPlayDF)
         Me.rPanelGeneral.Items.Add(Me.RibbonSeparator1)
         Me.rPanelGeneral.Items.Add(Me.rBtnOpenFolders)
@@ -12780,7 +12522,7 @@ Partial Class MainForm
         '
         Me.rBtnPlayDF.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.DF
         Me.rBtnPlayDF.MinimumSize = New System.Drawing.Size(50, 0)
-        Me.rBtnPlayDF.SmallImage = CType(resources.GetObject("rBtnPlayDF.SmallImage"), System.Drawing.Image)
+        Me.rBtnPlayDF.SmallImage = CType(resources.GetObject("rBtnPlayDF.SmallImage"),System.Drawing.Image)
         Me.rBtnPlayDF.Tag = ""
         Me.rBtnPlayDF.Text = "Play"
         Me.rBtnPlayDF.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
@@ -12793,7 +12535,7 @@ Partial Class MainForm
         Me.rBtnOpenFolders.DropDownItems.Add(Me.rBtnOpenSaves)
         Me.rBtnOpenFolders.DropDownItems.Add(Me.rBtnOpenUtilities)
         Me.rBtnOpenFolders.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.folder_open
-        Me.rBtnOpenFolders.SmallImage = CType(resources.GetObject("rBtnOpenFolders.SmallImage"), System.Drawing.Image)
+        Me.rBtnOpenFolders.SmallImage = CType(resources.GetObject("rBtnOpenFolders.SmallImage"),System.Drawing.Image)
         Me.rBtnOpenFolders.Style = System.Windows.Forms.RibbonButtonStyle.DropDown
         Me.rBtnOpenFolders.Text = "Open"
         Me.rBtnOpenFolders.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
@@ -12803,21 +12545,21 @@ Partial Class MainForm
         'rBtnOpenDwarfFortress
         '
         Me.rBtnOpenDwarfFortress.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnOpenDwarfFortress.Image = CType(resources.GetObject("rBtnOpenDwarfFortress.Image"), System.Drawing.Image)
+        Me.rBtnOpenDwarfFortress.Image = CType(resources.GetObject("rBtnOpenDwarfFortress.Image"),System.Drawing.Image)
         Me.rBtnOpenDwarfFortress.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.folder_horizontal_open
         Me.rBtnOpenDwarfFortress.Text = "Dwarf Fortress"
         '
         'rBtnOpenSaves
         '
         Me.rBtnOpenSaves.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnOpenSaves.Image = CType(resources.GetObject("rBtnOpenSaves.Image"), System.Drawing.Image)
+        Me.rBtnOpenSaves.Image = CType(resources.GetObject("rBtnOpenSaves.Image"),System.Drawing.Image)
         Me.rBtnOpenSaves.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.folders_stack
         Me.rBtnOpenSaves.Text = "Saves"
         '
         'rBtnOpenUtilities
         '
         Me.rBtnOpenUtilities.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnOpenUtilities.Image = CType(resources.GetObject("rBtnOpenUtilities.Image"), System.Drawing.Image)
+        Me.rBtnOpenUtilities.Image = CType(resources.GetObject("rBtnOpenUtilities.Image"),System.Drawing.Image)
         Me.rBtnOpenUtilities.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.toolbox
         Me.rBtnOpenUtilities.Text = "Utilities"
         '
@@ -12827,7 +12569,7 @@ Partial Class MainForm
         Me.rBtnManuals.DropDownItems.Add(Me.rBtnManualKobold)
         Me.rBtnManuals.DropDownItems.Add(Me.rBtnManualOrc)
         Me.rBtnManuals.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.books_stack
-        Me.rBtnManuals.SmallImage = CType(resources.GetObject("rBtnManuals.SmallImage"), System.Drawing.Image)
+        Me.rBtnManuals.SmallImage = CType(resources.GetObject("rBtnManuals.SmallImage"),System.Drawing.Image)
         Me.rBtnManuals.Style = System.Windows.Forms.RibbonButtonStyle.DropDown
         Me.rBtnManuals.Text = "Manuals"
         Me.rBtnManuals.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
@@ -12861,12 +12603,12 @@ Partial Class MainForm
         Me.rBtnLinks.DropDownItems.Add(Me.rBtnMdfForums)
         Me.rBtnLinks.DropDownItems.Add(Me.rBtnUtilityThreads)
         Me.rBtnLinks.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.globe__arrow
-        Me.rBtnLinks.SmallImage = CType(resources.GetObject("rBtnLinks.SmallImage"), System.Drawing.Image)
+        Me.rBtnLinks.SmallImage = CType(resources.GetObject("rBtnLinks.SmallImage"),System.Drawing.Image)
         Me.rBtnLinks.Style = System.Windows.Forms.RibbonButtonStyle.SplitDropDown
         Me.rBtnLinks.Tag = "http://www.bay12forums.com/smf/index.php?board=24.0"
         Me.rBtnLinks.Text = "Links"
         Me.rBtnLinks.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
-        Me.rBtnLinks.ToolTip = "Links to wikis, Masterwork and utility thread topics. Click here for the Bay 12 M" & _
+        Me.rBtnLinks.ToolTip = "Links to wikis, Masterwork and utility thread topics. Click here for the Bay 12 M"& _ 
     "asterwork sub-forum."
         Me.rBtnLinks.ToolTipTitle = "Links"
         '
@@ -12875,7 +12617,7 @@ Partial Class MainForm
         Me.rBtnWiki.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
         Me.rBtnWiki.DropDownItems.Add(Me.rBtnDfWiki)
         Me.rBtnWiki.DropDownItems.Add(Me.rBtnMdfWiki)
-        Me.rBtnWiki.Image = CType(resources.GetObject("rBtnWiki.Image"), System.Drawing.Image)
+        Me.rBtnWiki.Image = CType(resources.GetObject("rBtnWiki.Image"),System.Drawing.Image)
         Me.rBtnWiki.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.wiki
         Me.rBtnWiki.Style = System.Windows.Forms.RibbonButtonStyle.DropDown
         Me.rBtnWiki.Text = "Wiki"
@@ -12883,16 +12625,16 @@ Partial Class MainForm
         'rBtnDfWiki
         '
         Me.rBtnDfWiki.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnDfWiki.Image = CType(resources.GetObject("rBtnDfWiki.Image"), System.Drawing.Image)
-        Me.rBtnDfWiki.SmallImage = CType(resources.GetObject("rBtnDfWiki.SmallImage"), System.Drawing.Image)
+        Me.rBtnDfWiki.Image = CType(resources.GetObject("rBtnDfWiki.Image"),System.Drawing.Image)
+        Me.rBtnDfWiki.SmallImage = CType(resources.GetObject("rBtnDfWiki.SmallImage"),System.Drawing.Image)
         Me.rBtnDfWiki.Tag = "http://dwarffortresswiki.org/index.php/Main_Page"
         Me.rBtnDfWiki.Text = "Dwarf Fortress"
         '
         'rBtnMdfWiki
         '
         Me.rBtnMdfWiki.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnMdfWiki.Image = CType(resources.GetObject("rBtnMdfWiki.Image"), System.Drawing.Image)
-        Me.rBtnMdfWiki.SmallImage = CType(resources.GetObject("rBtnMdfWiki.SmallImage"), System.Drawing.Image)
+        Me.rBtnMdfWiki.Image = CType(resources.GetObject("rBtnMdfWiki.Image"),System.Drawing.Image)
+        Me.rBtnMdfWiki.SmallImage = CType(resources.GetObject("rBtnMdfWiki.SmallImage"),System.Drawing.Image)
         Me.rBtnMdfWiki.Tag = "http://dwarffortresswiki.org/index.php/Masterwork:Main_Page"
         Me.rBtnMdfWiki.Text = "Masterwork"
         '
@@ -12902,7 +12644,7 @@ Partial Class MainForm
         Me.rBtnMdfForums.DropDownItems.Add(Me.rBtnMdfThreadDwarf)
         Me.rBtnMdfForums.DropDownItems.Add(Me.rBtnMdfThreadKobold)
         Me.rBtnMdfForums.DropDownItems.Add(Me.rBtnMdfThreadOrc)
-        Me.rBtnMdfForums.Image = CType(resources.GetObject("rBtnMdfForums.Image"), System.Drawing.Image)
+        Me.rBtnMdfForums.Image = CType(resources.GetObject("rBtnMdfForums.Image"),System.Drawing.Image)
         Me.rBtnMdfForums.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.bay12
         Me.rBtnMdfForums.Style = System.Windows.Forms.RibbonButtonStyle.DropDown
         Me.rBtnMdfForums.Tag = "http://www.bay12forums.com/smf/index.php?board=24.0"
@@ -12911,24 +12653,24 @@ Partial Class MainForm
         'rBtnMdfThreadDwarf
         '
         Me.rBtnMdfThreadDwarf.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnMdfThreadDwarf.Image = CType(resources.GetObject("rBtnMdfThreadDwarf.Image"), System.Drawing.Image)
-        Me.rBtnMdfThreadDwarf.SmallImage = CType(resources.GetObject("rBtnMdfThreadDwarf.SmallImage"), System.Drawing.Image)
+        Me.rBtnMdfThreadDwarf.Image = CType(resources.GetObject("rBtnMdfThreadDwarf.Image"),System.Drawing.Image)
+        Me.rBtnMdfThreadDwarf.SmallImage = CType(resources.GetObject("rBtnMdfThreadDwarf.SmallImage"),System.Drawing.Image)
         Me.rBtnMdfThreadDwarf.Tag = "http://www.bay12forums.com/smf/index.php?topic=125633.0"
         Me.rBtnMdfThreadDwarf.Text = "Dwarf Mode"
         '
         'rBtnMdfThreadKobold
         '
         Me.rBtnMdfThreadKobold.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnMdfThreadKobold.Image = CType(resources.GetObject("rBtnMdfThreadKobold.Image"), System.Drawing.Image)
-        Me.rBtnMdfThreadKobold.SmallImage = CType(resources.GetObject("rBtnMdfThreadKobold.SmallImage"), System.Drawing.Image)
+        Me.rBtnMdfThreadKobold.Image = CType(resources.GetObject("rBtnMdfThreadKobold.Image"),System.Drawing.Image)
+        Me.rBtnMdfThreadKobold.SmallImage = CType(resources.GetObject("rBtnMdfThreadKobold.SmallImage"),System.Drawing.Image)
         Me.rBtnMdfThreadKobold.Tag = "http://www.bay12forums.com/smf/index.php?topic=125631.0"
         Me.rBtnMdfThreadKobold.Text = "Kobold Mode"
         '
         'rBtnMdfThreadOrc
         '
         Me.rBtnMdfThreadOrc.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnMdfThreadOrc.Image = CType(resources.GetObject("rBtnMdfThreadOrc.Image"), System.Drawing.Image)
-        Me.rBtnMdfThreadOrc.SmallImage = CType(resources.GetObject("rBtnMdfThreadOrc.SmallImage"), System.Drawing.Image)
+        Me.rBtnMdfThreadOrc.Image = CType(resources.GetObject("rBtnMdfThreadOrc.Image"),System.Drawing.Image)
+        Me.rBtnMdfThreadOrc.SmallImage = CType(resources.GetObject("rBtnMdfThreadOrc.SmallImage"),System.Drawing.Image)
         Me.rBtnMdfThreadOrc.Tag = "http://www.bay12forums.com/smf/index.php?topic=113621.0"
         Me.rBtnMdfThreadOrc.Text = "Orc Mode"
         '
@@ -12950,95 +12692,95 @@ Partial Class MainForm
         Me.rBtnUtilityThreads.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.toolbox
         Me.rBtnUtilityThreads.Style = System.Windows.Forms.RibbonButtonStyle.DropDown
         Me.rBtnUtilityThreads.Text = "Utilities"
-        Me.rBtnUtilityThreads.ToolTip = "A collection of forum threads for the various utilities packaged with Masterwork " & _
+        Me.rBtnUtilityThreads.ToolTip = "A collection of forum threads for the various utilities packaged with Masterwork "& _ 
     "Dwarf Fortress."
         Me.rBtnUtilityThreads.ToolTipTitle = "Utility Forums"
         '
         'rBtnDfHack
         '
         Me.rBtnDfHack.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnDfHack.Image = CType(resources.GetObject("rBtnDfHack.Image"), System.Drawing.Image)
-        Me.rBtnDfHack.SmallImage = CType(resources.GetObject("rBtnDfHack.SmallImage"), System.Drawing.Image)
+        Me.rBtnDfHack.Image = CType(resources.GetObject("rBtnDfHack.Image"),System.Drawing.Image)
+        Me.rBtnDfHack.SmallImage = CType(resources.GetObject("rBtnDfHack.SmallImage"),System.Drawing.Image)
         Me.rBtnDfHack.Tag = "http://www.bay12forums.com/smf/index.php?topic=91166.0"
         Me.rBtnDfHack.Text = "DFHack"
         '
         'rBtnDwarfTherapist
         '
         Me.rBtnDwarfTherapist.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnDwarfTherapist.Image = CType(resources.GetObject("rBtnDwarfTherapist.Image"), System.Drawing.Image)
-        Me.rBtnDwarfTherapist.SmallImage = CType(resources.GetObject("rBtnDwarfTherapist.SmallImage"), System.Drawing.Image)
+        Me.rBtnDwarfTherapist.Image = CType(resources.GetObject("rBtnDwarfTherapist.Image"),System.Drawing.Image)
+        Me.rBtnDwarfTherapist.SmallImage = CType(resources.GetObject("rBtnDwarfTherapist.SmallImage"),System.Drawing.Image)
         Me.rBtnDwarfTherapist.Tag = "http://www.bay12forums.com/smf/index.php?topic=132010.0"
         Me.rBtnDwarfTherapist.Text = "Dwarf Therapist"
         '
         'rBtnEmbarkEverywhere
         '
         Me.rBtnEmbarkEverywhere.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnEmbarkEverywhere.Image = CType(resources.GetObject("rBtnEmbarkEverywhere.Image"), System.Drawing.Image)
-        Me.rBtnEmbarkEverywhere.SmallImage = CType(resources.GetObject("rBtnEmbarkEverywhere.SmallImage"), System.Drawing.Image)
+        Me.rBtnEmbarkEverywhere.Image = CType(resources.GetObject("rBtnEmbarkEverywhere.Image"),System.Drawing.Image)
+        Me.rBtnEmbarkEverywhere.SmallImage = CType(resources.GetObject("rBtnEmbarkEverywhere.SmallImage"),System.Drawing.Image)
         Me.rBtnEmbarkEverywhere.Tag = "http://www.bay12forums.com/smf/index.php?topic=71007.0"
         Me.rBtnEmbarkEverywhere.Text = "Embark Everywhere"
         '
         'rBtnIsoWorld
         '
         Me.rBtnIsoWorld.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnIsoWorld.Image = CType(resources.GetObject("rBtnIsoWorld.Image"), System.Drawing.Image)
-        Me.rBtnIsoWorld.SmallImage = CType(resources.GetObject("rBtnIsoWorld.SmallImage"), System.Drawing.Image)
+        Me.rBtnIsoWorld.Image = CType(resources.GetObject("rBtnIsoWorld.Image"),System.Drawing.Image)
+        Me.rBtnIsoWorld.SmallImage = CType(resources.GetObject("rBtnIsoWorld.SmallImage"),System.Drawing.Image)
         Me.rBtnIsoWorld.Tag = "http://www.bay12forums.com/smf/index.php?topic=70700.0"
         Me.rBtnIsoWorld.Text = "IsoWorld"
         '
         'rBtnLegendsViewer
         '
         Me.rBtnLegendsViewer.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnLegendsViewer.Image = CType(resources.GetObject("rBtnLegendsViewer.Image"), System.Drawing.Image)
-        Me.rBtnLegendsViewer.SmallImage = CType(resources.GetObject("rBtnLegendsViewer.SmallImage"), System.Drawing.Image)
+        Me.rBtnLegendsViewer.Image = CType(resources.GetObject("rBtnLegendsViewer.Image"),System.Drawing.Image)
+        Me.rBtnLegendsViewer.SmallImage = CType(resources.GetObject("rBtnLegendsViewer.SmallImage"),System.Drawing.Image)
         Me.rBtnLegendsViewer.Tag = "http://www.bay12forums.com/smf/index.php?topic=72702.0"
         Me.rBtnLegendsViewer.Text = "Legends Viewer"
         '
         'rBtnNanoFortress
         '
         Me.rBtnNanoFortress.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnNanoFortress.Image = CType(resources.GetObject("rBtnNanoFortress.Image"), System.Drawing.Image)
-        Me.rBtnNanoFortress.SmallImage = CType(resources.GetObject("rBtnNanoFortress.SmallImage"), System.Drawing.Image)
+        Me.rBtnNanoFortress.Image = CType(resources.GetObject("rBtnNanoFortress.Image"),System.Drawing.Image)
+        Me.rBtnNanoFortress.SmallImage = CType(resources.GetObject("rBtnNanoFortress.SmallImage"),System.Drawing.Image)
         Me.rBtnNanoFortress.Tag = "http://www.bay12forums.com/smf/index.php?topic=21601.0"
         Me.rBtnNanoFortress.Text = "Nano Fortress"
         '
         'rBtnPerfectWorld
         '
         Me.rBtnPerfectWorld.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnPerfectWorld.Image = CType(resources.GetObject("rBtnPerfectWorld.Image"), System.Drawing.Image)
-        Me.rBtnPerfectWorld.SmallImage = CType(resources.GetObject("rBtnPerfectWorld.SmallImage"), System.Drawing.Image)
+        Me.rBtnPerfectWorld.Image = CType(resources.GetObject("rBtnPerfectWorld.Image"),System.Drawing.Image)
+        Me.rBtnPerfectWorld.SmallImage = CType(resources.GetObject("rBtnPerfectWorld.SmallImage"),System.Drawing.Image)
         Me.rBtnPerfectWorld.Tag = "http://www.bay12forums.com/smf/index.php?topic=57428.0"
         Me.rBtnPerfectWorld.Text = "PerfectWorldDF"
         '
         'rBtnQuickFort
         '
         Me.rBtnQuickFort.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnQuickFort.Image = CType(resources.GetObject("rBtnQuickFort.Image"), System.Drawing.Image)
-        Me.rBtnQuickFort.SmallImage = CType(resources.GetObject("rBtnQuickFort.SmallImage"), System.Drawing.Image)
+        Me.rBtnQuickFort.Image = CType(resources.GetObject("rBtnQuickFort.Image"),System.Drawing.Image)
+        Me.rBtnQuickFort.SmallImage = CType(resources.GetObject("rBtnQuickFort.SmallImage"),System.Drawing.Image)
         Me.rBtnQuickFort.Tag = "http://www.bay12forums.com/smf/index.php?topic=35931.550"
         Me.rBtnQuickFort.Text = "Quickfort"
         '
         'rBtnRandCreatures
         '
         Me.rBtnRandCreatures.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnRandCreatures.Image = CType(resources.GetObject("rBtnRandCreatures.Image"), System.Drawing.Image)
-        Me.rBtnRandCreatures.SmallImage = CType(resources.GetObject("rBtnRandCreatures.SmallImage"), System.Drawing.Image)
+        Me.rBtnRandCreatures.Image = CType(resources.GetObject("rBtnRandCreatures.Image"),System.Drawing.Image)
+        Me.rBtnRandCreatures.SmallImage = CType(resources.GetObject("rBtnRandCreatures.SmallImage"),System.Drawing.Image)
         Me.rBtnRandCreatures.Tag = "http://www.bay12forums.com/smf/index.php?topic=119625.msg3823414"
         Me.rBtnRandCreatures.Text = "Random Creatures"
         '
         'rBtnSoundSense
         '
         Me.rBtnSoundSense.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnSoundSense.Image = CType(resources.GetObject("rBtnSoundSense.Image"), System.Drawing.Image)
-        Me.rBtnSoundSense.SmallImage = CType(resources.GetObject("rBtnSoundSense.SmallImage"), System.Drawing.Image)
+        Me.rBtnSoundSense.Image = CType(resources.GetObject("rBtnSoundSense.Image"),System.Drawing.Image)
+        Me.rBtnSoundSense.SmallImage = CType(resources.GetObject("rBtnSoundSense.SmallImage"),System.Drawing.Image)
         Me.rBtnSoundSense.Tag = "http://www.bay12forums.com/smf/index.php?topic=60287.0"
         Me.rBtnSoundSense.Text = "SoundSense"
         '
         'rBtnStoneSense
         '
         Me.rBtnStoneSense.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnStoneSense.Image = CType(resources.GetObject("rBtnStoneSense.Image"), System.Drawing.Image)
-        Me.rBtnStoneSense.SmallImage = CType(resources.GetObject("rBtnStoneSense.SmallImage"), System.Drawing.Image)
+        Me.rBtnStoneSense.Image = CType(resources.GetObject("rBtnStoneSense.Image"),System.Drawing.Image)
+        Me.rBtnStoneSense.SmallImage = CType(resources.GetObject("rBtnStoneSense.SmallImage"),System.Drawing.Image)
         Me.rBtnStoneSense.Tag = "http://www.bay12forums.com/smf/index.php?topic=106497.0"
         Me.rBtnStoneSense.Text = "Stonesense"
         '
@@ -13055,15 +12797,15 @@ Partial Class MainForm
         Me.rBtnMoreMods.Tag = "http://www.bay12forums.com/smf/index.php?topic=28829.0"
         Me.rBtnMoreMods.Text = "Mods+"
         Me.rBtnMoreMods.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
-        Me.rBtnMoreMods.ToolTip = "A collection of other Dwarf Fortress community created mods. Click here for a com" & _
+        Me.rBtnMoreMods.ToolTip = "A collection of other Dwarf Fortress community created mods. Click here for a com"& _ 
     "munity mod listing."
         Me.rBtnMoreMods.ToolTipTitle = "Community Mods"
         '
         'rBtnStarterPack
         '
         Me.rBtnStarterPack.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnStarterPack.Image = CType(resources.GetObject("rBtnStarterPack.Image"), System.Drawing.Image)
-        Me.rBtnStarterPack.SmallImage = CType(resources.GetObject("rBtnStarterPack.SmallImage"), System.Drawing.Image)
+        Me.rBtnStarterPack.Image = CType(resources.GetObject("rBtnStarterPack.Image"),System.Drawing.Image)
+        Me.rBtnStarterPack.SmallImage = CType(resources.GetObject("rBtnStarterPack.SmallImage"),System.Drawing.Image)
         Me.rBtnStarterPack.Tag = "http://www.bay12forums.com/smf/index.php?topic=126076.0"
         Me.rBtnStarterPack.Text = "Starter Pack"
         '
@@ -13084,48 +12826,48 @@ Partial Class MainForm
         Me.rBtnModsMajor.DropDownItems.Add(Me.rBtnModMajorGenesis)
         Me.rBtnModsMajor.DropDownItems.Add(Me.rBtnModMajorForlorn)
         Me.rBtnModsMajor.DropDownItems.Add(Me.rBtnModMajorRegeneration)
-        Me.rBtnModsMajor.Image = CType(resources.GetObject("rBtnModsMajor.Image"), System.Drawing.Image)
-        Me.rBtnModsMajor.SmallImage = CType(resources.GetObject("rBtnModsMajor.SmallImage"), System.Drawing.Image)
+        Me.rBtnModsMajor.Image = CType(resources.GetObject("rBtnModsMajor.Image"),System.Drawing.Image)
+        Me.rBtnModsMajor.SmallImage = CType(resources.GetObject("rBtnModsMajor.SmallImage"),System.Drawing.Image)
         Me.rBtnModsMajor.Style = System.Windows.Forms.RibbonButtonStyle.DropDown
         Me.rBtnModsMajor.Text = "Major Mods"
         '
         'rBtnModMajorCivForge
         '
         Me.rBtnModMajorCivForge.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMajorCivForge.Image = CType(resources.GetObject("rBtnModMajorCivForge.Image"), System.Drawing.Image)
-        Me.rBtnModMajorCivForge.SmallImage = CType(resources.GetObject("rBtnModMajorCivForge.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMajorCivForge.Image = CType(resources.GetObject("rBtnModMajorCivForge.Image"),System.Drawing.Image)
+        Me.rBtnModMajorCivForge.SmallImage = CType(resources.GetObject("rBtnModMajorCivForge.SmallImage"),System.Drawing.Image)
         Me.rBtnModMajorCivForge.Tag = "http://www.bay12forums.com/smf/index.php?topic=31157.0"
         Me.rBtnModMajorCivForge.Text = "Civilization Forge"
         '
         'rBtnModMajorFortressComplete
         '
         Me.rBtnModMajorFortressComplete.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMajorFortressComplete.Image = CType(resources.GetObject("rBtnModMajorFortressComplete.Image"), System.Drawing.Image)
-        Me.rBtnModMajorFortressComplete.SmallImage = CType(resources.GetObject("rBtnModMajorFortressComplete.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMajorFortressComplete.Image = CType(resources.GetObject("rBtnModMajorFortressComplete.Image"),System.Drawing.Image)
+        Me.rBtnModMajorFortressComplete.SmallImage = CType(resources.GetObject("rBtnModMajorFortressComplete.SmallImage"),System.Drawing.Image)
         Me.rBtnModMajorFortressComplete.Tag = "http://www.bay12forums.com/smf/index.php?topic=116200.0"
         Me.rBtnModMajorFortressComplete.Text = "Fortress Complete"
         '
         'rBtnModMajorGenesis
         '
         Me.rBtnModMajorGenesis.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMajorGenesis.Image = CType(resources.GetObject("rBtnModMajorGenesis.Image"), System.Drawing.Image)
-        Me.rBtnModMajorGenesis.SmallImage = CType(resources.GetObject("rBtnModMajorGenesis.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMajorGenesis.Image = CType(resources.GetObject("rBtnModMajorGenesis.Image"),System.Drawing.Image)
+        Me.rBtnModMajorGenesis.SmallImage = CType(resources.GetObject("rBtnModMajorGenesis.SmallImage"),System.Drawing.Image)
         Me.rBtnModMajorGenesis.Tag = "http://www.bay12forums.com/smf/index.php?topic=109846.0"
         Me.rBtnModMajorGenesis.Text = "Genesis Reborn"
         '
         'rBtnModMajorForlorn
         '
         Me.rBtnModMajorForlorn.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMajorForlorn.Image = CType(resources.GetObject("rBtnModMajorForlorn.Image"), System.Drawing.Image)
-        Me.rBtnModMajorForlorn.SmallImage = CType(resources.GetObject("rBtnModMajorForlorn.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMajorForlorn.Image = CType(resources.GetObject("rBtnModMajorForlorn.Image"),System.Drawing.Image)
+        Me.rBtnModMajorForlorn.SmallImage = CType(resources.GetObject("rBtnModMajorForlorn.SmallImage"),System.Drawing.Image)
         Me.rBtnModMajorForlorn.Tag = "http://www.bay12forums.com/smf/index.php?topic=84186"
         Me.rBtnModMajorForlorn.Text = "Legends of Forlorn Realms"
         '
         'rBtnModMajorRegeneration
         '
         Me.rBtnModMajorRegeneration.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMajorRegeneration.Image = CType(resources.GetObject("rBtnModMajorRegeneration.Image"), System.Drawing.Image)
-        Me.rBtnModMajorRegeneration.SmallImage = CType(resources.GetObject("rBtnModMajorRegeneration.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMajorRegeneration.Image = CType(resources.GetObject("rBtnModMajorRegeneration.Image"),System.Drawing.Image)
+        Me.rBtnModMajorRegeneration.SmallImage = CType(resources.GetObject("rBtnModMajorRegeneration.SmallImage"),System.Drawing.Image)
         Me.rBtnModMajorRegeneration.Tag = "http://www.bay12forums.com/smf/index.php?topic=111008.0"
         Me.rBtnModMajorRegeneration.Text = "Regeneration: Forced Evolution"
         '
@@ -13137,48 +12879,48 @@ Partial Class MainForm
         Me.rBtnModsMinor.DropDownItems.Add(Me.rBtnModMinorFortressDefense)
         Me.rBtnModsMinor.DropDownItems.Add(Me.rBtnModMinorAccelModest)
         Me.rBtnModsMinor.DropDownItems.Add(Me.rBtnModMinorLeather)
-        Me.rBtnModsMinor.Image = CType(resources.GetObject("rBtnModsMinor.Image"), System.Drawing.Image)
-        Me.rBtnModsMinor.SmallImage = CType(resources.GetObject("rBtnModsMinor.SmallImage"), System.Drawing.Image)
+        Me.rBtnModsMinor.Image = CType(resources.GetObject("rBtnModsMinor.Image"),System.Drawing.Image)
+        Me.rBtnModsMinor.SmallImage = CType(resources.GetObject("rBtnModsMinor.SmallImage"),System.Drawing.Image)
         Me.rBtnModsMinor.Style = System.Windows.Forms.RibbonButtonStyle.DropDown
         Me.rBtnModsMinor.Text = "Minor Mods"
         '
         'rBtnModMinorHigherLearning
         '
         Me.rBtnModMinorHigherLearning.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMinorHigherLearning.Image = CType(resources.GetObject("rBtnModMinorHigherLearning.Image"), System.Drawing.Image)
-        Me.rBtnModMinorHigherLearning.SmallImage = CType(resources.GetObject("rBtnModMinorHigherLearning.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMinorHigherLearning.Image = CType(resources.GetObject("rBtnModMinorHigherLearning.Image"),System.Drawing.Image)
+        Me.rBtnModMinorHigherLearning.SmallImage = CType(resources.GetObject("rBtnModMinorHigherLearning.SmallImage"),System.Drawing.Image)
         Me.rBtnModMinorHigherLearning.Tag = "http://www.bay12forums.com/smf/index.php?topic=60853.0"
         Me.rBtnModMinorHigherLearning.Text = "Dwarven Higher Learning"
         '
         'rBtnModMinorFearTheNight
         '
         Me.rBtnModMinorFearTheNight.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMinorFearTheNight.Image = CType(resources.GetObject("rBtnModMinorFearTheNight.Image"), System.Drawing.Image)
-        Me.rBtnModMinorFearTheNight.SmallImage = CType(resources.GetObject("rBtnModMinorFearTheNight.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMinorFearTheNight.Image = CType(resources.GetObject("rBtnModMinorFearTheNight.Image"),System.Drawing.Image)
+        Me.rBtnModMinorFearTheNight.SmallImage = CType(resources.GetObject("rBtnModMinorFearTheNight.SmallImage"),System.Drawing.Image)
         Me.rBtnModMinorFearTheNight.Tag = "http://www.bay12forums.com/smf/index.php?topic=103747.0"
         Me.rBtnModMinorFearTheNight.Text = "Fear the Night!"
         '
         'rBtnModMinorFortressDefense
         '
         Me.rBtnModMinorFortressDefense.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMinorFortressDefense.Image = CType(resources.GetObject("rBtnModMinorFortressDefense.Image"), System.Drawing.Image)
-        Me.rBtnModMinorFortressDefense.SmallImage = CType(resources.GetObject("rBtnModMinorFortressDefense.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMinorFortressDefense.Image = CType(resources.GetObject("rBtnModMinorFortressDefense.Image"),System.Drawing.Image)
+        Me.rBtnModMinorFortressDefense.SmallImage = CType(resources.GetObject("rBtnModMinorFortressDefense.SmallImage"),System.Drawing.Image)
         Me.rBtnModMinorFortressDefense.Tag = "http://www.bay12forums.com/smf/index.php?topic=62874.0"
         Me.rBtnModMinorFortressDefense.Text = "Fortress Defense"
         '
         'rBtnModMinorAccelModest
         '
         Me.rBtnModMinorAccelModest.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMinorAccelModest.Image = CType(resources.GetObject("rBtnModMinorAccelModest.Image"), System.Drawing.Image)
-        Me.rBtnModMinorAccelModest.SmallImage = CType(resources.GetObject("rBtnModMinorAccelModest.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMinorAccelModest.Image = CType(resources.GetObject("rBtnModMinorAccelModest.Image"),System.Drawing.Image)
+        Me.rBtnModMinorAccelModest.SmallImage = CType(resources.GetObject("rBtnModMinorAccelModest.SmallImage"),System.Drawing.Image)
         Me.rBtnModMinorAccelModest.Tag = "http://www.bay12forums.com/smf/index.php?topic=117954.0"
         Me.rBtnModMinorAccelModest.Text = "Modest/Accelerated"
         '
         'rBtnModMinorLeather
         '
         Me.rBtnModMinorLeather.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnModMinorLeather.Image = CType(resources.GetObject("rBtnModMinorLeather.Image"), System.Drawing.Image)
-        Me.rBtnModMinorLeather.SmallImage = CType(resources.GetObject("rBtnModMinorLeather.SmallImage"), System.Drawing.Image)
+        Me.rBtnModMinorLeather.Image = CType(resources.GetObject("rBtnModMinorLeather.Image"),System.Drawing.Image)
+        Me.rBtnModMinorLeather.SmallImage = CType(resources.GetObject("rBtnModMinorLeather.SmallImage"),System.Drawing.Image)
         Me.rBtnModMinorLeather.Tag = "http://www.bay12forums.com/smf/index.php?topic=121654.0"
         Me.rBtnModMinorLeather.Text = "Upgradable Leather Armor Tiers"
         '
@@ -13195,78 +12937,78 @@ Partial Class MainForm
         Me.rBtnModsOverhauls.DropDownItems.Add(Me.rBtnModOverhaulElderScrolls)
         Me.rBtnModsOverhauls.DropDownItems.Add(Me.rBtnModOverhaulUnderhive)
         Me.rBtnModsOverhauls.DropDownItems.Add(Me.rBtnModOverhaulWarhammer)
-        Me.rBtnModsOverhauls.Image = CType(resources.GetObject("rBtnModsOverhauls.Image"), System.Drawing.Image)
-        Me.rBtnModsOverhauls.SmallImage = CType(resources.GetObject("rBtnModsOverhauls.SmallImage"), System.Drawing.Image)
+        Me.rBtnModsOverhauls.Image = CType(resources.GetObject("rBtnModsOverhauls.Image"),System.Drawing.Image)
+        Me.rBtnModsOverhauls.SmallImage = CType(resources.GetObject("rBtnModsOverhauls.SmallImage"),System.Drawing.Image)
         Me.rBtnModsOverhauls.Style = System.Windows.Forms.RibbonButtonStyle.DropDown
         Me.rBtnModsOverhauls.Text = "Complete Overhauls"
         '
         'rBtnModOverhaulCorrosion
         '
-        Me.rBtnModOverhaulCorrosion.Image = CType(resources.GetObject("rBtnModOverhaulCorrosion.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulCorrosion.SmallImage = CType(resources.GetObject("rBtnModOverhaulCorrosion.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulCorrosion.Image = CType(resources.GetObject("rBtnModOverhaulCorrosion.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulCorrosion.SmallImage = CType(resources.GetObject("rBtnModOverhaulCorrosion.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulCorrosion.Tag = "http://www.bay12forums.com/smf/index.php?topic=81068.0"
         Me.rBtnModOverhaulCorrosion.Text = "Corrosion"
         '
         'rBtnModOverhaulChoco
         '
-        Me.rBtnModOverhaulChoco.Image = CType(resources.GetObject("rBtnModOverhaulChoco.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulChoco.SmallImage = CType(resources.GetObject("rBtnModOverhaulChoco.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulChoco.Image = CType(resources.GetObject("rBtnModOverhaulChoco.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulChoco.SmallImage = CType(resources.GetObject("rBtnModOverhaulChoco.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulChoco.Tag = "http://www.bay12forums.com/smf/index.php?topic=104833.0"
         Me.rBtnModOverhaulChoco.Text = "Dwarf Chocolate"
         '
         'rBtnModOverhaulFallout
         '
-        Me.rBtnModOverhaulFallout.Image = CType(resources.GetObject("rBtnModOverhaulFallout.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulFallout.SmallImage = CType(resources.GetObject("rBtnModOverhaulFallout.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulFallout.Image = CType(resources.GetObject("rBtnModOverhaulFallout.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulFallout.SmallImage = CType(resources.GetObject("rBtnModOverhaulFallout.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulFallout.Tag = "http://www.bay12forums.com/smf/index.php?topic=122578.0"
         Me.rBtnModOverhaulFallout.Text = "Fallout"
         '
         'rBtnModOverhaulFalloutEquest
         '
-        Me.rBtnModOverhaulFalloutEquest.Image = CType(resources.GetObject("rBtnModOverhaulFalloutEquest.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulFalloutEquest.SmallImage = CType(resources.GetObject("rBtnModOverhaulFalloutEquest.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulFalloutEquest.Image = CType(resources.GetObject("rBtnModOverhaulFalloutEquest.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulFalloutEquest.SmallImage = CType(resources.GetObject("rBtnModOverhaulFalloutEquest.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulFalloutEquest.Tag = "http://www.bay12forums.com/smf/index.php?topic=118893.0"
         Me.rBtnModOverhaulFalloutEquest.Text = "Fallout: Equestria"
         '
         'rBtnModOverhaulFortbent
         '
-        Me.rBtnModOverhaulFortbent.Image = CType(resources.GetObject("rBtnModOverhaulFortbent.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulFortbent.SmallImage = CType(resources.GetObject("rBtnModOverhaulFortbent.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulFortbent.Image = CType(resources.GetObject("rBtnModOverhaulFortbent.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulFortbent.SmallImage = CType(resources.GetObject("rBtnModOverhaulFortbent.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulFortbent.Tag = "http://www.bay12forums.com/smf/index.php?topic=89267.0"
         Me.rBtnModOverhaulFortbent.Text = "Fortbent: Homestruck"
         '
         'rBtnModOverhaulZelda
         '
-        Me.rBtnModOverhaulZelda.Image = CType(resources.GetObject("rBtnModOverhaulZelda.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulZelda.SmallImage = CType(resources.GetObject("rBtnModOverhaulZelda.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulZelda.Image = CType(resources.GetObject("rBtnModOverhaulZelda.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulZelda.SmallImage = CType(resources.GetObject("rBtnModOverhaulZelda.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulZelda.Tag = "http://www.bay12forums.com/smf/index.php?topic=123486.0"
         Me.rBtnModOverhaulZelda.Text = "Legends of Zelda: Earthward Pick"
         '
         'rBtnModOverhaulMyLittleFortress
         '
-        Me.rBtnModOverhaulMyLittleFortress.Image = CType(resources.GetObject("rBtnModOverhaulMyLittleFortress.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulMyLittleFortress.SmallImage = CType(resources.GetObject("rBtnModOverhaulMyLittleFortress.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulMyLittleFortress.Image = CType(resources.GetObject("rBtnModOverhaulMyLittleFortress.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulMyLittleFortress.SmallImage = CType(resources.GetObject("rBtnModOverhaulMyLittleFortress.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulMyLittleFortress.Tag = "http://www.bay12forums.com/smf/index.php?topic=121116.0"
         Me.rBtnModOverhaulMyLittleFortress.Text = "My Little Fortress - Friendship is Magma"
         '
         'rBtnModOverhaulElderScrolls
         '
-        Me.rBtnModOverhaulElderScrolls.Image = CType(resources.GetObject("rBtnModOverhaulElderScrolls.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulElderScrolls.SmallImage = CType(resources.GetObject("rBtnModOverhaulElderScrolls.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulElderScrolls.Image = CType(resources.GetObject("rBtnModOverhaulElderScrolls.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulElderScrolls.SmallImage = CType(resources.GetObject("rBtnModOverhaulElderScrolls.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulElderScrolls.Tag = "http://www.bay12forums.com/smf/index.php?topic=83992.0"
         Me.rBtnModOverhaulElderScrolls.Text = "Nchardahrk - An Elder Scrolls Mod"
         '
         'rBtnModOverhaulUnderhive
         '
-        Me.rBtnModOverhaulUnderhive.Image = CType(resources.GetObject("rBtnModOverhaulUnderhive.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulUnderhive.SmallImage = CType(resources.GetObject("rBtnModOverhaulUnderhive.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulUnderhive.Image = CType(resources.GetObject("rBtnModOverhaulUnderhive.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulUnderhive.SmallImage = CType(resources.GetObject("rBtnModOverhaulUnderhive.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulUnderhive.Tag = "http://www.bay12forums.com/smf/index.php?topic=120494.0"
         Me.rBtnModOverhaulUnderhive.Text = "Warhammer 40k: Underhive Settlement"
         '
         'rBtnModOverhaulWarhammer
         '
-        Me.rBtnModOverhaulWarhammer.Image = CType(resources.GetObject("rBtnModOverhaulWarhammer.Image"), System.Drawing.Image)
-        Me.rBtnModOverhaulWarhammer.SmallImage = CType(resources.GetObject("rBtnModOverhaulWarhammer.SmallImage"), System.Drawing.Image)
+        Me.rBtnModOverhaulWarhammer.Image = CType(resources.GetObject("rBtnModOverhaulWarhammer.Image"),System.Drawing.Image)
+        Me.rBtnModOverhaulWarhammer.SmallImage = CType(resources.GetObject("rBtnModOverhaulWarhammer.SmallImage"),System.Drawing.Image)
         Me.rBtnModOverhaulWarhammer.Tag = "http://www.bay12forums.com/smf/index.php?topic=93254.0"
         Me.rBtnModOverhaulWarhammer.Text = "Warhammer: Fortress"
         '
@@ -13295,8 +13037,8 @@ Partial Class MainForm
         'rBtnThemeDefault
         '
         Me.rBtnThemeDefault.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnThemeDefault.Image = CType(resources.GetObject("rBtnThemeDefault.Image"), System.Drawing.Image)
-        Me.rBtnThemeDefault.SmallImage = CType(resources.GetObject("rBtnThemeDefault.SmallImage"), System.Drawing.Image)
+        Me.rBtnThemeDefault.Image = CType(resources.GetObject("rBtnThemeDefault.Image"),System.Drawing.Image)
+        Me.rBtnThemeDefault.SmallImage = CType(resources.GetObject("rBtnThemeDefault.SmallImage"),System.Drawing.Image)
         Me.rBtnThemeDefault.Tag = "DEFAULT"
         Me.rBtnThemeDefault.Text = "Default"
         Me.rBtnThemeDefault.ToolTip = "Original dark theme with transparent backgrounds."
@@ -13304,8 +13046,8 @@ Partial Class MainForm
         'rBtnThemeBlue
         '
         Me.rBtnThemeBlue.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
-        Me.rBtnThemeBlue.Image = CType(resources.GetObject("rBtnThemeBlue.Image"), System.Drawing.Image)
-        Me.rBtnThemeBlue.SmallImage = CType(resources.GetObject("rBtnThemeBlue.SmallImage"), System.Drawing.Image)
+        Me.rBtnThemeBlue.Image = CType(resources.GetObject("rBtnThemeBlue.Image"),System.Drawing.Image)
+        Me.rBtnThemeBlue.SmallImage = CType(resources.GetObject("rBtnThemeBlue.SmallImage"),System.Drawing.Image)
         Me.rBtnThemeBlue.Tag = "BLUE"
         Me.rBtnThemeBlue.Text = "Blue"
         Me.rBtnThemeBlue.ToolTip = "Opaque white backgrounds with blue highlights."
@@ -13334,8 +13076,8 @@ Partial Class MainForm
         '
         'rPanelUtilities
         '
-        Me.rPanelUtilities.ButtonMoreEnabled = False
-        Me.rPanelUtilities.ButtonMoreVisible = False
+        Me.rPanelUtilities.ButtonMoreEnabled = false
+        Me.rPanelUtilities.ButtonMoreVisible = false
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilAnnounceFilter)
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilDfInit)
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilEmbark)
@@ -13402,7 +13144,7 @@ Partial Class MainForm
         Me.rBtnUtilLegends.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.application
         Me.rBtnUtilLegends.Tag = "LegendsViewer.exe"
         Me.rBtnUtilLegends.Text = "Legends"
-        Me.rBtnUtilLegends.ToolTip = "After exporting world data, browse the history, creatures and civilizations of a " & _
+        Me.rBtnUtilLegends.ToolTip = "After exporting world data, browse the history, creatures and civilizations of a "& _ 
     "generated world."
         Me.rBtnUtilLegends.ToolTipTitle = "Legends Viewer"
         '
@@ -13457,7 +13199,7 @@ Partial Class MainForm
         Me.rBtnUtilDwarfTherapist.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.therapist
         Me.rBtnUtilDwarfTherapist.Tag = "DwarfTherapist.exe"
         Me.rBtnUtilDwarfTherapist.Text = "Therapist"
-        Me.rBtnUtilDwarfTherapist.ToolTip = "Manage and optimize labour, view fortress populations' thoughts, preferences, ski" & _
+        Me.rBtnUtilDwarfTherapist.ToolTip = "Manage and optimize labour, view fortress populations' thoughts, preferences, ski"& _ 
     "lls, attributes and more."
         Me.rBtnUtilDwarfTherapist.ToolTipTitle = "Dwarf Therapist"
         '
@@ -13470,6 +13212,29 @@ Partial Class MainForm
         Me.rBtnUtilTileGenie.ToolTip = "Create and modify tilesets."
         Me.rBtnUtilTileGenie.ToolTipTitle = "TileGenie"
         '
+        'rTabDev
+        '
+        Me.rTabDev.Panels.Add(Me.rPanelDev)
+        Me.rTabDev.Text = "Dev"
+        '
+        'rPanelDev
+        '
+        Me.rPanelDev.Items.Add(Me.rBtnTest)
+        Me.rPanelDev.Items.Add(Me.rBtnExport)
+        Me.rPanelDev.Text = ""
+        '
+        'rBtnTest
+        '
+        Me.rBtnTest.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.book_question
+        Me.rBtnTest.SmallImage = CType(resources.GetObject("rBtnTest.SmallImage"),System.Drawing.Image)
+        Me.rBtnTest.Text = "Test"
+        '
+        'rBtnExport
+        '
+        Me.rBtnExport.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.book_question
+        Me.rBtnExport.SmallImage = CType(resources.GetObject("rBtnExport.SmallImage"),System.Drawing.Image)
+        Me.rBtnExport.Text = "Export"
+        '
         'optNumHFSLevels
         '
         Me.optNumHFSLevels.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -13480,14 +13245,13 @@ Partial Class MainForm
         Me.optNumHFSLevels.Name = "optNumHFSLevels"
         FileListManager264.fileNames = Nothing
         OptionSingle62.fileManager = FileListManager264
-        OptionManager264.loadFromDInit = False
-        OptionManager264.loadFromInit = False
-        OptionManager264.loadFromWorldGen = True
+        OptionManager264.loadFromDInit = false
+        OptionManager264.loadFromInit = false
+        OptionManager264.loadFromWorldGen = true
         OptionSingle62.optionManager = OptionManager264
         OptionSettingManager268.settingName = Nothing
         OptionSingle62.settingManager = OptionSettingManager268
         OptionSingle62.tokenName = "LEVELS_AT_BOTTOM"
-        OptionSingle62.updateTileSets = False
         Me.optNumHFSLevels.options = OptionSingle62
         Me.optNumHFSLevels.Size = New System.Drawing.Size(43, 20)
         Me.optNumHFSLevels.TabIndex = 194
@@ -13496,7 +13260,7 @@ Partial Class MainForm
         '
         'tabMain
         '
-        Me.tabMain.AllowDrop = True
+        Me.tabMain.AllowDrop = true
         Me.tabMain.BackgroundColor = System.Drawing.Color.Black
         Me.tabMain.BackgroundHatcher.HatchType = System.Drawing.Drawing2D.HatchStyle.DashedVertical
         Me.tabMain.BorderColor = System.Drawing.Color.Black
@@ -13508,14 +13272,14 @@ Partial Class MainForm
         Me.tabMain.Controls.Add(Me.tabMisc)
         Me.tabMain.Controls.Add(Me.tabWorldGen)
         Me.tabMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tabMain.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tabMain.IsCaptionVisible = False
-        Me.tabMain.IsDocumentTabStyle = True
-        Me.tabMain.IsUserInteraction = False
+        Me.tabMain.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.tabMain.IsCaptionVisible = false
+        Me.tabMain.IsDocumentTabStyle = true
+        Me.tabMain.IsUserInteraction = false
         Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
         Me.tabMain.Location = New System.Drawing.Point(0, 72)
         Me.tabMain.Name = "tabMain"
-        Me.tabMain.SelectedIndex = 0
+        Me.tabMain.SelectedIndex = 1
         Me.tabMain.Size = New System.Drawing.Size(1026, 613)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
@@ -14280,5 +14044,9 @@ End Sub
     Friend WithEvents rBtnDatabase As System.Windows.Forms.RibbonButton
     Friend WithEvents optBtnDigging As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optMultiRazing As MasterworkDwarfFortress.optionMultiButton
+    Friend WithEvents rTabDev As System.Windows.Forms.RibbonTab
+    Friend WithEvents rPanelDev As System.Windows.Forms.RibbonPanel
+    Friend WithEvents rBtnTest As System.Windows.Forms.RibbonButton
+    Friend WithEvents rBtnExport As System.Windows.Forms.RibbonButton
 
 End Class

@@ -59,6 +59,11 @@ Imports System.ComponentModel
             tabMain.SelectedTab = t
         Next
         tabMain.SelectedIndex = 0
+
+        'add debugging tools to the menu
+        If Not Debugger.IsAttached Then
+            ribbonMain.Tabs.Remove(rTabDev)
+        End If
     End Sub
 
 
@@ -151,7 +156,7 @@ Imports System.ComponentModel
 #Region "tileset change and preview"
 
     Private Sub btnUpdateSaves_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateSaves.Click
-        graphicsSets.updateSavedGames()        
+        graphicsSets.updateSavedGames()
     End Sub
 
     Private Sub btnTilesetPreview_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTilesetPreview.Click
@@ -371,30 +376,29 @@ Imports System.ComponentModel
 #End Region
 
 
-#Region "basic test of all options"
+#Region "option testing and exporting"
 
     'this doesn't include applying graphic tilsets, or launching the ulilities or menu urls
-
-    Private Sub MainForm_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
+    Private Sub rBtnTest_Click(sender As Object, e As EventArgs) Handles rBtnTest.Click
         If Not Debugger.IsAttached Then Exit Sub
-        If e.Alt And e.Control And e.KeyCode = Keys.Oemtilde Then
-            If MsgBox("Run test? This will change raws!", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.No Then Exit Sub
-            testSettings(tabMain)
-            MsgBox("Test Complete.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
-        ElseIf e.Shift And e.Alt And e.KeyCode = Keys.Oemtilde Then
-            Dim frmInfo As New Form
-            Dim rtext As New RichTextBox
-            frmInfo.Controls.Add(rtext)
-            rtext.Dock = DockStyle.Fill
-
-            printOptions(tabMain, rtext)
-
-            frmInfo.Show()
-        End If
+        If MsgBox("Run test? This will change raws!", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.No Then Exit Sub
+        testOptions(tabMain)
+        MsgBox("Test Complete.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
     End Sub
 
+    Private Sub rBtnExport_Click(sender As Object, e As EventArgs) Handles rBtnExport.Click
+        If Not Debugger.IsAttached Then Exit Sub
+        Dim frmInfo As New Form
+        Dim rtext As New RichTextBox
+        frmInfo.Controls.Add(rtext)
+        rtext.Dock = DockStyle.Fill
 
-    Private Sub testSettings(ByVal parentControl As Control)
+        exportOptions(tabMain, rtext)
+
+        frmInfo.Show()
+    End Sub
+
+    Private Sub testOptions(ByVal parentControl As Control)
         If Not Debugger.IsAttached Then Exit Sub
 
         For Each c As Control In parentControl.Controls
@@ -413,13 +417,13 @@ Imports System.ComponentModel
                 End If
 
                 If c.HasChildren Then
-                    testSettings(c)
+                    testOptions(c)
                 End If
             End If
         Next
     End Sub
 
-    Private Sub printOptions(ByVal parentControl As Control, ByRef rText As RichTextBox)
+    Private Sub exportOptions(ByVal parentControl As Control, ByRef rText As RichTextBox)
         If Not Debugger.IsAttached Then Exit Sub
 
         For Each c As Control In parentControl.Controls
@@ -440,7 +444,7 @@ Imports System.ComponentModel
                 End If
 
                 If c.HasChildren Then
-                    printOptions(c, rText)
+                    exportOptions(c, rText)
                 End If
             End If
         Next
@@ -591,8 +595,7 @@ Imports System.ComponentModel
             cb.replace = "${1}${value}${2}"
         Else
             cb.Enabled = False
-        End If
-        cb.options.updateTileSets = True
+        End If        
     End Sub
 
     Private Sub buildMatOption(ByRef cb As optionComboPatternToken, ByVal entityFile As String)
@@ -607,8 +610,6 @@ Imports System.ComponentModel
 
         cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]"
         cb.replace = "${1}${value}]"
-
-        cb.options.updateTileSets = False
     End Sub
 
     Private Sub buildTriggerOption(ByRef cb As optionComboBoxMulti, ByVal entityFileName As String, ByVal tokenList As List(Of String))
@@ -651,6 +652,7 @@ Imports System.ComponentModel
     End Sub
 
 #End Region
+
 
 End Class
 

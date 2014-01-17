@@ -34,7 +34,7 @@ Public Class optionComboPatternToken
                 End If
             End If
 
-            Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.getFilePaths)
+            Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.getFilePaths(False))
             m_value = Me.SelectedValue
 
         Catch ex As Exception
@@ -51,7 +51,7 @@ Public Class optionComboPatternToken
             MsgBox("Unable to save, replacement pattern is in an invalid format!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
         Else
             Dim r As String = m_replace.Replace("${value}", m_value)
-            If Not m_opt.optionManager.replacePatternsInFiles(m_pattern, r, m_opt.fileManager, m_opt.updateTileSets) Then
+            If Not m_opt.optionManager.replacePatternsInFiles(m_pattern, r, m_opt.fileManager) Then
                 MsgBox("Failed to save changes for " & Me.Name & "!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
             End If
         End If

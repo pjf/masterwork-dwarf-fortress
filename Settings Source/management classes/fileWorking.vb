@@ -88,8 +88,12 @@ Public Class fileWorking
         Return findFile(fileName, mwFilePaths)
     End Function
 
-    Public Shared Function findMwFilePath(ByVal fileName As String) As String
-        Return findFilePath(fileName, mwFilePaths)
+    Public Shared Function findMwFilePath(ByVal fileName As String, Optional ByVal graphicsOnly As Boolean = False) As String
+        If graphicsOnly Then
+            Return findFilePath(fileName, m_mwGraphicFilePaths)
+        Else
+            Return findFilePath(fileName, mwFilePaths)
+        End If
     End Function
 
     Private Shared Function findFilePath(ByVal fileName As String, ByVal pathList As List(Of IO.FileInfo)) As String

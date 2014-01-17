@@ -28,12 +28,16 @@ Public Class fileListManager
         End Set
     End Property
 
-    Public Function getFilePaths() As List(Of String)
+    Public Function getFilePaths(ByVal includeGraphicsFiles As Boolean) As List(Of String)
         If m_filePaths.Count <= 0 AndAlso m_fileNames IsNot Nothing AndAlso m_fileNames.Count > 0 Then
             buildFilePaths()
         End If
 
-        Return m_filePaths
+        If Not includeGraphicsFiles And m_filePaths.Count > 0 Then
+            Return m_filePaths.FindAll(Function(f As String) Not f.Contains(m_graphicsDir))
+        Else
+            Return m_filePaths
+        End If
 
     End Function
 
@@ -42,6 +46,8 @@ Public Class fileListManager
         For Each f As String In m_fileNames
             m_filePaths.AddRange(findFilePaths(f))
         Next
+        'append any files also found in the graphics packs
+        findRelatedGraphicsFilePaths()
     End Sub
 
     Private Function findFilePaths(ByVal fileName As String) As List(Of String)
@@ -72,7 +78,7 @@ Public Class fileListManager
     End Sub
 
 
-    Public Function getRelatedGraphicsFilePaths() As List(Of String)
+    Private Sub findRelatedGraphicsFilePaths()
         Dim fPaths As New List(Of String)
         Dim rx As New Regex("(" & String.Join(")|(", m_fileNames.ToArray) & ")", RegexOptions.IgnoreCase)
         Dim f_infos As List(Of IO.FileInfo) = mwGraphicFilePaths.FindAll(Function(f) rx.IsMatch(f.Name))
@@ -83,8 +89,9 @@ Public Class fileListManager
         If fPaths.Count <= 0 Then
             Debug.WriteLine("One or more of the following files were not found in any graphics packs! " & String.Join(", ", m_fileNames))
         End If
-        Return fPaths
-    End Function
+        'Return fPaths
+        m_filePaths.AddRange(fPaths)
+    End Sub
 
 End Class
 

@@ -2244,16 +2244,6 @@
   <data name="optCbStartingLabors.ToolTip" xml:space="preserve">
     <value>You can have your dwarves start/arrive without any labor types enabled here by setting this to NO.  You can also set it to SKILLS to make the labor list set by skill, or BY_UNIT_TYPE to have it done by overall unit type.</value>
   </data>
-  <data name="optBtnMoreAnimals.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADeSURBVDhPpY69DgFBFIXPE/iJQkRWwhuIjkIr2UKv
-        tBqlZDulDiUlQkh4l30JnVKpcp27UcxsJlkTxZebc+abOwMR+Qtn6YOz9MFZ+uAsfbDCFcANGJBE5yWT
-        9dz0FSucKZDkHceik8wz2fIVKxwo7PnSjvIrisScR6BzyluwpfBlTpJnGIrODTBbs1/mLVBhxR9QTh7t
-        tphT+9wFLQoLyvcgEJ0RXzaznpu+Ygeg0QPGU8oBMGSu94GR5i4wYW6afnrHCkCRVEmNVEiBlIyubPrp
-        nWzhi7P0wVn+juAD42puaIR94XQAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="optBtnDigging.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -2265,6 +2255,16 @@
 </value>
   </data>
   <data name="optMultiRazing.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADeSURBVDhPpY69DgFBFIXPE/iJQkRWwhuIjkIr2UKv
+        tBqlZDulDiUlQkh4l30JnVKpcp27UcxsJlkTxZebc+abOwMR+Qtn6YOz9MFZ+uAsfbDCFcANGJBE5yWT
+        9dz0FSucKZDkHceik8wz2fIVKxwo7PnSjvIrisScR6BzyluwpfBlTpJnGIrODTBbs1/mLVBhxR9QTh7t
+        tphT+9wFLQoLyvcgEJ0RXzaznpu+Ygeg0QPGU8oBMGSu94GR5i4wYW6afnrHCkCRVEmNVEiBlIyubPrp
+        nWzhi7P0wVn+juAD42puaIR94XQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="optBtnMoreAnimals.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADeSURBVDhPpY69DgFBFIXPE/iJQkRWwhuIjkIr2UKv
@@ -2830,6 +2830,18 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAABNJREFUOE9jGAWjYBSMAjBgYAAABBAAAadEfGMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="rBtnTest.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAABNJREFUOE9jGAWjYBSMAjBgYAAABBAAAadEfGMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="rBtnExport.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAABNJREFUOE9jGAWjYBSMAjBgYAAABBAAAadEfGMAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
