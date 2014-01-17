@@ -9,6 +9,7 @@ use Config::Tiny;
 use File::Slurp qw(read_file);
 use autodie qw(read_file);
 use FindBin qw($Bin);
+use IPC::System::Simple qw(capture);
 
 my $mech = WWW::Mechanize::Urist->new(
     autocheck => 1,
@@ -19,6 +20,11 @@ my $md2phpbb = Markdown::phpBB->new;
 my $config = Config::Tiny->read("$Bin/maint-settings.ini");
 
 my $forumpages = $config->{forumpages};
+
+# Generate latest changes for substitutions.
+
+my $latest_changes = capture("$Bin/forum-patchlog.pl -m");
+my $all_changes    = capture("$Bin/forum-patchlog.pl -mA");
 
 # Change to our pages directory and make sure it's up to date
 chdir($config->{forum}{pageroot});
@@ -36,6 +42,14 @@ foreach my $page (keys %$forumpages) {
     my $url = $forumpages->{$page};
 
     my $markdown = read_file($page);
+
+    # Subtitute in our changelogs
+
+    $markdown =~ s{ {% \s* latest-changes \s* %} }{$latest_changes}gx;
+    $markdown =~ s{ {% \s* all-changes    \s* %} }{$all_changes}gx;
+
+    # Now convert
+
     my $phpbb    =  $md2phpbb->convert($markdown);
 
     # Navigate to the post we wish to replace
