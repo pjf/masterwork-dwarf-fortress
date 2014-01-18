@@ -29,7 +29,7 @@ Public Class optionNumeric
             Me.Value = CInt(m_opt.loadOption)
             m_opt.valueChanged(CStr(Me.Value))
         Catch ex As Exception
-            Me.Value = 0
+            Me.Value = Me.Minimum
         Finally
             m_opt.valueUpdatingPaused = False
         End Try

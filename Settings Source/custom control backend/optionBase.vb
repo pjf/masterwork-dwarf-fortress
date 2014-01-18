@@ -18,19 +18,6 @@ Public Class optionBase
     Protected m_optionManager As New optionManager
     Protected m_fileManager As New fileListManager
     Protected m_settingManager As New optionSettingManager
-    Protected m_updateTileSets As Boolean
-
-    <DisplayNameAttribute("Update Tilesets"), _
-    CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("This token should also be updated in graphics pack raw files.")> _
-    Public Overridable Property updateTileSets As Boolean
-        Get
-            Return m_updateTileSets
-        End Get
-        Set(value As Boolean)
-            m_updateTileSets = value
-        End Set
-    End Property
 
     Public Property settingManager As optionSettingManager
         Get
@@ -60,11 +47,12 @@ Public Class optionBase
     End Property
 
     Public Function loadOption() As Object
-        Return m_optionManager.loadOption(m_fileManager.getFilePaths, m_tokens, m_settingManager)
+        'only load settings from our current raws
+        Return m_optionManager.loadOption(m_fileManager.getFilePaths(False), m_tokens, m_settingManager)
     End Function
 
     Public Function saveOption(Optional ByVal enable As Boolean = False) As Boolean
-        Return m_optionManager.saveOption(m_fileManager, m_tokens, enable, m_updateTileSets)
+        Return m_optionManager.saveOption(m_fileManager, m_tokens, enable)
     End Function
 
     Public Sub saveSetting(ByVal newValue As String)
@@ -116,7 +104,7 @@ Public Class optionBase
                 files.AddRange(m_fileManager.fileNames)
             End If
 
-            If m_updateTileSets Then
+            If m_fileManager.getFilePaths(True).FindAll(Function(f As String) f.Contains(globals.m_graphicsDir)).Count > 0 Then
                 files.Add("** Affects graphic packs! **")
             End If
 
