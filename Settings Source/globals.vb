@@ -20,4 +20,6 @@
     Public Shared m_tokensWorldGen As New Dictionary(Of Integer, Dictionary(Of String, List(Of String)))
 
     Public Shared currentWorldGenIndex As Integer
+
+    Public Shared m_dfRaws As New Dictionary(Of IO.FileInfo, String)
 End Class

@@ -2,6 +2,8 @@
 Imports MasterworkDwarfFortress.fileWorking
 Imports MasterworkDwarfFortress.globals
 Imports System.Text.RegularExpressions
+Imports System.IO
+Imports System.Text
 
 <DisplayNameAttribute("Other Locations"), _
 DescriptionAttribute("These are files that may contain the options which can be used in place of the file list."), _
@@ -62,7 +64,7 @@ Public Class optionManager
         End Set
     End Property
 
-    Public Function loadOption(ByVal filePaths As List(Of String), ByVal tokens As rawTokenCollection, ByVal settingManager As optionSettingManager) As String
+    Public Function loadOption(ByVal files As List(Of FileInfo), ByVal tokens As rawTokenCollection, ByVal settingManager As optionSettingManager) As String
         'Try
         Dim retValue As String = ""
 
@@ -111,17 +113,17 @@ Public Class optionManager
                 For Each t As rawToken In tokens
                     strPattern.Add(Regex.Escape(t.optionOnValue))
                 Next
-                If findTokensInFiles(String.Format("({0})", String.Join(")|(", strPattern)), filePaths) Then
+                If findTokensInFiles(String.Format("({0})", String.Join(")|(", strPattern)), files) Then
                     retValue = "YES"
                 End If
             Else
                 'in this case we're looking token value(s) within multiple files. 
                 'we're only looking to return a single value however, so return the first one
-                Dim pattern As String = String.Format("(\[" & tokens.Item(0).tokenName & ":)(?<value>\w+)\]")                
+                Dim pattern As String = String.Format("(\[" & tokens.Item(0).tokenName & ":)(?<value>\w+)\]")
                 Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
                 Dim m As Match
-                For Each f As String In filePaths
-                    m = rx.Match(readFile(f))
+                For Each fi As FileInfo In files
+                    m = rx.Match(m_dfRaws.Item(fi))
                     If m.Success Then Return m.Groups("value").Value
                 Next
             End If
@@ -135,17 +137,11 @@ Public Class optionManager
         'End Try
     End Function
 
-    Private Function findTokensInFiles(ByVal pattern As String, ByVal filePaths As List(Of String)) As Boolean
-        Dim data As String
+    Private Function findTokensInFiles(ByVal pattern As String, ByVal files As List(Of FileInfo)) As Boolean
         Dim regex As Regex = New Regex(pattern, RegexOptions.IgnoreCase)
 
-        For Each fPath As String In filePaths
-            data = fileWorking.ReadFile(fPath)
-            If data = "" Then
-                Throw New Exception("File " & fPath & " not found!")
-            Else
-                If regex.Match(data).Success Then Return True
-            End If
+        For Each fi As FileInfo In files
+            If regex.Match(m_dfRaws.Item(fi)).Success Then Return True
         Next
         Return False
     End Function
@@ -172,7 +168,7 @@ Public Class optionManager
         Try
             'if the tokens have both a enable and disable option, then we do a regex replace in all the specified files
             'if we only have a token name, and an 'on' value, then this indicates we're changing a specific token's value
-            If fileManager.getFilePaths(True).Count > 0 Then
+            If fileManager.files.Count > 0 Then
                 If hasSingleValueTokens(tokens) Then
                     If tokens.Item(0).optionOnValue <> "" Then
                         'we have file(s), a token, and a new value, so find the token in each file, and change it's value
@@ -236,23 +232,21 @@ Public Class optionManager
     'finds the specific tokens specified, and updates their value with the 'on' value of the token
     Private Function updateTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection) As Boolean
         Dim success As Boolean = False
-        success = updateFileTokens(fManager.getFilePaths(True), tokens)
+        success = updateFileTokens(fManager.files, tokens)
         'If updateTileSets Then
         '    updateFileTokens(fManager.getRelatedGraphicsFilePaths, tokens)
         'End If
         Return success
     End Function
 
-    Private Function updateFileTokens(ByVal filePaths As List(Of String), ByVal tokens As rawTokenCollection)
+    Private Function updateFileTokens(ByVal files As List(Of FileInfo), ByVal tokens As rawTokenCollection)
         Try
-            For Each filePath As String In filePaths
-                If filePath <> "" Then
-                    Dim rawFile As String = fileWorking.readFile(filePath)
-                    For Each t As rawToken In tokens
-                        updateToken(rawFile, t.tokenName, t.optionOnValue)
-                    Next
-                    saveFile(filePath, rawFile)
-                End If
+            For Each fi As FileInfo In files
+                Dim data As String = m_dfRaws.Item(fi)
+                For Each t As rawToken In tokens
+                    updateToken(data, t.tokenName, t.optionOnValue)
+                Next
+                saveFile(fi, data)
             Next
             Return True
         Catch ex As Exception
@@ -278,14 +272,14 @@ Public Class optionManager
 
 
     Private Function toggleTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection, ByVal enable As Boolean) As Boolean
-        toggleOption(fManager.getFilePaths(True), tokens, enable)
+        toggleOption(fManager.files, tokens, enable)
         'If updateTileSets Then
         '    toggleOption(fManager.getRelatedGraphicsFilePaths, tokens, enable, False)
         'End If
         Return True
     End Function
 
-    Private Sub toggleOption(ByVal filePaths As List(Of String), ByVal tokens As rawTokenCollection, ByVal enable As Boolean, Optional ByVal isCriticalChange As Boolean = True)
+    Private Sub toggleOption(ByVal files As List(Of FileInfo), ByVal tokens As rawTokenCollection, ByVal enable As Boolean, Optional ByVal isCriticalChange As Boolean = True)
         'keep track of tokens changed
         Dim results As New Dictionary(Of rawToken, Boolean)
 
@@ -296,10 +290,10 @@ Public Class optionManager
         Next
 
         'toggle all on/off values for each token in each file
-        For Each filePath As String In filePaths
-            If filePath.Trim <> "" Then
+        For Each fi As FileInfo In files
+            If fi IsNot Nothing Then
 
-                Dim originalData As String = fileWorking.readFile(filePath)
+                Dim originalData As String = m_dfRaws.Item(fi)
                 Dim newData As String = originalData
                 Dim updatedData As String = newData
 
@@ -315,7 +309,7 @@ Public Class optionManager
                     If Not results(t) Then results(t) = (Not updatedData = newData)
 
                     If updatedData = newData And tokens.Count > 1 Then
-                        Debug.WriteLine(filePath & " remained unchanged after changing option " & _
+                        Debug.WriteLine(fi.FullName & " remained unchanged after changing option " & _
                                           IIf(enable, "ON. ", "OFF. ") & _
                                           IIf(t.tokenName <> "", " Token:" & t.tokenName, "") & _
                                           IIf(enable, t.optionOnValue.ToString, t.optionOffValue))
@@ -327,9 +321,9 @@ Public Class optionManager
 
                 'if our original file has been changed, save it, otherwise report it
                 If newData <> originalData Then
-                    saveFile(filePath, newData)
+                    saveFile(fi, newData)
                 Else
-                    Debug.WriteLine("File " & filePath & " remained unchanged after applying options: " & String.Join(vbCrLf, strTokens))
+                    Debug.WriteLine("File " & fi.FullName & " remained unchanged after applying options: " & String.Join(vbCrLf, strTokens))
                 End If
             End If
         Next
@@ -390,35 +384,35 @@ Public Class optionManager
 
 #Region "pattern replacement loading/saving"
     'these functions are used when replacing specific values within patterns. see the invader skills for an example
-    Public Function loadPatternValue(ByVal pattern As String, ByVal filePaths As List(Of String)) As String
+    Public Function loadPatternValue(ByVal pattern As String, ByVal files As List(Of FileInfo)) As String
         Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
         Dim m As Match
-        For Each f As String In filePaths
-            m = rx.Match(readFile(f))
+        For Each fi As FileInfo In files
+            m = rx.Match(m_dfRaws.Item(fi))
             If m.Success Then Return m.Groups("value").Value
         Next
         Return ""
     End Function
 
     Public Function replacePatternsInFiles(ByVal pattern As String, ByVal replacement As String, ByVal fManager As fileListManager) As Boolean
-        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.getFilePaths(True))
+        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.files)
         'If updateTileSets Then
         '    replaceWithPatterns(pattern, replacement, fManager.getRelatedGraphicsFilePaths)
         'End If
         Return success
     End Function
 
-    Private Function replaceWithPatterns(ByVal pattern As String, ByVal replacement As String, ByVal filePaths As List(Of String), Optional ByVal isCritical As Boolean = True) As Boolean
+    Private Function replaceWithPatterns(ByVal pattern As String, ByVal replacement As String, ByVal files As List(Of FileInfo), Optional ByVal isCritical As Boolean = True) As Boolean
         Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
         Dim changeCount As Integer = 0
-        For Each f As String In filePaths
-            Dim data As String = readFile(f)
+        For Each fi As FileInfo In files
+            Dim data As String = m_dfRaws.Item(fi)
             Dim updated As String = rx.Replace(data, replacement)
             If data <> updated Then
-                saveFile(f, updated)
+                saveFile(fi, updated)
                 changeCount += 1
             Else
-                Debug.WriteLine("File " & f & " was unchanged after replacing " & pattern & " with " & replacement & ".")
+                Debug.WriteLine("File " & fi.FullName & " was unchanged after replacing " & pattern & " with " & replacement & ".")
             End If
         Next
 
@@ -453,6 +447,22 @@ Public Class optionManager
             MsgBox("There has been a problem saving file " & fullFilePath & "." & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
         End Try
     End Function
+
+    Public Function saveFile(ByVal fi As FileInfo, ByVal newText As String, Optional ByVal showWarning As Boolean = True) As Boolean
+        Try
+            If newText = "" And showWarning Then
+                MsgBox("The source RAW file is missing. Did you move or replace files in your <dwarf fortress>/raw/objects folder?", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
+            Else
+                Dim fs As FileStream = fi.OpenWrite
+                Dim data As Byte() = New UTF8Encoding(True).GetBytes(newText)
+                fs.Write(data, 0, data.Length)
+                fs.Close()
+                m_dfRaws.Item(fi) = newText
+            End If
+        Catch ex As Exception
+            MsgBox("There has been a problem saving file " & fi.FullName & "." & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
+        End Try
+    End Function
 End Class
 
 
@@ -472,7 +482,7 @@ Public Class optionManagerConverter
     Public Overrides Function ConvertTo(context As ITypeDescriptorContext, culture As Globalization.CultureInfo, value As Object, destinationType As Type) As Object
         If destinationType Is GetType(String) AndAlso TypeOf value Is optionManager Then
             Dim om As optionManager = CType(value, optionManager)
-            Dim names As List(Of string) = New List(Of String)
+            Dim names As List(Of String) = New List(Of String)
             names.Add(IIf(om.loadFromDInit, "d_init", ""))
             names.Add(IIf(om.loadFromInit, "init", ""))
             names.Add(IIf(om.loadFromWorldGen, "world gen", ""))

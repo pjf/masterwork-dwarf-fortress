@@ -14,6 +14,8 @@ Public Class fileWorking
         loadDfFilePaths()
         loadMwFilePaths()
         loadMwGraphics()
+
+        loadRawFiles()
     End Sub
 
     Public Shared Sub loadDfFilePaths()
@@ -27,7 +29,20 @@ Public Class fileWorking
         m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\raw", True, New String() {".txt", ".exe"}))
         'include the top level folder for dfhack.init and df
         m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir, False, New String() {".init", ".exe"}))
+
     End Sub
+
+    Private Shared Sub loadRawFiles()
+        Dim exts As String() = New String() {".txt", ".init"}
+        For Each fi As IO.FileInfo In m_dfFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") AndAlso exts.Contains(info.Extension)))
+            globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
+        Next
+        'For Each fi As IO.FileInfo In m_mwGraphicFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") AndAlso exts.Contains(info.Extension)))
+        '    globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
+        'Next
+    End Sub
+
+
 
     Private Shared Sub loadMwFilePaths()
         'load all setting files (keybinds, colors, etc.)

@@ -48,7 +48,7 @@ Public Class optionBase
 
     Public Function loadOption() As Object
         'only load settings from our current raws
-        Return m_optionManager.loadOption(m_fileManager.getFilePaths(False), m_tokens, m_settingManager)
+        Return m_optionManager.loadOption(m_fileManager.loadFiles(m_tokens), m_tokens, m_settingManager)
     End Function
 
     Public Function saveOption(Optional ByVal enable As Boolean = False) As Boolean
@@ -104,9 +104,9 @@ Public Class optionBase
                 files.AddRange(m_fileManager.fileNames)
             End If
 
-            If m_fileManager.getFilePaths(True).FindAll(Function(f As String) f.Contains(globals.m_graphicsDir)).Count > 0 Then
-                files.Add("** Affects graphic packs! **")
-            End If
+            'If m_fileManager.getFilePaths(True).FindAll(Function(f As String) f.Contains(globals.m_graphicsDir)).Count > 0 Then
+            '    files.Add("** Affects graphic packs! **")
+            'End If
 
             Return files
         End Get

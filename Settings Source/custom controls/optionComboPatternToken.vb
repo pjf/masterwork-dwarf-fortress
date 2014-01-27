@@ -34,7 +34,7 @@ Public Class optionComboPatternToken
                 End If
             End If
 
-            Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.getFilePaths(False))
+            Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.loadFiles(m_pattern))
             m_value = Me.SelectedValue
 
         Catch ex As Exception
