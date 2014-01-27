@@ -12,24 +12,31 @@ Public Class fileListManager
     Public Sub New()
     End Sub
 
-    Private m_fileNames As String()
+    Private m_fileNames As New List(Of String)
     Private m_files As New List(Of IO.FileInfo)
     Private m_currentPattern As Regex
 
-    <DescriptionAttribute("The file name(s) which contains this option's token(s). Filenames can include wildcards (ie. creature_*.txt)"), _
-    EditorAttribute(GetType(MultilineStringArrayConverter), GetType(System.ComponentModel.Design.MultilineStringEditor)), _
-    TypeConverter(GetType(fileListConverter))> _
-    Public Property fileNames As String()
+    '<DescriptionAttribute("The file name(s) which contains this option's token(s). Filenames can include wildcards (ie. creature_*.txt)"), _
+    'EditorAttribute(GetType(MultilineStringArrayConverter), GetType(System.ComponentModel.Design.MultilineStringEditor)), _
+    'TypeConverter(GetType(fileListConverter))> _
+    'Public Property fileNames As as string()
+    '    Get
+    '        Return m_fileNames
+    '    End Get
+    '    Set(value As )
+    '        m_fileNames = value
+    '    End Set
+    'End Property
+
+    Public ReadOnly Property fileNames As List(Of String)
         Get
             Return m_fileNames
         End Get
-        Set(value As String())
-            m_fileNames = value
-        End Set
     End Property
 
 
     Private Function findFiles(ByVal tokens As rawTokenCollection) As List(Of IO.FileInfo)
+        Dim start As DateTime = Now
         Dim results As New List(Of IO.FileInfo)
         If tokens.Count <= 0 Then Return results
         Dim blnContinue As Boolean = False
@@ -38,36 +45,34 @@ Public Class fileListManager
         Next
         If Not blnContinue Then Return results
 
-        Dim fNames As New List(Of String)
         For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws
-            'If fNames.Contains(fi.Key.Name) Then results.Add(fi.Key) : Continue For
+            If m_fileNames.Contains(fi.Key.Name) Then
+                results.Add(fi.Key) : Continue For
+            End If
 
             For Each t As rawToken In tokens
                 If Not singleValueToken(t) Then
                     If fi.Value.Contains(t.optionOnValue) Then
-                        results.Add(fi.Key) : fNames.Add(fi.Key.Name) : Exit For
+                        results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name) : Exit For
                     ElseIf fi.Value.Contains(t.optionOffValue) Then
-                        results.Add(fi.Key) : fNames.Add(fi.Key.Name) : Exit For
+                        results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name) : Exit For
                     End If
                 Else
-                    If fi.Value.Contains(String.Format("[{0}:", t.tokenName)) Then results.Add(fi.Key) : fNames.Add(fi.Key.Name) : Exit For
+                    If fi.Value.Contains(String.Format("[{0}:", t.tokenName)) Then results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name) : Exit For
                 End If
             Next
         Next
 
-        Dim resultCount As Integer = results.Count
-
-        'load the related graphics pack files as well
-        If results.Count > 0 Then
-            Dim fPaths As New List(Of String)
-            Dim rx As New Regex("(" & String.Join(")|(", fNames) & ")", RegexOptions.IgnoreCase)
-            results.AddRange(mwGraphicFilePaths.FindAll(Function(f) rx.IsMatch(f.Name)))
-        End If
-
-        'If resultCount <> results.Count Then
-        '    Debug.WriteLine("break")
+        'If results.Count > 0 Then
+        '    'load the related graphics pack files as well
+        '    Dim rx As New Regex("(" & String.Join(")|(", m_fileNames) & ")", RegexOptions.IgnoreCase)
+        '    Dim gInfos As List(Of IO.FileInfo) = mwGraphicFilePaths.FindAll(Function(f) rx.IsMatch(f.Name))
+        '    For Each gi As IO.FileInfo In gInfos
+        '        If Not results.Contains(gi) Then results.Add(gi)
+        '    Next
         'End If
-
+        Dim elapsed As TimeSpan = Now - start
+        Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for tokens " & tokens.ToString)
         Return results
     End Function
 
@@ -107,49 +112,6 @@ Public Class fileListManager
             Return m_files
         End Get
     End Property
-
-    'Private Function findFilePaths(ByVal fileName As String) As List(Of String)
-    '    Dim f_info As IO.FileInfo = Nothing
-    '    Dim paths As New List(Of String)
-    '    If fileName.Contains("*") Then
-    '        buildPattern(fileName)
-    '        Dim f_infos As List(Of IO.FileInfo) = dfFilePaths.FindAll(Function(f As IO.FileInfo) m_currentPattern.IsMatch(f.Name))
-    '        For Each f_info In f_infos
-    '            If Not paths.Contains(f_info.FullName) Then
-    '                paths.Add(f_info.FullName)
-    '            End If
-    '        Next
-    '    Else
-    '        Dim strPath As String = findDfFilePath(fileName)
-    '        If strPath <> "" Then
-    '            paths.Add(strPath)
-    '        Else
-    '            Throw New Exception("File " & fileName & " not found!")
-    '        End If
-    '    End If
-
-    '    Return paths
-    'End Function
-
-    'Private Sub buildPattern(ByVal fileName As String)
-    '    m_currentPattern = New Regex("^" & fileName.Replace("*", ".*"), RegexOptions.IgnoreCase)
-    'End Sub
-
-
-    'Private Sub findRelatedGraphicsFilePaths()
-    '    Dim fPaths As New List(Of String)
-    '    Dim rx As New Regex("(" & String.Join(")|(", m_fileNames.ToArray) & ")", RegexOptions.IgnoreCase)
-    '    Dim f_infos As List(Of IO.FileInfo) = mwGraphicFilePaths.FindAll(Function(f) rx.IsMatch(f.Name))
-    '    For Each f_info As IO.FileInfo In f_infos
-    '        fPaths.Add(f_info.FullName)
-    '    Next
-    '    'for tilesets, report errors, but they're not crucial as not all files/tokens may be present
-    '    If fPaths.Count <= 0 Then
-    '        Debug.WriteLine("One or more of the following files were not found in any graphics packs! " & String.Join(", ", m_fileNames))
-    '    End If
-    '    'Return fPaths
-    '    m_filePaths.AddRange(fPaths)
-    'End Sub
 
 End Class
 

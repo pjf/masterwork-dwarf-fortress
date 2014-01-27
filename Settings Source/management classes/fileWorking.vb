@@ -21,12 +21,15 @@ Public Class fileWorking
     Public Shared Sub loadDfFilePaths()
         If m_dfFilePaths IsNot Nothing Then m_dfFilePaths.Clear()
         'load the init files (txt)
-        m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\data\init", True, New String() {".txt"}))
+        m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\data\init", False, New String() {".txt"}))
         'load the art files (png and ttf files)
-        m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\data\art", True, New String() {".png", ".ttf"}))
+        m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\data\art", False, New String() {".png", ".ttf"}))
 
-        'add the raw folder, exe extension is for randcreatures
-        m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\raw", True, New String() {".txt", ".exe"}))
+        'add the raw folder
+        m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\raw\objects", False, New String() {".txt"}))
+        'exe extension is for randcreatures
+        m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\raw\objects\bin", False, New String() {".exe"}))
+
         'include the top level folder for dfhack.init and df
         m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir, False, New String() {".init", ".exe"}))
 
@@ -34,12 +37,12 @@ Public Class fileWorking
 
     Private Shared Sub loadRawFiles()
         Dim exts As String() = New String() {".txt", ".init"}
-        For Each fi As IO.FileInfo In m_dfFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") AndAlso exts.Contains(info.Extension)))
+        For Each fi As IO.FileInfo In m_dfFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") Or exts.Contains(info.Extension)))
             globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
         Next
-        'For Each fi As IO.FileInfo In m_mwGraphicFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") AndAlso exts.Contains(info.Extension)))
-        '    globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
-        'Next
+        For Each fi As IO.FileInfo In m_mwGraphicFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") Or exts.Contains(info.Extension)))
+            globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
+        Next
     End Sub
 
 

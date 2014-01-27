@@ -74,6 +74,14 @@ Public Class rawTokenCollection
             List.Insert(index, t)
         End If
     End Sub
+
+    Public Overrides Function ToString() As String
+        Dim strTokens As New List(Of String)
+        For Each t As rawToken In List
+            strTokens.Add(t.ToString)
+        Next
+        Return String.Join(vbCrLf, strTokens)
+    End Function
 End Class
 
 Public Class rawTokenCollectionEditor

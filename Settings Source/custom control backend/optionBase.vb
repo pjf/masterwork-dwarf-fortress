@@ -104,9 +104,9 @@ Public Class optionBase
                 files.AddRange(m_fileManager.fileNames)
             End If
 
-            'If m_fileManager.getFilePaths(True).FindAll(Function(f As String) f.Contains(globals.m_graphicsDir)).Count > 0 Then
-            '    files.Add("** Affects graphic packs! **")
-            'End If
+            If m_fileManager.files.FindAll(Function(f As IO.FileInfo) f.FullName.Contains(globals.m_graphicsDir)).Count > 0 Then
+                files.Add("** Affects graphic packs! **")
+            End If
 
             Return files
         End Get

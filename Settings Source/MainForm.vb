@@ -94,7 +94,7 @@ Imports System.ComponentModel
         m_world_gen = fileWorking.readFile(findDfFilePath(m_worldGenFileName))
         m_dinit = fileWorking.readFile(findDfFilePath(m_dInitFileName))
         If m_init <> "" And m_dinit <> "" And m_world_gen <> "" Then
-
+            Dim start As DateTime = Now
             'load init and world gen tokens
             m_tokensInit = tokenLoading.loadFileTokens(m_init)
             m_tokensDInit = tokenLoading.loadFileTokens(m_dinit)
@@ -108,6 +108,9 @@ Imports System.ComponentModel
 
             'load the world gen templates
             loadWorldGenCombo()
+
+            Dim elapsed As TimeSpan = Now - start
+            Console.WriteLine("LOADING TIME: " & elapsed.TotalSeconds & " seconds.")
         Else
             Me.Close()
         End If
@@ -533,7 +536,6 @@ Imports System.ComponentModel
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxHostile, 0).Width
                 Dim btnHostile As New optionSingleReplaceButton
                 btnHostile.Name = "optBtnGood" & civName
-                btnHostile.options.fileManager.fileNames = New String() {civLabel.entityFileName}
                 btnHostile.options.enabledValue = "!BABYSNATCHER!" 'enabled = good = not baby snatchers
                 btnHostile.options.disabledValue = "[BABYSNATCHER]"
                 btnHostile.ImageAlign = ContentAlignment.MiddleCenter
@@ -575,7 +577,6 @@ Imports System.ComponentModel
         Else
             btn.options.enabledValue = String.Format("YES{0}[", tag)
             btn.options.disabledValue = String.Format("!NO{0}!", tag)
-            btn.options.fileManager.fileNames = New String() {entityFileName}
         End If
 
         btn.ImageAlign = ContentAlignment.MiddleCenter
@@ -589,13 +590,12 @@ Imports System.ComponentModel
         Next
 
         cb.options.itemList = skillComboItems
-        cb.options.fileManager.fileNames = New String() {creatureFileName}
-        If tag Is Nothing OrElse tag.Trim <> "" Then            
+        If tag Is Nothing OrElse tag.Trim <> "" Then
             cb.pattern = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & "\b)"
             cb.replace = "${1}${value}${2}"
         Else
             cb.Enabled = False
-        End If        
+        End If
     End Sub
 
     Private Sub buildMatOption(ByRef cb As optionComboPatternToken, ByVal entityFile As String)
@@ -606,7 +606,6 @@ Imports System.ComponentModel
         matComboItems.Add(New comboItem("STRONG", "Strong"))
 
         cb.options.itemList = matComboItems
-        cb.options.fileManager.fileNames = New String() {entityFile}
 
         cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]"
         cb.replace = "${1}${value}]"
@@ -615,7 +614,6 @@ Imports System.ComponentModel
     Private Sub buildTriggerOption(ByRef cb As optionComboBoxMulti, ByVal entityFileName As String, ByVal tokenList As List(Of String))
         'add the combobox items and associated values 0-5
         loadTriggerItems(cb)
-        cb.options.fileManager.fileNames = New String() {entityFileName}
         loadTriggerTokens(tokenList, cb.options.tokenList)
 
         'set the tooltips        
