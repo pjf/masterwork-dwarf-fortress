@@ -41,7 +41,8 @@ Public Class fileWorking
             globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
         Next
         For Each fi As IO.FileInfo In m_mwGraphicFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") Or exts.Contains(info.Extension)))
-            globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
+            'globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
+            globals.m_mwRaws.Add(fi, readFile(fi.FullName, False))
         Next
     End Sub
 

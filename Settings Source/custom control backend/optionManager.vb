@@ -113,7 +113,7 @@ Public Class optionManager
                 For Each t As rawToken In tokens
                     strPattern.Add(Regex.Escape(t.optionOnValue))
                 Next
-                If findTokensInFiles(String.Format("({0})", String.Join(")|(", strPattern)), files) Then
+                If findTokensInFiles(String.Format("({0})", String.Join(")|(", strPattern)), files.Where(AddressOf rawFilter).ToList) Then
                     retValue = "YES"
                 End If
             Else
@@ -122,7 +122,7 @@ Public Class optionManager
                 Dim pattern As String = String.Format("(\[" & tokens.Item(0).tokenName & ":)(?<value>\w+)\]")
                 Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
                 Dim m As Match
-                For Each fi As FileInfo In files
+                For Each fi As FileInfo In files.Where(AddressOf rawFilter).ToList
                     m = rx.Match(m_dfRaws.Item(fi))
                     If m.Success Then Return m.Groups("value").Value
                 Next
@@ -135,6 +135,10 @@ Public Class optionManager
         '    MsgBox("Failed to load option!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
         '    Return ""
         'End Try
+    End Function
+
+    Private Function rawFilter(ByVal fi As IO.FileInfo) As Boolean
+        Return (Not fi.FullName.Contains(globals.m_graphicsDir))
     End Function
 
     Private Function findTokensInFiles(ByVal pattern As String, ByVal files As List(Of FileInfo)) As Boolean
@@ -232,7 +236,7 @@ Public Class optionManager
     'finds the specific tokens specified, and updates their value with the 'on' value of the token
     Private Function updateTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection) As Boolean
         Dim success As Boolean = False
-        success = updateFileTokens(fManager.files, tokens)
+        success = updateFileTokens(fManager.files(), tokens) : updateFileTokens(fManager.files(True), tokens)
         'If updateTileSets Then
         '    updateFileTokens(fManager.getRelatedGraphicsFilePaths, tokens)
         'End If
@@ -242,7 +246,7 @@ Public Class optionManager
     Private Function updateFileTokens(ByVal files As List(Of FileInfo), ByVal tokens As rawTokenCollection)
         Try
             For Each fi As FileInfo In files
-                Dim data As String = m_dfRaws.Item(fi)
+                Dim data As String = getFileData(fi) 'm_dfRaws.Item(fi)
                 For Each t As rawToken In tokens
                     updateToken(data, t.tokenName, t.optionOnValue)
                 Next
@@ -273,6 +277,7 @@ Public Class optionManager
 
     Private Function toggleTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection, ByVal enable As Boolean) As Boolean
         toggleOption(fManager.files, tokens, enable)
+        toggleOption(fManager.files(True), tokens, enable, False)
         'If updateTileSets Then
         '    toggleOption(fManager.getRelatedGraphicsFilePaths, tokens, enable, False)
         'End If
@@ -280,6 +285,8 @@ Public Class optionManager
     End Function
 
     Private Sub toggleOption(ByVal files As List(Of FileInfo), ByVal tokens As rawTokenCollection, ByVal enable As Boolean, Optional ByVal isCriticalChange As Boolean = True)
+        If files.Count <= 0 Then Exit Sub
+
         'keep track of tokens changed
         Dim results As New Dictionary(Of rawToken, Boolean)
 
@@ -293,7 +300,7 @@ Public Class optionManager
         For Each fi As FileInfo In files
             If fi IsNot Nothing Then
 
-                Dim originalData As String = m_dfRaws.Item(fi)
+                Dim originalData As String = getFileData(fi) 'm_dfRaws.Item(fi)
                 Dim newData As String = originalData
                 Dim updatedData As String = newData
 
@@ -387,7 +394,7 @@ Public Class optionManager
     Public Function loadPatternValue(ByVal pattern As String, ByVal files As List(Of FileInfo)) As String
         Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
         Dim m As Match
-        For Each fi As FileInfo In files
+        For Each fi As FileInfo In files.Where(AddressOf rawFilter).ToList
             m = rx.Match(m_dfRaws.Item(fi))
             If m.Success Then Return m.Groups("value").Value
         Next
@@ -395,7 +402,7 @@ Public Class optionManager
     End Function
 
     Public Function replacePatternsInFiles(ByVal pattern As String, ByVal replacement As String, ByVal fManager As fileListManager) As Boolean
-        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.files)
+        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.files) : replaceWithPatterns(pattern, replacement, fManager.files(True), False)
         'If updateTileSets Then
         '    replaceWithPatterns(pattern, replacement, fManager.getRelatedGraphicsFilePaths)
         'End If
@@ -403,10 +410,12 @@ Public Class optionManager
     End Function
 
     Private Function replaceWithPatterns(ByVal pattern As String, ByVal replacement As String, ByVal files As List(Of FileInfo), Optional ByVal isCritical As Boolean = True) As Boolean
+        If files.Count <= 0 Then Return True
+
         Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
         Dim changeCount As Integer = 0
         For Each fi As FileInfo In files
-            Dim data As String = m_dfRaws.Item(fi)
+            Dim data As String = getFileData(fi) 'm_dfRaws.Item(fi)
             Dim updated As String = rx.Replace(data, replacement)
             If data <> updated Then
                 saveFile(fi, updated)
@@ -424,6 +433,14 @@ Public Class optionManager
             End If
         Else
             Return True
+        End If
+    End Function
+
+    Private Function getFileData(ByVal fi As IO.FileInfo) As String
+        If fi.FullName.Contains(globals.m_graphicsDir) Then
+            Return m_mwRaws.Item(fi)
+        Else
+            Return m_dfRaws.Item(fi)
         End If
     End Function
 
@@ -457,7 +474,11 @@ Public Class optionManager
                 Dim data As Byte() = New UTF8Encoding(True).GetBytes(newText)
                 fs.Write(data, 0, data.Length)
                 fs.Close()
-                m_dfRaws.Item(fi) = newText
+                If fi.FullName.Contains(globals.m_graphicsDir) Then
+                    m_mwRaws.Item(fi) = newText
+                Else
+                    m_dfRaws.Item(fi) = newText
+                End If
             End If
         Catch ex As Exception
             MsgBox("There has been a problem saving file " & fi.FullName & "." & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)

@@ -22,4 +22,5 @@
     Public Shared currentWorldGenIndex As Integer
 
     Public Shared m_dfRaws As New Dictionary(Of IO.FileInfo, String)
+    Public Shared m_mwRaws As New Dictionary(Of IO.FileInfo, String)
 End Class

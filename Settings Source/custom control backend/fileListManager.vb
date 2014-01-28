@@ -3,10 +3,8 @@ Imports MasterworkDwarfFortress.globals
 Imports MasterworkDwarfFortress.fileWorking
 Imports System.Text.RegularExpressions
 
-<DisplayNameAttribute("Files"), _
-DescriptionAttribute("This is a list of all filenames this token is found in."), _
-CategoryAttribute("~RAW Options"), _
-TypeConverterAttribute(GetType(fileManagerConverter))> _
+<Browsable(False), _
+EditorBrowsable(EditorBrowsableState.Never)> _
 Public Class fileListManager
 
     Public Sub New()
@@ -16,18 +14,10 @@ Public Class fileListManager
     Private m_files As New List(Of IO.FileInfo)
     Private m_currentPattern As Regex
 
-    '<DescriptionAttribute("The file name(s) which contains this option's token(s). Filenames can include wildcards (ie. creature_*.txt)"), _
-    'EditorAttribute(GetType(MultilineStringArrayConverter), GetType(System.ComponentModel.Design.MultilineStringEditor)), _
-    'TypeConverter(GetType(fileListConverter))> _
-    'Public Property fileNames As as string()
-    '    Get
-    '        Return m_fileNames
-    '    End Get
-    '    Set(value As )
-    '        m_fileNames = value
-    '    End Set
-    'End Property
 
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
     Public ReadOnly Property fileNames As List(Of String)
         Get
             Return m_fileNames
@@ -35,21 +25,20 @@ Public Class fileListManager
     End Property
 
 
-    Private Function findFiles(ByVal tokens As rawTokenCollection) As List(Of IO.FileInfo)
+    Private Function findFiles(ByVal optm As optionManager, ByVal tokens As rawTokenCollection) As List(Of IO.FileInfo)
         Dim start As DateTime = Now
         Dim results As New List(Of IO.FileInfo)
+        'loading from the init files is handled differently, we don't need to search raws
+        If optm.loadFromDInit Or optm.loadFromInit Or optm.loadFromWorldGen Then Return results
         If tokens.Count <= 0 Then Return results
+
         Dim blnContinue As Boolean = False
         For Each t As rawToken In tokens
             If t.optionOnValue <> "" Or t.optionOffValue <> "" Then blnContinue = True : Exit For
         Next
         If Not blnContinue Then Return results
 
-        For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws
-            If m_fileNames.Contains(fi.Key.Name) Then
-                results.Add(fi.Key) : Continue For
-            End If
-
+        For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws '.Where(AddressOf gameRawFilter)
             For Each t As rawToken In tokens
                 If Not singleValueToken(t) Then
                     If fi.Value.Contains(t.optionOnValue) Then
@@ -62,54 +51,74 @@ Public Class fileListManager
                 End If
             Next
         Next
-
-        'If results.Count > 0 Then
-        '    'load the related graphics pack files as well
-        '    Dim rx As New Regex("(" & String.Join(")|(", m_fileNames) & ")", RegexOptions.IgnoreCase)
-        '    Dim gInfos As List(Of IO.FileInfo) = mwGraphicFilePaths.FindAll(Function(f) rx.IsMatch(f.Name))
-        '    For Each gi As IO.FileInfo In gInfos
-        '        If Not results.Contains(gi) Then results.Add(gi)
-        '    Next
-        'End If
-        Dim elapsed As TimeSpan = Now - start
-        Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for tokens " & tokens.ToString)
+        addGraphicFiles(results)
+        'Dim elapsed As TimeSpan = Now - start
+        'Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for tokens " & tokens.ToString)
         Return results
     End Function
 
-    Private Function findFiles(ByVal pattern As String) As List(Of IO.FileInfo)
-        Dim rx As New Regex(pattern)
+    Private Function findFiles(ByVal optm As optionManager, ByVal pattern As String) As List(Of IO.FileInfo)
+        'Dim start As DateTime = Now
         Dim results As New List(Of IO.FileInfo)
+        If optm.loadFromDInit Or optm.loadFromInit Or optm.loadFromWorldGen Then Return results
+
+        Dim rx As New Regex(pattern)
         If pattern = "" Then Return results
 
-        For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws
+        For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws '.Where(AddressOf gameRawFilter)
             If rx.IsMatch(fi.Value) Then results.Add(fi.Key)
         Next
-
+        addGraphicFiles(results)
+        'Dim elapsed As TimeSpan = Now - start
+        'Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for pattern " & pattern)
         Return results
     End Function
+
+    Private Sub addGraphicFiles(ByVal raws As List(Of IO.FileInfo))
+        If raws.Count <= 0 Then Exit Sub
+        For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_mwRaws.Where(Function(raw As KeyValuePair(Of IO.FileInfo, String)) (m_fileNames.Contains(raw.Key.Name))).ToList 'm_dfRaws.Where(AddressOf graphicRawFilter)
+            If Not raws.Contains(fi.Key) Then raws.Add(fi.Key)
+        Next
+    End Sub
+
+    Private Function gameRawFilter(ByVal item As KeyValuePair(Of IO.FileInfo, String)) As Boolean
+        Return (Not item.Key.FullName.Contains(globals.m_graphicsDir))
+    End Function
+
+    Private Function graphicRawFilter(ByVal item As KeyValuePair(Of IO.FileInfo, String)) As Boolean
+        Return (item.Key.FullName.Contains(globals.m_graphicsDir) AndAlso m_fileNames.Contains(item.Key.Name))
+    End Function
+
 
     Private Function singleValueToken(ByVal token As rawToken) As Boolean
         Return (token.optionOffValue = "" And token.optionOnValue <> "")
     End Function
 
-    Public Function loadFiles(ByVal tokens As rawTokenCollection) As List(Of IO.FileInfo)
+    Public Function loadFiles(ByVal optm As optionManager, ByVal tokens As rawTokenCollection) As List(Of IO.FileInfo)
         If m_files.Count <= 0 Then
-            m_files = findFiles(tokens)
+            m_files = findFiles(optm, tokens)
         End If
 
         Return m_files
     End Function
 
-    Public Function loadFiles(ByVal pattern As String) As List(Of IO.FileInfo)
+    Public Function loadFiles(ByVal optm As optionManager, ByVal pattern As String) As List(Of IO.FileInfo)
         If m_files.Count <= 0 Then
-            m_files = findFiles(pattern)
+            m_files = findFiles(optm, pattern)
         End If
         Return m_files
     End Function
 
-    Public ReadOnly Property files As List(Of IO.FileInfo)
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public ReadOnly Property files(Optional ByVal mwRawsOnly As Boolean = False) As List(Of IO.FileInfo)
         Get
-            Return m_files
+            If mwRawsOnly Then
+                Return m_files.Where(Function(fi As IO.FileInfo) (fi.FullName.Contains(globals.m_graphicsDir))).ToList
+            Else
+                Return m_files.Where(Function(fi As IO.FileInfo) (fi.FullName.Contains(globals.m_graphicsDir) = False)).ToList
+            End If
         End Get
     End Property
 

@@ -48,7 +48,7 @@ Public Class optionBase
 
     Public Function loadOption() As Object
         'only load settings from our current raws
-        Return m_optionManager.loadOption(m_fileManager.loadFiles(m_tokens), m_tokens, m_settingManager)
+        Return m_optionManager.loadOption(m_fileManager.loadFiles(m_optionManager, m_tokens), m_tokens, m_settingManager)
     End Function
 
     Public Function saveOption(Optional ByVal enable As Boolean = False) As Boolean
@@ -91,7 +91,7 @@ Public Class optionBase
     End Property
 
     <Browsable(False), _
-    EditorBrowsable(EditorBrowsableState.Never), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
     DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
     Public ReadOnly Property fullFileList As List(Of String)
         Get
@@ -101,10 +101,12 @@ Public Class optionBase
             If m_optionManager.loadFromWorldGen Then files.Add(m_worldGenFileName)
 
             If m_fileManager.fileNames IsNot Nothing Then
-                files.AddRange(m_fileManager.fileNames)
+                For Each name As String In m_fileManager.fileNames
+                    If Not files.Contains(name) Then files.Add(name)
+                Next
             End If
 
-            If m_fileManager.files.FindAll(Function(f As IO.FileInfo) f.FullName.Contains(globals.m_graphicsDir)).Count > 0 Then
+            If m_fileManager.files(True).Count > 0 Then
                 files.Add("** Affects graphic packs! **")
             End If
 

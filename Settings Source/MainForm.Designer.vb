@@ -1906,7 +1906,6 @@ Partial Class MainForm
         Me.optBtnSimpleGems.Name = "optBtnSimpleGems"
         OptionSingleReplace2.disabledValue = "YESGEM["
         OptionSingleReplace2.enabledValue = "!NOGEM!"
-        
         OptionSingleReplace2.fileManager = FileListManager2
         OptionManager2.loadFromDInit = false
         OptionManager2.loadFromInit = false
@@ -2006,7 +2005,6 @@ Partial Class MainForm
         Me.optBtnSimpleMetals.Name = "optBtnSimpleMetals"
         OptionSingleReplace5.disabledValue = "YESMIN["
         OptionSingleReplace5.enabledValue = "!NOMIN!"
-        
         OptionSingleReplace5.fileManager = FileListManager5
         OptionManager5.loadFromDInit = false
         OptionManager5.loadFromInit = false
@@ -2078,7 +2076,6 @@ Partial Class MainForm
         Me.optBtnSimplePets.Name = "optBtnSimplePets"
         OptionSingleReplace6.disabledValue = "YESPET["
         OptionSingleReplace6.enabledValue = "!NOPET!"
-        
         OptionSingleReplace6.fileManager = FileListManager7
         OptionManager7.loadFromDInit = false
         OptionManager7.loadFromInit = false
@@ -2150,7 +2147,6 @@ Partial Class MainForm
         Me.optBtnSimpleGemShapes.Name = "optBtnSimpleGemShapes"
         OptionSingleReplace7.disabledValue = "YESGEMSHAPE["
         OptionSingleReplace7.enabledValue = "!NOGEMSHAPE!"
-        
         OptionSingleReplace7.fileManager = FileListManager9
         OptionManager9.loadFromDInit = false
         OptionManager9.loadFromInit = false
@@ -2305,7 +2301,6 @@ Partial Class MainForm
         Me.optNumSemibeasts.Location = New System.Drawing.Point(125, 49)
         Me.optNumSemibeasts.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumSemibeasts.Name = "optNumSemibeasts"
-        
         OptionSingle2.fileManager = FileListManager11
         OptionManager11.loadFromDInit = false
         OptionManager11.loadFromInit = false
@@ -2355,7 +2350,6 @@ Partial Class MainForm
         Me.optNumWerebeasts.Location = New System.Drawing.Point(125, 202)
         Me.optNumWerebeasts.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumWerebeasts.Name = "optNumWerebeasts"
-        
         OptionSingle4.fileManager = FileListManager13
         OptionManager13.loadFromDInit = false
         OptionManager13.loadFromInit = false
@@ -2405,7 +2399,6 @@ Partial Class MainForm
         Me.optNumEvilInteractions.Location = New System.Drawing.Point(125, 253)
         Me.optNumEvilInteractions.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumEvilInteractions.Name = "optNumEvilInteractions"
-        
         OptionSingle6.fileManager = FileListManager15
         OptionManager15.loadFromDInit = false
         OptionManager15.loadFromInit = false
@@ -2454,7 +2447,6 @@ Partial Class MainForm
         Me.optNumDisturbances.Location = New System.Drawing.Point(125, 278)
         Me.optNumDisturbances.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumDisturbances.Name = "optNumDisturbances"
-        
         OptionSingle8.fileManager = FileListManager17
         OptionManager17.loadFromDInit = false
         OptionManager17.loadFromInit = false
@@ -2503,7 +2495,6 @@ Partial Class MainForm
         Me.optNumEvilClouds.Location = New System.Drawing.Point(125, 304)
         Me.optNumEvilClouds.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumEvilClouds.Name = "optNumEvilClouds"
-        
         OptionSingle10.fileManager = FileListManager19
         OptionManager19.loadFromDInit = false
         OptionManager19.loadFromInit = false
@@ -2552,7 +2543,6 @@ Partial Class MainForm
         Me.optNumEvilRains.Location = New System.Drawing.Point(125, 329)
         Me.optNumEvilRains.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumEvilRains.Name = "optNumEvilRains"
-        
         OptionSingle12.fileManager = FileListManager21
         OptionManager21.loadFromDInit = false
         OptionManager21.loadFromInit = false
@@ -2673,7 +2663,6 @@ Partial Class MainForm
         Me.optBtnTemperature.Location = New System.Drawing.Point(17, 19)
         Me.optBtnTemperature.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnTemperature.Name = "optBtnTemperature"
-        
         OptionSingle14.fileManager = FileListManager23
         OptionManager23.loadFromDInit = true
         OptionManager23.loadFromInit = false
@@ -2735,7 +2724,6 @@ Partial Class MainForm
         Me.optBtnCaveins.Location = New System.Drawing.Point(17, 79)
         Me.optBtnCaveins.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnCaveins.Name = "optBtnCaveins"
-        
         OptionSingle16.fileManager = FileListManager25
         OptionManager25.loadFromDInit = true
         OptionManager25.loadFromInit = false
@@ -2797,7 +2785,6 @@ Partial Class MainForm
         Me.optBtnLiquidDepth.Location = New System.Drawing.Point(17, 139)
         Me.optBtnLiquidDepth.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnLiquidDepth.Name = "optBtnLiquidDepth"
-        
         OptionSingle18.fileManager = FileListManager27
         OptionManager27.loadFromDInit = true
         OptionManager27.loadFromInit = false
@@ -2858,7 +2845,6 @@ Partial Class MainForm
         Me.optBtnAdvTraps.Location = New System.Drawing.Point(17, 169)
         Me.optBtnAdvTraps.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnAdvTraps.Name = "optBtnAdvTraps"
-        
         OptionSingle20.fileManager = FileListManager29
         OptionManager29.loadFromDInit = true
         OptionManager29.loadFromInit = false
@@ -2915,7 +2901,6 @@ Partial Class MainForm
         Me.optNumPopCap.Location = New System.Drawing.Point(92, 260)
         Me.optNumPopCap.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.optNumPopCap.Name = "optNumPopCap"
-        
         OptionSingle22.fileManager = FileListManager31
         OptionManager31.loadFromDInit = true
         OptionManager31.loadFromInit = false
@@ -2938,7 +2923,6 @@ Partial Class MainForm
         Me.optMaskChildBabyCap.MaxLength = 9
         Me.optMaskChildBabyCap.Name = "optMaskChildBabyCap"
         Me.optMaskChildBabyCap.niceFormat = "####:####"
-        
         OptionSingle23.fileManager = FileListManager32
         OptionManager32.loadFromDInit = true
         OptionManager32.loadFromInit = false
@@ -2969,7 +2953,6 @@ Partial Class MainForm
         Me.optBtnAutoSavePause.Location = New System.Drawing.Point(17, 52)
         Me.optBtnAutoSavePause.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnAutoSavePause.Name = "optBtnAutoSavePause"
-        
         OptionSingle24.fileManager = FileListManager33
         OptionManager33.loadFromDInit = true
         OptionManager33.loadFromInit = false
@@ -3000,7 +2983,6 @@ Partial Class MainForm
         Me.optBtnAutoBackup.Location = New System.Drawing.Point(17, 82)
         Me.optBtnAutoBackup.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnAutoBackup.Name = "optBtnAutoBackup"
-        
         OptionSingle25.fileManager = FileListManager34
         OptionManager34.loadFromDInit = true
         OptionManager34.loadFromInit = false
@@ -3031,7 +3013,6 @@ Partial Class MainForm
         Me.optBtnEmbarkSave.Location = New System.Drawing.Point(17, 112)
         Me.optBtnEmbarkSave.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnEmbarkSave.Name = "optBtnEmbarkSave"
-        
         OptionSingle26.fileManager = FileListManager35
         OptionManager35.loadFromDInit = true
         OptionManager35.loadFromInit = false
@@ -3062,7 +3043,6 @@ Partial Class MainForm
         Me.optBtnCompressSaves.Location = New System.Drawing.Point(17, 142)
         Me.optBtnCompressSaves.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnCompressSaves.Name = "optBtnCompressSaves"
-        
         OptionSingle27.fileManager = FileListManager36
         OptionManager36.loadFromDInit = false
         OptionManager36.loadFromInit = true
@@ -3093,7 +3073,6 @@ Partial Class MainForm
         Me.optBtnPauseLoad.Location = New System.Drawing.Point(17, 172)
         Me.optBtnPauseLoad.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnPauseLoad.Name = "optBtnPauseLoad"
-        
         OptionSingle28.fileManager = FileListManager37
         OptionManager37.loadFromDInit = true
         OptionManager37.loadFromInit = false
@@ -3167,7 +3146,6 @@ Partial Class MainForm
         Me.optCbWindow.FormattingEnabled = true
         Me.optCbWindow.Location = New System.Drawing.Point(71, 74)
         Me.optCbWindow.Name = "optCbWindow"
-        
         OptionList1.fileManager = FileListManager38
         ComboItem1.display = "Prompt"
         ComboItem1.value = "PROMPT"
@@ -3198,7 +3176,6 @@ Partial Class MainForm
         Me.optCbPriority.FormattingEnabled = true
         Me.optCbPriority.Location = New System.Drawing.Point(71, 100)
         Me.optCbPriority.Name = "optCbPriority"
-        
         OptionList2.fileManager = FileListManager39
         ComboItem4.display = "Idle"
         ComboItem4.value = "IDLE"
@@ -3244,7 +3221,6 @@ Partial Class MainForm
         Me.optBtnIntro.Location = New System.Drawing.Point(17, 165)
         Me.optBtnIntro.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnIntro.Name = "optBtnIntro"
-        
         OptionSingle29.fileManager = FileListManager40
         OptionManager40.loadFromDInit = false
         OptionManager40.loadFromInit = true
@@ -3269,7 +3245,6 @@ Partial Class MainForm
         Me.optCbPrintMode.FormattingEnabled = true
         Me.optCbPrintMode.Location = New System.Drawing.Point(17, 93)
         Me.optCbPrintMode.Name = "optCbPrintMode"
-        
         OptionList3.fileManager = FileListManager41
         ComboItem10.display = "2D"
         ComboItem10.value = "2D"
@@ -3318,7 +3293,6 @@ Partial Class MainForm
         Me.optBtnSprites.Location = New System.Drawing.Point(17, 312)
         Me.optBtnSprites.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnSprites.Name = "optBtnSprites"
-        
         OptionSingle30.fileManager = FileListManager42
         OptionManager42.loadFromDInit = false
         OptionManager42.loadFromInit = true
@@ -3349,7 +3323,6 @@ Partial Class MainForm
         Me.optBtnTruetype.Location = New System.Drawing.Point(17, 283)
         Me.optBtnTruetype.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnTruetype.Name = "optBtnTruetype"
-        
         OptionSingle31.fileManager = FileListManager43
         OptionManager43.loadFromDInit = false
         OptionManager43.loadFromInit = true
@@ -3406,7 +3379,6 @@ Partial Class MainForm
         Me.optBtnFps.Location = New System.Drawing.Point(17, 19)
         Me.optBtnFps.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnFps.Name = "optBtnFps"
-        
         OptionSingle32.fileManager = FileListManager44
         OptionManager44.loadFromDInit = false
         OptionManager44.loadFromInit = true
@@ -3433,7 +3405,6 @@ Partial Class MainForm
         Me.optNumGFPS.Location = New System.Drawing.Point(100, 48)
         Me.optNumGFPS.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.optNumGFPS.Name = "optNumGFPS"
-        
         OptionSingle33.fileManager = FileListManager45
         OptionManager45.loadFromDInit = false
         OptionManager45.loadFromInit = true
@@ -3458,7 +3429,6 @@ Partial Class MainForm
         Me.optNumFPSCap.Location = New System.Drawing.Point(100, 74)
         Me.optNumFPSCap.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.optNumFPSCap.Name = "optNumFPSCap"
-        
         OptionSingle34.fileManager = FileListManager46
         OptionManager46.loadFromDInit = false
         OptionManager46.loadFromInit = true
@@ -3487,7 +3457,6 @@ Partial Class MainForm
         Me.optBtnSound.Location = New System.Drawing.Point(17, 19)
         Me.optBtnSound.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnSound.Name = "optBtnSound"
-        
         OptionSingle35.fileManager = FileListManager47
         OptionManager47.loadFromDInit = false
         OptionManager47.loadFromInit = true
@@ -3518,7 +3487,6 @@ Partial Class MainForm
         Me.optBtnEmbarkWarn.Location = New System.Drawing.Point(13, 41)
         Me.optBtnEmbarkWarn.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnEmbarkWarn.Name = "optBtnEmbarkWarn"
-        
         OptionSingle36.fileManager = FileListManager48
         OptionManager48.loadFromDInit = true
         OptionManager48.loadFromInit = false
@@ -3543,7 +3511,6 @@ Partial Class MainForm
         Me.optMaskEmbarkSize.MaxLength = 5
         Me.optMaskEmbarkSize.Name = "optMaskEmbarkSize"
         Me.optMaskEmbarkSize.niceFormat = "#:# (# is 1-16)"
-        
         OptionSingle37.fileManager = FileListManager49
         OptionManager49.loadFromDInit = true
         OptionManager49.loadFromInit = false
@@ -3575,7 +3542,6 @@ Partial Class MainForm
         Me.optBtnTransformMsgs.Name = "optBtnTransformMsgs"
         OptionSingleReplace8.disabledValue = "]NOSTOPT"
         OptionSingleReplace8.enabledValue = ":BOX:P:R]YESSTOPT"
-        
         OptionSingleReplace8.fileManager = FileListManager50
         OptionManager50.loadFromDInit = false
         OptionManager50.loadFromInit = false
@@ -3609,7 +3575,6 @@ Partial Class MainForm
         Me.optBtnDigStop.Name = "optBtnDigStop"
         OptionSingleReplace9.disabledValue = "]NOSTOP"
         OptionSingleReplace9.enabledValue = ":P:R]YESSTOP"
-        
         OptionSingleReplace9.fileManager = FileListManager51
         OptionManager51.loadFromDInit = false
         OptionManager51.loadFromInit = false
@@ -3640,7 +3605,6 @@ Partial Class MainForm
         Me.optBtnFrostGiants.Name = "optBtnFrostGiants"
         OptionSingleReplace10.disabledValue = "!NOFROSTGIANT!"
         OptionSingleReplace10.enabledValue = "YESFROSTGIANT["
-        
         OptionSingleReplace10.fileManager = FileListManager52
         OptionManager52.loadFromDInit = false
         OptionManager52.loadFromInit = false
@@ -3670,7 +3634,6 @@ Partial Class MainForm
         Me.optBtnWarlocks.Name = "optBtnWarlocks"
         OptionSingleReplace11.disabledValue = "!NOWARLOCK!"
         OptionSingleReplace11.enabledValue = "YESWARLOCK["
-        
         OptionSingleReplace11.fileManager = FileListManager53
         OptionManager53.loadFromDInit = false
         OptionManager53.loadFromInit = false
@@ -3700,7 +3663,6 @@ Partial Class MainForm
         Me.optBtnAutomatons.Name = "optBtnAutomatons"
         OptionSingleReplace12.disabledValue = "!NOAUTOMATON!"
         OptionSingleReplace12.enabledValue = "YESAUTOMATON["
-        
         OptionSingleReplace12.fileManager = FileListManager54
         OptionManager54.loadFromDInit = false
         OptionManager54.loadFromInit = false
@@ -3730,7 +3692,6 @@ Partial Class MainForm
         Me.optBtnOrcs.Name = "optBtnOrcs"
         OptionSingleReplace13.disabledValue = "!NOORC!"
         OptionSingleReplace13.enabledValue = "YESORC["
-        
         OptionSingleReplace13.fileManager = FileListManager55
         OptionManager55.loadFromDInit = false
         OptionManager55.loadFromInit = false
@@ -3760,7 +3721,6 @@ Partial Class MainForm
         Me.optBtnGoblins.Name = "optBtnGoblins"
         OptionSingleReplace14.disabledValue = "!NOGOBLIN!"
         OptionSingleReplace14.enabledValue = "YESGOBLIN["
-        
         OptionSingleReplace14.fileManager = FileListManager56
         OptionManager56.loadFromDInit = false
         OptionManager56.loadFromInit = false
@@ -3790,7 +3750,6 @@ Partial Class MainForm
         Me.optBtnKobolds.Name = "optBtnKobolds"
         OptionSingleReplace15.disabledValue = "!NOKOBOLD!"
         OptionSingleReplace15.enabledValue = "YESKOBOLD["
-        
         OptionSingleReplace15.fileManager = FileListManager57
         OptionManager57.loadFromDInit = false
         OptionManager57.loadFromInit = false
@@ -3820,7 +3779,6 @@ Partial Class MainForm
         Me.optBtnElfRace.Name = "optBtnElfRace"
         OptionSingleReplace16.disabledValue = "!NOELFRACE!"
         OptionSingleReplace16.enabledValue = "YESELFRACE["
-        
         OptionSingleReplace16.fileManager = FileListManager58
         OptionManager58.loadFromDInit = false
         OptionManager58.loadFromInit = false
@@ -3850,7 +3808,6 @@ Partial Class MainForm
         Me.optBtnAntmen.Name = "optBtnAntmen"
         OptionSingleReplace17.disabledValue = "!NOANTMEN!"
         OptionSingleReplace17.enabledValue = "YESANTMEN["
-        
         OptionSingleReplace17.fileManager = FileListManager59
         OptionManager59.loadFromDInit = false
         OptionManager59.loadFromInit = false
@@ -3880,7 +3837,6 @@ Partial Class MainForm
         Me.optBtnGnomes.Name = "optBtnGnomes"
         OptionSingleReplace18.disabledValue = "!NOGNOME!"
         OptionSingleReplace18.enabledValue = "YESGNOME["
-        
         OptionSingleReplace18.fileManager = FileListManager60
         OptionManager60.loadFromDInit = false
         OptionManager60.loadFromInit = false
@@ -3911,7 +3867,6 @@ Partial Class MainForm
         Me.optBtnTroglodytes.Name = "optBtnTroglodytes"
         OptionSingleReplace19.disabledValue = "!NOTROGLODYTE!"
         OptionSingleReplace19.enabledValue = "YESTROGLODYTE["
-        
         OptionSingleReplace19.fileManager = FileListManager61
         OptionManager61.loadFromDInit = false
         OptionManager61.loadFromInit = false
@@ -3941,7 +3896,6 @@ Partial Class MainForm
         Me.optBtnGremlins.Name = "optBtnGremlins"
         OptionSingleReplace20.disabledValue = "!NOGREMLIN!"
         OptionSingleReplace20.enabledValue = "YESGREMLIN["
-        
         OptionSingleReplace20.fileManager = FileListManager62
         OptionManager62.loadFromDInit = false
         OptionManager62.loadFromInit = false
@@ -3971,7 +3925,6 @@ Partial Class MainForm
         Me.optBtnHumanRace.Name = "optBtnHumanRace"
         OptionSingleReplace21.disabledValue = "!NOHUMANRACE!"
         OptionSingleReplace21.enabledValue = "YESHUMANRACE["
-        
         OptionSingleReplace21.fileManager = FileListManager63
         OptionManager63.loadFromDInit = false
         OptionManager63.loadFromInit = false
@@ -4017,7 +3970,6 @@ Partial Class MainForm
         Me.optBtnCivDwarves.Name = "optBtnCivDwarves"
         OptionSingleReplace22.disabledValue = "!NOPLAYABLED!"
         OptionSingleReplace22.enabledValue = "YESPLAYABLED["
-        
         OptionSingleReplace22.fileManager = FileListManager64
         OptionManager64.loadFromDInit = false
         OptionManager64.loadFromInit = false
@@ -4047,7 +3999,6 @@ Partial Class MainForm
         Me.optBtnCivOrcs.Name = "optBtnCivOrcs"
         OptionSingleReplace23.disabledValue = "!NOPLAYABLEO!"
         OptionSingleReplace23.enabledValue = "YESPLAYABLEO["
-        
         OptionSingleReplace23.fileManager = FileListManager65
         OptionManager65.loadFromDInit = false
         OptionManager65.loadFromInit = false
@@ -4077,7 +4028,6 @@ Partial Class MainForm
         Me.optBtnCivKobolds.Name = "optBtnCivKobolds"
         OptionSingleReplace24.disabledValue = "!NOPLAYABLEK!"
         OptionSingleReplace24.enabledValue = "YESPLAYABLEK["
-        
         OptionSingleReplace24.fileManager = FileListManager66
         OptionManager66.loadFromDInit = false
         OptionManager66.loadFromInit = false
@@ -4172,7 +4122,6 @@ Partial Class MainForm
         Me.optBtnDrowRace.Name = "optBtnDrowRace"
         OptionSingleReplace25.disabledValue = "!NODROW!"
         OptionSingleReplace25.enabledValue = "YESDROW["
-        
         OptionSingleReplace25.fileManager = FileListManager67
         OptionManager67.loadFromDInit = false
         OptionManager67.loadFromInit = false
@@ -4203,7 +4152,6 @@ Partial Class MainForm
         Me.optBtnEvilDwarves.Name = "optBtnEvilDwarves"
         OptionSingleReplace26.disabledValue = "!NODWARFEVIL!"
         OptionSingleReplace26.enabledValue = "YESDWARFEVIL["
-        
         OptionSingleReplace26.fileManager = FileListManager68
         OptionManager68.loadFromDInit = false
         OptionManager68.loadFromInit = false
@@ -4234,7 +4182,6 @@ Partial Class MainForm
         Me.optBtnEvilHumans.Name = "optBtnEvilHumans"
         OptionSingleReplace27.disabledValue = "!NOHUMANEVIL!"
         OptionSingleReplace27.enabledValue = "YESHUMANEVIL["
-        
         OptionSingleReplace27.fileManager = FileListManager69
         OptionManager69.loadFromDInit = false
         OptionManager69.loadFromInit = false
@@ -4265,7 +4212,6 @@ Partial Class MainForm
         Me.optBtnEvilElves.Name = "optBtnEvilElves"
         OptionSingleReplace28.disabledValue = "!NOELFEVIL!"
         OptionSingleReplace28.enabledValue = "YESELFEVIL["
-        
         OptionSingleReplace28.fileManager = FileListManager70
         OptionManager70.loadFromDInit = false
         OptionManager70.loadFromInit = false
@@ -4296,7 +4242,6 @@ Partial Class MainForm
         Me.optBtnEvilDrow.Name = "optBtnEvilDrow"
         OptionSingleReplace29.disabledValue = "!NODROWEVIL!"
         OptionSingleReplace29.enabledValue = "YESDROWEVIL["
-        
         OptionSingleReplace29.fileManager = FileListManager71
         OptionManager71.loadFromDInit = false
         OptionManager71.loadFromInit = false
@@ -4327,7 +4272,6 @@ Partial Class MainForm
         Me.optBtnDomesticPets.Name = "optBtnDomesticPets"
         OptionSingleReplace30.disabledValue = "!NODOMESTICPET!"
         OptionSingleReplace30.enabledValue = "YESDOMESTICPET["
-        
         OptionSingleReplace30.fileManager = FileListManager72
         OptionManager72.loadFromDInit = false
         OptionManager72.loadFromInit = false
@@ -4359,7 +4303,6 @@ Partial Class MainForm
         Me.optBtnMoreVermin.Name = "optBtnMoreVermin"
         OptionSingleReplace31.disabledValue = "!NOVERMIN!"
         OptionSingleReplace31.enabledValue = "YESVERMIN["
-        
         OptionSingleReplace31.fileManager = FileListManager73
         OptionManager73.loadFromDInit = false
         OptionManager73.loadFromInit = false
@@ -4391,7 +4334,6 @@ Partial Class MainForm
         Me.optBtnMoreGiantAnimals.Name = "optBtnMoreGiantAnimals"
         OptionSingleReplace32.disabledValue = "NOGIANT!"
         OptionSingleReplace32.enabledValue = "YESGIANT["
-        
         OptionSingleReplace32.fileManager = FileListManager74
         OptionManager74.loadFromDInit = false
         OptionManager74.loadFromInit = false
@@ -4423,7 +4365,6 @@ Partial Class MainForm
         Me.optBtnMoreMegaBeasts.Name = "optBtnMoreMegaBeasts"
         OptionSingleReplace33.disabledValue = "!NOMEGABEAST!"
         OptionSingleReplace33.enabledValue = "YESMEGABEAST["
-        
         OptionSingleReplace33.fileManager = FileListManager75
         OptionManager75.loadFromDInit = false
         OptionManager75.loadFromInit = false
@@ -4455,7 +4396,6 @@ Partial Class MainForm
         Me.optBtnMoreBirds.Name = "optBtnMoreBirds"
         OptionSingleReplace34.disabledValue = "!NOBIRD!"
         OptionSingleReplace34.enabledValue = "YESBIRD["
-        
         OptionSingleReplace34.fileManager = FileListManager76
         OptionManager76.loadFromDInit = false
         OptionManager76.loadFromInit = false
@@ -4488,7 +4428,6 @@ Partial Class MainForm
         Me.optBtnMoreFish.Name = "optBtnMoreFish"
         OptionSingleReplace35.disabledValue = "!NOFISH!"
         OptionSingleReplace35.enabledValue = "YESFISH["
-        
         OptionSingleReplace35.fileManager = FileListManager77
         OptionManager77.loadFromDInit = false
         OptionManager77.loadFromInit = false
@@ -4520,7 +4459,6 @@ Partial Class MainForm
         Me.optBtnMoreAnimalmen.Name = "optBtnMoreAnimalmen"
         OptionSingleReplace36.disabledValue = "NOPERSON!"
         OptionSingleReplace36.enabledValue = "YESPERSON["
-        
         OptionSingleReplace36.fileManager = FileListManager78
         OptionManager78.loadFromDInit = false
         OptionManager78.loadFromInit = false
@@ -4552,7 +4490,6 @@ Partial Class MainForm
         Me.optBtnMoreCavernCreatures.Name = "optBtnMoreCavernCreatures"
         OptionSingleReplace37.disabledValue = "!NOCAVERN!"
         OptionSingleReplace37.enabledValue = "YESCAVERN["
-        
         OptionSingleReplace37.fileManager = FileListManager79
         OptionManager79.loadFromDInit = false
         OptionManager79.loadFromInit = false
@@ -4584,7 +4521,6 @@ Partial Class MainForm
         Me.optBtnMoreSurfaceCreatures.Name = "optBtnMoreSurfaceCreatures"
         OptionSingleReplace38.disabledValue = "!NOMONSTER!"
         OptionSingleReplace38.enabledValue = "YESMONSTER["
-        
         OptionSingleReplace38.fileManager = FileListManager80
         OptionManager80.loadFromDInit = false
         OptionManager80.loadFromInit = false
@@ -4616,7 +4552,6 @@ Partial Class MainForm
         Me.optBtnMoreDemons.Name = "optBtnMoreDemons"
         OptionSingleReplace39.disabledValue = "!NOHELL!"
         OptionSingleReplace39.enabledValue = "YESHELL["
-        
         OptionSingleReplace39.fileManager = FileListManager81
         OptionManager81.loadFromDInit = false
         OptionManager81.loadFromInit = false
@@ -4648,7 +4583,6 @@ Partial Class MainForm
         Me.optBtnMoreMagical.Name = "optBtnMoreMagical"
         OptionSingleReplace40.disabledValue = "!NOMAGICCREATURES!"
         OptionSingleReplace40.enabledValue = "YESMAGICCREATURES["
-        
         OptionSingleReplace40.fileManager = FileListManager82
         OptionManager82.loadFromDInit = false
         OptionManager82.loadFromInit = false
@@ -4672,7 +4606,6 @@ Partial Class MainForm
         Me.optCbPatternInvaderSkills.Location = New System.Drawing.Point(148, 355)
         Me.optCbPatternInvaderSkills.Margin = New System.Windows.Forms.Padding(1)
         Me.optCbPatternInvaderSkills.Name = "optCbPatternInvaderSkills"
-        
         OptionList4.fileManager = FileListManager83
         ComboItem17.display = "0"
         ComboItem17.value = "0"
@@ -4752,7 +4685,6 @@ Partial Class MainForm
         Me.optBtnFdFrogmen.Name = "optBtnFdFrogmen"
         OptionSingleReplace41.disabledValue = "!NOFROG!"
         OptionSingleReplace41.enabledValue = "YESFROG["
-        
         OptionSingleReplace41.fileManager = FileListManager84
         OptionManager84.loadFromDInit = false
         OptionManager84.loadFromInit = false
@@ -4784,7 +4716,6 @@ Partial Class MainForm
         Me.optBtnFdFireImps.Name = "optBtnFdFireImps"
         OptionSingleReplace42.disabledValue = "!NOIMP!"
         OptionSingleReplace42.enabledValue = "YESIMP["
-        
         OptionSingleReplace42.fileManager = FileListManager85
         OptionManager85.loadFromDInit = false
         OptionManager85.loadFromInit = false
@@ -4816,7 +4747,6 @@ Partial Class MainForm
         Me.optBtnFdStranglers.Name = "optBtnFdStranglers"
         OptionSingleReplace43.disabledValue = "!NOSTRANGLER!"
         OptionSingleReplace43.enabledValue = "YESSTRANGLER["
-        
         OptionSingleReplace43.fileManager = FileListManager86
         OptionManager86.loadFromDInit = false
         OptionManager86.loadFromInit = false
@@ -4848,7 +4778,6 @@ Partial Class MainForm
         Me.optBtnFdWerewolfs.Name = "optBtnFdWerewolfs"
         OptionSingleReplace44.disabledValue = "!NOWEREWOLF!"
         OptionSingleReplace44.enabledValue = "YESWEREWOLF["
-        
         OptionSingleReplace44.fileManager = FileListManager87
         OptionManager87.loadFromDInit = false
         OptionManager87.loadFromInit = false
@@ -4880,7 +4809,6 @@ Partial Class MainForm
         Me.optBtnFdBlendecs.Name = "optBtnFdBlendecs"
         OptionSingleReplace45.disabledValue = "!NOBLENDEC!"
         OptionSingleReplace45.enabledValue = "YESBLENDEC["
-        
         OptionSingleReplace45.fileManager = FileListManager88
         OptionManager88.loadFromDInit = false
         OptionManager88.loadFromInit = false
@@ -4912,7 +4840,6 @@ Partial Class MainForm
         Me.optBtnFdSerpentmen.Name = "optBtnFdSerpentmen"
         OptionSingleReplace46.disabledValue = "!NOSERPENT!"
         OptionSingleReplace46.enabledValue = "YESSERPENT["
-        
         OptionSingleReplace46.fileManager = FileListManager89
         OptionManager89.loadFromDInit = false
         OptionManager89.loadFromInit = false
@@ -4944,7 +4871,6 @@ Partial Class MainForm
         Me.optBtnFdWhiteTigermen.Name = "optBtnFdWhiteTigermen"
         OptionSingleReplace47.disabledValue = "!NOTIGER!"
         OptionSingleReplace47.enabledValue = "YESTIGER["
-        
         OptionSingleReplace47.fileManager = FileListManager90
         OptionManager90.loadFromDInit = false
         OptionManager90.loadFromInit = false
@@ -4976,7 +4902,6 @@ Partial Class MainForm
         Me.optBtnFdBeakWolfs.Name = "optBtnFdBeakWolfs"
         OptionSingleReplace48.disabledValue = "!NOBEAKWOLF!"
         OptionSingleReplace48.enabledValue = "YESBEAKWOLF["
-        
         OptionSingleReplace48.fileManager = FileListManager91
         OptionManager91.loadFromDInit = false
         OptionManager91.loadFromInit = false
@@ -5008,7 +4933,6 @@ Partial Class MainForm
         Me.optBtnFdElephants.Name = "optBtnFdElephants"
         OptionSingleReplace49.disabledValue = "!NOELEPHANT!"
         OptionSingleReplace49.enabledValue = "YESELEPHANT["
-        
         OptionSingleReplace49.fileManager = FileListManager92
         OptionManager92.loadFromDInit = false
         OptionManager92.loadFromInit = false
@@ -5040,7 +4964,6 @@ Partial Class MainForm
         Me.optBtnFdFerricElves.Name = "optBtnFdFerricElves"
         OptionSingleReplace50.disabledValue = "!NOFERRICELF!"
         OptionSingleReplace50.enabledValue = "YESFERRICELF["
-        
         OptionSingleReplace50.fileManager = FileListManager93
         OptionManager93.loadFromDInit = false
         OptionManager93.loadFromInit = false
@@ -5072,7 +4995,6 @@ Partial Class MainForm
         Me.optBtnFdGreatBadgermen.Name = "optBtnFdGreatBadgermen"
         OptionSingleReplace51.disabledValue = "!NOBADGER!"
         OptionSingleReplace51.enabledValue = "YESBADGER["
-        
         OptionSingleReplace51.fileManager = FileListManager94
         OptionManager94.loadFromDInit = false
         OptionManager94.loadFromInit = false
@@ -5104,7 +5026,6 @@ Partial Class MainForm
         Me.optBtnFdPandashi.Name = "optBtnFdPandashi"
         OptionSingleReplace52.disabledValue = "!NOPANDASHI!"
         OptionSingleReplace52.enabledValue = "YESPANDASHI["
-        
         OptionSingleReplace52.fileManager = FileListManager95
         OptionManager95.loadFromDInit = false
         OptionManager95.loadFromInit = false
@@ -5136,7 +5057,6 @@ Partial Class MainForm
         Me.optBtnFdRaptormen.Name = "optBtnFdRaptormen"
         OptionSingleReplace53.disabledValue = "!NORAPTOR!"
         OptionSingleReplace53.enabledValue = "YESRAPTOR["
-        
         OptionSingleReplace53.fileManager = FileListManager96
         OptionManager96.loadFromDInit = false
         OptionManager96.loadFromInit = false
@@ -5168,7 +5088,6 @@ Partial Class MainForm
         Me.optBtnFdHarpies.Name = "optBtnFdHarpies"
         OptionSingleReplace54.disabledValue = "!NOHARPY!"
         OptionSingleReplace54.enabledValue = "YESHARPY["
-        
         OptionSingleReplace54.fileManager = FileListManager97
         OptionManager97.loadFromDInit = false
         OptionManager97.loadFromInit = false
@@ -5200,7 +5119,6 @@ Partial Class MainForm
         Me.optBtnFdMinotaurs.Name = "optBtnFdMinotaurs"
         OptionSingleReplace55.disabledValue = "!NOMINOTAUR!"
         OptionSingleReplace55.enabledValue = "YESMINOTAUR["
-        
         OptionSingleReplace55.fileManager = FileListManager98
         OptionManager98.loadFromDInit = false
         OptionManager98.loadFromInit = false
@@ -5232,7 +5150,6 @@ Partial Class MainForm
         Me.optBtnFdJotun.Name = "optBtnFdJotun"
         OptionSingleReplace56.disabledValue = "!NOJOTUN!"
         OptionSingleReplace56.enabledValue = "YESJOTUN["
-        
         OptionSingleReplace56.fileManager = FileListManager99
         OptionManager99.loadFromDInit = false
         OptionManager99.loadFromInit = false
@@ -5264,7 +5181,6 @@ Partial Class MainForm
         Me.optBtnFdSpiderFiends.Name = "optBtnFdSpiderFiends"
         OptionSingleReplace57.disabledValue = "!NOSPIDER!"
         OptionSingleReplace57.enabledValue = "YESSPIDER["
-        
         OptionSingleReplace57.fileManager = FileListManager100
         OptionManager100.loadFromDInit = false
         OptionManager100.loadFromInit = false
@@ -5296,7 +5212,6 @@ Partial Class MainForm
         Me.optBtnFdNightwings.Name = "optBtnFdNightwings"
         OptionSingleReplace58.disabledValue = "!NONIGHTWING!"
         OptionSingleReplace58.enabledValue = "YESNIGHTWING["
-        
         OptionSingleReplace58.fileManager = FileListManager101
         OptionManager101.loadFromDInit = false
         OptionManager101.loadFromInit = false
@@ -5329,7 +5244,6 @@ Partial Class MainForm
         Me.optBtnSteamEngine.Name = "optBtnSteamEngine"
         OptionSingleReplace59.disabledValue = "!NOSTEAMENGINE!"
         OptionSingleReplace59.enabledValue = "YESSTEAMENGINE["
-        
         OptionSingleReplace59.fileManager = FileListManager102
         OptionManager102.loadFromDInit = false
         OptionManager102.loadFromInit = false
@@ -5362,7 +5276,6 @@ Partial Class MainForm
         Me.optBtnMachineFactory.Name = "optBtnMachineFactory"
         OptionSingleReplace60.disabledValue = "!NOMACHINEFACTORY!"
         OptionSingleReplace60.enabledValue = "YESMACHINEFACTORY["
-        
         OptionSingleReplace60.fileManager = FileListManager103
         OptionManager103.loadFromDInit = false
         OptionManager103.loadFromInit = false
@@ -5396,7 +5309,6 @@ Partial Class MainForm
         Me.optBtnLiquidSpawner.Name = "optBtnLiquidSpawner"
         OptionSingleReplace61.disabledValue = "!NOLIQUIDSPAWNER!"
         OptionSingleReplace61.enabledValue = "YESLIQUIDSPAWNER["
-        
         OptionSingleReplace61.fileManager = FileListManager104
         OptionManager104.loadFromDInit = false
         OptionManager104.loadFromInit = false
@@ -5430,7 +5342,6 @@ Partial Class MainForm
         Me.optBtnCoinMint.Name = "optBtnCoinMint"
         OptionSingleReplace62.disabledValue = "!NOCOINMINT!"
         OptionSingleReplace62.enabledValue = "YESCOINMINT["
-        
         OptionSingleReplace62.fileManager = FileListManager105
         OptionManager105.loadFromDInit = false
         OptionManager105.loadFromInit = false
@@ -5463,7 +5374,6 @@ Partial Class MainForm
         Me.optBtnBonecarver.Name = "optBtnBonecarver"
         OptionSingleReplace63.disabledValue = "!NOBONEYARD!"
         OptionSingleReplace63.enabledValue = "YESBONEYARD["
-        
         OptionSingleReplace63.fileManager = FileListManager106
         OptionManager106.loadFromDInit = false
         OptionManager106.loadFromInit = false
@@ -5496,7 +5406,6 @@ Partial Class MainForm
         Me.optBtnStonecrafter.Name = "optBtnStonecrafter"
         OptionSingleReplace64.disabledValue = "!NOSTONECUTTER!"
         OptionSingleReplace64.enabledValue = "YESSTONECUTTER["
-        
         OptionSingleReplace64.fileManager = FileListManager107
         OptionManager107.loadFromDInit = false
         OptionManager107.loadFromInit = false
@@ -5529,7 +5438,6 @@ Partial Class MainForm
         Me.optBtnGemcutter.Name = "optBtnGemcutter"
         OptionSingleReplace65.disabledValue = "!GEMWORKSHOP!"
         OptionSingleReplace65.enabledValue = "YESGEMWORKSHOP["
-        
         OptionSingleReplace65.fileManager = FileListManager108
         OptionManager108.loadFromDInit = false
         OptionManager108.loadFromInit = false
@@ -5563,7 +5471,6 @@ Partial Class MainForm
         Me.optBtnWoodcrafter.Name = "optBtnWoodcrafter"
         OptionSingleReplace66.disabledValue = "!NOWOODCRAFTER!"
         OptionSingleReplace66.enabledValue = "YESWOODCRAFTER["
-        
         OptionSingleReplace66.fileManager = FileListManager109
         OptionManager109.loadFromDInit = false
         OptionManager109.loadFromInit = false
@@ -5596,7 +5503,6 @@ Partial Class MainForm
         Me.optBtnThatchery.Name = "optBtnThatchery"
         OptionSingleReplace67.disabledValue = "!NOTHATCHERY!"
         OptionSingleReplace67.enabledValue = "YESTHATCHERY["
-        
         OptionSingleReplace67.fileManager = FileListManager110
         OptionManager110.loadFromDInit = false
         OptionManager110.loadFromInit = false
@@ -5629,7 +5535,6 @@ Partial Class MainForm
         Me.optBtnFurnitureWorkshop.Name = "optBtnFurnitureWorkshop"
         OptionSingleReplace68.disabledValue = "!NOFURNITURE!"
         OptionSingleReplace68.enabledValue = "YESFURNITURE["
-        
         OptionSingleReplace68.fileManager = FileListManager111
         OptionManager111.loadFromDInit = false
         OptionManager111.loadFromInit = false
@@ -5662,7 +5567,6 @@ Partial Class MainForm
         Me.optBtnTailor.Name = "optBtnTailor"
         OptionSingleReplace69.disabledValue = "!NOTAILOR!"
         OptionSingleReplace69.enabledValue = "YESTAILOR["
-        
         OptionSingleReplace69.fileManager = FileListManager112
         OptionManager112.loadFromDInit = false
         OptionManager112.loadFromInit = false
@@ -5696,7 +5600,6 @@ Partial Class MainForm
         Me.optBtnChandler.Name = "optBtnChandler"
         OptionSingleReplace70.disabledValue = "!NOCHANDLER!"
         OptionSingleReplace70.enabledValue = "YESCHANDLER["
-        
         OptionSingleReplace70.fileManager = FileListManager113
         OptionManager113.loadFromDInit = false
         OptionManager113.loadFromInit = false
@@ -5729,7 +5632,6 @@ Partial Class MainForm
         Me.optBtnFletcher.Name = "optBtnFletcher"
         OptionSingleReplace71.disabledValue = "!NOFLETCHER!"
         OptionSingleReplace71.enabledValue = "YESFLETCHER["
-        
         OptionSingleReplace71.fileManager = FileListManager114
         OptionManager114.loadFromDInit = false
         OptionManager114.loadFromInit = false
@@ -5762,7 +5664,6 @@ Partial Class MainForm
         Me.optBtnPottery.Name = "optBtnPottery"
         OptionSingleReplace72.disabledValue = "!NOPOTTERY!"
         OptionSingleReplace72.enabledValue = "YESPOTTERY["
-        
         OptionSingleReplace72.fileManager = FileListManager115
         OptionManager115.loadFromDInit = false
         OptionManager115.loadFromInit = false
@@ -5796,7 +5697,6 @@ Partial Class MainForm
         Me.optBtnGreatDyer.Name = "optBtnGreatDyer"
         OptionSingleReplace73.disabledValue = "!NODYER!"
         OptionSingleReplace73.enabledValue = "YESDYER["
-        
         OptionSingleReplace73.fileManager = FileListManager116
         OptionManager116.loadFromDInit = false
         OptionManager116.loadFromInit = false
@@ -5830,7 +5730,6 @@ Partial Class MainForm
         Me.optBtnPainter.Name = "optBtnPainter"
         OptionSingleReplace74.disabledValue = "!NOPAINTER!"
         OptionSingleReplace74.enabledValue = "YESPAINTER["
-        
         OptionSingleReplace74.fileManager = FileListManager117
         OptionManager117.loadFromDInit = false
         OptionManager117.loadFromInit = false
@@ -5863,7 +5762,6 @@ Partial Class MainForm
         Me.optBtnToolmaker.Name = "optBtnToolmaker"
         OptionSingleReplace75.disabledValue = "!NOTOOLMAKER!"
         OptionSingleReplace75.enabledValue = "YESTOOLMAKER["
-        
         OptionSingleReplace75.fileManager = FileListManager118
         OptionManager118.loadFromDInit = false
         OptionManager118.loadFromInit = false
@@ -5896,7 +5794,6 @@ Partial Class MainForm
         Me.optBtnWeightBench.Name = "optBtnWeightBench"
         OptionSingleReplace76.disabledValue = "!NOWEIGHT!"
         OptionSingleReplace76.enabledValue = "YESWEIGHT["
-        
         OptionSingleReplace76.fileManager = FileListManager119
         OptionManager119.loadFromDInit = false
         OptionManager119.loadFromInit = false
@@ -5929,7 +5826,6 @@ Partial Class MainForm
         Me.optBtnWoodsplitting.Name = "optBtnWoodsplitting"
         OptionSingleReplace77.disabledValue = "!NOWOODSPLITTING!"
         OptionSingleReplace77.enabledValue = "YESWOODSPLITTING["
-        
         OptionSingleReplace77.fileManager = FileListManager120
         OptionManager120.loadFromDInit = false
         OptionManager120.loadFromInit = false
@@ -5963,7 +5859,6 @@ Partial Class MainForm
         Me.optBtnStorage.Name = "optBtnStorage"
         OptionSingleReplace78.disabledValue = "!NOSTORAGE!"
         OptionSingleReplace78.enabledValue = "YESSTORAGE["
-        
         OptionSingleReplace78.fileManager = FileListManager121
         OptionManager121.loadFromDInit = false
         OptionManager121.loadFromInit = false
@@ -5996,7 +5891,6 @@ Partial Class MainForm
         Me.optBtnBrewery.Name = "optBtnBrewery"
         OptionSingleReplace79.disabledValue = "!NOBREWERY!"
         OptionSingleReplace79.enabledValue = "YESBREWERY["
-        
         OptionSingleReplace79.fileManager = FileListManager122
         OptionManager122.loadFromDInit = false
         OptionManager122.loadFromInit = false
@@ -6030,7 +5924,6 @@ Partial Class MainForm
         Me.optBtnSawmill.Name = "optBtnSawmill"
         OptionSingleReplace80.disabledValue = "!NOSAWMILL!"
         OptionSingleReplace80.enabledValue = "YESSAWMILL["
-        
         OptionSingleReplace80.fileManager = FileListManager123
         OptionManager123.loadFromDInit = false
         OptionManager123.loadFromInit = false
@@ -6064,7 +5957,6 @@ Partial Class MainForm
         Me.optBtnFishpond.Name = "optBtnFishpond"
         OptionSingleReplace81.disabledValue = "!NOFISHPOND!"
         OptionSingleReplace81.enabledValue = "YESFISHPOND["
-        
         OptionSingleReplace81.fileManager = FileListManager124
         OptionManager124.loadFromDInit = false
         OptionManager124.loadFromInit = false
@@ -6097,7 +5989,6 @@ Partial Class MainForm
         Me.optBtnSlaughterhouse.Name = "optBtnSlaughterhouse"
         OptionSingleReplace82.disabledValue = "!NOSLAUGHTERHOUSE!"
         OptionSingleReplace82.enabledValue = "YESSLAUGHTERHOUSE["
-        
         OptionSingleReplace82.fileManager = FileListManager125
         OptionManager125.loadFromDInit = false
         OptionManager125.loadFromInit = false
@@ -6130,7 +6021,6 @@ Partial Class MainForm
         Me.optBtnStables.Name = "optBtnStables"
         OptionSingleReplace83.disabledValue = "!NOSTABLES!"
         OptionSingleReplace83.enabledValue = "YESSTABLES["
-        
         OptionSingleReplace83.fileManager = FileListManager126
         OptionManager126.loadFromDInit = false
         OptionManager126.loadFromInit = false
@@ -6163,7 +6053,6 @@ Partial Class MainForm
         Me.optBtnResearch.Name = "optBtnResearch"
         OptionSingleReplace84.disabledValue = "!NOBEASTLAB!"
         OptionSingleReplace84.enabledValue = "YESBEASTLAB["
-        
         OptionSingleReplace84.fileManager = FileListManager127
         OptionManager127.loadFromDInit = false
         OptionManager127.loadFromInit = false
@@ -6196,7 +6085,6 @@ Partial Class MainForm
         Me.optBtnArcheology.Name = "optBtnArcheology"
         OptionSingleReplace85.disabledValue = "!NOARCHEOLOGIST!"
         OptionSingleReplace85.enabledValue = "YESARCHEOLOGIST["
-        
         OptionSingleReplace85.fileManager = FileListManager128
         OptionManager128.loadFromDInit = false
         OptionManager128.loadFromInit = false
@@ -6229,7 +6117,6 @@ Partial Class MainForm
         Me.optBtnApothecary.Name = "optBtnApothecary"
         OptionSingleReplace86.disabledValue = "!NOAPO!"
         OptionSingleReplace86.enabledValue = "YESAPO["
-        
         OptionSingleReplace86.fileManager = FileListManager129
         OptionManager129.loadFromDInit = false
         OptionManager129.loadFromInit = false
@@ -6263,7 +6150,6 @@ Partial Class MainForm
         Me.optBtnBiology.Name = "optBtnBiology"
         OptionSingleReplace87.disabledValue = "!NOBIOLOGIST!"
         OptionSingleReplace87.enabledValue = "YESBIOLOGIST["
-        
         OptionSingleReplace87.fileManager = FileListManager130
         OptionManager130.loadFromDInit = false
         OptionManager130.loadFromInit = false
@@ -6297,7 +6183,6 @@ Partial Class MainForm
         Me.optBtnTavern.Name = "optBtnTavern"
         OptionSingleReplace88.disabledValue = "!NOMUSIC!"
         OptionSingleReplace88.enabledValue = "YESMUSIC["
-        
         OptionSingleReplace88.fileManager = FileListManager131
         OptionManager131.loadFromDInit = false
         OptionManager131.loadFromInit = false
@@ -6331,7 +6216,6 @@ Partial Class MainForm
         Me.optBtnOlon.Name = "optBtnOlon"
         OptionSingleReplace89.disabledValue = "!NOOLON!"
         OptionSingleReplace89.enabledValue = "YESOLON["
-        
         OptionSingleReplace89.fileManager = FileListManager132
         OptionManager132.loadFromDInit = false
         OptionManager132.loadFromInit = false
@@ -6364,7 +6248,6 @@ Partial Class MainForm
         Me.optBtnBomrek.Name = "optBtnBomrek"
         OptionSingleReplace90.disabledValue = "!NOBOMREK!"
         OptionSingleReplace90.enabledValue = "YESBOMREK["
-        
         OptionSingleReplace90.fileManager = FileListManager133
         OptionManager133.loadFromDInit = false
         OptionManager133.loadFromInit = false
@@ -6397,7 +6280,6 @@ Partial Class MainForm
         Me.optBtnUrist.Name = "optBtnUrist"
         OptionSingleReplace91.disabledValue = "!NOURIST!"
         OptionSingleReplace91.enabledValue = "YESURIST["
-        
         OptionSingleReplace91.fileManager = FileListManager134
         OptionManager134.loadFromDInit = false
         OptionManager134.loadFromInit = false
@@ -6430,7 +6312,6 @@ Partial Class MainForm
         Me.optBtnTeduk.Name = "optBtnTeduk"
         OptionSingleReplace92.disabledValue = "!NOTEDUK!"
         OptionSingleReplace92.enabledValue = "YESTEDUK["
-        
         OptionSingleReplace92.fileManager = FileListManager135
         OptionManager135.loadFromDInit = false
         OptionManager135.loadFromInit = false
@@ -6463,7 +6344,6 @@ Partial Class MainForm
         Me.optBtnIneri.Name = "optBtnIneri"
         OptionSingleReplace93.disabledValue = "!NOINARI!"
         OptionSingleReplace93.enabledValue = "YESINARI["
-        
         OptionSingleReplace93.fileManager = FileListManager136
         OptionManager136.loadFromDInit = false
         OptionManager136.loadFromInit = false
@@ -6496,7 +6376,6 @@ Partial Class MainForm
         Me.optBtnAlchemy.Name = "optBtnAlchemy"
         OptionSingleReplace94.disabledValue = "!NOALCHEMY!"
         OptionSingleReplace94.enabledValue = "YESALCHEMY["
-        
         OptionSingleReplace94.fileManager = FileListManager137
         OptionManager137.loadFromDInit = false
         OptionManager137.loadFromInit = false
@@ -6530,7 +6409,6 @@ Partial Class MainForm
         Me.optBtnToxicology.Name = "optBtnToxicology"
         OptionSingleReplace95.disabledValue = "!NOTOXICIST!"
         OptionSingleReplace95.enabledValue = "YESTOXICIST["
-        
         OptionSingleReplace95.fileManager = FileListManager138
         OptionManager138.loadFromDInit = false
         OptionManager138.loadFromInit = false
@@ -6563,7 +6441,6 @@ Partial Class MainForm
         Me.optBtnChemistry.Name = "optBtnChemistry"
         OptionSingleReplace96.disabledValue = "!NOCHEMISTRYLAB!"
         OptionSingleReplace96.enabledValue = "YESCHEMISTRYLAB["
-        
         OptionSingleReplace96.fileManager = FileListManager139
         OptionManager139.loadFromDInit = false
         OptionManager139.loadFromInit = false
@@ -6596,7 +6473,6 @@ Partial Class MainForm
         Me.optBtnHerbalist.Name = "optBtnHerbalist"
         OptionSingleReplace97.disabledValue = "!NOHERBALIST!"
         OptionSingleReplace97.enabledValue = "YESHERBALIST["
-        
         OptionSingleReplace97.fileManager = FileListManager140
         OptionManager140.loadFromDInit = false
         OptionManager140.loadFromInit = false
@@ -6629,7 +6505,6 @@ Partial Class MainForm
         Me.optBtnAltar.Name = "optBtnAltar"
         OptionSingleReplace98.disabledValue = "!NOALTAR!"
         OptionSingleReplace98.enabledValue = "YESALTAR["
-        
         OptionSingleReplace98.fileManager = FileListManager141
         OptionManager141.loadFromDInit = false
         OptionManager141.loadFromInit = false
@@ -6662,7 +6537,6 @@ Partial Class MainForm
         Me.optBtnShrine.Name = "optBtnShrine"
         OptionSingleReplace99.disabledValue = "!NOSHRINE!"
         OptionSingleReplace99.enabledValue = "YESSHRINE["
-        
         OptionSingleReplace99.fileManager = FileListManager142
         OptionManager142.loadFromDInit = false
         OptionManager142.loadFromInit = false
@@ -6695,7 +6569,6 @@ Partial Class MainForm
         Me.optBtnTemple.Name = "optBtnTemple"
         OptionSingleReplace100.disabledValue = "!NOTEMPLE!"
         OptionSingleReplace100.enabledValue = "YESTEMPLE["
-        
         OptionSingleReplace100.fileManager = FileListManager143
         OptionManager143.loadFromDInit = false
         OptionManager143.loadFromInit = false
@@ -6728,7 +6601,6 @@ Partial Class MainForm
         Me.optBtnEmbassy.Name = "optBtnEmbassy"
         OptionSingleReplace101.disabledValue = "!NOEMBASSY!"
         OptionSingleReplace101.enabledValue = "YESEMBASSY["
-        
         OptionSingleReplace101.fileManager = FileListManager144
         OptionManager144.loadFromDInit = false
         OptionManager144.loadFromInit = false
@@ -6761,7 +6633,6 @@ Partial Class MainForm
         Me.optBtnExpedition.Name = "optBtnExpedition"
         OptionSingleReplace102.disabledValue = "!NOEXPEDITION!"
         OptionSingleReplace102.enabledValue = "YESEXPEDITION["
-        
         OptionSingleReplace102.fileManager = FileListManager145
         OptionManager145.loadFromDInit = false
         OptionManager145.loadFromInit = false
@@ -6794,7 +6665,6 @@ Partial Class MainForm
         Me.optBtnPodium.Name = "optBtnPodium"
         OptionSingleReplace103.disabledValue = "!NOSPEAKERSPODIUM!"
         OptionSingleReplace103.enabledValue = "YESSPEAKERSPODIUM["
-        
         OptionSingleReplace103.fileManager = FileListManager146
         OptionManager146.loadFromDInit = false
         OptionManager146.loadFromInit = false
@@ -6827,7 +6697,6 @@ Partial Class MainForm
         Me.optBtnScriptorium.Name = "optBtnScriptorium"
         OptionSingleReplace104.disabledValue = "!NOSCRIPTORIUM!"
         OptionSingleReplace104.enabledValue = "YESSCRIPTORIUM["
-        
         OptionSingleReplace104.fileManager = FileListManager147
         OptionManager147.loadFromDInit = false
         OptionManager147.loadFromInit = false
@@ -6860,7 +6729,6 @@ Partial Class MainForm
         Me.optBtnLibraries.Name = "optBtnLibraries"
         OptionSingleReplace105.disabledValue = "!NOLIBRARY!"
         OptionSingleReplace105.enabledValue = "YESLIBRARY["
-        
         OptionSingleReplace105.fileManager = FileListManager148
         OptionManager148.loadFromDInit = false
         OptionManager148.loadFromInit = false
@@ -6893,7 +6761,6 @@ Partial Class MainForm
         Me.optBtnColosseum.Name = "optBtnColosseum"
         OptionSingleReplace106.disabledValue = "!NOCOLLOSSEUM!"
         OptionSingleReplace106.enabledValue = "YESCOLLOSSEUM["
-        
         OptionSingleReplace106.fileManager = FileListManager149
         OptionManager149.loadFromDInit = false
         OptionManager149.loadFromInit = false
@@ -6926,7 +6793,6 @@ Partial Class MainForm
         Me.optBtnGuildhall.Name = "optBtnGuildhall"
         OptionSingleReplace107.disabledValue = "!NOGUILDHALL!"
         OptionSingleReplace107.enabledValue = "YESGUILDHALL["
-        
         OptionSingleReplace107.fileManager = FileListManager150
         OptionManager150.loadFromDInit = false
         OptionManager150.loadFromInit = false
@@ -6959,7 +6825,6 @@ Partial Class MainForm
         Me.optBtnPrison.Name = "optBtnPrison"
         OptionSingleReplace108.disabledValue = "!NOPRISON!"
         OptionSingleReplace108.enabledValue = "YESPRISON["
-        
         OptionSingleReplace108.fileManager = FileListManager151
         OptionManager151.loadFromDInit = false
         OptionManager151.loadFromInit = false
@@ -6992,7 +6857,6 @@ Partial Class MainForm
         Me.optBtnMonastery.Name = "optBtnMonastery"
         OptionSingleReplace109.disabledValue = "!NOMONASTERY!"
         OptionSingleReplace109.enabledValue = "YESMONASTERY["
-        
         OptionSingleReplace109.fileManager = FileListManager152
         OptionManager152.loadFromDInit = false
         OptionManager152.loadFromInit = false
@@ -7026,7 +6890,6 @@ Partial Class MainForm
         Me.optBtnGarrison.Name = "optBtnGarrison"
         OptionSingleReplace110.disabledValue = "!NOGARRISON!"
         OptionSingleReplace110.enabledValue = "YESGARRISON["
-        
         OptionSingleReplace110.fileManager = FileListManager153
         OptionManager153.loadFromDInit = false
         OptionManager153.loadFromInit = false
@@ -7060,7 +6923,6 @@ Partial Class MainForm
         Me.optBtnBrazier.Name = "optBtnBrazier"
         OptionSingleReplace111.disabledValue = "!NOBRAZIER!"
         OptionSingleReplace111.enabledValue = "YESBRAZIER["
-        
         OptionSingleReplace111.fileManager = FileListManager154
         OptionManager154.loadFromDInit = false
         OptionManager154.loadFromInit = false
@@ -7093,7 +6955,6 @@ Partial Class MainForm
         Me.optBtnCandelabra.Name = "optBtnCandelabra"
         OptionSingleReplace112.disabledValue = "!NOCANDELABRA!"
         OptionSingleReplace112.enabledValue = "YESCANDELABRA["
-        
         OptionSingleReplace112.fileManager = FileListManager155
         OptionManager155.loadFromDInit = false
         OptionManager155.loadFromInit = false
@@ -7126,7 +6987,6 @@ Partial Class MainForm
         Me.optBtnFireplace.Name = "optBtnFireplace"
         OptionSingleReplace113.disabledValue = "!NOFIREPLACE!"
         OptionSingleReplace113.enabledValue = "YESFIREPLACE["
-        
         OptionSingleReplace113.fileManager = FileListManager156
         OptionManager156.loadFromDInit = false
         OptionManager156.loadFromInit = false
@@ -7159,7 +7019,6 @@ Partial Class MainForm
         Me.optBtnTorchbearerStatue.Name = "optBtnTorchbearerStatue"
         OptionSingleReplace114.disabledValue = "!NOTORCHBEARER!"
         OptionSingleReplace114.enabledValue = "YESTORCHBEARER["
-        
         OptionSingleReplace114.fileManager = FileListManager157
         OptionManager157.loadFromDInit = false
         OptionManager157.loadFromInit = false
@@ -7192,7 +7051,6 @@ Partial Class MainForm
         Me.optBtnGemOfLight.Name = "optBtnGemOfLight"
         OptionSingleReplace115.disabledValue = "!NOGEMOFLIGHT!"
         OptionSingleReplace115.enabledValue = "YESGEMOFLIGHT["
-        
         OptionSingleReplace115.fileManager = FileListManager158
         OptionManager158.loadFromDInit = false
         OptionManager158.loadFromInit = false
@@ -7225,7 +7083,6 @@ Partial Class MainForm
         Me.optBtnAmmocaster.Name = "optBtnAmmocaster"
         OptionSingleReplace116.disabledValue = "!NOAMMOCASTER!"
         OptionSingleReplace116.enabledValue = "YESAMMOCASTER["
-        
         OptionSingleReplace116.fileManager = FileListManager159
         OptionManager159.loadFromDInit = false
         OptionManager159.loadFromInit = false
@@ -7258,7 +7115,6 @@ Partial Class MainForm
         Me.optBtnGunsmith.Name = "optBtnGunsmith"
         OptionSingleReplace117.disabledValue = "!NOGUN!"
         OptionSingleReplace117.enabledValue = "YESGUN["
-        
         OptionSingleReplace117.fileManager = FileListManager160
         OptionManager160.loadFromDInit = false
         OptionManager160.loadFromInit = false
@@ -7291,7 +7147,6 @@ Partial Class MainForm
         Me.optBtnHeavySiegeworks.Name = "optBtnHeavySiegeworks"
         OptionSingleReplace118.disabledValue = "!NOHEAVYSIEGE!"
         OptionSingleReplace118.enabledValue = "YESHEAVYSIEGE["
-        
         OptionSingleReplace118.fileManager = FileListManager161
         OptionManager161.loadFromDInit = false
         OptionManager161.loadFromInit = false
@@ -7325,7 +7180,6 @@ Partial Class MainForm
         Me.optBtnEngineer.Name = "optBtnEngineer"
         OptionSingleReplace119.disabledValue = "!NOENGINEER!"
         OptionSingleReplace119.enabledValue = "YESENGINEER["
-        
         OptionSingleReplace119.fileManager = FileListManager162
         OptionManager162.loadFromDInit = false
         OptionManager162.loadFromInit = false
@@ -7358,7 +7212,6 @@ Partial Class MainForm
         Me.optBtnInventor.Name = "optBtnInventor"
         OptionSingleReplace120.disabledValue = "!NOINVENTORSWORKBENCH!"
         OptionSingleReplace120.enabledValue = "YESINVENTORSWORKBENCH["
-        
         OptionSingleReplace120.fileManager = FileListManager163
         OptionManager163.loadFromDInit = false
         OptionManager163.loadFromInit = false
@@ -7392,7 +7245,6 @@ Partial Class MainForm
         Me.optBtnGreatforge.Name = "optBtnGreatforge"
         OptionSingleReplace121.disabledValue = "!NOGREATFORGE!"
         OptionSingleReplace121.enabledValue = "YESGREATFORGE["
-        
         OptionSingleReplace121.fileManager = FileListManager164
         OptionManager164.loadFromDInit = false
         OptionManager164.loadFromInit = false
@@ -7425,7 +7277,6 @@ Partial Class MainForm
         Me.optBtnGlassforge.Name = "optBtnGlassforge"
         OptionSingleReplace122.disabledValue = "!NOGLASSFORGE!"
         OptionSingleReplace122.enabledValue = "YESGLASSFORGE["
-        
         OptionSingleReplace122.fileManager = FileListManager165
         OptionManager165.loadFromDInit = false
         OptionManager165.loadFromInit = false
@@ -7458,7 +7309,6 @@ Partial Class MainForm
         Me.optBtnGemforge.Name = "optBtnGemforge"
         OptionSingleReplace123.disabledValue = "!NOGEMFORGE!"
         OptionSingleReplace123.enabledValue = "YESGEMFORGE["
-        
         OptionSingleReplace123.fileManager = FileListManager166
         OptionManager166.loadFromDInit = false
         OptionManager166.loadFromInit = false
@@ -7492,7 +7342,6 @@ Partial Class MainForm
         Me.optBtnRockForge.Name = "optBtnRockForge"
         OptionSingleReplace124.disabledValue = "!NOMAGMASAFE!"
         OptionSingleReplace124.enabledValue = "YESMAGMASAFE["
-        
         OptionSingleReplace124.fileManager = FileListManager167
         OptionManager167.loadFromDInit = false
         OptionManager167.loadFromInit = false
@@ -7525,7 +7374,6 @@ Partial Class MainForm
         Me.optBtnBrickOven.Name = "optBtnBrickOven"
         OptionSingleReplace125.disabledValue = "!NOBRICK!"
         OptionSingleReplace125.enabledValue = "YESBRICK["
-        
         OptionSingleReplace125.fileManager = FileListManager168
         OptionManager168.loadFromDInit = false
         OptionManager168.loadFromInit = false
@@ -7558,7 +7406,6 @@ Partial Class MainForm
         Me.optBtnCrematorium.Name = "optBtnCrematorium"
         OptionSingleReplace126.disabledValue = "!NOCREMATORY!"
         OptionSingleReplace126.enabledValue = "YESCREMATORY["
-        
         OptionSingleReplace126.fileManager = FileListManager169
         OptionManager169.loadFromDInit = false
         OptionManager169.loadFromInit = false
@@ -7588,7 +7435,6 @@ Partial Class MainForm
         Me.optMultiOreProcessor.Location = New System.Drawing.Point(5, 77)
         Me.optMultiOreProcessor.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiOreProcessor.Name = "optMultiOreProcessor"
-        
         OptionMulti3.fileManager = FileListManager170
         OptionManager170.loadFromDInit = false
         OptionManager170.loadFromInit = false
@@ -7637,7 +7483,6 @@ Partial Class MainForm
         Me.optBtnKiln.Name = "optBtnKiln"
         OptionSingleReplace127.disabledValue = "!NOKILN!"
         OptionSingleReplace127.enabledValue = "YESKILN["
-        
         OptionSingleReplace127.fileManager = FileListManager171
         OptionManager171.loadFromDInit = false
         OptionManager171.loadFromInit = false
@@ -7671,7 +7516,6 @@ Partial Class MainForm
         Me.optBtnSlagPit.Name = "optBtnSlagPit"
         OptionSingleReplace128.disabledValue = "!NOSLAGPIT!"
         OptionSingleReplace128.enabledValue = "YESSLAGPIT["
-        
         OptionSingleReplace128.fileManager = FileListManager172
         OptionManager172.loadFromDInit = false
         OptionManager172.loadFromInit = false
@@ -7704,7 +7548,6 @@ Partial Class MainForm
         Me.optBtnRuneArmory.Name = "optBtnRuneArmory"
         OptionSingleReplace129.disabledValue = "!NORUNEARMORY!"
         OptionSingleReplace129.enabledValue = "YESRUNEARMORY["
-        
         OptionSingleReplace129.fileManager = FileListManager173
         OptionManager173.loadFromDInit = false
         OptionManager173.loadFromInit = false
@@ -7737,7 +7580,6 @@ Partial Class MainForm
         Me.optBtnRuneWeaponry.Name = "optBtnRuneWeaponry"
         OptionSingleReplace130.disabledValue = "!NORUNESMITH!"
         OptionSingleReplace130.enabledValue = "YESRUNESMITH["
-        
         OptionSingleReplace130.fileManager = FileListManager174
         OptionManager174.loadFromDInit = false
         OptionManager174.loadFromInit = false
@@ -7770,7 +7612,6 @@ Partial Class MainForm
         Me.optBtnArmory.Name = "optBtnArmory"
         OptionSingleReplace131.disabledValue = "!NOARMORY!"
         OptionSingleReplace131.enabledValue = "YESARMORY["
-        
         OptionSingleReplace131.fileManager = FileListManager175
         OptionManager175.loadFromDInit = false
         OptionManager175.loadFromInit = false
@@ -7803,7 +7644,6 @@ Partial Class MainForm
         Me.optBtnWeaponry.Name = "optBtnWeaponry"
         OptionSingleReplace132.disabledValue = "!NOWEAPONRY!"
         OptionSingleReplace132.enabledValue = "YESWEAPONRY["
-        
         OptionSingleReplace132.fileManager = FileListManager176
         OptionManager176.loadFromDInit = false
         OptionManager176.loadFromInit = false
@@ -7837,7 +7677,6 @@ Partial Class MainForm
         Me.optBtnMegabeastKennel.Name = "optBtnMegabeastKennel"
         OptionSingleReplace133.disabledValue = "!NOMEGABEASTKENNELS!"
         OptionSingleReplace133.enabledValue = "YESMEGABEASTKENNELS["
-        
         OptionSingleReplace133.fileManager = FileListManager177
         OptionManager177.loadFromDInit = false
         OptionManager177.loadFromInit = false
@@ -7871,7 +7710,6 @@ Partial Class MainForm
         Me.optBtnWarKennel.Name = "optBtnWarKennel"
         OptionSingleReplace134.disabledValue = "!NOARMORED!"
         OptionSingleReplace134.enabledValue = "YESARMORED["
-        
         OptionSingleReplace134.fileManager = FileListManager178
         OptionManager178.loadFromDInit = false
         OptionManager178.loadFromInit = false
@@ -7904,7 +7742,6 @@ Partial Class MainForm
         Me.optBtnBlastFurnace.Name = "optBtnBlastFurnace"
         OptionSingleReplace135.disabledValue = "!NOBLASTFURNACE!"
         OptionSingleReplace135.enabledValue = "YESBLASTFURNACE["
-        
         OptionSingleReplace135.fileManager = FileListManager179
         OptionManager179.loadFromDInit = false
         OptionManager179.loadFromInit = false
@@ -7937,7 +7774,6 @@ Partial Class MainForm
         Me.optBtnCrucible.Name = "optBtnCrucible"
         OptionSingleReplace136.disabledValue = "!NOCRUCIBLE!"
         OptionSingleReplace136.enabledValue = "YESCRUCIBLE["
-        
         OptionSingleReplace136.fileManager = FileListManager180
         OptionManager180.loadFromDInit = false
         OptionManager180.loadFromInit = false
@@ -7970,7 +7806,6 @@ Partial Class MainForm
         Me.optBtnFinishingForge.Name = "optBtnFinishingForge"
         OptionSingleReplace137.disabledValue = "!NOFINISHINGFORGE!"
         OptionSingleReplace137.enabledValue = "YESFINISHINGFORGE["
-        
         OptionSingleReplace137.fileManager = FileListManager181
         OptionManager181.loadFromDInit = false
         OptionManager181.loadFromInit = false
@@ -8003,7 +7838,6 @@ Partial Class MainForm
         Me.optBtnMetallurgist.Name = "optBtnMetallurgist"
         OptionSingleReplace138.disabledValue = "!NOMETALLURGIST!"
         OptionSingleReplace138.enabledValue = "YESMETALLURGIST["
-        
         OptionSingleReplace138.fileManager = FileListManager182
         OptionManager182.loadFromDInit = false
         OptionManager182.loadFromInit = false
@@ -8036,7 +7870,6 @@ Partial Class MainForm
         Me.optBtnArbalest.Name = "optBtnArbalest"
         OptionSingleReplace139.disabledValue = "!NOARBALEST!"
         OptionSingleReplace139.enabledValue = "YESARBALEST["
-        
         OptionSingleReplace139.fileManager = FileListManager183
         OptionManager183.loadFromDInit = false
         OptionManager183.loadFromInit = false
@@ -8069,7 +7902,6 @@ Partial Class MainForm
         Me.optBtnTrebuchet.Name = "optBtnTrebuchet"
         OptionSingleReplace140.disabledValue = "!NOTREBUCHET!"
         OptionSingleReplace140.enabledValue = "YESTREBUCHET["
-        
         OptionSingleReplace140.fileManager = FileListManager184
         OptionManager184.loadFromDInit = false
         OptionManager184.loadFromInit = false
@@ -8102,7 +7934,6 @@ Partial Class MainForm
         Me.optBtnDisplayCase.Name = "optBtnDisplayCase"
         OptionSingleReplace141.disabledValue = "!NODECORATION!"
         OptionSingleReplace141.enabledValue = "YESDECORATION["
-        
         OptionSingleReplace141.fileManager = FileListManager185
         OptionManager185.loadFromDInit = false
         OptionManager185.loadFromInit = false
@@ -8135,7 +7966,6 @@ Partial Class MainForm
         Me.optBtnPottedPlant.Name = "optBtnPottedPlant"
         OptionSingleReplace142.disabledValue = "!NOPOTTEDPLANT!"
         OptionSingleReplace142.enabledValue = "YESPOTTEDPLANT["
-        
         OptionSingleReplace142.fileManager = FileListManager186
         OptionManager186.loadFromDInit = false
         OptionManager186.loadFromInit = false
@@ -8168,7 +7998,6 @@ Partial Class MainForm
         Me.optBtnTotems.Name = "optBtnTotems"
         OptionSingleReplace143.disabledValue = "!NOTOTEM!"
         OptionSingleReplace143.enabledValue = "YESTOTEM["
-        
         OptionSingleReplace143.fileManager = FileListManager187
         OptionManager187.loadFromDInit = false
         OptionManager187.loadFromInit = false
@@ -8201,7 +8030,6 @@ Partial Class MainForm
         Me.optBtnFountain.Name = "optBtnFountain"
         OptionSingleReplace144.disabledValue = "!NOFOUNTAIN!"
         OptionSingleReplace144.enabledValue = "YESFOUNTAIN["
-        
         OptionSingleReplace144.fileManager = FileListManager188
         OptionManager188.loadFromDInit = false
         OptionManager188.loadFromInit = false
@@ -8234,7 +8062,6 @@ Partial Class MainForm
         Me.optBtnDwarvenLoo.Name = "optBtnDwarvenLoo"
         OptionSingleReplace145.disabledValue = "!NOLOO!"
         OptionSingleReplace145.enabledValue = "YESLOO["
-        
         OptionSingleReplace145.fileManager = FileListManager189
         OptionManager189.loadFromDInit = false
         OptionManager189.loadFromInit = false
@@ -8268,7 +8095,6 @@ Partial Class MainForm
         Me.optBtnCarpet.Name = "optBtnCarpet"
         OptionSingleReplace146.disabledValue = "!NOCARPET!"
         OptionSingleReplace146.enabledValue = "YESCARPET["
-        
         OptionSingleReplace146.fileManager = FileListManager190
         OptionManager190.loadFromDInit = false
         OptionManager190.loadFromInit = false
@@ -8301,7 +8127,6 @@ Partial Class MainForm
         Me.optBtnDecoItems.Name = "optBtnDecoItems"
         OptionSingleReplace147.disabledValue = "!NODECOITEMS!"
         OptionSingleReplace147.enabledValue = "YESDECOITEMS["
-        
         OptionSingleReplace147.fileManager = FileListManager191
         OptionManager191.loadFromDInit = false
         OptionManager191.loadFromInit = false
@@ -8334,7 +8159,6 @@ Partial Class MainForm
         Me.optBtnStatues.Name = "optBtnStatues"
         OptionSingleReplace148.disabledValue = "!NOSTATUES!"
         OptionSingleReplace148.enabledValue = "YESSTATUES["
-        
         OptionSingleReplace148.fileManager = FileListManager192
         OptionManager192.loadFromDInit = false
         OptionManager192.loadFromInit = false
@@ -8367,7 +8191,6 @@ Partial Class MainForm
         Me.optBtnMagicSchool.Name = "optBtnMagicSchool"
         OptionSingleReplace149.disabledValue = "!NOSCHOOLWIZARD!"
         OptionSingleReplace149.enabledValue = "YESSCHOOLWIZARD["
-        
         OptionSingleReplace149.fileManager = FileListManager193
         OptionManager193.loadFromDInit = false
         OptionManager193.loadFromInit = false
@@ -8400,7 +8223,6 @@ Partial Class MainForm
         Me.optBtnElementalMagic.Name = "optBtnElementalMagic"
         OptionSingleReplace150.disabledValue = "!NOELEMENTALMAGIC!"
         OptionSingleReplace150.enabledValue = "YESELEMENTALMAGIC["
-        
         OptionSingleReplace150.fileManager = FileListManager194
         OptionManager194.loadFromDInit = false
         OptionManager194.loadFromInit = false
@@ -8434,7 +8256,6 @@ Partial Class MainForm
         Me.optBtnWhiteMagic.Name = "optBtnWhiteMagic"
         OptionSingleReplace151.disabledValue = "!NOWHITEMAGIC!"
         OptionSingleReplace151.enabledValue = "YESWHITEMAGIC["
-        
         OptionSingleReplace151.fileManager = FileListManager195
         OptionManager195.loadFromDInit = false
         OptionManager195.loadFromInit = false
@@ -8467,7 +8288,6 @@ Partial Class MainForm
         Me.optBtnBlackMagic.Name = "optBtnBlackMagic"
         OptionSingleReplace152.disabledValue = "!NOBLACKMAGIC!"
         OptionSingleReplace152.enabledValue = "YESBLACKMAGIC["
-        
         OptionSingleReplace152.fileManager = FileListManager196
         OptionManager196.loadFromDInit = false
         OptionManager196.loadFromInit = false
@@ -8501,7 +8321,6 @@ Partial Class MainForm
         Me.optBtnWarpstonePool.Name = "optBtnWarpstonePool"
         OptionSingleReplace153.disabledValue = "!NOWARPSTONELAB!"
         OptionSingleReplace153.enabledValue = "YESWARPSTONELAB["
-        
         OptionSingleReplace153.fileManager = FileListManager197
         OptionManager197.loadFromDInit = false
         OptionManager197.loadFromInit = false
@@ -8534,7 +8353,6 @@ Partial Class MainForm
         Me.optBtnGolemForge.Name = "optBtnGolemForge"
         OptionSingleReplace154.disabledValue = "!NOGOLEM!"
         OptionSingleReplace154.enabledValue = "YESGOLEM["
-        
         OptionSingleReplace154.fileManager = FileListManager198
         OptionManager198.loadFromDInit = false
         OptionManager198.loadFromInit = false
@@ -8567,7 +8385,6 @@ Partial Class MainForm
         Me.optBtnGreatMagmaForge.Name = "optBtnGreatMagmaForge"
         OptionSingleReplace155.disabledValue = "!NOGREATMAGMAFORGE!"
         OptionSingleReplace155.enabledValue = "YESGREATMAGMAFORGE["
-        
         OptionSingleReplace155.fileManager = FileListManager199
         OptionManager199.loadFromDInit = false
         OptionManager199.loadFromInit = false
@@ -8600,7 +8417,6 @@ Partial Class MainForm
         Me.optBtnClayOven.Name = "optBtnClayOven"
         OptionSingleReplace156.disabledValue = "!NOCLAYOVEN!"
         OptionSingleReplace156.enabledValue = "YESCLAYOVEN["
-        
         OptionSingleReplace156.fileManager = FileListManager200
         OptionManager200.loadFromDInit = false
         OptionManager200.loadFromInit = false
@@ -8634,7 +8450,6 @@ Partial Class MainForm
         Me.optBtnCrafts.Name = "optBtnCrafts"
         OptionSingleReplace157.disabledValue = "!NOCRAFTSMAN!"
         OptionSingleReplace157.enabledValue = "YESCRAFTSMAN["
-        
         OptionSingleReplace157.fileManager = FileListManager201
         OptionManager201.loadFromDInit = false
         OptionManager201.loadFromInit = false
@@ -8667,7 +8482,6 @@ Partial Class MainForm
         Me.optBtnQuenMill.Name = "optBtnQuenMill"
         OptionSingleReplace158.disabledValue = "!NOMILLING!"
         OptionSingleReplace158.enabledValue = "YESMILLING["
-        
         OptionSingleReplace158.fileManager = FileListManager202
         OptionManager202.loadFromDInit = false
         OptionManager202.loadFromInit = false
@@ -8701,7 +8515,6 @@ Partial Class MainForm
         Me.optBtnMillstone.Name = "optBtnMillstone"
         OptionSingleReplace159.disabledValue = "!NOMILLSTONE!"
         OptionSingleReplace159.enabledValue = "YESMILLSTONE["
-        
         OptionSingleReplace159.fileManager = FileListManager203
         OptionManager203.loadFromDInit = false
         OptionManager203.loadFromInit = false
@@ -8734,7 +8547,6 @@ Partial Class MainForm
         Me.optBtnStill.Name = "optBtnStill"
         OptionSingleReplace160.disabledValue = "!NOSTILL!"
         OptionSingleReplace160.enabledValue = "YESSTILL["
-        
         OptionSingleReplace160.fileManager = FileListManager204
         OptionManager204.loadFromDInit = false
         OptionManager204.loadFromInit = false
@@ -8767,7 +8579,6 @@ Partial Class MainForm
         Me.optBtnKitchen.Name = "optBtnKitchen"
         OptionSingleReplace161.disabledValue = "!NOKITCHEN!"
         OptionSingleReplace161.enabledValue = "YESKITCHEN["
-        
         OptionSingleReplace161.fileManager = FileListManager205
         OptionManager205.loadFromDInit = false
         OptionManager205.loadFromInit = false
@@ -8800,7 +8611,6 @@ Partial Class MainForm
         Me.optBtnTanner.Name = "optBtnTanner"
         OptionSingleReplace162.disabledValue = "!NOTANNER!"
         OptionSingleReplace162.enabledValue = "YESTANNER["
-        
         OptionSingleReplace162.fileManager = FileListManager206
         OptionManager206.loadFromDInit = false
         OptionManager206.loadFromInit = false
@@ -8833,7 +8643,6 @@ Partial Class MainForm
         Me.optBtnScrewPress.Name = "optBtnScrewPress"
         OptionSingleReplace163.disabledValue = "!NOSCREWPRESS!"
         OptionSingleReplace163.enabledValue = "YESSCREWPRESS["
-        
         OptionSingleReplace163.fileManager = FileListManager207
         OptionManager207.loadFromDInit = false
         OptionManager207.loadFromInit = false
@@ -8866,7 +8675,6 @@ Partial Class MainForm
         Me.optBtnSoapmaker.Name = "optBtnSoapmaker"
         OptionSingleReplace164.disabledValue = "!NOSOAP!"
         OptionSingleReplace164.enabledValue = "YESSOAP["
-        
         OptionSingleReplace164.fileManager = FileListManager208
         OptionManager208.loadFromDInit = false
         OptionManager208.loadFromInit = false
@@ -8900,7 +8708,6 @@ Partial Class MainForm
         Me.optBtnAquifier.Name = "optBtnAquifier"
         OptionSingleReplace165.disabledValue = "!AQUIFER!"
         OptionSingleReplace165.enabledValue = "[AQUIFER]"
-        
         OptionSingleReplace165.fileManager = FileListManager209
         OptionManager209.loadFromDInit = false
         OptionManager209.loadFromInit = false
@@ -8930,7 +8737,6 @@ Partial Class MainForm
         Me.optMultiHarderSmithing.Location = New System.Drawing.Point(5, 48)
         Me.optMultiHarderSmithing.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiHarderSmithing.Name = "optMultiHarderSmithing"
-        
         OptionMulti4.fileManager = FileListManager210
         OptionManager210.loadFromDInit = false
         OptionManager210.loadFromInit = false
@@ -8968,7 +8774,6 @@ Partial Class MainForm
         Me.optMultiHarderFarming.Location = New System.Drawing.Point(5, 77)
         Me.optMultiHarderFarming.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiHarderFarming.Name = "optMultiHarderFarming"
-        
         OptionMulti5.fileManager = FileListManager211
         OptionManager211.loadFromDInit = false
         OptionManager211.loadFromInit = false
@@ -9009,7 +8814,6 @@ Partial Class MainForm
         Me.optBtnHarderMining.Name = "optBtnHarderMining"
         OptionSingleReplace166.disabledValue = "!NOWARP!"
         OptionSingleReplace166.enabledValue = "YESWARP["
-        
         OptionSingleReplace166.fileManager = FileListManager212
         OptionManager212.loadFromDInit = false
         OptionManager212.loadFromInit = false
@@ -9042,7 +8846,6 @@ Partial Class MainForm
         Me.optBtnHarderLearning.Name = "optBtnHarderLearning"
         OptionSingleReplace167.disabledValue = "!NOLEARNING!"
         OptionSingleReplace167.enabledValue = "YESLEARNING["
-        
         OptionSingleReplace167.fileManager = FileListManager213
         OptionManager213.loadFromDInit = false
         OptionManager213.loadFromInit = false
@@ -9075,7 +8878,6 @@ Partial Class MainForm
         Me.optBtnBodyguards.Name = "optBtnBodyguards"
         OptionSingleReplace168.disabledValue = "!NOBODYGUARD!"
         OptionSingleReplace168.enabledValue = "YESBODYGUARD["
-        
         OptionSingleReplace168.fileManager = FileListManager214
         OptionManager214.loadFromDInit = false
         OptionManager214.loadFromInit = false
@@ -9108,7 +8910,6 @@ Partial Class MainForm
         Me.optBtnSecrets.Name = "optBtnSecrets"
         OptionSingleReplace169.disabledValue = "!NOSECRET!"
         OptionSingleReplace169.enabledValue = "YESSECRET["
-        
         OptionSingleReplace169.fileManager = FileListManager215
         OptionManager215.loadFromDInit = false
         OptionManager215.loadFromInit = false
@@ -9142,7 +8943,6 @@ Partial Class MainForm
         Me.optBtnDiseases.Name = "optBtnDiseases"
         OptionSingleReplace170.disabledValue = "!NONEWDISEASE!"
         OptionSingleReplace170.enabledValue = "YESNEWDISEASE["
-        
         OptionSingleReplace170.fileManager = FileListManager216
         OptionManager216.loadFromDInit = false
         OptionManager216.loadFromInit = false
@@ -9173,7 +8973,6 @@ Partial Class MainForm
         Me.optMultiCavernFlavor.Location = New System.Drawing.Point(5, 19)
         Me.optMultiCavernFlavor.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiCavernFlavor.Name = "optMultiCavernFlavor"
-        
         OptionMulti6.fileManager = FileListManager217
         OptionManager217.loadFromDInit = false
         OptionManager217.loadFromInit = false
@@ -9213,7 +9012,6 @@ Partial Class MainForm
         Me.optBtnRegionalWeather.Name = "optBtnRegionalWeather"
         OptionSingleReplace171.disabledValue = "!NOWEATHER!"
         OptionSingleReplace171.enabledValue = "YESWEATHER["
-        
         OptionSingleReplace171.fileManager = FileListManager218
         OptionManager218.loadFromDInit = false
         OptionManager218.loadFromInit = false
@@ -9246,7 +9044,6 @@ Partial Class MainForm
         Me.optBtnRegionalEffects.Name = "optBtnRegionalEffects"
         OptionSingleReplace172.disabledValue = "!NOREGIONALEFFECT!"
         OptionSingleReplace172.enabledValue = "YESREGIONALEFFECT["
-        
         OptionSingleReplace172.fileManager = FileListManager219
         OptionManager219.loadFromDInit = false
         OptionManager219.loadFromInit = false
@@ -9280,7 +9077,6 @@ Partial Class MainForm
         Me.optBtnSmokeEffects.Name = "optBtnSmokeEffects"
         OptionSingleReplace173.disabledValue = "!NODUST!"
         OptionSingleReplace173.enabledValue = "YESDUST["
-        
         OptionSingleReplace173.fileManager = FileListManager220
         OptionManager220.loadFromDInit = false
         OptionManager220.loadFromInit = false
@@ -9314,7 +9110,6 @@ Partial Class MainForm
         Me.optBtnNobles.Name = "optBtnNobles"
         OptionSingleReplace174.disabledValue = "!NOREL!"
         OptionSingleReplace174.enabledValue = "YESREL["
-        
         OptionSingleReplace174.fileManager = FileListManager221
         OptionManager221.loadFromDInit = false
         OptionManager221.loadFromInit = false
@@ -9349,7 +9144,6 @@ Partial Class MainForm
         Me.optBtnBattlecries.Name = "optBtnBattlecries"
         OptionSingleReplace175.disabledValue = "!NOBATTLECRY!"
         OptionSingleReplace175.enabledValue = "YESBATTLECRY["
-        
         OptionSingleReplace175.fileManager = FileListManager222
         OptionManager222.loadFromDInit = false
         OptionManager222.loadFromInit = false
@@ -9383,7 +9177,6 @@ Partial Class MainForm
         Me.optBtnDiplomats.Name = "optBtnDiplomats"
         OptionSingleReplace176.disabledValue = "!NODIPLOMAT!"
         OptionSingleReplace176.enabledValue = "YESDIPLOMAT["
-        
         OptionSingleReplace176.fileManager = FileListManager223
         OptionManager223.loadFromDInit = false
         OptionManager223.loadFromInit = false
@@ -9417,7 +9210,6 @@ Partial Class MainForm
         Me.optBtnEnglishDwarves.Name = "optBtnEnglishDwarves"
         OptionSingleReplace177.disabledValue = "NOENGLISH[TRANSLATION:DWARF_M]"
         OptionSingleReplace177.enabledValue = "YESENGLISH[TRANSLATION:ENGLISH]"
-        
         OptionSingleReplace177.fileManager = FileListManager224
         OptionManager224.loadFromDInit = false
         OptionManager224.loadFromInit = false
@@ -9450,7 +9242,6 @@ Partial Class MainForm
         Me.optBtnBuildDimensions.Name = "optBtnBuildDimensions"
         OptionSingleReplace178.disabledValue = "!NODIMENSION!"
         OptionSingleReplace178.enabledValue = "YESDIMENSION["
-        
         OptionSingleReplace178.fileManager = FileListManager225
         OptionManager225.loadFromDInit = false
         OptionManager225.loadFromInit = false
@@ -9485,7 +9276,6 @@ Partial Class MainForm
         Me.optBtnCombatLogs.Name = "optBtnCombatLogs"
         OptionSingleReplace179.disabledValue = "!NOMOREATTACKS!"
         OptionSingleReplace179.enabledValue = "YESMOREATTACKS["
-        
         OptionSingleReplace179.fileManager = FileListManager226
         OptionManager226.loadFromDInit = false
         OptionManager226.loadFromInit = false
@@ -9519,7 +9309,6 @@ Partial Class MainForm
         Me.optBtnMoreTrees.Name = "optBtnMoreTrees"
         OptionSingleReplace180.disabledValue = "!NOFF!"
         OptionSingleReplace180.enabledValue = "YESFF["
-        
         OptionSingleReplace180.fileManager = FileListManager227
         OptionManager227.loadFromDInit = false
         OptionManager227.loadFromInit = false
@@ -9552,7 +9341,6 @@ Partial Class MainForm
         Me.optBtnMorePlants.Name = "optBtnMorePlants"
         OptionSingleReplace181.disabledValue = "!NOFF!"
         OptionSingleReplace181.enabledValue = "YESFF["
-        
         OptionSingleReplace181.fileManager = FileListManager228
         OptionManager228.loadFromDInit = false
         OptionManager228.loadFromInit = false
@@ -9585,7 +9373,6 @@ Partial Class MainForm
         Me.optBtnFoodNames.Name = "optBtnFoodNames"
         OptionSingleReplace182.disabledValue = "NOFOOD!"
         OptionSingleReplace182.enabledValue = "YESFOOD["
-        
         OptionSingleReplace182.fileManager = FileListManager229
         OptionManager229.loadFromDInit = false
         OptionManager229.loadFromInit = false
@@ -9618,7 +9405,6 @@ Partial Class MainForm
         Me.optBtnFearTheNight.Name = "optBtnFearTheNight"
         OptionSingleReplace183.disabledValue = "!NOFEARTHENIGHT!"
         OptionSingleReplace183.enabledValue = "YESFEARTHENIGHT["
-        
         OptionSingleReplace183.fileManager = FileListManager230
         OptionManager230.loadFromDInit = false
         OptionManager230.loadFromInit = false
@@ -9651,7 +9437,6 @@ Partial Class MainForm
         Me.optBtnRendermax.Name = "optBtnRendermax"
         OptionSingleReplace184.disabledValue = "#norendermax"
         OptionSingleReplace184.enabledValue = "rendermax light"
-        
         OptionSingleReplace184.fileManager = FileListManager231
         OptionManager231.loadFromDInit = false
         OptionManager231.loadFromInit = false
@@ -9681,7 +9466,6 @@ Partial Class MainForm
         Me.optNumMineralScarcity.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumMineralScarcity.Minimum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumMineralScarcity.Name = "optNumMineralScarcity"
-        
         OptionSingle38.fileManager = FileListManager232
         OptionManager232.loadFromDInit = false
         OptionManager232.loadFromInit = false
@@ -9707,7 +9491,6 @@ Partial Class MainForm
         Me.optNumCivNumber.Location = New System.Drawing.Point(140, 20)
         Me.optNumCivNumber.Maximum = New Decimal(New Integer() {300, 0, 0, 0})
         Me.optNumCivNumber.Name = "optNumCivNumber"
-        
         OptionSingle39.fileManager = FileListManager233
         OptionManager233.loadFromDInit = false
         OptionManager233.loadFromInit = false
@@ -9733,7 +9516,6 @@ Partial Class MainForm
         Me.optNumEmbarkPoints.Location = New System.Drawing.Point(140, 46)
         Me.optNumEmbarkPoints.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumEmbarkPoints.Name = "optNumEmbarkPoints"
-        
         OptionSingle40.fileManager = FileListManager234
         OptionManager234.loadFromDInit = false
         OptionManager234.loadFromInit = false
@@ -9760,7 +9542,6 @@ Partial Class MainForm
         Me.optNumEndYear.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumEndYear.Minimum = New Decimal(New Integer() {2, 0, 0, 0})
         Me.optNumEndYear.Name = "optNumEndYear"
-        
         OptionSingle41.fileManager = FileListManager235
         OptionManager235.loadFromDInit = false
         OptionManager235.loadFromInit = false
@@ -9787,7 +9568,6 @@ Partial Class MainForm
         Me.optNumPopSize.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.optNumPopSize.Minimum = New Decimal(New Integer() {1, 0, 0, -2147483648})
         Me.optNumPopSize.Name = "optNumPopSize"
-        
         OptionSingle42.fileManager = FileListManager236
         OptionManager236.loadFromDInit = false
         OptionManager236.loadFromInit = false
@@ -9815,7 +9595,6 @@ Partial Class MainForm
         Me.optNumCaveSizeMin.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
         Me.optNumCaveSizeMin.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumCaveSizeMin.Name = "optNumCaveSizeMin"
-        
         OptionSingle43.fileManager = FileListManager237
         OptionManager237.loadFromDInit = false
         OptionManager237.loadFromInit = false
@@ -9842,7 +9621,6 @@ Partial Class MainForm
         Me.optNumCaveSizeMax.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
         Me.optNumCaveSizeMax.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumCaveSizeMax.Name = "optNumCaveSizeMax"
-        
         OptionSingle44.fileManager = FileListManager238
         OptionManager238.loadFromDInit = false
         OptionManager238.loadFromInit = false
@@ -9868,7 +9646,6 @@ Partial Class MainForm
         Me.optNumMountainCaves.Location = New System.Drawing.Point(135, 45)
         Me.optNumMountainCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumMountainCaves.Name = "optNumMountainCaves"
-        
         OptionSingle45.fileManager = FileListManager239
         OptionManager239.loadFromDInit = false
         OptionManager239.loadFromInit = false
@@ -9893,7 +9670,6 @@ Partial Class MainForm
         Me.optNumOtherCaves.Location = New System.Drawing.Point(135, 71)
         Me.optNumOtherCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumOtherCaves.Name = "optNumOtherCaves"
-        
         OptionSingle46.fileManager = FileListManager240
         OptionManager240.loadFromDInit = false
         OptionManager240.loadFromInit = false
@@ -9922,11 +9698,10 @@ Partial Class MainForm
         Me.optBtnVisibleCaves.Name = "optBtnVisibleCaves"
         OptionSingleReplace185.disabledValue = "0"
         OptionSingleReplace185.enabledValue = "1"
-        
         OptionSingleReplace185.fileManager = FileListManager241
-        OptionManager241.loadFromDInit = false
-        OptionManager241.loadFromInit = false
-        OptionManager241.loadFromWorldGen = true
+        OptionManager241.loadFromDInit = False
+        OptionManager241.loadFromInit = False
+        OptionManager241.loadFromWorldGen = True
         OptionSingleReplace185.optionManager = OptionManager241
         OptionSettingManager244.settingName = Nothing
         OptionSingleReplace185.settingManager = OptionSettingManager244
@@ -9948,7 +9723,6 @@ Partial Class MainForm
         Me.optNumCaverns.Location = New System.Drawing.Point(161, 24)
         Me.optNumCaverns.Maximum = New Decimal(New Integer() {3, 0, 0, 0})
         Me.optNumCaverns.Name = "optNumCaverns"
-        
         OptionSingle47.fileManager = FileListManager242
         OptionManager242.loadFromDInit = false
         OptionManager242.loadFromInit = false
@@ -9974,7 +9748,6 @@ Partial Class MainForm
         Me.optNumOpenMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMin.Location = New System.Drawing.Point(161, 49)
         Me.optNumOpenMin.Name = "optNumOpenMin"
-        
         OptionSingle48.fileManager = FileListManager243
         OptionManager243.loadFromDInit = false
         OptionManager243.loadFromInit = false
@@ -9998,7 +9771,6 @@ Partial Class MainForm
         Me.optNumOpenMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMax.Location = New System.Drawing.Point(210, 49)
         Me.optNumOpenMax.Name = "optNumOpenMax"
-        
         OptionSingle49.fileManager = FileListManager244
         OptionManager244.loadFromDInit = false
         OptionManager244.loadFromInit = false
@@ -10022,7 +9794,6 @@ Partial Class MainForm
         Me.optNumMazeMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMin.Location = New System.Drawing.Point(161, 75)
         Me.optNumMazeMin.Name = "optNumMazeMin"
-        
         OptionSingle50.fileManager = FileListManager245
         OptionManager245.loadFromDInit = false
         OptionManager245.loadFromInit = false
@@ -10046,7 +9817,6 @@ Partial Class MainForm
         Me.optNumMazeMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMax.Location = New System.Drawing.Point(210, 75)
         Me.optNumMazeMax.Name = "optNumMazeMax"
-        
         OptionSingle51.fileManager = FileListManager246
         OptionManager246.loadFromDInit = false
         OptionManager246.loadFromInit = false
@@ -10070,7 +9840,6 @@ Partial Class MainForm
         Me.optNumWaterMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMin.Location = New System.Drawing.Point(161, 100)
         Me.optNumWaterMin.Name = "optNumWaterMin"
-        
         OptionSingle52.fileManager = FileListManager247
         OptionManager247.loadFromDInit = false
         OptionManager247.loadFromInit = false
@@ -10094,7 +9863,6 @@ Partial Class MainForm
         Me.optNumWaterMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMax.Location = New System.Drawing.Point(210, 100)
         Me.optNumWaterMax.Name = "optNumWaterMax"
-        
         OptionSingle53.fileManager = FileListManager248
         OptionManager248.loadFromDInit = false
         OptionManager248.loadFromInit = false
@@ -10120,7 +9888,6 @@ Partial Class MainForm
         Me.optNumAboveCav1.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveCav1.Minimum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.optNumAboveCav1.Name = "optNumAboveCav1"
-        
         OptionSingle54.fileManager = FileListManager249
         OptionManager249.loadFromDInit = false
         OptionManager249.loadFromInit = false
@@ -10147,7 +9914,6 @@ Partial Class MainForm
         Me.optNumAboveCav2.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveCav2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumAboveCav2.Name = "optNumAboveCav2"
-        
         OptionSingle55.fileManager = FileListManager250
         OptionManager250.loadFromDInit = false
         OptionManager250.loadFromInit = false
@@ -10175,7 +9941,6 @@ Partial Class MainForm
         Me.optNumAboveCav3.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveCav3.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumAboveCav3.Name = "optNumAboveCav3"
-        
         OptionSingle56.fileManager = FileListManager251
         OptionManager251.loadFromDInit = false
         OptionManager251.loadFromInit = false
@@ -10203,7 +9968,6 @@ Partial Class MainForm
         Me.optNumAboveMagma.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveMagma.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumAboveMagma.Name = "optNumAboveMagma"
-        
         OptionSingle57.fileManager = FileListManager252
         OptionManager252.loadFromDInit = false
         OptionManager252.loadFromInit = false
@@ -10231,7 +9995,6 @@ Partial Class MainForm
         Me.optNumAboveHFS.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveHFS.Minimum = New Decimal(New Integer() {2, 0, 0, 0})
         Me.optNumAboveHFS.Name = "optNumAboveHFS"
-        
         OptionSingle58.fileManager = FileListManager253
         OptionManager253.loadFromDInit = false
         OptionManager253.loadFromInit = false
@@ -10262,7 +10025,6 @@ Partial Class MainForm
         Me.optBtnMagmaLake.Name = "optBtnMagmaLake"
         OptionSingleReplace186.disabledValue = "0"
         OptionSingleReplace186.enabledValue = "1"
-        
         OptionSingleReplace186.fileManager = FileListManager254
         OptionManager254.loadFromDInit = false
         OptionManager254.loadFromInit = false
@@ -10293,7 +10055,6 @@ Partial Class MainForm
         Me.optBtnHFS.Name = "optBtnHFS"
         OptionSingleReplace187.disabledValue = "0"
         OptionSingleReplace187.enabledValue = "1"
-        
         OptionSingleReplace187.fileManager = FileListManager255
         OptionManager255.loadFromDInit = false
         OptionManager255.loadFromInit = false
@@ -10317,7 +10078,6 @@ Partial Class MainForm
         Me.optMaskGoodAreas.Location = New System.Drawing.Point(103, 49)
         Me.optMaskGoodAreas.Name = "optMaskGoodAreas"
         Me.optMaskGoodAreas.niceFormat = "###:###:### (0-500)"
-        
         OptionSingle59.fileManager = FileListManager256
         OptionManager256.loadFromDInit = false
         OptionManager256.loadFromInit = false
@@ -10341,7 +10101,6 @@ Partial Class MainForm
         Me.optMaskEvilAreas.Location = New System.Drawing.Point(103, 24)
         Me.optMaskEvilAreas.Name = "optMaskEvilAreas"
         Me.optMaskEvilAreas.niceFormat = "###:###:### (0-500)"
-        
         OptionSingle60.fileManager = FileListManager257
         OptionManager257.loadFromDInit = false
         OptionManager257.loadFromInit = false
@@ -10366,7 +10125,6 @@ Partial Class MainForm
         Me.optCbStartingLabors.FormattingEnabled = true
         Me.optCbStartingLabors.Location = New System.Drawing.Point(92, 315)
         Me.optCbStartingLabors.Name = "optCbStartingLabors"
-        
         OptionList5.fileManager = FileListManager258
         ComboItem33.display = "No"
         ComboItem33.value = "NO"
@@ -10418,7 +10176,6 @@ Partial Class MainForm
         Me.optBtnDigging.Name = "optBtnDigging"
         OptionSingleReplace188.disabledValue = " dig -1"
         OptionSingleReplace188.enabledValue = " dig 5"
-        
         OptionSingleReplace188.fileManager = FileListManager259
         OptionManager259.loadFromDInit = false
         OptionManager259.loadFromInit = false
@@ -10446,7 +10203,6 @@ Partial Class MainForm
         Me.optMultiRazing.Location = New System.Drawing.Point(5, 171)
         Me.optMultiRazing.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiRazing.Name = "optMultiRazing"
-        
         OptionMulti7.fileManager = FileListManager260
         OptionManager260.loadFromDInit = false
         OptionManager260.loadFromInit = false
@@ -11028,7 +10784,6 @@ Partial Class MainForm
         Me.optBtnMoreAnimals.Name = "optBtnMoreAnimals"
         OptionSingleReplace189.disabledValue = "!NOFF!"
         OptionSingleReplace189.enabledValue = "YESFF["
-        
         OptionSingleReplace189.fileManager = FileListManager261
         OptionManager261.loadFromDInit = false
         OptionManager261.loadFromInit = false
@@ -12007,7 +11762,6 @@ Partial Class MainForm
         Me.optCbAutoSave.FormattingEnabled = true
         Me.optCbAutoSave.Location = New System.Drawing.Point(76, 22)
         Me.optCbAutoSave.Name = "optCbAutoSave"
-        
         OptionList6.fileManager = FileListManager262
         ComboItem36.display = "Never"
         ComboItem36.value = "NONE"
@@ -12385,7 +12139,6 @@ Partial Class MainForm
         Me.optNumVolume.Location = New System.Drawing.Point(100, 49)
         Me.optNumVolume.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.optNumVolume.Name = "optNumVolume"
-        
         OptionSingle61.fileManager = FileListManager263
         OptionManager263.loadFromDInit = false
         OptionManager263.loadFromInit = true
@@ -13227,7 +12980,6 @@ Partial Class MainForm
         Me.optNumHFSLevels.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumHFSLevels.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumHFSLevels.Name = "optNumHFSLevels"
-        
         OptionSingle62.fileManager = FileListManager264
         OptionManager264.loadFromDInit = false
         OptionManager264.loadFromInit = false
@@ -13263,7 +13015,7 @@ Partial Class MainForm
         Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
         Me.tabMain.Location = New System.Drawing.Point(0, 72)
         Me.tabMain.Name = "tabMain"
-        Me.tabMain.SelectedIndex = 1
+        Me.tabMain.SelectedIndex = 6
         Me.tabMain.Size = New System.Drawing.Size(1026, 613)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
