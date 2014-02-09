@@ -1,7 +1,7 @@
 creature_warbeast_masterwork
 
 
-
+[OBJECT:CREATURE]
 
 NOSPIRITHUNTER[CREATURE:SPIRITHUNTER]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:An elven spirit to aid your ranged units. They attack by throwing spiritshards at your opponents. The Spiritwebber even protects your crossbow-dwarves by trapping close enemies in webs.]

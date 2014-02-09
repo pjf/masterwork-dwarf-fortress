@@ -72,8 +72,9 @@ function CreateUnit(race_id,caste_id)
     else
         unit.relations.old_year=df.global.cur_year+math.random(caste.misc.maxage_min,caste.misc.maxage_max)
     end
+	
     unit.sex=caste.gender
-		local num_inter=#caste.body_info.interactions  -- new for interactions
+	local num_inter=#caste.body_info.interactions  -- new for interactions
 	unit.curse.anon_4:resize(num_inter) -- new for interactions
 	unit.curse.anon_5:resize(num_inter) -- new for interactions
     local body=unit.body
