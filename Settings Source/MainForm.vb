@@ -315,7 +315,8 @@ Imports System.ComponentModel
 
 #Region "general menu buttons"
 
-    Private Sub rBtnPlayDF_Click(sender As Object, e As EventArgs) Handles rBtnPlayDF.Click        
+    Private Sub rBtnPlayDF_Click(sender As Object, e As EventArgs) Handles rBtnPlayDF.Click
+        tabMain.SelectedTab.Focus()
         runApp(findDfFile("Dwarf Fortress.exe"))
     End Sub
 
@@ -381,7 +382,7 @@ Imports System.ComponentModel
 
 #Region "option testing and exporting"
 
-    'this doesn't include applying graphic tilsets, or launching the ulilities or menu urls
+    'this doesn't include applying graphic tilesets, or launching the utilities or menu urls
     Private Sub rBtnTest_Click(sender As Object, e As EventArgs) Handles rBtnTest.Click
         If Not Debugger.IsAttached Then Exit Sub
         If MsgBox("Run test? This will change raws!", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.No Then Exit Sub
@@ -396,8 +397,9 @@ Imports System.ComponentModel
         frmInfo.Controls.Add(rtext)
         rtext.Dock = DockStyle.Fill
 
+        rtext.AppendText("{""Options"": [" & vbCrLf)
         exportOptions(tabMain, rtext)
-
+        rtext.AppendText("]}")
         frmInfo.Show()
     End Sub
 
@@ -434,13 +436,56 @@ Imports System.ComponentModel
                 Debug.WriteLine("skipping disabled control: " & c.Name)
             Else
                 Dim conOpt As iExportInfo = TryCast(c, iExportInfo)
+                Dim tempList As New List(Of String)
+                Dim temp As String
                 If conOpt IsNot Nothing Then
                     Try
-                        rText.AppendText("Option: " & c.Name & " (" & c.Text & ") " & IIf(ToolTipMaker.GetToolTip(c) <> "", ToolTipMaker.GetToolTip(c).Replace(vbCrLf, " "), "") & vbCrLf)
-                        rText.AppendText(ControlChars.Tab & "Files: " & String.Join(", ", conOpt.fileInfo) & vbCrLf)
-                        rText.AppendText(ControlChars.Tab & "Tags:" & vbCrLf & ControlChars.Tab & ControlChars.Tab)
-                        rText.AppendText(String.Join(vbCrLf & ControlChars.Tab & ControlChars.Tab, conOpt.optionInfo))
-                        rText.AppendText(vbCrLf & vbCrLf)
+                        rText.AppendText(ControlChars.Tab & "{" & vbCrLf)
+
+                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Name"": """ & c.Name & """," & vbCrLf)
+                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Text"": """ & c.Text & """," & vbCrLf)
+                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Tooltip"": """ & IIf(ToolTipMaker.GetToolTip(c) <> "", ToolTipMaker.GetToolTip(c).Replace(vbCrLf, " "), "") & """," & vbCrLf)
+
+                        tempList.Clear()
+                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Files"": [" & vbCrLf)
+                        For Each fname As String In conOpt.fileInfo
+                            tempList.Add("""" & fname & """")                            
+                        Next
+                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & String.Join(", ", tempList) & vbCrLf)
+                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & "]," & vbCrLf)
+
+                        If conOpt.tagItems IsNot Nothing AndAlso conOpt.tagItems.Count > 0 Then
+                            tempList.Clear()
+                            temp = ""
+                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Tags"": [" & vbCrLf)
+                            For Each t As rawToken In conOpt.tagItems
+                                temp = ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & "{" & vbCrLf
+                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """TokenName"": """ & t.tokenName & """," & vbCrLf
+                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """On"": """ & t.optionOnValue & """," & vbCrLf
+                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """Off"": """ & t.optionOffValue & """" & vbCrLf
+                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & "}"
+                                tempList.Add(temp)
+                            Next
+                            rText.AppendText(String.Join(", " & vbCrLf, tempList) & vbCrLf)
+                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & "]," & vbCrLf)
+                        End If
+
+                        If conOpt.comboItems IsNot Nothing AndAlso conOpt.comboItems.Count > 0 Then
+                            tempList.Clear()
+                            temp = ""
+                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & """DropDownItems"": [" & vbCrLf)
+                            For Each cbi As comboItem In conOpt.comboItems
+                                temp = ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & "{" & vbCrLf
+                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """Display"": """ & cbi.display & """," & vbCrLf
+                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """Value"": """ & cbi.value & """," & vbCrLf
+                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & "}"
+                                tempList.Add(temp)
+                            Next
+                            rText.AppendText(String.Join(", " & vbCrLf, tempList) & vbCrLf)
+                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & "]" & vbCrLf)
+                        End If
+
+                        rText.AppendText(ControlChars.Tab & "}," & vbCrLf)
                     Catch ex As Exception
                         Debug.WriteLine("!PRINT EXCEPTION! " & ex.ToString)
                     End Try
