@@ -1,8 +1,40 @@
-@font-face {
-    font-family: 'KnightsQuestRegular';
-    src: url('masterworkdwarffortress/repository/KnightsQuestRegular.ttf');
+body {
+    color: #FFF;
+    background-color: #000;
 }
 
-*{
-font: 'KnightsQuestRegular', Arial, Verdana;
+a:link {
+    color: #FFF;
+}
+
+a:visited {
+    color: #CCC;
+}
+
+img {
+    padding-bottom: 10px;
+    border: 0px;
+    clear: both;
+    float: left;
+    padding-right: 10px;
+}
+
+div.adjacent_images {
+    text-align: center;
+}
+
+.adjacent_images img {
+    float: none;
+    clear: none;
+    padding: 10px;
+}
+
+h1, h2, h3, h4 {
+    clear:both;
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid white;
+    border-collapse: collapse;
 }
