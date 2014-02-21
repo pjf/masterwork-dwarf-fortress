@@ -9661,7 +9661,7 @@ YE_JADE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUST:1:IRIS_EYE_SILVER:
 [ATTACK_FLAG_EDGE]
 [ATTACK_PRIORITY:SECOND]
 [CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A large wolf twisted into humanoid form.  It is crazed for blood and flesh.  Its eyes glow golden yellow.  Its grey hair is long and shaggy.  Now you will know why you fear the night.]
-[CASTE:DEFAULT][CASTE:CRAZED][CRAZED]
+[CASTE:DEFAULT]
 
 
 [CREATURE:WARLOCK_SPY]

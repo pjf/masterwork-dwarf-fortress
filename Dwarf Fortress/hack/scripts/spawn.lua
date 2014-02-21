@@ -1,10 +1,22 @@
---create unit at pointer or given location. Usage e.g. "spawnunit DWARF 0 Dwarfy"
- 
---Made by warmist, but edited by Putnam for the dragon ball mod to be used in reactions
- 
---note that it's extensible to any autosyndrome reaction to spawn anything due to this; to use in autosyndrome, you want \COMMAND spawnunit CREATURE caste_number name \LOCATION
+--create unit at pointer or given location and with given civ (usefull to pass -1 for enemy). Usage e.g. "spawnunit DWARF 0 Dwarfy"
+--[=[
+    Creature (ID), caste (number), name, x,y,z , civ_id(-1 for enemy, optional) for spawn.
+    Made by warmist, but edited by Putnam for the dragon ball mod to be used in reactions 
+    note that it's extensible to any autosyndrome reaction to spawn anything due to this; to use in autosyndrome, you want \COMMAND spawnunit CREATURE caste_number name \LOCATION
+    TODO:
+        birth time
+        death time
+        real body size
+        blood max
+        check if soulless and skip make soul
+        set weapon body part
+        historical entity/nemesis
+        generate name
+--]=]
  
 args={...}
+local utils=require 'utils'
+ 
 function getCaste(race_id,caste_id)
     local cr=df.creature_raw.find(race_id)
     return cr.caste[caste_id]
@@ -14,7 +26,7 @@ function genBodyModifier(body_app_mod)
     return math.random(body_app_mod.ranges[a],body_app_mod.ranges[a+1])
 end
 function getBodySize(caste,time)
-    --todo real body size...
+    --TODO: real body size...
     return caste.body_size_1[#caste.body_size_1-1] --returns last body size
 end
 function genAttribute(array)
@@ -40,7 +52,7 @@ function makeSoul(unit,caste)
     tmp_soul.race=unit.race
     tmp_soul.sex=unit.sex
     tmp_soul.caste=unit.caste
-    --todo skills,preferences,traits.
+    --todo: preferences,traits.
     local attrs=caste.attributes
     for k,v in pairs(attrs.ment_att_range) do
        local max_percent=attrs.ment_att_cap_perc[k]/100
@@ -54,6 +66,13 @@ function makeSoul(unit,caste)
         max=caste.personality.c[k]
         tmp_soul.traits[k]=clampedNormal(min,mean,max)
     end
+    --[[natural skill fix]]
+    for k, skill in ipairs(caste.natural_skill_id) do
+        local rating = caste.natural_skill_lvl[k]
+        utils.insert_or_update(tmp_soul.skills,
+            {new=true,id=skill,experience=caste.natural_skill_exp[k],rating=rating}, 'id')
+    end
+    
     unit.status.souls:insert("#",tmp_soul)
     unit.status.current_soul=tmp_soul
 end
@@ -62,51 +81,51 @@ function CreateUnit(race_id,caste_id)
     if race==nil then error("Invalid race_id") end
     local caste=getCaste(race_id,caste_id)
     local unit=df.unit:new()
-    unit.race=race_id
-    unit.caste=caste_id
-    unit.id=df.global.unit_next_id
-    df.global.unit_next_id=df.global.unit_next_id+1
-	unit.relations.old_year=df.global.cur_year-5 -- everybody will be 15 years old
+    unit:assign{
+        race=race_id,
+        caste=caste_id,
+        sex=caste.gender,
+    }
+    unit.relations.birth_year=df.global.cur_year-15 --AGE is set here
     if caste.misc.maxage_max==-1 then
         unit.relations.old_year=-1
     else
         unit.relations.old_year=df.global.cur_year+math.random(caste.misc.maxage_min,caste.misc.maxage_max)
     end
-	
-    unit.sex=caste.gender
-	local num_inter=#caste.body_info.interactions  -- new for interactions
-	unit.curse.anon_4:resize(num_inter) -- new for interactions
-	unit.curse.anon_5:resize(num_inter) -- new for interactions
-    local body=unit.body
     
+    --unit.relations.birth_time=??
+    --unit.relations.old_time=?? --TODO add normal age
+    --[[ interataction stuff, probably timers ]]--
+    local num_inter=#caste.body_info.interactions  -- new for interactions
+    unit.curse.anon_4:resize(num_inter) -- new for interactions
+	unit.curse.anon_5:resize(num_inter) -- new for interactions
+    --[[ body stuff ]]
+    
+    local body=unit.body
     body.body_plan=caste.body_info
     local body_part_count=#body.body_plan.body_parts
     local layer_count=#body.body_plan.layer_part
-    --components
-    unit.relations.birth_year=df.global.cur_year-15
-    --unit.relations.birth_time=??
-    
-    --unit.relations.old_time=?? --TODO add normal age
+    --[[ body components ]]
     local cp=body.components
     cp.body_part_status:resize(body_part_count)
     cp.numbered_masks:resize(#body.body_plan.numbered_masks)
     for num,v in ipairs(body.body_plan.numbered_masks) do
         cp.numbered_masks[num]=v
     end
-    
     cp.layer_status:resize(layer_count)
     cp.layer_wound_area:resize(layer_count)
     cp.layer_cut_fraction:resize(layer_count)
     cp.layer_dent_fraction:resize(layer_count)
     cp.layer_effect_fraction:resize(layer_count)
+    
     local attrs=caste.attributes
     for k,v in pairs(attrs.phys_att_range) do
         local max_percent=attrs.phys_att_cap_perc[k]/100
         local cvalue=genAttribute(v)
         unit.body.physical_attrs[k]={value=cvalue,max_value=cvalue*max_percent}
-        --unit.body.physical_attrs:insert(k,{new=true,max_value=genMaxAttribute(v),value=genAttribute(v)})
     end
  
+    
     body.blood_max=getBodySize(caste,0) --TODO normal values
     body.blood_count=body.blood_max
     body.infection_level=0
@@ -115,12 +134,21 @@ function CreateUnit(race_id,caste_id)
         unit.status2.body_part_temperature[k]={new=true,whole=10067,fraction=0}
         
     end
-    --------------------
+    --[[ largely unknown stuff ]]
     local stuff=unit.enemy
     stuff.body_part_878:resize(body_part_count) -- all = 3
     stuff.body_part_888:resize(body_part_count) -- all = 3
     stuff.body_part_relsize:resize(body_part_count) -- all =0
- 
+    
+    stuff.were_race=race_id
+    stuff.were_caste=caste_id
+    stuff.normal_race=race_id
+    stuff.normal_caste=caste_id
+    stuff.body_part_8a8:resize(body_part_count) -- all = 1
+    stuff.body_part_base_ins:resize(body_part_count) 
+    stuff.body_part_clothing_ins:resize(body_part_count) 
+    stuff.body_part_8d8:resize(body_part_count)
+    
     --TODO add correct sizes. (calculate from age)
     local size=caste.body_size_2[#caste.body_size_2-1]
     body.size_info.size_cur=size
@@ -130,17 +158,9 @@ function CreateUnit(race_id,caste_id)
     body.size_info.area_cur=math.pow(size*10000,0.333)
     body.size_info.area_base=math.pow(size*10000,0.333)
     
-    stuff.were_race=race_id
-    stuff.were_caste=caste_id
-    stuff.normal_race=race_id
-    stuff.normal_caste=caste_id
-    stuff.body_part_8a8:resize(body_part_count) -- all = 1
-    stuff.body_part_base_ins:resize(body_part_count) 
-    stuff.body_part_clothing_ins:resize(body_part_count) 
-    stuff.body_part_8d8:resize(body_part_count) 
     unit.recuperation.healing_rate:resize(layer_count) 
+    
     --appearance
-   
     local app=unit.appearance
     app.body_modifiers:resize(#caste.body_appearance_modifiers) --3
     for k,v in pairs(app.body_modifiers) do
@@ -162,12 +182,11 @@ function CreateUnit(race_id,caste_id)
     
     makeSoul(unit,caste)
     
+    --finally set the id
+    unit.id=df.global.unit_next_id
+    df.global.unit_next_id=df.global.unit_next_id+1
     df.global.world.units.all:insert("#",unit)
     df.global.world.units.active:insert("#",unit)
-    --todo set weapon bodypart
-    
-    local num_inter=#caste.body_info.interactions
-    unit.curse.anon_5:resize(num_inter)
     return unit
 end
 function findRace(name)
@@ -178,7 +197,7 @@ function findRace(name)
     end
     qerror("Race:"..name.." not found!")
 end
-
+ 
 function createFigure(trgunit,he)
     local hf=df.historical_figure:new()
     hf.id=df.global.hist_figure_next_id
@@ -206,24 +225,24 @@ function createFigure(trgunit,he)
 	hf.unit_id = trgunit.id
 	
     df.global.world.history.figures:insert("#",hf)
-
+ 
 	hf.info = df.historical_figure_info:new()
 	hf.info.unk_14 = df.historical_figure_info.T_unk_14:new() -- hf state?
 	--unk_14.region_id = -1; unk_14.beast_id = -1; unk_14.unk_14 = 0
 	hf.info.unk_14.unk_18 = -1; hf.info.unk_14.unk_1c = -1
 	-- set values that seem related to state and do event
 	--change_state(hf, dfg.ui.site_id, region_pos)
-
-
+ 
+ 
 --lets skip skills for now
 --local skills = df.historical_figure_info.T_skills:new() -- skills snap shot
 -- ...
 --info.skills = skills
-
-
+ 
+ 
 	he.histfig_ids:insert('#', hf.id)
 	he.hist_figures:insert('#', hf)
-
+ 
 	trgunit.flags1.important_historical_figure = true
 	trgunit.flags2.important_historical_figure = true
 	trgunit.hist_figure_id = hf.id
@@ -272,17 +291,17 @@ function createNemesis(trgunit,civ_id)
     ]]
     nem.figure=createFigure(trgunit,he)
 end
-
+ 
 function PlaceUnit(race,caste,name,position,civ_id)
-
-
+ 
+ 
 	
     local pos=position or copyall(df.global.cursor)
     if pos.x==-30000 then
         qerror("Point your pointy thing somewhere")
     end
     race=findRace(race)
-
+ 
 	
     local u=CreateUnit(race,tonumber(caste) or 0)
     u.pos:assign(pos)
@@ -292,7 +311,7 @@ function PlaceUnit(race,caste,name,position,civ_id)
         u.name.has_name=true
     end
     u.civ_id=civ_id or df.global.ui.civ_id
-
+ 
     
     local desig,ocupan=dfhack.maps.getTileFlags(pos)
     if ocupan.unit then
@@ -308,7 +327,7 @@ function PlaceUnit(race,caste,name,position,civ_id)
     end
     --]=]
 end
-
+ 
 local argPos
  
 if #args>3 then

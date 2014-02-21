@@ -1,4 +1,6 @@
--- transforms unit (by number) into another creature, choice given to user. Syntax is: unitID tickamount maxsize namefilter. A size of 0 is ignored. A length of 0 is also ignored. If no filter, all units will be sorted. A filter of ALL will also work with all units.
+-- transforms unit (by number) into another creature, choice given to user. 
+-- Syntax is: unitID tickamount maxsize namefilter. A size of 0 is ignored. A length of 0 is also ignored. 
+-- If no filter, all units will be sorted. A filter of ALL will also work with all units.
 
 local dialog = require('gui.dialogs')
 local script = require('gui.script')
@@ -13,11 +15,10 @@ function transform(target,race,caste,length)
     if length>0 then dfhack.timeout(length,'ticks',function() target.enemy.normal_race = defaultRace target.enemy.normal_caste = defaultCaste end) end
 end
 
-function compareCreatureClass(str,unit)
-	for k,v in ipairs(df.creature_raw.find(unit.race).caste[unit.caste].creature_class) do
-		if str:find(v.value) then return true end
+function compareTableWithString(tbl,str)
+	for k,v in ipairs(tbl) do
+		if v==str then return true end
 	end
-	return false
 end
 
 function getBodySize(caste)
@@ -35,7 +36,7 @@ function selectCreature(unitID,length,size,filter) --taken straight from here, b
         for ca_k,caste in ipairs(creature.caste) do
             local name=caste.caste_name[0]
             if name=="" then name="?" end
-            if (not filter or compareCreatureClass(filter,tunit) or string.lower(filter)=="all") and (not size or size>getBodySize(caste) or size<1 and not creature.flags.DOES_NOT_EXIST) then table.insert(tbl,{name,nil,cr_k,ca_k}) end
+            if (not filter or compareTableWithString(filter,creature.creature_id) or string.lower(filter[1])=="all") and (not size or size>getBodySize(caste) or size<1 and not creature.flags.DOES_NOT_EXIST) then table.insert(tbl,{name,nil,cr_k,ca_k}) end
         end
     end
     table.sort(tbl,function(a,b) return a[1]<b[1] end)
@@ -45,15 +46,15 @@ function selectCreature(unitID,length,size,filter) --taken straight from here, b
     script.start(function()
         local ok = 
             script.showYesNoPrompt(
-                "Monster","Change " 
+                "Just checking","Transform " 
                 .. dfhack.TranslateName(dfhack.units.getVisibleName(tunit)) .. 
-                " into a monster for " 
+                " into a werebeast for "
                 ..length/1200 ..
                 " days?",
                 COLOR_BROWN)
         if ok then dialog.showListPrompt("Creature Selection","Choose creature:",COLOR_WHITE,tbl,f) end
     end)
 end
-
 local args = {...}
-selectCreature(tonumber(args[1]),tonumber(args[2]),tonumber(args[3]),args[4])
+selectCreature(tonumber(args[1]),tonumber(args[2]),tonumber(args[3]),{'WEREBEAST','SPIDER_CAVE_GIANT','CAVE_DRAGON','GREEN_DEVOURER','VORACIOUS_CAVE_CRAWLER','BEHOLDER','UMBER_HULK','BAT_GIANT_BLIGHT'})
+
