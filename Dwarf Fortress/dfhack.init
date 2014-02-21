@@ -617,7 +617,7 @@ tweak military-training
 itemsyndrome contaminantsOn enable
 itemsyndrome enable
 
-hackwish enable
+hackwish startup
 
 
 # write the correct season to gamelog on world load
@@ -656,3 +656,4 @@ fix/growthbug enable
 # Clear console #
 #################
 
+cls

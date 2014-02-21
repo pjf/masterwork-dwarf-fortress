@@ -15,12 +15,15 @@
 -- Config
 -- Chances of attack for each entity, they do not need to sum up to 100
 local entities = {
-	["MOUNTAIN"] = 30, -- dwarves
+	["MOUNTAIN"] = 50, -- dwarves
 	["FOREST"] = 50, -- elves
-	["EVIL"] = 20, -- goblins
+	["EVIL"] = 50, -- goblins
 	["SKULKING"] = 10, -- kobolds
 	["PLAINS"] = 50, -- humans
-	["DECADENCE"] = 30 -- succubi
+	["DROW"] = 50, -- humans
+	["KOBOLD_CAMP"] = 10, -- humans
+	["GNOME_CIV"] = 10, -- humans
+	["FROST_GIANT"] = 10, -- humans
 }
 
 -- Checks

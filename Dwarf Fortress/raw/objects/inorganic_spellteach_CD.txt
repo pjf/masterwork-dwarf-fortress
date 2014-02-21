@@ -4,7 +4,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_FIRE_BURN]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -35,7 +35,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_FIRE_FIREJET]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -66,7 +66,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_FIRE_FIREBALL]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -97,7 +97,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_FIRE_DRAGONFIRE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -128,7 +128,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_FIRE_INCINERATE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -159,7 +159,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ICE_FREEZE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -190,7 +190,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ICE_ICICLE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -221,7 +221,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ICE_ARCTIC_WIND]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -252,7 +252,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ICE_BLIZZARD]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -283,7 +283,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ICE_FROST_NOVA]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -314,7 +314,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_AIR_BLIND]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -345,7 +345,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_AIR_LIGHTNING]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -376,7 +376,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_AIR_CHAIN_LIGHTNING]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -407,7 +407,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_AIR_SHOCK]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -438,7 +438,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_AIR_GUST]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -469,7 +469,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_EARTH_BIND]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -500,7 +500,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_EARTH_PETRIFY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -531,7 +531,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_EARTH_BOULDER]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -562,7 +562,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_EARTH_STONESKIN]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -593,7 +593,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_EARTH_ROCK_SLIDE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -624,7 +624,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ARCANE_HASTE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -655,7 +655,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ARCANE_SLOW]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -686,7 +686,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ARCANE_BLINK]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -717,7 +717,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ARCANE_ARCANE_MISSLE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -748,7 +748,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_ARCANE_ARCANE_ARMOR]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -779,7 +779,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_HEAL]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -810,7 +810,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_GREATER_HEAL]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -841,7 +841,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_REJUVENATE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -872,7 +872,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_CLEANSE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -903,7 +903,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_WARD]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -934,7 +934,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_BLESS]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -965,7 +965,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_SANCTIFY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -996,7 +996,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_RESURRECT]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1027,7 +1027,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_FORTIFY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1058,7 +1058,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_HOLY_ARMOR]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1089,7 +1089,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_TURN_UNDEAD]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1120,7 +1120,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_LIGHT_HOLY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1151,7 +1151,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_CURSE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1182,7 +1182,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_NECROSIS]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1213,7 +1213,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_ENFEEBLE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1244,7 +1244,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_DRAIN_LIFE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1275,7 +1275,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_AGONY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1306,7 +1306,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_DARK_PACT]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1337,7 +1337,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_SHACKLE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1368,7 +1368,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_BONE_ARMOR]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1399,7 +1399,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_RAISE_CORPSE_FRIENDLY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1430,7 +1430,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_DARK_RAISE_CORPSE_VIOLENT]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1461,7 +1461,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_MIND_FURY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1492,7 +1492,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_MIND_CALM]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1523,7 +1523,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_NATURE_ENTANGLE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1554,7 +1554,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_NATURE_BARKSKIN]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1585,7 +1585,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_SPELL_NATURE_POISON]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1616,7 +1616,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_WARRIOR_BERSERK]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1647,7 +1647,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_WARRIOR_HEROIC_STRENGTH]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1678,7 +1678,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_WARRIOR_WAR_CRY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1709,7 +1709,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_WARRIOR_BATTLE_CRY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1740,7 +1740,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_WARRIOR_INTIMIDATE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1771,7 +1771,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_WARRIOR_CHARGE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1802,7 +1802,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_WARRIOR_RALLY]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1833,7 +1833,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_ROGUE_HIDE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1864,7 +1864,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_ROGUE_EVADE]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1895,7 +1895,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_ROGUE_SPEED]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1926,7 +1926,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_ROGUE_MARK_FOR_DEATH]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1957,7 +1957,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_ROGUE_POISON_FLASK]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]
@@ -1988,7 +1988,7 @@ inorganic_spellteach_CD
 
 [INORGANIC:TEACH_ABILITY_ROGUE_SMOKE_BOMB]
 	[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
+	[SPECIAL][STATE_NAME_ADJ:ALL_SOLID:blinding flash of light]
 	[STATE_NAME_ADJ:LIQUID:molten failure stone]
 	[STATE_NAME_ADJ:GAS:blinding light]
 	[SYNDROME]

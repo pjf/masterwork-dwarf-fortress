@@ -41,14 +41,17 @@ function script.showItemPrompt(text,item_filter,hide_none)
     
     return script.wait()
 end
- 
+
+
+
+
 function hackWish(posOrUnit)
     local pos = df.unit:is_instance(posOrUnit) and posOrUnit.pos or posOrUnit
     script.start(function()
 --        local amountok, amount
-        local itemok,itemtype,itemsubtype=script.showItemPrompt('What item do you want?',function() return true end,true)
-        local matok,mattype,matindex=script.showMaterialPrompt('Wish','And what material should it be made of?')
-        local qualityok,quality=script.showListPrompt('Wish','What quality should it be?',COLOR_LIGHTGREEN,qualityTable())
+        local itemok,itemtype,itemsubtype=script.showItemPrompt('What item do you ask of me?',function() return true end,true)
+        local matok,mattype,matindex=script.showMaterialPrompt('Wish','What material do you want?')
+        local qualityok,quality=script.showListPrompt('Wish','What quality do you wish?',COLOR_LIGHTRED,qualityTable())
 --        repeat amountok,amount=script.showInputPrompt('Wish','How many do you want? (numbers only!)',COLOR_LIGHTGREEN) until tonumber(amount)
         if mattype and itemtype then
 --            for i=1,tonumber(amount) do
