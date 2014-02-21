@@ -26,6 +26,7 @@ item_z_orcfort_weapon
 	[CLASS:AXE]
 	[SIZE:300]
 	[ATTACK:EDGE:3000:2000:strike:strikes:NO_SUB:1500]
+
 [ITEM_WEAPON:ITEM_WEAPON_ATLATL]
 [NAME:atlatl:atlatls]
 [SIZE:600]
@@ -62,7 +63,7 @@ item_z_orcfort_weapon
 [ITEM_WEAPON:ITEM_WEAPON_SKALD_STAFF]
 [NAME:magestaff:magestaves]
 [SIZE:700]
-[SKILL:MAGIC_NATURE]
+[SKILL:HAMMER]
 [RANGED:MAGIC_NATURE:SPELLDRUID]
 [SHOOT_FORCE:4000]
 [SHOOT_MAXVEL:4000]
@@ -115,7 +116,7 @@ item_z_orcfort_weapon
 [ITEM_WEAPON:ITEM_WEAPON_WRAITH_SWORD]
 [NAME:wraithblade:wraithblades]
 [SIZE:700]
-[SKILL:MAGIC_NATURE]
+[SKILL:SWORD]
 [RANGED:MAGIC_NATURE:SPELLWRAITH]
 [SHOOT_FORCE:4000]
 [SHOOT_MAXVEL:4000]
@@ -169,6 +170,7 @@ item_z_orcfort_weapon
 [ATTACK:BLUNT:10000:3000:poke:pokes:end:1250]
 [ATTACK:BLUNT:10000:5000:bludgeon:bludgeons:stock:1300]
 [ATTACK:BLUNT:10000:2000:slap:slaps:shaft:1250]	
+
 [ITEM_WEAPON:ITEM_WEAPON_DAKKADAKKA_GUN]
 [NAME:dakkadakka gun:dakkadakka guns] 
 [SIZE:450]
@@ -332,6 +334,7 @@ item_z_orcfort_weapon
 [BARRED]
 [SCALED]
 [LEATHER]
+
 [ITEM_HELM:ITEM_HELM_OPAQMASK_ORC]
 [NAME:opaque mask:opaque masks]
 [ARMORLEVEL:1]
@@ -346,6 +349,7 @@ item_z_orcfort_weapon
 [BARRED]
 [SCALED]
 [LEATHER]
+
 [ITEM_HELM:ITEM_HELM_CLANMASK_ORC]
 [NAME:clanguard mask:clanguard masks]
 [ARMORLEVEL:1]
@@ -360,9 +364,37 @@ item_z_orcfort_weapon
 [BARRED]
 [SCALED]
 [LEATHER]
+
 ##########
 ## Society Arms Kits
 ##########
+
+[ITEM_WEAPON:ITEM_WEAPON_CORSAIR_ARMS]
+# Represens a dagger + pistol combination. May be used with a shield.
+# This is a lower-level item that can be purchased from the freelancer.
+# It does *NOT* require a society to create
+# Size is pistol (450) + large dagger (200).
+[NAME:corsair arms:corsair arms]
+[SIZE:650]
+[SKILL:DAGGER]
+    [RANGED:BLOWGUN:BULLET_L]
+    [SHOOT_FORCE:25000]
+    [SHOOT_MAXVEL:25000]
+[TWO_HANDED:52500]
+[MINIMUM_SIZE:52500]
+[MATERIAL_SIZE:4]
+[ATTACK:EDGE:1000:800:slash:slashes:blade:1250]
+[ATTACK:EDGE:5:1000:stab:stabs:blade:1000]
+[ATTACK:BLUNT:20:600:strike:strikes:pommel:1000]
+[ATTACK:EDGE:1000:800:slash:slashes:forward edge:2500]
+[ATTACK:EDGE:1000:800:slash:slashes:reverse edge:2500]
+[ATTACK:EDGE:1000:800:sidestep and slash:sidesteps and slashes:forward edge:2500]
+[ATTACK:EDGE:1000:800:sidestep and slash:sidesteps and slashes:reverse edge:2500]
+[ATTACK:EDGE:1000:800:quickly slash:quickly slashes:partial edge:2500]
+[ATTACK:EDGE:1000:800:slash:slashes:honed blade:2500]
+[ATTACK:EDGE:50:10000:run through:runs through:tip:4100]
+[ATTACK:EDGE:1000:3000:whirl around and slash:whirls around and slashes:vicious blade:1500]
+[ATTACK:EDGE:1000:3000:whirl around with outstretched arms and slash:whirls around with outstretched arms and slashes:blade:3000]
 
 [ITEM_WEAPON:ITEM_WEAPON_JAGUAR_ARMS]
 # represents a macuahuitl and war-claws, large orcs may still use shield

@@ -1,4 +1,34 @@
-fov = require 'fov'
+--[[
+Description: Creates a number of random explosions of a specific type using spawnflow (same type of code as Putnam's projectileExpansion). Hits in a radius around the targeted unit once. Only hits outside.
+
+Use: 
+[SYN_CLASS:\COMMAND][SYN_CLASS:storm][SYN_CLASS:type][SYN_CLASS:\UNIT_ID][SYN_CLASS:radius][SYN_CLASS:number][SYN_CLASS:strength][SYN_CLASS:inorganic]
+type = counter that is changed (VALID TOKENS: miasma, mist, mist2, dust, lavamist, smoke, dragonfire, firebreath, web, undirectedgas, undirectedvapor, oceanwave, seafoam)
+radius = number of tiles away from target creature you want flows to be spawned in the x-y plane (VALID TOKENS: INTEGER[0 - map size])
+number = amount of flows to spawn (VALID TOKENS: INTEGER[1+])
+strength = size of the flow to spawn (VALID TOKENS: INTEGER[1+])
+inorganic = some of the flows take an inorganic as a further argument for dust, lavamist, web, undirectedgas, and undirectedvapor add this extra syndrome class (VALID TOKENS: INORGANIC_SUBTYPE)
+
+Example: 
+[INTERACTION:SPELL_ELEMENTAL_FIRE_METEOR_STORM]
+        [I_SOURCE:CREATURE_ACTION]
+        [I_TARGET:C:CREATURE]
+                [IT_LOCATION:CONTEXT_CREATURE]
+                [IT_MANUAL_INPUT:target]
+        [I_EFFECT:ADD_SYNDROME]
+                [IE_TARGET:C]
+                [IE_IMMEDIATE]
+                [SYNDROME]
+                        [SYN_CLASS:\COMMAND]
+                        [SYN_CLASS:storm]
+                        [SYN_CLASS:firebreath]
+                        [SYN_CLASS:\UNIT_ID]
+                        [SYN_CLASS:25]
+                        [SYN_CLASS:5]
+                        [SYN_CLASS:50]
+                        [CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:1]
+
+]]
 
 args={...}
 
@@ -20,7 +50,6 @@ seafoam = 12
 
 function storm(stype,unit,radius,number,itype,strength)
 
-        local view = fov.get_fov(radius, unit.pos)
         local i
         local rando = dfhack.random.new()
         local snum = flowtypes[stype]
@@ -28,8 +57,19 @@ function storm(stype,unit,radius,number,itype,strength)
         if itype ~= 0 then
                 inum = dfhack.matinfo.find(itype).index
         end
-        local dx = view.xmax - view.xmin
-        local dy = view.ymax - view.ymin
+
+        local mapx, mapy, mapz = dfhack.maps.getTileSize()
+        local xmin = unit.pos.x - radius
+        local xmax = unit.pos.x + radius
+        local ymin = unit.pos.y - radius
+        local ymax = unit.pos.y + radius
+        if xmin < 1 then xmin = 1 end
+        if ymin < 1 then ymin = 1 end
+        if xmax > mapx then xmax = mapx-1 end
+        if ymax > mapy then ymax = mapy-1 end
+
+        local dx = xmax - xmin
+        local dy = ymax - ymin
         local pos = {}
         pos.x = 0
         pos.y = 0
@@ -45,7 +85,7 @@ function storm(stype,unit,radius,number,itype,strength)
                 pos.z = unit.pos.z
                 
                 local j = 0
-                while not dfhack.maps.getTileBlock(pos.x,pos.y,pos.z+j).designation[pos.x%16][pos.y%16].outside do
+                while not dfhack.maps.ensureTileBlock(pos.x,pos.y,pos.z+j).designation[pos.x%16][pos.y%16].outside do
                         j = j + 1
                 end
                 pos.z = pos.z + j

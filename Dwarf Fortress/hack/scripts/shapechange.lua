@@ -56,5 +56,5 @@ function selectCreature(unitID,length,size,filter) --taken straight from here, b
     end)
 end
 local args = {...}
-selectCreature(tonumber(args[1]),tonumber(args[2]),tonumber(args[3]),{'WEREBEAST','SPIDER_CAVE_GIANT','CAVE_DRAGON','GREEN_DEVOURER','VORACIOUS_CAVE_CRAWLER','BEHOLDER','UMBER_HULK','BAT_GIANT_BLIGHT'})
+selectCreature(tonumber(args[1]),tonumber(args[2]),tonumber(args[3]),{'WEREBEAST','SPIDER_CAVE_GIANT','CAVE_DRAGON','GREEN_DEVOURER','VORACIOUS_CAVE_CRAWLER','BEHOLDER','UMBER_HULK'})
 

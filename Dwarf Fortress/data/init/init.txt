@@ -147,4 +147,4 @@ This controls the number of milliseconds that must pass before input works again
 
 Change this to NO if you want to leave save uncompressed (you might want to do this if you are experience save corruption).
 
-[COMPRESSED_SAVES:NO]
+[COMPRESSED_SAVES:YES]

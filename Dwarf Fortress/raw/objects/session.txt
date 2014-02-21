@@ -8,7 +8,6 @@
             <File firstVisibleLine="1995" xOffset="0" scrollWidth="2150" startPos="100898" endPos="100898" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4h\Dwarf Fortress\raw\objects\inorganic_warlock.txt" />
             <File firstVisibleLine="885" xOffset="0" scrollWidth="7630" startPos="36459" endPos="36459" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4h\Dwarf Fortress\raw\objects\creature_warlock_civ.txt" />
             <File firstVisibleLine="59" xOffset="0" scrollWidth="1029" startPos="4223" endPos="4223" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4h\Dwarf Fortress\raw\objects\reaction_warlock.txt" />
-            <File firstVisibleLine="1988" xOffset="0" scrollWidth="924" startPos="95003" endPos="95003" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\MasterworkDF V4h\Dwarf Fortress\raw\objects\entity_warlock_civ.txt" />
             <File firstVisibleLine="0" xOffset="0" scrollWidth="2262" startPos="1142" endPos="1142" selMode="0" lang="Normal Text" encoding="-1" filename="D:\EVACUATE THE SHIP\MDF\stuff.txt" />
         </mainView>
         <subView activeIndex="0" />

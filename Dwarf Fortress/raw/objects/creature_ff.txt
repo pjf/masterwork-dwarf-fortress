@@ -2176,7 +2176,7 @@ YESFF[OBJECT:CREATURE]
 		[MULTIPLY_VALUE:3]
 
 [CREATURE:DEATH_ADDER_FF]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A snake found in tropical shrubland.  Though it is venomous, its poison is rarely fatal to large creatures.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A snake found in tropical shrubland.  Though it is venemous, its poison is rarely fatal to large creatures.]
 	[NAME:death adder:death adders:death adder]
 	[CASTE_NAME:death adder:death adders:death adder]
 	[CREATURE_TILE:'('][COLOR:6:0:0]

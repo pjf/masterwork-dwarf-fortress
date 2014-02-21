@@ -1,6 +1,5 @@
 entity_orc
-
-YESORC[OBJECT:ENTITY]
+//they are replaced by taiga orcs. I just leave this here for this update, in case any problem turn up.
 
 [ENTITY:ORC][PERMITTED_REACTION:MATERIALS_DEFAULT]
 	YESADVORC[INDIV_CONTROLLABLE]

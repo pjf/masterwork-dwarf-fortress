@@ -1,6 +1,6 @@
 entity_kobold
 
-YESKOBOLD[OBJECT:ENTITY]
+//they are replaced by kobold camp cutebolds. I just leave this here for this update, in case any problem turn up.
 
 YESKOBOLD[ENTITY:SKULKING][PERMITTED_REACTION:MATERIALS_DEFAULT]
 	[CREATURE:KOBOLD][BABYSNATCHER]

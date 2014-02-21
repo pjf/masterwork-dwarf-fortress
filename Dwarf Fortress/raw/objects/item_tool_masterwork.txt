@@ -651,7 +651,7 @@ item_tool_masterwork
 [MATERIAL_SIZE:1][UNIMPROVABLE]
 
 [ITEM_TOOL:ITEM_TOOL_PHILOSOPHER]
-[NAME:philosophers stone:philosophers stones]
+[NAME:stone:stones]
 [VALUE:10]
 [TILE:249]
 [SIZE:1000]

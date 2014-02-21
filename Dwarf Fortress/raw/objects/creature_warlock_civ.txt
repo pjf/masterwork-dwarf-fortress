@@ -320,21 +320,6 @@ creature_warlock_civ
 	[CASTE_PROFESSION_NAME:STANDARD:Ghoul:Ghouls] 
 	[CASTE_PROFESSION_NAME:RECRUIT:Ghoul:Ghouls] 
 	
-		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
-			[CDI:MATERIAL:INORGANIC:AMMO_MIASMA:SOLID_GLOB]
-			[CDI:TARGET:A:SELF_ONLY]
-			[CDI:VERB:invoke the rite of pain:invokes the rite of pain:NA]
-			[CDI:TARGET_VERB:are wrecked with pain:is wrecked with pain:NA]
-			[CDI:WAIT_PERIOD:1500]
-      [CDI:FREE_ACTION]
-			
-			[CAN_DO_INTERACTION:MATERIAL_EMISSION]
-			[CDI:MATERIAL:INORGANIC:AMMO_MIASMA:TRAILING_GAS_FLOW]
-			[CDI:TARGET:A:SELF_ONLY]
-			[CDI:VERB:invoke the rite of pain22:invokes the rite of pain22:NA]
-			[CDI:TARGET_VERB:are wrecked with pain22:is wrecked with pain22:NA]
-			[CDI:WAIT_PERIOD:1500]
-      [CDI:FREE_ACTION]
 	
 	
 	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]              
@@ -838,6 +823,12 @@ creature_warlock_civ
 		[CASTE_PROFESSION_NAME:STANDARD:Warlock:Warlocks] 
 		
 		
+	  	[CAN_DO_INTERACTION:MAKE_MEPHIT3]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:WAIT_PERIOD:10000]
+	  	[CAN_DO_INTERACTION:MAKE_MEPHIT4]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:WAIT_PERIOD:10000]
 	---------------------------------------------------------------------------------------------------------------
 	///select warlock female
 	---------------------------------------------------------------------------------------------------------------
@@ -853,6 +844,13 @@ creature_warlock_civ
 		[PROFESSION_NAME:STRAND_EXTRACTOR:Necromancer:Necromancers]
 		[CASTE_PROFESSION_NAME:STANDARD:Witch:Witches] 
 		
+		
+	  	[CAN_DO_INTERACTION:MAKE_MEPHIT1]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:WAIT_PERIOD:10000]
+	  	[CAN_DO_INTERACTION:MAKE_MEPHIT2]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:WAIT_PERIOD:10000]
 		
 	---------------------------------------------------------------------------------------------------------------
 	///select vampire male
@@ -874,6 +872,13 @@ creature_warlock_civ
 	  
 	  Has Bloodsucker. Bloodsucker is removed when drinking blood from a barrel or bloodwine.
 	  
+		
+	  	[CAN_DO_INTERACTION:MAKE_MEPHIT3]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:WAIT_PERIOD:10000]
+	  	[CAN_DO_INTERACTION:MAKE_MEPHIT4]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:WAIT_PERIOD:10000]
 	---------------------------------------------------------------------------------------------------------------
 	///select vampire female
 	---------------------------------------------------------------------------------------------------------------
@@ -892,6 +897,13 @@ creature_warlock_civ
       [CDI:TARGET:A:SELF_ONLY]
       [CDI:FREE_ACTION]
 	
+		
+	  	[CAN_DO_INTERACTION:MAKE_MEPHIT1]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:WAIT_PERIOD:10000]
+	  	[CAN_DO_INTERACTION:MAKE_MEPHIT2]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:WAIT_PERIOD:10000]
 	---------------------------------------------------------------------------------------------------------------
 	///select all skeleton castes
 	---------------------------------------------------------------------------------------------------------------
@@ -906,12 +918,6 @@ creature_warlock_civ
       [CDI:TARGET:A:SELF_ONLY]
       [CDI:FREE_ACTION]
 	  
-	  
-		[CAN_DO_INTERACTION:REMOVE_OPPOSED_TO_LIFE]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:50]
-		[CDI:FREE_ACTION]
-		[CDI:WAIT_PERIOD:99999999]
 		
 		
 		
@@ -1206,6 +1212,7 @@ creature_warlock_civ
 		YESBATTLECRY[CDI:MAX_TARGET_NUMBER:A:1]
 		YESBATTLECRY[CDI:WAIT_PERIOD:903]
 	
+	
 	   [USE_MATERIAL_TEMPLATE:SILK:SILK_TEMPLATE]
 	   
 	[EQUIPS]
@@ -1216,15 +1223,6 @@ creature_warlock_civ
 
 
 		
-		
-	  	[CAN_DO_INTERACTION:LEARN_SLADE_BOULDER]
-		[CDI:TARGET:A:SELF_ONLY]
-		[CDI:WAIT_PERIOD:150]
-		
-		
-	  	[CAN_DO_INTERACTION:MAKE_MEPHIT]
-		[CDI:TARGET:A:SELF_ONLY]
-		[CDI:WAIT_PERIOD:50]
 		
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
@@ -2265,17 +2263,17 @@ creature_warlock_civ
 	
 	
 [CREATURE:MEPHIT]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:(Size 40, flier) A dog-sized monster with wings and horns.  It is mischievous and can cause a lot of havoc if you do not pay attention to it. For some reason warlocks like them as pets.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A dog-sized monster with wings and horns.  It is mischievous and can cause a lot of havoc if you do not pay attention to it. For some reason warlocks like them as pets.]
 	[NAME:mephit:mephits:mephit]
 	[CREATURE_TILE:'m'][COLOR:7:0:1]
 	[PETVALUE:200]
 	[PET][CREATURE_CLASS:PET_HEALING]
 	[CREATURE_CLASS:EVIL]
-	
+	[CHILD:1]
 
 	[BIOME:SUBTERRANEAN_CHASM]
 	[CREATURE_CLASS:UNDERGROUND_CREATURE][UNDERGROUND_DEPTH:2:2]
-	[POPULATION_NUMBER:30000:30000]-UBIQUITOUS-2:10]
+	[POPULATION_NUMBER:30000:30000]
 	[CLUSTER_NUMBER:3:5]
 
 	[LARGE_ROAMING][LARGE_PREDATOR]

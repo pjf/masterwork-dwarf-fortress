@@ -1,53 +1,50 @@
 -- Check for a set of creatures and see if they have their naturals skills
 --[[
- 
+
 	There is cases in the game where a creature does not have their natural skills, for example  
 	tranformations does not provide the skills as defined in the raws.
- 
-	This script goes through all the creatures in the current site and apply natural skills as
-	defined in the raw of their current race/caste on them.
- 
+
+	This script goes through the list of creatures and apply natural skills on them.
+
 	It will not lower a creature's skill if its level is above their natural one.
- 
-	The validUnit table below will allow to narrow down the search.
- 
+
+	You add creature IDs to the validUnit table below to narrow down the search.
+
 	Usage
 	-----
- 
+
 	naturalSkills [delay]
 	- The optional delay will set the execution after x ingame ticks.
- 
+
 	Using autosyndrome
 	------------------
- 
+
 	Using autosyndrome, add this to a rock's syndrome :
 	[SYN_CLASS:\COMMAND]
 	[SYN_CLASS:naturalSkills]
 	[SYN_CLASS:100]
- 
+
 	This will apply natural skills after 100 game ticks.
- 
+
 	Checking everytime a save is loaded
 	-----------------------------------
- 
+
 	Putting this line inside the raw/init.lua file, inside your saves will allow
 	you to check everytime a save is loaded :
- 
+
 	dfhack.run_script('naturalSkills')
-	
-	@author Boltgun
- 
+
 ]]
  
 if not dfhack.isMapLoaded() then qerror('Map is not loaded.') end
  
 local utils = require 'utils'
 local delay
- 
--- The list of creatures raw ID, ignored if left empty
+
+-- The list of creatures supported by this script, ignored if left empty
 local validUnit = {
-} 
- 
+}  
+
 -- Scan the units table for targeted creatures
 function naturalSkills()
 	local unitList = df.global.world.units.active
@@ -73,26 +70,26 @@ function isCreature(unit)
 	end
  
 end
- 
+
 -- Check if the unit has the skill and its rating high enough
 function hasSkill(unit, skillId, rating)
 	local k, skill, currentSkill
- 
+
 	for k, skill in ipairs(unit.status.current_soul.skills) do
- 
+
 		if skill.id == skillId then
 			currentSkill = skill
 			break
 		end
- 
+
 	end
- 
+
 	if currentSkill then
 		return currentSkill.rating >= rating
 	end
- 
+
 	return false
- 
+
 end
  
 -- Search the creatures for a select set, ensure those have their natural skills
@@ -113,7 +110,7 @@ function fixSkills(unit)
 		end
 	end
 end
- 
+
 if not ... then
 	naturalSkills()
 else
