@@ -41,9 +41,7 @@ Public Class fileListManager
         For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws '.Where(AddressOf gameRawFilter)
             For Each t As rawToken In tokens
                 If Not singleValueToken(t) Then
-                    If fi.Value.Contains(t.optionOnValue) Then
-                        results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name) : Exit For
-                    ElseIf fi.Value.Contains(t.optionOffValue) Then
+                    If fi.Value.Contains(t.optionOnValue) OrElse fi.Value.Contains(t.optionOffValue) Then
                         results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name) : Exit For
                     End If
                 Else
@@ -52,8 +50,8 @@ Public Class fileListManager
             Next
         Next
         addGraphicFiles(results)
-        'Dim elapsed As TimeSpan = Now - start
-        'Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for tokens " & tokens.ToString)
+        Dim elapsed As TimeSpan = Now - start
+        Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for tokens " & tokens.ToString)
         Return results
     End Function
 

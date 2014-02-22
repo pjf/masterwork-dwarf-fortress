@@ -112,10 +112,6 @@ Public Class optionComboPatternToken
         Return m_opt.fullFileList
     End Function
 
-    'Public Function optionInfo() As List(Of String) Implements iExportInfo.optionInfo
-    '    Return New List(Of String)({"{PATTERN} " & m_pattern, "{REPLACE} " & m_replace})
-    'End Function
-
     Public Function comboItems() As comboItemCollection Implements iExportInfo.comboItems
         Return m_opt.itemList
     End Function

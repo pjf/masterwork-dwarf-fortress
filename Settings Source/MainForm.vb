@@ -397,7 +397,7 @@ Imports System.ComponentModel
         frmInfo.Controls.Add(rtext)
         rtext.Dock = DockStyle.Fill
 
-        rtext.AppendText("{""Options"": [" & vbCrLf)
+        rtext.AppendText("{""Options"": [" & vbNewLine)
         exportOptions(tabMain, rtext)
         rtext.AppendText("]}")
         frmInfo.Show()
@@ -437,55 +437,53 @@ Imports System.ComponentModel
             Else
                 Dim conOpt As iExportInfo = TryCast(c, iExportInfo)
                 Dim tempList As New List(Of String)
-                Dim temp As String
+                Dim temp As String                               
                 If conOpt IsNot Nothing Then
                     Try
-                        rText.AppendText(ControlChars.Tab & "{" & vbCrLf)
+                        rText.AppendText(vbTab & "{" & vbNewLine)
 
-                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Name"": """ & c.Name & """," & vbCrLf)
-                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Text"": """ & c.Text & """," & vbCrLf)
-                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Tooltip"": """ & IIf(ToolTipMaker.GetToolTip(c) <> "", ToolTipMaker.GetToolTip(c).Replace(vbCrLf, " "), "") & """," & vbCrLf)
+                        rText.AppendText(String.Format("{0}{0}""Name"": ""{1}"",", vbTab, c.Name) & vbNewLine)
+                        rText.AppendText(String.Format("{0}{0}""Text"": ""{1}"",", vbTab, c.Text) & vbNewLine)
+                        rText.AppendText(String.Format("{0}{0}""Tooltip"": ""{1}"",", vbTab, IIf(ToolTipMaker.GetToolTip(c) <> "", ToolTipMaker.GetToolTip(c).Replace(vbNewLine, " "), "")) & vbNewLine)
 
                         tempList.Clear()
-                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Files"": [" & vbCrLf)
+                        rText.AppendText(String.Format("{0}{0}""Files"": [", vbTab))
                         For Each fname As String In conOpt.fileInfo
-                            tempList.Add("""" & fname & """")                            
+                            tempList.Add("""" & fname & """")
                         Next
-                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & String.Join(", ", tempList) & vbCrLf)
-                        rText.AppendText(ControlChars.Tab & ControlChars.Tab & "]," & vbCrLf)
+                        rText.AppendText(String.Join(", ", tempList) & "]," & vbNewLine)
 
                         If conOpt.tagItems IsNot Nothing AndAlso conOpt.tagItems.Count > 0 Then
-                            tempList.Clear()
-                            temp = ""
-                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & """Tags"": [" & vbCrLf)
+                            tempList.Clear() : temp = ""
+                            rText.AppendText(String.Format("{0}{0}""Tags"": [", vbTab) & vbNewLine)
                             For Each t As rawToken In conOpt.tagItems
-                                temp = ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & "{" & vbCrLf
-                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """TokenName"": """ & t.tokenName & """," & vbCrLf
-                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """On"": """ & t.optionOnValue & """," & vbCrLf
-                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """Off"": """ & t.optionOffValue & """" & vbCrLf
-                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & "}"
+                                temp = String.Format("{0}{0}{0}{{", vbTab) & vbNewLine
+                                temp &= String.Format("{0}{0}{0}""TokenName"": ""{1}"",", vbTab, t.tokenName) & vbNewLine
+                                temp &= String.Format("{0}{0}{0}""On"": ""{1}"",", vbTab, t.optionOnValue) & vbNewLine
+                                temp &= String.Format("{0}{0}{0}""Off"": ""{1}"",", vbTab, t.optionOffValue) & vbNewLine
+                                temp &= String.Format("{0}{0}{0}}}", vbTab)
                                 tempList.Add(temp)
                             Next
-                            rText.AppendText(String.Join(", " & vbCrLf, tempList) & vbCrLf)
-                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & "]," & vbCrLf)
+                            rText.AppendText(String.Join(", " & vbNewLine, tempList) & vbNewLine)
+                            rText.AppendText(String.Format("{0}{0}],", vbTab) & vbNewLine)
                         End If
 
                         If conOpt.comboItems IsNot Nothing AndAlso conOpt.comboItems.Count > 0 Then
                             tempList.Clear()
                             temp = ""
-                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & """DropDownItems"": [" & vbCrLf)
+                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & """DropDownItems"": [" & vbNewLine)
                             For Each cbi As comboItem In conOpt.comboItems
-                                temp = ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & "{" & vbCrLf
-                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """Display"": """ & cbi.display & """," & vbCrLf
-                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & """Value"": """ & cbi.value & """," & vbCrLf
-                                temp &= ControlChars.Tab & ControlChars.Tab & ControlChars.Tab & "}"
+                                temp = String.Format("{0}{0}{0}{{", vbTab) & vbNewLine
+                                temp &= String.Format("{0}{0}{0}""Display"": ""{1}"",", vbTab, cbi.display) & vbNewLine
+                                temp &= String.Format("{0}{0}{0}""Value"": ""{1}"",", vbTab, cbi.value) & vbNewLine
+                                temp &= String.Format("{0}{0}{0}}}", vbTab)
                                 tempList.Add(temp)
                             Next
-                            rText.AppendText(String.Join(", " & vbCrLf, tempList) & vbCrLf)
-                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & "]" & vbCrLf)
+                            rText.AppendText(String.Join(", " & vbNewLine, tempList) & vbNewLine)
+                            rText.AppendText(String.Format("{0}{0}],", vbTab) & vbNewLine)
                         End If
 
-                        rText.AppendText(ControlChars.Tab & "}," & vbCrLf)
+                        rText.AppendText(vbTab & "}," & vbNewLine)
                     Catch ex As Exception
                         Debug.WriteLine("!PRINT EXCEPTION! " & ex.ToString)
                     End Try
@@ -588,7 +586,7 @@ Imports System.ComponentModel
                 formatCivTableControl(btnHostile, intCtrlWidth, intCtrlHeight)
                 Me.tableLayoutCivs.Controls.Add(btnHostile, idxHostile, idxRow)
 
-                'add a material option (placeholder, currently disabled)
+                'add a material option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxMaterials, 0).Width
                 Dim cbMats As optionComboPatternToken = New optionComboPatternToken
                 cbMats.Name = "optCbPatternMats" & civName
@@ -652,7 +650,7 @@ Imports System.ComponentModel
 
         cb.options.itemList = matComboItems
 
-        cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]"
+        cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]" ' & tag & \b) append this once raws are updated to unique tags
         cb.replace = "${1}${value}]"
     End Sub
 
