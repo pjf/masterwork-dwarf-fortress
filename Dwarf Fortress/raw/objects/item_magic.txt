@@ -10,11 +10,7 @@ item_magic
 [UPSTEP:2]
 [MATERIAL_SIZE:6]YES
 
-//items tools - special reagents 
-[ITEM_TOOL:ITEM_TOOL_PHYLACTERY]
-[NAME:phylactery:phylacteries]
-[VALUE:5][SIZE:10][MATERIAL_SIZE:1][UNIMPROVABLE]
-[TILE:230]
+
 
 [ITEM_TOOL:ITEM_TOOL_CATALYST_GEM]
 [NAME:catalyst gem:catalyst gems]

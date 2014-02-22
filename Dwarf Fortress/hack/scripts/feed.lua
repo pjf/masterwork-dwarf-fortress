@@ -17,6 +17,7 @@ function run(cmd)
 		elseif cmd == 'reset' then
 			print("Resetting hunger and thirst counters for "..unitname)
 			unit.counters2.hunger_timer=0
+			unit.counters2.thirst_timer=0
 		end
 	end
 end
