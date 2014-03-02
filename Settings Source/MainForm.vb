@@ -346,6 +346,13 @@ Imports System.ComponentModel
     Private Sub rBtnManualOrc_Click(sender As Object, e As EventArgs) Handles rBtnManualOrc.Click
         Process.Start("Orc Manual.html")
     End Sub
+    Private Sub rBtnManualGnome_Click(sender As Object, e As EventArgs) Handles rBtnManualGnome.Click
+        Process.Start("Gnome Manual.html")
+    End Sub
+    Private Sub rBtnManualWarlock_Click(sender As Object, e As EventArgs) Handles rBtnManualWarlock.Click
+        Process.Start("Warlock Manual.html")
+    End Sub
+
     Private Sub rBtnDonations_Click(sender As Object, e As EventArgs) Handles rBtnDonations.Click
         Process.Start(IO.Path.Combine(globals.m_masterworkRootDir, "repository", "donate.html"))
     End Sub
@@ -579,6 +586,7 @@ Imports System.ComponentModel
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxHostile, 0).Width
                 Dim btnHostile As New optionSingleReplaceButton
                 btnHostile.Name = "optBtnGood" & civName
+                btnHostile.options.fileManager.fileNames = New List(Of String)({civLabel.entityFileName})
                 btnHostile.options.enabledValue = "!BABYSNATCHER!" 'enabled = good = not baby snatchers
                 btnHostile.options.disabledValue = "[BABYSNATCHER]"
                 btnHostile.ImageAlign = ContentAlignment.MiddleCenter
@@ -620,6 +628,7 @@ Imports System.ComponentModel
         Else
             btn.options.enabledValue = String.Format("YES{0}[", tag)
             btn.options.disabledValue = String.Format("!NO{0}!", tag)
+            btn.options.fileManager.fileNames = New List(Of String)({entityFileName})
         End If
 
         btn.ImageAlign = ContentAlignment.MiddleCenter
@@ -633,6 +642,7 @@ Imports System.ComponentModel
         Next
 
         cb.options.itemList = skillComboItems
+        cb.options.fileManager.fileNames = New List(Of String)({creatureFileName})
         If tag Is Nothing OrElse tag.Trim <> "" Then
             cb.pattern = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & "\b)"
             cb.replace = "${1}${value}${2}"
@@ -641,7 +651,7 @@ Imports System.ComponentModel
         End If
     End Sub
 
-    Private Sub buildMatOption(ByRef cb As optionComboPatternToken, ByVal entityFile As String)
+    Private Sub buildMatOption(ByRef cb As optionComboPatternToken, ByVal entityFileName As String)
         Dim matComboItems As New comboItemCollection
         matComboItems.Add(New comboItem("DEFAULT", "Default"))
         matComboItems.Add(New comboItem("WEAK", "Weak"))
@@ -649,6 +659,7 @@ Imports System.ComponentModel
         matComboItems.Add(New comboItem("STRONG", "Strong"))
 
         cb.options.itemList = matComboItems
+        cb.options.fileManager.fileNames = New List(Of String)({entityFileName})
 
         cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]" ' & tag & \b) append this once raws are updated to unique tags
         cb.replace = "${1}${value}]"
@@ -657,6 +668,7 @@ Imports System.ComponentModel
     Private Sub buildTriggerOption(ByRef cb As optionComboBoxMulti, ByVal entityFileName As String, ByVal tokenList As List(Of String))
         'add the combobox items and associated values 0-5
         loadTriggerItems(cb)
+        cb.options.fileManager.fileNames = New List(Of String)({entityFileName})
         loadTriggerTokens(tokenList, cb.options.tokenList)
 
         'set the tooltips        

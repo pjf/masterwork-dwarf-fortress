@@ -18,57 +18,90 @@ Public Class fileListManager
     <Browsable(False), _
     EditorBrowsable(EditorBrowsableState.Advanced), _
     DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-    Public ReadOnly Property fileNames As List(Of String)
+    Public Property fileNames As List(Of String)
         Get
             Return m_fileNames
         End Get
+        Set(value As List(Of String))
+            m_fileNames = value
+        End Set
     End Property
 
 
     Private Function findFiles(ByVal optm As optionManager, ByVal tokens As rawTokenCollection) As List(Of IO.FileInfo)
         Dim start As DateTime = Now
+
         Dim results As New List(Of IO.FileInfo)
-        'loading from the init files is handled differently, we don't need to search raws
-        If optm.loadFromDInit Or optm.loadFromInit Or optm.loadFromWorldGen Then Return results
-        If tokens.Count <= 0 Then Return results
+        'if we have an override specified, then just find those files
+        If m_fileNames.Count > 0 Then
+            results = findSpecificFiles()
+        Else
+            'loading from the init files is handled differently, we don't need to search raws
+            If optm.loadFromDInit Or optm.loadFromInit Or optm.loadFromWorldGen Then Return results
+            If tokens.Count <= 0 Then Return results
 
-        Dim blnContinue As Boolean = False
-        For Each t As rawToken In tokens
-            If t.optionOnValue <> "" Or t.optionOffValue <> "" Then blnContinue = True : Exit For
-        Next
-        If Not blnContinue Then Return results
-
-        For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws '.Where(AddressOf gameRawFilter)
+            Dim blnContinue As Boolean = False
             For Each t As rawToken In tokens
-                If Not singleValueToken(t) Then
-                    If fi.Value.Contains(t.optionOnValue) OrElse fi.Value.Contains(t.optionOffValue) Then
-                        results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name) : Exit For
-                    End If
-                Else
-                    If fi.Value.Contains(String.Format("[{0}:", t.tokenName)) Then results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name) : Exit For
-                End If
+                If t.optionOnValue <> "" Or t.optionOffValue <> "" Then blnContinue = True : Exit For
             Next
-        Next
-        addGraphicFiles(results)
+            If Not blnContinue Then Return results
+
+            For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws '.Where(AddressOf gameRawFilter)
+                For Each t As rawToken In tokens
+                    If Not singleValueToken(t) Then
+                        If fi.Value.Contains(t.optionOnValue) OrElse fi.Value.Contains(t.optionOffValue) Then
+                            results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name) : Exit For
+                        End If
+                    Else
+                        If fi.Value.Contains(String.Format("[{0}:", t.tokenName)) Then results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name) : Exit For
+                    End If
+                Next
+            Next
+            addGraphicFiles(results)
+        End If
+
         Dim elapsed As TimeSpan = Now - start
         Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for tokens " & tokens.ToString)
         Return results
     End Function
 
     Private Function findFiles(ByVal optm As optionManager, ByVal pattern As String) As List(Of IO.FileInfo)
+        If pattern.Contains("YESHARDERINVADER\b)") Then
+            Console.Write("")
+        End If
+
         'Dim start As DateTime = Now
         Dim results As New List(Of IO.FileInfo)
-        If optm.loadFromDInit Or optm.loadFromInit Or optm.loadFromWorldGen Then Return results
 
-        Dim rx As New Regex(pattern)
-        If pattern = "" Then Return results
+        'if we have an override specified, then just find those files
+        If m_fileNames.Count > 0 Then
+            results = findSpecificFiles()
+        Else
+            If optm.loadFromDInit Or optm.loadFromInit Or optm.loadFromWorldGen Then Return results
 
-        For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws '.Where(AddressOf gameRawFilter)
-            If rx.IsMatch(fi.Value) Then results.Add(fi.Key)
-        Next
-        addGraphicFiles(results)
+            Dim rx As New Regex(pattern)
+            If pattern = "" Then Return results
+
+            For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws '.Where(AddressOf gameRawFilter)
+                If rx.IsMatch(fi.Value) Then results.Add(fi.Key)
+            Next
+            addGraphicFiles(results)
+        End If
         'Dim elapsed As TimeSpan = Now - start
         'Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for pattern " & pattern)
+        Return results
+    End Function
+
+    Private Function findSpecificFiles() As List(Of IO.FileInfo)
+        Dim results As New List(Of IO.FileInfo)
+        Dim tmpFiles As New List(Of KeyValuePair(Of IO.FileInfo, String))
+        For Each fName As String In m_fileNames
+            tmpFiles.AddRange(globals.m_dfRaws.Where(Function(raw As KeyValuePair(Of IO.FileInfo, String)) raw.Key.Name.Equals(fName, StringComparison.CurrentCultureIgnoreCase)))
+            tmpFiles.AddRange(globals.m_mwRaws.Where(Function(raw As KeyValuePair(Of IO.FileInfo, String)) raw.Key.Name.Equals(fName, StringComparison.CurrentCultureIgnoreCase)))
+        Next
+        For Each raw As KeyValuePair(Of IO.FileInfo, String) In tmpFiles
+            results.Add(raw.Key)
+        Next
         Return results
     End Function
 
