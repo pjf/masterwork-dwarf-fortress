@@ -2191,6 +2191,10 @@
         nWzhi7P0wVn+juAD42puaIR94XQAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="optBtnRendermax.ToolTip" xml:space="preserve">
+    <value>Enables the dfhack plugin. You can always disable it while playing with "rendermax disable" in your dfhack window. Currently you can only have either Rendermax or TTF active and it requires print mode STANDARD.
+</value>
+  </data>
   <data name="optBtnVisibleCaves.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
