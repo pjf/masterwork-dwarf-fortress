@@ -66,7 +66,6 @@ Imports System.ComponentModel
         End If
     End Sub
 
-
     'this override prevents flickering when drawing transparent controls over background images within a tabcontrol
     Protected Overrides ReadOnly Property CreateParams As CreateParams
         Get
