@@ -2,6 +2,17 @@ item_trapcomp
 
 [OBJECT:ITEM]
 
+
+[ITEM_TRAPCOMP:ITEM_TRAPCOMP_PUMP]
+[NAME:pump mechanism:pump mechanisms]
+[SIZE:100]
+[HITS:1]
+[MATERIAL_SIZE:1]
+[IS_SCREW]
+[WOOD]
+[METAL]
+[ATTACK:EDGE:5:1:lightly hit:lightly hits:NO_SUB:5]
+
 [ITEM_TRAPCOMP:ITEM_BATTERING_RAM]
 [NAME:ram:rams]
 [SIZE:1600]

@@ -577,7 +577,7 @@ enable automaterial
 enable autoSyndrome
 enable autotrade
 enable buildingplan
-enable diggingInvaders
+#enable diggingInvaders
 enable dwarfmonitor
 enable fix-armory
 enable getplants
@@ -753,12 +753,21 @@ tweak military-training
 itemsyndrome contaminantsOn enable
 itemsyndrome enable
 
+#for warlock darkpact and portals
+hackwish startup
+teleportbase
 
 # write the correct season to gamelog on world load
 soundsense-season
 
 # patch the material objects in memory to fix cloth stockpiles
 fix/cloth-stockpile enable
+
+# Gnome scripts
+construct-creature
+druidism
+geology
+drilling-rig
 
 #######################################################
 # Apply binary patches at runtime                     #

@@ -2,30 +2,38 @@ item_z_orcfort
 
 [OBJECT:ITEM]
 
----- 
-ORCS
-----
+# Scalps. Type type of scalp is determined by its material
 
-[ITEM_TOOL:ITEM_TOOL_ANIMALMOJO]
-[NAME:animal growth mojo:animal growth mojos]
-[VALUE:20]
-[TILE:163]
-[SIZE:1000]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
+[ITEM_TOOL:PREPARED_SCALP]
+    [NAME:scalp (prepared):scalps (prepared)]
+    [UNIMPROVABLE]
 
-[ITEM_TOOL:ITEM_TOOL_CHAOSMOJO]
-[NAME:chaos growth mojo:chaos growth mojos]
-[VALUE:20]
-[TILE:163]
-[SIZE:1000]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
+[ITEM_TOOL:ORC_STANDARD]
+    [NAME:standard of honour:standards of honour]
+    [UNIMPROVABLE]
 
-[ITEM_TOOL:ITEM_TOOL_HEALMOJO]
-[NAME:healing spell mojo:healing spell mojos]
-[VALUE:150]
-[TILE:163]
-[SIZE:1000]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
+### These mojo haven't been written yet ###
+
+(ITEM_TOOL:ITEM_TOOL_ANIMALMOJO)
+(NAME:animal growth mojo:animal growth mojos)
+(VALUE:20)
+(TILE:163)
+(SIZE:1000)
+(MATERIAL_SIZE:1)(UNIMPROVABLE)
+
+(ITEM_TOOL:ITEM_TOOL_CHAOSMOJO)
+(NAME:chaos growth mojo:chaos growth mojos)
+(VALUE:20)
+(TILE:163)
+(SIZE:1000)
+(MATERIAL_SIZE:1)(UNIMPROVABLE)
+
+(ITEM_TOOL:ITEM_TOOL_HEALMOJO)
+(NAME:healing spell mojo:healing spell mojos)
+(VALUE:150)
+(TILE:163)
+(SIZE:1000)
+(MATERIAL_SIZE:1)(UNIMPROVABLE)
 
 [ITEM_TOOL:ITEM_TOOL_FFMOJO]
 [NAME:fairyfire spell mojo:fairyfire spell mojos]
@@ -127,6 +135,13 @@ ORCS
 [SIZE:10000]
 [MATERIAL_SIZE:1][UNIMPROVABLE]
 
+[ITEM_TOOL:FARMLAND_LOOT_CRATE]
+[NAME:ship laden with farmland loot:ships laden with farmland loot]
+[VALUE:20]
+[TILE:152]
+[SIZE:1000]
+[MATERIAL_SIZE:1][UNIMPROVABLE]
+
 [ITEM_TOOL:ELF_LOOT_CRATE]
 [NAME:ship laden with elvish loot:ships laden with elvish loot]
 [VALUE:20]
@@ -172,13 +187,6 @@ ORCS
 
 -------------
 
-[ITEM_TOOL:ITEM_TOOL_DREAM_SMALL]
-[NAME:spirit shard:spirit shards]
-[VALUE:1]
-[TILE:163]
-[SIZE:20]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
-
 [ITEM_TOOL:ITEM_TOOL_DREAM_MEDIUM]
 [NAME:dreamwalk talisman:dreamwalk talismans]
 [VALUE:20]
@@ -192,6 +200,7 @@ ORCS
 [TILE:163]
 [SIZE:200]
 [MATERIAL_SIZE:1][UNIMPROVABLE]
+
 [ITEM_TOOL:ITEM_TOOL_CODEX_DRUID]
 [NAME:druidic dreamwalk codex:druidic dreamwalk codexes]
 [VALUE:250]
@@ -319,13 +328,6 @@ BUILDING BLUEPRINTS
 
 [ITEM_TOOL:ITEM_TOOL_BLUEPRINT_TREESINGER]
 [NAME:treesingers pagoda blueprint:treesingers pagoda blueprints]
-[VALUE:1000]
-[TILE:10]
-[SIZE:1000]
-[MATERIAL_SIZE:1][UNIMPROVABLE]
-
-[ITEM_TOOL:ITEM_TOOL_BLUEPRINT_CARAVANSERAI]
-[NAME:caravanserai blueprint:caravanserai blueprints]
 [VALUE:1000]
 [TILE:10]
 [SIZE:1000]

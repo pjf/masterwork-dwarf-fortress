@@ -25,7 +25,11 @@ creature_orcfort_taigaorc
 	[NATURAL_SKILL:STANCE_STRIKE:0]YESHARDERINVADER_TAIGAORC
 	[NATURAL_SKILL:DODGING:0]YESHARDERINVADER_TAIGAORC
 
-	[NAME:taiga orc:taiga orcs:taiga-orcish]
+	///change by Meph
+	/// I made them orcs, instead of taiga orcs, because the destinction is no longer necessary. 
+	NAME:taiga orc:taiga orcs:taiga-orcish
+	
+	[NAME:orc:orcs:orcish]
 	[CREATURE_TILE:'O'][COLOR:2:0:0]
 	
 	[INTELLIGENT]
@@ -305,7 +309,7 @@ creature_orcfort_taigaorc
 		[BODY_SIZE:1:0:21000] 
 		[BODY_SIZE:12:0:75000]  
                 [CASTE_PROFESSION_NAME:STANDARD:Orc:Orcs]
-   	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.]
+   	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.]
 	[POP_RATIO:80]
 
 	[CASTE:MALE]
@@ -315,7 +319,7 @@ creature_orcfort_taigaorc
 		[BODY_SIZE:1:0:21000] 
 		[BODY_SIZE:12:0:75000] 
                 [CASTE_PROFESSION_NAME:STANDARD:Orc:Orcs]
-   	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.]
+   	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.]
 	[POP_RATIO:80]
 
 	[CASTE:URUK_MALE]
@@ -329,7 +333,7 @@ creature_orcfort_taigaorc
 		[PHYS_ATT_RANGE:TOUGHNESS:2000:2500:3000:3250:3500:3750:4000]           ++++
 		[PHYS_ATT_RANGE:RECUPERATION:2000:2500:3000:3250:3500:3750:4000]        ++++
                 [CASTE_PROFESSION_NAME:STANDARD:Uruk:Uruks]
-   	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Uruk caste orcs are incredible physical specimens even by Orcish standards.]
+   	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world. Uruk caste orcs are incredible physical specimens even by Orcish standards.]
 	[POP_RATIO:20]
 	
 	[CASTE:URUK_FEMALE]
@@ -344,7 +348,7 @@ creature_orcfort_taigaorc
 		[PHYS_ATT_RANGE:TOUGHNESS:2000:2500:3000:3250:3500:3750:4000]           ++++
 		[PHYS_ATT_RANGE:RECUPERATION:2000:2500:3000:3250:3500:3750:4000]        ++++
                 [CASTE_PROFESSION_NAME:STANDARD:Uruk:Uruks]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Uruk caste orcs are incredible physical specimens even by Orcish standards.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world. Uruk caste orcs are incredible physical specimens even by Orcish standards.]
 	[POP_RATIO:20]
 
  
@@ -357,7 +361,7 @@ creature_orcfort_taigaorc
 		[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]              + like goblins, worse than orcs
 		[PHYS_ATT_RANGE:AGILITY:2000:2500:3000:3250:3500:3750:4000]               +++ quite good
                 [CASTE_PROFESSION_NAME:STANDARD:Snaga:Snagas]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Snaga have mixed Goblin blood and are treated as an inferior caste, although they are quite agile and make fine bow-orcs.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world. Snaga have mixed Goblin blood and are treated as an inferior caste, although they are quite agile and make fine bow-orcs.]
 	[POP_RATIO:40]
 		
 	[CASTE:SNAGA_FEMALE]
@@ -370,7 +374,7 @@ creature_orcfort_taigaorc
 		[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]              + better than average, worse than orcs
 		[PHYS_ATT_RANGE:AGILITY:2000:2500:3000:3250:3500:3750:4000]               +++ quite good
                 [CASTE_PROFESSION_NAME:STANDARD:Snaga:Snagas]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Snaga have mixed Goblin blood and are treated as an inferior caste, although they are quite agile and make fine bow-orcs.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world. Snaga have mixed Goblin blood and are treated as an inferior caste, although they are quite agile and make fine bow-orcs.]
 	[POP_RATIO:40]
 	
 	[CASTE:DREAMWALKER_MALE]
@@ -401,7 +405,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:3]
                 [CASTE_PROFESSION_NAME:STANDARD:Dreamwalker:Dreamwalkers]
-		[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Dreamwalkers are physically frail and are often exiled from feral warbands.  The settled Taiga clans, however, value the Dreamwalkers wisdom and unique ability to absorb powerful magics from places of power.]
+		[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world. Dreamwalkers are physically frail and are often exiled from feral warbands.  The settled clans, however, value the Dreamwalkers wisdom and unique ability to absorb powerful magics from places of power.]
 	[POP_RATIO:10] 
 	
 	[CASTE:DREAMWALKER_FEMALE]
@@ -433,7 +437,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:3]
                 [CASTE_PROFESSION_NAME:STANDARD:Dreamwalker:Dreamwalkers]
-		[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Dreamwalkers are physically frail and are often exiled from feral warbands.  The settled Taiga clans, however, value the Dreamwalkers wisdom and unique ability to absorb powerful magics from places of power.]
+		[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world. Dreamwalkers are physically frail and are often exiled from feral warbands.  The settled clans, however, value the Dreamwalkers wisdom and unique ability to absorb powerful magics from places of power.]
 	[POP_RATIO:10]	
 
 
@@ -459,7 +463,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:5]
                 [CASTE_PROFESSION_NAME:STANDARD:Druid:Druids]
-		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Druids are Orcish Dreamwalkers who are changed by visions of the primal power of Earth and Sky.  They wield these forces in defense of their clans and of the savage wilds.]
+		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Orcs build their strongholds in the twilight lands at the margins of the world. Druids are Orcish Dreamwalkers who are changed by visions of the primal power of Earth and Sky.  They wield these forces in defense of their clans and of the savage wilds.]
 		[CAN_DO_INTERACTION:SAP_STRENGTH_ORC] 
 			[CDI:ADV_NAME:Sap strength]
 			[CDI:USAGE_HINT:ATTACK]
@@ -520,7 +524,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:5]
                 [CASTE_PROFESSION_NAME:STANDARD:Druid:Druids]
-		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Druids are Orcish Dreamwalkers who are changed by visions of the primal power of Earth and Sky.  They wield these forces in defense of their clans and of the savage wilds.]
+		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Orcs build their strongholds in the twilight lands at the margins of the world. Druids are Orcish Dreamwalkers who are changed by visions of the primal power of Earth and Sky.  They wield these forces in defense of their clans and of the savage wilds.]
 		[CAN_DO_INTERACTION:SAP_STRENGTH_ORC] 
 			[CDI:ADV_NAME:Sap strength]
 			[CDI:USAGE_HINT:ATTACK]
@@ -574,7 +578,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:5]
                 [CASTE_PROFESSION_NAME:STANDARD:Sorcerer:Sorcerers]
-		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Sorcerers are Orcish Dreamwalkers who have glimpsed the darkest corners of the ethereal planes, and given themselves over to the pursuit of arcane power.]
+		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Orcs build their strongholds in the twilight lands at the margins of the world. Sorcerers are Orcish Dreamwalkers who have glimpsed the darkest corners of the ethereal planes, and given themselves over to the pursuit of arcane power.]
 	        [CAN_DO_INTERACTION:DECAY_ORC] 
 			[CDI:ADV_NAME:Decay]
 			[CDI:USAGE_HINT:ATTACK]			
@@ -633,7 +637,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:5]
                 [CASTE_PROFESSION_NAME:STANDARD:Sorcerer:Sorcerers]
-		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Sorcerers are Orcish Dreamwalkers who have glimpsed the darkest corners of the ethereal planes, and given themselves over to the pursuit of arcane power.]
+		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Orcs build their strongholds in the twilight lands at the margins of the world. Sorcerers are Orcish Dreamwalkers who have glimpsed the darkest corners of the ethereal planes, and given themselves over to the pursuit of arcane power.]
 
 	        [CAN_DO_INTERACTION:DECAY_ORC] 
 			[CDI:ADV_NAME:Decay]
@@ -695,7 +699,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:5]
                 [CASTE_PROFESSION_NAME:STANDARD:Frostskald:Frostskalds]
-		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Frostskalds are Orcish Dreamwalkers who have learned to harness the stark fury of elemental ice.  They turn this power against enemies foolish enough to encroach on their arctic homes.]
+		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Orcs build their strongholds in the twilight lands at the margins of the world. Frostskalds are Orcish Dreamwalkers who have learned to harness the stark fury of elemental ice.  They turn this power against enemies foolish enough to encroach on their arctic homes.]
 		
 		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
 			[CDI:ADV_NAME:Hailstorm]
@@ -766,7 +770,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:5]
                 [CASTE_PROFESSION_NAME:STANDARD:Frostskald:Frostskalds]
-		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Frostskalds are Orcish Dreamwalkers who have learned to harness the stark fury of elemental ice.  They turn this power against enemies foolish enough to encroach on their arctic homes.]
+		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Orcs build their strongholds in the twilight lands at the margins of the world. Frostskalds are Orcish Dreamwalkers who have learned to harness the stark fury of elemental ice.  They turn this power against enemies foolish enough to encroach on their arctic homes.]
 		
 		[CAN_DO_INTERACTION:MATERIAL_EMISSION]
 			[CDI:ADV_NAME:Hailstorm]
@@ -835,7 +839,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:5]
                 [CASTE_PROFESSION_NAME:STANDARD:Oracle:Oracles]
-		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Oracles are Orcish Dreamwalkers who read apocalyptic prophecies from the motions of the sun and stars.  They have an unsettling ability to warp these visions into reality.]
+		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Orcs build their strongholds in the twilight lands at the margins of the world. Oracles are Orcish Dreamwalkers who read apocalyptic prophecies from the motions of the sun and stars.  They have an unsettling ability to warp these visions into reality.]
 		
 		[CAN_DO_INTERACTION:SOLARFLARE_ORC] 
 			[CDI:ADV_NAME:Solar flare]
@@ -898,7 +902,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:EXTRACT_STRAND:3]
 		[NATURAL_SKILL:MAGIC_NATURE:5]
                 [CASTE_PROFESSION_NAME:STANDARD:Oracle:Oracles]
-		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Taiga Orcs build their strongholds in the twilight lands at the margins of the world. Oracles are Orcish Dreamwalkers who read apocalyptic prophecies from the motions of the sun and stars.  They have an unsettling ability to warp these visions into reality.]
+		[DESCRIPTION:A powerful humanoid creature with violent tendencies, Orcs build their strongholds in the twilight lands at the margins of the world. Oracles are Orcish Dreamwalkers who read apocalyptic prophecies from the motions of the sun and stars.  They have an unsettling ability to warp these visions into reality.]
 		
 		[CAN_DO_INTERACTION:SOLARFLARE_ORC] 
 			[CDI:ADV_NAME:Solar flare]
@@ -956,7 +960,7 @@ creature_orcfort_taigaorc
 		[SKILL_LEARN_RATE:LEATHERWORK:150]
 		[SKILL_LEARN_RATE:WOODCRAFT:150]	
                 [CASTE_PROFESSION_NAME:STANDARD:Artisan:Artisans]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.  Although Orcish smiths are best known for the terrible spectacle of their crude factories and slag pits, Taiga-clan artisans also remember some of the secret arts of metal folding and fletchery passed down from their clanmothers.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.  Although Orcish smiths are best known for the terrible spectacle of their crude factories and slag pits, Clan artisans also remember some of the secret arts of metal folding and fletchery passed down from their clanmothers.]
 	[POP_RATIO:10]
 
 	[CASTE:ARTISAN_MALE]
@@ -979,7 +983,7 @@ creature_orcfort_taigaorc
 		[SKILL_LEARN_RATE:LEATHERWORK:150]
 		[SKILL_LEARN_RATE:WOODCRAFT:150]	
                 [CASTE_PROFESSION_NAME:STANDARD:Artisan:Artisans]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.  Although Orcish smiths are best known for the terrible spectacle of their crude factories and slag pits, Taiga-clan artisans also remember some of the secret arts of metal folding and fletchery passed down from their clanfathers.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.  Although Orcish smiths are best known for the terrible spectacle of their crude factories and slag pits, Clan artisans also remember some of the secret arts of metal folding and fletchery passed down from their clanfathers.]
 	[POP_RATIO:10]
 	
 	[CASTE:CORSAIR_FEMALE]
@@ -1000,7 +1004,7 @@ creature_orcfort_taigaorc
 		[SKILL_LEARN_RATE:APPRAISAL:150]
 		[SKILL_LEARN_RATE:POTTERY:150]
                 [CASTE_PROFESSION_NAME:STANDARD:Corsair:Corsairs]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.  Corsairs are Orcs taken with a passion for buccaneering and adventure.  Renowned for their skill with fire-arms and ballistae, the Corsairs true value to the clans is an uncanny ability to accurately assess the value of both trade and plunder.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.  Corsairs are Orcs taken with a passion for buccaneering and adventure.  Renowned for their skill with fire-arms and ballistae, the Corsairs true value to the clans is an uncanny ability to accurately assess the value of both trade and plunder.]
 	[POP_RATIO:10]
 	
 	[CASTE:CORSAIR_MALE]
@@ -1015,15 +1019,15 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:SIEGECRAFT:3]
 		[NATURAL_SKILL:SIEGEOPERATE:3]
 		[NATURAL_SKILL:BLOWGUN:3]
-		[NATURAL_SKILL:APPRAISAL:1]
-		[NATURAL_SKILL:POTTERY:1]	## scribe -- buying and selling	
+		[NATURAL_SKILL:APPRAISAL:3]
+		[NATURAL_SKILL:POTTERY:3]	## scribe -- buying and selling	
 		[SKILL_LEARN_RATE:SIEGECRAFT:150]
 		[SKILL_LEARN_RATE:SIEGEOPERATE:150]
 		[SKILL_LEARN_RATE:BLOWGUN:150]
 		[SKILL_LEARN_RATE:APPRAISAL:150]
 		[SKILL_LEARN_RATE:POTTERY:150]	
                 [CASTE_PROFESSION_NAME:STANDARD:Corsair:Corsairs]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.  Corsairs are Orcs taken with a passion for buccaneering and adventure.  Renowned for their skill with fire-arms and ballistae, the Corsairs true value to the clans is an uncanny ability to accurately assess the value of both trade and plunder.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.  Corsairs are Orcs taken with a passion for buccaneering and adventure.  Renowned for their skill with fire-arms and ballistae, the Corsairs true value to the clans is an uncanny ability to accurately assess the value of both trade and plunder.]
 	[POP_RATIO:10]
 	
 	[CASTE:RONIN_MALE]
@@ -1045,7 +1049,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:MELEE_COMBAT:5]
 		[NATURAL_SKILL:RANGED_COMBAT:2]
                 [CASTE_PROFESSION_NAME:STANDARD:Male Ronin:Ronin]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.  Ronin are casteless uruk who hope to barter their skills for a home in a new clan; Male ronin traditionally train primarily with the sword.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.  Ronin are casteless uruk who hope to barter their skills for a home in a new clan; Male ronin traditionally train primarily with the sword.]
 	[POP_RATIO:4]
 	
 	[CASTE:RONIN_FEMALE]
@@ -1068,7 +1072,7 @@ creature_orcfort_taigaorc
 		[NATURAL_SKILL:MELEE_COMBAT:2]
 		[NATURAL_SKILL:RANGED_COMBAT:5]
                 [CASTE_PROFESSION_NAME:STANDARD:Female Ronin:Ronin]
-		[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.  Ronin are casteless uruk who hope to barter their skills for a home in a new clan; Female ronin traditionally train primarily with the bow.]
+		[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.  Ronin are casteless uruk who hope to barter their skills for a home in a new clan; Female ronin traditionally train primarily with the bow.]
 	[POP_RATIO:4]
 	
 	[CASTE:OLOG_MALE]
@@ -1110,7 +1114,7 @@ creature_orcfort_taigaorc
      		[SKILL_LEARN_RATE:ENCRUSTGEM:150]
 		
                 [CASTE_PROFESSION_NAME:STANDARD:Olog:Ologs]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.  Olog are a caste of thick-skinned brutes from the deepest mountains, slow to learn most tasks.  They are deadly with blunt weapons, and surprisingly fond of working quietly with stone or jewels.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.  Olog are a caste of thick-skinned brutes from the deepest mountains, slow to learn most tasks.  They are deadly with blunt weapons, and surprisingly fond of working quietly with stone or jewels.]
 	[POP_RATIO:4]
 	
 	[CASTE:OLOG_FEMALE]
@@ -1152,7 +1156,7 @@ creature_orcfort_taigaorc
      		[SKILL_LEARN_RATE:ENCRUSTGEM:150]
 		
                 [CASTE_PROFESSION_NAME:STANDARD:Olog:Ologs]
-	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Taiga Orcs build their strongholds in the twilight lands at the margins of the world.  Olog are a caste of thick-skinned brutes from the deepest mountains, slow to learn most tasks.  They are deadly with blunt weapons, and surprisingly fond of working quietly with stone or jewels.]
+	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A powerful humanoid creature with violent tendencies.  Orcs build their strongholds in the twilight lands at the margins of the world.  Olog are a caste of thick-skinned brutes from the deepest mountains, slow to learn most tasks.  They are deadly with blunt weapons, and surprisingly fond of working quietly with stone or jewels.]
 	[POP_RATIO:4]
 	
 	[USE_MATERIAL_TEMPLATE:OLOGBLOOD:BLOOD_TEMPLATE]
