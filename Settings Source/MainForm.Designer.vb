@@ -9249,12 +9249,12 @@ Partial Class MainForm
         Me.optBtnMoreTrees.Location = New System.Drawing.Point(5, 19)
         Me.optBtnMoreTrees.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnMoreTrees.Name = "optBtnMoreTrees"
-        OptionSingleReplace178.disabledValue = "!NOFF!"
-        OptionSingleReplace178.enabledValue = "YESFF["
+        OptionSingleReplace178.disabledValue = "!NOFF_TREES!"
+        OptionSingleReplace178.enabledValue = "YESFF_TREES["
         OptionSingleReplace178.fileManager = FileListManager225
-        OptionManager225.loadFromDInit = false
-        OptionManager225.loadFromInit = false
-        OptionManager225.loadFromWorldGen = false
+        OptionManager225.loadFromDInit = False
+        OptionManager225.loadFromInit = False
+        OptionManager225.loadFromWorldGen = False
         OptionSingleReplace178.optionManager = OptionManager225
         OptionSettingManager228.settingName = Nothing
         OptionSingleReplace178.settingManager = OptionSettingManager228
@@ -9265,28 +9265,28 @@ Partial Class MainForm
         Me.optBtnMoreTrees.Text = "Tree Variety"
         Me.optBtnMoreTrees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnMoreTrees, "Adds +120 different kinds of trees to the game.")
-        Me.optBtnMoreTrees.UseVisualStyleBackColor = false
+        Me.optBtnMoreTrees.UseVisualStyleBackColor = False
         '
         'optBtnMorePlants
         '
         Me.optBtnMorePlants.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMorePlants.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMorePlants.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMorePlants.FlatAppearance.BorderSize = 0
-        Me.optBtnMorePlants.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMorePlants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMorePlants.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMorePlants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMorePlants.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMorePlants.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMorePlants.Image = CType(resources.GetObject("optBtnMorePlants.Image"),System.Drawing.Image)
+        Me.optBtnMorePlants.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMorePlants.Image = CType(resources.GetObject("optBtnMorePlants.Image"), System.Drawing.Image)
         Me.optBtnMorePlants.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMorePlants.Location = New System.Drawing.Point(5, 48)
         Me.optBtnMorePlants.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnMorePlants.Name = "optBtnMorePlants"
-        OptionSingleReplace179.disabledValue = "!NOFF!"
-        OptionSingleReplace179.enabledValue = "YESFF["
+        OptionSingleReplace179.disabledValue = "!NOFF_PLANTS!"
+        OptionSingleReplace179.enabledValue = "YESFF_PLANTS["
         OptionSingleReplace179.fileManager = FileListManager226
-        OptionManager226.loadFromDInit = false
-        OptionManager226.loadFromInit = false
-        OptionManager226.loadFromWorldGen = false
+        OptionManager226.loadFromDInit = False
+        OptionManager226.loadFromInit = False
+        OptionManager226.loadFromWorldGen = False
         OptionSingleReplace179.optionManager = OptionManager226
         OptionSettingManager229.settingName = Nothing
         OptionSingleReplace179.settingManager = OptionSettingManager229
@@ -9297,18 +9297,18 @@ Partial Class MainForm
         Me.optBtnMorePlants.Text = "Plant Variety"
         Me.optBtnMorePlants.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnMorePlants, "Adds +180 different plants to the game.")
-        Me.optBtnMorePlants.UseVisualStyleBackColor = false
+        Me.optBtnMorePlants.UseVisualStyleBackColor = False
         '
         'optBtnFoodNames
         '
         Me.optBtnFoodNames.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFoodNames.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnFoodNames.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnFoodNames.FlatAppearance.BorderSize = 0
-        Me.optBtnFoodNames.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnFoodNames.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnFoodNames.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnFoodNames.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnFoodNames.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnFoodNames.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnFoodNames.Image = CType(resources.GetObject("optBtnFoodNames.Image"),System.Drawing.Image)
+        Me.optBtnFoodNames.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnFoodNames.Image = CType(resources.GetObject("optBtnFoodNames.Image"), System.Drawing.Image)
         Me.optBtnFoodNames.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnFoodNames.Location = New System.Drawing.Point(5, 77)
         Me.optBtnFoodNames.Margin = New System.Windows.Forms.Padding(1)
@@ -9316,9 +9316,9 @@ Partial Class MainForm
         OptionSingleReplace180.disabledValue = "NOFOOD!"
         OptionSingleReplace180.enabledValue = "YESFOOD["
         OptionSingleReplace180.fileManager = FileListManager227
-        OptionManager227.loadFromDInit = false
-        OptionManager227.loadFromInit = false
-        OptionManager227.loadFromWorldGen = false
+        OptionManager227.loadFromDInit = False
+        OptionManager227.loadFromInit = False
+        OptionManager227.loadFromWorldGen = False
         OptionSingleReplace180.optionManager = OptionManager227
         OptionSettingManager230.settingName = Nothing
         OptionSingleReplace180.settingManager = OptionSettingManager230
@@ -9329,18 +9329,18 @@ Partial Class MainForm
         Me.optBtnFoodNames.Text = "Food Variety"
         Me.optBtnFoodNames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFoodNames, "Adds more names for prepared meals, thats it.")
-        Me.optBtnFoodNames.UseVisualStyleBackColor = false
+        Me.optBtnFoodNames.UseVisualStyleBackColor = False
         '
         'optBtnFearTheNight
         '
         Me.optBtnFearTheNight.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnFearTheNight.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnFearTheNight.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnFearTheNight.FlatAppearance.BorderSize = 0
-        Me.optBtnFearTheNight.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnFearTheNight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnFearTheNight.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnFearTheNight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnFearTheNight.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnFearTheNight.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnFearTheNight.Image = CType(resources.GetObject("optBtnFearTheNight.Image"),System.Drawing.Image)
+        Me.optBtnFearTheNight.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnFearTheNight.Image = CType(resources.GetObject("optBtnFearTheNight.Image"), System.Drawing.Image)
         Me.optBtnFearTheNight.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnFearTheNight.Location = New System.Drawing.Point(5, 106)
         Me.optBtnFearTheNight.Margin = New System.Windows.Forms.Padding(1)
@@ -9348,9 +9348,9 @@ Partial Class MainForm
         OptionSingleReplace181.disabledValue = "!NOFEARTHENIGHT!"
         OptionSingleReplace181.enabledValue = "YESFEARTHENIGHT["
         OptionSingleReplace181.fileManager = FileListManager228
-        OptionManager228.loadFromDInit = false
-        OptionManager228.loadFromInit = false
-        OptionManager228.loadFromWorldGen = false
+        OptionManager228.loadFromDInit = False
+        OptionManager228.loadFromInit = False
+        OptionManager228.loadFromWorldGen = False
         OptionSingleReplace181.optionManager = OptionManager228
         OptionSettingManager231.settingName = Nothing
         OptionSingleReplace181.settingManager = OptionSettingManager231
@@ -9361,18 +9361,18 @@ Partial Class MainForm
         Me.optBtnFearTheNight.Text = "Fear the Night"
         Me.optBtnFearTheNight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnFearTheNight, "Adds custom vampires, were-beasts, necromancers and curses to the game.")
-        Me.optBtnFearTheNight.UseVisualStyleBackColor = false
+        Me.optBtnFearTheNight.UseVisualStyleBackColor = False
         '
         'optBtnRendermax
         '
         Me.optBtnRendermax.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnRendermax.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnRendermax.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnRendermax.FlatAppearance.BorderSize = 0
-        Me.optBtnRendermax.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnRendermax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnRendermax.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnRendermax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnRendermax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnRendermax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnRendermax.Image = CType(resources.GetObject("optBtnRendermax.Image"),System.Drawing.Image)
+        Me.optBtnRendermax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnRendermax.Image = CType(resources.GetObject("optBtnRendermax.Image"), System.Drawing.Image)
         Me.optBtnRendermax.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnRendermax.Location = New System.Drawing.Point(17, 254)
         Me.optBtnRendermax.Margin = New System.Windows.Forms.Padding(1)
@@ -9380,9 +9380,9 @@ Partial Class MainForm
         OptionSingleReplace182.disabledValue = "#norendermax"
         OptionSingleReplace182.enabledValue = "rendermax light"
         OptionSingleReplace182.fileManager = FileListManager229
-        OptionManager229.loadFromDInit = false
-        OptionManager229.loadFromInit = false
-        OptionManager229.loadFromWorldGen = false
+        OptionManager229.loadFromDInit = False
+        OptionManager229.loadFromInit = False
+        OptionManager229.loadFromWorldGen = False
         OptionSingleReplace182.optionManager = OptionManager229
         OptionSettingManager232.settingName = Nothing
         OptionSingleReplace182.settingManager = OptionSettingManager232
@@ -9393,23 +9393,23 @@ Partial Class MainForm
         Me.optBtnRendermax.Text = "Rendermax"
         Me.optBtnRendermax.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnRendermax, resources.GetString("optBtnRendermax.ToolTip"))
-        Me.optBtnRendermax.UseVisualStyleBackColor = false
+        Me.optBtnRendermax.UseVisualStyleBackColor = False
         '
         'optNumMineralScarcity
         '
-        Me.optNumMineralScarcity.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumMineralScarcity.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumMineralScarcity.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMineralScarcity.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumMineralScarcity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumMineralScarcity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumMineralScarcity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumMineralScarcity.Increment = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumMineralScarcity.Location = New System.Drawing.Point(140, 124)
         Me.optNumMineralScarcity.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumMineralScarcity.Minimum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumMineralScarcity.Name = "optNumMineralScarcity"
         OptionSingle38.fileManager = FileListManager230
-        OptionManager230.loadFromDInit = false
-        OptionManager230.loadFromInit = false
-        OptionManager230.loadFromWorldGen = true
+        OptionManager230.loadFromDInit = False
+        OptionManager230.loadFromInit = False
+        OptionManager230.loadFromWorldGen = True
         OptionSingle38.optionManager = OptionManager230
         OptionSettingManager233.settingName = Nothing
         OptionSingle38.settingManager = OptionSettingManager233
@@ -9423,18 +9423,18 @@ Partial Class MainForm
         '
         'optNumCivNumber
         '
-        Me.optNumCivNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumCivNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumCivNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCivNumber.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumCivNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumCivNumber.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumCivNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumCivNumber.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumCivNumber.Location = New System.Drawing.Point(140, 20)
         Me.optNumCivNumber.Maximum = New Decimal(New Integer() {300, 0, 0, 0})
         Me.optNumCivNumber.Name = "optNumCivNumber"
         OptionSingle39.fileManager = FileListManager231
-        OptionManager231.loadFromDInit = false
-        OptionManager231.loadFromInit = false
-        OptionManager231.loadFromWorldGen = true
+        OptionManager231.loadFromDInit = False
+        OptionManager231.loadFromInit = False
+        OptionManager231.loadFromWorldGen = True
         OptionSingle39.optionManager = OptionManager231
         OptionSettingManager234.settingName = Nothing
         OptionSingle39.settingManager = OptionSettingManager234
@@ -9448,18 +9448,18 @@ Partial Class MainForm
         '
         'optNumEmbarkPoints
         '
-        Me.optNumEmbarkPoints.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumEmbarkPoints.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumEmbarkPoints.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumEmbarkPoints.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumEmbarkPoints.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumEmbarkPoints.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumEmbarkPoints.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumEmbarkPoints.Increment = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumEmbarkPoints.Location = New System.Drawing.Point(140, 46)
         Me.optNumEmbarkPoints.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumEmbarkPoints.Name = "optNumEmbarkPoints"
         OptionSingle40.fileManager = FileListManager232
-        OptionManager232.loadFromDInit = false
-        OptionManager232.loadFromInit = false
-        OptionManager232.loadFromWorldGen = true
+        OptionManager232.loadFromDInit = False
+        OptionManager232.loadFromInit = False
+        OptionManager232.loadFromWorldGen = True
         OptionSingle40.optionManager = OptionManager232
         OptionSettingManager235.settingName = Nothing
         OptionSingle40.settingManager = OptionSettingManager235
@@ -9473,19 +9473,19 @@ Partial Class MainForm
         '
         'optNumEndYear
         '
-        Me.optNumEndYear.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumEndYear.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumEndYear.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumEndYear.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumEndYear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumEndYear.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumEndYear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumEndYear.Increment = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumEndYear.Location = New System.Drawing.Point(140, 72)
         Me.optNumEndYear.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumEndYear.Minimum = New Decimal(New Integer() {2, 0, 0, 0})
         Me.optNumEndYear.Name = "optNumEndYear"
         OptionSingle41.fileManager = FileListManager233
-        OptionManager233.loadFromDInit = false
-        OptionManager233.loadFromInit = false
-        OptionManager233.loadFromWorldGen = true
+        OptionManager233.loadFromDInit = False
+        OptionManager233.loadFromInit = False
+        OptionManager233.loadFromWorldGen = True
         OptionSingle41.optionManager = OptionManager233
         OptionSettingManager236.settingName = Nothing
         OptionSingle41.settingManager = OptionSettingManager236
@@ -9499,19 +9499,19 @@ Partial Class MainForm
         '
         'optNumPopSize
         '
-        Me.optNumPopSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumPopSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumPopSize.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumPopSize.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumPopSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumPopSize.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumPopSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumPopSize.Increment = New Decimal(New Integer() {250, 0, 0, 0})
         Me.optNumPopSize.Location = New System.Drawing.Point(140, 98)
         Me.optNumPopSize.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.optNumPopSize.Minimum = New Decimal(New Integer() {1, 0, 0, -2147483648})
         Me.optNumPopSize.Name = "optNumPopSize"
         OptionSingle42.fileManager = FileListManager234
-        OptionManager234.loadFromDInit = false
-        OptionManager234.loadFromInit = false
-        OptionManager234.loadFromWorldGen = true
+        OptionManager234.loadFromDInit = False
+        OptionManager234.loadFromInit = False
+        OptionManager234.loadFromWorldGen = True
         OptionSingle42.optionManager = OptionManager234
         OptionSettingManager237.settingName = Nothing
         OptionSingle42.settingManager = OptionSettingManager237
@@ -9520,25 +9520,25 @@ Partial Class MainForm
         Me.optNumPopSize.Size = New System.Drawing.Size(63, 19)
         Me.optNumPopSize.TabIndex = 7
         Me.optNumPopSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumPopSize, "Maximum population of civilization members in the world. -1 is unlimited, but dan"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumPopSize, "Maximum population of civilization members in the world. -1 is unlimited, but dan" & _
         "gerous.")
         Me.optNumPopSize.Value = New Decimal(New Integer() {1, 0, 0, -2147483648})
         '
         'optNumCaveSizeMin
         '
-        Me.optNumCaveSizeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumCaveSizeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumCaveSizeMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCaveSizeMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumCaveSizeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumCaveSizeMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumCaveSizeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumCaveSizeMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumCaveSizeMin.Location = New System.Drawing.Point(135, 19)
         Me.optNumCaveSizeMin.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
         Me.optNumCaveSizeMin.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumCaveSizeMin.Name = "optNumCaveSizeMin"
         OptionSingle43.fileManager = FileListManager235
-        OptionManager235.loadFromDInit = false
-        OptionManager235.loadFromInit = false
-        OptionManager235.loadFromWorldGen = true
+        OptionManager235.loadFromDInit = False
+        OptionManager235.loadFromInit = False
+        OptionManager235.loadFromWorldGen = True
         OptionSingle43.optionManager = OptionManager235
         OptionSettingManager238.settingName = Nothing
         OptionSingle43.settingManager = OptionSettingManager238
@@ -9552,19 +9552,19 @@ Partial Class MainForm
         '
         'optNumCaveSizeMax
         '
-        Me.optNumCaveSizeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumCaveSizeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumCaveSizeMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCaveSizeMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumCaveSizeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumCaveSizeMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumCaveSizeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumCaveSizeMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumCaveSizeMax.Location = New System.Drawing.Point(184, 19)
         Me.optNumCaveSizeMax.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
         Me.optNumCaveSizeMax.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumCaveSizeMax.Name = "optNumCaveSizeMax"
         OptionSingle44.fileManager = FileListManager236
-        OptionManager236.loadFromDInit = false
-        OptionManager236.loadFromInit = false
-        OptionManager236.loadFromWorldGen = true
+        OptionManager236.loadFromDInit = False
+        OptionManager236.loadFromInit = False
+        OptionManager236.loadFromWorldGen = True
         OptionSingle44.optionManager = OptionManager236
         OptionSettingManager239.settingName = Nothing
         OptionSingle44.settingManager = OptionSettingManager239
@@ -9578,18 +9578,18 @@ Partial Class MainForm
         '
         'optNumMountainCaves
         '
-        Me.optNumMountainCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumMountainCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumMountainCaves.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMountainCaves.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumMountainCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumMountainCaves.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumMountainCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumMountainCaves.Increment = New Decimal(New Integer() {50, 0, 0, 0})
         Me.optNumMountainCaves.Location = New System.Drawing.Point(135, 45)
         Me.optNumMountainCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumMountainCaves.Name = "optNumMountainCaves"
         OptionSingle45.fileManager = FileListManager237
-        OptionManager237.loadFromDInit = false
-        OptionManager237.loadFromInit = false
-        OptionManager237.loadFromWorldGen = true
+        OptionManager237.loadFromDInit = False
+        OptionManager237.loadFromInit = False
+        OptionManager237.loadFromWorldGen = True
         OptionSingle45.optionManager = OptionManager237
         OptionSettingManager240.settingName = Nothing
         OptionSingle45.settingManager = OptionSettingManager240
@@ -9602,18 +9602,18 @@ Partial Class MainForm
         '
         'optNumOtherCaves
         '
-        Me.optNumOtherCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumOtherCaves.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumOtherCaves.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumOtherCaves.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumOtherCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumOtherCaves.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumOtherCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumOtherCaves.Increment = New Decimal(New Integer() {50, 0, 0, 0})
         Me.optNumOtherCaves.Location = New System.Drawing.Point(135, 71)
         Me.optNumOtherCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumOtherCaves.Name = "optNumOtherCaves"
         OptionSingle46.fileManager = FileListManager238
-        OptionManager238.loadFromDInit = false
-        OptionManager238.loadFromInit = false
-        OptionManager238.loadFromWorldGen = true
+        OptionManager238.loadFromDInit = False
+        OptionManager238.loadFromInit = False
+        OptionManager238.loadFromWorldGen = True
         OptionSingle46.optionManager = OptionManager238
         OptionSettingManager241.settingName = Nothing
         OptionSingle46.settingManager = OptionSettingManager241
@@ -9628,20 +9628,20 @@ Partial Class MainForm
         '
         Me.optBtnVisibleCaves.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnVisibleCaves.FlatAppearance.BorderSize = 0
-        Me.optBtnVisibleCaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnVisibleCaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnVisibleCaves.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnVisibleCaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnVisibleCaves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnVisibleCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnVisibleCaves.Image = CType(resources.GetObject("optBtnVisibleCaves.Image"),System.Drawing.Image)
+        Me.optBtnVisibleCaves.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnVisibleCaves.Image = CType(resources.GetObject("optBtnVisibleCaves.Image"), System.Drawing.Image)
         Me.optBtnVisibleCaves.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnVisibleCaves.Location = New System.Drawing.Point(64, 98)
         Me.optBtnVisibleCaves.Name = "optBtnVisibleCaves"
         OptionSingleReplace183.disabledValue = "0"
         OptionSingleReplace183.enabledValue = "1"
         OptionSingleReplace183.fileManager = FileListManager239
-        OptionManager239.loadFromDInit = false
-        OptionManager239.loadFromInit = false
-        OptionManager239.loadFromWorldGen = true
+        OptionManager239.loadFromDInit = False
+        OptionManager239.loadFromInit = False
+        OptionManager239.loadFromWorldGen = True
         OptionSingleReplace183.optionManager = OptionManager239
         OptionSettingManager242.settingName = Nothing
         OptionSingleReplace183.settingManager = OptionSettingManager242
@@ -9652,21 +9652,21 @@ Partial Class MainForm
         Me.optBtnVisibleCaves.Text = "Caves Visible"
         Me.optBtnVisibleCaves.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnVisibleCaves, "If disabled, caves will not be marked on the map.")
-        Me.optBtnVisibleCaves.UseVisualStyleBackColor = true
+        Me.optBtnVisibleCaves.UseVisualStyleBackColor = True
         '
         'optNumCaverns
         '
-        Me.optNumCaverns.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumCaverns.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumCaverns.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumCaverns.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumCaverns.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumCaverns.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumCaverns.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumCaverns.Location = New System.Drawing.Point(161, 24)
         Me.optNumCaverns.Maximum = New Decimal(New Integer() {3, 0, 0, 0})
         Me.optNumCaverns.Name = "optNumCaverns"
         OptionSingle47.fileManager = FileListManager240
-        OptionManager240.loadFromDInit = false
-        OptionManager240.loadFromInit = false
-        OptionManager240.loadFromWorldGen = true
+        OptionManager240.loadFromDInit = False
+        OptionManager240.loadFromInit = False
+        OptionManager240.loadFromWorldGen = True
         OptionSingle47.optionManager = OptionManager240
         OptionSettingManager243.settingName = Nothing
         OptionSingle47.settingManager = OptionSettingManager243
@@ -9675,23 +9675,23 @@ Partial Class MainForm
         Me.optNumCaverns.Size = New System.Drawing.Size(43, 19)
         Me.optNumCaverns.TabIndex = 1
         Me.optNumCaverns.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumCaverns, "The number of cavern systems. Less caverns may improve FPS. This number does not "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumCaverns, "The number of cavern systems. Less caverns may improve FPS. This number does not " & _
         "include Magma or HFS.")
         Me.optNumCaverns.Value = New Decimal(New Integer() {3, 0, 0, 0})
         '
         'optNumOpenMin
         '
-        Me.optNumOpenMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumOpenMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumOpenMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumOpenMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumOpenMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumOpenMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumOpenMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumOpenMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMin.Location = New System.Drawing.Point(161, 49)
         Me.optNumOpenMin.Name = "optNumOpenMin"
         OptionSingle48.fileManager = FileListManager241
-        OptionManager241.loadFromDInit = false
-        OptionManager241.loadFromInit = false
-        OptionManager241.loadFromWorldGen = true
+        OptionManager241.loadFromDInit = False
+        OptionManager241.loadFromInit = False
+        OptionManager241.loadFromWorldGen = True
         OptionSingle48.optionManager = OptionManager241
         OptionSettingManager244.settingName = Nothing
         OptionSingle48.settingManager = OptionSettingManager244
@@ -9704,17 +9704,17 @@ Partial Class MainForm
         '
         'optNumOpenMax
         '
-        Me.optNumOpenMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumOpenMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumOpenMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumOpenMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumOpenMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumOpenMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumOpenMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumOpenMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMax.Location = New System.Drawing.Point(210, 49)
         Me.optNumOpenMax.Name = "optNumOpenMax"
         OptionSingle49.fileManager = FileListManager242
-        OptionManager242.loadFromDInit = false
-        OptionManager242.loadFromInit = false
-        OptionManager242.loadFromWorldGen = true
+        OptionManager242.loadFromDInit = False
+        OptionManager242.loadFromInit = False
+        OptionManager242.loadFromWorldGen = True
         OptionSingle49.optionManager = OptionManager242
         OptionSettingManager245.settingName = Nothing
         OptionSingle49.settingManager = OptionSettingManager245
@@ -9727,17 +9727,17 @@ Partial Class MainForm
         '
         'optNumMazeMin
         '
-        Me.optNumMazeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumMazeMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumMazeMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMazeMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumMazeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumMazeMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumMazeMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumMazeMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMin.Location = New System.Drawing.Point(161, 75)
         Me.optNumMazeMin.Name = "optNumMazeMin"
         OptionSingle50.fileManager = FileListManager243
-        OptionManager243.loadFromDInit = false
-        OptionManager243.loadFromInit = false
-        OptionManager243.loadFromWorldGen = true
+        OptionManager243.loadFromDInit = False
+        OptionManager243.loadFromInit = False
+        OptionManager243.loadFromWorldGen = True
         OptionSingle50.optionManager = OptionManager243
         OptionSettingManager246.settingName = Nothing
         OptionSingle50.settingManager = OptionSettingManager246
@@ -9750,17 +9750,17 @@ Partial Class MainForm
         '
         'optNumMazeMax
         '
-        Me.optNumMazeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumMazeMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumMazeMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMazeMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumMazeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumMazeMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumMazeMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumMazeMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMax.Location = New System.Drawing.Point(210, 75)
         Me.optNumMazeMax.Name = "optNumMazeMax"
         OptionSingle51.fileManager = FileListManager244
-        OptionManager244.loadFromDInit = false
-        OptionManager244.loadFromInit = false
-        OptionManager244.loadFromWorldGen = true
+        OptionManager244.loadFromDInit = False
+        OptionManager244.loadFromInit = False
+        OptionManager244.loadFromWorldGen = True
         OptionSingle51.optionManager = OptionManager244
         OptionSettingManager247.settingName = Nothing
         OptionSingle51.settingManager = OptionSettingManager247
@@ -9773,17 +9773,17 @@ Partial Class MainForm
         '
         'optNumWaterMin
         '
-        Me.optNumWaterMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumWaterMin.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumWaterMin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumWaterMin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumWaterMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumWaterMin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumWaterMin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumWaterMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMin.Location = New System.Drawing.Point(161, 100)
         Me.optNumWaterMin.Name = "optNumWaterMin"
         OptionSingle52.fileManager = FileListManager245
-        OptionManager245.loadFromDInit = false
-        OptionManager245.loadFromInit = false
-        OptionManager245.loadFromWorldGen = true
+        OptionManager245.loadFromDInit = False
+        OptionManager245.loadFromInit = False
+        OptionManager245.loadFromWorldGen = True
         OptionSingle52.optionManager = OptionManager245
         OptionSettingManager248.settingName = Nothing
         OptionSingle52.settingManager = OptionSettingManager248
@@ -9796,17 +9796,17 @@ Partial Class MainForm
         '
         'optNumWaterMax
         '
-        Me.optNumWaterMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumWaterMax.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumWaterMax.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumWaterMax.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumWaterMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumWaterMax.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumWaterMax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumWaterMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMax.Location = New System.Drawing.Point(210, 100)
         Me.optNumWaterMax.Name = "optNumWaterMax"
         OptionSingle53.fileManager = FileListManager246
-        OptionManager246.loadFromDInit = false
-        OptionManager246.loadFromInit = false
-        OptionManager246.loadFromWorldGen = true
+        OptionManager246.loadFromDInit = False
+        OptionManager246.loadFromInit = False
+        OptionManager246.loadFromWorldGen = True
         OptionSingle53.optionManager = OptionManager246
         OptionSettingManager249.settingName = Nothing
         OptionSingle53.settingManager = OptionSettingManager249
@@ -9819,19 +9819,19 @@ Partial Class MainForm
         '
         'optNumAboveCav1
         '
-        Me.optNumAboveCav1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveCav1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveCav1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveCav1.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveCav1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveCav1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveCav1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveCav1.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveCav1.Location = New System.Drawing.Point(161, 159)
         Me.optNumAboveCav1.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveCav1.Minimum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.optNumAboveCav1.Name = "optNumAboveCav1"
         OptionSingle54.fileManager = FileListManager247
-        OptionManager247.loadFromDInit = false
-        OptionManager247.loadFromInit = false
-        OptionManager247.loadFromWorldGen = true
+        OptionManager247.loadFromDInit = False
+        OptionManager247.loadFromInit = False
+        OptionManager247.loadFromWorldGen = True
         OptionSingle54.optionManager = OptionManager247
         OptionSettingManager250.settingName = Nothing
         OptionSingle54.settingManager = OptionSettingManager250
@@ -9845,19 +9845,19 @@ Partial Class MainForm
         '
         'optNumAboveCav2
         '
-        Me.optNumAboveCav2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveCav2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveCav2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveCav2.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveCav2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveCav2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveCav2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveCav2.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveCav2.Location = New System.Drawing.Point(161, 185)
         Me.optNumAboveCav2.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveCav2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumAboveCav2.Name = "optNumAboveCav2"
         OptionSingle55.fileManager = FileListManager248
-        OptionManager248.loadFromDInit = false
-        OptionManager248.loadFromInit = false
-        OptionManager248.loadFromWorldGen = true
+        OptionManager248.loadFromDInit = False
+        OptionManager248.loadFromInit = False
+        OptionManager248.loadFromWorldGen = True
         OptionSingle55.optionManager = OptionManager248
         OptionSettingManager251.settingName = Nothing
         OptionSingle55.settingManager = OptionSettingManager251
@@ -9866,25 +9866,25 @@ Partial Class MainForm
         Me.optNumAboveCav2.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveCav2.TabIndex = 14
         Me.optNumAboveCav2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav2, "Z-Levels of earth between the very bottom of the first cavern, and the very top o"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav2, "Z-Levels of earth between the very bottom of the first cavern, and the very top o" & _
         "f the second cavern.")
         Me.optNumAboveCav2.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'optNumAboveCav3
         '
-        Me.optNumAboveCav3.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveCav3.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveCav3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveCav3.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveCav3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveCav3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveCav3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveCav3.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveCav3.Location = New System.Drawing.Point(161, 211)
         Me.optNumAboveCav3.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveCav3.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumAboveCav3.Name = "optNumAboveCav3"
         OptionSingle56.fileManager = FileListManager249
-        OptionManager249.loadFromDInit = false
-        OptionManager249.loadFromInit = false
-        OptionManager249.loadFromWorldGen = true
+        OptionManager249.loadFromDInit = False
+        OptionManager249.loadFromInit = False
+        OptionManager249.loadFromWorldGen = True
         OptionSingle56.optionManager = OptionManager249
         OptionSettingManager252.settingName = Nothing
         OptionSingle56.settingManager = OptionSettingManager252
@@ -9893,25 +9893,25 @@ Partial Class MainForm
         Me.optNumAboveCav3.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveCav3.TabIndex = 16
         Me.optNumAboveCav3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav3, "Z-Levels of earth between the very bottom of the second cavern, and the very top "& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveCav3, "Z-Levels of earth between the very bottom of the second cavern, and the very top " & _
         "of the third cavern.")
         Me.optNumAboveCav3.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'optNumAboveMagma
         '
-        Me.optNumAboveMagma.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveMagma.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveMagma.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveMagma.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveMagma.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveMagma.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveMagma.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveMagma.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveMagma.Location = New System.Drawing.Point(161, 255)
         Me.optNumAboveMagma.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveMagma.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumAboveMagma.Name = "optNumAboveMagma"
         OptionSingle57.fileManager = FileListManager250
-        OptionManager250.loadFromDInit = false
-        OptionManager250.loadFromInit = false
-        OptionManager250.loadFromWorldGen = true
+        OptionManager250.loadFromDInit = False
+        OptionManager250.loadFromInit = False
+        OptionManager250.loadFromWorldGen = True
         OptionSingle57.optionManager = OptionManager250
         OptionSettingManager253.settingName = Nothing
         OptionSingle57.settingManager = OptionSettingManager253
@@ -9920,25 +9920,25 @@ Partial Class MainForm
         Me.optNumAboveMagma.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveMagma.TabIndex = 18
         Me.optNumAboveMagma.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveMagma, "Z-Levels between the very highest magma, and the very bottom of the third cavern."& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveMagma, "Z-Levels between the very highest magma, and the very bottom of the third cavern." & _
         "")
         Me.optNumAboveMagma.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'optNumAboveHFS
         '
-        Me.optNumAboveHFS.BackColor = System.Drawing.Color.FromArgb(CType(CType(51,Byte),Integer), CType(CType(84,Byte),Integer), CType(CType(99,Byte),Integer))
+        Me.optNumAboveHFS.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.optNumAboveHFS.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumAboveHFS.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumAboveHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optNumAboveHFS.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumAboveHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.optNumAboveHFS.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumAboveHFS.Location = New System.Drawing.Point(161, 281)
         Me.optNumAboveHFS.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveHFS.Minimum = New Decimal(New Integer() {2, 0, 0, 0})
         Me.optNumAboveHFS.Name = "optNumAboveHFS"
         OptionSingle58.fileManager = FileListManager251
-        OptionManager251.loadFromDInit = false
-        OptionManager251.loadFromInit = false
-        OptionManager251.loadFromWorldGen = true
+        OptionManager251.loadFromDInit = False
+        OptionManager251.loadFromInit = False
+        OptionManager251.loadFromWorldGen = True
         OptionSingle58.optionManager = OptionManager251
         OptionSettingManager254.settingName = Nothing
         OptionSingle58.settingManager = OptionSettingManager254
@@ -9947,7 +9947,7 @@ Partial Class MainForm
         Me.optNumAboveHFS.Size = New System.Drawing.Size(43, 19)
         Me.optNumAboveHFS.TabIndex = 20
         Me.optNumAboveHFS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumAboveHFS, "Uncertain.  Seems to increase the layers of Semi-Molten Rock and the depth of the"& _ 
+        Me.ToolTipMaker.SetToolTip(Me.optNumAboveHFS, "Uncertain.  Seems to increase the layers of Semi-Molten Rock and the depth of the" & _
         " magma sea. Only valid if magma layer is present.")
         Me.optNumAboveHFS.Value = New Decimal(New Integer() {2, 0, 0, 0})
         '
@@ -9955,20 +9955,20 @@ Partial Class MainForm
         '
         Me.optBtnMagmaLake.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnMagmaLake.FlatAppearance.BorderSize = 0
-        Me.optBtnMagmaLake.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnMagmaLake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMagmaLake.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnMagmaLake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMagmaLake.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMagmaLake.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMagmaLake.Image = CType(resources.GetObject("optBtnMagmaLake.Image"),System.Drawing.Image)
+        Me.optBtnMagmaLake.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMagmaLake.Image = CType(resources.GetObject("optBtnMagmaLake.Image"), System.Drawing.Image)
         Me.optBtnMagmaLake.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMagmaLake.Location = New System.Drawing.Point(66, 357)
         Me.optBtnMagmaLake.Name = "optBtnMagmaLake"
         OptionSingleReplace184.disabledValue = "0"
         OptionSingleReplace184.enabledValue = "1"
         OptionSingleReplace184.fileManager = FileListManager252
-        OptionManager252.loadFromDInit = false
-        OptionManager252.loadFromInit = false
-        OptionManager252.loadFromWorldGen = true
+        OptionManager252.loadFromDInit = False
+        OptionManager252.loadFromInit = False
+        OptionManager252.loadFromWorldGen = True
         OptionSingleReplace184.optionManager = OptionManager252
         OptionSettingManager255.settingName = Nothing
         OptionSingleReplace184.settingManager = OptionSettingManager255
@@ -9979,26 +9979,26 @@ Partial Class MainForm
         Me.optBtnMagmaLake.Text = "Magma Lake"
         Me.optBtnMagmaLake.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnMagmaLake, "Determines whether the magma sea exists.")
-        Me.optBtnMagmaLake.UseVisualStyleBackColor = true
+        Me.optBtnMagmaLake.UseVisualStyleBackColor = True
         '
         'optBtnHFS
         '
         Me.optBtnHFS.Appearance = System.Windows.Forms.Appearance.Button
         Me.optBtnHFS.FlatAppearance.BorderSize = 0
-        Me.optBtnHFS.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnHFS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnHFS.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optBtnHFS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnHFS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnHFS.Image = CType(resources.GetObject("optBtnHFS.Image"),System.Drawing.Image)
+        Me.optBtnHFS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnHFS.Image = CType(resources.GetObject("optBtnHFS.Image"), System.Drawing.Image)
         Me.optBtnHFS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnHFS.Location = New System.Drawing.Point(66, 387)
         Me.optBtnHFS.Name = "optBtnHFS"
         OptionSingleReplace185.disabledValue = "0"
         OptionSingleReplace185.enabledValue = "1"
         OptionSingleReplace185.fileManager = FileListManager253
-        OptionManager253.loadFromDInit = false
-        OptionManager253.loadFromInit = false
-        OptionManager253.loadFromWorldGen = true
+        OptionManager253.loadFromDInit = False
+        OptionManager253.loadFromInit = False
+        OptionManager253.loadFromWorldGen = True
         OptionSingleReplace185.optionManager = OptionManager253
         OptionSettingManager256.settingName = Nothing
         OptionSingleReplace185.settingManager = OptionSettingManager256
@@ -10009,25 +10009,25 @@ Partial Class MainForm
         Me.optBtnHFS.Text = "HFS"
         Me.optBtnHFS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnHFS, "Determines if the space below the magma sea exists.")
-        Me.optBtnHFS.UseVisualStyleBackColor = true
+        Me.optBtnHFS.UseVisualStyleBackColor = True
         '
         'optMaskGoodAreas
         '
         Me.optMaskGoodAreas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.optMaskGoodAreas.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optMaskGoodAreas.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.optMaskGoodAreas.Location = New System.Drawing.Point(103, 49)
         Me.optMaskGoodAreas.Name = "optMaskGoodAreas"
         Me.optMaskGoodAreas.niceFormat = "###:###:### (0-500)"
         OptionSingle59.fileManager = FileListManager254
-        OptionManager254.loadFromDInit = false
-        OptionManager254.loadFromInit = false
-        OptionManager254.loadFromWorldGen = true
+        OptionManager254.loadFromDInit = False
+        OptionManager254.loadFromInit = False
+        OptionManager254.loadFromWorldGen = True
         OptionSingle59.optionManager = OptionManager254
         OptionSettingManager257.settingName = Nothing
         OptionSingle59.settingManager = OptionSettingManager257
         OptionSingle59.tokenName = "GOOD_SQ_COUNTS"
         Me.optMaskGoodAreas.options = OptionSingle59
-        Me.optMaskGoodAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(("& _ 
+        Me.optMaskGoodAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):((" & _
     "[0-4][0-9][0-9]|[0-9]{1,2})|(500|0))$"
         Me.optMaskGoodAreas.Size = New System.Drawing.Size(100, 23)
         Me.optMaskGoodAreas.TabIndex = 3
@@ -10037,20 +10037,20 @@ Partial Class MainForm
         'optMaskEvilAreas
         '
         Me.optMaskEvilAreas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.optMaskEvilAreas.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optMaskEvilAreas.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.optMaskEvilAreas.Location = New System.Drawing.Point(103, 24)
         Me.optMaskEvilAreas.Name = "optMaskEvilAreas"
         Me.optMaskEvilAreas.niceFormat = "###:###:### (0-500)"
         OptionSingle60.fileManager = FileListManager255
-        OptionManager255.loadFromDInit = false
-        OptionManager255.loadFromInit = false
-        OptionManager255.loadFromWorldGen = true
+        OptionManager255.loadFromDInit = False
+        OptionManager255.loadFromInit = False
+        OptionManager255.loadFromWorldGen = True
         OptionSingle60.optionManager = OptionManager255
         OptionSettingManager258.settingName = Nothing
         OptionSingle60.settingManager = OptionSettingManager258
         OptionSingle60.tokenName = "EVIL_SQ_COUNTS"
         Me.optMaskEvilAreas.options = OptionSingle60
-        Me.optMaskEvilAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(("& _ 
+        Me.optMaskEvilAreas.pattern = "^(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):(([0-4][0-9][0-9]|[0-9]{1,2})|(500|0)):((" & _
     "[0-4][0-9][0-9]|[0-9]{1,2})|(500|0))$"
         Me.optMaskEvilAreas.Size = New System.Drawing.Size(100, 23)
         Me.optMaskEvilAreas.TabIndex = 1
@@ -10061,8 +10061,8 @@ Partial Class MainForm
         '
         Me.optCbStartingLabors.DropDownWidth = 150
         Me.optCbStartingLabors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbStartingLabors.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optCbStartingLabors.FormattingEnabled = true
+        Me.optCbStartingLabors.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optCbStartingLabors.FormattingEnabled = True
         Me.optCbStartingLabors.Location = New System.Drawing.Point(92, 315)
         Me.optCbStartingLabors.Name = "optCbStartingLabors"
         OptionList5.fileManager = FileListManager256
@@ -10075,9 +10075,9 @@ Partial Class MainForm
         OptionList5.itemList.Add(ComboItem33)
         OptionList5.itemList.Add(ComboItem34)
         OptionList5.itemList.Add(ComboItem35)
-        OptionManager256.loadFromDInit = true
-        OptionManager256.loadFromInit = false
-        OptionManager256.loadFromWorldGen = false
+        OptionManager256.loadFromDInit = True
+        OptionManager256.loadFromInit = False
+        OptionManager256.loadFromWorldGen = False
         OptionList5.optionManager = OptionManager256
         OptionSettingManager259.settingName = Nothing
         OptionList5.settingManager = OptionSettingManager259
@@ -10089,10 +10089,10 @@ Partial Class MainForm
         '
         'lblPlayableFort
         '
-        Me.lblPlayableFort.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
-            Or System.Windows.Forms.AnchorStyles.Left)  _
-            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblPlayableFort.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblPlayableFort.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblPlayableFort.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayableFort.ForeColor = System.Drawing.Color.White
         Me.lblPlayableFort.Location = New System.Drawing.Point(163, 1)
         Me.lblPlayableFort.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -10109,7 +10109,7 @@ Partial Class MainForm
         Me.optBtnDigging.FlatAppearance.BorderSize = 0
         Me.optBtnDigging.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optBtnDigging.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.optBtnDigging.Image = CType(resources.GetObject("optBtnDigging.Image"),System.Drawing.Image)
+        Me.optBtnDigging.Image = CType(resources.GetObject("optBtnDigging.Image"), System.Drawing.Image)
         Me.optBtnDigging.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnDigging.Location = New System.Drawing.Point(5, 164)
         Me.optBtnDigging.Margin = New System.Windows.Forms.Padding(1)
@@ -10117,9 +10117,9 @@ Partial Class MainForm
         OptionSingleReplace186.disabledValue = " dig -1"
         OptionSingleReplace186.enabledValue = " dig 5"
         OptionSingleReplace186.fileManager = FileListManager257
-        OptionManager257.loadFromDInit = false
-        OptionManager257.loadFromInit = false
-        OptionManager257.loadFromWorldGen = false
+        OptionManager257.loadFromDInit = False
+        OptionManager257.loadFromInit = False
+        OptionManager257.loadFromWorldGen = False
         OptionSingleReplace186.optionManager = OptionManager257
         OptionSettingManager260.settingName = Nothing
         OptionSingleReplace186.settingManager = OptionSettingManager260
@@ -10130,7 +10130,7 @@ Partial Class MainForm
         Me.optBtnDigging.Text = "Digging Invaders"
         Me.optBtnDigging.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optBtnDigging, "Allows forgotten beasts and some invaders to dig into your fort.")
-        Me.optBtnDigging.UseVisualStyleBackColor = true
+        Me.optBtnDigging.UseVisualStyleBackColor = True
         '
         'optMultiRazing
         '
@@ -10138,15 +10138,15 @@ Partial Class MainForm
         Me.optMultiRazing.FlatAppearance.BorderSize = 0
         Me.optMultiRazing.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.optMultiRazing.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.optMultiRazing.Image = CType(resources.GetObject("optMultiRazing.Image"),System.Drawing.Image)
+        Me.optMultiRazing.Image = CType(resources.GetObject("optMultiRazing.Image"), System.Drawing.Image)
         Me.optMultiRazing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optMultiRazing.Location = New System.Drawing.Point(5, 193)
         Me.optMultiRazing.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiRazing.Name = "optMultiRazing"
         OptionMulti7.fileManager = FileListManager258
-        OptionManager258.loadFromDInit = false
-        OptionManager258.loadFromInit = false
-        OptionManager258.loadFromWorldGen = false
+        OptionManager258.loadFromDInit = False
+        OptionManager258.loadFromInit = False
+        OptionManager258.loadFromWorldGen = False
         OptionMulti7.optionManager = OptionManager258
         OptionSettingManager261.settingName = Nothing
         OptionMulti7.settingManager = OptionSettingManager261
@@ -10168,23 +10168,23 @@ Partial Class MainForm
         Me.optMultiRazing.Text = "Razing Invaders"
         Me.optMultiRazing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.optMultiRazing, "Allows titans and some invaders to destroy buildings and walls.")
-        Me.optMultiRazing.UseVisualStyleBackColor = true
+        Me.optMultiRazing.UseVisualStyleBackColor = True
         '
         'optNumMacro
         '
-        Me.optNumMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optNumMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optNumMacro.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumMacro.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optNumMacro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(21,Byte),Integer), CType(CType(66,Byte),Integer), CType(CType(139,Byte),Integer))
+        Me.optNumMacro.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optNumMacro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(139, Byte), Integer))
         Me.optNumMacro.Increment = New Decimal(New Integer() {10, 0, 0, 0})
         Me.optNumMacro.Location = New System.Drawing.Point(71, 127)
         Me.optNumMacro.Margin = New System.Windows.Forms.Padding(1)
         Me.optNumMacro.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
         Me.optNumMacro.Name = "optNumMacro"
         OptionSingle61.fileManager = FileListManager259
-        OptionManager259.loadFromDInit = false
-        OptionManager259.loadFromInit = true
-        OptionManager259.loadFromWorldGen = false
+        OptionManager259.loadFromDInit = False
+        OptionManager259.loadFromInit = True
+        OptionManager259.loadFromWorldGen = False
         OptionSingle61.optionManager = OptionManager259
         OptionSettingManager262.settingName = Nothing
         OptionSingle61.settingManager = OptionSettingManager262
@@ -10197,7 +10197,7 @@ Partial Class MainForm
         '
         'lblMacro
         '
-        Me.lblMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblMacro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblMacro.ForeColor = System.Drawing.SystemColors.Window
         Me.lblMacro.Location = New System.Drawing.Point(10, 123)
@@ -10218,20 +10218,20 @@ Partial Class MainForm
         '
         'lblSettingExplanation
         '
-        Me.lblSettingExplanation.AutoSize = true
-        Me.lblSettingExplanation.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.lblSettingExplanation.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblSettingExplanation.AutoSize = True
+        Me.lblSettingExplanation.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblSettingExplanation.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSettingExplanation.ForeColor = System.Drawing.Color.White
         Me.lblSettingExplanation.Location = New System.Drawing.Point(108, 534)
         Me.lblSettingExplanation.Name = "lblSettingExplanation"
         Me.lblSettingExplanation.Size = New System.Drawing.Size(762, 13)
         Me.lblSettingExplanation.TabIndex = 179
-        Me.lblSettingExplanation.Text = "All settings can be changed without generating a new world, with the only excepti"& _ 
+        Me.lblSettingExplanation.Text = "All settings can be changed without generating a new world, with the only excepti" & _
     "on being tileset changes. New settings do require restarting DF to take effect."
         '
         'panCivTable
         '
-        Me.panCivTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.panCivTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.panCivTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panCivTable.Controls.Add(Me.tableLayoutCivs)
         Me.panCivTable.ForeColor = System.Drawing.Color.White
@@ -10242,18 +10242,18 @@ Partial Class MainForm
         '
         'tableLayoutCivs
         '
-        Me.tableLayoutCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.tableLayoutCivs.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.tableLayoutCivs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tableLayoutCivs.ColumnCount = 10
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74!))
-        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74.0!))
+        Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67.0!))
         Me.tableLayoutCivs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.tableLayoutCivs.Controls.Add(Me.lblCivActive, 1, 0)
         Me.tableLayoutCivs.Controls.Add(Me.optBtnCivDwarves, 1, 1)
@@ -10305,34 +10305,34 @@ Partial Class MainForm
         Me.tableLayoutCivs.Margin = New System.Windows.Forms.Padding(1)
         Me.tableLayoutCivs.Name = "tableLayoutCivs"
         Me.tableLayoutCivs.RowCount = 19
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
-        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.tableLayoutCivs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.tableLayoutCivs.Size = New System.Drawing.Size(715, 484)
         Me.tableLayoutCivs.TabIndex = 16
         '
         'lblCivInvasions
         '
-        Me.lblCivInvasions.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
-            Or System.Windows.Forms.AnchorStyles.Left)  _
-            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivInvasions.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivInvasions.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblCivInvasions.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivInvasions.ForeColor = System.Drawing.Color.White
         Me.lblCivInvasions.Location = New System.Drawing.Point(409, 1)
         Me.lblCivInvasions.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -10344,10 +10344,10 @@ Partial Class MainForm
         '
         'lblCivCaravans
         '
-        Me.lblCivCaravans.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
-            Or System.Windows.Forms.AnchorStyles.Left)  _
-            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivCaravans.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivCaravans.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblCivCaravans.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivCaravans.ForeColor = System.Drawing.Color.White
         Me.lblCivCaravans.Location = New System.Drawing.Point(327, 1)
         Me.lblCivCaravans.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -10362,7 +10362,7 @@ Partial Class MainForm
         Me.lblCivDwarf.advTag = "ADVD"
         Me.lblCivDwarf.creatureFileName = "creature_standard.txt"
         Me.lblCivDwarf.entityFileName = "entity_default.txt"
-        Me.lblCivDwarf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivDwarf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivDwarf.ForeColor = System.Drawing.Color.White
         Me.lblCivDwarf.fortTag = "CIVD"
         Me.lblCivDwarf.Location = New System.Drawing.Point(1, 33)
@@ -10380,7 +10380,7 @@ Partial Class MainForm
         Me.lblCivTaigaOrcs.advTag = "ADVORC_TAIGA"
         Me.lblCivTaigaOrcs.creatureFileName = "creature_orcfort_taigaorc.txt"
         Me.lblCivTaigaOrcs.entityFileName = "entity_orcfort_taigaorc.txt"
-        Me.lblCivTaigaOrcs.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivTaigaOrcs.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivTaigaOrcs.ForeColor = System.Drawing.Color.White
         Me.lblCivTaigaOrcs.fortTag = "CIVO"
         Me.lblCivTaigaOrcs.Location = New System.Drawing.Point(1, 58)
@@ -10398,7 +10398,7 @@ Partial Class MainForm
         Me.lblCivKoboldCamp.advTag = "ADVKOBOLD_CAMP"
         Me.lblCivKoboldCamp.creatureFileName = "creature_kobold_camp.txt"
         Me.lblCivKoboldCamp.entityFileName = "entity_kobold_camp.txt"
-        Me.lblCivKoboldCamp.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivKoboldCamp.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivKoboldCamp.ForeColor = System.Drawing.Color.White
         Me.lblCivKoboldCamp.fortTag = "CIVK"
         Me.lblCivKoboldCamp.Location = New System.Drawing.Point(1, 83)
@@ -10416,7 +10416,7 @@ Partial Class MainForm
         Me.lblCivGnome.advTag = "ADVGNOMES"
         Me.lblCivGnome.creatureFileName = "creature_gnome.txt"
         Me.lblCivGnome.entityFileName = "entity_gnome.txt"
-        Me.lblCivGnome.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivGnome.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivGnome.ForeColor = System.Drawing.Color.White
         Me.lblCivGnome.fortTag = "CIVGNOME"
         Me.lblCivGnome.Location = New System.Drawing.Point(1, 108)
@@ -10434,7 +10434,7 @@ Partial Class MainForm
         Me.lblCivWarlock.advTag = "ADVWARLOCK"
         Me.lblCivWarlock.creatureFileName = "creature_warlock_civ.txt"
         Me.lblCivWarlock.entityFileName = "entity_warlock.txt"
-        Me.lblCivWarlock.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivWarlock.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivWarlock.ForeColor = System.Drawing.Color.White
         Me.lblCivWarlock.fortTag = "CIVW"
         Me.lblCivWarlock.Location = New System.Drawing.Point(1, 133)
@@ -10452,7 +10452,7 @@ Partial Class MainForm
         Me.lblCivHuman.advTag = "ADVHUMAN"
         Me.lblCivHuman.creatureFileName = "creature_standard.txt"
         Me.lblCivHuman.entityFileName = "entity_human.txt"
-        Me.lblCivHuman.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivHuman.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivHuman.ForeColor = System.Drawing.Color.White
         Me.lblCivHuman.fortTag = Nothing
         Me.lblCivHuman.Location = New System.Drawing.Point(1, 158)
@@ -10470,7 +10470,7 @@ Partial Class MainForm
         Me.lblCivElf.advTag = "ADVELF"
         Me.lblCivElf.creatureFileName = "creature_standard.txt"
         Me.lblCivElf.entityFileName = "entity_elf.txt"
-        Me.lblCivElf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivElf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivElf.ForeColor = System.Drawing.Color.White
         Me.lblCivElf.fortTag = Nothing
         Me.lblCivElf.Location = New System.Drawing.Point(1, 183)
@@ -10488,7 +10488,7 @@ Partial Class MainForm
         Me.lblCivDrow.advTag = "ADVDROW"
         Me.lblCivDrow.creatureFileName = "creature_masterwork.txt"
         Me.lblCivDrow.entityFileName = "entity_drow.txt"
-        Me.lblCivDrow.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivDrow.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivDrow.ForeColor = System.Drawing.Color.White
         Me.lblCivDrow.fortTag = Nothing
         Me.lblCivDrow.Location = New System.Drawing.Point(1, 208)
@@ -10506,7 +10506,7 @@ Partial Class MainForm
         Me.lblCivGoblin.advTag = "ADVGOBLIN"
         Me.lblCivGoblin.creatureFileName = "creature_standard.txt"
         Me.lblCivGoblin.entityFileName = "entity_goblin.txt"
-        Me.lblCivGoblin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivGoblin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivGoblin.ForeColor = System.Drawing.Color.White
         Me.lblCivGoblin.fortTag = Nothing
         Me.lblCivGoblin.Location = New System.Drawing.Point(1, 233)
@@ -10524,7 +10524,7 @@ Partial Class MainForm
         Me.lblCivFrostGiant.advTag = "ADVFROST_GIANT"
         Me.lblCivFrostGiant.creatureFileName = "creature_masterwork.txt"
         Me.lblCivFrostGiant.entityFileName = "entity_frost_giant.txt"
-        Me.lblCivFrostGiant.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivFrostGiant.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivFrostGiant.ForeColor = System.Drawing.Color.White
         Me.lblCivFrostGiant.fortTag = Nothing
         Me.lblCivFrostGiant.Location = New System.Drawing.Point(1, 258)
@@ -10542,7 +10542,7 @@ Partial Class MainForm
         Me.lblCivAutomaton.advTag = "ADVAUT"
         Me.lblCivAutomaton.creatureFileName = "creature_masterwork.txt"
         Me.lblCivAutomaton.entityFileName = "entity_automaton.txt"
-        Me.lblCivAutomaton.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivAutomaton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivAutomaton.ForeColor = System.Drawing.Color.White
         Me.lblCivAutomaton.fortTag = Nothing
         Me.lblCivAutomaton.Location = New System.Drawing.Point(1, 283)
@@ -10560,7 +10560,7 @@ Partial Class MainForm
         Me.lblCivGremlin.advTag = "ADVGREMLIN"
         Me.lblCivGremlin.creatureFileName = "creature_standard.txt"
         Me.lblCivGremlin.entityFileName = "entity_gremlin.txt"
-        Me.lblCivGremlin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivGremlin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivGremlin.ForeColor = System.Drawing.Color.White
         Me.lblCivGremlin.fortTag = Nothing
         Me.lblCivGremlin.Location = New System.Drawing.Point(1, 308)
@@ -10578,7 +10578,7 @@ Partial Class MainForm
         Me.lblCivTroglodyte.advTag = "ADVTROG"
         Me.lblCivTroglodyte.creatureFileName = "creature_subterranean.txt"
         Me.lblCivTroglodyte.entityFileName = "entity_troglodyte.txt"
-        Me.lblCivTroglodyte.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivTroglodyte.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivTroglodyte.ForeColor = System.Drawing.Color.White
         Me.lblCivTroglodyte.fortTag = Nothing
         Me.lblCivTroglodyte.Location = New System.Drawing.Point(1, 333)
@@ -10596,7 +10596,7 @@ Partial Class MainForm
         Me.lblCivAntmen.advTag = "ADVANT"
         Me.lblCivAntmen.creatureFileName = "creature_subterranean.txt"
         Me.lblCivAntmen.entityFileName = "entity_antmen.txt"
-        Me.lblCivAntmen.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivAntmen.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivAntmen.ForeColor = System.Drawing.Color.White
         Me.lblCivAntmen.fortTag = Nothing
         Me.lblCivAntmen.Location = New System.Drawing.Point(1, 358)
@@ -10614,7 +10614,7 @@ Partial Class MainForm
         Me.lblCivEvilDwarf.advTag = "ADVD_EVIL"
         Me.lblCivEvilDwarf.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilDwarf.entityFileName = "entity_dwarf_evil.txt"
-        Me.lblCivEvilDwarf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivEvilDwarf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivEvilDwarf.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilDwarf.fortTag = Nothing
         Me.lblCivEvilDwarf.Location = New System.Drawing.Point(1, 383)
@@ -10632,7 +10632,7 @@ Partial Class MainForm
         Me.lblCivEvilHuman.advTag = "ADVHUMAN_EVIL"
         Me.lblCivEvilHuman.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilHuman.entityFileName = "entity_human_evil.txt"
-        Me.lblCivEvilHuman.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivEvilHuman.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivEvilHuman.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilHuman.fortTag = Nothing
         Me.lblCivEvilHuman.Location = New System.Drawing.Point(1, 408)
@@ -10650,7 +10650,7 @@ Partial Class MainForm
         Me.lblCivEvilDrow.advTag = "ADVDROW_EVIL"
         Me.lblCivEvilDrow.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilDrow.entityFileName = "entity_drow_evil.txt"
-        Me.lblCivEvilDrow.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivEvilDrow.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivEvilDrow.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilDrow.fortTag = Nothing
         Me.lblCivEvilDrow.Location = New System.Drawing.Point(1, 433)
@@ -10668,7 +10668,7 @@ Partial Class MainForm
         Me.lblCivEvilElf.advTag = "ADVELF_EVIL"
         Me.lblCivEvilElf.creatureFileName = "creature_masterwork_eviltwins.txt"
         Me.lblCivEvilElf.entityFileName = "entity_elf_evil.txt"
-        Me.lblCivEvilElf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivEvilElf.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCivEvilElf.ForeColor = System.Drawing.Color.White
         Me.lblCivEvilElf.fortTag = Nothing
         Me.lblCivEvilElf.Location = New System.Drawing.Point(1, 458)
@@ -10683,7 +10683,7 @@ Partial Class MainForm
         '
         'grpExtraCreatures
         '
-        Me.grpExtraCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpExtraCreatures.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpExtraCreatures.Controls.Add(Me.optBtnDomesticPets)
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreAnimals)
         Me.grpExtraCreatures.Controls.Add(Me.optBtnMoreVermin)
@@ -10701,24 +10701,24 @@ Partial Class MainForm
         Me.grpExtraCreatures.Name = "grpExtraCreatures"
         Me.grpExtraCreatures.Size = New System.Drawing.Size(144, 420)
         Me.grpExtraCreatures.TabIndex = 3
-        Me.grpExtraCreatures.TabStop = false
+        Me.grpExtraCreatures.TabStop = False
         Me.grpExtraCreatures.Text = "Additional Creatures"
         '
         'optBtnMoreAnimals
         '
         Me.optBtnMoreAnimals.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnMoreAnimals.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnMoreAnimals.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.optBtnMoreAnimals.FlatAppearance.BorderSize = 0
-        Me.optBtnMoreAnimals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnMoreAnimals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(165, Byte), Integer))
         Me.optBtnMoreAnimals.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnMoreAnimals.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnMoreAnimals.Image = CType(resources.GetObject("optBtnMoreAnimals.Image"),System.Drawing.Image)
+        Me.optBtnMoreAnimals.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.optBtnMoreAnimals.Image = CType(resources.GetObject("optBtnMoreAnimals.Image"), System.Drawing.Image)
         Me.optBtnMoreAnimals.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMoreAnimals.Location = New System.Drawing.Point(5, 48)
         Me.optBtnMoreAnimals.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnMoreAnimals.Name = "optBtnMoreAnimals"
-        OptionSingleReplace187.disabledValue = "!NOFF!"
-        OptionSingleReplace187.enabledValue = "YESFF["
+        OptionSingleReplace187.disabledValue = "!NOFF_ANIMALS!"
+        OptionSingleReplace187.enabledValue = "YESFF_ANIMALS["
         OptionSingleReplace187.fileManager = FileListManager260
         OptionManager260.loadFromDInit = false
         OptionManager260.loadFromInit = false
