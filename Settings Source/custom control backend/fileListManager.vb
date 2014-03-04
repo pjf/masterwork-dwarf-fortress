@@ -2,9 +2,12 @@
 Imports MasterworkDwarfFortress.globals
 Imports MasterworkDwarfFortress.fileWorking
 Imports System.Text.RegularExpressions
+Imports System.ComponentModel.Design
 
-<Browsable(False), _
-EditorBrowsable(EditorBrowsableState.Never)> _
+<DisplayNameAttribute("Override Files"), _
+DescriptionAttribute("Specify which file(s) to change this option's tags in. Files will not be searched for the tags."), _
+CategoryAttribute("~RAW Options"), _
+TypeConverterAttribute(GetType(fileManagerConverter))> _
 Public Class fileListManager
 
     Public Sub New()
@@ -13,11 +16,11 @@ Public Class fileListManager
     Private m_fileNames As New List(Of String)
     Private m_files As New List(Of IO.FileInfo)
     Private m_currentPattern As Regex
+    'EditorAttribute(GetType(fileListConverter), GetType(System.ComponentModel.Design.MultilineStringEditor)), _
 
-
-    <Browsable(False), _
-    EditorBrowsable(EditorBrowsableState.Advanced), _
-    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    <DescriptionAttribute("Specify which file(s) to change this option's tags in. Files will not be searched for the tags."), _
+    Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing"), _
+    TypeConverter(GetType(fileListConverter))> _
     Public Property fileNames As List(Of String)
         Get
             Return m_fileNames
@@ -169,7 +172,7 @@ Public Class fileManagerConverter
     Public Overrides Function ConvertTo(context As ITypeDescriptorContext, culture As Globalization.CultureInfo, value As Object, destinationType As Type) As Object
         If destinationType Is GetType(String) AndAlso TypeOf value Is fileListManager Then
             Dim flm As fileListManager = CType(value, fileListManager)
-            Return String.Join(",", flm.fileNames)
+            Return String.Join(", ", flm.fileNames)
         End If
         Return MyBase.ConvertTo(context, culture, value, destinationType)
     End Function

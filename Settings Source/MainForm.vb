@@ -450,7 +450,7 @@ Imports System.ComponentModel
 
                         rText.AppendText(String.Format("{0}{0}""Name"": ""{1}"",", vbTab, c.Name) & vbNewLine)
                         rText.AppendText(String.Format("{0}{0}""Text"": ""{1}"",", vbTab, c.Text) & vbNewLine)
-                        rText.AppendText(String.Format("{0}{0}""Tooltip"": ""{1}"",", vbTab, IIf(ToolTipMaker.GetToolTip(c) <> "", ToolTipMaker.GetToolTip(c).Replace(vbNewLine, " ").Replace("""", "'"), "")).Trim & vbNewLine)
+                        rText.AppendText(String.Format("{0}{0}""Tooltip"": ""{1}"",", vbTab, IIf(ToolTipMaker.GetToolTip(c) <> "", ToolTipMaker.GetToolTip(c).Replace(vbNewLine, " ").Replace("""", "'"), "").Trim) & vbNewLine)
 
                         tempList.Clear()
                         rText.AppendText(String.Format("{0}{0}""Files"": [", vbTab))
