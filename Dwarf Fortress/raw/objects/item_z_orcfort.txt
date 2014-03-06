@@ -7,10 +7,18 @@ item_z_orcfort
 [ITEM_TOOL:PREPARED_SCALP]
     [NAME:scalp (prepared):scalps (prepared)]
     [UNIMPROVABLE]
+[VALUE:10]
+[TILE:128]
+[SIZE:10]
+[MATERIAL_SIZE:1]
 
 [ITEM_TOOL:ORC_STANDARD]
     [NAME:standard of honour:standards of honour]
     [UNIMPROVABLE]
+[VALUE:10]
+[TILE:128]
+[SIZE:10]
+[MATERIAL_SIZE:1]
 
 ### These mojo haven't been written yet ###
 

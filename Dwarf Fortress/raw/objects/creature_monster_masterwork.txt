@@ -2467,7 +2467,7 @@ YESMONSTER[OBJECT:CREATURE]
 
 
 
-YESFF[CREATURE:SAUROPOD]
+YESFF_ANIMALS[CREATURE:SAUROPOD]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A colossal lizard found grazing in tropical swamps.  It eats leaves along the tops of trees.  It is normally placid when left alone.]
 	[NAME:sauropod:sauropods:sauropod]
 	[CASTE_NAME:sauropod:sauropods:sauropod]

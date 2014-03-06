@@ -1,6 +1,6 @@
 creature_temperate_new
 
-YESFF[OBJECT:CREATURE]
+YESFF_ANIMALS[OBJECT:CREATURE]
 
 Wild boars were sponsored by the generous contributions of the Bay 12 community.
 
