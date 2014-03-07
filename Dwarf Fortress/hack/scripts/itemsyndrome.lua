@@ -68,25 +68,7 @@ local function syndromeIsDfHackSyndrome(syndrome)
 end
  
 local function itemHasNoSubtype(item)
-   local subtypedItemTypes =
-    {
-    df.item_armorst,
-    df.item_weaponst,
-    df.item_helmst,
-    df.item_shoesst,
-    df.item_shieldst,
-    df.item_glovest,
-    df.item_pantsst,
-    df.item_toolst,
-    df.item_siegeammost,
-    df.item_ammost,
-    df.item_trapcompst,
-    df.item_instrumentst,
-    df.item_toyst}
-    for _,v in ipairs(subtypedItemTypes) do
-        if v:is_instance(item) then return false end
-    end
-    return true
+   return item:getSubtype()==-1
 end
  
 local function itemHasSyndrome(item)
@@ -131,11 +113,14 @@ local function assignSyndrome(target,syn_id) --taken straight from here, but edi
     newSyndrome.type=target_syndrome.id
     newSyndrome.year=df.global.cur_year
     newSyndrome.year_time=df.global.cur_year_tick
-    newSyndrome.ticks=1
-    newSyndrome.unk1=1
+    newSyndrome.ticks=0
+    newSyndrome.unk1=0
+	--newSyndrome.flags=0
     for k,v in ipairs(target_syndrome.ce) do
         local sympt=df.unit_syndrome.T_symptoms:new()
-        sympt.ticks=1
+        sympt.unk1=0
+        sympt.unk2=0
+        sympt.ticks=0
         sympt.flags=2
         newSyndrome.symptoms:insert("#",sympt)
     end
@@ -228,13 +213,30 @@ local function moveAllToInventory(unit,invTable)
         dfhack.items.moveToInventory(item_inv.item,unit,item_inv.mode,item_inv.body_part_id)
     end
 end
+
+local function syndromeIsOnUnequip(syndrome)
+    for k,v in ipairs(syndrome.syn_class) do
+        if v.value:upper()=='DFHACK_ON_UNEQUIP' then return true end
+    end
+    return false
+end
  
-local function addOrRemoveSyndromeDepending(unit,item_inv,syndrome)
-    if syndromeIsDfHackSyndrome(syndrome) and creatureIsAffected(unit,syndrome) and itemIsInValidPosition(item_inv, syndrome) then
-        if item_inv then
-            assignSyndrome(unit,syndrome.id)
-        else
-            eraseSyndrome(unit,syndrome.id)
+local function addOrRemoveSyndromeDepending(unit,old_equip,new_equip,syndrome)
+    if syndromeIsOnUnequip(syndrome) then
+        if syndromeIsDfHackSyndrome(syndrome) and creatureIsAffected(unit,syndrome) and itemIsInValidPosition(item_inv, syndrome) then
+            if not new_equip then
+                assignSyndrome(unit,syndrome.id)
+            else
+                eraseSyndrome(unit,syndrome.id)
+            end
+        end    
+    else
+        if syndromeIsDfHackSyndrome(syndrome) and creatureIsAffected(unit,syndrome) and itemIsInValidPosition(item_inv, syndrome) then
+            if new_equip then
+                assignSyndrome(unit,syndrome.id)
+            else
+                eraseSyndrome(unit,syndrome.id)
+            end
         end
     end
 end
@@ -243,7 +245,7 @@ eventful=require('plugins.eventful')
  
 eventful.enableEvent(eventful.eventType.INVENTORY_CHANGE,5)
  
-local function checkAndAddSyndrome(unit_id,new_equip,item_id)
+eventful.onInventoryChange.itemsyndrome=function(unit_id,item_id,old_equip,new_equip)
     local item = df.item.find(item_id)
     if not item then return false end
     local unit = df.unit.find(unit_id)
@@ -259,7 +261,7 @@ local function checkAndAddSyndrome(unit_id,new_equip,item_id)
                 unitInventory = rememberInventory(unit)
                 transformation = true
             end
-            addOrRemoveSyndromeDepending(unit,new_equip,syndrome)
+            addOrRemoveSyndromeDepending(unit,old_equip,new_equip,syndrome)
         end
     end
     local itemSyndromes = itemHasSyndrome(item)
@@ -270,7 +272,7 @@ local function checkAndAddSyndrome(unit_id,new_equip,item_id)
                 unitInventory = rememberInventory(unit)
                 transformation = true
             end
-            addOrRemoveSyndromeDepending(unit,new_equip,syndrome)
+            addOrRemoveSyndromeDepending(unit,old_equip,new_equip,syndrome)
         end
     end
     if itemsyndromecontaminants and item.contaminants then
@@ -284,16 +286,12 @@ local function checkAndAddSyndrome(unit_id,new_equip,item_id)
                         unitInventory = rememberInventory(unit)
                         transformation =true
                     end
-                    addOrRemoveSyndromeDepending(unit,new_equip,syndrome)
+                    addOrRemoveSyndromeDepending(unit,old_equip,new_equip,syndrome)
                 end
             end
         end
     end
     if transformation and transformationReEquip then dfhack.timeout(2,"ticks",function() moveAllToInventory(unit,unitInventory) end) end
-end
- 
-eventful.onInventoryChange.itemsyndrome=function(unit_id,item_id,old_equip,new_equip)
-    checkAndAddSyndrome(unit_id,new_equip,item_id)
 end
  
 dfhack.onStateChange.itemsyndrome=function(code)
