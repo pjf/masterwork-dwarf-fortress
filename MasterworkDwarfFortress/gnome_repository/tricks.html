@@ -55,73 +55,16 @@ a:visited {
 		  <p>Unnatural monsters are not included in this judgement.  Feel free to slay the horrors of the caverns to your hearts content.  Note that what is considered 'unnatural' may not be what you expect (most giant insects are considered 'natural', and carry a fairly severe penalty for killing, at that).  As a general rule, if it attacks or frightens your gnomes, it's fair game.  Stationed military gnomes will only attack unnatural creatures unless you specifically tell them otherwise.</p>
 		  <p>Not all animals are equal.  Everything is multiplied by a creature's pet value, so what happens to a high-value creature is much more significant than what happens to a low-level creature.</p>
 		  <p>Young animals count double when taken care of, but also count double if you let them die.</p>
-		  <p>When your population gets too high, get rid of animals by releasing them into the wild.  Releasing adult animals is worth twice as much as keeping them.  However, young animals count more if you keep them around until they are grown.</p>
-		  <p>Taking care of wild-caught animals, or releasing them, counts five times as much as animals born in captivity.  Letting them die is also five times as bad.</p>
+		  <p>When your population gets too high and framerate becomes a problem, get rid of animals by releasing them into the wild.  Releasing adult animals is worth twice as much as keeping them.  However, young animals count more if you keep them around until they are grown.</p>
+		  <p>Taking care of wild-caught animals, or releasing them, counts five times as much as animals born in captivity.  Letting them die is also five times as bad.  If your motive is to create an animal army, you might want to wait until they have children, then release the parents and raise the children for combat instead.</p>
 		  <p>By far the fastest way of building up your merit is capturing wild animals, taming them, and then releasing them into the wild.  Taming a giant cavern insect and releasing it can boost your merit score by thousands in one shot - and they often come in groups.</p>
-		  <p>Don't worry about it when animals steal from you.  In fact, you might want to leave gifts for them.  When wild animals leave the map carrying items, you will get merit based on the value of the stolen item.  Items stolen by unnatural or supernatural wild creatures such as nymphs do count toward this, but thieves that belong to a civilization such as kobolds do not.</p>
+		  <p>Don't worry about it when animals steal from you.  In fact, you might want to leave gifts for them.  When wild animals leave the map carrying items, you will get merit based on the value of the stolen item.  Items stolen by unnatural or supernatural wild creatures such as gnolls or leprechauns do count toward this, but thieves that belong to a civilization such as kobolds do not.</p>
 		  <p>Training wild-caught animals is always a plus.  Make sure to designate an animal training area and assign each wild-caught animal a trainer.  This will also gain experience for your trainers.  The merit you get from training animals is retained even if the animal dies or is released into the wild.</p>
 		  <p>Having a good animal trainer will make your game much easier.  A good animal trainer will have a much better chance of recruiting passing animals at a Nature Shrine and will have an easier time influencing animal behavior at an Advanced Animal Training Area.</p>
-		  
+		  <p>If you've messed up somewhere and have become despised by nature, you will lose the ability to tame or train new animals, so, redeeming yourself will be much harder.  However, you can raise your status greatly by offering valuable items to the wild animals.  This can be done in two ways: either allow a wild animal to steal one of your valubles, or send a gnome into the wild while they are wearing valuable clothing or carrying valuable equipment.  Sending off a gnome wearing masterwork armor is a highly effective means of bringing your merit back up to high levels.</p>
 
 		  </div>
-          <p align="center"><em><strong>Animal Taming and Training Formulas (Technical Stuff)</strong></em></p>
-          <p align="center"><em>
-<div>
-Taming wildlife (at the Nature Shrine)<br><br>
 
-Merit calculation is performed on all animals in fort's history, then added up:<br><br>
-
-wildOriginMultiplier = *5 if caught in the wild<br>
-childMultiplier = *2 if animal is a child<br>
-adultMultiplier = *2 if animal is an adult<br>
-casualtyRating = <br>
-	*5 for most pet deaths<br>
-	*20 for pets dying of starvation or thirst<br>
-	*50 for slaughtering at a butcher's shop<br>
-	*-10 if died of old age (keeping an animal alive until it dies of old age is a GOOD thing)<br>
-	*1 for wild animals killed by pets<br>
-	*2 for wild animals killed by soldiers/hunters<br>
-	*5 for setting loose an animal and letting pets kill it<br>
-	*10 for setting loose an animal and letting soldiers/hunters kill it<br>
-	(Only killing peaceful, natural wildlife counts against you.  Killing monsters or hostile war animals is fine.) <br>
-	(Note that killing animal item thieves DOES count, find another way to protect your hoard.)<br><br>
-
-Calculations (each of these factors are evaluated seperately):<br>
-	Keeping living pets: +(wildOriginMultiplier*petValue*childMultiplier)<br>
-	Animals released: +(wildOriginMultiplier*adultMultiplier*petValue)<br>
-	Animal death: -(petValue*casualtyRating*wildOriginMultiplier*childMultiplier)<br>
-	Animals on chains: -(petValue*wildOriginMultiplier*childMultiplier*5)<br>
-	Animals in cages: -(petValue*wildOriginMultiplier*childMultiplier*10)<br>
-	Bonus for training wild animals: +(petValue*trainingLevel*7) ("Trained" is level 1) (Bonus is applied in all cases, even for dead/released animals)<br>
-<br>
-	Use the 'Commune with Nature' command at the Nature Shrine to check your rating and print all judged items to the DFHack console.<br>
-	Alternately, type 'druidism calc' into the console to do the same thing.<br>
-	<br>
----Training	(at Advanced Animal Training Area)<br>
-<br>
-Probability of training an animal for an activity (in percent):<br>
-	(((trainerSkill^3)*10)/(petValue*historicalFigureMultiplier)) * trainingLevel * bondBonus * interest in activity<br>
-	<br>
-	historicalFigureMultiplier = *10 if animal is historical figure<br>
-	bondBonus = *100 if animal is the pet of the trainer<br>
-<br>
-	Interest in activity calculations:<br>
-	<br>
-	For following the trainer: 1<br>
-	For hunting: 1 * (10 if LARGE_PREDATOR) * (5 if CARNIVORE) * (2 if MISCHIEVOUS) * (0.5 if GRAZER)<br>
-	For war: 1 * (10 if LIKES_FIGHTING) * (5 if LARGE_PREDATOR) * (0.5 if BENIGN)<br>
-	For following another animal: clusterMultiplier * sameRaceMultiplier * predatorFactor * respectValue<br>
-		clusterMultiplier = average of leader's average cluster number and follower's average cluster number<br>
-		sameRaceMultiplier = *5 if leader is the same species as the follower<br>
-		predatorFactor = if leader is BENIGN GRAZER and follower is LARGE_PREDATOR CARNIVORE, *2.  If the opposite, /2.<br>
-		respectValue = petValue of leader/petValue of follower (both are multiplied by 10 if animal is historical figure)<br>
-		(For training animals to follow other animals, the one pastured closest to the trainer will be considered the leader)<br>
-	For untraining: 10/interest in training<br>
-	</div>
-      </tr>
-    </table>
-  </div>
-</div>
 </em><em>
 <div align="center"></div>
 </em>

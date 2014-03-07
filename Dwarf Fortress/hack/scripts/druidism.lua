@@ -125,13 +125,15 @@ function isSeen(view,p)
 	return p.z == view.z and view[p.y][p.x] > 0
 end
 
-function closeBy(unit,u,radius)
-	if unit.pos.x+radius >= u.pos.x
+function closeBy(unit,u,radius,z)
+	if z == nil then z = 0 end
+	if unit.id ~= u.id
+		and unit.pos.x+radius >= u.pos.x
 		and unit.pos.x-radius <= u.pos.x
 		and unit.pos.y+radius >= u.pos.y
 		and unit.pos.y-radius <= u.pos.y
-		and unit.pos.z+5 >= u.pos.z
-		and unit.pos.z-5 <= u.pos.z
+		and unit.pos.z+z >= u.pos.z
+		and unit.pos.z-z <= u.pos.z
 		then return true
 	else
 		return false
@@ -308,6 +310,172 @@ function nicknamePet(reaction,unit,job,input_items,input_reagents,output_items,c
 	end
 end
 
+function getName(u,capitalize)
+	if dfhack.TranslateName(u.name) == "" then
+		if u.profession == 104 then
+			if (df.global.world.raws.creatures.all[u.race]).caste[u.caste].baby_name[0] ~= "" then
+				return "the "..((df.global.world.raws.creatures.all[u.race]).caste[u.caste].baby_name[0])
+			else
+				return "the baby "..((df.global.world.raws.creatures.all[u.race]).caste[u.caste].caste_name[0])
+			end
+		elseif u.profession == 103 then
+			if (df.global.world.raws.creatures.all[u.race]).caste[u.caste].child_name[0] ~= "" then
+				return "the "..((df.global.world.raws.creatures.all[u.race]).caste[u.caste].child_name[0])
+			else
+				return "the "..((df.global.world.raws.creatures.all[u.race]).caste[u.caste].caste_name[0]).." child"
+			end
+		else
+			return "the "..((df.global.world.raws.creatures.all[u.race]).caste[u.caste].caste_name[0])
+		end
+	else
+		return dfhack.TranslateName(u.name)
+	end
+end
+
+function talkPet(reaction,unit,job,input_items,input_reagents,output_items,call_native)
+	local merit = getMerit()
+	if merit < 0 then
+		dfhack.gui.showAnnouncement( "You are too disconnected from nature to talk to animals." , COLOR_RED, true)
+		return false
+	end
+	unitRaw = df.global.world.raws.creatures.all[unit.race]
+	local skill = dfhack.units.getEffectiveSkill(unit,reaction.skill)
+	if skill == 0 then skill = 1 end
+	local radius = reaction.products[0].product_dimension
+	if radius < 1 then radius = 10 end
+	allUnits = df.global.world.units.active
+	local animals = {}
+	local u
+	
+	--Determine which animal is closest
+	for i=#allUnits-1,0,-1 do	-- search list in reverse
+		u = allUnits[i]
+		if isPet(u) and closeBy(unit,u,radius) then
+			table.insert(animals, u)
+		end
+	end
+	local leader = nil
+	local leaderDistance = 10000
+	local u
+	for i=#animals,1,-1 do
+		u = animals[i]
+		distance = math.abs(u.pos.x - unit.pos.x) + math.abs(u.pos.y - unit.pos.y)
+		if distance < leaderDistance then
+			leader = u
+			leaderDistance = distance
+		end
+	end
+	--
+	if leader then
+		local u = leader
+		local spoke = false
+		found = true
+		lastAnimalName = (df.global.world.raws.creatures.all[u.race]).name[0]
+		unitRaw = df.global.world.raws.creatures.all[u.race]
+		casteRaw = unitRaw.caste[u.caste]
+		petValue = casteRaw.misc.petvalue
+		
+		if casteRaw.flags.PET == false and casteRaw.flags.PET_EXOTIC == false and petValue < 10000 then
+			petValue = 10000
+		end
+		
+		respectvalue = ((skill*5)^2)
+		
+		respectVal = math.floor((1-((petValue/2)/respectvalue))*100)
+		if respectVal < 0 then 
+			dfhack.gui.showAnnouncement( getName(u,true).." has no interest in speaking with "..dfhack.TranslateName(unit.name).."." , COLOR_RED, true)
+		else
+			dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." speaks with "..getName(u).."." , COLOR_WHITE, true)	
+			if respectVal < 10 then dfhack.gui.showAnnouncement( getName(u,true).." has little respect for "..dfhack.TranslateName(unit.name)..", but will speak anyway." , COLOR_WHITE, true) end
+			
+			for i=0,#unit.status.misc_traits-1,1 do
+				traitname = df.misc_trait_type[unit.status.misc_traits[i].id]
+				traitvalue = unit.status.misc_traits[i].value
+				if traitname ~= nil then
+					if traitname == "GroundedAnimalAnger" and traitvalue >= 10000 then
+						if traitvalue < 20000 then dfhack.gui.showAnnouncement( getName(u,true).." is irritated by the lack of space." , COLOR_WHITE, true)
+						elseif traitvalue < 30000 then dfhack.gui.showAnnouncement( getName(u,true).." is getting annoyed due to overcrowding." , COLOR_WHITE, true)
+						elseif traitvalue < 40000 then dfhack.gui.showAnnouncement( getName(u,true).." is upset about the crowded conditions here." , COLOR_WHITE, true)
+						else dfhack.gui.showAnnouncement( getName(u,true).." is angry about the crowded conditions here." , COLOR_WHITE, true)
+						end
+						spoke = true
+					end
+					if traitname == "Hardened" and traitvalue >= 1 then
+					end
+				end
+			end
+			
+			if u.relations.following ~= nil then
+				followInterest = getFollowInterest(u,u.relations.following)
+				if followInterest < 0.25 then dfhack.gui.showAnnouncement( getName(u,true).." hates being forced to follow "..getName(u.relations.following,true).."." , COLOR_WHITE, true)
+				elseif followInterest < 0.5 then dfhack.gui.showAnnouncement( getName(u,true).." doesn't like being told to follow "..getName(u.relations.following,true).."." , COLOR_WHITE, true)
+				elseif followInterest < 1 then dfhack.gui.showAnnouncement( getName(u,true).." is fine with following "..getName(u.relations.following,true).."." , COLOR_WHITE, true)
+				elseif followInterest < 2 then dfhack.gui.showAnnouncement( getName(u,true).." enjoys following "..getName(u.relations.following,true).."." , COLOR_WHITE, true)
+				elseif followInterest < 4 then dfhack.gui.showAnnouncement( getName(u,true).." is happy about following "..getName(u.relations.following,true).."." , COLOR_WHITE, true)
+				else dfhack.gui.showAnnouncement( getName(u,true).." is greatly honored to accompany "..getName(u.relations.following,true).."." , COLOR_WHITE, true)
+				end
+				spoke = true
+			end
+			
+			huntingInterest = getHuntingInterest(u)
+			warInterest = getWarInterest(u)
+			
+			if u.profession == 98 then
+				if huntingInterest < 0.3 then dfhack.gui.showAnnouncement( getName(u,true).." hates being forced to hunt animals." , COLOR_WHITE, true)
+				elseif huntingInterest < 0.7 then dfhack.gui.showAnnouncement( getName(u,true).." doesn't like being forced to hunt animals." , COLOR_WHITE, true)
+				elseif huntingInterest < 1.5 then dfhack.gui.showAnnouncement( getName(u,true).." is okay with being assigned to hunting duty." , COLOR_WHITE, true)
+				elseif huntingInterest < 3.5 then dfhack.gui.showAnnouncement( getName(u,true).." enjoys taking down prey." , COLOR_WHITE, true)
+				else dfhack.gui.showAnnouncement( getName(u,true).." is happy to be a hunter." , COLOR_WHITE, true)
+				end
+				spoke = true
+			elseif u.profession == 99 then
+				if warInterest < 0.3 then dfhack.gui.showAnnouncement( getName(u,true).." hates being forced to fight enemies." , COLOR_WHITE, true)
+				elseif warInterest < 0.7 then dfhack.gui.showAnnouncement( getName(u,true).." doesn't like being forced to fight enemies." , COLOR_WHITE, true)
+				elseif warInterest < 1.5 then dfhack.gui.showAnnouncement( getName(u,true).." is okay with being assigned to war duty." , COLOR_WHITE, true)
+				elseif warInterest < 3.5 then dfhack.gui.showAnnouncement( getName(u,true).." enjoys defending the settlement." , COLOR_WHITE, true)
+				else dfhack.gui.showAnnouncement( getName(u,true).." is happy to be a warrior." , COLOR_WHITE, true)
+				end
+				spoke = true
+			elseif u.profession == 103 or u.profession == 104 then
+				if huntingInterest > 1 then 
+					if huntingInterest < 3 then dfhack.gui.showAnnouncement( getName(u,true).." is interested in growing up and learning how to hunt." , COLOR_WHITE, true)
+					else dfhack.gui.showAnnouncement( getName(u,true).." is eager to grow up and learn how to hunt." , COLOR_WHITE, true) end
+					spoke = true
+				end
+				if warInterest > 1 then 
+					if warInterest < 3 then dfhack.gui.showAnnouncement( getName(u,true).." is interested in growing up and learning how to fight." , COLOR_WHITE, true)
+					else dfhack.gui.showAnnouncement( getName(u,true).." is eager to grow up and learn how to fight." , COLOR_WHITE, true) end
+					spoke = true
+				end
+			else
+				if huntingInterest > 1 then 
+					if huntingInterest < 3 then dfhack.gui.showAnnouncement( getName(u,true).." is interested in hunting." , COLOR_WHITE, true)
+					else dfhack.gui.showAnnouncement( getName(u,true).." wants to be a hunter." , COLOR_WHITE, true) end
+					spoke = true
+				end
+				if warInterest > 1 then 
+					if warInterest < 3 then dfhack.gui.showAnnouncement( getName(u,true).." is interested in fighting." , COLOR_WHITE, true)
+					else dfhack.gui.showAnnouncement( getName(u,true).." wants to be a fighter." , COLOR_WHITE, true) end
+					spoke = true
+				end
+			end
+			
+			if respectVal > 25 then
+				if respectVal < 50 then dfhack.gui.showAnnouncement( getName(u,true).." enjoyed speaking with "..dfhack.TranslateName(unit.name).."." , COLOR_WHITE, true)
+				elseif respectVal < 75 then dfhack.gui.showAnnouncement( getName(u,true).." was happy to speak with "..dfhack.TranslateName(unit.name).."." , COLOR_WHITE, true)
+				elseif respectVal < 90 then dfhack.gui.showAnnouncement( getName(u,true).." was honored to speak with "..dfhack.TranslateName(unit.name).."." , COLOR_WHITE, true)
+				else dfhack.gui.showAnnouncement( getName(u,true).." was greatly honored to speak with "..dfhack.TranslateName(unit.name).."." , COLOR_WHITE, true)
+				end
+				spoke = true
+			end
+			
+			if spoke == false then dfhack.gui.showAnnouncement( getName(u,true).." has nothing interesting to say." , COLOR_WHITE, true) end
+		end
+	else
+		dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." could not find any animals to speak with." , COLOR_RED, true)	
+	end
+end
+
 function tameRoamingAnimal(reaction,unit,job,input_items,input_reagents,output_items,call_native)
 	unitRaw = df.global.world.raws.creatures.all[unit.race]
 	local merit = getMerit()
@@ -330,7 +498,7 @@ function tameRoamingAnimal(reaction,unit,job,input_items,input_reagents,output_i
 			u = allUnits[i]
 			--print((df.global.world.raws.creatures.all[u.race]).name[0])
 			if isRoamingAnimal(u) then
-				if closeBy(unit,u,radius) then--isSeen(view,u.pos) then
+				if closeBy(unit,u,radius,5) then--isSeen(view,u.pos) then
 					if dfhack.maps.canWalkBetween(u.pos,unit.pos) then
 						found = true
 						lastAnimalName = (df.global.world.raws.creatures.all[u.race]).name[0]
@@ -370,7 +538,7 @@ function tameRoamingAnimal(reaction,unit,job,input_items,input_reagents,output_i
 				dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to spot a tameable animal in range." , COLOR_BROWN, true)
 			end
 		elseif success == true then
-			dfhack.gui.showAnnouncement( "The " .. (df.global.world.raws.creatures.all[u.race]).name[0] .. " has joined us." , COLOR_GREEN, true)--color[,is_bright]
+			dfhack.gui.showAnnouncement( getName(u,true) .. " has joined us." , COLOR_GREEN, true)--color[,is_bright]
 			--now deal with any creatures that were following it
 			if u then
 				if isBird(u) then getNewsFromAnimal(unit,u) end
@@ -386,11 +554,11 @@ function tameRoamingAnimal(reaction,unit,job,input_items,input_reagents,output_i
 			end
 		else
 			if failureType == 0 then
-				dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to tame the "..lastAnimalName..".", COLOR_BROWN)
+				dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to tame "..getName(u)..".", COLOR_BROWN)
 			elseif failureType == 1 then
-				dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." is not skilled enough to tame the "..lastAnimalName..".", COLOR_BROWN)
+				dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." is not skilled enough to tame "..getName(u)..".", COLOR_BROWN)
 			elseif failureType == 2 then
-				dfhack.gui.showAnnouncement( "The "..lastAnimalName.." has no interest in joining us.", COLOR_BROWN)
+				dfhack.gui.showAnnouncement( getName(u,true).." has no interest in joining us.", COLOR_BROWN)
 			end
 			levelUp(unit,reaction.skill,10)
 			if #input_items > 0 then
@@ -398,7 +566,7 @@ function tameRoamingAnimal(reaction,unit,job,input_items,input_reagents,output_i
 			end
 		end
 	else
-		dfhack.gui.showAnnouncement( "You are too disconnected from nature to commune with animals.", COLOR_RED, true)
+		dfhack.gui.showAnnouncement( "You are too disconnected from nature to recruit animals.", COLOR_RED, true)
 	end
 end
 
@@ -551,7 +719,7 @@ function releaseRoamingAnimal(reaction,unit,job,input_items,input_reagents,outpu
 	end
 		
 	if success == true then
-		dfhack.gui.showAnnouncement( "The " .. (df.global.world.raws.creatures.all[u.race]).name[0] .. " has been released into the wild.", COLOR_GREEN)
+		dfhack.gui.showAnnouncement( getName(unit,true).. " has been released into the wild.", COLOR_GREEN)
 		levelUp(unit,reaction.skill,30)
 	else
 		dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to find any animals to release.", COLOR_RED, true)
@@ -636,6 +804,11 @@ function getTrainingProb(trainer,u,reaction,multiplier)
 	local unitRaw = df.global.world.raws.creatures.all[u.race]
 	casteRaw = unitRaw.caste[u.caste]
 	petValue = casteRaw.misc.petvalue
+	
+	if casteRaw.flags.PET == false and casteRaw.flags.PET_EXOTIC == false and petValue < 10000 then
+		petValue = 10000
+	end
+	
 	if multiplier ~= nil then
 		respectvalue = respectvalue * multiplier
 		--print("interest in activity: "..multiplier)
@@ -736,8 +909,13 @@ end
 	--casteRaw.flags.TITAN
 
 function followUser(reaction,unit,job,input_items,input_reagents,output_items,call_native)
+	local merit = getMerit()
+	if merit < 0 then
+		dfhack.gui.showAnnouncement( "You are too disconnected from nature to train animals this way." , COLOR_RED, true)
+		return false
+	end
+
 	local skill = dfhack.units.getEffectiveSkill(unit,reaction.skill)
-	local trainerSkill = ((skill*skill*skill)+1)*10
 	
 	local radius = reaction.products[0].product_dimension
 	if radius < 1 then radius = 10 end
@@ -776,7 +954,7 @@ function followUser(reaction,unit,job,input_items,input_reagents,output_items,ca
 			v.flags.PRESERVE_REAGENT = true
 		end
 	elseif success == true then
-		dfhack.gui.showAnnouncement( "The " .. (df.global.world.raws.creatures.all[u.race]).name[0] .. " is now following " .. dfhack.TranslateName(unit.name) .. "." , COLOR_GREEN)
+		dfhack.gui.showAnnouncement( getName(u,true) .. " is now following " .. dfhack.TranslateName(unit.name) .. "." , COLOR_GREEN)
 		levelUp(unit,reaction.skill,30)
 	elseif failureType == 1 then
 		dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to teach any animals to follow.", COLOR_BROWN)
@@ -787,8 +965,12 @@ function followUser(reaction,unit,job,input_items,input_reagents,output_items,ca
 end
 
 function cluster(reaction,unit,job,input_items,input_reagents,output_items,call_native)
+	local merit = getMerit()
+	if merit < 0 then
+		dfhack.gui.showAnnouncement( "You are too disconnected from nature to train animals this way." , COLOR_RED, true)
+		return false
+	end
 	unitRaw = df.global.world.raws.creatures.all[unit.race]
-	local probability = reaction.products[0].probability + dfhack.units.getEffectiveSkill(unit,reaction.skill)
 	local radius = reaction.products[0].product_dimension
 	if radius < 1 then radius = 10 end
 	allUnits = df.global.world.units.active
@@ -846,18 +1028,18 @@ function cluster(reaction,unit,job,input_items,input_reagents,output_items,call_
 			end
 		end
 		if not found == true then
-			dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." could not find an animal to accompany the "..(df.global.world.raws.creatures.all[leader.race]).name[0].."." , COLOR_RED, true)
+			dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." could not find an animal to accompany "..getName(leader).."." , COLOR_RED, true)
 			for _,v in ipairs(input_reagents or {}) do
 				v.flags.PRESERVE_REAGENT = true
 			end
 		elseif success == true then
-			dfhack.gui.showAnnouncement( "The " .. (df.global.world.raws.creatures.all[u.race]).name[0] .. " is now following the "..(df.global.world.raws.creatures.all[leader.race]).name[0] .. ".", COLOR_GREEN)
+			dfhack.gui.showAnnouncement( getName(u,true) .. " is now following "..getName(leader).. ".", COLOR_GREEN)
 			levelUp(unit,reaction.skill,30)
 		elseif failureType == 1 then
-			dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to train any animals to follow the "..(df.global.world.raws.creatures.all[leader.race]).name[0] .. ".", COLOR_BROWN)
+			dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to train any animals to follow "..getName(leader).. ".", COLOR_BROWN)
 			levelUp(unit,reaction.skill,10)
 		else
-			dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." is not skilled enough to train the animal to follow the "..(df.global.world.raws.creatures.all[leader.race]).name[0] .. ".", COLOR_RED, true)
+			dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." is not skilled enough to train the animal to follow "..getName(leader).. ".", COLOR_RED, true)
 		end
 	else
 		dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to spot a trainable animal in range." , COLOR_RED, true)
@@ -865,8 +1047,12 @@ function cluster(reaction,unit,job,input_items,input_reagents,output_items,call_
 end
 
 function unFollow(reaction,unit,job,input_items,input_reagents,output_items,call_native)
+	local merit = getMerit()
+	if merit < 0 then
+		dfhack.gui.showAnnouncement( "You are too disconnected from nature to train animals this way." , COLOR_RED, true)
+		return false
+	end
 	unitRaw = df.global.world.raws.creatures.all[unit.race]
-	local probability = reaction.products[0].probability + dfhack.units.getEffectiveSkill(unit,reaction.skill)
 	local radius = reaction.products[0].product_dimension
 	if radius < 1 then radius = 10 end
 	allUnits = df.global.world.units.active
@@ -897,7 +1083,7 @@ function unFollow(reaction,unit,job,input_items,input_reagents,output_items,call
 			v.flags.PRESERVE_REAGENT = true
 		end
 	elseif success == true then
-		dfhack.gui.showAnnouncement( "The " .. (df.global.world.raws.creatures.all[u.race]).name[0] .. " has been dismissed.", COLOR_GREEN)
+		dfhack.gui.showAnnouncement( getName(u,true) .. " has been dismissed.", COLOR_GREEN)
 		levelUp(unit,reaction.skill,30)
 	elseif failureType == 1 then
 		dfhack.gui.showAnnouncement( "The animal is not listening to "..dfhack.TranslateName(unit.name)..".", COLOR_BROWN)
@@ -909,9 +1095,11 @@ function unFollow(reaction,unit,job,input_items,input_reagents,output_items,call
 end
 
 function trainHunting(reaction,unit,job,input_items,input_reagents,output_items,call_native)
-	local skill = dfhack.units.getEffectiveSkill(unit,reaction.skill)
-	local trainerSkill = ((skill*skill*skill)+1)*10
-	
+	local merit = getMerit()
+	if merit < 0 then
+		dfhack.gui.showAnnouncement( "You are too disconnected from nature to train animals this way." , COLOR_RED, true)
+		return false
+	end
 	local radius = reaction.products[0].product_dimension
 	if radius < 1 then radius = 10 end
 
@@ -943,7 +1131,7 @@ function trainHunting(reaction,unit,job,input_items,input_reagents,output_items,
 			v.flags.PRESERVE_REAGENT = true
 		end
 	elseif success == true then
-		dfhack.gui.showAnnouncement( "The " .. (df.global.world.raws.creatures.all[u.race]).name[0] .. " has been trained for hunting." , COLOR_GREEN)
+		dfhack.gui.showAnnouncement( getName(u,true) .. " has been trained for hunting." , COLOR_GREEN)
 		levelUp(unit,reaction.skill,30)
 	elseif failureType == 1 then
 		dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to train any animals to hunt.", COLOR_BROWN)
@@ -954,9 +1142,11 @@ function trainHunting(reaction,unit,job,input_items,input_reagents,output_items,
 end
 
 function trainWar(reaction,unit,job,input_items,input_reagents,output_items,call_native)
-	local skill = dfhack.units.getEffectiveSkill(unit,reaction.skill)
-	local trainerSkill = ((skill*skill*skill)+1)*10
-	
+	local merit = getMerit()
+	if merit < 0 then
+		dfhack.gui.showAnnouncement( "You are too disconnected from nature to train animals this way." , COLOR_RED, true)
+		return false
+	end
 	local radius = reaction.products[0].product_dimension
 	if radius < 1 then radius = 10 end
 
@@ -988,7 +1178,7 @@ function trainWar(reaction,unit,job,input_items,input_reagents,output_items,call
 			v.flags.PRESERVE_REAGENT = true
 		end
 	elseif success == true then
-		dfhack.gui.showAnnouncement( "The " .. (df.global.world.raws.creatures.all[u.race]).name[0] .. " has been trained for war." , COLOR_GREEN)
+		dfhack.gui.showAnnouncement( getName(u,true) .. " has been trained for war." , COLOR_GREEN)
 		levelUp(unit,reaction.skill,30)
 	elseif failureType == 1 then
 		dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to train any animals for combat.", COLOR_BROWN)
@@ -999,9 +1189,11 @@ function trainWar(reaction,unit,job,input_items,input_reagents,output_items,call
 end
 
 function unTrain(reaction,unit,job,input_items,input_reagents,output_items,call_native)
-	local skill = dfhack.units.getEffectiveSkill(unit,reaction.skill)
-	local trainerSkill = ((skill*skill*skill)+1)*10
-	
+	local merit = getMerit()
+	if merit < 0 then
+		dfhack.gui.showAnnouncement( "You are too disconnected from nature to train animals this way." , COLOR_RED, true)
+		return false
+	end
 	local radius = reaction.products[0].product_dimension
 	if radius < 1 then radius = 10 end
 
@@ -1038,7 +1230,7 @@ function unTrain(reaction,unit,job,input_items,input_reagents,output_items,call_
 			v.flags.PRESERVE_REAGENT = true
 		end
 	elseif success == true then
-		dfhack.gui.showAnnouncement( "The " .. (df.global.world.raws.creatures.all[u.race]).name[0] .. " has been unconditioned." , COLOR_GREEN)
+		dfhack.gui.showAnnouncement( getName(u,true) .. " has been unconditioned." , COLOR_GREEN)
 		levelUp(unit,reaction.skill,30)
 	elseif failureType == 1 then
 		dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." was unable to untrain any animals.", COLOR_BROWN)
@@ -1048,7 +1240,102 @@ function unTrain(reaction,unit,job,input_items,input_reagents,output_items,call_
 	end
 end
 
+function replenishFish(reaction,unit,job,input_items,input_reagents,output_items,call_native)
+	local merit = getMerit()
+	if merit > 0 then
+		local success = false
+		local found = false
+		local needed = false
+		local name = ""
+		for i=0, #df.global.world.populations-1, 1 do
+			if df.global.world.populations[i].known and df.global.world.populations[i].type==1 then -- a type of vermin on the map
+				local race = df.global.world.populations[i].race
+				local raw = df.global.world.raws.creatures.all[race]
+				if raw.flags.VERMIN_FISH == true then
+					found = true
+					if (df.global.world.populations[i].quantity < 100) then
+						success = true
+						df.global.world.populations[i].quantity = df.global.world.populations[i].quantity + 100
+						name = raw.name
+					end
+				end
+			end
+		end
+		if found == false then
+			dfhack.gui.showAnnouncement( "No fish can live in this area.", COLOR_RED, true)
+		elseif success == true then
+			dfhack.gui.showAnnouncement( "The waters have been filled with "..name[1]..".", COLOR_GREEN, true)
+		else
+			dfhack.gui.showAnnouncement( "There are already plenty of fish living here.", COLOR_YELLOW, true)
+		end
+	else
+		dfhack.gui.showAnnouncement( "You are too out of touch with nature to summon fish.", COLOR_RED, true)
+	end
+end
 
+function combatTraining(reaction,unit,job,input_items,input_reagents,output_items,call_native)
+	local merit = getMerit()
+	if merit < 0 then
+		dfhack.gui.showAnnouncement( "You are too disconnected from nature to train animals this way." , COLOR_RED, true)
+		return false
+	end
+	local radius = reaction.products[0].product_dimension
+	if radius < 1 then radius = 10 end
+	local found = false
+	local success = false
+	allUnits = df.global.world.units.active
+	local u
+	local animals = {}
+	local combatSkills = {"BITE","GRASP_STRIKE","STANCE_STRIKE","SITUATIONAL_AWARENESS","MELEE_COMBAT","WRESTLING","DODGING"}
+	local trainerSkill = dfhack.units.getEffectiveSkill(unit,reaction.skill)
+	for i=#allUnits-1,0,-1 do	-- search list in reverse
+		u = allUnits[i]
+		if isPet(u) and closeBy(unit,u,radius) and (u.profession == 98 or u.profession == 99) then
+			found = true
+			for s=1,#combatSkills,1 do
+				local skillId = df.job_skill[combatSkills[s]]
+				trainerLevel = dfhack.units.getEffectiveSkill(unit,skillId)
+				traineeLevel = dfhack.units.getEffectiveSkill(u,skillId)
+				if trainerLevel > traineeLevel then
+					table.insert(animals, u)
+					break
+				end
+			end
+		end
+	end
+	
+	if #animals > 0 then
+		u = animals[math.random(#animals)]
+		for s=1,#combatSkills,1 do
+			local skillId = df.job_skill[combatSkills[s]]
+			trainerLevel = dfhack.units.getEffectiveSkill(unit,skillId)
+			traineeLevel = dfhack.units.getEffectiveSkill(u,skillId)
+			if trainerLevel > traineeLevel then
+				quality = 0
+				if math.random(5) < trainerSkill then quality = quality + 1 end
+				if math.random(10) < trainerSkill then quality = quality + 1 end
+				if math.random(15) < trainerSkill then quality = quality + 1 end
+				if math.random(20) < trainerSkill then quality = quality + 1 end
+				if math.random(25) < trainerSkill and math.random(3) == 1 then quality = quality + 1 end
+				levelUp(u,skillId,quality*30)
+				levelUp(unit,skillId,10)
+				success = true
+			end
+		end
+	end
+	
+	
+	if not found == true then
+		dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." needs a work animal to train." , COLOR_RED, true)
+		for _,v in ipairs(input_reagents or {}) do
+			v.flags.PRESERVE_REAGENT = true
+		end
+	elseif success == true then
+		levelUp(unit,reaction.skill,30)
+	else
+		dfhack.gui.showAnnouncement( dfhack.TranslateName(unit.name).." has nothing left to teach." , COLOR_RED, true)
+	end
+end
 
 --Doesn't work
 function setIdleArea(reaction,unit,job,input_items,input_reagents,output_items,call_native)
@@ -1195,11 +1482,11 @@ function isRoamingAnimal(u)
 	return false
 end
 
-function isPet(u)
+function isPet(u,allowDead)
 	--unitRaw = df.global.world.raws.creatures.all[u.race]
 	--casteRaw = unitRaw.caste[u.caste]
 	if u.flags1.tame
-	--and not dfhack.units.isDead(u)
+	and not (dfhack.units.isDead(u) and allowDead ~= true)
 	and u.civ_id==df.global.ui.civ_id
 	and not dfhack.units.isOpposedToLife(u)
 	and not u.flags1.merchant 
@@ -1269,7 +1556,7 @@ function calculateUnitMerit(u,respond)
 	if casteRaw.flags[158] ~= true then
 		
 		--Pets
-		if isPet(u) then
+		if isPet(u, true) then
 			if u.flags2.roaming_wilderness_population_source==true then wildOriginMultiplier = 5 end
 			--first pass judgement on deaths
 			if dfhack.units.isDead(u) then
@@ -1372,9 +1659,9 @@ function calculateUnitMerit(u,respond)
 			if dfhack.units.isDead(u) and u.relations.last_attacker_id ~= -1 then
 				local killer = df.unit.find(u.relations.last_attacker_id)
 				if killer ~= nil then
-					if killer.civ_id == df.global.ui.civ_id and not killer.flags1.merchant and not killer.flags1.diplomat then
+					if killer.civ_id == df.global.ui.civ_id and not killer.flags1.merchant and not killer.flags1.diplomat and not dfhack.units.isDead(killer) then
 						if u.training_level == df.animal_training_level.WildUntamed then
-							if isPet(killer) then
+							if isPet(killer, true) then
 								if respond=="console" then line = ('Allowed a pet to kill a wild '..name..'.') end
 								casualty = 1
 							else
@@ -1382,7 +1669,7 @@ function calculateUnitMerit(u,respond)
 								casualty = 2
 							end
 						else
-							if isPet(killer) then
+							if isPet(killer, true) then
 								if respond=="console" then line = ('Set loose '..name..' and then set animals on it.') end
 								casualty = 5
 							else
@@ -1562,8 +1849,14 @@ dfhack.onStateChange.loadDruidism = function(code)
 			elseif string.starts(reaction.code,'LUA_HOOK_DRUID_EXILE') then
 				eventful.registerReaction(reaction.code,exileCivMember)
 				registered_reactions = true
+			elseif string.starts(reaction.code,'LUA_HOOK_DRUID_REPLENISH_FISH') then
+				eventful.registerReaction(reaction.code,replenishFish)
+				registered_reactions = true
 			elseif string.starts(reaction.code,'LUA_HOOK_DRUID_FOLLOW') then
 				eventful.registerReaction(reaction.code,followUser)
+				registered_reactions = true
+			elseif string.starts(reaction.code,'LUA_HOOK_DRUID_TALK_PET') then
+				eventful.registerReaction(reaction.code,talkPet)
 				registered_reactions = true
 			elseif string.starts(reaction.code,'LUA_HOOK_DRUID_CLUSTER') then
 				eventful.registerReaction(reaction.code,cluster)
@@ -1582,6 +1875,9 @@ dfhack.onStateChange.loadDruidism = function(code)
 				registered_reactions = true
 			elseif string.starts(reaction.code,'LUA_HOOK_DRUID_TRAIN_WAR') then
 				eventful.registerReaction(reaction.code,trainWar)
+				registered_reactions = true
+			elseif string.starts(reaction.code,'LUA_HOOK_DRUID_TRAIN_COMBAT') then
+				eventful.registerReaction(reaction.code,combatTraining)
 				registered_reactions = true
 			elseif string.starts(reaction.code,'LUA_HOOK_DRUID_UNTRAIN') then
 				eventful.registerReaction(reaction.code,unTrain)
