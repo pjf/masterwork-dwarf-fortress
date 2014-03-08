@@ -65,7 +65,11 @@ Public Class optionSingleReplaceButton
         Return m_opt.fullFileList
     End Function
 
-    Public Function optionInfo() As List(Of String) Implements iExportInfo.optionInfo
-        Return m_opt.optionInfo
+    Public Function comboItems() As comboItemCollection Implements iExportInfo.comboItems
+        Return Nothing
+    End Function
+
+    Public Function tagItems() As rawTokenCollection Implements iExportInfo.tagItems
+        Return m_opt.optionTags
     End Function
 End Class

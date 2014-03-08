@@ -13,10 +13,10 @@
         historical entity/nemesis
         generate name
 --]=]
-
+ 
 args={...}
 local utils=require 'utils'
-
+ 
 function getCaste(race_id,caste_id)
     local cr=df.creature_raw.find(race_id)
     return cr.caste[caste_id]
@@ -124,7 +124,7 @@ function CreateUnit(race_id,caste_id)
         local cvalue=genAttribute(v)
         unit.body.physical_attrs[k]={value=cvalue,max_value=cvalue*max_percent}
     end
-
+ 
     
     body.blood_max=getBodySize(caste,0) --TODO normal values
     body.blood_count=body.blood_max
@@ -197,7 +197,7 @@ function findRace(name)
     end
     qerror("Race:"..name.." not found!")
 end
-
+ 
 function createFigure(trgunit,he,he_group)
     local hf=df.historical_figure:new()
     hf.id=df.global.hist_figure_next_id
@@ -225,21 +225,21 @@ function createFigure(trgunit,he,he_group)
     hf.unit_id = trgunit.id
     
     df.global.world.history.figures:insert("#",hf)
-
+ 
     hf.info = df.historical_figure_info:new()
     hf.info.unk_14 = df.historical_figure_info.T_unk_14:new() -- hf state?
     --unk_14.region_id = -1; unk_14.beast_id = -1; unk_14.unk_14 = 0
     hf.info.unk_14.unk_18 = -1; hf.info.unk_14.unk_1c = -1
     -- set values that seem related to state and do event
     --change_state(hf, dfg.ui.site_id, region_pos)
-
-
+ 
+ 
     --lets skip skills for now
     --local skills = df.historical_figure_info.T_skills:new() -- skills snap shot
     -- ...
     hf.info.skills = {new=true}
-
-
+ 
+ 
     he.histfig_ids:insert('#', hf.id)
     he.hist_figures:insert('#', hf)
     if he_group then
@@ -275,7 +275,7 @@ function allocateIds(nemesis_record,hist_entity)
     nemesis_record.member_idx=hist_entity.next_member_idx
     hist_entity.next_member_idx=hist_entity.next_member_idx+1
 end
-
+ 
 function createNemesis(trgunit,civ_id,group_id)
     local id=df.global.nemesis_next_id
     local nem=df.nemesis_record:new()
@@ -305,7 +305,7 @@ function createNemesis(trgunit,civ_id,group_id)
     trgunit.flags1.important_historical_figure=true
     
     nem.save_file_id=-1
-
+ 
     local he=df.historical_entity.find(civ_id)
     he.nemesis_ids:insert("#",id)
     he.nemesis:insert("#",nem)
@@ -320,17 +320,17 @@ function createNemesis(trgunit,civ_id,group_id)
     allocateIds(nem,he)
     nem.figure=createFigure(trgunit,he,he_group)
 end
-
+ 
 function PlaceUnit(race,caste,name,position,civ_id,no_nemesis)
-
-
+ 
+ 
     
     local pos=position or copyall(df.global.cursor)
     if pos.x==-30000 then
         qerror("Point your pointy thing somewhere")
     end
     local race=findRace(race)
-
+ 
     
     local u=CreateUnit(race,tonumber(caste) or 0)
     u.pos:assign(pos)
@@ -365,7 +365,7 @@ function PlaceUnit(race,caste,name,position,civ_id,no_nemesis)
     end
     
 end
-
+ 
 local argPos
  
 if #args>3 then
@@ -374,6 +374,5 @@ if #args>3 then
     argPos.y=args[5]
     argPos.z=args[6]
 end
-
+ 
 PlaceUnit(args[1],args[2],args[3],argPos,args[7]) --Creature (ID), caste (number), name, x,y,z , civ_id(-1 for enemy, optional) for spawn.
-

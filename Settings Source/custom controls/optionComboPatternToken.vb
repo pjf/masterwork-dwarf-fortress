@@ -34,7 +34,7 @@ Public Class optionComboPatternToken
                 End If
             End If
 
-            Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.getFilePaths(False))
+            Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.loadFiles(m_opt.optionManager, m_pattern))
             m_value = Me.SelectedValue
 
         Catch ex As Exception
@@ -112,7 +112,11 @@ Public Class optionComboPatternToken
         Return m_opt.fullFileList
     End Function
 
-    Public Function optionInfo() As List(Of String) Implements iExportInfo.optionInfo
-        Return New List(Of String)({"{PATTERN} " & m_pattern, "{REPLACE} " & m_replace})
+    Public Function comboItems() As comboItemCollection Implements iExportInfo.comboItems
+        Return m_opt.itemList
+    End Function
+
+    Public Function tagItems() As rawTokenCollection Implements iExportInfo.tagItems
+        Return m_opt.optionTags
     End Function
 End Class

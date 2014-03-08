@@ -1,5 +1,5 @@
 creature_tropical_new
-YESFF[OBJECT:CREATURE]
+YESFF_ANIMALS[OBJECT:CREATURE]
 
 Mongooses were sponsored by the generous contributions of the Bay 12 community.
 

@@ -234,13 +234,13 @@ local function announcement_BIOLOGY_ELF_TWO() dfhack.gui.showAnnouncement(
     'BIOLOGY SUCCESS: Your biologist has discovered which elven muscles tire most and which wounds hurt the most (-15% Endurance/0% Recuperation)',
     COLOR_CYAN, true)end
 local function announcement_BIOLOGY_ELF_THREE() dfhack.gui.showAnnouncement(
-    'BIOLOGY SUCCESS: Your biologist has given your warriors a greater understanding of goblin reactions (Remove NoStun, NoParalyze, NoFear)',
+    'BIOLOGY SUCCESS: Your biologist has given your warriors a greater understanding of elven reactions (Remove NoStun, NoParalyze, NoFear)',
     COLOR_CYAN, true)end
 local function announcement_BIOLOGY_ELF_FOUR() dfhack.gui.showAnnouncement(
-    'BIOLOGY SUCCESS: Your biologist reconstructed goblin movements, allowing your soldiers to outmaneuver the enemy (-15% Agility/Speed)',
+    'BIOLOGY SUCCESS: Your biologist reconstructed elven movements, allowing your soldiers to outmaneuver the enemy (-15% Agility/Speed)',
     COLOR_CYAN, true)end
 local function announcement_BIOLOGY_ELF_FIVE() dfhack.gui.showAnnouncement(
-    'BIOLOGY SUCCESS: Your biologist discovered a fundemantel weakness on the goblin body (Double Damage)',
+    'BIOLOGY SUCCESS: Your biologist discovered a fundemantel weakness on the elven body (Double Damage)',
     COLOR_CYAN, true)end
 local function announcement_BIOLOGY_DROW_ONE() dfhack.gui.showAnnouncement(
     'BIOLOGY SUCCESS: Your biologist found a weakness in the drow body composition that your warriors can exploit (-15% Strength/Tougness)',

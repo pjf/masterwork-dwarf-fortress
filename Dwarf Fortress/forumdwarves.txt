@@ -1,0 +1,6 @@
+This is the forumdwarves text file. Whenever you view a text ingame, for example a creatures description, you can press Ctrl+Shift+P to print the text into this file. It will have all the correct tags and colors to directly copy it into the forum. Great for succession games. 
+
+------------------------------------------------------------
+
+
+
