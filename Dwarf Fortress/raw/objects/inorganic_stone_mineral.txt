@@ -2347,7 +2347,7 @@ value is weighted average of 3 silver and 1 copper
 
 //30 times damage against EVIL
 [INORGANIC:MOONSILVER]
-	-USE_MATERIAL_TEMPLATE:METAL_TEMPLATE-
+	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
 	[STATE_NAME_ADJ:ALL_SOLID:moonsilver]
 	[STATE_NAME_ADJ:LIQUID:molten moonsilver]
 	[STATE_NAME_ADJ:GAS:boiling moonsilver]
@@ -2384,7 +2384,7 @@ value is weighted average of 3 silver and 1 copper
 
 //30 times damage against GOOD
 [INORGANIC:SHADESILVER]
-	-USE_MATERIAL_TEMPLATE:METAL_TEMPLATE-
+	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
 	[STATE_NAME_ADJ:ALL_SOLID:shadesilver]
 	[STATE_NAME_ADJ:LIQUID:molten shadesilver]
 	[STATE_NAME_ADJ:GAS:boiling shadesilver]
