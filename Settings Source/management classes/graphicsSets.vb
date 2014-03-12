@@ -19,7 +19,7 @@ Public Class graphicsSets
     End Sub
 
     Public Shared Sub switchGraphics(ByVal packName As String)
-        If MsgBox("This will change raw files and update the graphics, continue?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm Graphics") = MsgBoxResult.No Then
+        If MsgBox("This will change raw files and update the graphics!" & vbNewLine & vbNewLine & "It will NOT update your saved games!" & vbNewLine & vbNewLine & "Continue?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm Graphics") = MsgBoxResult.No Then
             Exit Sub
         End If
         Try

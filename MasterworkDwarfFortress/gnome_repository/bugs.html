@@ -33,6 +33,135 @@ a:visited {
     <table width="556" border="0">
       <tr>
         <td width="550"><p>&nbsp;</p>
+          <p>IMPORTANT: Gnomes REQUIRE the following dfhack scripts for many of their unique behaviors: construct-creature.lua, druidism.lua, geology.lua, and machina.lua.  These scripts must also be active in the dfhack.init file.  Make sure these files are included and dfhack is running.</p>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Automatic machines aren't working.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">The first constructed automatic machine (Aerial Transportation Device, Autocrafters, etc.) doesn't work when starting a new game or after all automatic machines are deconstructed.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">Simply designate a new workshop to be built (you can cancel it afterwards).  This resets the automatic machine system, which should fix most bugs.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Logic gate feedback spiral (Severe machine-related slow-down).</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">The framerate suddenly slows to a crawl when working with machines.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">Most machines are pretty easy on the framerate, but the entire system must recheck its connections and power levels every time a gear assembly is engaged or disengaged, and power levels must be recalculated if a power source starts or stops.  Because of this, if a logic gate is connected to a gear assembly that is connected to one of the logic gate's own input machines, a feedback loop may result that causes the gear assembly to switch on and off every frame, which can kill your framerate.  So, avoid this.  <br>Slowdown can also occur if a power source (generally a water wheel whose artificial water source is starting to dry up) is switching on and off rapidly, especially if you have many machines operating.  Using natural rivers or steam engines/clockwork keys as your main power source is the best option.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Game hangs for several minutes while training animals in bulk</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">The game will freeze, sometimes for as long as several minutes, before resuming as if nothing had happened.  This seems to be associated with getting animals to follow each other and pasturing them together in large groups for training.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">I'm not really sure what causes this.  If the game seems to freeze but isn't actually crashing, press the space button so that it pauses the moment it unfreezes.  If you have a bunch of animals together in a pasture, remove them from the pasture and then unpause (if you do not, it will probably happen again in a few seconds).  This seems to be a DF pathing bug, rather than a direct effect of the script, so it is unlikely that I can fix it without simply removing the option of getting animals to cluster together altogether.  In general, try and avoid stuffing too many animals into one small area, or make sure to 'dismiss' them from following each other before you do.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Items or creatures launched into the air don't come down.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">Items or creatures launched at high angles with the Aerial Transport Device sometimes get stuck on invisible platforms in the sky.  Not actually an effect of the mod, this is just a quirk of DF topography.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">Avoid launching items at high angles on maps where this happens.  If something's already stuck up there, you'll have to build a stairway to get it down.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Tamed birds don't come down.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">If you tame a bird in mid-flight, it won't path to the ground.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">Build a stairway up to it to help it find its way.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Crash when using autocrafters.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">The game crashes while autocrafters are running.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">This can happen if an item is made out of an invalid material, or if an invalid item is used in a reaction.  Try and figure out what kind of item is causing the problem, and report it in the main forum thread so that it can be made impossible to produce.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Autocrafted items are not being stored in stockpiles.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">Items created by autocrafters are not being stored in stockpiles.  A milder version of the above bug, this is caused by certain item/material combinations.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">If you spot this, report it in the main forum thread.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Tamed animals reverting to their wild state just hang around.</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">Creatures tamed by the Nature Shrine and reverting to their wild state just follow their tamer around and pick fights with pets, refusing to leave.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">If you don't want to kill them, try to lure them into a cage trap so they can be re-tamed the normal way.  This may require webs or knocking them unconscious.  Make sure to designate a (regular) animal training area and set an animal trainer for your pets so this doesn't happen in the first place.</div></td>
+            </tr>
+          </table>
           <p>&nbsp;</p>
           <table width="700" border="1">
             <tr>
@@ -53,12 +182,12 @@ a:visited {
           <table width="700" border="1">
             <tr>
               <td><div align="center"></div></td>
-              <td><div align="center"><strong class="Rot">Workshop reactions are red, even with all the materials available.</strong><br />
+              <td><div align="center"><strong class="Rot">Workshop reactions are red, even with all the materials available / Where do I get 'rock' trap components?</strong><br />
               </div></td>
             </tr>
             <tr>
               <td><div align="center">Bug:</div></td>
-              <td><div align="center">If a workshop is in a burrow, even if the burrow is inactive, then it accepts only materials within the same burrow. </div></td>
+              <td><div align="center">If a workshop is in a burrow, even if the burrow is inactive, then it accepts only materials within the same burrow.  'Rock' is simply DF lingo for rock or metal; if you have a metal trap component and a reaction/building isn't accepting it, burrows are probably your issue.</div></td>
             </tr>
             <tr>
               <td><div align="center">Solution: </div></td>

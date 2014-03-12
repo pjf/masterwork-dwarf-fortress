@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.Collections.Generic
 
 Public Class fileListConverter
     Inherits TypeConverter
@@ -11,8 +12,8 @@ Public Class fileListConverter
     End Function
 
     Public Overrides Function ConvertTo(context As ITypeDescriptorContext, culture As Globalization.CultureInfo, value As Object, destinationType As Type) As Object
-        If destinationType Is GetType(String) AndAlso TypeOf value Is String() Then
-            Dim fileNames As String() = CType(value, String())
+        If destinationType Is GetType(String) AndAlso TypeOf value Is List(Of String) Then
+            Dim fileNames As List(Of String) = CType(value, List(Of String))
             If fileNames.Count > 0 Then
                 Return String.Join(",", fileNames)
             Else
@@ -33,10 +34,10 @@ Public Class fileListConverter
         If TypeOf value Is String Then
             Dim values As String = CStr(value)
             If values.Length > 0 Then
-                Dim fileNames As String() = (From s In values.Split(vbCrLf) Select s).ToArray
+                Dim fileNames As List(Of String) = (From s In values.Split(vbCrLf) Select s).ToList
                 Return fileNames
             Else
-                Return New String() {}
+                Return New List(Of String)
             End If
         End If
         Return MyBase.ConvertFrom(context, culture, value)
