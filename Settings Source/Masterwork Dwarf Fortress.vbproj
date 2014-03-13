@@ -242,6 +242,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="globals.vb" />
+    <Compile Include="helper forms\frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="helper forms\frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="interfaces\iExportInfo.vb" />
     <Compile Include="interfaces\iTest.vb" />
     <Compile Include="interfaces\iTheme.vb" />
@@ -307,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="helper forms\frmTilesetPreviewer.resx">
       <DependentUpon>frmTilesetPreviewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helper forms\frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
@@ -374,6 +383,7 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <None Include="Resources\masterwork-logo.png" />
     <None Include="Resources\fb-1024x576c.jpg" />
     <None Include="Resources\database-cloud.png" />
     <None Include="Resources\gear--plus.png" />
@@ -416,22 +426,22 @@
   <ItemGroup>
     <PublishFile Include="Resources\LazyNewbPackIconA.ico">
       <Visible>False</Visible>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="Resources\LazyNewbPackIconB.ico">
       <Visible>False</Visible>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
   </ItemGroup>

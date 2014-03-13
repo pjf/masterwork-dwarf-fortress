@@ -75,10 +75,12 @@ Public Class optionComboBoxToken
         Return m_opt.fullFileList
     End Function
 
-    Public Function optionInfo() As List(Of String) Implements iExportInfo.optionInfo
-        Dim s As List(Of String) = m_opt.optionInfo
-        s.Add("{VALUES} " & String.Join(", ", m_opt.itemList.valueList))
-        Return s
+    Public Function comboItems() As comboItemCollection Implements iExportInfo.comboItems
+        Return m_opt.itemList
+    End Function
+
+    Public Function tagItems() As rawTokenCollection Implements iExportInfo.tagItems
+        Return m_opt.optionTags
     End Function
 End Class
 

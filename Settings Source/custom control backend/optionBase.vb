@@ -48,7 +48,7 @@ Public Class optionBase
 
     Public Function loadOption() As Object
         'only load settings from our current raws
-        Return m_optionManager.loadOption(m_fileManager.getFilePaths(False), m_tokens, m_settingManager)
+        Return m_optionManager.loadOption(m_fileManager.loadFiles(m_optionManager, m_tokens), m_tokens, m_settingManager)
     End Function
 
     Public Function saveOption(Optional ByVal enable As Boolean = False) As Boolean
@@ -76,22 +76,23 @@ Public Class optionBase
 #Region "option export info"
 
     <Browsable(False), _
-    EditorBrowsable(EditorBrowsableState.Never), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
     DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-    Public ReadOnly Property optionInfo As List(Of String)
+    Public ReadOnly Property optionTags As rawTokenCollection
         Get
-            Dim idt As String = ControlChars.Tab & ControlChars.Tab
-            Dim br As String = vbCrLf
-            Dim strInfo As New List(Of String)
-            For Each t As rawToken In m_tokens
-                strInfo.Add(IIf(t.tokenName <> "", "Name: " & t.tokenName & br & idt, "") & "{ON} " & t.optionOnValue & br & idt & "{OFF} " & t.optionOffValue & br)
-            Next
-            Return strInfo
+            Return m_tokens
+            'Dim idt As String = ControlChars.Tab & ControlChars.Tab
+            'Dim br As String = vbCrLf
+            'Dim strInfo As New List(Of String)
+            'For Each t As rawToken In m_tokens
+            '    strInfo.Add(IIf(t.tokenName <> "", "Name: " & t.tokenName & br & idt, "") & "{ON} " & t.optionOnValue & br & idt & "{OFF} " & t.optionOffValue & br)
+            'Next
+            'Return strInfo
         End Get
     End Property
 
     <Browsable(False), _
-    EditorBrowsable(EditorBrowsableState.Never), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
     DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
     Public ReadOnly Property fullFileList As List(Of String)
         Get
@@ -101,10 +102,12 @@ Public Class optionBase
             If m_optionManager.loadFromWorldGen Then files.Add(m_worldGenFileName)
 
             If m_fileManager.fileNames IsNot Nothing Then
-                files.AddRange(m_fileManager.fileNames)
+                For Each name As String In m_fileManager.fileNames
+                    If Not files.Contains(name) Then files.Add(name)
+                Next
             End If
 
-            If m_fileManager.getFilePaths(True).FindAll(Function(f As String) f.Contains(globals.m_graphicsDir)).Count > 0 Then
+            If m_fileManager.files(True).Count > 0 Then
                 files.Add("** Affects graphic packs! **")
             End If
 

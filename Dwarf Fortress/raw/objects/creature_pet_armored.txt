@@ -1571,7 +1571,7 @@ YESARMORED[OBJECT:CREATURE]
 
 
 
-YESFF[CREATURE:SAUROPOD_IRON]
+YESFF_ANIMALS[CREATURE:SAUROPOD_IRON]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A colossal lizard found grazing in tropical swamps.  It eats leaves along the tops of trees.  It is normally placid when left alone. This version is covered in an iron armor.]
 	[NAME:ironclad sauropod:ironclad sauropods:ironclad sauropod]
 	[CASTE_NAME:ironclad sauropod:ironclad sauropods:ironclad sauropod]
@@ -1650,7 +1650,7 @@ YESFF[CREATURE:SAUROPOD_IRON]
 		[MULTIPLY_VALUE:5]
 
 
-YESFF[CREATURE:SAUROPOD_STEEL]
+YESFF_ANIMALS[CREATURE:SAUROPOD_STEEL]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A colossal lizard found grazing in tropical swamps.  It eats leaves along the tops of trees.  It is normally placid when left alone. This version is covered in a steel armor.]
 	[NAME:steelclad sauropod:steelclad sauropods:steelclad sauropod]
 	[CASTE_NAME:steelclad sauropod:steelclad sauropods:steelclad sauropod]

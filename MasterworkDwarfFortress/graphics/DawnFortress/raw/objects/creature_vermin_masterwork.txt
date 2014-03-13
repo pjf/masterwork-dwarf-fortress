@@ -189,7 +189,7 @@ YESVERMIN[OBJECT:CREATURE]
 
 
 
-YESFF[CREATURE:GARTER_SNAKE_FF]
+YESFF_ANIMALS[CREATURE:GARTER_SNAKE_FF]
 	[DESCRIPTION:A small snake found in temperate regions.  It hunts frogs, insects, and anything else it can subdue.]
 	[NAME:garter snake:garter snakes:garter snake]
 	[CASTE_NAME:garter snake:garter snakes:garter snake]
@@ -288,7 +288,7 @@ YESFF[CREATURE:GARTER_SNAKE_FF]
 
 
 
-YESFF[CREATURE:BUTTERFLY_VARIOUS]
+YESFF_ANIMALS[CREATURE:BUTTERFLY_VARIOUS]
 	[DESCRIPTION:A small insect with colorful wings.  It is admired for its beauty.]
 	[CREATURE_TILE:249][COLOR:3:0:0]
 	[NAME:butterfly:butterflies:butterfly]
@@ -343,7 +343,7 @@ YESFF[CREATURE:BUTTERFLY_VARIOUS]
 
 
 
-YESFF[CREATURE:ANT_FIRE]
+YESFF_ANIMALS[CREATURE:ANT_FIRE]
 	[DESCRIPTION:This tiny stinging insect is found in large colonies in the dirt.  They overwhelm their enemies with swarms and burning stings.]
 	[NAME:fire ant:fire ants:fire ant]
 	[CREATURE_TILE:161][COLOR:4:12:1]
@@ -425,7 +425,7 @@ YESFF[CREATURE:ANT_FIRE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
-YESFF[CREATURE:ANT_ARMY]
+YESFF_ANIMALS[CREATURE:ANT_ARMY]
 	[DESCRIPTION:A voracious insect that can be found in roving groups on the jungle floor.  The group will attempt to consume anything in the way.]
 	[NAME:army ant:army ants:army ant]
 	[CASTE_NAME:army ant:army ants:army ant]
@@ -487,7 +487,7 @@ YESFF[CREATURE:ANT_ARMY]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
-YESFF[CREATURE:LADYBUG]
+YESFF_ANIMALS[CREATURE:LADYBUG]
 	[DESCRIPTION:A flying insect easily spotted by its colorful, spotted back.  It hunts and devours smaller insects.]
 	[NAME:ladybug:ladybugs:ladybug]
 	[CASTE_NAME:ladybug:ladybugs:ladybug]
@@ -538,7 +538,7 @@ YESFF[CREATURE:LADYBUG]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
-YESFF[CREATURE:MOSQUITO]
+YESFF_ANIMALS[CREATURE:MOSQUITO]
 	[DESCRIPTION:A bloodsucking insect found everywhere but especially in swamps and marshland.]
 	[NAME:mosquito:mosquitos:mosquito]
 	[CASTE_NAME:mosquito:mosquitos:mosquito]
@@ -610,7 +610,7 @@ YESFF[CREATURE:MOSQUITO]
 				[TLCM_NOUN:eyes:PLURAL]
 
 
-YESFF[CREATURE:PILLBUG]
+YESFF_ANIMALS[CREATURE:PILLBUG]
 	[DESCRIPTION:A small armored insect that rolls up into a little ball when threatened.]
 	[NAME:pillbug:pillbugs:pillbug]
 	[CASTE_NAME:pillbug:pillbugs:pillbug]
@@ -663,7 +663,7 @@ YESFF[CREATURE:PILLBUG]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
-YESFF[CREATURE:SCARAB]
+YESFF_ANIMALS[CREATURE:SCARAB]
 	[DESCRIPTION:A large insect found in deserts with a hard, lustrous shell.]
 	[NAME:scarab:scarabs:scarab]
 	[CASTE_NAME:scarab:scarabs:scarab]
@@ -715,7 +715,7 @@ YESFF[CREATURE:SCARAB]
 
 
 
-YESFF[CREATURE:YELLOWJACKET]
+YESFF_ANIMALS[CREATURE:YELLOWJACKET]
 	[DESCRIPTION:A small winged insect that lives in hive colonies.  It has a painful sting which it likes to use.]
 	[NAME:yellowjacket:yellowjackets:yellowjacket]
 	[CREATURE_TILE:249][COLOR:6:0:1]
@@ -798,7 +798,7 @@ YESFF[CREATURE:YELLOWJACKET]
 
 
 
-YESFF[CREATURE:HORNET]
+YESFF_ANIMALS[CREATURE:HORNET]
 	[DESCRIPTION:A small winged insect that lives in hive colonies.  It has a painful sting used on prey and predators alike.]
 	[NAME:hornet:hornets:hornet]
 	[CREATURE_TILE:249][COLOR:6:0:0]
@@ -879,7 +879,7 @@ YESFF[CREATURE:HORNET]
 
 
 
-YESFF[CREATURE:BIRD_CROW_FF]
+YESFF_ANIMALS[CREATURE:BIRD_CROW_FF]
 	[DESCRIPTION:A small black bird found all over the world.  They have a distinctive cry that varies from region to region.]
 	[NAME:crow:crows:crow]
 	[CASTE_NAME:crow:crows:crow]
@@ -977,7 +977,7 @@ YESFF[CREATURE:BIRD_CROW_FF]
 
 
 
-YESFF[CREATURE:BIRD_FINCH_FF]
+YESFF_ANIMALS[CREATURE:BIRD_FINCH_FF]
 	[DESCRIPTION:A small gregarious bird that survives on seeds.  There are many various kinds all over the world.]
 	[NAME:finch:finches:finch]
 	[CASTE_NAME:finch:finches:finch]
@@ -1073,7 +1073,7 @@ YESFF[CREATURE:BIRD_FINCH_FF]
 
 
 
-YESFF[CREATURE:BIRD_LARK_FF]
+YESFF_ANIMALS[CREATURE:BIRD_LARK_FF]
 	[DESCRIPTION:A small predatory bird found worldwide.  It has a complex and dynamic song.]
 	[NAME:lark:larks:lark]
 	[CASTE_NAME:lark:larks:lark]
@@ -1170,7 +1170,7 @@ YESFF[CREATURE:BIRD_LARK_FF]
 
 
 
-YESFF[CREATURE:BIRD_SHRIKE_FF]
+YESFF_ANIMALS[CREATURE:BIRD_SHRIKE_FF]
 	[DESCRIPTION:A small predatory bird.  They impale caught insects on sticks and other objects to tear them into smaller, easy to swallow fragments.]
 	[DESCRIPTION:A small predatory bird.  They impale caught insects on sticks and other objects to tear them into smaller, easy to swallow fragments.]
 	[NAME:shrike:shrikes:shrike]
@@ -1263,7 +1263,7 @@ YESFF[CREATURE:BIRD_SHRIKE_FF]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
-YESFF[CREATURE:BIRD_SPARROW]
+YESFF_ANIMALS[CREATURE:BIRD_SPARROW]
 	[DESCRIPTION:A small gregarious bird.  They eat insects and seeds, but some will eat almost anything in small amounts.]
 	[NAME:sparrow:sparrows:sparrow]
 	[CASTE_NAME:sparrow:sparrows:sparrow]
@@ -1356,7 +1356,7 @@ YESFF[CREATURE:BIRD_SPARROW]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
-YESFF[CREATURE:BIRD_SWALLOW_FF]
+YESFF_ANIMALS[CREATURE:BIRD_SWALLOW_FF]
 	[DESCRIPTION:A small bird found across the world, noted for its aerial feeding habits.]
 	[NAME:swallow:swallows:swallow]
 	[CASTE_NAME:swallow:swallows:swallow]
@@ -1451,7 +1451,7 @@ YESFF[CREATURE:BIRD_SWALLOW_FF]
 
 
 
-YESFF[CREATURE:BIRD_SWIFT_FF]
+YESFF_ANIMALS[CREATURE:BIRD_SWIFT_FF]
 	[DESCRIPTION:A small bird found across the world.  It feeds on insects, which it catches in flight.]
 	[NAME:swift:swifts:swift]
 	[CASTE_NAME:swift:swifts:swift]
@@ -1543,7 +1543,7 @@ YESFF[CREATURE:BIRD_SWIFT_FF]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
-YESFF[CREATURE:BIRD_TURTLE_DOVE_FF]
+YESFF_ANIMALS[CREATURE:BIRD_TURTLE_DOVE_FF]
 	[DESCRIPTION:A small and timid migratory bird living in temperate regions.  It begins its soft purring song when Spring arrives.]
 	[NAME:turtle dove:turtle doves:turtle dove]
 	[CASTE_NAME:turtle dove:turtle doves:turtle dove]
@@ -1636,7 +1636,7 @@ YESFF[CREATURE:BIRD_TURTLE_DOVE_FF]
 
 
 
-YESFF[CREATURE:FROG]
+YESFF_ANIMALS[CREATURE:FROG]
 	[DESCRIPTION:A long-legged amphibian with leathery skin, found in ponds and wetland areas.  It uses its long tongue to catch and eat flying insects.]
 	[NAME:frog:frogs:frog]
 	[CASTE_NAME:frog:frogs:frog]

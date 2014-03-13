@@ -390,31 +390,40 @@ function addMachina(building)
 				cpos = checkPositions[i]
 				cb = dfhack.buildings.findAtTile(cpos)
 				if cb ~= nil then
+				
+					local cbIsInput = false
+					
 					if getmetatable(cb) == "building_workshopst" then
 						t = df.building_def.find(cb.custom_type)
 						if t ~= nil and t ~= -1 then
 							if string.starts(t.code, prefix..'INPUT') then 
-								table.insert(inputBlocks,cpos)
-								--Find the opposing output, if it exists
-								local opi = (i+2)%4 -- Opposing Position Index
-								if opi == 0 then opi = 4 end
-								opos = checkPositions[opi]
-								ocb = dfhack.buildings.findAtTile(opos)
-								if ocb ~= nil then
-									if getmetatable(ocb) == "building_workshopst" then
-										ot = df.building_def.find(ocb.custom_type)
-										if ot ~= nil and ot ~= -1 then
-											if string.starts(ot.code, prefix..'OUTPUT') then 
-												table.insert(mainOutputBlocks,outputPositions[opi])
-											end
-										end
-									end
-								end
-							elseif string.starts(t.code, prefix..'OUTPUT') then 
-								cpos = outputPositions[i]
-								table.insert(outputBlocks,cpos) 
+								cbIsInput = true
 							end
 						end
+					elseif getmetatable(cb) == "building_trapst" then
+						cbIsInput = true
+					end
+					
+					if cbIsInput == true then
+						table.insert(inputBlocks,cpos)
+						--Find the opposing output, if it exists
+						local opi = (i+2)%4 -- Opposing Position Index
+						if opi == 0 then opi = 4 end
+						opos = checkPositions[opi]
+						ocb = dfhack.buildings.findAtTile(opos)
+						if ocb ~= nil then
+							if getmetatable(ocb) == "building_workshopst" then
+								ot = df.building_def.find(ocb.custom_type)
+								if ot ~= nil and ot ~= -1 then
+									if string.starts(ot.code, prefix..'OUTPUT') then 
+										table.insert(mainOutputBlocks,outputPositions[opi])
+									end
+								end
+							end
+						end
+					elseif string.starts(t.code, prefix..'OUTPUT') then 
+						cpos = outputPositions[i]
+						table.insert(outputBlocks,cpos) 
 					end
 				end
 			end
@@ -449,6 +458,13 @@ function addMachina(building)
 			machina.mainOutputBlocks = mainOutputBlocks
 			machina.secondaryOutputBlocks = secondaryOutputBlocks
 			
+			for z=0, #machina.inputBlocks-1, 1 do
+				local pos = machina.inputBlocks[z]
+				if pos ~= nil then
+					inputBlock = dfhack.maps.ensureTileBlock(pos.x,pos.y,pos.z)
+					inputBlock.designation[pos.x%16][pos.y%16].traffic = 3
+				end
+			end
 		end
 		
 		
@@ -1621,7 +1637,7 @@ function drillPump(machina, machinePower, manualPower)
 								item=df.item.find(drillBit.items[i])
 								ipos=item.pos
 								if ipos.x == pos.x and ipos.y == pos.y and ipos.z == depth and item.flags.on_ground == true then
-									opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+									opos = outputBlocks[math.random(#mainOutputBlocks)]
 									ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
 									gotItem = true
 									break
@@ -1952,10 +1968,12 @@ function setForbiddenStatus(item)
 		building = dfhack.buildings.findAtTile(item.pos)
 		if building ~= nil then
 			code=isMachina(building)
-			if string.starts(code, prefix..'INPUT') or string.starts(code, prefix..'LOADER') then
+			if code ~= nil then
+				if string.starts(code, prefix..'INPUT') or string.starts(code, prefix..'LOADER') then
 				item.flags.forbid = true
-			else
-				item.flags.forbid = false
+				else
+					item.flags.forbid = false
+				end
 			end
 		else
 			item.flags.forbid = false

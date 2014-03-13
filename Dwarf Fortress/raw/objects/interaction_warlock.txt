@@ -2819,7 +2819,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_START_2][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Cozyton. A hideous sham of a town, in which the prosperous citizens have no gripes or moans. Sadly even the children are happy and secure. This is because they arenâ€™t punished for nonexistent crimes."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Cozyton. A hideous sham of a town, in which the prosperous citizens have no gripes or moans. Sadly even the children are happy and secure. This is because they aren’t punished for nonexistent crimes."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -2831,7 +2831,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_2_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Darkana. The surviving citizens have more on their plates then a Demonspawn with 3 dead adventures to munch. Not that many citizens have survived as suchâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Darkana. The surviving citizens have more on their plates then a Demonspawn with 3 dead adventures to munch. Not that many citizens have survived as such…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -2881,7 +2881,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_4_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Firemore. Thereâ€™s a burning mess where once a pretty village stood. Truly you have achieved a significant improvement in the area. Even the poisonous smoke smells sweet."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Firemore. There’s a burning mess where once a pretty village stood. Truly you have achieved a significant improvement in the area. Even the poisonous smoke smells sweet."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -2931,7 +2931,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_6_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Steepscythe. Everyone has been put to the sword. And weâ€™ve made an enormous magic carpet out of the thousands of bunnies that swarmed here. Your minions will feast on the their tiny remains for weeks, truly a majestic victory."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Steepscythe. Everyone has been put to the sword. And we’ve made an enormous magic carpet out of the thousands of bunnies that swarmed here. Your minions will feast on the their tiny remains for weeks, truly a majestic victory."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -2944,7 +2944,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_START_7][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Wishvale. This region of dreaming underlings is ruled by the beautiful Lady Catharine. She is kind and fair, and doesnâ€™t imprison or torture her subjects. For some reasonâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Wishvale. This region of dreaming underlings is ruled by the beautiful Lady Catharine. She is kind and fair, and doesn’t imprison or torture her subjects. For some reason…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -2981,7 +2981,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_8_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Ruiniana. Not a soul stirs here now, even the rats are afraid to come out of the drains to feast on the dead. You really out did yourself here Master, itâ€™s a pity the destruction was so easyâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Ruiniana. Not a soul stirs here now, even the rats are afraid to come out of the drains to feast on the dead. You really out did yourself here Master, it’s a pity the destruction was so easy…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3031,7 +3031,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_10_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Neverdwarf. Once a flourishing homestead, now itâ€™s a stinking hole in the ground. Itâ€™ll be years before the hardiest weed grows here again. War on the other hand is in full blossomâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Neverdwarf. Once a flourishing homestead, now it’s a stinking hole in the ground. It’ll be years before the hardiest weed grows here again. War on the other hand is in full blossom…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3056,7 +3056,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_11_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Rival Mark. A kingdom fit for a dungeon keeper of your standard, Sire. The blackened hulks of the houses welcome you, and the overgrounders prostrate themselves; mainly because weâ€™ve killed themâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Rival Mark. A kingdom fit for a dungeon keeper of your standard, Sire. The blackened hulks of the houses welcome you, and the overgrounders prostrate themselves; mainly because we’ve killed them…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3081,7 +3081,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_12_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Carn Forge. The fairy ring lies smashed, and the folk have fled to the hills. Our vampires are hunting them down as we speak. Rest assured we will be dragging them back soon my Lordâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Carn Forge. The fairy ring lies smashed, and the folk have fled to the hills. Our vampires are hunting them down as we speak. Rest assured we will be dragging them back soon my Lord…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3094,7 +3094,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_START_13][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Buffy Oak. A small location where people simply sit around and enjoy each otherâ€™s company. They talk, laugh and sing, without ever arguing drawing daggers and dying in a gurgling rush of blood! *hurck!* A truly bizarre place..."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Buffy Oak. A small location where people simply sit around and enjoy each other’s company. They talk, laugh and sing, without ever arguing drawing daggers and dying in a gurgling rush of blood! *hurck!* A truly bizarre place..."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3106,7 +3106,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_13_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Arilyns Down. The people enjoyed each otherâ€™s company so much, that theyâ€™ll be together forever now. Weâ€™ve thrown them all into a big pit and piled tons of rocks onto them. A fitting end we trust youâ€™ll agreeâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Arilyns Down. The people enjoyed each other’s company so much, that they’ll be together forever now. We’ve thrown them all into a big pit and piled tons of rocks onto them. A fitting end we trust you’ll agree…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3131,7 +3131,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_14_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Dragontine. We set fire to this place. It's still burning with a fierce unnatural intensity, so we canâ€™t get anywhere near it. But weâ€™re sure youâ€™ll love it... Once its cooled down a bit."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Dragontine. We set fire to this place. It's still burning with a fierce unnatural intensity, so we can’t get anywhere near it. But we’re sure you’ll love it... Once its cooled down a bit."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3144,7 +3144,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_START_15][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:" Woodly Rhyme. A village of such obscene contentment its criminal that horde of undead vigilantes havenâ€™t massacred every soul in the place. If there is any justice this will happen my Lord."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:" Woodly Rhyme. A village of such obscene contentment its criminal that horde of undead vigilantes haven’t massacred every soul in the place. If there is any justice this will happen my Lord."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3156,7 +3156,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_15_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Mormon Flak. We have developed this area. It is now a breading ground for our legions of beetles and flies. To think it was once pointless farmland, providing food for weak populations which lived there in so-called peaceâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Mormon Flak. We have developed this area. It is now a breading ground for our legions of beetles and flies. To think it was once pointless farmland, providing food for weak populations which lived there in so-called peace…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3181,7 +3181,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_16_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Hasem Lock. Vampires have sucked the life out of everyone here. Theyâ€™ve poisoned the well and smeared dung all on all the door handles as a joke. No sophisticated sense of humour these undead blood suckers..."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Hasem Lock. Vampires have sucked the life out of everyone here. They’ve poisoned the well and smeared dung all on all the door handles as a joke. No sophisticated sense of humour these undead blood suckers..."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3194,7 +3194,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_START_17][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:" Mirthshire. Industrious citizens go about their daily business with care, enthusiasm and diligence. There is no crime and everyone is working for the common good. It is a disaster of a place and deserves razingâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:" Mirthshire. Industrious citizens go about their daily business with care, enthusiasm and diligence. There is no crime and everyone is working for the common good. It is a disaster of a place and deserves razing…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3206,7 +3206,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_17_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Demonâ€™s Dirth. The flowers lie trampled in the dirt. Their disgusting pong has been replaced by the smell of soiled armour, and the internal juices of those sliced to pieces by your servants. Quite an improvement youâ€™ll agreeâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Demon’s Dirth. The flowers lie trampled in the dirt. Their disgusting pong has been replaced by the smell of soiled armour, and the internal juices of those sliced to pieces by your servants. Quite an improvement you’ll agree…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3231,7 +3231,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_18_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Valinore. Nothing is left of this settlement apart from a stubborn stain on the ground. Our trolls are hard at work trying to erase this at the moment. Then weâ€™ll spray acid over the entire locality."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Valinore. Nothing is left of this settlement apart from a stubborn stain on the ground. Our trolls are hard at work trying to erase this at the moment. Then we’ll spray acid over the entire locality."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3244,7 +3244,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_START_19][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:" Mistle. Light and airy, Mistle is a haven for those who love the peaceful countryside. The sort of people who wonâ€™t like miles of sulphurous stinking wasteland and the screams of the damned, of course."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:" Mistle. Light and airy, Mistle is a haven for those who love the peaceful countryside. The sort of people who won’t like miles of sulphurous stinking wasteland and the screams of the damned, of course."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3256,7 +3256,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_19_SUCCESS][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Dark Sword. A great battle has been won here. It was a bit one-sided granted, but our minions performed valiantly, and not the day is a won ours. Weâ€™ve dealt with the survivors by the way, properlyâ€¦"][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Dark Sword. A great battle has been won here. It was a bit one-sided granted, but our minions performed valiantly, and not the day is a won ours. We’ve dealt with the survivors by the way, properly…"][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	
@@ -3269,7 +3269,7 @@
    [IT_AFFECTED_CREATURE:WARLOCK_CIV:ALL]
    [I_EFFECT:ADD_SYNDROME][IE_TARGET:A][IE_IMMEDIATE]
       [SYNDROME][SYN_CLASS:RAID_START_20][SYN_CLASS:\COMMAND]
-	  [SYN_CLASS:announce][SYN_CLASS:"Skybird Trill. The ultimate in cute, a frown in Skybird Trill brings all the townspeople to the suffererâ€™s door with gifts of love, fine cheer and eternal friendship. A place where nothing can ever go wrong, or so they fondly believe."][SYN_CLASS:COLOR_BROWN]
+	  [SYN_CLASS:announce][SYN_CLASS:"Skybird Trill. The ultimate in cute, a frown in Skybird Trill brings all the townspeople to the sufferer’s door with gifts of love, fine cheer and eternal friendship. A place where nothing can ever go wrong, or so they fondly believe."][SYN_CLASS:COLOR_BROWN]
 	[CE_SPEED_CHANGE:SPEED_PERC:101:START:0:END:1000]
 	
 	

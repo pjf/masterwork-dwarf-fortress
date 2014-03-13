@@ -43,7 +43,7 @@ a:visited {
             </tr>
             <tr>
               <td><div align="center">Bug:</div></td>
-              <td><div align="center">Automatic machines (Aerial Transportation Device, Autocrafters, etc.) sometimes just don't work, even when connected to a powered machine system.  This bug seems to be most common when starting a new game or when all automatic machines are deconstructed.</div></td>
+              <td><div align="center">The first constructed automatic machine (Aerial Transportation Device, Autocrafters, etc.) doesn't work when starting a new game or after all automatic machines are deconstructed.</div></td>
             </tr>
             <tr>
               <td><div align="center">Solution: </div></td>
@@ -64,6 +64,22 @@ a:visited {
             <tr>
               <td><div align="center">Solution: </div></td>
               <td><div align="center">Most machines are pretty easy on the framerate, but the entire system must recheck its connections and power levels every time a gear assembly is engaged or disengaged, and power levels must be recalculated if a power source starts or stops.  Because of this, if a logic gate is connected to a gear assembly that is connected to one of the logic gate's own input machines, a feedback loop may result that causes the gear assembly to switch on and off every frame, which can kill your framerate.  So, avoid this.  <br>Slowdown can also occur if a power source (generally a water wheel whose artificial water source is starting to dry up) is switching on and off rapidly, especially if you have many machines operating.  Using natural rivers or steam engines/clockwork keys as your main power source is the best option.</div></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="700" border="1">
+            <tr>
+              <td><div align="center"></div></td>
+              <td><div align="center"><strong class="Rot">Game hangs for several minutes while training animals in bulk</strong><br />
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bug:</div></td>
+              <td><div align="center">The game will freeze, sometimes for as long as several minutes, before resuming as if nothing had happened.  This seems to be associated with getting animals to follow each other and pasturing them together in large groups for training.</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Solution: </div></td>
+              <td><div align="center">I'm not really sure what causes this.  If the game seems to freeze but isn't actually crashing, press the space button so that it pauses the moment it unfreezes.  If you have a bunch of animals together in a pasture, remove them from the pasture and then unpause (if you do not, it will probably happen again in a few seconds).  This seems to be a DF pathing bug, rather than a direct effect of the script, so it is unlikely that I can fix it without simply removing the option of getting animals to cluster together altogether.  In general, try and avoid stuffing too many animals into one small area, or make sure to 'dismiss' them from following each other before you do.</div></td>
             </tr>
           </table>
           <p>&nbsp;</p>
@@ -95,7 +111,7 @@ a:visited {
             </tr>
             <tr>
               <td><div align="center">Solution: </div></td>
-              <td><div align="center">Build a stairway up to it.</div></td>
+              <td><div align="center">Build a stairway up to it to help it find its way.</div></td>
             </tr>
           </table>
           <p>&nbsp;</p>
@@ -166,12 +182,12 @@ a:visited {
           <table width="700" border="1">
             <tr>
               <td><div align="center"></div></td>
-              <td><div align="center"><strong class="Rot">Workshop reactions are red, even with all the materials available.</strong><br />
+              <td><div align="center"><strong class="Rot">Workshop reactions are red, even with all the materials available / Where do I get 'rock' trap components?</strong><br />
               </div></td>
             </tr>
             <tr>
               <td><div align="center">Bug:</div></td>
-              <td><div align="center">If a workshop is in a burrow, even if the burrow is inactive, then it accepts only materials within the same burrow. </div></td>
+              <td><div align="center">If a workshop is in a burrow, even if the burrow is inactive, then it accepts only materials within the same burrow.  'Rock' is simply DF lingo for rock or metal; if you have a metal trap component and a reaction/building isn't accepting it, burrows are probably your issue.</div></td>
             </tr>
             <tr>
               <td><div align="center">Solution: </div></td>
