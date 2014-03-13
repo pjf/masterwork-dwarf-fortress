@@ -44,12 +44,44 @@ The creature raw has two materials, a 'shell' material and an 'inside' material.
 The finished product will have the material of the 'bar' on the outside, and the material of the mechanisms on the inside.  The third reagent will not be used.
 Only materials actually used in the creature will be counted.  You're best bet is to simply define the modifiable tissue(s) near the top of the creature raw, before defining any other materials or tissues.
 This might not be the way the materials are always loaded, further testing is needed.  But if you make a creature like this one it should work fine.
+
+To have the creature leave an itemcorpse of the material used in its construction, it must include [CREATURE_CLASS:DFHACK_CONSTRUCTCREATURE_ITEMCORPSE].
+This will cause the corpse item to have the material of the first tissue defined in the raws.
 	
 --]]
-local eventful = require 'plugins.eventful'
+eventful = require 'plugins.eventful'
 local mo = require 'makeown'
 local fov = require 'fov'
 local utils = require 'utils'
+
+
+--This is for the itemcorpses
+
+local ev=require 'plugins.eventful'
+ev.onUnitDeath.bla=function(u_id)
+	local unit = df.unit.find(u_id)
+	local creature_classes = df.global.world.raws.creatures.all[unit.race].caste[unit.caste].creature_class
+	for i=0,#creature_classes-1,1 do
+		if creature_classes[i].value == "DFHACK_CONSTRUCTCREATURE_ITEMCORPSE" then
+			local itemcorpse = nil
+			for i=0,#unit.corpse_parts-1,1 do
+				part=df.item.find(unit.corpse_parts[i])
+				if getmetatable(part) ~= "item_corpsepiecest" then
+					itemcorpse = part
+				end
+			end
+			if itemcorpse ~= nil then
+				mat_type = unit.body.body_plan.materials.mat_type[0]
+				mat_index = unit.body.body_plan.materials.mat_index[0]
+				itemcorpse.mat_type = mat_type
+				itemcorpse.mat_index = mat_index
+			end
+			break
+		end
+	end
+end
+ev.enableEvent(eventful.eventType.UNIT_DEATH,5)
+
 function makeConstruct(reaction,unit,job,input_items,input_reagents,output_items,call_native)
 	local skill = reaction.products[0].probability + dfhack.units.getEffectiveSkill(unit,reaction.skill)
 	--reaction.reagents[0].code --name of the reagent
@@ -129,6 +161,15 @@ end
 
 
 
+
+
+
+
+function update()
+
+	dfhack.timeout(1,"ticks",function() update() end)
+end
+
 --------------------------------------------------
 --------------------------------------------------
 --http://lua-users.org/wiki/StringRecipes
@@ -153,6 +194,7 @@ dfhack.onStateChange.loadConstructCreature = function(code)
 				registered_reactions = true
 			end
 		end
+		update()
 		--if #registered_reactions > 0 then print('Construct Creature: Loaded') end
 		if registered_reactions then print('Construct Creature: Loaded') end
 	elseif code==SC_MAP_UNLOADED then

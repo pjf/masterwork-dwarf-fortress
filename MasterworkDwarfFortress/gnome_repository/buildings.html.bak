@@ -1,0 +1,896 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body,td,th {
+	color: #FFF;
+	font-size: 18px;
+}
+body {
+	background-color: #000;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #CCC;
+}
+</style>
+</head>
+
+<body>
+<h2 align="center"><img src="icons/buildingss.JPG" width="316" height="34" /></h2>
+<div align="center">
+  <div align="center">
+    <table width="730" border="0">
+      <tr>
+        <td width="724"><p align="center">
+        <p align="center"><strong>Vanilla Buildings</strong>: ::: <a href="#16"> Craftsman</a> ::: <a href="#31">Kitchen </a>  ::: <a href="#41"> Screw Press</a> ::: <a href="#46"> Distillery</a> ::: <a href="#49"> Tanner </a>::: <a href="#quern">Quern</a> ::: <a href="#mill">Millstone</a> ::: <a href="#soapmaker">Soapmaker</a>
+		<p align="center"><strong>Misc Workshops: </strong>  ::: <a href="#unraveler">Unraveling Machine</a> ::: </p>
+        <p align="center"><strong>Vanilla Furnaces: </strong>::: <a href="#kiln">Clay Oven</a> ::: <a href="#43">Smelter</a> ::: </p>
+		<p align="center"><strong>Misc Furnaces: </strong>  ::: <a href="#19">Crematory</a> ::: <a href="#slagpit">Slag Pit</a> :::</p>
+		<p align="center"><strong>Gnomic Geology: </strong> <a href="#telegraph">Seismic Telegraph</a> ::: <a href="#excavation">Excavation Site</a> ::: </p>
+		<p align="center"><strong>Gnomic Druidism: </strong>  ::: <a href="#nature_shrine">Nature Shrine</a> ::: <a href="#advanced_animal">Advanced Animal Training Area</a> :::</p>
+		<p align="center"><strong>Gnomic Mechanics: </strong>  ::: <a href="#tinker">Tinker's Workshop</a> ::: <a href="#gadget">Gadgeteer's Workshop</a> ::: <a href="#artificer">Artificer's Workshop</a> ::: <a href="#conversion">Conversion Chamber</a> ::: <a href="#robot_small">Clockwork Automaton Workshop</a> ::: <a href="#robot_large">Automaton Body Shop</a> :::</p>
+		<p align="center"><strong>Special Machines: </strong>  ::: <a href="#seismograph">Geologic Seismograph</a> ::: <a href="#mist">Mist Generator</a> ::: <a href="#drillrig">Drilling Rig</a> ::: <a href="#attractor">Druidic Device</a> ::: <a href="#static">Electrostatic Generator</a> ::: <a href="#tesla">Thunder Coil</a> ::: <a href="#factory">Autocrafter</a> ::: <a href="#logic">Logic Gates</a> ::: </p>
+
+<p align="center">&nbsp;</p></tr>
+    </table>
+  </div>
+</div>
+<div align="center">
+  <table width="658" border="0">
+    <tr>
+      <td width="665"><hr align="center" />
+       <h1 align="center"><a name="16" id="16">Craftsman</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+        <p align="center"><img src="icons/buildings/icon Craftsdwarf.PNG" width="48" height="47" alt="Alchemist" /></p>
+        <div align="center">
+          <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Any Crafting</div></td>
+      <td><div align="center">Any Crafting</div></td>
+      <td><div align="center">1 Boulder</div></td>
+      <td><div align="center">3x3</div></td>
+      <td rowspan="2"><div align="center">None</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">Building is Hardcoded</div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_craftsman.txt" target="_blank">reaction_craftsdwarf.txt</a><a href="reaction v3h/reaction_brewery.txt" target="_blank"></a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">A big amount of new reactions can be done here. You can extract new kinds of metal strands from metals bars, enabling silver, golden, mithril or orichalcum clothing. You can craft single instruments or crafts from boulders, make rope from leather. Illumination, like braziers, candelabras and fireplaces can be created.</p>
+        <p align="center">The crafts section for bone and shell contain all armor items you can  produce.</p>
+        <p align="center">Dye, Blood, Graphite and Ash can be made into ink. You need 3 pots.        </p>
+        <hr align="center" />
+        
+        <h1 align="center"><a name="31" id="31">Kitchen</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+        <p align="center"><img src="icons/buildings/icon Kitchen.PNG" width="47" height="47" alt="Alchemist" /></p>
+        <div align="center">
+          <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Cook</div></td>
+      <td><div align="center">Cooking</div></td>
+      <td><div align="center">1 Boulder</div></td>
+      <td><div align="center">3x3</div></td>
+      <td rowspan="2"><div align="center">None</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">Building is Hardcoded</div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_kitchen.txt" target="_blank">reaction_kitchen.txt</a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">Many new sorts of food are available. Roasting inedible seeds make them edible. Mined &quot;living rock&quot; can be butchered for meat, mined &quot;cave fungus&quot; can be made into cheese. </p>
+        <p align="center"> Extract blood from fresh meat, for all kinds of purposes from sacrifices to dark magic.</p>
+        <p align="center">Boil horn/hoof materials  to create glue. Glue is needed for binding books and the making of plywood; other sources include spore-trees or bloated tubers.</p>
+        <hr align="center" />
+        <h1 align="center"><a name="41" id="41">Screw Press</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+        <p align="center"><img src="icons/buildings/screw press.PNG" width="48" height="48" alt="Alchemist" /></p>
+        <div align="center">
+          <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Mechanic</div></td>
+      <td><div align="center">Milling &amp; Pressing</div></td>
+      <td><div align="center">2 Mechanisms</div></td>
+      <td><div align="center">3x3</div></td>
+      <td rowspan="2"><div align="center">Mechanic</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center"><a href="reaction v3h/b_screwpress.txt" target="_blank">building_screw_press.txt</a><a href="reaction v3h/b_brewery.txt" target="_blank"></a></div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_screw_press.txt" target="_blank"> reaction_screw_press.txt</a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">Press glue from bloated tubers, used for bookbinding or plywood-making. Other sources are horn/hoof in the Kitchen, or spore-tree resin.</p>
+<p align="center">Press water from quarry bush leaves into buckets,  oil from pig tails, shadowleaf bushes, quarry bushes or hide root into jugs. Press wooden logs into 2 pages of paper.</p>
+<p align="center">Press coal together so hard, that it becomes a diamond. ;)</p>
+<hr align="center" />
+        <h1 align="center"><a name="46" id="46">Distillery</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+        <p align="center"><img src="icons/buildings/icon Still.PNG" width="46" height="48" alt="Alchemist" /></p>
+        <div align="center">
+          <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Brewer</div></td>
+      <td><div align="center">Brewing</div></td>
+      <td><div align="center">1 Boulder</div></td>
+      <td><div align="center">3x3</div></td>
+      <td rowspan="2"><div align="center">None</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">Building is Hardcoded</div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_still.txt" target="_blank">reaction_still.txt</a><a href="reaction v3h/reaction_kitchen.txt" target="_blank"></a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">Freely chose which kind of plants you want to brew into drinks, stored in large pots. Each brewable plant has its own reaction.</p>
+<hr align="center" />
+        <h1 align="center"><a name="49" id="49">Tanner</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+        <p align="center"><img src="icons/buildings/icon Tanner.PNG" width="47" height="47" alt="Alchemist" /></p>
+        <div align="center">
+          <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Tanner</div></td>
+      <td><div align="center">Tanning</div></td>
+      <td><div align="center">1 Boulder</div></td>
+      <td><div align="center">3x3</div></td>
+      <td rowspan="2"><div align="center">None</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">Building is Hardcoded</div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_tanner.txt" target="_blank">reaction_tanner.txt</a><a href="reaction v3h/reaction_kitchen.txt" target="_blank"></a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center"><strong>TANNING</strong>: Adds specific tanning reactions for each animal skin type. You can tan skin, tough skin, chitin, shell and scales into an amount of leather based on the creatures size. Usually around 2-4 pieces, smaller creatures might give none, while massive monsters give dozens.</p>
+<p align="center"><strong>LEATHER</strong>: Normal leather can be used for suede(3) or  vellum(3) from one piece. Suede is very thin leather, useless for combat, but good for backpacks or quivers. Vellum is used for the library system.</p>
+<p align="center"><strong>FUR/STOMACH/GUT/HORN</strong>: Tan stomachs directly into a waterskins,  rope from guts/intestines and pelts into a furs. A fur is the very same as leather, but also protects from cold. Fur is needed for glacier embarks. If you dont want the fur, you can shave of the hairs to create a piece of leather and a unit of hair thread. Horns can be shaped into a small dagger, for eariest militias.</p>
+<p align="center"><strong>FEATHERS</strong>: Birds leave feathers upon being butchered.</p>
+<p align="center"><strong>Material strength:</strong></p>
+        <p align="center">Leather = Vanilla Leather. ::: Tough leather = Copper.</p>
+<p align="center">Studded leather = Bronze. ::: Lamellar leather = Iron.</p>
+<p align="center">Chitinplate = Bronze. ::: Rigid Chitin = Iron, very light.</p>
+<p align="center">Scaleplate = Bronze. ::: Rigid Scale = Iron, fireproof.</p>
+<p align="center">Shellplate = Bronze. ::: Rigid Shellplate = Between iron and steel, heavy.</p>
+<hr align="center" />
+        <h1 align="center"><a name="quern" id="quern">Quern  </a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+        <p align="center"><img src="icons/buildings/quern.PNG" width="32" height="32" alt="Alchemist" /></p>
+        <div align="center">
+          <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Miller &amp; Presser</div></td>
+      <td><div align="center">Milling &amp; Pressing</div></td>
+      <td><div align="center">1 Quern</div></td>
+      <td><div align="center">1x1</div></td>
+      <td rowspan="2"><div align="center">Mason</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">Building is Hardcoded</div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_quern.txt" target="_blank">reaction_quern.txt</a><a href="reaction v3h/reaction_kitchen.txt" target="_blank"></a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center"> You can specifically select which plant should be milled. This way you can produce only dye or flour or sugar, without using valuable plants. Several old plants have new powders in this mod, and hive-able cochineal insects give red dye. Keep in mind that the millstone has completely different reactions.</p>
+<p align="center">Plump Helmet =&gt; Purple ::: Hide Root =&gt; Brown</p>
+<p align="center">Muck Root =&gt; White ::: Sliver Barb =&gt; Black</p>
+<p align="center">Sun Berry =&gt; Yellow ::: Cochineal =&gt; Red</p>
+<p align="center"> Blade Weed =&gt; Green ::: Dimple Cup =&gt; Blue</p>
+<p align="center">Sweet Pot =&gt; Sugar ::: Whip Vine =&gt; Flour</p>
+<p align="center">Longland Grass =&gt; Flour ::: Cave Wheat =&gt; Flour</p>
+<hr align="center" />
+<h1 align="center"><a name="mill" id="mill">Millstone </a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/quern.PNG" width="32" height="32" alt="Alchemist" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Miller &amp; Presser</div></td>
+      <td><div align="center">Milling &amp; Pressing</div></td>
+      <td><div align="center">1 Millstone</div></td>
+      <td><div align="center">1x1</div></td>
+      <td rowspan="2"><div align="center">Mason,  Power</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">Building is Hardcoded</div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_millstone.txt" target="_blank">reaction_millstone.txt</a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">The powered millstone can grind hard materials like rocks and stone items into base minerals and sand.</p>
+<p align="center">You can also designate any stone item or furnitue to be grinded to dust, which destroys the item. This is a clean-up option and has no benefit.</p>
+<hr align="center" />
+        <h1 align="center"><a name="soapmaker" id="soapmaker">Soapmaker </a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+        <p align="center"><img src="icons/buildings/soapmaker.png" width="48" height="48" alt="Alchemist" /></p>
+        <div align="center">
+          <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Architect</div></td>
+      <td><div align="center">Chemistry</div></td>
+      <td><div align="center">1 Bucket &amp; 1 Boulder</div></td>
+      <td><div align="center">3x3</div></td>
+      <td rowspan="2"><div align="center"> Carpenter</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center"><a href="reaction v3h/b_soapmaker.txt" target="_blank">building_soapmaker.txt</a><a href="reaction v3h/b_brewery.txt" target="_blank"></a></div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_soap_maker.txt" target="_blank">reaction_soapmaker.txt</a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">The only addition is mineral oil based soap, otherwise the soapmaker is the same.</p>
+
+<hr align="center" />
+<h1 align="center">Misc. Workshops</h1>
+<hr align="center" />
+
+<h1 align="center"><a name="unraveler" id="unraveler">Unraveling Machine</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/unraveler.png" width="84" height="54" alt="Unraveling Machine" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Weaver</div></td>
+      <td><div align="center">Weaving</div></td>
+      <td><div align="center">1 Boulder</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">None</div></td>
+    </tr>
+    </table>
+	<p align="center">Step 1: Steal clothing from dead invaders.  </p>
+	<p align="center">Step 2: Use this workshop to turn their useless, oversized clothing back into thread.</p>  
+	<p align="center">Step 3: ???  </p>
+	<p align="center">Step 4: Profit!</p>
+	<p align="center">The unraveling machine is also useful for unmaking and reweaving tattered clothing before it wears away completely.</p>
+
+<hr align="center" />
+  <h1>Vanilla Furnaces</h1>
+<hr align="center" />
+
+<h1 align="center"><a name="kiln" id="kiln">Clay Oven</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/icon Smelter.PNG" width="48" height="47" alt="Alchemist" /></p>
+<div align="center">
+  <table width="705" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="191" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="90" scope="col"><div align="center">Dimension</div></th>
+      <th width="150" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Architect &amp; Furnace Operator</div></td>
+      <td><div align="center">Stonecrafting &amp; Pottery</div></td>
+      <td><div align="center">1 Boulder</div></td>
+      <td><div align="center">3x3</div></td>
+      <td rowspan="2"><div align="center">None</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">Building is Hardcoded</div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_clay_oven.txt" target="_blank"> reaction_clay_oven.txt</a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">The vanilla kiln has been splitted into the kiln and the clay oven. The clay oven can make any items from clay, fireclay or kaolinite, as well as a unit of fuel. Clay produces stoneware items, Fireclay makes earthenware items and kaolinite produces porcelain items.</p>
+<p align="center">The &quot;collect clay&quot; zones have been renamed to &quot;collect clay/dirt/peat&quot;, since more types of soil are valid targets now. Dirt can only be used as free boulders for constructions, while peat can be compressed and burned as low-cost fuel.</p>
+<hr align="center" />
+<h1 align="center"><a name="43" id="43">Smelter</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/icon Smelter.PNG" width="48" height="47" alt="Alchemist" /></p>
+<div align="center">
+  <table width="705" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="191" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="90" scope="col"><div align="center">Dimension</div></th>
+      <th width="150" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Architect &amp; Furnace Operator</div></td>
+      <td><div align="center">Furnace Operating</div></td>
+      <td><div align="center">1 Boulder</div></td>
+      <td><div align="center">3x3</div></td>
+      <td rowspan="2"><div align="center">None</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">Building is Hardcoded</div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_smelter.txt" target="_blank"> reaction_smelter.txt</a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">You can  use plywood for one unit of charcoal per log, burn compact peat to 2-4 bars of coke and the very valuable anthracite for 12 bars of coke. Plywood is a byproduct of the wood-industry, compact peat can either be found in soil-layers or produced by compressing peat, and anthrazite is a rare coal cluster found deep underground.</p>
+<p align="center">You can create a metal anvil from five bars. You no longer need to bring one at embark.</p>
+<p align="center">Smelting ore also creates a waste product called Slag. These bars clutter up your smelter and should be destroyed in the slagpit or used up as buildmats.</p>
+<hr align="center" />
+<h1 align="center">Misc Furnaces</h1>
+<hr align="center" />
+<h1 align="center"><a name="19" id="19">Crematory</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="../repository/icons/buildings/crematory.PNG" width="80" height="48" alt="Alchemist" /></p>
+<div align="center">
+  <table width="705" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="191" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="90" scope="col"><div align="center">Dimension</div></th>
+      <th width="150" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Architect</div></td>
+      <td><div align="center">Furnace Operating</div></td>
+      <td><div align="center">4 Blocks, 1 Grate</div></td>
+      <td><div align="center">5x3</div></td>
+      <td rowspan="2"><div align="center">Mason or Carpenter</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center"><a href="reaction v3h/f_crematory.txt" target="_blank">building_crematory.txt</a><a href="reaction v3h/b_brewery.txt" target="_blank"></a></div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_crematory.txt" target="_blank"> reaction_crematory.txt</a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">Great for cleaning up your fort. You can burn all kinds of different items, including body parts and remains, any sort of items and wooden furniture to get some ash or charcoal out of it. Wooden items produce coal for sure, body parts/remains might leave ash, and all smaller items have a small chance for either.</p>
+<p align="center">This is mostly done to reduce the amount of items, so it is nor very efficient in creating ash or coal. I advise to build one or two of these next to your refuse piles. </p>
+<hr align="center" />
+<h1 align="center"><a name="slagpit" id="slagpit">Slag Pit</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/slag pit.PNG" width="90" height="55" alt="Alchemist" /></p>
+<div align="center">
+  <table width="705" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="191" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="90" scope="col"><div align="center">Dimension</div></th>
+      <th width="150" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Architect</div></td>
+      <td><div align="center">Furnace Operating</div></td>
+      <td><div align="center">4 Blocks, 2 Querns</div></td>
+      <td><div align="center">5x3</div></td>
+      <td rowspan="2"><div align="center">Mason, Metal Production</div></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center"><a href="reaction v3h/f_slagpit.txt" target="_blank">building_slagpit.txt</a><a href="reaction v3h/b_brewery.txt" target="_blank"></a></div></td>
+      <td colspan="2"><div align="center"><a href="reaction v3h/reaction_slagpit.txt" target="_blank"> reaction_slagpit.txt</a></div></td>
+    </tr>
+  </table>
+</div>
+<p align="center">The slag pit helps you clean up waste from metal production. Slag bars can not be used for much and clutter up your furnaces. You can destroy them  or use them as base material for either concrete blocks or potash. Lots and lots of potash, which comes in handy with the harder farming system.</p>
+
+<hr align="center" />
+<h1 align="center">Gnomic Geology</h1>
+<hr align="center" />
+
+<h1 align="center"><a name="telegraph" id="telegraph">Seismic Telegraph</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/telegraph.png" width="84" height="54" alt="Seismic Telegraph" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Mechanic</div></td>
+      <td><div align="center">Diplomacy</div></td>
+      <td><div align="center">1 Metal bar, 4 Mechanisms, 8 Gears</div></td>
+      <td><div align="center">5x6</div></td>
+      <td><div align="center">Smelter, Mechanic, Craftsman</div></td>
+    </tr>
+    </table>
+	<p align="center">Gnomic technology allows instant communication at a distance by means of sending controlled shockwaves into the earth.  Make sure to set up a seismic telegraph early and contact the homeland on a regular basis - if the homeland doesn't hear back from your expedition periodically, they will assume that you have been killed and will stop sending migrants to your fortress.  Gnomes are a cautious folk.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="excavation" id="excavation">Excavation Site</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/excavation.png" width="84" height="54" alt="Excavation Site" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">None</div></td>
+      <td><div align="center">Situational Awareness</div></td>
+      <td><div align="center">None</div></td>
+      <td><div align="center">1x1</div></td>
+      <td><div align="center">Tinker's Workshop</div></td>
+    </tr>
+    </table>
+	<p align="center">This is just a tiny spot where you can make use of a lens to examine the stone around the area, picking up hints of any undiscovered mineral veins or gem clusters nearby.  The response will come back as a series of messages - press 'A' to read them over if you miss them the first time.  Although it is not very precise, it scans a fairly decent area and can point you in the general direction of valuable gems and ores, letting you cut out the tedious work of prospective digging and head straight for the good stuff.</p>
+
+<hr align="center" />
+<h1 align="center">Gnomic Druidism</h1>
+<hr align="center" />
+<h1 align="center"><a name="nature_shrine" id="nature_shrine">Nature Shrine</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/nature_shrine.png" width="84" height="54" alt="Nature Shrine" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Animal Trainer</div></td>
+      <td><div align="center">Animal Training</div></td>
+      <td><div align="center">1 Block</div></td>
+      <td><div align="center">1x1</div></td>
+      <td><div align="center">Mason or Carpenter</div></td>
+    </tr>
+    </table>
+	<p align="center">The Nature Shrine is your connection with the wildlife around you.  You can commune with nature here to find out how well you've been treating your animals and the wildlife around you, commune with wild animals in an attempt to tame them, and release animals into the wild in order to improve your relationship with nature.  You can also send off a troublesome or superfluous gnome to live in the wild.  Reactions here will occasionally produce Druidic Tokens, which can be used to call animals from a greater distance.</p>
+<hr align="center" />
+
+<h1 align="center"><a name="advanced_animal" id="advanced_animal">Advanced Animal Training Area</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/advanced_animal.png" width="84" height="54" alt="Advanced Animal Training Area" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Animal Trainer</div></td>
+      <td><div align="center">Animal Training</div></td>
+      <td><div align="center">1 Druidic Token</div></td>
+      <td><div align="center">9x9</div></td>
+      <td><div align="center">Nature Shrine</div></td>
+    </tr>
+    </table>
+	<p align="center">This is where you'll be able to train animals to do all kinds of things: follow a worker, form a cluster, or train animals for hunting and war - even those that are not normally trainable.  Your success will be dependant on a number of factors, most importantly the skill of the trainer and the value of the animal, but the natural tendencies of the animal, the general training level, and many other aspects also go into the formula.  A skilled trainer will be able to command even the strongest animals.  Take one with you.</p>
+
+<hr align="center" />
+<h1 align="center">Gnomic Mechanics</h1>
+<hr align="center" />
+
+<h1 align="center"><a name="tinker" id="tinker">Tinker's Workshop</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/tinker.png" width="84" height="54" alt="Tinker's Workshop" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Mechanic</div></td>
+      <td><div align="center">Mechanics, Gem Cutting</div></td>
+      <td><div align="center">1 Boulder</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">None</div></td>
+    </tr>
+    </table>
+	<p align="center">The Tinker's Workshop is the spot for creating those small, intricate devices needed for higher-level, heavy-duty equipment.  You can make lenses (for artificial eyes) and clockwork brains here from rough gems or raw glass.  Since the value of such items tend to be lost when incorporated into finished devices, using low-value glass is preferable to wasting valuable gems, if you have the means of producing it.  You can also make capacitors from glass tubes and metal foil, which is the first step to harnessing electrical power, and once you have produced magnets, this is where you will use them to create an electrical dynamo, a tool used in most electrical devices.</p>
+<hr align="center" />
+
+<h1 align="center"><a name="gadget" id="gadget">Gadgeteer's Workshop</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/gadget.png" width="84" height="54" alt="Gadgeteer's Workshop" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Mechanic</div></td>
+      <td><div align="center">Mechanics</div></td>
+      <td><div align="center">2 Blocks</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Mason/Carpenter, Craftsman, Metalsmith</div></td>
+    </tr>
+    </table>
+	<p align="center">This is the place you go to produce all those nice clockwork devices for equipping your gnomes with.  You'll need to start out with 'gear' armor, depending on the item you want to produce.  Most items produced here will increase one stat when equipped while decreasing another stat.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="artificer" id="artificer">Artificer's Workshop</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/artificer.png" width="84" height="54" alt="Artificer's Workshop" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Architecture</div></td>
+      <td><div align="center">Mechanics</div></td>
+      <td><div align="center">5 Blocks, 2 Mechanisms</div></td>
+      <td><div align="center">5x5</div></td>
+      <td><div align="center">Craftsman, Mason/Carpenter, Smelter, Mechanic</div></td>
+    </tr>
+    </table>
+	<p align="center">The Artificer's Workshop is used to produce high-tech mechanical devices, such as artificial limbs and special weapons.  You'll need gears for this, which can be produced in the craftsman's workshop.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="conversion" id="conversion">Conversion Chamber</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/conversion.png" width="84" height="54" alt="Conversion Chamber" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Mechanic</div></td>
+      <td><div align="center">Mechanic (but irrelevant)</div></td>
+      <td><div align="center">1 Traction Bench, 4 Blocks, 4 Mechanisms, 1 Large Serrated Disc</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Mechanic, Carpenter, Metalsmith, Artificer</div></td>
+    </tr>
+    </table>
+	<p align="center">This <strike>terrifying</strike> awesome machine will convert injured gnomes into clockborgs, replacing their missing limbs with brand-new, artificial ones.  And while it's doing so, it might as well <strike>saw off all your remaining limbs, pull out your teeth, and gouge out your eyeballs</strike> amputate any superfluous body parts you don't need anyway and replace them with shiny bionic ones too.  Because why not?  Artificial limbs will not heal on their own, so if a clockborg gets injured, send him right back here for repairs - much faster then doctors and bonesetters <strike>and more expensive, too</strike>.  You can also upgrade a clockborg here, <strike>scraping off their skin</strike> outfitting them with an indestructable metal exoskeleton.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="robot_small" id="robot_small">Clockwork Automaton Workshop</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/robot_small.png" width="84" height="54" alt="Clockwork Automaton Workshop" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Mechanic</div></td>
+      <td><div align="center">Mechanic</div></td>
+      <td><div align="center">2 Blocks</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Mason/Carpenter, Metalsmith, Craftsman, Tinker's Workshop</div></td>
+    </tr>
+    </table>
+	<p align="center">This workshop is for producing all of the little clockwork animals that will patrol your fortress.  Most of them are cheap and easy to produce, but not especially effective in combat.  You'll need to start with a metal frame, produced in the Metalsmith's Forge under 'Other Objects'.  Use this, combined with two lenses and a clockwork brain produced in the Tinker's Workshop, as well as a set number of gears from the Craftsman.  Once you've made your clockwork critter, bring it to life with the 'activate' command.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="robot_large" id="robot_large">Automaton Body Shop</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/robot_large.png" width="84" height="54" alt="Automaton Body Shop" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Architect</div></td>
+      <td><div align="center">Mechanic</div></td>
+      <td><div align="center">3 Blocks, 2 Mechanisms</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Mason/Carpenter, Mechanic, Metalsmith, Craftsman, Tinker's Workshop</div></td>
+    </tr>
+    </table>
+	<p align="center">Basically the same as the above workshop, but the automatons produced here are larger and much more effective in combat.  Ranging from raging mechanical badgers to the mighty mechanical dragon, producing a number of these creatures will be able to send your enemies packing.  They can be pretty expensive though.</p>
+
+
+<hr align="center" />
+<h1 align="center">Special Machines</h1>
+<hr align="center" />
+
+<h1 align="center"><a name="seismograph" id="seismograph">Geologic Seismograph</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/seismograph.png" width="84" height="54" alt="Geologic Seismograph" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Machine Operator</div></td>
+      <td><div align="center">Machine Operating</div></td>
+      <td><div align="center">2 Blocks, 2 Mechanisms</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Carpenter/Mason, Mechanic</div></td>
+    </tr>
+    </table>
+	<p align="center">A useful prospecting tool, this machine sends out sound waves into the depth of the earth and analyzes the echo in order to slowly create a map of the area, a few tiles at a time.  You can run it manually, but if you provide it with a power source it will reveal the surrounding area by itself.  You can also scan for large underground structures - the sounds that come back will hold hints of what surprises lie in wait for you as you explore the earth.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="drillrig" id="drillrig">Drilling Rig</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/drillrig.png" width="84" height="54" alt="Drilling Rig" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Machine Operator</div></td>
+      <td><div align="center">Machine Operating</div></td>
+      <td><div align="center">Drillbit, 4 Blocks, 2 Mechanisms, (z) Pipe Sections, (z) Corkscrews</div></td>
+      <td><div align="center">3x3x(z)</div></td>
+      <td><div align="center">Carpenter/Mason, Mechanic, Metalsmith</div></td>
+    </tr>
+    </table>
+	<p align="center">One of the finest pieces of gnomish technology, the useful drilling rig is a faster, simpler means of bringing liquids up from deep underground.  By adding pipe sections and corkscrews to the original structure, it will make a hole extending down into the depths.  It can then draw up liquids.  To draw up liquids, the drill requires either mechanical or manual power - machinery can be connected to any of the gears in the corners of the building.  You will need a minimum of 10 power for each z-level you want to draw up liquid, although you can add to this by manually pumping.  The drill will draw liquids up from one z-level BELOW the tip.  It requires a depth of at least 4 to do so.  The liquids will emerge one z-level BELOW the building itself.  Make sure there is an opening for them to come out of, or they will quickly overflow into the drill's base, leading to soaked floors or (in the case of magma) a roasted pump operator.</p>
+	
+<hr align="center" />
+
+<h1 align="center"><a name="mist" id="mist">Mist Generator</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/mist.png" width="84" height="54" alt="Mist Generator" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Machine Operator</div></td>
+      <td><div align="center">Machine Operating</div></td>
+      <td><div align="center">2 Pipe Sections, 1 Grate, 4 Mechanisms</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Carpenter/Mason, Mechanic</div></td>
+    </tr>
+    </table>
+	<p align="center">A simple piece of technology that lets you generate mist to give good thoughts to your gnomes.  Place it on a constructed floor with water running underneath it, and provide it with a power source.  Or, if you're in a more offense-oriented mood, place it over magma to produce a stream of deadly magma mist instead.  Make sure that the device - and any machinery powering it - are made of magma-safe materials before attempting this, or this experiment will be short-lived.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="attractor" id="attractor">Druidic Device</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/attractor.png" width="84" height="54" alt="Druidic Device" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Machine Operator</div></td>
+      <td><div align="center">Machine Operating</div></td>
+      <td><div align="center">2 Blocks, 4 Mechanisms, 1 Druidic Token</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Carpenter/Mason, Mechanic, Nature Shrine</div></td>
+    </tr>
+    </table>
+	<p align="center">This odd device will make interacting with wildlife easier by attracting animals.  Keep in mind that pets may still scare wildlife away, so set it up a distance away from your main settlement for maximum effect.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="catapult" id="catapult">Aerial Transport Device</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/catapult.png" width="84" height="54" alt="Aerial Transport Device" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Machine Operator</div></td>
+      <td><div align="center">Machine Operating</div></td>
+      <td><div align="center">4 Mechanisms, 3 Catapult Parts</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Mechanic, Siege Workshop</div></td>
+    </tr>
+    </table>
+	<p align="center">This piece of experimental technology has numerous uses, from transporting items to bombarding enemies to launching enemies into traps to launching gnomes themselves.  It is, essentially, a programmable catapult that can be either operated manually or set to run automatically using machine power.  Be careful, though, as this device can be highly dangerous to your own citizens, especially when powered.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="factory" id="factory">Autocrafter</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/factory.png" width="84" height="54" alt="Autocrafter" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Machine Operator</div></td>
+      <td><div align="center">Machine Operating</div></td>
+      <td><div align="center">4 Blocks, 6-8 Mechanisms, 4 Pipe Sections</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Carpenter/Mason, Mechanic</div></td>
+    </tr>
+    </table>
+	<p align="center">A device that automatically produces base-quality items from raw materials.  To use it, you must have the Autocrafter itself, as well as an output section placed next to the main machine (they must be next to the center tile of one of the machines sides, not the corner tiles).  The Autocrafter will periodically take items placed on its center tile for processing.  You can also add extra input tiles adjacent to the machine's center tiles.  To select the type of item to produce, choose the 'adjust settings' option.</p>
+	<p align="center">Be careful, though.  If a creature is standing on one of the Autocrafter's input tiles and it requires more materials, they may find themselves pulled into the machine and turned into a gristly piece of bone furniture.  The faster the machine is running, the greater the chances of this happening.  To safely load the machine, either cut the power before loading raw materials, or load the machine indirectly.  Items dropped onto the machine's input tiles, whether by a dumping pit, a trapdoor, or a minecart, will be used by the machine.  You can even 'chain' Autocrafters together by placing an input section next to the output section of another Autocrafter.  Of course, this does mean that weaponizing the Autocrafter is quite possible.</p>
+	<p align="center">All Autocrafter products are of base quality, however if multiple types of items are placed in the machine at once, they may be used as decorations on the finished product.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="static" id="static">Electrostatic Generator</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/static.png" width="84" height="54" alt="Electrostatic Generator" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Machine Operator</div></td>
+      <td><div align="center">Machine Operating</div></td>
+      <td><div align="center">4 Blocks, 4 Mechanisms, 1 Glass Disc, 1 Cloth, 2 Metal Pipe Sections</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Mechanics, Carpenter/Mason, Glassmaker, Weaver, Metalcrafter</div></td>
+    </tr>
+    </table>
+	<p align="center">A simple friction machine that is used for one purpose only: to charge capacitors with electricity, allowing them to be used for other purposes.  This device is essential if you want to use electrical technology.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="tesla" id="tesla">Thunder Coil</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/tesla.png" width="84" height="54" alt="Thunder Coil" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Machine Operator</div></td>
+      <td><div align="center">Machine Operating</div></td>
+      <td><div align="center">4 Blocks, 4 Mechanisms, 6 Glass Pipe Sections, 1 Dynamo, 1 Metal or Glass Ball, 3 Metal Wires</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Electrical Technology</div></td>
+    </tr>
+    </table>
+	<p align="center">The very peak of the gnome's tech tree, the mighty Thunder Coil weapon will constantly produce a high-voltage discharge that will zap any enemies nearby as long as it is powered.  Be warned that the discharge can start fires if kept running continuously.  You may want to consider powering it from below for this reason.  The Thunder Coil takes a lot of power to run effectively.</p>
+
+<hr align="center" />
+
+<h1 align="center"><a name="logic" id="logic">Logic Gates</a> - <a href="#top"><img src="icons/buildings/top.png" width="89" height="24" alt="back to top"/></a></h1>
+<p align="center"><img src="icons/buildings/logic.png" width="84" height="54" alt="Logic Gates" /></p>
+<div align="center">
+  <table width="618" border="1">
+    <tr>
+      <th width="120" scope="col"><div align="center"><strong>Build labor</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Skill</strong></div></th>
+      <th width="120" scope="col"><div align="center"><strong>Buildmat</strong></div></th>
+      <th width="104" scope="col"><div align="center">Dimension</div></th>
+      <th width="120" scope="col">Requirements</th>
+    </tr>
+    <tr>
+      <td><div align="center">Mechanic</div></td>
+      <td><div align="center">Mechanics</div></td>
+      <td><div align="center">1 Mechanism</div></td>
+      <td><div align="center">3x3</div></td>
+      <td><div align="center">Mechanics</div></td>
+    </tr>
+    </table>
+	<div align="center">
+		<p>Gnomes can produce a series of special buildings that work as logical operators, allowing fast, efficient computing using axles and gear assemblies, as well as allowing direct interfacing between mechanical parts and gates, without the need for liquid or creature based computing.  Each logical operator can take input from any connected axle or power source, with the exception of gear assemblies.  The operator will then put the input values together and affect nearby gear assemblies and gates in a predetermined way.</p>
+		<br>
+		<p>There are 7 types of logical operators:</p>
+		<p>NOT operators will return TRUE if they are connected to an unpowered input, and FALSE if they are connected to a powered input.</p>
+		<p>AND operators will return TRUE if they are connected to at least one powered inputs without any unpowered inputs, and FALSE otherwise.</p>
+		<p>OR operators will return TRUE as long as they are connected to at least one powered input, and FALSE otherwise.</p>
+		<p>NAND will return TRUE as long as they are connected to at least one unpowered input, and FALSE otherwise</p>
+		<p>NOR will return TRUE if they are connected to at least one unpowered input without any powered inputs, and FALSE otherwise.</p>
+		<p>XOR requires both a powered input and an unpowered input to evaluate to TRUE, and will return FALSE otherwise.</p>
+		<p>XNOR requires either all of its inputs to be powered or all of its inputs to be unpowered to evealuate to TRUE, and will return FALSE otherwise.</p>
+		<br>
+		<p>After evaluating its inputs, the operator will affect the following devices:</p>
+		<br>
+		<p>Gear assembly - TRUE: Engaged.  FALSE: Disengaged.</p>
+		<p>Doors, grates, hatches, bars, and floodgates - TRUE: Open.  FALSE: Closed.</p>
+		<p>Upright spikes - TRUE: Retracted.  FALSE: Extended.</p>
+		<p>Bridge - TRUE: Retracted.  FALSE: Normal.</p>
+	</div>
+<hr align="center" />
+
+      <p align="center"><a href="home.html" title="home">::: Home :::</a></p>
+      <div align="center"><a href="home.html"><img src="Logo small.JPG" alt="home" width="250" height="155" border="0" /></a></div></td>
+    </tr>
+  </table>
+<hr align="center" />
+
+
+<p align="center">&nbsp;</p>
+
+</div>
+</body>
+</html>

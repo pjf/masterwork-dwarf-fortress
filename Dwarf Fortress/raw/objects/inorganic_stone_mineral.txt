@@ -1603,8 +1603,6 @@ Empyrean Weapon => Steel, ~30 days
 	[BENDING_FRACTURE:1500]
 	[BENDING_STRAIN_AT_YIELD:367]
 	[MAX_EDGE:0]
-[REACTION_CLASS:SLAG] 
-	-SPECIAL- => hopefully helps with moods.
 [REACTION_CLASS:METAL_DUST] 
 
 

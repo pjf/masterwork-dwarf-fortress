@@ -27,7 +27,8 @@ function scanArea(reaction,unit,job,input_items,input_reagents,output_items,call
 		block_target = nil
 		block_target = dfhack.maps.ensureTileBlock(xt,yt,zt)
 		if block_target then
-			if block_target.tiletype[pos.x%16][pos.y%16] == 219 or block_target.tiletype[pos.x%16][pos.y%16] == 440 then
+			tiletype = block_target.tiletype[pos.x%16][pos.y%16]
+			if tiletype == 219 or tiletype == 440 or tiletype == 265 then
 				block_target.designation[xt%16][yt%16].hidden = false
 			end
 		end
