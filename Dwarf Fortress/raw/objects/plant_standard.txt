@@ -558,59 +558,17 @@ plant_standard
 		[STATE_NAME:ALL_SOLID:alder]
 		[STATE_ADJ:ALL_SOLID:alder]
 		[PREFIX:NONE]
-
-	YESSIMPLEWOOD[TREE:PLANT_MAT:ROUGH:WOOD] 
-	!NOMOREWOOD!TREE:LOCAL_PLANT_MAT:WOOD]
-
+	YESSIMPLEWOOD[TREE:PLANT_MAT:ROUGH:WOOD] !NOMOREWOOD!TREE:LOCAL_PLANT_MAT:WOOD]
 	[PREFSTRING:catkins]
 	[PREFSTRING:autumn coloration]
 	[DRY]
 	[BIOME:ANY_TEMPERATE_BROADLEAF]
 	[SAPLING]
 	[SOLID_DENSITY:410]
-
-mdf phoebus walls/mdf ironhand walls/mdf obsidian walls
-	YESMDF[TREE_TILE:6]
-	YESMDF[DEAD_TREE_TILE:255]
-	YESMDF[TREE_COLOR:0:2:1]
-	YESMDF[DEAD_TREE_COLOR:6:6:0]
-	YESMDF[SAPLING_COLOR:7:2:0]
-	YESMDF[DEAD_SAPLING_COLOR:6:0:0]
-	YESMDF[SAPLING_TILE:29]
-	YESMDF[DEAD_SAPLING_TILE:29]
-
-ascii/cla/taffer/vherid/matrix
-	!NOASCII!TREE_TILE:5]
-	!NOASCII!DEAD_TREE_TILE:255]
-	!NOASCII!TREE_COLOR:2:0:1]
-	!NOASCII!DEAD_TREE_COLOR:6:0:0]
-	!NOASCII!SAPLING_COLOR:2:0:1]
-	!NOASCII!DEAD_SAPLING_COLOR:0:0:1]
-	!NOASCII!SAPLING_TILE:29]
-	!NOASCII!DEAD_SAPLING_TILE:29]
-ironhand
-	!NOIRONHAND!TREE_TILE:23]
-	!NOIRONHAND!TREE_COLOR:6:10:0]
-	!NOIRONHAND!DEAD_TREE_TILE:160]
-	!NOIRONHAND!DEAD_TREE_COLOR:0:7:1]
-	!NOIRONHAND!PREFSTRING:catkins]
-
-obsidian (same as phoebus in this case, but is has some other tiles on other items)
-	!NOOBSIDIAN!TREE_TILE:5]
-	!NOOBSIDIAN!DEAD_TREE_TILE:255]
-	!NOOBSIDIAN!TREE_COLOR:2:0:1]
-	!NOOBSIDIAN!DEAD_TREE_COLOR:6:0:0]
-	!NOOBSIDIAN!SAPLING_COLOR:2:0:1]
-	!NOOBSIDIAN!DEAD_SAPLING_COLOR:6:0:0]
-
-phoebus (same as obsidian in this case, but is has some other tiles on other items)
-	!NOPHOEBUS!TREE_TILE:5]
-	!NOPHOEBUS!DEAD_TREE_TILE:255]
-	!NOPHOEBUS!TREE_COLOR:2:0:1]
-	!NOPHOEBUS!DEAD_TREE_COLOR:6:0:0]
-	!NOPHOEBUS!SAPLING_COLOR:2:0:1]
-	!NOPHOEBUS!DEAD_SAPLING_COLOR:6:0:0]
-
+	[TREE_TILE:6][DEAD_TREE_TILE:255]
+	[TREE_COLOR:0:2:1]2:0:1][DEAD_TREE_COLOR:6:6:0]
+	[SAPLING_COLOR:7:2:0][DEAD_SAPLING_COLOR:6:0:0]
+[SAPLING_TILE:29][DEAD_SAPLING_TILE:29]
 
 [PLANT:PALM]
 	[NAME:palm][NAME_PLURAL:palms][ADJ:palm]
@@ -629,7 +587,6 @@ phoebus (same as obsidian in this case, but is has some other tiles on other ite
 	[TREE_COLOR:7:2:0]2:0:1][DEAD_TREE_COLOR:0:6:1]
 	[SAPLING_COLOR:7:2:0][DEAD_SAPLING_COLOR:6:0:0]
 [SAPLING_TILE:226][DEAD_SAPLING_TILE:255]
-
 
 
 
@@ -2551,7 +2508,7 @@ phoebus (same as obsidian in this case, but is has some other tiles on other ite
          [SYN_AFFECTED_CLASS:GENERAL_POISON]
          [SYN_INGESTED]
             [CE_PHYS_ATT_CHANGE:DISEASE_RESISTANCE:2500:0:START:0:END:133600]
-
+			
 " epidemics
 
 [SYNDROME]
@@ -2863,7 +2820,7 @@ phoebus (same as obsidian in this case, but is has some other tiles on other ite
 		[STATE_NAME_ADJ:ALL_SOLID:solid evil]
 		[STATE_NAME_ADJ:LIQUID:liquid evil]
 		[STATE_NAME_ADJ:GAS:vapors of evil]
-		[MATERIAL_VALUE:5]
+		[MATERIAL_VALUE:50]
 		[DISPLAY_COLOR:6:0:1]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
@@ -2909,6 +2866,7 @@ phoebus (same as obsidian in this case, but is has some other tiles on other ite
 ##########################################################
 #############     WOOD TYPES    ###############################
 ##########################################################
+
 
 
 [PLANT:HELL_TREE]

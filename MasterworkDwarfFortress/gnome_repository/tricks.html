@@ -37,16 +37,28 @@ a:visited {
           <p align="center"><em><strong>General Gnoming.</strong></em></p>
 		  <p><strong>Make sure to set up a Seismic Telegraph within the first year.</strong>  Even if you have nothing worth trading, you have to contact the homeland once in a while or they'll stop sending migrants.</p>
 		  <p>Gnomes are tiny.  Don't expect to win many fights unless you have the enemy extremely outnumbered.  In general, hiding out and letting your traps or pets do the work is a better option than trying to fight enemies directly.</p>
-		  <p>Using the Excavation Site on a regular basis will let you find valuable minerals quickly.</p>
-          <p align="center"><em><strong>Getting on Nature's Good Side.</strong></em></p>
+		  <p>Using the Excavation Site on a regular basis will let you find valuable minerals, ores, and gems quickly.</p>
+
+          <p align="center"><em><strong>Machine Safety.</strong></em></p>
+		  <p>While useful for producing items, gnome machines, especially those involved in automatic manufacturing, are dangerous.  Many gnome fortresses are destroyed not through enemies or starvation, but through a chain reaction that begins with a careless gnome falling into a moving machine and getting turned into a gnome bone table.  If you're going to build a lot of machines, taking some basic precautions will serve you well.</p>
+		  <p>Make sure every machine can be shut off.  This should go without saying.</p>
+		  <p>Do not attempt to construct a machine connected to a moving power source.  The builder will be killed the moment the machine is completed.  This also applies to adding a machine input to an operating factory.</p>
+		  <p>The moment a machine is constructed, designate its input tiles (the center tile of the main machine, as well as all machine inputs) as forbidden traffic areas.  Also designate all safe spaces adjacent to the forbidden spots as high traffic areas.  This should keep gnomes from randomly wandering into the moving parts.</p>
+		  <p>Pets getting caught by machines is also a bad thing.  Keep the doors to the machine room tightly shut.  You may also want to separate your machine operators from your animal trainers, to prevent animals from following their trainers into the machine room and getting themselves killed.</p>
+		  <p>Do not attempt to adjust the settings on a machine while it is running.</p>
+		  <p>While gnomes can survive placing items directly into the input feed while the machine is running, you'll be taking a chance every time.  The faster the machine is running, the more dangerous it is.  Avoid this.</p>
+		  <p>Altogether, your best option is to avoid entering the machine room altogether.  A much better plan is to feed items into the machine using a minecart with an auto-dumping track stop or a garbage pit positioned above the machine's input tile.  This is also faster and requires less micromanagement than feeding items into the machine directly, as several gnomes will be working at once.  You can even use an automatic cart loader to send the items back after processing, preventing the need from entering the machine area at all.</p>
+          
+		  <p align="center"><em><strong>Getting on Nature's Good Side.</strong></em></p>
 		  <p>When it comes to recruiting animals from the wild, your chances will be greatly improved if you treat your animals well.  They are members of your community, not livestock or expendable mooks.  Don't send them against an enemy too strong for them, don't let them die of starvation, and definitely do not slaughter them for meat.</p>
 		  <p>If you need meat or animal parts, get it by hunting.  Hunting animals will count against you, but as long as you only do so in moderation and take good care of your pets, you'll still come out positive.  (Note: This only applies if the animal had not been tamed.  Don't try and fool the system by releasing an animal and then killing it.)</p>
-		  <p>Unnatural monsters are not included in this judgement.  Feel free to slay the horrors of the caverns to your hearts content.  Note that what is considered 'unnatural' may not be what you expect (most giant insects are considered 'natural', and carry a fairly severe penalty for killing, at that).  As a general rule, if it attacks your gnomes, it's fair game.  Stationed military gnomes will only attack unnatural creatures unless you specifically tell them otherwise.</p>
+		  <p>Unnatural monsters are not included in this judgement.  Feel free to slay the horrors of the caverns to your hearts content.  Note that what is considered 'unnatural' may not be what you expect (most giant insects are considered 'natural', and carry a fairly severe penalty for killing, at that).  As a general rule, if it attacks or frightens your gnomes, it's fair game.  Stationed military gnomes will only attack unnatural creatures unless you specifically tell them otherwise.</p>
 		  <p>Not all animals are equal.  Everything is multiplied by a creature's pet value, so what happens to a high-value creature is much more significant than what happens to a low-level creature.</p>
 		  <p>Young animals count double when taken care of, but also count double if you let them die.</p>
 		  <p>When your population gets too high, get rid of animals by releasing them into the wild.  Releasing adult animals is worth twice as much as keeping them.  However, young animals count more if you keep them around until they are grown.</p>
 		  <p>Taking care of wild-caught animals, or releasing them, counts five times as much as animals born in captivity.  Letting them die is also five times as bad.</p>
 		  <p>By far the fastest way of building up your merit is capturing wild animals, taming them, and then releasing them into the wild.  Taming a giant cavern insect and releasing it can boost your merit score by thousands in one shot - and they often come in groups.</p>
+		  <p>Don't worry about it when animals steal from you.  In fact, you might want to leave gifts for them.  When wild animals leave the map carrying items, you will get merit based on the value of the stolen item.  Items stolen by unnatural or supernatural wild creatures such as nymphs do count toward this, but thieves that belong to a civilization such as kobolds do not.</p>
 		  <p>Training wild-caught animals is always a plus.  Make sure to designate an animal training area and assign each wild-caught animal a trainer.  This will also gain experience for your trainers.  The merit you get from training animals is retained even if the animal dies or is released into the wild.</p>
 		  <p>Having a good animal trainer will make your game much easier.  A good animal trainer will have a much better chance of recruiting passing animals at a Nature Shrine and will have an easier time influencing animal behavior at an Advanced Animal Training Area.</p>
 		  
@@ -55,9 +67,7 @@ a:visited {
           <p align="center"><em><strong>Animal Taming and Training Formulas (Technical Stuff)</strong></em></p>
           <p align="center"><em>
 <div>
-Taming wildlife (at Nature Shrine)<br><br>
-
-Probability of successfully taming a wild animal (in percent): (1/petValue) * totalMerit * trainerSkill * 0.01<br><br>
+Taming wildlife (at the Nature Shrine)<br><br>
 
 Merit calculation is performed on all animals in fort's history, then added up:<br><br>
 
