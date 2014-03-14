@@ -252,12 +252,12 @@
 		"Name": "optBtnTransformMsgs",
 		"Text": "Transform Msg.",
 		"Tooltip": "Stops the game and tells you whenever a creature transforms. Great for spotting important events, but might slow down the game flow. Your choice, of course.",
-		"Files": [],
+		"Files": ["announcements.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
-			"On": ":BOX:P:R]YESSTOPT",
-			"Off": "]NOSTOPT",
+			"On": ":BOX:P:R]YESSTOPTRANS",
+			"Off": "]NOSTOPTRANS",
 			}
 		],
 	},
@@ -265,12 +265,12 @@
 		"Name": "optBtnDigStop",
 		"Text": "Digging Stop",
 		"Tooltip": "Turn this OFF to remove the pause/recenter when you find damp/hot stones.",
-		"Files": [],
+		"Files": ["announcements.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
-			"On": ":P:R]YESSTOP",
-			"Off": "]NOSTOP",
+			"On": ":P:R]YESSTOPDIG",
+			"Off": "]NOSTOPDIG",
 			}
 		],
 	},
@@ -465,7 +465,7 @@
 		"Name": "optBtnRendermax",
 		"Text": "Rendermax",
 		"Tooltip": "Enables the dfhack plugin. You can always disable it while playing with 'rendermax disable' in your dfhack window. Currently you can only have either Rendermax or TTF active and it requires print mode STANDARD.",
-		"Files": [],
+		"Files": ["dfhack.init"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -850,7 +850,7 @@
 	},
 	{
 		"Name": "optCbMultiInvasionsDefault",
-		"Text": "Early",
+		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_default.txt"],
 		"Tags": [
@@ -2023,7 +2023,7 @@
 	},
 	{
 		"Name": "optCbMultiCaravansHuman",
-		"Text": "Early",
+		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_human.txt"],
 		"Tags": [
@@ -2072,7 +2072,7 @@
 	},
 	{
 		"Name": "optCbMultiInvasionsHuman",
-		"Text": "Early",
+		"Text": "Late",
 		"Tooltip": "",
 		"Files": ["entity_human.txt"],
 		"Tags": [
@@ -2257,7 +2257,7 @@
 	},
 	{
 		"Name": "optCbMultiCaravansElf",
-		"Text": "Very Early",
+		"Text": "Early",
 		"Tooltip": "",
 		"Files": ["entity_elf.txt"],
 		"Tags": [
@@ -2306,7 +2306,7 @@
 	},
 	{
 		"Name": "optCbMultiInvasionsElf",
-		"Text": "Early",
+		"Text": "Late",
 		"Tooltip": "",
 		"Files": ["entity_elf.txt"],
 		"Tags": [
@@ -2491,7 +2491,7 @@
 	},
 	{
 		"Name": "optCbMultiCaravansDrow",
-		"Text": "Default",
+		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_drow.txt"],
 		"Tags": [
@@ -2540,7 +2540,7 @@
 	},
 	{
 		"Name": "optCbMultiInvasionsDrow",
-		"Text": "Default",
+		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_drow.txt"],
 		"Tags": [
@@ -5067,7 +5067,7 @@
 		"Name": "optBtnMoreAnimals",
 		"Text": "Animals",
 		"Tooltip": "",
-		"Files": [],
+		"Files": ["creature_bug_slug_new.txt", "creature_desert_new.txt", "creature_fanciful_masterwork.txt", "creature_ff.txt", "creature_monster_masterwork.txt", "creature_mountain_new.txt", "creature_pet_armored.txt", "creature_riverlakepool_new.txt", "creature_small_mammal_new.txt", "creature_temperate_new.txt", "creature_tropical_new.txt", "creature_tundra_taiga_new.txt", "creature_vermin_masterwork.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5210,7 +5210,7 @@
 		"Name": "optCbPatternInvaderSkills",
 		"Text": "0",
 		"Tooltip": "This sets the combat skills for the above races. Be careful not to underestimate the effects of higher skills!",
-		"Files": [],
+		"Files": ["creature_fortdefense.txt", "creature_masterwork.txt", "creature_subterranean.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5549,7 +5549,7 @@
 		"Name": "optBtnLiquidSpawner",
 		"Text": "Liquid Spawner",
 		"Tooltip": "Unlocking the liquid spawner unlocks magma workshops as well. Can spawn water or magma.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5575,7 +5575,7 @@
 		"Name": "optBtnBonecarver",
 		"Text": "Bonecarver",
 		"Tooltip": "Makes bone items and allows alternate metal productions.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5588,7 +5588,7 @@
 		"Name": "optBtnStonecrafter",
 		"Text": "Stonecrafter",
 		"Tooltip": "Allows the creation of rock items. Great for the start.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5601,7 +5601,7 @@
 		"Name": "optBtnGemcutter",
 		"Text": "Gemcutter",
 		"Tooltip": "Allows the creation of gem items. Lets you cut big gems into smaller ones as well.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5614,7 +5614,7 @@
 		"Name": "optBtnWoodcrafter",
 		"Text": "Woodcrafter",
 		"Tooltip": "Uses wooden planks to create new items.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5640,7 +5640,7 @@
 		"Name": "optBtnFurnitureWorkshop",
 		"Text": "Furniture Shop",
 		"Tooltip": "'Allow the creation of complete itemsets, made of rock, wood, bone or metal.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5666,7 +5666,7 @@
 		"Name": "optBtnChandler",
 		"Text": "Chandler",
 		"Tooltip": "Creates torches and candles for the rendermax lighting creation buildings.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5705,7 +5705,7 @@
 		"Name": "optBtnGreatDyer",
 		"Text": "Greater Dyery",
 		"Tooltip": "Allows dyeing of finished items. You can select the type and material one by one.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5731,7 +5731,7 @@
 		"Name": "optBtnToolmaker",
 		"Text": "Toolmaker",
 		"Tooltip": "Creates basic tools for advanced buildings. You will want to keep this building.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5770,7 +5770,7 @@
 		"Name": "optBtnGuildhall",
 		"Text": "Guildhall",
 		"Tooltip": "Dwarves can join guilds to get a 200% bonus in learn rate for fitting skills. If disabled, this removes all labor related castes!",
-		"Files": ["entity_default.txt"],
+		"Files": ["creature_standard.txt", "entity_default.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5783,7 +5783,7 @@
 		"Name": "optBtnMonastery",
 		"Text": "Monastery",
 		"Tooltip": "Allows dwarves to join the religious castes and creates construction materials for temples. If disabled, this removes the religious castes!",
-		"Files": ["entity_default.txt"],
+		"Files": ["creature_standard.txt", "entity_default.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5796,7 +5796,7 @@
 		"Name": "optBtnGarrison",
 		"Text": "Garrison",
 		"Tooltip": "Dwarves can join military groups which gives a 200% learning bonus to military skills. If disabled, this removes all military castes!",
-		"Files": ["entity_default.txt"],
+		"Files": ["creature_standard.txt", "entity_default.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5822,7 +5822,7 @@
 		"Name": "optBtnStorage",
 		"Text": "Trade Storehouse",
 		"Tooltip": "Allows the unpacking of crates from caravans.",
-		"Files": ["entity_default.txt", "entity_gnome.txt", "reaction_cheat.txt", "reaction_masterwork.txt", "reaction_orcfort.txt"],
+		"Files": ["entity_default.txt", "entity_gnome.txt", "reaction_cheat.txt", "reaction_gnome.txt", "reaction_masterwork.txt", "reaction_orcfort.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5835,7 +5835,7 @@
 		"Name": "optBtnWoodsplitting",
 		"Text": "Wood Block",
 		"Tooltip": "Little brother of the sawmill, cuts wood into planks and can smooth some types of wood. Very basic, early workshop.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5991,7 +5991,7 @@
 		"Name": "optBtnArcheology",
 		"Text": "Archeology",
 		"Tooltip": "Adds Archeologist and fossils. Excavates fossils and creates special items.",
-		"Files": ["entity_default.txt", "entity_gnome.txt", "inorganic_fossil.txt", "** Affects graphic packs! **"],
+		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_warlock.txt", "inorganic_fossil.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6173,7 +6173,7 @@
 		"Name": "optBtnChemistry",
 		"Text": "Chemistry",
 		"Tooltip": "Adds chemistry to the game. Mostly used for explosives and acids.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6199,7 +6199,7 @@
 		"Name": "optBtnBrazier",
 		"Text": "Brazier",
 		"Tooltip": "Adds a way to make fire, light pipes and create light.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6212,7 +6212,7 @@
 		"Name": "optBtnCandelabra",
 		"Text": "Candelabra",
 		"Tooltip": "Adds a way to make fire, light pipes and create light.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6225,7 +6225,7 @@
 		"Name": "optBtnFireplace",
 		"Text": "Fireplace",
 		"Tooltip": "Adds a way to make fire, light pipes and create light.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6238,7 +6238,7 @@
 		"Name": "optBtnTorchbearerStatue",
 		"Text": "Torchbearer",
 		"Tooltip": "Adds a way to make fire, light pipes and create light.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6264,7 +6264,7 @@
 		"Name": "optBtnAmmocaster",
 		"Text": "Ammo Caster",
 		"Tooltip": "Create several new types of ammo in this furnace.",
-		"Files": ["building_furnaces_masterwork.txt", "entity_default.txt", "entity_gnome.txt"],
+		"Files": ["building_furnaces_masterwork.txt", "entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6277,7 +6277,7 @@
 		"Name": "optBtnGunsmith",
 		"Text": "Gunsmith",
 		"Tooltip": "Adds a gunsmith. You can now create gunpowder and several guns.",
-		"Files": ["entity_default.txt", "entity_dwarf_evil.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt", "entity_dwarf_evil.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6303,7 +6303,7 @@
 		"Name": "optBtnEngineer",
 		"Text": "Engineer",
 		"Tooltip": "A workshop to upgrade your traps. Only needed if you play with: Weaker trap ON.",
-		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files": ["entity_default.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6474,7 +6474,7 @@
 		"Name": "optBtnSlagPit",
 		"Text": "Slag Pit",
 		"Tooltip": "Clear up slag waste products from metal fabrication.",
-		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_orcfort_taigaorc.txt", "inorganic_dfhack.txt", "inorganic_mineral.txt", "reaction_masterwork.txt", "** Affects graphic packs! **"],
+		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_orcfort_taigaorc.txt", "inorganic_dfhack.txt", "inorganic_mineral.txt", "reaction_gnome.txt", "reaction_masterwork.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6487,7 +6487,7 @@
 		"Name": "optBtnMagicSchool",
 		"Text": "School of Wizardry",
 		"Tooltip": "Turns dwarves into arcane dwarves and unlocks magic altars. If disabled, this also removes all mage castes!",
-		"Files": ["entity_default.txt"],
+		"Files": ["creature_standard.txt", "entity_default.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6656,7 +6656,7 @@
 		"Name": "optBtnTotems",
 		"Text": "Totems",
 		"Tooltip": "Adds two buildable totems to the game, just for the looks.",
-		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_kobold_camp.txt", "entity_orcfort_taigaorc.txt"],
+		"Files": ["entity_default.txt", "entity_kobold_camp.txt", "entity_orcfort_taigaorc.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7056,7 +7056,7 @@
 		"Name": "optBtnDigging",
 		"Text": "Digging Invaders",
 		"Tooltip": "Allows forgotten beasts and some invaders to dig into your fort.",
-		"Files": [],
+		"Files": ["dfhack.init"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7069,7 +7069,7 @@
 		"Name": "optMultiRazing",
 		"Text": "Razing Invaders",
 		"Tooltip": "Allows titans and some invaders to destroy buildings and walls.",
-		"Files": [],
+		"Files": ["dfhack.init"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7092,7 +7092,7 @@
 		"Name": "optBtnMoreTrees",
 		"Text": "Tree Variety",
 		"Tooltip": "Adds +120 different kinds of trees to the game.",
-		"Files": [],
+		"Files": ["plant_trees_ff.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7105,7 +7105,7 @@
 		"Name": "optBtnMorePlants",
 		"Text": "Plant Variety",
 		"Tooltip": "Adds +180 different plants to the game.",
-		"Files": [],
+		"Files": ["plant_florafauna_ff.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7157,7 +7157,7 @@
 		"Name": "optMultiHarderSmithing",
 		"Text": "Harder Smithing",
 		"Tooltip": "Makes smithing harder. Items might need more then just one bar of metal to be produced.",
-		"Files": ["item_armor.txt", "item_gloves.txt", "item_gnome.txt", "item_helm.txt", "item_magic.txt", "item_pants.txt", "item_shield.txt", "item_shoes.txt", "item_weapon.txt", "item_weapon_human_tech.txt", "item_weapon_masterwork.txt", "item_z_orcfort_weapon.txt"],
+		"Files": ["item_armor.txt", "item_gloves.txt", "item_helm.txt", "item_magic.txt", "item_pants.txt", "item_shield.txt", "item_shoes.txt", "item_weapon.txt", "item_weapon_human_tech.txt", "item_weapon_masterwork.txt", "item_z_gnome.txt", "item_z_orcfort_weapon.txt"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7245,7 +7245,7 @@
 		"Name": "optBtnDiseases",
 		"Text": "Diseases",
 		"Tooltip": "Adds Halfling's disease mod to the game.  Requires the apothecary to treat the diseases. See the manual for more info.",
-		"Files": ["creature_standard.txt", "** Affects graphic packs! **"],
+		"Files": ["creature_pet_armored.txt", "creature_pet_masterwork.txt", "creature_standard.txt", "** Affects graphic packs! **"],
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7367,7 +7367,7 @@
 		"Name": "optBtnBuildDimensions",
 		"Text": "Build Dimension",
 		"Tooltip": "Adds infos to the building names, like 'Gemcutter 3x3', so you can see how large a building is before you build it.",
-		"Files": ["building_furnaces_masterwork.txt", "building_gnome.txt", "building_masterwork.txt"],
+		"Files": ["building_furnaces_masterwork.txt", "building_masterwork.txt", "building_z_gnome.txt"],
 		"Tags": [
 			{
 			"TokenName": "",

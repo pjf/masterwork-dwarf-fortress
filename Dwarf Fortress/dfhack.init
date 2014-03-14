@@ -28,7 +28,7 @@ diggingInvaders setCost FROST_GIANT walk 5
 diggingInvaders setCost FROST_GIANT destroyRoughConstruction -1
 diggingInvaders setCost FROST_GIANT destroySmoothConstruction -1
 diggingInvaders setDelay FROST_GIANT destroyBuilding 50
-diggingInvaders setDelay FROST_GIANT dig -1
+diggingInvaders setDelay FROST_GIANT dig 9
 diggingInvaders setDelay FROST_GIANT destroyRoughConstruction 50
 diggingInvaders setDelay FROST_GIANT destroySmoothConstruction 99
 
@@ -39,7 +39,7 @@ diggingInvaders setCost AUTOMATON walk 5
 diggingInvaders setCost AUTOMATON destroyRoughConstruction -1
 diggingInvaders setCost AUTOMATON destroySmoothConstruction -1
 diggingInvaders setDelay AUTOMATON destroyBuilding 50
-diggingInvaders setDelay AUTOMATON dig -2
+diggingInvaders setDelay AUTOMATON dig 9
 diggingInvaders setDelay AUTOMATON destroyRoughConstruction 50
 diggingInvaders setDelay AUTOMATON destroySmoothConstruction 99
 
@@ -51,7 +51,7 @@ diggingInvaders setCost ANT_MAN walk 5
 diggingInvaders setCost ANT_MAN destroyRoughConstruction -2
 diggingInvaders setCost ANT_MAN destroySmoothConstruction -2
 diggingInvaders setDelay ANT_MAN destroyBuilding -2
-diggingInvaders setDelay ANT_MAN dig -1
+diggingInvaders setDelay ANT_MAN dig 9
 diggingInvaders setDelay ANT_MAN destroyRoughConstruction -1
 diggingInvaders setDelay ANT_MAN destroySmoothConstruction -1
 
@@ -63,7 +63,7 @@ diggingInvaders setCost ORC walk 5
 diggingInvaders setCost ORC destroyRoughConstruction -1
 diggingInvaders setCost ORC destroySmoothConstruction -1
 diggingInvaders setDelay ORC destroyBuilding 50
-diggingInvaders setDelay ORC dig -1
+diggingInvaders setDelay ORC dig 9
 diggingInvaders setDelay ORC destroyRoughConstruction 50
 diggingInvaders setDelay ORC destroySmoothConstruction 99
 
@@ -74,7 +74,7 @@ diggingInvaders setCost GOBLIN walk 5
 diggingInvaders setCost GOBLIN destroyRoughConstruction -1
 diggingInvaders setCost GOBLIN destroySmoothConstruction -2
 diggingInvaders setDelay GOBLIN destroyBuilding 50
-diggingInvaders setDelay GOBLIN dig -1
+diggingInvaders setDelay GOBLIN dig 9
 diggingInvaders setDelay GOBLIN destroyRoughConstruction 50
 diggingInvaders setDelay GOBLIN destroySmoothConstruction 99
 
@@ -85,7 +85,7 @@ diggingInvaders setCost HUMAN walk 5
 diggingInvaders setCost HUMAN destroyRoughConstruction -1
 diggingInvaders setCost HUMAN destroySmoothConstruction -1
 diggingInvaders setDelay HUMAN destroyBuilding 50
-diggingInvaders setDelay HUMAN dig -1
+diggingInvaders setDelay HUMAN dig 9
 diggingInvaders setDelay HUMAN destroyRoughConstruction 50
 diggingInvaders setDelay HUMAN destroySmoothConstruction 99
 
@@ -96,7 +96,7 @@ diggingInvaders setCost ELF walk 5
 diggingInvaders setCost ELF destroyRoughConstruction -1
 diggingInvaders setCost ELF destroySmoothConstruction -1
 diggingInvaders setDelay ELF destroyBuilding 50
-diggingInvaders setDelay ELF dig -2
+diggingInvaders setDelay ELF dig 9
 diggingInvaders setDelay ELF destroyRoughConstruction 50
 diggingInvaders setDelay ELF destroySmoothConstruction 99
 
@@ -107,7 +107,7 @@ diggingInvaders setCost DROW walk 5
 diggingInvaders setCost DROW destroyRoughConstruction -1
 diggingInvaders setCost DROW destroySmoothConstruction -1
 diggingInvaders setDelay DROW destroyBuilding 50
-diggingInvaders setDelay DROW dig -2
+diggingInvaders setDelay DROW dig 9
 diggingInvaders setDelay DROW destroyRoughConstruction 50
 diggingInvaders setDelay DROW destroySmoothConstruction 99
 
@@ -118,7 +118,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_1 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_1 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_1 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_1 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_1 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_1 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_1 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_1 destroySmoothConstruction -1
 
@@ -129,7 +129,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_2 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_2 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_2 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_2 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_2 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_2 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_2 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_2 destroySmoothConstruction -1
 
@@ -140,7 +140,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_3 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_3 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_3 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_3 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_3 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_3 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_3 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_3 destroySmoothConstruction -1
 
@@ -151,7 +151,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_4 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_4 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_4 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_4 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_4 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_4 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_4 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_4 destroySmoothConstruction -1
 
@@ -162,7 +162,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_5 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_5 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_5 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_5 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_5 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_5 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_5 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_5 destroySmoothConstruction -1
 
@@ -173,7 +173,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_6 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_6 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_6 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_6 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_6 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_6 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_6 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_6 destroySmoothConstruction -1
 
@@ -184,7 +184,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_7 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_7 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_7 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_7 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_7 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_7 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_7 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_7 destroySmoothConstruction -1
 
@@ -195,7 +195,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_8 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_8 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_8 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_8 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_8 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_8 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_8 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_8 destroySmoothConstruction -1
 
@@ -206,7 +206,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_9 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_9 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_9 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_9 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_9 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_9 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_9 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_9 destroySmoothConstruction -1
 
@@ -217,7 +217,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_10 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_10 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_10 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_10 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_10 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_10 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_10 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_10 destroySmoothConstruction -1
 
@@ -228,7 +228,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_11 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_11 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_11 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_11 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_11 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_11 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_11 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_11 destroySmoothConstruction -1
 
@@ -239,7 +239,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_12 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_12 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_12 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_12 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_12 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_12 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_12 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_12 destroySmoothConstruction -1
 
@@ -250,7 +250,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_13 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_13 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_13 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_13 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_13 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_13 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_13 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_13 destroySmoothConstruction -1
 
@@ -261,7 +261,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_14 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_14 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_14 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_14 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_14 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_14 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_14 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_14 destroySmoothConstruction -1
 
@@ -272,7 +272,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_15 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_15 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_15 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_15 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_15 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_15 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_15 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_15 destroySmoothConstruction -1
 
@@ -283,7 +283,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_16 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_16 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_16 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_16 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_16 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_16 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_16 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_16 destroySmoothConstruction -1
 
@@ -294,7 +294,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_17 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_17 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_17 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_17 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_17 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_17 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_17 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_17 destroySmoothConstruction -1
 
@@ -305,7 +305,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_18 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_18 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_18 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_18 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_18 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_18 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_18 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_18 destroySmoothConstruction -1
 
@@ -316,7 +316,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_19 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_19 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_19 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_19 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_19 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_19 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_19 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_19 destroySmoothConstruction -1
 
@@ -327,7 +327,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_20 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_20 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_20 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_20 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_20 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_20 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_20 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_20 destroySmoothConstruction -1
 
@@ -338,7 +338,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_21 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_21 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_21 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_21 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_21 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_21 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_21 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_21 destroySmoothConstruction -1
 
@@ -349,7 +349,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_22 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_22 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_22 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_22 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_22 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_22 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_22 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_22 destroySmoothConstruction -1
 
@@ -360,7 +360,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_23 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_23 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_23 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_23 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_23 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_23 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_23 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_23 destroySmoothConstruction -1
 
@@ -371,7 +371,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_24 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_24 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_24 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_24 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_24 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_24 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_24 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_24 destroySmoothConstruction -1
 
@@ -382,7 +382,7 @@ diggingInvaders setCost FORGOTTEN_BEAST_25 walk 5
 diggingInvaders setCost FORGOTTEN_BEAST_25 destroyRoughConstruction -2
 diggingInvaders setCost FORGOTTEN_BEAST_25 destroySmoothConstruction -2
 diggingInvaders setDelay FORGOTTEN_BEAST_25 destroyBuilding -2
-diggingInvaders setDelay FORGOTTEN_BEAST_25 dig -1
+diggingInvaders setDelay FORGOTTEN_BEAST_25 dig 9
 diggingInvaders setDelay FORGOTTEN_BEAST_25 destroyRoughConstruction -1
 diggingInvaders setDelay FORGOTTEN_BEAST_25 destroySmoothConstruction -1
 
@@ -393,7 +393,7 @@ diggingInvaders setCost TITAN_1 walk 5
 diggingInvaders setCost TITAN_1 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_1 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_1 destroyBuilding 50
-diggingInvaders setDelay TITAN_1 dig -1
+diggingInvaders setDelay TITAN_1 dig 9
 diggingInvaders setDelay TITAN_1 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_1 destroySmoothConstruction 50
 
@@ -404,7 +404,7 @@ diggingInvaders setCost TITAN_2 walk 5
 diggingInvaders setCost TITAN_2 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_2 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_2 destroyBuilding 50
-diggingInvaders setDelay TITAN_2 dig -1
+diggingInvaders setDelay TITAN_2 dig 9
 diggingInvaders setDelay TITAN_2 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_2 destroySmoothConstruction 50
 
@@ -415,7 +415,7 @@ diggingInvaders setCost TITAN_3 walk 5
 diggingInvaders setCost TITAN_3 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_3 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_3 destroyBuilding 50
-diggingInvaders setDelay TITAN_3 dig -1
+diggingInvaders setDelay TITAN_3 dig 9
 diggingInvaders setDelay TITAN_3 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_3 destroySmoothConstruction 50
 
@@ -426,7 +426,7 @@ diggingInvaders setCost TITAN_4 walk 5
 diggingInvaders setCost TITAN_4 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_4 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_4 destroyBuilding 50
-diggingInvaders setDelay TITAN_4 dig -1
+diggingInvaders setDelay TITAN_4 dig 9
 diggingInvaders setDelay TITAN_4 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_4 destroySmoothConstruction 50
 
@@ -437,7 +437,7 @@ diggingInvaders setCost TITAN_5 walk 5
 diggingInvaders setCost TITAN_5 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_5 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_5 destroyBuilding 50
-diggingInvaders setDelay TITAN_5 dig -1
+diggingInvaders setDelay TITAN_5 dig 9
 diggingInvaders setDelay TITAN_5 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_5 destroySmoothConstruction 50
 
@@ -448,7 +448,7 @@ diggingInvaders setCost TITAN_6 walk 5
 diggingInvaders setCost TITAN_6 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_6 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_6 destroyBuilding 50
-diggingInvaders setDelay TITAN_6 dig -1
+diggingInvaders setDelay TITAN_6 dig 9
 diggingInvaders setDelay TITAN_6 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_6 destroySmoothConstruction 50
 
@@ -459,7 +459,7 @@ diggingInvaders setCost TITAN_7 walk 5
 diggingInvaders setCost TITAN_7 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_7 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_7 destroyBuilding 50
-diggingInvaders setDelay TITAN_7 dig -1
+diggingInvaders setDelay TITAN_7 dig 9
 diggingInvaders setDelay TITAN_7 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_7 destroySmoothConstruction 50
 
@@ -470,7 +470,7 @@ diggingInvaders setCost TITAN_8 walk 5
 diggingInvaders setCost TITAN_8 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_8 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_8 destroyBuilding 50
-diggingInvaders setDelay TITAN_8 dig -1
+diggingInvaders setDelay TITAN_8 dig 9
 diggingInvaders setDelay TITAN_8 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_8 destroySmoothConstruction 50
 
@@ -481,7 +481,7 @@ diggingInvaders setCost TITAN_9 walk 5
 diggingInvaders setCost TITAN_9 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_9 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_9 destroyBuilding 50
-diggingInvaders setDelay TITAN_9 dig -1
+diggingInvaders setDelay TITAN_9 dig 9
 diggingInvaders setDelay TITAN_9 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_9 destroySmoothConstruction 50
 
@@ -492,7 +492,7 @@ diggingInvaders setCost TITAN_10 walk 5
 diggingInvaders setCost TITAN_10 destroyRoughConstruction -1
 diggingInvaders setCost TITAN_10 destroySmoothConstruction -1
 diggingInvaders setDelay TITAN_10 destroyBuilding 50
-diggingInvaders setDelay TITAN_10 dig -1
+diggingInvaders setDelay TITAN_10 dig 9
 diggingInvaders setDelay TITAN_10 destroyRoughConstruction 50
 diggingInvaders setDelay TITAN_10 destroySmoothConstruction 99
 
@@ -503,7 +503,7 @@ diggingInvaders setCost DRAGON walk 5
 diggingInvaders setCost DRAGON destroyRoughConstruction -1
 diggingInvaders setCost DRAGON destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON destroyBuilding 50
-diggingInvaders setDelay DRAGON dig -1
+diggingInvaders setDelay DRAGON dig 9
 diggingInvaders setDelay DRAGON destroyRoughConstruction 50
 diggingInvaders setDelay DRAGON destroySmoothConstruction 99
 
@@ -514,7 +514,7 @@ diggingInvaders setCost DRAGON_CHROMATIC walk 5
 diggingInvaders setCost DRAGON_CHROMATIC destroyRoughConstruction -1
 diggingInvaders setCost DRAGON_CHROMATIC destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON_CHROMATIC destroyBuilding 50
-diggingInvaders setDelay DRAGON_CHROMATIC dig -1
+diggingInvaders setDelay DRAGON_CHROMATIC dig 9
 diggingInvaders setDelay DRAGON_CHROMATIC destroyRoughConstruction 50
 diggingInvaders setDelay DRAGON_CHROMATIC destroySmoothConstruction 99
 
@@ -525,7 +525,7 @@ diggingInvaders setCost DRAGON_BLUE walk 5
 diggingInvaders setCost DRAGON_BLUE destroyRoughConstruction -1
 diggingInvaders setCost DRAGON_BLUE destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON_BLUE destroyBuilding 50
-diggingInvaders setDelay DRAGON_BLUE dig -1
+diggingInvaders setDelay DRAGON_BLUE dig 9
 diggingInvaders setDelay DRAGON_BLUE destroyRoughConstruction 50
 diggingInvaders setDelay DRAGON_BLUE destroySmoothConstruction 99
 
@@ -536,7 +536,7 @@ diggingInvaders setCost DRAGON_GREEN walk 5
 diggingInvaders setCost DRAGON_GREEN destroyRoughConstruction -1
 diggingInvaders setCost DRAGON_GREEN destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON_GREEN destroyBuilding 50
-diggingInvaders setDelay DRAGON_GREEN dig -1
+diggingInvaders setDelay DRAGON_GREEN dig 9
 diggingInvaders setDelay DRAGON_GREEN destroyRoughConstruction 50
 diggingInvaders setDelay DRAGON_GREEN destroySmoothConstruction 99
 
@@ -547,7 +547,7 @@ diggingInvaders setCost DRAGON_SKY walk 5
 diggingInvaders setCost DRAGON_SKY destroyRoughConstruction -1
 diggingInvaders setCost DRAGON_SKY destroySmoothConstruction -1
 diggingInvaders setDelay DRAGON_SKY destroyBuilding 50
-diggingInvaders setDelay DRAGON_SKY dig -1
+diggingInvaders setDelay DRAGON_SKY dig 9
 diggingInvaders setDelay DRAGON_SKY destroyRoughConstruction 50
 diggingInvaders setDelay DRAGON_SKY destroySmoothConstruction 99
 
@@ -558,7 +558,7 @@ diggingInvaders setCost BEHEMOTH walk 5
 diggingInvaders setCost BEHEMOTH destroyRoughConstruction -1
 diggingInvaders setCost BEHEMOTH destroySmoothConstruction -1
 diggingInvaders setDelay BEHEMOTH destroyBuilding 50
-diggingInvaders setDelay BEHEMOTH dig -1
+diggingInvaders setDelay BEHEMOTH dig 9
 diggingInvaders setDelay BEHEMOTH destroyRoughConstruction 50
 diggingInvaders setDelay BEHEMOTH destroySmoothConstruction 99
 
@@ -569,7 +569,7 @@ diggingInvaders setCost BALROG walk 5
 diggingInvaders setCost BALROG destroyRoughConstruction -1
 diggingInvaders setCost BALROG destroySmoothConstruction -1
 diggingInvaders setDelay BALROG destroyBuilding 50
-diggingInvaders setDelay BALROG dig -1
+diggingInvaders setDelay BALROG dig 9
 diggingInvaders setDelay BALROG destroyRoughConstruction 50
 diggingInvaders setDelay BALROG destroySmoothConstruction 99
 
@@ -577,7 +577,7 @@ enable automaterial
 enable autoSyndrome
 enable autotrade
 enable buildingplan
-#enable diggingInvaders
+enable diggingInvaders
 enable dwarfmonitor
 enable fix-armory
 enable getplants

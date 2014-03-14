@@ -33,7 +33,6 @@ Public Class optionComboPatternToken
                     Me.ValueMember = "value"
                 End If
             End If
-
             Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.loadFiles(m_opt.optionManager, m_pattern))
             m_value = Me.SelectedValue
 

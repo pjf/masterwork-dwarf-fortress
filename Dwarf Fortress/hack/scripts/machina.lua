@@ -40,6 +40,8 @@ local machinas = {} --(table of all active machina)
 
 local registered_inorganics = {} --(table of all inorganic raws used by machina)
 
+local factory_reactions = {} --(table of all automated factory reactions)
+
 local alreadyUpdated = false
 
 local prefix = "DFHACK_MACHINA_" --The prefix that will precede all building names and inorganic names
@@ -222,7 +224,7 @@ function table.contains(table, element)
 end
 
 function isMachina(building)
-	if getmetatable(building) == "building_workshopst" then
+	if getmetatable(building) == "building_workshopst" or getmetatable(building) == "building_furnacest" then
 		t = df.building_def.find(building.custom_type)
 		if t ~= nil and t ~= -1 then
 			if string.starts(t.code, prefix) then return t.code end
@@ -813,6 +815,7 @@ end
 dfhack.onStateChange.loadMachina = function(code)
 	if code==SC_MAP_LOADED then
 		gCode = df.global.world.world_data.active_site[0].id
+		factory_reactions = {}
 		--Load all reactions
 		for i,reaction in ipairs(df.global.world.raws.reactions) do
 			if string.starts(reaction.code,'LUA_HOOK_MACHINA_ASSIST') then
@@ -860,6 +863,8 @@ dfhack.onStateChange.loadMachina = function(code)
 			elseif string.starts(reaction.code,'LUA_HOOK_MACHINA_TIMEWARP_ADJUST') then
 				eventful.registerReaction(reaction.code,timewarpAdjust)
 				registered_reactions = true
+			elseif string.starts(reaction.code,prefix..'FACTORY') then -- Special automatic factory reactions
+				table.insert(factory_reactions,reaction)
 			end
 		end
 		
@@ -1699,6 +1704,7 @@ function levelUp(unit, skillId, amount)
 	
 	local skill = df.unit_skill:new()
 	local foundSkill = false
+	
 	for k, soulSkill in ipairs(unit.status.current_soul.skills) do
 		if soulSkill.id == skillId then
 			skill = soulSkill
@@ -2108,69 +2114,298 @@ function factoryOperate(machina, power)
 					product_type = 0 -- bars
 				end
 				
-				all_mats = {}
-				
-				if product_type ~= -1 and product_type ~= nil then
-					
-					hasInvalidMaterial = false
-					
-					product_name = df.item_type[product_type]:lower()
-					product_size = itemSizes[product_type+1][2] -- size of the item
-					if product_type == 30 then
-						--Determine if it's a box or bag here
+				local did_special = false
+				--Special reactions.  This only works properly with completely defined reagents and products i.e. Masterwork smelting.  Still needs improvement for proper rawability.
+				if #building.contained_items > 0 then
+					for r_id,reaction in ipairs(factory_reactions) do
+						local building_ok = false
+						local items_ok = false
+						building_def = df.building_def.find(building.custom_type)
+						for r=0, #reaction.building.type-1, 1 do
+							if reaction.building.custom[r] == building_def.id then
+								building_ok = true
+								break
+							end
+						end
+						if building_ok == true then
+							items_ok = true
+							items_used = {}
+							for r=0, #reaction.reagents-1, 1 do
+								local item_ok = false
+								for i = 0, #building.contained_items-1, 1 do
+									if building.contained_items[i].use_mode == 0 then
+										local passItem = false
+										local damagelevel = 0
+										item = building.contained_items[i].item
+										material = dfhack.matinfo.decode(item)
+										if material ~= nil then
+											local item_type = item:getType()
+											local item_subtype = item:getSubtype()
+											local item_size = item.getVolume(item)
+											local matflags = material.material.flags
+											
+											
+											if (reaction.reagents[r].item_type == item_type or reaction.reagents[r].item_type == -1)
+											and (reaction.reagents[r].item_subtype == item_subtype or reaction.reagents[r].item_subtype == -1)
+											and (reaction.reagents[r].mat_type == material.type or reaction.reagents[r].mat_type == -1)
+											and (reaction.reagents[r].mat_index == material.index or reaction.reagents[r].mat_index == -1) then
+												item_ok = true
+												table.insert(items_used,item)
+												print(item_type..","..item_subtype..","..material.type..","..material.index)
+												printall(reaction.reagents[r])
+												break
+											end
+										end
+									end
+								end
+								if item_ok == false then
+									items_ok = false
+								end
+							end
+						end
+						if items_ok == true then
+							printall(reaction)
+							for r=0, #reaction.products-1, 1 do
+								prob = reaction.products[r].probability
+								if math.random(100) <= prob then
+									material = dfhack.matinfo.decode(reaction.products[r].mat_type,reaction.products[r].mat_index)
+									opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+									local product = createItem(material,{reaction.products[r].item_type,reaction.products[r].item_subtype},1,opos)
+								end
+							end
+							for i_id,item in ipairs(items_used) do
+								item.flags.removed = true
+								item.flags.garbage_collect = true
+								item:uncategorize()
+							end
+							did_special = true
+							break
+						end
 					end
-					--print("Attempting to produce "..product_name.." of size "..product_size)
-					
 				end
 				
-				--Then check each item in the building
-				for i = 0, #building.contained_items-1, 1 do
-					if i < #building.contained_items then
-						if building.contained_items[i].use_mode == 0 then
-							local passItem = false
-							local damagelevel = 0
-							item = building.contained_items[i].item
-							material = dfhack.matinfo.decode(item)
-							if material ~= nil then
-								local valid = false
-								local good = false
-								local item_type = item:getType()
-								local item_subtype = item:getSubtype()
-								local item_size = item.getVolume(item)
-								local matflags = material.material.flags
-								--printall(matflags)
-								------------------------
-								--Woodcutter/Stonecutter/Bonecutter (only makes blocks for now)
-								------------------------
-								if (factory_type == "WOODCUTTER" or factory_type == "STONECUTTER" or factory_type == "BONECUTTER") then
-									if item_size > product_size then
-										local make_products = false
-										local valid = false
-										if (factory_type == "WOODCUTTER" and matflags.WOOD == true)
-										or (factory_type == "STONECUTTER" and matflags.IS_STONE == true)
-										or (factory_type == "BONECUTTER" and (matflags.BONE == true or matflags.HORN == true or matflags.TOOTH == true or matflags.SHELL == true)) then
-											if item_type == 5 or item_type == 4 or factory_type == "BONECUTTER" then
-												good = true --Either a rock boulder in the stonecutter, a wooden log in the woodcutter, or any bone item in the bonecutter
+				if did_special == false then
+					all_mats = {}
+					
+					if product_type ~= -1 and product_type ~= nil then
+						
+						hasInvalidMaterial = false
+						
+						product_name = df.item_type[product_type]:lower()
+						product_size = itemSizes[product_type+1][2] -- size of the item
+						if product_type == 30 then
+							--Determine if it's a box or bag here
+						end
+						--print("Attempting to produce "..product_name.." of size "..product_size)
+						
+					end
+					
+					--Then check each item in the building
+					for i = 0, #building.contained_items-1, 1 do
+						if i < #building.contained_items then
+							if building.contained_items[i].use_mode == 0 then
+								local passItem = false
+								local damagelevel = 0
+								item = building.contained_items[i].item
+								material = dfhack.matinfo.decode(item)
+								if material ~= nil then
+									local valid = false
+									local good = false
+									local item_type = item:getType()
+									local item_subtype = item:getSubtype()
+									local item_size = item.getVolume(item)
+									local matflags = material.material.flags
+									--printall(matflags)
+									
+									
+									------------------------
+									--Woodcutter/Stonecutter/Bonecutter (only makes blocks for now)
+									------------------------
+									if (factory_type == "WOODCUTTER" or factory_type == "STONECUTTER" or factory_type == "BONECUTTER") then
+										if item_size > product_size then
+											local make_products = false
+											local valid = false
+											if (factory_type == "WOODCUTTER" and matflags.WOOD == true)
+											or (factory_type == "STONECUTTER" and matflags.IS_STONE == true)
+											or (factory_type == "BONECUTTER" and (matflags.BONE == true or matflags.HORN == true or matflags.TOOTH == true or matflags.SHELL == true)) then
+												if item_type == 5 or item_type == 4 or factory_type == "BONECUTTER" then
+													good = true --Either a rock boulder in the stonecutter, a wooden log in the woodcutter, or any bone item in the bonecutter
+												end
+												make_products = true
+											elseif matflags.IS_METAL == true then
+												damagelevel = damagelevel+10
+												passItem = true
+											elseif matflags.ITEMS_HARD == false then -- soft items
+												if matflags.ROTS == true then -- in case it's a corpse, leave it in and let it rot
+													rot = item.rot_timer
+													if rot ~= nil then
+														item.rot_timer = rot + 100
+														damagelevel = damagelevel+1
+													end
+												else
+													damagelevel = damagelevel+1
+													passItem = true
+												end
+											else -- hard items of the wrong type
+												damagelevel = damagelevel+5
+												make_products = true
+												valid = true
+											end
+											if make_products == true then
+												if good == false then
+													 item_size = item_size/2
+												end
+												product_number = math.floor(item_size/product_size)
+												for p=1,product_number,1 do
+													opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+													local product = createItem(material,{product_type,product_subtype},1,opos)
+												end
+												item.flags.removed = true
+												item.flags.garbage_collect = true
+												item:uncategorize()
+											end
+										else
+											passItem = true
+										end
+									end
+									-----------
+									--Furniture
+									-----------
+									if factory_type == "FURNITURE" then
+										if matflags.IS_METAL == true and item_type ~= 2 then
+											damagelevel = damagelevel+10
+											passItem = true
+										elseif matflags.ITEMS_HARD == true then -- for now, only hard materials can be used
+											if item_type == 2 then
+												good = true
+											end
+											valid = true
+										elseif matflags.ROTS == true then
+											damagelevel = damagelevel+1
+											rot = item.rot_timer
+											if rot ~= nil then
+												item.rot_timer = rot + 100
+											end
+										else
+											damagelevel = damagelevel+2
+											passItem = true
+										end
+									end
+									-----------
+									--Clothier
+									-----------
+									if factory_type == "CLOTHIER" then
+										if matflags.IS_METAL == true and item_type ~= 2 then
+											damagelevel = damagelevel+10
+											passItem = true
+										elseif matflags.ITEMS_HARD == true then
+											damagelevel = damagelevel+5
+											passItem = true
+										elseif matflags.ITEMS_SOFT == true then
+											good = true
+											valid = true
+										elseif matflags.ROTS == true then
+											damagelevel = damagelevel+1
+											rot = item.rot_timer
+											if rot ~= nil then
+												item.rot_timer = rot + 100
+											end
+										else
+											damagelevel = damagelevel+2
+											passItem = true
+										end
+									end
+									
+									---------
+									--Forge
+									---------
+									if factory_type == "FORGE" then
+										if matflags.IS_METAL == true then
+											if item_type == 2 then
+												good = true
+											end
+											valid = true
+										elseif matflags.IS_STONE == true then
+											damagelevel = damagelevel+5
+											passItem = true
+										else -- Item is burned to ash
+											product_mat = dfhack.matinfo.decode(9,0) -- ash
+											opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+											local product = createItem(product_mat,{product_type,product_subtype},1,opos)
+											item.flags.removed = true
+											item.flags.garbage_collect = true
+											item:uncategorize()
+										end
+									end
+									
+									---------
+									--Smelter
+									---------
+									if factory_type == "SMELTER" then
+										if matflags.IS_STONE == true then
+											if item_type == 4 and #material.inorganic.metal_ore.mat_index > 0 then
+												for ore=0, #material.inorganic.metal_ore.mat_index-1, 1 do
+													ore_index = material.inorganic.metal_ore.mat_index[ore]
+													ore_prob = material.inorganic.metal_ore.probability[ore]
+													if math.random(100)<=ore_prob then
+														product_number = 4
+														for p=1,product_number,1 do
+															product_mat = dfhack.matinfo.decode(0,ore_index)
+															opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+															local product = createItem(product_mat,{product_type,product_subtype},1,opos)
+														end
+													end
+												end
+												item.flags.removed = true
+												item.flags.garbage_collect = true
+												item:uncategorize()
+												good = true
+											else
+												passItem = true
+											end
+										elseif matflags.IS_METAL == true then -- Melt the item
+											product_number = math.floor(item_size/(product_size/2))
+											for p=1,product_number,1 do
+												opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+												local product = createItem(material,{product_type,product_subtype},1,opos)
+											end
+											item.flags.removed = true
+											item.flags.garbage_collect = true
+											item:uncategorize()
+										else -- Item is burned to ash
+											product_mat = dfhack.matinfo.decode(9,0) -- ash
+											opos = secondaryOutputBlocks[math.random(#secondaryOutputBlocks)]
+											local product = createItem(product_mat,{product_type,product_subtype},1,opos)
+											item.flags.removed = true
+											item.flags.garbage_collect = true
+											item:uncategorize()
+										end
+										
+										
+									end
+
+									
+									---------
+									--Jeweler
+									---------
+									if factory_type == "JEWELER" then
+									
+										make_products = false
+										if matflags.IS_STONE then
+											if item_type == 3 then
+												good = true
+												valid = true
+											elseif item_type == 4 then
+												good = true
+												valid = true
 											end
 											make_products = true
 										elseif matflags.IS_METAL == true then
 											damagelevel = damagelevel+10
 											passItem = true
-										elseif matflags.ITEMS_HARD == false then -- soft items
-											if matflags.ROTS == true then -- in case it's a corpse, leave it in and let it rot
-												rot = item.rot_timer
-												if rot ~= nil then
-													item.rot_timer = rot + 100
-													damagelevel = damagelevel+1
-												end
-											else
-												damagelevel = damagelevel+1
-												passItem = true
-											end
-										else -- hard items of the wrong type
+										else
 											damagelevel = damagelevel+5
-											make_products = true
-											valid = true
+											passItem = true
 										end
 										if make_products == true then
 											if good == false then
@@ -2185,379 +2420,218 @@ function factoryOperate(machina, power)
 											item.flags.garbage_collect = true
 											item:uncategorize()
 										end
-									else
-										passItem = true
 									end
-								end
-								-----------
-								--Furniture
-								-----------
-								if factory_type == "FURNITURE" then
-									if matflags.IS_METAL == true and item_type ~= 2 then
-										damagelevel = damagelevel+10
-										passItem = true
-									elseif matflags.ITEMS_HARD == true then -- for now, only hard materials can be used
-										if item_type == 2 then
-											good = true
+									
+									---------
+									--Grinder
+									---------
+									if factory_type == "GRINDER" then
+										product_number = math.ceil((item_size/product_size)/100)
+										for p=1,product_number,1 do
+											opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+											local product = createItem(material,{product_type,product_subtype},1,opos)
 										end
-										valid = true
-									elseif matflags.ROTS == true then
-										damagelevel = damagelevel+1
-										rot = item.rot_timer
-										if rot ~= nil then
-											item.rot_timer = rot + 100
-										end
-									else
-										damagelevel = damagelevel+2
-										passItem = true
-									end
-								end
-								-----------
-								--Clothier
-								-----------
-								if factory_type == "CLOTHIER" then
-									if matflags.IS_METAL == true and item_type ~= 2 then
-										damagelevel = damagelevel+10
-										passItem = true
-									elseif matflags.ITEMS_HARD == true then
-										damagelevel = damagelevel+5
-										passItem = true
-									elseif matflags.ITEMS_SOFT == true then
-										good = true
-										valid = true
-									elseif matflags.ROTS == true then
-										damagelevel = damagelevel+1
-										rot = item.rot_timer
-										if rot ~= nil then
-											item.rot_timer = rot + 100
-										end
-									else
-										damagelevel = damagelevel+2
-										passItem = true
-									end
-								end
-								
-								---------
-								--Forge
-								---------
-								if factory_type == "FORGE" then
-									if matflags.IS_METAL == true then
-										if item_type == 2 then
-											good = true
-										end
-										valid = true
-									elseif matflags.IS_STONE == true then
-										damagelevel = damagelevel+5
-										passItem = true
-									else -- Item is burned to ash
-										product_mat = dfhack.matinfo.decode(9,0) -- ash
-										opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
-										local product = createItem(product_mat,{product_type,product_subtype},1,opos)
 										item.flags.removed = true
 										item.flags.garbage_collect = true
 										item:uncategorize()
 									end
-								end
-								
-								---------
-								--Smelter
-								---------
-								if factory_type == "SMELTER" then
-									if matflags.IS_STONE == true then
-										if item_type == 4 and #material.inorganic.metal_ore.mat_index > 0 then
-											for ore=0, #material.inorganic.metal_ore.mat_index-1, 1 do
-												ore_index = material.inorganic.metal_ore.mat_index[ore]
-												ore_prob = material.inorganic.metal_ore.probability[ore]
-												if math.random(100)<=ore_prob then
-													product_number = 4
-													for p=1,product_number,1 do
-														product_mat = dfhack.matinfo.decode(0,ore_index)
-														opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
-														local product = createItem(product_mat,{product_type,product_subtype},1,opos)
-													end
-												end
+									
+									-----------
+									--Decorator
+									-----------
+									if factory_type == "IMPROVEMENTS" then
+										local hold = false
+										local itemname = df.item_type[item:getType()]:lower()
+										if 	itemname == "powder_misc" or
+											itemname == "glob" or
+											itemname == "bar" or
+											itemname == "thread" or
+											itemname == "cloth" or
+											itemname == "skin_tanned" or
+											((itemname == "corpsepiece" or itemname == "corpse" or itemname == "remains") and 
+												(dfhack.matinfo.decode(item).material.flags.ITEMS_HARD or
+												dfhack.matinfo.decode(item).material.flags.ITEMS_SOFT))then
+											if #building.contained_items < 30 then
+												hold = true
 											end
 										else
-											--an item made of stone, or a stone with no ore	- make rock bars
-											product_number = math.floor(item_size/product_size)
-											for p=1,product_number,1 do
-												product_mat = dfhack.matinfo.decode(0,ore_index)
-												opos = secondaryOutputBlocks[math.random(#secondaryOutputBlocks)]
-												local product = createItem(product_mat,{product_type,product_subtype},1,opos)
-											end
-										end
-										item.flags.removed = true
-										item.flags.garbage_collect = true
-										item:uncategorize()
-										good = true
-									elseif matflags.IS_METAL == true then -- Melt the item
-										product_number = math.floor(item_size/(product_size/2))
-										for p=1,product_number,1 do
-											opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
-											local product = createItem(material,{product_type,product_subtype},1,opos)
-										end
-										item.flags.removed = true
-										item.flags.garbage_collect = true
-										item:uncategorize()
-									else -- Item is burned to ash
-										product_mat = dfhack.matinfo.decode(9,0) -- ash
-										opos = secondaryOutputBlocks[math.random(#secondaryOutputBlocks)]
-										local product = createItem(product_mat,{product_type,product_subtype},1,opos)
-										item.flags.removed = true
-										item.flags.garbage_collect = true
-										item:uncategorize()
-									end
-									
-									
-								end
-
-								
-								---------
-								--Jeweler
-								---------
-								if factory_type == "JEWELER" then
-								
-									make_products = false
-									if matflags.IS_STONE then
-										if item_type == 3 then
-											good = true
-											valid = true
-										elseif item_type == 4 then
-											good = true
-											valid = true
-										end
-										make_products = true
-									elseif matflags.IS_METAL == true then
-										damagelevel = damagelevel+10
-										passItem = true
-									else
-										damagelevel = damagelevel+5
-										passItem = true
-									end
-									if make_products == true then
-										if good == false then
-											 item_size = item_size/2
-										end
-										product_number = math.floor(item_size/product_size)
-										for p=1,product_number,1 do
-											opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
-											local product = createItem(material,{product_type,product_subtype},1,opos)
-										end
-										item.flags.removed = true
-										item.flags.garbage_collect = true
-										item:uncategorize()
-									end
-								end
-								
-								---------
-								--Grinder
-								---------
-								if factory_type == "GRINDER" then
-									product_number = math.ceil((item_size/product_size)/100)
-									for p=1,product_number,1 do
-										opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
-										local product = createItem(material,{product_type,product_subtype},1,opos)
-									end
-									item.flags.removed = true
-									item.flags.garbage_collect = true
-									item:uncategorize()
-								end
-								
-								-----------
-								--Decorator
-								-----------
-								if factory_type == "IMPROVEMENTS" then
-									local hold = false
-									local itemname = df.item_type[item:getType()]:lower()
-									if 	itemname == "powder_misc" or
-										itemname == "glob" or
-										itemname == "bar" or
-										itemname == "thread" or
-										itemname == "cloth" or
-										itemname == "skin_tanned" or
-										((itemname == "corpsepiece" or itemname == "corpse" or itemname == "remains") and 
-											(dfhack.matinfo.decode(item).material.flags.ITEMS_HARD or
-											dfhack.matinfo.decode(item).material.flags.ITEMS_SOFT))then
-										if #building.contained_items < 30 then
-											hold = true
-										end
-									else
-										if item:isImproved() == false then
-											for imp = 0, #building.contained_items-1, 1 do
-												if building.contained_items[imp].use_mode == 0 then
-													imp_item = building.contained_items[imp].item
-													imp_itemname = df.item_type[imp_item:getType()]:lower()
-													imp_mat = dfhack.matinfo.decode(imp_item)
-													if 	imp_itemname == "powder_misc" or
-														imp_itemname == "glob" or
-														imp_itemname == "bar" or
-														imp_itemname == "thread" or
-														imp_itemname == "cloth" or
-														imp_itemname == "skin_tanned" or
-														((imp_itemname == "corpsepiece" or imp_itemname == "corpse" or imp_itemname == "remains") and 
-															(imp_mat.material.flags.ITEMS_HARD or
-															imp_mat.material.flags.ITEMS_SOFT))then
-														if item:isImprovable(nil,imp_mat.type,imp_mat.index) then
-															improvement = df.itemimprovement_coveredst:new()
-															improvement.mat_type = imp_mat.type
-															improvement.mat_index = imp_mat.index
-															quality = 0
-															if imp_mat.material.flags.ITEMS_HARD or imp_mat.material.flags.ITEMS_SOFT then
-																factorySkill = getFactorySkill(machina)
-																if math.random(5) < factorySkill.quality then quality = quality + 1 end
-																if math.random(10) < factorySkill.quality then quality = quality + 1 end
-																if math.random(15) < factorySkill.quality then quality = quality + 1 end
-																if math.random(20) < factorySkill.quality then quality = quality + 1 end
-																if math.random(25) < factorySkill.quality and math.random(3) == 1 then quality = quality + 1 end
+											if item:isImproved() == false then
+												for imp = 0, #building.contained_items-1, 1 do
+													if building.contained_items[imp].use_mode == 0 then
+														imp_item = building.contained_items[imp].item
+														imp_itemname = df.item_type[imp_item:getType()]:lower()
+														imp_mat = dfhack.matinfo.decode(imp_item)
+														if 	imp_itemname == "powder_misc" or
+															imp_itemname == "glob" or
+															imp_itemname == "bar" or
+															imp_itemname == "thread" or
+															imp_itemname == "cloth" or
+															imp_itemname == "skin_tanned" or
+															((imp_itemname == "corpsepiece" or imp_itemname == "corpse" or imp_itemname == "remains") and 
+																(imp_mat.material.flags.ITEMS_HARD or
+																imp_mat.material.flags.ITEMS_SOFT))then
+															if item:isImprovable(nil,imp_mat.type,imp_mat.index) then
+																improvement = df.itemimprovement_coveredst:new()
+																improvement.mat_type = imp_mat.type
+																improvement.mat_index = imp_mat.index
+																quality = 0
+																if imp_mat.material.flags.ITEMS_HARD or imp_mat.material.flags.ITEMS_SOFT then
+																	factorySkill = getFactorySkill(machina)
+																	if math.random(5) < factorySkill.quality then quality = quality + 1 end
+																	if math.random(10) < factorySkill.quality then quality = quality + 1 end
+																	if math.random(15) < factorySkill.quality then quality = quality + 1 end
+																	if math.random(20) < factorySkill.quality then quality = quality + 1 end
+																	if math.random(25) < factorySkill.quality and math.random(3) == 1 then quality = quality + 1 end
+																end
+																improvement.quality = quality
+																item.improvements:insert('#',improvement)
+																
+																imp_item.flags.removed = true
+																imp_item.flags.garbage_collect = true
+																imp_item:uncategorize()
+																break
 															end
-															improvement.quality = quality
-															item.improvements:insert('#',improvement)
-															
-															imp_item.flags.removed = true
-															imp_item.flags.garbage_collect = true
-															imp_item:uncategorize()
-															break
 														end
 													end
 												end
 											end
 										end
-									end
-									if hold == false then
-										opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
-										ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
-									end
-									if #building.contained_items > 30 then
-										for d = 0, #building.contained_items-1, 1 do
-											if building.contained_items[d].use_mode == 0 then
-												opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
-												ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
+										if hold == false then
+											opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+											ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
+										end
+										if #building.contained_items > 30 then
+											for d = 0, #building.contained_items-1, 1 do
+												if building.contained_items[d].use_mode == 0 then
+													opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+													ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
+												end
 											end
 										end
 									end
-								end
 
-								---------
-								--Sorter
-								---------
-								if factory_type == "SORTER" then
-									match = true
-									if settings.ints[1] ~= -1 then
-										if item_type ~= settings.ints[1] then -- Need to get subtypes working
-											match = false
+									---------
+									--Sorter
+									---------
+									if factory_type == "SORTER" then
+										match = true
+										if settings.ints[1] ~= -1 then
+											if item_type ~= settings.ints[1] then -- Need to get subtypes working
+												match = false
+											end
+										end
+										if settings.ints[3] ~= -1 then
+											if material.type ~= settings.ints[3] or material.index ~= settings.ints[4] then
+												match = false
+											end
+										end
+										if match == true then
+											opos = secondaryOutputBlocks[math.random(#secondaryOutputBlocks)]
+											ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
+										else
+											opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+											ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
 										end
 									end
-									if settings.ints[3] ~= -1 then
-										if material.type ~= settings.ints[3] or material.index ~= settings.ints[4] then
-											match = false
-										end
-									end
-									if match == true then
-										opos = secondaryOutputBlocks[math.random(#secondaryOutputBlocks)]
-										ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
-									else
-										opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
-										ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
-									end
-								end
 
 
-								--End of factory types
-								if good == true then valid = true end
-								
-								if valid == false then
-									hasInvalidMaterial = true
-								end
-								
-								if passItem == false and item.flags.removed == false and valid == true then -- Add the item to the material list
-									if good == false then item_size = item_size/2 end -- split the item size in half if it is not the intended type
-									duplicate_material = false
-									for p = 1, #all_mats, 1 do
-										this_mat = all_mats[p]
-										if this_mat.material.type == material.type and this_mat.material.index == material.index then
-											duplicate_material = true
-											this_mat.size = this_mat.size + item_size
-											break
+									--End of factory types
+									if good == true then valid = true end
+									
+									if valid == false then
+										hasInvalidMaterial = true
+									end
+									
+									if passItem == false and item.flags.removed == false and valid == true then -- Add the item to the material list
+										if good == false then item_size = item_size/2 end -- split the item size in half if it is not the intended type
+										duplicate_material = false
+										for p = 1, #all_mats, 1 do
+											this_mat = all_mats[p]
+											if this_mat.material.type == material.type and this_mat.material.index == material.index then
+												duplicate_material = true
+												this_mat.size = this_mat.size + item_size
+												break
+											end
+										end
+										if duplicate_material == false then
+											table.insert(all_mats,{material=material,size=item_size})
 										end
 									end
-									if duplicate_material == false then
-										table.insert(all_mats,{material=material,size=item_size})
-									end
+									--all_mats should now be an array of materials and sizes of all valid items remaining in the factory
+									
+								else --Error: Item has no material.  Eject the item unaltered.
+									passItem = true
 								end
-								--all_mats should now be an array of materials and sizes of all valid items remaining in the factory
-								
-							else --Error: Item has no material.  Eject the item unaltered.
-								passItem = true
-							end
-							if passItem == true then -- pass the item outside unaltered
-								opos = secondaryOutputBlocks[math.random(#secondaryOutputBlocks)]
-								ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
-							end
-							if damagelevel > 0 then
-								damageFactory(building,damagelevel)
-							end
-						end
-					end
-				end
-				
-				--If the factory combines items, now do the item combining thing
-				if factory_type == "FURNITURE" or factory_type == "FORGE" or factory_type == "CLOTHIER" then
-					total_size = 0
-					main_mat_size = 0
-					main_mat = nil
-					if #all_mats > 0 then
-						for i=1, #all_mats, 1 do
-							total_size = total_size + all_mats[i].size
-							if all_mats[i].size > main_mat_size then
-								main_mat = all_mats[i].material
-								main_mat_size = all_mats[i].size
+								if passItem == true then -- pass the item outside unaltered
+									opos = secondaryOutputBlocks[math.random(#secondaryOutputBlocks)]
+									ejectItem(building,item,{x=opos.x,y=opos.y,z=opos.z})
+								end
+								if damagelevel > 0 then
+									damageFactory(building,damagelevel)
+								end
 							end
 						end
 					end
 					
-					if product_size ~= nil then
-						--There are enough materials, so use them
-						
-						if (product_size <= total_size) or factory_type == "CLOTHIER" and main_mat ~= nil then
-						
-							opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
-							local product = createItem(main_mat,{product_type,product_subtype},0,opos)
-							
-							if product ~= nil then
-							
-								setProductStatus(product,getFactorySkill(machina),not hasInvalidMaterial)
-							
-								--Destroy all items in the building
-								for i = 0, #building.contained_items-1, 1 do 
-									if building.contained_items[i].use_mode == 0 then
-										item = building.contained_items[i].item
-										imp_mat = dfhack.matinfo.decode(item)
-										if imp_mat ~= nil and product ~= nil then
-											if imp_mat.type ~= main_mat.type or imp_mat.index ~= main_mat.index then
-												duplicateImprovement = false
-												for p = 0, #product.improvements-1, 1 do
-													if product.improvements[p].mat_type == imp_mat.type and product.improvements[p].mat_index == imp_mat.index then
-														duplicateImprovement = true
-														break
-													end
-												end
-												if duplicateImprovement == false then
-													improvement = df.itemimprovement_coveredst:new()
-													improvement.mat_type = imp_mat.type
-													improvement.mat_index = imp_mat.index
-													product.improvements:insert('#',improvement)
-												end
-											end
-										end
-										item.flags.removed = true
-										item.flags.garbage_collect = true
-										item:uncategorize()
-									end
+					--If the factory combines items, now do the item combining thing
+					if factory_type == "FURNITURE" or factory_type == "FORGE" or factory_type == "CLOTHIER" then
+						total_size = 0
+						main_mat_size = 0
+						main_mat = nil
+						if #all_mats > 0 then
+							for i=1, #all_mats, 1 do
+								total_size = total_size + all_mats[i].size
+								if all_mats[i].size > main_mat_size then
+									main_mat = all_mats[i].material
+									main_mat_size = all_mats[i].size
 								end
 							end
 						end
-					else
-						--Error: product not set
+						
+						if product_size ~= nil then
+							--There are enough materials, so use them
+							
+							if (product_size <= total_size) or factory_type == "CLOTHIER" and main_mat ~= nil then
+							
+								opos = mainOutputBlocks[math.random(#mainOutputBlocks)]
+								local product = createItem(main_mat,{product_type,product_subtype},0,opos)
+								
+								if product ~= nil then
+								
+									setProductStatus(product,getFactorySkill(machina),not hasInvalidMaterial)
+								
+									--Destroy all items in the building
+									for i = 0, #building.contained_items-1, 1 do 
+										if building.contained_items[i].use_mode == 0 then
+											item = building.contained_items[i].item
+											imp_mat = dfhack.matinfo.decode(item)
+											if imp_mat ~= nil and product ~= nil then
+												if imp_mat.type ~= main_mat.type or imp_mat.index ~= main_mat.index then
+													duplicateImprovement = false
+													for p = 0, #product.improvements-1, 1 do
+														if product.improvements[p].mat_type == imp_mat.type and product.improvements[p].mat_index == imp_mat.index then
+															duplicateImprovement = true
+															break
+														end
+													end
+													if duplicateImprovement == false then
+														improvement = df.itemimprovement_coveredst:new()
+														improvement.mat_type = imp_mat.type
+														improvement.mat_index = imp_mat.index
+														product.improvements:insert('#',improvement)
+													end
+												end
+											end
+											item.flags.removed = true
+											item.flags.garbage_collect = true
+											item:uncategorize()
+										end
+									end
+								end
+							end
+						else
+							--Error: product not set
+						end
 					end
 				end
 				

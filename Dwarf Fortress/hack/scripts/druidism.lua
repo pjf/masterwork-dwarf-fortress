@@ -567,8 +567,6 @@ function tameRoamingAnimal(reaction,unit,job,input_items,input_reagents,output_i
 	else
 		dfhack.gui.showAnnouncement( "You are too disconnected from nature to recruit animals.", COLOR_RED, true)
 	end
-
-	return math.floor((((basevalue * matvalue * qualityvalue) + improvementvalue)*stack_size)*wearvalue)
 end
 
 local function getItemValue(item)

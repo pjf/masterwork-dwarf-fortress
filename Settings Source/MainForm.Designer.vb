@@ -3587,8 +3587,8 @@ Partial Class MainForm
         Me.optBtnTransformMsgs.Location = New System.Drawing.Point(17, 31)
         Me.optBtnTransformMsgs.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnTransformMsgs.Name = "optBtnTransformMsgs"
-        OptionSingleReplace8.disabledValue = "]NOSTOPT"
-        OptionSingleReplace8.enabledValue = ":BOX:P:R]YESSTOPT"
+        OptionSingleReplace8.disabledValue = "]NOSTOPTRANS"
+        OptionSingleReplace8.enabledValue = ":BOX:P:R]YESSTOPTRANS"
         FileListManager50.fileNames = CType(resources.GetObject("FileListManager50.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace8.fileManager = FileListManager50
         OptionManager50.loadFromDInit = false
@@ -3621,8 +3621,8 @@ Partial Class MainForm
         Me.optBtnDigStop.Location = New System.Drawing.Point(17, 60)
         Me.optBtnDigStop.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnDigStop.Name = "optBtnDigStop"
-        OptionSingleReplace9.disabledValue = "]NOSTOP"
-        OptionSingleReplace9.enabledValue = ":P:R]YESSTOP"
+        OptionSingleReplace9.disabledValue = "]NOSTOPDIG"
+        OptionSingleReplace9.enabledValue = ":P:R]YESSTOPDIG"
         FileListManager51.fileNames = CType(resources.GetObject("FileListManager51.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace9.fileManager = FileListManager51
         OptionManager51.loadFromDInit = false
@@ -13225,7 +13225,7 @@ Partial Class MainForm
         Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
         Me.tabMain.Location = New System.Drawing.Point(0, 72)
         Me.tabMain.Name = "tabMain"
-        Me.tabMain.SelectedIndex = 5
+        Me.tabMain.SelectedIndex = 0
         Me.tabMain.Size = New System.Drawing.Size(1026, 613)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
