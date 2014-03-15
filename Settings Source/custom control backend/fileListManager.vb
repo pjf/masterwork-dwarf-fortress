@@ -69,10 +69,6 @@ Public Class fileListManager
     End Function
 
     Private Function findFiles(ByVal optm As optionManager, ByVal pattern As String) As List(Of IO.FileInfo)
-        If pattern.Contains("YESHARDERINVADER\b)") Then
-            Console.Write("")
-        End If
-
         'Dim start As DateTime = Now
         Dim results As New List(Of IO.FileInfo)
 
@@ -86,7 +82,7 @@ Public Class fileListManager
             If pattern = "" Then Return results
 
             For Each fi As KeyValuePair(Of IO.FileInfo, String) In globals.m_dfRaws '.Where(AddressOf gameRawFilter)
-                If rx.IsMatch(fi.Value) Then results.Add(fi.Key)
+                If rx.IsMatch(fi.Value) Then results.Add(fi.Key) : m_fileNames.Add(fi.Key.Name)
             Next
             addGraphicFiles(results)
         End If
@@ -100,7 +96,7 @@ Public Class fileListManager
         Dim tmpFiles As New List(Of KeyValuePair(Of IO.FileInfo, String))
         For Each fName As String In m_fileNames
             tmpFiles.AddRange(globals.m_dfRaws.Where(Function(raw As KeyValuePair(Of IO.FileInfo, String)) raw.Key.Name.Equals(fName, StringComparison.CurrentCultureIgnoreCase)))
-            tmpFiles.AddRange(globals.m_mwRaws.Where(Function(raw As KeyValuePair(Of IO.FileInfo, String)) raw.Key.Name.Equals(fName, StringComparison.CurrentCultureIgnoreCase)))
+            tmpFiles.AddRange(globals.m_mwRaws.Where(Function(raw As KeyValuePair(Of IO.FileInfo, String)) raw.Key.Name.Equals(fName, StringComparison.CurrentCultureIgnoreCase)))            
         Next
         For Each raw As KeyValuePair(Of IO.FileInfo, String) In tmpFiles
             results.Add(raw.Key)

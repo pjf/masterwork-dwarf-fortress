@@ -37,11 +37,11 @@ Public Class fileWorking
 
     Private Shared Sub loadRawFiles()
         Dim exts As String() = New String() {".txt", ".init"}
-        For Each fi As IO.FileInfo In m_dfFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") And exts.Contains(info.Extension)))
+        Dim exceptions As String() = New String() {"announcements.txt", "dfhack.init"}
+        For Each fi As IO.FileInfo In m_dfFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") And exts.Contains(info.Extension)) OrElse exceptions.Contains(info.Name))
             globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
         Next
-        For Each fi As IO.FileInfo In m_mwGraphicFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") And exts.Contains(info.Extension)))
-            'globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
+        For Each fi As IO.FileInfo In m_mwGraphicFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") And exts.Contains(info.Extension)) OrElse exceptions.Contains(info.Name))
             globals.m_mwRaws.Add(fi, readFile(fi.FullName, False))
         Next
     End Sub
