@@ -112,20 +112,20 @@ local function event_loop()
 					unit_skills[unit.id][skill.id].accomplished = true
 					unit_skills[unit.id][skill.id].proficient = true
 					if not first_run then
-						msg(dfhack.TranslateName(dfhack.units.getVisibleName(unit)).." has became "..df.skill_rating.attrs[rating].caption.." "..df.job_skill.attrs[df.job_skill[skill.id]].caption_noun..".")
+						msg(dfhack.TranslateName(dfhack.units.getVisibleName(unit)).." has become "..df.skill_rating.attrs[rating].caption.." "..df.job_skill.attrs[df.job_skill[skill.id]].caption_noun..".")
 					end
 				end
 				if rating == 10 and unit_skills[unit.id][skill.id].accomplished == false then
 					unit_skills[unit.id][skill.id].accomplished = true
 					unit_skills[unit.id][skill.id].proficient = true
 					if not first_run then
-						msg(dfhack.TranslateName(dfhack.units.getVisibleName(unit)).." has became "..df.skill_rating.attrs[rating].caption.." "..df.job_skill.attrs[df.job_skill[skill.id]].caption_noun..".")
+						msg(dfhack.TranslateName(dfhack.units.getVisibleName(unit)).." has become "..df.skill_rating.attrs[rating].caption.." "..df.job_skill.attrs[df.job_skill[skill.id]].caption_noun..".")
 					end
 				end
 				if rating == 5 and unit_skills[unit.id][skill.id].proficient == false then
 					unit_skills[unit.id][skill.id].proficient = true
 					if not first_run then
-						msg(dfhack.TranslateName(dfhack.units.getVisibleName(unit)).." has became "..df.skill_rating.attrs[rating].caption.." "..df.job_skill.attrs[df.job_skill[skill.id]].caption_noun..".")
+						msg(dfhack.TranslateName(dfhack.units.getVisibleName(unit)).." has become "..df.skill_rating.attrs[rating].caption.." "..df.job_skill.attrs[df.job_skill[skill.id]].caption_noun..".")
 					end
 				end
 				
@@ -173,7 +173,7 @@ local function event_loop()
 			msg("Expedition leader position is now vacant.")
 		else
 			if not first_run then
-				msg(dfhack.TranslateName(dfhack.units.getVisibleName(expedition_leader)).." became expedition leader.")
+				msg(dfhack.TranslateName(dfhack.units.getVisibleName(expedition_leader)).." become expedition leader.")
 			end
 		end
 		old_expedition_leader = expedition_leader
@@ -190,7 +190,7 @@ local function event_loop()
 			msg("Mayor position is now vacant.")
 		else
 			if not first_run then
-				msg(dfhack.TranslateName(dfhack.units.getVisibleName(mayor)).." became mayor.")
+				msg(dfhack.TranslateName(dfhack.units.getVisibleName(mayor)).." become mayor.")
 			end
 		end
 		old_mayor = mayor
