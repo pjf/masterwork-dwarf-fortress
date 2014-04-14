@@ -52,8 +52,8 @@ end
 
 -- Periodic checkups
 
-local workshopTypes = { "Carpenters Workshop", "Farmers Workshop", "Masons Workshop", "Craftsdwarfs Workshop", "Jewelers Workshop", "Metalsmiths Forge", "Magma Forge", "Bowyers Workshop", "Mechanics Workshop", "Siege Workshop", "Butchers Workshop", "Leatherworks Workshop",  "Tanners Workshop", "Clothiers Workshop", "Fishery", "Still", "Loom", "Quern", "Kennels", "Kitchen", "Ashery", "Dyers Workshop", "Millstone", "Custom", "Tool" }
-local furnaceTypes = { "Wood Furnace", "Smelter", "Glass Furnace", "Kiln", "Magma Smelter", "Magma Glass Furnace", "Magma Kiln", "Custom Furnace" }
+local workshopTypes = { "Carpenters Workshop", "Farmers Workshop", "Masons Workshop", "Craftsdwarfs Workshop", "Jewelers Workshop", "Metalsmiths Forge", "Magma Forge", "Bowyers Workshop", "Mechanics Workshop", "Siege Workshop", "Butchers Workshop", "Leatherworks Workshop",  "Tanners Workshop", "Clothiers Workshop", "Fishery", "Still", "Loom", "Quern", "Kennels", "Kitchen", "Ashery", "Dyers Workshop", "Millstone", "Workshop", "Tool" }
+local furnaceTypes = { "Wood Furnace", "Smelter", "Glass Furnace", "Kiln", "Magma Smelter", "Magma Glass Furnace", "Magma Kiln", "Furnace" }
 
 old_expedition_leader = nil
 old_mayor = nil
