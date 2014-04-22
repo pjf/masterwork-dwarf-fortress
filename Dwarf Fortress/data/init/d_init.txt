@@ -81,10 +81,10 @@ Pillar tile, <character> as above.
 
 Track tiles.  I at the end inverts the material colors.
 
-[TRACK_N:152I]
-[TRACK_S:152I]
-[TRACK_E:152I]
-[TRACK_W:152I]
+[TRACK_N:208]
+[TRACK_S:210]
+[TRACK_E:198]
+[TRACK_W:181]
 [TRACK_NS:179I]
 [TRACK_NE:192I]
 [TRACK_NW:217I]
