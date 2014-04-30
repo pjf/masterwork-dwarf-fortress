@@ -3090,7 +3090,7 @@ rusty steel	10
 titanium	11
 
 
-[CREATURE:RAPTOR_DRAGON_COLOSSEUM][TRAPAVOID][OPPOSED_TO_LIFE][ITEMCORPSE:SKIN_TANNED:NONE:CREATURE_MAT:DRAGONSCALE:NONE]
+[CREATURE:RAPTOR_DRAGON_COLOSSEUM][TRAPAVOID][ITEMCORPSE:SKIN_TANNED:NONE:CREATURE_MAT:DRAGONSCALE:NONE]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:(Size 1280, bipedal) A huge, fierce, taloned creature, relentless in its pursuit. Size of two large horses. It resembles a wingless bird with powerful jaws and legs. Feathers adorn its arms and head in a colorful crest. Its markings vary widely in shape and color.]
 	[NAME:dragon raptor:dragon raptors:dragon raptor]
 	[CHILD:1][GENERAL_CHILD_NAME:dragon raptor chick:dragon raptor chicks]
@@ -3233,7 +3233,7 @@ titanium	11
 
 
 
-[CREATURE:LION_GIANT_COLOSSEUM][TRAPAVOID][OPPOSED_TO_LIFE][ITEMCORPSE:SKIN_TANNED:NONE:CREATURE_MAT:ANIMAL_TOUGHLEATHER:LEATHER]
+[CREATURE:LION_GIANT_COLOSSEUM][TRAPAVOID][ITEMCORPSE:SKIN_TANNED:NONE:CREATURE_MAT:ANIMAL_TOUGHLEATHER:LEATHER]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A gigantic version of the feline predator.  Its giant prides can be found in the wildest, most savage parts of the world.]
 	[NAME:giant lion:giant lions:giant lion]
 	[CASTE_NAME:giant lion:giant lions:giant lion]
@@ -3329,7 +3329,7 @@ titanium	11
 
 
 
-[CREATURE:SCORPION_DESERT_GIANT_COLOSSEUM][TRAPAVOID][OPPOSED_TO_LIFE][ITEMCORPSE:SKIN_TANNED:NO_SUBTYPE:CREATURE_MAT:RIGID_SHELLPLATE:SHELL]
+[CREATURE:SCORPION_DESERT_GIANT_COLOSSEUM][TRAPAVOID][ITEMCORPSE:SKIN_TANNED:NO_SUBTYPE:CREATURE_MAT:RIGID_SHELLPLATE:SHELL]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A gigantic insect with huge pincers and a poisonous barbed tail.  It is found in the savage lands.]
 	[NAME:giant desert scorpion:giant desert scorpions:giant desert scorpion]
 	[CASTE_NAME:giant desert scorpion:giant desert scorpions:giant desert scorpion]
@@ -3433,7 +3433,7 @@ titanium	11
 
 
 
-[CREATURE:BLIZZARD_MAN_COLOSSEUM][TRAPAVOID][OPPOSED_TO_LIFE][ITEMCORPSE:WEAPON:ITEM_WEAPON_SPEAR:INORGANIC:ICE]
+[CREATURE:BLIZZARD_MAN_COLOSSEUM][TRAPAVOID][ITEMCORPSE:WEAPON:ITEM_WEAPON_SPEAR:INORGANIC:ICE]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A large humanoid monster from the wild tundra.  It has translucent skin, icicles for teeth, red glowing eyes and pointed ears.]
 	[NAME:blizzard man:blizzard men:blizzard man]
 	[CASTE_NAME:blizzard man:blizzard men:blizzard man]
@@ -3511,7 +3511,7 @@ titanium	11
 				[CASTE:GENERIC][POP_RATIO:10000]
 		
 
-[CREATURE:WOLF_ICE_COLOSSEUM][TRAPAVOID][OPPOSED_TO_LIFE][ITEMCORPSE:WEAPON:ITEM_WEAPON_DAGGER_HORN:INORGANIC:ICE]
+[CREATURE:WOLF_ICE_COLOSSEUM][TRAPAVOID][ITEMCORPSE:WEAPON:ITEM_WEAPON_DAGGER_HORN:INORGANIC:ICE]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:A fierce creature from the evil snowy wilds.  It has white fur and a piercing howl.]
 	[NAME:ice wolf:ice wolves:ice wolf]
 	[CASTE_NAME:ice wolf:ice wolves:ice wolf]
@@ -3603,7 +3603,7 @@ titanium	11
 
 
 
-[CREATURE:GRIMELING_COLOSSEUM][TRAPAVOID][OPPOSED_TO_LIFE][ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_LANDMINE_ACID]
+[CREATURE:GRIMELING_COLOSSEUM][TRAPAVOID][ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_LANDMINE_ACID]
 	[CREATURE_CLASS:ALL_CREATURES][DESCRIPTION:An evil monster from the swamp.  It resembles a knot of waterlogged weeds but will strike the unaware victim.]
 	[NAME:grimeling:grimelings:grimeling]
 	[CASTE_NAME:grimeling:grimelings:grimeling]
