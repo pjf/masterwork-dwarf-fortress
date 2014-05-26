@@ -19,7 +19,7 @@ Imports System.ComponentModel
         setTheme()
     End Sub
 
-    Private Sub setTheme()
+    Private Sub setTheme()        
         Select Case My.Settings.THEME
             Case Is = "DEFAULT"
                 Theme.ThemeColor = RibbonTheme.Normal
@@ -64,6 +64,9 @@ Imports System.ComponentModel
         If Not Debugger.IsAttached Then
             ribbonMain.Tabs.Remove(rTabDev)
         End If
+
+        'saveSettings()
+        'loadSettings()
     End Sub
 
     'this override prevents flickering when drawing transparent controls over background images within a tabcontrol
@@ -409,6 +412,79 @@ Imports System.ComponentModel
         frmInfo.Show()
     End Sub
 
+    Private Sub saveSettings()
+        My.Settings.SettingsKey = "TEST"
+        Dim newSettings As My.MySettings = My.Settings        
+        saveSettings(tabMain)
+        newSettings.Save()
+    End Sub
+    Private Sub saveSettings(ByVal parentControl As Control)
+        If Not Debugger.IsAttached Then Exit Sub
+
+        For Each c As Control In parentControl.Controls
+            If Not c.Enabled Then
+                Debug.WriteLine("skipping disabled control: " & c.Name)
+            Else
+                Dim conOpt As iToken = TryCast(c, iToken)
+                If conOpt IsNot Nothing Then
+                    Try
+                        If My.Settings.Properties(c.Name) Is Nothing Then
+                            Dim p As Configuration.SettingsProperty
+                            p = New Configuration.SettingsProperty(c.Name)
+                            p.Provider = My.Settings.Providers("Masterwork")
+                            p.Attributes.Add(GetType(Configuration.UserScopedSettingAttribute), New Configuration.UserScopedSettingAttribute())
+                            p.PropertyType = GetType(String) 'Me(prop).GetType
+                            My.Settings.Properties.Add(p)
+                            My.Settings.PropertyValues.Add(New Configuration.SettingsPropertyValue(p))
+                        End If
+                        My.Settings.Properties(c.Name).DefaultValue = c.Text
+                        My.Settings.Item(c.Name) = c.Text
+                    Catch ex As Exception
+                        Debug.WriteLine("!TEST EXCEPTION! " & ex.ToString)
+                    End Try
+                End If
+
+                If c.HasChildren Then
+                    saveSettings(c)
+                End If
+            End If
+        Next
+    End Sub
+
+    Private Sub loadSettings()
+        My.Settings.SettingsKey = "TEST"
+        'CType(My.Settings.Providers("Masterwork"), appSettingsManager).reload(My.Settings.SettingsKey)
+        'Dim theSettings As My.MySettings = DirectCast(My.MySettings, My.MySettings)
+        My.Settings.Reset()
+        loadSettings(tabMain)        
+    End Sub
+    Private Sub loadSettings(ByVal parentControl As Control)
+        If Not Debugger.IsAttached Then Exit Sub
+
+        For Each c As Control In parentControl.Controls
+            If Not c.Enabled Then
+                Debug.WriteLine("skipping disabled control: " & c.Name)
+            Else
+                Dim conOpt As iToken = TryCast(c, iToken)
+                If conOpt IsNot Nothing Then
+                    Try
+                        Dim optFormatted As optionFormatted = TryCast(c, optionFormatted)
+                        If optFormatted IsNot Nothing Then
+                            optFormatted.saveOption(My.Settings.Item(c.Name))
+                        End If
+                    Catch ex As Exception
+                        Debug.WriteLine("!SETTINGS EXCEPTION! " & ex.ToString)
+                    End Try
+                End If
+
+                If c.HasChildren Then
+                    loadSettings(c)
+                End If
+            End If
+        Next
+    End Sub
+
+
     Private Sub testOptions(ByVal parentControl As Control)
         If Not Debugger.IsAttached Then Exit Sub
 
@@ -456,8 +532,9 @@ Imports System.ComponentModel
                         rText.AppendText(String.Format("{0}{0}""Files"": [", vbTab))
                         For Each fname As String In conOpt.fileInfo
                             tempList.Add("""" & fname & """")
-                        Next
+                        Next                        
                         rText.AppendText(String.Join(", ", tempList) & "]," & vbNewLine)
+                        rText.AppendText(String.Format("{0}{0}""Files Overridden"": ""{1}"",", vbTab, IIf(conOpt.hasFileOverrides, "true", "false")) & vbNewLine)
 
                         If conOpt.tagItems IsNot Nothing AndAlso conOpt.tagItems.Count > 0 Then
                             tempList.Clear() : temp = ""
@@ -477,7 +554,7 @@ Imports System.ComponentModel
                         If conOpt.comboItems IsNot Nothing AndAlso conOpt.comboItems.Count > 0 Then
                             tempList.Clear()
                             temp = ""
-                            rText.AppendText(ControlChars.Tab & ControlChars.Tab & """DropDownItems"": [" & vbNewLine)
+                            rText.AppendText(vbTab & vbTab & """DropDownItems"": [" & vbNewLine)
                             For Each cbi As comboItem In conOpt.comboItems
                                 temp = String.Format("{0}{0}{0}{{", vbTab) & vbNewLine
                                 temp &= String.Format("{0}{0}{0}""Display"": ""{1}"",", vbTab, cbi.display) & vbNewLine
@@ -488,6 +565,14 @@ Imports System.ComponentModel
                             rText.AppendText(String.Join(", " & vbNewLine, tempList) & vbNewLine)
                             rText.AppendText(String.Format("{0}{0}],", vbTab) & vbNewLine)
                         End If
+
+                        If conOpt.patternInfo.Key <> "" Then
+                            rText.AppendText(String.Format("{0}{0}""Pattern"": [", vbTab) & vbNewLine)
+                            rText.AppendText(String.Format("{0}{0}{0}""Find Pattern"": ""{1}"",", vbTab, conOpt.patternInfo.Key) & vbNewLine)
+                            rText.AppendText(String.Format("{0}{0}{0}""Replace Pattern"": ""{1}""", vbTab, conOpt.patternInfo.Value) & vbNewLine)
+                            rText.AppendText(String.Format("{0}{0}],", vbTab) & vbNewLine)
+                        End If
+
 
                         rText.AppendText(vbTab & "}," & vbNewLine)
                     Catch ex As Exception
@@ -553,7 +638,7 @@ Imports System.ComponentModel
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlaybleFort, 0).Width                
                 Dim btnPlayFort As New optionSingleReplaceButton
                 btnPlayFort.Name = "optBtnPlayFort" & civName
-                buildPlayableOption(btnPlayFort, civLabel.entityFileName, civLabel.fortTag)
+                buildPlayableOption(btnPlayFort, civLabel.entityFileName) ', civLabel.fortTag)
                 formatCivTableControl(btnPlayFort, intCtrlWidth, intCtrlHeight)
                 Me.tableLayoutCivs.Controls.Add(btnPlayFort, idxPlaybleFort, idxRow)
 
@@ -561,7 +646,7 @@ Imports System.ComponentModel
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlayableAdv, 0).Width
                 Dim btnPlayAdv As New optionSingleReplaceButton
                 btnPlayAdv.Name = "optBtnPlayFort" & civName
-                buildPlayableOption(btnPlayAdv, civLabel.entityFileName, civLabel.advTag)
+                buildPlayableOption(btnPlayAdv, civLabel.entityFileName) ', civLabel.advTag)
                 formatCivTableControl(btnPlayAdv, intCtrlWidth, intCtrlHeight)
                 Me.tableLayoutCivs.Controls.Add(btnPlayAdv, idxPlayableAdv, idxRow)
 
@@ -606,7 +691,7 @@ Imports System.ComponentModel
                 Dim cbSkills As optionComboPatternToken = New optionComboPatternToken
                 cbSkills.Name = "optCbPatternSkills" & civName
                 formatCivTableControl(cbSkills, intCtrlWidth, intCtrlHeight)
-                buildSkillOption(cbSkills, civLabel.creatureFileName, civLabel.skillsTag)
+                buildSkillOption(cbSkills, civLabel.skillsTag) 'civLabel.creatureFileName,
                 Me.tableLayoutCivs.Controls.Add(cbSkills, idxSkills, idxRow)
             End If
 
@@ -621,27 +706,27 @@ Imports System.ComponentModel
         c.Anchor = AnchorStyles.Top
     End Sub
 
-    Private Sub buildPlayableOption(ByRef btn As optionSingleReplaceButton, ByVal entityFileName As String, ByVal tag As String)
+    Private Sub buildPlayableOption(ByRef btn As optionSingleReplaceButton, ByVal tag As String)
         If tag = "" Then
             btn.Enabled = False
         Else
             btn.options.enabledValue = String.Format("YES{0}[", tag)
             btn.options.disabledValue = String.Format("!NO{0}!", tag)
-            btn.options.fileManager.fileNames = New List(Of String)({entityFileName})
+            'btn.options.fileManager.fileNames = New List(Of String)({entityFileName})
         End If
 
         btn.ImageAlign = ContentAlignment.MiddleCenter
         btn.Text = ""
     End Sub
 
-    Private Sub buildSkillOption(ByRef cb As optionComboPatternToken, ByVal creatureFileName As String, ByVal tag As String)
+    Private Sub buildSkillOption(ByRef cb As optionComboPatternToken, ByVal tag As String)
         Dim skillComboItems As New comboItemCollection
         For i As Integer = 0 To 15
             skillComboItems.Add(New comboItem(CStr(i), CStr(i)))
         Next
 
         cb.options.itemList = skillComboItems
-        cb.options.fileManager.fileNames = New List(Of String)({creatureFileName})
+        'cb.options.fileManager.fileNames = New List(Of String)({creatureFileName})
         If tag Is Nothing OrElse tag.Trim <> "" Then
             cb.pattern = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & "\b)"
             cb.replace = "${1}${value}${2}"

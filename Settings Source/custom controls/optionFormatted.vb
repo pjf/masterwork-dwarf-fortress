@@ -59,6 +59,13 @@ Public Class optionFormatted
         m_opt.valueUpdatingPaused = False
     End Sub
 
+    Public Sub saveOption(ByVal newValue As Object)
+        If m_opt.valueUpdatingPaused Or Me.DesignMode Then Exit Sub
+        Me.Text = CStr(newValue)
+        m_opt.saveOption()
+        m_opt.valueUpdatingPaused = False
+    End Sub
+
     Public Property options As optionSingle
         Get
             Return m_opt
@@ -123,5 +130,13 @@ Public Class optionFormatted
 
     Public Function tagItems() As rawTokenCollection Implements iExportInfo.tagItems
         Return m_opt.optionTags
+    End Function
+
+    Public Function hasFileOverrides() As Boolean Implements iExportInfo.hasFileOverrides
+        Return m_opt.fileManager.isOverriden
+    End Function
+
+    Public Function patternInfo() As KeyValuePair(Of String, String) Implements iExportInfo.patternInfo
+        Return New KeyValuePair(Of String, String)("", "")
     End Function
 End Class

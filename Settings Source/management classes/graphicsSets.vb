@@ -76,6 +76,10 @@ Public Class graphicsSets
                     Dim dfPath As String = IO.Path.Combine(globals.m_dwarfFortressRootDir, "raw")
                     If fsp.DirectoryExists(mwPath) And fsp.DirectoryExists(dfPath) Then
                         fsp.CopyDirectory(mwPath, dfPath, True)
+                        Dim gFilePaths As List(Of String) = IO.Directory.GetFiles(mwPath).ToList
+                        For Each fi As IO.FileInfo In globals.m_dfRaws.Keys.Where(Function(f As IO.FileInfo) gFilePaths.Contains(f.Name))
+                            globals.m_dfRaws.Item(fi) = readFile(fi.FullName, False)
+                        Next
                     Else
                         MsgBox("Invalid paths for graphics pack raws.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
                     End If

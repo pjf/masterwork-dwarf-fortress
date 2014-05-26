@@ -82,5 +82,13 @@ Public Class optionComboBoxToken
     Public Function tagItems() As rawTokenCollection Implements iExportInfo.tagItems
         Return m_opt.optionTags
     End Function
+
+    Public Function hasFileOverrides() As Boolean Implements iExportInfo.hasFileOverrides
+        Return m_opt.fileManager.isOverriden
+    End Function
+
+    Public Function patternInfo() As KeyValuePair(Of String, String) Implements iExportInfo.patternInfo
+        Return New KeyValuePair(Of String, String)("", "")
+    End Function
 End Class
 

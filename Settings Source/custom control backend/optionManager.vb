@@ -117,7 +117,7 @@ Public Class optionManager
                     retValue = "YES"
                 End If
             Else
-                'in this case we're looking token value(s) within multiple files. 
+                'in this case we're looking for token value(s) within multiple files. 
                 'we're only looking to return a single value however, so return the first one
                 Dim pattern As String = String.Format("(\[" & tokens.Item(0).tokenName & ":)(?<value>\w+)\]")
                 Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)

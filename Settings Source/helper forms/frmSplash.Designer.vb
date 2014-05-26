@@ -47,7 +47,7 @@ Partial Class frmSplash
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Loading..."
         '
-        'splash
+        'frmSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -61,13 +61,12 @@ Partial Class frmSplash
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "splash"
+        Me.Name = "frmSplash"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "splash"
-        Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
