@@ -81,13 +81,6 @@ Public Class optionBase
     Public ReadOnly Property optionTags As rawTokenCollection
         Get
             Return m_tokens
-            'Dim idt As String = ControlChars.Tab & ControlChars.Tab
-            'Dim br As String = vbCrLf
-            'Dim strInfo As New List(Of String)
-            'For Each t As rawToken In m_tokens
-            '    strInfo.Add(IIf(t.tokenName <> "", "Name: " & t.tokenName & br & idt, "") & "{ON} " & t.optionOnValue & br & idt & "{OFF} " & t.optionOffValue & br)
-            'Next
-            'Return strInfo
         End Get
     End Property
 

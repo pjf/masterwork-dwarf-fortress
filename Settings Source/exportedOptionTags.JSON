@@ -4,6 +4,7 @@
 		"Text": "Skills",
 		"Tooltip": "You can have your dwarves start/arrive without any labor types enabled here by setting this to NO.  You can also set it to SKILLS to make the labor list set by skill, or BY_UNIT_TYPE to have it done by overall unit type.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "SET_LABOR_LISTS",
@@ -31,6 +32,7 @@
 		"Text": "Temperature",
 		"Tooltip": "Turns temperature on or off. OFF helps FPS extremely, although robs you of many game features.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "TEMPERATURE",
@@ -44,6 +46,7 @@
 		"Text": "Weather",
 		"Tooltip": "Turn weather on or off. Rain might be useful to fill ponds. OFF helps FPS.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "WEATHER",
@@ -57,6 +60,7 @@
 		"Text": "Cave-ins",
 		"Tooltip": "Turn cave-in physics on or off. No more injured miners, but also no cave-in traps... your choice.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVEINS",
@@ -70,6 +74,7 @@
 		"Text": "Invaders",
 		"Tooltip": "Turn invaders completely on or off. Might rob you of !FUN!",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "INVADERS",
@@ -83,6 +88,7 @@
 		"Text": "Liquid Depth",
 		"Tooltip": "Turn Liquid depth on or off, as you like.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "SHOW_FLOW_AMOUNTS",
@@ -96,6 +102,7 @@
 		"Text": "Adventurer Center",
 		"Tooltip": "Decides if the camera always centers on your adventurer or not.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "ADVENTURER_ALWAYS_CENTER",
@@ -109,6 +116,7 @@
 		"Text": "Adventurer Traps",
 		"Tooltip": "Decides if you adventurer is affected by traps or not.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "ADVENTURER_TRAPS",
@@ -122,6 +130,7 @@
 		"Text": "No Pet Coffins",
 		"Tooltip": "Enable to disallow pets from coffin burial as the default option.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "COFFIN_NO_PETS_DEFAULT",
@@ -135,6 +144,7 @@
 		"Text": "200",
 		"Tooltip": "0 - 9999  Set the amount of maximum dwarves. Mind that min. 2 migrant waves will appear.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "POPULATION_CAP",
@@ -148,6 +158,7 @@
 		"Text": "100:1000",
 		"Tooltip": "####:####  The first number is an absolute cap on babies + children. The second is a percentage of the current number of adults.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "BABY_CHILD_CAP",
@@ -158,9 +169,10 @@
 	},
 	{
 		"Name": "optCbAutoSave",
-		"Text": "Seasonal",
+		"Text": "Never",
 		"Tooltip": "",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "AUTOSAVE",
@@ -188,6 +200,7 @@
 		"Text": "Auto-Save Pause",
 		"Tooltip": "Pauses after auto-saving.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "AUTOSAVE_PAUSE",
@@ -201,6 +214,7 @@
 		"Text": "Auto-Backup Saves",
 		"Tooltip": "These saves will be stored in a new folder, automatically",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "AUTOBACKUP",
@@ -214,6 +228,7 @@
 		"Text": "Initial Save",
 		"Tooltip": "Save at embark.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "INITIAL_SAVE",
@@ -227,6 +242,7 @@
 		"Text": "Compress Saves",
 		"Tooltip": "Compress saves to reduce file sizes.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "COMPRESSED_SAVES",
@@ -240,6 +256,7 @@
 		"Text": "Pause on Load",
 		"Tooltip": "Paused when you load an old game.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "PAUSE_ON_LOAD",
@@ -253,6 +270,7 @@
 		"Text": "Transform Msg.",
 		"Tooltip": "Stops the game and tells you whenever a creature transforms. Great for spotting important events, but might slow down the game flow. Your choice, of course.",
 		"Files": ["announcements.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -266,6 +284,7 @@
 		"Text": "Digging Stop",
 		"Tooltip": "Turn this OFF to remove the pause/recenter when you find damp/hot stones.",
 		"Files": ["announcements.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -279,6 +298,7 @@
 		"Text": "5",
 		"Tooltip": "0 - 999999  This controls the number of milliseconds between macro instructions.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "MACRO_MS",
@@ -289,9 +309,10 @@
 	},
 	{
 		"Name": "optCbWindow",
-		"Text": "No",
+		"Text": "Yes",
 		"Tooltip": "Switches from windowed to full-screen mode.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "WINDOWED",
@@ -319,6 +340,7 @@
 		"Text": "Normal",
 		"Tooltip": "Determines how much processor time should be allocated to Dwarf Fortress.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "PRIORITY",
@@ -358,6 +380,7 @@
 		"Text": "Intro Movie",
 		"Tooltip": "Turns the intro video on or off. OFF leads to a faster start-up.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "INTRO",
@@ -371,6 +394,7 @@
 		"Text": "Embark Warning",
 		"Tooltip": "If enabled, shows a warning before every embark, even if there are no issues.",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "EMBARK_WARNING_ALWAYS",
@@ -384,6 +408,7 @@
 		"Text": "3:3",
 		"Tooltip": "#:# (# is 1-16)  For a 1:1 embark, nanofortress must be applied!",
 		"Files": ["d_init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "EMBARK_RECTANGLE",
@@ -397,6 +422,7 @@
 		"Text": "2D",
 		"Tooltip": "2D needed for TrueType, STANDARD needed for Rendermax.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "PRINT_MODE",
@@ -440,6 +466,7 @@
 		"Text": "Creature Sprites",
 		"Tooltip": "Adds custom sprites for creatures. Disable to play with characters only.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "GRAPHICS",
@@ -453,6 +480,7 @@
 		"Text": "Truetype Font",
 		"Tooltip": "Toggle Truetype On/Off. You can do this with F12 while the game is running as well.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "TRUETYPE",
@@ -466,6 +494,7 @@
 		"Text": "Rendermax",
 		"Tooltip": "Enables the dfhack plugin. You can always disable it while playing with 'rendermax disable' in your dfhack window. Currently you can only have either Rendermax or TTF active and it requires print mode STANDARD.",
 		"Files": ["dfhack.init"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -479,10 +508,11 @@
 		"Text": "Sound",
 		"Tooltip": "Turn sound on or off.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "SOUND",
-			"On": "",
+			"On": "YES",
 			"Off": "",
 			}
 		],
@@ -492,6 +522,7 @@
 		"Text": "255",
 		"Tooltip": "0 - 255",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "VOLUME",
@@ -505,6 +536,7 @@
 		"Text": "FPS Display",
 		"Tooltip": "Shows the current FPS on top left.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "FPS",
@@ -518,6 +550,7 @@
 		"Text": "30",
 		"Tooltip": "0 - 9999  How fast the game visually updates.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "G_FPS_CAP",
@@ -531,6 +564,7 @@
 		"Text": "150",
 		"Tooltip": "0 - 9999  How fast the game runs.",
 		"Files": ["init.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "FPS_CAP",
@@ -544,6 +578,7 @@
 		"Text": "",
 		"Tooltip": "Adds playable Dwarven Civ.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -557,6 +592,7 @@
 		"Text": "",
 		"Tooltip": "Adds taiga orcs to the world.",
 		"Files": ["entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -570,6 +606,7 @@
 		"Text": "",
 		"Tooltip": "Adds a cutebold civilization to the world.",
 		"Files": ["entity_kobold_camp.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -583,6 +620,7 @@
 		"Text": "",
 		"Tooltip": "Adds gnomes to trade with to your game. They will arrive late in the game and only in summer.",
 		"Files": ["entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -596,6 +634,7 @@
 		"Text": "",
 		"Tooltip": "Add foul sorcerers that fight you with magic.",
 		"Files": ["entity_warlock.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -605,166 +644,11 @@
 		],
 	},
 	{
-		"Name": "optBtnHumanRace",
-		"Text": "",
-		"Tooltip": "Adds humans to trade with to your game.",
-		"Files": ["entity_human.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESHUMANRACE[",
-			"Off": "!NOHUMANRACE!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnElfRace",
-		"Text": "",
-		"Tooltip": "Adds elves to trade with to your game.",
-		"Files": ["creature_a_pet_elffort.txt", "entity_elf.txt", "entity_elffort.txt", "plant_elffort.txt", "** Affects graphic packs! **"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESELFRACE[",
-			"Off": "!NOELFRACE!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnDrowRace",
-		"Text": "",
-		"Tooltip": "Adds drow to trade with to your game.",
-		"Files": ["entity_drow.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESDROW[",
-			"Off": "!NODROW!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnGoblins",
-		"Text": "",
-		"Tooltip": "You want to be ambushed by little goblins ? Here you go.",
-		"Files": ["entity_goblin.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESGOBLIN[",
-			"Off": "!NOGOBLIN!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnFrostGiants",
-		"Text": "",
-		"Tooltip": "Bored and ready for a challenge ? Let the Giants invade your base.",
-		"Files": ["entity_frost_giant.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESFROSTGIANT[",
-			"Off": "!NOFROSTGIANT!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnAutomatons",
-		"Text": "",
-		"Tooltip": "Add a relentless metal race that fights with adv. ranged weapons.",
-		"Files": ["entity_automaton.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESAUTOMATON[",
-			"Off": "!NOAUTOMATON!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnGremlins",
-		"Text": "",
-		"Tooltip": "Be careful in the caverns...",
-		"Files": ["entity_gremlin.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESGREMLIN[",
-			"Off": "!NOGREMLIN!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnTroglodytes",
-		"Text": "",
-		"Tooltip": "More ambushers await you in the deep...",
-		"Files": ["entity_troglodyte.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESTROGLODYTE[",
-			"Off": "!NOTROGLODYTE!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnAntmen",
-		"Text": "",
-		"Tooltip": "Antmen camp in large numbers in the caverns...",
-		"Files": ["entity_antmen.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESANTMEN[",
-			"Off": "!NOANTMEN!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnEvilDwarves",
-		"Text": "",
-		"Tooltip": "Adds a dwarven invader race to the game.",
-		"Files": ["entity_dwarf_evil.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESDWARFEVIL[",
-			"Off": "!NODWARFEVIL!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnEvilHumans",
-		"Text": "",
-		"Tooltip": "Adds a human invader race to the game.",
-		"Files": ["entity_human_evil.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESHUMANEVIL[",
-			"Off": "!NOHUMANEVIL!",
-			}
-		],
-	},
-	{
-		"Name": "optBtnEvilDrow",
-		"Text": "",
-		"Tooltip": "Adds a drow invader race to the game.",
-		"Files": ["entity_drow_evil.txt"],
-		"Tags": [
-			{
-			"TokenName": "",
-			"On": "YESDROWEVIL[",
-			"Off": "!NODROWEVIL!",
-			}
-		],
-	},
-	{
 		"Name": "optBtnEvilElves",
 		"Text": "",
 		"Tooltip": "Adds an elven  invader race to the game.",
 		"Files": ["entity_elf_evil.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -774,10 +658,193 @@
 		],
 	},
 	{
+		"Name": "optBtnEvilDrow",
+		"Text": "",
+		"Tooltip": "Adds a drow invader race to the game.",
+		"Files": ["entity_drow_evil.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESDROWEVIL[",
+			"Off": "!NODROWEVIL!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnEvilHumans",
+		"Text": "",
+		"Tooltip": "Adds a human invader race to the game.",
+		"Files": ["entity_human_evil.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESHUMANEVIL[",
+			"Off": "!NOHUMANEVIL!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnEvilDwarves",
+		"Text": "",
+		"Tooltip": "Adds a dwarven invader race to the game.",
+		"Files": ["entity_dwarf_evil.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESDWARFEVIL[",
+			"Off": "!NODWARFEVIL!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnAntmen",
+		"Text": "",
+		"Tooltip": "Antmen camp in large numbers in the caverns...",
+		"Files": ["entity_antmen.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESANTMEN[",
+			"Off": "!NOANTMEN!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnTroglodytes",
+		"Text": "",
+		"Tooltip": "More ambushers await you in the deep...",
+		"Files": ["entity_troglodyte.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESTROGLODYTE[",
+			"Off": "!NOTROGLODYTE!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnGremlins",
+		"Text": "",
+		"Tooltip": "Be careful in the caverns...",
+		"Files": ["entity_gremlin.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESGREMLIN[",
+			"Off": "!NOGREMLIN!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnAutomatons",
+		"Text": "",
+		"Tooltip": "Add a relentless metal race that fights with adv. ranged weapons.",
+		"Files": ["entity_automaton.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESAUTOMATON[",
+			"Off": "!NOAUTOMATON!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnFrostGiants",
+		"Text": "",
+		"Tooltip": "Bored and ready for a challenge ? Let the Giants invade your base.",
+		"Files": ["entity_frost_giant.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESFROSTGIANT[",
+			"Off": "!NOFROSTGIANT!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnGoblins",
+		"Text": "",
+		"Tooltip": "You want to be ambushed by little goblins ? Here you go.",
+		"Files": ["entity_goblin.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESGOBLIN[",
+			"Off": "!NOGOBLIN!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnDrowRace",
+		"Text": "",
+		"Tooltip": "Adds drow to trade with to your game.",
+		"Files": ["entity_drow.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESDROW[",
+			"Off": "!NODROW!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnElfRace",
+		"Text": "",
+		"Tooltip": "Adds elves to trade with to your game.",
+		"Files": ["creature_a_pet_elffort.txt", "entity_elf.txt", "entity_elffort.txt", "plant_elffort.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESELFRACE[",
+			"Off": "!NOELFRACE!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnHumanRace",
+		"Text": "",
+		"Tooltip": "Adds humans to trade with to your game.",
+		"Files": ["entity_human.txt"],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESHUMANRACE[",
+			"Off": "!NOHUMANRACE!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnSuccubi",
+		"Text": "",
+		"Tooltip": "",
+		"Files": [],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESFOOCCUBUS[",
+			"Off": "!NOFOOCCUBUS!",
+			}
+		],
+	},
+	{
 		"Name": "optBtnPlayFortDefault",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -791,6 +858,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -804,6 +872,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -853,6 +922,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -902,6 +972,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -915,6 +986,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -940,12 +1012,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsDefault",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1019,12 +1096,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_DWARF\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortOrcfortTaigaorc",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1038,6 +1120,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1051,6 +1134,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -1100,6 +1184,7 @@
 		"Text": "Early",
 		"Tooltip": "",
 		"Files": ["entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -1149,6 +1234,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1162,6 +1248,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1187,12 +1274,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsOrcfortTaigaorc",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1266,12 +1358,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_TAIGAORC\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortKoboldCamp",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_kobold_camp.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1285,6 +1382,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_kobold_camp.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1298,6 +1396,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_kobold_camp.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -1347,6 +1446,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_kobold_camp.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -1396,6 +1496,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_kobold_camp.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1409,6 +1510,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_kobold_camp.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1434,12 +1536,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsKoboldCamp",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_kobold_camp.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1513,12 +1620,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_KOBOLDCAMP\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortGnome",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1532,6 +1644,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1545,6 +1658,7 @@
 		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_gnome.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -1594,6 +1708,7 @@
 		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_gnome.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -1643,6 +1758,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_gnome.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1656,6 +1772,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_gnome.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1681,12 +1798,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsGnome",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1760,12 +1882,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_GNOME\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortWarlock",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_warlock.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1779,6 +1906,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_warlock.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1792,6 +1920,7 @@
 		"Text": "Early",
 		"Tooltip": "",
 		"Files": ["entity_warlock.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -1841,6 +1970,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_warlock.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -1890,6 +2020,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_warlock.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1903,6 +2034,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_warlock.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -1928,12 +2060,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsWarlock",
 		"Text": "0",
 		"Tooltip": "",
-		"Files": ["creature_warlock_civ.txt"],
+		"Files": ["creature_masterwork.txt", "creature_warlock_civ.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2007,12 +2144,279 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_WARLOCK\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
+	},
+	{
+		"Name": "optBtnPlayFortFooccubus",
+		"Text": "",
+		"Tooltip": "",
+		"Files": [],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESCIVFOOCCUBUS[",
+			"Off": "!NOCIVFOOCCUBUS!",
+			}
+		],
+	},
+	{
+		"Name": "optBtnPlayFortFooccubus",
+		"Text": "",
+		"Tooltip": "",
+		"Files": [],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "YESADVFOOCCUBUS[",
+			"Off": "!NOADVFOOCCUBUS!",
+			}
+		],
+	},
+	{
+		"Name": "optCbMultiCaravansFooccubus",
+		"Text": "",
+		"Tooltip": "",
+		"Files": ["entity_fooccubus.txt"],
+		"Files Overridden": "true",
+		"Tags": [
+			{
+			"TokenName": "PROGRESS_TRIGGER_POPULATION",
+			"On": "3",
+			"Off": "",
+			}, 
+			{
+			"TokenName": "PROGRESS_TRIGGER_PRODUCTION",
+			"On": "3",
+			"Off": "",
+			}, 
+			{
+			"TokenName": "PROGRESS_TRIGGER_TRADE",
+			"On": "3",
+			"Off": "",
+			}
+		],
+		"DropDownItems": [
+			{
+			"Display": "Never",
+			"Value": "0",
+			}, 
+			{
+			"Display": "Very Early",
+			"Value": "1",
+			}, 
+			{
+			"Display": "Early",
+			"Value": "2",
+			}, 
+			{
+			"Display": "Default",
+			"Value": "3",
+			}, 
+			{
+			"Display": "Late",
+			"Value": "4",
+			}, 
+			{
+			"Display": "Very Late",
+			"Value": "5",
+			}
+		],
+	},
+	{
+		"Name": "optCbMultiInvasionsFooccubus",
+		"Text": "",
+		"Tooltip": "",
+		"Files": ["entity_fooccubus.txt"],
+		"Files Overridden": "true",
+		"Tags": [
+			{
+			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
+			"On": "3",
+			"Off": "",
+			}, 
+			{
+			"TokenName": "PROGRESS_TRIGGER_PROD_SIEGE",
+			"On": "3",
+			"Off": "",
+			}, 
+			{
+			"TokenName": "PROGRESS_TRIGGER_TRADE_SIEGE",
+			"On": "3",
+			"Off": "",
+			}
+		],
+		"DropDownItems": [
+			{
+			"Display": "Never",
+			"Value": "0",
+			}, 
+			{
+			"Display": "Very Early",
+			"Value": "1",
+			}, 
+			{
+			"Display": "Early",
+			"Value": "2",
+			}, 
+			{
+			"Display": "Default",
+			"Value": "3",
+			}, 
+			{
+			"Display": "Late",
+			"Value": "4",
+			}, 
+			{
+			"Display": "Very Late",
+			"Value": "5",
+			}
+		],
+	},
+	{
+		"Name": "optBtnGoodFooccubus",
+		"Text": "",
+		"Tooltip": "",
+		"Files": ["entity_fooccubus.txt"],
+		"Files Overridden": "true",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "!BABYSNATCHER!",
+			"Off": "[BABYSNATCHER]",
+			}
+		],
+	},
+	{
+		"Name": "optCbPatternMatsFooccubus",
+		"Text": "",
+		"Tooltip": "",
+		"Files": ["entity_fooccubus.txt"],
+		"Files Overridden": "true",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "",
+			"Off": "",
+			}
+		],
+		"DropDownItems": [
+			{
+			"Display": "Default",
+			"Value": "DEFAULT",
+			}, 
+			{
+			"Display": "Weak",
+			"Value": "WEAK",
+			}, 
+			{
+			"Display": "Normal",
+			"Value": "NORMAL",
+			}, 
+			{
+			"Display": "Strong",
+			"Value": "STRONG",
+			}
+		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
+	},
+	{
+		"Name": "optCbPatternSkillsFooccubus",
+		"Text": "",
+		"Tooltip": "",
+		"Files": [],
+		"Files Overridden": "false",
+		"Tags": [
+			{
+			"TokenName": "",
+			"On": "",
+			"Off": "",
+			}
+		],
+		"DropDownItems": [
+			{
+			"Display": "0",
+			"Value": "0",
+			}, 
+			{
+			"Display": "1",
+			"Value": "1",
+			}, 
+			{
+			"Display": "2",
+			"Value": "2",
+			}, 
+			{
+			"Display": "3",
+			"Value": "3",
+			}, 
+			{
+			"Display": "4",
+			"Value": "4",
+			}, 
+			{
+			"Display": "5",
+			"Value": "5",
+			}, 
+			{
+			"Display": "6",
+			"Value": "6",
+			}, 
+			{
+			"Display": "7",
+			"Value": "7",
+			}, 
+			{
+			"Display": "8",
+			"Value": "8",
+			}, 
+			{
+			"Display": "9",
+			"Value": "9",
+			}, 
+			{
+			"Display": "10",
+			"Value": "10",
+			}, 
+			{
+			"Display": "11",
+			"Value": "11",
+			}, 
+			{
+			"Display": "12",
+			"Value": "12",
+			}, 
+			{
+			"Display": "13",
+			"Value": "13",
+			}, 
+			{
+			"Display": "14",
+			"Value": "14",
+			}, 
+			{
+			"Display": "15",
+			"Value": "15",
+			}
+		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_SUCCUBUS\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortHuman",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_human.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2026,6 +2430,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_human.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -2075,6 +2480,7 @@
 		"Text": "Late",
 		"Tooltip": "",
 		"Files": ["entity_human.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -2124,6 +2530,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_human.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2137,6 +2544,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_human.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2162,12 +2570,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsHuman",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2241,12 +2654,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_HUMAN\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortElf",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_elf.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2260,6 +2678,7 @@
 		"Text": "Early",
 		"Tooltip": "",
 		"Files": ["entity_elf.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -2309,6 +2728,7 @@
 		"Text": "Late",
 		"Tooltip": "",
 		"Files": ["entity_elf.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -2358,6 +2778,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_elf.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2371,6 +2792,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_elf.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2396,12 +2818,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsElf",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2475,12 +2902,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_ELF\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortDrow",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_drow.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2494,6 +2926,7 @@
 		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_drow.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -2543,6 +2976,7 @@
 		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_drow.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -2592,6 +3026,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_drow.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2605,6 +3040,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_drow.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2630,12 +3066,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsDrow",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_masterwork.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2709,12 +3150,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_DROW\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortGoblin",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_goblin.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2728,6 +3174,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_goblin.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -2777,6 +3224,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_goblin.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -2826,6 +3274,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_goblin.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2839,6 +3288,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_goblin.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2864,12 +3314,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsGoblin",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2943,12 +3398,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_GOBLIN\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortFrostGiant",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_frost_giant.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -2962,6 +3422,7 @@
 		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_frost_giant.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -3011,6 +3472,7 @@
 		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_frost_giant.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -3060,6 +3522,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_frost_giant.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3073,6 +3536,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_frost_giant.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3098,12 +3562,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsFrostGiant",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_masterwork.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3177,12 +3646,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_FROST\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortAutomaton",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_automaton.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3196,6 +3670,7 @@
 		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_automaton.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -3245,6 +3720,7 @@
 		"Text": "Very Late",
 		"Tooltip": "",
 		"Files": ["entity_automaton.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -3294,6 +3770,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_automaton.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3307,6 +3784,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_automaton.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3332,12 +3810,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsAutomaton",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_masterwork.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3411,12 +3894,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_AUTO\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortGremlin",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_gremlin.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3430,6 +3918,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_gremlin.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -3479,6 +3968,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_gremlin.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -3528,6 +4018,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_gremlin.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3541,6 +4032,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_gremlin.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3566,12 +4058,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsGremlin",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3645,12 +4142,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_GREMLIN\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortTroglodyte",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_troglodyte.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3664,6 +4166,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_troglodyte.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -3713,6 +4216,7 @@
 		"Text": "Early",
 		"Tooltip": "",
 		"Files": ["entity_troglodyte.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -3762,6 +4266,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_troglodyte.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3775,6 +4280,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_troglodyte.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3800,12 +4306,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsTroglodyte",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_subterranean.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3879,12 +4390,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_TROG\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortAntmen",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_antmen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -3898,6 +4414,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_antmen.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -3947,6 +4464,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_antmen.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -3996,6 +4514,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_antmen.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4009,6 +4528,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_antmen.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4034,12 +4554,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsAntmen",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_subterranean.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4113,12 +4638,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_ANTMEN\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortDwarfEvil",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_dwarf_evil.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4132,6 +4662,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_dwarf_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -4181,6 +4712,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_dwarf_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -4230,6 +4762,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_dwarf_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4243,6 +4776,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_dwarf_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4268,12 +4802,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsDwarfEvil",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_masterwork_eviltwins.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4347,12 +4886,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_EVILDWARF\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortHumanEvil",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_human_evil.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4366,6 +4910,7 @@
 		"Text": "Early",
 		"Tooltip": "",
 		"Files": ["entity_human_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -4415,6 +4960,7 @@
 		"Text": "Early",
 		"Tooltip": "",
 		"Files": ["entity_human_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -4464,6 +5010,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_human_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4477,6 +5024,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_human_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4502,12 +5050,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsHumanEvil",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_masterwork_eviltwins.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4581,12 +5134,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_EVILHUMAN\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortDrowEvil",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_drow_evil.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4600,6 +5158,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_drow_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -4649,6 +5208,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_drow_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -4698,6 +5258,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_drow_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4711,6 +5272,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_drow_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4736,12 +5298,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsDrowEvil",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_masterwork_eviltwins.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4815,12 +5382,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_EVILDROW\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnPlayFortElfEvil",
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_elf_evil.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4834,6 +5406,7 @@
 		"Text": "Very Early",
 		"Tooltip": "",
 		"Files": ["entity_elf_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POPULATION",
@@ -4883,6 +5456,7 @@
 		"Text": "Early",
 		"Tooltip": "",
 		"Files": ["entity_elf_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "PROGRESS_TRIGGER_POP_SIEGE",
@@ -4932,6 +5506,7 @@
 		"Text": "",
 		"Tooltip": "",
 		"Files": ["entity_elf_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4945,6 +5520,7 @@
 		"Text": "Default",
 		"Tooltip": "",
 		"Files": ["entity_elf_evil.txt"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -4970,12 +5546,17 @@
 			"Value": "STRONG",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]",
+			"Replace Pattern": "${1}${value}]"
+		],
 	},
 	{
 		"Name": "optCbPatternSkillsElfEvil",
 		"Text": "0",
 		"Tooltip": "",
 		"Files": ["creature_masterwork_eviltwins.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5049,12 +5630,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_EVILELF\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnDomesticPets",
 		"Text": "Domestic Pets",
 		"Tooltip": "Adds new pets available through trading and at embark.",
 		"Files": ["creature_pet_masterwork.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5068,6 +5654,7 @@
 		"Text": "Animals",
 		"Tooltip": "",
 		"Files": ["creature_bug_slug_new.txt", "creature_desert_new.txt", "creature_fanciful_masterwork.txt", "creature_ff.txt", "creature_monster_masterwork.txt", "creature_mountain_new.txt", "creature_pet_armored.txt", "creature_riverlakepool_new.txt", "creature_small_mammal_new.txt", "creature_temperate_new.txt", "creature_tropical_new.txt", "creature_tundra_taiga_new.txt", "creature_vermin_masterwork.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5081,6 +5668,7 @@
 		"Text": "Vermin",
 		"Tooltip": "Adds custom vermin. Some spin webs and are useful, others eat your food away.",
 		"Files": ["creature_vermin_masterwork.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5094,6 +5682,7 @@
 		"Text": "Giant Animals",
 		"Tooltip": "Yes keeps giant animal versions in-game. NO removes them.",
 		"Files": ["c_variation_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5107,6 +5696,7 @@
 		"Text": "Megabeasts",
 		"Tooltip": "Adds 25 new semi/megabeasts to the game.",
 		"Files": ["creature_beasts_masterwork.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5120,6 +5710,7 @@
 		"Text": "Birds",
 		"Tooltip": "Adds or removes +100 bird species to the game, including animal man and giant versions.",
 		"Files": ["creature_birds.txt", "creature_birds_new.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5133,6 +5724,7 @@
 		"Text": "Fish",
 		"Tooltip": "Adds custom fish to pools, oceans and rivers.",
 		"Files": ["creature_fish_masterwork.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5146,6 +5738,7 @@
 		"Text": "Animalmen",
 		"Tooltip": "Yes keeps animal-man versions in-game. NO removes them.",
 		"Files": ["c_variation_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5159,6 +5752,7 @@
 		"Text": "Cavern Creatures",
 		"Tooltip": "Adds 70 new monsters to fight in the caverns.",
 		"Files": ["creature_cavern_masterwork.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5172,6 +5766,7 @@
 		"Text": "Surface Creatures",
 		"Tooltip": "Adds about 115  surface monsters to fight.",
 		"Files": ["creature_monster_masterwork.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5185,6 +5780,7 @@
 		"Text": "Demons",
 		"Tooltip": "Adds custom demons to fight in Hell.",
 		"Files": ["creature_hell_masterwork.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5198,6 +5794,7 @@
 		"Text": "Magical",
 		"Tooltip": "Adds about 35 magic-based and otherwise unrealistic creatures to the game.",
 		"Files": ["creature_food_ff.txt", "creature_magical_ff.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5211,6 +5808,7 @@
 		"Text": "0",
 		"Tooltip": "This sets the combat skills for the above races. Be careful not to underestimate the effects of higher skills!",
 		"Files": ["creature_fortdefense.txt", "creature_masterwork.txt", "creature_subterranean.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5284,12 +5882,17 @@
 			"Value": "15",
 			}
 		],
+		"Pattern": [
+			"Find Pattern": "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER\b)",
+			"Replace Pattern": "${1}${value}${2}"
+		],
 	},
 	{
 		"Name": "optBtnFdFrogmen",
 		"Text": "Frogmen",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5303,6 +5906,7 @@
 		"Text": "Hellfire Imps",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5316,6 +5920,7 @@
 		"Text": "Stranglers",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5329,6 +5934,7 @@
 		"Text": "Werewolves",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5342,6 +5948,7 @@
 		"Text": "Foul Blendecs",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5355,6 +5962,7 @@
 		"Text": "Serpentmen",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5368,6 +5976,7 @@
 		"Text": "White Tigermen",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5381,6 +5990,7 @@
 		"Text": "Beak Wolfs",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5394,6 +6004,7 @@
 		"Text": "Elephants",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5407,6 +6018,7 @@
 		"Text": "Ferric Elves",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_easy.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5420,6 +6032,7 @@
 		"Text": "Badgermen",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_medium.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5433,6 +6046,7 @@
 		"Text": "Pandashi",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_medium.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5446,6 +6060,7 @@
 		"Text": "Raptormen",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_medium.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5459,6 +6074,7 @@
 		"Text": "Furies",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_medium.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5472,6 +6088,7 @@
 		"Text": "Minotaurs",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_hard.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5485,6 +6102,7 @@
 		"Text": "Jotun",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_hard.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5498,6 +6116,7 @@
 		"Text": "Spider Fiends",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_hard.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5511,6 +6130,7 @@
 		"Text": "Nightwings",
 		"Tooltip": "Adds a Fortress Defense race to lay siege to your fortress.",
 		"Files": ["entity_fortdefense_hard.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5524,6 +6144,7 @@
 		"Text": "Steam Engine",
 		"Tooltip": "Creates power to be used in machines. Needs water and fuel to work.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5537,6 +6158,7 @@
 		"Text": "Machine Factory",
 		"Tooltip": "Build your own turrets, land mines and guardians. (BUGGY but cant be done better for the moment)",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5550,6 +6172,7 @@
 		"Text": "Liquid Spawner",
 		"Tooltip": "Unlocking the liquid spawner unlocks magma workshops as well. Can spawn water or magma.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5563,6 +6186,7 @@
 		"Text": "Coin Mint",
 		"Tooltip": "Mints large stacks of copper, silver or gold coins.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5576,6 +6200,7 @@
 		"Text": "Bonecarver",
 		"Tooltip": "Makes bone items and allows alternate metal productions.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5589,6 +6214,7 @@
 		"Text": "Stonecrafter",
 		"Tooltip": "Allows the creation of rock items. Great for the start.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5602,6 +6228,7 @@
 		"Text": "Gemcutter",
 		"Tooltip": "Allows the creation of gem items. Lets you cut big gems into smaller ones as well.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5615,6 +6242,7 @@
 		"Text": "Woodcrafter",
 		"Tooltip": "Uses wooden planks to create new items.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5628,6 +6256,7 @@
 		"Text": "Thatchery",
 		"Tooltip": "Allows the creation of furniture from plant materials, from wicker.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5641,6 +6270,7 @@
 		"Text": "Furniture Shop",
 		"Tooltip": "'Allow the creation of complete itemsets, made of rock, wood, bone or metal.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5654,6 +6284,7 @@
 		"Text": "Tailor",
 		"Tooltip": "Select specific silk, cloth, leather, shell, scale or chitin for clothing and armor.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5667,6 +6298,7 @@
 		"Text": "Chandler",
 		"Tooltip": "Creates torches and candles for the rendermax lighting creation buildings.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5680,6 +6312,7 @@
 		"Text": "Fletcher",
 		"Tooltip": "Makes special ammo and upgrades ranged weapons.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5693,6 +6326,7 @@
 		"Text": "Pottery",
 		"Tooltip": "Makes clay, fire-clay or kaolinite items, which need to be dried and fired before they can be used.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5706,6 +6340,7 @@
 		"Text": "Greater Dyery",
 		"Tooltip": "Allows dyeing of finished items. You can select the type and material one by one.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5719,6 +6354,7 @@
 		"Text": "Painter",
 		"Tooltip": "Colors furniture using dye, allows for easy color coding of your fort.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5732,6 +6368,7 @@
 		"Text": "Toolmaker",
 		"Tooltip": "Creates basic tools for advanced buildings. You will want to keep this building.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5745,6 +6382,7 @@
 		"Text": "Prison",
 		"Tooltip": "Lock away specific dwarves for a specific time.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5758,6 +6396,7 @@
 		"Text": "Colosseum",
 		"Tooltip": "Summon enemies to train your soldiers or fight for glory.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5771,6 +6410,7 @@
 		"Text": "Guildhall",
 		"Tooltip": "Dwarves can join guilds to get a 200% bonus in learn rate for fitting skills. If disabled, this removes all labor related castes!",
 		"Files": ["creature_standard.txt", "entity_default.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5784,6 +6424,7 @@
 		"Text": "Monastery",
 		"Tooltip": "Allows dwarves to join the religious castes and creates construction materials for temples. If disabled, this removes the religious castes!",
 		"Files": ["creature_standard.txt", "entity_default.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5797,6 +6438,7 @@
 		"Text": "Garrison",
 		"Tooltip": "Dwarves can join military groups which gives a 200% learning bonus to military skills. If disabled, this removes all military castes!",
 		"Files": ["creature_standard.txt", "entity_default.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5810,6 +6452,7 @@
 		"Text": "Weight Bench",
 		"Tooltip": "Trains attributes of your dwarves, like strength, endurance and agility.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5823,6 +6466,7 @@
 		"Text": "Trade Storehouse",
 		"Tooltip": "Allows the unpacking of crates from caravans.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "reaction_cheat.txt", "reaction_gnome.txt", "reaction_masterwork.txt", "reaction_orcfort.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5836,6 +6480,7 @@
 		"Text": "Wood Block",
 		"Tooltip": "Little brother of the sawmill, cuts wood into planks and can smooth some types of wood. Very basic, early workshop.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5849,6 +6494,7 @@
 		"Text": "Scriptorium",
 		"Tooltip": "Write books to read in libraries, copy research discoveries.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5862,6 +6508,7 @@
 		"Text": "Libraries",
 		"Tooltip": "Adds 6 Library section in which your dwarves can read to train their skills.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5875,6 +6522,7 @@
 		"Text": "Brewery",
 		"Tooltip": "Allows the refining of alcoholic drinks with sugar. New drinks have special effects..",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5888,6 +6536,7 @@
 		"Text": "Sawmill",
 		"Tooltip": "Cuts wooden logs into 4 blocks to be used in constructions and refines farmed trees.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5901,6 +6550,7 @@
 		"Text": "Fishpond",
 		"Tooltip": "Indoor fishing area for your fisherdwarves. Great for waterless maps.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5914,6 +6564,7 @@
 		"Text": "Slaughterhouse",
 		"Tooltip": "Take megabeast corpses apart for special rewards.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5927,6 +6578,7 @@
 		"Text": "Stables",
 		"Tooltip": "Allows the indoor feeding of grazers.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5940,6 +6592,7 @@
 		"Text": "Embassy",
 		"Tooltip": "Invite diplomats or traders and challenge beasts and civilizations.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5953,6 +6606,7 @@
 		"Text": "Expedition Outfitter",
 		"Tooltip": "Send expeditions, raiding parties, diplomats and bards throughout the world.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5966,6 +6620,7 @@
 		"Text": "Speaker's Podium",
 		"Tooltip": "Hold speeches to influence nearby dwarves and give them permanent mental attribute boosts.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5979,6 +6634,7 @@
 		"Text": "Research",
 		"Tooltip": "Conduct research to unlock new buildings and furnaces.",
 		"Files": ["building_furnaces_masterwork.txt", "building_masterwork.txt", "entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -5992,6 +6648,7 @@
 		"Text": "Archeology",
 		"Tooltip": "Adds Archeologist and fossils. Excavates fossils and creates special items.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_warlock.txt", "inorganic_fossil.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6005,6 +6662,7 @@
 		"Text": "Apothecary",
 		"Tooltip": "Adds a workshop for your hospital. Creates casts, crutches, splints, soap and empties out buckets.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6018,6 +6676,7 @@
 		"Text": "Biology",
 		"Tooltip": "Takes invader corpses and might research a permanent bonus against a specific race.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6031,6 +6690,7 @@
 		"Text": "Altar of Armok",
 		"Tooltip": "Adds the Altar of Armok. Allow your dwarves to pray to Armok for help.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6044,6 +6704,7 @@
 		"Text": "Shrine of Armok",
 		"Tooltip": "Adds the Shrine of Armok. Allow your dwarves to pray to Armok for help.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6057,6 +6718,7 @@
 		"Text": "Temple of Armok",
 		"Tooltip": "Adds the Temple of Armok. Allow your dwarves to pray to Armok for help.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6070,6 +6732,7 @@
 		"Text": "Morul's Tavern",
 		"Tooltip": "Play music with different instruments to boost your dwarves. Also allows basic gambling and tavern brawls.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6083,6 +6746,7 @@
 		"Text": "Olon's Wonders",
 		"Tooltip": "A trader to buy/sell items for coins. Olon handles food.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6096,6 +6760,7 @@
 		"Text": "Bomrek's Bargains",
 		"Tooltip": "A trader to buy/sell items for coins. Bomrek handles basic materials.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6109,6 +6774,7 @@
 		"Text": "Urist's Emporium",
 		"Tooltip": "A trader to buy/sell items for coins. Urist handles weapons and armors.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6122,6 +6788,7 @@
 		"Text": "Teduk's Fine Goods",
 		"Tooltip": "A trader to buy/sell items for coins. Teduk handles expensive goods.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6135,6 +6802,7 @@
 		"Text": "Ineri's Pet Shop",
 		"Tooltip": "A trader to buy creatures for coins. Ineri specializes in pets.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6148,6 +6816,7 @@
 		"Text": "Alchemy",
 		"Tooltip": "Allows transmutation of metals, the creation of gems and special metals. as well as magma and water.",
 		"Files": ["entity_default.txt", "inorganic_special_ammo.txt", "inorganic_z_blob_reward.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6161,6 +6830,7 @@
 		"Text": "Toxicology",
 		"Tooltip": "Coat weapons, ammo or traps with different poisons.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6174,6 +6844,7 @@
 		"Text": "Chemistry",
 		"Tooltip": "Adds chemistry to the game. Mostly used for explosives and acids.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6187,6 +6858,7 @@
 		"Text": "Herbalism",
 		"Tooltip": "Refines special plants and woods into useful items and materials for your fort.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6200,6 +6872,7 @@
 		"Text": "Brazier",
 		"Tooltip": "Adds a way to make fire, light pipes and create light.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6213,6 +6886,7 @@
 		"Text": "Candelabra",
 		"Tooltip": "Adds a way to make fire, light pipes and create light.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6226,6 +6900,7 @@
 		"Text": "Fireplace",
 		"Tooltip": "Adds a way to make fire, light pipes and create light.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6239,6 +6914,7 @@
 		"Text": "Torchbearer",
 		"Tooltip": "Adds a way to make fire, light pipes and create light.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6252,6 +6928,7 @@
 		"Text": "Gem of Light",
 		"Tooltip": "Creates a lot of light.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6265,6 +6942,7 @@
 		"Text": "Ammo Caster",
 		"Tooltip": "Create several new types of ammo in this furnace.",
 		"Files": ["building_furnaces_masterwork.txt", "entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6278,6 +6956,7 @@
 		"Text": "Gunsmith",
 		"Tooltip": "Adds a gunsmith. You can now create gunpowder and several guns.",
 		"Files": ["entity_default.txt", "entity_dwarf_evil.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6291,6 +6970,7 @@
 		"Text": "Heavy Siegeworks",
 		"Tooltip": "Adds the ability to make exploding ballista bolts, metal ballistae and catapults and more.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6304,6 +6984,7 @@
 		"Text": "Engineer",
 		"Tooltip": "A workshop to upgrade your traps. Only needed if you play with: Weaker trap ON.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6317,6 +6998,7 @@
 		"Text": "Inventor",
 		"Tooltip": "Invent foreign weapons, shields or armors and copy existing models of them. Can make copies of leather, metal or gem.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6330,6 +7012,7 @@
 		"Text": "Greatforge",
 		"Tooltip": "Forges two-handed weapons, kite shields and armor sets.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6343,6 +7026,7 @@
 		"Text": "Glassforge",
 		"Tooltip": "Create all kinds of items made of glass.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6356,6 +7040,7 @@
 		"Text": "Gemforge",
 		"Tooltip": "Allows the creation of gem weapons and armor. Lets you cut big gems into smaller ones as well.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6369,6 +7054,7 @@
 		"Text": "Rock Forge",
 		"Tooltip": "Allows the creation of rock weapons, ammo and basic armor. Great for the start.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6382,6 +7068,7 @@
 		"Text": "Golemforge",
 		"Tooltip": "Allows to cast dwarves into mighty metal warriors.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6395,6 +7082,7 @@
 		"Text": "Foundry",
 		"Tooltip": "Merge several metals into volcanic metal.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6408,6 +7096,7 @@
 		"Text": "Brick Oven",
 		"Tooltip": "Creates 8 types of colorful blocks. Great for mega-projects.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6421,6 +7110,7 @@
 		"Text": "Crematorium",
 		"Tooltip": "Allows the cremation of corpses, body parts and items to regain ash and coke.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6434,6 +7124,7 @@
 		"Text": "Ore Processor",
 		"Tooltip": "Separate the ore from rock, allowing greater yield before smelting ores. Also reduces slag and gives free stone.",
 		"Files": ["entity_default.txt", "inorganic_dfhack.txt", "inorganic_mineral.txt", "reaction_masterwork.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "Smelting",
@@ -6462,6 +7153,7 @@
 		"Text": "Kiln",
 		"Tooltip": "Glaze porcelain, stone and earthware. Create pearlash, gypsum powder, tobacco, hay and more.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6475,6 +7167,7 @@
 		"Text": "Slag Pit",
 		"Tooltip": "Clear up slag waste products from metal fabrication.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_orcfort_taigaorc.txt", "inorganic_dfhack.txt", "inorganic_mineral.txt", "reaction_gnome.txt", "reaction_masterwork.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6488,6 +7181,7 @@
 		"Text": "School of Wizardry",
 		"Tooltip": "Turns dwarves into arcane dwarves and unlocks magic altars. If disabled, this also removes all mage castes!",
 		"Files": ["creature_standard.txt", "entity_default.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6501,6 +7195,7 @@
 		"Text": "Elemental Altars",
 		"Tooltip": "4 new buildings: Fire, Water, Earth and Air based magic altars to train your mages and do much more.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6514,6 +7209,7 @@
 		"Text": "Good Altar",
 		"Tooltip": "White magic based on good biomes for 3 unique mages and resurrections.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6527,6 +7223,7 @@
 		"Text": "Evil Altar",
 		"Tooltip": "Black magic based on evil biomes for 3 unique mages and raising the undead, vampires, demons and more.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6540,6 +7237,7 @@
 		"Text": "Warpstone Pool",
 		"Tooltip": "Use warpstone to mutate matter into forgotten beasts.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6553,6 +7251,7 @@
 		"Text": "Rune Armory",
 		"Tooltip": "Enchant armors with metal runes for special effects on the wearer.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6566,6 +7265,7 @@
 		"Text": "Rune Weaponry",
 		"Tooltip": "Enchant weapons with runes, to allow special effects.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6579,6 +7279,7 @@
 		"Text": "Armory",
 		"Tooltip": "Upgrades any armor to the best armor in the game, plate-mail.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6592,6 +7293,7 @@
 		"Text": "Weaponry",
 		"Tooltip": "Upgrade all available weapons to an improved version. Has a small chance for a legendary version.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6605,6 +7307,7 @@
 		"Text": "MegaBeast Kennels",
 		"Tooltip": "Train a dwarf to an epic fighter or revive a megabeast by using its soul as reagent. Needs megabeasts and the slaughterhouse.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6618,6 +7321,7 @@
 		"Text": "War Kennels",
 		"Tooltip": "Allows to outfit a selection of pets with steel plating.",
 		"Files": ["creature_pet_armored.txt", "entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6631,6 +7335,7 @@
 		"Text": "Display Case",
 		"Tooltip": "Adds display cases. Raise room value or decorate your fortress.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_kobold_camp.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6644,6 +7349,7 @@
 		"Text": "Plants",
 		"Tooltip": "Adds a potted plant as decoration.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_kobold_camp.txt", "entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6657,6 +7363,7 @@
 		"Text": "Totems",
 		"Tooltip": "Adds two buildable totems to the game, just for the looks.",
 		"Files": ["entity_default.txt", "entity_kobold_camp.txt", "entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6670,6 +7377,7 @@
 		"Text": "Fountain",
 		"Tooltip": "Adds a small fountain as decoration for your fortress.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_kobold_camp.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6683,6 +7391,7 @@
 		"Text": "Dwarven Loo",
 		"Tooltip": "Adds a toilet, for those that always wondered where dwarves do their business. Can clean buckets and other containers.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6696,6 +7405,7 @@
 		"Text": "Carpets",
 		"Tooltip": "Adds several tiles for indoor decoration.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6709,6 +7419,7 @@
 		"Text": "Items",
 		"Tooltip": "Adds many new items for dwarven rooms. Use this only with Masterwork Tileset.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6722,6 +7433,7 @@
 		"Text": "Statues",
 		"Tooltip": "Adds 4 new statues to the game, demon, beast, skeleton and golem statue.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6735,6 +7447,7 @@
 		"Text": "Blast Furnace",
 		"Tooltip": "Mass smelting of ore.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6748,6 +7461,7 @@
 		"Text": "Crucible",
 		"Tooltip": "Refine more advanced minerals here.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6761,6 +7475,7 @@
 		"Text": "Finishing Forge",
 		"Tooltip": "Cold-hammer copper, tin and bronze for an early army.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6774,6 +7489,7 @@
 		"Text": "Metallurgist",
 		"Tooltip": "All alloys are created in this workshop.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6787,6 +7503,7 @@
 		"Text": "Arbalest",
 		"Tooltip": "A new siege engine that fires rapidly at your foes.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6800,6 +7517,7 @@
 		"Text": "Trebuchet",
 		"Tooltip": "A new siege engines that fires slow AoE damage at your foes.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6813,6 +7531,7 @@
 		"Text": "Clay Oven",
 		"Tooltip": "Adds several reactions to the kiln and quern about glazing. See the manual for full details.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6826,6 +7545,7 @@
 		"Text": "Craftsmen",
 		"Tooltip": "Adds several new reactions to the craftsman. See manual for full detail.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_kobold_camp.txt", "entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6839,6 +7559,7 @@
 		"Text": "Quern",
 		"Tooltip": "Adds several new reactions to the quern and millstone. See manual for full detail.",
 		"Files": ["entity_default.txt", "entity_dwarf_evil.txt", "entity_gnome.txt", "entity_kobold_camp.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6852,6 +7573,7 @@
 		"Text": "Millstone",
 		"Tooltip": "Adds rock, sand and bone grinding to the millstone.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6865,6 +7587,7 @@
 		"Text": "Still",
 		"Tooltip": "Adds several new reactions to the still. See manual for full detail.",
 		"Files": ["entity_default.txt", "entity_dwarf_evil.txt", "entity_gnome.txt", "entity_kobold_camp.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6878,6 +7601,7 @@
 		"Text": "Kitchen",
 		"Tooltip": "Adds several new reactions to the kitchen. See manual for full detail.",
 		"Files": ["entity_default.txt", "entity_dwarf_evil.txt", "entity_gnome.txt", "entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6891,6 +7615,7 @@
 		"Text": "Tanner",
 		"Tooltip": "Adds several new reactions to the tanner. See manual for full detail.",
 		"Files": ["entity_default.txt", "entity_dwarf_evil.txt", "entity_gnome.txt", "entity_orcfort_taigaorc.txt", "entity_warlock.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6904,6 +7629,7 @@
 		"Text": "Screw Press",
 		"Tooltip": "Adds several new reactions to the screw press. See manual for full detail.",
 		"Files": ["entity_default.txt", "entity_gnome.txt", "entity_orcfort_taigaorc.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6917,6 +7643,7 @@
 		"Text": "Soapmaker",
 		"Tooltip": "Adds or removes the soapmaker building. Regardless of its existence the chemists will still make soap.",
 		"Files": ["entity_default.txt", "entity_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6930,6 +7657,7 @@
 		"Text": "Simple Trees",
 		"Tooltip": "Enable to play with fewer tree types. Good for FPS.",
 		"Files": ["plant_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6943,6 +7671,7 @@
 		"Text": "Simple Gems",
 		"Tooltip": "Enable to play with fewer gem types. Good for FPS.",
 		"Files": ["inorganic_stone_gem.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6956,6 +7685,7 @@
 		"Text": "Simple Soil",
 		"Tooltip": "Enable to play with only one type of sand, soil and clay. Good for FPS.",
 		"Files": ["inorganic_stone_soil.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6969,6 +7699,7 @@
 		"Text": "Simple Stone",
 		"Tooltip": "Enable to play with fewer stone types. Good for FPS.",
 		"Files": ["inorganic_stone_layer.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6982,6 +7713,7 @@
 		"Text": "Simple Minerals",
 		"Tooltip": "Enable to play with fewer mineral types. Good for FPS.",
 		"Files": ["inorganic_mineral.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -6995,6 +7727,7 @@
 		"Text": "Simple Wood",
 		"Tooltip": "Enable for standardized wood. Disable for every tree to use specific wood names.",
 		"Files": ["plant_standard.txt", "plant_trees_ff.txt", "reaction_kobold.txt", "reaction_masterwork2.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7013,6 +7746,7 @@
 		"Text": "Simple Pets",
 		"Tooltip": "Enable to remove redundant domestic pets. Helps FPS.",
 		"Files": ["creature_domestic.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7026,6 +7760,7 @@
 		"Text": "Simple Meat",
 		"Tooltip": "Enable to standardize all butchery products to one type of meat.",
 		"Files": ["tissue_template_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "Simple Meat",
@@ -7044,6 +7779,7 @@
 		"Text": "Simple Gem Shapes",
 		"Tooltip": "Reduces all gem and stone cut shapes to oval cabochons.",
 		"Files": ["entity_default.txt", "entity_drow.txt", "entity_drow_evil.txt", "entity_dwarf_evil.txt", "entity_dwarf_m.txt", "entity_gnome.txt", "entity_goblin.txt", "entity_human.txt", "entity_human_evil.txt", "entity_orcfort_taigaorc.txt", "entity_warlock.txt", "unused entity_kobold.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7057,6 +7793,7 @@
 		"Text": "Digging Invaders",
 		"Tooltip": "Allows forgotten beasts and some invaders to dig into your fort.",
 		"Files": ["dfhack.init"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7070,6 +7807,7 @@
 		"Text": "Razing Invaders",
 		"Tooltip": "Allows titans and some invaders to destroy buildings and walls.",
 		"Files": ["dfhack.init"],
+		"Files Overridden": "true",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7093,6 +7831,7 @@
 		"Text": "Tree Variety",
 		"Tooltip": "Adds +120 different kinds of trees to the game.",
 		"Files": ["plant_trees_ff.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7106,6 +7845,7 @@
 		"Text": "Plant Variety",
 		"Tooltip": "Adds +180 different plants to the game.",
 		"Files": ["plant_florafauna_ff.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7119,6 +7859,7 @@
 		"Text": "Food Variety",
 		"Tooltip": "Adds more names for prepared meals, thats it.",
 		"Files": ["item_food_masterwork.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7132,6 +7873,7 @@
 		"Text": "Fear the Night",
 		"Tooltip": "Adds custom vampires, were-beasts, necromancers and curses to the game.",
 		"Files": ["creature_fearthenight.txt", "interaction_fearthenight.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7145,6 +7887,7 @@
 		"Text": "Aquifers",
 		"Tooltip": "Turn Aquifer on or off, as you like.",
 		"Files": ["inorganic_mineral.txt", "inorganic_stone_layer.txt", "inorganic_stone_soil.txt", "inorganic_zmasterwork.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7157,7 +7900,8 @@
 		"Name": "optMultiHarderSmithing",
 		"Text": "Harder Smithing",
 		"Tooltip": "Makes smithing harder. Items might need more then just one bar of metal to be produced.",
-		"Files": ["item_armor.txt", "item_gloves.txt", "item_helm.txt", "item_magic.txt", "item_pants.txt", "item_shield.txt", "item_shoes.txt", "item_weapon.txt", "item_weapon_human_tech.txt", "item_weapon_masterwork.txt", "item_z_gnome.txt", "item_z_orcfort_weapon.txt"],
+		"Files": ["item_armor.txt", "item_gloves.txt", "item_gnome.txt", "item_helm.txt", "item_magic.txt", "item_pants.txt", "item_shield.txt", "item_shoes.txt", "item_weapon.txt", "item_weapon_human_tech.txt", "item_weapon_masterwork.txt", "item_z_gnome.txt", "item_z_orcfort_weapon.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7176,6 +7920,7 @@
 		"Text": "Harder Farming",
 		"Tooltip": "Slower farming and less eggs. Aboveground plants need 1 season, underground plants 4 seasons to grow.",
 		"Files": ["plant_florafauna_ff.txt", "plant_phm.txt", "plant_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7194,6 +7939,7 @@
 		"Text": "Harder Mining",
 		"Tooltip": "Adds coal dust and warpstone. Both might hurt your miners when mined.",
 		"Files": ["inorganic_zmasterwork.txt", "inorganic_zwarpstone.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7207,6 +7953,7 @@
 		"Text": "Harder Learning",
 		"Tooltip": "All dwarves learn only half as fast. Makes Guilds more important.",
 		"Files": ["creature_masterwork_eviltwins.txt", "creature_mercs.txt", "creature_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7220,6 +7967,7 @@
 		"Text": "Caravan Escorts",
 		"Tooltip": "ON gives caravans bodyguards. OFF means that you have to protect them yourself.",
 		"Files": ["entity_default.txt", "entity_drow.txt", "entity_dwarf_m.txt", "entity_elf.txt", "entity_human.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7233,6 +7981,7 @@
 		"Text": "Secret !FUN!",
 		"Tooltip": "NOTE: This will make your game marginally harder. Build wards to protect you. 6 new sly creatures. Watch your game log.",
 		"Files": ["creature_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7246,6 +7995,7 @@
 		"Text": "Diseases",
 		"Tooltip": "Adds Halfling's disease mod to the game.  Requires the apothecary to treat the diseases. See the manual for more info.",
 		"Files": ["creature_pet_armored.txt", "creature_pet_masterwork.txt", "creature_standard.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7259,6 +8009,7 @@
 		"Text": "Cavern Flavor",
 		"Tooltip": "Adds a separate look for each cavern. Might cause eye damage. ;-)",
 		"Files": ["plant_grasses.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "Flavor",
@@ -7277,6 +8028,7 @@
 		"Text": "Regional Weather",
 		"Tooltip": "Adds a lot of special rains, fogs and clouds to all kinds of regions.",
 		"Files": ["interaction_weather.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7290,6 +8042,7 @@
 		"Text": "Regional Effects",
 		"Tooltip": "Adds specific regional effects, like animated dead in evil regions, to all regions. Good biomes heal dwarves for example.",
 		"Files": ["interaction_regional.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7303,6 +8056,7 @@
 		"Text": "Smoke Effects",
 		"Tooltip": "Adds a couple of smoke effects of different colors to workshops. Have no use but to look pretty.",
 		"Files": ["reaction_glaze.txt", "reaction_kobold.txt", "reaction_masterwork.txt", "reaction_masterwork2.txt", "reaction_other.txt", "reaction_warlock.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7316,6 +8070,7 @@
 		"Text": "New Nobles",
 		"Tooltip": "Adds the Overseer, for succession forts, a psychiatrist that calms down dwarves, and the old 20D philosopher, as well as a preacher that helps dwarves throwing tantrums.",
 		"Files": ["entity_default.txt", "entity_dwarf_evil.txt", "entity_dwarf_m.txt", "entity_human.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7329,6 +8084,7 @@
 		"Text": "Battlecries",
 		"Tooltip": "Dwarves and other sentient beings will yell insults and comments at each other in the heat of battle. No effect on game play.",
 		"Files": ["creature_fortdefense.txt", "creature_gnome.txt", "creature_masterwork.txt", "creature_masterwork_eviltwins.txt", "creature_mercs.txt", "creature_standard.txt", "creature_subterranean.txt", "creature_warlock_civ.txt", "** Affects graphic packs! **"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7342,6 +8098,7 @@
 		"Text": "Diplomats",
 		"Tooltip": "Adds diplomats for both elves and humans. You can finally order trade goods from their caravan again.",
 		"Files": ["entity_drow.txt", "entity_drow_evil.txt", "entity_elf.txt", "entity_elf_evil.txt", "entity_gnome.txt", "entity_human.txt", "entity_human_evil.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7355,6 +8112,7 @@
 		"Text": "English Names",
 		"Tooltip": "All dwarven names are now in English. Instead of Urist it will read Dagger.",
 		"Files": ["entity_default.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7367,7 +8125,8 @@
 		"Name": "optBtnBuildDimensions",
 		"Text": "Build Dimension",
 		"Tooltip": "Adds infos to the building names, like 'Gemcutter 3x3', so you can see how large a building is before you build it.",
-		"Files": ["building_furnaces_masterwork.txt", "building_masterwork.txt", "building_z_gnome.txt"],
+		"Files": ["building_furnaces_masterwork.txt", "building_gnome.txt", "building_masterwork.txt", "building_z_gnome.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "",
@@ -7381,6 +8140,7 @@
 		"Text": "200",
 		"Tooltip": "100 - 10000  The lower the value, the more minerals.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "MINERAL_SCARCITY",
@@ -7394,6 +8154,7 @@
 		"Text": "40",
 		"Tooltip": "0 - 300  The number of civilizations placed on the map before history begins.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "TOTAL_CIV_NUMBER",
@@ -7407,6 +8168,7 @@
 		"Text": "1274",
 		"Tooltip": "0 - 10000  The number of points available for skills and equipment when embarking.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "EMBARK_POINTS",
@@ -7420,6 +8182,7 @@
 		"Text": "1050",
 		"Tooltip": "2 - 10000  The number of years of history generated for the world.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "END_YEAR",
@@ -7433,6 +8196,7 @@
 		"Text": "15000",
 		"Tooltip": "-1 - 100000  Maximum population of civilization members in the world. -1 is unlimited, but dangerous.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "TOTAL_CIV_POPULATION",
@@ -7446,6 +8210,7 @@
 		"Text": "75",
 		"Tooltip": "0 - 999  The number of megabeasts placed at the beginning of history. All megabeasts are placed in equal proportions.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "MEGABEAST_CAP",
@@ -7459,6 +8224,7 @@
 		"Text": "150",
 		"Tooltip": "0 - 999  The number of semi-megabeasts placed at the beginning of history. They are placed in equal proportions.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "SEMIMEGABEAST_CAP",
@@ -7472,6 +8238,7 @@
 		"Text": "52",
 		"Tooltip": "0 - 999  The number of necromancers.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "SECRET_NUMBER",
@@ -7485,6 +8252,7 @@
 		"Text": "26",
 		"Tooltip": "0 - 999  The number of different kinds of were-beasts curses that will exist in the world.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "WEREBEAST_NUMBER",
@@ -7498,6 +8266,7 @@
 		"Text": "33",
 		"Tooltip": "0 - 999  The number of titans that exist at the beginning of history.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "TITAN_NUMBER",
@@ -7511,6 +8280,7 @@
 		"Text": "52",
 		"Tooltip": "0 - 999  The number of different types of evil region interactions.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "REGIONAL_INTERACTION_NUMBER",
@@ -7524,6 +8294,7 @@
 		"Text": "52",
 		"Tooltip": "0 - 999  The number of different types of demons that will be procedurally generated.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "DEMON_NUMBER",
@@ -7537,6 +8308,7 @@
 		"Text": "52",
 		"Tooltip": "0 - 999  The number of different disturbed dead that can exist in the world.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "DISTURBANCE_INTERACTION_NUMBER",
@@ -7550,6 +8322,7 @@
 		"Text": "26",
 		"Tooltip": "0 - 999  The number of different types of night creatues that will exist.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "NIGHT_TROLL_NUMBER",
@@ -7563,6 +8336,7 @@
 		"Text": "26",
 		"Tooltip": "0 - 999  The total different types of evil clouds that can exist.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "EVIL_CLOUD_NUMBER",
@@ -7576,6 +8350,7 @@
 		"Text": "26",
 		"Tooltip": "0 - 999  The number of different types of bogeymen that will exist.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "BOGEYMAN_NUMBER",
@@ -7589,6 +8364,7 @@
 		"Text": "26",
 		"Tooltip": "0 - 999  The total amount of different evil rains that can exist.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "EVIL_RAIN_NUMBER",
@@ -7602,6 +8378,7 @@
 		"Text": "26",
 		"Tooltip": "0 - 999  The number of different vampire curses that will exist. Curses are all very similar however.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "VAMPIRE_NUMBER",
@@ -7615,6 +8392,7 @@
 		"Text": "5",
 		"Tooltip": "1 - 500  The minimum cave length and depth.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVE_MIN_SIZE",
@@ -7628,6 +8406,7 @@
 		"Text": "25",
 		"Tooltip": "1 - 500  The maximum cave length and depth.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVE_MAX_SIZE",
@@ -7641,6 +8420,7 @@
 		"Text": "40",
 		"Tooltip": "0 - 800  The number of mountain caves.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "MOUNTAIN_CAVE_MIN",
@@ -7654,6 +8434,7 @@
 		"Text": "60",
 		"Tooltip": "0 - 800  The number of non-mountain caves.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "NON_MOUNTAIN_CAVE_MIN",
@@ -7667,6 +8448,7 @@
 		"Text": "Caves Visible",
 		"Tooltip": "If disabled, caves will not be marked on the map.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "ALL_CAVES_VISIBLE",
@@ -7680,6 +8462,7 @@
 		"Text": "3",
 		"Tooltip": "0 - 3  The number of cavern systems. Less caverns may improve FPS. This number does not include Magma or HFS.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVERN_LAYER_COUNT",
@@ -7693,6 +8476,7 @@
 		"Text": "0",
 		"Tooltip": "0 - 100  Minimum cavern openness.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVERN_LAYER_OPENNESS_MIN",
@@ -7706,6 +8490,7 @@
 		"Text": "100",
 		"Tooltip": "0 - 100  Maximum cavern openness.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVERN_LAYER_OPENNESS_MAX",
@@ -7719,6 +8504,7 @@
 		"Text": "0",
 		"Tooltip": "0 - 100  Minimum cavern passageway density.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVERN_LAYER_PASSAGE_DENSITY_MIN",
@@ -7732,6 +8518,7 @@
 		"Text": "100",
 		"Tooltip": "0 - 100  Maximum cavern passageway density.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVERN_LAYER_PASSAGE_DENSITY_MAX",
@@ -7745,6 +8532,7 @@
 		"Text": "0",
 		"Tooltip": "0 - 100  Minimum cavern water amount.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVERN_LAYER_WATER_MIN",
@@ -7758,6 +8546,7 @@
 		"Text": "100",
 		"Tooltip": "0 - 100  Maximum cavern water amount.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "CAVERN_LAYER_WATER_MAX",
@@ -7771,6 +8560,7 @@
 		"Text": "5",
 		"Tooltip": "5 - 99  Z-Levels of stone above the first cavern layer.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "LEVELS_ABOVE_LAYER_1",
@@ -7784,6 +8574,7 @@
 		"Text": "1",
 		"Tooltip": "1 - 99  Z-Levels of earth between the very bottom of the first cavern, and the very top of the second cavern.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "LEVELS_ABOVE_LAYER_2",
@@ -7797,6 +8588,7 @@
 		"Text": "1",
 		"Tooltip": "1 - 99  Z-Levels of earth between the very bottom of the second cavern, and the very top of the third cavern.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "LEVELS_ABOVE_LAYER_3",
@@ -7810,6 +8602,7 @@
 		"Text": "1",
 		"Tooltip": "1 - 99  Z-Levels between the very highest magma, and the very bottom of the third cavern.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "LEVELS_ABOVE_LAYER_4",
@@ -7823,6 +8616,7 @@
 		"Text": "2",
 		"Tooltip": "2 - 99  Uncertain.  Seems to increase the layers of Semi-Molten Rock and the depth of the magma sea. Only valid if magma layer is present.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "LEVELS_ABOVE_LAYER_5",
@@ -7836,6 +8630,7 @@
 		"Text": "Magma Lake",
 		"Tooltip": "Determines whether the magma sea exists.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "HAVE_BOTTOM_LAYER_1",
@@ -7849,6 +8644,7 @@
 		"Text": "HFS",
 		"Tooltip": "Determines if the space below the magma sea exists.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "HAVE_BOTTOM_LAYER_2",
@@ -7862,6 +8658,7 @@
 		"Text": "24:244:0",
 		"Tooltip": "###:###:### (0-500)  The amount of good tiles on the map.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "GOOD_SQ_COUNTS",
@@ -7875,6 +8672,7 @@
 		"Text": "24:244:0",
 		"Tooltip": "###:###:### (0-500)  The amount of evil tiles on the map.",
 		"Files": ["world_gen.txt"],
+		"Files Overridden": "false",
 		"Tags": [
 			{
 			"TokenName": "EVIL_SQ_COUNTS",

@@ -638,7 +638,7 @@ Imports System.ComponentModel
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlaybleFort, 0).Width                
                 Dim btnPlayFort As New optionSingleReplaceButton
                 btnPlayFort.Name = "optBtnPlayFort" & civName
-                buildPlayableOption(btnPlayFort, civLabel.entityFileName) ', civLabel.fortTag)
+                buildPlayableOption(btnPlayFort, civLabel.fortTag)
                 formatCivTableControl(btnPlayFort, intCtrlWidth, intCtrlHeight)
                 Me.tableLayoutCivs.Controls.Add(btnPlayFort, idxPlaybleFort, idxRow)
 
@@ -646,7 +646,7 @@ Imports System.ComponentModel
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlayableAdv, 0).Width
                 Dim btnPlayAdv As New optionSingleReplaceButton
                 btnPlayAdv.Name = "optBtnPlayFort" & civName
-                buildPlayableOption(btnPlayAdv, civLabel.entityFileName) ', civLabel.advTag)
+                buildPlayableOption(btnPlayAdv, civLabel.advTag)
                 formatCivTableControl(btnPlayAdv, intCtrlWidth, intCtrlHeight)
                 Me.tableLayoutCivs.Controls.Add(btnPlayAdv, idxPlayableAdv, idxRow)
 

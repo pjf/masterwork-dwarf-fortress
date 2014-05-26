@@ -19,6 +19,8 @@ Public Class optionManager
 
     Private m_worldGenIndex As Integer
 
+    Private m_checkAllOnLoad As Boolean = False
+
     <DescriptionAttribute("This option's token(s) are found in init.txt file."), _
     DisplayNameAttribute("Init File")> _
     Public Property loadFromInit() As Boolean
@@ -61,6 +63,18 @@ Public Class optionManager
         End Get
         Set(value As Integer)
             m_worldGenIndex = value
+        End Set
+    End Property
+
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public Property checkAllOnLoad() As Boolean
+        Get
+            Return m_checkAllOnLoad
+        End Get
+        Set(value As Boolean)
+            m_checkAllOnLoad = value
         End Set
     End Property
 
@@ -109,12 +123,21 @@ Public Class optionManager
             'looking for a match to the 'enabled' option specified with the tokens, in the specified files
             'this is most commonly used with the raw files where an option is toggled on/off by replacing a token
             If Not hasSingleValueTokens(tokens) Then
-                Dim strPattern As New List(Of String)
-                For Each t As rawToken In tokens
-                    strPattern.Add(Regex.Escape(t.optionOnValue))
-                Next
-                If findTokensInFiles(String.Format("({0})", String.Join(")|(", strPattern)), files.Where(AddressOf rawFilter).ToList) Then
-                    retValue = "YES"
+                If Not m_checkAllOnLoad Then
+                    Dim strPattern As New List(Of String)
+                    For Each t As rawToken In tokens
+                        strPattern.Add(Regex.Escape(t.optionOnValue))
+                    Next
+                    If findTokensInFiles(String.Format("({0})", String.Join(")|(", strPattern)), files.Where(AddressOf rawFilter).ToList) Then
+                        retValue = "1"
+                    End If
+                Else
+                    For Each t As rawToken In tokens
+                        If Not findTokensInFiles(String.Format("({0})", Regex.Escape(t.optionOnValue)), files.Where(AddressOf rawFilter).ToList) Then
+                            Return "0"
+                        End If
+                    Next
+                    retValue = "1"
                 End If
             Else
                 'in this case we're looking for token value(s) within multiple files. 
