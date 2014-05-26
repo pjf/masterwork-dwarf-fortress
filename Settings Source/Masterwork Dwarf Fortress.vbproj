@@ -383,6 +383,9 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <None Include="Resources\df-icon_32x32.png" />
+    <None Include="Resources\df-icon_16x16.png" />
+    <None Include="Resources\df-icon.png" />
     <None Include="Resources\masterwork-logo.png" />
     <None Include="Resources\fb-1024x576c.jpg" />
     <None Include="Resources\database-cloud.png" />

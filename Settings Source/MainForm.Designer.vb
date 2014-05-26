@@ -12506,11 +12506,11 @@ Partial Class MainForm
         '
         'rBtnPlayDF
         '
-        Me.rBtnPlayDF.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.DF
+        Me.rBtnPlayDF.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.df_icon_32x32
         Me.rBtnPlayDF.MinimumSize = New System.Drawing.Size(50, 0)
-        Me.rBtnPlayDF.SmallImage = CType(resources.GetObject("rBtnPlayDF.SmallImage"),System.Drawing.Image)
+        Me.rBtnPlayDF.SmallImage = CType(resources.GetObject("rBtnPlayDF.SmallImage"), System.Drawing.Image)
         Me.rBtnPlayDF.Tag = ""
-        Me.rBtnPlayDF.Text = "Play"
+        Me.rBtnPlayDF.Text = ""
         Me.rBtnPlayDF.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
         Me.rBtnPlayDF.ToolTip = "Launch Dwarf Fortress!"
         Me.rBtnPlayDF.ToolTipTitle = "Dwarf Fortress"
