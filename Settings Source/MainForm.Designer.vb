@@ -1687,6 +1687,10 @@ Partial Class MainForm
         Me.tabFurnaces = New KRBTabControl.TabPageEx()
         Me.tabMisc = New KRBTabControl.TabPageEx()
         Me.tabWorldGen = New KRBTabControl.TabPageEx()
+        Me.rBtnManualSuccubi = New System.Windows.Forms.RibbonButton()
+        Me.rBtnMdfThreadWarlock = New System.Windows.Forms.RibbonButton()
+        Me.rBtnMdfThreadSuccubi = New System.Windows.Forms.RibbonButton()
+        Me.rBtnMdfThreadGnome = New System.Windows.Forms.RibbonButton()
         Me.grpStandardization.SuspendLayout
         Me.grpWorldGenHostiles.SuspendLayout
         CType(Me.optNumMegabeasts,System.ComponentModel.ISupportInitialize).BeginInit
@@ -12583,6 +12587,7 @@ Partial Class MainForm
         Me.rBtnManuals.DropDownItems.Add(Me.rBtnManualGnome)
         Me.rBtnManuals.DropDownItems.Add(Me.rBtnManualKobold)
         Me.rBtnManuals.DropDownItems.Add(Me.rBtnManualOrc)
+        Me.rBtnManuals.DropDownItems.Add(Me.rBtnManualSuccubi)
         Me.rBtnManuals.DropDownItems.Add(Me.rBtnManualWarlock)
         Me.rBtnManuals.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.books_stack
         Me.rBtnManuals.SmallImage = CType(resources.GetObject("rBtnManuals.SmallImage"),System.Drawing.Image)
@@ -12672,8 +12677,11 @@ Partial Class MainForm
         '
         Me.rBtnMdfForums.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
         Me.rBtnMdfForums.DropDownItems.Add(Me.rBtnMdfThreadDwarf)
+        Me.rBtnMdfForums.DropDownItems.Add(Me.rBtnMdfThreadGnome)
         Me.rBtnMdfForums.DropDownItems.Add(Me.rBtnMdfThreadKobold)
         Me.rBtnMdfForums.DropDownItems.Add(Me.rBtnMdfThreadOrc)
+        Me.rBtnMdfForums.DropDownItems.Add(Me.rBtnMdfThreadSuccubi)
+        Me.rBtnMdfForums.DropDownItems.Add(Me.rBtnMdfThreadWarlock)
         Me.rBtnMdfForums.Image = CType(resources.GetObject("rBtnMdfForums.Image"),System.Drawing.Image)
         Me.rBtnMdfForums.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.bay12
         Me.rBtnMdfForums.Style = System.Windows.Forms.RibbonButtonStyle.DropDown
@@ -12685,7 +12693,7 @@ Partial Class MainForm
         Me.rBtnMdfThreadDwarf.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
         Me.rBtnMdfThreadDwarf.Image = CType(resources.GetObject("rBtnMdfThreadDwarf.Image"),System.Drawing.Image)
         Me.rBtnMdfThreadDwarf.SmallImage = CType(resources.GetObject("rBtnMdfThreadDwarf.SmallImage"),System.Drawing.Image)
-        Me.rBtnMdfThreadDwarf.Tag = "http://www.bay12forums.com/smf/index.php?topic=125633.0"
+        Me.rBtnMdfThreadDwarf.Tag = "http://www.bay12forums.com/smf/index.php?topic=138895.0"
         Me.rBtnMdfThreadDwarf.Text = "Dwarf Mode"
         '
         'rBtnMdfThreadKobold
@@ -12693,7 +12701,7 @@ Partial Class MainForm
         Me.rBtnMdfThreadKobold.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
         Me.rBtnMdfThreadKobold.Image = CType(resources.GetObject("rBtnMdfThreadKobold.Image"),System.Drawing.Image)
         Me.rBtnMdfThreadKobold.SmallImage = CType(resources.GetObject("rBtnMdfThreadKobold.SmallImage"),System.Drawing.Image)
-        Me.rBtnMdfThreadKobold.Tag = "http://www.bay12forums.com/smf/index.php?topic=125631.0"
+        Me.rBtnMdfThreadKobold.Tag = "http://www.bay12forums.com/smf/index.php?topic=138896.0"
         Me.rBtnMdfThreadKobold.Text = "Kobold Mode"
         '
         'rBtnMdfThreadOrc
@@ -12701,7 +12709,7 @@ Partial Class MainForm
         Me.rBtnMdfThreadOrc.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
         Me.rBtnMdfThreadOrc.Image = CType(resources.GetObject("rBtnMdfThreadOrc.Image"),System.Drawing.Image)
         Me.rBtnMdfThreadOrc.SmallImage = CType(resources.GetObject("rBtnMdfThreadOrc.SmallImage"),System.Drawing.Image)
-        Me.rBtnMdfThreadOrc.Tag = "http://www.bay12forums.com/smf/index.php?topic=113621.0"
+        Me.rBtnMdfThreadOrc.Tag = "http://www.bay12forums.com/smf/index.php?topic=138900.0"
         Me.rBtnMdfThreadOrc.Text = "Orc Mode"
         '
         'rBtnUtilityThreads
@@ -13510,6 +13518,37 @@ Partial Class MainForm
         Me.tabWorldGen.TabIndex = 6
         Me.tabWorldGen.Text = "World Gen."
         '
+        'rBtnManualSuccubi
+        '
+        Me.rBtnManualSuccubi.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
+        Me.rBtnManualSuccubi.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.book_question
+        Me.rBtnManualSuccubi.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.book_question
+        Me.rBtnManualSuccubi.Text = "Succubi"
+        '
+        'rBtnMdfThreadWarlock
+        '
+        Me.rBtnMdfThreadWarlock.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
+        Me.rBtnMdfThreadWarlock.Image = CType(resources.GetObject("rBtnMdfThreadWarlock.Image"),System.Drawing.Image)
+        Me.rBtnMdfThreadWarlock.SmallImage = CType(resources.GetObject("rBtnMdfThreadWarlock.SmallImage"),System.Drawing.Image)
+        Me.rBtnMdfThreadWarlock.Tag = "http://www.bay12forums.com/smf/index.php?topic=138897.0"
+        Me.rBtnMdfThreadWarlock.Text = "Warlock Mode"
+        '
+        'rBtnMdfThreadSuccubi
+        '
+        Me.rBtnMdfThreadSuccubi.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
+        Me.rBtnMdfThreadSuccubi.Image = CType(resources.GetObject("rBtnMdfThreadSuccubi.Image"),System.Drawing.Image)
+        Me.rBtnMdfThreadSuccubi.SmallImage = CType(resources.GetObject("rBtnMdfThreadSuccubi.SmallImage"),System.Drawing.Image)
+        Me.rBtnMdfThreadSuccubi.Tag = "http://www.bay12forums.com/smf/index.php?topic=138901.0"
+        Me.rBtnMdfThreadSuccubi.Text = "Succubi Mode"
+        '
+        'rBtnMdfThreadGnome
+        '
+        Me.rBtnMdfThreadGnome.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
+        Me.rBtnMdfThreadGnome.Image = CType(resources.GetObject("rBtnMdfThreadGnome.Image"),System.Drawing.Image)
+        Me.rBtnMdfThreadGnome.SmallImage = CType(resources.GetObject("rBtnMdfThreadGnome.SmallImage"),System.Drawing.Image)
+        Me.rBtnMdfThreadGnome.Tag = "http://www.bay12forums.com/smf/index.php?topic=138898.0"
+        Me.rBtnMdfThreadGnome.Text = "Gnome Mode"
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -14140,5 +14179,9 @@ End Sub
     Friend WithEvents rPanelProfiles As System.Windows.Forms.RibbonPanel
     Friend WithEvents RibbonSeparator5 As System.Windows.Forms.RibbonSeparator
     Friend WithEvents rBtnSaveProfile As System.Windows.Forms.RibbonButton
+    Friend WithEvents rBtnManualSuccubi As System.Windows.Forms.RibbonButton
+    Friend WithEvents rBtnMdfThreadGnome As System.Windows.Forms.RibbonButton
+    Friend WithEvents rBtnMdfThreadSuccubi As System.Windows.Forms.RibbonButton
+    Friend WithEvents rBtnMdfThreadWarlock As System.Windows.Forms.RibbonButton
 
 End Class

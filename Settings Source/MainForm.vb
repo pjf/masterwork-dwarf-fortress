@@ -519,6 +519,8 @@ Imports System.Web.Script.Serialization
     Private Sub saveSettings(ByVal strPath As String)
         Dim optionSettings As New Dictionary(Of String, Object)
         saveSettings(tabMain, optionSettings)
+        'add any non-itoken control settings we want to save
+        optionSettings.Add("cmbTileSets", cmbTileSets.SelectedValue)
         Dim s As New JavaScriptSerializer
         Dim info As String = utils.formatJsonOutput(s.Serialize(optionSettings))        
         If Not IO.File.Exists(strPath) Then IO.File.Create(strPath).Dispose()
@@ -551,6 +553,12 @@ Imports System.Web.Script.Serialization
             Dim s As New JavaScriptSerializer
             optionSettings = s.Deserialize(fileWorking.readFile(filePath, False), GetType(Dictionary(Of String, Object)))
             loadSettings(tabMain, optionSettings)
+            'load any other non-itoken controls
+            If optionSettings.ContainsKey("cmbTileSets") Then
+                Dim value As String = optionSettings.Item("cmbTileSets")
+                cmbTileSets.SelectedValue = value
+                graphicsSets.switchGraphics(value, False)
+            End If
         End If
     End Sub
     Private Sub loadSettings(ByVal parentControl As Control, ByVal optionSettings As Dictionary(Of String, Object))

@@ -326,5 +326,6 @@
 	"optBtnMagmaLake":	true,
 	"optBtnHFS":	true,
 	"optMaskGoodAreas":	"24:244:0",
-	"optMaskEvilAreas":	"24:244:0"
+	"optMaskEvilAreas":	"24:244:0",
+	"cmbTileSets":	"Masterwork - Obsidian Walls"
 }

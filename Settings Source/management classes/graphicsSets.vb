@@ -18,8 +18,8 @@ Public Class graphicsSets
         End Try
     End Sub
 
-    Public Shared Sub switchGraphics(ByVal packName As String)
-        If MsgBox("This will change raw files and update the graphics!" & vbNewLine & vbNewLine & "It will NOT update your saved games!" & vbNewLine & vbNewLine & "Continue?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm Graphics") = MsgBoxResult.No Then
+    Public Shared Sub switchGraphics(ByVal packName As String, Optional ByVal showPrompts As Boolean = True)
+        If showPrompts AndAlso MsgBox("This will change raw files and update the graphics!" & vbNewLine & vbNewLine & "It will NOT update your saved games!" & vbNewLine & vbNewLine & "Continue?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm Graphics") = MsgBoxResult.No Then
             Exit Sub
         End If
         Try
@@ -87,7 +87,8 @@ Public Class graphicsSets
                     Try
                         'read the graphic pack to color map file, find the color, and set it
                         Dim mapFile As IO.FileInfo = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) String.Compare(f.Name, "color_map.xml", True) = 0)
-                        If mapFile IsNot Nothing Then
+                        'if we're not showing prompts, we don't want to mess with the colors
+                        If mapFile IsNot Nothing AndAlso showPrompts Then
                             Dim xmlDoc As XmlDocument
                             Dim nodes As XmlNodeList
 
@@ -98,12 +99,11 @@ Public Class graphicsSets
                             For Each node As XmlNode In nodes
                                 If String.Compare(node.ChildNodes(0).InnerText, packName, True) = 0 Then
                                     Dim color As String = node.ChildNodes(1).InnerText
-                                    If color <> MainForm.optCbColors.SelectedValue.ToString AndAlso _
-                                        MsgBox("This tileset has a color scheme associated with it, would you like apply it as well?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Change Colors") = MsgBoxResult.Yes Then
+                                    If color <> MainForm.optCbColors.SelectedValue.ToString AndAlso MsgBox("This tileset has a color scheme associated with it, would you like apply it as well?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Change Colors") = MsgBoxResult.Yes Then
                                         MainForm.optCbColors.SelectedValue = color
-                                        MainForm.optCbColors.saveOption()
-                                        Exit For
+                                        MainForm.optCbColors.saveOption()                                                                            
                                     End If
+                                    Exit For
                                 End If
                             Next
                         End If
@@ -118,7 +118,7 @@ Public Class graphicsSets
             End Try
 
             My.Settings.Item("GRAPHICS") = packName
-            MsgBox("Graphics successfully switched.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Success")
+            If showPrompts Then MsgBox("Graphics successfully switched.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Success")
 
         Catch ex As Exception
             MsgBox("Something went horribly wrong while attempting to switch graphics!" & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
