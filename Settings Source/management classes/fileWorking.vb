@@ -9,6 +9,7 @@ Public Class fileWorking
     Private Shared m_mwGraphicDirs As New List(Of IO.DirectoryInfo) 'masterwork graphics by directory
     Private Shared m_dfDirs As New List(Of IO.DirectoryInfo)
 
+    Private Shared m_mwSettingsProfiles As New List(Of IO.FileInfo) 'json saved settings
 
     Public Shared Sub loadFilePaths()
         loadDfFilePaths()
@@ -16,6 +17,7 @@ Public Class fileWorking
         loadMwGraphics()
 
         loadRawFiles()
+        loadProfiles()
     End Sub
 
     Public Shared Sub loadDfFilePaths()
@@ -46,8 +48,6 @@ Public Class fileWorking
         Next
     End Sub
 
-
-
     Private Shared Sub loadMwFilePaths()
         'load all setting files (keybinds, colors, etc.)
         m_mwFilePaths.AddRange(getFiles(m_masterworkRootDir & "\Settings", True, New String() {".txt", ".ttf"}))
@@ -60,6 +60,10 @@ Public Class fileWorking
         m_mwGraphicFilePaths.AddRange(getFiles(m_graphicsDir, True, New String() {".txt", ".png", ".xml"}))
     End Sub
 
+    Public Shared Sub loadProfiles()
+        m_mwSettingsProfiles.Clear()
+        m_mwSettingsProfiles.AddRange(getFiles(m_profilesDir, True, New String() {".json", ".JSON"}))
+    End Sub
 
     Public Shared ReadOnly Property dfFilePaths As List(Of IO.FileInfo)
         Get
@@ -85,6 +89,12 @@ Public Class fileWorking
         End Get
     End Property
 
+    Public Shared ReadOnly Property mwProfiles As List(Of IO.FileInfo)
+        Get
+            Return m_mwSettingsProfiles
+        End Get
+    End Property
+
     Public Shared Function getDirectories(ByVal rootDirectory As String, ByVal recursive As Boolean) As List(Of IO.DirectoryInfo)
         Dim searchOpt As IO.SearchOption = If(recursive, IO.SearchOption.AllDirectories, IO.SearchOption.TopDirectoryOnly)
         Return IO.Directory.GetDirectories(rootDirectory, "*.*", searchOpt).Select(Function(d) New IO.DirectoryInfo(d)).ToList
@@ -105,6 +115,10 @@ Public Class fileWorking
 
     Public Shared Function findMwFile(ByVal fileName As String) As IO.FileInfo
         Return findFile(fileName, mwFilePaths)
+    End Function
+
+    Public Shared Function findSettingsProfileFile(ByVal fileName As String) As IO.FileInfo
+        Return findFile(fileName, m_mwSettingsProfiles)
     End Function
 
     Public Shared Function findMwFilePath(ByVal fileName As String, Optional ByVal graphicsOnly As Boolean = False) As String

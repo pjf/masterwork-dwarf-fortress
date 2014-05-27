@@ -3,6 +3,7 @@
     Public Const m_masterworkRootDir As String = "MasterworkDwarfFortress"
     Public Const m_graphicsDir As String = m_masterworkRootDir + "\graphics"
     Public Const m_utilityDir As String = m_masterworkRootDir + "\Utilities"
+    Public Const m_profilesDir As String = m_masterworkRootDir + "\Settings\Profiles"
 
     Public Const m_worldGenFileName As String = "world_gen.txt"
     Public Const m_initFileName As String = "init.txt"
@@ -23,4 +24,9 @@
 
     Public Shared m_dfRaws As New Dictionary(Of IO.FileInfo, String)
     Public Shared m_mwRaws As New Dictionary(Of IO.FileInfo, String)
+
+    Public Structure optionSetting
+        Public name As String
+        Public value As Object
+    End Structure
 End Class

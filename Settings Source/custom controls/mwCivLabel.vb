@@ -8,6 +8,7 @@ Public Class mwCivLabel
     Private m_skillsTag As String
     Private m_advTag As String
     Private m_fortTag As String
+    Private m_triggerTag As String
 
     <DisplayNameAttribute("Entity file"), _
     CategoryAttribute("~MASTERWORK"), _
@@ -66,6 +67,18 @@ Public Class mwCivLabel
         End Get
         Set(value As String)
             m_advTag = value
+        End Set
+    End Property
+
+    <DisplayNameAttribute("Generic Tag"), _
+    CategoryAttribute("~MASTERWORK"), _
+    DescriptionAttribute("Used as part of various tags: X_SIEGE, X_TRADE, X_HOSTILE, X_MATERIALS")> _
+    Public Overridable Property triggerTag As String
+        Get
+            Return m_triggerTag
+        End Get
+        Set(value As String)
+            m_triggerTag = value
         End Set
     End Property
 

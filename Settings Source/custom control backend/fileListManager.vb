@@ -70,7 +70,7 @@ Public Class fileListManager
     End Function
 
     Private Function findFiles(ByVal optm As optionManager, ByVal pattern As String) As List(Of IO.FileInfo)
-        'Dim start As DateTime = Now
+        Dim start As DateTime = Now
         Dim results As New List(Of IO.FileInfo)
 
         'if we have an override specified, then just find those files
@@ -87,8 +87,8 @@ Public Class fileListManager
             Next
             addGraphicFiles(results)
         End If
-        'Dim elapsed As TimeSpan = Now - start
-        'Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for pattern " & pattern)
+        Dim elapsed As TimeSpan = Now - start
+        Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for pattern " & pattern)
         Return results
     End Function
 
@@ -160,6 +160,15 @@ Public Class fileListManager
     Public ReadOnly Property isOverriden() As Boolean
         Get
             Return m_fileOverrides
+        End Get
+    End Property
+
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public ReadOnly Property affectsGraphics As Boolean
+        Get
+            Return files(True).Count > 0
         End Get
     End Property
 

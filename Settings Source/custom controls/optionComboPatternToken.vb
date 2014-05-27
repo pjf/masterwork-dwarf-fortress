@@ -23,7 +23,7 @@ Public Class optionComboPatternToken
         ' Add any initialization after the InitializeComponent() call.
     End Sub
 
-    Public Sub loadOption() Implements iToken.loadOption
+    Public Sub loadOption(Optional value As Object = Nothing) Implements iToken.loadOption
         m_opt.valueUpdatingPaused = True
         Try
             If Me.DataSource Is Nothing Then
@@ -33,7 +33,11 @@ Public Class optionComboPatternToken
                     Me.ValueMember = "value"
                 End If
             End If
-            Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.loadFiles(m_opt.optionManager, m_pattern))
+            If value IsNot Nothing Then
+                m_opt.valueUpdatingPaused = False : Me.SelectedValue = CStr(value) : optionComboPatternToken_SelectionChangeCommitted(Me, New EventArgs) : m_opt.valueUpdatingPaused = True
+            Else
+                Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.loadFiles(m_opt.optionManager, m_pattern))                
+            End If
             m_value = Me.SelectedValue
 
         Catch ex As Exception
@@ -126,4 +130,13 @@ Public Class optionComboPatternToken
     Public Function patternInfo() As KeyValuePair(Of String, String) Implements iExportInfo.patternInfo
         Return New KeyValuePair(Of String, String)(m_pattern, m_replace)
     End Function
+
+    Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
+        Return m_opt.fileManager.affectsGraphics
+    End Function
+
+    Public Function currentValue() As Object Implements iToken.currentValue
+        Return Me.SelectedValue.ToString
+    End Function
+
 End Class

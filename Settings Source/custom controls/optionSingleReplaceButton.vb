@@ -20,10 +20,15 @@ Public Class optionSingleReplaceButton
 
     Private m_opt As optionSingleReplace
 
-    Public Sub loadOption() Implements iToken.loadOption
+    Public Sub loadOption(Optional ByVal value As Object = Nothing) Implements iToken.loadOption
         m_opt.valueUpdatingPaused = True
         Try
-            Me.Checked = yesNoToBoolean(m_opt.loadOption)
+            If value IsNot Nothing Then
+                Me.Checked = CBool(value)
+                m_opt.valueUpdatingPaused = False : saveOption() : m_opt.valueUpdatingPaused = True
+            Else
+                Me.Checked = yesNoToBoolean(m_opt.loadOption)
+            End If
         Catch ex As Exception
             Me.Checked = False
             Me.Image = My.Resources.exclamation_small
@@ -79,5 +84,13 @@ Public Class optionSingleReplaceButton
 
     Public Function patternInfo() As KeyValuePair(Of String, String) Implements iExportInfo.patternInfo
         Return New KeyValuePair(Of String, String)("", "")
+    End Function
+
+    Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
+        Return m_opt.fileManager.affectsGraphics
+    End Function
+
+    Public Function currentValue() As Object Implements iToken.currentValue
+        Return Me.Checked
     End Function
 End Class

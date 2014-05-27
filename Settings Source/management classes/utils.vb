@@ -1,4 +1,6 @@
-﻿Public Class utils
+﻿Imports System.Text
+
+Public Class utils
 
     Public Shared Sub initControls(ByVal parentControl As Control, ByRef toolTipMaker As ToolTip, ByVal loadSetting As Boolean, ByVal loadTooltip As Boolean, ByVal loadTheme As Boolean)
         For Each c As Control In parentControl.Controls
@@ -89,5 +91,54 @@
                 tabMain.TabGradient.TabPageTextColor = Theme.ColorTable.TabText_2013
         End Select
     End Sub
+
+    '<summary>
+    'Adds indentation and line breaks to output of JavaScriptSerializer
+    '</summary>
+    Public Shared Function formatJsonOutput(jsonString As String) As String
+        Dim stringBuilder = New StringBuilder()
+
+        Dim escaping As Boolean = False
+        Dim inQuotes As Boolean = False
+        Dim indentation As Integer = 0
+
+        For Each character As Char In jsonString
+            If escaping Then
+                escaping = False
+                stringBuilder.Append(character)
+            Else
+                If character = "\"c Then
+                    escaping = True
+                    stringBuilder.Append(character)
+                ElseIf character = """"c Then
+                    inQuotes = Not inQuotes
+                    stringBuilder.Append(character)
+                ElseIf Not inQuotes Then
+                    If character = ","c Then
+                        stringBuilder.Append(character)
+                        stringBuilder.Append(vbNewLine)
+                        stringBuilder.Append(vbTab, indentation)
+                    ElseIf character = "["c OrElse character = "{"c Then
+                        stringBuilder.Append(character)
+                        stringBuilder.Append(vbNewLine)
+                        stringBuilder.Append(vbTab, System.Threading.Interlocked.Increment(indentation))
+                    ElseIf character = "]"c OrElse character = "}"c Then
+                        stringBuilder.Append(vbNewLine)
+                        stringBuilder.Append(vbTab, System.Threading.Interlocked.Decrement(indentation))
+                        stringBuilder.Append(character)
+                    ElseIf character = ":"c Then
+                        stringBuilder.Append(character)
+                        stringBuilder.Append(vbTab)
+                    Else
+                        stringBuilder.Append(character)
+                    End If
+                Else
+                    stringBuilder.Append(character)
+                End If
+            End If
+        Next
+
+        Return stringBuilder.ToString()
+    End Function
 
 End Class

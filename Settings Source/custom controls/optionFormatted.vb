@@ -42,10 +42,15 @@ Public Class optionFormatted
         saveOption()
     End Sub
 
-    Public Sub loadOption() Implements iToken.loadOption
+    Public Sub loadOption(Optional ByVal value As Object = Nothing) Implements iToken.loadOption
         m_opt.valueUpdatingPaused = True
         Try
-            Me.Text = CStr(m_opt.loadOption).Trim
+            If value IsNot Nothing Then
+                Me.Text = CStr(value)
+                m_opt.valueUpdatingPaused = False : optionFormatted_Validated(Me, Nothing) : m_opt.valueUpdatingPaused = True
+            Else
+                Me.Text = CStr(m_opt.loadOption).Trim
+            End If
         Catch ex As Exception
             Me.Text = ""
         Finally
@@ -55,13 +60,6 @@ Public Class optionFormatted
 
     Public Sub saveOption() Implements iToken.saveOption
         If m_opt.valueUpdatingPaused Or Me.DesignMode Then Exit Sub
-        m_opt.saveOption()
-        m_opt.valueUpdatingPaused = False
-    End Sub
-
-    Public Sub saveOption(ByVal newValue As Object)
-        If m_opt.valueUpdatingPaused Or Me.DesignMode Then Exit Sub
-        Me.Text = CStr(newValue)
         m_opt.saveOption()
         m_opt.valueUpdatingPaused = False
     End Sub
@@ -138,5 +136,13 @@ Public Class optionFormatted
 
     Public Function patternInfo() As KeyValuePair(Of String, String) Implements iExportInfo.patternInfo
         Return New KeyValuePair(Of String, String)("", "")
+    End Function
+
+    Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
+        Return m_opt.fileManager.affectsGraphics
+    End Function
+
+    Public Function currentValue() As Object Implements iToken.currentValue
+        Return Me.Text.ToString
     End Function
 End Class

@@ -25,7 +25,7 @@ Public Class optionSingleFileReplace
     End Sub
 
     <Browsable(False), _
-    EditorBrowsable(EditorBrowsableState.Never), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
     DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
     Public Property valueUpdatingPaused() As Boolean
         Get

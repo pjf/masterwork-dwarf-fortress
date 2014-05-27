@@ -8,6 +8,7 @@ CategoryAttribute("~MASTERWORK"), _
 TypeConverterAttribute(GetType(ExpandableObjectConverter))> _
 Public Class optionMulti
     Inherits optionBase
+    Implements iExportInfo
 
     Public Sub New()
         MyBase.New()
@@ -26,4 +27,27 @@ Public Class optionMulti
         End Set
     End Property
 
+    Public Function fileInfo() As List(Of String) Implements iExportInfo.fileInfo
+        Return fullFileList
+    End Function
+
+    Public Function comboItems() As comboItemCollection Implements iExportInfo.comboItems
+        Return Nothing
+    End Function
+
+    Public Function tagItems() As rawTokenCollection Implements iExportInfo.tagItems
+        Return optionTags
+    End Function
+
+    Public Function hasFileOverrides() As Boolean Implements iExportInfo.hasFileOverrides
+        Return fileManager.isOverriden
+    End Function
+
+    Public Function patternInfo() As KeyValuePair(Of String, String) Implements iExportInfo.patternInfo
+        Return New KeyValuePair(Of String, String)("", "")
+    End Function
+
+    Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
+        Return fileManager.affectsGraphics
+    End Function
 End Class

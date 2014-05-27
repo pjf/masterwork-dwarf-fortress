@@ -62,7 +62,7 @@ Public Class optionBase
     End Sub
 
     <Browsable(False), _
-    EditorBrowsable(EditorBrowsableState.Never), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
     DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
     Public Property valueUpdatingPaused() As Boolean
         Get
@@ -98,10 +98,6 @@ Public Class optionBase
                 For Each name As String In m_fileManager.fileNames
                     If Not files.Contains(name) Then files.Add(name)
                 Next
-            End If
-
-            If m_fileManager.files(True).Count > 0 Then
-                files.Add("** Affects graphic packs! **")
             End If
 
             Return files

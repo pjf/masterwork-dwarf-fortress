@@ -328,15 +328,24 @@ Public Class optionManager
                 Dim updatedData As String = newData
 
                 For Each t As rawToken In tokens
+                    Dim oldValue As String
+                    Dim newValue As String
+
                     If enable Then
                         'replace off with on
-                        updatedData = Replace(newData, t.optionOffValue, t.optionOnValue)
+                        oldValue = t.optionOffValue : newValue = t.optionOnValue
                     Else
                         'replace on with off
-                        updatedData = Replace(newData, t.optionOnValue, t.optionOffValue)
+                        newValue = t.optionOffValue : oldValue = t.optionOnValue
                     End If
-                    'if the token wasn't updated yet, check if it has been now
-                    If Not results(t) Then results(t) = (Not updatedData = newData)
+
+                    If Not newData.Contains(newValue) Then
+                        updatedData = Replace(newData, oldValue, newValue)
+                        If Not results(t) Then results(t) = (Not updatedData = newData)
+                    Else
+                        results(t) = True
+                    End If
+
 
                     If updatedData = newData And tokens.Count > 1 Then
                         Debug.WriteLine(fi.FullName & " remained unchanged after changing option " & _
@@ -425,10 +434,8 @@ Public Class optionManager
     End Function
 
     Public Function replacePatternsInFiles(ByVal pattern As String, ByVal replacement As String, ByVal fManager As fileListManager) As Boolean
-        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.files) : replaceWithPatterns(pattern, replacement, fManager.files(True), False)
-        'If updateTileSets Then
-        '    replaceWithPatterns(pattern, replacement, fManager.getRelatedGraphicsFilePaths)
-        'End If
+        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.files)
+        replaceWithPatterns(pattern, replacement, fManager.files(True), False)
         Return success
     End Function
 
@@ -438,7 +445,7 @@ Public Class optionManager
         Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
         Dim changeCount As Integer = 0
         For Each fi As FileInfo In files
-            Dim data As String = getFileData(fi) 'm_dfRaws.Item(fi)
+            Dim data As String = getFileData(fi)
             Dim updated As String = rx.Replace(data, replacement)
             If data <> updated Then
                 saveFile(fi, updated)
@@ -448,15 +455,17 @@ Public Class optionManager
             End If
         Next
 
-        If isCritical Then
-            If changeCount > 0 Then
-                Return True
-            Else
-                Return False
-            End If
-        Else
-            Return True
-        End If
+        Return True
+
+        'If isCritical Then
+        '    If changeCount > 0 Then
+        '        Return True
+        '    Else
+        '        Return False
+        '    End If
+        'Else
+        '    Return True
+        'End If
     End Function
 
     Private Function getFileData(ByVal fi As IO.FileInfo) As String

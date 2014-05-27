@@ -4,11 +4,15 @@ Imports MasterworkDwarfFortress.fileWorking
 Imports System.Text.RegularExpressions
 Imports System.ComponentModel
 
+Imports System.Web.Script.Serialization
+
+
 <Microsoft.VisualBasic.ComClass()> Public Class MainForm
 
 #Region "declarations"
     Private m_frmPreview As New frmTilesetPreviewer
     Private m_currTheme As RibbonProfesionalRendererColorTable
+    Private m_frmWait As New frmWait
 #End Region
 
     Public Sub New()
@@ -19,7 +23,7 @@ Imports System.ComponentModel
         setTheme()
     End Sub
 
-    Private Sub setTheme()        
+    Private Sub setTheme()
         Select Case My.Settings.THEME
             Case Is = "DEFAULT"
                 Theme.ThemeColor = RibbonTheme.Normal
@@ -31,6 +35,15 @@ Imports System.ComponentModel
         Theme.ColorTable = m_currTheme
         Me.BackColor = Theme.ColorTable.RibbonBackground_2013
         ribbonMain.Refresh()
+        m_frmWait.updateTheme()
+    End Sub
+
+    Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If rCbProfiles.SelectedItem IsNot Nothing Then
+            If MsgBox("Would you like to save the changes to profile " & rCbProfiles.SelectedItem.Text & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Save Profile") = MsgBoxResult.Yes Then
+                rBtnSaveProfile_Click(rBtnSaveProfile, Nothing)
+            End If
+        End If
     End Sub
 
 
@@ -49,6 +62,8 @@ Imports System.ComponentModel
 
         randomCreaturesExistCheck()
 
+        loadProfileCombo()
+
         'DISABLED - updating saves is incredibly broken due to the messy raws
         'If fileWorking.savedGameDirs.Count > 1 Then
         '    btnUpdateSaves.Enabled = True : btnUpdateSaves.Visible = True
@@ -64,9 +79,6 @@ Imports System.ComponentModel
         If Not Debugger.IsAttached Then
             ribbonMain.Tabs.Remove(rTabDev)
         End If
-
-        'saveSettings()
-        'loadSettings()
     End Sub
 
     'this override prevents flickering when drawing transparent controls over background images within a tabcontrol
@@ -106,7 +118,7 @@ Imports System.ComponentModel
             loadCivTable()
 
             'load all our current options, and format our controls to the current theme
-            initControls(Me, ToolTipMaker, True, True, True)            
+            initControls(Me, ToolTipMaker, True, True, True)
 
             'load the world gen templates
             loadWorldGenCombo()
@@ -117,6 +129,80 @@ Imports System.ComponentModel
             Me.Close()
         End If
     End Sub
+
+#Region "profiles"
+
+    Private Sub rBtnNewProfile_Click(sender As Object, e As EventArgs) Handles rBtnNewProfile.Click
+        Try
+            Dim dSave As New SaveFileDialog()
+            dSave.DefaultExt = ".JSON"
+            dSave.OverwritePrompt = True
+            dSave.InitialDirectory = IO.Path.Combine(Application.StartupPath, globals.m_profilesDir)
+            dSave.Filter = "Profile Files (*.JSON)|*.JSON;*.json|All Files (*.*)|*.*"
+            dSave.FilterIndex = 0
+            If dSave.ShowDialog = Windows.Forms.DialogResult.OK Then
+                saveSettings(dSave.FileName)
+                loadProfiles()
+                loadProfileCombo()
+                rCbProfiles.SelectedValue = dSave.FileName
+            End If
+        Catch ex As Exception
+            MsgBox("Failed to create a new profile!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Create Failed")
+        End Try
+    End Sub
+
+    Private Sub loadProfileCombo()
+        If rCbProfiles.DropDownItems.Count > 0 Then
+            rCbProfiles.DropDownItems.Clear()
+        End If
+        For Each fi As IO.FileInfo In mwProfiles
+            Dim rItem As New RibbonLabel()
+            rItem.Image = Nothing
+            rItem.Text = IO.Path.GetFileNameWithoutExtension(fi.Name)
+            rItem.Value = fi.FullName
+            rCbProfiles.DropDownItems.Add(rItem)
+        Next
+    End Sub
+
+    Private Sub rBtnSaveProfile_Click(sender As Object, e As EventArgs) Handles rBtnSaveProfile.Click
+        Try
+            If rCbProfiles.SelectedValue Is Nothing Then Exit Sub
+            Dim strPath As String = rCbProfiles.SelectedItem.Value
+            If IO.File.Exists(strPath) Then
+                saveSettings(strPath)
+            End If
+        Catch ex As Exception
+            MsgBox("Failed to save the current profile!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Save Failed")
+        End Try
+    End Sub
+
+    Private Sub rBtnApplyProfile_Click(sender As Object, e As EventArgs) Handles rBtnApplyProfile.Click
+        Try
+            If rCbProfiles.SelectedValue Is Nothing Then Exit Sub
+            Dim strPath As String = rCbProfiles.SelectedItem.Value
+            If IO.File.Exists(strPath) Then
+                showWaitScreen("Loading profile, please wait...")
+                loadSettings(strPath)                
+            End If
+        Catch ex As Exception
+            MsgBox("Failed to apply the current profile!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Apply Failed")
+        Finally
+            hideWaitScreen()
+        End Try
+    End Sub
+
+    Private Sub rBtnDelProfile_Click(sender As Object, e As EventArgs) Handles rBtnDelProfile.Click
+        If rCbProfiles.SelectedValue IsNot Nothing Then
+            If MsgBox("Are you sure you want to delete " & rCbProfiles.SelectedItem.Text & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm Deletion") = MsgBoxResult.Yes Then
+                Dim strPath As String = rCbProfiles.SelectedItem.Value
+                If IO.File.Exists(strPath) Then IO.File.Delete(strPath)
+                loadProfiles()
+                loadProfileCombo()
+            End If
+        End If
+    End Sub
+
+#End Region
 
     Private Sub setupRibbonHandlers(ByVal items As RibbonItemCollection)
         For Each item As RibbonItem In items
@@ -138,25 +224,42 @@ Imports System.ComponentModel
     End Sub
 
 #Region "formatting and themes"
+
     Private Sub rBtnThemes_DropDownItemClicked(sender As Object, e As RibbonItemEventArgs) Handles rBtnThemes.DropDownItemClicked
         If My.Settings.THEME = e.Item.Tag.ToString.ToUpper Then Exit Sub
-        My.Settings.THEME = e.Item.Tag.ToString.ToUpper
-        Dim currTab As TabPage = tabMain.SelectedTab
+        Try
+            My.Settings.THEME = e.Item.Tag.ToString.ToUpper
+            Dim currTab As TabPage = tabMain.SelectedTab
 
-        setTheme()
-        Dim frmWait As New frmThemeChange
-        Me.Opacity = 0
-        Me.tabMain.SelectedTab = tabSettings 'choose a tab with few controls as the refresh causes massive flickering
-        frmWait.Show()
-        Application.DoEvents() 'hurrghh, this is a bad idea
-        initControls(Me, ToolTipMaker, False, False, True)
-        Me.tabMain.SelectedTab = currTab
-        Me.Opacity = 1        
-        frmWait.Hide()
+            setTheme()
+
+            showWaitScreen("Changing theme, please wait...")
+            initControls(Me, ToolTipMaker, False, False, True)
+            Me.tabMain.SelectedTab = currTab
+
+        Catch ex As Exception
+            MsgBox("There has been a problem changing the theme.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Theme Failed")
+        Finally
+            hideWaitScreen()
+        End Try
     End Sub
 
 #End Region
 
+    Private Sub showWaitScreen(ByVal message As String, Optional ByVal opacity As Double = 0.0)        
+        Me.Opacity = opacity
+        'Me.tabMain.SelectedTab = tabSettings 'choose a tab with few controls as the refresh causes massive flickering
+        m_frmWait.lblMsg.Text = message
+        m_frmWait.Show()
+        Application.DoEvents() 'hurrghh, this is a bad idea
+    End Sub
+
+    Private Sub hideWaitScreen()
+        If m_frmWait IsNot Nothing AndAlso m_frmWait.Visible Then
+            Me.Opacity = 1
+            m_frmWait.Hide()
+        End If
+    End Sub
 
 #Region "tileset change and preview"
 
@@ -406,21 +509,22 @@ Imports System.ComponentModel
         frmInfo.Controls.Add(rtext)
         rtext.Dock = DockStyle.Fill
 
-        rtext.AppendText("{""Options"": [" & vbNewLine)
-        exportOptions(tabMain, rtext)
-        rtext.AppendText("]}")
+        Dim exportedObjects As New List(Of simpleExportObject)        
+        exportOptions(tabMain, exportedObjects)        
+        Dim s As New JavaScriptSerializer()
+        rtext.Text = utils.formatJsonOutput(s.Serialize(exportedObjects))
         frmInfo.Show()
     End Sub
 
-    Private Sub saveSettings()
-        My.Settings.SettingsKey = "TEST"
-        Dim newSettings As My.MySettings = My.Settings        
-        saveSettings(tabMain)
-        newSettings.Save()
+    Private Sub saveSettings(ByVal strPath As String)
+        Dim optionSettings As New Dictionary(Of String, Object)
+        saveSettings(tabMain, optionSettings)
+        Dim s As New JavaScriptSerializer
+        Dim info As String = utils.formatJsonOutput(s.Serialize(optionSettings))        
+        If Not IO.File.Exists(strPath) Then IO.File.Create(strPath).Dispose()
+        fileWorking.saveFile(strPath, info)
     End Sub
-    Private Sub saveSettings(ByVal parentControl As Control)
-        If Not Debugger.IsAttached Then Exit Sub
-
+    Private Sub saveSettings(ByVal parentControl As Control, ByRef optionSettings As Dictionary(Of String, Object))
         For Each c As Control In parentControl.Controls
             If Not c.Enabled Then
                 Debug.WriteLine("skipping disabled control: " & c.Name)
@@ -428,39 +532,28 @@ Imports System.ComponentModel
                 Dim conOpt As iToken = TryCast(c, iToken)
                 If conOpt IsNot Nothing Then
                     Try
-                        If My.Settings.Properties(c.Name) Is Nothing Then
-                            Dim p As Configuration.SettingsProperty
-                            p = New Configuration.SettingsProperty(c.Name)
-                            p.Provider = My.Settings.Providers("Masterwork")
-                            p.Attributes.Add(GetType(Configuration.UserScopedSettingAttribute), New Configuration.UserScopedSettingAttribute())
-                            p.PropertyType = GetType(String) 'Me(prop).GetType
-                            My.Settings.Properties.Add(p)
-                            My.Settings.PropertyValues.Add(New Configuration.SettingsPropertyValue(p))
-                        End If
-                        My.Settings.Properties(c.Name).DefaultValue = c.Text
-                        My.Settings.Item(c.Name) = c.Text
+                        optionSettings.Add(c.Name, conOpt.currentValue)
                     Catch ex As Exception
                         Debug.WriteLine("!TEST EXCEPTION! " & ex.ToString)
                     End Try
                 End If
 
                 If c.HasChildren Then
-                    saveSettings(c)
+                    saveSettings(c, optionSettings)
                 End If
             End If
         Next
     End Sub
 
-    Private Sub loadSettings()
-        My.Settings.SettingsKey = "TEST"
-        'CType(My.Settings.Providers("Masterwork"), appSettingsManager).reload(My.Settings.SettingsKey)
-        'Dim theSettings As My.MySettings = DirectCast(My.MySettings, My.MySettings)
-        My.Settings.Reset()
-        loadSettings(tabMain)        
+    Private Sub loadSettings(ByVal filePath As String)        
+        If IO.File.Exists(filePath) Then
+            Dim optionSettings As New Dictionary(Of String, Object)
+            Dim s As New JavaScriptSerializer
+            optionSettings = s.Deserialize(fileWorking.readFile(filePath, False), GetType(Dictionary(Of String, Object)))
+            loadSettings(tabMain, optionSettings)
+        End If
     End Sub
-    Private Sub loadSettings(ByVal parentControl As Control)
-        If Not Debugger.IsAttached Then Exit Sub
-
+    Private Sub loadSettings(ByVal parentControl As Control, ByVal optionSettings As Dictionary(Of String, Object))
         For Each c As Control In parentControl.Controls
             If Not c.Enabled Then
                 Debug.WriteLine("skipping disabled control: " & c.Name)
@@ -468,9 +561,8 @@ Imports System.ComponentModel
                 Dim conOpt As iToken = TryCast(c, iToken)
                 If conOpt IsNot Nothing Then
                     Try
-                        Dim optFormatted As optionFormatted = TryCast(c, optionFormatted)
-                        If optFormatted IsNot Nothing Then
-                            optFormatted.saveOption(My.Settings.Item(c.Name))
+                        If optionSettings.ContainsKey(c.Name) Then
+                            conOpt.loadOption(optionSettings.Item(c.Name))
                         End If
                     Catch ex As Exception
                         Debug.WriteLine("!SETTINGS EXCEPTION! " & ex.ToString)
@@ -478,7 +570,7 @@ Imports System.ComponentModel
                 End If
 
                 If c.HasChildren Then
-                    loadSettings(c)
+                    loadSettings(c, optionSettings)
                 End If
             End If
         Next
@@ -510,7 +602,7 @@ Imports System.ComponentModel
         Next
     End Sub
 
-    Private Sub exportOptions(ByVal parentControl As Control, ByRef rText As RichTextBox)
+    Private Sub exportOptions(ByVal parentControl As Control, ByRef exportedObjects As List(Of simpleExportObject))
         If Not Debugger.IsAttached Then Exit Sub
 
         For Each c As Control In parentControl.Controls
@@ -518,70 +610,17 @@ Imports System.ComponentModel
                 Debug.WriteLine("skipping disabled control: " & c.Name)
             Else
                 Dim conOpt As iExportInfo = TryCast(c, iExportInfo)
-                Dim tempList As New List(Of String)
-                Dim temp As String                               
                 If conOpt IsNot Nothing Then
                     Try
-                        rText.AppendText(vbTab & "{" & vbNewLine)
-
-                        rText.AppendText(String.Format("{0}{0}""Name"": ""{1}"",", vbTab, c.Name) & vbNewLine)
-                        rText.AppendText(String.Format("{0}{0}""Text"": ""{1}"",", vbTab, c.Text) & vbNewLine)
-                        rText.AppendText(String.Format("{0}{0}""Tooltip"": ""{1}"",", vbTab, IIf(ToolTipMaker.GetToolTip(c) <> "", ToolTipMaker.GetToolTip(c).Replace(vbNewLine, " ").Replace("""", "'"), "").Trim) & vbNewLine)
-
-                        tempList.Clear()
-                        rText.AppendText(String.Format("{0}{0}""Files"": [", vbTab))
-                        For Each fname As String In conOpt.fileInfo
-                            tempList.Add("""" & fname & """")
-                        Next                        
-                        rText.AppendText(String.Join(", ", tempList) & "]," & vbNewLine)
-                        rText.AppendText(String.Format("{0}{0}""Files Overridden"": ""{1}"",", vbTab, IIf(conOpt.hasFileOverrides, "true", "false")) & vbNewLine)
-
-                        If conOpt.tagItems IsNot Nothing AndAlso conOpt.tagItems.Count > 0 Then
-                            tempList.Clear() : temp = ""
-                            rText.AppendText(String.Format("{0}{0}""Tags"": [", vbTab) & vbNewLine)
-                            For Each t As rawToken In conOpt.tagItems
-                                temp = String.Format("{0}{0}{0}{{", vbTab) & vbNewLine
-                                temp &= String.Format("{0}{0}{0}""TokenName"": ""{1}"",", vbTab, t.tokenName) & vbNewLine
-                                temp &= String.Format("{0}{0}{0}""On"": ""{1}"",", vbTab, t.optionOnValue) & vbNewLine
-                                temp &= String.Format("{0}{0}{0}""Off"": ""{1}"",", vbTab, t.optionOffValue) & vbNewLine
-                                temp &= String.Format("{0}{0}{0}}}", vbTab)
-                                tempList.Add(temp)
-                            Next
-                            rText.AppendText(String.Join(", " & vbNewLine, tempList) & vbNewLine)
-                            rText.AppendText(String.Format("{0}{0}],", vbTab) & vbNewLine)
-                        End If
-
-                        If conOpt.comboItems IsNot Nothing AndAlso conOpt.comboItems.Count > 0 Then
-                            tempList.Clear()
-                            temp = ""
-                            rText.AppendText(vbTab & vbTab & """DropDownItems"": [" & vbNewLine)
-                            For Each cbi As comboItem In conOpt.comboItems
-                                temp = String.Format("{0}{0}{0}{{", vbTab) & vbNewLine
-                                temp &= String.Format("{0}{0}{0}""Display"": ""{1}"",", vbTab, cbi.display) & vbNewLine
-                                temp &= String.Format("{0}{0}{0}""Value"": ""{1}"",", vbTab, cbi.value) & vbNewLine
-                                temp &= String.Format("{0}{0}{0}}}", vbTab)
-                                tempList.Add(temp)
-                            Next
-                            rText.AppendText(String.Join(", " & vbNewLine, tempList) & vbNewLine)
-                            rText.AppendText(String.Format("{0}{0}],", vbTab) & vbNewLine)
-                        End If
-
-                        If conOpt.patternInfo.Key <> "" Then
-                            rText.AppendText(String.Format("{0}{0}""Pattern"": [", vbTab) & vbNewLine)
-                            rText.AppendText(String.Format("{0}{0}{0}""Find Pattern"": ""{1}"",", vbTab, conOpt.patternInfo.Key) & vbNewLine)
-                            rText.AppendText(String.Format("{0}{0}{0}""Replace Pattern"": ""{1}""", vbTab, conOpt.patternInfo.Value) & vbNewLine)
-                            rText.AppendText(String.Format("{0}{0}],", vbTab) & vbNewLine)
-                        End If
-
-
-                        rText.AppendText(vbTab & "}," & vbNewLine)
+                        Dim sobj As New simpleExportObject(c, ToolTipMaker)
+                        exportedObjects.Add(sobj)
                     Catch ex As Exception
                         Debug.WriteLine("!PRINT EXCEPTION! " & ex.ToString)
                     End Try
                 End If
 
                 If c.HasChildren Then
-                    exportOptions(c, rText)
+                    exportOptions(c, exportedObjects)
                 End If
             End If
         Next
@@ -593,12 +632,12 @@ Imports System.ComponentModel
 #Region "civ table loading"
     Private m_comboItemNames As List(Of String) = New List(Of String)(New String() {"Never", "Very Early", "Early", "Default", "Late", "Very Late"})
 
-    Private m_tradeTokens As List(Of String) = New List(Of String)(New String() {"PROGRESS_TRIGGER_POPULATION", "PROGRESS_TRIGGER_PRODUCTION", "PROGRESS_TRIGGER_TRADE"})
+    'Private m_tradeTokens As List(Of String) = New List(Of String)(New String() {"PROGRESS_TRIGGER_POPULATION", "PROGRESS_TRIGGER_PRODUCTION", "PROGRESS_TRIGGER_TRADE"})
     Private m_popLevels As List(Of String) = New List(Of String)(New String() {"N/A", "20", "50", "80", "110", "140"})
     Private m_wealthLevels As List(Of String) = New List(Of String)(New String() {"N/A", "5000", "25000", "100000", "200000", "300000"})
     Private m_exportLevels As List(Of String) = New List(Of String)(New String() {"N/A", "500", "2500", "10000", "20000", "30000"})
 
-    Private m_invasionTokens As List(Of String) = New List(Of String)(New String() {"PROGRESS_TRIGGER_POP_SIEGE", "PROGRESS_TRIGGER_PROD_SIEGE", "PROGRESS_TRIGGER_TRADE_SIEGE"})
+    'Private m_invasionTokens As List(Of String) = New List(Of String)(New String() {"PROGRESS_TRIGGER_POP_SIEGE", "PROGRESS_TRIGGER_PROD_SIEGE", "PROGRESS_TRIGGER_TRADE_SIEGE"})
 
     Private Sub loadCivTable()
         'column indexes
@@ -623,7 +662,7 @@ Imports System.ComponentModel
         ToolTipMaker.SetToolTip(lblCivInvasions, buildTriggerTooltip())
 
         Me.tableLayoutCivs.SuspendLayout()
-        For idxRow As Integer = 1 To Me.tableLayoutCivs.RowCount - 1            
+        For idxRow As Integer = 1 To Me.tableLayoutCivs.RowCount - 1
             civLabel = Me.tableLayoutCivs.GetControlFromPosition(0, idxRow)
             If civLabel Is Nothing OrElse (civLabel.entityFileName = "") Then
                 Throw New Exception("Civ Label " & Me.tableLayoutCivs.GetControlFromPosition(0, idxRow).Name & " is missing required properties!")
@@ -635,9 +674,9 @@ Imports System.ComponentModel
                 civName = civName.Replace(" ", "")
 
                 'add playable fortress mode option
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlaybleFort, 0).Width                
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlaybleFort, 0).Width
                 Dim btnPlayFort As New optionSingleReplaceButton
-                btnPlayFort.Name = "optBtnPlayFort" & civName
+                btnPlayFort.Name = "optBtnPlayCivFort" & civName
                 buildPlayableOption(btnPlayFort, civLabel.fortTag)
                 formatCivTableControl(btnPlayFort, intCtrlWidth, intCtrlHeight)
                 Me.tableLayoutCivs.Controls.Add(btnPlayFort, idxPlaybleFort, idxRow)
@@ -645,34 +684,40 @@ Imports System.ComponentModel
                 'add playable adventure mode option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlayableAdv, 0).Width
                 Dim btnPlayAdv As New optionSingleReplaceButton
-                btnPlayAdv.Name = "optBtnPlayFort" & civName
+                btnPlayAdv.Name = "optBtnPlayCivAdv" & civName
                 buildPlayableOption(btnPlayAdv, civLabel.advTag)
                 formatCivTableControl(btnPlayAdv, intCtrlWidth, intCtrlHeight)
                 Me.tableLayoutCivs.Controls.Add(btnPlayAdv, idxPlayableAdv, idxRow)
 
                 'add a caravan option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxCaravan, 0).Width
-                Dim cbCaravans As New optionComboBoxMulti
-                cbCaravans.Name = "optCbMultiCaravans" & civName
+                Dim cbCaravans As New optionComboPatternToken
+                'Dim cbCaravans As New optionComboBoxMulti
+                'cbCaravans.Name = "optCbMultiCaravans" & civName
+                cbCaravans.Name = "optCbPatternCivCaravans" & civName
                 formatCivTableControl(cbCaravans, intCtrlWidth, intCtrlHeight)
-                buildTriggerOption(cbCaravans, civLabel.entityFileName, m_tradeTokens)
+                'buildTriggerOption(cbCaravans, civLabel.entityFileName, m_tradeTokens)
+                buildTriggerOption(cbCaravans, civLabel.triggerTag & "_TRADE")
                 Me.tableLayoutCivs.Controls.Add(cbCaravans, idxCaravan, idxRow)
 
                 'add an invasion option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxInvasion, 0).Width
-                Dim cbInvasions As New optionComboBoxMulti
-                cbInvasions.Name = "optCbMultiInvasions" & civName
+                'Dim cbInvasions As New optionComboBoxMulti
+                Dim cbInvasions As New optionComboPatternToken
+                'cbInvasions.Name = "optCbMultiInvasions" & civName
+                cbInvasions.Name = "optCbPatternCivInvasions" & civName
                 formatCivTableControl(cbInvasions, intCtrlWidth, intCtrlHeight)
-                buildTriggerOption(cbInvasions, civLabel.entityFileName, m_invasionTokens)
+                'buildTriggerOption(cbInvasions, civLabel.entityFileName, m_invasionTokens)
+                buildTriggerOption(cbInvasions, civLabel.triggerTag & "_SIEGE")
                 Me.tableLayoutCivs.Controls.Add(cbInvasions, idxInvasion, idxRow)
 
                 'add a good/evil option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxHostile, 0).Width
                 Dim btnHostile As New optionSingleReplaceButton
-                btnHostile.Name = "optBtnGood" & civName
+                btnHostile.Name = "optBtnCivGood" & civName
                 btnHostile.options.fileManager.fileNames = New List(Of String)({civLabel.entityFileName})
-                btnHostile.options.enabledValue = "!BABYSNATCHER!" 'enabled = good = not baby snatchers
-                btnHostile.options.disabledValue = "[BABYSNATCHER]"
+                btnHostile.options.enabledValue = civLabel.triggerTag & "_HOSTILE" & "!BABYSNATCHER!" 'enabled = good = not baby snatchers
+                btnHostile.options.disabledValue = civLabel.triggerTag & "_HOSTILE" & "[BABYSNATCHER]"
                 btnHostile.ImageAlign = ContentAlignment.MiddleCenter
                 btnHostile.Text = ""
                 formatCivTableControl(btnHostile, intCtrlWidth, intCtrlHeight)
@@ -681,15 +726,16 @@ Imports System.ComponentModel
                 'add a material option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxMaterials, 0).Width
                 Dim cbMats As optionComboPatternToken = New optionComboPatternToken
-                cbMats.Name = "optCbPatternMats" & civName
+                cbMats.Name = "optCbPatternCivMats" & civName
                 formatCivTableControl(cbMats, intCtrlWidth, intCtrlHeight)
-                buildMatOption(cbMats, civLabel.entityFileName)
+                'buildMatOption(cbMats, civLabel.entityFileName)
+                buildMatOption(cbMats, civLabel.triggerTag & "_MATERIALS")
                 Me.tableLayoutCivs.Controls.Add(cbMats, idxMaterials, idxRow)
 
                 'add a skill option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxSkills, 0).Width
                 Dim cbSkills As optionComboPatternToken = New optionComboPatternToken
-                cbSkills.Name = "optCbPatternSkills" & civName
+                cbSkills.Name = "optCbPatternCivSkills" & civName
                 formatCivTableControl(cbSkills, intCtrlWidth, intCtrlHeight)
                 buildSkillOption(cbSkills, civLabel.skillsTag) 'civLabel.creatureFileName,
                 Me.tableLayoutCivs.Controls.Add(cbSkills, idxSkills, idxRow)
@@ -735,7 +781,7 @@ Imports System.ComponentModel
         End If
     End Sub
 
-    Private Sub buildMatOption(ByRef cb As optionComboPatternToken, ByVal entityFileName As String)
+    Private Sub buildMatOption(ByRef cb As optionComboPatternToken, ByVal tag As String)
         Dim matComboItems As New comboItemCollection
         matComboItems.Add(New comboItem("DEFAULT", "Default"))
         matComboItems.Add(New comboItem("WEAK", "Weak"))
@@ -743,23 +789,39 @@ Imports System.ComponentModel
         matComboItems.Add(New comboItem("STRONG", "Strong"))
 
         cb.options.itemList = matComboItems
-        cb.options.fileManager.fileNames = New List(Of String)({entityFileName})
 
-        cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]" ' & tag & \b) append this once raws are updated to unique tags
-        cb.replace = "${1}${value}]"
+        cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)(\]" & tag & "\b)"
+        cb.replace = "${1}${value}${2}"
     End Sub
+    'Private Sub buildMatOption(ByRef cb As optionComboPatternToken, ByVal entityFileName As String)
+    '    Dim matComboItems As New comboItemCollection
+    '    matComboItems.Add(New comboItem("DEFAULT", "Default"))
+    '    matComboItems.Add(New comboItem("WEAK", "Weak"))
+    '    matComboItems.Add(New comboItem("NORMAL", "Normal"))
+    '    matComboItems.Add(New comboItem("STRONG", "Strong"))
 
-    Private Sub buildTriggerOption(ByRef cb As optionComboBoxMulti, ByVal entityFileName As String, ByVal tokenList As List(Of String))
+    '    cb.options.itemList = matComboItems
+    '    cb.options.fileManager.fileNames = New List(Of String)({entityFileName})
+
+    '    cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]" ' & tag & \b) append this once raws are updated to unique tags
+    '    cb.replace = "${1}${value}]"
+    'End Sub
+
+    'Private Sub buildTriggerOption(ByRef cb As optionComboBoxMulti, ByVal entityFileName As String, ByVal tokenList As List(Of String))
+    '    'add the combobox items and associated values 0-5
+    '    loadTriggerItems(cb)
+    '    cb.options.fileManager.fileNames = New List(Of String)({entityFileName})
+    '    loadTriggerTokens(tokenList, cb.options.tokenList)
+    'End Sub
+
+    Private Sub buildTriggerOption(ByRef cb As optionComboPatternToken, ByVal tag As String)
         'add the combobox items and associated values 0-5
         loadTriggerItems(cb)
-        cb.options.fileManager.fileNames = New List(Of String)({entityFileName})
-        loadTriggerTokens(tokenList, cb.options.tokenList)
-
-        'set the tooltips        
-        'ToolTipMaker.SetToolTip(cb, buildTriggerTooltip())
+        cb.pattern = "(\[PROGRESS_TRIGGER_\w+:)(?<value>\d+)(\]" & tag & ")"
+        cb.replace = "${1}${value}${2}"
     End Sub
 
-    Private Sub loadTriggerItems(ByRef cb As optionComboBoxMulti)
+    Private Sub loadTriggerItems(ByRef cb As optionComboPatternToken)
         Dim idx As Integer = 0
         For Each s As String In m_comboItemNames
             Dim newItem As New comboItem
@@ -769,6 +831,17 @@ Imports System.ComponentModel
             idx += 1
         Next
     End Sub
+
+    'Private Sub loadTriggerItems(ByRef cb As optionComboBoxMulti)
+    '    Dim idx As Integer = 0
+    '    For Each s As String In m_comboItemNames
+    '        Dim newItem As New comboItem
+    '        newItem.display = s
+    '        newItem.value = idx
+    '        cb.options.itemList.Add(newItem)
+    '        idx += 1
+    '    Next
+    'End Sub
 
     Private Function buildTriggerTooltip() As String
         Dim msg As New List(Of String)
@@ -780,16 +853,15 @@ Imports System.ComponentModel
         Return String.Join(vbCrLf & vbCrLf, msg)
     End Function
 
-    Private Sub loadTriggerTokens(ByVal l As List(Of String), ByRef tokenList As rawTokenCollection)
-        For Each s As String In l
-            Dim newToken As New rawToken
-            newToken.tokenName = s : newToken.optionOnValue = "3" 'placeholder value (default)
-            tokenList.Add(newToken)
-        Next
-    End Sub
+    'Private Sub loadTriggerTokens(ByVal l As List(Of String), ByRef tokenList As rawTokenCollection)
+    '    For Each s As String In l
+    '        Dim newToken As New rawToken
+    '        newToken.tokenName = s : newToken.optionOnValue = "3" 'placeholder value (default)
+    '        tokenList.Add(newToken)
+    '    Next
+    'End Sub
 
 #End Region
-
 
 End Class
 

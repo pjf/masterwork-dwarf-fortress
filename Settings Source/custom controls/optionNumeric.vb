@@ -23,10 +23,15 @@ Public Class optionNumeric
 
     Dim m_opt As New optionSingle
 
-    Public Sub loadOption() Implements iToken.loadOption
+    Public Sub loadOption(Optional ByVal value As Object = Nothing) Implements iToken.loadOption
         m_opt.valueUpdatingPaused = True
         Try
-            Me.Value = CInt(m_opt.loadOption)
+            If value IsNot Nothing Then
+                Me.Value = CInt(value)
+                m_opt.valueUpdatingPaused = False : optionNumeric_Validated(Me, Nothing) : m_opt.valueUpdatingPaused = True
+            Else
+                Me.Value = CInt(m_opt.loadOption)
+            End If
             m_opt.valueChanged(CStr(Me.Value))
         Catch ex As Exception
             Me.Value = Me.Minimum
@@ -96,5 +101,13 @@ Public Class optionNumeric
 
     Public Function patternInfo() As KeyValuePair(Of String, String) Implements iExportInfo.patternInfo
         Return New KeyValuePair(Of String, String)("", "")
+    End Function
+
+    Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
+        Return m_opt.fileManager.affectsGraphics
+    End Function
+
+    Public Function currentValue() As Object Implements iToken.currentValue
+        Return CInt(Me.Value)
     End Function
 End Class

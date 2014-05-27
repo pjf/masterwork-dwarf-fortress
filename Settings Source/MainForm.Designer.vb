@@ -1666,6 +1666,14 @@ Partial Class MainForm
         Me.rBtnStoryMaker = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilDwarfTherapist = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilTileGenie = New System.Windows.Forms.RibbonButton()
+        Me.rTabProfiles = New System.Windows.Forms.RibbonTab()
+        Me.rPanelProfiles = New System.Windows.Forms.RibbonPanel()
+        Me.rBtnNewProfile = New System.Windows.Forms.RibbonButton()
+        Me.RibbonSeparator5 = New System.Windows.Forms.RibbonSeparator()
+        Me.rCbProfiles = New System.Windows.Forms.RibbonComboBox()
+        Me.rBtnDelProfile = New System.Windows.Forms.RibbonButton()
+        Me.rBtnApplyProfile = New System.Windows.Forms.RibbonButton()
+        Me.rBtnSaveProfile = New System.Windows.Forms.RibbonButton()
         Me.rTabDev = New System.Windows.Forms.RibbonTab()
         Me.rPanelDev = New System.Windows.Forms.RibbonPanel()
         Me.rBtnTest = New System.Windows.Forms.RibbonButton()
@@ -10642,6 +10650,7 @@ Partial Class MainForm
         Me.lblCivDwarf.Tag = ""
         Me.lblCivDwarf.Text = "Dwarves"
         Me.lblCivDwarf.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivDwarf.triggerTag = "DWARF"
         '
         'lblCivTaigaOrcs
         '
@@ -10660,6 +10669,7 @@ Partial Class MainForm
         Me.lblCivTaigaOrcs.Tag = ""
         Me.lblCivTaigaOrcs.Text = "Orcs"
         Me.lblCivTaigaOrcs.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivTaigaOrcs.triggerTag = "TAIGA"
         '
         'lblCivKoboldCamp
         '
@@ -10678,6 +10688,7 @@ Partial Class MainForm
         Me.lblCivKoboldCamp.Tag = ""
         Me.lblCivKoboldCamp.Text = "Kobolds"
         Me.lblCivKoboldCamp.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivKoboldCamp.triggerTag = "KOBOLD"
         '
         'lblCivGnome
         '
@@ -10696,6 +10707,7 @@ Partial Class MainForm
         Me.lblCivGnome.Tag = ""
         Me.lblCivGnome.Text = "Gnomes"
         Me.lblCivGnome.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivGnome.triggerTag = "GNOME"
         '
         'lblCivWarlock
         '
@@ -10714,6 +10726,7 @@ Partial Class MainForm
         Me.lblCivWarlock.Tag = ""
         Me.lblCivWarlock.Text = "Warlocks"
         Me.lblCivWarlock.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivWarlock.triggerTag = "WARLOCK"
         '
         'lblCivEvilElf
         '
@@ -10732,6 +10745,7 @@ Partial Class MainForm
         Me.lblCivEvilElf.Tag = ""
         Me.lblCivEvilElf.Text = "Evil Elves"
         Me.lblCivEvilElf.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivEvilElf.triggerTag = "EVILELF"
         '
         'lblCivEvilDrow
         '
@@ -10750,6 +10764,7 @@ Partial Class MainForm
         Me.lblCivEvilDrow.Tag = ""
         Me.lblCivEvilDrow.Text = "Evil Drow"
         Me.lblCivEvilDrow.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivEvilDrow.triggerTag = "EVILDROW"
         '
         'lblCivEvilHuman
         '
@@ -10768,6 +10783,7 @@ Partial Class MainForm
         Me.lblCivEvilHuman.Tag = ""
         Me.lblCivEvilHuman.Text = "Evil Humans"
         Me.lblCivEvilHuman.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivEvilHuman.triggerTag = "EVILHUMAN"
         '
         'lblCivEvilDwarf
         '
@@ -10786,6 +10802,7 @@ Partial Class MainForm
         Me.lblCivEvilDwarf.Tag = ""
         Me.lblCivEvilDwarf.Text = "Evil Dwarves"
         Me.lblCivEvilDwarf.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivEvilDwarf.triggerTag = "EVILDWARF"
         '
         'lblCivAntmen
         '
@@ -10804,6 +10821,7 @@ Partial Class MainForm
         Me.lblCivAntmen.Tag = ""
         Me.lblCivAntmen.Text = "Antmen"
         Me.lblCivAntmen.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivAntmen.triggerTag = "ANTMEN"
         '
         'lblCivTroglodyte
         '
@@ -10822,6 +10840,7 @@ Partial Class MainForm
         Me.lblCivTroglodyte.Tag = ""
         Me.lblCivTroglodyte.Text = "Troglodytes"
         Me.lblCivTroglodyte.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivTroglodyte.triggerTag = "TROGLODYTE"
         '
         'lblCivGremlin
         '
@@ -10840,6 +10859,7 @@ Partial Class MainForm
         Me.lblCivGremlin.Tag = ""
         Me.lblCivGremlin.Text = "Gremlins"
         Me.lblCivGremlin.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivGremlin.triggerTag = "GREMLIN"
         '
         'lblCivAutomaton
         '
@@ -10858,6 +10878,7 @@ Partial Class MainForm
         Me.lblCivAutomaton.Tag = ""
         Me.lblCivAutomaton.Text = "Automatons"
         Me.lblCivAutomaton.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivAutomaton.triggerTag = "AUTOMATON"
         '
         'lblCivFrostGiant
         '
@@ -10876,6 +10897,7 @@ Partial Class MainForm
         Me.lblCivFrostGiant.Tag = ""
         Me.lblCivFrostGiant.Text = "Frost Giants"
         Me.lblCivFrostGiant.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivFrostGiant.triggerTag = "FROSTGIANT"
         '
         'lblCivGoblin
         '
@@ -10894,6 +10916,7 @@ Partial Class MainForm
         Me.lblCivGoblin.Tag = ""
         Me.lblCivGoblin.Text = "Goblins"
         Me.lblCivGoblin.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivGoblin.triggerTag = "GOBLIN"
         '
         'lblCivDrow
         '
@@ -10912,6 +10935,7 @@ Partial Class MainForm
         Me.lblCivDrow.Tag = ""
         Me.lblCivDrow.Text = "Drow"
         Me.lblCivDrow.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivDrow.triggerTag = "DROW"
         '
         'lblCivElf
         '
@@ -10930,6 +10954,7 @@ Partial Class MainForm
         Me.lblCivElf.Tag = ""
         Me.lblCivElf.Text = "Elves"
         Me.lblCivElf.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivElf.triggerTag = "ELF"
         '
         'lblCivHuman
         '
@@ -10948,6 +10973,7 @@ Partial Class MainForm
         Me.lblCivHuman.Tag = ""
         Me.lblCivHuman.Text = "Humans"
         Me.lblCivHuman.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivHuman.triggerTag = "HUMAN"
         '
         'lblCivSuccubus
         '
@@ -10966,6 +10992,7 @@ Partial Class MainForm
         Me.lblCivSuccubus.Tag = ""
         Me.lblCivSuccubus.Text = "Succubi"
         Me.lblCivSuccubus.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCivSuccubus.triggerTag = "SUCCUBUS"
         '
         'optBtnSuccubi
         '
@@ -12476,6 +12503,7 @@ Partial Class MainForm
         Me.ribbonMain.TabIndex = 100
         Me.ribbonMain.Tabs.Add(Me.rTabGeneral)
         Me.ribbonMain.Tabs.Add(Me.rTabUtilities)
+        Me.ribbonMain.Tabs.Add(Me.rTabProfiles)
         Me.ribbonMain.Tabs.Add(Me.rTabDev)
         Me.ribbonMain.TabsMargin = New System.Windows.Forms.Padding(12, 2, 20, 0)
         Me.ribbonMain.ThemeColor = System.Windows.Forms.RibbonTheme.Blue
@@ -12508,7 +12536,7 @@ Partial Class MainForm
         '
         Me.rBtnPlayDF.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.df_icon_32x32
         Me.rBtnPlayDF.MinimumSize = New System.Drawing.Size(50, 0)
-        Me.rBtnPlayDF.SmallImage = CType(resources.GetObject("rBtnPlayDF.SmallImage"), System.Drawing.Image)
+        Me.rBtnPlayDF.SmallImage = CType(resources.GetObject("rBtnPlayDF.SmallImage"),System.Drawing.Image)
         Me.rBtnPlayDF.Tag = ""
         Me.rBtnPlayDF.Text = ""
         Me.rBtnPlayDF.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
@@ -13213,6 +13241,58 @@ Partial Class MainForm
         Me.rBtnUtilTileGenie.Text = "TileGenie"
         Me.rBtnUtilTileGenie.ToolTip = "Create and modify tilesets."
         Me.rBtnUtilTileGenie.ToolTipTitle = "TileGenie"
+        '
+        'rTabProfiles
+        '
+        Me.rTabProfiles.Panels.Add(Me.rPanelProfiles)
+        Me.rTabProfiles.Text = "Profiles"
+        '
+        'rPanelProfiles
+        '
+        Me.rPanelProfiles.ButtonMoreEnabled = false
+        Me.rPanelProfiles.ButtonMoreVisible = false
+        Me.rPanelProfiles.Items.Add(Me.rBtnNewProfile)
+        Me.rPanelProfiles.Items.Add(Me.RibbonSeparator5)
+        Me.rPanelProfiles.Items.Add(Me.rCbProfiles)
+        Me.rPanelProfiles.Items.Add(Me.rBtnDelProfile)
+        Me.rPanelProfiles.Items.Add(Me.rBtnApplyProfile)
+        Me.rPanelProfiles.Items.Add(Me.rBtnSaveProfile)
+        Me.rPanelProfiles.Text = ""
+        '
+        'rBtnNewProfile
+        '
+        Me.rBtnNewProfile.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.plus
+        Me.rBtnNewProfile.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.plus
+        Me.rBtnNewProfile.Text = "New"
+        Me.rBtnNewProfile.ToolTip = "Save the current options as a new profile."
+        '
+        'rCbProfiles
+        '
+        Me.rCbProfiles.AllowTextEdit = false
+        Me.rCbProfiles.DrawIconsBar = false
+        Me.rCbProfiles.DropDownResizable = true
+        Me.rCbProfiles.Text = "Profiles"
+        Me.rCbProfiles.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Right
+        Me.rCbProfiles.TextBoxText = ""
+        '
+        'rBtnDelProfile
+        '
+        Me.rBtnDelProfile.DrawIconsBar = false
+        Me.rBtnDelProfile.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.cross
+        Me.rBtnDelProfile.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.cross
+        Me.rBtnDelProfile.ToolTip = "Remove the currently selected profile."
+        '
+        'rBtnApplyProfile
+        '
+        Me.rBtnApplyProfile.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.arrow_circle_double
+        Me.rBtnApplyProfile.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.arrow_circle_double
+        Me.rBtnApplyProfile.ToolTip = "Load the currently selected profile's settings."
+        '
+        'rBtnSaveProfile
+        '
+        Me.rBtnSaveProfile.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.disk_return_black
+        Me.rBtnSaveProfile.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.disk_return_black
+        Me.rBtnSaveProfile.ToolTip = "Save any changes made to the current profile."
         '
         'rTabDev
         '
@@ -14052,5 +14132,13 @@ End Sub
     Friend WithEvents lblMacro As System.Windows.Forms.Label
     Friend WithEvents lblCivSuccubus As MasterworkDwarfFortress.mwCivLabel
     Friend WithEvents optBtnSuccubi As MasterworkDwarfFortress.optionSingleReplaceButton
+    Friend WithEvents rBtnNewProfile As System.Windows.Forms.RibbonButton
+    Friend WithEvents rCbProfiles As System.Windows.Forms.RibbonComboBox
+    Friend WithEvents rBtnDelProfile As System.Windows.Forms.RibbonButton
+    Friend WithEvents rBtnApplyProfile As System.Windows.Forms.RibbonButton
+    Friend WithEvents rTabProfiles As System.Windows.Forms.RibbonTab
+    Friend WithEvents rPanelProfiles As System.Windows.Forms.RibbonPanel
+    Friend WithEvents RibbonSeparator5 As System.Windows.Forms.RibbonSeparator
+    Friend WithEvents rBtnSaveProfile As System.Windows.Forms.RibbonButton
 
 End Class
