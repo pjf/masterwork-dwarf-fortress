@@ -39,7 +39,7 @@ Public Class fileWorking
 
     Private Shared Sub loadRawFiles()
         Dim exts As String() = New String() {".txt", ".init"}
-        Dim exceptions As String() = New String() {"announcements.txt", "dfhack.init"}
+        Dim exceptions As String() = New String() {"announcements.txt", "dfhack.init", "embark_profiles.txt"}
         For Each fi As IO.FileInfo In m_dfFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") And exts.Contains(info.Extension)) OrElse exceptions.Contains(info.Name))
             globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
         Next
@@ -50,9 +50,9 @@ Public Class fileWorking
 
     Private Shared Sub loadMwFilePaths()
         'load all setting files (keybinds, colors, etc.)
-        m_mwFilePaths.AddRange(getFiles(m_masterworkRootDir & "\Settings", True, New String() {".txt", ".ttf"}))
+        m_mwFilePaths.AddRange(getFiles(globals.m_settingsDir, True, New String() {".txt", ".ttf"}))
         'load utility executables
-        m_mwFilePaths.AddRange(getFiles(m_masterworkRootDir & "\Utilities", True, New String() {".exe", ".jar"}))
+        m_mwFilePaths.AddRange(getFiles(globals.m_utilityDir, True, New String() {".exe", ".jar"}))
     End Sub
 
     Private Shared Sub loadMwGraphics()
@@ -60,7 +60,7 @@ Public Class fileWorking
         m_mwGraphicFilePaths.AddRange(getFiles(m_graphicsDir, True, New String() {".txt", ".png", ".xml"}))
     End Sub
 
-    Public Shared Sub loadProfiles()
+    Private Shared Sub loadProfiles()
         m_mwSettingsProfiles.Clear()
         m_mwSettingsProfiles.AddRange(getFiles(m_profilesDir, True, New String() {".json", ".JSON"}))
     End Sub
@@ -100,7 +100,7 @@ Public Class fileWorking
         Return IO.Directory.GetDirectories(rootDirectory, "*.*", searchOpt).Select(Function(d) New IO.DirectoryInfo(d)).ToList
     End Function
 
-    Private Shared Function getFiles(ByVal rootDirectory As String, ByVal recursive As Boolean, ParamArray exts() As String) As List(Of IO.FileInfo)
+    Private Shared Function getFiles(ByVal rootDirectory As String, ByVal recursive As Boolean, ParamArray exts() As String) As List(Of IO.FileInfo)        
         Dim searchOpt As IO.SearchOption = If(recursive, IO.SearchOption.AllDirectories, IO.SearchOption.TopDirectoryOnly)
         Return IO.Directory.GetFiles(rootDirectory, "*.*", searchOpt).Where(Function(o) exts.Contains(IO.Path.GetExtension(o))).Select(Function(p) New IO.FileInfo(p)).ToList
     End Function

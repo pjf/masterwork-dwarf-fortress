@@ -249,6 +249,12 @@
     <Compile Include="helper forms\frmSplash.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="helper forms\messageBoxExpand.Designer.vb">
+      <DependentUpon>messageBoxExpand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="helper forms\messageBoxExpand.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="interfaces\iExportInfo.vb" />
     <Compile Include="interfaces\iTest.vb" />
     <Compile Include="interfaces\iTheme.vb" />
@@ -319,6 +325,9 @@
     <EmbeddedResource Include="helper forms\frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="helper forms\messageBoxExpand.resx">
+      <DependentUpon>messageBoxExpand.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -385,6 +394,15 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <None Include="Resources\pictureFort.png" />
+    <None Include="Resources\information_large.png" />
+    <None Include="Resources\tick.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\plus-circle.png" />
+    <None Include="Resources\minus-circle.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\exclamation.png" />
+    <None Include="Resources\cross-circle.png" />
     <None Include="Resources\plus.png" />
     <None Include="Resources\new-text.png" />
     <None Include="Resources\cross.png" />

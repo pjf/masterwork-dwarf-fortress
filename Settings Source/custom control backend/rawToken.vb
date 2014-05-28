@@ -30,7 +30,7 @@ Public Class rawToken
     DescriptionAttribute("This is the value to use in the files when this option is ENABLED.")> _
     Public Property optionOnValue As String
         Get
-            Return m_optionOnValue
+            Return m_optionOnValue.Replace("\r\n", Environment.NewLine.ToCharArray)
         End Get
         Set(value As String)
             m_optionOnValue = value
@@ -42,7 +42,7 @@ Public Class rawToken
     DescriptionAttribute("This is the value to use in the files when this option is DISABLED.")> _
     Public Property optionOffValue As String
         Get
-            Return m_optionOffValue
+            Return m_optionOffValue.Replace("\r\n", Environment.NewLine.ToCharArray)
         End Get
         Set(value As String)
             m_optionOffValue = value

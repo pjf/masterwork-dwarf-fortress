@@ -48,7 +48,6 @@ Imports System.Web.Script.Serialization
 
 
     Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
         refreshFileAndDirPaths()
         If m_dwarfFortressRootDir <> "" Then
             initialLoad()
@@ -97,8 +96,8 @@ Imports System.Web.Script.Serialization
             End If
             loadFilePaths()
         Catch ex As Exception
-            MsgBox("Unable to find and load file paths. Masterwork settings requires Dwarf Fortress to be installed in the same directory!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
-            Me.Close()
+            MsgBoxExp("Load Failed", "Initial Load Failed", MessageBoxIcon.Error, "Unable to find and load file paths. Masterwork settings requires Dwarf Fortress to be installed in the same directory!", MessageBoxButtons.OK, ex.ToString)
+            Application.Exit()
         End Try
     End Sub
 
@@ -132,6 +131,31 @@ Imports System.Web.Script.Serialization
 
 #Region "profiles"
 
+    Private Sub loadProfileCombo()
+        If rCbProfiles.DropDownItems.Count > 0 Then
+            rCbProfiles.DropDownItems.Clear()
+        End If
+        For Each fi As IO.FileInfo In mwProfiles
+            addProfileItem(fi)
+        Next
+        sortProfiles()
+    End Sub
+
+    Private Sub addProfileItem(ByVal fi As IO.FileInfo, Optional ByVal sort As Boolean = False)
+        Dim rItem As New RibbonLabel()
+        rItem.Image = Nothing
+        rItem.Text = IO.Path.GetFileNameWithoutExtension(fi.Name)
+        rItem.Value = fi.FullName.ToLower
+        rCbProfiles.DropDownItems.Add(rItem)
+        sortProfiles()
+    End Sub
+
+    Private Sub sortProfiles()
+        If Not Environment.OSVersion.Platform = PlatformID.Win32Windows AndAlso Not Environment.OSVersion.Platform = PlatformID.Win32NT Then
+            rCbProfiles.DropDownItems.Sort()
+        End If
+    End Sub
+
     Private Sub rBtnNewProfile_Click(sender As Object, e As EventArgs) Handles rBtnNewProfile.Click
         Try
             Dim dSave As New SaveFileDialog()
@@ -142,26 +166,14 @@ Imports System.Web.Script.Serialization
             dSave.FilterIndex = 0
             If dSave.ShowDialog = Windows.Forms.DialogResult.OK Then
                 saveSettings(dSave.FileName)
-                loadProfiles()
-                loadProfileCombo()
-                rCbProfiles.SelectedValue = dSave.FileName
+                Dim fi As New IO.FileInfo(dSave.FileName)
+                fileWorking.mwProfiles.Add(fi)
+                addProfileItem(fi)
+                rCbProfiles.SelectedValue = dSave.FileName.ToLower
             End If
         Catch ex As Exception
-            MsgBox("Failed to create a new profile!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Create Failed")
+            MsgBoxExp("Create Failed", "Create Failed", MessageBoxIcon.Error, "A new profile could not be created.", MsgBoxStyle.OkOnly, ex.ToString)
         End Try
-    End Sub
-
-    Private Sub loadProfileCombo()
-        If rCbProfiles.DropDownItems.Count > 0 Then
-            rCbProfiles.DropDownItems.Clear()
-        End If
-        For Each fi As IO.FileInfo In mwProfiles
-            Dim rItem As New RibbonLabel()
-            rItem.Image = Nothing
-            rItem.Text = IO.Path.GetFileNameWithoutExtension(fi.Name)
-            rItem.Value = fi.FullName
-            rCbProfiles.DropDownItems.Add(rItem)
-        Next
     End Sub
 
     Private Sub rBtnSaveProfile_Click(sender As Object, e As EventArgs) Handles rBtnSaveProfile.Click
@@ -170,9 +182,10 @@ Imports System.Web.Script.Serialization
             Dim strPath As String = rCbProfiles.SelectedItem.Value
             If IO.File.Exists(strPath) Then
                 saveSettings(strPath)
-            End If
+                MsgBox(rCbProfiles.SelectedItem.Text & " has been successfully updated.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Profile Updated")
+            End If            
         Catch ex As Exception
-            MsgBox("Failed to save the current profile!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Save Failed")
+            MsgBoxExp("Save Failed", "Save Failed", MessageBoxIcon.Error, "The current profile could not be saved.", MsgBoxStyle.OkOnly, ex.ToString)
         End Try
     End Sub
 
@@ -185,19 +198,36 @@ Imports System.Web.Script.Serialization
                 loadSettings(strPath)                
             End If
         Catch ex As Exception
-            MsgBox("Failed to apply the current profile!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Apply Failed")
+            MsgBoxExp("Apply Failed", "Apply Failed", MessageBoxIcon.Error, "The selected profile could not be applied.", MsgBoxStyle.OkOnly, ex.ToString)
         Finally
             hideWaitScreen()
         End Try
     End Sub
 
-    Private Sub rBtnDelProfile_Click(sender As Object, e As EventArgs) Handles rBtnDelProfile.Click
+    Private Sub rBtnDelProfile_Click(sender As Object, e As EventArgs) Handles rBtnDelProfile.Click        
         If rCbProfiles.SelectedValue IsNot Nothing Then
             If MsgBox("Are you sure you want to delete " & rCbProfiles.SelectedItem.Text & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm Deletion") = MsgBoxResult.Yes Then
-                Dim strPath As String = rCbProfiles.SelectedItem.Value
-                If IO.File.Exists(strPath) Then IO.File.Delete(strPath)
-                loadProfiles()
-                loadProfileCombo()
+                Try
+                    Dim strPath As String = rCbProfiles.SelectedItem.Value
+                    If IO.File.Exists(strPath) Then
+                        For Each fi As IO.FileInfo In fileWorking.mwProfiles
+                            If fi.FullName.ToLower = strPath.ToLower Then
+                                fileWorking.mwProfiles.Remove(fi)
+                                For Each r As RibbonLabel In rCbProfiles.DropDownItems
+                                    If r.Value.ToLower = fi.FullName.ToLower Then
+                                        rCbProfiles.DropDownItems.Remove(r)
+                                        Exit For
+                                    End If
+                                Next
+                                Exit For
+                            End If
+                        Next
+                        IO.File.Delete(strPath)
+                    End If
+                    rCbProfiles.SelectedValue = Nothing
+                Catch ex As Exception
+                    MsgBoxExp("Delete Failed", "Delete Failed", MessageBoxIcon.Error, "The selected profile could not be deleted.", MsgBoxStyle.OkOnly, ex.ToString)
+                End Try
             End If
         End If
     End Sub
@@ -457,6 +487,9 @@ Imports System.Web.Script.Serialization
     Private Sub rBtnManualWarlock_Click(sender As Object, e As EventArgs) Handles rBtnManualWarlock.Click
         Process.Start("Warlock Manual.html")
     End Sub
+    Private Sub rBtnManualSuccubi_Click(sender As Object, e As EventArgs) Handles rBtnManualSuccubi.Click
+        Process.Start("Succubus Manual.html")
+    End Sub
 
     Private Sub rBtnDonations_Click(sender As Object, e As EventArgs) Handles rBtnDonations.Click
         Process.Start(IO.Path.Combine(globals.m_masterworkRootDir, "repository", "donate.html"))
@@ -505,6 +538,8 @@ Imports System.Web.Script.Serialization
     Private Sub rBtnExport_Click(sender As Object, e As EventArgs) Handles rBtnExport.Click
         If Not Debugger.IsAttached Then Exit Sub
         Dim frmInfo As New Form
+        frmInfo.Text = "Exported Options"
+        frmInfo.Size = New Size(400, 300)
         Dim rtext As New RichTextBox
         frmInfo.Controls.Add(rtext)
         rtext.Dock = DockStyle.Fill

@@ -141,4 +141,9 @@ Public Class utils
         Return stringBuilder.ToString()
     End Function
 
+    Public Shared Sub MsgBoxExp(ByVal formTitle As String, ByVal messageTitle As String, ByVal iconType As MessageBoxIcon, ByVal message As String, ByVal buttons As MessageBoxButtons, Optional ByVal details As String = "")
+        Dim msg As New messageBoxExpand(formTitle, messageTitle, iconType, message, buttons, details)
+        msg.ShowDialog()
+    End Sub
+
 End Class
