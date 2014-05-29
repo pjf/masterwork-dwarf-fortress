@@ -65,6 +65,10 @@ Public Class fileWorking
         m_mwSettingsProfiles.AddRange(getFiles(m_profilesDir, True, New String() {".json", ".JSON"}))
     End Sub
 
+    Public Shared Function getOriginalProfiles() As List(Of IO.FileInfo)
+        Return getFiles(m_profilesDir, True, New String() {".original"})
+    End Function
+
     Public Shared ReadOnly Property dfFilePaths As List(Of IO.FileInfo)
         Get
             Return m_dfFilePaths

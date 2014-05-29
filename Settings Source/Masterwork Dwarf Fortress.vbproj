@@ -394,6 +394,8 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <None Include="Resources\arrow-circle-225-left.png" />
+    <None Include="Resources\control.png" />
     <None Include="Resources\pictureFort.png" />
     <None Include="Resources\information_large.png" />
     <None Include="Resources\tick.png" />

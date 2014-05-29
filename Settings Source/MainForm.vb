@@ -78,6 +78,10 @@ Imports System.Web.Script.Serialization
         If Not Debugger.IsAttached Then
             ribbonMain.Tabs.Remove(rTabDev)
         End If
+
+        If My.Settings.Properties("WORLDGEN") IsNot Nothing Then
+            rCheckWorldGen.Checked = My.Settings.WORLDGEN
+        End If
     End Sub
 
     'this override prevents flickering when drawing transparent controls over background images within a tabcontrol
@@ -210,18 +214,7 @@ Imports System.Web.Script.Serialization
                 Try
                     Dim strPath As String = rCbProfiles.SelectedItem.Value
                     If IO.File.Exists(strPath) Then
-                        For Each fi As IO.FileInfo In fileWorking.mwProfiles
-                            If fi.FullName.ToLower = strPath.ToLower Then
-                                fileWorking.mwProfiles.Remove(fi)
-                                For Each r As RibbonLabel In rCbProfiles.DropDownItems
-                                    If r.Value.ToLower = fi.FullName.ToLower Then
-                                        rCbProfiles.DropDownItems.Remove(r)
-                                        Exit For
-                                    End If
-                                Next
-                                Exit For
-                            End If
-                        Next
+                        deleteProfileItem(strPath)
                         IO.File.Delete(strPath)
                     End If
                     rCbProfiles.SelectedValue = Nothing
@@ -231,6 +224,140 @@ Imports System.Web.Script.Serialization
             End If
         End If
     End Sub
+    Private Sub deleteProfileItem(ByVal strPath As String)
+        Dim matches As List(Of IO.FileInfo) = fileWorking.mwProfiles.Where(Function(p As IO.FileInfo) String.Compare(strPath, p.FullName, True) = 0).ToList
+        If matches.Count > 0 Then
+            fileWorking.mwProfiles.Remove(matches(0))
+            For Each r As RibbonLabel In rCbProfiles.DropDownItems
+                If r.Value.ToLower = matches(0).FullName.ToLower Then
+                    rCbProfiles.DropDownItems.Remove(r)
+                    Exit For
+                End If
+            Next
+        End If
+    End Sub
+
+    Private Sub rBtnResetProfiles_Click(sender As Object, e As EventArgs) Handles rBtnResetProfiles.Click        
+        Try
+            Dim files As New List(Of IO.FileInfo)
+            files = fileWorking.getOriginalProfiles
+            Dim strCurrPath As String
+            For Each fi As IO.FileInfo In files
+                strCurrPath = fi.FullName.Replace(".original", ".JSON")
+                IO.File.Copy(fi.FullName, strCurrPath, True)
+                If fileWorking.mwProfiles.Where(Function(p As IO.FileInfo) String.Compare(p.FullName, strCurrPath, True) = 0).Count <= 0 Then
+                    Dim pfi As New IO.FileInfo(strCurrPath)
+                    fileWorking.mwProfiles.Add(pfi)
+                    addProfileItem(pfi)
+                End If
+            Next
+            sortProfiles()
+            MsgBox("Default profiles have been restored successfully.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Defaults Restored")
+        Catch ex As Exception
+            MsgBoxExp("Reset Failed", "Reset Failed", MessageBoxIcon.Error, "Failed to reset to the default profiles.", MsgBoxStyle.OkOnly, ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub saveSettings(ByVal strPath As String)
+        Try
+            Dim s As New JavaScriptSerializer
+            Dim newSettings As New Dictionary(Of String, Object)
+            saveSettings(tabMain, newSettings)
+            'add any non-itoken control settings we want to save
+            newSettings.Add("cmbTileSets", cmbTileSets.SelectedValue)
+            If rCheckWorldGen.Checked Then
+                newSettings.Add("WORLD_GEN", m_world_gen)
+            Else
+                'keep the original world gen details the profile has
+                Dim oldSettings As New Dictionary(Of String, Object)
+                oldSettings = s.Deserialize(fileWorking.readFile(strPath, False), GetType(Dictionary(Of String, Object)))
+                If oldSettings.ContainsKey("WORLD_GEN") Then
+                    newSettings.Add("WORLD_GEN", oldSettings.Item("WORLD_GEN"))
+                End If
+            End If
+            Dim info As String = utils.formatJsonOutput(s.Serialize(newSettings))
+            If Not IO.File.Exists(strPath) Then IO.File.Create(strPath).Dispose()
+            fileWorking.saveFile(strPath, info)
+        Catch ex As Exception
+            MsgBoxExp("Profile Save", "Profile Save Failed", MessageBoxIcon.Error, "The selected profile could not be saved.", MessageBoxButtons.OK, ex.ToString)
+        End Try
+    End Sub
+    Private Sub saveSettings(ByVal parentControl As Control, ByRef optionSettings As Dictionary(Of String, Object))
+        If Not parentControl Is tabWorldGen Then
+            For Each c As Control In parentControl.Controls
+                If Not c.Enabled Then
+                    Debug.WriteLine("skipping disabled control: " & c.Name)
+                Else
+                    Dim conOpt As iToken = TryCast(c, iToken)
+                    If conOpt IsNot Nothing Then
+                        Try
+                            optionSettings.Add(c.Name, conOpt.currentValue)
+                        Catch ex As Exception
+                            Debug.WriteLine("!TEST EXCEPTION! " & ex.ToString)
+                        End Try
+                    End If
+
+                    If c.HasChildren Then
+                        saveSettings(c, optionSettings)
+                    End If
+                End If
+            Next
+        End If
+    End Sub
+
+    Private Sub loadSettings(ByVal filePath As String)
+        Try
+            If IO.File.Exists(filePath) Then
+                Dim optionSettings As New Dictionary(Of String, Object)
+                Dim s As New JavaScriptSerializer
+                optionSettings = s.Deserialize(fileWorking.readFile(filePath, False), GetType(Dictionary(Of String, Object)))
+                loadSettings(tabMain, optionSettings)
+                'load any other non-itoken controls
+                If optionSettings.ContainsKey("cmbTileSets") Then
+                    Dim value As String = optionSettings.Item("cmbTileSets")
+                    cmbTileSets.SelectedValue = value
+                    graphicsSets.switchGraphics(value, False)
+                End If
+                If rCheckWorldGen.Checked AndAlso optionSettings.ContainsKey("WORLD_GEN") Then
+                    Dim currPath As String = findDfFilePath(globals.m_worldGenFileName)
+                    If currPath <> "" Then
+                        fileWorking.saveFile(currPath, m_world_gen)
+                        m_world_gen = optionSettings.Item("WORLD_GEN")
+                        tokenLoading.loadWorldGenTokens()
+                        loadWorldGenCombo()
+                        refreshWorldGen(Nothing, Nothing)
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            MsgBoxExp("Profile Load", "Profile Load Failed", MessageBoxIcon.Error, "The selected profile could not be loaded.", MessageBoxButtons.OK, ex.ToString)
+        End Try
+    End Sub
+    Private Sub loadSettings(ByVal parentControl As Control, ByVal optionSettings As Dictionary(Of String, Object))
+        If Not parentControl Is tabWorldGen Then
+            For Each c As Control In parentControl.Controls
+                If Not c.Enabled Then
+                    Debug.WriteLine("skipping disabled control: " & c.Name)
+                Else
+                    Dim conOpt As iToken = TryCast(c, iToken)
+                    If conOpt IsNot Nothing Then
+                        Try
+                            If optionSettings.ContainsKey(c.Name) Then
+                                conOpt.loadOption(optionSettings.Item(c.Name))
+                            End If
+                        Catch ex As Exception
+                            Debug.WriteLine("!SETTINGS EXCEPTION! " & ex.ToString)
+                        End Try
+                    End If
+
+                    If c.HasChildren Then
+                        loadSettings(c, optionSettings)
+                    End If
+                End If
+            Next
+        End If
+    End Sub
+
 
 #End Region
 
@@ -387,6 +514,28 @@ Imports System.Web.Script.Serialization
             RemoveHandler cmbWorldGenIndex.SelectionChangeCommitted, AddressOf refreshWorldGen
             globals.currentWorldGenIndex = -2
         End If
+    End Sub
+
+    Private Sub btnResetWorldGen_Click(sender As Object, e As EventArgs) Handles btnResetWorldGen.Click
+        If MsgBox("This will reset all the world generation parameters and the map templates to the defaults. Continue?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm") = MsgBoxResult.No Then Exit Sub
+        Try
+            Dim currPath As String = findDfFilePath(globals.m_worldGenFileName)
+            Dim originalPath As String
+            If currPath <> "" Then
+                originalPath = currPath.Replace(".txt", ".original")
+                If Not IO.File.Exists(originalPath) Then
+                    MsgBox("No default world generation file (world_gen.original) could be found to restore!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Missing File")
+                    Exit Sub
+                End If
+                IO.File.Copy(originalPath, currPath, True)
+                m_world_gen = fileWorking.readFile(findDfFilePath(m_worldGenFileName))
+                tokenLoading.loadWorldGenTokens()
+                loadWorldGenCombo()
+                refreshWorldGen(Nothing, Nothing)
+            End If
+        Catch ex As Exception
+            MsgBoxExp("World Gen", "World Gen Error", MessageBoxIcon.Error, "There was a problem attempting to reset all the world generation settings and maps to the defaults.", MessageBoxButtons.OK, ex.ToString)
+        End Try
     End Sub
 
 #End Region
@@ -550,75 +699,6 @@ Imports System.Web.Script.Serialization
         rtext.Text = utils.formatJsonOutput(s.Serialize(exportedObjects))
         frmInfo.Show()
     End Sub
-
-    Private Sub saveSettings(ByVal strPath As String)
-        Dim optionSettings As New Dictionary(Of String, Object)
-        saveSettings(tabMain, optionSettings)
-        'add any non-itoken control settings we want to save
-        optionSettings.Add("cmbTileSets", cmbTileSets.SelectedValue)
-        Dim s As New JavaScriptSerializer
-        Dim info As String = utils.formatJsonOutput(s.Serialize(optionSettings))        
-        If Not IO.File.Exists(strPath) Then IO.File.Create(strPath).Dispose()
-        fileWorking.saveFile(strPath, info)
-    End Sub
-    Private Sub saveSettings(ByVal parentControl As Control, ByRef optionSettings As Dictionary(Of String, Object))
-        For Each c As Control In parentControl.Controls
-            If Not c.Enabled Then
-                Debug.WriteLine("skipping disabled control: " & c.Name)
-            Else
-                Dim conOpt As iToken = TryCast(c, iToken)
-                If conOpt IsNot Nothing Then
-                    Try
-                        optionSettings.Add(c.Name, conOpt.currentValue)
-                    Catch ex As Exception
-                        Debug.WriteLine("!TEST EXCEPTION! " & ex.ToString)
-                    End Try
-                End If
-
-                If c.HasChildren Then
-                    saveSettings(c, optionSettings)
-                End If
-            End If
-        Next
-    End Sub
-
-    Private Sub loadSettings(ByVal filePath As String)        
-        If IO.File.Exists(filePath) Then
-            Dim optionSettings As New Dictionary(Of String, Object)
-            Dim s As New JavaScriptSerializer
-            optionSettings = s.Deserialize(fileWorking.readFile(filePath, False), GetType(Dictionary(Of String, Object)))
-            loadSettings(tabMain, optionSettings)
-            'load any other non-itoken controls
-            If optionSettings.ContainsKey("cmbTileSets") Then
-                Dim value As String = optionSettings.Item("cmbTileSets")
-                cmbTileSets.SelectedValue = value
-                graphicsSets.switchGraphics(value, False)
-            End If
-        End If
-    End Sub
-    Private Sub loadSettings(ByVal parentControl As Control, ByVal optionSettings As Dictionary(Of String, Object))
-        For Each c As Control In parentControl.Controls
-            If Not c.Enabled Then
-                Debug.WriteLine("skipping disabled control: " & c.Name)
-            Else
-                Dim conOpt As iToken = TryCast(c, iToken)
-                If conOpt IsNot Nothing Then
-                    Try
-                        If optionSettings.ContainsKey(c.Name) Then
-                            conOpt.loadOption(optionSettings.Item(c.Name))
-                        End If
-                    Catch ex As Exception
-                        Debug.WriteLine("!SETTINGS EXCEPTION! " & ex.ToString)
-                    End Try
-                End If
-
-                If c.HasChildren Then
-                    loadSettings(c, optionSettings)
-                End If
-            End If
-        Next
-    End Sub
-
 
     Private Sub testOptions(ByVal parentControl As Control)
         If Not Debugger.IsAttached Then Exit Sub
