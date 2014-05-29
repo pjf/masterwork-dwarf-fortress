@@ -39,7 +39,7 @@ diggingInvaders setCost AUTOMATON walk 5
 diggingInvaders setCost AUTOMATON destroyRoughConstruction -1
 diggingInvaders setCost AUTOMATON destroySmoothConstruction -1
 diggingInvaders setDelay AUTOMATON destroyBuilding 50
-diggingInvaders setDelay AUTOMATON dig 9
+diggingInvaders setDelay AUTOMATON dig -2
 diggingInvaders setDelay AUTOMATON destroyRoughConstruction 50
 diggingInvaders setDelay AUTOMATON destroySmoothConstruction 99
 
@@ -96,7 +96,7 @@ diggingInvaders setCost ELF walk 5
 diggingInvaders setCost ELF destroyRoughConstruction -1
 diggingInvaders setCost ELF destroySmoothConstruction -1
 diggingInvaders setDelay ELF destroyBuilding 50
-diggingInvaders setDelay ELF dig 9
+diggingInvaders setDelay ELF dig -2
 diggingInvaders setDelay ELF destroyRoughConstruction 50
 diggingInvaders setDelay ELF destroySmoothConstruction 99
 
@@ -107,7 +107,7 @@ diggingInvaders setCost DROW walk 5
 diggingInvaders setCost DROW destroyRoughConstruction -1
 diggingInvaders setCost DROW destroySmoothConstruction -1
 diggingInvaders setDelay DROW destroyBuilding 50
-diggingInvaders setDelay DROW dig 9
+diggingInvaders setDelay DROW dig -2
 diggingInvaders setDelay DROW destroyRoughConstruction 50
 diggingInvaders setDelay DROW destroySmoothConstruction 99
 
@@ -577,7 +577,10 @@ enable automaterial
 enable autoSyndrome
 enable autotrade
 enable buildingplan
-enable diggingInvaders
+#DIGGING
+disable diggingInvaders
+#RAZING
+disable diggingInvaders
 enable dwarfmonitor
 enable fix-armory
 enable getplants
@@ -794,9 +797,3 @@ binpatch apply armorstand-capacity
 
 # bodysize bug fix
 fix/growthbug enable
-
-#################
-# Clear console #
-#################
-
-cls
