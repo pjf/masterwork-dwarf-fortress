@@ -271,7 +271,7 @@ Imports System.Web.Script.Serialization
                 'keep the original world gen details the profile has
                 Dim oldSettings As New Dictionary(Of String, Object)
                 oldSettings = s.Deserialize(fileWorking.readFile(strPath, False), GetType(Dictionary(Of String, Object)))
-                If oldSettings.ContainsKey("WORLD_GEN") Then
+                If oldSettings IsNot Nothing AndAlso oldSettings.ContainsKey("WORLD_GEN") Then
                     newSettings.Add("WORLD_GEN", oldSettings.Item("WORLD_GEN"))
                 End If
             End If
