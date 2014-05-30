@@ -30,7 +30,7 @@ Public Class rawToken
     DescriptionAttribute("This is the value to use in the files when this option is ENABLED.")> _
     Public Property optionOnValue As String
         Get
-            Return m_optionOnValue.Replace("\r\n", Environment.NewLine.ToCharArray)
+            Return m_optionOnValue
         End Get
         Set(value As String)
             m_optionOnValue = value
@@ -42,12 +42,38 @@ Public Class rawToken
     DescriptionAttribute("This is the value to use in the files when this option is DISABLED.")> _
     Public Property optionOffValue As String
         Get
-            Return m_optionOffValue.Replace("\r\n", Environment.NewLine.ToCharArray)
+            Return m_optionOffValue
         End Get
         Set(value As String)
             m_optionOffValue = value
         End Set
     End Property
+
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public ReadOnly Property isMultiLine As Boolean
+        Get
+            Return (m_optionOnValue.Contains(Environment.NewLine) OrElse m_optionOffValue.Contains(Environment.NewLine))
+        End Get
+    End Property
+
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public Function getMultilinePattern(ByVal onTokenValue As Boolean) As String
+        If onTokenValue Then
+            Return m_optionOnValue.Replace(Environment.NewLine, "(\n|\r|\r\n)")
+        Else
+            Return m_optionOffValue.Replace(Environment.NewLine, "(\n|\r|\r\n)")
+        End If
+    End Function
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public Function getMultilinePattern(ByVal value As String) As String
+        Return value.Replace(Environment.NewLine, "(\n|\r|\r\n)")
+    End Function
 
 End Class
 

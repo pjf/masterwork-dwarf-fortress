@@ -36,7 +36,7 @@ Public Class optionComboPatternToken
             If value IsNot Nothing Then
                 m_opt.valueUpdatingPaused = False : Me.SelectedValue = CStr(value) : optionComboPatternToken_SelectionChangeCommitted(Me, New EventArgs) : m_opt.valueUpdatingPaused = True
             Else
-                Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.loadFiles(m_opt.optionManager, m_pattern))                
+                Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.loadFiles(m_opt.optionManager, m_pattern))
             End If
             m_value = Me.SelectedValue
 

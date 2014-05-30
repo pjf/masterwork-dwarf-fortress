@@ -11663,6 +11663,7 @@ Partial Class MainForm
         Me.optMultiDigging.TabIndex = 5
         Me.optMultiDigging.Text = "Digging Invaders"
         Me.optMultiDigging.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTipMaker.SetToolTip(Me.optMultiDigging, "Allows forgotten beasts and some invaders to dig into your fort.")
         Me.optMultiDigging.UseVisualStyleBackColor = False
         '
         'lblModNote

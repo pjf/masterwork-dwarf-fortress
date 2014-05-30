@@ -12,7 +12,7 @@ Public Class optionBase
         m_tokens = New rawTokenCollection
     End Sub
 
-    Protected m_tokens As New rawTokenCollection
+    Protected m_tokens As New rawTokenCollection    
     Protected m_internalChange As Boolean = False
 
     Protected m_optionManager As New optionManager

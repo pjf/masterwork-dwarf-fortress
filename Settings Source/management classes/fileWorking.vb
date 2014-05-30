@@ -157,10 +157,10 @@ Public Class fileWorking
             Dim pInfo As New ProcessStartInfo
             With pInfo
                 .WorkingDirectory = IIf(runDir = "", f_info.DirectoryName, runDir)
-                .UseShellExecute = True
+                '.UseShellExecute = True
                 .FileName = f_info.FullName
                 .WindowStyle = ProcessWindowStyle.Normal
-                .Verb = "runas"
+                '.Verb = "runas"
             End With
             pExec = Process.Start(pInfo)
             If waitForClose Then

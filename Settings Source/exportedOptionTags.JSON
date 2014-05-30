@@ -895,6 +895,7 @@
 		"Text":	"",
 		"Tooltip":	"",
 		"Files":	[
+			"embark_profiles.txt",
 			"entity_default.txt"
 		],
 		"AffectsGraphicPacks":	false,
@@ -1132,6 +1133,7 @@
 		"Text":	"",
 		"Tooltip":	"",
 		"Files":	[
+			"embark_profiles.txt",
 			"entity_orcfort_taigaorc.txt"
 		],
 		"AffectsGraphicPacks":	false,
@@ -1369,6 +1371,7 @@
 		"Text":	"",
 		"Tooltip":	"",
 		"Files":	[
+			"embark_profiles.txt",
 			"entity_kobold_camp.txt"
 		],
 		"AffectsGraphicPacks":	false,
@@ -1606,6 +1609,7 @@
 		"Text":	"",
 		"Tooltip":	"",
 		"Files":	[
+			"embark_profiles.txt",
 			"entity_gnome.txt"
 		],
 		"AffectsGraphicPacks":	false,
@@ -1843,6 +1847,7 @@
 		"Text":	"",
 		"Tooltip":	"",
 		"Files":	[
+			"embark_profiles.txt",
 			"entity_warlock.txt"
 		],
 		"AffectsGraphicPacks":	false,
@@ -2081,6 +2086,7 @@
 		"Text":	"",
 		"Tooltip":	"",
 		"Files":	[
+			"embark_profiles.txt",
 			"entity_fooccubus.txt"
 		],
 		"AffectsGraphicPacks":	false,
@@ -7598,9 +7604,9 @@
 		}
 	},
 	{
-		"Name":	"optBtnDigging",
+		"Name":	"optMultiDigging",
 		"Text":	"Digging Invaders",
-		"Tooltip":	"Allows forgotten beasts and some invaders to dig into your fort.",
+		"Tooltip":	"",
 		"Files":	[
 			"dfhack.init"
 		],
@@ -7834,21 +7840,6 @@
 		}
 	},
 	{
-		"Name":	"optMultiCavernFlavor",
-		"Text":	"Cavern Flavor",
-		"Tooltip":	"Adds a separate look for each cavern. Might cause eye damage. ;-)",
-		"Files":	[
-			"plant_grasses.txt"
-		],
-		"AffectsGraphicPacks":	true,
-		"HasFileOverrides":	false,
-		"DropDownItems":	null,
-		"Pattern":	{
-			"findPattern":	"",
-			"replacePattern":	""
-		}
-	},
-	{
 		"Name":	"optBtnRegionalWeather",
 		"Text":	"Regional Weather",
 		"Tooltip":	"Adds a lot of special rains, fogs and clouds to all kinds of regions.",
@@ -8069,7 +8060,7 @@
 	},
 	{
 		"Name":	"optNumMegabeasts",
-		"Text":	"50",
+		"Text":	"250",
 		"Tooltip":	"0 - 999  The number of megabeasts placed at the beginning of history. All megabeasts are placed in equal proportions.",
 		"Files":	[
 			"world_gen.txt"
@@ -8084,7 +8075,7 @@
 	},
 	{
 		"Name":	"optNumSemibeasts",
-		"Text":	"125",
+		"Text":	"150",
 		"Tooltip":	"0 - 999  The number of semi-megabeasts placed at the beginning of history. They are placed in equal proportions.",
 		"Files":	[
 			"world_gen.txt"

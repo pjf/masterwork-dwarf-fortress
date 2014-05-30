@@ -260,9 +260,6 @@ Public Class optionManager
     Private Function updateTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection) As Boolean
         Dim success As Boolean = False
         success = updateFileTokens(fManager.files(), tokens) : updateFileTokens(fManager.files(True), tokens)
-        'If updateTileSets Then
-        '    updateFileTokens(fManager.getRelatedGraphicsFilePaths, tokens)
-        'End If
         Return success
     End Function
 
@@ -301,9 +298,6 @@ Public Class optionManager
     Private Function toggleTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection, ByVal enable As Boolean) As Boolean
         toggleOption(fManager.files, tokens, enable)
         toggleOption(fManager.files(True), tokens, enable, False)
-        'If updateTileSets Then
-        '    toggleOption(fManager.getRelatedGraphicsFilePaths, tokens, enable, False)
-        'End If
         Return True
     End Function
 
@@ -339,13 +333,23 @@ Public Class optionManager
                         newValue = t.optionOffValue : oldValue = t.optionOnValue
                     End If
 
-                    If Not newData.Contains(newValue) Then
-                        updatedData = Replace(newData, oldValue, newValue)
-                        If Not results(t) Then results(t) = (Not updatedData = newData)
+                    If t.isMultiLine Then                        
+                        Dim rx As New Regex(t.getMultilinePattern(newValue))
+                        If Not rx.IsMatch(newData) Then                            
+                            rx = New Regex(t.getMultilinePattern(oldValue))
+                            updatedData = rx.Replace(newData, newValue)
+                            If Not results(t) Then results(t) = (Not updatedData = newData)
+                        Else
+                            results(t) = True
+                        End If
                     Else
-                        results(t) = True
+                        If Not newData.Contains(newValue) Then
+                            updatedData = Replace(newData, oldValue, newValue)
+                            If Not results(t) Then results(t) = (Not updatedData = newData)
+                        Else
+                            results(t) = True
+                        End If
                     End If
-
 
                     If updatedData = newData And tokens.Count > 1 Then
                         Debug.WriteLine(fi.FullName & " remained unchanged after changing option " & _
