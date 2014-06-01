@@ -5,6 +5,8 @@ Imports System.Text.RegularExpressions
 Imports System.ComponentModel
 
 Imports System.Web.Script.Serialization
+Imports System.Text
+Imports Newtonsoft.Json
 
 
 <Microsoft.VisualBasic.ComClass()> Public Class MainForm
@@ -13,6 +15,7 @@ Imports System.Web.Script.Serialization
     Private m_frmPreview As New frmTilesetPreviewer
     Private m_currTheme As RibbonProfesionalRendererColorTable
     Private m_frmWait As New frmWait
+    Private m_serializeOptions As New JsonSerializerSettings
 #End Region
 
     Public Sub New()
@@ -21,6 +24,9 @@ Imports System.Web.Script.Serialization
 
         ' Add any initialization after the InitializeComponent() call.
         setTheme()
+
+        m_serializeOptions.NullValueHandling = NullValueHandling.Ignore
+        m_serializeOptions.Formatting = Formatting.Indented
     End Sub
 
     Private Sub setTheme()
@@ -187,7 +193,7 @@ Imports System.Web.Script.Serialization
             If IO.File.Exists(strPath) Then
                 saveSettings(strPath)
                 MsgBox(rCbProfiles.SelectedItem.Text & " has been successfully updated.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Profile Updated")
-            End If            
+            End If
         Catch ex As Exception
             MsgBoxExp("Save Failed", "Save Failed", MessageBoxIcon.Error, "The current profile could not be saved.", MsgBoxStyle.OkOnly, ex.ToString)
         End Try
@@ -199,7 +205,7 @@ Imports System.Web.Script.Serialization
             Dim strPath As String = rCbProfiles.SelectedItem.Value
             If IO.File.Exists(strPath) Then
                 showWaitScreen("Loading profile, please wait...")
-                loadSettings(strPath)                
+                loadSettings(strPath)
             End If
         Catch ex As Exception
             MsgBoxExp("Apply Failed", "Apply Failed", MessageBoxIcon.Error, "The selected profile could not be applied.", MsgBoxStyle.OkOnly, ex.ToString)
@@ -208,7 +214,7 @@ Imports System.Web.Script.Serialization
         End Try
     End Sub
 
-    Private Sub rBtnDelProfile_Click(sender As Object, e As EventArgs) Handles rBtnDelProfile.Click        
+    Private Sub rBtnDelProfile_Click(sender As Object, e As EventArgs) Handles rBtnDelProfile.Click
         If rCbProfiles.SelectedValue IsNot Nothing Then
             If MsgBox("Are you sure you want to delete " & rCbProfiles.SelectedItem.Text & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirm Deletion") = MsgBoxResult.Yes Then
                 Try
@@ -237,7 +243,7 @@ Imports System.Web.Script.Serialization
         End If
     End Sub
 
-    Private Sub rBtnResetProfiles_Click(sender As Object, e As EventArgs) Handles rBtnResetProfiles.Click        
+    Private Sub rBtnResetProfiles_Click(sender As Object, e As EventArgs) Handles rBtnResetProfiles.Click
         Try
             Dim files As New List(Of IO.FileInfo)
             files = fileWorking.getOriginalProfiles
@@ -259,8 +265,7 @@ Imports System.Web.Script.Serialization
     End Sub
 
     Private Sub saveSettings(ByVal strPath As String)
-        Try
-            Dim s As New JavaScriptSerializer
+        Try            
             Dim newSettings As New Dictionary(Of String, Object)
             saveSettings(tabMain, newSettings)
             'add any non-itoken control settings we want to save
@@ -270,12 +275,13 @@ Imports System.Web.Script.Serialization
             Else
                 'keep the original world gen details the profile has
                 Dim oldSettings As New Dictionary(Of String, Object)
-                oldSettings = s.Deserialize(fileWorking.readFile(strPath, False), GetType(Dictionary(Of String, Object)))
+                oldSettings = JsonConvert.DeserializeObject(Of Dictionary(Of String, Object))(fileWorking.readFile(strPath, False), m_serializeOptions)
                 If oldSettings IsNot Nothing AndAlso oldSettings.ContainsKey("WORLD_GEN") Then
                     newSettings.Add("WORLD_GEN", oldSettings.Item("WORLD_GEN"))
                 End If
             End If
-            Dim info As String = utils.formatJsonOutput(s.Serialize(newSettings))
+
+            Dim info As String = JsonConvert.SerializeObject(newSettings, newSettings.GetType(), m_serializeOptions)
             If Not IO.File.Exists(strPath) Then IO.File.Create(strPath).Dispose()
             fileWorking.saveFile(strPath, info)
         Catch ex As Exception
@@ -308,9 +314,8 @@ Imports System.Web.Script.Serialization
     Private Sub loadSettings(ByVal filePath As String)
         Try
             If IO.File.Exists(filePath) Then
-                Dim optionSettings As New Dictionary(Of String, Object)
-                Dim s As New JavaScriptSerializer
-                optionSettings = s.Deserialize(fileWorking.readFile(filePath, False), GetType(Dictionary(Of String, Object)))
+                Dim optionSettings As New Dictionary(Of String, Object)                
+                optionSettings = JsonConvert.DeserializeObject(Of Dictionary(Of String, Object))(fileWorking.readFile(filePath, False), m_serializeOptions)
                 loadSettings(tabMain, optionSettings)
                 'load any other non-itoken controls
                 If optionSettings.ContainsKey("cmbTileSets") Then
@@ -403,7 +408,7 @@ Imports System.Web.Script.Serialization
 
 #End Region
 
-    Private Sub showWaitScreen(ByVal message As String, Optional ByVal opacity As Double = 0.0)        
+    Private Sub showWaitScreen(ByVal message As String, Optional ByVal opacity As Double = 0.0)
         Me.Opacity = opacity
         'Me.tabMain.SelectedTab = tabSettings 'choose a tab with few controls as the refresh causes massive flickering
         m_frmWait.lblMsg.Text = message
@@ -552,8 +557,8 @@ Imports System.Web.Script.Serialization
 
         End If
 
-        Try            
-            Dim f_info As IO.FileInfo = findDfFile("RandCreatures.exe")            
+        Try
+            Dim f_info As IO.FileInfo = findDfFile("RandCreatures.exe")
             runApp(f_info, f_info.Directory.Parent.FullName, True) 'run in objects folder
 
         Catch ex As Exception
@@ -660,7 +665,7 @@ Imports System.Web.Script.Serialization
 
     Private Sub ribbonExe_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
-            If TypeOf sender Is RibbonItem Then                
+            If TypeOf sender Is RibbonItem Then
                 runApp(findMwFile(CType(sender, RibbonItem).Tag.ToString))
             End If
         Catch ex As Exception
@@ -688,16 +693,33 @@ Imports System.Web.Script.Serialization
         If Not Debugger.IsAttached Then Exit Sub
         Dim frmInfo As New Form
         frmInfo.Text = "Exported Options"
-        frmInfo.Size = New Size(400, 300)
+        frmInfo.Size = New Size(500, 400)
+        Dim btnSaveExportData As New Button
+        btnSaveExportData.Text = "Save"
+        AddHandler btnSaveExportData.Click, AddressOf saveExport
+        frmInfo.Controls.Add(btnSaveExportData)
+        btnSaveExportData.Dock = DockStyle.Bottom
         Dim rtext As New RichTextBox
         frmInfo.Controls.Add(rtext)
         rtext.Dock = DockStyle.Fill
+        rtext.BringToFront()
 
-        Dim exportedObjects As New List(Of simpleExportObject)        
-        exportOptions(tabMain, exportedObjects)        
-        Dim s As New JavaScriptSerializer()
-        rtext.Text = utils.formatJsonOutput(s.Serialize(exportedObjects))
+        Dim exportedObjects As New List(Of simpleExportObject)
+        exportOptions(tabMain, exportedObjects)
+
+        Dim strInfo As String = JsonConvert.SerializeObject(exportedObjects, m_serializeOptions)
+        rtext.Text = strInfo
+        btnSaveExportData.Tag = strInfo
+        rtext.ReadOnly = True
         frmInfo.Show()
+    End Sub
+
+    Private Sub saveExport(ByVal sender As Object, ByVal e As EventArgs)
+        Dim s As New SaveFileDialog()
+        s.InitialDirectory = Application.StartupPath
+        If s.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            saveFile(s.FileName, CType(sender, Control).Tag.ToString)
+        End If
     End Sub
 
     Private Sub testOptions(ByVal parentControl As Control)
@@ -754,13 +776,9 @@ Imports System.Web.Script.Serialization
 
 #Region "civ table loading"
     Private m_comboItemNames As List(Of String) = New List(Of String)(New String() {"Never", "Very Early", "Early", "Default", "Late", "Very Late"})
-
-    'Private m_tradeTokens As List(Of String) = New List(Of String)(New String() {"PROGRESS_TRIGGER_POPULATION", "PROGRESS_TRIGGER_PRODUCTION", "PROGRESS_TRIGGER_TRADE"})
     Private m_popLevels As List(Of String) = New List(Of String)(New String() {"N/A", "20", "50", "80", "110", "140"})
     Private m_wealthLevels As List(Of String) = New List(Of String)(New String() {"N/A", "5000", "25000", "100000", "200000", "300000"})
     Private m_exportLevels As List(Of String) = New List(Of String)(New String() {"N/A", "500", "2500", "10000", "20000", "30000"})
-
-    'Private m_invasionTokens As List(Of String) = New List(Of String)(New String() {"PROGRESS_TRIGGER_POP_SIEGE", "PROGRESS_TRIGGER_PROD_SIEGE", "PROGRESS_TRIGGER_TRADE_SIEGE"})
 
     Private Sub loadCivTable()
         'column indexes
@@ -815,22 +833,16 @@ Imports System.Web.Script.Serialization
                 'add a caravan option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxCaravan, 0).Width
                 Dim cbCaravans As New optionComboPatternToken
-                'Dim cbCaravans As New optionComboBoxMulti
-                'cbCaravans.Name = "optCbMultiCaravans" & civName
                 cbCaravans.Name = "optCbPatternCivCaravans" & civName
                 formatCivTableControl(cbCaravans, intCtrlWidth, intCtrlHeight)
-                'buildTriggerOption(cbCaravans, civLabel.entityFileName, m_tradeTokens)
                 buildTriggerOption(cbCaravans, civLabel.triggerTag & "_TRADE")
                 Me.tableLayoutCivs.Controls.Add(cbCaravans, idxCaravan, idxRow)
 
                 'add an invasion option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxInvasion, 0).Width
-                'Dim cbInvasions As New optionComboBoxMulti
                 Dim cbInvasions As New optionComboPatternToken
-                'cbInvasions.Name = "optCbMultiInvasions" & civName
                 cbInvasions.Name = "optCbPatternCivInvasions" & civName
                 formatCivTableControl(cbInvasions, intCtrlWidth, intCtrlHeight)
-                'buildTriggerOption(cbInvasions, civLabel.entityFileName, m_invasionTokens)
                 buildTriggerOption(cbInvasions, civLabel.triggerTag & "_SIEGE")
                 Me.tableLayoutCivs.Controls.Add(cbInvasions, idxInvasion, idxRow)
 
@@ -851,7 +863,6 @@ Imports System.Web.Script.Serialization
                 Dim cbMats As optionComboPatternToken = New optionComboPatternToken
                 cbMats.Name = "optCbPatternCivMats" & civName
                 formatCivTableControl(cbMats, intCtrlWidth, intCtrlHeight)
-                'buildMatOption(cbMats, civLabel.entityFileName)
                 buildMatOption(cbMats, civLabel.triggerTag & "_MATERIALS")
                 Me.tableLayoutCivs.Controls.Add(cbMats, idxMaterials, idxRow)
 
@@ -881,7 +892,6 @@ Imports System.Web.Script.Serialization
         Else
             btn.options.enabledValue = String.Format("YES{0}[", tag)
             btn.options.disabledValue = String.Format("!NO{0}!", tag)
-            'btn.options.fileManager.fileNames = New List(Of String)({entityFileName})
         End If
 
         btn.ImageAlign = ContentAlignment.MiddleCenter
@@ -895,10 +905,8 @@ Imports System.Web.Script.Serialization
         Next
 
         cb.options.itemList = skillComboItems
-        'cb.options.fileManager.fileNames = New List(Of String)({creatureFileName})
         If tag Is Nothing OrElse tag.Trim <> "" Then
-            cb.pattern = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & "\b)"
-            cb.replace = "${1}${value}${2}"
+            cb.optPattern = New optionPattern("(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & "\b)", "${1}${value}${2}")
         Else
             cb.Enabled = False
         End If
@@ -913,35 +921,13 @@ Imports System.Web.Script.Serialization
 
         cb.options.itemList = matComboItems
 
-        cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)(\]" & tag & "\b)"
-        cb.replace = "${1}${value}${2}"
+        cb.optPattern = New optionPattern("(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)(\]" & tag & "\b)", "${1}${value}${2}")
     End Sub
-    'Private Sub buildMatOption(ByRef cb As optionComboPatternToken, ByVal entityFileName As String)
-    '    Dim matComboItems As New comboItemCollection
-    '    matComboItems.Add(New comboItem("DEFAULT", "Default"))
-    '    matComboItems.Add(New comboItem("WEAK", "Weak"))
-    '    matComboItems.Add(New comboItem("NORMAL", "Normal"))
-    '    matComboItems.Add(New comboItem("STRONG", "Strong"))
-
-    '    cb.options.itemList = matComboItems
-    '    cb.options.fileManager.fileNames = New List(Of String)({entityFileName})
-
-    '    cb.pattern = "(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)\]" ' & tag & \b) append this once raws are updated to unique tags
-    '    cb.replace = "${1}${value}]"
-    'End Sub
-
-    'Private Sub buildTriggerOption(ByRef cb As optionComboBoxMulti, ByVal entityFileName As String, ByVal tokenList As List(Of String))
-    '    'add the combobox items and associated values 0-5
-    '    loadTriggerItems(cb)
-    '    cb.options.fileManager.fileNames = New List(Of String)({entityFileName})
-    '    loadTriggerTokens(tokenList, cb.options.tokenList)
-    'End Sub
 
     Private Sub buildTriggerOption(ByRef cb As optionComboPatternToken, ByVal tag As String)
         'add the combobox items and associated values 0-5
         loadTriggerItems(cb)
-        cb.pattern = "(\[PROGRESS_TRIGGER_\w+:)(?<value>\d+)(\]" & tag & ")"
-        cb.replace = "${1}${value}${2}"
+        cb.optPattern = New optionPattern("(\[PROGRESS_TRIGGER_\w+:)(?<value>\d+)(\]" & tag & ")", "${1}${value}${2}")
     End Sub
 
     Private Sub loadTriggerItems(ByRef cb As optionComboPatternToken)
@@ -955,17 +941,6 @@ Imports System.Web.Script.Serialization
         Next
     End Sub
 
-    'Private Sub loadTriggerItems(ByRef cb As optionComboBoxMulti)
-    '    Dim idx As Integer = 0
-    '    For Each s As String In m_comboItemNames
-    '        Dim newItem As New comboItem
-    '        newItem.display = s
-    '        newItem.value = idx
-    '        cb.options.itemList.Add(newItem)
-    '        idx += 1
-    '    Next
-    'End Sub
-
     Private Function buildTriggerTooltip() As String
         Dim msg As New List(Of String)
         Dim idx As Integer = 0
@@ -975,14 +950,6 @@ Imports System.Web.Script.Serialization
         Next
         Return String.Join(vbCrLf & vbCrLf, msg)
     End Function
-
-    'Private Sub loadTriggerTokens(ByVal l As List(Of String), ByRef tokenList As rawTokenCollection)
-    '    For Each s As String In l
-    '        Dim newToken As New rawToken
-    '        newToken.tokenName = s : newToken.optionOnValue = "3" 'placeholder value (default)
-    '        tokenList.Add(newToken)
-    '    Next
-    'End Sub
 
 #End Region
 

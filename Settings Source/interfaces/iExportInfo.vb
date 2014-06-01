@@ -2,7 +2,7 @@
     Function fileInfo() As List(Of String)
     Function tagItems() As rawTokenCollection
     Function comboItems() As comboItemCollection
-    Function patternInfo() As KeyValuePair(Of String, String)
+    Function patternInfo() As optionPattern
     Function hasFileOverrides() As Boolean
     Function affectsGraphics() As Boolean
 End Interface

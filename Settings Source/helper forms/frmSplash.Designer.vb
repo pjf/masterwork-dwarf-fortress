@@ -28,7 +28,7 @@ Partial Class frmSplash
         '
         'Panel1
         '
-        Me.Panel1.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.masterwork_logo
+        Me.Panel1.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.splash2
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)

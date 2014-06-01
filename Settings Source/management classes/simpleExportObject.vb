@@ -1,24 +1,29 @@
-﻿Public Class simpleExportObject
+﻿Imports System.Web.Script.Serialization
+Imports System.Reflection
+Imports System.Runtime.Serialization
+Imports System.Globalization
+Imports System.ComponentModel
+
+Public Class simpleExportObject
+    Implements IExtensibleDataObject
 
     Private m_con As Control
     Private m_tooltip As String
-
-    Public Structure structPattern
-        Public findPattern As String
-        Public replacePattern As String
-    End Structure
-    Private m_pattern As structPattern
 
     Public Sub New(ByVal c As Control, ByVal mainTooltip As ToolTip)
         m_con = c
         If mainTooltip.GetToolTip(c) <> "" Then
             m_tooltip = mainTooltip.GetToolTip(c).Replace(vbNewLine, " ").Replace("""", "'").Trim
         Else
-            m_tooltip = ""
+            m_tooltip = Nothing
         End If
-        m_pattern.findPattern = CType(m_con, iExportInfo).patternInfo.Key.ToString
-        m_pattern.replacePattern = CType(m_con, iExportInfo).patternInfo.Value.ToString
     End Sub
+
+    Private ReadOnly Property currInfo As iExportInfo
+        Get
+            Return CType(m_con, iExportInfo)
+        End Get
+    End Property
 
     Public ReadOnly Property Name As String
         Get
@@ -26,13 +31,13 @@
         End Get
     End Property
 
-    Public ReadOnly Property Text As String
+    Public ReadOnly Property Text As Object
         Get
-            Return m_con.Text
+            Return IIf(m_con.Text.Trim = "", Nothing, m_con.Text.Trim)
         End Get
     End Property
 
-    Public ReadOnly Property Tooltip As String
+    Public ReadOnly Property Tooltip As Object
         Get
             Return m_tooltip
         End Get
@@ -40,32 +45,60 @@
 
     Public ReadOnly Property Files As List(Of String)
         Get
-            Return CType(m_con, iExportInfo).fileInfo
+            Return currInfo.fileInfo
         End Get
     End Property
 
     Public ReadOnly Property AffectsGraphicPacks As Boolean
         Get
-            Return CType(m_con, iExportInfo).affectsGraphics
+            Return currInfo.affectsGraphics
         End Get
     End Property
 
     Public ReadOnly Property HasFileOverrides As Boolean
         Get
-            Return CType(m_con, iExportInfo).hasFileOverrides
+            Return currInfo.hasFileOverrides
         End Get
     End Property
 
     Public ReadOnly Property DropDownItems As comboItemCollection
         Get
-            Return CType(m_con, iExportInfo).comboItems
+            Return currInfo.comboItems
         End Get
     End Property
 
-    Public ReadOnly Property Pattern As structPattern
+    Public ReadOnly Property Pattern As optionPattern
         Get
-            Return m_pattern
+            Return currInfo.patternInfo
         End Get
     End Property
 
+    Public ReadOnly Property Tags As rawTokenCollection
+        Get
+            Dim blnValidTokens As Boolean = False
+            For Each t As rawToken In currInfo.tagItems
+                If t.optionOnValue.ToString <> "" Or t.optionOffValue.ToString <> "" Or t.tokenName <> "" Then
+                    blnValidTokens = True : Exit For
+                End If
+            Next
+            If blnValidTokens Then
+                Return currInfo.tagItems
+            Else
+                Return Nothing
+            End If
+        End Get
+    End Property
+
+    Private extensionData_Value As ExtensionDataObject
+    Public Property ExtensionData() As ExtensionDataObject Implements IExtensibleDataObject.ExtensionData
+        Get
+            Return extensionData_Value
+        End Get
+        Set(value As ExtensionDataObject)
+            extensionData_Value = value
+        End Set
+    End Property
 End Class
+
+
+

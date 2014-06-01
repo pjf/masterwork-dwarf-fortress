@@ -92,55 +92,6 @@ Public Class utils
         End Select
     End Sub
 
-    '<summary>
-    'Adds indentation and line breaks to output of JavaScriptSerializer
-    '</summary>
-    Public Shared Function formatJsonOutput(jsonString As String) As String
-        Dim stringBuilder = New StringBuilder()
-
-        Dim escaping As Boolean = False
-        Dim inQuotes As Boolean = False
-        Dim indentation As Integer = 0
-
-        For Each character As Char In jsonString
-            If escaping Then
-                escaping = False
-                stringBuilder.Append(character)
-            Else
-                If character = "\"c Then
-                    escaping = True
-                    stringBuilder.Append(character)
-                ElseIf character = """"c Then
-                    inQuotes = Not inQuotes
-                    stringBuilder.Append(character)
-                ElseIf Not inQuotes Then
-                    If character = ","c Then
-                        stringBuilder.Append(character)
-                        stringBuilder.Append(vbNewLine)
-                        stringBuilder.Append(vbTab, indentation)
-                    ElseIf character = "["c OrElse character = "{"c Then
-                        stringBuilder.Append(character)
-                        stringBuilder.Append(vbNewLine)
-                        stringBuilder.Append(vbTab, System.Threading.Interlocked.Increment(indentation))
-                    ElseIf character = "]"c OrElse character = "}"c Then
-                        stringBuilder.Append(vbNewLine)
-                        stringBuilder.Append(vbTab, System.Threading.Interlocked.Decrement(indentation))
-                        stringBuilder.Append(character)
-                    ElseIf character = ":"c Then
-                        stringBuilder.Append(character)
-                        stringBuilder.Append(vbTab)
-                    Else
-                        stringBuilder.Append(character)
-                    End If
-                Else
-                    stringBuilder.Append(character)
-                End If
-            End If
-        Next
-
-        Return stringBuilder.ToString()
-    End Function
-
     Public Shared Sub MsgBoxExp(ByVal formTitle As String, ByVal messageTitle As String, ByVal iconType As MessageBoxIcon, ByVal message As String, ByVal buttons As MessageBoxButtons, Optional ByVal details As String = "")
         Dim msg As New messageBoxExpand(formTitle, messageTitle, iconType, message, buttons, details)
         msg.ShowDialog()

@@ -82,8 +82,8 @@ Public Class optionMultiButton
         Return m_opt.fileManager.isOverriden
     End Function
 
-    Public Function patternInfo() As KeyValuePair(Of String, String) Implements iExportInfo.patternInfo
-        Return New KeyValuePair(Of String, String)("", "")
+    Public Function patternInfo() As optionPattern Implements iExportInfo.patternInfo
+        Return Nothing
     End Function
 
     Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
