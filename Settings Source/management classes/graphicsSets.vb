@@ -76,8 +76,12 @@ Public Class graphicsSets
                     Dim dfPath As String = IO.Path.Combine(globals.m_dwarfFortressRootDir, "raw")
                     If fsp.DirectoryExists(mwPath) And fsp.DirectoryExists(dfPath) Then
                         fsp.CopyDirectory(mwPath, dfPath, True)
-                        Dim gFilePaths As List(Of String) = IO.Directory.GetFiles(mwPath).ToList
-                        For Each fi As IO.FileInfo In globals.m_dfRaws.Keys.Where(Function(f As IO.FileInfo) gFilePaths.Contains(f.Name))
+                        Dim gFilePaths As List(Of String) = IO.Directory.GetFiles(IO.Path.Combine(mwPath, "objects"), "*.txt", IO.SearchOption.AllDirectories).ToList
+                        For idx As Integer = 0 To gFilePaths.Count - 1
+                            gFilePaths(idx) = IO.Path.GetFileName(gFilePaths(idx))
+                        Next
+                        Dim relatedRaws As List(Of IO.FileInfo) = globals.m_dfRaws.Keys.Where(Function(f As IO.FileInfo) gFilePaths.Contains(f.Name)).ToList
+                        For Each fi As IO.FileInfo In relatedRaws                            
                             globals.m_dfRaws.Item(fi) = readFile(fi.FullName, False)
                         Next
                     Else
@@ -121,7 +125,7 @@ Public Class graphicsSets
             If showPrompts Then MsgBox("Graphics successfully switched.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Success")
 
         Catch ex As Exception
-            MsgBox("Something went horribly wrong while attempting to switch graphics!" & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
+            utils.MsgBoxExp("Graphics Error", "Error Changing Graphics", MessageBoxIcon.Error, "There has been a problem while attempting to switch graphics and/or colors.", MessageBoxButtons.OK, ex.ToString)
         End Try
     End Sub
 
