@@ -906,7 +906,7 @@ Imports Newtonsoft.Json
 
         cb.options.itemList = skillComboItems
         If tag Is Nothing OrElse tag.Trim <> "" Then
-            cb.optPattern = New optionPattern("(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & "\b)", "${1}${value}${2}")
+            cb.optPattern = New optionBasePattern("(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & "\b)", "${1}${value}${2}")
         Else
             cb.Enabled = False
         End If
@@ -921,13 +921,13 @@ Imports Newtonsoft.Json
 
         cb.options.itemList = matComboItems
 
-        cb.optPattern = New optionPattern("(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)(\]" & tag & "\b)", "${1}${value}${2}")
+        cb.optPattern = New optionBasePattern("(\[PERMITTED_REACTION:MATERIALS_)(?<value>[A-Z]*)(\]" & tag & "\b)", "${1}${value}${2}")
     End Sub
 
     Private Sub buildTriggerOption(ByRef cb As optionComboPatternToken, ByVal tag As String)
         'add the combobox items and associated values 0-5
         loadTriggerItems(cb)
-        cb.optPattern = New optionPattern("(\[PROGRESS_TRIGGER_\w+:)(?<value>\d+)(\]" & tag & ")", "${1}${value}${2}")
+        cb.optPattern = New optionBasePattern("(\[PROGRESS_TRIGGER_\w+:)(?<value>\d+)(\]" & tag & ")", "${1}${value}${2}")
     End Sub
 
     Private Sub loadTriggerItems(ByRef cb As optionComboPatternToken)

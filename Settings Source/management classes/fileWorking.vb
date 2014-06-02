@@ -27,8 +27,12 @@ Public Class fileWorking
         'load the art files (png and ttf files)
         m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\data\art", False, New String() {".png", ".ttf"}))
 
-        'add the raw folder
+        'add the raw\objects
         m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\raw\objects", False, New String() {".txt"}))
+
+        'add any special files in the root raw dir
+        m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\raw", False, New String() {".init"}))
+
         'exe extension is for randcreatures
         m_dfFilePaths.AddRange(getFiles(m_dwarfFortressRootDir & "\raw\objects\bin", False, New String() {".exe"}))
 
@@ -39,7 +43,7 @@ Public Class fileWorking
 
     Private Shared Sub loadRawFiles()
         Dim exts As String() = New String() {".txt", ".init"}
-        Dim exceptions As String() = New String() {"announcements.txt", "dfhack.init", "embark_profiles.txt"}
+        Dim exceptions As String() = New String() {"announcements.txt", "dfhack.init", "embark_profiles.txt", "onLoad.init"}
         For Each fi As IO.FileInfo In m_dfFilePaths.Where(Function(info As IO.FileInfo) (info.FullName.Contains("raw\objects") And exts.Contains(info.Extension)) OrElse exceptions.Contains(info.Name))
             globals.m_dfRaws.Add(fi, readFile(fi.FullName, False))
         Next

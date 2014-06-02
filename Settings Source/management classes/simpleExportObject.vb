@@ -33,7 +33,15 @@ Public Class simpleExportObject
 
     Public ReadOnly Property Text As Object
         Get
-            Return IIf(m_con.Text.Trim = "", Nothing, m_con.Text.Trim)
+            If m_con.Text = "" Then
+                Return Nothing
+            Else
+                If m_con.GetType().BaseType Is GetType(mwCheckBox) Then
+                    Return m_con.Text
+                Else
+                    Return Nothing
+                End If
+            End If
         End Get
     End Property
 
@@ -67,7 +75,7 @@ Public Class simpleExportObject
         End Get
     End Property
 
-    Public ReadOnly Property Pattern As optionPattern
+    Public ReadOnly Property Pattern As optionBasePattern
         Get
             Return currInfo.patternInfo
         End Get

@@ -1,7 +1,6 @@
 [
   {
     "Name": "optCbStartingLabors",
-    "Text": "Skills",
     "Tooltip": "You can have your dwarves start/arrive without any labor types enabled here by setting this to NO.  You can also set it to SKILLS to make the labor list set by skill, or BY_UNIT_TYPE to have it done by overall unit type.",
     "Files": [
       "d_init.txt"
@@ -177,7 +176,6 @@
   },
   {
     "Name": "optNumPopCap",
-    "Text": "200",
     "Tooltip": "0 - 9999  Set the amount of maximum dwarves. Mind that min. 2 migrant waves will appear.",
     "Files": [
       "d_init.txt"
@@ -195,7 +193,6 @@
   },
   {
     "Name": "optMaskChildBabyCap",
-    "Text": "100:1000",
     "Tooltip": "####:####  The first number is an absolute cap on babies + children. The second is a percentage of the current number of adults.",
     "Files": [
       "d_init.txt"
@@ -213,7 +210,6 @@
   },
   {
     "Name": "optCbAutoSave",
-    "Text": "Seasonal",
     "Files": [
       "d_init.txt"
     ],
@@ -254,7 +250,7 @@
     "Tags": [
       {
         "tokenName": "AUTOSAVE_PAUSE",
-        "optionOnValue": "YES",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -290,7 +286,7 @@
     "Tags": [
       {
         "tokenName": "INITIAL_SAVE",
-        "optionOnValue": "YES",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -370,7 +366,6 @@
   },
   {
     "Name": "optNumMacro",
-    "Text": "5",
     "Tooltip": "0 - 999999  This controls the number of milliseconds between macro instructions.",
     "Files": [
       "init.txt"
@@ -388,7 +383,6 @@
   },
   {
     "Name": "optCbWindow",
-    "Text": "Yes",
     "Tooltip": "Switches from windowed to full-screen mode.",
     "Files": [
       "init.txt"
@@ -420,7 +414,6 @@
   },
   {
     "Name": "optCbPriority",
-    "Text": "Normal",
     "Tooltip": "Determines how much processor time should be allocated to Dwarf Fortress.",
     "Files": [
       "init.txt"
@@ -481,6 +474,26 @@
     ]
   },
   {
+    "Name": "optNumPatternEmbarkGroupSize",
+    "Tooltip": "0 - 999999  Determines the number of starting colonists when embarking.",
+    "Files": [
+      "onLoad.init"
+    ],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": true,
+    "Pattern": "Find:(dwarves )(?<value>[0-9]{1,6}\\b) Replace:${1}${value}"
+  },
+  {
+    "Name": "optNumPatternEmbarkPoints",
+    "Tooltip": "0 - 999999  Determines the amount of available points to purchase animals, materials and items when embarking.",
+    "Files": [
+      "onLoad.init"
+    ],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": true,
+    "Pattern": "Find:(points )(?<value>[0-9]{1,6}\\b) Replace:${1}${value}"
+  },
+  {
     "Name": "optBtnEmbarkWarn",
     "Text": "Embark Warning",
     "Tooltip": "If enabled, shows a warning before every embark, even if there are no issues.",
@@ -500,7 +513,6 @@
   },
   {
     "Name": "optMaskEmbarkSize",
-    "Text": "3:3",
     "Tooltip": "#:# (# is 1-16)  For a 1:1 embark, nanofortress must be applied!",
     "Files": [
       "d_init.txt"
@@ -518,7 +530,6 @@
   },
   {
     "Name": "optCbPrintMode",
-    "Text": "2D",
     "Tooltip": "2D needed for TrueType, STANDARD needed for Rendermax.",
     "Files": [
       "init.txt"
@@ -638,7 +649,6 @@
   },
   {
     "Name": "optNumVolume",
-    "Text": "255",
     "Tooltip": "0 - 255",
     "Files": [
       "init.txt"
@@ -674,7 +684,6 @@
   },
   {
     "Name": "optNumGFPS",
-    "Text": "30",
     "Tooltip": "0 - 9999  How fast the game visually updates.",
     "Files": [
       "init.txt"
@@ -692,7 +701,6 @@
   },
   {
     "Name": "optNumFPSCap",
-    "Text": "150",
     "Tooltip": "0 - 9999  How fast the game runs.",
     "Files": [
       "init.txt"
@@ -984,12 +992,9 @@
     "Name": "optBtnElfRace",
     "Tooltip": "Adds elves to trade with to your game.",
     "Files": [
-      "creature_a_pet_elffort.txt",
-      "entity_elf.txt",
-      "entity_elffort.txt",
-      "plant_elffort.txt"
+      "entity_elf.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -1068,7 +1073,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansDefault",
-    "Text": "Very Early",
     "Files": [
       "entity_default.txt"
     ],
@@ -1104,7 +1108,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsDefault",
-    "Text": "Late",
     "Files": [
       "entity_default.txt"
     ],
@@ -1156,7 +1159,6 @@
   },
   {
     "Name": "optCbPatternCivMatsDefault",
-    "Text": "Default",
     "Files": [
       "entity_default.txt"
     ],
@@ -1184,7 +1186,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsDefault",
-    "Text": "0",
     "Files": [
       "creature_standard.txt"
     ],
@@ -1293,7 +1294,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansOrcfortTaigaorc",
-    "Text": "Early",
     "Files": [
       "entity_orcfort_taigaorc.txt"
     ],
@@ -1329,7 +1329,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsOrcfortTaigaorc",
-    "Text": "Early",
     "Files": [
       "entity_orcfort_taigaorc.txt"
     ],
@@ -1381,7 +1380,6 @@
   },
   {
     "Name": "optCbPatternCivMatsOrcfortTaigaorc",
-    "Text": "Default",
     "Files": [
       "entity_orcfort_taigaorc.txt"
     ],
@@ -1409,7 +1407,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsOrcfortTaigaorc",
-    "Text": "0",
     "Files": [
       "creature_orcfort_taigaorc.txt"
     ],
@@ -1518,7 +1515,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansKoboldCamp",
-    "Text": "Very Early",
     "Files": [
       "entity_kobold_camp.txt"
     ],
@@ -1554,7 +1550,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsKoboldCamp",
-    "Text": "Very Early",
     "Files": [
       "entity_kobold_camp.txt"
     ],
@@ -1606,7 +1601,6 @@
   },
   {
     "Name": "optCbPatternCivMatsKoboldCamp",
-    "Text": "Default",
     "Files": [
       "entity_kobold_camp.txt"
     ],
@@ -1634,7 +1628,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsKoboldCamp",
-    "Text": "0",
     "Files": [
       "creature_kobold_camp.txt"
     ],
@@ -1743,7 +1736,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansGnome",
-    "Text": "Very Late",
     "Files": [
       "entity_gnome.txt"
     ],
@@ -1779,7 +1771,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsGnome",
-    "Text": "Very Late",
     "Files": [
       "entity_gnome.txt"
     ],
@@ -1831,7 +1822,6 @@
   },
   {
     "Name": "optCbPatternCivMatsGnome",
-    "Text": "Default",
     "Files": [
       "entity_gnome.txt"
     ],
@@ -1859,7 +1849,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsGnome",
-    "Text": "0",
     "Files": [
       "creature_gnome.txt"
     ],
@@ -1968,7 +1957,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansWarlock",
-    "Text": "Early",
     "Files": [
       "entity_warlock.txt"
     ],
@@ -2004,7 +1992,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsWarlock",
-    "Text": "Default",
     "Files": [
       "entity_warlock.txt"
     ],
@@ -2056,7 +2043,6 @@
   },
   {
     "Name": "optCbPatternCivMatsWarlock",
-    "Text": "Default",
     "Files": [
       "entity_warlock.txt"
     ],
@@ -2084,7 +2070,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsWarlock",
-    "Text": "0",
     "Files": [
       "creature_masterwork.txt",
       "creature_warlock_civ.txt"
@@ -2194,7 +2179,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansFooccubus",
-    "Text": "Early",
     "Files": [
       "entity_fooccubus.txt"
     ],
@@ -2230,7 +2214,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsFooccubus",
-    "Text": "Late",
     "Files": [
       "entity_fooccubus.txt"
     ],
@@ -2282,7 +2265,6 @@
   },
   {
     "Name": "optCbPatternCivMatsFooccubus",
-    "Text": "Default",
     "Files": [
       "entity_fooccubus.txt"
     ],
@@ -2310,7 +2292,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsFooccubus",
-    "Text": "0",
     "Files": [
       "creature_fooccubus.txt"
     ],
@@ -2402,7 +2383,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansHuman",
-    "Text": "Default",
     "Files": [
       "entity_human.txt"
     ],
@@ -2438,7 +2418,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsHuman",
-    "Text": "Default",
     "Files": [
       "entity_human.txt"
     ],
@@ -2490,7 +2469,6 @@
   },
   {
     "Name": "optCbPatternCivMatsHuman",
-    "Text": "Default",
     "Files": [
       "entity_human.txt"
     ],
@@ -2518,7 +2496,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsHuman",
-    "Text": "0",
     "Files": [
       "creature_standard.txt"
     ],
@@ -2610,7 +2587,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansElf",
-    "Text": "Early",
     "Files": [
       "entity_elf.txt"
     ],
@@ -2646,7 +2622,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsElf",
-    "Text": "Late",
     "Files": [
       "entity_elf.txt"
     ],
@@ -2698,7 +2673,6 @@
   },
   {
     "Name": "optCbPatternCivMatsElf",
-    "Text": "Default",
     "Files": [
       "entity_elf.txt"
     ],
@@ -2726,7 +2700,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsElf",
-    "Text": "0",
     "Files": [
       "creature_standard.txt"
     ],
@@ -2818,7 +2791,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansDrow",
-    "Text": "Very Late",
     "Files": [
       "entity_drow.txt"
     ],
@@ -2854,7 +2826,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsDrow",
-    "Text": "Very Late",
     "Files": [
       "entity_drow.txt"
     ],
@@ -2906,7 +2877,6 @@
   },
   {
     "Name": "optCbPatternCivMatsDrow",
-    "Text": "Default",
     "Files": [
       "entity_drow.txt"
     ],
@@ -2934,7 +2904,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsDrow",
-    "Text": "0",
     "Files": [
       "creature_masterwork.txt"
     ],
@@ -3026,7 +2995,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansGoblin",
-    "Text": "Very Early",
     "Files": [
       "entity_goblin.txt"
     ],
@@ -3062,7 +3030,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsGoblin",
-    "Text": "Very Early",
     "Files": [
       "entity_goblin.txt"
     ],
@@ -3114,7 +3081,6 @@
   },
   {
     "Name": "optCbPatternCivMatsGoblin",
-    "Text": "Default",
     "Files": [
       "entity_goblin.txt"
     ],
@@ -3142,7 +3108,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsGoblin",
-    "Text": "0",
     "Files": [
       "creature_standard.txt"
     ],
@@ -3234,7 +3199,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansFrostGiant",
-    "Text": "Very Late",
     "Files": [
       "entity_frost_giant.txt"
     ],
@@ -3270,7 +3234,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsFrostGiant",
-    "Text": "Very Late",
     "Files": [
       "entity_frost_giant.txt"
     ],
@@ -3322,7 +3285,6 @@
   },
   {
     "Name": "optCbPatternCivMatsFrostGiant",
-    "Text": "Default",
     "Files": [
       "entity_frost_giant.txt"
     ],
@@ -3350,7 +3312,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsFrostGiant",
-    "Text": "0",
     "Files": [
       "creature_masterwork.txt"
     ],
@@ -3442,7 +3403,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansAutomaton",
-    "Text": "Very Late",
     "Files": [
       "entity_automaton.txt"
     ],
@@ -3478,7 +3438,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsAutomaton",
-    "Text": "Very Late",
     "Files": [
       "entity_automaton.txt"
     ],
@@ -3530,7 +3489,6 @@
   },
   {
     "Name": "optCbPatternCivMatsAutomaton",
-    "Text": "Default",
     "Files": [
       "entity_automaton.txt"
     ],
@@ -3558,7 +3516,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsAutomaton",
-    "Text": "0",
     "Files": [
       "creature_masterwork.txt"
     ],
@@ -3650,7 +3607,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansGremlin",
-    "Text": "Very Early",
     "Files": [
       "entity_gremlin.txt"
     ],
@@ -3686,7 +3642,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsGremlin",
-    "Text": "Very Early",
     "Files": [
       "entity_gremlin.txt"
     ],
@@ -3738,7 +3693,6 @@
   },
   {
     "Name": "optCbPatternCivMatsGremlin",
-    "Text": "Default",
     "Files": [
       "entity_gremlin.txt"
     ],
@@ -3766,7 +3720,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsGremlin",
-    "Text": "0",
     "Files": [
       "creature_standard.txt"
     ],
@@ -3858,7 +3811,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansTroglodyte",
-    "Text": "Very Early",
     "Files": [
       "entity_troglodyte.txt"
     ],
@@ -3894,7 +3846,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsTroglodyte",
-    "Text": "Early",
     "Files": [
       "entity_troglodyte.txt"
     ],
@@ -3946,7 +3897,6 @@
   },
   {
     "Name": "optCbPatternCivMatsTroglodyte",
-    "Text": "Default",
     "Files": [
       "entity_troglodyte.txt"
     ],
@@ -3974,7 +3924,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsTroglodyte",
-    "Text": "0",
     "Files": [
       "creature_subterranean.txt"
     ],
@@ -4066,7 +4015,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansAntmen",
-    "Text": "Default",
     "Files": [
       "entity_antmen.txt"
     ],
@@ -4102,7 +4050,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsAntmen",
-    "Text": "Default",
     "Files": [
       "entity_antmen.txt"
     ],
@@ -4154,7 +4101,6 @@
   },
   {
     "Name": "optCbPatternCivMatsAntmen",
-    "Text": "Default",
     "Files": [
       "entity_antmen.txt"
     ],
@@ -4182,7 +4128,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsAntmen",
-    "Text": "0",
     "Files": [
       "creature_subterranean.txt"
     ],
@@ -4274,7 +4219,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansDwarfEvil",
-    "Text": "Default",
     "Files": [
       "entity_dwarf_evil.txt"
     ],
@@ -4310,7 +4254,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsDwarfEvil",
-    "Text": "Default",
     "Files": [
       "entity_dwarf_evil.txt"
     ],
@@ -4362,7 +4305,6 @@
   },
   {
     "Name": "optCbPatternCivMatsDwarfEvil",
-    "Text": "Default",
     "Files": [
       "entity_dwarf_evil.txt"
     ],
@@ -4390,7 +4332,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsDwarfEvil",
-    "Text": "0",
     "Files": [
       "creature_masterwork_eviltwins.txt"
     ],
@@ -4482,7 +4423,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansHumanEvil",
-    "Text": "Early",
     "Files": [
       "entity_human_evil.txt"
     ],
@@ -4518,7 +4458,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsHumanEvil",
-    "Text": "Early",
     "Files": [
       "entity_human_evil.txt"
     ],
@@ -4570,7 +4509,6 @@
   },
   {
     "Name": "optCbPatternCivMatsHumanEvil",
-    "Text": "Default",
     "Files": [
       "entity_human_evil.txt"
     ],
@@ -4598,7 +4536,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsHumanEvil",
-    "Text": "0",
     "Files": [
       "creature_masterwork_eviltwins.txt"
     ],
@@ -4690,7 +4627,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansDrowEvil",
-    "Text": "Default",
     "Files": [
       "entity_drow_evil.txt"
     ],
@@ -4726,7 +4662,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsDrowEvil",
-    "Text": "Default",
     "Files": [
       "entity_drow_evil.txt"
     ],
@@ -4778,7 +4713,6 @@
   },
   {
     "Name": "optCbPatternCivMatsDrowEvil",
-    "Text": "Default",
     "Files": [
       "entity_drow_evil.txt"
     ],
@@ -4806,7 +4740,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsDrowEvil",
-    "Text": "0",
     "Files": [
       "creature_masterwork_eviltwins.txt"
     ],
@@ -4898,7 +4831,6 @@
   },
   {
     "Name": "optCbPatternCivCaravansElfEvil",
-    "Text": "Very Early",
     "Files": [
       "entity_elf_evil.txt"
     ],
@@ -4934,7 +4866,6 @@
   },
   {
     "Name": "optCbPatternCivInvasionsElfEvil",
-    "Text": "Early",
     "Files": [
       "entity_elf_evil.txt"
     ],
@@ -4986,7 +4917,6 @@
   },
   {
     "Name": "optCbPatternCivMatsElfEvil",
-    "Text": "Default",
     "Files": [
       "entity_elf_evil.txt"
     ],
@@ -5014,7 +4944,6 @@
   },
   {
     "Name": "optCbPatternCivSkillsElfEvil",
-    "Text": "0",
     "Files": [
       "creature_masterwork_eviltwins.txt"
     ],
@@ -5319,7 +5248,6 @@
   },
   {
     "Name": "optCbPatternInvaderSkills",
-    "Text": "0",
     "Tooltip": "This sets the combat skills for the above races. Be careful not to underestimate the effects of higher skills!",
     "Files": [
       "creature_fortdefense.txt",
@@ -7915,15 +7843,13 @@
       "entity_drow.txt",
       "entity_drow_evil.txt",
       "entity_dwarf_evil.txt",
-      "entity_dwarf_m.txt",
       "entity_fooccubus.txt",
       "entity_gnome.txt",
       "entity_goblin.txt",
       "entity_human.txt",
       "entity_human_evil.txt",
       "entity_orcfort_taigaorc.txt",
-      "entity_warlock.txt",
-      "unused entity_kobold.txt"
+      "entity_warlock.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -8037,8 +7963,7 @@
     "Text": "Food Variety",
     "Tooltip": "Adds more names for prepared meals, thats it.",
     "Files": [
-      "item_food.txt",
-      "item_food_masterwork.txt"
+      "item_food.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -8096,27 +8021,15 @@
     "Text": "Harder Smithing",
     "Tooltip": "Makes smithing harder. Items might need more then just one bar of metal to be produced.",
     "Files": [
-      "item_armor.txt",
       "item_armor_armor.txt",
-      "item_gloves.txt",
       "item_gloves_armor.txt",
-      "item_gnome.txt",
-      "item_helm.txt",
       "item_helm_armor.txt",
-      "item_magic.txt",
-      "item_pants.txt",
       "item_pants_armor.txt",
       "item_shield.txt",
-      "item_shoes.txt",
       "item_shoes_armor.txt",
-      "item_weapon.txt",
-      "item_weapon_human_tech.txt",
-      "item_weapon_masterwork.txt",
       "item_weapon_melee.txt",
       "item_weapon_melee_upgrades.txt",
-      "item_weapon_ranged.txt",
-      "item_z_gnome.txt",
-      "item_z_orcfort_weapon.txt"
+      "item_weapon_ranged.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -8187,7 +8100,6 @@
     "Tooltip": "All dwarves learn only half as fast. Makes Guilds more important.",
     "Files": [
       "creature_masterwork_eviltwins.txt",
-      "creature_mercs.txt",
       "creature_standard.txt"
     ],
     "AffectsGraphicPacks": true,
@@ -8208,7 +8120,6 @@
     "Files": [
       "entity_default.txt",
       "entity_drow.txt",
-      "entity_dwarf_m.txt",
       "entity_elf.txt",
       "entity_human.txt"
     ],
@@ -8327,7 +8238,6 @@
     "Files": [
       "entity_default.txt",
       "entity_dwarf_evil.txt",
-      "entity_dwarf_m.txt",
       "entity_fooccubus.txt",
       "entity_human.txt"
     ],
@@ -8351,7 +8261,6 @@
       "creature_gnome.txt",
       "creature_masterwork.txt",
       "creature_masterwork_eviltwins.txt",
-      "creature_mercs.txt",
       "creature_standard.txt",
       "creature_subterranean.txt",
       "creature_warlock_civ.txt"
@@ -8416,7 +8325,6 @@
     "Files": [
       "building_fooccubus.txt",
       "building_furnaces_masterwork.txt",
-      "building_gnome.txt",
       "building_masterwork.txt",
       "building_z_gnome.txt"
     ],
@@ -8433,7 +8341,6 @@
   },
   {
     "Name": "optNumMineralScarcity",
-    "Text": "200",
     "Tooltip": "100 - 10000  The lower the value, the more minerals.",
     "Files": [
       "world_gen.txt"
@@ -8451,7 +8358,6 @@
   },
   {
     "Name": "optNumCivNumber",
-    "Text": "40",
     "Tooltip": "0 - 300  The number of civilizations placed on the map before history begins.",
     "Files": [
       "world_gen.txt"
@@ -8469,7 +8375,6 @@
   },
   {
     "Name": "optNumEmbarkPoints",
-    "Text": "1274",
     "Tooltip": "0 - 10000  The number of points available for skills and equipment when embarking.",
     "Files": [
       "world_gen.txt"
@@ -8487,7 +8392,6 @@
   },
   {
     "Name": "optNumEndYear",
-    "Text": "1050",
     "Tooltip": "2 - 10000  The number of years of history generated for the world.",
     "Files": [
       "world_gen.txt"
@@ -8505,7 +8409,6 @@
   },
   {
     "Name": "optNumPopSize",
-    "Text": "15000",
     "Tooltip": "-1 - 100000  Maximum population of civilization members in the world. -1 is unlimited, but dangerous.",
     "Files": [
       "world_gen.txt"
@@ -8523,7 +8426,6 @@
   },
   {
     "Name": "optNumMegabeasts",
-    "Text": "75",
     "Tooltip": "0 - 999  The number of megabeasts placed at the beginning of history. All megabeasts are placed in equal proportions.",
     "Files": [
       "world_gen.txt"
@@ -8541,7 +8443,6 @@
   },
   {
     "Name": "optNumSemibeasts",
-    "Text": "150",
     "Tooltip": "0 - 999  The number of semi-megabeasts placed at the beginning of history. They are placed in equal proportions.",
     "Files": [
       "world_gen.txt"
@@ -8559,7 +8460,6 @@
   },
   {
     "Name": "optNumNecromancers",
-    "Text": "52",
     "Tooltip": "0 - 999  The number of necromancers.",
     "Files": [
       "world_gen.txt"
@@ -8577,7 +8477,6 @@
   },
   {
     "Name": "optNumWerebeasts",
-    "Text": "26",
     "Tooltip": "0 - 999  The number of different kinds of were-beasts curses that will exist in the world.",
     "Files": [
       "world_gen.txt"
@@ -8595,7 +8494,6 @@
   },
   {
     "Name": "optNumTitans",
-    "Text": "33",
     "Tooltip": "0 - 999  The number of titans that exist at the beginning of history.",
     "Files": [
       "world_gen.txt"
@@ -8613,7 +8511,6 @@
   },
   {
     "Name": "optNumEvilInteractions",
-    "Text": "52",
     "Tooltip": "0 - 999  The number of different types of evil region interactions.",
     "Files": [
       "world_gen.txt"
@@ -8631,7 +8528,6 @@
   },
   {
     "Name": "optNumDemons",
-    "Text": "52",
     "Tooltip": "0 - 999  The number of different types of demons that will be procedurally generated.",
     "Files": [
       "world_gen.txt"
@@ -8649,7 +8545,6 @@
   },
   {
     "Name": "optNumDisturbances",
-    "Text": "52",
     "Tooltip": "0 - 999  The number of different disturbed dead that can exist in the world.",
     "Files": [
       "world_gen.txt"
@@ -8667,7 +8562,6 @@
   },
   {
     "Name": "optNumNightCreatures",
-    "Text": "26",
     "Tooltip": "0 - 999  The number of different types of night creatues that will exist.",
     "Files": [
       "world_gen.txt"
@@ -8685,7 +8579,6 @@
   },
   {
     "Name": "optNumEvilClouds",
-    "Text": "26",
     "Tooltip": "0 - 999  The total different types of evil clouds that can exist.",
     "Files": [
       "world_gen.txt"
@@ -8703,7 +8596,6 @@
   },
   {
     "Name": "optNumBogeymen",
-    "Text": "26",
     "Tooltip": "0 - 999  The number of different types of bogeymen that will exist.",
     "Files": [
       "world_gen.txt"
@@ -8721,7 +8613,6 @@
   },
   {
     "Name": "optNumEvilRains",
-    "Text": "26",
     "Tooltip": "0 - 999  The total amount of different evil rains that can exist.",
     "Files": [
       "world_gen.txt"
@@ -8739,7 +8630,6 @@
   },
   {
     "Name": "optNumVampires",
-    "Text": "26",
     "Tooltip": "0 - 999  The number of different vampire curses that will exist. Curses are all very similar however.",
     "Files": [
       "world_gen.txt"
@@ -8757,7 +8647,6 @@
   },
   {
     "Name": "optNumCaveSizeMin",
-    "Text": "5",
     "Tooltip": "1 - 500  The minimum cave length and depth.",
     "Files": [
       "world_gen.txt"
@@ -8775,7 +8664,6 @@
   },
   {
     "Name": "optNumCaveSizeMax",
-    "Text": "25",
     "Tooltip": "1 - 500  The maximum cave length and depth.",
     "Files": [
       "world_gen.txt"
@@ -8793,7 +8681,6 @@
   },
   {
     "Name": "optNumMountainCaves",
-    "Text": "40",
     "Tooltip": "0 - 800  The number of mountain caves.",
     "Files": [
       "world_gen.txt"
@@ -8811,7 +8698,6 @@
   },
   {
     "Name": "optNumOtherCaves",
-    "Text": "60",
     "Tooltip": "0 - 800  The number of non-mountain caves.",
     "Files": [
       "world_gen.txt"
@@ -8847,7 +8733,6 @@
   },
   {
     "Name": "optNumCaverns",
-    "Text": "3",
     "Tooltip": "0 - 3  The number of cavern systems. Less caverns may improve FPS. This number does not include Magma or HFS.",
     "Files": [
       "world_gen.txt"
@@ -8865,7 +8750,6 @@
   },
   {
     "Name": "optNumOpenMin",
-    "Text": "0",
     "Tooltip": "0 - 100  Minimum cavern openness.",
     "Files": [
       "world_gen.txt"
@@ -8883,7 +8767,6 @@
   },
   {
     "Name": "optNumOpenMax",
-    "Text": "100",
     "Tooltip": "0 - 100  Maximum cavern openness.",
     "Files": [
       "world_gen.txt"
@@ -8901,7 +8784,6 @@
   },
   {
     "Name": "optNumMazeMin",
-    "Text": "0",
     "Tooltip": "0 - 100  Minimum cavern passageway density.",
     "Files": [
       "world_gen.txt"
@@ -8919,7 +8801,6 @@
   },
   {
     "Name": "optNumMazeMax",
-    "Text": "100",
     "Tooltip": "0 - 100  Maximum cavern passageway density.",
     "Files": [
       "world_gen.txt"
@@ -8937,7 +8818,6 @@
   },
   {
     "Name": "optNumWaterMin",
-    "Text": "0",
     "Tooltip": "0 - 100  Minimum cavern water amount.",
     "Files": [
       "world_gen.txt"
@@ -8955,7 +8835,6 @@
   },
   {
     "Name": "optNumWaterMax",
-    "Text": "100",
     "Tooltip": "0 - 100  Maximum cavern water amount.",
     "Files": [
       "world_gen.txt"
@@ -8973,7 +8852,6 @@
   },
   {
     "Name": "optNumAboveCav1",
-    "Text": "5",
     "Tooltip": "5 - 99  Z-Levels of stone above the first cavern layer.",
     "Files": [
       "world_gen.txt"
@@ -8991,7 +8869,6 @@
   },
   {
     "Name": "optNumAboveCav2",
-    "Text": "1",
     "Tooltip": "1 - 99  Z-Levels of earth between the very bottom of the first cavern, and the very top of the second cavern.",
     "Files": [
       "world_gen.txt"
@@ -9009,7 +8886,6 @@
   },
   {
     "Name": "optNumAboveCav3",
-    "Text": "1",
     "Tooltip": "1 - 99  Z-Levels of earth between the very bottom of the second cavern, and the very top of the third cavern.",
     "Files": [
       "world_gen.txt"
@@ -9027,7 +8903,6 @@
   },
   {
     "Name": "optNumAboveMagma",
-    "Text": "1",
     "Tooltip": "1 - 99  Z-Levels between the very highest magma, and the very bottom of the third cavern.",
     "Files": [
       "world_gen.txt"
@@ -9045,7 +8920,6 @@
   },
   {
     "Name": "optNumAboveHFS",
-    "Text": "2",
     "Tooltip": "2 - 99  Uncertain.  Seems to increase the layers of Semi-Molten Rock and the depth of the magma sea. Only valid if magma layer is present.",
     "Files": [
       "world_gen.txt"
@@ -9099,7 +8973,6 @@
   },
   {
     "Name": "optMaskGoodAreas",
-    "Text": "24:244:0",
     "Tooltip": "###:###:### (0-500)  The amount of good tiles on the map.",
     "Files": [
       "world_gen.txt"
@@ -9117,7 +8990,6 @@
   },
   {
     "Name": "optMaskEvilAreas",
-    "Text": "24:244:0",
     "Tooltip": "###:###:### (0-500)  The amount of evil tiles on the map.",
     "Files": [
       "world_gen.txt"

@@ -3,9 +3,9 @@ Imports System.Configuration
 Imports MasterworkDwarfFortress.globals
 Imports System.Text.RegularExpressions
 
-<DescriptionAttribute("Changes a single RAW token with a specifically formatted value.")> _
-Public Class optionFormatted
-    Inherits TextBox
+<DescriptionAttribute("Performs a single find/replace based on regex patterns.")> _
+Public Class optionNumericPattern
+    Inherits NumericUpDown
     Implements iToken
     Implements iTooltip
     Implements iTest
@@ -17,28 +17,14 @@ Public Class optionFormatted
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        Me.BorderStyle = Windows.Forms.BorderStyle.FixedSingle
         Me.TextAlign = HorizontalAlignment.Center
+        Me.BorderStyle = Windows.Forms.BorderStyle.None
+        Me.DoubleBuffered = True
     End Sub
 
-    Private m_opt As New optionSingle
-    Private m_pattern As String
-    Private m_niceFormat As String
-    Private m_ep As New ErrorProvider
-
-    Private Sub optionFormatted_Validating(sender As Object, e As CancelEventArgs) Handles Me.Validating
-        Dim rx As New Regex(m_pattern, RegexOptions.IgnoreCase)
-        If Not rx.IsMatch(Me.Text) Then
-            m_ep.SetError(Me, "The input must be in the format of: " & m_niceFormat)
-            m_ep.SetIconAlignment(Me, ErrorIconAlignment.MiddleLeft)
-            e.Cancel = True
-        Else
-            m_ep.SetError(Me, "")
-        End If
-    End Sub
+    Private m_opt As New optionPattern    
 
     Private Sub optionFormatted_Validated(sender As Object, e As EventArgs) Handles Me.Validated
-        m_opt.valueChanged(Me.Text)
         saveOption()
     End Sub
 
@@ -49,7 +35,7 @@ Public Class optionFormatted
                 Me.Text = CStr(value)
                 m_opt.valueUpdatingPaused = False : optionFormatted_Validated(Me, Nothing) : m_opt.valueUpdatingPaused = True
             Else
-                Me.Text = CStr(m_opt.loadOption).Trim
+                Me.Text = m_opt.optionManager.loadPatternValue(m_opt.Pattern.find, m_opt.fileManager.loadFiles(m_opt.optionManager, m_opt.Pattern.find))
             End If
         Catch ex As Exception
             Me.Text = ""
@@ -60,57 +46,43 @@ Public Class optionFormatted
 
     Public Sub saveOption() Implements iToken.saveOption
         If m_opt.valueUpdatingPaused Or Me.DesignMode Then Exit Sub
-        m_opt.saveOption()
+
+        If Not m_opt.Pattern.replace.Contains("${value}") Then
+            MsgBox("Unable to save, replacement pattern is in an invalid format!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
+        Else
+            Dim r As String = m_opt.Pattern.replace.Replace("${value}", Me.Value)
+            If Not m_opt.optionManager.replacePatternsInFiles(m_opt.Pattern.find, r, m_opt.fileManager) Then
+                MsgBox("Failed to save changes for " & Me.Name & "!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
+            End If
+        End If
         m_opt.valueUpdatingPaused = False
     End Sub
 
-    Public Property options As optionSingle
+    Public Property options As optionPattern
         Get
             Return m_opt
         End Get
-        Set(value As optionSingle)
+        Set(value As optionPattern)
             m_opt = value
         End Set
     End Property
 
-    <DisplayNameAttribute("Token Pattern"), _
-    CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("This is the regular expression pattern the input must match to be validated.")> _
-    Public Property pattern As String
-        Get
-            Return m_pattern
-        End Get
-        Set(value As String)
-            m_pattern = value
-        End Set
-    End Property
-
-    <DisplayNameAttribute("Display Pattern"), _
-    CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("This is the pattern to display to the user.")> _
-    Public Property niceFormat As String
-        Get
-            Return m_niceFormat
-        End Get
-        Set(value As String)
-            m_niceFormat = value
-        End Set
-    End Property
+    Private Sub optionNumeric_Validated(sender As Object, e As EventArgs) Handles Me.Validated
+        saveOption()
+    End Sub
 
     Public Function getToolTip() As String Implements iTooltip.getToolTip
-        Return m_niceFormat
+        Return String.Format("{0} - {1}", Me.Minimum.ToString, Me.Maximum.ToString)
     End Function
 
     Public Sub runtTest() Implements iTest.runTest
-        Dim valid As Boolean = False
-        Dim rx As New Regex(m_pattern, RegexOptions.IgnoreCase)
-        Dim newVal As String = Me.Text
-        While Not valid
-            newVal = InputBox("Enter test value for " & Me.Name.ToString, "", Me.Text)
-            If rx.IsMatch(newVal) Then valid = True
-        End While
-        Me.Text = newVal
-        optionFormatted_Validated(Me, New System.EventArgs)
+        Dim newVal As Integer = Me.Value - Me.Increment
+        If newVal >= Me.Minimum And newVal <= Me.Maximum Then
+            Me.Value = newVal
+        Else
+            Me.Value = Me.Value + Me.Increment
+        End If
+        optionNumeric_Validated(Me, New EventArgs)
     End Sub
 
     Public Sub applyTheme() Implements iTheme.applyTheme
@@ -135,7 +107,7 @@ Public Class optionFormatted
     End Function
 
     Public Function patternInfo() As optionBasePattern Implements iExportInfo.patternInfo
-        Return Nothing
+        Return m_opt.Pattern
     End Function
 
     Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
@@ -143,6 +115,8 @@ Public Class optionFormatted
     End Function
 
     Public Function currentValue() As Object Implements iToken.currentValue
-        Return Me.Text.ToString
+        Return CInt(Me.Value)
     End Function
 End Class
+
+

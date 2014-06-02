@@ -12,7 +12,7 @@ Public Class optionComboPatternToken
     Private m_value As String
 
     Private m_opt As New optionList
-    Private m_optPattern As New optionPattern("", "")
+    Private m_optPattern As New optionBasePattern("", "")
 
     Public Sub New()
 
@@ -69,11 +69,11 @@ Public Class optionComboPatternToken
         End Set
     End Property
 
-    Public Property optPattern As optionPattern
+    Public Property optPattern As optionBasePattern
         Get
             Return m_optPattern
         End Get
-        Set(value As optionPattern)
+        Set(value As optionBasePattern)
             m_optPattern = value
         End Set
     End Property
@@ -110,7 +110,7 @@ Public Class optionComboPatternToken
         Return m_opt.fileManager.isOverriden
     End Function
 
-    Public Function patternInfo() As optionPattern Implements iExportInfo.patternInfo
+    Public Function patternInfo() As optionBasePattern Implements iExportInfo.patternInfo
         Return m_optPattern
     End Function
 

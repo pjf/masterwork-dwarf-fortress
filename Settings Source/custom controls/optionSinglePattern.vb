@@ -3,8 +3,8 @@ Imports System.Configuration
 Imports MasterworkDwarfFortress.globals
 Imports System.Text.RegularExpressions
 
-<DescriptionAttribute("Changes a single RAW token with a specifically formatted value.")> _
-Public Class optionFormatted
+<DescriptionAttribute("Performs a single find/replace based on regex patterns.")> _
+Public Class optionSinglePattern
     Inherits TextBox
     Implements iToken
     Implements iTooltip
@@ -21,9 +21,9 @@ Public Class optionFormatted
         Me.TextAlign = HorizontalAlignment.Center
     End Sub
 
-    Private m_opt As New optionSingle
-    Private m_pattern As String
+    Private m_opt As New optionPattern    
     Private m_niceFormat As String
+    Private m_pattern As String
     Private m_ep As New ErrorProvider
 
     Private Sub optionFormatted_Validating(sender As Object, e As CancelEventArgs) Handles Me.Validating
@@ -37,8 +37,7 @@ Public Class optionFormatted
         End If
     End Sub
 
-    Private Sub optionFormatted_Validated(sender As Object, e As EventArgs) Handles Me.Validated
-        m_opt.valueChanged(Me.Text)
+    Private Sub optionFormatted_Validated(sender As Object, e As EventArgs) Handles Me.Validated        
         saveOption()
     End Sub
 
@@ -49,7 +48,7 @@ Public Class optionFormatted
                 Me.Text = CStr(value)
                 m_opt.valueUpdatingPaused = False : optionFormatted_Validated(Me, Nothing) : m_opt.valueUpdatingPaused = True
             Else
-                Me.Text = CStr(m_opt.loadOption).Trim
+                Me.Text = m_opt.optionManager.loadPatternValue(m_opt.Pattern.find, m_opt.fileManager.loadFiles(m_opt.optionManager, m_opt.Pattern.find))
             End If
         Catch ex As Exception
             Me.Text = ""
@@ -60,15 +59,23 @@ Public Class optionFormatted
 
     Public Sub saveOption() Implements iToken.saveOption
         If m_opt.valueUpdatingPaused Or Me.DesignMode Then Exit Sub
-        m_opt.saveOption()
+
+        If Not m_opt.Pattern.replace.Contains("${value}") Then
+            MsgBox("Unable to save, replacement pattern is in an invalid format!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
+        Else
+            Dim r As String = m_opt.Pattern.replace.Replace("${value}", Me.Text)
+            If Not m_opt.optionManager.replacePatternsInFiles(m_opt.Pattern.find, r, m_opt.fileManager) Then
+                MsgBox("Failed to save changes for " & Me.Name & "!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
+            End If
+        End If
         m_opt.valueUpdatingPaused = False
     End Sub
 
-    Public Property options As optionSingle
+    Public Property options As optionPattern
         Get
             Return m_opt
         End Get
-        Set(value As optionSingle)
+        Set(value As optionPattern)
             m_opt = value
         End Set
     End Property
@@ -146,3 +153,4 @@ Public Class optionFormatted
         Return Me.Text.ToString
     End Function
 End Class
+

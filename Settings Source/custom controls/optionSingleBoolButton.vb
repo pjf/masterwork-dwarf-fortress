@@ -87,7 +87,7 @@ Public Class optionSingleBoolButton
         Return m_opt.fileManager.isOverriden
     End Function
 
-    Public Function patternInfo() As optionPattern Implements iExportInfo.patternInfo
+    Public Function patternInfo() As optionBasePattern Implements iExportInfo.patternInfo
         Return Nothing
     End Function
 
