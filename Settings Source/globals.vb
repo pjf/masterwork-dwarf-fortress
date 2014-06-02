@@ -1,4 +1,6 @@
-﻿Public Class globals
+﻿Imports Newtonsoft.Json
+
+Public Class globals
 
     Public Shared m_dwarfFortressRootDir As String
 
@@ -25,5 +27,8 @@
 
     Public Shared m_dfRaws As New Dictionary(Of IO.FileInfo, String)
     Public Shared m_mwRaws As New Dictionary(Of IO.FileInfo, String)
+
+    Public Shared m_defaultSerializeOptions As New JsonSerializerSettings
+    Public Shared m_graphicPackDefs As New List(Of graphicPackDefinition)
 
 End Class

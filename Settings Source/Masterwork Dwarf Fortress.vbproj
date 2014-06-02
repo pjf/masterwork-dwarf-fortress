@@ -282,6 +282,7 @@
     <Compile Include="interfaces\iTooltip.vb" />
     <Compile Include="management classes\appSettingsManager.vb" />
     <Compile Include="management classes\fileWorking.vb" />
+    <Compile Include="management classes\graphicPackDefinition.vb" />
     <Compile Include="management classes\graphicsSets.vb" />
     <Compile Include="management classes\simpleExportObject.vb" />
     <Compile Include="management classes\tokenLoading.vb" />

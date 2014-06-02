@@ -61,7 +61,7 @@ Public Class fileWorking
 
     Private Shared Sub loadMwGraphics()
         m_mwGraphicDirs.AddRange(getDirectories(m_graphicsDir, False))
-        m_mwGraphicFilePaths.AddRange(getFiles(m_graphicsDir, True, New String() {".txt", ".png", ".xml"}))
+        m_mwGraphicFilePaths.AddRange(getFiles(m_graphicsDir, True, New String() {".txt", ".png", ".xml", ".JSON"}))
     End Sub
 
     Private Shared Sub loadProfiles()

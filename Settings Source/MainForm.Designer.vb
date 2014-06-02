@@ -1133,21 +1133,26 @@ Partial Class MainForm
         Dim OptionManager260 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionBasePattern2 As MasterworkDwarfFortress.optionBasePattern = New MasterworkDwarfFortress.optionBasePattern()
         Dim OptionSettingManager263 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace186 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionPattern2 As MasterworkDwarfFortress.optionPattern = New MasterworkDwarfFortress.optionPattern()
         Dim FileListManager261 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager261 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionBasePattern3 As MasterworkDwarfFortress.optionBasePattern = New MasterworkDwarfFortress.optionBasePattern()
         Dim OptionSettingManager264 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace187 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingleReplace186 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager262 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager262 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager265 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionList6 As MasterworkDwarfFortress.optionList = New MasterworkDwarfFortress.optionList()
+        Dim OptionSingleReplace187 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager263 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
+        Dim OptionManager263 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager266 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionList6 As MasterworkDwarfFortress.optionList = New MasterworkDwarfFortress.optionList()
+        Dim FileListManager264 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim ComboItem36 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
         Dim ComboItem37 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
         Dim ComboItem38 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim OptionManager263 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
-        Dim OptionSettingManager266 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionManager264 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager267 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim OptionSingleFileReplace4 As MasterworkDwarfFortress.optionSingleFileReplace = New MasterworkDwarfFortress.optionSingleFileReplace()
         Dim ComboFileItem7 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
         Dim ComboFileItem8 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
@@ -1173,20 +1178,15 @@ Partial Class MainForm
         Dim ComboFileItem28 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
         Dim ComboFileItem29 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
         Dim ComboFileItem30 As MasterworkDwarfFortress.comboFileItem = New MasterworkDwarfFortress.comboFileItem()
-        Dim OptionSettingManager267 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle62 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
-        Dim FileListManager264 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
-        Dim OptionManager264 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager268 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionSingle62 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim FileListManager265 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
+        Dim OptionManager265 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager269 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim OptionSingle63 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager266 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager266 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager270 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionPattern2 As MasterworkDwarfFortress.optionPattern = New MasterworkDwarfFortress.optionPattern()
-        Dim FileListManager265 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
-        Dim OptionManager265 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
-        Dim OptionBasePattern3 As MasterworkDwarfFortress.optionBasePattern = New MasterworkDwarfFortress.optionBasePattern()
-        Dim OptionSettingManager269 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Me.ToolTipMaker = New System.Windows.Forms.ToolTip(Me.components)
         Me.lblChildCap = New System.Windows.Forms.Label()
         Me.btnUpdateSaves = New System.Windows.Forms.Button()
@@ -1477,6 +1477,7 @@ Partial Class MainForm
         Me.optNumMacro = New MasterworkDwarfFortress.optionNumeric()
         Me.optMultiDigging = New MasterworkDwarfFortress.optionMultiButton()
         Me.optNumPatternEmbarkPoints = New MasterworkDwarfFortress.optionNumericPattern()
+        Me.optNumPatternEmbarkGroupSize = New MasterworkDwarfFortress.optionNumericPattern()
         Me.lblMacro = New System.Windows.Forms.Label()
         Me.lblHFSLevels = New System.Windows.Forms.Label()
         Me.lblSettingExplanation = New System.Windows.Forms.Label()
@@ -1714,7 +1715,6 @@ Partial Class MainForm
         Me.tabMisc = New KRBTabControl.TabPageEx()
         Me.tabWorldGen = New KRBTabControl.TabPageEx()
         Me.btnResetWorldGen = New System.Windows.Forms.Button()
-        Me.optNumPatternEmbarkGroupSize = New MasterworkDwarfFortress.optionNumericPattern()
         Me.grpStandardization.SuspendLayout
         Me.grpWorldGenHostiles.SuspendLayout
         CType(Me.optNumMegabeasts,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1756,6 +1756,7 @@ Partial Class MainForm
         CType(Me.optNumAboveHFS,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.optNumMacro,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.optNumPatternEmbarkPoints,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.optNumPatternEmbarkGroupSize,System.ComponentModel.ISupportInitialize).BeginInit
         Me.panCivTable.SuspendLayout
         Me.tableLayoutCivs.SuspendLayout
         Me.grpExtraCreatures.SuspendLayout
@@ -1807,7 +1808,6 @@ Partial Class MainForm
         Me.tabFurnaces.SuspendLayout
         Me.tabMisc.SuspendLayout
         Me.tabWorldGen.SuspendLayout
-        CType(Me.optNumPatternEmbarkGroupSize,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'ToolTipMaker
@@ -10541,6 +10541,29 @@ Partial Class MainForm
         Me.ToolTipMaker.SetToolTip(Me.optNumPatternEmbarkPoints, "Determines the amount of available points to purchase animals, materials and item"& _ 
         "s when embarking.")
         '
+        'optNumPatternEmbarkGroupSize
+        '
+        Me.optNumPatternEmbarkGroupSize.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.optNumPatternEmbarkGroupSize.Location = New System.Drawing.Point(89, 70)
+        Me.optNumPatternEmbarkGroupSize.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
+        Me.optNumPatternEmbarkGroupSize.Name = "optNumPatternEmbarkGroupSize"
+        FileListManager261.fileNames = CType(resources.GetObject("FileListManager261.fileNames"),System.Collections.Generic.List(Of String))
+        OptionPattern2.fileManager = FileListManager261
+        OptionManager261.loadFromDInit = false
+        OptionManager261.loadFromInit = false
+        OptionManager261.loadFromWorldGen = false
+        OptionPattern2.optionManager = OptionManager261
+        OptionBasePattern3.find = "(dwarves )(?<value>[0-9]{1,6}\b)"
+        OptionBasePattern3.replace = "${1}${value}"
+        OptionPattern2.Pattern = OptionBasePattern3
+        OptionSettingManager264.settingName = Nothing
+        OptionPattern2.settingManager = OptionSettingManager264
+        Me.optNumPatternEmbarkGroupSize.options = OptionPattern2
+        Me.optNumPatternEmbarkGroupSize.Size = New System.Drawing.Size(62, 19)
+        Me.optNumPatternEmbarkGroupSize.TabIndex = 174
+        Me.optNumPatternEmbarkGroupSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ToolTipMaker.SetToolTip(Me.optNumPatternEmbarkGroupSize, "Determines the number of starting colonists when embarking.")
+        '
         'lblMacro
         '
         Me.lblMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
@@ -11081,14 +11104,14 @@ Partial Class MainForm
         Me.optBtnSuccubi.Name = "optBtnSuccubi"
         OptionSingleReplace186.disabledValue = "!NOFOOCCUBUS!"
         OptionSingleReplace186.enabledValue = "YESFOOCCUBUS["
-        FileListManager261.fileNames = CType(resources.GetObject("FileListManager261.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace186.fileManager = FileListManager261
-        OptionManager261.loadFromDInit = false
-        OptionManager261.loadFromInit = false
-        OptionManager261.loadFromWorldGen = false
-        OptionSingleReplace186.optionManager = OptionManager261
-        OptionSettingManager264.settingName = Nothing
-        OptionSingleReplace186.settingManager = OptionSettingManager264
+        FileListManager262.fileNames = CType(resources.GetObject("FileListManager262.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace186.fileManager = FileListManager262
+        OptionManager262.loadFromDInit = false
+        OptionManager262.loadFromInit = false
+        OptionManager262.loadFromWorldGen = false
+        OptionSingleReplace186.optionManager = OptionManager262
+        OptionSettingManager265.settingName = Nothing
+        OptionSingleReplace186.settingManager = OptionSettingManager265
         OptionSingleReplace186.tokenName = ""
         Me.optBtnSuccubi.options = OptionSingleReplace186
         Me.optBtnSuccubi.Size = New System.Drawing.Size(53, 23)
@@ -11134,14 +11157,14 @@ Partial Class MainForm
         Me.optBtnMoreAnimals.Name = "optBtnMoreAnimals"
         OptionSingleReplace187.disabledValue = "!NOFF_ANIMALS!"
         OptionSingleReplace187.enabledValue = "YESFF_ANIMALS["
-        FileListManager262.fileNames = CType(resources.GetObject("FileListManager262.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace187.fileManager = FileListManager262
-        OptionManager262.loadFromDInit = false
-        OptionManager262.loadFromInit = false
-        OptionManager262.loadFromWorldGen = false
-        OptionSingleReplace187.optionManager = OptionManager262
-        OptionSettingManager265.settingName = Nothing
-        OptionSingleReplace187.settingManager = OptionSettingManager265
+        FileListManager263.fileNames = CType(resources.GetObject("FileListManager263.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace187.fileManager = FileListManager263
+        OptionManager263.loadFromDInit = false
+        OptionManager263.loadFromInit = false
+        OptionManager263.loadFromWorldGen = false
+        OptionSingleReplace187.optionManager = OptionManager263
+        OptionSettingManager266.settingName = Nothing
+        OptionSingleReplace187.settingManager = OptionSettingManager266
         OptionSingleReplace187.tokenName = ""
         Me.optBtnMoreAnimals.options = OptionSingleReplace187
         Me.optBtnMoreAnimals.Size = New System.Drawing.Size(134, 27)
@@ -12096,8 +12119,8 @@ Partial Class MainForm
         Me.optCbAutoSave.FormattingEnabled = true
         Me.optCbAutoSave.Location = New System.Drawing.Point(76, 22)
         Me.optCbAutoSave.Name = "optCbAutoSave"
-        FileListManager263.fileNames = CType(resources.GetObject("FileListManager263.fileNames"),System.Collections.Generic.List(Of String))
-        OptionList6.fileManager = FileListManager263
+        FileListManager264.fileNames = CType(resources.GetObject("FileListManager264.fileNames"),System.Collections.Generic.List(Of String))
+        OptionList6.fileManager = FileListManager264
         ComboItem36.display = "Never"
         ComboItem36.value = "NONE"
         ComboItem37.display = "Seasonal"
@@ -12107,12 +12130,12 @@ Partial Class MainForm
         OptionList6.itemList.Add(ComboItem36)
         OptionList6.itemList.Add(ComboItem37)
         OptionList6.itemList.Add(ComboItem38)
-        OptionManager263.loadFromDInit = true
-        OptionManager263.loadFromInit = false
-        OptionManager263.loadFromWorldGen = false
-        OptionList6.optionManager = OptionManager263
-        OptionSettingManager266.settingName = Nothing
-        OptionList6.settingManager = OptionSettingManager266
+        OptionManager264.loadFromDInit = true
+        OptionManager264.loadFromInit = false
+        OptionManager264.loadFromWorldGen = false
+        OptionList6.optionManager = OptionManager264
+        OptionSettingManager267.settingName = Nothing
+        OptionList6.settingManager = OptionSettingManager267
         OptionList6.tokenName = "AUTOSAVE"
         Me.optCbAutoSave.options = OptionList6
         Me.optCbAutoSave.Size = New System.Drawing.Size(75, 23)
@@ -12341,8 +12364,8 @@ Partial Class MainForm
         OptionSingleFileReplace4.itemList.Add(ComboFileItem28)
         OptionSingleFileReplace4.itemList.Add(ComboFileItem29)
         OptionSingleFileReplace4.itemList.Add(ComboFileItem30)
-        OptionSettingManager267.settingName = "COLORS"
-        OptionSingleFileReplace4.settingManager = OptionSettingManager267
+        OptionSettingManager268.settingName = "COLORS"
+        OptionSingleFileReplace4.settingManager = OptionSettingManager268
         Me.optCbColors.options = OptionSingleFileReplace4
         Me.optCbColors.Size = New System.Drawing.Size(134, 23)
         Me.optCbColors.TabIndex = 1
@@ -12484,14 +12507,14 @@ Partial Class MainForm
         Me.optNumVolume.Location = New System.Drawing.Point(100, 49)
         Me.optNumVolume.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.optNumVolume.Name = "optNumVolume"
-        FileListManager264.fileNames = CType(resources.GetObject("FileListManager264.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle62.fileManager = FileListManager264
-        OptionManager264.loadFromDInit = false
-        OptionManager264.loadFromInit = true
-        OptionManager264.loadFromWorldGen = false
-        OptionSingle62.optionManager = OptionManager264
-        OptionSettingManager268.settingName = Nothing
-        OptionSingle62.settingManager = OptionSettingManager268
+        FileListManager265.fileNames = CType(resources.GetObject("FileListManager265.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle62.fileManager = FileListManager265
+        OptionManager265.loadFromDInit = false
+        OptionManager265.loadFromInit = true
+        OptionManager265.loadFromWorldGen = false
+        OptionSingle62.optionManager = OptionManager265
+        OptionSettingManager269.settingName = Nothing
+        OptionSingle62.settingManager = OptionSettingManager269
         OptionSingle62.tokenName = "VOLUME"
         Me.optNumVolume.options = OptionSingle62
         Me.optNumVolume.Size = New System.Drawing.Size(51, 19)
@@ -13706,30 +13729,6 @@ Partial Class MainForm
         Me.btnResetWorldGen.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnResetWorldGen.UseVisualStyleBackColor = false
         '
-        'optNumPatternEmbarkGroupSize
-        '
-        Me.optNumPatternEmbarkGroupSize.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.optNumPatternEmbarkGroupSize.Increment = New Decimal(New Integer() {5, 0, 0, 0})
-        Me.optNumPatternEmbarkGroupSize.Location = New System.Drawing.Point(89, 70)
-        Me.optNumPatternEmbarkGroupSize.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
-        Me.optNumPatternEmbarkGroupSize.Name = "optNumPatternEmbarkGroupSize"
-        FileListManager265.fileNames = CType(resources.GetObject("FileListManager265.fileNames"),System.Collections.Generic.List(Of String))
-        OptionPattern2.fileManager = FileListManager265
-        OptionManager265.loadFromDInit = false
-        OptionManager265.loadFromInit = false
-        OptionManager265.loadFromWorldGen = false
-        OptionPattern2.optionManager = OptionManager265
-        OptionBasePattern3.find = "(dwarves )(?<value>[0-9]{1,6}\b)"
-        OptionBasePattern3.replace = "${1}${value}"
-        OptionPattern2.Pattern = OptionBasePattern3
-        OptionSettingManager269.settingName = Nothing
-        OptionPattern2.settingManager = OptionSettingManager269
-        Me.optNumPatternEmbarkGroupSize.options = OptionPattern2
-        Me.optNumPatternEmbarkGroupSize.Size = New System.Drawing.Size(62, 19)
-        Me.optNumPatternEmbarkGroupSize.TabIndex = 174
-        Me.optNumPatternEmbarkGroupSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ToolTipMaker.SetToolTip(Me.optNumPatternEmbarkGroupSize, "Determines the number of starting colonists when embarking.")
-        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -13790,6 +13789,7 @@ Partial Class MainForm
         CType(Me.optNumAboveHFS,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.optNumMacro,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.optNumPatternEmbarkPoints,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.optNumPatternEmbarkGroupSize,System.ComponentModel.ISupportInitialize).EndInit
         Me.panCivTable.ResumeLayout(false)
         Me.tableLayoutCivs.ResumeLayout(false)
         Me.grpExtraCreatures.ResumeLayout(false)
@@ -13844,7 +13844,6 @@ Partial Class MainForm
         Me.tabFurnaces.ResumeLayout(false)
         Me.tabMisc.ResumeLayout(false)
         Me.tabWorldGen.ResumeLayout(false)
-        CType(Me.optNumPatternEmbarkGroupSize,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
 
 End Sub

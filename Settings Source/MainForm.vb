@@ -14,8 +14,7 @@ Imports Newtonsoft.Json
 #Region "declarations"
     Private m_frmPreview As New frmTilesetPreviewer
     Private m_currTheme As RibbonProfesionalRendererColorTable
-    Private m_frmWait As New frmWait
-    Private m_serializeOptions As New JsonSerializerSettings
+    Private m_frmWait As New frmWait    
 #End Region
 
     Public Sub New()
@@ -25,8 +24,8 @@ Imports Newtonsoft.Json
         ' Add any initialization after the InitializeComponent() call.
         setTheme()
 
-        m_serializeOptions.NullValueHandling = NullValueHandling.Ignore
-        m_serializeOptions.Formatting = Formatting.Indented
+        globals.m_defaultSerializeOptions.NullValueHandling = NullValueHandling.Ignore
+        globals.m_defaultSerializeOptions.Formatting = Formatting.Indented
     End Sub
 
     Private Sub setTheme()
@@ -275,13 +274,13 @@ Imports Newtonsoft.Json
             Else
                 'keep the original world gen details the profile has
                 Dim oldSettings As New Dictionary(Of String, Object)
-                oldSettings = JsonConvert.DeserializeObject(Of Dictionary(Of String, Object))(fileWorking.readFile(strPath, False), m_serializeOptions)
+                oldSettings = JsonConvert.DeserializeObject(Of Dictionary(Of String, Object))(fileWorking.readFile(strPath, False), globals.m_defaultSerializeOptions)
                 If oldSettings IsNot Nothing AndAlso oldSettings.ContainsKey("WORLD_GEN") Then
                     newSettings.Add("WORLD_GEN", oldSettings.Item("WORLD_GEN"))
                 End If
             End If
 
-            Dim info As String = JsonConvert.SerializeObject(newSettings, newSettings.GetType(), m_serializeOptions)
+            Dim info As String = JsonConvert.SerializeObject(newSettings, newSettings.GetType(), globals.m_defaultSerializeOptions)
             If Not IO.File.Exists(strPath) Then IO.File.Create(strPath).Dispose()
             fileWorking.saveFile(strPath, info)
         Catch ex As Exception
@@ -315,7 +314,7 @@ Imports Newtonsoft.Json
         Try
             If IO.File.Exists(filePath) Then
                 Dim optionSettings As New Dictionary(Of String, Object)                
-                optionSettings = JsonConvert.DeserializeObject(Of Dictionary(Of String, Object))(fileWorking.readFile(filePath, False), m_serializeOptions)
+                optionSettings = JsonConvert.DeserializeObject(Of Dictionary(Of String, Object))(fileWorking.readFile(filePath, False), globals.m_defaultSerializeOptions)
                 loadSettings(tabMain, optionSettings)
                 'load any other non-itoken controls
                 If optionSettings.ContainsKey("cmbTileSets") Then
@@ -707,7 +706,7 @@ Imports Newtonsoft.Json
         Dim exportedObjects As New List(Of simpleExportObject)
         exportOptions(tabMain, exportedObjects)
 
-        Dim strInfo As String = JsonConvert.SerializeObject(exportedObjects, m_serializeOptions)
+        Dim strInfo As String = JsonConvert.SerializeObject(exportedObjects, globals.m_defaultSerializeOptions)
         rtext.Text = strInfo
         btnSaveExportData.Tag = strInfo
         rtext.ReadOnly = True

@@ -9,6 +9,12 @@ Public Class rawToken
     Public Sub New()
     End Sub
 
+    Public Sub New(ByVal name As String, ByVal optionOn As String, ByVal optionOff As String)
+        m_tokenName = name
+        m_optionOnValue = optionOn
+        m_optionOffValue = optionOff
+    End Sub
+
     Public Overrides Function ToString() As String
         Return m_tokenName & " ON:" & m_optionOnValue & " OFF:" & m_optionOffValue
     End Function
