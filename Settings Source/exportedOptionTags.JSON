@@ -992,7 +992,8 @@
     "Name": "optBtnElfRace",
     "Tooltip": "Adds elves to trade with to your game.",
     "Files": [
-      "entity_elf.txt"
+      "entity_elf.txt",
+      "plant_elffort.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -1189,7 +1190,7 @@
     "Files": [
       "creature_standard.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "DropDownItems": [
       {
@@ -2499,7 +2500,7 @@
     "Files": [
       "creature_standard.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "DropDownItems": [
       {
@@ -2703,7 +2704,7 @@
     "Files": [
       "creature_standard.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "DropDownItems": [
       {
@@ -3111,7 +3112,7 @@
     "Files": [
       "creature_standard.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "DropDownItems": [
       {
@@ -3723,7 +3724,7 @@
     "Files": [
       "creature_standard.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "DropDownItems": [
       {
@@ -3927,7 +3928,7 @@
     "Files": [
       "creature_subterranean.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "DropDownItems": [
       {
@@ -4131,7 +4132,7 @@
     "Files": [
       "creature_subterranean.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "DropDownItems": [
       {
@@ -5126,7 +5127,7 @@
       "creature_birds.txt",
       "creature_birds_new.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -5144,7 +5145,7 @@
     "Files": [
       "creature_fish_masterwork.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -5254,7 +5255,7 @@
       "creature_masterwork.txt",
       "creature_subterranean.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "DropDownItems": [
       {
@@ -6006,7 +6007,7 @@
       "creature_standard.txt",
       "entity_default.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -6025,7 +6026,7 @@
       "creature_standard.txt",
       "entity_default.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -6044,7 +6045,7 @@
       "creature_standard.txt",
       "entity_default.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -6080,7 +6081,6 @@
     "Files": [
       "entity_default.txt",
       "entity_gnome.txt",
-      "reaction_cheat.txt",
       "reaction_gnome.txt",
       "reaction_masterwork.txt",
       "reaction_orcfort.txt"
@@ -6332,7 +6332,7 @@
       "entity_warlock.txt",
       "inorganic_fossil.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -7026,7 +7026,7 @@
       "creature_standard.txt",
       "entity_default.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -7700,7 +7700,7 @@
     "Files": [
       "inorganic_stone_gem.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -8021,6 +8021,8 @@
     "Text": "Harder Smithing",
     "Tooltip": "Makes smithing harder. Items might need more then just one bar of metal to be produced.",
     "Files": [
+      "creature_other.txt",
+      "creature_small_mammals.txt",
       "item_armor_armor.txt",
       "item_gloves_armor.txt",
       "item_helm_armor.txt",
@@ -8053,9 +8055,9 @@
     "Text": "Harder Farming",
     "Tooltip": "Slower farming and less eggs. Aboveground plants need 1 season, underground plants 4 seasons to grow.",
     "Files": [
+      "plant_fake.txt",
       "plant_florafauna_ff.txt",
       "plant_fooccubus.txt",
-      "plant_phm.txt",
       "plant_standard.txt"
     ],
     "AffectsGraphicPacks": true,
@@ -8083,7 +8085,7 @@
       "inorganic_zmasterwork.txt",
       "inorganic_zwarpstone.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -8102,7 +8104,7 @@
       "creature_masterwork_eviltwins.txt",
       "creature_standard.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -8141,7 +8143,7 @@
     "Files": [
       "creature_standard.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -8161,7 +8163,7 @@
       "creature_pet_masterwork.txt",
       "creature_standard.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -8213,7 +8215,7 @@
     "Text": "Smoke Effects",
     "Tooltip": "Adds a couple of smoke effects of different colors to workshops. Have no use but to look pretty.",
     "Files": [
-      "reaction_glaze.txt",
+      "reaction_adv_masterwork.txt",
       "reaction_kobold.txt",
       "reaction_masterwork.txt",
       "reaction_masterwork2.txt",
@@ -8265,7 +8267,7 @@
       "creature_subterranean.txt",
       "creature_warlock_civ.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
