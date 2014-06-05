@@ -50,16 +50,16 @@ Partial Class MainForm
         Dim OptionSettingManager6 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim RawToken1 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
         Dim RawToken2 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
-        Dim OptionSingleReplace6 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionMulti2 As MasterworkDwarfFortress.optionMulti = New MasterworkDwarfFortress.optionMulti()
         Dim FileListManager7 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager7 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager7 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionMulti2 As MasterworkDwarfFortress.optionMulti = New MasterworkDwarfFortress.optionMulti()
+        Dim RawToken3 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim RawToken4 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim OptionSingleReplace6 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager8 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager8 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager8 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim RawToken3 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
-        Dim RawToken4 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
         Dim OptionSingleReplace7 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager9 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager9 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
@@ -1199,9 +1199,9 @@ Partial Class MainForm
         Me.optBtnSimpleStones = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optBtnSimpleMetals = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optMultiSimpleWood = New MasterworkDwarfFortress.optionMultiButton()
-        Me.optBtnSimplePets = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optMultiSimpleMeat = New MasterworkDwarfFortress.optionMultiButton()
         Me.optBtnSimpleGemShapes = New MasterworkDwarfFortress.optionSingleReplaceButton()
+        Me.optBtnSimplePets = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.grpWorldGenHostiles = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblMegabeasts = New System.Windows.Forms.Label()
         Me.lblSemiMegaBeasts = New System.Windows.Forms.Label()
@@ -1630,6 +1630,7 @@ Partial Class MainForm
         Me.rBtnUtilityThreads = New System.Windows.Forms.RibbonButton()
         Me.rBtnDfHack = New System.Windows.Forms.RibbonButton()
         Me.rBtnDwarfTherapist = New System.Windows.Forms.RibbonButton()
+        Me.rBtnDFMon = New System.Windows.Forms.RibbonButton()
         Me.rBtnEmbarkEverywhere = New System.Windows.Forms.RibbonButton()
         Me.rBtnIsoWorld = New System.Windows.Forms.RibbonButton()
         Me.rBtnLegendsViewer = New System.Windows.Forms.RibbonButton()
@@ -1678,11 +1679,10 @@ Partial Class MainForm
         Me.rPanelUtilities = New System.Windows.Forms.RibbonPanel()
         Me.rBtnUtilAnnounceFilter = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilDfInit = New System.Windows.Forms.RibbonButton()
-        Me.rBtnUtilEmbark = New System.Windows.Forms.RibbonButton()
+        Me.rBtnUtilDFMon = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilIsoworld = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilLAA = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilLegends = New System.Windows.Forms.RibbonButton()
-        Me.rBtnNano = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilPerfect = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilPictureFort = New System.Windows.Forms.RibbonButton()
         Me.rBtnUtilQuickfort = New System.Windows.Forms.RibbonButton()
@@ -1886,13 +1886,12 @@ Partial Class MainForm
         Me.grpStandardization.Controls.Add(Me.optBtnSimpleStones)
         Me.grpStandardization.Controls.Add(Me.optBtnSimpleMetals)
         Me.grpStandardization.Controls.Add(Me.optMultiSimpleWood)
-        Me.grpStandardization.Controls.Add(Me.optBtnSimplePets)
         Me.grpStandardization.Controls.Add(Me.optMultiSimpleMeat)
         Me.grpStandardization.Controls.Add(Me.optBtnSimpleGemShapes)
         Me.grpStandardization.ForeColor = System.Drawing.SystemColors.Window
         Me.grpStandardization.Location = New System.Drawing.Point(140, 99)
         Me.grpStandardization.Name = "grpStandardization"
-        Me.grpStandardization.Size = New System.Drawing.Size(144, 326)
+        Me.grpStandardization.Size = New System.Drawing.Size(144, 293)
         Me.grpStandardization.TabIndex = 0
         Me.grpStandardization.TabStop = false
         Me.grpStandardization.Text = "Standardization"
@@ -2107,40 +2106,6 @@ Partial Class MainForm
         Me.ToolTipMaker.SetToolTip(Me.optMultiSimpleWood, "Enable for standardized wood. Disable for every tree to use specific wood names.")
         Me.optMultiSimpleWood.UseVisualStyleBackColor = false
         '
-        'optBtnSimplePets
-        '
-        Me.optBtnSimplePets.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnSimplePets.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnSimplePets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.optBtnSimplePets.FlatAppearance.BorderSize = 0
-        Me.optBtnSimplePets.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnSimplePets.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
-        Me.optBtnSimplePets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnSimplePets.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnSimplePets.Image = CType(resources.GetObject("optBtnSimplePets.Image"),System.Drawing.Image)
-        Me.optBtnSimplePets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.optBtnSimplePets.Location = New System.Drawing.Point(5, 193)
-        Me.optBtnSimplePets.Margin = New System.Windows.Forms.Padding(1)
-        Me.optBtnSimplePets.Name = "optBtnSimplePets"
-        OptionSingleReplace6.disabledValue = "YESPET["
-        OptionSingleReplace6.enabledValue = "!NOPET!"
-        FileListManager7.fileNames = CType(resources.GetObject("FileListManager7.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace6.fileManager = FileListManager7
-        OptionManager7.loadFromDInit = false
-        OptionManager7.loadFromInit = false
-        OptionManager7.loadFromWorldGen = false
-        OptionSingleReplace6.optionManager = OptionManager7
-        OptionSettingManager7.settingName = Nothing
-        OptionSingleReplace6.settingManager = OptionSettingManager7
-        OptionSingleReplace6.tokenName = ""
-        Me.optBtnSimplePets.options = OptionSingleReplace6
-        Me.optBtnSimplePets.Size = New System.Drawing.Size(134, 27)
-        Me.optBtnSimplePets.TabIndex = 6
-        Me.optBtnSimplePets.Text = "Simple Pets"
-        Me.optBtnSimplePets.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnSimplePets, "Enable to remove redundant domestic pets. Helps FPS.")
-        Me.optBtnSimplePets.UseVisualStyleBackColor = false
-        '
         'optMultiSimpleMeat
         '
         Me.optMultiSimpleMeat.Appearance = System.Windows.Forms.Appearance.Button
@@ -2153,17 +2118,17 @@ Partial Class MainForm
         Me.optMultiSimpleMeat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optMultiSimpleMeat.Image = CType(resources.GetObject("optMultiSimpleMeat.Image"),System.Drawing.Image)
         Me.optMultiSimpleMeat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.optMultiSimpleMeat.Location = New System.Drawing.Point(5, 222)
+        Me.optMultiSimpleMeat.Location = New System.Drawing.Point(5, 193)
         Me.optMultiSimpleMeat.Margin = New System.Windows.Forms.Padding(1)
         Me.optMultiSimpleMeat.Name = "optMultiSimpleMeat"
-        FileListManager8.fileNames = CType(resources.GetObject("FileListManager8.fileNames"),System.Collections.Generic.List(Of String))
-        OptionMulti2.fileManager = FileListManager8
-        OptionManager8.loadFromDInit = false
-        OptionManager8.loadFromInit = false
-        OptionManager8.loadFromWorldGen = false
-        OptionMulti2.optionManager = OptionManager8
-        OptionSettingManager8.settingName = Nothing
-        OptionMulti2.settingManager = OptionSettingManager8
+        FileListManager7.fileNames = CType(resources.GetObject("FileListManager7.fileNames"),System.Collections.Generic.List(Of String))
+        OptionMulti2.fileManager = FileListManager7
+        OptionManager7.loadFromDInit = false
+        OptionManager7.loadFromInit = false
+        OptionManager7.loadFromWorldGen = false
+        OptionMulti2.optionManager = OptionManager7
+        OptionSettingManager7.settingName = Nothing
+        OptionMulti2.settingManager = OptionSettingManager7
         RawToken3.optionOffValue = "!NOSIMPLEMEAT!"
         RawToken3.optionOnValue = "YESSIMPLEMEAT["
         RawToken3.tokenName = "Simple Meat"
@@ -2192,11 +2157,46 @@ Partial Class MainForm
         Me.optBtnSimpleGemShapes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optBtnSimpleGemShapes.Image = CType(resources.GetObject("optBtnSimpleGemShapes.Image"),System.Drawing.Image)
         Me.optBtnSimpleGemShapes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.optBtnSimpleGemShapes.Location = New System.Drawing.Point(5, 251)
+        Me.optBtnSimpleGemShapes.Location = New System.Drawing.Point(5, 222)
         Me.optBtnSimpleGemShapes.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnSimpleGemShapes.Name = "optBtnSimpleGemShapes"
-        OptionSingleReplace7.disabledValue = "YESGEMSHAPE["
-        OptionSingleReplace7.enabledValue = "!NOGEMSHAPE!"
+        OptionSingleReplace6.disabledValue = "YESGEMSHAPE["
+        OptionSingleReplace6.enabledValue = "!NOGEMSHAPE!"
+        FileListManager8.fileNames = CType(resources.GetObject("FileListManager8.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace6.fileManager = FileListManager8
+        OptionManager8.loadFromDInit = false
+        OptionManager8.loadFromInit = false
+        OptionManager8.loadFromWorldGen = false
+        OptionSingleReplace6.optionManager = OptionManager8
+        OptionSettingManager8.settingName = Nothing
+        OptionSingleReplace6.settingManager = OptionSettingManager8
+        OptionSingleReplace6.tokenName = ""
+        Me.optBtnSimpleGemShapes.options = OptionSingleReplace6
+        Me.optBtnSimpleGemShapes.Size = New System.Drawing.Size(134, 27)
+        Me.optBtnSimpleGemShapes.TabIndex = 8
+        Me.optBtnSimpleGemShapes.Text = "Simple Gem Shapes"
+        Me.optBtnSimpleGemShapes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.ToolTipMaker.SetToolTip(Me.optBtnSimpleGemShapes, "Reduces all gem and stone cut shapes to oval cabochons. ")
+        Me.optBtnSimpleGemShapes.UseVisualStyleBackColor = false
+        '
+        'optBtnSimplePets
+        '
+        Me.optBtnSimplePets.Appearance = System.Windows.Forms.Appearance.Button
+        Me.optBtnSimplePets.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSimplePets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.optBtnSimplePets.Enabled = false
+        Me.optBtnSimplePets.FlatAppearance.BorderSize = 0
+        Me.optBtnSimplePets.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.optBtnSimplePets.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
+        Me.optBtnSimplePets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.optBtnSimplePets.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
+        Me.optBtnSimplePets.Image = CType(resources.GetObject("optBtnSimplePets.Image"),System.Drawing.Image)
+        Me.optBtnSimplePets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.optBtnSimplePets.Location = New System.Drawing.Point(145, 439)
+        Me.optBtnSimplePets.Margin = New System.Windows.Forms.Padding(1)
+        Me.optBtnSimplePets.Name = "optBtnSimplePets"
+        OptionSingleReplace7.disabledValue = "YESPET["
+        OptionSingleReplace7.enabledValue = "!NOPET!"
         FileListManager9.fileNames = CType(resources.GetObject("FileListManager9.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace7.fileManager = FileListManager9
         OptionManager9.loadFromDInit = false
@@ -2206,13 +2206,14 @@ Partial Class MainForm
         OptionSettingManager9.settingName = Nothing
         OptionSingleReplace7.settingManager = OptionSettingManager9
         OptionSingleReplace7.tokenName = ""
-        Me.optBtnSimpleGemShapes.options = OptionSingleReplace7
-        Me.optBtnSimpleGemShapes.Size = New System.Drawing.Size(134, 27)
-        Me.optBtnSimpleGemShapes.TabIndex = 8
-        Me.optBtnSimpleGemShapes.Text = "Simple Gem Shapes"
-        Me.optBtnSimpleGemShapes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.ToolTipMaker.SetToolTip(Me.optBtnSimpleGemShapes, "Reduces all gem and stone cut shapes to oval cabochons. ")
-        Me.optBtnSimpleGemShapes.UseVisualStyleBackColor = false
+        Me.optBtnSimplePets.options = OptionSingleReplace7
+        Me.optBtnSimplePets.Size = New System.Drawing.Size(134, 27)
+        Me.optBtnSimplePets.TabIndex = 6
+        Me.optBtnSimplePets.Text = "Simple Pets"
+        Me.optBtnSimplePets.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTipMaker.SetToolTip(Me.optBtnSimplePets, "Enable to remove redundant domestic pets. Helps FPS.")
+        Me.optBtnSimplePets.UseVisualStyleBackColor = false
+        Me.optBtnSimplePets.Visible = false
         '
         'grpWorldGenHostiles
         '
@@ -11671,7 +11672,7 @@ Partial Class MainForm
         Me.grpExtraReactions.ForeColor = System.Drawing.SystemColors.Window
         Me.grpExtraReactions.Location = New System.Drawing.Point(440, 99)
         Me.grpExtraReactions.Name = "grpExtraReactions"
-        Me.grpExtraReactions.Size = New System.Drawing.Size(144, 326)
+        Me.grpExtraReactions.Size = New System.Drawing.Size(144, 293)
         Me.grpExtraReactions.TabIndex = 2
         Me.grpExtraReactions.TabStop = false
         Me.grpExtraReactions.Text = "Extra Reactions"
@@ -11691,7 +11692,7 @@ Partial Class MainForm
         Me.grpBalancing.ForeColor = System.Drawing.SystemColors.Window
         Me.grpBalancing.Location = New System.Drawing.Point(590, 99)
         Me.grpBalancing.Name = "grpBalancing"
-        Me.grpBalancing.Size = New System.Drawing.Size(144, 326)
+        Me.grpBalancing.Size = New System.Drawing.Size(144, 293)
         Me.grpBalancing.TabIndex = 3
         Me.grpBalancing.TabStop = false
         Me.grpBalancing.Text = "Balance Changes"
@@ -11711,7 +11712,7 @@ Partial Class MainForm
         Me.grpMiscFeatures.ForeColor = System.Drawing.SystemColors.Window
         Me.grpMiscFeatures.Location = New System.Drawing.Point(290, 99)
         Me.grpMiscFeatures.Name = "grpMiscFeatures"
-        Me.grpMiscFeatures.Size = New System.Drawing.Size(144, 326)
+        Me.grpMiscFeatures.Size = New System.Drawing.Size(144, 293)
         Me.grpMiscFeatures.TabIndex = 1
         Me.grpMiscFeatures.TabStop = false
         Me.grpMiscFeatures.Text = "Miscellaneous"
@@ -11730,7 +11731,7 @@ Partial Class MainForm
         Me.grpExtraMods.ForeColor = System.Drawing.SystemColors.Window
         Me.grpExtraMods.Location = New System.Drawing.Point(740, 99)
         Me.grpExtraMods.Name = "grpExtraMods"
-        Me.grpExtraMods.Size = New System.Drawing.Size(144, 326)
+        Me.grpExtraMods.Size = New System.Drawing.Size(144, 293)
         Me.grpExtraMods.TabIndex = 4
         Me.grpExtraMods.TabStop = false
         Me.grpExtraMods.Text = "Additional Mods"
@@ -11739,7 +11740,7 @@ Partial Class MainForm
         '
         Me.lblModNote.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblModNote.ForeColor = System.Drawing.Color.White
-        Me.lblModNote.Location = New System.Drawing.Point(4, 266)
+        Me.lblModNote.Location = New System.Drawing.Point(4, 236)
         Me.lblModNote.Name = "lblModNote"
         Me.lblModNote.Size = New System.Drawing.Size(136, 53)
         Me.lblModNote.TabIndex = 8
@@ -12868,6 +12869,7 @@ Partial Class MainForm
         Me.rBtnUtilityThreads.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left
         Me.rBtnUtilityThreads.DropDownItems.Add(Me.rBtnDfHack)
         Me.rBtnUtilityThreads.DropDownItems.Add(Me.rBtnDwarfTherapist)
+        Me.rBtnUtilityThreads.DropDownItems.Add(Me.rBtnDFMon)
         Me.rBtnUtilityThreads.DropDownItems.Add(Me.rBtnEmbarkEverywhere)
         Me.rBtnUtilityThreads.DropDownItems.Add(Me.rBtnIsoWorld)
         Me.rBtnUtilityThreads.DropDownItems.Add(Me.rBtnLegendsViewer)
@@ -12901,6 +12903,13 @@ Partial Class MainForm
         Me.rBtnDwarfTherapist.SmallImage = CType(resources.GetObject("rBtnDwarfTherapist.SmallImage"),System.Drawing.Image)
         Me.rBtnDwarfTherapist.Tag = "http://www.bay12forums.com/smf/index.php?topic=132010.0"
         Me.rBtnDwarfTherapist.Text = "Dwarf Therapist"
+        '
+        'rBtnDFMon
+        '
+        Me.rBtnDFMon.Image = CType(resources.GetObject("rBtnDFMon.Image"),System.Drawing.Image)
+        Me.rBtnDFMon.SmallImage = CType(resources.GetObject("rBtnDFMon.SmallImage"),System.Drawing.Image)
+        Me.rBtnDFMon.Tag = "http://www.bay12forums.com/smf/index.php?topic=130590.0"
+        Me.rBtnDFMon.Text = "DFMon"
         '
         'rBtnEmbarkEverywhere
         '
@@ -13278,11 +13287,10 @@ Partial Class MainForm
         Me.rPanelUtilities.ButtonMoreVisible = false
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilAnnounceFilter)
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilDfInit)
-        Me.rPanelUtilities.Items.Add(Me.rBtnUtilEmbark)
+        Me.rPanelUtilities.Items.Add(Me.rBtnUtilDFMon)
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilIsoworld)
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilLAA)
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilLegends)
-        Me.rPanelUtilities.Items.Add(Me.rBtnNano)
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilPerfect)
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilPictureFort)
         Me.rPanelUtilities.Items.Add(Me.rBtnUtilQuickfort)
@@ -13310,14 +13318,14 @@ Partial Class MainForm
         Me.rBtnUtilDfInit.ToolTip = "Edit Dwarf Fortress init files."
         Me.rBtnUtilDfInit.ToolTipTitle = "dfinit"
         '
-        'rBtnUtilEmbark
+        'rBtnUtilDFMon
         '
-        Me.rBtnUtilEmbark.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.application
-        Me.rBtnUtilEmbark.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.application
-        Me.rBtnUtilEmbark.Tag = "EmbarkEverywhere.exe"
-        Me.rBtnUtilEmbark.Text = "Embark"
-        Me.rBtnUtilEmbark.ToolTip = "Allows embarking anywhere on the world map."
-        Me.rBtnUtilEmbark.ToolTipTitle = "Embark Anywhere"
+        Me.rBtnUtilDFMon.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.application
+        Me.rBtnUtilDFMon.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.application
+        Me.rBtnUtilDFMon.Tag = "DFMon.exe"
+        Me.rBtnUtilDFMon.Text = "DFMon"
+        Me.rBtnUtilDFMon.ToolTip = "Custom display for in-game combat logs and alert messages."
+        Me.rBtnUtilDFMon.ToolTipTitle = "DFMon"
         '
         'rBtnUtilIsoworld
         '
@@ -13346,15 +13354,6 @@ Partial Class MainForm
         Me.rBtnUtilLegends.ToolTip = "After exporting world data, browse the history, creatures and civilizations of a "& _ 
     "generated world."
         Me.rBtnUtilLegends.ToolTipTitle = "Legends Viewer"
-        '
-        'rBtnNano
-        '
-        Me.rBtnNano.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.application
-        Me.rBtnNano.SmallImage = Global.MasterworkDwarfFortress.My.Resources.Resources.application
-        Me.rBtnNano.Tag = "nanofortress.exe"
-        Me.rBtnNano.Text = "Nano"
-        Me.rBtnNano.ToolTip = "Reduces embark size to 1:1."
-        Me.rBtnNano.ToolTipTitle = "Nano Fortress"
         '
         'rBtnUtilPerfect
         '
@@ -13561,7 +13560,7 @@ Partial Class MainForm
         Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
         Me.tabMain.Location = New System.Drawing.Point(0, 70)
         Me.tabMain.Name = "tabMain"
-        Me.tabMain.SelectedIndex = 0
+        Me.tabMain.SelectedIndex = 1
         Me.tabMain.Size = New System.Drawing.Size(1026, 613)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
@@ -13684,6 +13683,7 @@ Partial Class MainForm
         Me.tabMisc.Controls.Add(Me.grpExtraMods)
         Me.tabMisc.Controls.Add(Me.grpBalancing)
         Me.tabMisc.Controls.Add(Me.grpMiscFeatures)
+        Me.tabMisc.Controls.Add(Me.optBtnSimplePets)
         Me.tabMisc.Controls.Add(Me.optBtnCombatLogs)
         Me.tabMisc.Font = New System.Drawing.Font("Segoe UI", 9!)
         Me.tabMisc.IsClosable = false
@@ -14287,9 +14287,7 @@ End Sub
     Friend WithEvents rBtnUtilLAA As System.Windows.Forms.RibbonButton
     Friend WithEvents rBtnUtilTileGenie As System.Windows.Forms.RibbonButton
     Friend WithEvents rBtnUtilStoryMaker As System.Windows.Forms.RibbonButton
-    Friend WithEvents rBtnUtilEmbark As System.Windows.Forms.RibbonButton
     Friend WithEvents rBtnUtilAnnounceFilter As System.Windows.Forms.RibbonButton
-    Friend WithEvents rBtnNano As System.Windows.Forms.RibbonButton
     Friend WithEvents rBtnModsDfTerm As System.Windows.Forms.RibbonButton
     Friend WithEvents RibbonSeparator3 As System.Windows.Forms.RibbonSeparator
     Friend WithEvents rBtnDonations As System.Windows.Forms.RibbonButton
@@ -14375,5 +14373,7 @@ End Sub
     Friend WithEvents lblEmbarkPointsOverride As System.Windows.Forms.Label
     Friend WithEvents optNumPatternEmbarkPoints As MasterworkDwarfFortress.optionNumericPattern
     Friend WithEvents optNumPatternEmbarkGroupSize As MasterworkDwarfFortress.optionNumericPattern
+    Friend WithEvents rBtnDFMon As System.Windows.Forms.RibbonButton
+    Friend WithEvents rBtnUtilDFMon As System.Windows.Forms.RibbonButton
 
 End Class
