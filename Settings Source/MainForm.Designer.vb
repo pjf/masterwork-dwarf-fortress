@@ -1187,6 +1187,22 @@ Partial Class MainForm
         Dim FileListManager266 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager266 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager270 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionListMultiCombo1 As MasterworkDwarfFortress.optionListMultiCombo = New MasterworkDwarfFortress.optionListMultiCombo()
+        Dim FileListManager267 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
+        Dim ComboMultiTokenItem1 As MasterworkDwarfFortress.comboMultiTokenItem = New MasterworkDwarfFortress.comboMultiTokenItem()
+        Dim RawToken21 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim RawToken22 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim ComboMultiTokenItem2 As MasterworkDwarfFortress.comboMultiTokenItem = New MasterworkDwarfFortress.comboMultiTokenItem()
+        Dim RawToken23 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim RawToken24 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim ComboMultiTokenItem3 As MasterworkDwarfFortress.comboMultiTokenItem = New MasterworkDwarfFortress.comboMultiTokenItem()
+        Dim RawToken25 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim RawToken26 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim ComboMultiTokenItem4 As MasterworkDwarfFortress.comboMultiTokenItem = New MasterworkDwarfFortress.comboMultiTokenItem()
+        Dim RawToken27 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim RawToken28 As MasterworkDwarfFortress.rawToken = New MasterworkDwarfFortress.rawToken()
+        Dim OptionManager267 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager271 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Me.ToolTipMaker = New System.Windows.Forms.ToolTip(Me.components)
         Me.lblChildCap = New System.Windows.Forms.Label()
         Me.btnUpdateSaves = New System.Windows.Forms.Button()
@@ -1709,6 +1725,7 @@ Partial Class MainForm
         Me.tabMain = New KRBTabControl.KRBTabControl()
         Me.tabSettings = New KRBTabControl.TabPageEx()
         Me.tabCivs = New KRBTabControl.TabPageEx()
+        Me.OptionComboBoxMultiToken1 = New MasterworkDwarfFortress.optionComboBoxMultiToken()
         Me.tabOtherCreatures = New KRBTabControl.TabPageEx()
         Me.tabWorkshops = New KRBTabControl.TabPageEx()
         Me.tabFurnaces = New KRBTabControl.TabPageEx()
@@ -1916,6 +1933,7 @@ Partial Class MainForm
         OptionSingleReplace1.enabledValue = "!NOTREE!"
         FileListManager1.fileNames = CType(resources.GetObject("FileListManager1.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace1.fileManager = FileListManager1
+        OptionManager1.checkAllOnLoad = false
         OptionManager1.loadFromDInit = false
         OptionManager1.loadFromInit = false
         OptionManager1.loadFromWorldGen = false
@@ -1950,6 +1968,7 @@ Partial Class MainForm
         OptionSingleReplace2.enabledValue = "!NOGEM!"
         FileListManager2.fileNames = CType(resources.GetObject("FileListManager2.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace2.fileManager = FileListManager2
+        OptionManager2.checkAllOnLoad = false
         OptionManager2.loadFromDInit = false
         OptionManager2.loadFromInit = false
         OptionManager2.loadFromWorldGen = false
@@ -1984,6 +2003,7 @@ Partial Class MainForm
         OptionSingleReplace3.enabledValue = "!NOSSC!"
         FileListManager3.fileNames = CType(resources.GetObject("FileListManager3.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace3.fileManager = FileListManager3
+        OptionManager3.checkAllOnLoad = false
         OptionManager3.loadFromDInit = false
         OptionManager3.loadFromInit = false
         OptionManager3.loadFromWorldGen = false
@@ -2018,6 +2038,7 @@ Partial Class MainForm
         OptionSingleReplace4.enabledValue = "!NOSTONE!"
         FileListManager4.fileNames = CType(resources.GetObject("FileListManager4.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace4.fileManager = FileListManager4
+        OptionManager4.checkAllOnLoad = false
         OptionManager4.loadFromDInit = false
         OptionManager4.loadFromInit = false
         OptionManager4.loadFromWorldGen = false
@@ -2052,6 +2073,7 @@ Partial Class MainForm
         OptionSingleReplace5.enabledValue = "!NOMIN!"
         FileListManager5.fileNames = CType(resources.GetObject("FileListManager5.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace5.fileManager = FileListManager5
+        OptionManager5.checkAllOnLoad = false
         OptionManager5.loadFromDInit = false
         OptionManager5.loadFromInit = false
         OptionManager5.loadFromWorldGen = false
@@ -2084,6 +2106,7 @@ Partial Class MainForm
         Me.optMultiSimpleWood.Name = "optMultiSimpleWood"
         FileListManager6.fileNames = CType(resources.GetObject("FileListManager6.fileNames"),System.Collections.Generic.List(Of String))
         OptionMulti1.fileManager = FileListManager6
+        OptionManager6.checkAllOnLoad = false
         OptionManager6.loadFromDInit = false
         OptionManager6.loadFromInit = false
         OptionManager6.loadFromWorldGen = false
@@ -2123,6 +2146,7 @@ Partial Class MainForm
         Me.optMultiSimpleMeat.Name = "optMultiSimpleMeat"
         FileListManager7.fileNames = CType(resources.GetObject("FileListManager7.fileNames"),System.Collections.Generic.List(Of String))
         OptionMulti2.fileManager = FileListManager7
+        OptionManager7.checkAllOnLoad = false
         OptionManager7.loadFromDInit = false
         OptionManager7.loadFromInit = false
         OptionManager7.loadFromWorldGen = false
@@ -2164,6 +2188,7 @@ Partial Class MainForm
         OptionSingleReplace6.enabledValue = "!NOGEMSHAPE!"
         FileListManager8.fileNames = CType(resources.GetObject("FileListManager8.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace6.fileManager = FileListManager8
+        OptionManager8.checkAllOnLoad = false
         OptionManager8.loadFromDInit = false
         OptionManager8.loadFromInit = false
         OptionManager8.loadFromWorldGen = false
@@ -2199,6 +2224,7 @@ Partial Class MainForm
         OptionSingleReplace7.enabledValue = "!NOPET!"
         FileListManager9.fileNames = CType(resources.GetObject("FileListManager9.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace7.fileManager = FileListManager9
+        OptionManager9.checkAllOnLoad = false
         OptionManager9.loadFromDInit = false
         OptionManager9.loadFromInit = false
         OptionManager9.loadFromWorldGen = false
@@ -2330,6 +2356,7 @@ Partial Class MainForm
         Me.optNumMegabeasts.Name = "optNumMegabeasts"
         FileListManager10.fileNames = CType(resources.GetObject("FileListManager10.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle1.fileManager = FileListManager10
+        OptionManager10.checkAllOnLoad = false
         OptionManager10.loadFromDInit = false
         OptionManager10.loadFromInit = false
         OptionManager10.loadFromWorldGen = true
@@ -2356,6 +2383,7 @@ Partial Class MainForm
         Me.optNumSemibeasts.Name = "optNumSemibeasts"
         FileListManager11.fileNames = CType(resources.GetObject("FileListManager11.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle2.fileManager = FileListManager11
+        OptionManager11.checkAllOnLoad = false
         OptionManager11.loadFromDInit = false
         OptionManager11.loadFromInit = false
         OptionManager11.loadFromWorldGen = true
@@ -2382,6 +2410,7 @@ Partial Class MainForm
         Me.optNumNecromancers.Name = "optNumNecromancers"
         FileListManager12.fileNames = CType(resources.GetObject("FileListManager12.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle3.fileManager = FileListManager12
+        OptionManager12.checkAllOnLoad = false
         OptionManager12.loadFromDInit = false
         OptionManager12.loadFromInit = false
         OptionManager12.loadFromWorldGen = true
@@ -2407,6 +2436,7 @@ Partial Class MainForm
         Me.optNumWerebeasts.Name = "optNumWerebeasts"
         FileListManager13.fileNames = CType(resources.GetObject("FileListManager13.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle4.fileManager = FileListManager13
+        OptionManager13.checkAllOnLoad = false
         OptionManager13.loadFromDInit = false
         OptionManager13.loadFromInit = false
         OptionManager13.loadFromWorldGen = true
@@ -2433,6 +2463,7 @@ Partial Class MainForm
         Me.optNumTitans.Name = "optNumTitans"
         FileListManager14.fileNames = CType(resources.GetObject("FileListManager14.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle5.fileManager = FileListManager14
+        OptionManager14.checkAllOnLoad = false
         OptionManager14.loadFromDInit = false
         OptionManager14.loadFromInit = false
         OptionManager14.loadFromWorldGen = true
@@ -2458,6 +2489,7 @@ Partial Class MainForm
         Me.optNumEvilInteractions.Name = "optNumEvilInteractions"
         FileListManager15.fileNames = CType(resources.GetObject("FileListManager15.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle6.fileManager = FileListManager15
+        OptionManager15.checkAllOnLoad = false
         OptionManager15.loadFromDInit = false
         OptionManager15.loadFromInit = false
         OptionManager15.loadFromWorldGen = true
@@ -2483,6 +2515,7 @@ Partial Class MainForm
         Me.optNumDemons.Name = "optNumDemons"
         FileListManager16.fileNames = CType(resources.GetObject("FileListManager16.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle7.fileManager = FileListManager16
+        OptionManager16.checkAllOnLoad = false
         OptionManager16.loadFromDInit = false
         OptionManager16.loadFromInit = false
         OptionManager16.loadFromWorldGen = true
@@ -2508,6 +2541,7 @@ Partial Class MainForm
         Me.optNumDisturbances.Name = "optNumDisturbances"
         FileListManager17.fileNames = CType(resources.GetObject("FileListManager17.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle8.fileManager = FileListManager17
+        OptionManager17.checkAllOnLoad = false
         OptionManager17.loadFromDInit = false
         OptionManager17.loadFromInit = false
         OptionManager17.loadFromWorldGen = true
@@ -2533,6 +2567,7 @@ Partial Class MainForm
         Me.optNumNightCreatures.Name = "optNumNightCreatures"
         FileListManager18.fileNames = CType(resources.GetObject("FileListManager18.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle9.fileManager = FileListManager18
+        OptionManager18.checkAllOnLoad = false
         OptionManager18.loadFromDInit = false
         OptionManager18.loadFromInit = false
         OptionManager18.loadFromWorldGen = true
@@ -2558,6 +2593,7 @@ Partial Class MainForm
         Me.optNumEvilClouds.Name = "optNumEvilClouds"
         FileListManager19.fileNames = CType(resources.GetObject("FileListManager19.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle10.fileManager = FileListManager19
+        OptionManager19.checkAllOnLoad = false
         OptionManager19.loadFromDInit = false
         OptionManager19.loadFromInit = false
         OptionManager19.loadFromWorldGen = true
@@ -2583,6 +2619,7 @@ Partial Class MainForm
         Me.optNumBogeymen.Name = "optNumBogeymen"
         FileListManager20.fileNames = CType(resources.GetObject("FileListManager20.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle11.fileManager = FileListManager20
+        OptionManager20.checkAllOnLoad = false
         OptionManager20.loadFromDInit = false
         OptionManager20.loadFromInit = false
         OptionManager20.loadFromWorldGen = true
@@ -2608,6 +2645,7 @@ Partial Class MainForm
         Me.optNumEvilRains.Name = "optNumEvilRains"
         FileListManager21.fileNames = CType(resources.GetObject("FileListManager21.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle12.fileManager = FileListManager21
+        OptionManager21.checkAllOnLoad = false
         OptionManager21.loadFromDInit = false
         OptionManager21.loadFromInit = false
         OptionManager21.loadFromWorldGen = true
@@ -2633,6 +2671,7 @@ Partial Class MainForm
         Me.optNumVampires.Name = "optNumVampires"
         FileListManager22.fileNames = CType(resources.GetObject("FileListManager22.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle13.fileManager = FileListManager22
+        OptionManager22.checkAllOnLoad = false
         OptionManager22.loadFromDInit = false
         OptionManager22.loadFromInit = false
         OptionManager22.loadFromWorldGen = true
@@ -2730,6 +2769,7 @@ Partial Class MainForm
         Me.optBtnTemperature.Name = "optBtnTemperature"
         FileListManager23.fileNames = CType(resources.GetObject("FileListManager23.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle14.fileManager = FileListManager23
+        OptionManager23.checkAllOnLoad = false
         OptionManager23.loadFromDInit = true
         OptionManager23.loadFromInit = false
         OptionManager23.loadFromWorldGen = false
@@ -2762,6 +2802,7 @@ Partial Class MainForm
         Me.optBtnWeather.Name = "optBtnWeather"
         FileListManager24.fileNames = CType(resources.GetObject("FileListManager24.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle15.fileManager = FileListManager24
+        OptionManager24.checkAllOnLoad = false
         OptionManager24.loadFromDInit = true
         OptionManager24.loadFromInit = false
         OptionManager24.loadFromWorldGen = false
@@ -2793,6 +2834,7 @@ Partial Class MainForm
         Me.optBtnCaveins.Name = "optBtnCaveins"
         FileListManager25.fileNames = CType(resources.GetObject("FileListManager25.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle16.fileManager = FileListManager25
+        OptionManager25.checkAllOnLoad = false
         OptionManager25.loadFromDInit = true
         OptionManager25.loadFromInit = false
         OptionManager25.loadFromWorldGen = false
@@ -2825,6 +2867,7 @@ Partial Class MainForm
         Me.optBtnInvaders.Name = "optBtnInvaders"
         FileListManager26.fileNames = CType(resources.GetObject("FileListManager26.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle17.fileManager = FileListManager26
+        OptionManager26.checkAllOnLoad = false
         OptionManager26.loadFromDInit = true
         OptionManager26.loadFromInit = false
         OptionManager26.loadFromWorldGen = false
@@ -2856,6 +2899,7 @@ Partial Class MainForm
         Me.optBtnLiquidDepth.Name = "optBtnLiquidDepth"
         FileListManager27.fileNames = CType(resources.GetObject("FileListManager27.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle18.fileManager = FileListManager27
+        OptionManager27.checkAllOnLoad = false
         OptionManager27.loadFromDInit = true
         OptionManager27.loadFromInit = false
         OptionManager27.loadFromWorldGen = false
@@ -2887,6 +2931,7 @@ Partial Class MainForm
         Me.optBtnAdvCenter.Name = "optBtnAdvCenter"
         FileListManager28.fileNames = CType(resources.GetObject("FileListManager28.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle19.fileManager = FileListManager28
+        OptionManager28.checkAllOnLoad = false
         OptionManager28.loadFromDInit = true
         OptionManager28.loadFromInit = false
         OptionManager28.loadFromWorldGen = false
@@ -2918,6 +2963,7 @@ Partial Class MainForm
         Me.optBtnAdvTraps.Name = "optBtnAdvTraps"
         FileListManager29.fileNames = CType(resources.GetObject("FileListManager29.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle20.fileManager = FileListManager29
+        OptionManager29.checkAllOnLoad = false
         OptionManager29.loadFromDInit = true
         OptionManager29.loadFromInit = false
         OptionManager29.loadFromWorldGen = false
@@ -2949,6 +2995,7 @@ Partial Class MainForm
         Me.optBtnPetCoffins.Name = "optBtnPetCoffins"
         FileListManager30.fileNames = CType(resources.GetObject("FileListManager30.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle21.fileManager = FileListManager30
+        OptionManager30.checkAllOnLoad = false
         OptionManager30.loadFromDInit = true
         OptionManager30.loadFromInit = false
         OptionManager30.loadFromWorldGen = false
@@ -2976,6 +3023,7 @@ Partial Class MainForm
         Me.optNumPopCap.Name = "optNumPopCap"
         FileListManager31.fileNames = CType(resources.GetObject("FileListManager31.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle22.fileManager = FileListManager31
+        OptionManager31.checkAllOnLoad = false
         OptionManager31.loadFromDInit = true
         OptionManager31.loadFromInit = false
         OptionManager31.loadFromWorldGen = false
@@ -2999,6 +3047,7 @@ Partial Class MainForm
         Me.optMaskChildBabyCap.niceFormat = "####:####"
         FileListManager32.fileNames = CType(resources.GetObject("FileListManager32.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle23.fileManager = FileListManager32
+        OptionManager32.checkAllOnLoad = false
         OptionManager32.loadFromDInit = true
         OptionManager32.loadFromInit = false
         OptionManager32.loadFromWorldGen = false
@@ -3030,6 +3079,7 @@ Partial Class MainForm
         Me.optBtnAutoSavePause.Name = "optBtnAutoSavePause"
         FileListManager33.fileNames = CType(resources.GetObject("FileListManager33.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle24.fileManager = FileListManager33
+        OptionManager33.checkAllOnLoad = false
         OptionManager33.loadFromDInit = true
         OptionManager33.loadFromInit = false
         OptionManager33.loadFromWorldGen = false
@@ -3061,6 +3111,7 @@ Partial Class MainForm
         Me.optBtnAutoBackup.Name = "optBtnAutoBackup"
         FileListManager34.fileNames = CType(resources.GetObject("FileListManager34.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle25.fileManager = FileListManager34
+        OptionManager34.checkAllOnLoad = false
         OptionManager34.loadFromDInit = true
         OptionManager34.loadFromInit = false
         OptionManager34.loadFromWorldGen = false
@@ -3092,6 +3143,7 @@ Partial Class MainForm
         Me.optBtnEmbarkSave.Name = "optBtnEmbarkSave"
         FileListManager35.fileNames = CType(resources.GetObject("FileListManager35.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle26.fileManager = FileListManager35
+        OptionManager35.checkAllOnLoad = false
         OptionManager35.loadFromDInit = true
         OptionManager35.loadFromInit = false
         OptionManager35.loadFromWorldGen = false
@@ -3123,6 +3175,7 @@ Partial Class MainForm
         Me.optBtnCompressSaves.Name = "optBtnCompressSaves"
         FileListManager36.fileNames = CType(resources.GetObject("FileListManager36.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle27.fileManager = FileListManager36
+        OptionManager36.checkAllOnLoad = false
         OptionManager36.loadFromDInit = false
         OptionManager36.loadFromInit = true
         OptionManager36.loadFromWorldGen = false
@@ -3154,6 +3207,7 @@ Partial Class MainForm
         Me.optBtnPauseLoad.Name = "optBtnPauseLoad"
         FileListManager37.fileNames = CType(resources.GetObject("FileListManager37.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle28.fileManager = FileListManager37
+        OptionManager37.checkAllOnLoad = false
         OptionManager37.loadFromDInit = true
         OptionManager37.loadFromInit = false
         OptionManager37.loadFromWorldGen = false
@@ -3237,6 +3291,7 @@ Partial Class MainForm
         OptionList1.itemList.Add(ComboItem1)
         OptionList1.itemList.Add(ComboItem2)
         OptionList1.itemList.Add(ComboItem3)
+        OptionManager38.checkAllOnLoad = false
         OptionManager38.loadFromDInit = false
         OptionManager38.loadFromInit = true
         OptionManager38.loadFromWorldGen = false
@@ -3277,6 +3332,7 @@ Partial Class MainForm
         OptionList2.itemList.Add(ComboItem7)
         OptionList2.itemList.Add(ComboItem8)
         OptionList2.itemList.Add(ComboItem9)
+        OptionManager39.checkAllOnLoad = false
         OptionManager39.loadFromDInit = false
         OptionManager39.loadFromInit = true
         OptionManager39.loadFromWorldGen = false
@@ -3305,6 +3361,7 @@ Partial Class MainForm
         Me.optBtnIntro.Name = "optBtnIntro"
         FileListManager40.fileNames = CType(resources.GetObject("FileListManager40.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle29.fileManager = FileListManager40
+        OptionManager40.checkAllOnLoad = false
         OptionManager40.loadFromDInit = false
         OptionManager40.loadFromInit = true
         OptionManager40.loadFromWorldGen = false
@@ -3351,6 +3408,7 @@ Partial Class MainForm
         OptionList3.itemList.Add(ComboItem14)
         OptionList3.itemList.Add(ComboItem15)
         OptionList3.itemList.Add(ComboItem16)
+        OptionManager41.checkAllOnLoad = false
         OptionManager41.loadFromDInit = false
         OptionManager41.loadFromInit = true
         OptionManager41.loadFromWorldGen = false
@@ -3379,6 +3437,7 @@ Partial Class MainForm
         Me.optBtnSprites.Name = "optBtnSprites"
         FileListManager42.fileNames = CType(resources.GetObject("FileListManager42.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle30.fileManager = FileListManager42
+        OptionManager42.checkAllOnLoad = false
         OptionManager42.loadFromDInit = false
         OptionManager42.loadFromInit = true
         OptionManager42.loadFromWorldGen = false
@@ -3410,6 +3469,7 @@ Partial Class MainForm
         Me.optBtnTruetype.Name = "optBtnTruetype"
         FileListManager43.fileNames = CType(resources.GetObject("FileListManager43.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle31.fileManager = FileListManager43
+        OptionManager43.checkAllOnLoad = false
         OptionManager43.loadFromDInit = false
         OptionManager43.loadFromInit = true
         OptionManager43.loadFromWorldGen = false
@@ -3467,6 +3527,7 @@ Partial Class MainForm
         Me.optBtnFps.Name = "optBtnFps"
         FileListManager44.fileNames = CType(resources.GetObject("FileListManager44.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle32.fileManager = FileListManager44
+        OptionManager44.checkAllOnLoad = false
         OptionManager44.loadFromDInit = false
         OptionManager44.loadFromInit = true
         OptionManager44.loadFromWorldGen = false
@@ -3494,6 +3555,7 @@ Partial Class MainForm
         Me.optNumGFPS.Name = "optNumGFPS"
         FileListManager45.fileNames = CType(resources.GetObject("FileListManager45.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle33.fileManager = FileListManager45
+        OptionManager45.checkAllOnLoad = false
         OptionManager45.loadFromDInit = false
         OptionManager45.loadFromInit = true
         OptionManager45.loadFromWorldGen = false
@@ -3519,6 +3581,7 @@ Partial Class MainForm
         Me.optNumFPSCap.Name = "optNumFPSCap"
         FileListManager46.fileNames = CType(resources.GetObject("FileListManager46.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle34.fileManager = FileListManager46
+        OptionManager46.checkAllOnLoad = false
         OptionManager46.loadFromDInit = false
         OptionManager46.loadFromInit = true
         OptionManager46.loadFromWorldGen = false
@@ -3548,6 +3611,7 @@ Partial Class MainForm
         Me.optBtnSound.Name = "optBtnSound"
         FileListManager47.fileNames = CType(resources.GetObject("FileListManager47.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle35.fileManager = FileListManager47
+        OptionManager47.checkAllOnLoad = false
         OptionManager47.loadFromDInit = false
         OptionManager47.loadFromInit = true
         OptionManager47.loadFromWorldGen = false
@@ -3579,6 +3643,7 @@ Partial Class MainForm
         Me.optBtnEmbarkWarn.Name = "optBtnEmbarkWarn"
         FileListManager48.fileNames = CType(resources.GetObject("FileListManager48.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle36.fileManager = FileListManager48
+        OptionManager48.checkAllOnLoad = false
         OptionManager48.loadFromDInit = true
         OptionManager48.loadFromInit = false
         OptionManager48.loadFromWorldGen = false
@@ -3605,6 +3670,7 @@ Partial Class MainForm
         Me.optMaskEmbarkSize.niceFormat = "#:# (# is 1-16)"
         FileListManager49.fileNames = CType(resources.GetObject("FileListManager49.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle37.fileManager = FileListManager49
+        OptionManager49.checkAllOnLoad = false
         OptionManager49.loadFromDInit = true
         OptionManager49.loadFromInit = false
         OptionManager49.loadFromWorldGen = false
@@ -3637,6 +3703,7 @@ Partial Class MainForm
         OptionSingleReplace8.enabledValue = ":BOX:P:R]YESSTOPTRANS"
         FileListManager50.fileNames = CType(resources.GetObject("FileListManager50.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace8.fileManager = FileListManager50
+        OptionManager50.checkAllOnLoad = false
         OptionManager50.loadFromDInit = false
         OptionManager50.loadFromInit = false
         OptionManager50.loadFromWorldGen = false
@@ -3671,6 +3738,7 @@ Partial Class MainForm
         OptionSingleReplace9.enabledValue = ":P:R]YESSTOPDIG"
         FileListManager51.fileNames = CType(resources.GetObject("FileListManager51.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace9.fileManager = FileListManager51
+        OptionManager51.checkAllOnLoad = false
         OptionManager51.loadFromDInit = false
         OptionManager51.loadFromInit = false
         OptionManager51.loadFromWorldGen = false
@@ -3702,6 +3770,7 @@ Partial Class MainForm
         OptionSingleReplace10.enabledValue = "YESFROSTGIANT["
         FileListManager52.fileNames = CType(resources.GetObject("FileListManager52.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace10.fileManager = FileListManager52
+        OptionManager52.checkAllOnLoad = false
         OptionManager52.loadFromDInit = false
         OptionManager52.loadFromInit = false
         OptionManager52.loadFromWorldGen = false
@@ -3732,6 +3801,7 @@ Partial Class MainForm
         OptionSingleReplace11.enabledValue = "YESWARLOCK["
         FileListManager53.fileNames = CType(resources.GetObject("FileListManager53.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace11.fileManager = FileListManager53
+        OptionManager53.checkAllOnLoad = false
         OptionManager53.loadFromDInit = false
         OptionManager53.loadFromInit = false
         OptionManager53.loadFromWorldGen = false
@@ -3762,6 +3832,7 @@ Partial Class MainForm
         OptionSingleReplace12.enabledValue = "YESAUTOMATON["
         FileListManager54.fileNames = CType(resources.GetObject("FileListManager54.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace12.fileManager = FileListManager54
+        OptionManager54.checkAllOnLoad = false
         OptionManager54.loadFromDInit = false
         OptionManager54.loadFromInit = false
         OptionManager54.loadFromWorldGen = false
@@ -3792,6 +3863,7 @@ Partial Class MainForm
         OptionSingleReplace13.enabledValue = "YESGOBLIN["
         FileListManager55.fileNames = CType(resources.GetObject("FileListManager55.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace13.fileManager = FileListManager55
+        OptionManager55.checkAllOnLoad = false
         OptionManager55.loadFromDInit = false
         OptionManager55.loadFromInit = false
         OptionManager55.loadFromWorldGen = false
@@ -3822,6 +3894,7 @@ Partial Class MainForm
         OptionSingleReplace14.enabledValue = "YESELFRACE["
         FileListManager56.fileNames = CType(resources.GetObject("FileListManager56.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace14.fileManager = FileListManager56
+        OptionManager56.checkAllOnLoad = false
         OptionManager56.loadFromDInit = false
         OptionManager56.loadFromInit = false
         OptionManager56.loadFromWorldGen = false
@@ -3852,6 +3925,7 @@ Partial Class MainForm
         OptionSingleReplace15.enabledValue = "YESANTMEN["
         FileListManager57.fileNames = CType(resources.GetObject("FileListManager57.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace15.fileManager = FileListManager57
+        OptionManager57.checkAllOnLoad = false
         OptionManager57.loadFromDInit = false
         OptionManager57.loadFromInit = false
         OptionManager57.loadFromWorldGen = false
@@ -3882,6 +3956,7 @@ Partial Class MainForm
         OptionSingleReplace16.enabledValue = "YESGNOME["
         FileListManager58.fileNames = CType(resources.GetObject("FileListManager58.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace16.fileManager = FileListManager58
+        OptionManager58.checkAllOnLoad = false
         OptionManager58.loadFromDInit = false
         OptionManager58.loadFromInit = false
         OptionManager58.loadFromWorldGen = false
@@ -3913,6 +3988,7 @@ Partial Class MainForm
         OptionSingleReplace17.enabledValue = "YESTROGLODYTE["
         FileListManager59.fileNames = CType(resources.GetObject("FileListManager59.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace17.fileManager = FileListManager59
+        OptionManager59.checkAllOnLoad = false
         OptionManager59.loadFromDInit = false
         OptionManager59.loadFromInit = false
         OptionManager59.loadFromWorldGen = false
@@ -3943,6 +4019,7 @@ Partial Class MainForm
         OptionSingleReplace18.enabledValue = "YESGREMLIN["
         FileListManager60.fileNames = CType(resources.GetObject("FileListManager60.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace18.fileManager = FileListManager60
+        OptionManager60.checkAllOnLoad = false
         OptionManager60.loadFromDInit = false
         OptionManager60.loadFromInit = false
         OptionManager60.loadFromWorldGen = false
@@ -3973,6 +4050,7 @@ Partial Class MainForm
         OptionSingleReplace19.enabledValue = "YESHUMANRACE["
         FileListManager61.fileNames = CType(resources.GetObject("FileListManager61.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace19.fileManager = FileListManager61
+        OptionManager61.checkAllOnLoad = false
         OptionManager61.loadFromDInit = false
         OptionManager61.loadFromInit = false
         OptionManager61.loadFromWorldGen = false
@@ -4019,6 +4097,7 @@ Partial Class MainForm
         OptionSingleReplace20.enabledValue = "YESPLAYABLED["
         FileListManager62.fileNames = CType(resources.GetObject("FileListManager62.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace20.fileManager = FileListManager62
+        OptionManager62.checkAllOnLoad = false
         OptionManager62.loadFromDInit = false
         OptionManager62.loadFromInit = false
         OptionManager62.loadFromWorldGen = false
@@ -4049,6 +4128,7 @@ Partial Class MainForm
         OptionSingleReplace21.enabledValue = "YESPLAYABLEO["
         FileListManager63.fileNames = CType(resources.GetObject("FileListManager63.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace21.fileManager = FileListManager63
+        OptionManager63.checkAllOnLoad = false
         OptionManager63.loadFromDInit = false
         OptionManager63.loadFromInit = false
         OptionManager63.loadFromWorldGen = false
@@ -4079,6 +4159,7 @@ Partial Class MainForm
         OptionSingleReplace22.enabledValue = "YESPLAYABLEK["
         FileListManager64.fileNames = CType(resources.GetObject("FileListManager64.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace22.fileManager = FileListManager64
+        OptionManager64.checkAllOnLoad = false
         OptionManager64.loadFromDInit = false
         OptionManager64.loadFromInit = false
         OptionManager64.loadFromWorldGen = false
@@ -4174,6 +4255,7 @@ Partial Class MainForm
         OptionSingleReplace23.enabledValue = "YESDROW["
         FileListManager65.fileNames = CType(resources.GetObject("FileListManager65.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace23.fileManager = FileListManager65
+        OptionManager65.checkAllOnLoad = false
         OptionManager65.loadFromDInit = false
         OptionManager65.loadFromInit = false
         OptionManager65.loadFromWorldGen = false
@@ -4205,6 +4287,7 @@ Partial Class MainForm
         OptionSingleReplace24.enabledValue = "YESDWARFEVIL["
         FileListManager66.fileNames = CType(resources.GetObject("FileListManager66.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace24.fileManager = FileListManager66
+        OptionManager66.checkAllOnLoad = false
         OptionManager66.loadFromDInit = false
         OptionManager66.loadFromInit = false
         OptionManager66.loadFromWorldGen = false
@@ -4236,6 +4319,7 @@ Partial Class MainForm
         OptionSingleReplace25.enabledValue = "YESHUMANEVIL["
         FileListManager67.fileNames = CType(resources.GetObject("FileListManager67.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace25.fileManager = FileListManager67
+        OptionManager67.checkAllOnLoad = false
         OptionManager67.loadFromDInit = false
         OptionManager67.loadFromInit = false
         OptionManager67.loadFromWorldGen = false
@@ -4267,6 +4351,7 @@ Partial Class MainForm
         OptionSingleReplace26.enabledValue = "YESELFEVIL["
         FileListManager68.fileNames = CType(resources.GetObject("FileListManager68.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace26.fileManager = FileListManager68
+        OptionManager68.checkAllOnLoad = false
         OptionManager68.loadFromDInit = false
         OptionManager68.loadFromInit = false
         OptionManager68.loadFromWorldGen = false
@@ -4298,6 +4383,7 @@ Partial Class MainForm
         OptionSingleReplace27.enabledValue = "YESDROWEVIL["
         FileListManager69.fileNames = CType(resources.GetObject("FileListManager69.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace27.fileManager = FileListManager69
+        OptionManager69.checkAllOnLoad = false
         OptionManager69.loadFromDInit = false
         OptionManager69.loadFromInit = false
         OptionManager69.loadFromWorldGen = false
@@ -4329,6 +4415,7 @@ Partial Class MainForm
         OptionSingleReplace28.enabledValue = "YESDOMESTICPET["
         FileListManager70.fileNames = CType(resources.GetObject("FileListManager70.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace28.fileManager = FileListManager70
+        OptionManager70.checkAllOnLoad = false
         OptionManager70.loadFromDInit = false
         OptionManager70.loadFromInit = false
         OptionManager70.loadFromWorldGen = false
@@ -4361,6 +4448,7 @@ Partial Class MainForm
         OptionSingleReplace29.enabledValue = "YESVERMIN["
         FileListManager71.fileNames = CType(resources.GetObject("FileListManager71.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace29.fileManager = FileListManager71
+        OptionManager71.checkAllOnLoad = false
         OptionManager71.loadFromDInit = false
         OptionManager71.loadFromInit = false
         OptionManager71.loadFromWorldGen = false
@@ -4393,6 +4481,7 @@ Partial Class MainForm
         OptionSingleReplace30.enabledValue = "YESGIANT["
         FileListManager72.fileNames = CType(resources.GetObject("FileListManager72.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace30.fileManager = FileListManager72
+        OptionManager72.checkAllOnLoad = false
         OptionManager72.loadFromDInit = false
         OptionManager72.loadFromInit = false
         OptionManager72.loadFromWorldGen = false
@@ -4425,6 +4514,7 @@ Partial Class MainForm
         OptionSingleReplace31.enabledValue = "YESMEGABEAST["
         FileListManager73.fileNames = CType(resources.GetObject("FileListManager73.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace31.fileManager = FileListManager73
+        OptionManager73.checkAllOnLoad = false
         OptionManager73.loadFromDInit = false
         OptionManager73.loadFromInit = false
         OptionManager73.loadFromWorldGen = false
@@ -4457,6 +4547,7 @@ Partial Class MainForm
         OptionSingleReplace32.enabledValue = "YESBIRD["
         FileListManager74.fileNames = CType(resources.GetObject("FileListManager74.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace32.fileManager = FileListManager74
+        OptionManager74.checkAllOnLoad = false
         OptionManager74.loadFromDInit = false
         OptionManager74.loadFromInit = false
         OptionManager74.loadFromWorldGen = false
@@ -4490,6 +4581,7 @@ Partial Class MainForm
         OptionSingleReplace33.enabledValue = "YESFISH["
         FileListManager75.fileNames = CType(resources.GetObject("FileListManager75.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace33.fileManager = FileListManager75
+        OptionManager75.checkAllOnLoad = false
         OptionManager75.loadFromDInit = false
         OptionManager75.loadFromInit = false
         OptionManager75.loadFromWorldGen = false
@@ -4522,6 +4614,7 @@ Partial Class MainForm
         OptionSingleReplace34.enabledValue = "YESPERSON["
         FileListManager76.fileNames = CType(resources.GetObject("FileListManager76.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace34.fileManager = FileListManager76
+        OptionManager76.checkAllOnLoad = false
         OptionManager76.loadFromDInit = false
         OptionManager76.loadFromInit = false
         OptionManager76.loadFromWorldGen = false
@@ -4554,6 +4647,7 @@ Partial Class MainForm
         OptionSingleReplace35.enabledValue = "YESCAVERN["
         FileListManager77.fileNames = CType(resources.GetObject("FileListManager77.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace35.fileManager = FileListManager77
+        OptionManager77.checkAllOnLoad = false
         OptionManager77.loadFromDInit = false
         OptionManager77.loadFromInit = false
         OptionManager77.loadFromWorldGen = false
@@ -4586,6 +4680,7 @@ Partial Class MainForm
         OptionSingleReplace36.enabledValue = "YESMONSTER["
         FileListManager78.fileNames = CType(resources.GetObject("FileListManager78.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace36.fileManager = FileListManager78
+        OptionManager78.checkAllOnLoad = false
         OptionManager78.loadFromDInit = false
         OptionManager78.loadFromInit = false
         OptionManager78.loadFromWorldGen = false
@@ -4618,6 +4713,7 @@ Partial Class MainForm
         OptionSingleReplace37.enabledValue = "YESHELL["
         FileListManager79.fileNames = CType(resources.GetObject("FileListManager79.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace37.fileManager = FileListManager79
+        OptionManager79.checkAllOnLoad = false
         OptionManager79.loadFromDInit = false
         OptionManager79.loadFromInit = false
         OptionManager79.loadFromWorldGen = false
@@ -4650,6 +4746,7 @@ Partial Class MainForm
         OptionSingleReplace38.enabledValue = "YESMAGICCREATURES["
         FileListManager80.fileNames = CType(resources.GetObject("FileListManager80.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace38.fileManager = FileListManager80
+        OptionManager80.checkAllOnLoad = false
         OptionManager80.loadFromDInit = false
         OptionManager80.loadFromInit = false
         OptionManager80.loadFromWorldGen = false
@@ -4722,6 +4819,7 @@ Partial Class MainForm
         OptionList4.itemList.Add(ComboItem30)
         OptionList4.itemList.Add(ComboItem31)
         OptionList4.itemList.Add(ComboItem32)
+        OptionManager81.checkAllOnLoad = false
         OptionManager81.loadFromDInit = false
         OptionManager81.loadFromInit = false
         OptionManager81.loadFromWorldGen = false
@@ -4755,6 +4853,7 @@ Partial Class MainForm
         OptionSingleReplace39.enabledValue = "YESFROG["
         FileListManager82.fileNames = CType(resources.GetObject("FileListManager82.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace39.fileManager = FileListManager82
+        OptionManager82.checkAllOnLoad = false
         OptionManager82.loadFromDInit = false
         OptionManager82.loadFromInit = false
         OptionManager82.loadFromWorldGen = false
@@ -4787,6 +4886,7 @@ Partial Class MainForm
         OptionSingleReplace40.enabledValue = "YESIMP["
         FileListManager83.fileNames = CType(resources.GetObject("FileListManager83.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace40.fileManager = FileListManager83
+        OptionManager83.checkAllOnLoad = false
         OptionManager83.loadFromDInit = false
         OptionManager83.loadFromInit = false
         OptionManager83.loadFromWorldGen = false
@@ -4819,6 +4919,7 @@ Partial Class MainForm
         OptionSingleReplace41.enabledValue = "YESSTRANGLER["
         FileListManager84.fileNames = CType(resources.GetObject("FileListManager84.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace41.fileManager = FileListManager84
+        OptionManager84.checkAllOnLoad = false
         OptionManager84.loadFromDInit = false
         OptionManager84.loadFromInit = false
         OptionManager84.loadFromWorldGen = false
@@ -4851,6 +4952,7 @@ Partial Class MainForm
         OptionSingleReplace42.enabledValue = "YESWEREWOLF["
         FileListManager85.fileNames = CType(resources.GetObject("FileListManager85.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace42.fileManager = FileListManager85
+        OptionManager85.checkAllOnLoad = false
         OptionManager85.loadFromDInit = false
         OptionManager85.loadFromInit = false
         OptionManager85.loadFromWorldGen = false
@@ -4883,6 +4985,7 @@ Partial Class MainForm
         OptionSingleReplace43.enabledValue = "YESBLENDEC["
         FileListManager86.fileNames = CType(resources.GetObject("FileListManager86.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace43.fileManager = FileListManager86
+        OptionManager86.checkAllOnLoad = false
         OptionManager86.loadFromDInit = false
         OptionManager86.loadFromInit = false
         OptionManager86.loadFromWorldGen = false
@@ -4915,6 +5018,7 @@ Partial Class MainForm
         OptionSingleReplace44.enabledValue = "YESSERPENT["
         FileListManager87.fileNames = CType(resources.GetObject("FileListManager87.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace44.fileManager = FileListManager87
+        OptionManager87.checkAllOnLoad = false
         OptionManager87.loadFromDInit = false
         OptionManager87.loadFromInit = false
         OptionManager87.loadFromWorldGen = false
@@ -4947,6 +5051,7 @@ Partial Class MainForm
         OptionSingleReplace45.enabledValue = "YESTIGER["
         FileListManager88.fileNames = CType(resources.GetObject("FileListManager88.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace45.fileManager = FileListManager88
+        OptionManager88.checkAllOnLoad = false
         OptionManager88.loadFromDInit = false
         OptionManager88.loadFromInit = false
         OptionManager88.loadFromWorldGen = false
@@ -4979,6 +5084,7 @@ Partial Class MainForm
         OptionSingleReplace46.enabledValue = "YESBEAKWOLF["
         FileListManager89.fileNames = CType(resources.GetObject("FileListManager89.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace46.fileManager = FileListManager89
+        OptionManager89.checkAllOnLoad = false
         OptionManager89.loadFromDInit = false
         OptionManager89.loadFromInit = false
         OptionManager89.loadFromWorldGen = false
@@ -5011,6 +5117,7 @@ Partial Class MainForm
         OptionSingleReplace47.enabledValue = "YESELEPHANT["
         FileListManager90.fileNames = CType(resources.GetObject("FileListManager90.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace47.fileManager = FileListManager90
+        OptionManager90.checkAllOnLoad = false
         OptionManager90.loadFromDInit = false
         OptionManager90.loadFromInit = false
         OptionManager90.loadFromWorldGen = false
@@ -5043,6 +5150,7 @@ Partial Class MainForm
         OptionSingleReplace48.enabledValue = "YESFERRICELF["
         FileListManager91.fileNames = CType(resources.GetObject("FileListManager91.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace48.fileManager = FileListManager91
+        OptionManager91.checkAllOnLoad = false
         OptionManager91.loadFromDInit = false
         OptionManager91.loadFromInit = false
         OptionManager91.loadFromWorldGen = false
@@ -5075,6 +5183,7 @@ Partial Class MainForm
         OptionSingleReplace49.enabledValue = "YESBADGER["
         FileListManager92.fileNames = CType(resources.GetObject("FileListManager92.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace49.fileManager = FileListManager92
+        OptionManager92.checkAllOnLoad = false
         OptionManager92.loadFromDInit = false
         OptionManager92.loadFromInit = false
         OptionManager92.loadFromWorldGen = false
@@ -5107,6 +5216,7 @@ Partial Class MainForm
         OptionSingleReplace50.enabledValue = "YESPANDASHI["
         FileListManager93.fileNames = CType(resources.GetObject("FileListManager93.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace50.fileManager = FileListManager93
+        OptionManager93.checkAllOnLoad = false
         OptionManager93.loadFromDInit = false
         OptionManager93.loadFromInit = false
         OptionManager93.loadFromWorldGen = false
@@ -5139,6 +5249,7 @@ Partial Class MainForm
         OptionSingleReplace51.enabledValue = "YESRAPTOR["
         FileListManager94.fileNames = CType(resources.GetObject("FileListManager94.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace51.fileManager = FileListManager94
+        OptionManager94.checkAllOnLoad = false
         OptionManager94.loadFromDInit = false
         OptionManager94.loadFromInit = false
         OptionManager94.loadFromWorldGen = false
@@ -5171,6 +5282,7 @@ Partial Class MainForm
         OptionSingleReplace52.enabledValue = "YESHARPY["
         FileListManager95.fileNames = CType(resources.GetObject("FileListManager95.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace52.fileManager = FileListManager95
+        OptionManager95.checkAllOnLoad = false
         OptionManager95.loadFromDInit = false
         OptionManager95.loadFromInit = false
         OptionManager95.loadFromWorldGen = false
@@ -5203,6 +5315,7 @@ Partial Class MainForm
         OptionSingleReplace53.enabledValue = "YESMINOTAUR["
         FileListManager96.fileNames = CType(resources.GetObject("FileListManager96.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace53.fileManager = FileListManager96
+        OptionManager96.checkAllOnLoad = false
         OptionManager96.loadFromDInit = false
         OptionManager96.loadFromInit = false
         OptionManager96.loadFromWorldGen = false
@@ -5235,6 +5348,7 @@ Partial Class MainForm
         OptionSingleReplace54.enabledValue = "YESJOTUN["
         FileListManager97.fileNames = CType(resources.GetObject("FileListManager97.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace54.fileManager = FileListManager97
+        OptionManager97.checkAllOnLoad = false
         OptionManager97.loadFromDInit = false
         OptionManager97.loadFromInit = false
         OptionManager97.loadFromWorldGen = false
@@ -5267,6 +5381,7 @@ Partial Class MainForm
         OptionSingleReplace55.enabledValue = "YESSPIDER["
         FileListManager98.fileNames = CType(resources.GetObject("FileListManager98.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace55.fileManager = FileListManager98
+        OptionManager98.checkAllOnLoad = false
         OptionManager98.loadFromDInit = false
         OptionManager98.loadFromInit = false
         OptionManager98.loadFromWorldGen = false
@@ -5299,6 +5414,7 @@ Partial Class MainForm
         OptionSingleReplace56.enabledValue = "YESNIGHTWING["
         FileListManager99.fileNames = CType(resources.GetObject("FileListManager99.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace56.fileManager = FileListManager99
+        OptionManager99.checkAllOnLoad = false
         OptionManager99.loadFromDInit = false
         OptionManager99.loadFromInit = false
         OptionManager99.loadFromWorldGen = false
@@ -5332,6 +5448,7 @@ Partial Class MainForm
         OptionSingleReplace57.enabledValue = "YESSTEAMENGINE["
         FileListManager100.fileNames = CType(resources.GetObject("FileListManager100.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace57.fileManager = FileListManager100
+        OptionManager100.checkAllOnLoad = false
         OptionManager100.loadFromDInit = false
         OptionManager100.loadFromInit = false
         OptionManager100.loadFromWorldGen = false
@@ -5365,6 +5482,7 @@ Partial Class MainForm
         OptionSingleReplace58.enabledValue = "YESMACHINEFACTORY["
         FileListManager101.fileNames = CType(resources.GetObject("FileListManager101.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace58.fileManager = FileListManager101
+        OptionManager101.checkAllOnLoad = false
         OptionManager101.loadFromDInit = false
         OptionManager101.loadFromInit = false
         OptionManager101.loadFromWorldGen = false
@@ -5399,6 +5517,7 @@ Partial Class MainForm
         OptionSingleReplace59.enabledValue = "YESLIQUIDSPAWNER["
         FileListManager102.fileNames = CType(resources.GetObject("FileListManager102.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace59.fileManager = FileListManager102
+        OptionManager102.checkAllOnLoad = false
         OptionManager102.loadFromDInit = false
         OptionManager102.loadFromInit = false
         OptionManager102.loadFromWorldGen = false
@@ -5433,6 +5552,7 @@ Partial Class MainForm
         OptionSingleReplace60.enabledValue = "YESCOINMINT["
         FileListManager103.fileNames = CType(resources.GetObject("FileListManager103.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace60.fileManager = FileListManager103
+        OptionManager103.checkAllOnLoad = false
         OptionManager103.loadFromDInit = false
         OptionManager103.loadFromInit = false
         OptionManager103.loadFromWorldGen = false
@@ -5466,6 +5586,7 @@ Partial Class MainForm
         OptionSingleReplace61.enabledValue = "YESBONEYARD["
         FileListManager104.fileNames = CType(resources.GetObject("FileListManager104.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace61.fileManager = FileListManager104
+        OptionManager104.checkAllOnLoad = false
         OptionManager104.loadFromDInit = false
         OptionManager104.loadFromInit = false
         OptionManager104.loadFromWorldGen = false
@@ -5499,6 +5620,7 @@ Partial Class MainForm
         OptionSingleReplace62.enabledValue = "YESSTONECUTTER["
         FileListManager105.fileNames = CType(resources.GetObject("FileListManager105.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace62.fileManager = FileListManager105
+        OptionManager105.checkAllOnLoad = false
         OptionManager105.loadFromDInit = false
         OptionManager105.loadFromInit = false
         OptionManager105.loadFromWorldGen = false
@@ -5532,6 +5654,7 @@ Partial Class MainForm
         OptionSingleReplace63.enabledValue = "YESGEMWORKSHOP["
         FileListManager106.fileNames = CType(resources.GetObject("FileListManager106.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace63.fileManager = FileListManager106
+        OptionManager106.checkAllOnLoad = false
         OptionManager106.loadFromDInit = false
         OptionManager106.loadFromInit = false
         OptionManager106.loadFromWorldGen = false
@@ -5566,6 +5689,7 @@ Partial Class MainForm
         OptionSingleReplace64.enabledValue = "YESWOODCRAFTER["
         FileListManager107.fileNames = CType(resources.GetObject("FileListManager107.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace64.fileManager = FileListManager107
+        OptionManager107.checkAllOnLoad = false
         OptionManager107.loadFromDInit = false
         OptionManager107.loadFromInit = false
         OptionManager107.loadFromWorldGen = false
@@ -5599,6 +5723,7 @@ Partial Class MainForm
         OptionSingleReplace65.enabledValue = "YESTHATCHERY["
         FileListManager108.fileNames = CType(resources.GetObject("FileListManager108.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace65.fileManager = FileListManager108
+        OptionManager108.checkAllOnLoad = false
         OptionManager108.loadFromDInit = false
         OptionManager108.loadFromInit = false
         OptionManager108.loadFromWorldGen = false
@@ -5632,6 +5757,7 @@ Partial Class MainForm
         OptionSingleReplace66.enabledValue = "YESFURNITURE["
         FileListManager109.fileNames = CType(resources.GetObject("FileListManager109.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace66.fileManager = FileListManager109
+        OptionManager109.checkAllOnLoad = false
         OptionManager109.loadFromDInit = false
         OptionManager109.loadFromInit = false
         OptionManager109.loadFromWorldGen = false
@@ -5665,6 +5791,7 @@ Partial Class MainForm
         OptionSingleReplace67.enabledValue = "YESTAILOR["
         FileListManager110.fileNames = CType(resources.GetObject("FileListManager110.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace67.fileManager = FileListManager110
+        OptionManager110.checkAllOnLoad = false
         OptionManager110.loadFromDInit = false
         OptionManager110.loadFromInit = false
         OptionManager110.loadFromWorldGen = false
@@ -5699,6 +5826,7 @@ Partial Class MainForm
         OptionSingleReplace68.enabledValue = "YESCHANDLER["
         FileListManager111.fileNames = CType(resources.GetObject("FileListManager111.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace68.fileManager = FileListManager111
+        OptionManager111.checkAllOnLoad = false
         OptionManager111.loadFromDInit = false
         OptionManager111.loadFromInit = false
         OptionManager111.loadFromWorldGen = false
@@ -5732,6 +5860,7 @@ Partial Class MainForm
         OptionSingleReplace69.enabledValue = "YESFLETCHER["
         FileListManager112.fileNames = CType(resources.GetObject("FileListManager112.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace69.fileManager = FileListManager112
+        OptionManager112.checkAllOnLoad = false
         OptionManager112.loadFromDInit = false
         OptionManager112.loadFromInit = false
         OptionManager112.loadFromWorldGen = false
@@ -5765,6 +5894,7 @@ Partial Class MainForm
         OptionSingleReplace70.enabledValue = "YESPOTTERY["
         FileListManager113.fileNames = CType(resources.GetObject("FileListManager113.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace70.fileManager = FileListManager113
+        OptionManager113.checkAllOnLoad = false
         OptionManager113.loadFromDInit = false
         OptionManager113.loadFromInit = false
         OptionManager113.loadFromWorldGen = false
@@ -5799,6 +5929,7 @@ Partial Class MainForm
         OptionSingleReplace71.enabledValue = "YESDYER["
         FileListManager114.fileNames = CType(resources.GetObject("FileListManager114.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace71.fileManager = FileListManager114
+        OptionManager114.checkAllOnLoad = false
         OptionManager114.loadFromDInit = false
         OptionManager114.loadFromInit = false
         OptionManager114.loadFromWorldGen = false
@@ -5833,6 +5964,7 @@ Partial Class MainForm
         OptionSingleReplace72.enabledValue = "YESPAINTER["
         FileListManager115.fileNames = CType(resources.GetObject("FileListManager115.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace72.fileManager = FileListManager115
+        OptionManager115.checkAllOnLoad = false
         OptionManager115.loadFromDInit = false
         OptionManager115.loadFromInit = false
         OptionManager115.loadFromWorldGen = false
@@ -5866,6 +5998,7 @@ Partial Class MainForm
         OptionSingleReplace73.enabledValue = "YESTOOLMAKER["
         FileListManager116.fileNames = CType(resources.GetObject("FileListManager116.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace73.fileManager = FileListManager116
+        OptionManager116.checkAllOnLoad = false
         OptionManager116.loadFromDInit = false
         OptionManager116.loadFromInit = false
         OptionManager116.loadFromWorldGen = false
@@ -5899,6 +6032,7 @@ Partial Class MainForm
         OptionSingleReplace74.enabledValue = "YESWEIGHT["
         FileListManager117.fileNames = CType(resources.GetObject("FileListManager117.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace74.fileManager = FileListManager117
+        OptionManager117.checkAllOnLoad = false
         OptionManager117.loadFromDInit = false
         OptionManager117.loadFromInit = false
         OptionManager117.loadFromWorldGen = false
@@ -5932,6 +6066,7 @@ Partial Class MainForm
         OptionSingleReplace75.enabledValue = "YESWOODSPLITTING["
         FileListManager118.fileNames = CType(resources.GetObject("FileListManager118.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace75.fileManager = FileListManager118
+        OptionManager118.checkAllOnLoad = false
         OptionManager118.loadFromDInit = false
         OptionManager118.loadFromInit = false
         OptionManager118.loadFromWorldGen = false
@@ -5966,6 +6101,7 @@ Partial Class MainForm
         OptionSingleReplace76.enabledValue = "YESSTORAGE["
         FileListManager119.fileNames = CType(resources.GetObject("FileListManager119.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace76.fileManager = FileListManager119
+        OptionManager119.checkAllOnLoad = false
         OptionManager119.loadFromDInit = false
         OptionManager119.loadFromInit = false
         OptionManager119.loadFromWorldGen = false
@@ -5999,6 +6135,7 @@ Partial Class MainForm
         OptionSingleReplace77.enabledValue = "YESBREWERY["
         FileListManager120.fileNames = CType(resources.GetObject("FileListManager120.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace77.fileManager = FileListManager120
+        OptionManager120.checkAllOnLoad = false
         OptionManager120.loadFromDInit = false
         OptionManager120.loadFromInit = false
         OptionManager120.loadFromWorldGen = false
@@ -6033,6 +6170,7 @@ Partial Class MainForm
         OptionSingleReplace78.enabledValue = "YESSAWMILL["
         FileListManager121.fileNames = CType(resources.GetObject("FileListManager121.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace78.fileManager = FileListManager121
+        OptionManager121.checkAllOnLoad = false
         OptionManager121.loadFromDInit = false
         OptionManager121.loadFromInit = false
         OptionManager121.loadFromWorldGen = false
@@ -6067,6 +6205,7 @@ Partial Class MainForm
         OptionSingleReplace79.enabledValue = "YESFISHPOND["
         FileListManager122.fileNames = CType(resources.GetObject("FileListManager122.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace79.fileManager = FileListManager122
+        OptionManager122.checkAllOnLoad = false
         OptionManager122.loadFromDInit = false
         OptionManager122.loadFromInit = false
         OptionManager122.loadFromWorldGen = false
@@ -6100,6 +6239,7 @@ Partial Class MainForm
         OptionSingleReplace80.enabledValue = "YESSLAUGHTERHOUSE["
         FileListManager123.fileNames = CType(resources.GetObject("FileListManager123.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace80.fileManager = FileListManager123
+        OptionManager123.checkAllOnLoad = false
         OptionManager123.loadFromDInit = false
         OptionManager123.loadFromInit = false
         OptionManager123.loadFromWorldGen = false
@@ -6133,6 +6273,7 @@ Partial Class MainForm
         OptionSingleReplace81.enabledValue = "YESSTABLES["
         FileListManager124.fileNames = CType(resources.GetObject("FileListManager124.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace81.fileManager = FileListManager124
+        OptionManager124.checkAllOnLoad = false
         OptionManager124.loadFromDInit = false
         OptionManager124.loadFromInit = false
         OptionManager124.loadFromWorldGen = false
@@ -6166,6 +6307,7 @@ Partial Class MainForm
         OptionSingleReplace82.enabledValue = "YESBEASTLAB["
         FileListManager125.fileNames = CType(resources.GetObject("FileListManager125.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace82.fileManager = FileListManager125
+        OptionManager125.checkAllOnLoad = false
         OptionManager125.loadFromDInit = false
         OptionManager125.loadFromInit = false
         OptionManager125.loadFromWorldGen = false
@@ -6199,6 +6341,7 @@ Partial Class MainForm
         OptionSingleReplace83.enabledValue = "YESARCHEOLOGIST["
         FileListManager126.fileNames = CType(resources.GetObject("FileListManager126.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace83.fileManager = FileListManager126
+        OptionManager126.checkAllOnLoad = false
         OptionManager126.loadFromDInit = false
         OptionManager126.loadFromInit = false
         OptionManager126.loadFromWorldGen = false
@@ -6232,6 +6375,7 @@ Partial Class MainForm
         OptionSingleReplace84.enabledValue = "YESAPO["
         FileListManager127.fileNames = CType(resources.GetObject("FileListManager127.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace84.fileManager = FileListManager127
+        OptionManager127.checkAllOnLoad = false
         OptionManager127.loadFromDInit = false
         OptionManager127.loadFromInit = false
         OptionManager127.loadFromWorldGen = false
@@ -6267,6 +6411,7 @@ Partial Class MainForm
         OptionSingleReplace85.enabledValue = "YESBIOLOGIST["
         FileListManager128.fileNames = CType(resources.GetObject("FileListManager128.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace85.fileManager = FileListManager128
+        OptionManager128.checkAllOnLoad = false
         OptionManager128.loadFromDInit = false
         OptionManager128.loadFromInit = false
         OptionManager128.loadFromWorldGen = false
@@ -6302,6 +6447,7 @@ Partial Class MainForm
         OptionSingleReplace86.enabledValue = "YESMUSIC["
         FileListManager129.fileNames = CType(resources.GetObject("FileListManager129.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace86.fileManager = FileListManager129
+        OptionManager129.checkAllOnLoad = false
         OptionManager129.loadFromDInit = false
         OptionManager129.loadFromInit = false
         OptionManager129.loadFromWorldGen = false
@@ -6336,6 +6482,7 @@ Partial Class MainForm
         OptionSingleReplace87.enabledValue = "YESOLON["
         FileListManager130.fileNames = CType(resources.GetObject("FileListManager130.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace87.fileManager = FileListManager130
+        OptionManager130.checkAllOnLoad = false
         OptionManager130.loadFromDInit = false
         OptionManager130.loadFromInit = false
         OptionManager130.loadFromWorldGen = false
@@ -6369,6 +6516,7 @@ Partial Class MainForm
         OptionSingleReplace88.enabledValue = "YESBOMREK["
         FileListManager131.fileNames = CType(resources.GetObject("FileListManager131.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace88.fileManager = FileListManager131
+        OptionManager131.checkAllOnLoad = false
         OptionManager131.loadFromDInit = false
         OptionManager131.loadFromInit = false
         OptionManager131.loadFromWorldGen = false
@@ -6402,6 +6550,7 @@ Partial Class MainForm
         OptionSingleReplace89.enabledValue = "YESURIST["
         FileListManager132.fileNames = CType(resources.GetObject("FileListManager132.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace89.fileManager = FileListManager132
+        OptionManager132.checkAllOnLoad = false
         OptionManager132.loadFromDInit = false
         OptionManager132.loadFromInit = false
         OptionManager132.loadFromWorldGen = false
@@ -6435,6 +6584,7 @@ Partial Class MainForm
         OptionSingleReplace90.enabledValue = "YESTEDUK["
         FileListManager133.fileNames = CType(resources.GetObject("FileListManager133.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace90.fileManager = FileListManager133
+        OptionManager133.checkAllOnLoad = false
         OptionManager133.loadFromDInit = false
         OptionManager133.loadFromInit = false
         OptionManager133.loadFromWorldGen = false
@@ -6468,6 +6618,7 @@ Partial Class MainForm
         OptionSingleReplace91.enabledValue = "YESINARI["
         FileListManager134.fileNames = CType(resources.GetObject("FileListManager134.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace91.fileManager = FileListManager134
+        OptionManager134.checkAllOnLoad = false
         OptionManager134.loadFromDInit = false
         OptionManager134.loadFromInit = false
         OptionManager134.loadFromWorldGen = false
@@ -6501,6 +6652,7 @@ Partial Class MainForm
         OptionSingleReplace92.enabledValue = "YESALCHEMY["
         FileListManager135.fileNames = CType(resources.GetObject("FileListManager135.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace92.fileManager = FileListManager135
+        OptionManager135.checkAllOnLoad = false
         OptionManager135.loadFromDInit = false
         OptionManager135.loadFromInit = false
         OptionManager135.loadFromWorldGen = false
@@ -6535,6 +6687,7 @@ Partial Class MainForm
         OptionSingleReplace93.enabledValue = "YESTOXICIST["
         FileListManager136.fileNames = CType(resources.GetObject("FileListManager136.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace93.fileManager = FileListManager136
+        OptionManager136.checkAllOnLoad = false
         OptionManager136.loadFromDInit = false
         OptionManager136.loadFromInit = false
         OptionManager136.loadFromWorldGen = false
@@ -6568,6 +6721,7 @@ Partial Class MainForm
         OptionSingleReplace94.enabledValue = "YESCHEMISTRYLAB["
         FileListManager137.fileNames = CType(resources.GetObject("FileListManager137.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace94.fileManager = FileListManager137
+        OptionManager137.checkAllOnLoad = false
         OptionManager137.loadFromDInit = false
         OptionManager137.loadFromInit = false
         OptionManager137.loadFromWorldGen = false
@@ -6601,6 +6755,7 @@ Partial Class MainForm
         OptionSingleReplace95.enabledValue = "YESHERBALIST["
         FileListManager138.fileNames = CType(resources.GetObject("FileListManager138.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace95.fileManager = FileListManager138
+        OptionManager138.checkAllOnLoad = false
         OptionManager138.loadFromDInit = false
         OptionManager138.loadFromInit = false
         OptionManager138.loadFromWorldGen = false
@@ -6634,6 +6789,7 @@ Partial Class MainForm
         OptionSingleReplace96.enabledValue = "YESALTAR["
         FileListManager139.fileNames = CType(resources.GetObject("FileListManager139.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace96.fileManager = FileListManager139
+        OptionManager139.checkAllOnLoad = false
         OptionManager139.loadFromDInit = false
         OptionManager139.loadFromInit = false
         OptionManager139.loadFromWorldGen = false
@@ -6667,6 +6823,7 @@ Partial Class MainForm
         OptionSingleReplace97.enabledValue = "YESSHRINE["
         FileListManager140.fileNames = CType(resources.GetObject("FileListManager140.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace97.fileManager = FileListManager140
+        OptionManager140.checkAllOnLoad = false
         OptionManager140.loadFromDInit = false
         OptionManager140.loadFromInit = false
         OptionManager140.loadFromWorldGen = false
@@ -6700,6 +6857,7 @@ Partial Class MainForm
         OptionSingleReplace98.enabledValue = "YESTEMPLE["
         FileListManager141.fileNames = CType(resources.GetObject("FileListManager141.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace98.fileManager = FileListManager141
+        OptionManager141.checkAllOnLoad = false
         OptionManager141.loadFromDInit = false
         OptionManager141.loadFromInit = false
         OptionManager141.loadFromWorldGen = false
@@ -6733,6 +6891,7 @@ Partial Class MainForm
         OptionSingleReplace99.enabledValue = "YESEMBASSY["
         FileListManager142.fileNames = CType(resources.GetObject("FileListManager142.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace99.fileManager = FileListManager142
+        OptionManager142.checkAllOnLoad = false
         OptionManager142.loadFromDInit = false
         OptionManager142.loadFromInit = false
         OptionManager142.loadFromWorldGen = false
@@ -6766,6 +6925,7 @@ Partial Class MainForm
         OptionSingleReplace100.enabledValue = "YESEXPEDITION["
         FileListManager143.fileNames = CType(resources.GetObject("FileListManager143.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace100.fileManager = FileListManager143
+        OptionManager143.checkAllOnLoad = false
         OptionManager143.loadFromDInit = false
         OptionManager143.loadFromInit = false
         OptionManager143.loadFromWorldGen = false
@@ -6799,6 +6959,7 @@ Partial Class MainForm
         OptionSingleReplace101.enabledValue = "YESSPEAKERSPODIUM["
         FileListManager144.fileNames = CType(resources.GetObject("FileListManager144.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace101.fileManager = FileListManager144
+        OptionManager144.checkAllOnLoad = false
         OptionManager144.loadFromDInit = false
         OptionManager144.loadFromInit = false
         OptionManager144.loadFromWorldGen = false
@@ -6832,6 +6993,7 @@ Partial Class MainForm
         OptionSingleReplace102.enabledValue = "YESSCRIPTORIUM["
         FileListManager145.fileNames = CType(resources.GetObject("FileListManager145.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace102.fileManager = FileListManager145
+        OptionManager145.checkAllOnLoad = false
         OptionManager145.loadFromDInit = false
         OptionManager145.loadFromInit = false
         OptionManager145.loadFromWorldGen = false
@@ -6865,6 +7027,7 @@ Partial Class MainForm
         OptionSingleReplace103.enabledValue = "YESLIBRARY["
         FileListManager146.fileNames = CType(resources.GetObject("FileListManager146.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace103.fileManager = FileListManager146
+        OptionManager146.checkAllOnLoad = false
         OptionManager146.loadFromDInit = false
         OptionManager146.loadFromInit = false
         OptionManager146.loadFromWorldGen = false
@@ -6898,6 +7061,7 @@ Partial Class MainForm
         OptionSingleReplace104.enabledValue = "YESCOLLOSSEUM["
         FileListManager147.fileNames = CType(resources.GetObject("FileListManager147.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace104.fileManager = FileListManager147
+        OptionManager147.checkAllOnLoad = false
         OptionManager147.loadFromDInit = false
         OptionManager147.loadFromInit = false
         OptionManager147.loadFromWorldGen = false
@@ -6931,6 +7095,7 @@ Partial Class MainForm
         OptionSingleReplace105.enabledValue = "YESGUILDHALL["
         FileListManager148.fileNames = CType(resources.GetObject("FileListManager148.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace105.fileManager = FileListManager148
+        OptionManager148.checkAllOnLoad = false
         OptionManager148.loadFromDInit = false
         OptionManager148.loadFromInit = false
         OptionManager148.loadFromWorldGen = false
@@ -6965,6 +7130,7 @@ Partial Class MainForm
         OptionSingleReplace106.enabledValue = "YESPRISON["
         FileListManager149.fileNames = CType(resources.GetObject("FileListManager149.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace106.fileManager = FileListManager149
+        OptionManager149.checkAllOnLoad = false
         OptionManager149.loadFromDInit = false
         OptionManager149.loadFromInit = false
         OptionManager149.loadFromWorldGen = false
@@ -6998,6 +7164,7 @@ Partial Class MainForm
         OptionSingleReplace107.enabledValue = "YESMONASTERY["
         FileListManager150.fileNames = CType(resources.GetObject("FileListManager150.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace107.fileManager = FileListManager150
+        OptionManager150.checkAllOnLoad = false
         OptionManager150.loadFromDInit = false
         OptionManager150.loadFromInit = false
         OptionManager150.loadFromWorldGen = false
@@ -7032,6 +7199,7 @@ Partial Class MainForm
         OptionSingleReplace108.enabledValue = "YESGARRISON["
         FileListManager151.fileNames = CType(resources.GetObject("FileListManager151.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace108.fileManager = FileListManager151
+        OptionManager151.checkAllOnLoad = false
         OptionManager151.loadFromDInit = false
         OptionManager151.loadFromInit = false
         OptionManager151.loadFromWorldGen = false
@@ -7066,6 +7234,7 @@ Partial Class MainForm
         OptionSingleReplace109.enabledValue = "YESBRAZIER["
         FileListManager152.fileNames = CType(resources.GetObject("FileListManager152.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace109.fileManager = FileListManager152
+        OptionManager152.checkAllOnLoad = false
         OptionManager152.loadFromDInit = false
         OptionManager152.loadFromInit = false
         OptionManager152.loadFromWorldGen = false
@@ -7099,6 +7268,7 @@ Partial Class MainForm
         OptionSingleReplace110.enabledValue = "YESCANDELABRA["
         FileListManager153.fileNames = CType(resources.GetObject("FileListManager153.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace110.fileManager = FileListManager153
+        OptionManager153.checkAllOnLoad = false
         OptionManager153.loadFromDInit = false
         OptionManager153.loadFromInit = false
         OptionManager153.loadFromWorldGen = false
@@ -7132,6 +7302,7 @@ Partial Class MainForm
         OptionSingleReplace111.enabledValue = "YESFIREPLACE["
         FileListManager154.fileNames = CType(resources.GetObject("FileListManager154.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace111.fileManager = FileListManager154
+        OptionManager154.checkAllOnLoad = false
         OptionManager154.loadFromDInit = false
         OptionManager154.loadFromInit = false
         OptionManager154.loadFromWorldGen = false
@@ -7165,6 +7336,7 @@ Partial Class MainForm
         OptionSingleReplace112.enabledValue = "YESTORCHBEARER["
         FileListManager155.fileNames = CType(resources.GetObject("FileListManager155.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace112.fileManager = FileListManager155
+        OptionManager155.checkAllOnLoad = false
         OptionManager155.loadFromDInit = false
         OptionManager155.loadFromInit = false
         OptionManager155.loadFromWorldGen = false
@@ -7198,6 +7370,7 @@ Partial Class MainForm
         OptionSingleReplace113.enabledValue = "YESGEMOFLIGHT["
         FileListManager156.fileNames = CType(resources.GetObject("FileListManager156.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace113.fileManager = FileListManager156
+        OptionManager156.checkAllOnLoad = false
         OptionManager156.loadFromDInit = false
         OptionManager156.loadFromInit = false
         OptionManager156.loadFromWorldGen = false
@@ -7231,6 +7404,7 @@ Partial Class MainForm
         OptionSingleReplace114.enabledValue = "YESAMMOCASTER["
         FileListManager157.fileNames = CType(resources.GetObject("FileListManager157.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace114.fileManager = FileListManager157
+        OptionManager157.checkAllOnLoad = false
         OptionManager157.loadFromDInit = false
         OptionManager157.loadFromInit = false
         OptionManager157.loadFromWorldGen = false
@@ -7264,6 +7438,7 @@ Partial Class MainForm
         OptionSingleReplace115.enabledValue = "YESGUN["
         FileListManager158.fileNames = CType(resources.GetObject("FileListManager158.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace115.fileManager = FileListManager158
+        OptionManager158.checkAllOnLoad = false
         OptionManager158.loadFromDInit = false
         OptionManager158.loadFromInit = false
         OptionManager158.loadFromWorldGen = false
@@ -7297,6 +7472,7 @@ Partial Class MainForm
         OptionSingleReplace116.enabledValue = "YESHEAVYSIEGE["
         FileListManager159.fileNames = CType(resources.GetObject("FileListManager159.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace116.fileManager = FileListManager159
+        OptionManager159.checkAllOnLoad = false
         OptionManager159.loadFromDInit = false
         OptionManager159.loadFromInit = false
         OptionManager159.loadFromWorldGen = false
@@ -7331,6 +7507,7 @@ Partial Class MainForm
         OptionSingleReplace117.enabledValue = "YESENGINEER["
         FileListManager160.fileNames = CType(resources.GetObject("FileListManager160.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace117.fileManager = FileListManager160
+        OptionManager160.checkAllOnLoad = false
         OptionManager160.loadFromDInit = false
         OptionManager160.loadFromInit = false
         OptionManager160.loadFromWorldGen = false
@@ -7364,6 +7541,7 @@ Partial Class MainForm
         OptionSingleReplace118.enabledValue = "YESINVENTORSWORKBENCH["
         FileListManager161.fileNames = CType(resources.GetObject("FileListManager161.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace118.fileManager = FileListManager161
+        OptionManager161.checkAllOnLoad = false
         OptionManager161.loadFromDInit = false
         OptionManager161.loadFromInit = false
         OptionManager161.loadFromWorldGen = false
@@ -7398,6 +7576,7 @@ Partial Class MainForm
         OptionSingleReplace119.enabledValue = "YESGREATFORGE["
         FileListManager162.fileNames = CType(resources.GetObject("FileListManager162.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace119.fileManager = FileListManager162
+        OptionManager162.checkAllOnLoad = false
         OptionManager162.loadFromDInit = false
         OptionManager162.loadFromInit = false
         OptionManager162.loadFromWorldGen = false
@@ -7431,6 +7610,7 @@ Partial Class MainForm
         OptionSingleReplace120.enabledValue = "YESGLASSFORGE["
         FileListManager163.fileNames = CType(resources.GetObject("FileListManager163.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace120.fileManager = FileListManager163
+        OptionManager163.checkAllOnLoad = false
         OptionManager163.loadFromDInit = false
         OptionManager163.loadFromInit = false
         OptionManager163.loadFromWorldGen = false
@@ -7464,6 +7644,7 @@ Partial Class MainForm
         OptionSingleReplace121.enabledValue = "YESGEMFORGE["
         FileListManager164.fileNames = CType(resources.GetObject("FileListManager164.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace121.fileManager = FileListManager164
+        OptionManager164.checkAllOnLoad = false
         OptionManager164.loadFromDInit = false
         OptionManager164.loadFromInit = false
         OptionManager164.loadFromWorldGen = false
@@ -7498,6 +7679,7 @@ Partial Class MainForm
         OptionSingleReplace122.enabledValue = "YESMAGMASAFE["
         FileListManager165.fileNames = CType(resources.GetObject("FileListManager165.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace122.fileManager = FileListManager165
+        OptionManager165.checkAllOnLoad = false
         OptionManager165.loadFromDInit = false
         OptionManager165.loadFromInit = false
         OptionManager165.loadFromWorldGen = false
@@ -7531,6 +7713,7 @@ Partial Class MainForm
         OptionSingleReplace123.enabledValue = "YESBRICK["
         FileListManager166.fileNames = CType(resources.GetObject("FileListManager166.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace123.fileManager = FileListManager166
+        OptionManager166.checkAllOnLoad = false
         OptionManager166.loadFromDInit = false
         OptionManager166.loadFromInit = false
         OptionManager166.loadFromWorldGen = false
@@ -7564,6 +7747,7 @@ Partial Class MainForm
         OptionSingleReplace124.enabledValue = "YESCREMATORY["
         FileListManager167.fileNames = CType(resources.GetObject("FileListManager167.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace124.fileManager = FileListManager167
+        OptionManager167.checkAllOnLoad = false
         OptionManager167.loadFromDInit = false
         OptionManager167.loadFromInit = false
         OptionManager167.loadFromWorldGen = false
@@ -7594,6 +7778,7 @@ Partial Class MainForm
         Me.optMultiOreProcessor.Name = "optMultiOreProcessor"
         FileListManager168.fileNames = CType(resources.GetObject("FileListManager168.fileNames"),System.Collections.Generic.List(Of String))
         OptionMulti3.fileManager = FileListManager168
+        OptionManager168.checkAllOnLoad = false
         OptionManager168.loadFromDInit = false
         OptionManager168.loadFromInit = false
         OptionManager168.loadFromWorldGen = false
@@ -7643,6 +7828,7 @@ Partial Class MainForm
         OptionSingleReplace125.enabledValue = "YESKILN["
         FileListManager169.fileNames = CType(resources.GetObject("FileListManager169.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace125.fileManager = FileListManager169
+        OptionManager169.checkAllOnLoad = false
         OptionManager169.loadFromDInit = false
         OptionManager169.loadFromInit = false
         OptionManager169.loadFromWorldGen = false
@@ -7677,6 +7863,7 @@ Partial Class MainForm
         OptionSingleReplace126.enabledValue = "YESSLAGPIT["
         FileListManager170.fileNames = CType(resources.GetObject("FileListManager170.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace126.fileManager = FileListManager170
+        OptionManager170.checkAllOnLoad = false
         OptionManager170.loadFromDInit = false
         OptionManager170.loadFromInit = false
         OptionManager170.loadFromWorldGen = false
@@ -7710,6 +7897,7 @@ Partial Class MainForm
         OptionSingleReplace127.enabledValue = "YESRUNEARMORY["
         FileListManager171.fileNames = CType(resources.GetObject("FileListManager171.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace127.fileManager = FileListManager171
+        OptionManager171.checkAllOnLoad = false
         OptionManager171.loadFromDInit = false
         OptionManager171.loadFromInit = false
         OptionManager171.loadFromWorldGen = false
@@ -7743,6 +7931,7 @@ Partial Class MainForm
         OptionSingleReplace128.enabledValue = "YESRUNESMITH["
         FileListManager172.fileNames = CType(resources.GetObject("FileListManager172.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace128.fileManager = FileListManager172
+        OptionManager172.checkAllOnLoad = false
         OptionManager172.loadFromDInit = false
         OptionManager172.loadFromInit = false
         OptionManager172.loadFromWorldGen = false
@@ -7776,6 +7965,7 @@ Partial Class MainForm
         OptionSingleReplace129.enabledValue = "YESARMORY["
         FileListManager173.fileNames = CType(resources.GetObject("FileListManager173.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace129.fileManager = FileListManager173
+        OptionManager173.checkAllOnLoad = false
         OptionManager173.loadFromDInit = false
         OptionManager173.loadFromInit = false
         OptionManager173.loadFromWorldGen = false
@@ -7809,6 +7999,7 @@ Partial Class MainForm
         OptionSingleReplace130.enabledValue = "YESWEAPONRY["
         FileListManager174.fileNames = CType(resources.GetObject("FileListManager174.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace130.fileManager = FileListManager174
+        OptionManager174.checkAllOnLoad = false
         OptionManager174.loadFromDInit = false
         OptionManager174.loadFromInit = false
         OptionManager174.loadFromWorldGen = false
@@ -7843,6 +8034,7 @@ Partial Class MainForm
         OptionSingleReplace131.enabledValue = "YESMEGABEASTKENNELS["
         FileListManager175.fileNames = CType(resources.GetObject("FileListManager175.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace131.fileManager = FileListManager175
+        OptionManager175.checkAllOnLoad = false
         OptionManager175.loadFromDInit = false
         OptionManager175.loadFromInit = false
         OptionManager175.loadFromWorldGen = false
@@ -7877,6 +8069,7 @@ Partial Class MainForm
         OptionSingleReplace132.enabledValue = "YESARMORED["
         FileListManager176.fileNames = CType(resources.GetObject("FileListManager176.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace132.fileManager = FileListManager176
+        OptionManager176.checkAllOnLoad = false
         OptionManager176.loadFromDInit = false
         OptionManager176.loadFromInit = false
         OptionManager176.loadFromWorldGen = false
@@ -7910,6 +8103,7 @@ Partial Class MainForm
         OptionSingleReplace133.enabledValue = "YESBLASTFURNACE["
         FileListManager177.fileNames = CType(resources.GetObject("FileListManager177.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace133.fileManager = FileListManager177
+        OptionManager177.checkAllOnLoad = false
         OptionManager177.loadFromDInit = false
         OptionManager177.loadFromInit = false
         OptionManager177.loadFromWorldGen = false
@@ -7943,6 +8137,7 @@ Partial Class MainForm
         OptionSingleReplace134.enabledValue = "YESCRUCIBLE["
         FileListManager178.fileNames = CType(resources.GetObject("FileListManager178.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace134.fileManager = FileListManager178
+        OptionManager178.checkAllOnLoad = false
         OptionManager178.loadFromDInit = false
         OptionManager178.loadFromInit = false
         OptionManager178.loadFromWorldGen = false
@@ -7976,6 +8171,7 @@ Partial Class MainForm
         OptionSingleReplace135.enabledValue = "YESFINISHINGFORGE["
         FileListManager179.fileNames = CType(resources.GetObject("FileListManager179.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace135.fileManager = FileListManager179
+        OptionManager179.checkAllOnLoad = false
         OptionManager179.loadFromDInit = false
         OptionManager179.loadFromInit = false
         OptionManager179.loadFromWorldGen = false
@@ -8009,6 +8205,7 @@ Partial Class MainForm
         OptionSingleReplace136.enabledValue = "YESMETALLURGIST["
         FileListManager180.fileNames = CType(resources.GetObject("FileListManager180.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace136.fileManager = FileListManager180
+        OptionManager180.checkAllOnLoad = false
         OptionManager180.loadFromDInit = false
         OptionManager180.loadFromInit = false
         OptionManager180.loadFromWorldGen = false
@@ -8042,6 +8239,7 @@ Partial Class MainForm
         OptionSingleReplace137.enabledValue = "YESARBALEST["
         FileListManager181.fileNames = CType(resources.GetObject("FileListManager181.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace137.fileManager = FileListManager181
+        OptionManager181.checkAllOnLoad = false
         OptionManager181.loadFromDInit = false
         OptionManager181.loadFromInit = false
         OptionManager181.loadFromWorldGen = false
@@ -8075,6 +8273,7 @@ Partial Class MainForm
         OptionSingleReplace138.enabledValue = "YESTREBUCHET["
         FileListManager182.fileNames = CType(resources.GetObject("FileListManager182.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace138.fileManager = FileListManager182
+        OptionManager182.checkAllOnLoad = false
         OptionManager182.loadFromDInit = false
         OptionManager182.loadFromInit = false
         OptionManager182.loadFromWorldGen = false
@@ -8108,6 +8307,7 @@ Partial Class MainForm
         OptionSingleReplace139.enabledValue = "YESDECORATION["
         FileListManager183.fileNames = CType(resources.GetObject("FileListManager183.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace139.fileManager = FileListManager183
+        OptionManager183.checkAllOnLoad = false
         OptionManager183.loadFromDInit = false
         OptionManager183.loadFromInit = false
         OptionManager183.loadFromWorldGen = false
@@ -8141,6 +8341,7 @@ Partial Class MainForm
         OptionSingleReplace140.enabledValue = "YESPOTTEDPLANT["
         FileListManager184.fileNames = CType(resources.GetObject("FileListManager184.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace140.fileManager = FileListManager184
+        OptionManager184.checkAllOnLoad = false
         OptionManager184.loadFromDInit = false
         OptionManager184.loadFromInit = false
         OptionManager184.loadFromWorldGen = false
@@ -8174,6 +8375,7 @@ Partial Class MainForm
         OptionSingleReplace141.enabledValue = "YESTOTEM["
         FileListManager185.fileNames = CType(resources.GetObject("FileListManager185.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace141.fileManager = FileListManager185
+        OptionManager185.checkAllOnLoad = false
         OptionManager185.loadFromDInit = false
         OptionManager185.loadFromInit = false
         OptionManager185.loadFromWorldGen = false
@@ -8207,6 +8409,7 @@ Partial Class MainForm
         OptionSingleReplace142.enabledValue = "YESFOUNTAIN["
         FileListManager186.fileNames = CType(resources.GetObject("FileListManager186.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace142.fileManager = FileListManager186
+        OptionManager186.checkAllOnLoad = false
         OptionManager186.loadFromDInit = false
         OptionManager186.loadFromInit = false
         OptionManager186.loadFromWorldGen = false
@@ -8240,6 +8443,7 @@ Partial Class MainForm
         OptionSingleReplace143.enabledValue = "YESLOO["
         FileListManager187.fileNames = CType(resources.GetObject("FileListManager187.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace143.fileManager = FileListManager187
+        OptionManager187.checkAllOnLoad = false
         OptionManager187.loadFromDInit = false
         OptionManager187.loadFromInit = false
         OptionManager187.loadFromWorldGen = false
@@ -8274,6 +8478,7 @@ Partial Class MainForm
         OptionSingleReplace144.enabledValue = "YESCARPET["
         FileListManager188.fileNames = CType(resources.GetObject("FileListManager188.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace144.fileManager = FileListManager188
+        OptionManager188.checkAllOnLoad = false
         OptionManager188.loadFromDInit = false
         OptionManager188.loadFromInit = false
         OptionManager188.loadFromWorldGen = false
@@ -8307,6 +8512,7 @@ Partial Class MainForm
         OptionSingleReplace145.enabledValue = "YESDECOITEMS["
         FileListManager189.fileNames = CType(resources.GetObject("FileListManager189.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace145.fileManager = FileListManager189
+        OptionManager189.checkAllOnLoad = false
         OptionManager189.loadFromDInit = false
         OptionManager189.loadFromInit = false
         OptionManager189.loadFromWorldGen = false
@@ -8340,6 +8546,7 @@ Partial Class MainForm
         OptionSingleReplace146.enabledValue = "YESSTATUES["
         FileListManager190.fileNames = CType(resources.GetObject("FileListManager190.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace146.fileManager = FileListManager190
+        OptionManager190.checkAllOnLoad = false
         OptionManager190.loadFromDInit = false
         OptionManager190.loadFromInit = false
         OptionManager190.loadFromWorldGen = false
@@ -8373,6 +8580,7 @@ Partial Class MainForm
         OptionSingleReplace147.enabledValue = "YESSCHOOLWIZARD["
         FileListManager191.fileNames = CType(resources.GetObject("FileListManager191.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace147.fileManager = FileListManager191
+        OptionManager191.checkAllOnLoad = false
         OptionManager191.loadFromDInit = false
         OptionManager191.loadFromInit = false
         OptionManager191.loadFromWorldGen = false
@@ -8407,6 +8615,7 @@ Partial Class MainForm
         OptionSingleReplace148.enabledValue = "YESELEMENTALMAGIC["
         FileListManager192.fileNames = CType(resources.GetObject("FileListManager192.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace148.fileManager = FileListManager192
+        OptionManager192.checkAllOnLoad = false
         OptionManager192.loadFromDInit = false
         OptionManager192.loadFromInit = false
         OptionManager192.loadFromWorldGen = false
@@ -8441,6 +8650,7 @@ Partial Class MainForm
         OptionSingleReplace149.enabledValue = "YESWHITEMAGIC["
         FileListManager193.fileNames = CType(resources.GetObject("FileListManager193.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace149.fileManager = FileListManager193
+        OptionManager193.checkAllOnLoad = false
         OptionManager193.loadFromDInit = false
         OptionManager193.loadFromInit = false
         OptionManager193.loadFromWorldGen = false
@@ -8474,6 +8684,7 @@ Partial Class MainForm
         OptionSingleReplace150.enabledValue = "YESBLACKMAGIC["
         FileListManager194.fileNames = CType(resources.GetObject("FileListManager194.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace150.fileManager = FileListManager194
+        OptionManager194.checkAllOnLoad = false
         OptionManager194.loadFromDInit = false
         OptionManager194.loadFromInit = false
         OptionManager194.loadFromWorldGen = false
@@ -8508,6 +8719,7 @@ Partial Class MainForm
         OptionSingleReplace151.enabledValue = "YESWARPSTONELAB["
         FileListManager195.fileNames = CType(resources.GetObject("FileListManager195.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace151.fileManager = FileListManager195
+        OptionManager195.checkAllOnLoad = false
         OptionManager195.loadFromDInit = false
         OptionManager195.loadFromInit = false
         OptionManager195.loadFromWorldGen = false
@@ -8541,6 +8753,7 @@ Partial Class MainForm
         OptionSingleReplace152.enabledValue = "YESGOLEM["
         FileListManager196.fileNames = CType(resources.GetObject("FileListManager196.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace152.fileManager = FileListManager196
+        OptionManager196.checkAllOnLoad = false
         OptionManager196.loadFromDInit = false
         OptionManager196.loadFromInit = false
         OptionManager196.loadFromWorldGen = false
@@ -8574,6 +8787,7 @@ Partial Class MainForm
         OptionSingleReplace153.enabledValue = "YESGREATMAGMAFORGE["
         FileListManager197.fileNames = CType(resources.GetObject("FileListManager197.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace153.fileManager = FileListManager197
+        OptionManager197.checkAllOnLoad = false
         OptionManager197.loadFromDInit = false
         OptionManager197.loadFromInit = false
         OptionManager197.loadFromWorldGen = false
@@ -8607,6 +8821,7 @@ Partial Class MainForm
         OptionSingleReplace154.enabledValue = "YESCLAYOVEN["
         FileListManager198.fileNames = CType(resources.GetObject("FileListManager198.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace154.fileManager = FileListManager198
+        OptionManager198.checkAllOnLoad = false
         OptionManager198.loadFromDInit = false
         OptionManager198.loadFromInit = false
         OptionManager198.loadFromWorldGen = false
@@ -8641,6 +8856,7 @@ Partial Class MainForm
         OptionSingleReplace155.enabledValue = "YESCRAFTSMAN["
         FileListManager199.fileNames = CType(resources.GetObject("FileListManager199.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace155.fileManager = FileListManager199
+        OptionManager199.checkAllOnLoad = false
         OptionManager199.loadFromDInit = false
         OptionManager199.loadFromInit = false
         OptionManager199.loadFromWorldGen = false
@@ -8674,6 +8890,7 @@ Partial Class MainForm
         OptionSingleReplace156.enabledValue = "YESMILLING["
         FileListManager200.fileNames = CType(resources.GetObject("FileListManager200.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace156.fileManager = FileListManager200
+        OptionManager200.checkAllOnLoad = false
         OptionManager200.loadFromDInit = false
         OptionManager200.loadFromInit = false
         OptionManager200.loadFromWorldGen = false
@@ -8708,6 +8925,7 @@ Partial Class MainForm
         OptionSingleReplace157.enabledValue = "YESMILLSTONE["
         FileListManager201.fileNames = CType(resources.GetObject("FileListManager201.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace157.fileManager = FileListManager201
+        OptionManager201.checkAllOnLoad = false
         OptionManager201.loadFromDInit = false
         OptionManager201.loadFromInit = false
         OptionManager201.loadFromWorldGen = false
@@ -8741,6 +8959,7 @@ Partial Class MainForm
         OptionSingleReplace158.enabledValue = "YESSTILL["
         FileListManager202.fileNames = CType(resources.GetObject("FileListManager202.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace158.fileManager = FileListManager202
+        OptionManager202.checkAllOnLoad = false
         OptionManager202.loadFromDInit = false
         OptionManager202.loadFromInit = false
         OptionManager202.loadFromWorldGen = false
@@ -8774,6 +8993,7 @@ Partial Class MainForm
         OptionSingleReplace159.enabledValue = "YESKITCHEN["
         FileListManager203.fileNames = CType(resources.GetObject("FileListManager203.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace159.fileManager = FileListManager203
+        OptionManager203.checkAllOnLoad = false
         OptionManager203.loadFromDInit = false
         OptionManager203.loadFromInit = false
         OptionManager203.loadFromWorldGen = false
@@ -8807,6 +9027,7 @@ Partial Class MainForm
         OptionSingleReplace160.enabledValue = "YESTANNER["
         FileListManager204.fileNames = CType(resources.GetObject("FileListManager204.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace160.fileManager = FileListManager204
+        OptionManager204.checkAllOnLoad = false
         OptionManager204.loadFromDInit = false
         OptionManager204.loadFromInit = false
         OptionManager204.loadFromWorldGen = false
@@ -8840,6 +9061,7 @@ Partial Class MainForm
         OptionSingleReplace161.enabledValue = "YESSCREWPRESS["
         FileListManager205.fileNames = CType(resources.GetObject("FileListManager205.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace161.fileManager = FileListManager205
+        OptionManager205.checkAllOnLoad = false
         OptionManager205.loadFromDInit = false
         OptionManager205.loadFromInit = false
         OptionManager205.loadFromWorldGen = false
@@ -8873,6 +9095,7 @@ Partial Class MainForm
         OptionSingleReplace162.enabledValue = "YESSOAP["
         FileListManager206.fileNames = CType(resources.GetObject("FileListManager206.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace162.fileManager = FileListManager206
+        OptionManager206.checkAllOnLoad = false
         OptionManager206.loadFromDInit = false
         OptionManager206.loadFromInit = false
         OptionManager206.loadFromWorldGen = false
@@ -8907,6 +9130,7 @@ Partial Class MainForm
         OptionSingleReplace163.enabledValue = "[AQUIFER]"
         FileListManager207.fileNames = CType(resources.GetObject("FileListManager207.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace163.fileManager = FileListManager207
+        OptionManager207.checkAllOnLoad = false
         OptionManager207.loadFromDInit = false
         OptionManager207.loadFromInit = false
         OptionManager207.loadFromWorldGen = false
@@ -8937,6 +9161,7 @@ Partial Class MainForm
         Me.optMultiHarderSmithing.Name = "optMultiHarderSmithing"
         FileListManager208.fileNames = CType(resources.GetObject("FileListManager208.fileNames"),System.Collections.Generic.List(Of String))
         OptionMulti4.fileManager = FileListManager208
+        OptionManager208.checkAllOnLoad = false
         OptionManager208.loadFromDInit = false
         OptionManager208.loadFromInit = false
         OptionManager208.loadFromWorldGen = false
@@ -8975,6 +9200,7 @@ Partial Class MainForm
         Me.optMultiHarderFarming.Name = "optMultiHarderFarming"
         FileListManager209.fileNames = CType(resources.GetObject("FileListManager209.fileNames"),System.Collections.Generic.List(Of String))
         OptionMulti5.fileManager = FileListManager209
+        OptionManager209.checkAllOnLoad = false
         OptionManager209.loadFromDInit = false
         OptionManager209.loadFromInit = false
         OptionManager209.loadFromWorldGen = false
@@ -9016,6 +9242,7 @@ Partial Class MainForm
         OptionSingleReplace164.enabledValue = "YESWARP["
         FileListManager210.fileNames = CType(resources.GetObject("FileListManager210.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace164.fileManager = FileListManager210
+        OptionManager210.checkAllOnLoad = false
         OptionManager210.loadFromDInit = false
         OptionManager210.loadFromInit = false
         OptionManager210.loadFromWorldGen = false
@@ -9049,6 +9276,7 @@ Partial Class MainForm
         OptionSingleReplace165.enabledValue = "YESLEARNING["
         FileListManager211.fileNames = CType(resources.GetObject("FileListManager211.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace165.fileManager = FileListManager211
+        OptionManager211.checkAllOnLoad = false
         OptionManager211.loadFromDInit = false
         OptionManager211.loadFromInit = false
         OptionManager211.loadFromWorldGen = false
@@ -9082,6 +9310,7 @@ Partial Class MainForm
         OptionSingleReplace166.enabledValue = "YESBODYGUARD["
         FileListManager212.fileNames = CType(resources.GetObject("FileListManager212.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace166.fileManager = FileListManager212
+        OptionManager212.checkAllOnLoad = false
         OptionManager212.loadFromDInit = false
         OptionManager212.loadFromInit = false
         OptionManager212.loadFromWorldGen = false
@@ -9115,6 +9344,7 @@ Partial Class MainForm
         OptionSingleReplace167.enabledValue = "YESSECRET["
         FileListManager213.fileNames = CType(resources.GetObject("FileListManager213.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace167.fileManager = FileListManager213
+        OptionManager213.checkAllOnLoad = false
         OptionManager213.loadFromDInit = false
         OptionManager213.loadFromInit = false
         OptionManager213.loadFromWorldGen = false
@@ -9149,6 +9379,7 @@ Partial Class MainForm
         OptionSingleReplace168.enabledValue = "YESNEWDISEASE["
         FileListManager214.fileNames = CType(resources.GetObject("FileListManager214.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace168.fileManager = FileListManager214
+        OptionManager214.checkAllOnLoad = false
         OptionManager214.loadFromDInit = false
         OptionManager214.loadFromInit = false
         OptionManager214.loadFromWorldGen = false
@@ -9182,6 +9413,7 @@ Partial Class MainForm
         Me.optMultiCavernFlavor.Name = "optMultiCavernFlavor"
         FileListManager215.fileNames = CType(resources.GetObject("FileListManager215.fileNames"),System.Collections.Generic.List(Of String))
         OptionMulti6.fileManager = FileListManager215
+        OptionManager215.checkAllOnLoad = false
         OptionManager215.loadFromDInit = false
         OptionManager215.loadFromInit = false
         OptionManager215.loadFromWorldGen = false
@@ -9223,6 +9455,7 @@ Partial Class MainForm
         OptionSingleReplace169.enabledValue = "YESWEATHER["
         FileListManager216.fileNames = CType(resources.GetObject("FileListManager216.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace169.fileManager = FileListManager216
+        OptionManager216.checkAllOnLoad = false
         OptionManager216.loadFromDInit = false
         OptionManager216.loadFromInit = false
         OptionManager216.loadFromWorldGen = false
@@ -9256,6 +9489,7 @@ Partial Class MainForm
         OptionSingleReplace170.enabledValue = "YESREGIONALEFFECT["
         FileListManager217.fileNames = CType(resources.GetObject("FileListManager217.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace170.fileManager = FileListManager217
+        OptionManager217.checkAllOnLoad = false
         OptionManager217.loadFromDInit = false
         OptionManager217.loadFromInit = false
         OptionManager217.loadFromWorldGen = false
@@ -9290,6 +9524,7 @@ Partial Class MainForm
         OptionSingleReplace171.enabledValue = "YESDUST["
         FileListManager218.fileNames = CType(resources.GetObject("FileListManager218.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace171.fileManager = FileListManager218
+        OptionManager218.checkAllOnLoad = false
         OptionManager218.loadFromDInit = false
         OptionManager218.loadFromInit = false
         OptionManager218.loadFromWorldGen = false
@@ -9324,6 +9559,7 @@ Partial Class MainForm
         OptionSingleReplace172.enabledValue = "YESREL["
         FileListManager219.fileNames = CType(resources.GetObject("FileListManager219.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace172.fileManager = FileListManager219
+        OptionManager219.checkAllOnLoad = false
         OptionManager219.loadFromDInit = false
         OptionManager219.loadFromInit = false
         OptionManager219.loadFromWorldGen = false
@@ -9359,6 +9595,7 @@ Partial Class MainForm
         OptionSingleReplace173.enabledValue = "YESBATTLECRY["
         FileListManager220.fileNames = CType(resources.GetObject("FileListManager220.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace173.fileManager = FileListManager220
+        OptionManager220.checkAllOnLoad = false
         OptionManager220.loadFromDInit = false
         OptionManager220.loadFromInit = false
         OptionManager220.loadFromWorldGen = false
@@ -9393,6 +9630,7 @@ Partial Class MainForm
         OptionSingleReplace174.enabledValue = "YESDIPLOMAT["
         FileListManager221.fileNames = CType(resources.GetObject("FileListManager221.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace174.fileManager = FileListManager221
+        OptionManager221.checkAllOnLoad = false
         OptionManager221.loadFromDInit = false
         OptionManager221.loadFromInit = false
         OptionManager221.loadFromWorldGen = false
@@ -9427,6 +9665,7 @@ Partial Class MainForm
         OptionSingleReplace175.enabledValue = "YESENGLISH[TRANSLATION:ENGLISH]"
         FileListManager222.fileNames = CType(resources.GetObject("FileListManager222.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace175.fileManager = FileListManager222
+        OptionManager222.checkAllOnLoad = false
         OptionManager222.loadFromDInit = false
         OptionManager222.loadFromInit = false
         OptionManager222.loadFromWorldGen = false
@@ -9460,6 +9699,7 @@ Partial Class MainForm
         OptionSingleReplace176.enabledValue = "YESDIMENSION["
         FileListManager223.fileNames = CType(resources.GetObject("FileListManager223.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace176.fileManager = FileListManager223
+        OptionManager223.checkAllOnLoad = false
         OptionManager223.loadFromDInit = false
         OptionManager223.loadFromInit = false
         OptionManager223.loadFromWorldGen = false
@@ -9495,6 +9735,7 @@ Partial Class MainForm
         OptionSingleReplace177.enabledValue = "YESMOREATTACKS["
         FileListManager224.fileNames = CType(resources.GetObject("FileListManager224.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace177.fileManager = FileListManager224
+        OptionManager224.checkAllOnLoad = false
         OptionManager224.loadFromDInit = false
         OptionManager224.loadFromInit = false
         OptionManager224.loadFromWorldGen = false
@@ -9530,6 +9771,7 @@ Partial Class MainForm
         OptionSingleReplace178.enabledValue = "YESFF_TREES["
         FileListManager225.fileNames = CType(resources.GetObject("FileListManager225.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace178.fileManager = FileListManager225
+        OptionManager225.checkAllOnLoad = false
         OptionManager225.loadFromDInit = false
         OptionManager225.loadFromInit = false
         OptionManager225.loadFromWorldGen = false
@@ -9563,6 +9805,7 @@ Partial Class MainForm
         OptionSingleReplace179.enabledValue = "YESFF_PLANTS["
         FileListManager226.fileNames = CType(resources.GetObject("FileListManager226.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace179.fileManager = FileListManager226
+        OptionManager226.checkAllOnLoad = false
         OptionManager226.loadFromDInit = false
         OptionManager226.loadFromInit = false
         OptionManager226.loadFromWorldGen = false
@@ -9596,6 +9839,7 @@ Partial Class MainForm
         OptionSingleReplace180.enabledValue = "YESFOOD["
         FileListManager227.fileNames = CType(resources.GetObject("FileListManager227.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace180.fileManager = FileListManager227
+        OptionManager227.checkAllOnLoad = false
         OptionManager227.loadFromDInit = false
         OptionManager227.loadFromInit = false
         OptionManager227.loadFromWorldGen = false
@@ -9629,6 +9873,7 @@ Partial Class MainForm
         OptionSingleReplace181.enabledValue = "YESFEARTHENIGHT["
         FileListManager228.fileNames = CType(resources.GetObject("FileListManager228.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace181.fileManager = FileListManager228
+        OptionManager228.checkAllOnLoad = false
         OptionManager228.loadFromDInit = false
         OptionManager228.loadFromInit = false
         OptionManager228.loadFromWorldGen = false
@@ -9662,6 +9907,7 @@ Partial Class MainForm
         OptionSingleReplace182.enabledValue = "rendermax light"
         FileListManager229.fileNames = CType(resources.GetObject("FileListManager229.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace182.fileManager = FileListManager229
+        OptionManager229.checkAllOnLoad = false
         OptionManager229.loadFromDInit = false
         OptionManager229.loadFromInit = false
         OptionManager229.loadFromWorldGen = false
@@ -9690,6 +9936,7 @@ Partial Class MainForm
         Me.optNumMineralScarcity.Name = "optNumMineralScarcity"
         FileListManager230.fileNames = CType(resources.GetObject("FileListManager230.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle38.fileManager = FileListManager230
+        OptionManager230.checkAllOnLoad = false
         OptionManager230.loadFromDInit = false
         OptionManager230.loadFromInit = false
         OptionManager230.loadFromWorldGen = true
@@ -9716,6 +9963,7 @@ Partial Class MainForm
         Me.optNumCivNumber.Name = "optNumCivNumber"
         FileListManager231.fileNames = CType(resources.GetObject("FileListManager231.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle39.fileManager = FileListManager231
+        OptionManager231.checkAllOnLoad = false
         OptionManager231.loadFromDInit = false
         OptionManager231.loadFromInit = false
         OptionManager231.loadFromWorldGen = true
@@ -9742,6 +9990,7 @@ Partial Class MainForm
         Me.optNumEmbarkPoints.Name = "optNumEmbarkPoints"
         FileListManager232.fileNames = CType(resources.GetObject("FileListManager232.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle40.fileManager = FileListManager232
+        OptionManager232.checkAllOnLoad = false
         OptionManager232.loadFromDInit = false
         OptionManager232.loadFromInit = false
         OptionManager232.loadFromWorldGen = true
@@ -9769,6 +10018,7 @@ Partial Class MainForm
         Me.optNumEndYear.Name = "optNumEndYear"
         FileListManager233.fileNames = CType(resources.GetObject("FileListManager233.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle41.fileManager = FileListManager233
+        OptionManager233.checkAllOnLoad = false
         OptionManager233.loadFromDInit = false
         OptionManager233.loadFromInit = false
         OptionManager233.loadFromWorldGen = true
@@ -9796,6 +10046,7 @@ Partial Class MainForm
         Me.optNumPopSize.Name = "optNumPopSize"
         FileListManager234.fileNames = CType(resources.GetObject("FileListManager234.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle42.fileManager = FileListManager234
+        OptionManager234.checkAllOnLoad = false
         OptionManager234.loadFromDInit = false
         OptionManager234.loadFromInit = false
         OptionManager234.loadFromWorldGen = true
@@ -9824,6 +10075,7 @@ Partial Class MainForm
         Me.optNumCaveSizeMin.Name = "optNumCaveSizeMin"
         FileListManager235.fileNames = CType(resources.GetObject("FileListManager235.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle43.fileManager = FileListManager235
+        OptionManager235.checkAllOnLoad = false
         OptionManager235.loadFromDInit = false
         OptionManager235.loadFromInit = false
         OptionManager235.loadFromWorldGen = true
@@ -9851,6 +10103,7 @@ Partial Class MainForm
         Me.optNumCaveSizeMax.Name = "optNumCaveSizeMax"
         FileListManager236.fileNames = CType(resources.GetObject("FileListManager236.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle44.fileManager = FileListManager236
+        OptionManager236.checkAllOnLoad = false
         OptionManager236.loadFromDInit = false
         OptionManager236.loadFromInit = false
         OptionManager236.loadFromWorldGen = true
@@ -9877,6 +10130,7 @@ Partial Class MainForm
         Me.optNumMountainCaves.Name = "optNumMountainCaves"
         FileListManager237.fileNames = CType(resources.GetObject("FileListManager237.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle45.fileManager = FileListManager237
+        OptionManager237.checkAllOnLoad = false
         OptionManager237.loadFromDInit = false
         OptionManager237.loadFromInit = false
         OptionManager237.loadFromWorldGen = true
@@ -9902,6 +10156,7 @@ Partial Class MainForm
         Me.optNumOtherCaves.Name = "optNumOtherCaves"
         FileListManager238.fileNames = CType(resources.GetObject("FileListManager238.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle46.fileManager = FileListManager238
+        OptionManager238.checkAllOnLoad = false
         OptionManager238.loadFromDInit = false
         OptionManager238.loadFromInit = false
         OptionManager238.loadFromWorldGen = true
@@ -9931,6 +10186,7 @@ Partial Class MainForm
         OptionSingleReplace183.enabledValue = "1"
         FileListManager239.fileNames = CType(resources.GetObject("FileListManager239.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace183.fileManager = FileListManager239
+        OptionManager239.checkAllOnLoad = false
         OptionManager239.loadFromDInit = false
         OptionManager239.loadFromInit = false
         OptionManager239.loadFromWorldGen = true
@@ -9957,6 +10213,7 @@ Partial Class MainForm
         Me.optNumCaverns.Name = "optNumCaverns"
         FileListManager240.fileNames = CType(resources.GetObject("FileListManager240.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle47.fileManager = FileListManager240
+        OptionManager240.checkAllOnLoad = false
         OptionManager240.loadFromDInit = false
         OptionManager240.loadFromInit = false
         OptionManager240.loadFromWorldGen = true
@@ -9983,6 +10240,7 @@ Partial Class MainForm
         Me.optNumOpenMin.Name = "optNumOpenMin"
         FileListManager241.fileNames = CType(resources.GetObject("FileListManager241.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle48.fileManager = FileListManager241
+        OptionManager241.checkAllOnLoad = false
         OptionManager241.loadFromDInit = false
         OptionManager241.loadFromInit = false
         OptionManager241.loadFromWorldGen = true
@@ -10007,6 +10265,7 @@ Partial Class MainForm
         Me.optNumOpenMax.Name = "optNumOpenMax"
         FileListManager242.fileNames = CType(resources.GetObject("FileListManager242.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle49.fileManager = FileListManager242
+        OptionManager242.checkAllOnLoad = false
         OptionManager242.loadFromDInit = false
         OptionManager242.loadFromInit = false
         OptionManager242.loadFromWorldGen = true
@@ -10031,6 +10290,7 @@ Partial Class MainForm
         Me.optNumMazeMin.Name = "optNumMazeMin"
         FileListManager243.fileNames = CType(resources.GetObject("FileListManager243.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle50.fileManager = FileListManager243
+        OptionManager243.checkAllOnLoad = false
         OptionManager243.loadFromDInit = false
         OptionManager243.loadFromInit = false
         OptionManager243.loadFromWorldGen = true
@@ -10055,6 +10315,7 @@ Partial Class MainForm
         Me.optNumMazeMax.Name = "optNumMazeMax"
         FileListManager244.fileNames = CType(resources.GetObject("FileListManager244.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle51.fileManager = FileListManager244
+        OptionManager244.checkAllOnLoad = false
         OptionManager244.loadFromDInit = false
         OptionManager244.loadFromInit = false
         OptionManager244.loadFromWorldGen = true
@@ -10079,6 +10340,7 @@ Partial Class MainForm
         Me.optNumWaterMin.Name = "optNumWaterMin"
         FileListManager245.fileNames = CType(resources.GetObject("FileListManager245.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle52.fileManager = FileListManager245
+        OptionManager245.checkAllOnLoad = false
         OptionManager245.loadFromDInit = false
         OptionManager245.loadFromInit = false
         OptionManager245.loadFromWorldGen = true
@@ -10103,6 +10365,7 @@ Partial Class MainForm
         Me.optNumWaterMax.Name = "optNumWaterMax"
         FileListManager246.fileNames = CType(resources.GetObject("FileListManager246.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle53.fileManager = FileListManager246
+        OptionManager246.checkAllOnLoad = false
         OptionManager246.loadFromDInit = false
         OptionManager246.loadFromInit = false
         OptionManager246.loadFromWorldGen = true
@@ -10129,6 +10392,7 @@ Partial Class MainForm
         Me.optNumAboveCav1.Name = "optNumAboveCav1"
         FileListManager247.fileNames = CType(resources.GetObject("FileListManager247.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle54.fileManager = FileListManager247
+        OptionManager247.checkAllOnLoad = false
         OptionManager247.loadFromDInit = false
         OptionManager247.loadFromInit = false
         OptionManager247.loadFromWorldGen = true
@@ -10156,6 +10420,7 @@ Partial Class MainForm
         Me.optNumAboveCav2.Name = "optNumAboveCav2"
         FileListManager248.fileNames = CType(resources.GetObject("FileListManager248.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle55.fileManager = FileListManager248
+        OptionManager248.checkAllOnLoad = false
         OptionManager248.loadFromDInit = false
         OptionManager248.loadFromInit = false
         OptionManager248.loadFromWorldGen = true
@@ -10184,6 +10449,7 @@ Partial Class MainForm
         Me.optNumAboveCav3.Name = "optNumAboveCav3"
         FileListManager249.fileNames = CType(resources.GetObject("FileListManager249.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle56.fileManager = FileListManager249
+        OptionManager249.checkAllOnLoad = false
         OptionManager249.loadFromDInit = false
         OptionManager249.loadFromInit = false
         OptionManager249.loadFromWorldGen = true
@@ -10212,6 +10478,7 @@ Partial Class MainForm
         Me.optNumAboveMagma.Name = "optNumAboveMagma"
         FileListManager250.fileNames = CType(resources.GetObject("FileListManager250.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle57.fileManager = FileListManager250
+        OptionManager250.checkAllOnLoad = false
         OptionManager250.loadFromDInit = false
         OptionManager250.loadFromInit = false
         OptionManager250.loadFromWorldGen = true
@@ -10240,6 +10507,7 @@ Partial Class MainForm
         Me.optNumAboveHFS.Name = "optNumAboveHFS"
         FileListManager251.fileNames = CType(resources.GetObject("FileListManager251.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle58.fileManager = FileListManager251
+        OptionManager251.checkAllOnLoad = false
         OptionManager251.loadFromDInit = false
         OptionManager251.loadFromInit = false
         OptionManager251.loadFromWorldGen = true
@@ -10271,6 +10539,7 @@ Partial Class MainForm
         OptionSingleReplace184.enabledValue = "1"
         FileListManager252.fileNames = CType(resources.GetObject("FileListManager252.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace184.fileManager = FileListManager252
+        OptionManager252.checkAllOnLoad = false
         OptionManager252.loadFromDInit = false
         OptionManager252.loadFromInit = false
         OptionManager252.loadFromWorldGen = true
@@ -10302,6 +10571,7 @@ Partial Class MainForm
         OptionSingleReplace185.enabledValue = "1"
         FileListManager253.fileNames = CType(resources.GetObject("FileListManager253.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace185.fileManager = FileListManager253
+        OptionManager253.checkAllOnLoad = false
         OptionManager253.loadFromDInit = false
         OptionManager253.loadFromInit = false
         OptionManager253.loadFromWorldGen = true
@@ -10326,6 +10596,7 @@ Partial Class MainForm
         Me.optMaskGoodAreas.niceFormat = "###:###:### (0-500)"
         FileListManager254.fileNames = CType(resources.GetObject("FileListManager254.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle59.fileManager = FileListManager254
+        OptionManager254.checkAllOnLoad = false
         OptionManager254.loadFromDInit = false
         OptionManager254.loadFromInit = false
         OptionManager254.loadFromWorldGen = true
@@ -10350,6 +10621,7 @@ Partial Class MainForm
         Me.optMaskEvilAreas.niceFormat = "###:###:### (0-500)"
         FileListManager255.fileNames = CType(resources.GetObject("FileListManager255.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle60.fileManager = FileListManager255
+        OptionManager255.checkAllOnLoad = false
         OptionManager255.loadFromDInit = false
         OptionManager255.loadFromInit = false
         OptionManager255.loadFromWorldGen = true
@@ -10384,6 +10656,7 @@ Partial Class MainForm
         OptionList5.itemList.Add(ComboItem33)
         OptionList5.itemList.Add(ComboItem34)
         OptionList5.itemList.Add(ComboItem35)
+        OptionManager256.checkAllOnLoad = false
         OptionManager256.loadFromDInit = true
         OptionManager256.loadFromInit = false
         OptionManager256.loadFromWorldGen = false
@@ -10425,6 +10698,7 @@ Partial Class MainForm
         Me.optMultiRazing.Name = "optMultiRazing"
         FileListManager257.fileNames = CType(resources.GetObject("FileListManager257.fileNames"),System.Collections.Generic.List(Of String))
         OptionMulti7.fileManager = FileListManager257
+        OptionManager257.checkAllOnLoad = false
         OptionManager257.loadFromDInit = false
         OptionManager257.loadFromInit = false
         OptionManager257.loadFromWorldGen = false
@@ -10468,6 +10742,7 @@ Partial Class MainForm
         Me.optNumMacro.Name = "optNumMacro"
         FileListManager258.fileNames = CType(resources.GetObject("FileListManager258.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle61.fileManager = FileListManager258
+        OptionManager258.checkAllOnLoad = false
         OptionManager258.loadFromDInit = false
         OptionManager258.loadFromInit = true
         OptionManager258.loadFromWorldGen = false
@@ -10495,6 +10770,7 @@ Partial Class MainForm
         Me.optMultiDigging.Name = "optMultiDigging"
         FileListManager259.fileNames = CType(resources.GetObject("FileListManager259.fileNames"),System.Collections.Generic.List(Of String))
         OptionMulti8.fileManager = FileListManager259
+        OptionManager259.checkAllOnLoad = false
         OptionManager259.loadFromDInit = false
         OptionManager259.loadFromInit = false
         OptionManager259.loadFromWorldGen = false
@@ -10526,6 +10802,7 @@ Partial Class MainForm
         Me.optNumPatternEmbarkPoints.Name = "optNumPatternEmbarkPoints"
         FileListManager260.fileNames = CType(resources.GetObject("FileListManager260.fileNames"),System.Collections.Generic.List(Of String))
         OptionPattern1.fileManager = FileListManager260
+        OptionManager260.checkAllOnLoad = false
         OptionManager260.loadFromDInit = false
         OptionManager260.loadFromInit = false
         OptionManager260.loadFromWorldGen = false
@@ -10550,6 +10827,7 @@ Partial Class MainForm
         Me.optNumPatternEmbarkGroupSize.Name = "optNumPatternEmbarkGroupSize"
         FileListManager261.fileNames = CType(resources.GetObject("FileListManager261.fileNames"),System.Collections.Generic.List(Of String))
         OptionPattern2.fileManager = FileListManager261
+        OptionManager261.checkAllOnLoad = false
         OptionManager261.loadFromDInit = false
         OptionManager261.loadFromInit = false
         OptionManager261.loadFromWorldGen = false
@@ -11107,6 +11385,7 @@ Partial Class MainForm
         OptionSingleReplace186.enabledValue = "YESFOOCCUBUS["
         FileListManager262.fileNames = CType(resources.GetObject("FileListManager262.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace186.fileManager = FileListManager262
+        OptionManager262.checkAllOnLoad = false
         OptionManager262.loadFromDInit = false
         OptionManager262.loadFromInit = false
         OptionManager262.loadFromWorldGen = false
@@ -11160,6 +11439,7 @@ Partial Class MainForm
         OptionSingleReplace187.enabledValue = "YESFF_ANIMALS["
         FileListManager263.fileNames = CType(resources.GetObject("FileListManager263.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingleReplace187.fileManager = FileListManager263
+        OptionManager263.checkAllOnLoad = false
         OptionManager263.loadFromDInit = false
         OptionManager263.loadFromInit = false
         OptionManager263.loadFromWorldGen = false
@@ -12131,6 +12411,7 @@ Partial Class MainForm
         OptionList6.itemList.Add(ComboItem36)
         OptionList6.itemList.Add(ComboItem37)
         OptionList6.itemList.Add(ComboItem38)
+        OptionManager264.checkAllOnLoad = false
         OptionManager264.loadFromDInit = true
         OptionManager264.loadFromInit = false
         OptionManager264.loadFromWorldGen = false
@@ -12510,6 +12791,7 @@ Partial Class MainForm
         Me.optNumVolume.Name = "optNumVolume"
         FileListManager265.fileNames = CType(resources.GetObject("FileListManager265.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle62.fileManager = FileListManager265
+        OptionManager265.checkAllOnLoad = false
         OptionManager265.loadFromDInit = false
         OptionManager265.loadFromInit = true
         OptionManager265.loadFromWorldGen = false
@@ -13526,6 +13808,7 @@ Partial Class MainForm
         Me.optNumHFSLevels.Name = "optNumHFSLevels"
         FileListManager266.fileNames = CType(resources.GetObject("FileListManager266.fileNames"),System.Collections.Generic.List(Of String))
         OptionSingle63.fileManager = FileListManager266
+        OptionManager266.checkAllOnLoad = false
         OptionManager266.loadFromDInit = false
         OptionManager266.loadFromInit = false
         OptionManager266.loadFromWorldGen = true
@@ -13600,6 +13883,7 @@ Partial Class MainForm
         Me.tabCivs.BackColor = System.Drawing.SystemColors.ControlDark
         Me.tabCivs.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.fb_1024x576c
         Me.tabCivs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tabCivs.Controls.Add(Me.OptionComboBoxMultiToken1)
         Me.tabCivs.Controls.Add(Me.panCivTable)
         Me.tabCivs.Font = New System.Drawing.Font("Segoe UI", 9!)
         Me.tabCivs.IsClosable = false
@@ -13608,6 +13892,71 @@ Partial Class MainForm
         Me.tabCivs.Size = New System.Drawing.Size(1024, 576)
         Me.tabCivs.TabIndex = 1
         Me.tabCivs.Text = "Civilizations"
+        '
+        'OptionComboBoxMultiToken1
+        '
+        Me.OptionComboBoxMultiToken1.Enabled = False
+        Me.OptionComboBoxMultiToken1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.OptionComboBoxMultiToken1.FormattingEnabled = True
+        Me.OptionComboBoxMultiToken1.Location = New System.Drawing.Point(894, 89)
+        Me.OptionComboBoxMultiToken1.Name = "OptionComboBoxMultiToken1"
+        FileListManager267.fileNames = CType(resources.GetObject("FileListManager267.fileNames"), System.Collections.Generic.List(Of String))
+        OptionListMultiCombo1.fileManager = FileListManager267
+        ComboMultiTokenItem1.display = "Civilized"
+        RawToken21.optionOffValue = "DWARF_HOSTILE[BABYSNATCHER]"
+        RawToken21.optionOnValue = "DWARF_HOSTILE!BABYSNATCHER!"
+        RawToken21.tokenName = "BabySnatcher"
+        RawToken22.optionOffValue = "DWARF_THIEF[ITEM_THIEF]"
+        RawToken22.optionOnValue = "DWARF_THIEF!ITEM_THIEF!"
+        RawToken22.tokenName = "ItemThief"
+        ComboMultiTokenItem1.tokens.Add(RawToken21)
+        ComboMultiTokenItem1.tokens.Add(RawToken22)
+        ComboMultiTokenItem1.value = "CIVILIZED"
+        ComboMultiTokenItem2.display = "Slavers"
+        RawToken23.optionOffValue = "DWARF_HOSTILE!BABYSNATCHER!"
+        RawToken23.optionOnValue = "DWARF_HOSTILE[BABYSNATCHER]"
+        RawToken23.tokenName = "BabySnatcher"
+        RawToken24.optionOffValue = "DWARF_THIEF[ITEM_THIEF]"
+        RawToken24.optionOnValue = "DWARF_THIEF!ITEM_THIEF!"
+        RawToken24.tokenName = ""
+        ComboMultiTokenItem2.tokens.Add(RawToken23)
+        ComboMultiTokenItem2.tokens.Add(RawToken24)
+        ComboMultiTokenItem2.value = "SLAVERS"
+        ComboMultiTokenItem3.display = "Wild"
+        RawToken25.optionOffValue = "DWARF_HOSTILE[BABYSNATCHER]"
+        RawToken25.optionOnValue = "DWARF_HOSTILE!BABYSNATCHER!"
+        RawToken25.tokenName = ""
+        RawToken26.optionOffValue = "DWARF_THIEF!ITEM_THIEF!"
+        RawToken26.optionOnValue = "DWARF_THIEF[ITEM_THIEF]"
+        RawToken26.tokenName = ""
+        ComboMultiTokenItem3.tokens.Add(RawToken25)
+        ComboMultiTokenItem3.tokens.Add(RawToken26)
+        ComboMultiTokenItem3.value = "WILD"
+        ComboMultiTokenItem4.display = "Evil"
+        RawToken27.optionOffValue = "DWARF_HOSTILE!BABYSNATCHER!"
+        RawToken27.optionOnValue = "DWARF_HOSTILE[BABYSNATCHER]"
+        RawToken27.tokenName = ""
+        RawToken28.optionOffValue = "DWARF_THIEF!ITEM_THIEF!"
+        RawToken28.optionOnValue = "DWARF_THIEF[ITEM_THIEF]"
+        RawToken28.tokenName = ""
+        ComboMultiTokenItem4.tokens.Add(RawToken27)
+        ComboMultiTokenItem4.tokens.Add(RawToken28)
+        ComboMultiTokenItem4.value = "EVIL"
+        OptionListMultiCombo1.itemList.Add(ComboMultiTokenItem1)
+        OptionListMultiCombo1.itemList.Add(ComboMultiTokenItem2)
+        OptionListMultiCombo1.itemList.Add(ComboMultiTokenItem3)
+        OptionListMultiCombo1.itemList.Add(ComboMultiTokenItem4)
+        OptionManager267.checkAllOnLoad = True
+        OptionManager267.loadFromDInit = False
+        OptionManager267.loadFromInit = False
+        OptionManager267.loadFromWorldGen = False
+        OptionListMultiCombo1.optionManager = OptionManager267
+        OptionSettingManager271.settingName = Nothing
+        OptionListMultiCombo1.settingManager = OptionSettingManager271
+        Me.OptionComboBoxMultiToken1.options = OptionListMultiCombo1
+        Me.OptionComboBoxMultiToken1.Size = New System.Drawing.Size(121, 23)
+        Me.OptionComboBoxMultiToken1.TabIndex = 19
+        Me.OptionComboBoxMultiToken1.Visible = False
         '
         'tabOtherCreatures
         '
@@ -14375,5 +14724,6 @@ End Sub
     Friend WithEvents optNumPatternEmbarkGroupSize As MasterworkDwarfFortress.optionNumericPattern
     Friend WithEvents rBtnDFMon As System.Windows.Forms.RibbonButton
     Friend WithEvents rBtnUtilDFMon As System.Windows.Forms.RibbonButton
+    Friend WithEvents OptionComboBoxMultiToken1 As MasterworkDwarfFortress.optionComboBoxMultiToken
 
 End Class

@@ -132,9 +132,11 @@
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="custom control backend\comboFileItem.vb" />
     <Compile Include="custom control backend\comboItem.vb" />
+    <Compile Include="custom control backend\comboMultiTokenItem.vb" />
     <Compile Include="custom control backend\fileListManager.vb" />
     <Compile Include="custom control backend\fileReplaceManager.vb" />
     <Compile Include="custom control backend\optionBasePattern.vb" />
+    <Compile Include="custom control backend\optionListMultiCombo.vb" />
     <Compile Include="custom control backend\optionPattern.vb" />
     <Compile Include="custom controls\mwCivLabel.Designer.vb">
       <DependentUpon>mwCivLabel.vb</DependentUpon>
@@ -189,6 +191,12 @@
       <DependentUpon>optionComboBoxMulti.vb</DependentUpon>
     </Compile>
     <Compile Include="custom controls\optionComboBoxMulti.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom controls\optionComboBoxMultiToken.Designer.vb">
+      <DependentUpon>optionComboBoxMultiToken.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\optionComboBoxMultiToken.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="custom controls\optionComboBoxToken.Designer.vb">

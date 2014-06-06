@@ -66,9 +66,9 @@ Public Class optionManager
         End Set
     End Property
 
-    <Browsable(False), _
-    EditorBrowsable(EditorBrowsableState.Advanced), _
-    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+
+    <DescriptionAttribute("Determines if all 'enabled' values are required to be checked when loading."), _
+    DisplayNameAttribute("Check All")> _
     Public Property checkAllOnLoad() As Boolean
         Get
             Return m_checkAllOnLoad
@@ -132,12 +132,17 @@ Public Class optionManager
                         retValue = "1"
                     End If
                 Else
-                    For Each t As rawToken In tokens
-                        If Not findTokensInFiles(String.Format("({0})", Regex.Escape(t.optionOnValue)), files.Where(AddressOf rawFilter).ToList) Then
-                            Return "0"
+                    Dim passCount As Integer = 0
+                    For Each t As rawToken In tokens                        
+                        If findTokensInFiles(String.Format("({0})", Regex.Escape(t.optionOnValue)), files.Where(AddressOf rawFilter).ToList) Then                            
+                            passCount += 1
                         End If
-                    Next
-                    retValue = "1"
+                    Next                    
+                    If passCount = tokens.Count Then
+                        Return "1"
+                    Else
+                        Return "0"
+                    End If
                 End If
             Else
                 'in this case we're looking for token value(s) within multiple files. 

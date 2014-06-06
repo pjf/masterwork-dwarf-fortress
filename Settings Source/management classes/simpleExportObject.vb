@@ -97,6 +97,15 @@ Public Class simpleExportObject
         End Get
     End Property
 
+    Public ReadOnly Property DropDownItemsWithTokens As comboMultiTokenItemCollection
+        Get
+            If m_con.GetType Is GetType(optionComboBoxMultiToken) Then
+                Return CType(m_con, optionComboBoxMultiToken).options.itemList
+            End If
+            Return Nothing
+        End Get
+    End Property
+
     Private extensionData_Value As ExtensionDataObject
     Public Property ExtensionData() As ExtensionDataObject Implements IExtensibleDataObject.ExtensionData
         Get
