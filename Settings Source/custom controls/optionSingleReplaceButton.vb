@@ -29,6 +29,7 @@ Public Class optionSingleReplaceButton
             Else
                 Me.Checked = yesNoToBoolean(m_opt.loadOption)
             End If
+            MyBase.OnCheckedChanged(Nothing)
         Catch ex As Exception
             Me.Checked = False
             Me.Image = My.Resources.exclamation_small

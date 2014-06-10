@@ -49,6 +49,9 @@ Imports Newtonsoft.Json
                 rBtnSaveProfile_Click(rBtnSaveProfile, Nothing)
             End If
         End If
+        If My.Settings.Properties("WORLDGEN") IsNot Nothing Then
+            My.Settings.WORLDGEN = rCheckWorldGen.Checked
+        End If
     End Sub
 
 
@@ -290,9 +293,7 @@ Imports Newtonsoft.Json
     Private Sub saveSettings(ByVal parentControl As Control, ByRef optionSettings As Dictionary(Of String, Object))
         If Not parentControl Is tabWorldGen Then
             For Each c As Control In parentControl.Controls
-                If Not c.Enabled Then
-                    Debug.WriteLine("skipping disabled control: " & c.Name)
-                Else
+                If controlIsValid(c) Then
                     Dim conOpt As iToken = TryCast(c, iToken)
                     If conOpt IsNot Nothing Then
                         Try
@@ -313,7 +314,7 @@ Imports Newtonsoft.Json
     Private Sub loadSettings(ByVal filePath As String)
         Try
             If IO.File.Exists(filePath) Then
-                Dim optionSettings As New Dictionary(Of String, Object)                
+                Dim optionSettings As New Dictionary(Of String, Object)
                 optionSettings = JsonConvert.DeserializeObject(Of Dictionary(Of String, Object))(fileWorking.readFile(filePath, False), globals.m_defaultSerializeOptions)
                 loadSettings(tabMain, optionSettings)
                 'load any other non-itoken controls
@@ -340,9 +341,7 @@ Imports Newtonsoft.Json
     Private Sub loadSettings(ByVal parentControl As Control, ByVal optionSettings As Dictionary(Of String, Object))
         If Not parentControl Is tabWorldGen Then
             For Each c As Control In parentControl.Controls
-                If Not c.Enabled Then
-                    Debug.WriteLine("skipping disabled control: " & c.Name)
-                Else
+                If controlIsValid(c) Then
                     Dim conOpt As iToken = TryCast(c, iToken)
                     If conOpt IsNot Nothing Then
                         Try
@@ -725,9 +724,7 @@ Imports Newtonsoft.Json
         If Not Debugger.IsAttached Then Exit Sub
 
         For Each c As Control In parentControl.Controls
-            If Not c.Enabled Then
-                Debug.WriteLine("skipping disabled control: " & c.Name)
-            Else
+            If controlIsValid(c) Then
                 Dim conOpt As iTest = TryCast(c, iTest)
                 If conOpt IsNot Nothing Then
                     Try
@@ -750,9 +747,7 @@ Imports Newtonsoft.Json
         If Not Debugger.IsAttached Then Exit Sub
 
         For Each c As Control In parentControl.Controls
-            If Not c.Enabled Then
-                Debug.WriteLine("skipping disabled control: " & c.Name)
-            Else
+            If controlIsValid(c) Then
                 Dim conOpt As iExportInfo = TryCast(c, iExportInfo)
                 If conOpt IsNot Nothing Then
                     Try
@@ -812,6 +807,9 @@ Imports Newtonsoft.Json
                 civName = civName.Replace(".txt", "")
                 civName = StrConv(civName, VbStrConv.ProperCase)
                 civName = civName.Replace(" ", "")
+
+                'add a handler to disable the row to the active button
+                AddHandler CType(Me.tableLayoutCivs.GetControlFromPosition(1, idxRow), optionSingleReplaceButton).CheckedChanged, AddressOf civActiveCheckedChanged
 
                 'add playable fortress mode option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlaybleFort, 0).Width
@@ -877,6 +875,17 @@ Imports Newtonsoft.Json
         Next
         Me.tableLayoutCivs.ResumeLayout()
         'Me.tableLayoutCivs.AutoScroll = True 'need this if we add any more civs to the table
+    End Sub
+
+    Private Sub civActiveCheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
+        Dim civActive As optionSingleReplaceButton = TryCast(sender, optionSingleReplaceButton)
+        If civActive IsNot Nothing Then
+            Dim pos As TableLayoutPanelCellPosition = Me.tableLayoutCivs.GetPositionFromControl(CType(sender, Control))
+            For colIdx As Integer = 2 To Me.tableLayoutCivs.ColumnCount - 1
+                Dim colCon As Control = Me.tableLayoutCivs.GetControlFromPosition(colIdx, pos.Row)
+                If colCon IsNot Nothing Then colCon.Enabled = civActive.Checked
+            Next
+        End If
     End Sub
 
     Private Sub formatCivTableControl(ByRef c As Control, ByVal w As Integer, ByVal h As Integer)

@@ -1,4 +1,5 @@
 ﻿Imports System.Text
+Imports System.Reflection
 
 Public Class utils
 
@@ -31,7 +32,9 @@ Public Class utils
             If loadSetting Then
                 Dim conOpt As iToken = TryCast(c, iToken)
                 If conOpt IsNot Nothing Then
-                    If c.Enabled Then conOpt.loadOption() 'only load options of enabled controls
+                    If controlIsValid(c) Then
+                        conOpt.loadOption() 'only load options of enabled controls
+                    End If
                 End If
             End If
 
@@ -40,6 +43,19 @@ Public Class utils
             End If
         Next
     End Sub
+
+    'hidden controls aren't loaded/saved/etc
+    Public Shared Function controlIsValid(ByVal c As Control) As Boolean        
+        If CBool(GetStateMethodInfo.Invoke(c, New Object() {2})) Then
+            Return True
+        Else
+            Console.WriteLine("skipping hidden control " & c.Name)
+            Return False
+        End If
+    End Function
+
+    'this is required to check the visibility of a control, since control.visible on anything but the current tab is considered false
+    Private Shared GetStateMethodInfo As MethodInfo = GetType(Control).GetMethod("GetState", BindingFlags.Instance Or BindingFlags.NonPublic)
 
     Public Shared Sub formatControl(ByVal c As Control)
         'format controls according to the currently applied ribbon theme's colors
