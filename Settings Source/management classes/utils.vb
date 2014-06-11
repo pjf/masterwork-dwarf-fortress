@@ -46,7 +46,7 @@ Public Class utils
 
     'hidden controls aren't loaded/saved/etc
     Public Shared Function controlIsValid(ByVal c As Control) As Boolean        
-        If CBool(GetStateMethodInfo.Invoke(c, New Object() {2})) Then
+        If c.HasChildren OrElse CBool(GetStateMethodInfo.Invoke(c, New Object() {2})) Then
             Return True
         Else
             Console.WriteLine("skipping hidden control " & c.Name)

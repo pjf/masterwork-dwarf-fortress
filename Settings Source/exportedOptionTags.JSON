@@ -24,7 +24,7 @@
     "Tags": [
       {
         "tokenName": "SET_LABOR_LISTS",
-        "optionOnValue": "",
+        "optionOnValue": "NO",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -185,7 +185,7 @@
     "Tags": [
       {
         "tokenName": "POPULATION_CAP",
-        "optionOnValue": "200",
+        "optionOnValue": "140",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -202,7 +202,7 @@
     "Tags": [
       {
         "tokenName": "BABY_CHILD_CAP",
-        "optionOnValue": "",
+        "optionOnValue": "100:1000",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -232,7 +232,7 @@
     "Tags": [
       {
         "tokenName": "AUTOSAVE",
-        "optionOnValue": "",
+        "optionOnValue": "NONE",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -250,7 +250,7 @@
     "Tags": [
       {
         "tokenName": "AUTOSAVE_PAUSE",
-        "optionOnValue": "",
+        "optionOnValue": "NO",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -286,7 +286,7 @@
     "Tags": [
       {
         "tokenName": "INITIAL_SAVE",
-        "optionOnValue": "",
+        "optionOnValue": "NO",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -375,7 +375,7 @@
     "Tags": [
       {
         "tokenName": "MACRO_MS",
-        "optionOnValue": "5",
+        "optionOnValue": "15",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -406,7 +406,7 @@
     "Tags": [
       {
         "tokenName": "WINDOWED",
-        "optionOnValue": "",
+        "optionOnValue": "PROMPT",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -449,7 +449,7 @@
     "Tags": [
       {
         "tokenName": "PRIORITY",
-        "optionOnValue": "",
+        "optionOnValue": "IDLE",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -467,7 +467,7 @@
     "Tags": [
       {
         "tokenName": "INTRO",
-        "optionOnValue": "",
+        "optionOnValue": "NO",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -475,7 +475,7 @@
   },
   {
     "Name": "optNumPatternEmbarkGroupSize",
-    "Tooltip": "0 - 999999  Determines the number of starting colonists when embarking.",
+    "Tooltip": "7 - 999999  Determines the number of starting colonists when embarking.",
     "Files": [
       "onLoad.init"
     ],
@@ -522,7 +522,7 @@
     "Tags": [
       {
         "tokenName": "EMBARK_RECTANGLE",
-        "optionOnValue": "",
+        "optionOnValue": "3:3",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -569,7 +569,7 @@
     "Tags": [
       {
         "tokenName": "PRINT_MODE",
-        "optionOnValue": "",
+        "optionOnValue": "2DSW",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -641,7 +641,7 @@
     "Tags": [
       {
         "tokenName": "SOUND",
-        "optionOnValue": "",
+        "optionOnValue": "NO",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -658,7 +658,7 @@
     "Tags": [
       {
         "tokenName": "VOLUME",
-        "optionOnValue": "255",
+        "optionOnValue": "225",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -693,7 +693,7 @@
     "Tags": [
       {
         "tokenName": "G_FPS_CAP",
-        "optionOnValue": "30",
+        "optionOnValue": "0",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -710,7 +710,7 @@
     "Tags": [
       {
         "tokenName": "FPS_CAP",
-        "optionOnValue": "150",
+        "optionOnValue": "120",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -2073,7 +2073,7 @@
     "Name": "optCbPatternCivSkillsWarlock",
     "Files": [
       "creature_masterwork.txt",
-      "creature_warlock_civ.txt"
+      "creature_warlock.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -2367,6 +2367,12 @@
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_SUCCUBUS\\b) Replace:${1}${value}${2}"
   },
   {
+    "Name": "optBtnPlayCivFortHuman",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
+  },
+  {
     "Name": "optBtnPlayCivAdvHuman",
     "Files": [
       "entity_human.txt"
@@ -2569,6 +2575,12 @@
       }
     ],
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_HUMAN\\b) Replace:${1}${value}${2}"
+  },
+  {
+    "Name": "optBtnPlayCivFortElf",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
   },
   {
     "Name": "optBtnPlayCivAdvElf",
@@ -2775,6 +2787,12 @@
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_ELF\\b) Replace:${1}${value}${2}"
   },
   {
+    "Name": "optBtnPlayCivFortDrow",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
+  },
+  {
     "Name": "optBtnPlayCivAdvDrow",
     "Files": [
       "entity_drow.txt"
@@ -2977,6 +2995,12 @@
       }
     ],
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_DROW\\b) Replace:${1}${value}${2}"
+  },
+  {
+    "Name": "optBtnPlayCivFortGoblin",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
   },
   {
     "Name": "optBtnPlayCivAdvGoblin",
@@ -3183,6 +3207,12 @@
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_GOBLIN\\b) Replace:${1}${value}${2}"
   },
   {
+    "Name": "optBtnPlayCivFortFrostGiant",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
+  },
+  {
     "Name": "optBtnPlayCivAdvFrostGiant",
     "Files": [
       "entity_frost_giant.txt"
@@ -3385,6 +3415,12 @@
       }
     ],
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_FROST\\b) Replace:${1}${value}${2}"
+  },
+  {
+    "Name": "optBtnPlayCivFortAutomaton",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
   },
   {
     "Name": "optBtnPlayCivAdvAutomaton",
@@ -3591,6 +3627,12 @@
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_AUTO\\b) Replace:${1}${value}${2}"
   },
   {
+    "Name": "optBtnPlayCivFortGremlin",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
+  },
+  {
     "Name": "optBtnPlayCivAdvGremlin",
     "Files": [
       "entity_gremlin.txt"
@@ -3793,6 +3835,12 @@
       }
     ],
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_GREMLIN\\b) Replace:${1}${value}${2}"
+  },
+  {
+    "Name": "optBtnPlayCivFortTroglodyte",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
   },
   {
     "Name": "optBtnPlayCivAdvTroglodyte",
@@ -3999,6 +4047,12 @@
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_TROG\\b) Replace:${1}${value}${2}"
   },
   {
+    "Name": "optBtnPlayCivFortAntmen",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
+  },
+  {
     "Name": "optBtnPlayCivAdvAntmen",
     "Files": [
       "entity_antmen.txt"
@@ -4201,6 +4255,12 @@
       }
     ],
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_ANTMEN\\b) Replace:${1}${value}${2}"
+  },
+  {
+    "Name": "optBtnPlayCivFortDwarfEvil",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
   },
   {
     "Name": "optBtnPlayCivAdvDwarfEvil",
@@ -4407,6 +4467,12 @@
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_EVILDWARF\\b) Replace:${1}${value}${2}"
   },
   {
+    "Name": "optBtnPlayCivFortHumanEvil",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
+  },
+  {
     "Name": "optBtnPlayCivAdvHumanEvil",
     "Files": [
       "entity_human_evil.txt"
@@ -4611,6 +4677,12 @@
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_EVILHUMAN\\b) Replace:${1}${value}${2}"
   },
   {
+    "Name": "optBtnPlayCivFortDrowEvil",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
+  },
+  {
     "Name": "optBtnPlayCivAdvDrowEvil",
     "Files": [
       "entity_drow_evil.txt"
@@ -4813,6 +4885,12 @@
       }
     ],
     "Pattern": "Find:(\\[NATURAL_SKILL:.*:)(?<value>\\d+)(\\]YESHARDERINVADER_EVILDROW\\b) Replace:${1}${value}${2}"
+  },
+  {
+    "Name": "optBtnPlayCivFortElfEvil",
+    "Files": [],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false
   },
   {
     "Name": "optBtnPlayCivAdvElfEvil",
@@ -5042,11 +5120,11 @@
     "Files": [
       "creature_bug_slug_new.txt",
       "creature_desert_new.txt",
-      "creature_fanciful_masterwork.txt",
+      "creature_fanciful.txt",
       "creature_ff.txt",
       "creature_monster_masterwork.txt",
       "creature_mountain_new.txt",
-      "creature_pet_armored.txt",
+      "creature_pet_masterwork.txt",
       "creature_riverlakepool_new.txt",
       "creature_small_mammal_new.txt",
       "creature_temperate_new.txt",
@@ -5857,7 +5935,8 @@
     "Text": "Chandler",
     "Tooltip": "Creates torches and candles for the rendermax lighting creation buildings.",
     "Files": [
-      "entity_default.txt"
+      "entity_default.txt",
+      "entity_fooccubus.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -6075,28 +6154,6 @@
     ]
   },
   {
-    "Name": "optBtnStorage",
-    "Text": "Trade Storehouse",
-    "Tooltip": "Allows the unpacking of crates from caravans.",
-    "Files": [
-      "entity_default.txt",
-      "entity_gnome.txt",
-      "reaction_gnome.txt",
-      "reaction_masterwork.txt",
-      "reaction_orcfort.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "YESSTORAGE[",
-        "optionOffValue": "!NOSTORAGE!",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
     "Name": "optBtnWoodsplitting",
     "Text": "Wood Block",
     "Tooltip": "Little brother of the sawmill, cuts wood into planks and can smooth some types of wood. Very basic, early workshop.",
@@ -6248,60 +6305,6 @@
     ]
   },
   {
-    "Name": "optBtnEmbassy",
-    "Text": "Embassy",
-    "Tooltip": "Invite diplomats or traders and challenge beasts and civilizations.",
-    "Files": [
-      "entity_default.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "YESEMBASSY[",
-        "optionOffValue": "!NOEMBASSY!",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
-    "Name": "optBtnExpedition",
-    "Text": "Expedition Outfitter",
-    "Tooltip": "Send expeditions, raiding parties, diplomats and bards throughout the world.",
-    "Files": [
-      "entity_default.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "YESEXPEDITION[",
-        "optionOffValue": "!NOEXPEDITION!",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
-    "Name": "optBtnPodium",
-    "Text": "Speaker's Podium",
-    "Tooltip": "Hold speeches to influence nearby dwarves and give them permanent mental attribute boosts.",
-    "Files": [
-      "entity_default.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "YESSPEAKERSPODIUM[",
-        "optionOffValue": "!NOSPEAKERSPODIUM!",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
     "Name": "optBtnResearch",
     "Text": "Research",
     "Tooltip": "Conduct research to unlock new buildings and furnaces.",
@@ -6418,6 +6421,24 @@
     ]
   },
   {
+    "Name": "optBtnEmbassy",
+    "Text": "Embassy",
+    "Tooltip": "Invite diplomats or traders and challenge beasts and civilizations.",
+    "Files": [
+      "entity_default.txt"
+    ],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false,
+    "Tags": [
+      {
+        "tokenName": "",
+        "optionOnValue": "YESEMBASSY[",
+        "optionOffValue": "!NOEMBASSY!",
+        "isMultiLine": false
+      }
+    ]
+  },
+  {
     "Name": "optBtnTavern",
     "Text": "Morul's Tavern",
     "Tooltip": "Play music with different instruments to boost your dwarves. Also allows basic gambling and tavern brawls.",
@@ -6431,6 +6452,28 @@
         "tokenName": "",
         "optionOnValue": "YESMUSIC[",
         "optionOffValue": "!NOMUSIC!",
+        "isMultiLine": false
+      }
+    ]
+  },
+  {
+    "Name": "optBtnStorage",
+    "Text": "Trade Storehouse",
+    "Tooltip": "Allows the unpacking of crates from caravans.",
+    "Files": [
+      "entity_default.txt",
+      "entity_gnome.txt",
+      "reaction_gnome.txt",
+      "reaction_masterwork.txt",
+      "reaction_orcfort.txt"
+    ],
+    "AffectsGraphicPacks": false,
+    "HasFileOverrides": false,
+    "Tags": [
+      {
+        "tokenName": "",
+        "optionOnValue": "YESSTORAGE[",
+        "optionOffValue": "!NOSTORAGE!",
         "isMultiLine": false
       }
     ]
@@ -6642,7 +6685,8 @@
     "Text": "Fireplace",
     "Tooltip": "Adds a way to make fire, light pipes and create light.",
     "Files": [
-      "entity_default.txt"
+      "entity_default.txt",
+      "entity_fooccubus.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -6690,25 +6734,6 @@
         "tokenName": "",
         "optionOnValue": "YESGEMOFLIGHT[",
         "optionOffValue": "!NOGEMOFLIGHT!",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
-    "Name": "optBtnAmmocaster",
-    "Text": "Ammo Caster",
-    "Tooltip": "Create several new types of ammo in this furnace.",
-    "Files": [
-      "building_furnaces_masterwork.txt",
-      "entity_default.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "YESAMMOCASTER[",
-        "optionOffValue": "!NOAMMOCASTER!",
         "isMultiLine": false
       }
     ]
@@ -7039,8 +7064,8 @@
   },
   {
     "Name": "optBtnElementalMagic",
-    "Text": "Elemental Altars",
-    "Tooltip": "4 new buildings: Fire, Water, Earth and Air based magic altars to train your mages and do much more.",
+    "Text": "Magical Altars",
+    "Tooltip": "6 new buildings: Evil, Good, Fire, Water, Earth and Air based magic altars to train your mages and do much more.",
     "Files": [
       "entity_default.txt"
     ],
@@ -7051,42 +7076,6 @@
         "tokenName": "",
         "optionOnValue": "YESELEMENTALMAGIC[",
         "optionOffValue": "!NOELEMENTALMAGIC!",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
-    "Name": "optBtnWhiteMagic",
-    "Text": "Good Altar",
-    "Tooltip": "White magic based on good biomes for 3 unique mages and resurrections.",
-    "Files": [
-      "entity_default.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "YESWHITEMAGIC[",
-        "optionOffValue": "!NOWHITEMAGIC!",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
-    "Name": "optBtnBlackMagic",
-    "Text": "Evil Altar",
-    "Tooltip": "Black magic based on evil biomes for 3 unique mages and raising the undead, vampires, demons and more.",
-    "Files": [
-      "entity_default.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "YESBLACKMAGIC[",
-        "optionOffValue": "!NOBLACKMAGIC!",
         "isMultiLine": false
       }
     ]
@@ -7204,7 +7193,6 @@
     "Text": "War Kennels",
     "Tooltip": "Allows to outfit a selection of pets with steel plating.",
     "Files": [
-      "creature_pet_armored.txt",
       "entity_default.txt"
     ],
     "AffectsGraphicPacks": false,
@@ -7248,7 +7236,8 @@
       "entity_fooccubus.txt",
       "entity_gnome.txt",
       "entity_kobold_camp.txt",
-      "entity_orcfort_taigaorc.txt"
+      "entity_orcfort_taigaorc.txt",
+      "entity_warlock.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -7257,27 +7246,6 @@
         "tokenName": "",
         "optionOnValue": "YESPOTTEDPLANT[",
         "optionOffValue": "!NOPOTTEDPLANT!",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
-    "Name": "optBtnTotems",
-    "Text": "Totems",
-    "Tooltip": "Adds two buildable totems to the game, just for the looks.",
-    "Files": [
-      "entity_default.txt",
-      "entity_fooccubus.txt",
-      "entity_kobold_camp.txt",
-      "entity_orcfort_taigaorc.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "YESTOTEM[",
-        "optionOffValue": "!NOTOTEM!",
         "isMultiLine": false
       }
     ]
@@ -7329,7 +7297,10 @@
     "Files": [
       "entity_default.txt",
       "entity_fooccubus.txt",
-      "entity_gnome.txt"
+      "entity_gnome.txt",
+      "entity_kobold_camp.txt",
+      "entity_orcfort_taigaorc.txt",
+      "entity_warlock.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -7349,7 +7320,10 @@
     "Files": [
       "entity_default.txt",
       "entity_fooccubus.txt",
-      "entity_gnome.txt"
+      "entity_gnome.txt",
+      "entity_kobold_camp.txt",
+      "entity_orcfort_taigaorc.txt",
+      "entity_warlock.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -7358,25 +7332,6 @@
         "tokenName": "",
         "optionOnValue": "YESDECOITEMS[",
         "optionOffValue": "!NODECOITEMS!",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
-    "Name": "optBtnStatues",
-    "Text": "Statues",
-    "Tooltip": "Adds 4 new statues to the game, demon, beast, skeleton and golem statue.",
-    "Files": [
-      "entity_default.txt",
-      "entity_gnome.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "YESSTATUES[",
-        "optionOffValue": "!NOSTATUES!",
         "isMultiLine": false
       }
     ]
@@ -7793,24 +7748,6 @@
     ]
   },
   {
-    "Name": "optBtnSimplePets",
-    "Text": "Simple Pets",
-    "Tooltip": "Enable to remove redundant domestic pets. Helps FPS.",
-    "Files": [
-      "creature_domestic.txt"
-    ],
-    "AffectsGraphicPacks": false,
-    "HasFileOverrides": false,
-    "Tags": [
-      {
-        "tokenName": "",
-        "optionOnValue": "!NOPET!",
-        "optionOffValue": "YESPET[",
-        "isMultiLine": false
-      }
-    ]
-  },
-  {
     "Name": "optMultiSimpleMeat",
     "Text": "Simple Meat",
     "Tooltip": "Enable to standardize all butchery products to one type of meat.",
@@ -8159,7 +8096,6 @@
     "Text": "Diseases",
     "Tooltip": "Adds Halfling's disease mod to the game.  Requires the apothecary to treat the diseases. See the manual for more info.",
     "Files": [
-      "creature_pet_armored.txt",
       "creature_pet_masterwork.txt",
       "creature_standard.txt"
     ],
@@ -8219,6 +8155,7 @@
       "reaction_kobold.txt",
       "reaction_masterwork.txt",
       "reaction_masterwork2.txt",
+      "reaction_orcfort.txt",
       "reaction_other.txt",
       "reaction_warlock.txt"
     ],
@@ -8265,7 +8202,7 @@
       "creature_masterwork_eviltwins.txt",
       "creature_standard.txt",
       "creature_subterranean.txt",
-      "creature_warlock_civ.txt"
+      "creature_warlock.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -8386,7 +8323,7 @@
     "Tags": [
       {
         "tokenName": "EMBARK_POINTS",
-        "optionOnValue": "1274",
+        "optionOnValue": "1074",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8403,7 +8340,7 @@
     "Tags": [
       {
         "tokenName": "END_YEAR",
-        "optionOnValue": "1050",
+        "optionOnValue": "850",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8420,7 +8357,7 @@
     "Tags": [
       {
         "tokenName": "TOTAL_CIV_POPULATION",
-        "optionOnValue": "15000",
+        "optionOnValue": "14500",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8437,7 +8374,7 @@
     "Tags": [
       {
         "tokenName": "MEGABEAST_CAP",
-        "optionOnValue": "75",
+        "optionOnValue": "25",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8454,7 +8391,7 @@
     "Tags": [
       {
         "tokenName": "SEMIMEGABEAST_CAP",
-        "optionOnValue": "150",
+        "optionOnValue": "100",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8471,7 +8408,7 @@
     "Tags": [
       {
         "tokenName": "SECRET_NUMBER",
-        "optionOnValue": "52",
+        "optionOnValue": "2",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8522,7 +8459,7 @@
     "Tags": [
       {
         "tokenName": "REGIONAL_INTERACTION_NUMBER",
-        "optionOnValue": "52",
+        "optionOnValue": "2",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8539,7 +8476,7 @@
     "Tags": [
       {
         "tokenName": "DEMON_NUMBER",
-        "optionOnValue": "52",
+        "optionOnValue": "2",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8556,7 +8493,7 @@
     "Tags": [
       {
         "tokenName": "DISTURBANCE_INTERACTION_NUMBER",
-        "optionOnValue": "52",
+        "optionOnValue": "2",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8744,7 +8681,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_COUNT",
-        "optionOnValue": "3",
+        "optionOnValue": "1",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8778,7 +8715,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_OPENNESS_MAX",
-        "optionOnValue": "100",
+        "optionOnValue": "50",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8812,7 +8749,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_PASSAGE_DENSITY_MAX",
-        "optionOnValue": "100",
+        "optionOnValue": "50",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8846,7 +8783,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_WATER_MAX",
-        "optionOnValue": "100",
+        "optionOnValue": "50",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8975,7 +8912,7 @@
   },
   {
     "Name": "optMaskGoodAreas",
-    "Tooltip": "###:###:### (0-500)  The amount of good tiles on the map.",
+    "Tooltip": "####:####:#### (0-9999)  The amount of good tiles on the map.",
     "Files": [
       "world_gen.txt"
     ],
@@ -8984,7 +8921,7 @@
     "Tags": [
       {
         "tokenName": "GOOD_SQ_COUNTS",
-        "optionOnValue": "",
+        "optionOnValue": "24:244:0",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8992,7 +8929,7 @@
   },
   {
     "Name": "optMaskEvilAreas",
-    "Tooltip": "###:###:### (0-500)  The amount of evil tiles on the map.",
+    "Tooltip": "####:####:#### (0-9999)  The amount of evil tiles on the map.",
     "Files": [
       "world_gen.txt"
     ],
@@ -9001,7 +8938,7 @@
     "Tags": [
       {
         "tokenName": "EVIL_SQ_COUNTS",
-        "optionOnValue": "",
+        "optionOnValue": "24:244:0",
         "optionOffValue": "",
         "isMultiLine": false
       }
