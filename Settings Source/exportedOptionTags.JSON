@@ -24,7 +24,7 @@
     "Tags": [
       {
         "tokenName": "SET_LABOR_LISTS",
-        "optionOnValue": "NO",
+        "optionOnValue": "SKILLS",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -185,7 +185,7 @@
     "Tags": [
       {
         "tokenName": "POPULATION_CAP",
-        "optionOnValue": "140",
+        "optionOnValue": "200",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -232,7 +232,7 @@
     "Tags": [
       {
         "tokenName": "AUTOSAVE",
-        "optionOnValue": "NONE",
+        "optionOnValue": "SEASONAL",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -375,7 +375,7 @@
     "Tags": [
       {
         "tokenName": "MACRO_MS",
-        "optionOnValue": "15",
+        "optionOnValue": "5",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -406,7 +406,7 @@
     "Tags": [
       {
         "tokenName": "WINDOWED",
-        "optionOnValue": "PROMPT",
+        "optionOnValue": "NO",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -449,7 +449,7 @@
     "Tags": [
       {
         "tokenName": "PRIORITY",
-        "optionOnValue": "IDLE",
+        "optionOnValue": "NORMAL",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -569,7 +569,7 @@
     "Tags": [
       {
         "tokenName": "PRINT_MODE",
-        "optionOnValue": "2DSW",
+        "optionOnValue": "2D",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -658,7 +658,7 @@
     "Tags": [
       {
         "tokenName": "VOLUME",
-        "optionOnValue": "225",
+        "optionOnValue": "255",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -693,7 +693,7 @@
     "Tags": [
       {
         "tokenName": "G_FPS_CAP",
-        "optionOnValue": "0",
+        "optionOnValue": "30",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -710,7 +710,7 @@
     "Tags": [
       {
         "tokenName": "FPS_CAP",
-        "optionOnValue": "120",
+        "optionOnValue": "150",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -992,8 +992,7 @@
     "Name": "optBtnElfRace",
     "Tooltip": "Adds elves to trade with to your game.",
     "Files": [
-      "entity_elf.txt",
-      "plant_elffort.txt"
+      "entity_elf.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -6311,7 +6310,8 @@
     "Files": [
       "building_furnaces_masterwork.txt",
       "building_masterwork.txt",
-      "entity_default.txt"
+      "entity_default.txt",
+      "reaction_adv_masterwork.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -6333,7 +6333,7 @@
       "entity_fooccubus.txt",
       "entity_gnome.txt",
       "entity_warlock.txt",
-      "inorganic_fossil.txt"
+      "inorganic_mineral.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -6573,9 +6573,7 @@
     "Text": "Alchemy",
     "Tooltip": "Allows transmutation of metals, the creation of gems and special metals. as well as magma and water.",
     "Files": [
-      "entity_default.txt",
-      "inorganic_special_ammo.txt",
-      "inorganic_z_blob_reward.txt"
+      "entity_default.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -6967,11 +6965,10 @@
     "Files": [
       "entity_default.txt",
       "entity_fooccubus.txt",
-      "inorganic_dfhack.txt",
       "inorganic_mineral.txt",
       "reaction_masterwork.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -7027,12 +7024,11 @@
       "entity_default.txt",
       "entity_gnome.txt",
       "entity_orcfort_taigaorc.txt",
-      "inorganic_dfhack.txt",
       "inorganic_mineral.txt",
       "reaction_gnome.txt",
       "reaction_masterwork.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -7653,7 +7649,7 @@
     "Text": "Simple Gems",
     "Tooltip": "Enable to play with fewer gem types. Good for FPS.",
     "Files": [
-      "inorganic_stone_gem.txt"
+      "inorganic_gem.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -7671,9 +7667,9 @@
     "Text": "Simple Soil",
     "Tooltip": "Enable to play with only one type of sand, soil and clay. Good for FPS.",
     "Files": [
-      "inorganic_stone_soil.txt"
+      "inorganic_soil.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -7689,9 +7685,9 @@
     "Text": "Simple Stone",
     "Tooltip": "Enable to play with fewer stone types. Good for FPS.",
     "Files": [
-      "inorganic_stone_layer.txt"
+      "inorganic_stone.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -7709,7 +7705,7 @@
     "Files": [
       "inorganic_mineral.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -7938,11 +7934,11 @@
     "Tooltip": "Turn Aquifer on or off, as you like.",
     "Files": [
       "inorganic_mineral.txt",
-      "inorganic_stone_layer.txt",
-      "inorganic_stone_soil.txt",
+      "inorganic_soil.txt",
+      "inorganic_stone.txt",
       "inorganic_zmasterwork.txt"
     ],
-    "AffectsGraphicPacks": true,
+    "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
     "Tags": [
       {
@@ -8020,7 +8016,7 @@
     "Tooltip": "Adds coal dust and warpstone. Both might hurt your miners when mined.",
     "Files": [
       "inorganic_zmasterwork.txt",
-      "inorganic_zwarpstone.txt"
+      "inorganic_z_mining_accidents.txt"
     ],
     "AffectsGraphicPacks": false,
     "HasFileOverrides": false,
@@ -8289,7 +8285,7 @@
     "Tags": [
       {
         "tokenName": "MINERAL_SCARCITY",
-        "optionOnValue": "200",
+        "optionOnValue": "100",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8306,7 +8302,7 @@
     "Tags": [
       {
         "tokenName": "TOTAL_CIV_NUMBER",
-        "optionOnValue": "40",
+        "optionOnValue": "15",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8323,7 +8319,7 @@
     "Tags": [
       {
         "tokenName": "EMBARK_POINTS",
-        "optionOnValue": "1074",
+        "optionOnValue": "1174",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8340,7 +8336,7 @@
     "Tags": [
       {
         "tokenName": "END_YEAR",
-        "optionOnValue": "850",
+        "optionOnValue": "950",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8357,7 +8353,7 @@
     "Tags": [
       {
         "tokenName": "TOTAL_CIV_POPULATION",
-        "optionOnValue": "14500",
+        "optionOnValue": "14750",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8374,7 +8370,7 @@
     "Tags": [
       {
         "tokenName": "MEGABEAST_CAP",
-        "optionOnValue": "25",
+        "optionOnValue": "50",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8391,7 +8387,7 @@
     "Tags": [
       {
         "tokenName": "SEMIMEGABEAST_CAP",
-        "optionOnValue": "100",
+        "optionOnValue": "125",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8408,7 +8404,7 @@
     "Tags": [
       {
         "tokenName": "SECRET_NUMBER",
-        "optionOnValue": "2",
+        "optionOnValue": "27",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8425,7 +8421,7 @@
     "Tags": [
       {
         "tokenName": "WEREBEAST_NUMBER",
-        "optionOnValue": "26",
+        "optionOnValue": "1",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8442,7 +8438,7 @@
     "Tags": [
       {
         "tokenName": "TITAN_NUMBER",
-        "optionOnValue": "33",
+        "optionOnValue": "8",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8459,7 +8455,7 @@
     "Tags": [
       {
         "tokenName": "REGIONAL_INTERACTION_NUMBER",
-        "optionOnValue": "2",
+        "optionOnValue": "27",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8476,7 +8472,7 @@
     "Tags": [
       {
         "tokenName": "DEMON_NUMBER",
-        "optionOnValue": "2",
+        "optionOnValue": "27",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8493,7 +8489,7 @@
     "Tags": [
       {
         "tokenName": "DISTURBANCE_INTERACTION_NUMBER",
-        "optionOnValue": "2",
+        "optionOnValue": "27",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8510,7 +8506,7 @@
     "Tags": [
       {
         "tokenName": "NIGHT_TROLL_NUMBER",
-        "optionOnValue": "26",
+        "optionOnValue": "1",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8527,7 +8523,7 @@
     "Tags": [
       {
         "tokenName": "EVIL_CLOUD_NUMBER",
-        "optionOnValue": "26",
+        "optionOnValue": "1",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8544,7 +8540,7 @@
     "Tags": [
       {
         "tokenName": "BOGEYMAN_NUMBER",
-        "optionOnValue": "26",
+        "optionOnValue": "1",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8561,7 +8557,7 @@
     "Tags": [
       {
         "tokenName": "EVIL_RAIN_NUMBER",
-        "optionOnValue": "26",
+        "optionOnValue": "1",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8578,7 +8574,7 @@
     "Tags": [
       {
         "tokenName": "VAMPIRE_NUMBER",
-        "optionOnValue": "26",
+        "optionOnValue": "1",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8595,7 +8591,7 @@
     "Tags": [
       {
         "tokenName": "CAVE_MIN_SIZE",
-        "optionOnValue": "5",
+        "optionOnValue": "30",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8612,7 +8608,7 @@
     "Tags": [
       {
         "tokenName": "CAVE_MAX_SIZE",
-        "optionOnValue": "25",
+        "optionOnValue": "50",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8629,7 +8625,7 @@
     "Tags": [
       {
         "tokenName": "MOUNTAIN_CAVE_MIN",
-        "optionOnValue": "40",
+        "optionOnValue": "90",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8646,7 +8642,7 @@
     "Tags": [
       {
         "tokenName": "NON_MOUNTAIN_CAVE_MIN",
-        "optionOnValue": "60",
+        "optionOnValue": "10",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8681,7 +8677,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_COUNT",
-        "optionOnValue": "1",
+        "optionOnValue": "2",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8698,7 +8694,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_OPENNESS_MIN",
-        "optionOnValue": "0",
+        "optionOnValue": "25",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8715,7 +8711,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_OPENNESS_MAX",
-        "optionOnValue": "50",
+        "optionOnValue": "75",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8732,7 +8728,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_PASSAGE_DENSITY_MIN",
-        "optionOnValue": "0",
+        "optionOnValue": "25",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8749,7 +8745,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_PASSAGE_DENSITY_MAX",
-        "optionOnValue": "50",
+        "optionOnValue": "75",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8766,7 +8762,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_WATER_MIN",
-        "optionOnValue": "0",
+        "optionOnValue": "25",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8783,7 +8779,7 @@
     "Tags": [
       {
         "tokenName": "CAVERN_LAYER_WATER_MAX",
-        "optionOnValue": "50",
+        "optionOnValue": "75",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8800,7 +8796,7 @@
     "Tags": [
       {
         "tokenName": "LEVELS_ABOVE_LAYER_1",
-        "optionOnValue": "5",
+        "optionOnValue": "15",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8817,7 +8813,7 @@
     "Tags": [
       {
         "tokenName": "LEVELS_ABOVE_LAYER_2",
-        "optionOnValue": "1",
+        "optionOnValue": "11",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8834,7 +8830,7 @@
     "Tags": [
       {
         "tokenName": "LEVELS_ABOVE_LAYER_3",
-        "optionOnValue": "1",
+        "optionOnValue": "11",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8851,7 +8847,7 @@
     "Tags": [
       {
         "tokenName": "LEVELS_ABOVE_LAYER_4",
-        "optionOnValue": "1",
+        "optionOnValue": "11",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8868,7 +8864,7 @@
     "Tags": [
       {
         "tokenName": "LEVELS_ABOVE_LAYER_5",
-        "optionOnValue": "2",
+        "optionOnValue": "12",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8921,7 +8917,7 @@
     "Tags": [
       {
         "tokenName": "GOOD_SQ_COUNTS",
-        "optionOnValue": "24:244:0",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -8938,7 +8934,7 @@
     "Tags": [
       {
         "tokenName": "EVIL_SQ_COUNTS",
-        "optionOnValue": "24:244:0",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
