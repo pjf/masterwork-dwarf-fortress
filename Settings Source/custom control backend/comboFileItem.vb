@@ -6,6 +6,14 @@ Public Class comboFileItem
 
     Private m_fileName As String
 
+    Public Sub New()
+    End Sub
+
+    Public Sub New(ByVal value As String, ByVal display As String, ByVal fileName As String)
+        MyBase.New(value, display)
+        m_fileName = fileName
+    End Sub
+
     <CategoryAttribute("Data"),
     DisplayNameAttribute("File Name"),
     DescriptionAttribute("The file this item represents.")> _

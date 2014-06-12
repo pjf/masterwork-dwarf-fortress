@@ -1437,6 +1437,7 @@ Partial Class MainForm
         Me.optMultiDigging = New MasterworkDwarfFortress.optionMultiButton()
         Me.optNumPatternEmbarkPoints = New MasterworkDwarfFortress.optionNumericPattern()
         Me.optNumPatternEmbarkGroupSize = New MasterworkDwarfFortress.optionNumericPattern()
+        Me.lblLicenseShops = New System.Windows.Forms.Label()
         Me.lblMacro = New System.Windows.Forms.Label()
         Me.lblHFSLevels = New System.Windows.Forms.Label()
         Me.lblSettingExplanation = New System.Windows.Forms.Label()
@@ -1674,7 +1675,6 @@ Partial Class MainForm
         Me.tabMisc = New KRBTabControl.TabPageEx()
         Me.tabWorldGen = New KRBTabControl.TabPageEx()
         Me.btnResetWorldGen = New System.Windows.Forms.Button()
-        Me.lblLicenseShops = New System.Windows.Forms.Label()
         Me.grpStandardization.SuspendLayout
         Me.grpWorldGenHostiles.SuspendLayout
         CType(Me.optNumMegabeasts,System.ComponentModel.ISupportInitialize).BeginInit
@@ -10393,6 +10393,19 @@ Partial Class MainForm
         Me.ToolTipMaker.SetToolTip(Me.optNumPatternEmbarkGroupSize, "Determines the number of starting colonists when embarking.")
         Me.optNumPatternEmbarkGroupSize.Value = New Decimal(New Integer() {7, 0, 0, 0})
         '
+        'lblLicenseShops
+        '
+        Me.lblLicenseShops.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblLicenseShops.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblLicenseShops.ForeColor = System.Drawing.Color.White
+        Me.lblLicenseShops.Location = New System.Drawing.Point(5, 106)
+        Me.lblLicenseShops.Name = "lblLicenseShops"
+        Me.lblLicenseShops.Size = New System.Drawing.Size(134, 19)
+        Me.lblLicenseShops.TabIndex = 13
+        Me.lblLicenseShops.Text = "Shops"
+        Me.lblLicenseShops.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTipMaker.SetToolTip(Me.lblLicenseShops, "The buildings below require a Trade License to build.")
+        '
         'lblMacro
         '
         Me.lblMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
@@ -13375,7 +13388,7 @@ Partial Class MainForm
         Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
         Me.tabMain.Location = New System.Drawing.Point(0, 70)
         Me.tabMain.Name = "tabMain"
-        Me.tabMain.SelectedIndex = 1
+        Me.tabMain.SelectedIndex = 0
         Me.tabMain.Size = New System.Drawing.Size(1026, 613)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
@@ -13604,19 +13617,6 @@ Partial Class MainForm
         Me.btnResetWorldGen.Text = "Reset"
         Me.btnResetWorldGen.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnResetWorldGen.UseVisualStyleBackColor = false
-        '
-        'lblLicenseShops
-        '
-        Me.lblLicenseShops.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblLicenseShops.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.lblLicenseShops.ForeColor = System.Drawing.Color.White
-        Me.lblLicenseShops.Location = New System.Drawing.Point(5, 106)
-        Me.lblLicenseShops.Name = "lblLicenseShops"
-        Me.lblLicenseShops.Size = New System.Drawing.Size(134, 19)
-        Me.lblLicenseShops.TabIndex = 13
-        Me.lblLicenseShops.Text = "Shops"
-        Me.lblLicenseShops.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.lblLicenseShops, "The buildings below require a Trade License to build.")
         '
         'MainForm
         '
@@ -14055,7 +14055,6 @@ End Sub
     Friend WithEvents lblFonts As System.Windows.Forms.Label
     Friend WithEvents optCbPrintMode As MasterworkDwarfFortress.optionComboBoxToken
     Friend WithEvents btnUpdateSaves As System.Windows.Forms.Button
-    Friend WithEvents optCbColors As MasterworkDwarfFortress.optionComboBoxFileReplace
     Friend WithEvents lblColors As System.Windows.Forms.Label
     Friend WithEvents optBtnSprites As MasterworkDwarfFortress.optionSingleBoolButton
     Friend WithEvents lblGraphicsPack As System.Windows.Forms.Label
@@ -14253,5 +14252,6 @@ End Sub
     Friend WithEvents rBtnUtilDFMon As System.Windows.Forms.RibbonButton
     Friend WithEvents OptionComboBoxMultiToken1 As MasterworkDwarfFortress.optionComboBoxMultiToken
     Friend WithEvents lblLicenseShops As System.Windows.Forms.Label
+    Public WithEvents optCbColors As MasterworkDwarfFortress.optionComboBoxFileReplace
 
 End Class

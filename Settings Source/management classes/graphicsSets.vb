@@ -29,6 +29,28 @@ Public Class graphicsSets
         End Try
     End Sub
 
+    Public Shared Sub loadColorSchemes(ByRef cbColors As optionComboBoxFileReplace)
+        Try
+            cbColors.options.itemList.Clear()
+            cbColors.DataSource = Nothing
+            Dim schemes As List(Of IO.FileInfo) = mwFilePaths.Where(Function(fi As IO.FileInfo) fi.DirectoryName.Contains(IO.Path.Combine(globals.m_SettingsDir, "Colors"))).ToList
+            'Dim rx As New Regex("(?<=[A-Z])(?=[A-Z][a-z]) | (?<=[^A-Z])(?=[A-Z]) | (?<=[A-Za-z])(?=[^A-Za-z])", RegexOptions.IgnorePatternWhitespace)
+            For Each fi As IO.FileInfo In schemes
+                Dim niceName As String = IO.Path.GetFileNameWithoutExtension(fi.Name).Replace("colors_", "").Trim.Replace("_", " ")
+                Dim key As String = niceName.ToUpper.Replace(" ", "")
+                'niceName = StrConv(rx.Replace(niceName, " "), VbStrConv.ProperCase)
+                cbColors.options.itemList.Add(New comboFileItem(key, niceName, fi.Name))
+            Next            
+            cbColors.DataSource = cbColors.options.itemList
+            cbColors.ValueMember = "value"
+            cbColors.DisplayMember = "display"            
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+
+
     Private Shared Function getGraphicTag(ByVal yesOption As Boolean, ByVal typeName As String) As String
         Dim result As String = ""
         If yesOption Then

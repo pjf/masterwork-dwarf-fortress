@@ -58,8 +58,9 @@ Imports Newtonsoft.Json
     Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         refreshFileAndDirPaths()
         If m_dwarfFortressRootDir <> "" Then
+            graphicsSets.loadColorSchemes(Me.optCbColors)
             initialLoad()
-            graphicsSets.findGraphicPacks(m_graphicsDir) 'and graphics
+            graphicsSets.findGraphicPacks(m_graphicsDir)
         End If
 
         setupRibbonHandlers(rPanelGeneral.Items)
