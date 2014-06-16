@@ -119,7 +119,11 @@ Public Class optionComboPatternToken
     End Function
 
     Public Function currentValue() As Object Implements iToken.currentValue
-        Return Me.SelectedValue.ToString
+        If Me.SelectedValue Is Nothing Then
+            Return ""
+        Else
+            Return Me.SelectedValue.ToString
+        End If
     End Function
 
 End Class

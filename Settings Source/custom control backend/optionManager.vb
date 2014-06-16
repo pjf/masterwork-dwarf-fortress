@@ -130,6 +130,8 @@ Public Class optionManager
                     Next
                     If findTokensInFiles(String.Format("({0})", String.Join(")|(", strPattern)), files.Where(AddressOf rawFilter).ToList) Then
                         retValue = "1"
+                    Else
+                        retValue = "0"
                     End If
                 Else
                     Dim passCount As Integer = 0

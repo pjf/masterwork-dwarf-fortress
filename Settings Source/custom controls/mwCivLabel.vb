@@ -6,79 +6,56 @@ Public Class mwCivLabel
     Private m_entityFileName As String
     Private m_creatureFileName As String
     Private m_skillsTag As String
-    Private m_advTag As String
-    Private m_fortTag As String
+    Private m_playableAdvMode As Boolean
+    Private m_playableFortMode As Boolean
     Private m_triggerTag As String
+    Private m_faction As Boolean
 
-    <DisplayNameAttribute("Entity file"), _
+    <DisplayNameAttribute("Playable Fortress"), _
     CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("The entity file name.")> _
-    Public Overridable Property entityFileName As String
+    DescriptionAttribute("This race can be played in fortress mode.")> _
+    Public Overridable Property playableFortMode As Boolean
         Get
-            Return m_entityFileName
+            Return m_playableFortMode
         End Get
-        Set(value As String)
-            m_entityFileName = value
+        Set(value As Boolean)
+            m_playableFortMode = value
         End Set
     End Property
 
-    <DisplayNameAttribute("Creature file"), _
+    <DisplayNameAttribute("Playable Adventure"), _
     CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("The creature file name.")> _
-    Public Overridable Property creatureFileName As String
+    DescriptionAttribute("this race can be played in adventure mode.")> _
+    Public Overridable Property playableAdvMode As Boolean
         Get
-            Return m_creatureFileName
+            Return m_playableAdvMode
         End Get
-        Set(value As String)
-            m_creatureFileName = value
+        Set(value As Boolean)
+            m_playableAdvMode = value
         End Set
     End Property
 
-    <DisplayNameAttribute("Skills Tag"), _
-    CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("The tag identifier for this civilization's creatures' skills.")> _
-    Public Overridable Property skillsTag As String
-        Get
-            Return m_skillsTag
-        End Get
-        Set(value As String)
-            m_skillsTag = value
-        End Set
-    End Property
-
-    <DisplayNameAttribute("Fortress Tag"), _
-    CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("The tag identifier to play this civilization in fortress mode.")> _
-    Public Overridable Property fortTag As String
-        Get
-            Return m_fortTag
-        End Get
-        Set(value As String)
-            m_fortTag = value
-        End Set
-    End Property
-
-    <DisplayNameAttribute("Adventurer Tag"), _
-    CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("The tag identifier to play this civilization in adventurer mode.")> _
-    Public Overridable Property advTag As String
-        Get
-            Return m_advTag
-        End Get
-        Set(value As String)
-            m_advTag = value
-        End Set
-    End Property
-
-    <DisplayNameAttribute("Generic Tag"), _
+    <DisplayNameAttribute("Civ Name"), _
     CategoryAttribute("~MASTERWORK"), _
     DescriptionAttribute("Used as part of various tags: X_SIEGE, X_TRADE, X_HOSTILE, X_MATERIALS")> _
-    Public Overridable Property triggerTag As String
+    Public Overridable Property simpleCivName As String
         Get
             Return m_triggerTag
         End Get
         Set(value As String)
             m_triggerTag = value
+        End Set
+    End Property
+
+    <DisplayNameAttribute("Factionable"), _
+    CategoryAttribute("~MASTERWORK"), _
+    DescriptionAttribute("Determines if the civilization can have their faction changed.")> _
+    Public Overridable Property factionable As Boolean
+        Get
+            Return m_faction
+        End Get
+        Set(value As Boolean)
+            m_faction = value
         End Set
     End Property
 

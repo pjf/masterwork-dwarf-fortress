@@ -775,18 +775,25 @@ Imports Newtonsoft.Json
     Private m_wealthLevels As List(Of String) = New List(Of String)(New String() {"N/A", "5000", "25000", "100000", "200000", "300000"})
     Private m_exportLevels As List(Of String) = New List(Of String)(New String() {"N/A", "500", "2500", "10000", "20000", "30000"})
 
-    Private Sub loadCivTable()
-        'column indexes
-        Dim idxPlaybleFort As Integer = 2
-        Dim idxPlayableAdv As Integer = 3
-        Dim idxCaravan As Integer = 4
-        Dim idxInvasion As Integer = 5
-        Dim idxHostile As Integer = 6
-        Dim idxMaterials As Integer = 7
-        Dim idxSkills As Integer = 8
+    'column indexes
+    Dim idxActive As Integer = 1
+    Dim idxPlaybleFort As Integer = 2
+    Dim idxPlayableAdv As Integer = 3
+    Dim idxFaction As Integer = 4
+    Dim idxCaravan As Integer = 5
+    Dim idxBodyguards As Integer = 6
+    Dim idxInvasion As Integer = 7
+    Dim idxAi As Integer = 8
+    Dim idxSkulk As Integer = 9
+    Dim idxMaterials As Integer = 10
+    Dim idxSkills As Integer = 11
+    Dim idxSeason As Integer = 12
 
+    Dim civControlHeight As Integer = 24
+
+    Private Sub loadCivTable()
         'width/height based on table cell sizes
-        Dim intCtrlHeight As Integer = Me.tableLayoutCivs.GetControlFromPosition(1, 1).Height
+        civControlHeight = Me.tableLayoutCivs.GetControlFromPosition(0, 1).Height
         Dim intCtrlWidth As Integer = 50
 
         'our main label that has all the information we'll need to load the various options
@@ -800,77 +807,96 @@ Imports Newtonsoft.Json
         Me.tableLayoutCivs.SuspendLayout()
         For idxRow As Integer = 1 To Me.tableLayoutCivs.RowCount - 1
             civLabel = Me.tableLayoutCivs.GetControlFromPosition(0, idxRow)
-            If civLabel Is Nothing OrElse (civLabel.entityFileName = "") Then
-                Throw New Exception("Civ Label " & Me.tableLayoutCivs.GetControlFromPosition(0, idxRow).Name & " is missing required properties!")
+            If civLabel Is Nothing Then
+                Continue For
+                'Throw New Exception("Civ Label " & Me.tableLayoutCivs.GetControlFromPosition(0, idxRow).Name & " is missing required properties!")
             Else
-                civName = civLabel.entityFileName.ToString.Replace("_", " ")
-                civName = civName.ToLower.Replace("entity", "")
-                civName = civName.Replace(".txt", "")
+                'civName = civLabel.entityFileName.ToString.Replace("_", " ")
+                civName = civLabel.simpleCivName.ToLower
+                'civName = civName.ToLower.Replace("entity", "")
+                'civName = civName.Replace(".txt", "")
                 civName = StrConv(civName, VbStrConv.ProperCase)
                 civName = civName.Replace(" ", "")
 
                 'add a handler to disable the row to the active button
-                AddHandler CType(Me.tableLayoutCivs.GetControlFromPosition(1, idxRow), optionSingleReplaceButton).CheckedChanged, AddressOf civActiveCheckedChanged
+                'AddHandler CType(Me.tableLayoutCivs.GetControlFromPosition(1, idxRow), optionSingleReplaceButton).CheckedChanged, AddressOf civActiveCheckedChanged
+
+                'add active option
+                buildSimpleCivButton("Active", civLabel.simpleCivName, "CIV_ACTIVE", idxActive, idxRow)
+                AddHandler CType(Me.tableLayoutCivs.GetControlFromPosition(idxActive, idxRow), optionSingleReplaceButton).CheckedChanged, AddressOf civActiveCheckedChanged
+                AddHandler CType(Me.tableLayoutCivs.GetControlFromPosition(idxActive, idxRow), optionSingleReplaceButton).optionLoaded, AddressOf civActiveLoaded
 
                 'add playable fortress mode option
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlaybleFort, 0).Width
-                Dim btnPlayFort As New optionSingleReplaceButton
-                btnPlayFort.Name = "optBtnPlayCivFort" & civName
-                buildPlayableOption(btnPlayFort, civLabel.fortTag)
-                formatCivTableControl(btnPlayFort, intCtrlWidth, intCtrlHeight)
-                Me.tableLayoutCivs.Controls.Add(btnPlayFort, idxPlaybleFort, idxRow)
+                buildSimpleCivButton("FortMode", civLabel.simpleCivName, "FORT_MODE", idxPlaybleFort, idxRow)
+                Me.tableLayoutCivs.GetControlFromPosition(idxPlaybleFort, idxRow).Enabled = civLabel.playableFortMode
 
                 'add playable adventure mode option
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxPlayableAdv, 0).Width
-                Dim btnPlayAdv As New optionSingleReplaceButton
-                btnPlayAdv.Name = "optBtnPlayCivAdv" & civName
-                buildPlayableOption(btnPlayAdv, civLabel.advTag)
-                formatCivTableControl(btnPlayAdv, intCtrlWidth, intCtrlHeight)
-                Me.tableLayoutCivs.Controls.Add(btnPlayAdv, idxPlayableAdv, idxRow)
+                buildSimpleCivButton("AdvMode", civLabel.simpleCivName, "ADV_MODE", idxPlayableAdv, idxRow)
+                Me.tableLayoutCivs.GetControlFromPosition(idxPlayableAdv, idxRow).Enabled = civLabel.playableAdvMode
+
+                'add the faction option
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxFaction, 0).Width
+                Dim cbMultiFaction As New optionComboBoxMultiToken
+                cbMultiFaction.Name = "optCbMultiCivFaction" & civName
+                formatCivTableControl(cbMultiFaction, intCtrlWidth, civControlHeight)
+                buildFactionOption(cbMultiFaction, civLabel.simpleCivName, civLabel.factionable)
+                Me.tableLayoutCivs.Controls.Add(cbMultiFaction, idxFaction, idxRow)
+                If Not civLabel.factionable Then cbMultiFaction.SelectedValue = "N/A" : cbMultiFaction.Enabled = False
 
                 'add a caravan option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxCaravan, 0).Width
                 Dim cbCaravans As New optionComboPatternToken
                 cbCaravans.Name = "optCbPatternCivCaravans" & civName
-                formatCivTableControl(cbCaravans, intCtrlWidth, intCtrlHeight)
-                buildTriggerOption(cbCaravans, civLabel.triggerTag & "_TRADE")
+                formatCivTableControl(cbCaravans, intCtrlWidth, civControlHeight)
+                buildTriggerOption(cbCaravans, civLabel.simpleCivName & "_TRADE")
                 Me.tableLayoutCivs.Controls.Add(cbCaravans, idxCaravan, idxRow)
+
+                'add caravan bodyguard option
+                buildSimpleCivButton("Bodyguards", civLabel.simpleCivName, "BODYGUARDS", idxBodyguards, idxRow)
 
                 'add an invasion option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxInvasion, 0).Width
                 Dim cbInvasions As New optionComboPatternToken
                 cbInvasions.Name = "optCbPatternCivInvasions" & civName
-                formatCivTableControl(cbInvasions, intCtrlWidth, intCtrlHeight)
-                buildTriggerOption(cbInvasions, civLabel.triggerTag & "_SIEGE")
+                formatCivTableControl(cbInvasions, intCtrlWidth, civControlHeight)
+                buildTriggerOption(cbInvasions, civLabel.simpleCivName & "_SIEGE")
                 Me.tableLayoutCivs.Controls.Add(cbInvasions, idxInvasion, idxRow)
 
-                'add a good/evil option
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxHostile, 0).Width
-                Dim btnHostile As New optionSingleReplaceButton
-                btnHostile.Name = "optBtnCivGood" & civName
-                btnHostile.options.fileManager.fileNames = New List(Of String)({civLabel.entityFileName})
-                btnHostile.options.enabledValue = civLabel.triggerTag & "_HOSTILE" & "!BABYSNATCHER!" 'enabled = good = not baby snatchers
-                btnHostile.options.disabledValue = civLabel.triggerTag & "_HOSTILE" & "[BABYSNATCHER]"
-                btnHostile.ImageAlign = ContentAlignment.MiddleCenter
-                btnHostile.Text = ""
-                formatCivTableControl(btnHostile, intCtrlWidth, intCtrlHeight)
-                Me.tableLayoutCivs.Controls.Add(btnHostile, idxHostile, idxRow)
+                'add AI type
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxAi, 0).Width
+                Dim cbAi As New optionComboCheckbox
+                cbAi.Name = "optCbCheckAi" & civName
+                formatCivTableControl(cbAi, intCtrlWidth, civControlHeight)
+                buildAiOption(cbAi, civLabel.simpleCivName)
+                Me.tableLayoutCivs.Controls.Add(cbAi, idxAi, idxRow)
+
+                'add skulking option
+                buildSimpleCivButton("Skulking", civLabel.simpleCivName, "SKULKING", idxSkulk, idxRow)
+                AddHandler CType(Me.tableLayoutCivs.GetControlFromPosition(idxSkulk, idxRow), optionSingleReplaceButton).CheckedChanged, AddressOf toggleTradeOptions
 
                 'add a material option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxMaterials, 0).Width
                 Dim cbMats As optionComboPatternToken = New optionComboPatternToken
                 cbMats.Name = "optCbPatternCivMats" & civName
-                formatCivTableControl(cbMats, intCtrlWidth, intCtrlHeight)
-                buildMatOption(cbMats, civLabel.triggerTag & "_MATERIALS")
+                formatCivTableControl(cbMats, intCtrlWidth, civControlHeight)
+                buildMatOption(cbMats, civLabel.simpleCivName & "_MATERIALS")
                 Me.tableLayoutCivs.Controls.Add(cbMats, idxMaterials, idxRow)
 
                 'add a skill option
                 intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxSkills, 0).Width
                 Dim cbSkills As optionComboPatternToken = New optionComboPatternToken
                 cbSkills.Name = "optCbPatternCivSkills" & civName
-                formatCivTableControl(cbSkills, intCtrlWidth, intCtrlHeight)
-                buildSkillOption(cbSkills, civLabel.skillsTag) 'civLabel.creatureFileName,
+                formatCivTableControl(cbSkills, intCtrlWidth, civControlHeight)
+                buildSkillOption(cbSkills, civLabel.simpleCivName)
                 Me.tableLayoutCivs.Controls.Add(cbSkills, idxSkills, idxRow)
+
+                'add a seasonal option
+                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(idxSeason, 0).Width
+                Dim cbSeasons As New optionComboCheckbox
+                cbSeasons.Name = "optCbSeasons" & civName
+                formatCivTableControl(cbSeasons, intCtrlWidth, civControlHeight)
+                buildSeasonOption(cbSeasons, civLabel.simpleCivName)
+                Me.tableLayoutCivs.Controls.Add(cbSeasons, idxSeason, idxRow)
             End If
 
         Next
@@ -882,11 +908,112 @@ Imports Newtonsoft.Json
         Dim civActive As optionSingleReplaceButton = TryCast(sender, optionSingleReplaceButton)
         If civActive IsNot Nothing Then
             Dim pos As TableLayoutPanelCellPosition = Me.tableLayoutCivs.GetPositionFromControl(CType(sender, Control))
-            For colIdx As Integer = 2 To Me.tableLayoutCivs.ColumnCount - 1
-                Dim colCon As Control = Me.tableLayoutCivs.GetControlFromPosition(colIdx, pos.Row)
-                If colCon IsNot Nothing Then colCon.Enabled = civActive.Checked
+            'get the civLabel
+            Dim civLabel As mwCivLabel = TryCast(Me.tableLayoutCivs.GetControlFromPosition(0, pos.Row), mwCivLabel)
+            If civLabel IsNot Nothing Then
+                For colIdx As Integer = idxActive + 1 To Me.tableLayoutCivs.ColumnCount - 1
+                    If colIdx = idxPlaybleFort AndAlso civLabel.playableFortMode = False Then Continue For
+                    If colIdx = idxPlayableAdv AndAlso civLabel.playableAdvMode = False Then Continue For
+                    If colIdx = idxFaction AndAlso civLabel.factionable = False Then Continue For 'can't toggle faction
+
+                    Dim colCon As Control = Me.tableLayoutCivs.GetControlFromPosition(colIdx, pos.Row)
+                    If colCon IsNot Nothing Then colCon.Enabled = civActive.Checked
+                Next
+            End If
+        End If
+    End Sub
+
+    Private Sub toggleTradeOptions(ByVal sender As Object, ByVal e As EventArgs)
+        Dim pos As TableLayoutPanelCellPosition = Me.tableLayoutCivs.GetPositionFromControl(CType(sender, Control))
+        Dim tradeEnabled As Boolean = (Not CType(sender, optionSingleReplaceButton).Checked)
+        Me.tableLayoutCivs.GetControlFromPosition(idxCaravan, pos.Row).Enabled = tradeEnabled
+        Me.tableLayoutCivs.GetControlFromPosition(idxBodyguards, pos.Row).Enabled = tradeEnabled
+    End Sub
+
+    'to aid in loading the civ table, once the active button has been loaded, copy the file name to the other 
+    'controls in the same row, since most of them will use the exact same entity file
+    'additionally, check for missing controllable tags and disable the buttons accordingly
+    Private Sub civActiveLoaded(ByVal btn As optionSingleReplaceButton)
+        If btn IsNot Nothing Then
+            Dim pos As TableLayoutPanelCellPosition = Me.tableLayoutCivs.GetPositionFromControl(CType(btn, Control))
+
+            'get the civLabel
+            Dim civLabel As mwCivLabel = TryCast(Me.tableLayoutCivs.GetControlFromPosition(0, pos.Row), mwCivLabel)
+            If civLabel IsNot Nothing Then
+                If btn.options.fileManager.files.Count > 0 Then
+                    civLabel.playableFortMode = globals.m_dfRaws.Item(btn.options.fileManager.files()(0)).Contains("CIV_CONTROLLABLE")
+                    civLabel.playableAdvMode = globals.m_dfRaws.Item(btn.options.fileManager.files()(0)).Contains("INDIV_CONTROLLABLE")
+                Else
+                    civLabel.playableAdvMode = False
+                    civLabel.playableFortMode = False
+                End If
+            End If
+
+            For colIdx As Integer = idxActive + 1 To Me.tableLayoutCivs.ColumnCount - 1
+                If colIdx <> idxSkills Then 'any options that are NOT using the entity file(s) should be excluded
+                    Dim c As Control = TryCast(Me.tableLayoutCivs.GetControlFromPosition(colIdx, pos.Row), Control)
+                    If c IsNot Nothing Then
+                        If colIdx = idxPlayableAdv Then c.Enabled = civLabel.playableAdvMode
+                        If colIdx = idxPlaybleFort Then c.Enabled = civLabel.playableFortMode
+
+                        If c.GetType.GetProperty("options") IsNot Nothing Then
+                            CObj(c).options.fileManager.fileNames.AddRange(btn.options.fileManager.fileNames)
+                        End If
+                    End If
+                End If
             Next
         End If
+    End Sub
+
+    Dim formatSnatcherOn As String = "YES_BABYSNATCHER_{0}["
+    Dim formatSnatcherOff As String = "!NO_BABYSNATCHER_{0}!"
+    Dim formatThiefOn As String = "YES_ITEMTHIEF_{0}["
+    Dim formatThiefOff As String = "!NO_ITEMTHIEF_{0}!"
+
+    Private Sub buildFactionOption(ByRef cb As optionComboBoxMultiToken, ByVal civ As String, ByVal factionable As Boolean)
+        cb.options.optionManager.checkAllOnLoad = True
+
+        If factionable Then
+            Dim snatcherOff As String = String.Format(formatSnatcherOff, civ)
+            Dim snatcherOn As String = String.Format(formatSnatcherOn, civ)
+            Dim thiefOff As String = String.Format(formatThiefOff, civ)
+            Dim thiefOn As String = String.Format(formatThiefOn, civ)
+
+            'civilized enable = !snatcher && !thief
+            cb.options.itemList.Add(New comboMultiTokenItem("CIVILIZED", "Civilized"))
+            cb.options.itemList.Item(0).tokens.Add(New rawToken("", snatcherOff, snatcherOn))
+            cb.options.itemList.Item(0).tokens.Add(New rawToken("", thiefOff, thiefOn))
+
+            'slaver enable = snatcher && !thief
+            cb.options.itemList.Add(New comboMultiTokenItem("SLAVERS", "Slavers"))
+            cb.options.itemList.Item(1).tokens.Add(New rawToken("", snatcherOn, snatcherOff))
+            cb.options.itemList.Item(1).tokens.Add(New rawToken("", thiefOff, thiefOn))
+
+            'savage enable = !snatcher && thief
+            cb.options.itemList.Add(New comboMultiTokenItem("SAVAGE", "Savage"))
+            cb.options.itemList.Item(2).tokens.Add(New rawToken("", snatcherOff, snatcherOn))
+            cb.options.itemList.Item(2).tokens.Add(New rawToken("", thiefOn, thiefOff))
+
+            'evil enable = snatcher && thief
+            cb.options.itemList.Add(New comboMultiTokenItem("EVIL", "Evil"))
+            cb.options.itemList.Item(3).tokens.Add(New rawToken("", snatcherOn, snatcherOff))
+            cb.options.itemList.Item(3).tokens.Add(New rawToken("", thiefOn, thiefOff))
+        Else
+            'placeholder
+            cb.options.itemList.Add(New comboMultiTokenItem("N/A", "N/A"))
+        End If
+    End Sub
+
+    Private Sub buildAiOption(ByRef cb As optionComboCheckbox, ByVal civ As String)        
+        cb.options.optionTags.Add(New rawToken("Ambusher", String.Format("YES_AMBUSHER_{0}[", civ), String.Format("!NO_AMBUSHER_{0}!", civ)))
+        cb.options.optionTags.Add(New rawToken("Sieger", String.Format("YES_SIEGER_{0}[", civ), String.Format("!NO_SIEGER_{0}!", civ)))
+    End Sub
+
+    Private Sub buildSeasonOption(ByRef cb As optionComboCheckbox, ByVal civ As String)        
+        cb.options.optionTags.Add(New rawToken("Spring", String.Format("YES_ACTIVE_SPRING_{0}[", civ), String.Format("!NO_ACTIVE_SPRING_{0}!", civ)))
+        cb.options.optionTags.Add(New rawToken("Summer", String.Format("YES_ACTIVE_SUMMER_{0}[", civ), String.Format("!NO_ACTIVE_SUMMER_{0}!", civ)))
+        cb.options.optionTags.Add(New rawToken("Autumn", String.Format("YES_ACTIVE_AUTUMN_{0}[", civ), String.Format("!NO_ACTIVE_AUTUMN_{0}!", civ)))
+        cb.options.optionTags.Add(New rawToken("Winter", String.Format("YES_ACTIVE_WINTER_{0}[", civ), String.Format("!NO_ACTIVE_WINTER_{0}!", civ)))
     End Sub
 
     Private Sub formatCivTableControl(ByRef c As Control, ByVal w As Integer, ByVal h As Integer)
@@ -895,27 +1022,35 @@ Imports Newtonsoft.Json
         c.Anchor = AnchorStyles.Top
     End Sub
 
-    Private Sub buildPlayableOption(ByRef btn As optionSingleReplaceButton, ByVal tag As String)
+    Private Sub buildSimpleCivButton(ByVal btnName As String, ByVal civName As String, ByVal tag As String, ByVal idxCol As Integer, ByVal idxRow As Integer)
+        'add active option
+        Dim ctrlWidth As Integer = Me.tableLayoutCivs.GetControlFromPosition(idxCol, 0).Width
+        Dim btn As New optionSingleReplaceButton
+        btn.Name = "optBtn" & btnName & "Civ" & civName
+
         If tag = "" Then
             btn.Enabled = False
         Else
-            btn.options.enabledValue = String.Format("YES{0}[", tag)
-            btn.options.disabledValue = String.Format("!NO{0}!", tag)
+            btn.options.enabledValue = String.Format("YES_{0}_{1}[", tag, civName)
+            btn.options.disabledValue = String.Format("!NO_{0}_{1}!", tag, civName)
         End If
 
         btn.ImageAlign = ContentAlignment.MiddleCenter
         btn.Text = ""
+
+        formatCivTableControl(btn, ctrlWidth, civControlHeight)
+        Me.tableLayoutCivs.Controls.Add(btn, idxCol, idxRow)
     End Sub
 
-    Private Sub buildSkillOption(ByRef cb As optionComboPatternToken, ByVal tag As String)
+    Private Sub buildSkillOption(ByRef cb As optionComboPatternToken, ByVal civName As String)
         Dim skillComboItems As New comboItemCollection
         For i As Integer = 0 To 15
             skillComboItems.Add(New comboItem(CStr(i), CStr(i)))
         Next
 
         cb.options.itemList = skillComboItems
-        If tag Is Nothing OrElse tag.Trim <> "" Then
-            cb.optPattern = New optionBasePattern("(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]" & tag & "\b)", "${1}${value}${2}")
+        If civName Is Nothing OrElse civName.Trim <> "" Then
+            cb.optPattern = New optionBasePattern("(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_" & civName & "\b)", "${1}${value}${2}")
         Else
             cb.Enabled = False
         End If

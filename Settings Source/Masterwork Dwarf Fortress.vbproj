@@ -88,6 +88,10 @@
     <TargetZone>Custom</TargetZone>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Third Party Extras\CheckBoxComboBox\bin\Release\CheckBoxComboBox.dll</HintPath>
+    </Reference>
     <Reference Include="KRBTabControl">
       <HintPath>Third Party Extras\KRBTabControl\KRBTabControl\bin\Release\KRBTabControl.dll</HintPath>
     </Reference>
@@ -202,6 +206,12 @@
       <DependentUpon>optionComboBoxToken.vb</DependentUpon>
     </Compile>
     <Compile Include="custom controls\optionComboBoxToken.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom controls\optionComboCheckbox.Designer.vb">
+      <DependentUpon>optionComboCheckbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\optionComboCheckbox.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="custom controls\optionComboPatternToken.Designer.vb">

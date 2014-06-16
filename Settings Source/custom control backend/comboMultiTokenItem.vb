@@ -11,6 +11,10 @@ Public Class comboMultiTokenItem
     Public Sub New()
     End Sub
 
+    Public Sub New(ByVal value As String, ByVal display As String)
+        MyBase.New(value, display)
+    End Sub
+
     Private m_tokens As New rawTokenCollection
 
     <CategoryAttribute("~RAW Options"), _

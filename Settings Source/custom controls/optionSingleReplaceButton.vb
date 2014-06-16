@@ -20,6 +20,8 @@ Public Class optionSingleReplaceButton
 
     Private m_opt As optionSingleReplace
 
+    Public Event optionLoaded(ByVal btn As optionSingleReplaceButton)
+
     Public Sub loadOption(Optional ByVal value As Object = Nothing) Implements iToken.loadOption
         m_opt.valueUpdatingPaused = True
         Try
@@ -30,12 +32,13 @@ Public Class optionSingleReplaceButton
                 Me.Checked = yesNoToBoolean(m_opt.loadOption)
             End If
             MyBase.OnCheckedChanged(Nothing)
+            RaiseEvent optionLoaded(Me)
         Catch ex As Exception
             Me.Checked = False
             Me.Image = My.Resources.exclamation_small
         Finally
             m_opt.valueUpdatingPaused = False
-        End Try
+        End Try        
     End Sub
 
     Public Sub saveOption() Implements iToken.saveOption

@@ -8,8 +8,7 @@ Public Class optionComboBoxMultiToken
     Implements iTest
     Implements iExportInfo
 
-    Private m_opt As optionListMultiCombo
-    Private m_currentTokens As rawTokenCollection
+    Private m_opt As optionListMultiCombo    
 
     Public Sub New()
 

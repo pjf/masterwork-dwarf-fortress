@@ -50,9 +50,16 @@ Public Class optionBase
         'only load settings from our current raws
         Return m_optionManager.loadOption(m_fileManager.loadFiles(m_optionManager, m_tokens), m_tokens, m_settingManager)
     End Function
+    Public Function loadOption(ByVal tokens As rawTokenCollection)
+        Return m_optionManager.loadOption(m_fileManager.loadFiles(m_optionManager, m_tokens), tokens, m_settingManager)
+    End Function
 
     Public Function saveOption(Optional ByVal enable As Boolean = False) As Boolean
         Return m_optionManager.saveOption(m_fileManager, m_tokens, enable)
+    End Function
+
+    Public Function saveOption(ByVal tokens As rawTokenCollection, Optional ByVal enable As Boolean = False) As Boolean
+        Return m_optionManager.saveOption(m_fileManager, tokens, enable)
     End Function
 
     Public Sub saveSetting(ByVal newValue As String)
