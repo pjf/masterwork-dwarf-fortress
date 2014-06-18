@@ -131,6 +131,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property CheckBoxComboBox() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CheckBoxComboBox", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property color() As System.Drawing.Bitmap
@@ -391,6 +401,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property KRBTabControl() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("KRBTabControl", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property LAA() As System.Drawing.Bitmap
@@ -447,6 +467,16 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("new-text", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property Newtonsoft_Json() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Newtonsoft_Json", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
         
@@ -547,6 +577,16 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("splash2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property System_Windows_Forms_Ribbon35() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("System_Windows_Forms_Ribbon35", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
         

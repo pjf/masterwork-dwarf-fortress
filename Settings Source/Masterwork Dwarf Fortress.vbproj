@@ -22,7 +22,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
     <ManifestCertificateThumbprint>A5B69463D9F69C335E21C70661A1B77B07971C2E</ManifestCertificateThumbprint>
     <ManifestKeyFile>LazyNewbPackGUI_TemporaryKey.pfx</ManifestKeyFile>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
     <SignManifests>false</SignManifests>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -91,12 +91,15 @@
     <Reference Include="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Third Party Extras\CheckBoxComboBox\bin\Release\CheckBoxComboBox.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="KRBTabControl">
       <HintPath>Third Party Extras\KRBTabControl\KRBTabControl\bin\Release\KRBTabControl.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Third Party Extras\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration">
@@ -110,6 +113,7 @@
     <Reference Include="System.Windows.Forms.Ribbon35, Version=3.5.8.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Third Party Extras\System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon\bin\Release\System.Windows.Forms.Ribbon35.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core">
@@ -440,6 +444,10 @@
     <Content Include="ico32c.ico" />
     <Content Include="ico64.ico" />
     <Content Include="mw-icon.ico" />
+    <None Include="Third Party Extras\Newtonsoft.Json.dll" />
+    <None Include="Third Party Extras\System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon\bin\Release\System.Windows.Forms.Ribbon35.dll" />
+    <None Include="Third Party Extras\KRBTabControl\KRBTabControl\bin\Release\KRBTabControl.dll" />
+    <None Include="Third Party Extras\CheckBoxComboBox\bin\Release\CheckBoxComboBox.dll" />
     <None Include="Resources\splash2.jpg" />
     <None Include="Resources\arrow-circle-225-left.png" />
     <None Include="Resources\control.png" />

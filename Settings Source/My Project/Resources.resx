@@ -286,4 +286,16 @@
   <data name="splash2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\splash2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CheckBoxComboBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Third Party Extras\CheckBoxComboBox\bin\Release\CheckBoxComboBox.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="KRBTabControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Third Party Extras\KRBTabControl\KRBTabControl\bin\Release\KRBTabControl.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Newtonsoft_Json" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Third Party Extras\Newtonsoft.Json.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="System_Windows_Forms_Ribbon35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Third Party Extras\System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon\bin\Release\System.Windows.Forms.Ribbon35.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
