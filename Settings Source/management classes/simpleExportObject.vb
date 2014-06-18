@@ -84,11 +84,13 @@ Public Class simpleExportObject
     Public ReadOnly Property Tags As rawTokenCollection
         Get
             Dim blnValidTokens As Boolean = False
-            For Each t As rawToken In currInfo.tagItems
-                If t.optionOnValue.ToString <> "" Or t.optionOffValue.ToString <> "" Or t.tokenName <> "" Then
-                    blnValidTokens = True : Exit For
-                End If
-            Next
+            If currInfo.tagItems IsNot Nothing Then
+                For Each t As rawToken In currInfo.tagItems
+                    If t.optionOnValue.ToString <> "" Or t.optionOffValue.ToString <> "" Or t.tokenName <> "" Then
+                        blnValidTokens = True : Exit For
+                    End If
+                Next
+            End If
             If blnValidTokens Then
                 Return currInfo.tagItems
             Else
