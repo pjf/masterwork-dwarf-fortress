@@ -860,147 +860,147 @@ Partial Class MainForm
         Dim FileListManager192 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager192 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager195 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace154 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingle26 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager193 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager193 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager196 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle26 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle27 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager194 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager194 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager197 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle27 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle28 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager195 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager195 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager198 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle28 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle29 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager196 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager196 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager199 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle29 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle30 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager197 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager197 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager200 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle30 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle31 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager198 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager198 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager201 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle31 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle32 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager199 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager199 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager202 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle32 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle33 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager200 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager200 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager203 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle33 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle34 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager201 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager201 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager204 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle34 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle35 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager202 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager202 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager205 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle35 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle36 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager203 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager203 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager206 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle36 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle37 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager204 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager204 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager207 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle37 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle38 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager205 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager205 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager208 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle38 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle39 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager206 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager206 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager209 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle39 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle40 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager207 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager207 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager210 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle40 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle41 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager208 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager208 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager211 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle41 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle42 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager209 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager209 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager212 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle42 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle43 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager210 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager210 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager213 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle43 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle44 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager211 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager211 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager214 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle44 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle45 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager212 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager212 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager215 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle45 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle46 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager213 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager213 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager216 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle46 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle47 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager214 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager214 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager217 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle47 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingleReplace154 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager215 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager215 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager218 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace155 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingle48 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager216 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager216 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager219 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle48 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle49 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager217 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager217 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager220 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle49 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle50 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager218 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager218 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager221 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle50 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle51 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager219 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager219 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager222 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle51 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle52 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager220 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager220 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager223 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle52 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle53 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager221 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager221 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager224 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle53 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle54 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager222 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager222 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager225 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle54 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle55 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager223 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager223 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager226 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle55 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle56 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager224 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager224 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager227 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle56 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle57 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager225 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager225 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager228 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle57 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle58 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager226 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager226 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager229 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle58 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle59 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager227 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager227 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager230 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle59 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingleReplace155 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager228 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager228 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager231 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
@@ -1008,23 +1008,40 @@ Partial Class MainForm
         Dim FileListManager229 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager229 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager232 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace157 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingle60 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager230 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager230 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager233 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle60 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingle61 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager231 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager231 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager234 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle61 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
-        Dim FileListManager232 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
-        Dim OptionManager232 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
-        Dim OptionSettingManager235 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim OptionList6 As MasterworkDwarfFortress.optionList = New MasterworkDwarfFortress.optionList()
-        Dim FileListManager233 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
+        Dim FileListManager232 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim ComboItem36 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
         Dim ComboItem37 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
         Dim ComboItem38 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem39 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem40 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem41 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem42 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem43 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem44 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem45 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem46 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem47 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem48 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem49 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem50 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem51 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim OptionManager232 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager235 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionBasePattern4 As MasterworkDwarfFortress.optionBasePattern = New MasterworkDwarfFortress.optionBasePattern()
+        Dim OptionList7 As MasterworkDwarfFortress.optionList = New MasterworkDwarfFortress.optionList()
+        Dim FileListManager233 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
+        Dim ComboItem52 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem53 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
+        Dim ComboItem54 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
         Dim OptionManager233 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager236 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim OptionSingleFileReplace4 As MasterworkDwarfFortress.optionSingleFileReplace = New MasterworkDwarfFortress.optionSingleFileReplace()
@@ -1057,6 +1074,10 @@ Partial Class MainForm
         Dim FileListManager234 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager234 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager238 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionSingleReplace157 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim FileListManager235 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
+        Dim OptionManager235 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager239 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim OptionSingleReplace158 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager236 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager236 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
@@ -1073,35 +1094,10 @@ Partial Class MainForm
         Dim FileListManager239 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager239 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager243 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace162 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingle63 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager240 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager240 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager244 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle63 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
-        Dim FileListManager241 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
-        Dim OptionManager241 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
-        Dim OptionSettingManager245 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionList7 As MasterworkDwarfFortress.optionList = New MasterworkDwarfFortress.optionList()
-        Dim FileListManager235 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
-        Dim ComboItem39 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem40 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem41 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem42 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem43 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem44 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem45 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem46 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem47 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem48 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem49 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem50 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem51 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem52 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem53 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim ComboItem54 As MasterworkDwarfFortress.comboItem = New MasterworkDwarfFortress.comboItem()
-        Dim OptionManager235 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
-        Dim OptionSettingManager239 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionBasePattern4 As MasterworkDwarfFortress.optionBasePattern = New MasterworkDwarfFortress.optionBasePattern()
         Me.ToolTipMaker = New System.Windows.Forms.ToolTip(Me.components)
         Me.btnUpdateSaves = New System.Windows.Forms.Button()
         Me.cmbWorldGenIndex = New System.Windows.Forms.ComboBox()
@@ -1305,7 +1301,6 @@ Partial Class MainForm
         Me.optMultiHarderFarming = New MasterworkDwarfFortress.optionMultiButton()
         Me.optBtnHarderMining = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optBtnHarderLearning = New MasterworkDwarfFortress.optionSingleReplaceButton()
-        Me.optBtnBodyguards = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optBtnSecrets = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optBtnDiseases = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optBtnRegionalWeather = New MasterworkDwarfFortress.optionSingleReplaceButton()
@@ -1369,6 +1364,7 @@ Partial Class MainForm
         Me.optBtnHFS = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optMaskGoodAreas = New MasterworkDwarfFortress.optionFormatted()
         Me.optMaskEvilAreas = New MasterworkDwarfFortress.optionFormatted()
+        Me.optCbPatternCavernSkills = New MasterworkDwarfFortress.optionComboPatternToken()
         Me.lblHFSLevels = New System.Windows.Forms.Label()
         Me.lblSettingExplanation = New System.Windows.Forms.Label()
         Me.lblWorldGenSelect = New System.Windows.Forms.Label()
@@ -1535,6 +1531,7 @@ Partial Class MainForm
         Me.lblCivInvasions = New System.Windows.Forms.Label()
         Me.tabOtherCreatures = New KRBTabControl.TabPageEx()
         Me.grpCavernCreatures = New MasterworkDwarfFortress.mwGroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.optBtnCavernSpawn = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optBtnCaveOgres = New MasterworkDwarfFortress.optionSingleReplaceButton()
         Me.optBtnElementals = New MasterworkDwarfFortress.optionSingleReplaceButton()
@@ -1606,8 +1603,6 @@ Partial Class MainForm
         Me.lblEvilAreas = New System.Windows.Forms.Label()
         Me.lblBiomeNote = New System.Windows.Forms.Label()
         Me.optNumHFSLevels = New MasterworkDwarfFortress.optionNumeric()
-        Me.optCbPatternCavernSkills = New MasterworkDwarfFortress.optionComboPatternToken()
-        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.optNumPopCap,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.optNumMacro,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.optNumPatternEmbarkGroupSize,System.ComponentModel.ISupportInitialize).BeginInit
@@ -2902,7 +2897,7 @@ Partial Class MainForm
         Me.lblCivActive.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivActive.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivActive.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivActive.ForeColor = System.Drawing.Color.White
         Me.lblCivActive.Location = New System.Drawing.Point(106, 1)
         Me.lblCivActive.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -2918,7 +2913,7 @@ Partial Class MainForm
         Me.lblCivFaction.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivFaction.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivFaction.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivFaction.ForeColor = System.Drawing.Color.White
         Me.lblCivFaction.Location = New System.Drawing.Point(277, 1)
         Me.lblCivFaction.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -2927,14 +2922,14 @@ Partial Class MainForm
         Me.lblCivFaction.TabIndex = 6
         Me.lblCivFaction.Text = "Faction"
         Me.lblCivFaction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.lblCivFaction, "Determines which civilizations will ally together. (Good vs. Evil)")
+        Me.ToolTipMaker.SetToolTip(Me.lblCivFaction, "Determines which civilizations will ally together.")
         '
         'lblCivPlayableAdv
         '
         Me.lblCivPlayableAdv.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivPlayableAdv.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivPlayableAdv.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivPlayableAdv.ForeColor = System.Drawing.Color.White
         Me.lblCivPlayableAdv.Location = New System.Drawing.Point(220, 1)
         Me.lblCivPlayableAdv.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -2950,7 +2945,7 @@ Partial Class MainForm
         Me.lblPlayableFort.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblPlayableFort.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblPlayableFort.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblPlayableFort.ForeColor = System.Drawing.Color.White
         Me.lblPlayableFort.Location = New System.Drawing.Point(163, 1)
         Me.lblPlayableFort.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -2966,7 +2961,7 @@ Partial Class MainForm
         Me.lblCivBodyguards.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivBodyguards.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivBodyguards.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivBodyguards.ForeColor = System.Drawing.Color.White
         Me.lblCivBodyguards.Location = New System.Drawing.Point(441, 1)
         Me.lblCivBodyguards.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -2975,14 +2970,14 @@ Partial Class MainForm
         Me.lblCivBodyguards.TabIndex = 29
         Me.lblCivBodyguards.Text = "Guards"
         Me.lblCivBodyguards.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.lblCivBodyguards, "When enabled caravans will arrive escorted by guards.")
+        Me.ToolTipMaker.SetToolTip(Me.lblCivBodyguards, "When enabled caravans will be accompanied by guards.")
         '
         'lblCivAI
         '
         Me.lblCivAI.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivAI.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivAI.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivAI.ForeColor = System.Drawing.Color.White
         Me.lblCivAI.Location = New System.Drawing.Point(588, 1)
         Me.lblCivAI.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -2998,7 +2993,7 @@ Partial Class MainForm
         Me.lblCivSkills.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivSkills.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivSkills.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivSkills.ForeColor = System.Drawing.Color.White
         Me.lblCivSkills.Location = New System.Drawing.Point(801, 1)
         Me.lblCivSkills.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -3007,15 +3002,15 @@ Partial Class MainForm
         Me.lblCivSkills.TabIndex = 6
         Me.lblCivSkills.Text = "Skills"
         Me.lblCivSkills.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.lblCivSkills, "Determines the natural fighting skill levels of invading creatures.\nWARNING: Be "& _ 
-        "careful when setting this for your playable civilization!")
+        Me.ToolTipMaker.SetToolTip(Me.lblCivSkills, "Determines the natural fighting skill levels of invading creatures. WARNING: Be c"& _ 
+        "areful when setting this for your playable civilization!")
         '
         'lblCivMaterials
         '
         Me.lblCivMaterials.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivMaterials.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivMaterials.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivMaterials.ForeColor = System.Drawing.Color.White
         Me.lblCivMaterials.Location = New System.Drawing.Point(727, 1)
         Me.lblCivMaterials.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -3031,7 +3026,7 @@ Partial Class MainForm
         Me.lblCivSkulk.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivSkulk.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivSkulk.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivSkulk.ForeColor = System.Drawing.Color.White
         Me.lblCivSkulk.Location = New System.Drawing.Point(670, 1)
         Me.lblCivSkulk.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -3041,15 +3036,14 @@ Partial Class MainForm
         Me.lblCivSkulk.Text = "Skulk"
         Me.lblCivSkulk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTipMaker.SetToolTip(Me.lblCivSkulk, "This makes the severity of attacks depend on the extent of item/baby thievery rat"& _ 
-        "her than the passage of time. Makes trade impossible with the related civilizati"& _ 
-        "on.")
+        "her than the passage of time.")
         '
         'lblCivSeason
         '
         Me.lblCivSeason.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivSeason.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivSeason.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivSeason.ForeColor = System.Drawing.Color.White
         Me.lblCivSeason.Location = New System.Drawing.Point(868, 1)
         Me.lblCivSeason.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -8249,40 +8243,6 @@ Partial Class MainForm
         Me.ToolTipMaker.SetToolTip(Me.optBtnHarderLearning, "All dwarves learn only half as fast. Makes Guilds more important.")
         Me.optBtnHarderLearning.UseVisualStyleBackColor = false
         '
-        'optBtnBodyguards
-        '
-        Me.optBtnBodyguards.Appearance = System.Windows.Forms.Appearance.Button
-        Me.optBtnBodyguards.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBodyguards.FlatAppearance.BorderSize = 0
-        Me.optBtnBodyguards.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
-        Me.optBtnBodyguards.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(225,Byte),Integer), CType(CType(210,Byte),Integer), CType(CType(165,Byte),Integer))
-        Me.optBtnBodyguards.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optBtnBodyguards.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
-        Me.optBtnBodyguards.Image = CType(resources.GetObject("optBtnBodyguards.Image"),System.Drawing.Image)
-        Me.optBtnBodyguards.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.optBtnBodyguards.Location = New System.Drawing.Point(5, 164)
-        Me.optBtnBodyguards.Margin = New System.Windows.Forms.Padding(1)
-        Me.optBtnBodyguards.Name = "optBtnBodyguards"
-        OptionSingleReplace144.disabledValue = "!NOBODYGUARD!"
-        OptionSingleReplace144.enabledValue = "YESBODYGUARD["
-        FileListManager183.fileNames = CType(resources.GetObject("FileListManager183.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace144.fileManager = FileListManager183
-        OptionManager183.checkAllOnLoad = false
-        OptionManager183.loadFromDInit = false
-        OptionManager183.loadFromInit = false
-        OptionManager183.loadFromWorldGen = false
-        OptionSingleReplace144.optionManager = OptionManager183
-        OptionSettingManager186.settingName = Nothing
-        OptionSingleReplace144.settingManager = OptionSettingManager186
-        OptionSingleReplace144.tokenName = ""
-        Me.optBtnBodyguards.options = OptionSingleReplace144
-        Me.optBtnBodyguards.Size = New System.Drawing.Size(134, 27)
-        Me.optBtnBodyguards.TabIndex = 7
-        Me.optBtnBodyguards.Text = "Caravan Escorts"
-        Me.optBtnBodyguards.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTipMaker.SetToolTip(Me.optBtnBodyguards, "ON gives caravans bodyguards. OFF means that you have to protect them yourself.")
-        Me.optBtnBodyguards.UseVisualStyleBackColor = false
-        '
         'optBtnSecrets
         '
         Me.optBtnSecrets.Appearance = System.Windows.Forms.Appearance.Button
@@ -8294,22 +8254,22 @@ Partial Class MainForm
         Me.optBtnSecrets.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optBtnSecrets.Image = CType(resources.GetObject("optBtnSecrets.Image"),System.Drawing.Image)
         Me.optBtnSecrets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.optBtnSecrets.Location = New System.Drawing.Point(5, 193)
+        Me.optBtnSecrets.Location = New System.Drawing.Point(5, 164)
         Me.optBtnSecrets.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnSecrets.Name = "optBtnSecrets"
-        OptionSingleReplace145.disabledValue = "!NOSECRET!"
-        OptionSingleReplace145.enabledValue = "YESSECRET["
-        FileListManager184.fileNames = CType(resources.GetObject("FileListManager184.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace145.fileManager = FileListManager184
-        OptionManager184.checkAllOnLoad = false
-        OptionManager184.loadFromDInit = false
-        OptionManager184.loadFromInit = false
-        OptionManager184.loadFromWorldGen = false
-        OptionSingleReplace145.optionManager = OptionManager184
-        OptionSettingManager187.settingName = Nothing
-        OptionSingleReplace145.settingManager = OptionSettingManager187
-        OptionSingleReplace145.tokenName = ""
-        Me.optBtnSecrets.options = OptionSingleReplace145
+        OptionSingleReplace144.disabledValue = "!NOSECRET!"
+        OptionSingleReplace144.enabledValue = "YESSECRET["
+        FileListManager183.fileNames = CType(resources.GetObject("FileListManager183.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace144.fileManager = FileListManager183
+        OptionManager183.checkAllOnLoad = false
+        OptionManager183.loadFromDInit = false
+        OptionManager183.loadFromInit = false
+        OptionManager183.loadFromWorldGen = false
+        OptionSingleReplace144.optionManager = OptionManager183
+        OptionSettingManager186.settingName = Nothing
+        OptionSingleReplace144.settingManager = OptionSettingManager186
+        OptionSingleReplace144.tokenName = ""
+        Me.optBtnSecrets.options = OptionSingleReplace144
         Me.optBtnSecrets.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSecrets.TabIndex = 8
         Me.optBtnSecrets.Text = "Secret !FUN!"
@@ -8329,22 +8289,22 @@ Partial Class MainForm
         Me.optBtnDiseases.ForeColor = System.Drawing.Color.FromArgb(CType(CType(248,Byte),Integer), CType(CType(248,Byte),Integer), CType(CType(242,Byte),Integer))
         Me.optBtnDiseases.Image = CType(resources.GetObject("optBtnDiseases.Image"),System.Drawing.Image)
         Me.optBtnDiseases.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.optBtnDiseases.Location = New System.Drawing.Point(5, 222)
+        Me.optBtnDiseases.Location = New System.Drawing.Point(5, 193)
         Me.optBtnDiseases.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnDiseases.Name = "optBtnDiseases"
-        OptionSingleReplace146.disabledValue = "!NONEWDISEASE!"
-        OptionSingleReplace146.enabledValue = "YESNEWDISEASE["
-        FileListManager185.fileNames = CType(resources.GetObject("FileListManager185.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace146.fileManager = FileListManager185
-        OptionManager185.checkAllOnLoad = false
-        OptionManager185.loadFromDInit = false
-        OptionManager185.loadFromInit = false
-        OptionManager185.loadFromWorldGen = false
-        OptionSingleReplace146.optionManager = OptionManager185
-        OptionSettingManager188.settingName = Nothing
-        OptionSingleReplace146.settingManager = OptionSettingManager188
-        OptionSingleReplace146.tokenName = ""
-        Me.optBtnDiseases.options = OptionSingleReplace146
+        OptionSingleReplace145.disabledValue = "!NONEWDISEASE!"
+        OptionSingleReplace145.enabledValue = "YESNEWDISEASE["
+        FileListManager184.fileNames = CType(resources.GetObject("FileListManager184.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace145.fileManager = FileListManager184
+        OptionManager184.checkAllOnLoad = false
+        OptionManager184.loadFromDInit = false
+        OptionManager184.loadFromInit = false
+        OptionManager184.loadFromWorldGen = false
+        OptionSingleReplace145.optionManager = OptionManager184
+        OptionSettingManager187.settingName = Nothing
+        OptionSingleReplace145.settingManager = OptionSettingManager187
+        OptionSingleReplace145.tokenName = ""
+        Me.optBtnDiseases.options = OptionSingleReplace145
         Me.optBtnDiseases.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDiseases.TabIndex = 9
         Me.optBtnDiseases.Text = "Diseases"
@@ -8367,19 +8327,19 @@ Partial Class MainForm
         Me.optBtnRegionalWeather.Location = New System.Drawing.Point(5, 19)
         Me.optBtnRegionalWeather.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnRegionalWeather.Name = "optBtnRegionalWeather"
-        OptionSingleReplace147.disabledValue = "!NOWEATHER!"
-        OptionSingleReplace147.enabledValue = "YESWEATHER["
-        FileListManager186.fileNames = CType(resources.GetObject("FileListManager186.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace147.fileManager = FileListManager186
-        OptionManager186.checkAllOnLoad = false
-        OptionManager186.loadFromDInit = false
-        OptionManager186.loadFromInit = false
-        OptionManager186.loadFromWorldGen = false
-        OptionSingleReplace147.optionManager = OptionManager186
-        OptionSettingManager189.settingName = Nothing
-        OptionSingleReplace147.settingManager = OptionSettingManager189
-        OptionSingleReplace147.tokenName = ""
-        Me.optBtnRegionalWeather.options = OptionSingleReplace147
+        OptionSingleReplace146.disabledValue = "!NOWEATHER!"
+        OptionSingleReplace146.enabledValue = "YESWEATHER["
+        FileListManager185.fileNames = CType(resources.GetObject("FileListManager185.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace146.fileManager = FileListManager185
+        OptionManager185.checkAllOnLoad = false
+        OptionManager185.loadFromDInit = false
+        OptionManager185.loadFromInit = false
+        OptionManager185.loadFromWorldGen = false
+        OptionSingleReplace146.optionManager = OptionManager185
+        OptionSettingManager188.settingName = Nothing
+        OptionSingleReplace146.settingManager = OptionSettingManager188
+        OptionSingleReplace146.tokenName = ""
+        Me.optBtnRegionalWeather.options = OptionSingleReplace146
         Me.optBtnRegionalWeather.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRegionalWeather.TabIndex = 1
         Me.optBtnRegionalWeather.Text = "Regional Weather"
@@ -8401,19 +8361,19 @@ Partial Class MainForm
         Me.optBtnRegionalEffects.Location = New System.Drawing.Point(5, 48)
         Me.optBtnRegionalEffects.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnRegionalEffects.Name = "optBtnRegionalEffects"
-        OptionSingleReplace148.disabledValue = "!NOREGIONALEFFECT!"
-        OptionSingleReplace148.enabledValue = "YESREGIONALEFFECT["
-        FileListManager187.fileNames = CType(resources.GetObject("FileListManager187.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace148.fileManager = FileListManager187
-        OptionManager187.checkAllOnLoad = false
-        OptionManager187.loadFromDInit = false
-        OptionManager187.loadFromInit = false
-        OptionManager187.loadFromWorldGen = false
-        OptionSingleReplace148.optionManager = OptionManager187
-        OptionSettingManager190.settingName = Nothing
-        OptionSingleReplace148.settingManager = OptionSettingManager190
-        OptionSingleReplace148.tokenName = ""
-        Me.optBtnRegionalEffects.options = OptionSingleReplace148
+        OptionSingleReplace147.disabledValue = "!NOREGIONALEFFECT!"
+        OptionSingleReplace147.enabledValue = "YESREGIONALEFFECT["
+        FileListManager186.fileNames = CType(resources.GetObject("FileListManager186.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace147.fileManager = FileListManager186
+        OptionManager186.checkAllOnLoad = false
+        OptionManager186.loadFromDInit = false
+        OptionManager186.loadFromInit = false
+        OptionManager186.loadFromWorldGen = false
+        OptionSingleReplace147.optionManager = OptionManager186
+        OptionSettingManager189.settingName = Nothing
+        OptionSingleReplace147.settingManager = OptionSettingManager189
+        OptionSingleReplace147.tokenName = ""
+        Me.optBtnRegionalEffects.options = OptionSingleReplace147
         Me.optBtnRegionalEffects.Size = New System.Drawing.Size(134, 27)
         Me.optBtnRegionalEffects.TabIndex = 2
         Me.optBtnRegionalEffects.Text = "Regional Effects"
@@ -8436,19 +8396,19 @@ Partial Class MainForm
         Me.optBtnSmokeEffects.Location = New System.Drawing.Point(5, 77)
         Me.optBtnSmokeEffects.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnSmokeEffects.Name = "optBtnSmokeEffects"
-        OptionSingleReplace149.disabledValue = "!NODUST!"
-        OptionSingleReplace149.enabledValue = "YESDUST["
-        FileListManager188.fileNames = CType(resources.GetObject("FileListManager188.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace149.fileManager = FileListManager188
-        OptionManager188.checkAllOnLoad = false
-        OptionManager188.loadFromDInit = false
-        OptionManager188.loadFromInit = false
-        OptionManager188.loadFromWorldGen = false
-        OptionSingleReplace149.optionManager = OptionManager188
-        OptionSettingManager191.settingName = Nothing
-        OptionSingleReplace149.settingManager = OptionSettingManager191
-        OptionSingleReplace149.tokenName = ""
-        Me.optBtnSmokeEffects.options = OptionSingleReplace149
+        OptionSingleReplace148.disabledValue = "!NODUST!"
+        OptionSingleReplace148.enabledValue = "YESDUST["
+        FileListManager187.fileNames = CType(resources.GetObject("FileListManager187.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace148.fileManager = FileListManager187
+        OptionManager187.checkAllOnLoad = false
+        OptionManager187.loadFromDInit = false
+        OptionManager187.loadFromInit = false
+        OptionManager187.loadFromWorldGen = false
+        OptionSingleReplace148.optionManager = OptionManager187
+        OptionSettingManager190.settingName = Nothing
+        OptionSingleReplace148.settingManager = OptionSettingManager190
+        OptionSingleReplace148.tokenName = ""
+        Me.optBtnSmokeEffects.options = OptionSingleReplace148
         Me.optBtnSmokeEffects.Size = New System.Drawing.Size(134, 27)
         Me.optBtnSmokeEffects.TabIndex = 3
         Me.optBtnSmokeEffects.Text = "Smoke Effects"
@@ -8471,19 +8431,19 @@ Partial Class MainForm
         Me.optBtnNobles.Location = New System.Drawing.Point(5, 106)
         Me.optBtnNobles.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnNobles.Name = "optBtnNobles"
-        OptionSingleReplace150.disabledValue = "!NOREL!"
-        OptionSingleReplace150.enabledValue = "YESREL["
-        FileListManager189.fileNames = CType(resources.GetObject("FileListManager189.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace150.fileManager = FileListManager189
-        OptionManager189.checkAllOnLoad = false
-        OptionManager189.loadFromDInit = false
-        OptionManager189.loadFromInit = false
-        OptionManager189.loadFromWorldGen = false
-        OptionSingleReplace150.optionManager = OptionManager189
-        OptionSettingManager192.settingName = Nothing
-        OptionSingleReplace150.settingManager = OptionSettingManager192
-        OptionSingleReplace150.tokenName = ""
-        Me.optBtnNobles.options = OptionSingleReplace150
+        OptionSingleReplace149.disabledValue = "!NOREL!"
+        OptionSingleReplace149.enabledValue = "YESREL["
+        FileListManager188.fileNames = CType(resources.GetObject("FileListManager188.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace149.fileManager = FileListManager188
+        OptionManager188.checkAllOnLoad = false
+        OptionManager188.loadFromDInit = false
+        OptionManager188.loadFromInit = false
+        OptionManager188.loadFromWorldGen = false
+        OptionSingleReplace149.optionManager = OptionManager188
+        OptionSettingManager191.settingName = Nothing
+        OptionSingleReplace149.settingManager = OptionSettingManager191
+        OptionSingleReplace149.tokenName = ""
+        Me.optBtnNobles.options = OptionSingleReplace149
         Me.optBtnNobles.Size = New System.Drawing.Size(134, 27)
         Me.optBtnNobles.TabIndex = 4
         Me.optBtnNobles.Text = "New Nobles"
@@ -8507,19 +8467,19 @@ Partial Class MainForm
         Me.optBtnBattlecries.Location = New System.Drawing.Point(5, 135)
         Me.optBtnBattlecries.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnBattlecries.Name = "optBtnBattlecries"
-        OptionSingleReplace151.disabledValue = "!NOBATTLECRY!"
-        OptionSingleReplace151.enabledValue = "YESBATTLECRY["
-        FileListManager190.fileNames = CType(resources.GetObject("FileListManager190.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace151.fileManager = FileListManager190
-        OptionManager190.checkAllOnLoad = false
-        OptionManager190.loadFromDInit = false
-        OptionManager190.loadFromInit = false
-        OptionManager190.loadFromWorldGen = false
-        OptionSingleReplace151.optionManager = OptionManager190
-        OptionSettingManager193.settingName = Nothing
-        OptionSingleReplace151.settingManager = OptionSettingManager193
-        OptionSingleReplace151.tokenName = ""
-        Me.optBtnBattlecries.options = OptionSingleReplace151
+        OptionSingleReplace150.disabledValue = "!NOBATTLECRY!"
+        OptionSingleReplace150.enabledValue = "YESBATTLECRY["
+        FileListManager189.fileNames = CType(resources.GetObject("FileListManager189.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace150.fileManager = FileListManager189
+        OptionManager189.checkAllOnLoad = false
+        OptionManager189.loadFromDInit = false
+        OptionManager189.loadFromInit = false
+        OptionManager189.loadFromWorldGen = false
+        OptionSingleReplace150.optionManager = OptionManager189
+        OptionSettingManager192.settingName = Nothing
+        OptionSingleReplace150.settingManager = OptionSettingManager192
+        OptionSingleReplace150.tokenName = ""
+        Me.optBtnBattlecries.options = OptionSingleReplace150
         Me.optBtnBattlecries.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBattlecries.TabIndex = 5
         Me.optBtnBattlecries.Text = "Battlecries"
@@ -8542,19 +8502,19 @@ Partial Class MainForm
         Me.optBtnDiplomats.Location = New System.Drawing.Point(5, 164)
         Me.optBtnDiplomats.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnDiplomats.Name = "optBtnDiplomats"
-        OptionSingleReplace152.disabledValue = "!NODIPLOMAT!"
-        OptionSingleReplace152.enabledValue = "YESDIPLOMAT["
-        FileListManager191.fileNames = CType(resources.GetObject("FileListManager191.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace152.fileManager = FileListManager191
-        OptionManager191.checkAllOnLoad = false
-        OptionManager191.loadFromDInit = false
-        OptionManager191.loadFromInit = false
-        OptionManager191.loadFromWorldGen = false
-        OptionSingleReplace152.optionManager = OptionManager191
-        OptionSettingManager194.settingName = Nothing
-        OptionSingleReplace152.settingManager = OptionSettingManager194
-        OptionSingleReplace152.tokenName = ""
-        Me.optBtnDiplomats.options = OptionSingleReplace152
+        OptionSingleReplace151.disabledValue = "!NODIPLOMAT!"
+        OptionSingleReplace151.enabledValue = "YESDIPLOMAT["
+        FileListManager190.fileNames = CType(resources.GetObject("FileListManager190.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace151.fileManager = FileListManager190
+        OptionManager190.checkAllOnLoad = false
+        OptionManager190.loadFromDInit = false
+        OptionManager190.loadFromInit = false
+        OptionManager190.loadFromWorldGen = false
+        OptionSingleReplace151.optionManager = OptionManager190
+        OptionSettingManager193.settingName = Nothing
+        OptionSingleReplace151.settingManager = OptionSettingManager193
+        OptionSingleReplace151.tokenName = ""
+        Me.optBtnDiplomats.options = OptionSingleReplace151
         Me.optBtnDiplomats.Size = New System.Drawing.Size(134, 27)
         Me.optBtnDiplomats.TabIndex = 6
         Me.optBtnDiplomats.Text = "Diplomats"
@@ -8577,19 +8537,19 @@ Partial Class MainForm
         Me.optBtnEnglishDwarves.Location = New System.Drawing.Point(5, 192)
         Me.optBtnEnglishDwarves.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnEnglishDwarves.Name = "optBtnEnglishDwarves"
-        OptionSingleReplace153.disabledValue = "NOENGLISH[TRANSLATION:DWARF_M]"
-        OptionSingleReplace153.enabledValue = "YESENGLISH[TRANSLATION:ENGLISH]"
-        FileListManager192.fileNames = CType(resources.GetObject("FileListManager192.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace153.fileManager = FileListManager192
-        OptionManager192.checkAllOnLoad = false
-        OptionManager192.loadFromDInit = false
-        OptionManager192.loadFromInit = false
-        OptionManager192.loadFromWorldGen = false
-        OptionSingleReplace153.optionManager = OptionManager192
-        OptionSettingManager195.settingName = Nothing
-        OptionSingleReplace153.settingManager = OptionSettingManager195
-        OptionSingleReplace153.tokenName = ""
-        Me.optBtnEnglishDwarves.options = OptionSingleReplace153
+        OptionSingleReplace152.disabledValue = "NOENGLISH[TRANSLATION:DWARF_M]"
+        OptionSingleReplace152.enabledValue = "YESENGLISH[TRANSLATION:ENGLISH]"
+        FileListManager191.fileNames = CType(resources.GetObject("FileListManager191.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace152.fileManager = FileListManager191
+        OptionManager191.checkAllOnLoad = false
+        OptionManager191.loadFromDInit = false
+        OptionManager191.loadFromInit = false
+        OptionManager191.loadFromWorldGen = false
+        OptionSingleReplace152.optionManager = OptionManager191
+        OptionSettingManager194.settingName = Nothing
+        OptionSingleReplace152.settingManager = OptionSettingManager194
+        OptionSingleReplace152.tokenName = ""
+        Me.optBtnEnglishDwarves.options = OptionSingleReplace152
         Me.optBtnEnglishDwarves.Size = New System.Drawing.Size(134, 27)
         Me.optBtnEnglishDwarves.TabIndex = 7
         Me.optBtnEnglishDwarves.Text = "English Names"
@@ -8611,19 +8571,19 @@ Partial Class MainForm
         Me.optBtnBuildDimensions.Location = New System.Drawing.Point(5, 221)
         Me.optBtnBuildDimensions.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnBuildDimensions.Name = "optBtnBuildDimensions"
-        OptionSingleReplace154.disabledValue = "!NODIMENSION!"
-        OptionSingleReplace154.enabledValue = "YESDIMENSION["
-        FileListManager193.fileNames = CType(resources.GetObject("FileListManager193.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace154.fileManager = FileListManager193
-        OptionManager193.checkAllOnLoad = false
-        OptionManager193.loadFromDInit = false
-        OptionManager193.loadFromInit = false
-        OptionManager193.loadFromWorldGen = false
-        OptionSingleReplace154.optionManager = OptionManager193
-        OptionSettingManager196.settingName = Nothing
-        OptionSingleReplace154.settingManager = OptionSettingManager196
-        OptionSingleReplace154.tokenName = ""
-        Me.optBtnBuildDimensions.options = OptionSingleReplace154
+        OptionSingleReplace153.disabledValue = "!NODIMENSION!"
+        OptionSingleReplace153.enabledValue = "YESDIMENSION["
+        FileListManager192.fileNames = CType(resources.GetObject("FileListManager192.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace153.fileManager = FileListManager192
+        OptionManager192.checkAllOnLoad = false
+        OptionManager192.loadFromDInit = false
+        OptionManager192.loadFromInit = false
+        OptionManager192.loadFromWorldGen = false
+        OptionSingleReplace153.optionManager = OptionManager192
+        OptionSettingManager195.settingName = Nothing
+        OptionSingleReplace153.settingManager = OptionSettingManager195
+        OptionSingleReplace153.tokenName = ""
+        Me.optBtnBuildDimensions.options = OptionSingleReplace153
         Me.optBtnBuildDimensions.Size = New System.Drawing.Size(134, 27)
         Me.optBtnBuildDimensions.TabIndex = 8
         Me.optBtnBuildDimensions.Text = "Build Dimension"
@@ -8643,15 +8603,15 @@ Partial Class MainForm
         Me.optNumMineralScarcity.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumMineralScarcity.Minimum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.optNumMineralScarcity.Name = "optNumMineralScarcity"
-        FileListManager194.fileNames = CType(resources.GetObject("FileListManager194.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle26.fileManager = FileListManager194
-        OptionManager194.checkAllOnLoad = false
-        OptionManager194.loadFromDInit = false
-        OptionManager194.loadFromInit = false
-        OptionManager194.loadFromWorldGen = true
-        OptionSingle26.optionManager = OptionManager194
-        OptionSettingManager197.settingName = Nothing
-        OptionSingle26.settingManager = OptionSettingManager197
+        FileListManager193.fileNames = CType(resources.GetObject("FileListManager193.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle26.fileManager = FileListManager193
+        OptionManager193.checkAllOnLoad = false
+        OptionManager193.loadFromDInit = false
+        OptionManager193.loadFromInit = false
+        OptionManager193.loadFromWorldGen = true
+        OptionSingle26.optionManager = OptionManager193
+        OptionSettingManager196.settingName = Nothing
+        OptionSingle26.settingManager = OptionSettingManager196
         OptionSingle26.tokenName = "MINERAL_SCARCITY"
         Me.optNumMineralScarcity.options = OptionSingle26
         Me.optNumMineralScarcity.Size = New System.Drawing.Size(63, 19)
@@ -8670,15 +8630,15 @@ Partial Class MainForm
         Me.optNumCivNumber.Location = New System.Drawing.Point(140, 20)
         Me.optNumCivNumber.Maximum = New Decimal(New Integer() {300, 0, 0, 0})
         Me.optNumCivNumber.Name = "optNumCivNumber"
-        FileListManager195.fileNames = CType(resources.GetObject("FileListManager195.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle27.fileManager = FileListManager195
-        OptionManager195.checkAllOnLoad = false
-        OptionManager195.loadFromDInit = false
-        OptionManager195.loadFromInit = false
-        OptionManager195.loadFromWorldGen = true
-        OptionSingle27.optionManager = OptionManager195
-        OptionSettingManager198.settingName = Nothing
-        OptionSingle27.settingManager = OptionSettingManager198
+        FileListManager194.fileNames = CType(resources.GetObject("FileListManager194.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle27.fileManager = FileListManager194
+        OptionManager194.checkAllOnLoad = false
+        OptionManager194.loadFromDInit = false
+        OptionManager194.loadFromInit = false
+        OptionManager194.loadFromWorldGen = true
+        OptionSingle27.optionManager = OptionManager194
+        OptionSettingManager197.settingName = Nothing
+        OptionSingle27.settingManager = OptionSettingManager197
         OptionSingle27.tokenName = "TOTAL_CIV_NUMBER"
         Me.optNumCivNumber.options = OptionSingle27
         Me.optNumCivNumber.Size = New System.Drawing.Size(63, 19)
@@ -8697,15 +8657,15 @@ Partial Class MainForm
         Me.optNumEmbarkPoints.Location = New System.Drawing.Point(140, 46)
         Me.optNumEmbarkPoints.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumEmbarkPoints.Name = "optNumEmbarkPoints"
-        FileListManager196.fileNames = CType(resources.GetObject("FileListManager196.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle28.fileManager = FileListManager196
-        OptionManager196.checkAllOnLoad = false
-        OptionManager196.loadFromDInit = false
-        OptionManager196.loadFromInit = false
-        OptionManager196.loadFromWorldGen = true
-        OptionSingle28.optionManager = OptionManager196
-        OptionSettingManager199.settingName = Nothing
-        OptionSingle28.settingManager = OptionSettingManager199
+        FileListManager195.fileNames = CType(resources.GetObject("FileListManager195.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle28.fileManager = FileListManager195
+        OptionManager195.checkAllOnLoad = false
+        OptionManager195.loadFromDInit = false
+        OptionManager195.loadFromInit = false
+        OptionManager195.loadFromWorldGen = true
+        OptionSingle28.optionManager = OptionManager195
+        OptionSettingManager198.settingName = Nothing
+        OptionSingle28.settingManager = OptionSettingManager198
         OptionSingle28.tokenName = "EMBARK_POINTS"
         Me.optNumEmbarkPoints.options = OptionSingle28
         Me.optNumEmbarkPoints.Size = New System.Drawing.Size(63, 19)
@@ -8725,15 +8685,15 @@ Partial Class MainForm
         Me.optNumEndYear.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.optNumEndYear.Minimum = New Decimal(New Integer() {2, 0, 0, 0})
         Me.optNumEndYear.Name = "optNumEndYear"
-        FileListManager197.fileNames = CType(resources.GetObject("FileListManager197.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle29.fileManager = FileListManager197
-        OptionManager197.checkAllOnLoad = false
-        OptionManager197.loadFromDInit = false
-        OptionManager197.loadFromInit = false
-        OptionManager197.loadFromWorldGen = true
-        OptionSingle29.optionManager = OptionManager197
-        OptionSettingManager200.settingName = Nothing
-        OptionSingle29.settingManager = OptionSettingManager200
+        FileListManager196.fileNames = CType(resources.GetObject("FileListManager196.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle29.fileManager = FileListManager196
+        OptionManager196.checkAllOnLoad = false
+        OptionManager196.loadFromDInit = false
+        OptionManager196.loadFromInit = false
+        OptionManager196.loadFromWorldGen = true
+        OptionSingle29.optionManager = OptionManager196
+        OptionSettingManager199.settingName = Nothing
+        OptionSingle29.settingManager = OptionSettingManager199
         OptionSingle29.tokenName = "END_YEAR"
         Me.optNumEndYear.options = OptionSingle29
         Me.optNumEndYear.Size = New System.Drawing.Size(63, 19)
@@ -8753,15 +8713,15 @@ Partial Class MainForm
         Me.optNumPopSize.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.optNumPopSize.Minimum = New Decimal(New Integer() {1, 0, 0, -2147483648})
         Me.optNumPopSize.Name = "optNumPopSize"
-        FileListManager198.fileNames = CType(resources.GetObject("FileListManager198.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle30.fileManager = FileListManager198
-        OptionManager198.checkAllOnLoad = false
-        OptionManager198.loadFromDInit = false
-        OptionManager198.loadFromInit = false
-        OptionManager198.loadFromWorldGen = true
-        OptionSingle30.optionManager = OptionManager198
-        OptionSettingManager201.settingName = Nothing
-        OptionSingle30.settingManager = OptionSettingManager201
+        FileListManager197.fileNames = CType(resources.GetObject("FileListManager197.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle30.fileManager = FileListManager197
+        OptionManager197.checkAllOnLoad = false
+        OptionManager197.loadFromDInit = false
+        OptionManager197.loadFromInit = false
+        OptionManager197.loadFromWorldGen = true
+        OptionSingle30.optionManager = OptionManager197
+        OptionSettingManager200.settingName = Nothing
+        OptionSingle30.settingManager = OptionSettingManager200
         OptionSingle30.tokenName = "TOTAL_CIV_POPULATION"
         Me.optNumPopSize.options = OptionSingle30
         Me.optNumPopSize.Size = New System.Drawing.Size(63, 19)
@@ -8884,15 +8844,15 @@ Partial Class MainForm
         Me.optNumMegabeasts.Location = New System.Drawing.Point(125, 24)
         Me.optNumMegabeasts.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumMegabeasts.Name = "optNumMegabeasts"
-        FileListManager199.fileNames = CType(resources.GetObject("FileListManager199.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle31.fileManager = FileListManager199
-        OptionManager199.checkAllOnLoad = false
-        OptionManager199.loadFromDInit = false
-        OptionManager199.loadFromInit = false
-        OptionManager199.loadFromWorldGen = true
-        OptionSingle31.optionManager = OptionManager199
-        OptionSettingManager202.settingName = Nothing
-        OptionSingle31.settingManager = OptionSettingManager202
+        FileListManager198.fileNames = CType(resources.GetObject("FileListManager198.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle31.fileManager = FileListManager198
+        OptionManager198.checkAllOnLoad = false
+        OptionManager198.loadFromDInit = false
+        OptionManager198.loadFromInit = false
+        OptionManager198.loadFromWorldGen = true
+        OptionSingle31.optionManager = OptionManager198
+        OptionSettingManager201.settingName = Nothing
+        OptionSingle31.settingManager = OptionSettingManager201
         OptionSingle31.tokenName = "MEGABEAST_CAP"
         Me.optNumMegabeasts.options = OptionSingle31
         Me.optNumMegabeasts.Size = New System.Drawing.Size(43, 19)
@@ -8911,15 +8871,15 @@ Partial Class MainForm
         Me.optNumSemibeasts.Location = New System.Drawing.Point(125, 49)
         Me.optNumSemibeasts.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumSemibeasts.Name = "optNumSemibeasts"
-        FileListManager200.fileNames = CType(resources.GetObject("FileListManager200.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle32.fileManager = FileListManager200
-        OptionManager200.checkAllOnLoad = false
-        OptionManager200.loadFromDInit = false
-        OptionManager200.loadFromInit = false
-        OptionManager200.loadFromWorldGen = true
-        OptionSingle32.optionManager = OptionManager200
-        OptionSettingManager203.settingName = Nothing
-        OptionSingle32.settingManager = OptionSettingManager203
+        FileListManager199.fileNames = CType(resources.GetObject("FileListManager199.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle32.fileManager = FileListManager199
+        OptionManager199.checkAllOnLoad = false
+        OptionManager199.loadFromDInit = false
+        OptionManager199.loadFromInit = false
+        OptionManager199.loadFromWorldGen = true
+        OptionSingle32.optionManager = OptionManager199
+        OptionSettingManager202.settingName = Nothing
+        OptionSingle32.settingManager = OptionSettingManager202
         OptionSingle32.tokenName = "SEMIMEGABEAST_CAP"
         Me.optNumSemibeasts.options = OptionSingle32
         Me.optNumSemibeasts.Size = New System.Drawing.Size(43, 19)
@@ -8938,15 +8898,15 @@ Partial Class MainForm
         Me.optNumNecromancers.Location = New System.Drawing.Point(125, 227)
         Me.optNumNecromancers.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumNecromancers.Name = "optNumNecromancers"
-        FileListManager201.fileNames = CType(resources.GetObject("FileListManager201.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle33.fileManager = FileListManager201
-        OptionManager201.checkAllOnLoad = false
-        OptionManager201.loadFromDInit = false
-        OptionManager201.loadFromInit = false
-        OptionManager201.loadFromWorldGen = true
-        OptionSingle33.optionManager = OptionManager201
-        OptionSettingManager204.settingName = Nothing
-        OptionSingle33.settingManager = OptionSettingManager204
+        FileListManager200.fileNames = CType(resources.GetObject("FileListManager200.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle33.fileManager = FileListManager200
+        OptionManager200.checkAllOnLoad = false
+        OptionManager200.loadFromDInit = false
+        OptionManager200.loadFromInit = false
+        OptionManager200.loadFromWorldGen = true
+        OptionSingle33.optionManager = OptionManager200
+        OptionSettingManager203.settingName = Nothing
+        OptionSingle33.settingManager = OptionSettingManager203
         OptionSingle33.tokenName = "SECRET_NUMBER"
         Me.optNumNecromancers.options = OptionSingle33
         Me.optNumNecromancers.Size = New System.Drawing.Size(43, 19)
@@ -8964,15 +8924,15 @@ Partial Class MainForm
         Me.optNumWerebeasts.Location = New System.Drawing.Point(125, 202)
         Me.optNumWerebeasts.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumWerebeasts.Name = "optNumWerebeasts"
-        FileListManager202.fileNames = CType(resources.GetObject("FileListManager202.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle34.fileManager = FileListManager202
-        OptionManager202.checkAllOnLoad = false
-        OptionManager202.loadFromDInit = false
-        OptionManager202.loadFromInit = false
-        OptionManager202.loadFromWorldGen = true
-        OptionSingle34.optionManager = OptionManager202
-        OptionSettingManager205.settingName = Nothing
-        OptionSingle34.settingManager = OptionSettingManager205
+        FileListManager201.fileNames = CType(resources.GetObject("FileListManager201.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle34.fileManager = FileListManager201
+        OptionManager201.checkAllOnLoad = false
+        OptionManager201.loadFromDInit = false
+        OptionManager201.loadFromInit = false
+        OptionManager201.loadFromWorldGen = true
+        OptionSingle34.optionManager = OptionManager201
+        OptionSettingManager204.settingName = Nothing
+        OptionSingle34.settingManager = OptionSettingManager204
         OptionSingle34.tokenName = "WEREBEAST_NUMBER"
         Me.optNumWerebeasts.options = OptionSingle34
         Me.optNumWerebeasts.Size = New System.Drawing.Size(43, 19)
@@ -8991,15 +8951,15 @@ Partial Class MainForm
         Me.optNumTitans.Location = New System.Drawing.Point(125, 75)
         Me.optNumTitans.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumTitans.Name = "optNumTitans"
-        FileListManager203.fileNames = CType(resources.GetObject("FileListManager203.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle35.fileManager = FileListManager203
-        OptionManager203.checkAllOnLoad = false
-        OptionManager203.loadFromDInit = false
-        OptionManager203.loadFromInit = false
-        OptionManager203.loadFromWorldGen = true
-        OptionSingle35.optionManager = OptionManager203
-        OptionSettingManager206.settingName = Nothing
-        OptionSingle35.settingManager = OptionSettingManager206
+        FileListManager202.fileNames = CType(resources.GetObject("FileListManager202.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle35.fileManager = FileListManager202
+        OptionManager202.checkAllOnLoad = false
+        OptionManager202.loadFromDInit = false
+        OptionManager202.loadFromInit = false
+        OptionManager202.loadFromWorldGen = true
+        OptionSingle35.optionManager = OptionManager202
+        OptionSettingManager205.settingName = Nothing
+        OptionSingle35.settingManager = OptionSettingManager205
         OptionSingle35.tokenName = "TITAN_NUMBER"
         Me.optNumTitans.options = OptionSingle35
         Me.optNumTitans.Size = New System.Drawing.Size(43, 19)
@@ -9017,15 +8977,15 @@ Partial Class MainForm
         Me.optNumEvilInteractions.Location = New System.Drawing.Point(125, 253)
         Me.optNumEvilInteractions.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumEvilInteractions.Name = "optNumEvilInteractions"
-        FileListManager204.fileNames = CType(resources.GetObject("FileListManager204.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle36.fileManager = FileListManager204
-        OptionManager204.checkAllOnLoad = false
-        OptionManager204.loadFromDInit = false
-        OptionManager204.loadFromInit = false
-        OptionManager204.loadFromWorldGen = true
-        OptionSingle36.optionManager = OptionManager204
-        OptionSettingManager207.settingName = Nothing
-        OptionSingle36.settingManager = OptionSettingManager207
+        FileListManager203.fileNames = CType(resources.GetObject("FileListManager203.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle36.fileManager = FileListManager203
+        OptionManager203.checkAllOnLoad = false
+        OptionManager203.loadFromDInit = false
+        OptionManager203.loadFromInit = false
+        OptionManager203.loadFromWorldGen = true
+        OptionSingle36.optionManager = OptionManager203
+        OptionSettingManager206.settingName = Nothing
+        OptionSingle36.settingManager = OptionSettingManager206
         OptionSingle36.tokenName = "REGIONAL_INTERACTION_NUMBER"
         Me.optNumEvilInteractions.options = OptionSingle36
         Me.optNumEvilInteractions.Size = New System.Drawing.Size(43, 19)
@@ -9043,15 +9003,15 @@ Partial Class MainForm
         Me.optNumDemons.Location = New System.Drawing.Point(125, 100)
         Me.optNumDemons.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumDemons.Name = "optNumDemons"
-        FileListManager205.fileNames = CType(resources.GetObject("FileListManager205.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle37.fileManager = FileListManager205
-        OptionManager205.checkAllOnLoad = false
-        OptionManager205.loadFromDInit = false
-        OptionManager205.loadFromInit = false
-        OptionManager205.loadFromWorldGen = true
-        OptionSingle37.optionManager = OptionManager205
-        OptionSettingManager208.settingName = Nothing
-        OptionSingle37.settingManager = OptionSettingManager208
+        FileListManager204.fileNames = CType(resources.GetObject("FileListManager204.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle37.fileManager = FileListManager204
+        OptionManager204.checkAllOnLoad = false
+        OptionManager204.loadFromDInit = false
+        OptionManager204.loadFromInit = false
+        OptionManager204.loadFromWorldGen = true
+        OptionSingle37.optionManager = OptionManager204
+        OptionSettingManager207.settingName = Nothing
+        OptionSingle37.settingManager = OptionSettingManager207
         OptionSingle37.tokenName = "DEMON_NUMBER"
         Me.optNumDemons.options = OptionSingle37
         Me.optNumDemons.Size = New System.Drawing.Size(43, 19)
@@ -9069,15 +9029,15 @@ Partial Class MainForm
         Me.optNumDisturbances.Location = New System.Drawing.Point(125, 278)
         Me.optNumDisturbances.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumDisturbances.Name = "optNumDisturbances"
-        FileListManager206.fileNames = CType(resources.GetObject("FileListManager206.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle38.fileManager = FileListManager206
-        OptionManager206.checkAllOnLoad = false
-        OptionManager206.loadFromDInit = false
-        OptionManager206.loadFromInit = false
-        OptionManager206.loadFromWorldGen = true
-        OptionSingle38.optionManager = OptionManager206
-        OptionSettingManager209.settingName = Nothing
-        OptionSingle38.settingManager = OptionSettingManager209
+        FileListManager205.fileNames = CType(resources.GetObject("FileListManager205.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle38.fileManager = FileListManager205
+        OptionManager205.checkAllOnLoad = false
+        OptionManager205.loadFromDInit = false
+        OptionManager205.loadFromInit = false
+        OptionManager205.loadFromWorldGen = true
+        OptionSingle38.optionManager = OptionManager205
+        OptionSettingManager208.settingName = Nothing
+        OptionSingle38.settingManager = OptionSettingManager208
         OptionSingle38.tokenName = "DISTURBANCE_INTERACTION_NUMBER"
         Me.optNumDisturbances.options = OptionSingle38
         Me.optNumDisturbances.Size = New System.Drawing.Size(43, 19)
@@ -9095,15 +9055,15 @@ Partial Class MainForm
         Me.optNumNightCreatures.Location = New System.Drawing.Point(125, 126)
         Me.optNumNightCreatures.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumNightCreatures.Name = "optNumNightCreatures"
-        FileListManager207.fileNames = CType(resources.GetObject("FileListManager207.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle39.fileManager = FileListManager207
-        OptionManager207.checkAllOnLoad = false
-        OptionManager207.loadFromDInit = false
-        OptionManager207.loadFromInit = false
-        OptionManager207.loadFromWorldGen = true
-        OptionSingle39.optionManager = OptionManager207
-        OptionSettingManager210.settingName = Nothing
-        OptionSingle39.settingManager = OptionSettingManager210
+        FileListManager206.fileNames = CType(resources.GetObject("FileListManager206.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle39.fileManager = FileListManager206
+        OptionManager206.checkAllOnLoad = false
+        OptionManager206.loadFromDInit = false
+        OptionManager206.loadFromInit = false
+        OptionManager206.loadFromWorldGen = true
+        OptionSingle39.optionManager = OptionManager206
+        OptionSettingManager209.settingName = Nothing
+        OptionSingle39.settingManager = OptionSettingManager209
         OptionSingle39.tokenName = "NIGHT_TROLL_NUMBER"
         Me.optNumNightCreatures.options = OptionSingle39
         Me.optNumNightCreatures.Size = New System.Drawing.Size(43, 19)
@@ -9121,15 +9081,15 @@ Partial Class MainForm
         Me.optNumEvilClouds.Location = New System.Drawing.Point(125, 304)
         Me.optNumEvilClouds.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumEvilClouds.Name = "optNumEvilClouds"
-        FileListManager208.fileNames = CType(resources.GetObject("FileListManager208.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle40.fileManager = FileListManager208
-        OptionManager208.checkAllOnLoad = false
-        OptionManager208.loadFromDInit = false
-        OptionManager208.loadFromInit = false
-        OptionManager208.loadFromWorldGen = true
-        OptionSingle40.optionManager = OptionManager208
-        OptionSettingManager211.settingName = Nothing
-        OptionSingle40.settingManager = OptionSettingManager211
+        FileListManager207.fileNames = CType(resources.GetObject("FileListManager207.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle40.fileManager = FileListManager207
+        OptionManager207.checkAllOnLoad = false
+        OptionManager207.loadFromDInit = false
+        OptionManager207.loadFromInit = false
+        OptionManager207.loadFromWorldGen = true
+        OptionSingle40.optionManager = OptionManager207
+        OptionSettingManager210.settingName = Nothing
+        OptionSingle40.settingManager = OptionSettingManager210
         OptionSingle40.tokenName = "EVIL_CLOUD_NUMBER"
         Me.optNumEvilClouds.options = OptionSingle40
         Me.optNumEvilClouds.Size = New System.Drawing.Size(43, 19)
@@ -9147,15 +9107,15 @@ Partial Class MainForm
         Me.optNumBogeymen.Location = New System.Drawing.Point(125, 151)
         Me.optNumBogeymen.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumBogeymen.Name = "optNumBogeymen"
-        FileListManager209.fileNames = CType(resources.GetObject("FileListManager209.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle41.fileManager = FileListManager209
-        OptionManager209.checkAllOnLoad = false
-        OptionManager209.loadFromDInit = false
-        OptionManager209.loadFromInit = false
-        OptionManager209.loadFromWorldGen = true
-        OptionSingle41.optionManager = OptionManager209
-        OptionSettingManager212.settingName = Nothing
-        OptionSingle41.settingManager = OptionSettingManager212
+        FileListManager208.fileNames = CType(resources.GetObject("FileListManager208.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle41.fileManager = FileListManager208
+        OptionManager208.checkAllOnLoad = false
+        OptionManager208.loadFromDInit = false
+        OptionManager208.loadFromInit = false
+        OptionManager208.loadFromWorldGen = true
+        OptionSingle41.optionManager = OptionManager208
+        OptionSettingManager211.settingName = Nothing
+        OptionSingle41.settingManager = OptionSettingManager211
         OptionSingle41.tokenName = "BOGEYMAN_NUMBER"
         Me.optNumBogeymen.options = OptionSingle41
         Me.optNumBogeymen.Size = New System.Drawing.Size(43, 19)
@@ -9173,15 +9133,15 @@ Partial Class MainForm
         Me.optNumEvilRains.Location = New System.Drawing.Point(125, 329)
         Me.optNumEvilRains.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumEvilRains.Name = "optNumEvilRains"
-        FileListManager210.fileNames = CType(resources.GetObject("FileListManager210.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle42.fileManager = FileListManager210
-        OptionManager210.checkAllOnLoad = false
-        OptionManager210.loadFromDInit = false
-        OptionManager210.loadFromInit = false
-        OptionManager210.loadFromWorldGen = true
-        OptionSingle42.optionManager = OptionManager210
-        OptionSettingManager213.settingName = Nothing
-        OptionSingle42.settingManager = OptionSettingManager213
+        FileListManager209.fileNames = CType(resources.GetObject("FileListManager209.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle42.fileManager = FileListManager209
+        OptionManager209.checkAllOnLoad = false
+        OptionManager209.loadFromDInit = false
+        OptionManager209.loadFromInit = false
+        OptionManager209.loadFromWorldGen = true
+        OptionSingle42.optionManager = OptionManager209
+        OptionSettingManager212.settingName = Nothing
+        OptionSingle42.settingManager = OptionSettingManager212
         OptionSingle42.tokenName = "EVIL_RAIN_NUMBER"
         Me.optNumEvilRains.options = OptionSingle42
         Me.optNumEvilRains.Size = New System.Drawing.Size(43, 19)
@@ -9199,15 +9159,15 @@ Partial Class MainForm
         Me.optNumVampires.Location = New System.Drawing.Point(125, 177)
         Me.optNumVampires.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.optNumVampires.Name = "optNumVampires"
-        FileListManager211.fileNames = CType(resources.GetObject("FileListManager211.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle43.fileManager = FileListManager211
-        OptionManager211.checkAllOnLoad = false
-        OptionManager211.loadFromDInit = false
-        OptionManager211.loadFromInit = false
-        OptionManager211.loadFromWorldGen = true
-        OptionSingle43.optionManager = OptionManager211
-        OptionSettingManager214.settingName = Nothing
-        OptionSingle43.settingManager = OptionSettingManager214
+        FileListManager210.fileNames = CType(resources.GetObject("FileListManager210.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle43.fileManager = FileListManager210
+        OptionManager210.checkAllOnLoad = false
+        OptionManager210.loadFromDInit = false
+        OptionManager210.loadFromInit = false
+        OptionManager210.loadFromWorldGen = true
+        OptionSingle43.optionManager = OptionManager210
+        OptionSettingManager213.settingName = Nothing
+        OptionSingle43.settingManager = OptionSettingManager213
         OptionSingle43.tokenName = "VAMPIRE_NUMBER"
         Me.optNumVampires.options = OptionSingle43
         Me.optNumVampires.Size = New System.Drawing.Size(43, 19)
@@ -9281,15 +9241,15 @@ Partial Class MainForm
         Me.optNumCaveSizeMin.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
         Me.optNumCaveSizeMin.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumCaveSizeMin.Name = "optNumCaveSizeMin"
-        FileListManager212.fileNames = CType(resources.GetObject("FileListManager212.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle44.fileManager = FileListManager212
-        OptionManager212.checkAllOnLoad = false
-        OptionManager212.loadFromDInit = false
-        OptionManager212.loadFromInit = false
-        OptionManager212.loadFromWorldGen = true
-        OptionSingle44.optionManager = OptionManager212
-        OptionSettingManager215.settingName = Nothing
-        OptionSingle44.settingManager = OptionSettingManager215
+        FileListManager211.fileNames = CType(resources.GetObject("FileListManager211.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle44.fileManager = FileListManager211
+        OptionManager211.checkAllOnLoad = false
+        OptionManager211.loadFromDInit = false
+        OptionManager211.loadFromInit = false
+        OptionManager211.loadFromWorldGen = true
+        OptionSingle44.optionManager = OptionManager211
+        OptionSettingManager214.settingName = Nothing
+        OptionSingle44.settingManager = OptionSettingManager214
         OptionSingle44.tokenName = "CAVE_MIN_SIZE"
         Me.optNumCaveSizeMin.options = OptionSingle44
         Me.optNumCaveSizeMin.Size = New System.Drawing.Size(43, 19)
@@ -9309,15 +9269,15 @@ Partial Class MainForm
         Me.optNumCaveSizeMax.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
         Me.optNumCaveSizeMax.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumCaveSizeMax.Name = "optNumCaveSizeMax"
-        FileListManager213.fileNames = CType(resources.GetObject("FileListManager213.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle45.fileManager = FileListManager213
-        OptionManager213.checkAllOnLoad = false
-        OptionManager213.loadFromDInit = false
-        OptionManager213.loadFromInit = false
-        OptionManager213.loadFromWorldGen = true
-        OptionSingle45.optionManager = OptionManager213
-        OptionSettingManager216.settingName = Nothing
-        OptionSingle45.settingManager = OptionSettingManager216
+        FileListManager212.fileNames = CType(resources.GetObject("FileListManager212.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle45.fileManager = FileListManager212
+        OptionManager212.checkAllOnLoad = false
+        OptionManager212.loadFromDInit = false
+        OptionManager212.loadFromInit = false
+        OptionManager212.loadFromWorldGen = true
+        OptionSingle45.optionManager = OptionManager212
+        OptionSettingManager215.settingName = Nothing
+        OptionSingle45.settingManager = OptionSettingManager215
         OptionSingle45.tokenName = "CAVE_MAX_SIZE"
         Me.optNumCaveSizeMax.options = OptionSingle45
         Me.optNumCaveSizeMax.Size = New System.Drawing.Size(43, 19)
@@ -9336,15 +9296,15 @@ Partial Class MainForm
         Me.optNumMountainCaves.Location = New System.Drawing.Point(135, 45)
         Me.optNumMountainCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumMountainCaves.Name = "optNumMountainCaves"
-        FileListManager214.fileNames = CType(resources.GetObject("FileListManager214.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle46.fileManager = FileListManager214
-        OptionManager214.checkAllOnLoad = false
-        OptionManager214.loadFromDInit = false
-        OptionManager214.loadFromInit = false
-        OptionManager214.loadFromWorldGen = true
-        OptionSingle46.optionManager = OptionManager214
-        OptionSettingManager217.settingName = Nothing
-        OptionSingle46.settingManager = OptionSettingManager217
+        FileListManager213.fileNames = CType(resources.GetObject("FileListManager213.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle46.fileManager = FileListManager213
+        OptionManager213.checkAllOnLoad = false
+        OptionManager213.loadFromDInit = false
+        OptionManager213.loadFromInit = false
+        OptionManager213.loadFromWorldGen = true
+        OptionSingle46.optionManager = OptionManager213
+        OptionSettingManager216.settingName = Nothing
+        OptionSingle46.settingManager = OptionSettingManager216
         OptionSingle46.tokenName = "MOUNTAIN_CAVE_MIN"
         Me.optNumMountainCaves.options = OptionSingle46
         Me.optNumMountainCaves.Size = New System.Drawing.Size(43, 19)
@@ -9362,15 +9322,15 @@ Partial Class MainForm
         Me.optNumOtherCaves.Location = New System.Drawing.Point(135, 71)
         Me.optNumOtherCaves.Maximum = New Decimal(New Integer() {800, 0, 0, 0})
         Me.optNumOtherCaves.Name = "optNumOtherCaves"
-        FileListManager215.fileNames = CType(resources.GetObject("FileListManager215.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle47.fileManager = FileListManager215
-        OptionManager215.checkAllOnLoad = false
-        OptionManager215.loadFromDInit = false
-        OptionManager215.loadFromInit = false
-        OptionManager215.loadFromWorldGen = true
-        OptionSingle47.optionManager = OptionManager215
-        OptionSettingManager218.settingName = Nothing
-        OptionSingle47.settingManager = OptionSettingManager218
+        FileListManager214.fileNames = CType(resources.GetObject("FileListManager214.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle47.fileManager = FileListManager214
+        OptionManager214.checkAllOnLoad = false
+        OptionManager214.loadFromDInit = false
+        OptionManager214.loadFromInit = false
+        OptionManager214.loadFromWorldGen = true
+        OptionSingle47.optionManager = OptionManager214
+        OptionSettingManager217.settingName = Nothing
+        OptionSingle47.settingManager = OptionSettingManager217
         OptionSingle47.tokenName = "NON_MOUNTAIN_CAVE_MIN"
         Me.optNumOtherCaves.options = OptionSingle47
         Me.optNumOtherCaves.Size = New System.Drawing.Size(43, 19)
@@ -9390,19 +9350,19 @@ Partial Class MainForm
         Me.optBtnVisibleCaves.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnVisibleCaves.Location = New System.Drawing.Point(64, 98)
         Me.optBtnVisibleCaves.Name = "optBtnVisibleCaves"
-        OptionSingleReplace155.disabledValue = "0"
-        OptionSingleReplace155.enabledValue = "1"
-        FileListManager216.fileNames = CType(resources.GetObject("FileListManager216.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace155.fileManager = FileListManager216
-        OptionManager216.checkAllOnLoad = false
-        OptionManager216.loadFromDInit = false
-        OptionManager216.loadFromInit = false
-        OptionManager216.loadFromWorldGen = true
-        OptionSingleReplace155.optionManager = OptionManager216
-        OptionSettingManager219.settingName = Nothing
-        OptionSingleReplace155.settingManager = OptionSettingManager219
-        OptionSingleReplace155.tokenName = "ALL_CAVES_VISIBLE"
-        Me.optBtnVisibleCaves.options = OptionSingleReplace155
+        OptionSingleReplace154.disabledValue = "0"
+        OptionSingleReplace154.enabledValue = "1"
+        FileListManager215.fileNames = CType(resources.GetObject("FileListManager215.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace154.fileManager = FileListManager215
+        OptionManager215.checkAllOnLoad = false
+        OptionManager215.loadFromDInit = false
+        OptionManager215.loadFromInit = false
+        OptionManager215.loadFromWorldGen = true
+        OptionSingleReplace154.optionManager = OptionManager215
+        OptionSettingManager218.settingName = Nothing
+        OptionSingleReplace154.settingManager = OptionSettingManager218
+        OptionSingleReplace154.tokenName = "ALL_CAVES_VISIBLE"
+        Me.optBtnVisibleCaves.options = OptionSingleReplace154
         Me.optBtnVisibleCaves.Size = New System.Drawing.Size(117, 24)
         Me.optBtnVisibleCaves.TabIndex = 7
         Me.optBtnVisibleCaves.Text = "Caves Visible"
@@ -9419,15 +9379,15 @@ Partial Class MainForm
         Me.optNumCaverns.Location = New System.Drawing.Point(161, 24)
         Me.optNumCaverns.Maximum = New Decimal(New Integer() {3, 0, 0, 0})
         Me.optNumCaverns.Name = "optNumCaverns"
-        FileListManager217.fileNames = CType(resources.GetObject("FileListManager217.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle48.fileManager = FileListManager217
-        OptionManager217.checkAllOnLoad = false
-        OptionManager217.loadFromDInit = false
-        OptionManager217.loadFromInit = false
-        OptionManager217.loadFromWorldGen = true
-        OptionSingle48.optionManager = OptionManager217
-        OptionSettingManager220.settingName = Nothing
-        OptionSingle48.settingManager = OptionSettingManager220
+        FileListManager216.fileNames = CType(resources.GetObject("FileListManager216.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle48.fileManager = FileListManager216
+        OptionManager216.checkAllOnLoad = false
+        OptionManager216.loadFromDInit = false
+        OptionManager216.loadFromInit = false
+        OptionManager216.loadFromWorldGen = true
+        OptionSingle48.optionManager = OptionManager216
+        OptionSettingManager219.settingName = Nothing
+        OptionSingle48.settingManager = OptionSettingManager219
         OptionSingle48.tokenName = "CAVERN_LAYER_COUNT"
         Me.optNumCaverns.options = OptionSingle48
         Me.optNumCaverns.Size = New System.Drawing.Size(43, 19)
@@ -9446,15 +9406,15 @@ Partial Class MainForm
         Me.optNumOpenMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMin.Location = New System.Drawing.Point(161, 49)
         Me.optNumOpenMin.Name = "optNumOpenMin"
-        FileListManager218.fileNames = CType(resources.GetObject("FileListManager218.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle49.fileManager = FileListManager218
-        OptionManager218.checkAllOnLoad = false
-        OptionManager218.loadFromDInit = false
-        OptionManager218.loadFromInit = false
-        OptionManager218.loadFromWorldGen = true
-        OptionSingle49.optionManager = OptionManager218
-        OptionSettingManager221.settingName = Nothing
-        OptionSingle49.settingManager = OptionSettingManager221
+        FileListManager217.fileNames = CType(resources.GetObject("FileListManager217.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle49.fileManager = FileListManager217
+        OptionManager217.checkAllOnLoad = false
+        OptionManager217.loadFromDInit = false
+        OptionManager217.loadFromInit = false
+        OptionManager217.loadFromWorldGen = true
+        OptionSingle49.optionManager = OptionManager217
+        OptionSettingManager220.settingName = Nothing
+        OptionSingle49.settingManager = OptionSettingManager220
         OptionSingle49.tokenName = "CAVERN_LAYER_OPENNESS_MIN"
         Me.optNumOpenMin.options = OptionSingle49
         Me.optNumOpenMin.Size = New System.Drawing.Size(43, 19)
@@ -9471,15 +9431,15 @@ Partial Class MainForm
         Me.optNumOpenMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumOpenMax.Location = New System.Drawing.Point(210, 49)
         Me.optNumOpenMax.Name = "optNumOpenMax"
-        FileListManager219.fileNames = CType(resources.GetObject("FileListManager219.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle50.fileManager = FileListManager219
-        OptionManager219.checkAllOnLoad = false
-        OptionManager219.loadFromDInit = false
-        OptionManager219.loadFromInit = false
-        OptionManager219.loadFromWorldGen = true
-        OptionSingle50.optionManager = OptionManager219
-        OptionSettingManager222.settingName = Nothing
-        OptionSingle50.settingManager = OptionSettingManager222
+        FileListManager218.fileNames = CType(resources.GetObject("FileListManager218.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle50.fileManager = FileListManager218
+        OptionManager218.checkAllOnLoad = false
+        OptionManager218.loadFromDInit = false
+        OptionManager218.loadFromInit = false
+        OptionManager218.loadFromWorldGen = true
+        OptionSingle50.optionManager = OptionManager218
+        OptionSettingManager221.settingName = Nothing
+        OptionSingle50.settingManager = OptionSettingManager221
         OptionSingle50.tokenName = "CAVERN_LAYER_OPENNESS_MAX"
         Me.optNumOpenMax.options = OptionSingle50
         Me.optNumOpenMax.Size = New System.Drawing.Size(43, 19)
@@ -9496,15 +9456,15 @@ Partial Class MainForm
         Me.optNumMazeMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMin.Location = New System.Drawing.Point(161, 75)
         Me.optNumMazeMin.Name = "optNumMazeMin"
-        FileListManager220.fileNames = CType(resources.GetObject("FileListManager220.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle51.fileManager = FileListManager220
-        OptionManager220.checkAllOnLoad = false
-        OptionManager220.loadFromDInit = false
-        OptionManager220.loadFromInit = false
-        OptionManager220.loadFromWorldGen = true
-        OptionSingle51.optionManager = OptionManager220
-        OptionSettingManager223.settingName = Nothing
-        OptionSingle51.settingManager = OptionSettingManager223
+        FileListManager219.fileNames = CType(resources.GetObject("FileListManager219.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle51.fileManager = FileListManager219
+        OptionManager219.checkAllOnLoad = false
+        OptionManager219.loadFromDInit = false
+        OptionManager219.loadFromInit = false
+        OptionManager219.loadFromWorldGen = true
+        OptionSingle51.optionManager = OptionManager219
+        OptionSettingManager222.settingName = Nothing
+        OptionSingle51.settingManager = OptionSettingManager222
         OptionSingle51.tokenName = "CAVERN_LAYER_PASSAGE_DENSITY_MIN"
         Me.optNumMazeMin.options = OptionSingle51
         Me.optNumMazeMin.Size = New System.Drawing.Size(43, 19)
@@ -9521,15 +9481,15 @@ Partial Class MainForm
         Me.optNumMazeMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumMazeMax.Location = New System.Drawing.Point(210, 75)
         Me.optNumMazeMax.Name = "optNumMazeMax"
-        FileListManager221.fileNames = CType(resources.GetObject("FileListManager221.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle52.fileManager = FileListManager221
-        OptionManager221.checkAllOnLoad = false
-        OptionManager221.loadFromDInit = false
-        OptionManager221.loadFromInit = false
-        OptionManager221.loadFromWorldGen = true
-        OptionSingle52.optionManager = OptionManager221
-        OptionSettingManager224.settingName = Nothing
-        OptionSingle52.settingManager = OptionSettingManager224
+        FileListManager220.fileNames = CType(resources.GetObject("FileListManager220.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle52.fileManager = FileListManager220
+        OptionManager220.checkAllOnLoad = false
+        OptionManager220.loadFromDInit = false
+        OptionManager220.loadFromInit = false
+        OptionManager220.loadFromWorldGen = true
+        OptionSingle52.optionManager = OptionManager220
+        OptionSettingManager223.settingName = Nothing
+        OptionSingle52.settingManager = OptionSettingManager223
         OptionSingle52.tokenName = "CAVERN_LAYER_PASSAGE_DENSITY_MAX"
         Me.optNumMazeMax.options = OptionSingle52
         Me.optNumMazeMax.Size = New System.Drawing.Size(43, 19)
@@ -9546,15 +9506,15 @@ Partial Class MainForm
         Me.optNumWaterMin.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMin.Location = New System.Drawing.Point(161, 100)
         Me.optNumWaterMin.Name = "optNumWaterMin"
-        FileListManager222.fileNames = CType(resources.GetObject("FileListManager222.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle53.fileManager = FileListManager222
-        OptionManager222.checkAllOnLoad = false
-        OptionManager222.loadFromDInit = false
-        OptionManager222.loadFromInit = false
-        OptionManager222.loadFromWorldGen = true
-        OptionSingle53.optionManager = OptionManager222
-        OptionSettingManager225.settingName = Nothing
-        OptionSingle53.settingManager = OptionSettingManager225
+        FileListManager221.fileNames = CType(resources.GetObject("FileListManager221.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle53.fileManager = FileListManager221
+        OptionManager221.checkAllOnLoad = false
+        OptionManager221.loadFromDInit = false
+        OptionManager221.loadFromInit = false
+        OptionManager221.loadFromWorldGen = true
+        OptionSingle53.optionManager = OptionManager221
+        OptionSettingManager224.settingName = Nothing
+        OptionSingle53.settingManager = OptionSettingManager224
         OptionSingle53.tokenName = "CAVERN_LAYER_WATER_MIN"
         Me.optNumWaterMin.options = OptionSingle53
         Me.optNumWaterMin.Size = New System.Drawing.Size(43, 19)
@@ -9571,15 +9531,15 @@ Partial Class MainForm
         Me.optNumWaterMax.Increment = New Decimal(New Integer() {25, 0, 0, 0})
         Me.optNumWaterMax.Location = New System.Drawing.Point(210, 100)
         Me.optNumWaterMax.Name = "optNumWaterMax"
-        FileListManager223.fileNames = CType(resources.GetObject("FileListManager223.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle54.fileManager = FileListManager223
-        OptionManager223.checkAllOnLoad = false
-        OptionManager223.loadFromDInit = false
-        OptionManager223.loadFromInit = false
-        OptionManager223.loadFromWorldGen = true
-        OptionSingle54.optionManager = OptionManager223
-        OptionSettingManager226.settingName = Nothing
-        OptionSingle54.settingManager = OptionSettingManager226
+        FileListManager222.fileNames = CType(resources.GetObject("FileListManager222.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle54.fileManager = FileListManager222
+        OptionManager222.checkAllOnLoad = false
+        OptionManager222.loadFromDInit = false
+        OptionManager222.loadFromInit = false
+        OptionManager222.loadFromWorldGen = true
+        OptionSingle54.optionManager = OptionManager222
+        OptionSettingManager225.settingName = Nothing
+        OptionSingle54.settingManager = OptionSettingManager225
         OptionSingle54.tokenName = "CAVERN_LAYER_WATER_MAX"
         Me.optNumWaterMax.options = OptionSingle54
         Me.optNumWaterMax.Size = New System.Drawing.Size(43, 19)
@@ -9598,15 +9558,15 @@ Partial Class MainForm
         Me.optNumAboveCav1.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveCav1.Minimum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.optNumAboveCav1.Name = "optNumAboveCav1"
-        FileListManager224.fileNames = CType(resources.GetObject("FileListManager224.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle55.fileManager = FileListManager224
-        OptionManager224.checkAllOnLoad = false
-        OptionManager224.loadFromDInit = false
-        OptionManager224.loadFromInit = false
-        OptionManager224.loadFromWorldGen = true
-        OptionSingle55.optionManager = OptionManager224
-        OptionSettingManager227.settingName = Nothing
-        OptionSingle55.settingManager = OptionSettingManager227
+        FileListManager223.fileNames = CType(resources.GetObject("FileListManager223.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle55.fileManager = FileListManager223
+        OptionManager223.checkAllOnLoad = false
+        OptionManager223.loadFromDInit = false
+        OptionManager223.loadFromInit = false
+        OptionManager223.loadFromWorldGen = true
+        OptionSingle55.optionManager = OptionManager223
+        OptionSettingManager226.settingName = Nothing
+        OptionSingle55.settingManager = OptionSettingManager226
         OptionSingle55.tokenName = "LEVELS_ABOVE_LAYER_1"
         Me.optNumAboveCav1.options = OptionSingle55
         Me.optNumAboveCav1.Size = New System.Drawing.Size(43, 19)
@@ -9626,15 +9586,15 @@ Partial Class MainForm
         Me.optNumAboveCav2.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveCav2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumAboveCav2.Name = "optNumAboveCav2"
-        FileListManager225.fileNames = CType(resources.GetObject("FileListManager225.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle56.fileManager = FileListManager225
-        OptionManager225.checkAllOnLoad = false
-        OptionManager225.loadFromDInit = false
-        OptionManager225.loadFromInit = false
-        OptionManager225.loadFromWorldGen = true
-        OptionSingle56.optionManager = OptionManager225
-        OptionSettingManager228.settingName = Nothing
-        OptionSingle56.settingManager = OptionSettingManager228
+        FileListManager224.fileNames = CType(resources.GetObject("FileListManager224.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle56.fileManager = FileListManager224
+        OptionManager224.checkAllOnLoad = false
+        OptionManager224.loadFromDInit = false
+        OptionManager224.loadFromInit = false
+        OptionManager224.loadFromWorldGen = true
+        OptionSingle56.optionManager = OptionManager224
+        OptionSettingManager227.settingName = Nothing
+        OptionSingle56.settingManager = OptionSettingManager227
         OptionSingle56.tokenName = "LEVELS_ABOVE_LAYER_2"
         Me.optNumAboveCav2.options = OptionSingle56
         Me.optNumAboveCav2.Size = New System.Drawing.Size(43, 19)
@@ -9655,15 +9615,15 @@ Partial Class MainForm
         Me.optNumAboveCav3.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveCav3.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumAboveCav3.Name = "optNumAboveCav3"
-        FileListManager226.fileNames = CType(resources.GetObject("FileListManager226.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle57.fileManager = FileListManager226
-        OptionManager226.checkAllOnLoad = false
-        OptionManager226.loadFromDInit = false
-        OptionManager226.loadFromInit = false
-        OptionManager226.loadFromWorldGen = true
-        OptionSingle57.optionManager = OptionManager226
-        OptionSettingManager229.settingName = Nothing
-        OptionSingle57.settingManager = OptionSettingManager229
+        FileListManager225.fileNames = CType(resources.GetObject("FileListManager225.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle57.fileManager = FileListManager225
+        OptionManager225.checkAllOnLoad = false
+        OptionManager225.loadFromDInit = false
+        OptionManager225.loadFromInit = false
+        OptionManager225.loadFromWorldGen = true
+        OptionSingle57.optionManager = OptionManager225
+        OptionSettingManager228.settingName = Nothing
+        OptionSingle57.settingManager = OptionSettingManager228
         OptionSingle57.tokenName = "LEVELS_ABOVE_LAYER_3"
         Me.optNumAboveCav3.options = OptionSingle57
         Me.optNumAboveCav3.Size = New System.Drawing.Size(43, 19)
@@ -9684,15 +9644,15 @@ Partial Class MainForm
         Me.optNumAboveMagma.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveMagma.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumAboveMagma.Name = "optNumAboveMagma"
-        FileListManager227.fileNames = CType(resources.GetObject("FileListManager227.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle58.fileManager = FileListManager227
-        OptionManager227.checkAllOnLoad = false
-        OptionManager227.loadFromDInit = false
-        OptionManager227.loadFromInit = false
-        OptionManager227.loadFromWorldGen = true
-        OptionSingle58.optionManager = OptionManager227
-        OptionSettingManager230.settingName = Nothing
-        OptionSingle58.settingManager = OptionSettingManager230
+        FileListManager226.fileNames = CType(resources.GetObject("FileListManager226.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle58.fileManager = FileListManager226
+        OptionManager226.checkAllOnLoad = false
+        OptionManager226.loadFromDInit = false
+        OptionManager226.loadFromInit = false
+        OptionManager226.loadFromWorldGen = true
+        OptionSingle58.optionManager = OptionManager226
+        OptionSettingManager229.settingName = Nothing
+        OptionSingle58.settingManager = OptionSettingManager229
         OptionSingle58.tokenName = "LEVELS_ABOVE_LAYER_4"
         Me.optNumAboveMagma.options = OptionSingle58
         Me.optNumAboveMagma.Size = New System.Drawing.Size(43, 19)
@@ -9713,15 +9673,15 @@ Partial Class MainForm
         Me.optNumAboveHFS.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumAboveHFS.Minimum = New Decimal(New Integer() {2, 0, 0, 0})
         Me.optNumAboveHFS.Name = "optNumAboveHFS"
-        FileListManager228.fileNames = CType(resources.GetObject("FileListManager228.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle59.fileManager = FileListManager228
-        OptionManager228.checkAllOnLoad = false
-        OptionManager228.loadFromDInit = false
-        OptionManager228.loadFromInit = false
-        OptionManager228.loadFromWorldGen = true
-        OptionSingle59.optionManager = OptionManager228
-        OptionSettingManager231.settingName = Nothing
-        OptionSingle59.settingManager = OptionSettingManager231
+        FileListManager227.fileNames = CType(resources.GetObject("FileListManager227.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle59.fileManager = FileListManager227
+        OptionManager227.checkAllOnLoad = false
+        OptionManager227.loadFromDInit = false
+        OptionManager227.loadFromInit = false
+        OptionManager227.loadFromWorldGen = true
+        OptionSingle59.optionManager = OptionManager227
+        OptionSettingManager230.settingName = Nothing
+        OptionSingle59.settingManager = OptionSettingManager230
         OptionSingle59.tokenName = "LEVELS_ABOVE_LAYER_5"
         Me.optNumAboveHFS.options = OptionSingle59
         Me.optNumAboveHFS.Size = New System.Drawing.Size(43, 19)
@@ -9743,19 +9703,19 @@ Partial Class MainForm
         Me.optBtnMagmaLake.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnMagmaLake.Location = New System.Drawing.Point(66, 357)
         Me.optBtnMagmaLake.Name = "optBtnMagmaLake"
-        OptionSingleReplace156.disabledValue = "0"
-        OptionSingleReplace156.enabledValue = "1"
-        FileListManager229.fileNames = CType(resources.GetObject("FileListManager229.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace156.fileManager = FileListManager229
-        OptionManager229.checkAllOnLoad = false
-        OptionManager229.loadFromDInit = false
-        OptionManager229.loadFromInit = false
-        OptionManager229.loadFromWorldGen = true
-        OptionSingleReplace156.optionManager = OptionManager229
-        OptionSettingManager232.settingName = Nothing
-        OptionSingleReplace156.settingManager = OptionSettingManager232
-        OptionSingleReplace156.tokenName = "HAVE_BOTTOM_LAYER_1"
-        Me.optBtnMagmaLake.options = OptionSingleReplace156
+        OptionSingleReplace155.disabledValue = "0"
+        OptionSingleReplace155.enabledValue = "1"
+        FileListManager228.fileNames = CType(resources.GetObject("FileListManager228.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace155.fileManager = FileListManager228
+        OptionManager228.checkAllOnLoad = false
+        OptionManager228.loadFromDInit = false
+        OptionManager228.loadFromInit = false
+        OptionManager228.loadFromWorldGen = true
+        OptionSingleReplace155.optionManager = OptionManager228
+        OptionSettingManager231.settingName = Nothing
+        OptionSingleReplace155.settingManager = OptionSettingManager231
+        OptionSingleReplace155.tokenName = "HAVE_BOTTOM_LAYER_1"
+        Me.optBtnMagmaLake.options = OptionSingleReplace155
         Me.optBtnMagmaLake.Size = New System.Drawing.Size(129, 24)
         Me.optBtnMagmaLake.TabIndex = 22
         Me.optBtnMagmaLake.Text = "Magma Lake"
@@ -9775,19 +9735,19 @@ Partial Class MainForm
         Me.optBtnHFS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnHFS.Location = New System.Drawing.Point(66, 387)
         Me.optBtnHFS.Name = "optBtnHFS"
-        OptionSingleReplace157.disabledValue = "0"
-        OptionSingleReplace157.enabledValue = "1"
-        FileListManager230.fileNames = CType(resources.GetObject("FileListManager230.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace157.fileManager = FileListManager230
-        OptionManager230.checkAllOnLoad = false
-        OptionManager230.loadFromDInit = false
-        OptionManager230.loadFromInit = false
-        OptionManager230.loadFromWorldGen = true
-        OptionSingleReplace157.optionManager = OptionManager230
-        OptionSettingManager233.settingName = Nothing
-        OptionSingleReplace157.settingManager = OptionSettingManager233
-        OptionSingleReplace157.tokenName = "HAVE_BOTTOM_LAYER_2"
-        Me.optBtnHFS.options = OptionSingleReplace157
+        OptionSingleReplace156.disabledValue = "0"
+        OptionSingleReplace156.enabledValue = "1"
+        FileListManager229.fileNames = CType(resources.GetObject("FileListManager229.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace156.fileManager = FileListManager229
+        OptionManager229.checkAllOnLoad = false
+        OptionManager229.loadFromDInit = false
+        OptionManager229.loadFromInit = false
+        OptionManager229.loadFromWorldGen = true
+        OptionSingleReplace156.optionManager = OptionManager229
+        OptionSettingManager232.settingName = Nothing
+        OptionSingleReplace156.settingManager = OptionSettingManager232
+        OptionSingleReplace156.tokenName = "HAVE_BOTTOM_LAYER_2"
+        Me.optBtnHFS.options = OptionSingleReplace156
         Me.optBtnHFS.Size = New System.Drawing.Size(129, 23)
         Me.optBtnHFS.TabIndex = 23
         Me.optBtnHFS.Text = "HFS"
@@ -9802,15 +9762,15 @@ Partial Class MainForm
         Me.optMaskGoodAreas.Location = New System.Drawing.Point(103, 49)
         Me.optMaskGoodAreas.Name = "optMaskGoodAreas"
         Me.optMaskGoodAreas.niceFormat = "####:####:#### (0-9999)"
-        FileListManager231.fileNames = CType(resources.GetObject("FileListManager231.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle60.fileManager = FileListManager231
-        OptionManager231.checkAllOnLoad = false
-        OptionManager231.loadFromDInit = false
-        OptionManager231.loadFromInit = false
-        OptionManager231.loadFromWorldGen = true
-        OptionSingle60.optionManager = OptionManager231
-        OptionSettingManager234.settingName = Nothing
-        OptionSingle60.settingManager = OptionSettingManager234
+        FileListManager230.fileNames = CType(resources.GetObject("FileListManager230.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle60.fileManager = FileListManager230
+        OptionManager230.checkAllOnLoad = false
+        OptionManager230.loadFromDInit = false
+        OptionManager230.loadFromInit = false
+        OptionManager230.loadFromWorldGen = true
+        OptionSingle60.optionManager = OptionManager230
+        OptionSettingManager233.settingName = Nothing
+        OptionSingle60.settingManager = OptionSettingManager233
         OptionSingle60.tokenName = "GOOD_SQ_COUNTS"
         Me.optMaskGoodAreas.options = OptionSingle60
         Me.optMaskGoodAreas.pattern = "^(\d{1,4}):(\d{1,4}):(\d{1,4})$"
@@ -9826,15 +9786,15 @@ Partial Class MainForm
         Me.optMaskEvilAreas.Location = New System.Drawing.Point(103, 24)
         Me.optMaskEvilAreas.Name = "optMaskEvilAreas"
         Me.optMaskEvilAreas.niceFormat = "####:####:#### (0-9999)"
-        FileListManager232.fileNames = CType(resources.GetObject("FileListManager232.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle61.fileManager = FileListManager232
-        OptionManager232.checkAllOnLoad = false
-        OptionManager232.loadFromDInit = false
-        OptionManager232.loadFromInit = false
-        OptionManager232.loadFromWorldGen = true
-        OptionSingle61.optionManager = OptionManager232
-        OptionSettingManager235.settingName = Nothing
-        OptionSingle61.settingManager = OptionSettingManager235
+        FileListManager231.fileNames = CType(resources.GetObject("FileListManager231.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle61.fileManager = FileListManager231
+        OptionManager231.checkAllOnLoad = false
+        OptionManager231.loadFromDInit = false
+        OptionManager231.loadFromInit = false
+        OptionManager231.loadFromWorldGen = true
+        OptionSingle61.optionManager = OptionManager231
+        OptionSettingManager234.settingName = Nothing
+        OptionSingle61.settingManager = OptionSettingManager234
         OptionSingle61.tokenName = "EVIL_SQ_COUNTS"
         Me.optMaskEvilAreas.options = OptionSingle61
         Me.optMaskEvilAreas.pattern = "^(\d{1,4}):(\d{1,4}):(\d{1,4})$"
@@ -9842,6 +9802,80 @@ Partial Class MainForm
         Me.optMaskEvilAreas.TabIndex = 1
         Me.optMaskEvilAreas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ToolTipMaker.SetToolTip(Me.optMaskEvilAreas, "The amount of evil tiles on the map.")
+        '
+        'optCbPatternCavernSkills
+        '
+        Me.optCbPatternCavernSkills.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.optCbPatternCavernSkills.FormattingEnabled = true
+        Me.optCbPatternCavernSkills.Location = New System.Drawing.Point(83, 145)
+        Me.optCbPatternCavernSkills.Margin = New System.Windows.Forms.Padding(1)
+        Me.optCbPatternCavernSkills.Name = "optCbPatternCavernSkills"
+        FileListManager232.fileNames = CType(resources.GetObject("FileListManager232.fileNames"),System.Collections.Generic.List(Of String))
+        OptionList6.fileManager = FileListManager232
+        ComboItem36.display = "0"
+        ComboItem36.value = "0"
+        ComboItem37.display = "1"
+        ComboItem37.value = "1"
+        ComboItem38.display = "2"
+        ComboItem38.value = "2"
+        ComboItem39.display = "3"
+        ComboItem39.value = "3"
+        ComboItem40.display = "4"
+        ComboItem40.value = "4"
+        ComboItem41.display = "5"
+        ComboItem41.value = "5"
+        ComboItem42.display = "6"
+        ComboItem42.value = "6"
+        ComboItem43.display = "7"
+        ComboItem43.value = "7"
+        ComboItem44.display = "8"
+        ComboItem44.value = "8"
+        ComboItem45.display = "9"
+        ComboItem45.value = "9"
+        ComboItem46.display = "10"
+        ComboItem46.value = "10"
+        ComboItem47.display = "11"
+        ComboItem47.value = "11"
+        ComboItem48.display = "12"
+        ComboItem48.value = "12"
+        ComboItem49.display = "13"
+        ComboItem49.value = "13"
+        ComboItem50.display = "14"
+        ComboItem50.value = "14"
+        ComboItem51.display = "15"
+        ComboItem51.value = "15"
+        OptionList6.itemList.Add(ComboItem36)
+        OptionList6.itemList.Add(ComboItem37)
+        OptionList6.itemList.Add(ComboItem38)
+        OptionList6.itemList.Add(ComboItem39)
+        OptionList6.itemList.Add(ComboItem40)
+        OptionList6.itemList.Add(ComboItem41)
+        OptionList6.itemList.Add(ComboItem42)
+        OptionList6.itemList.Add(ComboItem43)
+        OptionList6.itemList.Add(ComboItem44)
+        OptionList6.itemList.Add(ComboItem45)
+        OptionList6.itemList.Add(ComboItem46)
+        OptionList6.itemList.Add(ComboItem47)
+        OptionList6.itemList.Add(ComboItem48)
+        OptionList6.itemList.Add(ComboItem49)
+        OptionList6.itemList.Add(ComboItem50)
+        OptionList6.itemList.Add(ComboItem51)
+        OptionManager232.checkAllOnLoad = false
+        OptionManager232.loadFromDInit = false
+        OptionManager232.loadFromInit = false
+        OptionManager232.loadFromWorldGen = false
+        OptionList6.optionManager = OptionManager232
+        OptionSettingManager235.settingName = Nothing
+        OptionList6.settingManager = OptionSettingManager235
+        OptionList6.tokenName = ""
+        Me.optCbPatternCavernSkills.options = OptionList6
+        OptionBasePattern4.find = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_CAVERN\b)"
+        OptionBasePattern4.replace = "${1}${value}${2}"
+        Me.optCbPatternCavernSkills.optPattern = OptionBasePattern4
+        Me.optCbPatternCavernSkills.Size = New System.Drawing.Size(57, 23)
+        Me.optCbPatternCavernSkills.TabIndex = 24
+        Me.ToolTipMaker.SetToolTip(Me.optCbPatternCavernSkills, "This sets the combat skills for the above cavern races. Be careful not to underes"& _ 
+        "timate the effects of higher skills!")
         '
         'lblHFSLevels
         '
@@ -10810,7 +10844,7 @@ Partial Class MainForm
         Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
         Me.tabMain.Location = New System.Drawing.Point(0, 70)
         Me.tabMain.Name = "tabMain"
-        Me.tabMain.SelectedIndex = 2
+        Me.tabMain.SelectedIndex = 1
         Me.tabMain.Size = New System.Drawing.Size(1026, 554)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
@@ -10932,25 +10966,25 @@ Partial Class MainForm
         Me.optCbAutoSave.Location = New System.Drawing.Point(76, 22)
         Me.optCbAutoSave.Name = "optCbAutoSave"
         FileListManager233.fileNames = CType(resources.GetObject("FileListManager233.fileNames"),System.Collections.Generic.List(Of String))
-        OptionList6.fileManager = FileListManager233
-        ComboItem36.display = "Never"
-        ComboItem36.value = "NONE"
-        ComboItem37.display = "Seasonal"
-        ComboItem37.value = "SEASONAL"
-        ComboItem38.display = "Yearly"
-        ComboItem38.value = "YEARLY"
-        OptionList6.itemList.Add(ComboItem36)
-        OptionList6.itemList.Add(ComboItem37)
-        OptionList6.itemList.Add(ComboItem38)
+        OptionList7.fileManager = FileListManager233
+        ComboItem52.display = "Never"
+        ComboItem52.value = "NONE"
+        ComboItem53.display = "Seasonal"
+        ComboItem53.value = "SEASONAL"
+        ComboItem54.display = "Yearly"
+        ComboItem54.value = "YEARLY"
+        OptionList7.itemList.Add(ComboItem52)
+        OptionList7.itemList.Add(ComboItem53)
+        OptionList7.itemList.Add(ComboItem54)
         OptionManager233.checkAllOnLoad = false
         OptionManager233.loadFromDInit = true
         OptionManager233.loadFromInit = false
         OptionManager233.loadFromWorldGen = false
-        OptionList6.optionManager = OptionManager233
+        OptionList7.optionManager = OptionManager233
         OptionSettingManager236.settingName = Nothing
-        OptionList6.settingManager = OptionSettingManager236
-        OptionList6.tokenName = "AUTOSAVE"
-        Me.optCbAutoSave.options = OptionList6
+        OptionList7.settingManager = OptionSettingManager236
+        OptionList7.tokenName = "AUTOSAVE"
+        Me.optCbAutoSave.options = OptionList7
         Me.optCbAutoSave.Size = New System.Drawing.Size(75, 23)
         Me.optCbAutoSave.TabIndex = 1
         '
@@ -11521,7 +11555,7 @@ Partial Class MainForm
         'lblCivDwarf
         '
         Me.lblCivDwarf.factionable = true
-        Me.lblCivDwarf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivDwarf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivDwarf.ForeColor = System.Drawing.Color.White
         Me.lblCivDwarf.Location = New System.Drawing.Point(1, 33)
         Me.lblCivDwarf.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11540,7 +11574,7 @@ Partial Class MainForm
         Me.lblCivCaravans.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivCaravans.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivCaravans.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivCaravans.ForeColor = System.Drawing.Color.White
         Me.lblCivCaravans.Location = New System.Drawing.Point(359, 1)
         Me.lblCivCaravans.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -11553,7 +11587,7 @@ Partial Class MainForm
         'lblCivTaigaOrcs
         '
         Me.lblCivTaigaOrcs.factionable = true
-        Me.lblCivTaigaOrcs.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivTaigaOrcs.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivTaigaOrcs.ForeColor = System.Drawing.Color.White
         Me.lblCivTaigaOrcs.Location = New System.Drawing.Point(1, 183)
         Me.lblCivTaigaOrcs.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11570,7 +11604,7 @@ Partial Class MainForm
         'lblCivNaga
         '
         Me.lblCivNaga.factionable = true
-        Me.lblCivNaga.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivNaga.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivNaga.ForeColor = System.Drawing.Color.White
         Me.lblCivNaga.Location = New System.Drawing.Point(1, 285)
         Me.lblCivNaga.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11587,7 +11621,7 @@ Partial Class MainForm
         'lblCivAutomaton
         '
         Me.lblCivAutomaton.factionable = true
-        Me.lblCivAutomaton.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivAutomaton.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivAutomaton.ForeColor = System.Drawing.Color.White
         Me.lblCivAutomaton.Location = New System.Drawing.Point(1, 339)
         Me.lblCivAutomaton.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11604,7 +11638,7 @@ Partial Class MainForm
         'lblCivFrostGiant
         '
         Me.lblCivFrostGiant.factionable = true
-        Me.lblCivFrostGiant.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivFrostGiant.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivFrostGiant.ForeColor = System.Drawing.Color.White
         Me.lblCivFrostGiant.Location = New System.Drawing.Point(1, 387)
         Me.lblCivFrostGiant.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11621,7 +11655,7 @@ Partial Class MainForm
         'lblCivBanshees
         '
         Me.lblCivBanshees.factionable = true
-        Me.lblCivBanshees.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivBanshees.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivBanshees.ForeColor = System.Drawing.Color.White
         Me.lblCivBanshees.Location = New System.Drawing.Point(1, 363)
         Me.lblCivBanshees.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11638,7 +11672,7 @@ Partial Class MainForm
         'lblCivWarlock
         '
         Me.lblCivWarlock.factionable = true
-        Me.lblCivWarlock.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivWarlock.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivWarlock.ForeColor = System.Drawing.Color.White
         Me.lblCivWarlock.Location = New System.Drawing.Point(1, 411)
         Me.lblCivWarlock.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11655,7 +11689,7 @@ Partial Class MainForm
         'lblCivKoboldCamp
         '
         Me.lblCivKoboldCamp.factionable = true
-        Me.lblCivKoboldCamp.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivKoboldCamp.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivKoboldCamp.ForeColor = System.Drawing.Color.White
         Me.lblCivKoboldCamp.Location = New System.Drawing.Point(1, 261)
         Me.lblCivKoboldCamp.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11672,7 +11706,7 @@ Partial Class MainForm
         'lblCivCentaurs
         '
         Me.lblCivCentaurs.factionable = true
-        Me.lblCivCentaurs.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivCentaurs.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivCentaurs.ForeColor = System.Drawing.Color.White
         Me.lblCivCentaurs.Location = New System.Drawing.Point(1, 237)
         Me.lblCivCentaurs.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11689,7 +11723,7 @@ Partial Class MainForm
         'lblCivWerewolves
         '
         Me.lblCivWerewolves.factionable = true
-        Me.lblCivWerewolves.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivWerewolves.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivWerewolves.ForeColor = System.Drawing.Color.White
         Me.lblCivWerewolves.Location = New System.Drawing.Point(1, 309)
         Me.lblCivWerewolves.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11706,7 +11740,7 @@ Partial Class MainForm
         'lblCivDrow
         '
         Me.lblCivDrow.factionable = true
-        Me.lblCivDrow.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivDrow.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivDrow.ForeColor = System.Drawing.Color.White
         Me.lblCivDrow.Location = New System.Drawing.Point(1, 135)
         Me.lblCivDrow.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11723,7 +11757,7 @@ Partial Class MainForm
         'lblCivSuccubus
         '
         Me.lblCivSuccubus.factionable = true
-        Me.lblCivSuccubus.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivSuccubus.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivSuccubus.ForeColor = System.Drawing.Color.White
         Me.lblCivSuccubus.Location = New System.Drawing.Point(1, 207)
         Me.lblCivSuccubus.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11740,7 +11774,7 @@ Partial Class MainForm
         'lblCivGoblin
         '
         Me.lblCivGoblin.factionable = true
-        Me.lblCivGoblin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivGoblin.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivGoblin.ForeColor = System.Drawing.Color.White
         Me.lblCivGoblin.Location = New System.Drawing.Point(1, 159)
         Me.lblCivGoblin.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11757,7 +11791,7 @@ Partial Class MainForm
         'lblCivElf
         '
         Me.lblCivElf.factionable = true
-        Me.lblCivElf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivElf.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivElf.ForeColor = System.Drawing.Color.White
         Me.lblCivElf.Location = New System.Drawing.Point(1, 57)
         Me.lblCivElf.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11774,7 +11808,7 @@ Partial Class MainForm
         'lblCivGnome
         '
         Me.lblCivGnome.factionable = true
-        Me.lblCivGnome.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivGnome.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivGnome.ForeColor = System.Drawing.Color.White
         Me.lblCivGnome.Location = New System.Drawing.Point(1, 81)
         Me.lblCivGnome.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11791,7 +11825,7 @@ Partial Class MainForm
         'lblCivHuman
         '
         Me.lblCivHuman.factionable = true
-        Me.lblCivHuman.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivHuman.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivHuman.ForeColor = System.Drawing.Color.White
         Me.lblCivHuman.Location = New System.Drawing.Point(1, 105)
         Me.lblCivHuman.Margin = New System.Windows.Forms.Padding(1, 1, 6, 0)
@@ -11810,7 +11844,7 @@ Partial Class MainForm
         Me.lblCivInvasions.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
             Or System.Windows.Forms.AnchorStyles.Left)  _
             Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblCivInvasions.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblCivInvasions.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblCivInvasions.ForeColor = System.Drawing.Color.White
         Me.lblCivInvasions.Location = New System.Drawing.Point(506, 1)
         Me.lblCivInvasions.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
@@ -11854,6 +11888,17 @@ Partial Class MainForm
         Me.grpCavernCreatures.TabStop = false
         Me.grpCavernCreatures.Text = "Cavern Races"
         '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(4, 142)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(75, 27)
+        Me.Label1.TabIndex = 25
+        Me.Label1.Text = "Invader Skills"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'optBtnCavernSpawn
         '
         Me.optBtnCavernSpawn.Appearance = System.Windows.Forms.Appearance.Button
@@ -11867,19 +11912,19 @@ Partial Class MainForm
         Me.optBtnCavernSpawn.Location = New System.Drawing.Point(5, 107)
         Me.optBtnCavernSpawn.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnCavernSpawn.Name = "optBtnCavernSpawn"
-        OptionSingleReplace158.disabledValue = "!NO_CIV_ACTIVE_SPAWN!"
-        OptionSingleReplace158.enabledValue = "YES_CIV_ACTIVE_SPAWN["
-        FileListManager236.fileNames = CType(resources.GetObject("FileListManager236.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace158.fileManager = FileListManager236
-        OptionManager236.checkAllOnLoad = false
-        OptionManager236.loadFromDInit = false
-        OptionManager236.loadFromInit = false
-        OptionManager236.loadFromWorldGen = false
-        OptionSingleReplace158.optionManager = OptionManager236
-        OptionSettingManager240.settingName = Nothing
-        OptionSingleReplace158.settingManager = OptionSettingManager240
-        OptionSingleReplace158.tokenName = ""
-        Me.optBtnCavernSpawn.options = OptionSingleReplace158
+        OptionSingleReplace157.disabledValue = "!NO_CIV_ACTIVE_SPAWN!"
+        OptionSingleReplace157.enabledValue = "YES_CIV_ACTIVE_SPAWN["
+        FileListManager235.fileNames = CType(resources.GetObject("FileListManager235.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace157.fileManager = FileListManager235
+        OptionManager235.checkAllOnLoad = false
+        OptionManager235.loadFromDInit = false
+        OptionManager235.loadFromInit = false
+        OptionManager235.loadFromWorldGen = false
+        OptionSingleReplace157.optionManager = OptionManager235
+        OptionSettingManager239.settingName = Nothing
+        OptionSingleReplace157.settingManager = OptionSettingManager239
+        OptionSingleReplace157.tokenName = ""
+        Me.optBtnCavernSpawn.options = OptionSingleReplace157
         Me.optBtnCavernSpawn.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCavernSpawn.TabIndex = 13
         Me.optBtnCavernSpawn.Text = "Cavern Spawn"
@@ -11899,19 +11944,19 @@ Partial Class MainForm
         Me.optBtnCaveOgres.Location = New System.Drawing.Point(5, 78)
         Me.optBtnCaveOgres.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnCaveOgres.Name = "optBtnCaveOgres"
-        OptionSingleReplace159.disabledValue = "!NO_CIV_ACTIVE_BLIND_CAVE_OGRE!"
-        OptionSingleReplace159.enabledValue = "YES_CIV_ACTIVE_BLIND_CAVE_OGRE["
-        FileListManager237.fileNames = CType(resources.GetObject("FileListManager237.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace159.fileManager = FileListManager237
-        OptionManager237.checkAllOnLoad = false
-        OptionManager237.loadFromDInit = false
-        OptionManager237.loadFromInit = false
-        OptionManager237.loadFromWorldGen = false
-        OptionSingleReplace159.optionManager = OptionManager237
-        OptionSettingManager241.settingName = Nothing
-        OptionSingleReplace159.settingManager = OptionSettingManager241
-        OptionSingleReplace159.tokenName = ""
-        Me.optBtnCaveOgres.options = OptionSingleReplace159
+        OptionSingleReplace158.disabledValue = "!NO_CIV_ACTIVE_BLIND_CAVE_OGRE!"
+        OptionSingleReplace158.enabledValue = "YES_CIV_ACTIVE_BLIND_CAVE_OGRE["
+        FileListManager236.fileNames = CType(resources.GetObject("FileListManager236.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace158.fileManager = FileListManager236
+        OptionManager236.checkAllOnLoad = false
+        OptionManager236.loadFromDInit = false
+        OptionManager236.loadFromInit = false
+        OptionManager236.loadFromWorldGen = false
+        OptionSingleReplace158.optionManager = OptionManager236
+        OptionSettingManager240.settingName = Nothing
+        OptionSingleReplace158.settingManager = OptionSettingManager240
+        OptionSingleReplace158.tokenName = ""
+        Me.optBtnCaveOgres.options = OptionSingleReplace158
         Me.optBtnCaveOgres.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCaveOgres.TabIndex = 13
         Me.optBtnCaveOgres.Text = "Blind Cave Ogres"
@@ -11931,19 +11976,19 @@ Partial Class MainForm
         Me.optBtnElementals.Location = New System.Drawing.Point(5, 49)
         Me.optBtnElementals.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnElementals.Name = "optBtnElementals"
-        OptionSingleReplace160.disabledValue = "!NO_CIV_ACTIVE_ELEMENTALMEN!"
-        OptionSingleReplace160.enabledValue = "YES_CIV_ACTIVE_ELEMENTALMEN["
-        FileListManager238.fileNames = CType(resources.GetObject("FileListManager238.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace160.fileManager = FileListManager238
-        OptionManager238.checkAllOnLoad = false
-        OptionManager238.loadFromDInit = false
-        OptionManager238.loadFromInit = false
-        OptionManager238.loadFromWorldGen = false
-        OptionSingleReplace160.optionManager = OptionManager238
-        OptionSettingManager242.settingName = Nothing
-        OptionSingleReplace160.settingManager = OptionSettingManager242
-        OptionSingleReplace160.tokenName = ""
-        Me.optBtnElementals.options = OptionSingleReplace160
+        OptionSingleReplace159.disabledValue = "!NO_CIV_ACTIVE_ELEMENTALMEN!"
+        OptionSingleReplace159.enabledValue = "YES_CIV_ACTIVE_ELEMENTALMEN["
+        FileListManager237.fileNames = CType(resources.GetObject("FileListManager237.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace159.fileManager = FileListManager237
+        OptionManager237.checkAllOnLoad = false
+        OptionManager237.loadFromDInit = false
+        OptionManager237.loadFromInit = false
+        OptionManager237.loadFromWorldGen = false
+        OptionSingleReplace159.optionManager = OptionManager237
+        OptionSettingManager241.settingName = Nothing
+        OptionSingleReplace159.settingManager = OptionSettingManager241
+        OptionSingleReplace159.tokenName = ""
+        Me.optBtnElementals.options = OptionSingleReplace159
         Me.optBtnElementals.Size = New System.Drawing.Size(134, 27)
         Me.optBtnElementals.TabIndex = 13
         Me.optBtnElementals.Text = "Elementals"
@@ -11963,19 +12008,19 @@ Partial Class MainForm
         Me.optBtnCivAntmen.Location = New System.Drawing.Point(5, 20)
         Me.optBtnCivAntmen.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnCivAntmen.Name = "optBtnCivAntmen"
-        OptionSingleReplace161.disabledValue = "!NO_CIV_ACTIVE_ANTMEN!"
-        OptionSingleReplace161.enabledValue = "YES_CIV_ACTIVE_ANTMEN["
-        FileListManager239.fileNames = CType(resources.GetObject("FileListManager239.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace161.fileManager = FileListManager239
-        OptionManager239.checkAllOnLoad = false
-        OptionManager239.loadFromDInit = false
-        OptionManager239.loadFromInit = false
-        OptionManager239.loadFromWorldGen = false
-        OptionSingleReplace161.optionManager = OptionManager239
-        OptionSettingManager243.settingName = Nothing
-        OptionSingleReplace161.settingManager = OptionSettingManager243
-        OptionSingleReplace161.tokenName = ""
-        Me.optBtnCivAntmen.options = OptionSingleReplace161
+        OptionSingleReplace160.disabledValue = "!NO_CIV_ACTIVE_ANTMEN!"
+        OptionSingleReplace160.enabledValue = "YES_CIV_ACTIVE_ANTMEN["
+        FileListManager238.fileNames = CType(resources.GetObject("FileListManager238.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace160.fileManager = FileListManager238
+        OptionManager238.checkAllOnLoad = false
+        OptionManager238.loadFromDInit = false
+        OptionManager238.loadFromInit = false
+        OptionManager238.loadFromWorldGen = false
+        OptionSingleReplace160.optionManager = OptionManager238
+        OptionSettingManager242.settingName = Nothing
+        OptionSingleReplace160.settingManager = OptionSettingManager242
+        OptionSingleReplace160.tokenName = ""
+        Me.optBtnCivAntmen.options = OptionSingleReplace160
         Me.optBtnCivAntmen.Size = New System.Drawing.Size(134, 27)
         Me.optBtnCivAntmen.TabIndex = 13
         Me.optBtnCivAntmen.Text = "Antmen"
@@ -12018,19 +12063,19 @@ Partial Class MainForm
         Me.optBtnMoreAnimals.Location = New System.Drawing.Point(5, 48)
         Me.optBtnMoreAnimals.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnMoreAnimals.Name = "optBtnMoreAnimals"
-        OptionSingleReplace162.disabledValue = "!NOFF_ANIMALS!"
-        OptionSingleReplace162.enabledValue = "YESFF_ANIMALS["
-        FileListManager240.fileNames = CType(resources.GetObject("FileListManager240.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace162.fileManager = FileListManager240
-        OptionManager240.checkAllOnLoad = false
-        OptionManager240.loadFromDInit = false
-        OptionManager240.loadFromInit = false
-        OptionManager240.loadFromWorldGen = false
-        OptionSingleReplace162.optionManager = OptionManager240
-        OptionSettingManager244.settingName = Nothing
-        OptionSingleReplace162.settingManager = OptionSettingManager244
-        OptionSingleReplace162.tokenName = ""
-        Me.optBtnMoreAnimals.options = OptionSingleReplace162
+        OptionSingleReplace161.disabledValue = "!NOFF_ANIMALS!"
+        OptionSingleReplace161.enabledValue = "YESFF_ANIMALS["
+        FileListManager239.fileNames = CType(resources.GetObject("FileListManager239.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace161.fileManager = FileListManager239
+        OptionManager239.checkAllOnLoad = false
+        OptionManager239.loadFromDInit = false
+        OptionManager239.loadFromInit = false
+        OptionManager239.loadFromWorldGen = false
+        OptionSingleReplace161.optionManager = OptionManager239
+        OptionSettingManager243.settingName = Nothing
+        OptionSingleReplace161.settingManager = OptionSettingManager243
+        OptionSingleReplace161.tokenName = ""
+        Me.optBtnMoreAnimals.options = OptionSingleReplace161
         Me.optBtnMoreAnimals.Size = New System.Drawing.Size(134, 27)
         Me.optBtnMoreAnimals.TabIndex = 1
         Me.optBtnMoreAnimals.Text = "Animals"
@@ -12624,7 +12669,6 @@ Partial Class MainForm
         Me.grpBalancing.Controls.Add(Me.optMultiHarderFarming)
         Me.grpBalancing.Controls.Add(Me.optBtnHarderMining)
         Me.grpBalancing.Controls.Add(Me.optBtnHarderLearning)
-        Me.grpBalancing.Controls.Add(Me.optBtnBodyguards)
         Me.grpBalancing.Controls.Add(Me.optBtnSecrets)
         Me.grpBalancing.Controls.Add(Me.optBtnDiseases)
         Me.grpBalancing.ForeColor = System.Drawing.SystemColors.Window
@@ -12986,106 +13030,21 @@ Partial Class MainForm
         Me.optNumHFSLevels.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumHFSLevels.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumHFSLevels.Name = "optNumHFSLevels"
-        FileListManager241.fileNames = CType(resources.GetObject("FileListManager241.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle63.fileManager = FileListManager241
-        OptionManager241.checkAllOnLoad = false
-        OptionManager241.loadFromDInit = false
-        OptionManager241.loadFromInit = false
-        OptionManager241.loadFromWorldGen = true
-        OptionSingle63.optionManager = OptionManager241
-        OptionSettingManager245.settingName = Nothing
-        OptionSingle63.settingManager = OptionSettingManager245
+        FileListManager240.fileNames = CType(resources.GetObject("FileListManager240.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle63.fileManager = FileListManager240
+        OptionManager240.checkAllOnLoad = false
+        OptionManager240.loadFromDInit = false
+        OptionManager240.loadFromInit = false
+        OptionManager240.loadFromWorldGen = true
+        OptionSingle63.optionManager = OptionManager240
+        OptionSettingManager244.settingName = Nothing
+        OptionSingle63.settingManager = OptionSettingManager244
         OptionSingle63.tokenName = "LEVELS_AT_BOTTOM"
         Me.optNumHFSLevels.options = OptionSingle63
         Me.optNumHFSLevels.Size = New System.Drawing.Size(43, 20)
         Me.optNumHFSLevels.TabIndex = 194
         Me.optNumHFSLevels.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.optNumHFSLevels.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'optCbPatternCavernSkills
-        '
-        Me.optCbPatternCavernSkills.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbPatternCavernSkills.FormattingEnabled = true
-        Me.optCbPatternCavernSkills.Location = New System.Drawing.Point(83, 145)
-        Me.optCbPatternCavernSkills.Margin = New System.Windows.Forms.Padding(1)
-        Me.optCbPatternCavernSkills.Name = "optCbPatternCavernSkills"
-        FileListManager235.fileNames = CType(resources.GetObject("FileListManager235.fileNames"),System.Collections.Generic.List(Of String))
-        OptionList7.fileManager = FileListManager235
-        ComboItem39.display = "0"
-        ComboItem39.value = "0"
-        ComboItem40.display = "1"
-        ComboItem40.value = "1"
-        ComboItem41.display = "2"
-        ComboItem41.value = "2"
-        ComboItem42.display = "3"
-        ComboItem42.value = "3"
-        ComboItem43.display = "4"
-        ComboItem43.value = "4"
-        ComboItem44.display = "5"
-        ComboItem44.value = "5"
-        ComboItem45.display = "6"
-        ComboItem45.value = "6"
-        ComboItem46.display = "7"
-        ComboItem46.value = "7"
-        ComboItem47.display = "8"
-        ComboItem47.value = "8"
-        ComboItem48.display = "9"
-        ComboItem48.value = "9"
-        ComboItem49.display = "10"
-        ComboItem49.value = "10"
-        ComboItem50.display = "11"
-        ComboItem50.value = "11"
-        ComboItem51.display = "12"
-        ComboItem51.value = "12"
-        ComboItem52.display = "13"
-        ComboItem52.value = "13"
-        ComboItem53.display = "14"
-        ComboItem53.value = "14"
-        ComboItem54.display = "15"
-        ComboItem54.value = "15"
-        OptionList7.itemList.Add(ComboItem39)
-        OptionList7.itemList.Add(ComboItem40)
-        OptionList7.itemList.Add(ComboItem41)
-        OptionList7.itemList.Add(ComboItem42)
-        OptionList7.itemList.Add(ComboItem43)
-        OptionList7.itemList.Add(ComboItem44)
-        OptionList7.itemList.Add(ComboItem45)
-        OptionList7.itemList.Add(ComboItem46)
-        OptionList7.itemList.Add(ComboItem47)
-        OptionList7.itemList.Add(ComboItem48)
-        OptionList7.itemList.Add(ComboItem49)
-        OptionList7.itemList.Add(ComboItem50)
-        OptionList7.itemList.Add(ComboItem51)
-        OptionList7.itemList.Add(ComboItem52)
-        OptionList7.itemList.Add(ComboItem53)
-        OptionList7.itemList.Add(ComboItem54)
-        OptionManager235.checkAllOnLoad = false
-        OptionManager235.loadFromDInit = false
-        OptionManager235.loadFromInit = false
-        OptionManager235.loadFromWorldGen = false
-        OptionList7.optionManager = OptionManager235
-        OptionSettingManager239.settingName = Nothing
-        OptionList7.settingManager = OptionSettingManager239
-        OptionList7.tokenName = ""
-        Me.optCbPatternCavernSkills.options = OptionList7
-        OptionBasePattern4.find = "(\[NATURAL_SKILL:.*:)(?<value>\d+)(\]YESHARDERINVADER_CAVERN\b)"
-        OptionBasePattern4.replace = "${1}${value}${2}"
-        Me.optCbPatternCavernSkills.optPattern = OptionBasePattern4
-        Me.optCbPatternCavernSkills.Size = New System.Drawing.Size(57, 23)
-        Me.optCbPatternCavernSkills.TabIndex = 24
-        Me.ToolTipMaker.SetToolTip(Me.optCbPatternCavernSkills, "This sets the combat skills for the above cavern races. Be careful not to underes"& _ 
-        "timate the effects of higher skills!")
-        '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(4, 142)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 27)
-        Me.Label1.TabIndex = 25
-        Me.Label1.Text = "Invader Skills"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'MainForm
         '
@@ -13390,7 +13349,6 @@ End Sub
     Friend WithEvents optMultiHarderFarming As MasterworkDwarfFortress.optionMultiButton
     Friend WithEvents optBtnHarderMining As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnHarderLearning As MasterworkDwarfFortress.optionSingleReplaceButton
-    Friend WithEvents optBtnBodyguards As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents optBtnSecrets As MasterworkDwarfFortress.optionSingleReplaceButton
     Friend WithEvents lblModNote As System.Windows.Forms.Label
     Friend WithEvents grpExtraMods As MasterworkDwarfFortress.mwGroupBox
