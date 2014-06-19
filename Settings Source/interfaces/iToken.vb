@@ -3,3 +3,7 @@
     Sub saveOption()
     Function currentValue() As Object
 End Interface
+
+Public Interface iEnabled
+    Property isEnabled() As Boolean
+End Interface

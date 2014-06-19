@@ -55,7 +55,7 @@ Public Class optionComboBoxFileReplace
     End Sub
 
     Public Sub saveOption() Implements iToken.saveOption
-        If m_opt.valueUpdatingPaused Or Me.DesignMode Then Exit Sub
+        If m_opt.valueUpdatingPaused Or Me.DesignMode Or Me.SelectedItem Is Nothing Then Exit Sub
         m_opt.saveOption(CType(Me.SelectedItem, comboFileItem).fileName, CType(Me.SelectedItem, comboFileItem).value)
         m_opt.valueUpdatingPaused = False
     End Sub
@@ -73,5 +73,6 @@ Public Class optionComboBoxFileReplace
     Public Function currentValue() As Object Implements iToken.currentValue
         Return Me.SelectedValue.ToString
     End Function
+
 End Class
 

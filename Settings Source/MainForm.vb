@@ -460,7 +460,7 @@ Imports Newtonsoft.Json
     End Sub
 
     Private Sub optCbColors_MouseMove(sender As Object, e As MouseEventArgs) Handles optCbColors.MouseMove
-        'Debug.WriteLine("Showing color preview")
+        If optCbColors.SelectedItem Is Nothing Then Exit Sub
         Dim strPath As String = ""
         Try
             strPath = findMwFilePath(CType(optCbColors.SelectedItem, comboFileItem).fileName)
@@ -941,9 +941,11 @@ Imports Newtonsoft.Json
                 If colIdx <> colIndexes.idxSkills Then 'any options that are NOT using the entity file(s) should be excluded
                     Dim c As Control = TryCast(Me.tableLayoutCivs.GetControlFromPosition(colIdx, pos.Row), Control)
                     If c IsNot Nothing Then
-                        If colIdx = colIndexes.idxPlayableAdv Then c.Enabled = civLabel.playableAdvMode
-                        If colIdx = colIndexes.idxPlaybleFort Then c.Enabled = civLabel.playableFortMode
-
+                        Dim cEnabled As iEnabled = TryCast(c, iEnabled)
+                        If cEnabled IsNot Nothing Then
+                            If colIdx = colIndexes.idxPlayableAdv Then cEnabled.isEnabled = civLabel.playableAdvMode
+                            If colIdx = colIndexes.idxPlaybleFort Then cEnabled.isEnabled = civLabel.playableFortMode
+                        End If
                         If c.GetType.GetProperty("options") IsNot Nothing Then
                             CObj(c).options.fileManager.fileNames.AddRange(btn.options.fileManager.fileNames)
                         End If

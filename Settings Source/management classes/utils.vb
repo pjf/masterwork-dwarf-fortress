@@ -45,11 +45,12 @@ Public Class utils
     End Sub
 
     'hidden controls aren't loaded/saved/etc
-    Public Shared Function controlIsValid(ByVal c As Control) As Boolean        
-        If c.HasChildren OrElse CBool(GetStateMethodInfo.Invoke(c, New Object() {2})) Then
+    Public Shared Function controlIsValid(ByVal c As Control) As Boolean
+        Dim conEnabled As iEnabled = TryCast(c, iEnabled)
+        If c.HasChildren OrElse ((conEnabled Is Nothing OrElse conEnabled.isEnabled) And CBool(GetStateMethodInfo.Invoke(c, New Object() {2}))) Then
             Return True
         Else
-            Console.WriteLine("skipping hidden control " & c.Name)
+            Console.WriteLine("skipping hidden/disabled control " & c.Name)
             Return False
         End If
     End Function

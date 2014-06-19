@@ -2,8 +2,9 @@
     Inherits ComboBox
     Implements iTheme
 
-    Public Sub New()
+    Private m_enabled As Boolean = True
 
+    Public Sub New()
         ' This call is required by the designer.
         InitializeComponent()
 
@@ -24,4 +25,5 @@
             Return cp
         End Get
     End Property
+
 End Class
