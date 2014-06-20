@@ -24,7 +24,7 @@
     "Tags": [
       {
         "tokenName": "SET_LABOR_LISTS",
-        "optionOnValue": "NO",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -202,7 +202,7 @@
     "Tags": [
       {
         "tokenName": "BABY_CHILD_CAP",
-        "optionOnValue": "100:1000",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -232,7 +232,7 @@
     "Tags": [
       {
         "tokenName": "AUTOSAVE",
-        "optionOnValue": "NONE",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -250,7 +250,7 @@
     "Tags": [
       {
         "tokenName": "AUTOSAVE_PAUSE",
-        "optionOnValue": "NO",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -286,7 +286,7 @@
     "Tags": [
       {
         "tokenName": "INITIAL_SAVE",
-        "optionOnValue": "NO",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -406,7 +406,7 @@
     "Tags": [
       {
         "tokenName": "WINDOWED",
-        "optionOnValue": "PROMPT",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -449,7 +449,7 @@
     "Tags": [
       {
         "tokenName": "PRIORITY",
-        "optionOnValue": "IDLE",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -467,7 +467,7 @@
     "Tags": [
       {
         "tokenName": "INTRO",
-        "optionOnValue": "NO",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -522,7 +522,7 @@
     "Tags": [
       {
         "tokenName": "EMBARK_RECTANGLE",
-        "optionOnValue": "3:3",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -569,7 +569,7 @@
     "Tags": [
       {
         "tokenName": "PRINT_MODE",
-        "optionOnValue": "2DSW",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -641,7 +641,7 @@
     "Tags": [
       {
         "tokenName": "SOUND",
-        "optionOnValue": "NO",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -735,10 +735,11 @@
   {
     "Name": "optBtnFortModeCivDWARF",
     "Files": [
+      "embark_profiles.txt",
       "entity_good_dwarf.txt"
     ],
     "AffectsGraphicPacks": false,
-    "HasFileOverrides": true,
+    "HasFileOverrides": false,
     "Tags": [
       {
         "tokenName": "",
@@ -1499,10 +1500,11 @@
   {
     "Name": "optBtnFortModeCivGNOME",
     "Files": [
+      "embark_profiles.txt",
       "entity_good_gnome.txt"
     ],
     "AffectsGraphicPacks": false,
-    "HasFileOverrides": true,
+    "HasFileOverrides": false,
     "Tags": [
       {
         "tokenName": "",
@@ -3011,10 +3013,11 @@
   {
     "Name": "optBtnFortModeCivORC",
     "Files": [
+      "embark_profiles.txt",
       "entity_slaver_orc.txt"
     ],
     "AffectsGraphicPacks": false,
-    "HasFileOverrides": true,
+    "HasFileOverrides": false,
     "Tags": [
       {
         "tokenName": "",
@@ -3401,10 +3404,11 @@
   {
     "Name": "optBtnFortModeCivSUCCUBUS",
     "Files": [
+      "embark_profiles.txt",
       "entity_slaver_succubus.txt"
     ],
     "AffectsGraphicPacks": false,
-    "HasFileOverrides": true,
+    "HasFileOverrides": false,
     "Tags": [
       {
         "tokenName": "",
@@ -4149,10 +4153,11 @@
   {
     "Name": "optBtnFortModeCivKOBOLD",
     "Files": [
+      "embark_profiles.txt",
       "entity_savage_kobold.txt"
     ],
     "AffectsGraphicPacks": false,
-    "HasFileOverrides": true,
+    "HasFileOverrides": false,
     "Tags": [
       {
         "tokenName": "",
@@ -6329,10 +6334,11 @@
   {
     "Name": "optBtnFortModeCivWARLOCK",
     "Files": [
+      "embark_profiles.txt",
       "entity_evil_warlock.txt"
     ],
     "AffectsGraphicPacks": false,
-    "HasFileOverrides": true,
+    "HasFileOverrides": false,
     "Tags": [
       {
         "tokenName": "",
@@ -10629,7 +10635,7 @@
     "Tags": [
       {
         "tokenName": "GOOD_SQ_COUNTS",
-        "optionOnValue": "24:244:0",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }
@@ -10646,7 +10652,7 @@
     "Tags": [
       {
         "tokenName": "EVIL_SQ_COUNTS",
-        "optionOnValue": "24:244:0",
+        "optionOnValue": "",
         "optionOffValue": "",
         "isMultiLine": false
       }

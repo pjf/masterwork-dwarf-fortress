@@ -918,23 +918,30 @@ Imports Newtonsoft.Json
         End If
     End Sub
 
-    'to aid in loading the civ table, once the active button has been loaded, copy the file name to the other 
-    'controls in the same row, since most of them will use the exact same entity file
-    'additionally, check for missing controllable tags and disable the buttons accordingly
+    'to improve civ table loading, once the civ's active button has been loaded, 
+    'copy the file name(s) to the other controls in the same row as we really only need the entity file name
+    'additionally disable the fort/adv mode controls from saving/loading if the corresponding tags are missing from the file completely
     Private Sub civActiveLoaded(ByVal btn As optionSingleReplaceButton)
         If btn IsNot Nothing Then
             Dim pos As TableLayoutPanelCellPosition = Me.tableLayoutCivs.GetPositionFromControl(CType(btn, Control))
 
             'get the civLabel
             Dim civLabel As mwCivLabel = TryCast(Me.tableLayoutCivs.GetControlFromPosition(0, pos.Row), mwCivLabel)
+            Dim blnDisableAll As Boolean = False
             If civLabel IsNot Nothing Then
+                Dim entityFile As IO.FileInfo
                 If btn.options.fileManager.files.Count > 0 Then
-                    civLabel.playableFortMode = globals.m_dfRaws.Item(btn.options.fileManager.files()(0)).Contains("CIV_CONTROLLABLE")
-                    civLabel.playableAdvMode = globals.m_dfRaws.Item(btn.options.fileManager.files()(0)).Contains("INDIV_CONTROLLABLE")
+                    entityFile = btn.options.fileManager.files().Where(Function(fi As IO.FileInfo) fi.Name.Contains("entity")).First
+                    If entityFile IsNot Nothing AndAlso globals.m_dfRaws.ContainsKey(entityFile) Then
+                        civLabel.playableAdvMode = globals.m_dfRaws.Item(entityFile).Contains("INDIV_CONTROLLABLE")
+                        civLabel.playableFortMode = globals.m_dfRaws.Item(entityFile).Contains("CIV_CONTROLLABLE")
+                    Else
+                        blnDisableAll = True
+                    End If
                 Else
-                    civLabel.playableAdvMode = False
-                    civLabel.playableFortMode = False
+                    blnDisableAll = True
                 End If
+                If blnDisableAll Then civLabel.playableAdvMode = False : civLabel.playableFortMode = False
             End If
 
             For colIdx As Integer = colIndexes.idxActive + 1 To Me.tableLayoutCivs.ColumnCount - 1
@@ -946,7 +953,8 @@ Imports Newtonsoft.Json
                             If colIdx = colIndexes.idxPlayableAdv Then cEnabled.isEnabled = civLabel.playableAdvMode
                             If colIdx = colIndexes.idxPlaybleFort Then cEnabled.isEnabled = civLabel.playableFortMode
                         End If
-                        If c.GetType.GetProperty("options") IsNot Nothing Then
+                        'copy the file name to the other controls, excluding the fortress mode option, since it may exist in other files (embark_profiles)
+                        If (cEnabled Is Nothing OrElse cEnabled.isEnabled) AndAlso c.GetType.GetProperty("options") IsNot Nothing AndAlso colIdx <> colIndexes.idxPlaybleFort Then
                             CObj(c).options.fileManager.fileNames.AddRange(btn.options.fileManager.fileNames)
                         End If
                     End If
