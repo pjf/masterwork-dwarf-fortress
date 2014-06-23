@@ -69,7 +69,7 @@ Imports Newtonsoft.Json
         Me.Text = "Masterwork Settings"
 
         randomCreaturesExistCheck()
-
+        twbtCheck()
         loadProfileCombo()
 
         'DISABLED - updating saves is incredibly broken due to the messy raws
@@ -273,6 +273,7 @@ Imports Newtonsoft.Json
             saveSettings(tabMain, newSettings)
             'add any non-itoken control settings we want to save
             newSettings.Add("cmbTileSets", cmbTileSets.SelectedValue)
+            newSettings.Add("mwCbItemGraphics", mwCbItemGraphics.Checked)
             If rCheckWorldGen.Checked Then
                 newSettings.Add("WORLD_GEN", m_world_gen)
             Else
@@ -324,6 +325,13 @@ Imports Newtonsoft.Json
                     cmbTileSets.SelectedValue = value
                     graphicsSets.switchGraphics(value, False)
                 End If
+                If optionSettings.ContainsKey("mwCbItemGraphics") Then
+                    Dim value As Boolean = optionSettings.Item("mwCbItemGraphics")
+                    mwCbItemGraphics.Checked = value
+                Else
+                    mwCbItemGraphics.Checked = False
+                End If
+
                 If rCheckWorldGen.Checked AndAlso optionSettings.ContainsKey("WORLD_GEN") Then
                     Dim currPath As String = findDfFilePath(globals.m_worldGenFileName)
                     If currPath <> "" Then
@@ -1094,6 +1102,71 @@ Imports Newtonsoft.Json
     End Function
 
 #End Region
+
+#Region "item graphics option (text will be text plugin)"
+
+    Private Sub twbtCheck()
+        Dim strPath As String = IO.Path.Combine(globals.m_dwarfFortressRootDir, "hack", "plugins", "twbt.plug.dll")
+        mwCbItemGraphics.Checked = IO.File.Exists(strPath)
+        AddHandler mwCbItemGraphics.CheckedChanged, AddressOf mwCbItemGraphics_CheckedChanged
+        toggleRelatedGraphicOptions()
+    End Sub
+
+    Private Sub toggleRelatedGraphicOptions()
+        Dim blnEnable = (Not mwCbItemGraphics.Checked)
+        optCbPrintMode.Enabled = blnEnable : optBtnRendermax.Enabled = blnEnable : optBtnTruetype.Enabled = blnEnable
+        If Not blnEnable Then
+            setSettingsMessage("Disable item graphics to change rendermax, truetype or printmode settings.")
+        Else
+            setSettingsMessage("")
+        End If
+    End Sub
+
+    Private Sub mwCbItemGraphics_CheckedChanged(sender As Object, e As EventArgs)
+        Try
+            RemoveHandler mwCbItemGraphics.CheckedChanged, AddressOf mwCbItemGraphics_CheckedChanged
+            'if trying to enable, check incompatible options and prompt the player
+            If mwCbItemGraphics.Checked AndAlso (optCbPrintMode.SelectedValue <> "STANDARD" Or optBtnRendermax.Checked Or optBtnTruetype.Checked) Then
+                If MsgBox("Print mode will be changed to STANDARD, Rendermax and truetype fonts will be disabled due to incompatibility!" & vbNewLine & vbNewLine & "Continue?", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.No Then
+                    mwCbItemGraphics.Checked = False 'reset to disabled
+                Else
+                    optCbPrintMode.loadOption("STANDARD")
+                    optBtnRendermax.loadOption(False)
+                    optBtnTruetype.loadOption(False)
+                End If
+            End If
+            Dim twbtPlugin As IO.FileInfo
+            Dim newName As String = ""
+            Dim strPath As String = IO.Path.Combine(globals.m_dwarfFortressRootDir, "hack", "plugins", "twbt.plug")
+            If mwCbItemGraphics.Checked Then
+                twbtPlugin = New IO.FileInfo(strPath & ".disabled")
+                newName = "twbt.plug.dll"
+            Else
+                twbtPlugin = New IO.FileInfo(strPath & ".dll")
+                newName = "twbt.plug.disabled"
+            End If
+            If twbtPlugin IsNot Nothing AndAlso twbtPlugin.Exists Then
+                My.Computer.FileSystem.RenameFile(twbtPlugin.FullName, newName)
+            End If
+        Catch ex As Exception
+            MsgBox("Failed to toggle the 'Text Will Be Text' plugin!" & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
+        Finally
+            AddHandler mwCbItemGraphics.CheckedChanged, AddressOf mwCbItemGraphics_CheckedChanged
+            toggleRelatedGraphicOptions()
+        End Try
+    End Sub
+#End Region
+
+    Public Sub setSettingsMessage(ByVal msg As String)
+        If msg = "" Then
+            lblSettingsMessage.Visible = False
+            lblSettingsMessage.Text = ""
+        Else
+            lblSettingsMessage.Visible = True
+            lblSettingsMessage.Text = msg
+            lblSettingsMessage.BackColor = Theme.ColorTable.PanelDarkBorder 'override and give it a border/background
+        End If
+    End Sub
 
 End Class
 

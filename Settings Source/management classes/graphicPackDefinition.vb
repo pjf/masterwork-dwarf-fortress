@@ -4,7 +4,7 @@
 
     Private m_colorScheme As String
     Private m_type As String
-    Private m_name As String
+    Private m_name As String    
 
     Public Property name As String
         Get

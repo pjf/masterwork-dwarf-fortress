@@ -40,10 +40,10 @@ Public Class graphicsSets
                 Dim key As String = niceName.ToUpper.Replace(" ", "")
                 'niceName = StrConv(rx.Replace(niceName, " "), VbStrConv.ProperCase)
                 cbColors.options.itemList.Add(New comboFileItem(key, niceName, fi.Name))
-            Next            
+            Next
             cbColors.DataSource = cbColors.options.itemList
             cbColors.ValueMember = "value"
-            cbColors.DisplayMember = "display"            
+            cbColors.DisplayMember = "display"
         Catch ex As Exception
 
         End Try
@@ -129,24 +129,29 @@ Public Class graphicsSets
                         MsgBox("Invalid paths for graphics pack raws.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
                     End If
 
-                    Try
-                        'if we're not showing prompts, we don't want to mess with the colors
-                        If globals.m_graphicPackDefs.Count > 0 AndAlso showPrompts Then
-                            For Each gpd As graphicPackDefinition In globals.m_graphicPackDefs
-                                If String.Compare(gpd.name, selectedPackName, True) = 0 Then
-                                    Dim color As String = gpd.colorScheme
-                                    If color <> MainForm.optCbColors.SelectedValue.ToString AndAlso MsgBox("This tileset has a color scheme associated with it, would you like apply it as well?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Change Colors") = MsgBoxResult.Yes Then
-                                        MainForm.optCbColors.SelectedValue = color
-                                        MainForm.optCbColors.saveOption()
-                                    End If
-                                    Exit For
-                                End If
-                            Next
-                        End If
 
-                    Catch ex As Exception
-                        MsgBox("Failed to apply the default color scheme!" & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
-                    End Try
+
+                    If globals.m_graphicPackDefs.Count > 0 Then
+                        For Each gpd As graphicPackDefinition In globals.m_graphicPackDefs
+                            If String.Compare(gpd.name, selectedPackName, True) = 0 Then
+                                Try
+                                    'if we're not showing prompts, we don't want to mess with the colors
+                                    If showPrompts Then
+                                        Dim color As String = gpd.colorScheme
+                                        If color <> MainForm.optCbColors.SelectedValue.ToString AndAlso MsgBox("This tileset has a color scheme associated with it, would you like apply it as well?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Change Colors") = MsgBoxResult.Yes Then
+                                            MainForm.optCbColors.SelectedValue = color
+                                            MainForm.optCbColors.saveOption()
+                                        End If
+                                    End If
+                                Catch ex As Exception
+                                    MsgBox("Failed to apply the default color scheme!" & vbCrLf & vbCrLf & "Error: " & ex.ToString, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
+                                End Try
+                                Exit For
+                            End If
+                        Next
+                    End If
+
+
                 Else
                     MsgBox("Could not find the graphics pack directory! No changes have been applied!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Failed")
                 End If
