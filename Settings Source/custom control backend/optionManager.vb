@@ -350,7 +350,7 @@ Public Class optionManager
                             results(t) = True
                         End If
                     Else
-                        If Not newData.Contains(newValue) Then
+                        If newData.Contains(oldValue) Then
                             updatedData = Replace(newData, oldValue, newValue)
                             If Not results(t) Then results(t) = (Not updatedData = newData)
                         Else
