@@ -11007,7 +11007,7 @@ Partial Class MainForm
         Me.tabMain.ItemSize = New System.Drawing.Size(0, 26)
         Me.tabMain.Location = New System.Drawing.Point(0, 70)
         Me.tabMain.Name = "tabMain"
-        Me.tabMain.SelectedIndex = 1
+        Me.tabMain.SelectedIndex = 0
         Me.tabMain.Size = New System.Drawing.Size(1026, 554)
         Me.tabMain.TabBorderColor = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))
         Me.tabMain.TabGradient.ColorEnd = System.Drawing.Color.FromArgb(CType(CType(33,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(63,Byte),Integer))

@@ -71,6 +71,7 @@ Imports Newtonsoft.Json
         randomCreaturesExistCheck()
         twbtCheck()
         loadProfileCombo()
+        checkEmbarkProfiles()
 
         'DISABLED - updating saves is incredibly broken due to the messy raws
         'If fileWorking.savedGameDirs.Count > 1 Then
@@ -1114,9 +1115,9 @@ Imports Newtonsoft.Json
 
     Private Sub toggleRelatedGraphicOptions()
         Dim blnEnable = (Not mwCbItemGraphics.Checked)
-        optCbPrintMode.Enabled = blnEnable : optBtnRendermax.Enabled = blnEnable : optBtnTruetype.Enabled = blnEnable
+        optCbPrintMode.Enabled = blnEnable : optBtnTruetype.Enabled = blnEnable
         If Not blnEnable Then
-            setSettingsMessage("Disable item graphics to change rendermax, truetype or printmode settings.")
+            setSettingsMessage("Disable item graphics to change truetype or printmode settings.")
         Else
             setSettingsMessage("")
         End If
@@ -1126,12 +1127,11 @@ Imports Newtonsoft.Json
         Try
             RemoveHandler mwCbItemGraphics.CheckedChanged, AddressOf mwCbItemGraphics_CheckedChanged
             'if trying to enable, check incompatible options and prompt the player
-            If mwCbItemGraphics.Checked AndAlso (optCbPrintMode.SelectedValue <> "STANDARD" Or optBtnRendermax.Checked Or optBtnTruetype.Checked) Then
-                If MsgBox("Print mode will be changed to STANDARD, Rendermax and truetype fonts will be disabled due to incompatibility!" & vbNewLine & vbNewLine & "Continue?", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.No Then
+            If mwCbItemGraphics.Checked AndAlso (optCbPrintMode.SelectedValue <> "STANDARD" Or optBtnTruetype.Checked) Then
+                If MsgBox("Print mode will be changed to STANDARD and truetype fonts will be disabled due to incompatibility!" & vbNewLine & vbNewLine & "Continue?", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.No Then
                     mwCbItemGraphics.Checked = False 'reset to disabled
                 Else
-                    optCbPrintMode.loadOption("STANDARD")
-                    optBtnRendermax.loadOption(False)
+                    optCbPrintMode.loadOption("STANDARD")                    
                     optBtnTruetype.loadOption(False)
                 End If
             End If
@@ -1156,6 +1156,52 @@ Imports Newtonsoft.Json
         End Try
     End Sub
 #End Region
+
+
+#Region "embark profiles"
+
+    Private Sub checkEmbarkProfiles()
+        Try
+            Dim eProfiles As IO.FileInfo = findDfFile("embark_profiles.txt")
+            Dim eProfilesOriginal As IO.FileInfo
+            If eProfiles IsNot Nothing Then
+                eProfilesOriginal = New IO.FileInfo(eProfiles.FullName.Replace("txt", "original"))
+                If eProfilesOriginal IsNot Nothing Then
+                    Dim currProfiles As String = globals.m_dfRaws.Item(eProfiles)
+                    Dim origProfiles As String = readFile(eProfilesOriginal.FullName, False)
+
+                    Dim pattern As String = "\[TITLE:(?<title>.*)\]"
+                    Dim currTitles As MatchCollection = Regex.Matches(currProfiles, pattern)
+
+                    Dim newProfiles As String = ""
+                    Dim titleFormat As String = "[TITLE:{0}]"
+                    Dim profileTitle As String = "[PROFILE]" & vbNewLine & vbTab
+                    Dim lenTitle As Integer = profileTitle.Length
+                    Dim m As Match
+                    For idx As Integer = currTitles.Count - 1 To 0 Step -1
+                        m = currTitles.Item(idx)
+                        Dim title As String = m.Groups("title").Value
+                        If Not origProfiles.Contains(String.Format("[TITLE:{0}]", title)) Then
+                            If idx = currTitles.Count - 1 Then
+                                newProfiles = currProfiles.Substring(m.Index - lenTitle)
+                            Else
+                                newProfiles = currProfiles.Substring(m.Index - lenTitle, (currTitles.Item(idx + 1).Index - lenTitle) - (m.Index - lenTitle)) & newProfiles
+                            End If
+                        End If
+                    Next
+                    If newProfiles <> "" Then
+                        newProfiles = origProfiles & newProfiles
+                        saveFile(eProfiles.FullName, newProfiles)
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            MsgBoxExp("Embark Profiles", "Embark profile problem", MessageBoxIcon.Information, "Failed to merge the original embark profiles with the current embark profiles!", MessageBoxButtons.OK, ex.ToString)
+        End Try
+    End Sub
+
+#End Region
+
 
     Public Sub setSettingsMessage(ByVal msg As String)
         If msg = "" Then
