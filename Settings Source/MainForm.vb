@@ -58,10 +58,13 @@ Imports Newtonsoft.Json
     Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         refreshFileAndDirPaths()
         If m_dwarfFortressRootDir <> "" Then
+            tilesetFontViewer.setDisplayArea(4, 6)
+            tilesetViewer.setDisplayArea(0, 16)
+
             graphicsSets.loadColorSchemes(Me.optCbColors)
             graphicsSets.loadTwbtFonts(Me.optCbTwbtFonts, Me.tilesetFontViewer)
             initialLoad()
-            graphicsSets.loadGraphicPacks(m_graphicsDir)
+            graphicsSets.loadGraphicPacks(cmbTileSets, tilesetViewer)
         End If
 
         setupRibbonHandlers(rPanelGeneral.Items)
@@ -506,7 +509,7 @@ Imports Newtonsoft.Json
         Try
             strPath = CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath
             If strPath.Trim <> "" Then
-                tilesetFontViewer.refreshPreview(optCbTwbtFonts.SelectedValue, strPath, 4, 6)
+                tilesetFontViewer.refreshPreview(optCbTwbtFonts.SelectedValue, strPath)
                 Dim loc As Point = optCbTwbtFonts.FindForm().PointToClient(optCbTwbtFonts.Parent.PointToScreen(optCbTwbtFonts.Location))
                 tilesetFontViewer.Location = New Point(loc.X + optCbTwbtFonts.DropDownWidth + 4, loc.Y - (Me.Height - Me.ClientSize.Height) - ribbonMain.Height)
                 tilesetFontViewer.Visible = True
@@ -518,12 +521,12 @@ Imports Newtonsoft.Json
     End Sub
 
     Private Sub optCbTwbtFont_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles optCbTwbtFonts.SelectionChangeCommitted
-        tilesetFontViewer.refreshPreview(optCbTwbtFonts.SelectedValue, CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath, 4, 6)
+        tilesetFontViewer.refreshPreview(optCbTwbtFonts.SelectedValue, CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath)
     End Sub
 
     Private Sub optCbTwbtFont_Hover(sender As Object, e As HoverEventArgs) Handles optCbTwbtFonts.Hover
         Dim path As String = CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath
-        tilesetFontViewer.refreshPreview(optCbTwbtFonts.SelectedValue, path, 4, 6)
+        tilesetFontViewer.refreshPreview(CType(optCbTwbtFonts.SelectedItem, comboFileItem).value, path)
     End Sub
 
 #End Region
@@ -547,12 +550,12 @@ Imports Newtonsoft.Json
     End Sub
 
     Private Sub cmbTileSets_MouseMove(sender As Object, e As MouseEventArgs) Handles cmbTileSets.MouseMove
-        If cmbTileSets.SelectedItem Is Nothing OrElse cmbTileSets.DroppedDown OrElse tilesetViewer.Visible Then Exit Sub
+        If cmbTileSets.SelectedItem Is Nothing OrElse cmbTileSets.DroppedDown Then Exit Sub
         Try
             Console.WriteLine("mouse move showing previewer!")
             Dim strPath As String = CType(cmbTileSets.SelectedItem, graphicPackDefinition).tilesetPath
             If strPath <> "" Then
-                tilesetViewer.refreshPreview(cmbTileSets.SelectedValue, strPath, 0, 16)
+                tilesetViewer.refreshPreview(CType(cmbTileSets.SelectedItem, graphicPackDefinition).name, strPath)
                 Dim loc As Point = cmbTileSets.FindForm().PointToClient(cmbTileSets.Parent.PointToScreen(cmbTileSets.Location))
                 tilesetViewer.Location = New Point(loc.X + cmbTileSets.DropDownWidth + 4, loc.Y - (Me.Height - Me.ClientSize.Height) - ribbonMain.Height)
                 tilesetViewer.Visible = True
@@ -565,12 +568,12 @@ Imports Newtonsoft.Json
 
     Private Sub cmbTileSets_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmbTileSets.SelectionChangeCommitted
         graphicsSets.switchGraphics(cmbTileSets.SelectedValue)
-        tilesetViewer.refreshPreview(cmbTileSets.SelectedValue, CType(cmbTileSets.SelectedItem, graphicPackDefinition).tilesetPath, 0, 16)
+        tilesetViewer.refreshPreview(CType(cmbTileSets.SelectedItem, graphicPackDefinition).name, CType(cmbTileSets.SelectedItem, graphicPackDefinition).tilesetPath)
     End Sub
 
     Private Sub cmbTileSets_Hover(sender As Object, e As HoverEventArgs) Handles cmbTileSets.Hover
         Dim path As String = CType(cmbTileSets.Items(e.itemIndex), graphicPackDefinition).tilesetPath
-        tilesetViewer.refreshPreview(cmbTileSets.SelectedValue, path, 0, 16)
+        tilesetViewer.refreshPreview(CType(cmbTileSets.Items(e.itemIndex), graphicPackDefinition).name, path)
     End Sub
 
     Private Sub btnUpdateSaves_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateSaves.Click

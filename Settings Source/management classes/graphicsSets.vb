@@ -6,22 +6,23 @@ Public Class graphicsSets
 
     Private Shared m_tilesetManager As New optionMulti
 
-    Public Shared Sub loadGraphicPacks(ByVal directory As String)
-        Try
+    Public Shared Sub loadGraphicPacks(ByRef cb As ComboBox, ByRef viewer As tilesetPreviewer)
+        Try            
             Dim defFile As IO.FileInfo = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) String.Compare(f.Name, "graphics_definitions.JSON", True) = 0)
             If defFile IsNot Nothing Then
                 globals.m_graphicPackDefs = JsonConvert.DeserializeObject(Of List(Of graphicPackDefinition))(readFile(defFile.FullName), globals.m_defaultSerializeOptions)
                 For Each gdf As graphicPackDefinition In globals.m_graphicPackDefs.Distinct(New graphicPackDefinitionTilesetTypeComparer)
-                    m_tilesetManager.tokenList.Add(New rawToken(gdf.tilesetType, getGraphicTag(True, gdf.tilesetType), getGraphicTag(False, gdf.tilesetType)))                    
+                    m_tilesetManager.tokenList.Add(New rawToken(gdf.tilesetType, getGraphicTag(True, gdf.tilesetType), getGraphicTag(False, gdf.tilesetType)))
+                    viewer.loadImage(gdf.name, gdf.tilesetPath)
                 Next
             End If
 
-            MainForm.cmbTileSets.DataSource = Nothing
-            MainForm.cmbTileSets.DataSource = globals.m_graphicPackDefs
-            MainForm.cmbTileSets.ValueMember = "Name"
-            MainForm.cmbTileSets.DisplayMember = "Name"
+            cb.DataSource = Nothing
+            cb.DataSource = globals.m_graphicPackDefs
+            cb.ValueMember = "Name"
+            cb.DisplayMember = "Name"
 
-            MainForm.cmbTileSets.SelectedValue = My.Settings.Item("GRAPHICS")
+            cb.SelectedValue = My.Settings.Item("GRAPHICS")
         Catch ex As Exception
 
         End Try
@@ -36,7 +37,6 @@ Public Class graphicsSets
                 Dim niceName As String = IO.Path.GetFileNameWithoutExtension(fi.Name).Replace("colors_", "").Trim.Replace("_", " ")
                 Dim key As String = niceName.ToUpper.Replace(" ", "")
                 cbColors.options.itemList.Add(New comboFileItem(key, niceName, fi.Name, fi.FullName))
-
             Next
             cbColors.DataSource = cbColors.options.itemList
             cbColors.ValueMember = "value"
@@ -54,7 +54,8 @@ Public Class graphicsSets
             For Each fi As IO.FileInfo In twbtFonts
                 Dim niceName As String = IO.Path.GetFileNameWithoutExtension(fi.Name)
                 Dim key As String = niceName.ToUpper.Replace(" ", "")
-                cbTwbtFonts.options.itemList.Add(New comboFileItem(key, niceName, fi.Name, fi.FullName))                
+                cbTwbtFonts.options.itemList.Add(New comboFileItem(key, niceName, fi.Name, fi.FullName))
+                viewer.loadImage(key, fi.FullName)
             Next
             cbTwbtFonts.DataSource = cbTwbtFonts.options.itemList
             cbTwbtFonts.ValueMember = "value"

@@ -11112,11 +11112,11 @@ Partial Class MainForm
         Me.tileSetColorPreviewer.Name = "tileSetColorPreviewer"
         Me.tileSetColorPreviewer.Size = New System.Drawing.Size(30, 30)
         Me.tileSetColorPreviewer.TabIndex = 173
-        Me.tileSetColorPreviewer.Visible = false
+        Me.tileSetColorPreviewer.Visible = False
         '
         'grpSaveSettings
         '
-        Me.grpSaveSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpSaveSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpSaveSettings.Controls.Add(Me.optCbAutoSave)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoSavePause)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoBackup)
@@ -11129,18 +11129,18 @@ Partial Class MainForm
         Me.grpSaveSettings.Name = "grpSaveSettings"
         Me.grpSaveSettings.Size = New System.Drawing.Size(169, 226)
         Me.grpSaveSettings.TabIndex = 1
-        Me.grpSaveSettings.TabStop = false
+        Me.grpSaveSettings.TabStop = False
         Me.grpSaveSettings.Text = "Save && Load Settings"
         '
         'optCbAutoSave
         '
         Me.optCbAutoSave.DropDownWidth = 150
         Me.optCbAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optCbAutoSave.FormattingEnabled = true
+        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optCbAutoSave.FormattingEnabled = True
         Me.optCbAutoSave.Location = New System.Drawing.Point(76, 22)
         Me.optCbAutoSave.Name = "optCbAutoSave"
-        FileListManager232.fileNames = CType(resources.GetObject("FileListManager232.fileNames"),System.Collections.Generic.List(Of String))
+        FileListManager232.fileNames = CType(resources.GetObject("FileListManager232.fileNames"), System.Collections.Generic.List(Of String))
         OptionList7.fileManager = FileListManager232
         ComboItem52.display = "Never"
         ComboItem52.value = "NONE"
@@ -11151,10 +11151,10 @@ Partial Class MainForm
         OptionList7.itemList.Add(ComboItem52)
         OptionList7.itemList.Add(ComboItem53)
         OptionList7.itemList.Add(ComboItem54)
-        OptionManager232.checkAllOnLoad = false
-        OptionManager232.loadFromDInit = true
-        OptionManager232.loadFromInit = false
-        OptionManager232.loadFromWorldGen = false
+        OptionManager232.checkAllOnLoad = False
+        OptionManager232.loadFromDInit = True
+        OptionManager232.loadFromInit = False
+        OptionManager232.loadFromWorldGen = False
         OptionList7.optionManager = OptionManager232
         OptionSettingManager235.settingName = Nothing
         OptionList7.settingManager = OptionSettingManager235
@@ -11165,7 +11165,7 @@ Partial Class MainForm
         '
         'lblAutoSave
         '
-        Me.lblAutoSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblAutoSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblAutoSave.ForeColor = System.Drawing.SystemColors.Window
         Me.lblAutoSave.Location = New System.Drawing.Point(15, 22)
@@ -11177,7 +11177,7 @@ Partial Class MainForm
         '
         'grpAnnouncements
         '
-        Me.grpAnnouncements.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpAnnouncements.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpAnnouncements.Controls.Add(Me.optBtnTransformMsgs)
         Me.grpAnnouncements.Controls.Add(Me.optBtnDigStop)
         Me.grpAnnouncements.ForeColor = System.Drawing.SystemColors.Window
@@ -11185,12 +11185,12 @@ Partial Class MainForm
         Me.grpAnnouncements.Name = "grpAnnouncements"
         Me.grpAnnouncements.Size = New System.Drawing.Size(169, 87)
         Me.grpAnnouncements.TabIndex = 2
-        Me.grpAnnouncements.TabStop = false
+        Me.grpAnnouncements.TabStop = False
         Me.grpAnnouncements.Text = "Announcement Settings"
         '
         'grpMiscSettings
         '
-        Me.grpMiscSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpMiscSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpMiscSettings.Controls.Add(Me.optNumMacro)
         Me.grpMiscSettings.Controls.Add(Me.lblKeybinds)
         Me.grpMiscSettings.Controls.Add(Me.optCbKeybinds)
@@ -11207,12 +11207,12 @@ Partial Class MainForm
         Me.grpMiscSettings.Name = "grpMiscSettings"
         Me.grpMiscSettings.Size = New System.Drawing.Size(169, 199)
         Me.grpMiscSettings.TabIndex = 4
-        Me.grpMiscSettings.TabStop = false
+        Me.grpMiscSettings.TabStop = False
         Me.grpMiscSettings.Text = "Misc. Settings"
         '
         'lblKeybinds
         '
-        Me.lblKeybinds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblKeybinds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblKeybinds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblKeybinds.ForeColor = System.Drawing.SystemColors.Window
         Me.lblKeybinds.Location = New System.Drawing.Point(7, 21)
@@ -11224,7 +11224,7 @@ Partial Class MainForm
         '
         'lblArena
         '
-        Me.lblArena.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblArena.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblArena.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblArena.ForeColor = System.Drawing.SystemColors.Window
         Me.lblArena.Location = New System.Drawing.Point(7, 47)
@@ -11236,7 +11236,7 @@ Partial Class MainForm
         '
         'lblWindowed
         '
-        Me.lblWindowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblWindowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblWindowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblWindowed.ForeColor = System.Drawing.SystemColors.Window
         Me.lblWindowed.Location = New System.Drawing.Point(7, 73)
@@ -11248,7 +11248,7 @@ Partial Class MainForm
         '
         'lblMacro
         '
-        Me.lblMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblMacro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblMacro.ForeColor = System.Drawing.SystemColors.Window
         Me.lblMacro.Location = New System.Drawing.Point(10, 123)
@@ -11260,7 +11260,7 @@ Partial Class MainForm
         '
         'lblPriority
         '
-        Me.lblPriority.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblPriority.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblPriority.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPriority.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPriority.Location = New System.Drawing.Point(10, 99)
@@ -11272,7 +11272,7 @@ Partial Class MainForm
         '
         'grpEmbark
         '
-        Me.grpEmbark.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpEmbark.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpEmbark.Controls.Add(Me.optNumPatternEmbarkGroupSize)
         Me.grpEmbark.Controls.Add(Me.optNumPatternEmbarkPoints)
         Me.grpEmbark.Controls.Add(Me.lblColonists)
@@ -11285,12 +11285,12 @@ Partial Class MainForm
         Me.grpEmbark.Name = "grpEmbark"
         Me.grpEmbark.Size = New System.Drawing.Size(169, 169)
         Me.grpEmbark.TabIndex = 5
-        Me.grpEmbark.TabStop = false
+        Me.grpEmbark.TabStop = False
         Me.grpEmbark.Text = "Embark Settings"
         '
         'lblColonists
         '
-        Me.lblColonists.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblColonists.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblColonists.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblColonists.ForeColor = System.Drawing.SystemColors.Window
         Me.lblColonists.Location = New System.Drawing.Point(4, 72)
@@ -11303,7 +11303,7 @@ Partial Class MainForm
         '
         'lblEmbarkPointsOverride
         '
-        Me.lblEmbarkPointsOverride.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblEmbarkPointsOverride.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblEmbarkPointsOverride.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblEmbarkPointsOverride.ForeColor = System.Drawing.SystemColors.Window
         Me.lblEmbarkPointsOverride.Location = New System.Drawing.Point(4, 48)
@@ -11316,7 +11316,7 @@ Partial Class MainForm
         '
         'lblEmbarkSize
         '
-        Me.lblEmbarkSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblEmbarkSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblEmbarkSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblEmbarkSize.ForeColor = System.Drawing.SystemColors.Window
         Me.lblEmbarkSize.Location = New System.Drawing.Point(13, 24)
@@ -11329,7 +11329,7 @@ Partial Class MainForm
         '
         'grpGraphics
         '
-        Me.grpGraphics.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpGraphics.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.grpGraphics.Controls.Add(Me.mwCbItemGraphics)
         Me.grpGraphics.Controls.Add(Me.lblColors)
         Me.grpGraphics.Controls.Add(Me.optCbColors)
@@ -11348,12 +11348,12 @@ Partial Class MainForm
         Me.grpGraphics.Name = "grpGraphics"
         Me.grpGraphics.Size = New System.Drawing.Size(169, 374)
         Me.grpGraphics.TabIndex = 3
-        Me.grpGraphics.TabStop = false
+        Me.grpGraphics.TabStop = False
         Me.grpGraphics.Text = "Graphic Settings"
         '
         'lblColors
         '
-        Me.lblColors.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblColors.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblColors.ForeColor = System.Drawing.SystemColors.Window
         Me.lblColors.Location = New System.Drawing.Point(54, 22)
@@ -11365,13 +11365,14 @@ Partial Class MainForm
         '
         'optCbColors
         '
+        Me.optCbColors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.optCbColors.DropDownWidth = 150
         Me.optCbColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbColors.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optCbColors.FormattingEnabled = true
-        Me.optCbColors.IntegralHeight = false
+        Me.optCbColors.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optCbColors.FormattingEnabled = True
+        Me.optCbColors.IntegralHeight = False
         Me.optCbColors.Location = New System.Drawing.Point(17, 44)
-        Me.optCbColors.MaxDropDownItems = 10
+        Me.optCbColors.MaxDropDownItems = 15
         Me.optCbColors.Name = "optCbColors"
         OptionSingleFileReplace4.fileName = "colors.txt"
         OptionSettingManager236.settingName = "COLORS"
@@ -11382,13 +11383,14 @@ Partial Class MainForm
         '
         'optCbTwbtFonts
         '
+        Me.optCbTwbtFonts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.optCbTwbtFonts.DropDownWidth = 150
         Me.optCbTwbtFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbTwbtFonts.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.optCbTwbtFonts.FormattingEnabled = true
-        Me.optCbTwbtFonts.IntegralHeight = false
+        Me.optCbTwbtFonts.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.optCbTwbtFonts.FormattingEnabled = True
+        Me.optCbTwbtFonts.IntegralHeight = False
         Me.optCbTwbtFonts.Location = New System.Drawing.Point(17, 221)
-        Me.optCbTwbtFonts.MaxDropDownItems = 10
+        Me.optCbTwbtFonts.MaxDropDownItems = 15
         Me.optCbTwbtFonts.Name = "optCbTwbtFonts"
         OptionSingleFileReplace5.fileName = "font.png"
         OptionSettingManager237.settingName = "TWBTFONT"
@@ -11399,7 +11401,7 @@ Partial Class MainForm
         '
         'lblFonts
         '
-        Me.lblFonts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblFonts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblFonts.ForeColor = System.Drawing.SystemColors.Window
         Me.lblFonts.Location = New System.Drawing.Point(60, 119)
@@ -11411,7 +11413,7 @@ Partial Class MainForm
         '
         'lblGraphicsPack
         '
-        Me.lblGraphicsPack.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblGraphicsPack.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblGraphicsPack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblGraphicsPack.ForeColor = System.Drawing.SystemColors.Window
         Me.lblGraphicsPack.Location = New System.Drawing.Point(54, 169)
@@ -11423,13 +11425,14 @@ Partial Class MainForm
         '
         'cmbTileSets
         '
+        Me.cmbTileSets.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbTileSets.DropDownWidth = 150
         Me.cmbTileSets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbTileSets.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.cmbTileSets.FormattingEnabled = true
-        Me.cmbTileSets.IntegralHeight = false
+        Me.cmbTileSets.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbTileSets.FormattingEnabled = True
+        Me.cmbTileSets.IntegralHeight = False
         Me.cmbTileSets.Location = New System.Drawing.Point(17, 192)
-        Me.cmbTileSets.MaxDropDownItems = 10
+        Me.cmbTileSets.MaxDropDownItems = 15
         Me.cmbTileSets.Name = "cmbTileSets"
         Me.cmbTileSets.Size = New System.Drawing.Size(134, 23)
         Me.cmbTileSets.TabIndex = 9

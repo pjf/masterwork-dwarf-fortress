@@ -10,17 +10,6 @@
         init()
     End Sub
 
-    Public Sub New(ByVal colorFilePath As String)
-
-        ' This call is required by the designer.
-        InitializeComponent()
-
-        ' Add any initialization after the InitializeComponent() call.
-        m_path = colorFilePath
-        init()
-        refreshPreview(m_path)
-    End Sub
-
     Private Sub init()
         m_pb = New PictureBox()
         m_pb.SizeMode = PictureBoxSizeMode.CenterImage
@@ -40,8 +29,6 @@
     Private m_storage As New Dictionary(Of String, Bitmap)
 
     Public Sub refreshPreview(ByVal filePath As String)
-        'If filePath = "" Or filePath = m_path Then Exit Sub
-
         If m_storage.ContainsKey(filePath) Then
             m_pb.Image = m_storage.Item(filePath)
         Else
@@ -76,13 +63,17 @@
             m_pb.Image = newImg
         End If
 
-        Me.Refresh()
         refreshSize()
+        Me.Invalidate()
     End Sub
 
-    Private Sub refreshSize()
+    Private Sub refreshSize()        
         If m_pb.Image IsNot Nothing Then
-            Me.Size = New Size(m_pb.Image.Width, m_pb.Image.Height)
+            Dim newSize As New Size(m_pb.Image.Width, m_pb.Image.Height)
+            If Me.Size <> newSize Then
+                Me.Size = newSize
+            End If
+            Me.Size = New Size(newSize)
         Else
             Me.Size = New Size(30, 30)
         End If

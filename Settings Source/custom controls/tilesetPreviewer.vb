@@ -36,37 +36,57 @@ Public Class tilesetPreviewer
     Private m_pb As PictureBox
     Private m_storage As New Dictionary(Of String, Bitmap)
 
-    Public Sub refreshPreview(ByVal key As String, ByVal filePath As String, ByVal rowStart As Integer, ByVal rowEnd As Integer)
-        'If filePath = "" Or key = m_currentKey Then Exit Sub
+    Private m_rowStart As Integer
+    Private m_rowEnd As Integer
 
-        'If m_storage.ContainsKey(key) Then
-        '    m_pb.Image = m_storage.Item(key)
-        'Else
-        '    m_pb.Image = loadImage(key, filePath, rowStart, rowEnd)
-        'End If
+    Private m_displayHeight As Integer
 
-        'm_currentKey = key
-        m_pb.Image = loadImage(key, filePath, rowStart, rowEnd)
-
-        Me.Refresh()
-        refreshSize()
+    Public Sub setDisplayArea(ByVal rowStart As Integer, ByVal rowEnd As Integer)
+        m_rowStart = rowStart
+        m_rowEnd = rowEnd
     End Sub
 
-    Public Function loadImage(ByVal key As String, ByVal filePath As String, ByVal rowStart As Integer, ByVal rowEnd As Integer) As Bitmap
-        Dim original As Bitmap = New Bitmap(filePath)
-        Dim newImg As Bitmap
-        Dim rowHeight As Integer = original.Height / 16
-        Dim cropHeight As Integer = (rowEnd - rowStart) * rowHeight
+    Public Sub refreshPreview(ByVal key As String, ByVal filePath As String)
+        'If filePath = "" Or key = m_currentKey Then Exit Sub
 
-        Dim croppedRect As New Rectangle(0, rowHeight * rowStart, original.Width, cropHeight)
-        newImg = original.Clone(croppedRect, original.PixelFormat)
-        'm_storage.Add(key, newImg)
+        If m_storage.ContainsKey(key) Then
+            m_pb.Image = m_storage.Item(key)
+        Else
+            m_pb.Image = loadImage(key, filePath)
+        End If
+
+        'm_currentKey = key
+        'm_pb.Image = loadImage(key, filePath, rowStart, rowEnd)
+
+        'Me.Refresh()
+        refreshSize()
+        Me.Invalidate()
+    End Sub
+
+    Public Function loadImage(ByVal key As String, ByVal filePath As String) As Bitmap
+        Dim fullImage As Bitmap = New Bitmap(filePath)
+        Dim newImg As Bitmap
+        Dim rowHeight As Integer = fullImage.Height / 16
+        Dim cropHeight As Integer = (m_rowEnd - m_rowStart) * rowHeight
+
+        If cropHeight >= fullImage.Height Then
+            m_storage.Add(key, fullImage)
+            newImg = fullImage
+        Else
+            Dim displayRect As New Rectangle(0, rowHeight * m_rowStart, fullImage.Width, cropHeight)
+            newImg = fullImage.Clone(displayRect, fullImage.PixelFormat)
+            m_storage.Add(key, newImg)
+        End If
+
         Return newImg
     End Function
 
     Private Sub refreshSize()
+        If m_pb.Image Is Nothing Then Exit Sub
+        Dim newSize As New Size(m_pb.Image.Width, m_pb.Image.Height)
+        If Me.Size = newSize Then Exit Sub
         If m_pb.Image IsNot Nothing Then
-            Me.Size = New Size(m_pb.Image.Width, m_pb.Image.Height)
+            Me.Size = newSize
         Else
             Me.Size = New Size(256, 32)
         End If
