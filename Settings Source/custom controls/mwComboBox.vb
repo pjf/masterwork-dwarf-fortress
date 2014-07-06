@@ -1,5 +1,5 @@
 ﻿Public Class mwComboBox
-    Inherits ComboBox
+    Inherits hoverComboBox
     Implements iTheme
 
     Private m_enabled As Boolean = True

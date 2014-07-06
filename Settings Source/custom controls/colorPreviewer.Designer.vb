@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class colorViewer
+Partial Class colorPreviewer
     Inherits System.Windows.Forms.Panel
 
     'UserControl overrides dispose to clean up the component list.

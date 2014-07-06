@@ -12,7 +12,7 @@ Public Class graphicsSets
             If defFile IsNot Nothing Then
                 globals.m_graphicPackDefs = JsonConvert.DeserializeObject(Of List(Of graphicPackDefinition))(readFile(defFile.FullName), globals.m_defaultSerializeOptions)
                 For Each gdf As graphicPackDefinition In globals.m_graphicPackDefs.Distinct(New graphicPackDefinitionTilesetTypeComparer)
-                    m_tilesetManager.tokenList.Add(New rawToken(gdf.tilesetType, getGraphicTag(True, gdf.tilesetType), getGraphicTag(False, gdf.tilesetType)))
+                    m_tilesetManager.tokenList.Add(New rawToken(gdf.tilesetType, getGraphicTag(True, gdf.tilesetType), getGraphicTag(False, gdf.tilesetType)))                    
                 Next
             End If
 
@@ -31,11 +31,12 @@ Public Class graphicsSets
         Try
             cbColors.options.itemList.Clear()
             cbColors.DataSource = Nothing
-            Dim schemes As List(Of IO.FileInfo) = mwFilePaths.Where(Function(fi As IO.FileInfo) fi.DirectoryName.Contains(IO.Path.Combine(globals.m_SettingsDir, "Colors"))).ToList            
+            Dim schemes As List(Of IO.FileInfo) = mwFilePaths.Where(Function(fi As IO.FileInfo) fi.DirectoryName.Contains(IO.Path.Combine(globals.m_SettingsDir, "Colors"))).ToList
             For Each fi As IO.FileInfo In schemes
                 Dim niceName As String = IO.Path.GetFileNameWithoutExtension(fi.Name).Replace("colors_", "").Trim.Replace("_", " ")
-                Dim key As String = niceName.ToUpper.Replace(" ", "")                
-                cbColors.options.itemList.Add(New comboFileItem(key, niceName, fi.Name))
+                Dim key As String = niceName.ToUpper.Replace(" ", "")
+                cbColors.options.itemList.Add(New comboFileItem(key, niceName, fi.Name, fi.FullName))
+
             Next
             cbColors.DataSource = cbColors.options.itemList
             cbColors.ValueMember = "value"
@@ -45,15 +46,15 @@ Public Class graphicsSets
         End Try
     End Sub
 
-    Public Shared Sub loadTwbtFonts(ByRef cbTwbtFonts As optionComboBoxFileReplace)
+    Public Shared Sub loadTwbtFonts(ByRef cbTwbtFonts As optionComboBoxFileReplace, ByRef viewer As tilesetPreviewer)
         Try
             cbTwbtFonts.options.itemList.Clear()
             cbTwbtFonts.DataSource = Nothing
-            Dim schemes As List(Of IO.FileInfo) = mwFilePaths.Where(Function(fi As IO.FileInfo) fi.DirectoryName.Contains(IO.Path.Combine(globals.m_SettingsDir, "TwbtFonts"))).ToList
-            For Each fi As IO.FileInfo In schemes
+            Dim twbtFonts As List(Of IO.FileInfo) = mwFilePaths.Where(Function(fi As IO.FileInfo) fi.DirectoryName.Contains(IO.Path.Combine(globals.m_SettingsDir, "TwbtFonts"))).ToList
+            For Each fi As IO.FileInfo In twbtFonts
                 Dim niceName As String = IO.Path.GetFileNameWithoutExtension(fi.Name)
                 Dim key As String = niceName.ToUpper.Replace(" ", "")
-                cbTwbtFonts.options.itemList.Add(New comboFileItem(key, niceName, fi.Name))
+                cbTwbtFonts.options.itemList.Add(New comboFileItem(key, niceName, fi.Name, fi.FullName))                
             Next
             cbTwbtFonts.DataSource = cbTwbtFonts.options.itemList
             cbTwbtFonts.ValueMember = "value"

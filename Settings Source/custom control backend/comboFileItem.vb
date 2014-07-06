@@ -5,13 +5,15 @@ Public Class comboFileItem
     Inherits comboItem
 
     Private m_fileName As String
+    Private m_filePath As String
 
     Public Sub New()
     End Sub
 
-    Public Sub New(ByVal value As String, ByVal display As String, ByVal fileName As String)
+    Public Sub New(ByVal value As String, ByVal display As String, ByVal fileName As String, ByVal filePath As String)
         MyBase.New(value, display)
         m_fileName = fileName
+        m_filePath = filePath
     End Sub
 
     <CategoryAttribute("Data"),
@@ -23,6 +25,17 @@ Public Class comboFileItem
         End Get
         Set(value As String)
             m_fileName = value
+        End Set
+    End Property
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public Property filePath As String
+        Get
+            Return m_filePath
+        End Get
+        Set(value As String)
+            m_filePath = value
         End Set
     End Property
 

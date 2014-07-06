@@ -119,7 +119,7 @@ Public Class hoverComboBox
             ' not just over its scrollbar before we actually try to update anything
             ' then if we are raise the Hover event for this comboBox
             'If Not (xPos > Me.Width - SCROLLBAR_WIDTH OrElse xPos < 1 OrElse oldYPos < 0 OrElse ((oldYPos > Me.ItemHeight * Me.MaxDropDownItems) AndAlso Me.DropDownStyle <> ComboBoxStyle.Simple)) Then
-            If Not (xPos > Me.Width - SCROLLBAR_WIDTH OrElse xPos < 1 OrElse oldYPos < 0) Then 'OrElse ((oldYPos > Me.ItemHeight * Me.MaxDropDownItems) AndAlso Me.DropDownStyle <> ComboBoxStyle.Simple)) Then
+            If Not (xPos > Me.Width - SCROLLBAR_WIDTH OrElse xPos < 1 OrElse oldYPos < 0 OrElse ((oldYPos > Me.ItemHeight * Me.MaxDropDownItems) AndAlso Me.DropDownStyle <> ComboBoxStyle.Simple)) Then
                 Dim e As New HoverEventArgs()
                 e.itemIndex = If((onScreenIndex > Me.Items.Count - 1), Me.Items.Count - 1, onScreenIndex)
                 OnHover(e)

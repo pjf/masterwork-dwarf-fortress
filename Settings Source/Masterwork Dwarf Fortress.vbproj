@@ -188,10 +188,10 @@
     <Compile Include="custom controls\mwComboBox.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="custom controls\colorViewer.Designer.vb">
-      <DependentUpon>colorViewer.vb</DependentUpon>
+    <Compile Include="custom controls\colorPreviewer.Designer.vb">
+      <DependentUpon>colorPreviewer.vb</DependentUpon>
     </Compile>
-    <Compile Include="custom controls\colorViewer.vb">
+    <Compile Include="custom controls\colorPreviewer.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="custom controls\optionComboBoxFileReplace.Designer.vb">
@@ -271,10 +271,10 @@
     <Compile Include="custom control backend\fileListConverter.vb" />
     <Compile Include="custom control backend\MultilineStringArrayConverter.vb" />
     <Compile Include="custom control backend\optionBase.vb" />
-    <Compile Include="custom controls\tilesetViewer.Designer.vb">
-      <DependentUpon>tilesetViewer.vb</DependentUpon>
+    <Compile Include="custom controls\tilesetPreviewer.Designer.vb">
+      <DependentUpon>tilesetPreviewer.vb</DependentUpon>
     </Compile>
-    <Compile Include="custom controls\tilesetViewer.vb">
+    <Compile Include="custom controls\tilesetPreviewer.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="helper forms\frmAbout.Designer.vb">
@@ -359,8 +359,8 @@
     <EmbeddedResource Include="custom controls\mwTableLayout.resx">
       <DependentUpon>mwTableLayout.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="custom controls\colorViewer.resx">
-      <DependentUpon>colorViewer.vb</DependentUpon>
+    <EmbeddedResource Include="custom controls\colorPreviewer.resx">
+      <DependentUpon>colorPreviewer.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="custom controls\optionComboBoxMulti.resx">

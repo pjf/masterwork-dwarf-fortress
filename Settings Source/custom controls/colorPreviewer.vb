@@ -1,4 +1,4 @@
-﻿Public Class colorViewer
+﻿Public Class colorPreviewer
     Inherits Panel
 
     Public Sub New()
@@ -36,16 +36,14 @@
     Private m_rows As Integer = 2
     Private m_columns As Integer = 8
 
-    Private m_pb As PictureBox
-    Private m_img As Bitmap = New Bitmap(m_displaySize.Width * m_columns, m_displaySize.Height * m_rows)
-
+    Private m_pb As PictureBox    
     Private m_storage As New Dictionary(Of String, Bitmap)
 
     Public Sub refreshPreview(ByVal filePath As String)
-        If filePath = "" Or filePath = m_path Then Exit Sub
+        'If filePath = "" Or filePath = m_path Then Exit Sub
 
         If m_storage.ContainsKey(filePath) Then
-            m_img = m_storage.Item(filePath)
+            m_pb.Image = m_storage.Item(filePath)
         Else
             Dim m_colors As New List(Of Color)
             m_path = filePath
@@ -57,7 +55,8 @@
 
             If m_colors.Count <= 0 Then Exit Sub
 
-            Dim m_graphics As System.Drawing.Graphics = Graphics.FromImage(m_img)
+            Dim newImg As New Bitmap(m_displaySize.Width * m_columns, m_displaySize.Height * m_rows)
+            Dim m_graphics As System.Drawing.Graphics = Graphics.FromImage(newImg)
             Dim counter As Integer = 1
             Dim b As New SolidBrush(Color.Black)
             Dim x As Integer = 0
@@ -73,17 +72,17 @@
                 x += m_displaySize.Width
                 counter += 1
             Next
-            m_storage.Add(m_path, m_img)
+            m_storage.Add(m_path, newImg)
+            m_pb.Image = newImg
         End If
-        m_pb.Image = m_img
 
         Me.Refresh()
         refreshSize()
     End Sub
 
     Private Sub refreshSize()
-        If m_img IsNot Nothing Then
-            Me.Size = New Size(m_img.Width, m_img.Height)
+        If m_pb.Image IsNot Nothing Then
+            Me.Size = New Size(m_pb.Image.Width, m_pb.Image.Height)
         Else
             Me.Size = New Size(30, 30)
         End If
