@@ -90,7 +90,7 @@ Public Class utils
                 c.ForeColor = Theme.ColorTable.Caption1
                 c.BackColor = Theme.ColorTable.PanelDarkBorder
 
-            Case GetType(ComboBox)
+            Case GetType(ComboBox), GetType(hoverComboBox)
                 Dim cb As ComboBox = DirectCast(c, ComboBox)
                 cb.ForeColor = Theme.ColorTable.Text
                 cb.BackColor = Theme.ColorTable.DropDownBg

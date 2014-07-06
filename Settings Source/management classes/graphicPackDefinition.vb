@@ -4,7 +4,8 @@
 
     Private m_colorScheme As String
     Private m_type As String
-    Private m_name As String    
+    Private m_name As String
+    Private m_tilesetImagePath As String
 
     Public Property name As String
         Get
@@ -31,6 +32,18 @@
         Set(value As String)
             m_colorScheme = value
         End Set
+    End Property
+
+    Public ReadOnly Property tilesetPath As String
+        Get
+            If m_tilesetImagePath = "" Then
+                Dim fi As IO.FileInfo = graphicsSets.findGraphicsPackTilesetImage(m_name)
+                If fi IsNot Nothing Then
+                    m_tilesetImagePath = fi.FullName
+                End If
+            End If
+            Return m_tilesetImagePath
+        End Get
     End Property
 
 End Class

@@ -6,7 +6,7 @@ Public Class graphicsSets
 
     Private Shared m_tilesetManager As New optionMulti
 
-    Public Shared Sub findGraphicPacks(ByVal directory As String)
+    Public Shared Sub loadGraphicPacks(ByVal directory As String)
         Try
             Dim defFile As IO.FileInfo = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) String.Compare(f.Name, "graphics_definitions.JSON", True) = 0)
             If defFile IsNot Nothing Then
@@ -17,8 +17,6 @@ Public Class graphicsSets
             End If
 
             MainForm.cmbTileSets.DataSource = Nothing
-
-            'MainForm.cmbTileSets.DataSource = mwGraphicDirs
             MainForm.cmbTileSets.DataSource = globals.m_graphicPackDefs
             MainForm.cmbTileSets.ValueMember = "Name"
             MainForm.cmbTileSets.DisplayMember = "Name"
@@ -33,12 +31,10 @@ Public Class graphicsSets
         Try
             cbColors.options.itemList.Clear()
             cbColors.DataSource = Nothing
-            Dim schemes As List(Of IO.FileInfo) = mwFilePaths.Where(Function(fi As IO.FileInfo) fi.DirectoryName.Contains(IO.Path.Combine(globals.m_SettingsDir, "Colors"))).ToList
-            'Dim rx As New Regex("(?<=[A-Z])(?=[A-Z][a-z]) | (?<=[^A-Z])(?=[A-Z]) | (?<=[A-Za-z])(?=[^A-Za-z])", RegexOptions.IgnorePatternWhitespace)
+            Dim schemes As List(Of IO.FileInfo) = mwFilePaths.Where(Function(fi As IO.FileInfo) fi.DirectoryName.Contains(IO.Path.Combine(globals.m_SettingsDir, "Colors"))).ToList            
             For Each fi As IO.FileInfo In schemes
                 Dim niceName As String = IO.Path.GetFileNameWithoutExtension(fi.Name).Replace("colors_", "").Trim.Replace("_", " ")
-                Dim key As String = niceName.ToUpper.Replace(" ", "")
-                'niceName = StrConv(rx.Replace(niceName, " "), VbStrConv.ProperCase)
+                Dim key As String = niceName.ToUpper.Replace(" ", "")                
                 cbColors.options.itemList.Add(New comboFileItem(key, niceName, fi.Name))
             Next
             cbColors.DataSource = cbColors.options.itemList
@@ -49,7 +45,23 @@ Public Class graphicsSets
         End Try
     End Sub
 
+    Public Shared Sub loadTwbtFonts(ByRef cbTwbtFonts As optionComboBoxFileReplace)
+        Try
+            cbTwbtFonts.options.itemList.Clear()
+            cbTwbtFonts.DataSource = Nothing
+            Dim schemes As List(Of IO.FileInfo) = mwFilePaths.Where(Function(fi As IO.FileInfo) fi.DirectoryName.Contains(IO.Path.Combine(globals.m_SettingsDir, "TwbtFonts"))).ToList
+            For Each fi As IO.FileInfo In schemes
+                Dim niceName As String = IO.Path.GetFileNameWithoutExtension(fi.Name)
+                Dim key As String = niceName.ToUpper.Replace(" ", "")
+                cbTwbtFonts.options.itemList.Add(New comboFileItem(key, niceName, fi.Name))
+            Next
+            cbTwbtFonts.DataSource = cbTwbtFonts.options.itemList
+            cbTwbtFonts.ValueMember = "value"
+            cbTwbtFonts.DisplayMember = "display"
+        Catch ex As Exception
 
+        End Try
+    End Sub
 
     Private Shared Function getGraphicTag(ByVal yesOption As Boolean, ByVal typeName As String) As String
         Dim result As String = ""
@@ -98,9 +110,9 @@ Public Class graphicsSets
 
             'next copy the tileset; currently these are all named 'Phoebus_16x16.png'
             Dim tileSetName As String = "Phoebus_16x16.png"
-            rx = New Regex(basePattern & ".*(" & tileSetName & ")", RegexOptions.IgnoreCase)
-            f_info = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) rx.IsMatch(f.FullName))
-            If f_info IsNot Nothing Then
+            'rx = New Regex(basePattern & ".*(" & tileSetName & ")", RegexOptions.IgnoreCase)
+            'f_info = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) rx.IsMatch(f.FullName))
+            If findGraphicsPackTilesetImage(selectedPackName) IsNot Nothing Then
                 Dim gTileSet As String = f_info.FullName
                 Dim dfTileSet As String = findDfFilePath(tileSetName)
                 If gTileSet <> "" And dfTileSet <> "" Then
@@ -198,6 +210,12 @@ Public Class graphicsSets
             utils.MsgBoxExp("Graphics Error", "Error Changing Graphics", MessageBoxIcon.Error, "There has been a problem while attempting to switch graphics and/or colors.", MessageBoxButtons.OK, ex.ToString)
         End Try
     End Sub
+
+    Public Shared Function findGraphicsPackTilesetImage(ByVal selectedPackName As String) As IO.FileInfo
+        Dim tileSetName As String = "Phoebus_16x16.png"
+        Dim rx As New Regex(".*(\\" & selectedPackName & "\\)" & ".*(" & tileSetName & ")", RegexOptions.IgnoreCase)
+        Return mwGraphicFilePaths.Find(Function(f As IO.FileInfo) rx.IsMatch(f.FullName))
+    End Function
 
     Public Shared Sub updateSavedGames()
         If MsgBox("WARNING: This can break the save if you changed settings for creatures, plants or inorganics." & vbCrLf & vbCrLf & _

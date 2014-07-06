@@ -54,7 +54,7 @@ Public Class fileWorking
 
     Private Shared Sub loadMwFilePaths()
         'load all setting files (keybinds, colors, etc.)
-        m_mwFilePaths.AddRange(getFiles(globals.m_settingsDir, True, New String() {".txt", ".ttf"}))
+        m_mwFilePaths.AddRange(getFiles(globals.m_SettingsDir, True, New String() {".txt", ".ttf", ".png"}))
         'load utility executables
         m_mwFilePaths.AddRange(getFiles(globals.m_utilityDir, True, New String() {".exe", ".jar"}))
     End Sub

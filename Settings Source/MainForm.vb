@@ -59,8 +59,9 @@ Imports Newtonsoft.Json
         refreshFileAndDirPaths()
         If m_dwarfFortressRootDir <> "" Then
             graphicsSets.loadColorSchemes(Me.optCbColors)
+            graphicsSets.loadTwbtFonts(Me.optCbTwbtFonts)
             initialLoad()
-            graphicsSets.findGraphicPacks(m_graphicsDir)
+            graphicsSets.loadGraphicPacks(m_graphicsDir)
         End If
 
         setupRibbonHandlers(rPanelGeneral.Items)
@@ -431,28 +432,15 @@ Imports Newtonsoft.Json
         End If
     End Sub
 
-#Region "tileset change and preview"
 
-    Private Sub btnUpdateSaves_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateSaves.Click
-        graphicsSets.updateSavedGames()
-    End Sub
-
-    Private Sub btnTilesetPreview_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTilesetPreview.Click
-        If Not m_frmPreview.Visible Then
-            m_frmPreview.Show()
-        Else
-            m_frmPreview.BringToFront()
-        End If
-    End Sub
-
-    Private Sub cmbTileSets_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmbTileSets.SelectionChangeCommitted
-        graphicsSets.switchGraphics(cmbTileSets.SelectedValue)
-    End Sub
-#End Region
 
 
 
 #Region "color preview"
+
+    Private Sub optCbColors_DropDownClosed(sender As Object, e As EventArgs) Handles optCbColors.DropDownClosed
+        tileSetColorPreviewer.Hide()
+    End Sub
 
     Private Sub optCbColors_Leave(sender As Object, e As EventArgs) Handles optCbColors.Leave
         tileSetColorPreviewer.Hide()
@@ -462,21 +450,19 @@ Imports Newtonsoft.Json
         tileSetColorPreviewer.Hide()
     End Sub
 
-
-    Private Sub optCbColors_MouseLeave(sender As Object, e As EventArgs) Handles optCbColors.MouseLeave
-        'Debug.WriteLine("Hiding color preview")
+    Private Sub optCbColors_MouseLeave(sender As Object, e As EventArgs) Handles optCbColors.MouseLeave        
         tileSetColorPreviewer.Hide()
     End Sub
 
     Private Sub optCbColors_MouseMove(sender As Object, e As MouseEventArgs) Handles optCbColors.MouseMove
-        If optCbColors.SelectedItem Is Nothing Then Exit Sub
+        If optCbColors.SelectedItem Is Nothing OrElse optCbColors.DroppedDown Then Exit Sub
         Dim strPath As String = ""
         Try
             strPath = findMwFilePath(CType(optCbColors.SelectedItem, comboFileItem).fileName)
             If strPath.Trim <> "" Then
-                tileSetColorPreviewer.refreshColors(strPath)
+                tileSetColorPreviewer.refreshPreview(strPath)
                 Dim loc As Point = optCbColors.FindForm().PointToClient(optCbColors.Parent.PointToScreen(optCbColors.Location))
-                tileSetColorPreviewer.Location = New Point(loc.X + optCbColors.Width + 4, loc.Y - (Me.Height - Me.ClientSize.Height) - ribbonMain.Height)
+                tileSetColorPreviewer.Location = New Point(loc.X + optCbColors.DropDownWidth + 4, loc.Y - (Me.Height - Me.ClientSize.Height) - ribbonMain.Height)
                 tileSetColorPreviewer.Visible = True
                 tileSetColorPreviewer.BringToFront()
             End If
@@ -486,11 +472,101 @@ Imports Newtonsoft.Json
     End Sub
 
     Private Sub optCbColors_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles optCbColors.SelectionChangeCommitted
-        tileSetColorPreviewer.refreshColors(findMwFilePath(CType(optCbColors.SelectedItem, comboFileItem).fileName))
+        tileSetColorPreviewer.refreshPreview(findMwFilePath(CType(optCbColors.SelectedItem, comboFileItem).fileName))
     End Sub
 
 #End Region
 
+#Region "twbt preview"
+
+    Private Sub optCbTwbtFonts_DropDownClosed(sender As Object, e As EventArgs) Handles optCbTwbtFonts.DropDownClosed
+        tilesetFontViewer.Hide()
+    End Sub
+
+    Private Sub optCbTwbtFont_Leave(sender As Object, e As EventArgs) Handles optCbTwbtFonts.Leave
+        tilesetFontViewer.Hide()
+    End Sub
+
+    Private Sub optCbTwbtFont_LostFocus(sender As Object, e As EventArgs) Handles optCbTwbtFonts.LostFocus
+        tilesetFontViewer.Hide()
+    End Sub
+
+    Private Sub optCbTwbtFont_MouseLeave(sender As Object, e As EventArgs) Handles optCbTwbtFonts.MouseLeave
+        tilesetFontViewer.Hide()
+    End Sub
+
+    Private Sub optCbTwbtFont_MouseMove(sender As Object, e As MouseEventArgs) Handles optCbTwbtFonts.MouseMove
+        If optCbTwbtFonts.SelectedItem Is Nothing OrElse optCbTwbtFonts.DroppedDown Then Exit Sub
+        Dim strPath As String = ""
+        Try
+            strPath = findMwFilePath(CType(optCbTwbtFonts.SelectedItem, comboFileItem).fileName)
+            If strPath.Trim <> "" Then
+                tilesetFontViewer.refreshPreview(strPath, 4, 6)
+                Dim loc As Point = optCbTwbtFonts.FindForm().PointToClient(optCbTwbtFonts.Parent.PointToScreen(optCbTwbtFonts.Location))
+                tilesetFontViewer.Location = New Point(loc.X + optCbTwbtFonts.DropDownWidth + 4, loc.Y - (Me.Height - Me.ClientSize.Height) - ribbonMain.Height)
+                tilesetFontViewer.Visible = True
+                tilesetFontViewer.BringToFront()
+            End If
+        Catch ex As Exception
+            Debug.WriteLine(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub optCbTwbtFont_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles optCbTwbtFonts.SelectionChangeCommitted
+        tilesetFontViewer.refreshPreview(findMwFilePath(CType(optCbTwbtFonts.SelectedItem, comboFileItem).fileName), 4, 6)
+    End Sub
+
+#End Region
+
+#Region "tileset change and preview"
+
+    Private Sub cmbTileSets_DropDownClosed(sender As Object, e As EventArgs) Handles cmbTileSets.DropDownClosed
+        tilesetViewer.Hide()
+    End Sub
+
+    Private Sub cmbTileSets_Leave(sender As Object, e As EventArgs) Handles cmbTileSets.Leave
+        tilesetViewer.Hide()
+    End Sub
+
+    Private Sub cmbTileSets_LostFocus(sender As Object, e As EventArgs) Handles cmbTileSets.LostFocus
+        tilesetViewer.Hide()
+    End Sub
+
+    Private Sub cmbTileSets_MouseLeave(sender As Object, e As EventArgs) Handles cmbTileSets.MouseLeave
+        tilesetViewer.Hide()
+    End Sub
+
+    Private Sub cmbTileSets_MouseMove(sender As Object, e As MouseEventArgs) Handles cmbTileSets.MouseMove
+        If cmbTileSets.SelectedItem Is Nothing OrElse cmbTileSets.DroppedDown Then Exit Sub
+        Try
+            Dim strPath As String = CType(cmbTileSets.SelectedItem, graphicPackDefinition).tilesetPath
+            If strPath <> "" Then
+                tilesetViewer.refreshPreview(strPath, 0, 16)
+                Dim loc As Point = cmbTileSets.FindForm().PointToClient(cmbTileSets.Parent.PointToScreen(cmbTileSets.Location))
+                tilesetViewer.Location = New Point(loc.X + cmbTileSets.DropDownWidth + 4, loc.Y - (Me.Height - Me.ClientSize.Height) - ribbonMain.Height)
+                tilesetViewer.Visible = True
+                tilesetViewer.BringToFront()
+            End If
+        Catch ex As Exception
+            Debug.WriteLine(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub cmbTileSets_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmbTileSets.SelectionChangeCommitted
+        graphicsSets.switchGraphics(cmbTileSets.SelectedValue)
+        tilesetViewer.refreshPreview(CType(cmbTileSets.SelectedItem, graphicPackDefinition).tilesetPath, 0, 16)
+    End Sub
+
+    Private Sub cmbTileSets_Hover(sender As Object, e As HoverEventArgs) Handles cmbTileSets.Hover
+        Dim path As String = CType(cmbTileSets.Items(e.itemIndex), graphicPackDefinition).tilesetPath
+        tilesetViewer.refreshPreview(path, 0, 16)
+    End Sub
+
+    Private Sub btnUpdateSaves_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateSaves.Click
+        graphicsSets.updateSavedGames()
+    End Sub
+
+#End Region
 
 
 #Region "world gen"
@@ -1011,12 +1087,12 @@ Imports Newtonsoft.Json
         End If
     End Sub
 
-    Private Sub buildAiOption(ByRef cb As optionComboCheckbox, ByVal civ As String)        
+    Private Sub buildAiOption(ByRef cb As optionComboCheckbox, ByVal civ As String)
         cb.options.optionTags.Add(New rawToken("Ambusher", String.Format("YES_AMBUSHER_{0}[", civ), String.Format("!NO_AMBUSHER_{0}!", civ)))
         cb.options.optionTags.Add(New rawToken("Sieger", String.Format("YES_SIEGER_{0}[", civ), String.Format("!NO_SIEGER_{0}!", civ)))
     End Sub
 
-    Private Sub buildSeasonOption(ByRef cb As optionComboCheckbox, ByVal civ As String)        
+    Private Sub buildSeasonOption(ByRef cb As optionComboCheckbox, ByVal civ As String)
         cb.options.optionTags.Add(New rawToken("Spring", String.Format("YES_ACTIVE_SPRING_{0}[", civ), String.Format("!NO_ACTIVE_SPRING_{0}!", civ)))
         cb.options.optionTags.Add(New rawToken("Summer", String.Format("YES_ACTIVE_SUMMER_{0}[", civ), String.Format("!NO_ACTIVE_SUMMER_{0}!", civ)))
         cb.options.optionTags.Add(New rawToken("Autumn", String.Format("YES_ACTIVE_AUTUMN_{0}[", civ), String.Format("!NO_ACTIVE_AUTUMN_{0}!", civ)))
@@ -1131,7 +1207,7 @@ Imports Newtonsoft.Json
                 If MsgBox("Print mode will be changed to STANDARD and truetype fonts will be disabled due to incompatibility!" & vbNewLine & vbNewLine & "Continue?", MsgBoxStyle.Question + MsgBoxStyle.YesNo) = MsgBoxResult.No Then
                     mwCbItemGraphics.Checked = False 'reset to disabled
                 Else
-                    optCbPrintMode.loadOption("STANDARD")                    
+                    optCbPrintMode.loadOption("STANDARD")
                     optBtnTruetype.loadOption(False)
                 End If
             End If

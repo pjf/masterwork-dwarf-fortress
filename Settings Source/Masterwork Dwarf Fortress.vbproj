@@ -145,6 +145,12 @@
     <Compile Include="custom control backend\optionBasePattern.vb" />
     <Compile Include="custom control backend\optionListMultiCombo.vb" />
     <Compile Include="custom control backend\optionPattern.vb" />
+    <Compile Include="custom controls\hoverComboBox.Designer.vb">
+      <DependentUpon>hoverComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\hoverComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="custom controls\mwCivLabel.Designer.vb">
       <DependentUpon>mwCivLabel.vb</DependentUpon>
     </Compile>
@@ -265,6 +271,12 @@
     <Compile Include="custom control backend\fileListConverter.vb" />
     <Compile Include="custom control backend\MultilineStringArrayConverter.vb" />
     <Compile Include="custom control backend\optionBase.vb" />
+    <Compile Include="custom controls\tilesetViewer.Designer.vb">
+      <DependentUpon>tilesetViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\tilesetViewer.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="helper forms\frmAbout.Designer.vb">
       <DependentUpon>frmAbout.vb</DependentUpon>
     </Compile>
