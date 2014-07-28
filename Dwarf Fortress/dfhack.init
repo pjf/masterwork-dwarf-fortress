@@ -758,6 +758,7 @@ hackwish startup
 teleportbase
 
 # write the correct season to gamelog on world load
+soundsense start
 soundsense-season
 
 # patch the material objects in memory to fix cloth stockpiles
