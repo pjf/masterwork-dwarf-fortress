@@ -112,8 +112,8 @@ Public Class graphicsSets
 
             'next copy the tileset; currently these are all named 'Phoebus_16x16.png'
             Dim tileSetName As String = "Phoebus_16x16.png"
-            'rx = New Regex(basePattern & ".*(" & tileSetName & ")", RegexOptions.IgnoreCase)
-            'f_info = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) rx.IsMatch(f.FullName))
+            rx = New Regex(basePattern & ".*(" & tileSetName & ")", RegexOptions.IgnoreCase)
+            f_info = mwGraphicFilePaths.Find(Function(f As IO.FileInfo) rx.IsMatch(f.FullName))
             If findGraphicsPackTilesetImage(selectedPackName) IsNot Nothing Then
                 Dim gTileSet As String = f_info.FullName
                 Dim dfTileSet As String = findDfFilePath(tileSetName)

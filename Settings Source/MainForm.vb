@@ -510,8 +510,7 @@ Imports Newtonsoft.Json
             strPath = CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath
             If strPath.Trim <> "" Then
                 tilesetFontViewer.refreshPreview(optCbTwbtFonts.SelectedValue, strPath)
-                Dim loc As Point = optCbTwbtFonts.FindForm().PointToClient(optCbTwbtFonts.Parent.PointToScreen(optCbTwbtFonts.Location))
-                tilesetFontViewer.Location = New Point(loc.X + optCbTwbtFonts.DropDownWidth + 4, loc.Y - (Me.Height - Me.ClientSize.Height) - ribbonMain.Height)
+                repositionTwbtFontPreview()
                 tilesetFontViewer.Visible = True
                 tilesetFontViewer.BringToFront()
             End If
@@ -527,6 +526,14 @@ Imports Newtonsoft.Json
     Private Sub optCbTwbtFont_Hover(sender As Object, e As HoverEventArgs) Handles optCbTwbtFonts.Hover
         Dim path As String = CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath
         tilesetFontViewer.refreshPreview(CType(optCbTwbtFonts.SelectedItem, comboFileItem).value, path)
+        repositionTwbtFontPreview()
+    End Sub
+
+    Private Sub repositionTwbtFontPreview()
+        Dim loc As Point = optCbTwbtFonts.FindForm().PointToClient(optCbTwbtFonts.Parent.PointToScreen(optCbTwbtFonts.Location))
+        If tilesetFontViewer.Right > loc.X Or tilesetViewer.Visible = False Then
+            tilesetFontViewer.Location = New Point(loc.X - tilesetFontViewer.Width - 4, loc.Y - (Me.Height - Me.ClientSize.Height) - ribbonMain.Height)
+        End If
     End Sub
 
 #End Region

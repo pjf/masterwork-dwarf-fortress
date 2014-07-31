@@ -1042,36 +1042,41 @@ Partial Class MainForm
         Dim OptionSettingManager235 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Dim OptionSingleFileReplace4 As MasterworkDwarfFortress.optionSingleFileReplace = New MasterworkDwarfFortress.optionSingleFileReplace()
         Dim OptionSettingManager236 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleFileReplace5 As MasterworkDwarfFortress.optionSingleFileReplace = New MasterworkDwarfFortress.optionSingleFileReplace()
-        Dim OptionSettingManager237 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle62 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionPattern3 As MasterworkDwarfFortress.optionPattern = New MasterworkDwarfFortress.optionPattern()
         Dim FileListManager233 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager233 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionBasePattern5 As MasterworkDwarfFortress.optionBasePattern = New MasterworkDwarfFortress.optionBasePattern()
+        Dim OptionSettingManager237 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionSingleFileReplace5 As MasterworkDwarfFortress.optionSingleFileReplace = New MasterworkDwarfFortress.optionSingleFileReplace()
         Dim OptionSettingManager238 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace156 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingle62 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
         Dim FileListManager234 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager234 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager239 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace157 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingleReplace156 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager235 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager235 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager240 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace158 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingleReplace157 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager236 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager236 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager241 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace159 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingleReplace158 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager237 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager237 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager242 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingleReplace160 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
+        Dim OptionSingleReplace159 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager238 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager238 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager243 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
-        Dim OptionSingle63 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim OptionSingleReplace160 As MasterworkDwarfFortress.optionSingleReplace = New MasterworkDwarfFortress.optionSingleReplace()
         Dim FileListManager239 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
         Dim OptionManager239 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
         Dim OptionSettingManager244 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
+        Dim OptionSingle63 As MasterworkDwarfFortress.optionSingle = New MasterworkDwarfFortress.optionSingle()
+        Dim FileListManager240 As MasterworkDwarfFortress.fileListManager = New MasterworkDwarfFortress.fileListManager()
+        Dim OptionManager240 As MasterworkDwarfFortress.optionManager = New MasterworkDwarfFortress.optionManager()
+        Dim OptionSettingManager245 As MasterworkDwarfFortress.optionSettingManager = New MasterworkDwarfFortress.optionSettingManager()
         Me.ToolTipMaker = New System.Windows.Forms.ToolTip(Me.components)
         Me.btnUpdateSaves = New System.Windows.Forms.Button()
         Me.cmbWorldGenIndex = New System.Windows.Forms.ComboBox()
@@ -1474,11 +1479,15 @@ Partial Class MainForm
         Me.grpGraphics = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblColors = New System.Windows.Forms.Label()
         Me.optCbColors = New MasterworkDwarfFortress.optionComboBoxFileReplace()
-        Me.optCbTwbtFonts = New MasterworkDwarfFortress.optionComboBoxFileReplace()
         Me.lblFonts = New System.Windows.Forms.Label()
         Me.lblGraphicsPack = New System.Windows.Forms.Label()
         Me.cmbTileSets = New MasterworkDwarfFortress.hoverComboBox()
         Me.lblPrintMode = New System.Windows.Forms.Label()
+        Me.grpTextWillBeText = New MasterworkDwarfFortress.mwGroupBox()
+        Me.optNumPatternTwbtLevels = New MasterworkDwarfFortress.optionNumericPattern()
+        Me.lblTwbtFont = New System.Windows.Forms.Label()
+        Me.lblTwbtZLevels = New System.Windows.Forms.Label()
+        Me.optCbTwbtFonts = New MasterworkDwarfFortress.optionComboBoxFileReplace()
         Me.grpSound = New MasterworkDwarfFortress.mwGroupBox()
         Me.lblVolume = New System.Windows.Forms.Label()
         Me.optNumVolume = New MasterworkDwarfFortress.optionNumeric()
@@ -1630,6 +1639,8 @@ Partial Class MainForm
         Me.grpMiscSettings.SuspendLayout
         Me.grpEmbark.SuspendLayout
         Me.grpGraphics.SuspendLayout
+        Me.grpTextWillBeText.SuspendLayout
+        CType(Me.optNumPatternTwbtLevels,System.ComponentModel.ISupportInitialize).BeginInit
         Me.grpSound.SuspendLayout
         CType(Me.optNumVolume,System.ComponentModel.ISupportInitialize).BeginInit
         Me.grpFps.SuspendLayout
@@ -1687,7 +1698,7 @@ Partial Class MainForm
         Me.btnUpdateSaves.FlatAppearance.BorderSize = 0
         Me.btnUpdateSaves.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdateSaves.ForeColor = System.Drawing.Color.White
-        Me.btnUpdateSaves.Location = New System.Drawing.Point(798, 262)
+        Me.btnUpdateSaves.Location = New System.Drawing.Point(274, 393)
         Me.btnUpdateSaves.Margin = New System.Windows.Forms.Padding(1)
         Me.btnUpdateSaves.Name = "btnUpdateSaves"
         Me.btnUpdateSaves.Size = New System.Drawing.Size(134, 27)
@@ -2784,7 +2795,7 @@ Partial Class MainForm
         Me.optBtnSound.Image = CType(resources.GetObject("optBtnSound.Image"),System.Drawing.Image)
         Me.optBtnSound.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.optBtnSound.isEnabled = true
-        Me.optBtnSound.Location = New System.Drawing.Point(17, 19)
+        Me.optBtnSound.Location = New System.Drawing.Point(17, 32)
         Me.optBtnSound.Margin = New System.Windows.Forms.Padding(1)
         Me.optBtnSound.Name = "optBtnSound"
         FileListManager31.fileNames = CType(resources.GetObject("FileListManager31.fileNames"),System.Collections.Generic.List(Of String))
@@ -10010,7 +10021,7 @@ Partial Class MainForm
         Me.mwCbItemGraphics.Image = CType(resources.GetObject("mwCbItemGraphics.Image"),System.Drawing.Image)
         Me.mwCbItemGraphics.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.mwCbItemGraphics.isEnabled = true
-        Me.mwCbItemGraphics.Location = New System.Drawing.Point(17, 341)
+        Me.mwCbItemGraphics.Location = New System.Drawing.Point(17, 107)
         Me.mwCbItemGraphics.Margin = New System.Windows.Forms.Padding(1)
         Me.mwCbItemGraphics.Name = "mwCbItemGraphics"
         Me.mwCbItemGraphics.Size = New System.Drawing.Size(134, 27)
@@ -11014,6 +11025,7 @@ Partial Class MainForm
         Me.tabSettings.Controls.Add(Me.grpMiscSettings)
         Me.tabSettings.Controls.Add(Me.grpEmbark)
         Me.tabSettings.Controls.Add(Me.grpGraphics)
+        Me.tabSettings.Controls.Add(Me.grpTextWillBeText)
         Me.tabSettings.Controls.Add(Me.grpSound)
         Me.tabSettings.Controls.Add(Me.grpFps)
         Me.tabSettings.Controls.Add(Me.btnUpdateSaves)
@@ -11031,7 +11043,7 @@ Partial Class MainForm
         Me.tilesetViewer.Name = "tilesetViewer"
         Me.tilesetViewer.Size = New System.Drawing.Size(256, 32)
         Me.tilesetViewer.TabIndex = 176
-        Me.tilesetViewer.Visible = False
+        Me.tilesetViewer.Visible = false
         '
         'tilesetFontViewer
         '
@@ -11039,11 +11051,11 @@ Partial Class MainForm
         Me.tilesetFontViewer.Name = "tilesetFontViewer"
         Me.tilesetFontViewer.Size = New System.Drawing.Size(256, 32)
         Me.tilesetFontViewer.TabIndex = 175
-        Me.tilesetFontViewer.Visible = False
+        Me.tilesetFontViewer.Visible = false
         '
         'lblSettingsMessage
         '
-        Me.lblSettingsMessage.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblSettingsMessage.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblSettingsMessage.ForeColor = System.Drawing.Color.White
         Me.lblSettingsMessage.Image = Global.MasterworkDwarfFortress.My.Resources.Resources.information_small
         Me.lblSettingsMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -11052,11 +11064,11 @@ Partial Class MainForm
         Me.lblSettingsMessage.Size = New System.Drawing.Size(416, 48)
         Me.lblSettingsMessage.TabIndex = 174
         Me.lblSettingsMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblSettingsMessage.Visible = False
+        Me.lblSettingsMessage.Visible = false
         '
         'grpWorldSettings
         '
-        Me.grpWorldSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpWorldSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpWorldSettings.Controls.Add(Me.optCbStartingLabors)
         Me.grpWorldSettings.Controls.Add(Me.optBtnTemperature)
         Me.grpWorldSettings.Controls.Add(Me.optBtnWeather)
@@ -11076,12 +11088,12 @@ Partial Class MainForm
         Me.grpWorldSettings.Name = "grpWorldSettings"
         Me.grpWorldSettings.Size = New System.Drawing.Size(169, 374)
         Me.grpWorldSettings.TabIndex = 0
-        Me.grpWorldSettings.TabStop = False
+        Me.grpWorldSettings.TabStop = false
         Me.grpWorldSettings.Text = "World Settings"
         '
         'lblPopCap
         '
-        Me.lblPopCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblPopCap.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblPopCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPopCap.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPopCap.Location = New System.Drawing.Point(-3, 282)
@@ -11093,7 +11105,7 @@ Partial Class MainForm
         '
         'lblStartingLabor
         '
-        Me.lblStartingLabor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblStartingLabor.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblStartingLabor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblStartingLabor.ForeColor = System.Drawing.SystemColors.Window
         Me.lblStartingLabor.Location = New System.Drawing.Point(0, 341)
@@ -11107,16 +11119,16 @@ Partial Class MainForm
         '
         Me.tileSetColorPreviewer.AccessibleRole = System.Windows.Forms.AccessibleRole.None
         Me.tileSetColorPreviewer.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.tileSetColorPreviewer.CausesValidation = False
+        Me.tileSetColorPreviewer.CausesValidation = false
         Me.tileSetColorPreviewer.Location = New System.Drawing.Point(84, 34)
         Me.tileSetColorPreviewer.Name = "tileSetColorPreviewer"
         Me.tileSetColorPreviewer.Size = New System.Drawing.Size(30, 30)
         Me.tileSetColorPreviewer.TabIndex = 173
-        Me.tileSetColorPreviewer.Visible = False
+        Me.tileSetColorPreviewer.Visible = false
         '
         'grpSaveSettings
         '
-        Me.grpSaveSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpSaveSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpSaveSettings.Controls.Add(Me.optCbAutoSave)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoSavePause)
         Me.grpSaveSettings.Controls.Add(Me.optBtnAutoBackup)
@@ -11129,18 +11141,18 @@ Partial Class MainForm
         Me.grpSaveSettings.Name = "grpSaveSettings"
         Me.grpSaveSettings.Size = New System.Drawing.Size(169, 226)
         Me.grpSaveSettings.TabIndex = 1
-        Me.grpSaveSettings.TabStop = False
+        Me.grpSaveSettings.TabStop = false
         Me.grpSaveSettings.Text = "Save && Load Settings"
         '
         'optCbAutoSave
         '
         Me.optCbAutoSave.DropDownWidth = 150
         Me.optCbAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optCbAutoSave.FormattingEnabled = True
+        Me.optCbAutoSave.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optCbAutoSave.FormattingEnabled = true
         Me.optCbAutoSave.Location = New System.Drawing.Point(76, 22)
         Me.optCbAutoSave.Name = "optCbAutoSave"
-        FileListManager232.fileNames = CType(resources.GetObject("FileListManager232.fileNames"), System.Collections.Generic.List(Of String))
+        FileListManager232.fileNames = CType(resources.GetObject("FileListManager232.fileNames"),System.Collections.Generic.List(Of String))
         OptionList7.fileManager = FileListManager232
         ComboItem52.display = "Never"
         ComboItem52.value = "NONE"
@@ -11151,10 +11163,10 @@ Partial Class MainForm
         OptionList7.itemList.Add(ComboItem52)
         OptionList7.itemList.Add(ComboItem53)
         OptionList7.itemList.Add(ComboItem54)
-        OptionManager232.checkAllOnLoad = False
-        OptionManager232.loadFromDInit = True
-        OptionManager232.loadFromInit = False
-        OptionManager232.loadFromWorldGen = False
+        OptionManager232.checkAllOnLoad = false
+        OptionManager232.loadFromDInit = true
+        OptionManager232.loadFromInit = false
+        OptionManager232.loadFromWorldGen = false
         OptionList7.optionManager = OptionManager232
         OptionSettingManager235.settingName = Nothing
         OptionList7.settingManager = OptionSettingManager235
@@ -11165,7 +11177,7 @@ Partial Class MainForm
         '
         'lblAutoSave
         '
-        Me.lblAutoSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblAutoSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblAutoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblAutoSave.ForeColor = System.Drawing.SystemColors.Window
         Me.lblAutoSave.Location = New System.Drawing.Point(15, 22)
@@ -11177,7 +11189,7 @@ Partial Class MainForm
         '
         'grpAnnouncements
         '
-        Me.grpAnnouncements.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpAnnouncements.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpAnnouncements.Controls.Add(Me.optBtnTransformMsgs)
         Me.grpAnnouncements.Controls.Add(Me.optBtnDigStop)
         Me.grpAnnouncements.ForeColor = System.Drawing.SystemColors.Window
@@ -11185,12 +11197,12 @@ Partial Class MainForm
         Me.grpAnnouncements.Name = "grpAnnouncements"
         Me.grpAnnouncements.Size = New System.Drawing.Size(169, 87)
         Me.grpAnnouncements.TabIndex = 2
-        Me.grpAnnouncements.TabStop = False
+        Me.grpAnnouncements.TabStop = false
         Me.grpAnnouncements.Text = "Announcement Settings"
         '
         'grpMiscSettings
         '
-        Me.grpMiscSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpMiscSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpMiscSettings.Controls.Add(Me.optNumMacro)
         Me.grpMiscSettings.Controls.Add(Me.lblKeybinds)
         Me.grpMiscSettings.Controls.Add(Me.optCbKeybinds)
@@ -11207,12 +11219,12 @@ Partial Class MainForm
         Me.grpMiscSettings.Name = "grpMiscSettings"
         Me.grpMiscSettings.Size = New System.Drawing.Size(169, 199)
         Me.grpMiscSettings.TabIndex = 4
-        Me.grpMiscSettings.TabStop = False
+        Me.grpMiscSettings.TabStop = false
         Me.grpMiscSettings.Text = "Misc. Settings"
         '
         'lblKeybinds
         '
-        Me.lblKeybinds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblKeybinds.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblKeybinds.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblKeybinds.ForeColor = System.Drawing.SystemColors.Window
         Me.lblKeybinds.Location = New System.Drawing.Point(7, 21)
@@ -11224,7 +11236,7 @@ Partial Class MainForm
         '
         'lblArena
         '
-        Me.lblArena.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblArena.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblArena.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblArena.ForeColor = System.Drawing.SystemColors.Window
         Me.lblArena.Location = New System.Drawing.Point(7, 47)
@@ -11236,7 +11248,7 @@ Partial Class MainForm
         '
         'lblWindowed
         '
-        Me.lblWindowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblWindowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblWindowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblWindowed.ForeColor = System.Drawing.SystemColors.Window
         Me.lblWindowed.Location = New System.Drawing.Point(7, 73)
@@ -11248,7 +11260,7 @@ Partial Class MainForm
         '
         'lblMacro
         '
-        Me.lblMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblMacro.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblMacro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblMacro.ForeColor = System.Drawing.SystemColors.Window
         Me.lblMacro.Location = New System.Drawing.Point(10, 123)
@@ -11260,7 +11272,7 @@ Partial Class MainForm
         '
         'lblPriority
         '
-        Me.lblPriority.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblPriority.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblPriority.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPriority.ForeColor = System.Drawing.SystemColors.Window
         Me.lblPriority.Location = New System.Drawing.Point(10, 99)
@@ -11272,7 +11284,7 @@ Partial Class MainForm
         '
         'grpEmbark
         '
-        Me.grpEmbark.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grpEmbark.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpEmbark.Controls.Add(Me.optNumPatternEmbarkGroupSize)
         Me.grpEmbark.Controls.Add(Me.optNumPatternEmbarkPoints)
         Me.grpEmbark.Controls.Add(Me.lblColonists)
@@ -11283,14 +11295,14 @@ Partial Class MainForm
         Me.grpEmbark.ForeColor = System.Drawing.SystemColors.Window
         Me.grpEmbark.Location = New System.Drawing.Point(606, 275)
         Me.grpEmbark.Name = "grpEmbark"
-        Me.grpEmbark.Size = New System.Drawing.Size(169, 169)
+        Me.grpEmbark.Size = New System.Drawing.Size(169, 145)
         Me.grpEmbark.TabIndex = 5
-        Me.grpEmbark.TabStop = False
+        Me.grpEmbark.TabStop = false
         Me.grpEmbark.Text = "Embark Settings"
         '
         'lblColonists
         '
-        Me.lblColonists.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblColonists.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblColonists.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblColonists.ForeColor = System.Drawing.SystemColors.Window
         Me.lblColonists.Location = New System.Drawing.Point(4, 72)
@@ -11303,7 +11315,7 @@ Partial Class MainForm
         '
         'lblEmbarkPointsOverride
         '
-        Me.lblEmbarkPointsOverride.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblEmbarkPointsOverride.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblEmbarkPointsOverride.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblEmbarkPointsOverride.ForeColor = System.Drawing.SystemColors.Window
         Me.lblEmbarkPointsOverride.Location = New System.Drawing.Point(4, 48)
@@ -11316,7 +11328,7 @@ Partial Class MainForm
         '
         'lblEmbarkSize
         '
-        Me.lblEmbarkSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblEmbarkSize.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblEmbarkSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblEmbarkSize.ForeColor = System.Drawing.SystemColors.Window
         Me.lblEmbarkSize.Location = New System.Drawing.Point(13, 24)
@@ -11329,12 +11341,10 @@ Partial Class MainForm
         '
         'grpGraphics
         '
-        Me.grpGraphics.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.grpGraphics.Controls.Add(Me.mwCbItemGraphics)
+        Me.grpGraphics.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.grpGraphics.Controls.Add(Me.lblColors)
         Me.grpGraphics.Controls.Add(Me.optCbColors)
         Me.grpGraphics.Controls.Add(Me.optCbPrintMode)
-        Me.grpGraphics.Controls.Add(Me.optCbTwbtFonts)
         Me.grpGraphics.Controls.Add(Me.optBtnSprites)
         Me.grpGraphics.Controls.Add(Me.lblFonts)
         Me.grpGraphics.Controls.Add(Me.optCbFonts)
@@ -11346,14 +11356,14 @@ Partial Class MainForm
         Me.grpGraphics.ForeColor = System.Drawing.SystemColors.Window
         Me.grpGraphics.Location = New System.Drawing.Point(431, 70)
         Me.grpGraphics.Name = "grpGraphics"
-        Me.grpGraphics.Size = New System.Drawing.Size(169, 374)
+        Me.grpGraphics.Size = New System.Drawing.Size(169, 350)
         Me.grpGraphics.TabIndex = 3
-        Me.grpGraphics.TabStop = False
+        Me.grpGraphics.TabStop = false
         Me.grpGraphics.Text = "Graphic Settings"
         '
         'lblColors
         '
-        Me.lblColors.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblColors.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblColors.ForeColor = System.Drawing.SystemColors.Window
         Me.lblColors.Location = New System.Drawing.Point(54, 22)
@@ -11368,9 +11378,9 @@ Partial Class MainForm
         Me.optCbColors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.optCbColors.DropDownWidth = 150
         Me.optCbColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbColors.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optCbColors.FormattingEnabled = True
-        Me.optCbColors.IntegralHeight = False
+        Me.optCbColors.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optCbColors.FormattingEnabled = true
+        Me.optCbColors.IntegralHeight = false
         Me.optCbColors.Location = New System.Drawing.Point(17, 44)
         Me.optCbColors.MaxDropDownItems = 15
         Me.optCbColors.Name = "optCbColors"
@@ -11381,27 +11391,9 @@ Partial Class MainForm
         Me.optCbColors.Size = New System.Drawing.Size(134, 23)
         Me.optCbColors.TabIndex = 1
         '
-        'optCbTwbtFonts
-        '
-        Me.optCbTwbtFonts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.optCbTwbtFonts.DropDownWidth = 150
-        Me.optCbTwbtFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.optCbTwbtFonts.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optCbTwbtFonts.FormattingEnabled = True
-        Me.optCbTwbtFonts.IntegralHeight = False
-        Me.optCbTwbtFonts.Location = New System.Drawing.Point(17, 221)
-        Me.optCbTwbtFonts.MaxDropDownItems = 15
-        Me.optCbTwbtFonts.Name = "optCbTwbtFonts"
-        OptionSingleFileReplace5.fileName = "font.png"
-        OptionSettingManager237.settingName = "TWBTFONT"
-        OptionSingleFileReplace5.settingManager = OptionSettingManager237
-        Me.optCbTwbtFonts.options = OptionSingleFileReplace5
-        Me.optCbTwbtFonts.Size = New System.Drawing.Size(134, 23)
-        Me.optCbTwbtFonts.TabIndex = 1
-        '
         'lblFonts
         '
-        Me.lblFonts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblFonts.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblFonts.ForeColor = System.Drawing.SystemColors.Window
         Me.lblFonts.Location = New System.Drawing.Point(60, 119)
@@ -11413,7 +11405,7 @@ Partial Class MainForm
         '
         'lblGraphicsPack
         '
-        Me.lblGraphicsPack.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblGraphicsPack.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblGraphicsPack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblGraphicsPack.ForeColor = System.Drawing.SystemColors.Window
         Me.lblGraphicsPack.Location = New System.Drawing.Point(54, 169)
@@ -11428,9 +11420,9 @@ Partial Class MainForm
         Me.cmbTileSets.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbTileSets.DropDownWidth = 150
         Me.cmbTileSets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbTileSets.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbTileSets.FormattingEnabled = True
-        Me.cmbTileSets.IntegralHeight = False
+        Me.cmbTileSets.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.cmbTileSets.FormattingEnabled = true
+        Me.cmbTileSets.IntegralHeight = false
         Me.cmbTileSets.Location = New System.Drawing.Point(17, 192)
         Me.cmbTileSets.MaxDropDownItems = 15
         Me.cmbTileSets.Name = "cmbTileSets"
@@ -11449,6 +11441,88 @@ Partial Class MainForm
         Me.lblPrintMode.Text = "Print Mode"
         Me.lblPrintMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'grpTextWillBeText
+        '
+        Me.grpTextWillBeText.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.grpTextWillBeText.Controls.Add(Me.optNumPatternTwbtLevels)
+        Me.grpTextWillBeText.Controls.Add(Me.lblTwbtFont)
+        Me.grpTextWillBeText.Controls.Add(Me.lblTwbtZLevels)
+        Me.grpTextWillBeText.Controls.Add(Me.mwCbItemGraphics)
+        Me.grpTextWillBeText.Controls.Add(Me.optCbTwbtFonts)
+        Me.grpTextWillBeText.ForeColor = System.Drawing.SystemColors.Window
+        Me.grpTextWillBeText.Location = New System.Drawing.Point(781, 275)
+        Me.grpTextWillBeText.Name = "grpTextWillBeText"
+        Me.grpTextWillBeText.Size = New System.Drawing.Size(169, 145)
+        Me.grpTextWillBeText.TabIndex = 7
+        Me.grpTextWillBeText.TabStop = false
+        Me.grpTextWillBeText.Text = "TWBT Settings"
+        '
+        'optNumPatternTwbtLevels
+        '
+        Me.optNumPatternTwbtLevels.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.optNumPatternTwbtLevels.Location = New System.Drawing.Point(100, 27)
+        Me.optNumPatternTwbtLevels.Maximum = New Decimal(New Integer() {15, 0, 0, 0})
+        Me.optNumPatternTwbtLevels.Name = "optNumPatternTwbtLevels"
+        FileListManager233.fileNames = CType(resources.GetObject("FileListManager233.fileNames"),System.Collections.Generic.List(Of String))
+        OptionPattern3.fileManager = FileListManager233
+        OptionManager233.checkAllOnLoad = false
+        OptionManager233.loadFromDInit = false
+        OptionManager233.loadFromInit = false
+        OptionManager233.loadFromWorldGen = false
+        OptionPattern3.optionManager = OptionManager233
+        OptionBasePattern5.find = "(multilevel )(?<value>[0-9]{1,6}\b)"
+        OptionBasePattern5.replace = "${1}${value}"
+        OptionPattern3.Pattern = OptionBasePattern5
+        OptionSettingManager237.settingName = Nothing
+        OptionPattern3.settingManager = OptionSettingManager237
+        Me.optNumPatternTwbtLevels.options = OptionPattern3
+        Me.optNumPatternTwbtLevels.Size = New System.Drawing.Size(51, 19)
+        Me.optNumPatternTwbtLevels.TabIndex = 174
+        Me.optNumPatternTwbtLevels.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.optNumPatternTwbtLevels.Value = New Decimal(New Integer() {10, 0, 0, 0})
+        '
+        'lblTwbtFont
+        '
+        Me.lblTwbtFont.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblTwbtFont.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblTwbtFont.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblTwbtFont.Location = New System.Drawing.Point(17, 53)
+        Me.lblTwbtFont.Name = "lblTwbtFont"
+        Me.lblTwbtFont.Size = New System.Drawing.Size(134, 20)
+        Me.lblTwbtFont.TabIndex = 13
+        Me.lblTwbtFont.Text = "Font Tileset"
+        Me.lblTwbtFont.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblTwbtZLevels
+        '
+        Me.lblTwbtZLevels.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
+        Me.lblTwbtZLevels.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblTwbtZLevels.ForeColor = System.Drawing.SystemColors.Window
+        Me.lblTwbtZLevels.Location = New System.Drawing.Point(17, 27)
+        Me.lblTwbtZLevels.Name = "lblTwbtZLevels"
+        Me.lblTwbtZLevels.Size = New System.Drawing.Size(77, 20)
+        Me.lblTwbtZLevels.TabIndex = 1
+        Me.lblTwbtZLevels.Text = "Z-Levels"
+        Me.lblTwbtZLevels.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'optCbTwbtFonts
+        '
+        Me.optCbTwbtFonts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.optCbTwbtFonts.DropDownWidth = 150
+        Me.optCbTwbtFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.optCbTwbtFonts.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.optCbTwbtFonts.FormattingEnabled = true
+        Me.optCbTwbtFonts.IntegralHeight = false
+        Me.optCbTwbtFonts.Location = New System.Drawing.Point(17, 76)
+        Me.optCbTwbtFonts.MaxDropDownItems = 15
+        Me.optCbTwbtFonts.Name = "optCbTwbtFonts"
+        OptionSingleFileReplace5.fileName = "font.png"
+        OptionSettingManager238.settingName = "TWBTFONT"
+        OptionSingleFileReplace5.settingManager = OptionSettingManager238
+        Me.optCbTwbtFonts.options = OptionSingleFileReplace5
+        Me.optCbTwbtFonts.Size = New System.Drawing.Size(134, 23)
+        Me.optCbTwbtFonts.TabIndex = 1
+        '
         'grpSound
         '
         Me.grpSound.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
@@ -11458,7 +11532,7 @@ Partial Class MainForm
         Me.grpSound.ForeColor = System.Drawing.SystemColors.Window
         Me.grpSound.Location = New System.Drawing.Point(781, 176)
         Me.grpSound.Name = "grpSound"
-        Me.grpSound.Size = New System.Drawing.Size(169, 81)
+        Me.grpSound.Size = New System.Drawing.Size(169, 93)
         Me.grpSound.TabIndex = 7
         Me.grpSound.TabStop = false
         Me.grpSound.Text = "Sound Settings"
@@ -11468,7 +11542,7 @@ Partial Class MainForm
         Me.lblVolume.BackColor = System.Drawing.Color.FromArgb(CType(CType(130,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.lblVolume.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblVolume.ForeColor = System.Drawing.SystemColors.Window
-        Me.lblVolume.Location = New System.Drawing.Point(6, 48)
+        Me.lblVolume.Location = New System.Drawing.Point(6, 61)
         Me.lblVolume.Name = "lblVolume"
         Me.lblVolume.Size = New System.Drawing.Size(88, 20)
         Me.lblVolume.TabIndex = 1
@@ -11482,18 +11556,18 @@ Partial Class MainForm
         Me.optNumVolume.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.optNumVolume.ForeColor = System.Drawing.Color.FromArgb(CType(CType(21,Byte),Integer), CType(CType(66,Byte),Integer), CType(CType(139,Byte),Integer))
         Me.optNumVolume.Increment = New Decimal(New Integer() {10, 0, 0, 0})
-        Me.optNumVolume.Location = New System.Drawing.Point(100, 49)
+        Me.optNumVolume.Location = New System.Drawing.Point(100, 62)
         Me.optNumVolume.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.optNumVolume.Name = "optNumVolume"
-        FileListManager233.fileNames = CType(resources.GetObject("FileListManager233.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle62.fileManager = FileListManager233
-        OptionManager233.checkAllOnLoad = false
-        OptionManager233.loadFromDInit = false
-        OptionManager233.loadFromInit = true
-        OptionManager233.loadFromWorldGen = false
-        OptionSingle62.optionManager = OptionManager233
-        OptionSettingManager238.settingName = Nothing
-        OptionSingle62.settingManager = OptionSettingManager238
+        FileListManager234.fileNames = CType(resources.GetObject("FileListManager234.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle62.fileManager = FileListManager234
+        OptionManager234.checkAllOnLoad = false
+        OptionManager234.loadFromDInit = false
+        OptionManager234.loadFromInit = true
+        OptionManager234.loadFromWorldGen = false
+        OptionSingle62.optionManager = OptionManager234
+        OptionSettingManager239.settingName = Nothing
+        OptionSingle62.settingManager = OptionSettingManager239
         OptionSingle62.tokenName = "VOLUME"
         Me.optNumVolume.options = OptionSingle62
         Me.optNumVolume.Size = New System.Drawing.Size(51, 19)
@@ -12004,15 +12078,15 @@ Partial Class MainForm
         Me.optBtnCavernSpawn.Name = "optBtnCavernSpawn"
         OptionSingleReplace156.disabledValue = "!NO_CIV_ACTIVE_SPAWN!"
         OptionSingleReplace156.enabledValue = "YES_CIV_ACTIVE_SPAWN["
-        FileListManager234.fileNames = CType(resources.GetObject("FileListManager234.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace156.fileManager = FileListManager234
-        OptionManager234.checkAllOnLoad = false
-        OptionManager234.loadFromDInit = false
-        OptionManager234.loadFromInit = false
-        OptionManager234.loadFromWorldGen = false
-        OptionSingleReplace156.optionManager = OptionManager234
-        OptionSettingManager239.settingName = Nothing
-        OptionSingleReplace156.settingManager = OptionSettingManager239
+        FileListManager235.fileNames = CType(resources.GetObject("FileListManager235.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace156.fileManager = FileListManager235
+        OptionManager235.checkAllOnLoad = false
+        OptionManager235.loadFromDInit = false
+        OptionManager235.loadFromInit = false
+        OptionManager235.loadFromWorldGen = false
+        OptionSingleReplace156.optionManager = OptionManager235
+        OptionSettingManager240.settingName = Nothing
+        OptionSingleReplace156.settingManager = OptionSettingManager240
         OptionSingleReplace156.tokenName = ""
         Me.optBtnCavernSpawn.options = OptionSingleReplace156
         Me.optBtnCavernSpawn.Size = New System.Drawing.Size(134, 27)
@@ -12037,15 +12111,15 @@ Partial Class MainForm
         Me.optBtnCaveOgres.Name = "optBtnCaveOgres"
         OptionSingleReplace157.disabledValue = "!NO_CIV_ACTIVE_BLIND_CAVE_OGRE!"
         OptionSingleReplace157.enabledValue = "YES_CIV_ACTIVE_BLIND_CAVE_OGRE["
-        FileListManager235.fileNames = CType(resources.GetObject("FileListManager235.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace157.fileManager = FileListManager235
-        OptionManager235.checkAllOnLoad = false
-        OptionManager235.loadFromDInit = false
-        OptionManager235.loadFromInit = false
-        OptionManager235.loadFromWorldGen = false
-        OptionSingleReplace157.optionManager = OptionManager235
-        OptionSettingManager240.settingName = Nothing
-        OptionSingleReplace157.settingManager = OptionSettingManager240
+        FileListManager236.fileNames = CType(resources.GetObject("FileListManager236.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace157.fileManager = FileListManager236
+        OptionManager236.checkAllOnLoad = false
+        OptionManager236.loadFromDInit = false
+        OptionManager236.loadFromInit = false
+        OptionManager236.loadFromWorldGen = false
+        OptionSingleReplace157.optionManager = OptionManager236
+        OptionSettingManager241.settingName = Nothing
+        OptionSingleReplace157.settingManager = OptionSettingManager241
         OptionSingleReplace157.tokenName = ""
         Me.optBtnCaveOgres.options = OptionSingleReplace157
         Me.optBtnCaveOgres.Size = New System.Drawing.Size(134, 27)
@@ -12070,15 +12144,15 @@ Partial Class MainForm
         Me.optBtnElementals.Name = "optBtnElementals"
         OptionSingleReplace158.disabledValue = "!NO_CIV_ACTIVE_ELEMENTALMEN!"
         OptionSingleReplace158.enabledValue = "YES_CIV_ACTIVE_ELEMENTALMEN["
-        FileListManager236.fileNames = CType(resources.GetObject("FileListManager236.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace158.fileManager = FileListManager236
-        OptionManager236.checkAllOnLoad = false
-        OptionManager236.loadFromDInit = false
-        OptionManager236.loadFromInit = false
-        OptionManager236.loadFromWorldGen = false
-        OptionSingleReplace158.optionManager = OptionManager236
-        OptionSettingManager241.settingName = Nothing
-        OptionSingleReplace158.settingManager = OptionSettingManager241
+        FileListManager237.fileNames = CType(resources.GetObject("FileListManager237.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace158.fileManager = FileListManager237
+        OptionManager237.checkAllOnLoad = false
+        OptionManager237.loadFromDInit = false
+        OptionManager237.loadFromInit = false
+        OptionManager237.loadFromWorldGen = false
+        OptionSingleReplace158.optionManager = OptionManager237
+        OptionSettingManager242.settingName = Nothing
+        OptionSingleReplace158.settingManager = OptionSettingManager242
         OptionSingleReplace158.tokenName = ""
         Me.optBtnElementals.options = OptionSingleReplace158
         Me.optBtnElementals.Size = New System.Drawing.Size(134, 27)
@@ -12103,15 +12177,15 @@ Partial Class MainForm
         Me.optBtnCivAntmen.Name = "optBtnCivAntmen"
         OptionSingleReplace159.disabledValue = "!NO_CIV_ACTIVE_ANTMEN!"
         OptionSingleReplace159.enabledValue = "YES_CIV_ACTIVE_ANTMEN["
-        FileListManager237.fileNames = CType(resources.GetObject("FileListManager237.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace159.fileManager = FileListManager237
-        OptionManager237.checkAllOnLoad = false
-        OptionManager237.loadFromDInit = false
-        OptionManager237.loadFromInit = false
-        OptionManager237.loadFromWorldGen = false
-        OptionSingleReplace159.optionManager = OptionManager237
-        OptionSettingManager242.settingName = Nothing
-        OptionSingleReplace159.settingManager = OptionSettingManager242
+        FileListManager238.fileNames = CType(resources.GetObject("FileListManager238.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace159.fileManager = FileListManager238
+        OptionManager238.checkAllOnLoad = false
+        OptionManager238.loadFromDInit = false
+        OptionManager238.loadFromInit = false
+        OptionManager238.loadFromWorldGen = false
+        OptionSingleReplace159.optionManager = OptionManager238
+        OptionSettingManager243.settingName = Nothing
+        OptionSingleReplace159.settingManager = OptionSettingManager243
         OptionSingleReplace159.tokenName = ""
         Me.optBtnCivAntmen.options = OptionSingleReplace159
         Me.optBtnCivAntmen.Size = New System.Drawing.Size(134, 27)
@@ -12159,15 +12233,15 @@ Partial Class MainForm
         Me.optBtnMoreAnimals.Name = "optBtnMoreAnimals"
         OptionSingleReplace160.disabledValue = "!NOFF_ANIMALS!"
         OptionSingleReplace160.enabledValue = "YESFF_ANIMALS["
-        FileListManager238.fileNames = CType(resources.GetObject("FileListManager238.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingleReplace160.fileManager = FileListManager238
-        OptionManager238.checkAllOnLoad = false
-        OptionManager238.loadFromDInit = false
-        OptionManager238.loadFromInit = false
-        OptionManager238.loadFromWorldGen = false
-        OptionSingleReplace160.optionManager = OptionManager238
-        OptionSettingManager243.settingName = Nothing
-        OptionSingleReplace160.settingManager = OptionSettingManager243
+        FileListManager239.fileNames = CType(resources.GetObject("FileListManager239.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingleReplace160.fileManager = FileListManager239
+        OptionManager239.checkAllOnLoad = false
+        OptionManager239.loadFromDInit = false
+        OptionManager239.loadFromInit = false
+        OptionManager239.loadFromWorldGen = false
+        OptionSingleReplace160.optionManager = OptionManager239
+        OptionSettingManager244.settingName = Nothing
+        OptionSingleReplace160.settingManager = OptionSettingManager244
         OptionSingleReplace160.tokenName = ""
         Me.optBtnMoreAnimals.options = OptionSingleReplace160
         Me.optBtnMoreAnimals.Size = New System.Drawing.Size(134, 27)
@@ -13123,15 +13197,15 @@ Partial Class MainForm
         Me.optNumHFSLevels.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.optNumHFSLevels.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.optNumHFSLevels.Name = "optNumHFSLevels"
-        FileListManager239.fileNames = CType(resources.GetObject("FileListManager239.fileNames"),System.Collections.Generic.List(Of String))
-        OptionSingle63.fileManager = FileListManager239
-        OptionManager239.checkAllOnLoad = false
-        OptionManager239.loadFromDInit = false
-        OptionManager239.loadFromInit = false
-        OptionManager239.loadFromWorldGen = true
-        OptionSingle63.optionManager = OptionManager239
-        OptionSettingManager244.settingName = Nothing
-        OptionSingle63.settingManager = OptionSettingManager244
+        FileListManager240.fileNames = CType(resources.GetObject("FileListManager240.fileNames"),System.Collections.Generic.List(Of String))
+        OptionSingle63.fileManager = FileListManager240
+        OptionManager240.checkAllOnLoad = false
+        OptionManager240.loadFromDInit = false
+        OptionManager240.loadFromInit = false
+        OptionManager240.loadFromWorldGen = true
+        OptionSingle63.optionManager = OptionManager240
+        OptionSettingManager245.settingName = Nothing
+        OptionSingle63.settingManager = OptionSettingManager245
         OptionSingle63.tokenName = "LEVELS_AT_BOTTOM"
         Me.optNumHFSLevels.options = OptionSingle63
         Me.optNumHFSLevels.Size = New System.Drawing.Size(43, 20)
@@ -13210,6 +13284,8 @@ Partial Class MainForm
         Me.grpEmbark.ResumeLayout(false)
         Me.grpEmbark.PerformLayout
         Me.grpGraphics.ResumeLayout(false)
+        Me.grpTextWillBeText.ResumeLayout(false)
+        CType(Me.optNumPatternTwbtLevels,System.ComponentModel.ISupportInitialize).EndInit
         Me.grpSound.ResumeLayout(false)
         CType(Me.optNumVolume,System.ComponentModel.ISupportInitialize).EndInit
         Me.grpFps.ResumeLayout(false)
@@ -13765,5 +13841,9 @@ End Sub
     Public WithEvents optCbTwbtFonts As MasterworkDwarfFortress.optionComboBoxFileReplace
     Friend WithEvents tilesetFontViewer As MasterworkDwarfFortress.tilesetPreviewer
     Friend WithEvents tilesetViewer As MasterworkDwarfFortress.tilesetPreviewer
+    Friend WithEvents grpTextWillBeText As MasterworkDwarfFortress.mwGroupBox
+    Friend WithEvents lblTwbtFont As System.Windows.Forms.Label
+    Friend WithEvents lblTwbtZLevels As System.Windows.Forms.Label
+    Friend WithEvents optNumPatternTwbtLevels As MasterworkDwarfFortress.optionNumericPattern
 
 End Class
