@@ -510,7 +510,9 @@ Imports Newtonsoft.Json
             strPath = CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath
             If strPath.Trim <> "" Then
                 tilesetFontViewer.refreshPreview(optCbTwbtFonts.SelectedValue, strPath)
-                repositionTwbtFontPreview()
+                Dim loc As Point = optCbTwbtFonts.FindForm().PointToClient(optCbTwbtFonts.Parent.PointToScreen(optCbTwbtFonts.Location))
+                tilesetFontViewer.Location = New Point(loc.X + optCbTwbtFonts.DropDownWidth + 4, loc.Y - (Me.Height - Me.ClientSize.Height) - ribbonMain.Height)
+                'repositionTwbtFontPreview()
                 tilesetFontViewer.Visible = True
                 tilesetFontViewer.BringToFront()
             End If
@@ -519,14 +521,14 @@ Imports Newtonsoft.Json
         End Try
     End Sub
 
-    Private Sub optCbTwbtFont_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles optCbTwbtFonts.SelectionChangeCommitted
-        tilesetFontViewer.refreshPreview(optCbTwbtFonts.SelectedValue, CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath)
-    End Sub
+    'Private Sub optCbTwbtFont_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles optCbTwbtFonts.SelectionChangeCommitted
+    '    tilesetFontViewer.refreshPreview(optCbTwbtFonts.SelectedValue, CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath)
+    'End Sub
 
     Private Sub optCbTwbtFont_Hover(sender As Object, e As HoverEventArgs) Handles optCbTwbtFonts.Hover
         Dim path As String = CType(optCbTwbtFonts.SelectedItem, comboFileItem).filePath
         tilesetFontViewer.refreshPreview(CType(optCbTwbtFonts.SelectedItem, comboFileItem).value, path)
-        repositionTwbtFontPreview()
+        'repositionTwbtFontPreview()
     End Sub
 
     Private Sub repositionTwbtFontPreview()
@@ -583,7 +585,7 @@ Imports Newtonsoft.Json
         tilesetViewer.refreshPreview(CType(cmbTileSets.Items(e.itemIndex), graphicPackDefinition).name, path)
     End Sub
 
-    Private Sub btnUpdateSaves_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateSaves.Click
+    Private Sub btnUpdateSaves_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         graphicsSets.updateSavedGames()
     End Sub
 
