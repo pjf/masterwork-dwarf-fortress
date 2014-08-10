@@ -561,7 +561,7 @@ Imports Newtonsoft.Json
     Private Sub cmbTileSets_MouseMove(sender As Object, e As MouseEventArgs) Handles cmbTileSets.MouseMove
         If cmbTileSets.SelectedItem Is Nothing OrElse cmbTileSets.DroppedDown Then Exit Sub
         Try
-            Console.WriteLine("mouse move showing previewer!")
+            'Console.WriteLine("mouse move showing previewer!")
             Dim strPath As String = CType(cmbTileSets.SelectedItem, graphicPackDefinition).tilesetPath
             If strPath <> "" Then
                 tilesetViewer.refreshPreview(CType(cmbTileSets.SelectedItem, graphicPackDefinition).name, strPath)
@@ -733,23 +733,8 @@ Imports Newtonsoft.Json
 #End Region
 
 #Region "manuals and donate"
-    Private Sub rBtnManualDwarf_Click(sender As Object, e As EventArgs) Handles rBtnManualDwarf.Click
-        Process.Start("Dwarf Manual.html")
-    End Sub
-    Private Sub rBtnManualKobold_Click(sender As Object, e As EventArgs) Handles rBtnManualKobold.Click
-        Process.Start("Kobold Manual.html")
-    End Sub
-    Private Sub rBtnManualOrc_Click(sender As Object, e As EventArgs) Handles rBtnManualOrc.Click
-        Process.Start("Orc Manual.html")
-    End Sub
-    Private Sub rBtnManualGnome_Click(sender As Object, e As EventArgs) Handles rBtnManualGnome.Click
-        Process.Start("Gnome Manual.html")
-    End Sub
-    Private Sub rBtnManualWarlock_Click(sender As Object, e As EventArgs) Handles rBtnManualWarlock.Click
-        Process.Start("Warlock Manual.html")
-    End Sub
-    Private Sub rBtnManualSuccubi_Click(sender As Object, e As EventArgs) Handles rBtnManualSuccubi.Click
-        Process.Start("Succubus Manual.html")
+    Private Sub rBtnManuals_Click(ByVal sender As Object, ByVal e As EventArgs) Handles rBtnManual.Click
+        Process.Start("Manual.html")
     End Sub
 
     Private Sub rBtnDonations_Click(sender As Object, e As EventArgs) Handles rBtnDonations.Click
@@ -947,59 +932,62 @@ Imports Newtonsoft.Json
                 Me.tableLayoutCivs.Controls.Add(cbMultiFaction, colIndexes.idxFaction, idxRow)
                 If Not civLabel.factionable Then cbMultiFaction.SelectedValue = "N/A" : cbMultiFaction.Enabled = False
 
-                'add a caravan option
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxCaravan, 0).Width
-                Dim cbCaravans As New optionComboPatternToken
-                cbCaravans.Name = "optCbPatternCivCaravans" & civName
-                formatCivTableControl(cbCaravans, intCtrlWidth, civControlHeight)
-                buildTriggerOption(cbCaravans, civLabel.simpleCivName & "_TRADE")
-                Me.tableLayoutCivs.Controls.Add(cbCaravans, colIndexes.idxCaravan, idxRow)
+                'these options don't apply to the first row (hermit)
+                If idxRow > 1 Then
+                    'add a caravan option
+                    intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxCaravan, 0).Width
+                    Dim cbCaravans As New optionComboPatternToken
+                    cbCaravans.Name = "optCbPatternCivCaravans" & civName
+                    formatCivTableControl(cbCaravans, intCtrlWidth, civControlHeight)
+                    buildTriggerOption(cbCaravans, civLabel.simpleCivName & "_TRADE")
+                    Me.tableLayoutCivs.Controls.Add(cbCaravans, colIndexes.idxCaravan, idxRow)
 
-                'add caravan bodyguard option
-                buildSimpleCivButton("Bodyguards", civLabel.simpleCivName, "BODYGUARDS", colIndexes.idxBodyguards, idxRow)
+                    'add caravan bodyguard option
+                    buildSimpleCivButton("Bodyguards", civLabel.simpleCivName, "BODYGUARDS", colIndexes.idxBodyguards, idxRow)
 
-                'add an invasion option
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxInvasion, 0).Width
-                Dim cbInvasions As New optionComboPatternToken
-                cbInvasions.Name = "optCbPatternCivInvasions" & civName
-                formatCivTableControl(cbInvasions, intCtrlWidth, civControlHeight)
-                buildTriggerOption(cbInvasions, civLabel.simpleCivName & "_SIEGE")
-                Me.tableLayoutCivs.Controls.Add(cbInvasions, colIndexes.idxInvasion, idxRow)
+                    'add an invasion option
+                    intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxInvasion, 0).Width
+                    Dim cbInvasions As New optionComboPatternToken
+                    cbInvasions.Name = "optCbPatternCivInvasions" & civName
+                    formatCivTableControl(cbInvasions, intCtrlWidth, civControlHeight)
+                    buildTriggerOption(cbInvasions, civLabel.simpleCivName & "_SIEGE")
+                    Me.tableLayoutCivs.Controls.Add(cbInvasions, colIndexes.idxInvasion, idxRow)
 
-                'add AI type
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxAi, 0).Width
-                Dim cbAi As New optionComboCheckbox
-                cbAi.Name = "optCbCheckAi" & civName
-                formatCivTableControl(cbAi, intCtrlWidth, civControlHeight)
-                buildAiOption(cbAi, civLabel.simpleCivName)
-                Me.tableLayoutCivs.Controls.Add(cbAi, colIndexes.idxAi, idxRow)
+                    'add AI type
+                    intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxAi, 0).Width
+                    Dim cbAi As New optionComboCheckbox
+                    cbAi.Name = "optCbCheckAi" & civName
+                    formatCivTableControl(cbAi, intCtrlWidth, civControlHeight)
+                    buildAiOption(cbAi, civLabel.simpleCivName)
+                    Me.tableLayoutCivs.Controls.Add(cbAi, colIndexes.idxAi, idxRow)
 
-                'add skulking option
-                buildSimpleCivButton("Skulking", civLabel.simpleCivName, "SKULKING", colIndexes.idxSkulk, idxRow)
+                    'add skulking option
+                    buildSimpleCivButton("Skulking", civLabel.simpleCivName, "SKULKING", colIndexes.idxSkulk, idxRow)
 
-                'add a material option
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxMaterials, 0).Width
-                Dim cbMats As optionComboPatternToken = New optionComboPatternToken
-                cbMats.Name = "optCbPatternCivMats" & civName
-                formatCivTableControl(cbMats, intCtrlWidth, civControlHeight)
-                buildMatOption(cbMats, civLabel.simpleCivName & "_MATERIALS")
-                Me.tableLayoutCivs.Controls.Add(cbMats, colIndexes.idxMaterials, idxRow)
+                    'add a material option
+                    intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxMaterials, 0).Width
+                    Dim cbMats As optionComboPatternToken = New optionComboPatternToken
+                    cbMats.Name = "optCbPatternCivMats" & civName
+                    formatCivTableControl(cbMats, intCtrlWidth, civControlHeight)
+                    buildMatOption(cbMats, civLabel.simpleCivName & "_MATERIALS")
+                    Me.tableLayoutCivs.Controls.Add(cbMats, colIndexes.idxMaterials, idxRow)
 
-                'add a skill option
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxSkills, 0).Width
-                Dim cbSkills As optionComboPatternToken = New optionComboPatternToken
-                cbSkills.Name = "optCbPatternCivSkills" & civName
-                formatCivTableControl(cbSkills, intCtrlWidth, civControlHeight)
-                buildSkillOption(cbSkills, civLabel.simpleCivName)
-                Me.tableLayoutCivs.Controls.Add(cbSkills, colIndexes.idxSkills, idxRow)
+                    'add a skill option
+                    intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxSkills, 0).Width
+                    Dim cbSkills As optionComboPatternToken = New optionComboPatternToken
+                    cbSkills.Name = "optCbPatternCivSkills" & civName
+                    formatCivTableControl(cbSkills, intCtrlWidth, civControlHeight)
+                    buildSkillOption(cbSkills, civLabel.simpleCivName)
+                    Me.tableLayoutCivs.Controls.Add(cbSkills, colIndexes.idxSkills, idxRow)
 
-                'add a seasonal option
-                intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxSeason, 0).Width
-                Dim cbSeasons As New optionComboCheckbox
-                cbSeasons.Name = "optCbSeasons" & civName
-                formatCivTableControl(cbSeasons, intCtrlWidth, civControlHeight)
-                buildSeasonOption(cbSeasons, civLabel.simpleCivName)
-                Me.tableLayoutCivs.Controls.Add(cbSeasons, colIndexes.idxSeason, idxRow)
+                    'add a seasonal option
+                    intCtrlWidth = Me.tableLayoutCivs.GetControlFromPosition(colIndexes.idxSeason, 0).Width
+                    Dim cbSeasons As New optionComboCheckbox
+                    cbSeasons.Name = "optCbSeasons" & civName
+                    formatCivTableControl(cbSeasons, intCtrlWidth, civControlHeight)
+                    buildSeasonOption(cbSeasons, civLabel.simpleCivName)
+                    Me.tableLayoutCivs.Controls.Add(cbSeasons, colIndexes.idxSeason, idxRow)
+                End If
             End If
 
         Next
