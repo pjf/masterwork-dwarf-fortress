@@ -18,11 +18,11 @@
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <ApplicationIcon>64.ico</ApplicationIcon>
+    <ApplicationIcon>mw-icon.ico</ApplicationIcon>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
     <ManifestCertificateThumbprint>A5B69463D9F69C335E21C70661A1B77B07971C2E</ManifestCertificateThumbprint>
     <ManifestKeyFile>LazyNewbPackGUI_TemporaryKey.pfx</ManifestKeyFile>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
     <SignManifests>false</SignManifests>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -88,8 +88,18 @@
     <TargetZone>Custom</TargetZone>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Third Party Extras\CheckBoxComboBox\bin\Release\CheckBoxComboBox.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="KRBTabControl">
       <HintPath>Third Party Extras\KRBTabControl\KRBTabControl\bin\Release\KRBTabControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Third Party Extras\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration">
@@ -97,10 +107,13 @@
     </Reference>
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.Ribbon35, Version=3.5.8.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Third Party Extras\System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon\bin\Release\System.Windows.Forms.Ribbon35.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core">
@@ -123,10 +136,21 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="custom control backend\comboFileItem.vb" />
     <Compile Include="custom control backend\comboItem.vb" />
+    <Compile Include="custom control backend\comboMultiTokenItem.vb" />
     <Compile Include="custom control backend\fileListManager.vb" />
     <Compile Include="custom control backend\fileReplaceManager.vb" />
+    <Compile Include="custom control backend\optionBasePattern.vb" />
+    <Compile Include="custom control backend\optionListMultiCombo.vb" />
+    <Compile Include="custom control backend\optionPattern.vb" />
+    <Compile Include="custom controls\hoverComboBox.Designer.vb">
+      <DependentUpon>hoverComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\hoverComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="custom controls\mwCivLabel.Designer.vb">
       <DependentUpon>mwCivLabel.vb</DependentUpon>
     </Compile>
@@ -164,10 +188,10 @@
     <Compile Include="custom controls\mwComboBox.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="custom controls\colorViewer.Designer.vb">
-      <DependentUpon>colorViewer.vb</DependentUpon>
+    <Compile Include="custom controls\colorPreviewer.Designer.vb">
+      <DependentUpon>colorPreviewer.vb</DependentUpon>
     </Compile>
-    <Compile Include="custom controls\colorViewer.vb">
+    <Compile Include="custom controls\colorPreviewer.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="custom controls\optionComboBoxFileReplace.Designer.vb">
@@ -182,10 +206,22 @@
     <Compile Include="custom controls\optionComboBoxMulti.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="custom controls\optionComboBoxMultiToken.Designer.vb">
+      <DependentUpon>optionComboBoxMultiToken.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\optionComboBoxMultiToken.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="custom controls\optionComboBoxToken.Designer.vb">
       <DependentUpon>optionComboBoxToken.vb</DependentUpon>
     </Compile>
     <Compile Include="custom controls\optionComboBoxToken.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom controls\optionComboCheckbox.Designer.vb">
+      <DependentUpon>optionComboCheckbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\optionComboCheckbox.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="custom controls\optionComboPatternToken.Designer.vb">
@@ -205,6 +241,18 @@
     <Compile Include="custom control backend\optionMulti.vb" />
     <Compile Include="custom control backend\optionSettingManager.vb" />
     <Compile Include="custom control backend\optionSingle.vb" />
+    <Compile Include="custom controls\optionNumericPattern.Designer.vb">
+      <DependentUpon>optionNumericPattern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\optionNumericPattern.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom controls\optionSinglePattern.Designer.vb">
+      <DependentUpon>optionSinglePattern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\optionSinglePattern.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="custom controls\optionSingleBoolButton.Designer.vb">
       <DependentUpon>optionSingleBoolButton.vb</DependentUpon>
     </Compile>
@@ -223,16 +271,22 @@
     <Compile Include="custom control backend\fileListConverter.vb" />
     <Compile Include="custom control backend\MultilineStringArrayConverter.vb" />
     <Compile Include="custom control backend\optionBase.vb" />
+    <Compile Include="custom controls\tilesetPreviewer.Designer.vb">
+      <DependentUpon>tilesetPreviewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom controls\tilesetPreviewer.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="helper forms\frmAbout.Designer.vb">
       <DependentUpon>frmAbout.vb</DependentUpon>
     </Compile>
     <Compile Include="helper forms\frmAbout.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="helper forms\frmThemeChange.Designer.vb">
-      <DependentUpon>frmThemeChange.vb</DependentUpon>
+    <Compile Include="helper forms\frmWait.Designer.vb">
+      <DependentUpon>frmWait.vb</DependentUpon>
     </Compile>
-    <Compile Include="helper forms\frmThemeChange.vb">
+    <Compile Include="helper forms\frmWait.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="helper forms\frmTilesetPreviewer.Designer.vb">
@@ -248,6 +302,12 @@
     <Compile Include="helper forms\frmSplash.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="helper forms\messageBoxExpand.Designer.vb">
+      <DependentUpon>messageBoxExpand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="helper forms\messageBoxExpand.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="interfaces\iExportInfo.vb" />
     <Compile Include="interfaces\iTest.vb" />
     <Compile Include="interfaces\iTheme.vb" />
@@ -255,7 +315,9 @@
     <Compile Include="interfaces\iTooltip.vb" />
     <Compile Include="management classes\appSettingsManager.vb" />
     <Compile Include="management classes\fileWorking.vb" />
+    <Compile Include="management classes\graphicPackDefinition.vb" />
     <Compile Include="management classes\graphicsSets.vb" />
+    <Compile Include="management classes\simpleExportObject.vb" />
     <Compile Include="management classes\tokenLoading.vb" />
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
@@ -297,25 +359,31 @@
     <EmbeddedResource Include="custom controls\mwTableLayout.resx">
       <DependentUpon>mwTableLayout.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="custom controls\colorViewer.resx">
-      <DependentUpon>colorViewer.vb</DependentUpon>
+    <EmbeddedResource Include="custom controls\colorPreviewer.resx">
+      <DependentUpon>colorPreviewer.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="custom controls\optionComboBoxMulti.resx">
       <DependentUpon>optionComboBoxMulti.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="custom controls\optionNumericPattern.resx">
+      <DependentUpon>optionNumericPattern.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="helper forms\frmAbout.resx">
       <DependentUpon>frmAbout.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="helper forms\frmThemeChange.resx">
-      <DependentUpon>frmThemeChange.vb</DependentUpon>
+    <EmbeddedResource Include="helper forms\frmWait.resx">
+      <DependentUpon>frmWait.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="helper forms\frmTilesetPreviewer.resx">
       <DependentUpon>frmTilesetPreviewer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="helper forms\frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helper forms\messageBoxExpand.resx">
+      <DependentUpon>messageBoxExpand.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
@@ -383,6 +451,35 @@
   <ItemGroup>
     <Content Include="32.ico" />
     <Content Include="64.ico" />
+    <Content Include="ico32.ico" />
+    <Content Include="ico32b.ico" />
+    <Content Include="ico32c.ico" />
+    <Content Include="ico64.ico" />
+    <Content Include="mw-icon.ico" />
+    <None Include="Third Party Extras\Newtonsoft.Json.dll" />
+    <None Include="Third Party Extras\System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon\bin\Release\System.Windows.Forms.Ribbon35.dll" />
+    <None Include="Third Party Extras\KRBTabControl\KRBTabControl\bin\Release\KRBTabControl.dll" />
+    <None Include="Third Party Extras\CheckBoxComboBox\bin\Release\CheckBoxComboBox.dll" />
+    <None Include="Resources\splash2.jpg" />
+    <None Include="Resources\arrow-circle-225-left.png" />
+    <None Include="Resources\control.png" />
+    <None Include="Resources\pictureFort.png" />
+    <None Include="Resources\information_large.png" />
+    <None Include="Resources\tick.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\plus-circle.png" />
+    <None Include="Resources\minus-circle.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\exclamation.png" />
+    <None Include="Resources\cross-circle.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\new-text.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\arrow-circle-double.png" />
+    <None Include="Resources\disk-return-black.png" />
+    <None Include="Resources\df-icon_32x32.png" />
+    <None Include="Resources\df-icon_16x16.png" />
+    <None Include="Resources\df-icon.png" />
     <None Include="Resources\masterwork-logo.png" />
     <None Include="Resources\fb-1024x576c.jpg" />
     <None Include="Resources\database-cloud.png" />
@@ -424,6 +521,26 @@
     <None Include="Resources\therapist.png" />
   </ItemGroup>
   <ItemGroup>
+    <PublishFile Include="32.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="64.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
     <PublishFile Include="Resources\LazyNewbPackIconA.ico">
       <Visible>False</Visible>
       <Group>

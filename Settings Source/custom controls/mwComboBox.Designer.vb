@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class mwComboBox
-    Inherits System.Windows.Forms.ComboBox
+    Inherits MasterworkDwarfFortress.hoverComboBox
 
     'UserControl overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _

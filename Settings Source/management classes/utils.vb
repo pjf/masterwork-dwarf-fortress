@@ -1,4 +1,7 @@
-﻿Public Class utils
+﻿Imports System.Text
+Imports System.Reflection
+
+Public Class utils
 
     Public Shared Sub initControls(ByVal parentControl As Control, ByRef toolTipMaker As ToolTip, ByVal loadSetting As Boolean, ByVal loadTooltip As Boolean, ByVal loadTheme As Boolean)
         For Each c As Control In parentControl.Controls
@@ -29,7 +32,9 @@
             If loadSetting Then
                 Dim conOpt As iToken = TryCast(c, iToken)
                 If conOpt IsNot Nothing Then
-                    If c.Enabled Then conOpt.loadOption() 'only load options of enabled controls
+                    If controlIsValid(c) Then
+                        conOpt.loadOption() 'only load options of enabled controls
+                    End If
                 End If
             End If
 
@@ -38,6 +43,20 @@
             End If
         Next
     End Sub
+
+    'hidden controls aren't loaded/saved/etc
+    Public Shared Function controlIsValid(ByVal c As Control) As Boolean
+        Dim conEnabled As iEnabled = TryCast(c, iEnabled)
+        If c.HasChildren OrElse ((conEnabled Is Nothing OrElse conEnabled.isEnabled) And CBool(GetStateMethodInfo.Invoke(c, New Object() {2}))) Then
+            Return True
+        Else
+            Console.WriteLine("skipping hidden/disabled control " & c.Name)
+            Return False
+        End If
+    End Function
+
+    'this is required to check the visibility of a control, since control.visible on anything but the current tab is considered false
+    Private Shared GetStateMethodInfo As MethodInfo = GetType(Control).GetMethod("GetState", BindingFlags.Instance Or BindingFlags.NonPublic)
 
     Public Shared Sub formatControl(ByVal c As Control)
         'format controls according to the currently applied ribbon theme's colors
@@ -71,7 +90,7 @@
                 c.ForeColor = Theme.ColorTable.Caption1
                 c.BackColor = Theme.ColorTable.PanelDarkBorder
 
-            Case GetType(ComboBox)
+            Case GetType(ComboBox), GetType(hoverComboBox)
                 Dim cb As ComboBox = DirectCast(c, ComboBox)
                 cb.ForeColor = Theme.ColorTable.Text
                 cb.BackColor = Theme.ColorTable.DropDownBg
@@ -88,6 +107,11 @@
                 tabMain.TabGradient.TabPageSelectedTextColor = Theme.ColorTable.Caption1
                 tabMain.TabGradient.TabPageTextColor = Theme.ColorTable.TabText_2013
         End Select
+    End Sub
+
+    Public Shared Sub MsgBoxExp(ByVal formTitle As String, ByVal messageTitle As String, ByVal iconType As MessageBoxIcon, ByVal message As String, ByVal buttons As MessageBoxButtons, Optional ByVal details As String = "")
+        Dim msg As New messageBoxExpand(formTitle, messageTitle, iconType, message, buttons, details)
+        msg.ShowDialog()
     End Sub
 
 End Class

@@ -31,7 +31,7 @@ Public Class optionComboBoxFileReplace
         saveOption()
     End Sub
 
-    Public Sub loadOption() Implements iToken.loadOption
+    Public Sub loadOption(Optional ByVal value As Object = Nothing) Implements iToken.loadOption
         m_opt.valueUpdatingPaused = True
         Try
             If Me.DataSource Is Nothing Then
@@ -41,7 +41,12 @@ Public Class optionComboBoxFileReplace
                     Me.ValueMember = "value"
                 End If
             End If
-            Me.SelectedValue = CStr(m_opt.settingManager.getSettingValue)
+            If value IsNot Nothing Then
+                Me.SelectedValue = CStr(value)
+                m_opt.valueUpdatingPaused = False : saveOption() : m_opt.valueUpdatingPaused = True
+            Else
+                Me.SelectedValue = CStr(m_opt.settingManager.getSettingValue)
+            End If
         Catch ex As Exception
             Me.SelectedIndex = -1
         Finally
@@ -50,7 +55,7 @@ Public Class optionComboBoxFileReplace
     End Sub
 
     Public Sub saveOption() Implements iToken.saveOption
-        If m_opt.valueUpdatingPaused Or Me.DesignMode Then Exit Sub
+        If m_opt.valueUpdatingPaused Or Me.DesignMode Or Me.SelectedItem Is Nothing Then Exit Sub
         m_opt.saveOption(CType(Me.SelectedItem, comboFileItem).fileName, CType(Me.SelectedItem, comboFileItem).value)
         m_opt.valueUpdatingPaused = False
     End Sub
@@ -64,6 +69,10 @@ Public Class optionComboBoxFileReplace
         Next
         optionComboBox_SelectionChangeCommitted(Me, New EventArgs)
     End Sub
+
+    Public Function currentValue() As Object Implements iToken.currentValue
+        Return Me.SelectedValue.ToString
+    End Function
 
 End Class
 

@@ -64,17 +64,20 @@ if unit then
 	
 	print("Resetting body part status...")
 	v=unit.body.components
-	for i=0,#v.body_layer_328 - 1,1 do
-		v.body_layer_328[i] = 100	-- percent remaining of fluid layers (Urist Da Vinci)
+	for i=0,#v.nonsolid_remaining - 1,1 do
+		v.nonsolid_remaining[i] = 100	-- percent remaining of fluid layers (Urist Da Vinci)
 	end
 
 	v=unit.body.components
-	for i=0,#v.body_layer_338 - 1,1 do
-		v.body_layer_338[i] = 0		-- severed, leaking layers (Urist Da Vinci)
-		v.body_layer_348[i] = 0		-- wound contact areas (Urist Da Vinci)
-		v.body_layer_358[i] = 0		-- 100*surface percentage of cuts/fractures on the body part layer (Urist Da Vinci)
-		v.body_layer_368[i] = 0		-- 100*surface percentage of dents on the body part layer (Urist Da Vinci)
-		v.body_layer_378[i] = 0		-- 100*surface percentage of "effects" on the body part layer (Urist Da Vinci)
+	for i=0,#v.layer_status - 1,1 do
+		for j=0,#v.layer_status-1,1 do -- severed, leaking layers (Urist Da Vinci)
+			v.layer_status[j].gone = 0
+			v.layer_status[j].leaking = 0
+		end
+		v.layer_wound_area[i] = 0		-- wound contact areas (Urist Da Vinci)
+		v.layer_cut_fraction[i] = 0		-- 100*surface percentage of cuts/fractures on the body part layer (Urist Da Vinci)
+		v.layer_dent_fraction[i] = 0		-- 100*surface percentage of dents on the body part layer (Urist Da Vinci)
+		v.layer_effect_fraction[i] = 0		-- 100*surface percentage of "effects" on the body part layer (Urist Da Vinci)
 	end
 	
 	v=unit.body.components.body_part_status

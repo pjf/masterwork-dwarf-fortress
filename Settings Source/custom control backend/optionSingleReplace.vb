@@ -7,7 +7,7 @@ DescriptionAttribute("Settings for a single masterwork option which toggles betw
 CategoryAttribute("~MASTERWORK"), _
 TypeConverterAttribute(GetType(ExpandableObjectConverter))> _
 Public Class optionSingleReplace
-    Inherits optionBase
+    Inherits optionBase    
 
     Public Sub New()
         MyBase.New()
@@ -52,5 +52,6 @@ Public Class optionSingleReplace
             m_tokens.Item(0).tokenName = value
         End Set
     End Property
+
 End Class
 

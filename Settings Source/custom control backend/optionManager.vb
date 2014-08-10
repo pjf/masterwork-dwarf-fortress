@@ -19,6 +19,8 @@ Public Class optionManager
 
     Private m_worldGenIndex As Integer
 
+    Private m_checkAllOnLoad As Boolean = False
+
     <DescriptionAttribute("This option's token(s) are found in init.txt file."), _
     DisplayNameAttribute("Init File")> _
     Public Property loadFromInit() As Boolean
@@ -61,6 +63,18 @@ Public Class optionManager
         End Get
         Set(value As Integer)
             m_worldGenIndex = value
+        End Set
+    End Property
+
+
+    <DescriptionAttribute("Determines if all 'enabled' values are required to be checked when loading."), _
+    DisplayNameAttribute("Check All")> _
+    Public Property checkAllOnLoad() As Boolean
+        Get
+            Return m_checkAllOnLoad
+        End Get
+        Set(value As Boolean)
+            m_checkAllOnLoad = value
         End Set
     End Property
 
@@ -109,15 +123,31 @@ Public Class optionManager
             'looking for a match to the 'enabled' option specified with the tokens, in the specified files
             'this is most commonly used with the raw files where an option is toggled on/off by replacing a token
             If Not hasSingleValueTokens(tokens) Then
-                Dim strPattern As New List(Of String)
-                For Each t As rawToken In tokens
-                    strPattern.Add(Regex.Escape(t.optionOnValue))
-                Next
-                If findTokensInFiles(String.Format("({0})", String.Join(")|(", strPattern)), files.Where(AddressOf rawFilter).ToList) Then
-                    retValue = "YES"
+                If Not m_checkAllOnLoad Then
+                    Dim strPattern As New List(Of String)
+                    For Each t As rawToken In tokens
+                        strPattern.Add(Regex.Escape(t.optionOnValue))
+                    Next
+                    If findTokensInFiles(String.Format("({0})", String.Join(")|(", strPattern)), files.Where(AddressOf rawFilter).ToList) Then
+                        retValue = "1"
+                    Else
+                        retValue = "0"
+                    End If
+                Else
+                    Dim passCount As Integer = 0
+                    For Each t As rawToken In tokens                        
+                        If findTokensInFiles(String.Format("({0})", Regex.Escape(t.optionOnValue)), files.Where(AddressOf rawFilter).ToList) Then                            
+                            passCount += 1
+                        End If
+                    Next                    
+                    If passCount = tokens.Count Then
+                        Return "1"
+                    Else
+                        Return "0"
+                    End If
                 End If
             Else
-                'in this case we're looking token value(s) within multiple files. 
+                'in this case we're looking for token value(s) within multiple files. 
                 'we're only looking to return a single value however, so return the first one
                 Dim pattern As String = String.Format("(\[" & tokens.Item(0).tokenName & ":)(?<value>\w+)\]")
                 Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
@@ -237,9 +267,6 @@ Public Class optionManager
     Private Function updateTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection) As Boolean
         Dim success As Boolean = False
         success = updateFileTokens(fManager.files(), tokens) : updateFileTokens(fManager.files(True), tokens)
-        'If updateTileSets Then
-        '    updateFileTokens(fManager.getRelatedGraphicsFilePaths, tokens)
-        'End If
         Return success
     End Function
 
@@ -278,9 +305,6 @@ Public Class optionManager
     Private Function toggleTokensInFiles(ByVal fManager As fileListManager, ByVal tokens As rawTokenCollection, ByVal enable As Boolean) As Boolean
         toggleOption(fManager.files, tokens, enable)
         toggleOption(fManager.files(True), tokens, enable, False)
-        'If updateTileSets Then
-        '    toggleOption(fManager.getRelatedGraphicsFilePaths, tokens, enable, False)
-        'End If
         Return True
     End Function
 
@@ -305,15 +329,34 @@ Public Class optionManager
                 Dim updatedData As String = newData
 
                 For Each t As rawToken In tokens
+                    Dim oldValue As String
+                    Dim newValue As String
+
                     If enable Then
                         'replace off with on
-                        updatedData = Replace(newData, t.optionOffValue, t.optionOnValue)
+                        oldValue = t.optionOffValue : newValue = t.optionOnValue
                     Else
                         'replace on with off
-                        updatedData = Replace(newData, t.optionOnValue, t.optionOffValue)
+                        newValue = t.optionOffValue : oldValue = t.optionOnValue
                     End If
-                    'if the token wasn't updated yet, check if it has been now
-                    If Not results(t) Then results(t) = (Not updatedData = newData)
+
+                    If t.isMultiLine Then                        
+                        Dim rx As New Regex(t.getMultilinePattern(newValue))
+                        If Not rx.IsMatch(newData) Then                            
+                            rx = New Regex(t.getMultilinePattern(oldValue))
+                            updatedData = rx.Replace(newData, newValue)
+                            If Not results(t) Then results(t) = (Not updatedData = newData)
+                        Else
+                            results(t) = True
+                        End If
+                    Else
+                        If newData.Contains(oldValue) Then
+                            updatedData = Replace(newData, oldValue, newValue)
+                            If Not results(t) Then results(t) = (Not updatedData = newData)
+                        Else
+                            results(t) = True
+                        End If
+                    End If
 
                     If updatedData = newData And tokens.Count > 1 Then
                         Debug.WriteLine(fi.FullName & " remained unchanged after changing option " & _
@@ -402,10 +445,8 @@ Public Class optionManager
     End Function
 
     Public Function replacePatternsInFiles(ByVal pattern As String, ByVal replacement As String, ByVal fManager As fileListManager) As Boolean
-        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.files) : replaceWithPatterns(pattern, replacement, fManager.files(True), False)
-        'If updateTileSets Then
-        '    replaceWithPatterns(pattern, replacement, fManager.getRelatedGraphicsFilePaths)
-        'End If
+        Dim success As Boolean = replaceWithPatterns(pattern, replacement, fManager.files)
+        replaceWithPatterns(pattern, replacement, fManager.files(True), False)
         Return success
     End Function
 
@@ -415,7 +456,7 @@ Public Class optionManager
         Dim rx As New Regex(pattern, RegexOptions.IgnoreCase)
         Dim changeCount As Integer = 0
         For Each fi As FileInfo In files
-            Dim data As String = getFileData(fi) 'm_dfRaws.Item(fi)
+            Dim data As String = getFileData(fi)
             Dim updated As String = rx.Replace(data, replacement)
             If data <> updated Then
                 saveFile(fi, updated)
@@ -425,15 +466,17 @@ Public Class optionManager
             End If
         Next
 
-        If isCritical Then
-            If changeCount > 0 Then
-                Return True
-            Else
-                Return False
-            End If
-        Else
-            Return True
-        End If
+        Return True
+
+        'If isCritical Then
+        '    If changeCount > 0 Then
+        '        Return True
+        '    Else
+        '        Return False
+        '    End If
+        'Else
+        '    Return True
+        'End If
     End Function
 
     Private Function getFileData(ByVal fi As IO.FileInfo) As String

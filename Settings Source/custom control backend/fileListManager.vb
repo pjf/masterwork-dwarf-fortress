@@ -16,6 +16,7 @@ Public Class fileListManager
     Private m_fileNames As New List(Of String)
     Private m_files As New List(Of IO.FileInfo)
     Private m_currentPattern As Regex
+    Private m_fileOverrides As Boolean
     'EditorAttribute(GetType(fileListConverter), GetType(System.ComponentModel.Design.MultilineStringEditor)), _
 
     <DescriptionAttribute("Specify which file(s) to change this option's tags in. Files will not be searched for the tags."), _
@@ -69,7 +70,7 @@ Public Class fileListManager
     End Function
 
     Private Function findFiles(ByVal optm As optionManager, ByVal pattern As String) As List(Of IO.FileInfo)
-        'Dim start As DateTime = Now
+        Dim start As DateTime = Now
         Dim results As New List(Of IO.FileInfo)
 
         'if we have an override specified, then just find those files
@@ -86,8 +87,8 @@ Public Class fileListManager
             Next
             addGraphicFiles(results)
         End If
-        'Dim elapsed As TimeSpan = Now - start
-        'Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for pattern " & pattern)
+        Dim elapsed As TimeSpan = Now - start
+        Debug.WriteLine("took " & elapsed.TotalMilliseconds & " ms to find the files for pattern " & pattern)
         Return results
     End Function
 
@@ -101,6 +102,7 @@ Public Class fileListManager
         For Each raw As KeyValuePair(Of IO.FileInfo, String) In tmpFiles
             results.Add(raw.Key)
         Next
+        m_fileOverrides = True
         Return results
     End Function
 
@@ -149,6 +151,24 @@ Public Class fileListManager
             Else
                 Return m_files.Where(Function(fi As IO.FileInfo) (fi.FullName.Contains(globals.m_graphicsDir) = False)).ToList
             End If
+        End Get
+    End Property
+
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public ReadOnly Property isOverriden() As Boolean
+        Get
+            Return m_fileOverrides
+        End Get
+    End Property
+
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public ReadOnly Property affectsGraphics As Boolean
+        Get
+            Return files(True).Count > 0
         End Get
     End Property
 

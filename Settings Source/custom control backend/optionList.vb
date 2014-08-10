@@ -7,7 +7,7 @@ DescriptionAttribute("Settings for multiple tokens across one or more files."), 
 CategoryAttribute("~MASTERWORK"), _
 TypeConverterAttribute(GetType(ExpandableObjectConverter))> _
 Public Class optionList
-    Inherits optionSingle
+    Inherits optionSingle    
 
     Public Sub New()
         MyBase.New()

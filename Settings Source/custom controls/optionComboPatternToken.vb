@@ -9,11 +9,10 @@ Public Class optionComboPatternToken
     Implements iTest
     Implements iExportInfo
 
-    Private m_pattern As String
-    Private m_replace As String
     Private m_value As String
 
     Private m_opt As New optionList
+    Private m_optPattern As New optionBasePattern("", "")
 
     Public Sub New()
 
@@ -23,7 +22,7 @@ Public Class optionComboPatternToken
         ' Add any initialization after the InitializeComponent() call.
     End Sub
 
-    Public Sub loadOption() Implements iToken.loadOption
+    Public Sub loadOption(Optional value As Object = Nothing) Implements iToken.loadOption
         m_opt.valueUpdatingPaused = True
         Try
             If Me.DataSource Is Nothing Then
@@ -33,7 +32,11 @@ Public Class optionComboPatternToken
                     Me.ValueMember = "value"
                 End If
             End If
-            Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_pattern, m_opt.fileManager.loadFiles(m_opt.optionManager, m_pattern))
+            If value IsNot Nothing Then
+                m_opt.valueUpdatingPaused = False : Me.SelectedValue = CStr(value) : optionComboPatternToken_SelectionChangeCommitted(Me, New EventArgs) : m_opt.valueUpdatingPaused = True
+            Else
+                Me.SelectedValue = m_opt.optionManager.loadPatternValue(m_optPattern.find, m_opt.fileManager.loadFiles(m_opt.optionManager, m_optPattern.find))
+            End If
             m_value = Me.SelectedValue
 
         Catch ex As Exception
@@ -46,11 +49,11 @@ Public Class optionComboPatternToken
     Public Sub saveOption() Implements iToken.saveOption
         If m_opt.valueUpdatingPaused Or Me.DesignMode Then Exit Sub
 
-        If Not m_replace.Contains("${value}") Then
+        If Not m_optPattern.replace.Contains("${value}") Then
             MsgBox("Unable to save, replacement pattern is in an invalid format!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
         Else
-            Dim r As String = m_replace.Replace("${value}", m_value)
-            If Not m_opt.optionManager.replacePatternsInFiles(m_pattern, r, m_opt.fileManager) Then
+            Dim r As String = m_optPattern.replace.Replace("${value}", m_value)
+            If Not m_opt.optionManager.replacePatternsInFiles(m_optPattern.find, r, m_opt.fileManager) Then
                 MsgBox("Failed to save changes for " & Me.Name & "!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
             End If
         End If
@@ -66,28 +69,12 @@ Public Class optionComboPatternToken
         End Set
     End Property
 
-
-    <DisplayNameAttribute("Replace Pattern"), _
-    CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("This will be used as the replacement pattern. Must contain ${value} to indicate where the new value should be placed.")> _
-    Public Overridable Property replace As String
+    Public Property optPattern As optionBasePattern
         Get
-            Return m_replace
+            Return m_optPattern
         End Get
-        Set(value As String)
-            m_replace = value
-        End Set
-    End Property
-
-    <DisplayNameAttribute("Find Pattern"), _
-    CategoryAttribute("~MASTERWORK"), _
-    DescriptionAttribute("This pattern is used to update a specific value. Must contain ?<value> to indicate where the value should be replaced in the pattern.")> _
-    Public Overridable Property pattern As String
-        Get
-            Return m_pattern
-        End Get
-        Set(value As String)
-            m_pattern = value
+        Set(value As optionBasePattern)
+            m_optPattern = value
         End Set
     End Property
 
@@ -118,4 +105,25 @@ Public Class optionComboPatternToken
     Public Function tagItems() As rawTokenCollection Implements iExportInfo.tagItems
         Return m_opt.optionTags
     End Function
+
+    Public Function hasFileOverrides() As Boolean Implements iExportInfo.hasFileOverrides
+        Return m_opt.fileManager.isOverriden
+    End Function
+
+    Public Function patternInfo() As optionBasePattern Implements iExportInfo.patternInfo
+        Return m_optPattern
+    End Function
+
+    Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
+        Return m_opt.fileManager.affectsGraphics
+    End Function
+
+    Public Function currentValue() As Object Implements iToken.currentValue
+        If Me.SelectedValue Is Nothing Then
+            Return ""
+        Else
+            Return Me.SelectedValue.ToString
+        End If
+    End Function
+
 End Class

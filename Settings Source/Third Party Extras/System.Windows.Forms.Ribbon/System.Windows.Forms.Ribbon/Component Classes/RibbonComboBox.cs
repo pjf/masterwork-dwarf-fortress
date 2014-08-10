@@ -197,18 +197,26 @@ namespace System.Windows.Forms
          }
          set
          {
-            foreach (RibbonItem item in DropDownItems)
+             if (value == null)
+             {
+                 _selectedItem = null;
+                 TextBoxText = string.Empty;
+             }
+             else
             {
-               if (item.Value == value)
-               {
-                  if (_selectedItem != item)
-                  {
-                     _selectedItem = item;
-                     TextBoxText = _selectedItem.Text;
-                     RibbonItemEventArgs arg = new RibbonItemEventArgs(item);
-                     OnDropDownItemClicked(ref arg);
-                  }
-               }
+                foreach (RibbonItem item in DropDownItems)
+                {
+                    if (item.Value == value)
+                    {
+                        if (_selectedItem != item)
+                        {
+                            _selectedItem = item;
+                            TextBoxText = _selectedItem.Text;
+                            RibbonItemEventArgs arg = new RibbonItemEventArgs(item);
+                            OnDropDownItemClicked(ref arg);
+                        }
+                    }
+                }
             }
          }
       }

@@ -25,7 +25,7 @@ Public Class optionSingleFileReplace
     End Sub
 
     <Browsable(False), _
-    EditorBrowsable(EditorBrowsableState.Never), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
     DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
     Public Property valueUpdatingPaused() As Boolean
         Get
@@ -37,8 +37,8 @@ Public Class optionSingleFileReplace
     End Property
 
     <DisplayNameAttribute("File Name"), _
-CategoryAttribute("~MASTERWORK"), _
-DescriptionAttribute("This is the target file to be replaced based on the item selected.")> _
+    CategoryAttribute("~MASTERWORK"), _
+    DescriptionAttribute("This is the target file to be replaced based on the item selected.")> _
     Public Property fileName As String
         Get
             Return m_fileName

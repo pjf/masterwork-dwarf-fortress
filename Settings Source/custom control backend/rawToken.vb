@@ -9,6 +9,12 @@ Public Class rawToken
     Public Sub New()
     End Sub
 
+    Public Sub New(ByVal name As String, ByVal optionOn As String, ByVal optionOff As String)
+        m_tokenName = name
+        m_optionOnValue = optionOn
+        m_optionOffValue = optionOff
+    End Sub
+
     Public Overrides Function ToString() As String
         Return m_tokenName & " ON:" & m_optionOnValue & " OFF:" & m_optionOffValue
     End Function
@@ -48,6 +54,32 @@ Public Class rawToken
             m_optionOffValue = value
         End Set
     End Property
+
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public ReadOnly Property isMultiLine As Boolean
+        Get
+            Return (m_optionOnValue.Contains(Environment.NewLine) OrElse m_optionOffValue.Contains(Environment.NewLine))
+        End Get
+    End Property
+
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public Function getMultilinePattern(ByVal onTokenValue As Boolean) As String
+        If onTokenValue Then
+            Return m_optionOnValue.Replace(Environment.NewLine, "(\n|\r|\r\n)")
+        Else
+            Return m_optionOffValue.Replace(Environment.NewLine, "(\n|\r|\r\n)")
+        End If
+    End Function
+    <Browsable(False), _
+    EditorBrowsable(EditorBrowsableState.Advanced), _
+    DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
+    Public Function getMultilinePattern(ByVal value As String) As String
+        Return value.Replace(Environment.NewLine, "(\n|\r|\r\n)")
+    End Function
 
 End Class
 

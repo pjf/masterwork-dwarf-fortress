@@ -28,12 +28,12 @@ Partial Class frmSplash
         '
         'Panel1
         '
-        Me.Panel1.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.masterwork_logo
+        Me.Panel1.BackgroundImage = Global.MasterworkDwarfFortress.My.Resources.Resources.splash2
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(681, 190)
+        Me.Panel1.Size = New System.Drawing.Size(680, 190)
         Me.Panel1.TabIndex = 0
         '
         'Label1
@@ -47,13 +47,13 @@ Partial Class frmSplash
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Loading..."
         '
-        'splash
+        'frmSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(681, 223)
+        Me.ClientSize = New System.Drawing.Size(680, 223)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
@@ -61,13 +61,12 @@ Partial Class frmSplash
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "splash"
+        Me.Name = "frmSplash"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "splash"
-        Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

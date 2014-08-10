@@ -20,10 +20,15 @@ Public Class optionSingleBoolButton
 
     Private m_opt As optionSingle
 
-    Public Sub loadOption() Implements iToken.loadOption
+    Public Sub loadOption(Optional ByVal value As Object = Nothing) Implements iToken.loadOption
         m_opt.valueUpdatingPaused = True
         Try
-            Me.Checked = yesNoToBoolean(m_opt.loadOption)
+            If value IsNot Nothing Then
+                Me.Checked = CBool(value)
+                m_opt.valueUpdatingPaused = False : optionSingle_CheckedChanged(Me, Nothing) : m_opt.valueUpdatingPaused = True
+            Else
+                Me.Checked = yesNoToBoolean(m_opt.loadOption)
+            End If
         Catch ex As Exception
             Me.Checked = False
         Finally
@@ -76,5 +81,21 @@ Public Class optionSingleBoolButton
 
     Public Function tagItems() As rawTokenCollection Implements iExportInfo.tagItems
         Return m_opt.optionTags
+    End Function
+
+    Public Function hasFileOverrides() As Boolean Implements iExportInfo.hasFileOverrides
+        Return m_opt.fileManager.isOverriden
+    End Function
+
+    Public Function patternInfo() As optionBasePattern Implements iExportInfo.patternInfo
+        Return Nothing
+    End Function
+
+    Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
+        Return m_opt.fileManager.affectsGraphics
+    End Function
+
+    Public Function currentValue() As Object Implements iToken.currentValue
+        Return Me.Checked
     End Function
 End Class

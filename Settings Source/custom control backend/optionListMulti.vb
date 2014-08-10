@@ -19,7 +19,7 @@ Public Class optionListMulti
     DescriptionAttribute("These are the possible values this option can be changed to."), _
     EditorAttribute(GetType(comboItemCollectionEditor), GetType(System.Drawing.Design.UITypeEditor)), _
     DesignerSerializationVisibility(DesignerSerializationVisibility.Content)> _
-    Public Property itemList As comboItemCollection
+    Public Overridable Property itemList As comboItemCollection
         Get
             Return m_items
         End Get
@@ -27,4 +27,5 @@ Public Class optionListMulti
             m_items = value
         End Set
     End Property
+
 End Class

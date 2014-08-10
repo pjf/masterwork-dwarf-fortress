@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class colorViewer
-    Inherits System.Windows.Forms.Panel
+Partial Class optionComboBoxMultiToken
+    Inherits MasterworkDwarfFortress.mwComboBox
 
     'UserControl overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -22,17 +22,7 @@ Partial Class colorViewer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.SuspendLayout()
-        '
-        'colorViewer
-        '
-        Me.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.CausesValidation = False
-        Me.ClientSize = New System.Drawing.Size(207, 37)
-        Me.Name = "colorViewer"
-        Me.ResumeLayout(False)
-
+        components = New System.ComponentModel.Container()        
     End Sub
 
 End Class

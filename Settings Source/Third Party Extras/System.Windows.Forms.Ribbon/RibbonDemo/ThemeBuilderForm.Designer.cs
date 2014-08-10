@@ -71,6 +71,7 @@
             this.ribbonTab1 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel1 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton3 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton7 = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.ribbonComboBox1 = new System.Windows.Forms.RibbonComboBox();
             this.ribbonCheckBox1 = new System.Windows.Forms.RibbonCheckBox();
@@ -86,7 +87,9 @@
             this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
             this.ribbonTab3 = new System.Windows.Forms.RibbonTab();
             this.ribbonTab4 = new System.Windows.Forms.RibbonTab();
-            this.ribbonButton7 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton8 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton9 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton10 = new System.Windows.Forms.RibbonButton();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -532,6 +535,13 @@
             this.ribbonButton3.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.SmallImage")));
             this.ribbonButton3.Text = "ribbonButton3";
             // 
+            // ribbonButton7
+            // 
+            this.ribbonButton7.Image = global::RibbonDemo.Properties.Resources.copy16;
+            this.ribbonButton7.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton7.SmallImage")));
+            this.ribbonButton7.Style = System.Windows.Forms.RibbonButtonStyle.SplitDropDown;
+            this.ribbonButton7.Text = "test";
+            // 
             // ribbonPanel2
             // 
             this.ribbonPanel2.Items.Add(this.ribbonComboBox1);
@@ -544,6 +554,9 @@
             // 
             // ribbonComboBox1
             // 
+            this.ribbonComboBox1.DropDownItems.Add(this.ribbonButton8);
+            this.ribbonComboBox1.DropDownItems.Add(this.ribbonButton9);
+            this.ribbonComboBox1.DropDownItems.Add(this.ribbonButton10);
             this.ribbonComboBox1.Text = "ribbonComboBox1";
             this.ribbonComboBox1.TextBoxText = "";
             // 
@@ -613,12 +626,23 @@
             // 
             this.ribbonTab4.Text = "VIEW";
             // 
-            // ribbonButton7
+            // ribbonButton8
             // 
-            this.ribbonButton7.Image = global::RibbonDemo.Properties.Resources.copy16;
-            this.ribbonButton7.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton7.SmallImage")));
-            this.ribbonButton7.Style = System.Windows.Forms.RibbonButtonStyle.SplitDropDown;
-            this.ribbonButton7.Text = "test";
+            this.ribbonButton8.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton8.Image")));
+            this.ribbonButton8.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton8.SmallImage")));
+            this.ribbonButton8.Text = "test 1";
+            // 
+            // ribbonButton9
+            // 
+            this.ribbonButton9.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton9.Image")));
+            this.ribbonButton9.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton9.SmallImage")));
+            this.ribbonButton9.Text = "test 2";
+            // 
+            // ribbonButton10
+            // 
+            this.ribbonButton10.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton10.Image")));
+            this.ribbonButton10.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton10.SmallImage")));
+            this.ribbonButton10.Text = "test 3";
             // 
             // ThemeBuilderForm
             // 
@@ -705,5 +729,8 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private NaviMain naviMain1;
         private System.Windows.Forms.RibbonButton ribbonButton7;
+        private System.Windows.Forms.RibbonButton ribbonButton8;
+        private System.Windows.Forms.RibbonButton ribbonButton9;
+        private System.Windows.Forms.RibbonButton ribbonButton10;
     }
 }

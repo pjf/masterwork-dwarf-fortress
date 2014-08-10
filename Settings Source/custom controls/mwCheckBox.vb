@@ -1,6 +1,9 @@
 ﻿Public Class mwCheckBox
     Inherits CheckBox
     Implements iTheme
+    Implements iEnabled
+
+    Private m_enabled As Boolean = True
 
     Public Sub New()
 
@@ -36,7 +39,7 @@
         Me.BackColor = Theme.ColorTable.ButtonBgCenter
         Me.FlatAppearance.CheckedBackColor = Theme.ColorTable.ButtonBgCenter
         Me.FlatAppearance.BorderSize = 0
-        Me.ForeColor = Theme.ColorTable.Text        
+        Me.ForeColor = Theme.ColorTable.Text
     End Sub
 
     Protected Function yesNoToBoolean(ByVal value As String) As Boolean
@@ -53,5 +56,15 @@
             cp.ExStyle = cp.ExStyle Or &H20
             Return cp
         End Get
+    End Property
+
+    Public Property isEnabled As Boolean Implements iEnabled.isEnabled
+        Get
+            Return m_enabled
+        End Get
+        Set(value As Boolean)
+            m_enabled = value
+            MyBase.Enabled = value
+        End Set
     End Property
 End Class

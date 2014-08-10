@@ -1,0 +1,82 @@
+[
+	{
+		"Name":"ASCII",
+		"TilesetType":"ASCII",
+		"ColorScheme":"VANILLA"
+	},
+	{
+		"Name":"CLA",
+		"TilesetType":"ASCII",
+		"ColorScheme":"CLA"
+	},
+	{
+		"Name":"DawnFortress",
+		"TilesetType":"ASCII",
+		"ColorScheme":"DAWNFORTRESS"
+	},
+	{
+		"Name":"Ironhand",
+		"TilesetType":"IRONHAND",
+		"ColorScheme":"IRONHAND"
+	},
+	{
+		"Name":"Jolly",
+		"TilesetType":"ASCII",
+		"ColorScheme":"JOLLYWARM"
+	},
+	{
+		"Name":"Jolly with font",
+		"TilesetType":"ASCII",
+		"ColorScheme":"JOLLYWARM"
+	},
+	{
+		"Name":"Masterwork - Ironhand Walls",
+		"TilesetType":"MDF",
+		"ColorScheme":"DEFAULT+"
+	},
+	{
+		"Name":"Masterwork - Obsidian Walls",
+		"TilesetType":"MDF",
+		"ColorScheme":"DEFAULT+"
+	},
+	{
+		"Name":"Masterwork - Phoebus Walls",
+		"TilesetType":"MDF",
+		"ColorScheme":"DEFAULT+"
+	},
+	{
+		"Name":"Matrix",
+		"TilesetType":"ASCII",
+		"ColorScheme":"MATRIX"
+	},
+	{
+		"Name":"Obsidian Soul",
+		"TilesetType":"OBSIDIAN",
+		"ColorScheme":"OBSIDIAN"
+	},	
+	{
+		"Name":"Phoebus",
+		"TilesetType":"PHOEBUS",
+		"ColorScheme":"PHOEBUS"
+	},
+	{
+		"Name":"Soviet",
+		"TilesetType":"ASCII",
+		"ColorScheme":"DEFAULT+"
+	},
+	{
+		"Name":"Spacefox",
+		"TilesetType":"ASCII",
+		"ColorScheme":"SPACEFOX"
+	},
+	{
+		"Name":"Taffer",
+		"TilesetType":"ASCII",
+		"ColorScheme":"DEFAULT+"
+	},
+	{
+		"Name":"Vherid",
+		"TilesetType":"ASCII",
+		"ColorScheme":"DEFAULT+"
+	}
+]

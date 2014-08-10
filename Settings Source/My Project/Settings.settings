@@ -20,5 +20,11 @@
     <Setting Name="THEME" Provider="MasterworkDwarfFortress.appSettingsManager" Type="System.String" Scope="User">
       <Value Profile="(Default)">DEFAULT</Value>
     </Setting>
+    <Setting Name="WORLDGEN" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TWBTFONT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MDF</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

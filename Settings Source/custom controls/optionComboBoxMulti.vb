@@ -36,7 +36,7 @@ Public Class optionComboBoxMulti
         saveOption()
     End Sub
 
-    Public Sub loadOption() Implements iToken.loadOption
+    Public Sub loadOption(Optional ByVal value As Object = Nothing) Implements iToken.loadOption
         m_opt.valueUpdatingPaused = True
         Try
             If Me.DataSource Is Nothing Then
@@ -46,8 +46,11 @@ Public Class optionComboBoxMulti
                     Me.ValueMember = "value"
                 End If
             End If
-
-            Me.SelectedValue = CStr(m_opt.loadOption)
+            If value IsNot Nothing Then
+                m_opt.valueUpdatingPaused = False : Me.SelectedValue = CStr(value) : optionComboBoxMulti_SelectionChangeCommitted(Me, New EventArgs) : m_opt.valueUpdatingPaused = True                
+            Else
+                Me.SelectedValue = CStr(m_opt.loadOption)
+            End If            
 
         Catch ex As Exception
             Me.SelectedIndex = -1
@@ -82,5 +85,21 @@ Public Class optionComboBoxMulti
 
     Public Function tagItems() As rawTokenCollection Implements iExportInfo.tagItems
         Return m_opt.tokenList
+    End Function
+
+    Public Function hasFileOverrides() As Boolean Implements iExportInfo.hasFileOverrides
+        Return m_opt.fileManager.isOverriden
+    End Function
+
+    Public Function patternInfo() As optionBasePattern Implements iExportInfo.patternInfo
+        Return Nothing
+    End Function
+
+    Public Function affectsGraphics() As Boolean Implements iExportInfo.affectsGraphics
+        Return m_opt.fileManager.affectsGraphics
+    End Function
+
+    Public Function currentValue() As Object Implements iToken.currentValue
+        Return Me.SelectedValue.ToString
     End Function
 End Class

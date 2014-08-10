@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmThemeChange
+Partial Class frmWait
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
